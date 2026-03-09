@@ -1014,82 +1014,80 @@
       <div>Models · Compute · Markets · Research · Capital · Briefings</div>
     </div>
   </footer>
-<script>
-<script>
-async function fetchFeed(feedUrl) {
-  const url = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feedUrl);
-  const res = await fetch(url);
-  if (!res.ok) throw new Error("Feed failed");
-  return res.json();
-}
+ 
+  <script>
+    async function fetchFeed(feedUrl) {
+      const url = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feedUrl);
+      const res = await fetch(url);
+      if (!res.ok) throw new Error("Feed failed");
+      return res.json();
+    }
 
-function cleanText(html) {
-  const div = document.createElement("div");
-  div.innerHTML = html || "";
-  return (div.textContent || div.innerText || "").trim();
-}
+    function cleanText(html) {
+      const div = document.createElement("div");
+      div.innerHTML = html || "";
+      return (div.textContent || div.innerText || "").trim();
+    }
 
-function shortText(text, max = 140) {
-  if (!text) return "Live AI signal update.";
-  return text.length > max ? text.slice(0, max - 3) + "..." : text;
-}
+    function shortText(text, max = 140) {
+      if (!text) return "Live AI signal update.";
+      return text.length > max ? text.slice(0, max - 3) + "..." : text;
+    }
 
-async function loadSignals() {
-  try {
+    async function loadSignals() {
+      try {
+        const feeds = [
+          "https://openrss.org/openai.com/news",
+          "https://openrss.org/anthropic.com/news",
+          "https://openrss.org/theverge.com/artificial-intelligence"
+        ];
 
-    const feeds = [
-      "https://openrss.org/openai.com/news",
-      "https://openrss.org/anthropic.com/news",
-      "https://openrss.org/theverge.com/artificial-intelligence"
-    ];
+        const results = await Promise.all(feeds.map(fetchFeed));
 
-    const results = await Promise.all(feeds.map(fetchFeed));
+        const items = results
+          .flatMap(feed => (feed.items || []).map(item => ({
+            title: cleanText(item.title),
+            description: shortText(cleanText(item.description || item.content || "")),
+            link: item.link || "#",
+            pubDate: item.pubDate || new Date().toISOString()
+          })))
+          .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
+          .slice(0, 6);
 
-    const items = results
-      .flatMap(feed => (feed.items || []).map(item => ({
-        title: cleanText(item.title),
-        description: shortText(cleanText(item.description || item.content || "")),
-        link: item.link || "#",
-        pubDate: item.pubDate || new Date().toISOString()
-      })))
-      .sort((a,b)=> new Date(b.pubDate) - new Date(a.pubDate))
-      .slice(0,6);
+        const cards = document.querySelectorAll(".story-card");
 
-    const cards = document.querySelectorAll(".story-card");
+        cards.forEach((card, i) => {
+          if (!items[i]) return;
 
-    cards.forEach((card,i)=>{
-      if(!items[i]) return;
+          const title = card.querySelector(".story-title");
+          const copy = card.querySelector(".story-copy");
+          const impact = card.querySelector(".story-impact");
 
-      const title = card.querySelector(".story-title");
-      const copy = card.querySelector(".story-copy");
-      const impact = card.querySelector(".story-impact");
+          if (title) title.textContent = items[i].title;
+          if (copy) copy.textContent = items[i].description;
+          if (impact) impact.textContent = "Impact: developing signal.";
+        });
 
-      if(title) title.textContent = items[i].title;
-      if(copy) copy.textContent = items[i].description;
-      if(impact) impact.textContent = "Impact: developing signal.";
-    });
+        const radarRows = document.querySelectorAll(".radar-list .matrix-row");
 
-    const radarRows = document.querySelectorAll(".radar-list .matrix-row");
+        radarRows.forEach((row, i) => {
+          if (!items[i]) return;
 
-    radarRows.forEach((row,i)=>{
-      if(!items[i]) return;
+          const name = row.querySelector(".matrix-name");
+          const note = row.querySelector(".matrix-note");
+          const score = row.querySelector(".score");
 
-      const name = row.querySelector(".matrix-name");
-      const note = row.querySelector(".matrix-note");
-      const score = row.querySelector(".score");
+          if (name) name.textContent = shortText(items[i].title, 42);
+          if (note) note.textContent = shortText(items[i].description, 90);
+          if (score) score.textContent = 95 - i * 2;
+        });
+      } catch (err) {
+        console.error("Signal feed failed:", err);
+      }
+    }
 
-      if(name) name.textContent = shortText(items[i].title,42);
-      if(note) note.textContent = shortText(items[i].description,90);
-      if(score) score.textContent = 95 - i*2;
-    });
-
-  } catch(err) {
-    console.error("Signal feed failed:", err);
-  }
-}
-
-loadSignals();
-setInterval(loadSignals, 15 * 60 * 1000);
-</script></script>  
+    loadSignals();
+    setInterval(loadSignals, 15 * 60 * 1000);
+  </script>
 </body>
 </html>
