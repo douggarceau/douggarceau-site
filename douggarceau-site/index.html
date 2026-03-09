@@ -1015,97 +1015,81 @@
     </div>
   </footer>
 <script>
+<script>
 async function fetchFeed(feedUrl) {
-  const url = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(feedUrl)}`;
+  const url = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(feedUrl);
   const res = await fetch(url);
   if (!res.ok) throw new Error("Feed failed");
   return res.json();
 }
 
-function shortTime(dateStr) {
-  const d = new Date(dateStr);
-  return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
+function cleanText(html) {
+  const div = document.createElement("div");
+  div.innerHTML = html || "";
+  return (div.textContent || div.innerText || "").trim();
 }
 
-function cleanTitle(title) {
-  return title
-    .replace(/&amp;/g, "&")
-    .replace(/&#39;/g, "'")
-    .replace(/&quot;/g, '"')
-    .trim();
-}
-
-function summarizeTitle(title) {
-  const t = cleanTitle(title);
-  if (t.length <= 95) return t;
-  return t.slice(0, 92) + "...";
+function shortText(text, max = 140) {
+  if (!text) return "Live AI signal update.";
+  return text.length > max ? text.slice(0, max - 3) + "..." : text;
 }
 
 async function loadSignals() {
-  const feeds = [
-    "https://openrss.org/openai.com/news",
-    "https://openrss.org/anthropic.com/news",
-    "https://openrss.org/theverge.com/ai-artificial-intelligence"
-  ];
-
   try {
+
+    const feeds = [
+      "https://openrss.org/openai.com/news",
+      "https://openrss.org/anthropic.com/news",
+      "https://openrss.org/theverge.com/artificial-intelligence"
+    ];
+
     const results = await Promise.all(feeds.map(fetchFeed));
+
     const items = results
       .flatMap(feed => (feed.items || []).map(item => ({
-        title: summarizeTitle(item.title || ""),
+        title: cleanText(item.title),
+        description: shortText(cleanText(item.description || item.content || "")),
         link: item.link || "#",
         pubDate: item.pubDate || new Date().toISOString()
       })))
-      .sort((a, b) => new Date(b.pubDate) - new Date(a.pubDate))
-      .slice(0, 8);
+      .sort((a,b)=> new Date(b.pubDate) - new Date(a.pubDate))
+      .slice(0,6);
 
-    // Terminal panel
-    const terminalFeed = document.querySelector(".terminal-feed");
-    if (terminalFeed) {
-      terminalFeed.innerHTML = "";
-      items.slice(0, 4).forEach(item => {
-        const row = document.createElement("div");
-        row.className = "feed-row";
-        row.innerHTML = `
-          <div class="feed-time">${shortTime(item.pubDate)}</div>
-          <div><a href="${item.link}" target="_blank" rel="noopener noreferrer">${item.title}</a></div>
-        `;
-        terminalFeed.appendChild(row);
-      });
-    }
+    const cards = document.querySelectorAll(".story-card");
 
-    // Lead story card
-    const leadTitle = document.querySelector(".story-card h3");
-    const leadText = document.querySelector(".story-card p");
-    if (leadTitle && items[0]) leadTitle.textContent = items[0].title;
-    if (leadText && items[1]) leadText.textContent = items[1].title;
+    cards.forEach((card,i)=>{
+      if(!items[i]) return;
 
-    // Radar list
-    const radar = document.querySelector(".radar-list");
-    if (radar) {
-      radar.innerHTML = "";
-      items.slice(2, 6).forEach((item, i) => {
-        const score = 95 - i * 2;
-        const div = document.createElement("div");
-        div.className = "radar-item";
-        div.innerHTML = `
-          <div>
-            <div class="radar-title">
-              <a href="${item.link}" target="_blank" rel="noopener noreferrer">${item.title}</a>
-            </div>
-          </div>
-          <div class="radar-score">${score}</div>
-        `;
-        radar.appendChild(div);
-      });
-    }
-  } catch (err) {
+      const title = card.querySelector(".story-title");
+      const copy = card.querySelector(".story-copy");
+      const impact = card.querySelector(".story-impact");
+
+      if(title) title.textContent = items[i].title;
+      if(copy) copy.textContent = items[i].description;
+      if(impact) impact.textContent = "Impact: developing signal.";
+    });
+
+    const radarRows = document.querySelectorAll(".radar-list .matrix-row");
+
+    radarRows.forEach((row,i)=>{
+      if(!items[i]) return;
+
+      const name = row.querySelector(".matrix-name");
+      const note = row.querySelector(".matrix-note");
+      const score = row.querySelector(".score");
+
+      if(name) name.textContent = shortText(items[i].title,42);
+      if(note) note.textContent = shortText(items[i].description,90);
+      if(score) score.textContent = 95 - i*2;
+    });
+
+  } catch(err) {
     console.error("Signal feed failed:", err);
   }
 }
 
 loadSignals();
-setInterval(loadSignals, 15 * 60 * 1000); // refresh every 15 min
-</script>  
+setInterval(loadSignals, 15 * 60 * 1000);
+</script></script>  
 </body>
 </html>
