@@ -855,7 +855,7 @@ The firms that understand that shift will be better positioned for durable expan
 
     function renderTerminal(items) {
       terminalFeed.innerHTML = "";
-      items.slice(0, 4).forEach(item => {
+      items.slice(0, 8).forEach(item => {
         const row = document.createElement("div");
         row.className = "feed-row";
         row.innerHTML = `<div class="feed-time">${item.time}</div><div>${item.title}</div>`;
