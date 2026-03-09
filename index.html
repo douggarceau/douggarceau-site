@@ -1,1139 +1,264 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Doug Garceau AI — AI Signals</title>
-  <meta name="description" content="High-signal intelligence for the AI industry." />
-  <style>
-    :root {
-      --bg: #060606;
-      --bg2: #0a0a0a;
-      --panel: rgba(10, 10, 10, 0.72);
-      --panel-2: rgba(18, 18, 18, 0.86);
-      --line: rgba(255, 115, 0, 0.18);
-      --line-strong: rgba(255, 115, 0, 0.42);
-      --text: #f4f4f4;
-      --muted: #9d9d9d;
-      --soft: #cfcfcf;
-      --hot: #ff731f;
-      --hot-2: #ff9b5c;
-      --glow: 0 0 0 1px rgba(255, 115, 31, 0.18), 0 10px 30px rgba(255, 115, 31, 0.08);
-      --radius: 24px;
-      --radius-sm: 16px;
-      --max: 1280px;
-    }
-
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-
-    body {
-      margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--text);
-      background:
-        radial-gradient(circle at 15% 20%, rgba(255, 115, 31, 0.14), transparent 28%),
-        radial-gradient(circle at 85% 30%, rgba(255, 115, 31, 0.10), transparent 26%),
-        radial-gradient(circle at 50% 100%, rgba(255, 80, 0, 0.10), transparent 30%),
-        linear-gradient(180deg, #090909 0%, #090909 48%, #050505 100%);
-      min-height: 100vh;
-    }
-
-    body::before,
-    body::after {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-    }
-
-    body::before {
-      background:
-        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
-      background-size: 42px 42px;
-      mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
-      opacity: 0.20;
-    }
-
-    body::after {
-      background: linear-gradient(180deg, rgba(255,115,31,0.06), transparent 20%, transparent 80%, rgba(255,115,31,0.04));
-      opacity: 0.75;
-    }
-
-    a { color: inherit; text-decoration: none; }
-
-    .wrap {
-      width: min(var(--max), calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    .topbar {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      backdrop-filter: blur(18px);
-      background: rgba(8, 8, 8, 0.72);
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-    }
-
-    .topbar-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      padding: 14px 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      min-width: 0;
-    }
-
-    .brand-mark {
-      width: 44px;
-      height: 44px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      font-weight: 900;
-      letter-spacing: 0.08em;
-      color: #111;
-      background: linear-gradient(135deg, var(--hot), var(--hot-2));
-      box-shadow: 0 8px 24px rgba(255, 115, 31, 0.30);
-      flex: 0 0 auto;
-    }
-
-    .brand-text {
-      min-width: 0;
-    }
-
-    .brand-kicker {
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 11px;
-      margin-bottom: 3px;
-    }
-
-    .brand-title {
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      font-size: 18px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
-
-    .nav a,
-    .nav button {
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.03);
-      color: var(--soft);
-      padding: 10px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
-
-    .nav a:hover,
-    .nav button:hover {
-      border-color: var(--line-strong);
-      color: #fff;
-      transform: translateY(-1px);
-    }
-
-    .nav .cta {
-      background: linear-gradient(135deg, var(--hot), var(--hot-2));
-      color: #111;
-      font-weight: 800;
-      border-color: transparent;
-    }
-
-    .hero {
-      padding: 42px 0 18px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 18px;
-    }
-
-    .hero-main,
-    .hero-side,
-    .panel {
-      background: var(--panel);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: var(--radius);
-      box-shadow: var(--glow);
-    }
-
-    .hero-main {
-      padding: 28px;
-      position: relative;
-      overflow: hidden;
-      min-height: 320px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .hero-main::after {
-      content: "";
-      position: absolute;
-      right: -40px;
-      top: -40px;
-      width: 220px;
-      height: 220px;
-      border-radius: 999px;
-      background: radial-gradient(circle, rgba(255,115,31,0.28), transparent 65%);
-      filter: blur(8px);
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 9px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.07);
-      color: var(--soft);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      width: fit-content;
-      position: relative;
-      z-index: 1;
-    }
-
-    .dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--hot);
-      box-shadow: 0 0 0 8px rgba(255, 115, 31, 0.12);
-      animation: pulse 1.8s infinite;
-    }
-
-    @keyframes pulse {
-      0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.18); opacity: 0.7; }
-    }
-
-    h1 {
-      margin: 18px 0 12px;
-      font-size: clamp(36px, 5vw, 66px);
-      line-height: 0.95;
-      letter-spacing: -0.05em;
-      max-width: 10ch;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-copy {
-      color: var(--soft);
-      font-size: 17px;
-      line-height: 1.65;
-      max-width: 60ch;
-      position: relative;
-      z-index: 1;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-top: 22px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .btn {
-      border: 0;
-      border-radius: 999px;
-      padding: 13px 18px;
-      cursor: pointer;
-      font-weight: 700;
-      font-size: 14px;
-      transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      color: #111;
-      background: linear-gradient(135deg, var(--hot), var(--hot-2));
-      box-shadow: 0 10px 24px rgba(255, 115, 31, 0.24);
-    }
-
-    .btn-secondary {
-      color: #fff;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.09);
-    }
-
-    .btn:hover { transform: translateY(-1px); }
-
-    .hero-stats {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-top: 26px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .stat {
-      min-width: 120px;
-      padding: 14px 16px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .stat-label {
-      color: var(--muted);
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      margin-bottom: 6px;
-    }
-
-    .stat-value {
-      font-size: 24px;
-      font-weight: 800;
-      letter-spacing: -0.04em;
-    }
-
-    .hero-side {
-      padding: 22px;
-      display: flex;
-      flex-direction: column;
-      gap: 14px;
-    }
-
-    .side-title,
-    .section-title {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 14px;
-      margin-bottom: 10px;
-    }
-
-    .section-title h2,
-    .side-title h2 {
-      margin: 0;
-      font-size: 20px;
-      letter-spacing: -0.03em;
-    }
-
-    .section-kicker {
-      color: var(--muted);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-    }
-
-    .mini-list {
-      display: grid;
-      gap: 10px;
-    }
-
-    .mini-card {
-      padding: 14px;
-      border-radius: 18px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.05);
-      transition: 0.2s ease;
-    }
-
-    .mini-card:hover {
-      border-color: var(--line-strong);
-      transform: translateY(-2px);
-    }
-
-    .mini-source {
-      color: var(--hot-2);
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      margin-bottom: 8px;
-    }
-
-    .mini-headline {
-      font-weight: 700;
-      line-height: 1.35;
-      margin-bottom: 8px;
-    }
-
-    .mini-meta {
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .ticker {
-      margin-top: 12px;
-      overflow: hidden;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      background: rgba(255,255,255,0.02);
-    }
-
-    .ticker-track {
-      display: flex;
-      gap: 32px;
-      white-space: nowrap;
-      padding: 12px 0;
-      min-width: max-content;
-      animation: ticker 38s linear infinite;
-    }
-
-    .ticker-item {
-      color: var(--soft);
-      font-size: 13px;
-      letter-spacing: 0.02em;
-    }
-
-    .ticker-item strong {
-      color: var(--hot-2);
-      margin-right: 8px;
-      text-transform: uppercase;
-      font-size: 11px;
-      letter-spacing: 0.12em;
-    }
-
-    @keyframes ticker {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
-    }
-
-    .section {
-      padding: 22px 0;
-    }
-
-    .section-header {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 16px;
-      margin-bottom: 16px;
-      flex-wrap: wrap;
-    }
-
-    .section-copy {
-      color: var(--muted);
-      max-width: 62ch;
-      line-height: 1.6;
-    }
-
-    .filters {
-      display: flex;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .chip {
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      color: var(--soft);
-      padding: 10px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      cursor: pointer;
-      transition: 0.2s ease;
-    }
-
-    .chip:hover,
-    .chip.active {
-      color: #fff;
-      border-color: var(--line-strong);
-      background: rgba(255,115,31,0.10);
-    }
-
-    .news-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .card {
-      background: var(--panel-2);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 22px;
-      padding: 18px;
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      min-height: 240px;
-      transition: 0.2s ease;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(255,115,31,0.07), transparent 28%);
-      opacity: 0;
-      transition: 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      border-color: var(--line-strong);
-      box-shadow: 0 16px 40px rgba(0,0,0,0.26);
-    }
-
-    .card:hover::before { opacity: 1; }
-
-    .card-top {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      position: relative;
-      z-index: 1;
-    }
-
-    .source-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 7px 10px;
-      border-radius: 999px;
-      background: rgba(255,115,31,0.10);
-      border: 1px solid rgba(255,115,31,0.18);
-      color: var(--hot-2);
-      font-size: 11px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-    }
-
-    .time-badge {
-      color: var(--muted);
-      font-size: 12px;
-      white-space: nowrap;
-    }
-
-    .headline {
-      font-size: 24px;
-      line-height: 1.08;
-      letter-spacing: -0.035em;
-      margin: 0;
-      position: relative;
-      z-index: 1;
-    }
-
-    .summary {
-      color: var(--soft);
-      line-height: 1.65;
-      font-size: 15px;
-      position: relative;
-      z-index: 1;
-      flex: 1;
-    }
-
-    .card-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 12px;
-      margin-top: auto;
-      position: relative;
-      z-index: 1;
-    }
-
-    .read-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: #fff;
-      font-weight: 700;
-      font-size: 14px;
-    }
-
-    .read-link span {
-      color: var(--hot-2);
-    }
-
-    .status {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      color: var(--muted);
-      font-size: 12px;
-    }
-
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--hot);
-    }
-
-    .terminal {
-      background: #050505;
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 22px;
-      overflow: hidden;
-      box-shadow: var(--glow);
-    }
-
-    .terminal-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 14px 16px;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      background: rgba(255,255,255,0.03);
-    }
-
-    .terminal-label {
-      color: var(--muted);
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-    }
-
-    .lights {
-      display: flex;
-      gap: 8px;
-    }
-
-    .lights span {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      display: block;
-    }
-
-    .lights span:nth-child(1) { background: #ff5f56; }
-    .lights span:nth-child(2) { background: #ffbd2e; }
-    .lights span:nth-child(3) { background: #27c93f; }
-
-    .terminal-feed {
-      padding: 12px 0;
-    }
-
-    .feed-row {
-      display: grid;
-      grid-template-columns: 110px 1fr;
-      gap: 16px;
-      padding: 12px 16px;
-      border-bottom: 1px solid rgba(255,255,255,0.04);
-      color: #dedede;
-      font-size: 14px;
-    }
-
-    .feed-row:last-child { border-bottom: 0; }
-
-    .feed-time {
-      color: var(--hot-2);
-      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-      font-size: 12px;
-      letter-spacing: 0.05em;
-    }
-
-    .meta-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 16px;
-    }
-
-    .meta-card {
-      background: var(--panel);
-      border: 1px solid rgba(255,255,255,0.06);
-      border-radius: 22px;
-      padding: 18px;
-    }
-
-    .meta-card h3 {
-      margin: 0 0 8px;
-      font-size: 14px;
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-    }
-
-    .meta-card strong {
-      display: block;
-      font-size: 30px;
-      letter-spacing: -0.04em;
-      margin-bottom: 8px;
-    }
-
-    .meta-card p {
-      margin: 0;
-      color: var(--soft);
-      line-height: 1.6;
-      font-size: 14px;
-    }
-
-    .footer {
-      padding: 32px 0 52px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    .footer-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-      padding-top: 22px;
-      border-top: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .loading,
-    .empty,
-    .error {
-      grid-column: 1 / -1;
-      padding: 32px 20px;
-      text-align: center;
-      border-radius: 22px;
-      background: rgba(255,255,255,0.03);
-      border: 1px solid rgba(255,255,255,0.06);
-      color: var(--soft);
-    }
-
-    .error {
-      border-color: rgba(255, 80, 80, 0.25);
-      color: #ffd0d0;
-    }
-
-    @media (max-width: 1100px) {
-      .hero-grid,
-      .news-grid,
-      .meta-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .hero-main {
-        grid-column: 1 / -1;
-      }
-
-      .hero-side {
-        grid-column: 1 / -1;
-      }
-    }
-
-    @media (max-width: 760px) {
-      .wrap {
-        width: min(var(--max), calc(100% - 20px));
-      }
-
-      .topbar-inner,
-      .section-header,
-      .footer-inner,
-      .card-bottom {
-        align-items: flex-start;
-      }
-
-      .nav {
-        display: none;
-      }
-
-      .hero {
-        padding-top: 20px;
-      }
-
-      .hero-main,
-      .hero-side,
-      .card,
-      .meta-card {
-        padding: 16px;
-      }
-
-      .hero-grid,
-      .news-grid,
-      .meta-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .feed-row {
-        grid-template-columns: 1fr;
-        gap: 6px;
-      }
-
-      .headline {
-        font-size: 21px;
-      }
-
-      h1 {
-        max-width: 100%;
-      }
-    }
-  </style>
-</head>
-<body>
-  <header class="topbar">
-    <div class="wrap topbar-inner">
-      <div class="brand">
-        <div class="brand-mark">AI</div>
-        <div class="brand-text">
-          <div class="brand-kicker">Live intelligence desk</div>
-          <div class="brand-title">Doug Garceau AI — AI Signals</div>
-        </div>
-      </div>
-      <nav class="nav">
-        <a href="#live">Live Feed</a>
-        <a href="#desk">Signal Desk</a>
-        <a href="#intel">Intel</a>
-        <a href="https://douggarceau.com/.netlify/functions/ai-news" target="_blank" rel="noopener">Raw Feed</a>
-        <button class="cta" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">Get Signals</button>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <section class="hero-main">
-          <div>
-            <div class="eyebrow">
-              <span class="dot"></span>
-              <span id="liveStatus">Live AI signal stream</span>
-            </div>
-            <h1>Real AI news. Live. Filtered. Brutal.</h1>
-            <p class="hero-copy">
-              A fast-moving AI signals desk pulling live updates from major AI sources and routing them into one sharp front page.
-              No dead mockups. No filler. Just rolling intelligence from the current feed.
-            </p>
-            <div class="hero-actions">
-              <button class="btn btn-primary" onclick="refreshFeed()">Refresh feed</button>
-              <a class="btn btn-secondary" href="#live">Open signal board</a>
-            </div>
-          </div>
-
-          <div class="hero-stats">
-            <div class="stat">
-              <div class="stat-label">Stories loaded</div>
-              <div class="stat-value" id="storyCount">--</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">Sources active</div>
-              <div class="stat-value" id="sourceCount">--</div>
-            </div>
-            <div class="stat">
-              <div class="stat-label">Last update</div>
-              <div class="stat-value" id="lastUpdated">--</div>
-            </div>
-          </div>
-        </section>
-
-        <aside class="hero-side">
-          <div class="side-title">
-            <div>
-              <div class="section-kicker">Topline</div>
-              <h2>Fast signal snapshot</h2>
-            </div>
-          </div>
-          <div class="mini-list" id="miniList">
-            <div class="mini-card">
-              <div class="mini-source">Loading</div>
-              <div class="mini-headline">Pulling latest AI stories from live sources...</div>
-              <div class="mini-meta">Stand by</div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <div class="ticker">
-      <div class="ticker-track" id="tickerTrack">
-        <div class="ticker-item"><strong>Boot</strong> Initializing live AI feed...</div>
-        <div class="ticker-item"><strong>Status</strong> Waiting for first payload...</div>
-        <div class="ticker-item"><strong>Desk</strong> Stand by...</div>
-        <div class="ticker-item"><strong>Boot</strong> Initializing live AI feed...</div>
-        <div class="ticker-item"><strong>Status</strong> Waiting for first payload...</div>
-        <div class="ticker-item"><strong>Desk</strong> Stand by...</div>
-      </div>
-    </div>
-
-    <section class="section" id="live">
-      <div class="wrap">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Live board</div>
-            <h2 style="margin: 6px 0 8px; font-size: 34px; letter-spacing: -0.04em;">Current AI signals</h2>
-            <div class="section-copy">
-              Live stories rendered directly from your Netlify function feed.
-            </div>
-          </div>
-          <div class="filters" id="filters"></div>
-        </div>
-
-        <div class="news-grid" id="newsGrid">
-          <div class="loading">Loading live AI stories…</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="desk">
-      <div class="wrap">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Signal desk</div>
-            <h2 style="margin: 6px 0 8px; font-size: 30px; letter-spacing: -0.04em;">Terminal feed</h2>
-            <div class="section-copy">
-              Fast scan of the newest headlines moving through the system.
-            </div>
-          </div>
-        </div>
-
-        <div class="terminal">
-          <div class="terminal-top">
-            <div class="terminal-label">Doug Garceau AI / live feed terminal</div>
-            <div class="lights"><span></span><span></span><span></span></div>
-          </div>
-          <div class="terminal-feed" id="terminalFeed">
-            <div class="feed-row">
-              <div class="feed-time">BOOT</div>
-              <div>Waiting for live stories...</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="intel">
-      <div class="wrap">
-        <div class="section-header">
-          <div>
-            <div class="section-kicker">Desk metrics</div>
-            <h2 style="margin: 6px 0 8px; font-size: 30px; letter-spacing: -0.04em;">Feed intelligence</h2>
-          </div>
-        </div>
-
-        <div class="meta-grid">
-          <div class="meta-card">
-            <h3>Feed endpoint</h3>
-            <strong>LIVE</strong>
-            <p>Your site is now reading from a working Netlify function endpoint instead of a dead static mockup.</p>
-          </div>
-          <div class="meta-card">
-            <h3>Refresh cycle</h3>
-            <strong>Manual + cached</strong>
-            <p>The feed can be refreshed instantly on page load, while the function itself uses short caching for speed.</p>
-          </div>
-          <div class="meta-card">
-            <h3>Current mode</h3>
-            <strong>Production</strong>
-            <p>GitHub, Netlify config, and the live function are all wired. The homepage now displays current feed data.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="wrap footer-inner">
-      <div>Doug Garceau AI — AI Signals</div>
-      <div id="footerStamp">Waiting for feed…</div>
-    </div>
-  </footer>
-
-  <script>
-    const FEED_URL = "/.netlify/functions/ai-news";
-    let allItems = [];
-    let activeFilter = "All";
-
-    async function loadFeed() {
-      const grid = document.getElementById("newsGrid");
-      grid.innerHTML = '<div class="loading">Loading live AI stories…</div>';
-
-      try {
-        const res = await fetch(FEED_URL, { cache: "no-store" });
-        if (!res.ok) throw new Error("Feed request failed");
-
-        const data = await res.json();
-        allItems = Array.isArray(data.items) ? data.items : [];
-
-        updateStats(data);
-        renderFilters(allItems);
-        renderMini(allItems);
-        renderTicker(allItems);
-        renderTerminal(allItems);
-        renderGrid();
-        stampFooter(data.generatedAt);
-      } catch (err) {
-        grid.innerHTML = '<div class="error">Live feed error. The function is up, but the homepage could not read the current payload.</div>';
-        document.getElementById("miniList").innerHTML = `
-          <div class="mini-card">
-            <div class="mini-source">Error</div>
-            <div class="mini-headline">Could not load the live feed.</div>
-            <div class="mini-meta">Check the Netlify function endpoint.</div>
-          </div>
-        `;
-      }
-    }
-
-    function updateStats(data) {
-      const total = data?.meta?.total ?? allItems.length;
-      const sourceCounts = data?.meta?.sourceCounts ?? {};
-      const sourceTotal = Object.keys(sourceCounts).length || new Set(allItems.map(i => i.source)).size;
-
-      document.getElementById("storyCount").textContent = total || 0;
-      document.getElementById("sourceCount").textContent = sourceTotal || 0;
-      document.getElementById("lastUpdated").textContent = shortTime(data?.generatedAt);
-      document.getElementById("liveStatus").textContent = `Live AI signal stream • ${total || 0} stories`;
-    }
-
-    function renderFilters(items) {
-      const filters = document.getElementById("filters");
-      const sources = ["All", ...new Set(items.map(item => item.source).filter(Boolean))];
-
-      filters.innerHTML = sources.map(source => `
-        <button class="chip ${source === activeFilter ? "active" : ""}" onclick="setFilter('${escapeQuotes(source)}')">
-          ${source}
-        </button>
-      `).join("");
-    }
-
-    function setFilter(source) {
-      activeFilter = source;
-      renderFilters(allItems);
-      renderGrid();
-    }
-
-    function renderGrid() {
-      const grid = document.getElementById("newsGrid");
-      const filtered = activeFilter === "All"
-        ? allItems
-        : allItems.filter(item => item.source === activeFilter);
-
-      if (!filtered.length) {
-        grid.innerHTML = '<div class="empty">No stories found for this source filter.</div>';
-        return;
-      }
-
-      grid.innerHTML = filtered.map(item => `
-        <article class="card">
-          <div class="card-top">
-            <div class="source-badge">${escapeHtml(item.source || "Live Feed")}</div>
-            <div class="time-badge">${timeAgo(item.pubDate)}</div>
-          </div>
-          <h3 class="headline">${escapeHtml(item.title || "Untitled story")}</h3>
-          <div class="summary">${escapeHtml(item.summary || "Live update pulled from source feed.")}</div>
-          <div class="card-bottom">
-            <a class="read-link" href="${escapeAttr(item.link)}" target="_blank" rel="noopener">
-              Open story <span>→</span>
-            </a>
-            <div class="status"><span class="status-dot"></span> live</div>
-          </div>
-        </article>
-      `).join("");
-    }
-
-    function renderMini(items) {
-      const mini = document.getElementById("miniList");
-      mini.innerHTML = items.slice(0, 4).map(item => `
-        <a class="mini-card" href="${escapeAttr(item.link)}" target="_blank" rel="noopener">
-          <div class="mini-source">${escapeHtml(item.source || "Live Feed")}</div>
-          <div class="mini-headline">${escapeHtml(item.title || "Untitled story")}</div>
-          <div class="mini-meta">${timeAgo(item.pubDate)}</div>
-        </a>
-      `).join("");
-    }
-
-    function renderTicker(items) {
-      const ticker = document.getElementById("tickerTrack");
-      const list = items.slice(0, 8);
-      const html = list.map(item => `
-        <div class="ticker-item">
-          <strong>${escapeHtml(item.source || "Feed")}</strong>${escapeHtml(item.title || "Untitled story")}
-        </div>
-      `).join("");
-      ticker.innerHTML = html + html;
-    }
-
-    function renderTerminal(items) {
-      const terminal = document.getElementById("terminalFeed");
-      terminal.innerHTML = items.slice(0, 8).map(item => `
-        <div class="feed-row">
-          <div class="feed-time">${terminalTime(item.pubDate)}</div>
-          <div>${escapeHtml(item.title || "Untitled story")}</div>
-        </div>
-      `).join("");
-    }
-
-    function stampFooter(date) {
-      document.getElementById("footerStamp").textContent = `Last feed pull: ${longDate(date)}`;
-    }
-
-    function refreshFeed() {
-      loadFeed();
-    }
-
-    function shortTime(dateStr) {
-      if (!dateStr) return "--";
-      const d = new Date(dateStr);
-      if (Number.isNaN(d.getTime())) return "--";
-      return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
-    }
-
-    function longDate(dateStr) {
-      if (!dateStr) return "unknown";
-      const d = new Date(dateStr);
-      if (Number.isNaN(d.getTime())) return "unknown";
-      return d.toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
-    }
-
-    function terminalTime(dateStr) {
-      if (!dateStr) return "LIVE";
-      const d = new Date(dateStr);
-      if (Number.isNaN(d.getTime())) return "LIVE";
-      return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
-    }
-
-    function timeAgo(dateStr) {
-      if (!dateStr) return "Live source";
-      const d = new Date(dateStr);
-      if (Number.isNaN(d.getTime())) return "Live source";
-
-      const diff = Date.now() - d.getTime();
-      const mins = Math.floor(diff / 60000);
-      const hours = Math.floor(diff / 3600000);
-      const days = Math.floor(diff / 86400000);
-
-      if (mins < 60) return `${Math.max(mins, 1)}m ago`;
-      if (hours < 24) return `${hours}h ago`;
-      return `${days}d ago`;
-    }
-
-    function escapeHtml(str) {
-      return String(str ?? "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;")
-        .replace(/'/g, "&#39;");
-    }
-
-    function escapeAttr(str) {
-      return escapeHtml(str);
-    }
-
-    function escapeQuotes(str) {
-      return String(str ?? "").replace(/'/g, "\\'");
-    }
-
-    loadFeed();
-  </script>
-</body>
-</html>
+exports.handler = async function handler() {
+  const SOURCES = [
+    { name: "OpenAI", type: "rss", url: "https://openai.com/news/rss.xml" },
+    { name: "Anthropic", type: "html", url: "https://www.anthropic.com/news" },
+    { name: "Google DeepMind", type: "html", url: "https://deepmind.google/blog/" },
+    { name: "NVIDIA", type: "rss", url: "https://nvidianews.nvidia.com/rss" },
+    { name: "Hugging Face", type: "rss", url: "https://huggingface.co/blog/feed.xml" },
+    { name: "Mistral", type: "html", url: "https://mistral.ai/news/" },
+    { name: "Stability AI", type: "html", url: "https://stability.ai/news" },
+    { name: "Google AI", type: "rss", url: "https://blog.google/technology/ai/rss/" }
+  ];
+
+  try {
+    const settled = await Promise.allSettled(SOURCES.map(fetchSource));
+
+    const items = settled
+      .flatMap(result => (result.status === "fulfilled" ? result.value : []))
+      .filter(Boolean)
+      .filter(item => item.title && item.link)
+      .map(cleanItem)
+      .filter(item => isGoodHeadline(item.title))
+      .filter(dedupeByLink())
+      .sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0))
+      .slice(0, 36);
+
+    const sourceCounts = items.reduce((acc, item) => {
+      acc[item.source] = (acc[item.source] || 0) + 1;
+      return acc;
+    }, {});
+
+    return {
+      statusCode: 200,
+      headers: {
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=300"
+      },
+      body: JSON.stringify({
+        generatedAt: new Date().toISOString(),
+        items,
+        meta: {
+          sourceCounts,
+          total: items.length
+        }
+      })
+    };
+  } catch (error) {
+    return {
+      statusCode: 500,
+      headers: { "Content-Type": "application/json; charset=utf-8" },
+      body: JSON.stringify({ error: error.message })
+    };
+  }
+};
+
+async function fetchSource(source) {
+  const response = await fetch(source.url, {
+    headers: {
+      "User-Agent": "Mozilla/5.0 DougGarceauAISignals/2.0"
+    }
+  });
+
+  if (!response.ok) {
+    throw new Error(`${source.name} returned ${response.status}`);
+  }
+
+  const text = await response.text();
+
+  if (source.type === "rss") return parseRSS(text, source.name);
+  return parseHTML(text, source);
+}
+
+function parseRSS(xml, sourceName) {
+  const items = [];
+  const matches = xml.match(/<item\b[\s\S]*?<\/item>/gi) || [];
+  const altMatches = xml.match(/<entry\b[\s\S]*?<\/entry>/gi) || [];
+  const chunks = matches.length ? matches : altMatches;
+
+  for (const chunk of chunks.slice(0, 16)) {
+    const title = decodeHtml(extractTag(chunk, "title"));
+    const description =
+      decodeHtml(stripTags(extractTag(chunk, "description"))) ||
+      decodeHtml(stripTags(extractTag(chunk, "summary"))) ||
+      decodeHtml(stripTags(extractTag(chunk, "content"))) ||
+      `${sourceName} update pulled from live source feed.`;
+
+    let link =
+      decodeHtml(extractTag(chunk, "link")) ||
+      extractLinkFromAtom(chunk) ||
+      extractHref(chunk);
+
+    const pubDate =
+      normalizeDate(extractTag(chunk, "pubDate")) ||
+      normalizeDate(extractTag(chunk, "published")) ||
+      normalizeDate(extractTag(chunk, "updated"));
+
+    if (title && link) {
+      items.push({
+        source: sourceName,
+        title,
+        link,
+        pubDate,
+        summary: description
+      });
+    }
+  }
+
+  return items;
+}
+
+function parseHTML(html, source) {
+  const cleaned = html.replace(/\n+/g, " ");
+  const matches = [...cleaned.matchAll(/<a[^>]+href=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>/gi)];
+  const items = [];
+  const seen = new Set();
+
+  for (const match of matches) {
+    const href = match[1];
+    const inner = stripTags(match[2]).replace(/\s+/g, " ").trim();
+
+    if (!inner) continue;
+    if (inner.length < 18 || inner.length > 220) continue;
+    if (isBadHeadline(inner)) continue;
+    if (!looksLikeArticleUrl(href, source.url)) continue;
+
+    const link = absoluteUrl(href, source.url);
+    if (seen.has(link)) continue;
+    seen.add(link);
+
+    items.push({
+      source: source.name,
+      title: decodeHtml(inner),
+      link,
+      pubDate: guessDateNearLink(cleaned, href),
+      summary: `${source.name} update pulled from the live source page.`
+    });
+
+    if (items.length >= 10) break;
+  }
+
+  return items;
+}
+
+function looksLikeArticleUrl(href, base) {
+  const absolute = absoluteUrl(href, base);
+
+  return (
+    /\/((news|blog|updates|research|announcements|company\/news)\/|20\d{2}|[a-z0-9-]{8,})/i.test(absolute) &&
+    !/\/(careers|jobs|about|pricing|api|contact|news\/?$|blog\/?$|authors|privacy|terms|login|signup)/i.test(absolute)
+  );
+}
+
+function guessDateNearLink(html, href) {
+  const idx = html.indexOf(href);
+  if (idx === -1) return null;
+
+  const nearby = html.slice(Math.max(0, idx - 300), Math.min(html.length, idx + 300));
+
+  const dateMatch = nearby.match(
+    /(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|Jul(?:y)?|Aug(?:ust)?|Sep(?:t|tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\s+\d{1,2},?\s+20\d{2}/i
+  );
+
+  return dateMatch ? normalizeDate(dateMatch[0]) : null;
+}
+
+function extractTag(xml, tag) {
+  const match = xml.match(new RegExp(`<${tag}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${tag}>`, "i"));
+  return match ? match[1].trim() : "";
+}
+
+function extractLinkFromAtom(xml) {
+  const match = xml.match(/<link[^>]+href=["']([^"']+)["'][^>]*\/?>/i);
+  return match ? decodeHtml(match[1].trim()) : "";
+}
+
+function extractHref(xml) {
+  const match = xml.match(/https?:\/\/[^\s<"]+/i);
+  return match ? match[0].trim() : "";
+}
+
+function absoluteUrl(href, base) {
+  try {
+    return new URL(href, base).toString();
+  } catch {
+    return href;
+  }
+}
+
+function stripTags(value = "") {
+  return value
+    .replace(/<script[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style[\s\S]*?<\/style>/gi, " ")
+    .replace(/<[^>]*>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function decodeHtml(str = "") {
+  return str
+    .replace(/<!\[CDATA\[|\]\]>/g, "")
+    .replace(/&#x27;|&#39;|&apos;/gi, "'")
+    .replace(/&#x2F;/gi, "/")
+    .replace(/&#x2019;|&#8217;/gi, "’")
+    .replace(/&#x2018;|&#8216;/gi, "‘")
+    .replace(/&#x201C;|&#8220;/gi, "“")
+    .replace(/&#x201D;|&#8221;/gi, "”")
+    .replace(/&#x2013;|&#8211;/gi, "–")
+    .replace(/&#x2014;|&#8212;/gi, "—")
+    .replace(/&#x26;|&amp;/gi, "&")
+    .replace(/&quot;/gi, '"')
+    .replace(/&lt;/gi, "<")
+    .replace(/&gt;/gi, ">")
+    .replace(/&#(\d+);/g, (_, num) => {
+      const code = Number(num);
+      return Number.isFinite(code) ? String.fromCharCode(code) : _;
+    })
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => {
+      const code = parseInt(hex, 16);
+      return Number.isFinite(code) ? String.fromCharCode(code) : _;
+    })
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function normalizeDate(value) {
+  if (!value) return null;
+  const date = new Date(value);
+  return Number.isNaN(date.getTime()) ? null : date.toISOString();
+}
+
+function cleanItem(item) {
+  return {
+    source: item.source || "Live Feed",
+    title: decodeHtml((item.title || "").replace(/\s+/g, " ").trim()),
+    link: (item.link || "").trim(),
+    pubDate: item.pubDate || null,
+    summary: decodeHtml((item.summary || "").replace(/\s+/g, " ").trim())
+  };
+}
+
+function dedupeByLink() {
+  const seen = new Set();
+  return item => {
+    const key = (item.link || "").trim();
+    if (!key || seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  };
+}
+
+function isBadHeadline(text = "") {
+  const t = text.trim();
+  return (
+    /^(read more|learn more|home|about|news|blog|careers|contact|privacy|terms|documentation|developer docs)$/i.test(t) ||
+    t.length < 18
+  );
+}
+
+function isGoodHeadline(text = "") {
+  const t = text.trim();
+  if (!t || t.length < 18) return false;
+  if (/^(read more|learn more|home|about|news|blog)$/i.test(t)) return false;
+  if (/cookie|privacy policy|terms of use/i.test(t)) return false;
+  return true;
+}
