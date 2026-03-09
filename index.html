@@ -10,33 +10,33 @@
       --bg: #060606;
       --bg2: #0a0a0a;
       --panel: rgba(10, 10, 10, 0.72);
-      --panel-2: rgba(18, 18, 18, 0.84);
-      --line: rgba(255, 115, 0, 0.22);
-      --line-strong: rgba(255, 115, 0, 0.46);
+      --panel-2: rgba(18, 18, 18, 0.86);
+      --line: rgba(255, 115, 0, 0.18);
+      --line-strong: rgba(255, 115, 0, 0.42);
       --text: #f4f4f4;
-      --muted: #a7a7a7;
-      --soft: #7d7d7d;
-      --hot: #ff5a1f;
-      --hot-2: #ff8a1f;
-      --glow: 0 0 30px rgba(255, 92, 31, 0.22), 0 0 80px rgba(255, 92, 31, 0.08);
+      --muted: #9d9d9d;
+      --soft: #cfcfcf;
+      --hot: #ff731f;
+      --hot-2: #ff9b5c;
+      --glow: 0 0 0 1px rgba(255, 115, 31, 0.18), 0 10px 30px rgba(255, 115, 31, 0.08);
       --radius: 24px;
-      --radius-sm: 18px;
-      --max: 1320px;
+      --radius-sm: 16px;
+      --max: 1280px;
     }
 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 15% 20%, rgba(255, 90, 31, 0.18), transparent 28%),
-        radial-gradient(circle at 85% 30%, rgba(255, 130, 31, 0.12), transparent 26%),
-        radial-gradient(circle at 50% 100%, rgba(255, 80, 0, 0.12), transparent 32%),
-        linear-gradient(180deg, #050505 0%, #090909 48%, #050505 100%);
+        radial-gradient(circle at 15% 20%, rgba(255, 115, 31, 0.14), transparent 28%),
+        radial-gradient(circle at 85% 30%, rgba(255, 115, 31, 0.10), transparent 26%),
+        radial-gradient(circle at 50% 100%, rgba(255, 80, 0, 0.10), transparent 30%),
+        linear-gradient(180deg, #090909 0%, #090909 48%, #050505 100%);
       min-height: 100vh;
-      overflow-x: hidden;
     }
 
     body::before,
@@ -45,973 +45,1095 @@
       position: fixed;
       inset: 0;
       pointer-events: none;
-      z-index: -2;
     }
 
     body::before {
-      background-image:
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-      background-size: 40px 40px;
-      mask-image: radial-gradient(circle at center, black 50%, transparent 100%);
-      opacity: 0.35;
+      background:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 42px 42px;
+      mask-image: radial-gradient(circle at center, black 40%, transparent 90%);
+      opacity: 0.20;
     }
 
     body::after {
-      background:
-        linear-gradient(90deg, transparent 0%, rgba(255, 90, 31, 0.05) 50%, transparent 100%),
-        radial-gradient(circle at center, rgba(255, 112, 44, 0.09), transparent 50%);
-      filter: blur(24px);
+      background: linear-gradient(180deg, rgba(255,115,31,0.06), transparent 20%, transparent 80%, rgba(255,115,31,0.04));
       opacity: 0.75;
-    }
-
-    .circuit {
-      position: fixed;
-      inset: 0;
-      z-index: -1;
-      opacity: 0.45;
-      pointer-events: none;
-      background:
-        linear-gradient(90deg, transparent 0 4%, rgba(255,90,31,.12) 4% 4.2%, transparent 4.2% 12%, rgba(255,90,31,.08) 12% 12.1%, transparent 12.1% 100%),
-        linear-gradient(0deg, transparent 0 8%, rgba(255,90,31,.08) 8% 8.15%, transparent 8.15% 17%, rgba(255,90,31,.05) 17% 17.1%, transparent 17.1% 100%);
-      mix-blend-mode: screen;
     }
 
     a { color: inherit; text-decoration: none; }
 
     .wrap {
-      width: min(calc(100% - 32px), var(--max));
+      width: min(var(--max), calc(100% - 32px));
       margin: 0 auto;
     }
 
-    .nav {
+    .topbar {
       position: sticky;
       top: 0;
       z-index: 50;
-      backdrop-filter: blur(16px);
-      background: rgba(4, 4, 4, 0.72);
-      border-bottom: 1px solid rgba(255,255,255,0.06);
+      backdrop-filter: blur(18px);
+      background: rgba(8, 8, 8, 0.72);
+      border-bottom: 1px solid rgba(255,255,255,0.05);
     }
 
-    .nav-inner {
+    .topbar-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 20px;
-      min-height: 74px;
+      gap: 16px;
+      padding: 14px 0;
     }
 
     .brand {
       display: flex;
       align-items: center;
       gap: 14px;
-      letter-spacing: 0.08em;
-      font-weight: 800;
-      text-transform: uppercase;
+      min-width: 0;
     }
 
     .brand-mark {
-      width: 14px;
-      height: 14px;
-      border-radius: 50%;
+      width: 44px;
+      height: 44px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      letter-spacing: 0.08em;
+      color: #111;
       background: linear-gradient(135deg, var(--hot), var(--hot-2));
-      box-shadow: 0 0 18px rgba(255, 92, 31, 0.8);
+      box-shadow: 0 8px 24px rgba(255, 115, 31, 0.30);
+      flex: 0 0 auto;
     }
 
-    .nav-links {
+    .brand-text {
+      min-width: 0;
+    }
+
+    .brand-kicker {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 11px;
+      margin-bottom: 3px;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      font-size: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav {
       display: flex;
       align-items: center;
-      gap: 24px;
-      color: var(--muted);
-      font-size: 0.94rem;
-    }
-
-    .nav-links a:hover { color: #fff; }
-
-    .button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
       gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav a,
+    .nav button {
+      border: 1px solid rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.03);
+      color: var(--soft);
+      padding: 10px 14px;
       border-radius: 999px;
-      padding: 13px 18px;
-      font-weight: 700;
-      letter-spacing: 0.02em;
-      transition: 180ms ease;
+      font-size: 13px;
       cursor: pointer;
-      border: 1px solid transparent;
+      transition: 0.2s ease;
     }
 
-    .button-primary {
-      background: linear-gradient(135deg, var(--hot), var(--hot-2));
-      color: #090909;
-      box-shadow: var(--glow);
-    }
-
-    .button-primary:hover { transform: translateY(-1px); filter: brightness(1.05); }
-
-    .button-secondary {
-      background: rgba(255,255,255,0.02);
-      border-color: rgba(255,255,255,0.08);
+    .nav a:hover,
+    .nav button:hover {
+      border-color: var(--line-strong);
       color: #fff;
+      transform: translateY(-1px);
+    }
+
+    .nav .cta {
+      background: linear-gradient(135deg, var(--hot), var(--hot-2));
+      color: #111;
+      font-weight: 800;
+      border-color: transparent;
     }
 
     .hero {
-      padding: 62px 0 28px;
-      position: relative;
+      padding: 42px 0 18px;
     }
 
     .hero-grid {
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
-      gap: 28px;
-      align-items: stretch;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
     }
 
-    .hero-panel,
-    .panel,
-    .signal-card,
-    .stat-card,
-    .story-card,
-    .subscribe-card,
-    .contact-card,
-    .terminal {
-      background: linear-gradient(180deg, rgba(17,17,17,0.76), rgba(10,10,10,0.92));
-      border: 1px solid rgba(255,255,255,0.08);
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), var(--glow);
+    .hero-main,
+    .hero-side,
+    .panel {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--radius);
+      box-shadow: var(--glow);
     }
 
-    .hero-panel {
-      border-radius: 34px;
-      padding: 42px;
-      overflow: hidden;
+    .hero-main {
+      padding: 28px;
       position: relative;
-      min-height: 520px;
+      overflow: hidden;
+      min-height: 320px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .hero-panel::before,
-    .hero-panel::after {
+    .hero-main::after {
       content: "";
       position: absolute;
-      inset: auto;
-      pointer-events: none;
-    }
-
-    .hero-panel::before {
-      right: -60px;
-      top: -60px;
+      right: -40px;
+      top: -40px;
       width: 220px;
       height: 220px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,90,31,0.25), transparent 65%);
-      filter: blur(6px);
-    }
-
-    .hero-panel::after {
-      left: -40px;
-      bottom: -40px;
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(255,138,31,0.12), transparent 70%);
-      filter: blur(10px);
+      border-radius: 999px;
+      background: radial-gradient(circle, rgba(255,115,31,0.28), transparent 65%);
+      filter: blur(8px);
     }
 
     .eyebrow {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 10px 14px;
-      border: 1px solid var(--line);
+      padding: 9px 12px;
       border-radius: 999px;
-      color: #ffd7c8;
-      font-size: 0.82rem;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.07);
+      color: var(--soft);
+      font-size: 12px;
       text-transform: uppercase;
-      letter-spacing: 0.18em;
-      background: rgba(255, 90, 31, 0.08);
-      margin-bottom: 18px;
+      letter-spacing: 0.14em;
+      width: fit-content;
+      position: relative;
+      z-index: 1;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--hot);
+      box-shadow: 0 0 0 8px rgba(255, 115, 31, 0.12);
+      animation: pulse 1.8s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.18); opacity: 0.7; }
     }
 
     h1 {
-      margin: 0;
-      font-size: clamp(3rem, 6vw, 5.9rem);
-      line-height: 0.92;
+      margin: 18px 0 12px;
+      font-size: clamp(36px, 5vw, 66px);
+      line-height: 0.95;
       letter-spacing: -0.05em;
-      font-weight: 900;
-      text-transform: uppercase;
-      max-width: 11ch;
-    }
-
-    .hero h1 span {
-      color: #ffd6c8;
-      display: block;
-      text-shadow: 0 0 24px rgba(255, 112, 44, 0.18);
+      max-width: 10ch;
+      position: relative;
+      z-index: 1;
     }
 
     .hero-copy {
-      margin: 24px 0 30px;
-      max-width: 650px;
-      color: #d6d6d6;
-      font-size: clamp(1rem, 1.45vw, 1.18rem);
-      line-height: 1.7;
+      color: var(--soft);
+      font-size: 17px;
+      line-height: 1.65;
+      max-width: 60ch;
+      position: relative;
+      z-index: 1;
     }
 
     .hero-actions {
       display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 13px 18px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 14px;
+      transition: 0.2s ease;
+    }
+
+    .btn-primary {
+      color: #111;
+      background: linear-gradient(135deg, var(--hot), var(--hot-2));
+      box-shadow: 0 10px 24px rgba(255, 115, 31, 0.24);
+    }
+
+    .btn-secondary {
+      color: #fff;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.09);
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+
+    .hero-stats {
+      display: flex;
       gap: 14px;
       flex-wrap: wrap;
+      margin-top: 26px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .stat {
+      min-width: 120px;
+      padding: 14px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .stat-label {
+      color: var(--muted);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 6px;
+    }
+
+    .stat-value {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .hero-side {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .side-title,
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 10px;
+    }
+
+    .section-title h2,
+    .side-title h2 {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: -0.03em;
+    }
+
+    .section-kicker {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    .mini-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .mini-card {
+      padding: 14px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+      transition: 0.2s ease;
+    }
+
+    .mini-card:hover {
+      border-color: var(--line-strong);
+      transform: translateY(-2px);
+    }
+
+    .mini-source {
+      color: var(--hot-2);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      margin-bottom: 8px;
+    }
+
+    .mini-headline {
+      font-weight: 700;
+      line-height: 1.35;
+      margin-bottom: 8px;
+    }
+
+    .mini-meta {
+      color: var(--muted);
+      font-size: 12px;
     }
 
     .ticker {
-      margin-top: 28px;
-      border: 1px solid var(--line-strong);
-      border-radius: 999px;
+      margin-top: 12px;
       overflow: hidden;
-      background: linear-gradient(180deg, rgba(255,90,31,0.08), rgba(255,90,31,0.02));
+      border-top: 1px solid rgba(255,255,255,0.06);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.02);
     }
 
     .ticker-track {
       display: flex;
       gap: 32px;
       white-space: nowrap;
-      padding: 14px 18px;
-      color: #ffe5dc;
-      animation: scroll 28s linear infinite;
+      padding: 12px 0;
       min-width: max-content;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      font-size: 0.85rem;
+      animation: ticker 38s linear infinite;
     }
 
-    @keyframes scroll {
+    .ticker-item {
+      color: var(--soft);
+      font-size: 13px;
+      letter-spacing: 0.02em;
+    }
+
+    .ticker-item strong {
+      color: var(--hot-2);
+      margin-right: 8px;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+    }
+
+    @keyframes ticker {
       from { transform: translateX(0); }
       to { transform: translateX(-50%); }
     }
 
-    .hero-side {
-      display: grid;
-      grid-template-rows: 1fr auto;
-      gap: 28px;
+    .section {
+      padding: 22px 0;
     }
 
-    .terminal {
-      border-radius: 30px;
-      padding: 22px;
-      min-height: 340px;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .terminal::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 30%, transparent 70%, rgba(255,255,255,0.02));
-      pointer-events: none;
-    }
-
-    .terminal-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 18px;
-      color: var(--muted);
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-    }
-
-    .dots {
-      display: inline-flex;
-      gap: 8px;
-    }
-
-    .dots span {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.25);
-    }
-
-    .dots span:first-child { background: var(--hot); box-shadow: 0 0 16px rgba(255, 92, 31, 0.8); }
-
-    .terminal-lines {
-      display: grid;
-      gap: 14px;
-      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
-      font-size: 0.94rem;
-      line-height: 1.55;
-      color: #ffddcf;
-    }
-
-    .terminal-line {
-      display: grid;
-      grid-template-columns: 72px 1fr;
-      gap: 14px;
-      border-bottom: 1px solid rgba(255,255,255,0.05);
-      padding-bottom: 12px;
-    }
-
-    .terminal-line:last-child { border-bottom: 0; }
-
-    .time { color: #8d8d8d; }
-    .pulse { color: #fff; }
-    .hot { color: #ffbb97; }
-
-    .stats {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .stat-card {
-      border-radius: 24px;
-      padding: 20px;
-    }
-
-    .stat-label {
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      font-size: 0.76rem;
-      margin-bottom: 14px;
-    }
-
-    .stat-value {
-      font-size: clamp(1.6rem, 2.8vw, 2.3rem);
-      font-weight: 800;
-      letter-spacing: -0.04em;
-    }
-
-    .stat-note {
-      color: #d0d0d0;
-      margin-top: 8px;
-      line-height: 1.5;
-      font-size: 0.95rem;
-    }
-
-    section {
-      padding: 28px 0;
-    }
-
-    .section-head {
+    .section-header {
       display: flex;
       align-items: end;
       justify-content: space-between;
-      gap: 20px;
-      margin-bottom: 22px;
-    }
-
-    .section-kicker {
-      color: #ffceb8;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 0.76rem;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      margin: 0;
-      font-size: clamp(2rem, 3.8vw, 3.7rem);
-      line-height: 0.98;
-      letter-spacing: -0.05em;
-      text-transform: uppercase;
+      gap: 16px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
     }
 
     .section-copy {
       color: var(--muted);
-      max-width: 680px;
-      line-height: 1.7;
-      font-size: 1rem;
+      max-width: 62ch;
+      line-height: 1.6;
     }
 
-    .signals-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-    }
-
-    .signal-card {
-      border-radius: 24px;
-      padding: 22px;
-      position: relative;
-      overflow: hidden;
-      min-height: 220px;
-    }
-
-    .signal-card::before {
-      content: "";
-      position: absolute;
-      left: -10%;
-      right: -10%;
-      top: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
-      opacity: 0.3;
-    }
-
-    .signal-type {
-      color: #ffb391;
-      font-size: 0.78rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      margin-bottom: 18px;
-    }
-
-    .signal-title {
-      font-size: 1.34rem;
-      line-height: 1.15;
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      margin-bottom: 14px;
-    }
-
-    .signal-text {
-      color: #d2d2d2;
-      line-height: 1.68;
-      margin-bottom: 18px;
-    }
-
-    .signal-meta {
+    .filters {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
-      margin-top: auto;
     }
 
-    .tag {
-      padding: 8px 10px;
-      border-radius: 999px;
-      font-size: 0.76rem;
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      border: 1px solid rgba(255,255,255,0.08);
-      color: #ededed;
+    .chip {
       background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      color: var(--soft);
+      padding: 10px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: 0.2s ease;
     }
 
-    .stories {
+    .chip:hover,
+    .chip.active {
+      color: #fff;
+      border-color: var(--line-strong);
+      background: rgba(255,115,31,0.10);
+    }
+
+    .news-grid {
       display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 18px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
     }
 
-    .story-stack {
-      display: grid;
-      gap: 18px;
+    .card {
+      background: var(--panel-2);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 22px;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      min-height: 240px;
+      transition: 0.2s ease;
+      position: relative;
+      overflow: hidden;
     }
 
-    .story-card {
-      border-radius: 28px;
-      padding: 24px;
-      display: grid;
-      gap: 14px;
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,115,31,0.07), transparent 28%);
+      opacity: 0;
+      transition: 0.2s ease;
     }
 
-    .story-top {
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--line-strong);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.26);
+    }
+
+    .card:hover::before { opacity: 1; }
+
+    .card-top {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      color: var(--muted);
-      font-size: 0.82rem;
+      gap: 12px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .source-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,115,31,0.10);
+      border: 1px solid rgba(255,115,31,0.18);
+      color: var(--hot-2);
+      font-size: 11px;
+      font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.14em;
     }
 
-    .story-title {
-      font-size: clamp(1.4rem, 2.2vw, 2rem);
+    .time-badge {
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .headline {
+      font-size: 24px;
       line-height: 1.08;
-      letter-spacing: -0.04em;
-      font-weight: 800;
-      max-width: 18ch;
+      letter-spacing: -0.035em;
+      margin: 0;
+      position: relative;
+      z-index: 1;
     }
 
-    .story-copy {
-      color: #d6d6d6;
-      line-height: 1.75;
-      max-width: 62ch;
+    .summary {
+      color: var(--soft);
+      line-height: 1.65;
+      font-size: 15px;
+      position: relative;
+      z-index: 1;
+      flex: 1;
     }
 
-    .story-impact {
-      color: #ffcfbc;
-      font-weight: 700;
-      line-height: 1.7;
-    }
-
-    .matrix {
-      border-radius: 28px;
-      padding: 24px;
-      display: grid;
-      gap: 16px;
-      align-content: start;
-    }
-
-    .matrix-row {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 16px;
-      padding: 14px 0;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .matrix-row:last-child { border-bottom: 0; }
-
-    .matrix-name {
-      font-weight: 700;
-      letter-spacing: -0.02em;
-    }
-
-    .matrix-note {
-      color: var(--muted);
-      margin-top: 6px;
-      font-size: 0.96rem;
-      line-height: 1.55;
-    }
-
-    .score {
-      min-width: 64px;
-      text-align: right;
-      color: #ffd6c8;
-      font-weight: 800;
-      font-size: 1.1rem;
-    }
-
-    .bottom-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-    }
-
-    .subscribe-card,
-    .contact-card {
-      border-radius: 30px;
-      padding: 28px;
-    }
-
-    .card-title {
-      font-size: 1.7rem;
-      line-height: 1.1;
-      letter-spacing: -0.04em;
-      font-weight: 800;
-      margin: 0 0 10px;
-    }
-
-    .card-copy {
-      color: var(--muted);
-      line-height: 1.75;
-      margin-bottom: 22px;
-    }
-
-    form {
-      display: grid;
+    .card-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
       gap: 12px;
+      margin-top: auto;
+      position: relative;
+      z-index: 1;
     }
 
-    .row {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-
-    input,
-    textarea {
-      width: 100%;
-      border-radius: 16px;
-      border: 1px solid rgba(255,255,255,0.1);
-      background: rgba(255,255,255,0.02);
+    .read-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
       color: #fff;
-      padding: 15px 16px;
-      font: inherit;
-      outline: none;
-      transition: 160ms ease;
+      font-weight: 700;
+      font-size: 14px;
     }
 
-    input:focus,
-    textarea:focus {
-      border-color: rgba(255, 112, 44, 0.6);
-      box-shadow: 0 0 0 4px rgba(255, 112, 44, 0.08);
+    .read-link span {
+      color: var(--hot-2);
     }
 
-    textarea {
-      min-height: 130px;
-      resize: vertical;
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted);
+      font-size: 12px;
     }
 
-    footer {
-      padding: 34px 0 56px;
-      color: #8f8f8f;
-      font-size: 0.94rem;
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--hot);
+    }
+
+    .terminal {
+      background: #050505;
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 22px;
+      overflow: hidden;
+      box-shadow: var(--glow);
+    }
+
+    .terminal-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      background: rgba(255,255,255,0.03);
+    }
+
+    .terminal-label {
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+    }
+
+    .lights {
+      display: flex;
+      gap: 8px;
+    }
+
+    .lights span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      display: block;
+    }
+
+    .lights span:nth-child(1) { background: #ff5f56; }
+    .lights span:nth-child(2) { background: #ffbd2e; }
+    .lights span:nth-child(3) { background: #27c93f; }
+
+    .terminal-feed {
+      padding: 12px 0;
+    }
+
+    .feed-row {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 16px;
+      padding: 12px 16px;
+      border-bottom: 1px solid rgba(255,255,255,0.04);
+      color: #dedede;
+      font-size: 14px;
+    }
+
+    .feed-row:last-child { border-bottom: 0; }
+
+    .feed-time {
+      color: var(--hot-2);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .meta-card {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 22px;
+      padding: 18px;
+    }
+
+    .meta-card h3 {
+      margin: 0 0 8px;
+      font-size: 14px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .meta-card strong {
+      display: block;
+      font-size: 30px;
+      letter-spacing: -0.04em;
+      margin-bottom: 8px;
+    }
+
+    .meta-card p {
+      margin: 0;
+      color: var(--soft);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .footer {
+      padding: 32px 0 52px;
+      color: var(--muted);
+      font-size: 13px;
     }
 
     .footer-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 18px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding-top: 26px;
+      gap: 16px;
+      flex-wrap: wrap;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,0.06);
     }
 
-    @media (max-width: 1120px) {
+    .loading,
+    .empty,
+    .error {
+      grid-column: 1 / -1;
+      padding: 32px 20px;
+      text-align: center;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.06);
+      color: var(--soft);
+    }
+
+    .error {
+      border-color: rgba(255, 80, 80, 0.25);
+      color: #ffd0d0;
+    }
+
+    @media (max-width: 1100px) {
       .hero-grid,
-      .stories,
-      .bottom-grid {
-        grid-template-columns: 1fr;
+      .news-grid,
+      .meta-grid {
+        grid-template-columns: 1fr 1fr;
       }
 
-      .signals-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .hero-main {
+        grid-column: 1 / -1;
       }
 
-      .stats {
-        grid-template-columns: 1fr;
+      .hero-side {
+        grid-column: 1 / -1;
       }
     }
 
     @media (max-width: 760px) {
-      .wrap { width: min(calc(100% - 20px), var(--max)); }
-      .nav-inner { min-height: 66px; }
-      .nav-links { display: none; }
-      .hero { padding-top: 26px; }
-      .hero-panel, .terminal, .subscribe-card, .contact-card { padding: 22px; border-radius: 24px; }
-      .signals-grid,
-      .row { grid-template-columns: 1fr; }
-      h1 { max-width: none; }
-      .hero-copy { font-size: 1rem; }
-      .footer-inner { flex-direction: column; align-items: flex-start; }
-      .terminal-line { grid-template-columns: 56px 1fr; gap: 10px; }
+      .wrap {
+        width: min(var(--max), calc(100% - 20px));
+      }
+
+      .topbar-inner,
+      .section-header,
+      .footer-inner,
+      .card-bottom {
+        align-items: flex-start;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 20px;
+      }
+
+      .hero-main,
+      .hero-side,
+      .card,
+      .meta-card {
+        padding: 16px;
+      }
+
+      .hero-grid,
+      .news-grid,
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .feed-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+
+      .headline {
+        font-size: 21px;
+      }
+
+      h1 {
+        max-width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="circuit"></div>
-
-  <nav class="nav">
-    <div class="wrap nav-inner">
-      <a href="#top" class="brand">
-        <span class="brand-mark"></span>
-        <span>Doug Garceau AI</span>
-      </a>
-      <div class="nav-links">
-        <a href="#signals">Models</a>
-        <a href="#signals">Compute</a>
-        <a href="#signals">Markets</a>
-        <a href="#signals">Research</a>
-        <a href="#briefings">Capital</a>
-        <a href="#briefings">Briefings</a>
-        <a href="#contact">Advertise</a>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="brand">
+        <div class="brand-mark">AI</div>
+        <div class="brand-text">
+          <div class="brand-kicker">Live intelligence desk</div>
+          <div class="brand-title">Doug Garceau AI — AI Signals</div>
+        </div>
       </div>
-      <a href="#subscribe" class="button button-primary">Get the Signal</a>
+      <nav class="nav">
+        <a href="#live">Live Feed</a>
+        <a href="#desk">Signal Desk</a>
+        <a href="#intel">Intel</a>
+        <a href="https://douggarceau.com/.netlify/functions/ai-news" target="_blank" rel="noopener">Raw Feed</a>
+        <button class="cta" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">Get Signals</button>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <main id="top">
+  <main>
     <section class="hero">
       <div class="wrap hero-grid">
-        <div class="hero-panel">
-          <div class="eyebrow">Signal Intelligence for the AI Industry</div>
-          <h1>AI <span>Signals</span></h1>
-          <p class="hero-copy">
-            A cinematic, high-signal intelligence surface for readers who care about frontier models, compute wars, capital flows, infrastructure bottlenecks, and the companies shaping the next technological order.
-          </p>
-          <div class="hero-actions">
-            <a href="#signals" class="button button-primary">Enter the Terminal</a>
-            <a href="#briefings" class="button button-secondary">View Briefings</a>
-          </div>
-
-          <div class="ticker" aria-label="AI signals ticker">
-            <div class="ticker-track">
-              <span>Model releases accelerating</span>
-              <span>Blackwell demand surging</span>
-              <span>Enterprise AI budgets expanding</span>
-              <span>Inference economics tightening</span>
-              <span>Open-source model race intensifying</span>
-              <span>Compute scarcity still strategic</span>
-              <span>Model releases accelerating</span>
-              <span>Blackwell demand surging</span>
-              <span>Enterprise AI budgets expanding</span>
-              <span>Inference economics tightening</span>
-              <span>Open-source model race intensifying</span>
-              <span>Compute scarcity still strategic</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-side">
-          <div class="terminal">
-            <div class="terminal-bar">
-              <span>AI Signals Terminal</span>
-              <div class="dots"><span></span><span></span><span></span></div>
-            </div>
-            <div class="terminal-lines">
-              <div class="terminal-line">
-                <span class="time">09:14</span>
-                <span><span class="pulse">MODEL</span> <span class="hot">Frontier labs</span> are shifting from headline launches to deeper enterprise lock-in and inference efficiency.</span>
-              </div>
-              <div class="terminal-line">
-                <span class="time">09:32</span>
-                <span><span class="pulse">COMPUTE</span> Demand for top-tier accelerators remains a structural advantage for the entire AI stack.</span>
-              </div>
-              <div class="terminal-line">
-                <span class="time">10:03</span>
-                <span><span class="pulse">MARKETS</span> Capital continues to reward infrastructure, orchestration, and monetizable model distribution.</span>
-              </div>
-              <div class="terminal-line">
-                <span class="time">10:40</span>
-                <span><span class="pulse">SIGNAL</span> The real contest is no longer chatbots. It is <span class="hot">control of cost, distribution, and industrial relevance</span>.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="stats">
-            <div class="stat-card">
-              <div class="stat-label">Coverage</div>
-              <div class="stat-value">24/7</div>
-              <div class="stat-note">Continuous tracking across models, chips, research, enterprise deployment, and capital movement.</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Focus</div>
-              <div class="stat-value">High-Signal</div>
-              <div class="stat-note">Built for readers who want what matters, not generic headline clutter.</div>
-            </div>
-            <div class="stat-card">
-              <div class="stat-label">Tone</div>
-              <div class="stat-value">Insider</div>
-              <div class="stat-note">Dense, elegant, and strategic — more intelligence terminal than mainstream tech blog.</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head">
+        <section class="hero-main">
           <div>
-            <div class="section-kicker">Now Tracking</div>
-            <h2>Latest Signals</h2>
-          </div>
-          <p class="section-copy">A front-page strip for fast-moving developments in models, compute, markets, and infrastructure. These items can later become clickable article pages or automated signal entries.</p>
-        </div>
-
-        <div class="stories">
-          <div class="story-stack">
-            <article class="story-card">
-              <div class="story-top"><span>Frontier Models</span><span>Live Watch</span></div>
-              <div class="story-title">Anthropic and OpenAI are pushing beyond headline launches into enterprise system depth.</div>
-              <div class="story-copy">The real story is shifting toward durable deployment, inference economics, and how deeply advanced models can embed inside paid professional workflows.</div>
-              <div class="story-impact">Impact: platform depth may matter more than surface novelty.</div>
-            </article>
-
-            <article class="story-card">
-              <div class="story-top"><span>Compute</span><span>Supply Signal</span></div>
-              <div class="story-title">NVIDIA demand remains one of the clearest pressure gauges in the AI economy.</div>
-              <div class="story-copy">When compute remains scarce, the firms with access, allocation, and integration discipline retain a structural edge across the stack.</div>
-              <div class="story-impact">Impact: hardware and power still decide who scales fastest.</div>
-            </article>
-
-            <article class="story-card">
-              <div class="story-top"><span>Research</span><span>Efficiency</span></div>
-              <div class="story-title">Open-source releases and efficiency papers continue compressing cost curves.</div>
-              <div class="story-copy">The research layer is no longer academic background noise. It now directly affects product economics, defensibility, and adoption speed.</div>
-              <div class="story-impact">Impact: efficiency is strategic, not cosmetic.</div>
-            </article>
+            <div class="eyebrow">
+              <span class="dot"></span>
+              <span id="liveStatus">Live AI signal stream</span>
+            </div>
+            <h1>Real AI news. Live. Filtered. Brutal.</h1>
+            <p class="hero-copy">
+              A fast-moving AI signals desk pulling live updates from major AI sources and routing them into one sharp front page.
+              No dead mockups. No filler. Just rolling intelligence from the current feed.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" onclick="refreshFeed()">Refresh feed</button>
+              <a class="btn btn-secondary" href="#live">Open signal board</a>
+            </div>
           </div>
 
-          <aside class="matrix panel">
-            <div class="section-kicker">Trending</div>
-            <div class="card-title" style="margin:0;">Signal Radar</div>
-            <div class="matrix-row">
-              <div>
-                <div class="matrix-name">Blackwell Demand</div>
-                <div class="matrix-note">Ongoing interest in top-tier accelerator supply, deployment, and downstream advantage.</div>
-              </div>
-              <div class="score">95</div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-label">Stories loaded</div>
+              <div class="stat-value" id="storyCount">--</div>
             </div>
-            <div class="matrix-row">
-              <div>
-                <div class="matrix-name">Inference Cost Compression</div>
-                <div class="matrix-note">Cost discipline is becoming one of the most important competitive filters in AI.</div>
-              </div>
-              <div class="score">91</div>
+            <div class="stat">
+              <div class="stat-label">Sources active</div>
+              <div class="stat-value" id="sourceCount">--</div>
             </div>
-            <div class="matrix-row">
-              <div>
-                <div class="matrix-name">Enterprise Rollout</div>
-                <div class="matrix-note">The biggest money will likely go to systems embedded deepest into business operations.</div>
-              </div>
-              <div class="score">93</div>
+            <div class="stat">
+              <div class="stat-label">Last update</div>
+              <div class="stat-value" id="lastUpdated">--</div>
             </div>
-            <div class="matrix-row">
-              <div>
-                <div class="matrix-name">Advertiser Potential</div>
-                <div class="matrix-note">This section can later hold sponsor placements, tools, or premium recommendations.</div>
-              </div>
-              <div class="score">88</div>
+          </div>
+        </section>
+
+        <aside class="hero-side">
+          <div class="side-title">
+            <div>
+              <div class="section-kicker">Topline</div>
+              <h2>Fast signal snapshot</h2>
             </div>
-          </aside>
-        </div>
+          </div>
+          <div class="mini-list" id="miniList">
+            <div class="mini-card">
+              <div class="mini-source">Loading</div>
+              <div class="mini-headline">Pulling latest AI stories from live sources...</div>
+              <div class="mini-meta">Stand by</div>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
-    <section id="signals">
+    <div class="ticker">
+      <div class="ticker-track" id="tickerTrack">
+        <div class="ticker-item"><strong>Boot</strong> Initializing live AI feed...</div>
+        <div class="ticker-item"><strong>Status</strong> Waiting for first payload...</div>
+        <div class="ticker-item"><strong>Desk</strong> Stand by...</div>
+        <div class="ticker-item"><strong>Boot</strong> Initializing live AI feed...</div>
+        <div class="ticker-item"><strong>Status</strong> Waiting for first payload...</div>
+        <div class="ticker-item"><strong>Desk</strong> Stand by...</div>
+      </div>
+    </div>
+
+    <section class="section" id="live">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-header">
           <div>
-            <div class="section-kicker">Live Surface</div>
-            <h2>Major Signals</h2>
+            <div class="section-kicker">Live board</div>
+            <h2 style="margin: 6px 0 8px; font-size: 34px; letter-spacing: -0.04em;">Current AI signals</h2>
+            <div class="section-copy">
+              Live stories rendered directly from your Netlify function feed.
+            </div>
           </div>
-          <p class="section-copy">This front page is designed to evolve into a live AI signal board, where these cards can later be wired to real automated feeds and updated without redesigning the site.</p>
+          <div class="filters" id="filters"></div>
         </div>
 
-        <div class="signals-grid">
-          <article class="signal-card">
-            <div class="signal-type">Model Signal</div>
-            <div class="signal-title">Inference economics are becoming the real battlefield.</div>
-            <div class="signal-text">The next advantage will not come only from bigger models, but from who can serve powerful systems at industrial scale without collapsing margins.</div>
-            <div class="signal-meta"><span class="tag">Enterprise</span><span class="tag">Inference</span></div>
-          </article>
-
-          <article class="signal-card">
-            <div class="signal-type">Compute Signal</div>
-            <div class="signal-title">Accelerator demand remains one of the clearest structural tells in the AI economy.</div>
-            <div class="signal-text">Chips, power, cooling, and data center capacity still define who can ship advanced systems fastest and most profitably.</div>
-            <div class="signal-meta"><span class="tag">GPUs</span><span class="tag">Infrastructure</span></div>
-          </article>
-
-          <article class="signal-card">
-            <div class="signal-type">Capital Signal</div>
-            <div class="signal-title">Money is flowing toward platforms that turn model capability into repeatable business leverage.</div>
-            <div class="signal-text">The market is rewarding distribution, workflow ownership, and software layers that convert raw intelligence into durable customer dependence.</div>
-            <div class="signal-meta"><span class="tag">Markets</span><span class="tag">Software</span></div>
-          </article>
-
-          <article class="signal-card">
-            <div class="signal-type">Research Signal</div>
-            <div class="signal-title">Efficiency research matters because it compresses the moat around brute-force scale.</div>
-            <div class="signal-text">Architectural gains can be worth billions when they reduce training cost, inference latency, or hardware dependency.</div>
-            <div class="signal-meta"><span class="tag">Papers</span><span class="tag">Architecture</span></div>
-          </article>
-
-          <article class="signal-card">
-            <div class="signal-type">Policy Signal</div>
-            <div class="signal-title">Regulation is moving from abstract debate into practical market structure.</div>
-            <div class="signal-text">Compliance, regional constraints, and licensing pressures will increasingly shape product design and geographic advantage.</div>
-            <div class="signal-meta"><span class="tag">Policy</span><span class="tag">Governance</span></div>
-          </article>
-
-          <article class="signal-card">
-            <div class="signal-type">Platform Signal</div>
-            <div class="signal-title">The winning interface may be the system that disappears into the user’s workflow.</div>
-            <div class="signal-text">Ambient deployment inside operating environments could prove more valuable than loud consumer novelty on the front end.</div>
-            <div class="signal-meta"><span class="tag">UX</span><span class="tag">Adoption</span></div>
-          </article>
+        <div class="news-grid" id="newsGrid">
+          <div class="loading">Loading live AI stories…</div>
         </div>
       </div>
     </section>
 
-    <section id="briefings">
+    <section class="section" id="desk">
       <div class="wrap">
-        <div class="section-head">
+        <div class="section-header">
           <div>
-            <div class="section-kicker">Editorial Layer</div>
-            <h2>Briefings</h2>
+            <div class="section-kicker">Signal desk</div>
+            <h2 style="margin: 6px 0 8px; font-size: 30px; letter-spacing: -0.04em;">Terminal feed</h2>
+            <div class="section-copy">
+              Fast scan of the newest headlines moving through the system.
+            </div>
           </div>
-          <p class="section-copy">Built to feel like a premium intelligence brief rather than a standard blog. Each section is visually strong enough for sponsors, insiders, and a serious AI audience.</p>
         </div>
 
-        <div class="stories">
-          <div class="story-stack">
-            <article class="story-card">
-              <div class="story-top"><span>Lead Brief</span><span>Today</span></div>
-              <div class="story-title">The AI industry is entering its infrastructure aristocracy phase.</div>
-              <div class="story-copy">A handful of firms now sit at the junction of model capability, compute access, distribution, and enterprise integration. That junction is where outsized strategic advantage compounds.</div>
-              <div class="story-impact">Impact: readers should track the companies controlling cost curves, deployment surfaces, and industrial integration — not just whoever has the loudest demo cycle.</div>
-            </article>
-
-            <article class="story-card">
-              <div class="story-top"><span>Signal Brief</span><span>Deep Focus</span></div>
-              <div class="story-title">Why beautiful AI media wins attention before it wins trust.</div>
-              <div class="story-copy">In a crowded information environment, visual authority becomes part of the editorial product. This site is designed to feel premium, technological, and unmistakably deliberate before a single word is even read.</div>
-              <div class="story-impact">Impact: presentation is not decoration here. It is positioning.</div>
-            </article>
+        <div class="terminal">
+          <div class="terminal-top">
+            <div class="terminal-label">Doug Garceau AI / live feed terminal</div>
+            <div class="lights"><span></span><span></span><span></span></div>
           </div>
-
-          <aside class="matrix panel">
-            <div class="section-kicker">Watchlist</div>
-            <div class="card-title" style="margin:0;">Current Pressure Points</div>
-            <div class="matrix-row">
-              <div>
-                <div class="matrix-name">Frontier Model Economics</div>
-                <div class="matrix-note">Can top labs maintain premium positioning while cost pressure rises?</div>
-              </div>
-              <div class="score">92</div>
+          <div class="terminal-feed" id="terminalFeed">
+            <div class="feed-row">
+              <div class="feed-time">BOOT</div>
+              <div>Waiting for live stories...</div>
             </div>
-            <div class="matrix-row">
-              <div>
-                <div class="matrix-name">Compute Supply Tightness</div>
-                <div class="matrix-note">Hardware and power remain the industrial choke points beneath the excitement.</div>
-              </div>
-              <div class="score">89</div>
-            </div>
-            <div class="matrix-row">
-              <div>
-                <div class="matrix-name">Enterprise Capture</div>
-                <div class="matrix-note">The vendor embedded deepest in workflow tends to own the budget longest.</div>
-              </div>
-              <div class="score">94</div>
-            </div>
-            <div class="matrix-row">
-              <div>
-                <div class="matrix-name">Open-Source Compression</div>
-                <div class="matrix-note">Rapid open releases can narrow product differentiation faster than expected.</div>
-              </div>
-              <div class="score">81</div>
-            </div>
-          </aside>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="wrap bottom-grid">
-        <div id="subscribe" class="subscribe-card">
-          <div class="section-kicker">Audience Capture</div>
-          <h3 class="card-title">Subscribe to the signal stream.</h3>
-          <p class="card-copy">Reserve this section for your newsletter, premium list, or sponsor funnel. The layout is ready for audience growth without sacrificing the luxury-tech aesthetic.</p>
-          <form>
-            <div class="row">
-              <input type="text" placeholder="First name" aria-label="First name" />
-              <input type="email" placeholder="Email address" aria-label="Email address" />
-            </div>
-            <button type="button" class="button button-primary">Join the List</button>
-          </form>
+    <section class="section" id="intel">
+      <div class="wrap">
+        <div class="section-header">
+          <div>
+            <div class="section-kicker">Desk metrics</div>
+            <h2 style="margin: 6px 0 8px; font-size: 30px; letter-spacing: -0.04em;">Feed intelligence</h2>
+          </div>
         </div>
 
-        <div id="contact" class="contact-card">
-          <div class="section-kicker">Tip Line</div>
-          <h3 class="card-title">Send a signal.</h3>
-          <p class="card-copy">Built for future reader tips, founder notes, industry whispers, or advertiser contact. This can later be wired to Formspree, Netlify Forms, or your own backend.</p>
-          <form>
-            <div class="row">
-              <input type="text" placeholder="Name" aria-label="Name" />
-              <input type="email" placeholder="Email" aria-label="Email" />
-            </div>
-            <textarea placeholder="Send a tip, story, or intelligence note" aria-label="Signal message"></textarea>
-            <button type="button" class="button button-secondary">Transmit</button>
-          </form>
+        <div class="meta-grid">
+          <div class="meta-card">
+            <h3>Feed endpoint</h3>
+            <strong>LIVE</strong>
+            <p>Your site is now reading from a working Netlify function endpoint instead of a dead static mockup.</p>
+          </div>
+          <div class="meta-card">
+            <h3>Refresh cycle</h3>
+            <strong>Manual + cached</strong>
+            <p>The feed can be refreshed instantly on page load, while the function itself uses short caching for speed.</p>
+          </div>
+          <div class="meta-card">
+            <h3>Current mode</h3>
+            <strong>Production</strong>
+            <p>GitHub, Netlify config, and the live function are all wired. The homepage now displays current feed data.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-    <footer>
+  <footer class="footer">
     <div class="wrap footer-inner">
-      <div>Doug Garceau AI — AI Signals Intelligence</div>
-      <div>Models · Compute · Markets · Research · Capital · Briefings</div>
+      <div>Doug Garceau AI — AI Signals</div>
+      <div id="footerStamp">Waiting for feed…</div>
     </div>
   </footer>
+
+  <script>
+    const FEED_URL = "/.netlify/functions/ai-news";
+    let allItems = [];
+    let activeFilter = "All";
+
+    async function loadFeed() {
+      const grid = document.getElementById("newsGrid");
+      grid.innerHTML = '<div class="loading">Loading live AI stories…</div>';
+
+      try {
+        const res = await fetch(FEED_URL, { cache: "no-store" });
+        if (!res.ok) throw new Error("Feed request failed");
+
+        const data = await res.json();
+        allItems = Array.isArray(data.items) ? data.items : [];
+
+        updateStats(data);
+        renderFilters(allItems);
+        renderMini(allItems);
+        renderTicker(allItems);
+        renderTerminal(allItems);
+        renderGrid();
+        stampFooter(data.generatedAt);
+      } catch (err) {
+        grid.innerHTML = '<div class="error">Live feed error. The function is up, but the homepage could not read the current payload.</div>';
+        document.getElementById("miniList").innerHTML = `
+          <div class="mini-card">
+            <div class="mini-source">Error</div>
+            <div class="mini-headline">Could not load the live feed.</div>
+            <div class="mini-meta">Check the Netlify function endpoint.</div>
+          </div>
+        `;
+      }
+    }
+
+    function updateStats(data) {
+      const total = data?.meta?.total ?? allItems.length;
+      const sourceCounts = data?.meta?.sourceCounts ?? {};
+      const sourceTotal = Object.keys(sourceCounts).length || new Set(allItems.map(i => i.source)).size;
+
+      document.getElementById("storyCount").textContent = total || 0;
+      document.getElementById("sourceCount").textContent = sourceTotal || 0;
+      document.getElementById("lastUpdated").textContent = shortTime(data?.generatedAt);
+      document.getElementById("liveStatus").textContent = `Live AI signal stream • ${total || 0} stories`;
+    }
+
+    function renderFilters(items) {
+      const filters = document.getElementById("filters");
+      const sources = ["All", ...new Set(items.map(item => item.source).filter(Boolean))];
+
+      filters.innerHTML = sources.map(source => `
+        <button class="chip ${source === activeFilter ? "active" : ""}" onclick="setFilter('${escapeQuotes(source)}')">
+          ${source}
+        </button>
+      `).join("");
+    }
+
+    function setFilter(source) {
+      activeFilter = source;
+      renderFilters(allItems);
+      renderGrid();
+    }
+
+    function renderGrid() {
+      const grid = document.getElementById("newsGrid");
+      const filtered = activeFilter === "All"
+        ? allItems
+        : allItems.filter(item => item.source === activeFilter);
+
+      if (!filtered.length) {
+        grid.innerHTML = '<div class="empty">No stories found for this source filter.</div>';
+        return;
+      }
+
+      grid.innerHTML = filtered.map(item => `
+        <article class="card">
+          <div class="card-top">
+            <div class="source-badge">${escapeHtml(item.source || "Live Feed")}</div>
+            <div class="time-badge">${timeAgo(item.pubDate)}</div>
+          </div>
+          <h3 class="headline">${escapeHtml(item.title || "Untitled story")}</h3>
+          <div class="summary">${escapeHtml(item.summary || "Live update pulled from source feed.")}</div>
+          <div class="card-bottom">
+            <a class="read-link" href="${escapeAttr(item.link)}" target="_blank" rel="noopener">
+              Open story <span>→</span>
+            </a>
+            <div class="status"><span class="status-dot"></span> live</div>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderMini(items) {
+      const mini = document.getElementById("miniList");
+      mini.innerHTML = items.slice(0, 4).map(item => `
+        <a class="mini-card" href="${escapeAttr(item.link)}" target="_blank" rel="noopener">
+          <div class="mini-source">${escapeHtml(item.source || "Live Feed")}</div>
+          <div class="mini-headline">${escapeHtml(item.title || "Untitled story")}</div>
+          <div class="mini-meta">${timeAgo(item.pubDate)}</div>
+        </a>
+      `).join("");
+    }
+
+    function renderTicker(items) {
+      const ticker = document.getElementById("tickerTrack");
+      const list = items.slice(0, 8);
+      const html = list.map(item => `
+        <div class="ticker-item">
+          <strong>${escapeHtml(item.source || "Feed")}</strong>${escapeHtml(item.title || "Untitled story")}
+        </div>
+      `).join("");
+      ticker.innerHTML = html + html;
+    }
+
+    function renderTerminal(items) {
+      const terminal = document.getElementById("terminalFeed");
+      terminal.innerHTML = items.slice(0, 8).map(item => `
+        <div class="feed-row">
+          <div class="feed-time">${terminalTime(item.pubDate)}</div>
+          <div>${escapeHtml(item.title || "Untitled story")}</div>
+        </div>
+      `).join("");
+    }
+
+    function stampFooter(date) {
+      document.getElementById("footerStamp").textContent = `Last feed pull: ${longDate(date)}`;
+    }
+
+    function refreshFeed() {
+      loadFeed();
+    }
+
+    function shortTime(dateStr) {
+      if (!dateStr) return "--";
+      const d = new Date(dateStr);
+      if (Number.isNaN(d.getTime())) return "--";
+      return d.toLocaleTimeString([], { hour: "numeric", minute: "2-digit" });
+    }
+
+    function longDate(dateStr) {
+      if (!dateStr) return "unknown";
+      const d = new Date(dateStr);
+      if (Number.isNaN(d.getTime())) return "unknown";
+      return d.toLocaleString([], { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" });
+    }
+
+    function terminalTime(dateStr) {
+      if (!dateStr) return "LIVE";
+      const d = new Date(dateStr);
+      if (Number.isNaN(d.getTime())) return "LIVE";
+      return d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit", hour12: false });
+    }
+
+    function timeAgo(dateStr) {
+      if (!dateStr) return "Live source";
+      const d = new Date(dateStr);
+      if (Number.isNaN(d.getTime())) return "Live source";
+
+      const diff = Date.now() - d.getTime();
+      const mins = Math.floor(diff / 60000);
+      const hours = Math.floor(diff / 3600000);
+      const days = Math.floor(diff / 86400000);
+
+      if (mins < 60) return `${Math.max(mins, 1)}m ago`;
+      if (hours < 24) return `${hours}h ago`;
+      return `${days}d ago`;
+    }
+
+    function escapeHtml(str) {
+      return String(str ?? "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function escapeAttr(str) {
+      return escapeHtml(str);
+    }
+
+    function escapeQuotes(str) {
+      return String(str ?? "").replace(/'/g, "\\'");
+    }
+
+    loadFeed();
+  </script>
 </body>
 </html>
