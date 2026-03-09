@@ -278,8 +278,15 @@ letter-spacing:-1px;
     .lights {
       display: flex;
       gap: 6px;
-    }
+      
+    .terminal-feed{
+  animation: terminalScroll 18s linear infinite;
+}
 
+@keyframes terminalScroll{
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
     .lights span {
       width: 8px;
       height: 8px;
