@@ -5,22 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Doug Garceau AI — AI Signals</title>
   <meta name="description" content="High-signal intelligence for the AI industry." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #060606;
-      --bg2: #0a0a0a;
-      --panel: rgba(10, 10, 10, 0.72);
-      --panel-2: rgba(18, 18, 18, 0.84);
-      --line: rgba(255, 115, 0, 0.22);
-      --line-strong: rgba(255, 115, 0, 0.46);
-      --text: #f4f4f4;
-      --muted: #a7a7a7;
-      --soft: #7d7d7d;
-      --hot: #ff5a1f;
-      --hot-2: #ff8a1f;
+      --bg: #050608;
+      --bg2: #0a0d12;
+      --panel: rgba(11, 13, 17, 0.78);
+      --panel-2: rgba(14, 17, 23, 0.9);
+      --line: rgba(66, 168, 255, 0.22);
+      --line-strong: rgba(66, 168, 255, 0.5);
+      --text: #eef4ff;
+      --muted: #98a7bd;
+      --soft: #748198;
+      --hot: #39b7ff;
+      --hot-2: #7df0ff;
       --ok: #92ffb3;
       --warn: #ffd1a3;
-      --glow: 0 0 30px rgba(255, 92, 31, 0.22), 0 0 80px rgba(255, 92, 31, 0.08);
+      --glow: 0 0 30px rgba(58, 183, 255, 0.25), 0 0 90px rgba(58, 183, 255, 0.12);
       --radius: 24px;
       --radius-sm: 18px;
       --max: 1320px;
@@ -30,13 +33,13 @@
     html { scroll-behavior: smooth; }
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Sora", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--text);
       background:
-        radial-gradient(circle at 15% 20%, rgba(255, 90, 31, 0.18), transparent 28%),
-        radial-gradient(circle at 85% 30%, rgba(255, 130, 31, 0.12), transparent 26%),
-        radial-gradient(circle at 50% 100%, rgba(255, 80, 0, 0.12), transparent 32%),
-        linear-gradient(180deg, #050505 0%, #090909 48%, #050505 100%);
+        radial-gradient(circle at 16% 18%, rgba(45, 125, 255, 0.22), transparent 32%),
+        radial-gradient(circle at 86% 24%, rgba(0, 229, 255, 0.18), transparent 30%),
+        radial-gradient(circle at 52% 100%, rgba(95, 88, 255, 0.12), transparent 35%),
+        linear-gradient(180deg, #050608 0%, #0a0d12 54%, #07090d 100%);
       min-height: 100vh;
       overflow-x: hidden;
     }
@@ -112,8 +115,9 @@
     .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 28px; align-items: stretch; }
 
     .hero-panel,.panel,.signal-card,.stat-card,.story-card,.subscribe-card,.contact-card,.terminal {
-      background: linear-gradient(180deg, rgba(17,17,17,0.76), rgba(10,10,10,0.92));
-      border: 1px solid rgba(255,255,255,0.08); box-shadow: inset 0 1px 0 rgba(255,255,255,0.04), var(--glow);
+      background: linear-gradient(180deg, rgba(19,24,33,0.82), rgba(11,15,22,0.92));
+      border: 1px solid rgba(174, 226, 255, 0.18);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), var(--glow);
     }
 
     .hero-panel {
@@ -135,8 +139,8 @@
     .status-pill { margin-top: 18px; font-size: 0.72rem; }
     .status-pill strong { color: var(--ok); }
 
-    h1 { margin: 0; font-size: clamp(3rem, 6vw, 5.9rem); line-height: 0.92; letter-spacing: -0.05em; font-weight: 900; text-transform: uppercase; max-width: 11ch; }
-    .hero h1 span { color: #ffd6c8; display: block; text-shadow: 0 0 24px rgba(255, 112, 44, 0.18); }
+    h1 { margin: 0; font-size: clamp(3.2rem, 6.8vw, 6.4rem); line-height: 0.9; letter-spacing: -0.06em; font-weight: 800; text-transform: uppercase; max-width: 11ch; }
+    .hero h1 span { color: #b7e9ff; display: block; text-shadow: 0 0 26px rgba(96, 207, 255, 0.22); }
     .hero-copy { margin: 24px 0 30px; max-width: 650px; color: #d6d6d6; font-size: clamp(1rem, 1.45vw, 1.18rem); line-height: 1.7; }
     .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
 
@@ -156,7 +160,7 @@
     .dots { display: inline-flex; gap: 8px; }
     .dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.25); }
     .dots span:first-child { background: var(--hot); box-shadow: 0 0 16px rgba(255, 92, 31, 0.8); }
-    .terminal-lines { display: grid; gap: 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.94rem; line-height: 1.55; color: #ffddcf; }
+    .terminal-lines { display: grid; gap: 14px; font-family: "Space Mono", ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.94rem; line-height: 1.55; color: #d6f2ff; }
     .terminal-line { display: grid; grid-template-columns: 72px 1fr; gap: 14px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 12px; }
     .terminal-line:last-child { border-bottom: 0; }
     .time { color: #8d8d8d; }
@@ -164,9 +168,9 @@
     .hot { color: #ffbb97; }
 
     .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .stat-card { border-radius: 24px; padding: 20px; }
+    .stat-card { border-radius: 24px; padding: 22px; min-height: 172px; display: grid; align-content: center; }
     .stat-label { color: var(--muted); text-transform: uppercase; letter-spacing: 0.14em; font-size: 0.76rem; margin-bottom: 14px; }
-    .stat-value { font-size: clamp(1.6rem, 2.8vw, 2.3rem); font-weight: 800; letter-spacing: -0.04em; }
+    .stat-value { font-size: clamp(2rem, 3.4vw, 2.8rem); font-weight: 800; letter-spacing: -0.05em; }
     .stat-note { color: #d0d0d0; margin-top: 8px; line-height: 1.5; font-size: 0.95rem; }
 
     section { padding: 28px 0; }
@@ -176,7 +180,7 @@
     .section-copy { color: var(--muted); max-width: 680px; line-height: 1.7; font-size: 1rem; }
 
     .signals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .signal-card { border-radius: 24px; padding: 22px; position: relative; overflow: hidden; min-height: 240px; display: grid; }
+    .signal-card { border-radius: 24px; padding: 24px; position: relative; overflow: hidden; min-height: 288px; display: grid; }
     .signal-card::before {
       content: ""; position: absolute; left: -10%; right: -10%; top: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); opacity: 0.3;
     }
@@ -189,26 +193,96 @@
 
     .stories { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; }
     .story-stack { display: grid; gap: 18px; }
-    .story-card { border-radius: 28px; padding: 24px; display: grid; gap: 14px; }
+    .story-card { border-radius: 28px; padding: 26px; display: grid; gap: 14px; }
     .story-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.14em; }
     .story-title { font-size: clamp(1.4rem, 2.2vw, 2rem); line-height: 1.08; letter-spacing: -0.04em; font-weight: 800; max-width: 26ch; }
     .story-copy { color: #d6d6d6; line-height: 1.75; max-width: 62ch; }
     .story-impact { color: #ffcfbc; font-weight: 700; line-height: 1.7; }
     .story-link { color: #ffe5dc; font-weight: 700; }
 
-    .matrix { border-radius: 28px; padding: 24px; display: grid; gap: 16px; align-content: start; }
+    .matrix { border-radius: 28px; padding: 26px; display: grid; gap: 16px; align-content: start; }
     .matrix-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
     .matrix-row:last-child { border-bottom: 0; }
     .matrix-name { font-weight: 700; letter-spacing: -0.02em; }
     .matrix-note { color: var(--muted); margin-top: 6px; font-size: 0.96rem; line-height: 1.55; }
     .score { min-width: 64px; text-align: right; color: #ffd6c8; font-weight: 800; font-size: 1.1rem; }
 
+    .deep-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 18px; }
+    .wire-panel, .market-panel, .editorials-panel, .fed-panel, .trump-panel { border-radius: 28px; padding: 24px; }
+    .wire-list, .editorial-list { display: grid; gap: 10px; margin-top: 14px; }
+    .wire-link, .editorial-link {
+      display: grid;
+      gap: 4px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(170, 220, 255, 0.15);
+      background: rgba(255,255,255,0.01);
+      transition: 160ms ease;
+    }
+    .wire-link:hover, .editorial-link:hover {
+      transform: translateY(-1px);
+      border-color: rgba(120, 210, 255, 0.55);
+      background: rgba(120, 210, 255, 0.08);
+    }
+    .wire-title, .editorial-title { font-weight: 600; line-height: 1.35; }
+    .wire-meta, .editorial-meta { color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    .market-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 14px; }
+    .market-card {
+      border-radius: 14px;
+      border: 1px solid rgba(170, 220, 255, 0.18);
+      background: rgba(255,255,255,0.02);
+      padding: 12px;
+    }
+    .asset { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+    .price { font-size: 1.1rem; font-weight: 700; margin-top: 4px; }
+    .delta { margin-top: 4px; font-size: 0.88rem; font-weight: 600; }
+    .up { color: #8df6be; }
+    .down { color: #ff8e8e; }
+    .flat { color: #ffe3a9; }
+    .spark {
+      margin-top: 8px;
+      height: 7px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, rgba(141,246,190,0.2), rgba(141,246,190,0.7));
+    }
+    .spark.down {
+      background: linear-gradient(90deg, rgba(255,142,142,0.7), rgba(255,142,142,0.2));
+    }
+    .market-links { margin-top: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+    .market-links a {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #b7e9ff;
+      border: 1px solid rgba(140, 214, 255, 0.25);
+      border-radius: 999px;
+      padding: 7px 10px;
+    }
+
+    .fed-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .fed-list { display: grid; gap: 10px; margin-top: 14px; }
+    .fed-link {
+      display: grid;
+      gap: 4px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(170, 220, 255, 0.15);
+      background: rgba(255,255,255,0.01);
+      transition: 160ms ease;
+    }
+    .fed-link:hover {
+      transform: translateY(-1px);
+      border-color: rgba(120, 210, 255, 0.55);
+      background: rgba(120, 210, 255, 0.08);
+    }
+
     .empty-state, .load-error {
       border-radius: 24px; padding: 22px; background: rgba(255,255,255,0.02); border: 1px dashed rgba(255,255,255,0.12); color: var(--muted);
     }
 
     .bottom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-    .subscribe-card,.contact-card { border-radius: 30px; padding: 28px; }
+    .subscribe-card,.contact-card { border-radius: 30px; padding: 30px; }
     .card-title { font-size: 1.7rem; line-height: 1.1; letter-spacing: -0.04em; font-weight: 800; margin: 0 0 10px; }
     .card-copy { color: var(--muted); line-height: 1.75; margin-bottom: 22px; }
     form { display: grid; gap: 12px; }
@@ -228,9 +302,11 @@
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 26px; }
 
     @media (max-width: 1120px) {
-      .hero-grid,.stories,.bottom-grid { grid-template-columns: 1fr; }
+      .hero-grid,.stories,.bottom-grid,.deep-grid { grid-template-columns: 1fr; }
       .signals-grid { grid-template-columns: repeat(2, 1fr); }
       .stats { grid-template-columns: 1fr; }
+      .market-grid { grid-template-columns: 1fr; }
+      .fed-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 760px) {
@@ -260,10 +336,12 @@
         <a href="#signals">Models</a>
         <a href="#signals">Compute</a>
         <a href="#signals">Markets</a>
+        <a href="#pulse">Pulse</a>
         <a href="#signals">Research</a>
         <a href="#briefings">Capital</a>
         <a href="#briefings">Briefings</a>
-        <a href="#contact">Advertise</a>
+        <a href="#editorials">Editorials</a>
+        <a href="#advertise">Advertise</a>
       </div>
       <a href="#subscribe" class="button button-primary">Get the Signal</a>
     </div>
@@ -273,14 +351,15 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-panel">
-          <div class="eyebrow">Signal Intelligence for the AI Industry</div>
+          <div class="eyebrow">Independent AI Intelligence Desk</div>
           <h1>AI <span>Signals</span></h1>
           <p class="hero-copy">
-            A live intelligence surface for readers who care about frontier models, compute wars, capital flows, infrastructure bottlenecks, and the companies shaping the next technological order.
+            The sharpest view of frontier models, compute power, research momentum, and capital flows, built for operators who move early.
           </p>
           <div class="hero-actions">
             <a href="#signals" class="button button-primary">Enter the Terminal</a>
             <a href="#briefings" class="button button-secondary">View Briefings</a>
+            <a href="#advertise" class="button button-secondary">Advertise with Us</a>
           </div>
 
           <div class="status-pill">Feed status: <strong id="feed-status">CONNECTING</strong></div>
@@ -308,28 +387,28 @@
               <div class="dots"><span></span><span></span><span></span></div>
             </div>
             <div class="terminal-lines" id="terminal-lines">
-              <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">BOOT</span> Waiting for live feed.</span></div>
+              <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">BOOT</span> Initializing signal stream.</span></div>
               <div class="terminal-line" id="terminal-source-line"><span class="time">--:--</span><span><span class="pulse">SOURCE</span> OpenAI, Anthropic, DeepMind, NVIDIA.</span></div>
-              <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">FILTER</span> AI-focused headlines only.</span></div>
-              <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">STATUS</span> Connecting to serverless feed endpoint.</span></div>
+              <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">FILTER</span> Strategic AI developments only.</span></div>
+              <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">STATUS</span> Connecting to live AI signal stream.</span></div>
             </div>
           </div>
 
           <div class="stats">
             <div class="stat-card">
-              <div class="stat-label">Coverage</div>
-              <div class="stat-value" id="coverage-count">4 Sources</div>
-              <div class="stat-note" id="source-list">OpenAI, Anthropic, Google DeepMind, and NVIDIA.</div>
+                <div class="stat-label">Sources</div>
+                <div class="stat-value" id="coverage-count">4</div>
+              <div class="stat-note" id="source-list">Leading labs and platforms in one view.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">Updates</div>
-                <div class="stat-value">Always On</div>
-                <div class="stat-note">Fresh headlines from the AI companies shaping the market.</div>
+                <div class="stat-label">Cadence</div>
+                <div class="stat-value">Live</div>
+                <div class="stat-note">Continuous tracking of model, compute, and market shifts.</div>
             </div>
             <div class="stat-card">
-                <div class="stat-label">Focus</div>
-                <div class="stat-value" id="mode-label">AI Only</div>
-                <div class="stat-note">Models, compute, markets, and research.</div>
+                <div class="stat-label">Lens</div>
+                <div class="stat-value" id="mode-label">Strategic</div>
+                <div class="stat-note">Signal over noise, with context built for decision-makers.</div>
             </div>
           </div>
         </div>
@@ -343,7 +422,7 @@
             <div class="section-kicker">Now Tracking</div>
             <h2>Latest Signals</h2>
           </div>
-          <p class="section-copy">Fresh items pulled from live sources and rendered into your front page automatically.</p>
+          <p class="section-copy">The most relevant developments across labs, product releases, and infrastructure, updated in real time.</p>
         </div>
 
         <div class="stories">
@@ -355,7 +434,7 @@
             <div class="matrix-row">
               <div>
                 <div class="matrix-name">Live Feed Online</div>
-                <div class="matrix-note">This panel updates after the function returns live data.</div>
+                  <div class="matrix-note">Signal stream connected and active.</div>
               </div>
               <div class="score">--</div>
             </div>
@@ -371,7 +450,7 @@
             <div class="section-kicker">Live Surface</div>
             <h2>Major Signals</h2>
           </div>
-          <p class="section-copy">These cards are now driven by the live feed endpoint instead of frozen placeholder copy.</p>
+          <p class="section-copy">High-impact moves that matter most to product, strategy, and capital allocation.</p>
         </div>
 
         <div class="signals-grid" id="major-signals"></div>
@@ -385,7 +464,7 @@
             <div class="section-kicker">Editorial Layer</div>
             <h2>Briefings</h2>
           </div>
-          <p class="section-copy">A lightweight intelligence layer generated from the incoming headlines.</p>
+          <p class="section-copy">Condensed context that turns raw headlines into actionable understanding.</p>
         </div>
 
         <div class="stories">
@@ -399,12 +478,63 @@
       </div>
     </section>
 
+    <section id="pulse">
+      <div class="wrap deep-grid">
+        <aside class="panel wire-panel" id="mainstream-panel">
+          <div class="section-kicker">Mainstream + Political</div>
+          <h3 class="card-title">Wire Headline Board</h3>
+          <p class="card-copy">Fast-scanning major headlines tied to AI, markets, and policy shifts.</p>
+          <div class="wire-list" id="mainstream-headlines"></div>
+        </aside>
+
+        <aside class="panel market-panel" id="market-panel">
+          <div class="section-kicker">Market Pulse</div>
+          <h3 class="card-title">Risk On / Risk Off</h3>
+          <p class="card-copy" id="market-copy">Loading live BTC, gold, silver, and index momentum.</p>
+          <div class="market-grid" id="market-grid"></div>
+          <div class="market-links" id="market-links"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="fed-watch">
+      <div class="wrap fed-grid">
+        <aside class="panel fed-panel">
+          <div class="section-kicker">Federal Reserve Activity</div>
+          <h3 class="card-title">Fed Watch</h3>
+          <p class="card-copy">Recent Federal Reserve releases and policy headlines that can move rates, liquidity, and risk appetite.</p>
+          <div class="fed-list" id="fed-list"></div>
+        </aside>
+        <aside class="panel fed-panel">
+          <div class="section-kicker">Policy Tools</div>
+          <h3 class="card-title">Direct Sources</h3>
+          <div class="market-links" id="fed-links"></div>
+        </aside>
+        <aside class="panel trump-panel">
+          <div class="section-kicker">Trump + Markets</div>
+          <h3 class="card-title">Trump AI/Tech/Market Watch</h3>
+          <p class="card-copy">Trump-related headlines that intersect with AI policy, technology, and financial markets.</p>
+          <div class="fed-list" id="trump-list"></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="editorials">
+      <div class="wrap">
+        <aside class="panel editorials-panel">
+          <div class="section-kicker">Recurring Editorials</div>
+          <h3 class="card-title">Daily Reads Worth Tracking</h3>
+          <div class="editorial-list" id="editorial-list"></div>
+        </aside>
+      </div>
+    </section>
+
     <section>
       <div class="wrap bottom-grid">
         <div id="subscribe" class="subscribe-card">
-          <div class="section-kicker">Audience Capture</div>
-          <h3 class="card-title">Subscribe to the signal stream.</h3>
-          <p class="card-copy">This is still a front-end placeholder until you connect Mailchimp, Beehiiv, ConvertKit, or Netlify Forms.</p>
+          <div class="section-kicker">Brief Delivery</div>
+          <h3 class="card-title">Get the executive signal brief.</h3>
+          <p class="card-copy">A tight read on what changed, why it matters, and where momentum is moving next.</p>
           <form name="subscribe" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="subscribe" />
             <div class="row">
@@ -412,14 +542,14 @@
               <input type="email" name="email" placeholder="Email address" aria-label="Email address" required />
             </div>
             <button type="submit" class="button button-primary">Join the List</button>
-            <div class="form-status">Netlify form ready.</div>
+            <div class="form-status">Low volume. High signal.</div>
           </form>
         </div>
 
         <div id="contact" class="contact-card">
-          <div class="section-kicker">Tip Line</div>
-          <h3 class="card-title">Send a signal.</h3>
-          <p class="card-copy">This form is also Netlify-ready. It can later route to email, Slack, Airtable, or your own backend.</p>
+          <div class="section-kicker">Intelligence Desk</div>
+          <h3 class="card-title">Send a lead.</h3>
+          <p class="card-copy">Have something early, important, or under-reported? Send it directly to the desk.</p>
           <form name="tips" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="tips" />
             <div class="row">
@@ -428,7 +558,36 @@
             </div>
             <textarea name="message" placeholder="Send a tip, story, or intelligence note" aria-label="Signal message"></textarea>
             <button type="submit" class="button button-secondary">Transmit</button>
-            <div class="form-status">Netlify form ready.</div>
+            <div class="form-status">Attribution optional. Confidentiality respected.</div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="advertise">
+      <div class="wrap">
+        <div class="contact-card">
+          <div class="section-kicker">Advertising</div>
+          <h3 class="card-title">Advertise with Doug Garceau AI</h3>
+          <p class="card-copy">Reach a high-intent audience tracking AI strategy, infrastructure, and market movement in real time.</p>
+          <form name="advertisers" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="advertisers" />
+            <div class="row">
+              <input type="text" name="company" placeholder="Company" aria-label="Company" required />
+              <input type="text" name="contact_name" placeholder="Contact name" aria-label="Contact name" required />
+            </div>
+            <div class="row">
+              <input type="email" name="email" placeholder="Work email" aria-label="Work email" required />
+              <input type="text" name="website" placeholder="Website" aria-label="Website" />
+            </div>
+            <div class="row">
+              <input type="text" name="budget" placeholder="Monthly budget range" aria-label="Monthly budget range" />
+              <input type="text" name="timeline" placeholder="Campaign timeline" aria-label="Campaign timeline" />
+            </div>
+            <input type="text" name="goal" placeholder="Primary campaign goal (awareness, leads, launch, etc.)" aria-label="Primary campaign goal" />
+            <textarea name="notes" placeholder="Tell us your audience, offer, and preferred placements." aria-label="Campaign notes"></textarea>
+            <button type="submit" class="button button-primary">Request Media Kit</button>
+            <div class="form-status">Response target: within 1 business day.</div>
           </form>
         </div>
       </div>
@@ -437,7 +596,7 @@
 
   <footer>
     <div class="wrap footer-inner">
-      <div>Doug Garceau AI — AI Signals Intelligence</div>
+      <div>Doug Garceau AI — Strategic Intelligence</div>
       <div>Models · Compute · Markets · Research · Capital · Briefings</div>
     </div>
   </footer>
@@ -500,7 +659,7 @@
     function renderLatest(items) {
       const box = document.getElementById('latest-signals');
       if (!items.length) {
-        box.innerHTML = '<div class="empty-state">No stories returned.</div>';
+        box.innerHTML = '<div class="empty-state">No stories yet. New signals will appear shortly.</div>';
         return;
       }
       box.innerHTML = items.slice(0, 3).map(item => `
@@ -517,7 +676,7 @@
     function renderMajor(items) {
       const box = document.getElementById('major-signals');
       if (!items.length) {
-        box.innerHTML = '<div class="empty-state">No live signals returned.</div>';
+        box.innerHTML = '<div class="empty-state">No major signals yet. We are still scanning live sources.</div>';
         return;
       }
       box.innerHTML = items.slice(0, 6).map(item => {
@@ -539,7 +698,7 @@
     function renderBriefings(items) {
       const box = document.getElementById('briefing-stack');
       if (!items.length) {
-        box.innerHTML = '<div class="empty-state">No briefings generated yet.</div>';
+        box.innerHTML = '<div class="empty-state">Briefings are warming up. Check back in a moment.</div>';
         return;
       }
       box.innerHTML = items.slice(0, 2).map((item, index) => `
@@ -547,7 +706,7 @@
           <div class="story-top"><span>${index === 0 ? 'Lead Brief' : 'Signal Brief'}</span><span>${escapeHtml(item.source || 'Live')}</span></div>
           <div class="story-title">${escapeHtml(item.title)}</div>
           <div class="story-copy">${escapeHtml(item.summary || summarize(item.title))}</div>
-          <div class="story-impact">Impact: this item is flowing directly from the live feed endpoint, not hardcoded copy.</div>
+          <div class="story-impact">Impact: this development is active and moving in real time.</div>
         </article>
       `).join('');
     }
@@ -562,7 +721,7 @@
           <div class="matrix-row">
             <div>
               <div class="matrix-name">${escapeHtml(name)}</div>
-              <div class="matrix-note">Articles now visible from this live source.</div>
+              <div class="matrix-note">Stories currently flowing from this source.</div>
             </div>
             <div class="score">${escapeHtml(String(count))}</div>
           </div>
@@ -585,12 +744,134 @@
           <div class="matrix-row">
             <div>
               <div class="matrix-name">${escapeHtml(name)}</div>
-              <div class="matrix-note">Live count generated from the current feed payload.</div>
+              <div class="matrix-note">Current live count from the active feed.</div>
             </div>
             <div class="score">${escapeHtml(String(count))}</div>
           </div>
         `).join('')}
       `;
+    }
+
+    function renderMainstream(meta) {
+      const box = document.getElementById('mainstream-headlines');
+      const headlines = Array.isArray(meta.mainstreamHeadlines) ? meta.mainstreamHeadlines : [];
+      const wire = Array.isArray(meta.wireHeadlines) ? meta.wireHeadlines : [];
+      const pool = headlines.length ? headlines : wire.slice(0, 18);
+
+      if (!pool.length) {
+        box.innerHTML = '<div class="empty-state">Mainstream wire is warming up.</div>';
+        return;
+      }
+
+      box.innerHTML = pool.slice(0, 18).map(item => `
+        <a class="wire-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+          <div class="wire-title">${escapeHtml(item.title)}</div>
+          <div class="wire-meta">${escapeHtml(item.source || 'Wire')}</div>
+        </a>
+      `).join('');
+    }
+
+    function renderMarket(meta) {
+      const grid = document.getElementById('market-grid');
+      const copy = document.getElementById('market-copy');
+      const links = document.getElementById('market-links');
+      const market = meta.market || null;
+
+      if (!market || !Array.isArray(market.assets) || !market.assets.length) {
+        copy.textContent = 'Market feeds are reconnecting.';
+        grid.innerHTML = '<div class="empty-state">Live market snapshot unavailable.</div>';
+        links.innerHTML = '';
+        return;
+      }
+
+      copy.textContent = `Market pulse: ${market.pulse || 'FLAT'} ${typeof market.pulseValue === 'number' ? `(${market.pulseValue > 0 ? '+' : ''}${market.pulseValue}%)` : ''}`;
+
+      grid.innerHTML = market.assets.map(asset => {
+        const trendClass = (asset.trend || 'FLAT').toLowerCase();
+        const changeText = typeof asset.changePct === 'number' ? `${asset.changePct > 0 ? '+' : ''}${asset.changePct}%` : '--';
+        return `
+          <a class="market-card" href="${escapeHtml(asset.link)}" target="_blank" rel="noopener noreferrer">
+            <div class="asset">${escapeHtml(asset.name)} (${escapeHtml(asset.ticker)})</div>
+            <div class="price">${typeof asset.price === 'number' ? `$${asset.price.toLocaleString()}` : '--'}</div>
+            <div class="delta ${trendClass}">${escapeHtml(changeText)}</div>
+            <div class="spark ${trendClass === 'down' ? 'down' : ''}"></div>
+          </a>
+        `;
+      }).join('');
+
+      const indexLinks = Array.isArray(market.indexLinks) ? market.indexLinks : [];
+      links.innerHTML = [
+        ...indexLinks,
+        { name: 'BTC Chart', link: 'https://finance.yahoo.com/quote/BTC-USD/chart' },
+        { name: 'Gold Chart', link: 'https://finance.yahoo.com/quote/GC=F/chart' },
+        { name: 'Silver Chart', link: 'https://finance.yahoo.com/quote/SI=F/chart' }
+      ].map(entry => `<a href="${escapeHtml(entry.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(entry.name)}</a>`).join('');
+    }
+
+    function renderEditorials() {
+      const box = document.getElementById('editorial-list');
+      const links = [
+        { title: 'Financial Times: Artificial Intelligence', source: 'FT', link: 'https://www.ft.com/artificial-intelligence' },
+        { title: 'Reuters: Technology + AI', source: 'Reuters', link: 'https://www.reuters.com/technology/' },
+        { title: 'The Economist: Science & Technology', source: 'The Economist', link: 'https://www.economist.com/science-and-technology' },
+        { title: 'MIT Technology Review: AI', source: 'MIT TR', link: 'https://www.technologyreview.com/topic/artificial-intelligence/' },
+        { title: 'WSJ: CIO + AI Coverage', source: 'WSJ', link: 'https://www.wsj.com/news/cio-journal' },
+        { title: 'Bloomberg Technology', source: 'Bloomberg', link: 'https://www.bloomberg.com/technology' },
+        { title: 'The Information: AI', source: 'The Information', link: 'https://www.theinformation.com/topics/ai' },
+        { title: 'Foreign Policy: Geopolitics + Tech', source: 'Foreign Policy', link: 'https://foreignpolicy.com/tag/technology/' }
+      ];
+
+      box.innerHTML = links.map(item => `
+        <a class="editorial-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+          <div class="editorial-title">${escapeHtml(item.title)}</div>
+          <div class="editorial-meta">${escapeHtml(item.source)} · Recurring Coverage</div>
+        </a>
+      `).join('');
+    }
+
+    function renderFed(meta) {
+      const box = document.getElementById('fed-list');
+      const linksBox = document.getElementById('fed-links');
+      const entries = Array.isArray(meta.fedActivity) ? meta.fedActivity : [];
+
+      if (!entries.length) {
+        box.innerHTML = '<div class="empty-state">Fed activity feed is warming up.</div>';
+      } else {
+        box.innerHTML = entries.slice(0, 10).map(item => `
+          <a class="fed-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+            <div class="wire-title">${escapeHtml(item.title)}</div>
+            <div class="wire-meta">${escapeHtml(item.source || 'Federal Reserve')} ${item.pubDate ? '· ' + escapeHtml(dateLabel(item.pubDate)) : ''}</div>
+          </a>
+        `).join('');
+      }
+
+      const fedLinks = [
+        { name: 'FOMC Calendar', link: 'https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm' },
+        { name: 'FOMC Statements', link: 'https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm' },
+        { name: 'Fed Newsroom', link: 'https://www.federalreserve.gov/newsevents.htm' },
+        { name: 'Balance Sheet (H.4.1)', link: 'https://www.federalreserve.gov/releases/h41/' },
+        { name: 'Dot Plot Materials', link: 'https://www.federalreserve.gov/monetarypolicy/fomcprojtabl20240320.htm' },
+        { name: 'Treasury Yield Curve', link: 'https://www.ustreasuryyieldcurve.com/' }
+      ];
+
+      linksBox.innerHTML = fedLinks.map(entry => `<a href="${escapeHtml(entry.link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(entry.name)}</a>`).join('');
+    }
+
+    function renderTrump(meta) {
+      const box = document.getElementById('trump-list');
+      const entries = Array.isArray(meta.trumpActivity) ? meta.trumpActivity : [];
+
+      if (!entries.length) {
+        box.innerHTML = '<div class="empty-state">No matching Trump headlines at this moment.</div>';
+        return;
+      }
+
+      box.innerHTML = entries.slice(0, 10).map(item => `
+        <a class="fed-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
+          <div class="wire-title">${escapeHtml(item.title)}</div>
+          <div class="wire-meta">${escapeHtml(item.source || 'Wire')} ${item.pubDate ? '· ' + escapeHtml(dateLabel(item.pubDate)) : ''}</div>
+        </a>
+      `).join('');
     }
 
     async function loadFeed() {
@@ -610,19 +891,24 @@
         renderBriefings(items);
         renderRadar(data.meta || {});
         renderWatchlist(items);
+        renderMainstream(data.meta || {});
+        renderMarket(data.meta || {});
+        renderEditorials();
+        renderFed(data.meta || {});
+        renderTrump(data.meta || {});
 
-        document.getElementById('coverage-count').textContent = `${Object.keys((data.meta && data.meta.sourceCounts) || {}).length} Sources`;
+        document.getElementById('coverage-count').textContent = String(Object.keys((data.meta && data.meta.sourceCounts) || {}).length);
         const sourceNames = Object.keys((data.meta && data.meta.sourceCounts) || {}).join(', ');
         document.getElementById('source-list').textContent = sourceNames;
         document.getElementById('terminal-source-line').innerHTML = `<span class="time">${new Date().toLocaleTimeString()}</span><span><span class="pulse">SOURCE</span> ${sourceNames}.</span>`;
-        document.getElementById('mode-label').textContent = items.length ? 'AI Only' : 'Standby';
+        document.getElementById('mode-label').textContent = items.length ? 'Strategic' : 'Standby';
         status.textContent = items.length ? 'LIVE' : 'EMPTY';
       } catch (error) {
         console.error(error);
         status.textContent = 'ERROR';
-        document.getElementById('latest-signals').innerHTML = `<div class="load-error">Feed failed to load. Check your Netlify function deployment.</div>`;
-        document.getElementById('major-signals').innerHTML = `<div class="load-error">Feed endpoint did not return data.</div>`;
-        document.getElementById('briefing-stack').innerHTML = `<div class="load-error">The design is online, but the serverless feed is not responding yet.</div>`;
+        document.getElementById('latest-signals').innerHTML = `<div class="load-error">Live feed is temporarily unavailable. Please refresh in a moment.</div>`;
+        document.getElementById('major-signals').innerHTML = `<div class="load-error">Signals are reconnecting. New items should appear shortly.</div>`;
+        document.getElementById('briefing-stack').innerHTML = `<div class="load-error">Briefings will resume automatically when the feed reconnects.</div>`;
       }
     }
 
