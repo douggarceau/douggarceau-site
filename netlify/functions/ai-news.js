@@ -14,7 +14,7 @@ exports.handler = async function handler() {
     const settled = await Promise.allSettled(SOURCES.map(fetchSource));
 
     const items = settled
-      .flatMap(result => (result.status === "fulfilled" ? result.value : []))
+      .flatMap(result => (result.status === "fulfilled" ? result.value : [])
       .filter(Boolean)
       .filter(item => item.title && item.link)
       .map(cleanItem)
