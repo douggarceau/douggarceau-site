@@ -14,64 +14,36 @@ exports.handler = async function handler() {
 
   try {
     const settled = await Promise.allSettled(SOURCES.map(fetchSource));
-
     const items = settled
-      .flatMap(result => (result.status === 'fulfilled' ? result.value : []))
-      .filter(Boolean)
-      .filter(item => item.title && item.link)
+      .flatMap(r => (r.status === 'fulfilled' ? r.value : []))
+      .filter(i => i && i.title && i.link)
       .map(cleanItem)
       .filter(dedupeByLink())
-      .sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0))
-      .slice(0, 18);
+      .sort((a,b)=>new Date(b.pubDate||0)-new Date(a.pubDate||0))
+      .slice(0,18);
 
-    const sourceCounts = items.reduce((acc, item) => {
-      acc[item.source] = (acc[item.source] || 0) + 1;
-      return acc;
-    }, {});
-
-    return {
-      statusCode: 200,
-      headers: {
-        'Content-Type': 'application/json; charset=utf-8',
-        'Cache-Control': 'public, max-age=300'
-      },
-      body: JSON.stringify({
-        generatedAt: new Date().toISOString(),
-        items,
-        meta: { sourceCounts, total: items.length }
-      })
-    };
+    const sourceCounts = items.reduce((acc, item)=>{acc[item.source]=(acc[item.source]||0)+1; return acc;},{});
+    return { statusCode:200, headers:{ 'Content-Type':'application/json; charset=utf-8','Cache-Control':'public, max-age=300' }, body: JSON.stringify({ generatedAt:new Date().toISOString(), items, meta:{sourceCounts,total:items.length} })};
   } catch (error) {
-    return {
-      statusCode: 500,
-      headers: { 'Content-Type': 'application/json; charset=utf-8' },
-      body: JSON.stringify({ error: error.message })
-    };
+    return { statusCode:500, headers:{ 'Content-Type':'application/json; charset=utf-8' }, body: JSON.stringify({ error: error.message }) };
   }
 };
 
-function fetchWithTimeout(url, options = {}, timeoutMs = 8000) {
-  return new Promise((resolve, reject) => {
-    const timer = setTimeout(() => reject(new Error(`Timeout after ${timeoutMs}ms fetching ${url}`)), timeoutMs);
-    fetch(url, options)
-      .then(res => { clearTimeout(timer); resolve(res); })
-      .catch(err => { clearTimeout(timer); reject(err); });
+function fetchWithTimeout(url, options={}, timeoutMs=8000) {
+  return new Promise((resolve,reject)=>{
+    const timer=setTimeout(()=>reject(new Error(`Timeout after ${timeoutMs}ms fetching ${url}`)), timeoutMs);
+    fetch(url,options).then(res=>{clearTimeout(timer);resolve(res);}).catch(err=>{clearTimeout(timer);reject(err);});
   });
 }
 
 async function fetchSource(source) {
   try {
-    const response = await fetchWithTimeout(source.url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 DougGarceauAISignals/1.0' }
-    }, 8000);
-
+    const response = await fetchWithTimeout(source.url,{headers:{'User-Agent':'Mozilla/5.0 DougGarceauAISignals/1.0'}},8000);
     if (!response.ok) throw new Error(`${source.name} returned ${response.status}`);
     const text = await response.text();
-    return source.type === 'rss' ? parseRSS(text, source.name) : parseHTML(text, source);
-  } catch (err) {
-    console.warn(`Source failed: ${source.name} (${source.url})`, err.message || err);
-    return [];
-  }
+    return source.type==='rss' ? parseRSS(text, source.name) : parseHTML(text, source);
+  } catch (err) { console.warn(`Source failed: ${source.name}`, err.message||err); return []; }
 }
 
-// (keep your existing parseRSS, parseHTML, looksLikeArticleUrl, guessDateNearLink, absoluteUrl, extractTag, stripTags, decodeHtml, normalizeDate, cleanItem, dedupeByLink functions unchanged)
+// Keep your existing parseRSS, parseHTML, looksLikeArticleUrl, guessDateNearLink, absoluteUrl,
+// extractTag, stripTags, decodeHtml, normalizeDate, cleanItem, dedupeByLink functions below unchanged. 
