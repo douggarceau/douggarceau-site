@@ -1,55 +1,18 @@
 exports.handler = async function handler() {
   const SOURCES = [
     {
-      name: 'OpenAI',
-      type: 'html',
-      url: 'https://openai.com/news/'
-    },
-    {
-      name: 'Anthropic',
-      type: 'html',
-      url: 'https://www.anthropic.com/news'
-    },
-    {
-      name: 'Google DeepMind',
-      type: 'html',
-      url: 'https://deepmind.google/blog/'
-    },
-    {
-      name: 'NVIDIA',
-      type: 'rss',
-      url: 'https://nvidianews.nvidia.com/rss'
-    }
-  ];{
-  name: "HuggingFace",
-  type: "rss",
-  url: "https://huggingface.co/blog/feed.xml"
-},
-{
-  name: "Meta AI",
-  type: "rss",
-  url: "https://ai.meta.com/blog/rss/"
-},
-{
-  name: "Google AI",
-  type: "rss",
-  url: "https://blog.google/technology/ai/rss/"
-},
-{
-  name: "Microsoft AI",
-  type: "rss",
-  url: "https://blogs.microsoft.com/ai/feed/"
-},
-{
-  name: "Stability AI",
-  type: "rss",
-  url: "https://stability.ai/blog/rss.xml"
-},
-{
-  name: "Mistral",
-  type: "rss",
-  url: "https://mistral.ai/news/rss.xml"
-}
+      const SOURCES = [
+  { name:'OpenAI', type:'html', url:'https://openai.com/news/' },
+  { name:'Anthropic', type:'html', url:'https://www.anthropic.com/news' },
+  { name:'Google DeepMind', type:'html', url:'https://deepmind.google/blog/' },
+  { name:'NVIDIA', type:'rss', url:'https://nvidianews.nvidia.com/rss' },
+  { name:'HuggingFace', type:'rss', url:'https://huggingface.co/blog/feed.xml' },
+  { name:'Meta AI', type:'rss', url:'https://ai.meta.com/blog/rss/' },
+  { name:'Google AI', type:'rss', url:'https://blog.google/technology/ai/rss/' },
+  { name:'Microsoft AI', type:'rss', url:'https://blogs.microsoft.com/ai/feed/' },
+  { name:'Stability AI', type:'rss', url:'https://stability.ai/blog/rss.xml' },
+  { name:'Mistral', type:'rss', url:'https://mistral.ai/news/rss.xml' }
+];}
   try {
     const settled = await Promise.allSettled(SOURCES.map(fetchSource));
 
