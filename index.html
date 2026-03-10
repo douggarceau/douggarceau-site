@@ -309,7 +309,7 @@
             </div>
             <div class="terminal-lines" id="terminal-lines">
               <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">BOOT</span> Waiting for live feed.</span></div>
-              <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">SOURCE</span> OpenAI, Anthropic, DeepMind, NVIDIA.</span></div>
+              <div class="terminal-line" id="terminal-source-line"><span class="time">--:--</span><span><span class="pulse">SOURCE</span> OpenAI, Anthropic, DeepMind, NVIDIA.</span></div>
               <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">FILTER</span> AI-focused headlines only.</span></div>
               <div class="terminal-line"><span class="time">--:--</span><span><span class="pulse">STATUS</span> Connecting to serverless feed endpoint.</span></div>
             </div>
@@ -319,17 +319,17 @@
             <div class="stat-card">
               <div class="stat-label">Coverage</div>
               <div class="stat-value" id="coverage-count">4 Sources</div>
-              <div class="stat-note">OpenAI, Anthropic, Google DeepMind, and NVIDIA.</div>
+              <div class="stat-note" id="source-list">OpenAI, Anthropic, Google DeepMind, and NVIDIA.</div>
             </div>
             <div class="stat-card">
-              <div class="stat-label">Refresh</div>
-              <div class="stat-value">15 Min</div>
-              <div class="stat-note">The function refreshes on each request; browser auto-refreshes every 15 minutes.</div>
+                <div class="stat-label">Updates</div>
+                <div class="stat-value">Always On</div>
+                <div class="stat-note">Fresh headlines from the AI companies shaping the market.</div>
             </div>
             <div class="stat-card">
-              <div class="stat-label">Mode</div>
-              <div class="stat-value" id="mode-label">Live Feed</div>
-              <div class="stat-note">No more hardcoded placeholder cards.</div>
+                <div class="stat-label">Focus</div>
+                <div class="stat-value" id="mode-label">AI Only</div>
+                <div class="stat-note">Models, compute, markets, and research.</div>
             </div>
           </div>
         </div>
@@ -612,7 +612,10 @@
         renderWatchlist(items);
 
         document.getElementById('coverage-count').textContent = `${Object.keys((data.meta && data.meta.sourceCounts) || {}).length} Sources`;
-        document.getElementById('mode-label').textContent = items.length ? 'Live Feed' : 'No Data';
+        const sourceNames = Object.keys((data.meta && data.meta.sourceCounts) || {}).join(', ');
+        document.getElementById('source-list').textContent = sourceNames;
+        document.getElementById('terminal-source-line').innerHTML = `<span class="time">${new Date().toLocaleTimeString()}</span><span><span class="pulse">SOURCE</span> ${sourceNames}.</span>`;
+        document.getElementById('mode-label').textContent = items.length ? 'AI Only' : 'Standby';
         status.textContent = items.length ? 'LIVE' : 'EMPTY';
       } catch (error) {
         console.error(error);
