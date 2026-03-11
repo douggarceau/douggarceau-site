@@ -4,6 +4,22 @@ const SOURCES = [
   { name: 'Google DeepMind', type: 'html', category: 'ai', url: 'https://deepmind.google/blog/' },
   { name: 'NVIDIA', type: 'rss', category: 'ai', url: 'https://nvidianews.nvidia.com/rss' },
   { name: 'Hugging Face', type: 'rss', category: 'ai', url: 'https://huggingface.co/blog/feed.xml' },
+  { name: 'ArXiv AI Papers', type: 'rss', category: 'research', url: 'https://rss.arxiv.org/rss/cs.AI' },
+  { name: 'AI Incident Database', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:aiaaic.org+AI+incident&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'MIT Technology Review AI', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:technologyreview.com+artificial+intelligence&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Papers With Code', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:paperswithcode.com+AI+papers&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'MIT CSAIL', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:csail.mit.edu+AI+research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Stanford AI Lab', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=Stanford+AI+Lab+SAIL+research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Berkeley AI Research', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=Berkeley+AI+Research+BAIR&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Carnegie Mellon AI', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=Carnegie+Mellon+AI+research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'OpenAI Research', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:openai.com/research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Anthropic Research', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:anthropic.com/research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'DeepMind Research', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:deepmind.google+research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Meta AI Research', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:ai.meta.com+research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Alignment Forum', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:alignmentforum.org+AI+safety&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'LessWrong AI', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:lesswrong.com+AI+alignment&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Future of Life Institute', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:futureoflife.org+AI&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Center for AI Safety', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=Center+for+AI+Safety+CAIS&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Google AI', type: 'rss', category: 'ai', url: 'https://blog.google/technology/ai/rss/' },
   { name: 'Microsoft AI', type: 'rss', category: 'ai', url: 'https://blogs.microsoft.com/ai/feed/' },
   { name: 'Meta AI', type: 'rss', category: 'ai', url: 'https://ai.meta.com/blog/rss/' },
@@ -12,7 +28,7 @@ const SOURCES = [
   { name: 'TechCrunch AI', type: 'rss', category: 'tech', url: 'https://techcrunch.com/category/artificial-intelligence/feed/' },
   { name: 'VentureBeat AI', type: 'rss', category: 'tech', url: 'https://venturebeat.com/category/ai/feed/' },
   { name: 'Ars Technica', type: 'rss', category: 'tech', url: 'https://feeds.arstechnica.com/arstechnica/index' },
-  { name: 'Hacker News', type: 'rss', category: 'tech', url: 'https://hnrss.org/frontpage' },
+  { name: 'Hacker News AI', type: 'rss', category: 'tech', url: 'https://hnrss.org/newest?q=artificial+intelligence+OR+AI' },
   { name: 'Reuters Tech', type: 'rss', category: 'mainstream', url: 'https://feeds.reuters.com/reuters/technologyNews' },
   { name: 'Reuters Business', type: 'rss', category: 'finance', url: 'https://feeds.reuters.com/reuters/businessNews' },
   { name: 'Reuters Politics', type: 'rss', category: 'politics', url: 'https://feeds.reuters.com/Reuters/PoliticsNews' },
@@ -102,8 +118,13 @@ exports.handler = async function handler() {
       .filter(Boolean)
       .filter(item => item.title && item.link)
       .map(cleanItem)
+      .filter(item => isValidArticleLink(item.link))
       .filter(dedupeByLink())
-      .sort((a, b) => new Date(b.pubDate || 0) - new Date(a.pubDate || 0))
+      .sort((a, b) => {
+        const priorityDelta = storyPriority(b) - storyPriority(a);
+        if (priorityDelta !== 0) return priorityDelta;
+        return new Date(b.pubDate || 0) - new Date(a.pubDate || 0);
+      })
       .slice(0, 54);
 
     const sourceCounts = items.reduce((acc, item) => {
@@ -122,6 +143,26 @@ exports.handler = async function handler() {
       source: item.source,
       category: item.category
     }));
+
+    const researchBreakthroughs = items
+      .filter(item => item.category === 'research' || /(paper|preprint|benchmark|experiment|research|breakthrough|model eval|alignment|interpretability|reasoning)/i.test(`${item.title} ${item.summary || ''}`))
+      .slice(0, 16)
+      .map(item => ({ title: item.title, link: item.link, source: item.source, category: item.category }));
+
+    const darkTech = items
+      .filter(item => /(deepfake|synthetic|surveillance|autonomous weapon|weaponized ai|identity theft|voice clone|manipulation|misuse|biohacking|brain[- ]computer)/i.test(`${item.title} ${item.summary || ''}`))
+      .slice(0, 16)
+      .map(item => ({ title: item.title, link: item.link, source: item.source, category: item.category }));
+
+    const incidentLog = items
+      .filter(item => /(incident|failure|hallucination|outage|bug|accident|harm|safety failure|red team|misalignment|breakdown)/i.test(`${item.title} ${item.summary || ''}`))
+      .slice(0, 16)
+      .map(item => ({ title: item.title, link: item.link, source: item.source, category: item.category }));
+
+    const aiCulture = items
+      .filter(item => /(companion|culture|creator|influencer|community|social|podcast|education|student life|lifestyle|digital identity)/i.test(`${item.title} ${item.summary || ''}`))
+      .slice(0, 16)
+      .map(item => ({ title: item.title, link: item.link, source: item.source, category: item.category }));
 
     const fedActivity = items
       .filter(item => item.source === 'Federal Reserve' || item.category === 'fed' || /federal reserve|fed|fomc|powell|rate decision|interest rate/i.test(item.title))
@@ -158,6 +199,10 @@ exports.handler = async function handler() {
           total: items.length,
           mainstreamHeadlines,
           wireHeadlines,
+          researchBreakthroughs,
+          darkTech,
+          incidentLog,
+          aiCulture,
           fedActivity,
           trumpActivity,
           market
@@ -333,6 +378,20 @@ function normalizeDate(value) {
   return Number.isNaN(date.getTime()) ? null : date.toISOString();
 }
 
+function isValidArticleLink(link = '') {
+  const l = link.trim();
+  if (!l.startsWith('http')) return false;
+  // reject feed/channel root URLs (no path beyond a bare slash or feed extension)
+  if (/\.(rss|xml|atom)(\?|$)/i.test(l)) return false;
+  if (/news\.google\.com\/rss\/search/i.test(l)) return false;
+  if (/\/(rss|feed|feeds)(\/|\?|$)/i.test(l)) return false;
+  // reject links that are clearly just domain roots
+  if (/^https?:\/\/[^/]+(\/)?$/.test(l)) return false;
+  // reject anything that looks like raw code or markup leaked into a URL
+  if (/<|>|{|}|\[|\]/.test(l)) return false;
+  return true;
+}
+
 function cleanItem(item) {
   return {
     source: item.source || 'Live Feed',
@@ -351,6 +410,25 @@ function dedupeByLink() {
     seen.add(item.link);
     return true;
   };
+}
+
+function storyPriority(item) {
+  let score = 0;
+  const source = String(item.source || '').toLowerCase();
+  const text = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+
+  if (item.category === 'research') score += 6;
+  if (item.category === 'ai') score += 3;
+
+  if (/(arxiv|papers with code|mit technology review ai|mit csail|stanford ai|berkeley ai|carnegie mellon ai|openai research|anthropic research|deepmind research|meta ai research|alignment forum|future of life|center for ai safety)/.test(source)) {
+    score += 6;
+  }
+
+  if (/(paper|preprint|benchmark|experiment|research|alignment|safety|frontier|breakthrough|model eval|red team|interpretability|reasoning)/.test(text)) {
+    score += 4;
+  }
+
+  return score;
 }
 
 async function fetchMarketSnapshot() {
