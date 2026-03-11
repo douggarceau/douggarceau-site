@@ -4,7 +4,7 @@ const SOURCES = [
   { name: 'Google DeepMind', type: 'html', category: 'ai', url: 'https://deepmind.google/blog/' },
   { name: 'NVIDIA', type: 'rss', category: 'ai', url: 'https://nvidianews.nvidia.com/rss' },
   { name: 'Hugging Face', type: 'rss', category: 'ai', url: 'https://huggingface.co/blog/feed.xml' },
-  { name: 'ArXiv AI Papers', type: 'rss', category: 'research', url: 'https://rss.arxiv.org/rss/cs.AI' },
+  { name: 'ArXiv AI Papers', type: 'rss', category: 'research', url: 'https://rss.arxiv.org/rss/cs.AI', limit: 10 },
   { name: 'AI Incident Database', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:aiaaic.org+AI+incident&hl=en-US&gl=US&ceid=US:en' },
   { name: 'MIT Technology Review AI', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:technologyreview.com+artificial+intelligence&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Papers With Code', type: 'rss', category: 'research', url: 'https://news.google.com/rss/search?q=site:paperswithcode.com+AI+papers&hl=en-US&gl=US&ceid=US:en' },
@@ -105,6 +105,8 @@ exports.handler = async function handler() {
       .filter(Boolean)
       .filter(item => item.title && item.link)
       .map(cleanItem)
+      .filter(item => !isArxivItem(item) || isNotableArxivItem(item))
+      .filter(capArxivItems(3))
       .filter(item => isValidArticleLink(item.link))
       .filter(dedupeByLink())
       .sort((a, b) => {
@@ -234,7 +236,7 @@ async function fetchSource(source) {
 
     const text = await response.text();
     if (source.type === 'rss') return parseRSS(text, source);
-    return parseHTML(text, source);
+    return parseHTML(text, source).slice(0, source.limit || 8);
   } catch (err) {
     console.warn(`Source failed: ${source.name} (${source.url})`, err.message || err);
     return [];
@@ -247,7 +249,8 @@ function parseRSS(xml, source) {
   const entryMatches = xml.match(/<entry>[\s\S]*?<\/entry>/gi) || [];
   const matches = [...itemMatches, ...entryMatches];
 
-  for (const chunk of matches.slice(0, 12)) {
+  const cap = source.limit || 12;
+  for (const chunk of matches.slice(0, cap)) {
     const link = extractRssLink(chunk);
     const summary = extractTag(chunk, 'description') || extractTag(chunk, 'summary') || extractTag(chunk, 'content');
     const pubDate = extractTag(chunk, 'pubDate') || extractTag(chunk, 'updated') || extractTag(chunk, 'published');
@@ -416,6 +419,34 @@ function storyPriority(item) {
   }
 
   return score;
+}
+
+function isArxivItem(item = {}) {
+  return /arxiv/i.test(String(item.source || ''));
+}
+
+function isNotableArxivItem(item = {}) {
+  const text = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+
+  const notableSignals = /(breakthrough|state[- ]of[- ]the[- ]art|sota|frontier|reasoning|chain[- ]of[- ]thought|test[- ]time compute|agentic|robot|robotic|embodied|manipulation|navigation|safety|alignment|red[- ]team|robustness|jailbreak|emergent|emergence|scaling law|world model|multimodal|tool use|planning)/;
+  const lowInterestSignals = /(survey|workshop|tutorial|dataset|benchmark(ing)?|we propose|towards|an approach|preliminary|ablation|appendix|supplementary|short paper)/;
+
+  if (!notableSignals.test(text)) return false;
+  if (lowInterestSignals.test(text) && !/(breakthrough|state[- ]of[- ]the[- ]art|reasoning|robot|safety|alignment|emergent)/.test(text)) {
+    return false;
+  }
+
+  return true;
+}
+
+function capArxivItems(maxCount = 3) {
+  let count = 0;
+  return (item) => {
+    if (!isArxivItem(item)) return true;
+    if (count >= maxCount) return false;
+    count += 1;
+    return true;
+  };
 }
 
 const MARKET_SYMBOLS = [
