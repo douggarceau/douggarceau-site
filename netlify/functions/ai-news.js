@@ -355,7 +355,7 @@ function dedupeByLink() {
 
 async function fetchMarketSnapshot() {
   try {
-    const symbols = ['BTC-USD', 'GC=F', 'SI=F', '^GSPC', '^IXIC'];
+    const symbols = ['BTC-USD', 'GC=F', 'SI=F', '^GSPC', '^IXIC', '^DJI'];
     const url = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${encodeURIComponent(symbols.join(','))}`;
     const response = await fetchWithTimeout(url, {
       headers: { 'User-Agent': 'Mozilla/5.0 AISignals/1.0' }
@@ -368,6 +368,9 @@ async function fetchMarketSnapshot() {
     const bySymbol = Object.fromEntries(results.map(item => [item.symbol, item]));
 
     const assets = [
+      toAsset(bySymbol['^GSPC'], 'S&P 500', 'SPX', 'https://finance.yahoo.com/quote/%5EGSPC'),
+      toAsset(bySymbol['^IXIC'], 'Nasdaq', 'NDX', 'https://finance.yahoo.com/quote/%5EIXIC'),
+      toAsset(bySymbol['^DJI'], 'Dow', 'DJI', 'https://finance.yahoo.com/quote/%5EDJI'),
       toAsset(bySymbol['BTC-USD'], 'Bitcoin', 'BTC', 'https://finance.yahoo.com/quote/BTC-USD'),
       toAsset(bySymbol['GC=F'], 'Gold', 'XAU', 'https://finance.yahoo.com/quote/GC=F'),
       toAsset(bySymbol['SI=F'], 'Silver', 'XAG', 'https://finance.yahoo.com/quote/SI=F')
