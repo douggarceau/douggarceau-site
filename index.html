@@ -11,19 +11,25 @@
   <style>
     :root {
       --bg: #000000;
-      --bg2: #050505;
-      --panel: rgba(15, 12, 10, 0.82);
-      --panel-2: rgba(18, 14, 10, 0.92);
-      --line: rgba(255, 120, 24, 0.28);
-      --line-strong: rgba(255, 120, 24, 0.58);
-      --text: #ffffff;
-      --muted: #d6d6d6;
-      --soft: #8e7f6f;
-      --hot: #ff6a00;
-      --hot-2: #ff9d2e;
-      --ok: #ffbf7a;
-      --warn: #ffd6a8;
-      --glow: 0 0 34px rgba(255, 106, 0, 0.32), 0 0 96px rgba(255, 106, 0, 0.16);
+      --bg2: #010101;
+
+      --panel: rgba(8, 8, 8, 0.96);
+      --panel-2: rgba(12, 12, 12, 0.96);
+
+      --line: rgba(255, 70, 0, 0.18);
+      --line-strong: rgba(255, 70, 0, 0.32);
+
+      --text: #f1f1f1;
+      --muted: #a8a8a8;
+      --soft: #555555;
+
+      --hot: #ff3c00;
+      --hot-2: #ff6400;
+
+      --ok: #ff7a33;
+      --warn: #ff9c66;
+
+      --glow: 0 0 16px rgba(255, 60, 0, 0.22), 0 0 48px rgba(255, 60, 0, 0.08);
       --radius: 24px;
       --radius-sm: 18px;
       --max: 1320px;
@@ -621,13 +627,11 @@
       </a>
       <div class="nav-links">
         <a href="#top">Home</a>
-        <a href="#signals">AI Industry</a>
-        <a href="#dark-tech">Tech Personalities</a>
-        <a href="#briefings">Future Humans</a>
-        <a href="#pulse">Robotics</a>
-        <a href="#team">Gen-Z & Culture</a>
-        <a href="#team">Startups</a>
-        <a href="#opinion">Opinion</a>
+        <a href="#signals">Major Headlines</a>
+        <a href="#dark-tech">Dark Tech</a>
+        <a href="#briefings">Briefings</a>
+        <a href="#pulse">Markets</a>
+        <a href="#video-feed">Live Video</a>
         <a href="#team">About</a>
       </div>
       <a href="#subscribe" class="button button-primary">Subscribe</a>
@@ -654,21 +658,21 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div class="hero-panel">
-          <div class="eyebrow">Independent News Desk</div>
+          <div class="eyebrow">Live Signal Desk</div>
           <h1>AI <span>News Desk</span></h1>
           <p class="hero-copy">
-            Straight coverage of AI, technology, markets, and policy from major sources, updated continuously.
+            Real-time monitoring of ordinary routines meeting unfamiliar systems: AI companions, synthetic voices, autonomous tools, and subtle shifts in human behavior.
           </p>
           <div class="hero-actions">
-            <a href="#top-feeds" class="button button-primary">Top Feeds</a>
-            <a href="#advertise" class="button button-secondary">Advertise with Us</a>
+            <a href="#top-feeds" class="button button-primary">Open Feeds</a>
+            <a href="#advertise" class="button button-secondary">Media Kit</a>
           </div>
 
           <div class="status-pill">Feed: <strong id="feed-status">CONNECTING</strong></div>
 
           <div class="stock-update-box" id="stock-update-box">
             <div class="stock-update-head">
-              <div class="section-kicker" style="margin:0;">Stock Market Update</div>
+              <div class="section-kicker" style="margin:0;">Market Stress Signals</div>
               <div class="wire-meta" id="stock-update-status">Loading</div>
             </div>
             <div class="stock-update-grid" id="stock-update-grid">
@@ -721,47 +725,47 @@
           </div>
 
           <div class="front-blast" id="front-blast">
-            <div class="section-kicker" style="margin:0;">Breaking Now</div>
+            <div class="section-kicker" style="margin:0;">Rapid Signal Wire</div>
             <div class="front-blast-grid"></div>
           </div>
         </div>
 
-        <div id="top-feeds" class="hero-side top-link-stack">
+        <div id="top-feeds" class="hero-side top-link-stack" data-sponsored-intelligence-slot="ready">
           <div class="panel top-card">
-            <div class="section-kicker">Top Wire</div>
-            <h3 class="card-title" style="margin:0;">Top Headlines</h3>
+            <div class="section-kicker">Live Wire</div>
+            <h3 class="card-title" style="margin:0;">Command Headlines</h3>
             <div class="wire-list" id="mainstream-headlines"></div>
           </div>
 
           <div class="top-links-grid">
             <div class="panel top-card">
-              <div class="section-kicker">Federal Reserve</div>
-              <h3 class="card-title" style="margin:0;">Fed Watch</h3>
+              <div class="section-kicker">Policy Shock Monitor</div>
+              <h3 class="card-title" style="margin:0;">Fed Signal Watch</h3>
               <div class="fed-list" id="fed-list"></div>
             </div>
             <div class="panel top-card">
-              <div class="section-kicker">Policy Tools</div>
-              <h3 class="card-title" style="margin:0;">Direct Sources</h3>
+              <div class="section-kicker">Primary Sources</div>
+              <h3 class="card-title" style="margin:0;">Reference Links</h3>
               <div class="market-links" id="fed-links"></div>
             </div>
           </div>
 
           <div class="top-links-grid">
             <div class="panel top-card">
-              <div class="section-kicker">Trump + Markets</div>
-                <h3 class="card-title" style="margin:0;">Trump Headlines</h3>
+              <div class="section-kicker">AI Risk Monitor</div>
+                <h3 class="card-title" style="margin:0;">Human Drift Wire</h3>
               <div class="fed-list" id="trump-list"></div>
             </div>
             <div class="panel top-card">
-              <div class="section-kicker">Daily Reads</div>
-                <h3 class="card-title" style="margin:0;">Major Outlets</h3>
+              <div class="section-kicker">Institutional Coverage</div>
+                <h3 class="card-title" style="margin:0;">Priority Outlets</h3>
               <div class="editorial-list" id="editorial-list"></div>
             </div>
           </div>
 
           <div class="panel top-card">
-            <div class="section-kicker">Major Outlets</div>
-            <h3 class="card-title" style="margin:0;">Live Source Grid</h3>
+            <div class="section-kicker">Verified Sources</div>
+            <h3 class="card-title" style="margin:0;">Source Grid</h3>
             <div class="outlet-grid" id="outlet-grid">
               <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.bloomberg.com/">Bloomberg</a>
               <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.wsj.com/">WSJ</a>
@@ -782,10 +786,10 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <div class="section-kicker">Latest</div>
-            <h2>Latest Headlines</h2>
+            <div class="section-kicker">Live Feed</div>
+            <h2>Latest Signals</h2>
           </div>
-          <p class="section-copy">The most relevant developments across labs, product releases, and infrastructure, updated in real time.</p>
+          <p class="section-copy">Track moments when familiar life patterns take an unexpected turn through AI systems, synthetic media, and automated decisions.</p>
         </div>
 
         <div class="story-stack" id="latest-signals"></div>
@@ -800,10 +804,10 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <div class="section-kicker">Top Stories</div>
+            <div class="section-kicker">Power Shift Monitor</div>
             <h2>Major Headlines</h2>
           </div>
-          <p class="section-copy">High-impact moves that matter most to product, strategy, and capital allocation.</p>
+          <p class="section-copy">These are the stories where technical progress stops feeling abstract and starts reshaping relationships, trust, and daily behavior.</p>
         </div>
 
         <div class="signals-grid" id="major-signals"></div>
@@ -818,15 +822,15 @@
             <div class="section-kicker">Dark Tech</div>
             <h2>Unsettling Signals</h2>
           </div>
-          <p class="section-copy">Synthetic identity, surveillance systems, deepfakes, and high-risk AI stories shaping public trust.</p>
+          <p class="section-copy">Track credible reports where deepfakes, surveillance systems, and synthetic identity tools quietly distort everyday trust.</p>
         </div>
 
         <div class="signals-grid">
           <article class="signal-card">
             <div>
               <div class="signal-type">Dark Tech</div>
-              <div class="signal-title">AI Systems Making High-Stakes Mistakes</div>
-              <div class="signal-text">From hallucinated legal filings to incorrect automated decisions, reliability gaps are moving from demos into real-world risk zones.</div>
+              <div class="signal-title">When AI Errors Leave the Screen</div>
+              <div class="signal-text">Model errors are no longer lab curiosities. They now appear in legal, financial, and workflow systems where bad outputs have real cost.</div>
               <div class="signal-meta"><span class="tag">AI Safety</span><span class="tag">Operational Risk</span></div>
             </div>
             <a class="signal-link" href="https://news.google.com/rss/search?q=AI+failure+error+hallucination+mistake+glitch&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
@@ -835,8 +839,8 @@
           <article class="signal-card">
             <div>
               <div class="signal-type">Dark Tech</div>
-              <div class="signal-title">Surveillance Infrastructure Expanding Quietly</div>
-              <div class="signal-text">Facial recognition, behavior tracking, and algorithmic monitoring are scaling faster than governance frameworks can adapt.</div>
+              <div class="signal-title">Neighborhood Life Meets Quiet Surveillance</div>
+              <div class="signal-text">Facial recognition and behavioral tracking are scaling across public and private systems while accountability standards remain uneven.</div>
               <div class="signal-meta"><span class="tag">Surveillance</span><span class="tag">Civil Liberties</span></div>
             </div>
             <a class="signal-link" href="https://news.google.com/rss/search?q=facial+recognition+surveillance+tracking+privacy&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
@@ -845,11 +849,55 @@
           <article class="signal-card">
             <div>
               <div class="signal-type">Dark Tech</div>
-              <div class="signal-title">Synthetic Identity and Deepfake Fraud</div>
-              <div class="signal-text">Voice clones, synthetic faces, and AI-generated personas are blurring trust boundaries across banking, media, and personal communication.</div>
+              <div class="signal-title">A Familiar Voice, Generated Elsewhere</div>
+              <div class="signal-text">Voice clones and generated personas are forcing new controls in payments, media verification, and identity assurance workflows.</div>
               <div class="signal-meta"><span class="tag">Synthetic Identity</span><span class="tag">Deepfakes</span></div>
             </div>
             <a class="signal-link" href="https://news.google.com/rss/search?q=deepfake+synthetic+media+fake+video+voice+clone+identity+theft&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="incident-log">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Incident Tracking</div>
+            <h2>AI Incident Log</h2>
+          </div>
+          <p class="section-copy">Real-world cases where automated systems, AI models, robotics, or algorithmic decisions produced unintended or harmful outcomes. These reports examine what failed, why it failed, and what it reveals about systemic technological risk. Signal Brief - NODE-01.</p>
+        </div>
+
+        <div class="signals-grid">
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">System Failure</div>
+              <div class="signal-title">AI Hallucinations Enter Real-World Systems</div>
+              <div class="signal-text">Language models and automated systems have produced incorrect information in legal filings, business automation tools, and research workflows, raising questions about reliability and oversight.</div>
+              <div class="signal-meta"><span class="tag">AI Risk</span><span class="tag">Reliability</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/rss/search?q=AI+hallucination+legal+filings+automation+errors&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Synthetic Identity</div>
+              <div class="signal-title">Deepfake Fraud Expands Financial Crime</div>
+              <div class="signal-text">Voice cloning and synthetic identity tools are increasingly being used to impersonate executives, family members, and financial authorities in scams and fraud operations.</div>
+              <div class="signal-meta"><span class="tag">Deepfakes</span><span class="tag">Security</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/rss/search?q=deepfake+voice+clone+fraud+synthetic+identity+scam&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Autonomous Systems</div>
+              <div class="signal-title">Robotics and Automation Failures Under Review</div>
+              <div class="signal-text">Warehouse robots, automated vehicles, and machine decision systems occasionally produce unexpected behavior, forcing investigators to study how complex systems fail under real-world conditions.</div>
+              <div class="signal-meta"><span class="tag">Robotics</span><span class="tag">Safety</span></div>
+            </div>
+            <a class="signal-link" href="https://news.google.com/rss/search?q=robotics+automation+system+failure+investigation+autonomous+vehicle&hl=en-US&gl=US&ceid=US:en" target="_blank" rel="noopener noreferrer">Open source →</a>
           </article>
         </div>
       </div>
@@ -861,10 +909,10 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <div class="section-kicker">Analysis</div>
-            <h2>Briefings</h2>
+            <div class="section-kicker">Signal Analysis</div>
+            <h2>Command Briefings</h2>
           </div>
-          <p class="section-copy">Condensed context that turns raw headlines into actionable understanding.</p>
+          <p class="section-copy">Compressed analysis of slow shifts beneath headlines: trust drift, social adaptation, and institutions learning to live with machine behavior. System Analysis - Signal Monitor.</p>
         </div>
 
         <div class="stories">
@@ -872,9 +920,11 @@
 
           <aside class="matrix panel" id="watchlist-panel">
             <div class="section-kicker">Watchlist</div>
-            <div class="card-title" style="margin:0;">Current Pressure Points</div>
+            <div class="card-title" style="margin:0;">Live Pressure Points</div>
           </aside>
         </div>
+
+        <div id="premium-brief-slot" hidden data-premium-brief="ready" aria-hidden="true"></div>
       </div>
     </section>
 
@@ -885,7 +935,7 @@
         <aside class="panel market-panel">
           <div class="section-kicker">Market Pulse</div>
           <h3 class="card-title">Risk On / Risk Off</h3>
-          <p class="card-copy" id="market-copy">Loading live BTC, gold, silver, and index momentum.</p>
+          <p class="card-copy" id="market-copy">Market data appears as supporting context for where AI systems gain reach through compute, infrastructure, and deployment capacity.</p>
           <div class="market-grid" id="market-grid"></div>
           <div class="market-links" id="market-links"></div>
         </aside>
@@ -896,10 +946,10 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <div class="section-kicker">Visual Intelligence</div>
-            <h2>Live Video Feed</h2>
+            <div class="section-kicker">Live Broadcast</div>
+            <h2>Command Video Feed</h2>
           </div>
-          <p class="section-copy">Always-on market and AI broadcast windows for real-time context beyond headlines.</p>
+          <p class="section-copy">Always-on windows for observing the moment technical systems move from demonstrations into ordinary public life.</p>
         </div>
 
         <div class="video-grid">
@@ -911,7 +961,7 @@
             <div class="video-frame">
               <iframe src="https://www.youtube.com/embed?listType=search&list=Bloomberg%20TV%20Live" title="Bloomberg live feed" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="video-note">Bloomberg live stream view.</div>
+            <div class="video-note">Bloomberg stream for macro, policy, and technology market context.</div>
           </article>
 
           <article class="panel video-card">
@@ -922,7 +972,60 @@
             <div class="video-frame">
               <iframe src="https://www.youtube.com/embed?listType=search&list=CNBC%20Live%20TV" title="CNBC live feed" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="video-note">CNBC live stream view.</div>
+            <div class="video-note">CNBC stream for intraday risk shifts and capital rotation signals.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="podcast">
+      <div class="wrap" data-podcast-sponsorship-slot="ready">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Audio Briefing</div>
+            <h2>Signal Desk Podcast</h2>
+          </div>
+          <p class="section-copy">A daily audio briefing on subtle social changes around AI companions, synthetic media, automation, and the future of human judgment.</p>
+        </div>
+
+        <div class="signals-grid">
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Synthetic Hosts</div>
+              <div class="signal-title">Alex Vega & Maya Chen</div>
+              <div class="signal-text">Two synthetic hosts review the stories where ordinary behavior begins adapting to unfamiliar machine systems.</div>
+              <div class="signal-meta">
+                <span class="tag">Daily Show</span>
+                <span class="tag">AI Audio</span>
+              </div>
+            </div>
+            <a class="signal-link" href="#">Play episode →</a>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Today’s Episode</div>
+              <div class="signal-title">When the Phone Call Sounds Like Family</div>
+              <div class="signal-text">A calm breakdown of deepfake voice fraud, synthetic identity pressure, and how families and institutions adapt to uncertain authenticity.</div>
+              <div class="signal-meta">
+                <span class="tag">Podcast</span>
+                <span class="tag">Future Shock</span>
+              </div>
+            </div>
+            <a class="signal-link" href="#">Listen now →</a>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Coming Next</div>
+              <div class="signal-title">Children, Tutors, and Machine Authority</div>
+              <div class="signal-text">A briefing on AI tutors, developmental trust, and what changes when learning relationships move from classrooms to adaptive systems.</div>
+              <div class="signal-meta">
+                <span class="tag">Future Humans</span>
+                <span class="tag">Transhumanism</span>
+              </div>
+            </div>
+            <a class="signal-link" href="#">Queue episode →</a>
           </article>
         </div>
       </div>
@@ -934,41 +1037,41 @@
       <div class="wrap">
         <div class="section-head">
           <div>
-            <div class="section-kicker">Leadership</div>
+            <div class="section-kicker">Editorial Desk</div>
             <h2>Meet the Team</h2>
           </div>
-          <p class="section-copy">A combination of editorial authority, market intelligence, technical credibility, and strategic vision.</p>
+          <p class="section-copy">Editors and operators tracking anomalies across AI behavior, automation, surveillance, and synthetic media. Human Operator: Doug Garceau - Founder &amp; Publisher. System Voice: NODE-01.</p>
         </div>
 
         <div class="team-grid">
           <article class="team-card">
             <div class="team-name">Doug Garceau</div>
             <div class="team-title">Founder & Publisher</div>
-            <div class="team-bio">Founded the platform to track the intersection of artificial intelligence, financial markets, and emerging technology. Oversees editorial direction, partnerships, and long-term strategy.</div>
+            <div class="team-bio">Leads product direction, source priorities, and publishing focus across AI markets, policy, and infrastructure risk.</div>
           </article>
 
           <article class="team-card">
             <div class="team-name">Dr. Laura Chen</div>
             <div class="team-title">Editor-in-Chief</div>
-            <div class="team-bio">Leads all editorial coverage, investigations, and long-form reporting. Former senior editor at MIT Technology Review focusing on artificial intelligence and emerging technologies.</div>
+            <div class="team-bio">Runs coverage standards and investigations; former MIT Technology Review editor focused on AI systems and governance.</div>
           </article>
 
           <article class="team-card">
             <div class="team-name">Michael Torres</div>
             <div class="team-title">Managing Editor</div>
-            <div class="team-bio">Coordinates the newsroom's daily publishing schedule, breaking news coverage, and editorial workflow.</div>
+            <div class="team-bio">Coordinates live publishing, source verification, and the daily briefing cycle.</div>
           </article>
 
           <article class="team-card">
             <div class="team-name">David Rosenberg</div>
             <div class="team-title">Markets & Finance Editor</div>
-            <div class="team-bio">Covers the financial impact of artificial intelligence, including semiconductor companies, infrastructure providers, venture capital, and public markets.</div>
+            <div class="team-bio">Tracks chips, AI infrastructure, venture flows, and public-market positioning.</div>
           </article>
 
           <article class="team-card">
             <div class="team-name">Daniel Park</div>
             <div class="team-title">Chief Technology Officer</div>
-            <div class="team-bio">Responsible for the platform's infrastructure, data pipelines, and real-time AI news aggregation systems.</div>
+            <div class="team-bio">Owns feed reliability, ingestion pipelines, and real-time delivery across the site.</div>
           </article>
         </div>
       </div>
@@ -976,10 +1079,10 @@
 
     <section>
       <div class="wrap bottom-grid">
-        <div id="subscribe" class="subscribe-card">
-          <div class="section-kicker">Brief Delivery</div>
-          <h3 class="card-title">Get the executive signal brief.</h3>
-          <p class="card-copy">A tight read on what changed, why it matters, and where momentum is moving next.</p>
+        <div id="subscribe" class="subscribe-card" data-newsletter-growth="ready">
+          <div class="section-kicker">Daily Command Brief</div>
+          <h3 class="card-title">Get the daily signal brief.</h3>
+          <p class="card-copy">Get a compressed daily read on subtle AI-era shifts in trust, behavior, and social life.</p>
           <form name="subscribe" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="subscribe" />
             <div class="row">
@@ -994,7 +1097,7 @@
         <div id="contact" class="contact-card">
           <div class="section-kicker">Intelligence Desk</div>
           <h3 class="card-title">Send a lead.</h3>
-          <p class="card-copy">Have something early, important, or under-reported? Send it directly to the desk.</p>
+          <p class="card-copy">Send sourced leads on unusual human-AI interactions, synthetic media confusion, automation incidents, or social behavior changes worth investigation.</p>
           <form name="tips" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="tips" />
             <div class="row">
@@ -1012,23 +1115,33 @@
     <section id="advertise">
       <div class="wrap">
         <div class="contact-card ad-card">
-          <div class="section-kicker">Advertising</div>
+          <div class="section-kicker">Partner Access</div>
           <h3 class="card-title">Advertise</h3>
-          <p class="card-copy">Reach a high-intent audience tracking AI, tech, and markets in real time.</p>
+          <p class="card-copy">Place your brand in front of readers tracking AI, chips, capital, regulation, and real-time technology shifts.</p>
           <a class="button button-primary ad-cta" href="mailto:advertise@aisignals.news?subject=Advertising%20Inquiry">Advertise</a>
         </div>
+
+        <div id="research-report-slot" hidden data-report-downloads="ready" aria-hidden="true"></div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="wrap footer-inner">
-      <div>AI Signals — Strategic Intelligence</div>
-      <div>Models · Compute · Markets · Research · Capital · Briefings</div>
+      <div>AI Signals — Live Monitoring Desk</div>
+      <div>Signal System operating under the direction of Doug Garceau.</div>
     </div>
   </footer>
 
   <script>
+    const revenueReadiness = {
+      premiumSignalBrief: { enabled: false, slot: '#premium-brief-slot' },
+      newsletterGrowth: { enabled: false, slot: '#subscribe' },
+      sponsoredIntelligenceCard: { enabled: false, slot: '#top-feeds' },
+      podcastSponsorship: { enabled: false, slot: '#podcast' },
+      downloadableResearchReports: { enabled: false, slot: '#research-report-slot' }
+    };
+
     const endpoint = '/.netlify/functions/ai-news';
 
     function escapeHtml(text = '') {
@@ -1072,12 +1185,21 @@
         .trim();
     }
 
+    function isBlockedHeadline(text = '') {
+      const t = String(text || '').toLowerCase();
+      return /\b(donald\s+trump|trump\s+campaign|trump\s+administration|trump)\b/i.test(t);
+    }
+
+    function filterBlockedItems(items = []) {
+      return (items || []).filter(item => !isBlockedHeadline(item?.title || ''));
+    }
+
     function detectTheme(text = '') {
       const t = text.toLowerCase();
       if (/(openai|anthropic|claude|gemini|model|reasoning|release)/.test(t)) return ['Models', 'Models'];
       if (/(nvidia|gpu|blackwell|compute|chip|infrastructure)/.test(t)) return ['Compute', 'Compute'];
       if (/(research|science|paper|benchmark|safety)/.test(t)) return ['Research', 'Research'];
-      return ['Markets', 'Industry'];
+      return ['Signals', 'Society'];
     }
 
     function renderTicker(items) {
@@ -1097,7 +1219,7 @@
           <div class="story-top"><span>${escapeHtml(item.source || 'Live Feed')}</span><span>${escapeHtml(dateLabel(item.pubDate))}</span></div>
           <div class="story-title">${escapeHtml(cleanHeadline(item.title))}</div>
           <div class="story-copy">${escapeHtml(item.summary || summarize(cleanHeadline(item.title)))}</div>
-          <div class="story-impact">Impact: live source update from ${escapeHtml(item.source || 'tracked source')}.</div>
+          <div class="story-impact">Impact: this signal indicates real-world behavioral or institutional adaptation under AI pressure.</div>
           <a class="story-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
         </article>
       `).join('');
@@ -1162,9 +1284,9 @@
     function renderWatchlist(items) {
       const panel = document.getElementById('watchlist-panel');
       const themes = [
-        ['Frontier Models', items.filter(i => /openai|anthropic|gemini|model|claude/i.test(i.title)).length],
-        ['Compute / NVIDIA', items.filter(i => /nvidia|chip|compute|gpu|blackwell/i.test(i.title)).length],
-        ['Research / Safety', items.filter(i => /research|science|safety|benchmark/i.test(i.title)).length],
+        ['Belief + Attachment', items.filter(i => /conscious|sentient|companion|relationship|chatbot|attachment|anthropomorph/i.test(i.title)).length],
+        ['Homes + Autonomy', items.filter(i => /robot|autonomous|drone|machine targeting|automation|vehicle|household|home/i.test(i.title)).length],
+        ['Identity + Trust Drift', items.filter(i => /deepfake|synthetic|identity|surveillance|hallucination|failure|safety|trust/i.test(i.title)).length],
         ['Total Headlines', items.length]
       ];
       panel.innerHTML = `
@@ -1184,12 +1306,12 @@
 
     function renderMainstream(meta) {
       const box = document.getElementById('mainstream-headlines');
-      const headlines = Array.isArray(meta.mainstreamHeadlines) ? meta.mainstreamHeadlines : [];
-      const wire = Array.isArray(meta.wireHeadlines) ? meta.wireHeadlines : [];
+      const headlines = filterBlockedItems(Array.isArray(meta.mainstreamHeadlines) ? meta.mainstreamHeadlines : []);
+      const wire = filterBlockedItems(Array.isArray(meta.wireHeadlines) ? meta.wireHeadlines : []);
       const pool = headlines.length ? headlines : wire.slice(0, 18);
 
       if (!pool.length) {
-        box.innerHTML = '<div class="empty-state">Mainstream wire is warming up.</div>';
+        box.innerHTML = '<div class="empty-state">Live wire is syncing.</div>';
         return;
       }
 
@@ -1214,7 +1336,7 @@
         return;
       }
 
-      copy.textContent = `Market pulse: ${market.pulse || 'FLAT'} ${typeof market.pulseValue === 'number' ? `(${market.pulseValue > 0 ? '+' : ''}${market.pulseValue}%)` : ''}`;
+      copy.textContent = `AI deployment pulse: ${market.pulse || 'FLAT'} ${typeof market.pulseValue === 'number' ? `(${market.pulseValue > 0 ? '+' : ''}${market.pulseValue}%)` : ''}`;
 
       grid.innerHTML = market.assets.map(asset => {
         const trendClass = (asset.trend || 'FLAT').toLowerCase();
@@ -1293,14 +1415,14 @@
     function renderEditorials() {
       const box = document.getElementById('editorial-list');
       const links = [
-        { title: 'Financial Times: Artificial Intelligence', source: 'FT', link: 'https://www.ft.com/artificial-intelligence' },
-        { title: 'Reuters: Technology + AI', source: 'Reuters', link: 'https://www.reuters.com/technology/' },
-        { title: 'The Economist: Science & Technology', source: 'The Economist', link: 'https://www.economist.com/science-and-technology' },
-        { title: 'MIT Technology Review: AI', source: 'MIT TR', link: 'https://www.technologyreview.com/topic/artificial-intelligence/' },
-        { title: 'WSJ: CIO + AI Coverage', source: 'WSJ', link: 'https://www.wsj.com/news/cio-journal' },
-        { title: 'Bloomberg Technology', source: 'Bloomberg', link: 'https://www.bloomberg.com/technology' },
-        { title: 'The Information: AI', source: 'The Information', link: 'https://www.theinformation.com/topics/ai' },
-        { title: 'Foreign Policy: Geopolitics + Tech', source: 'Foreign Policy', link: 'https://foreignpolicy.com/tag/technology/' }
+        { title: 'AI Incidents Database', source: 'AIAAIC', link: 'https://www.aiaaic.org/aiaaic-repository' },
+        { title: 'Bellingcat: Investigations', source: 'Bellingcat', link: 'https://www.bellingcat.com/' },
+        { title: 'Lawfare: AI + National Security', source: 'Lawfare', link: 'https://www.lawfaremedia.org/topics/artificial-intelligence' },
+        { title: 'CSET Emerging Technology', source: 'CSET', link: 'https://cset.georgetown.edu/' },
+        { title: 'MIT Tech Review: AI', source: 'MIT TR', link: 'https://www.technologyreview.com/topic/artificial-intelligence/' },
+        { title: 'Reuters: AI + Security', source: 'Reuters', link: 'https://www.reuters.com/technology/' },
+        { title: 'Defense One: AI', source: 'Defense One', link: 'https://www.defenseone.com/topic/artificial-intelligence/' },
+        { title: 'The Record: Cyber + AI', source: 'The Record', link: 'https://therecord.media/' }
       ];
 
       box.innerHTML = links.map(item => `
@@ -1314,10 +1436,10 @@
     function renderFed(meta) {
       const box = document.getElementById('fed-list');
       const linksBox = document.getElementById('fed-links');
-      const entries = Array.isArray(meta.fedActivity) ? meta.fedActivity : [];
+      const entries = filterBlockedItems(Array.isArray(meta.fedActivity) ? meta.fedActivity : []);
 
       if (!entries.length) {
-        box.innerHTML = '<div class="empty-state">Fed activity feed is warming up.</div>';
+        box.innerHTML = '<div class="empty-state">Policy monitor is syncing.</div>';
       } else {
         box.innerHTML = entries.slice(0, 10).map(item => `
           <a class="fed-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">
@@ -1341,10 +1463,14 @@
 
     function renderTrump(meta) {
       const box = document.getElementById('trump-list');
-      const entries = Array.isArray(meta.trumpActivity) ? meta.trumpActivity : [];
+      const sourceItems = filterBlockedItems(Array.isArray(meta.items) ? meta.items : []);
+      const entries = sourceItems.filter(item => {
+        const t = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+        return /(incident|failure|hallucination|deepfake|synthetic|identity|robot|autonomous|drone|surveillance|weapon|defense|attachment|companion|transhuman|enhancement|safety|misuse|breakdown)/.test(t);
+      });
 
       if (!entries.length) {
-        box.innerHTML = '<div class="empty-state">No matching Trump headlines at this moment.</div>';
+        box.innerHTML = '<div class="empty-state">No fresh human-drift headlines in the current cycle.</div>';
         return;
       }
 
@@ -1364,7 +1490,14 @@
         const response = await fetch(endpoint, { cache: 'no-store' });
         if (!response.ok) throw new Error(`HTTP ${response.status}`);
         const data = await response.json();
-        const items = Array.isArray(data.items) ? data.items : [];
+        const items = filterBlockedItems(Array.isArray(data.items) ? data.items : []);
+        const safeMeta = {
+          ...(data.meta || {}),
+          mainstreamHeadlines: filterBlockedItems(Array.isArray(data?.meta?.mainstreamHeadlines) ? data.meta.mainstreamHeadlines : []),
+          wireHeadlines: filterBlockedItems(Array.isArray(data?.meta?.wireHeadlines) ? data.meta.wireHeadlines : []),
+          fedActivity: filterBlockedItems(Array.isArray(data?.meta?.fedActivity) ? data.meta.fedActivity : []),
+          items
+        };
 
         renderTicker(items);
         renderFrontBlast(items);
@@ -1372,12 +1505,12 @@
         renderMajor(items);
         renderBriefings(items);
         renderWatchlist(items);
-        renderMainstream(data.meta || {});
-        renderMarket(data.meta || {});
+        renderMainstream(safeMeta);
+        renderMarket(safeMeta);
         renderQuickMarketTape(data.meta || {});
         renderEditorials();
-        renderFed(data.meta || {});
-        renderTrump(data.meta || {});
+        renderFed(safeMeta);
+        renderTrump(safeMeta);
         status.textContent = items.length ? 'LIVE' : 'EMPTY';
       } catch (error) {
         console.error(error);
