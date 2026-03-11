@@ -472,6 +472,18 @@
       font-size: 0.92rem;
       letter-spacing: 0.02em;
     }
+    .audio-shell {
+      margin-top: 12px;
+      border: 1px solid rgba(255, 120, 24, 0.3);
+      border-radius: 14px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+    .audio-player {
+      width: 100%;
+      height: 38px;
+      filter: sepia(0.25) saturate(1.05) hue-rotate(-8deg);
+    }
     .wire-list, .editorial-list { display: grid; gap: 10px; margin-top: 14px; }
     .wire-link, .editorial-link {
       display: grid;
@@ -1139,8 +1151,10 @@
                 <span class="tag">Alignment</span>
               </div>
             </div>
-            <div class="video-frame" style="margin-top:10px;">
-              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=Lex+Fridman+Podcast+AI+alignment" title="Lex Fridman AI podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://media.blubrry.com/takeituneasy/ins.blubrry.com/takeituneasy/lex_ai_rick_beato.mp3" type="audio/mpeg" />
+              </audio>
             </div>
           </article>
 
@@ -1154,8 +1168,10 @@
                 <span class="tag">Theory</span>
               </div>
             </div>
-            <div class="video-frame" style="margin-top:10px;">
-              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=Dwarkesh+Podcast+AI+AGI" title="Dwarkesh AI podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://media.transistor.fm/1923dca1/0dd54a72.mp3" type="audio/mpeg" />
+              </audio>
             </div>
           </article>
 
@@ -1169,8 +1185,10 @@
                 <span class="tag">Interpretability</span>
               </div>
             </div>
-            <div class="video-frame" style="margin-top:10px;">
-              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=Machine+Learning+Street+Talk+AI" title="Machine Learning Street Talk player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP8118754179.mp3?updated=1773148641" type="audio/mpeg" />
+              </audio>
             </div>
           </article>
 
@@ -1184,8 +1202,10 @@
                 <span class="tag">Frontier Models</span>
               </div>
             </div>
-            <div class="video-frame" style="margin-top:10px;">
-              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=The+Cognitive+Revolution+podcast+AI" title="The Cognitive Revolution podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://tracking.swap.fm/track/XvDEoI11TR00olTUO8US/prfx.byspotify.com/e/play.podtrac.com/npr-510289/traffic.megaphone.fm/NPR2488007355.mp3?t=podcast&amp;e=nx-s1-5726849&amp;p=510289&amp;d=1775&amp;size=28414207" type="audio/mpeg" />
+              </audio>
             </div>
           </article>
 
@@ -1199,8 +1219,10 @@
                 <span class="tag">Execution</span>
               </div>
             </div>
-            <div class="video-frame" style="margin-top:10px;">
-              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=No+Priors+podcast+AI" title="No Priors podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://dts.podtrac.com/redirect.mp3/pdst.fm/e/pfx.vpixl.com/6qj4J/pscrb.fm/rss/p/nyt.simplecastaudio.com/03d8b493-87fc-4bd1-931f-8a8e9b945d8a/episodes/bf1f0b32-d38c-4af5-8abe-2fb2fd4d78ba/audio/128/default.mp3?aid=rss_feed&amp;awCollectionId=03d8b493-87fc-4bd1-931f-8a8e9b945d8a&amp;awEpisodeId=bf1f0b32-d38c-4af5-8abe-2fb2fd4d78ba&amp;feed=54nAGcIl" type="audio/mpeg" />
+              </audio>
             </div>
           </article>
 
@@ -1214,8 +1236,10 @@
                 <span class="tag">Safety</span>
               </div>
             </div>
-            <div class="video-frame" style="margin-top:10px;">
-              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=Eye+on+AI+podcast" title="Eye on AI podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="audio-shell">
+              <audio class="audio-player" controls preload="none">
+                <source src="https://www.podtrac.com/pts/redirect.mp3/pdst.fm/e/pscrb.fm/rss/p/traffic.megaphone.fm/VMP8507001898.mp3?updated=1773097195" type="audio/mpeg" />
+              </audio>
             </div>
           </article>
         </div>
@@ -1367,6 +1391,7 @@
       downloadableResearchReports: { enabled: false, slot: '#research-report-slot' }
     };
 
+    const isGitHubPages = /github\.io$/i.test(location.hostname);
     const endpoint = '/.netlify/functions/ai-news';
     const analyticsConfig = {
       trackEndpoint: '/.netlify/functions/track-analytics',
@@ -1492,6 +1517,7 @@
     }
 
     function trackPageView() {
+      if (isGitHubPages) return;
       sendAnalytics({
         ...analyticsPayloadBase(),
         type: 'pageview'
@@ -1506,6 +1532,7 @@
     }
 
     function initializeClickTracking() {
+      if (isGitHubPages) return;
       document.addEventListener('click', (event) => {
         const link = event.target.closest('a[href]');
         if (!link || link.dataset.analytics === 'off') return;
@@ -2119,6 +2146,16 @@
 
     async function loadFeed() {
       const status = document.getElementById('feed-status');
+
+      if (isGitHubPages) {
+        status.textContent = 'STATIC';
+        const latest = document.getElementById('latest-signals');
+        if (latest && !latest.innerHTML.trim()) {
+          latest.innerHTML = '<div class="empty-state">GitHub preview mode: live backend is disabled here. Use Netlify deploy for live feeds.</div>';
+        }
+        return;
+      }
+
       status.textContent = 'CONNECTING';
 
       try {
