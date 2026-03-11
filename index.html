@@ -368,8 +368,23 @@
     .story-top { display: flex; align-items: center; justify-content: space-between; gap: 16px; color: var(--muted); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.14em; }
     .story-title { font-size: clamp(1.4rem, 2.2vw, 2rem); line-height: 1.08; letter-spacing: -0.04em; font-weight: 800; max-width: 26ch; }
     .story-copy { color: #d6d6d6; line-height: 1.75; max-width: 62ch; }
+    .signal-brief-label { color: #ffd2bf; font-weight: 700; margin-right: 6px; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; }
     .story-impact { color: #ffcfbc; font-weight: 700; line-height: 1.7; }
     .story-link { color: #ffe5dc; font-weight: 700; }
+
+    .tonight-section { padding-top: 10px; }
+    .tonight-card {
+      border-radius: 28px;
+      padding: 24px;
+      display: grid;
+      gap: 12px;
+      background: linear-gradient(180deg, rgba(20,15,11,0.9), rgba(10,8,7,0.96));
+      border: 1px solid rgba(255, 120, 24, 0.26);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05), var(--glow);
+      animation: riseIn 760ms ease-out both;
+    }
+    .tonight-title { font-size: clamp(1.3rem, 2vw, 1.75rem); line-height: 1.12; letter-spacing: -0.02em; font-weight: 800; max-width: 34ch; }
+    .tonight-brief { color: #dccfc4; line-height: 1.72; max-width: 70ch; }
 
     .matrix { border-radius: 28px; padding: 26px; display: grid; gap: 16px; align-content: start; }
     .matrix-row { display: grid; grid-template-columns: 1fr auto; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(255,255,255,0.06); }
@@ -978,6 +993,21 @@
       </div>
     </section>
 
+    <section class="tonight-section" id="tonight-moment">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Night Watch</div>
+            <h2>Tonight's AI Moment</h2>
+          </div>
+          <p class="section-copy">One uncanny, high-signal story that reveals where AI is bending human behavior, safety, or reality.</p>
+        </div>
+        <article class="tonight-card" id="tonight-moment-card">
+          <div class="empty-state">Scanning live feeds for tonight's standout AI moment.</div>
+        </article>
+      </div>
+    </section>
+
     <span id="industry" class="scroll-anchor" aria-hidden="true"></span>
 
     <span id="compute" class="scroll-anchor" aria-hidden="true"></span>
@@ -1456,6 +1486,34 @@
         .trim();
     }
 
+    function buildSignalBrief(item = {}) {
+      const title = cleanHeadline(item.title || '');
+      let summary = cleanHeadline(item.summary || '');
+
+      if (!summary || /update pulled from the live source page/i.test(summary)) {
+        summary = `${title || 'A new AI development is active.'} This matters because it can change how AI systems are built, deployed, or governed.`;
+      }
+
+      const parts = summary
+        .replace(/\s+/g, ' ')
+        .split(/(?<=[.!?])\s+/)
+        .map(s => s.trim())
+        .filter(Boolean)
+        .slice(0, 2);
+
+      if (!parts.length) {
+        return 'A new AI development is active. This matters because it can change how AI systems are built, deployed, or governed.';
+      }
+
+      if (parts.length === 1 && parts[0].length < 70) {
+        parts.push('This matters because it can affect model capability, safety, or deployment decisions.');
+      }
+
+      return parts
+        .map(sentence => /[.!?]$/.test(sentence) ? sentence : `${sentence}.`)
+        .join(' ');
+    }
+
     function isRenderableHeadline(text = '') {
       const t = String(text || '').trim();
       if (!t) return false;
@@ -1750,7 +1808,7 @@
 
     let cornellCount = 0;
     function limitCornellContent(item) {
-      const isCornell = /cornell/i.test(item?.source || '');
+      const isCornell = /cornell|arxiv/i.test(item?.source || '');
       if (isCornell) {
         if (cornellCount >= 2) return false;
         cornellCount++;
@@ -1772,6 +1830,47 @@
       track.innerHTML = labels + labels;
     }
 
+    function selectTonightsMoment(items = []) {
+      const pool = (items || []).filter(item => {
+        const text = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+        return /(conscious|sentien|chatbot attachment|companion|deepfake|synthetic identity|identity fraud|robotics incident|robot failure|human-ai|transhuman|emergent behavior|unusual breakthrough|reasoning breakthrough|rogue ai|ai gone wrong)/.test(text);
+      });
+
+      const score = (item) => {
+        const text = `${item.title || ''} ${item.summary || ''}`.toLowerCase();
+        let s = 0;
+        if (/(conscious|sentien|self-aware|aware)/.test(text)) s += 10;
+        if (/(chatbot attachment|companion|bond|relationship)/.test(text)) s += 9;
+        if (/(deepfake|voice clone|synthetic identity|identity fraud)/.test(text)) s += 9;
+        if (/(robotics incident|robot failure|autonomous.*incident|automation.*failure)/.test(text)) s += 8;
+        if (/(transhuman|neural implant|brain-computer|bci)/.test(text)) s += 8;
+        if (/(emergent behavior|unexpected behavior|unusual breakthrough|reasoning breakthrough)/.test(text)) s += 8;
+        if (/arxiv/i.test(item.source || '')) s += 1;
+        return s;
+      };
+
+      const ranked = (pool.length ? pool : items).slice().sort((a, b) => score(b) - score(a));
+      return ranked[0] || null;
+    }
+
+    function renderTonightsMoment(items = []) {
+      const box = document.getElementById('tonight-moment-card');
+      if (!box) return;
+
+      const pick = selectTonightsMoment(filterBlockedItems(items || []));
+      if (!pick) {
+        box.innerHTML = '<div class="empty-state">No standout moment yet. Monitoring for uncanny AI behavior and major breakthroughs.</div>';
+        return;
+      }
+
+      box.innerHTML = `
+        <div class="story-top"><span>Must-See Signal</span><span>${escapeHtml(pick.source || 'Live')}</span></div>
+        <div class="tonight-title">${escapeHtml(cleanHeadline(pick.title || ''))}</div>
+        <div class="tonight-brief"><span class="signal-brief-label">Signal Brief:</span>${escapeHtml(buildSignalBrief(pick))}</div>
+        <a class="story-link" href="${escapeHtml(pick.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
+      `;
+    }
+
     function renderLatest(items) {
       const box = document.getElementById('latest-signals');
       if (!items.length) {
@@ -1785,6 +1884,7 @@
         <article class="story-card">
           <div class="story-top"><span>${escapeHtml(item.source || 'Live Feed')}</span><span>${escapeHtml(dateLabel(item.pubDate))}</span></div>
           <div class="story-title">${escapeHtml(oneLiner)}</div>
+          <div class="story-copy"><span class="signal-brief-label">Signal Brief:</span>${escapeHtml(buildSignalBrief(item))}</div>
           <a class="story-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
         </article>
       `}).join('');
@@ -1948,13 +2048,12 @@
 
       box.innerHTML = pool.slice(0, 2).map((item, index) => {
         const title = cleanHeadline(item.title || '');
-        const summary = summarize(cleanHeadline(item.summary || item.title || '')).slice(0, 150);
+        const brief = buildSignalBrief(item);
         return `
         <article class="story-card">
           <div class="story-top"><span>${index === 0 ? 'Top Brief' : 'Brief'}</span><span>${escapeHtml(item.source || 'Live')}</span></div>
           <div class="story-title briefing-title">${escapeHtml(title)}</div>
-          <div class="story-copy briefing-copy">${escapeHtml(summary)}</div>
-          <div class="story-impact">Impact: this development is active and moving in real time.</div>
+          <div class="story-copy briefing-copy"><span class="signal-brief-label">Signal Brief:</span>${escapeHtml(brief)}</div>
         </article>
       `;
       }).join('');
@@ -2194,6 +2293,7 @@
         }
 
         renderFrontBlast([]);
+        renderTonightsMoment([]);
         renderLatest([]);
         renderCelebrityRadar([]);
         renderResearchBreakthroughs(previewMeta, []);
@@ -2234,6 +2334,7 @@
 
         renderTicker(items);
         renderFrontBlast(items);
+        renderTonightsMoment(filteredItems);
         renderLatest(filteredItems);
         renderResearchBreakthroughs(safeMeta, filteredItems);
         renderDarkTech(safeMeta, filteredItems);
@@ -2252,6 +2353,7 @@
         document.getElementById('latest-signals').innerHTML = `<div class="load-error">Live feed is temporarily unavailable. Please refresh in a moment.</div>`;
         document.getElementById('major-signals').innerHTML = `<div class="load-error">Signals are reconnecting. New items should appear shortly.</div>`;
         document.getElementById('briefing-stack').innerHTML = `<div class="load-error">Briefings will resume automatically when the feed reconnects.</div>`;
+        document.getElementById('tonight-moment-card').innerHTML = `<div class="load-error">Tonight's AI Moment is reconnecting to live sources.</div>`;
       }
     }
 
