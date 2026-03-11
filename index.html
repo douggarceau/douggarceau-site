@@ -385,22 +385,34 @@
     .top-link-stack { display: grid; gap: 12px; align-content: start; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
     .top-links-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
     .top-card { border-radius: 18px; padding: 12px; }
-    .outlet-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
+    .outlet-grid { display: grid; gap: 13px; margin-top: 12px; }
+    .source-group { display: grid; gap: 5px; }
+    .source-group-label {
+      font-size: 0.63rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #ff9c6e;
+      border-bottom: 1px solid rgba(255, 120, 24, 0.22);
+      padding-bottom: 5px;
+      font-weight: 700;
+    }
+    .source-links-row { display: flex; flex-wrap: wrap; gap: 5px; }
     .outlet-link {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 8px 6px;
-      border-radius: 8px;
-      border: 1px solid rgba(255, 120, 24, 0.28);
+      padding: 5px 9px;
+      border-radius: 7px;
+      border: 1px solid rgba(255, 120, 24, 0.26);
       background: rgba(255,255,255,0.02);
-      color: #fff;
-      font-size: 0.75rem;
-      letter-spacing: 0.03em;
+      color: #eeddd0;
+      font-size: 0.7rem;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
+      font-weight: 600;
+      white-space: nowrap;
+      transition: 150ms ease;
     }
-    .outlet-link:hover { background: rgba(255,120,24,0.14); border-color: rgba(255,120,24,0.6); }
+    .outlet-link:hover { background: rgba(255,120,24,0.14); border-color: rgba(255,120,24,0.65); color: #ffd7b4; }
 
     .video-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     .video-card {
@@ -761,7 +773,7 @@
       .hero { padding-top: 6px; }
       .hero-panel, .subscribe-card, .contact-card { padding: 22px; border-radius: 24px; }
       .signals-grid,.row { grid-template-columns: 1fr; }
-      .outlet-grid { grid-template-columns: repeat(2, 1fr); }
+      .outlet-grid { gap: 10px; }
       .front-blast-grid { grid-template-columns: 1fr; }
       .team-grid { grid-template-columns: 1fr; }
       h1 { max-width: none; }
@@ -825,7 +837,7 @@
           <div class="eyebrow">Live Signal Desk</div>
           <h1>AI <span>News Desk</span></h1>
           <p class="hero-copy">
-            Real-time monitoring of ordinary routines meeting unfamiliar systems: AI companions, synthetic voices, autonomous tools, and subtle shifts in human behavior.
+            Real-time intelligence on frontier AI models, labs, chips, robotics, and research. The signal desk for what's actually moving.
           </p>
           <div class="hero-actions">
             <a href="#top-feeds" class="button button-primary">Open Feeds</a>
@@ -911,15 +923,55 @@
             <div class="section-kicker">Verified Sources</div>
             <h3 class="card-title" style="margin:0;">Source Grid</h3>
             <div class="outlet-grid" id="outlet-grid">
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://openai.com/blog">OpenAI</a>
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.anthropic.com/news">Anthropic</a>
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://deepmind.google/discover/blog">DeepMind</a>
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://ai.meta.com/blog">Meta AI</a>
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://huggingface.co/blog">Hugging Face</a>
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/list/cs.AI/recent">ArXiv AI</a>
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://paperswithcode.com/">Papers With Code</a>
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.aiaaic.org/aiaaic-repository">AI Incidents</a>
-              <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.alignmentforum.org/">Alignment Forum</a>
+              <div class="source-group">
+                <div class="source-group-label">Frontier Labs</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://openai.com/blog">OpenAI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.anthropic.com/news">Anthropic</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://deepmind.google/discover/blog">DeepMind</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://ai.meta.com/blog">Meta AI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://x.ai/">xAI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://mistral.ai/news/">Mistral</a>
+                </div>
+              </div>
+              <div class="source-group">
+                <div class="source-group-label">Chips / Compute</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://nvidianews.nvidia.com/">NVIDIA</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.amd.com/en/newsroom">AMD</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://newsroom.intel.com/">Intel AI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://cerebras.ai/blog/">Cerebras</a>
+                </div>
+              </div>
+              <div class="source-group">
+                <div class="source-group-label">Research</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://arxiv.org/list/cs.AI/recent">arXiv AI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://paperswithcode.com/">Papers With Code</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.semanticscholar.org/">Semantic Scholar</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.alignmentforum.org/">Alignment Forum</a>
+                </div>
+              </div>
+              <div class="source-group">
+                <div class="source-group-label">Tools / Builders</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://huggingface.co/blog">Hugging Face</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://runwayml.com/">Runway</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://elevenlabs.io/blog">ElevenLabs</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://stability.ai/news">Stability AI</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.perplexity.ai/hub/blog">Perplexity</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.cursor.com/">Cursor</a>
+                </div>
+              </div>
+              <div class="source-group">
+                <div class="source-group-label">Safety / Policy</div>
+                <div class="source-links-row">
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.aisi.gov.uk/">AI Safety Institute</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://oecd.ai/">OECD AI Observatory</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.nist.gov/itl/ai-risk-management-framework">NIST AI RMF</a>
+                  <a class="outlet-link" target="_blank" rel="noopener noreferrer" href="https://www.aiaaic.org/aiaaic-repository">AI Incidents DB</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -937,7 +989,7 @@
             <div class="section-kicker">Power Shift Monitor</div>
             <h2>Major Headlines</h2>
           </div>
-          <p class="section-copy">These are the stories where technical progress stops feeling abstract and starts reshaping relationships, trust, and daily behavior.</p>
+          <p class="section-copy">The top AI, compute, and robotics stories moving markets, labs, and policy right now.</p>
         </div>
 
         <div class="signals-grid" id="major-signals"></div>
@@ -952,7 +1004,7 @@
             <div class="section-kicker">Dark Tech</div>
             <h2>Unsettling Signals</h2>
           </div>
-          <p class="section-copy">Track credible reports where deepfakes, surveillance systems, and synthetic identity tools quietly distort everyday trust.</p>
+          <p class="section-copy">Deepfakes, AI-enabled fraud, rogue models, synthetic identity abuse, and autonomous system failures.</p>
         </div>
 
         <div class="signals-grid" id="dark-tech-grid">
@@ -996,7 +1048,7 @@
             <div class="section-kicker">Incident Tracking</div>
             <h2>AI Incident Log</h2>
           </div>
-          <p class="section-copy">Real-world cases where automated systems, AI models, robotics, or algorithmic decisions produced unintended or harmful outcomes. These reports examine what failed, why it failed, and what it reveals about systemic technological risk. Signal Brief - NODE-01.</p>
+          <p class="section-copy">Real-world AI failures: hallucinations in production, autonomous system breakdowns, and algorithmic decisions gone wrong.</p>
         </div>
 
         <div class="signals-grid" id="incident-log-grid">
@@ -1040,24 +1092,10 @@
             <div class="section-kicker">Live Feed</div>
             <h2>Latest Signals</h2>
           </div>
-          <p class="section-copy">Track moments when familiar life patterns take an unexpected turn through AI systems, synthetic media, and automated decisions.</p>
+          <p class="section-copy">Latest AI, chips, and robotics stories as they break.</p>
         </div>
 
         <div class="story-stack" id="latest-signals"></div>
-      </div>
-    </section>
-
-    <section id="celebrity-radar">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">AI Personalities</div>
-            <h2>AI Celebrity Radar</h2>
-          </div>
-          <p class="section-copy">Live stories involving major AI personalities and power players.</p>
-        </div>
-
-        <div class="signals-grid" id="celebrity-radar-grid"></div>
       </div>
     </section>
 
@@ -1070,7 +1108,7 @@
             <div class="section-kicker">Signal Analysis</div>
             <h2>Command Briefings</h2>
           </div>
-          <p class="section-copy">Compressed analysis of slow shifts beneath headlines: trust drift, social adaptation, and institutions learning to live with machine behavior. System Analysis - Signal Monitor.</p>
+          <p class="section-copy">Compressed analysis of the strategic shifts beneath the headlines — labs, models, policy, and compute.</p>
         </div>
 
         <div class="stories">
@@ -1255,38 +1293,14 @@
             <div class="section-kicker">Editorial Desk</div>
             <h2>Meet the Team</h2>
           </div>
-          <p class="section-copy">Editors and operators tracking anomalies across AI behavior, automation, surveillance, and synthetic media. Human Operator: Doug Garceau - Founder &amp; Publisher. System Voice: NODE-01.</p>
+          <p class="section-copy">AI Signals is an independent intelligence desk covering frontier models, AI labs, chips, robotics, and policy.</p>
         </div>
 
         <div class="team-grid">
           <article class="team-card">
             <div class="team-name">Doug Garceau</div>
             <div class="team-title">Founder & Publisher</div>
-            <div class="team-bio">Leads product direction, source priorities, and publishing focus across AI labs, policy, and infrastructure risk.</div>
-          </article>
-
-          <article class="team-card">
-            <div class="team-name">Dr. Laura Chen</div>
-            <div class="team-title">Editor-in-Chief</div>
-            <div class="team-bio">Runs coverage standards and investigations; former MIT Technology Review editor focused on AI systems and governance.</div>
-          </article>
-
-          <article class="team-card">
-            <div class="team-name">Michael Torres</div>
-            <div class="team-title">Managing Editor</div>
-            <div class="team-bio">Coordinates live publishing, source verification, and the daily briefing cycle.</div>
-          </article>
-
-          <article class="team-card">
-            <div class="team-name">David Rosenberg</div>
-            <div class="team-title">Infrastructure & Chips Editor</div>
-            <div class="team-bio">Tracks chips, AI infrastructure, venture activity, and deployment positioning.</div>
-          </article>
-
-          <article class="team-card">
-            <div class="team-name">Daniel Park</div>
-            <div class="team-title">Chief Technology Officer</div>
-            <div class="team-bio">Owns feed reliability, ingestion pipelines, and real-time delivery across the site.</div>
+            <div class="team-bio">Leads product direction, source priorities, and publishing focus across AI labs, policy, and infrastructure.</div>
           </article>
         </div>
       </div>
@@ -1297,7 +1311,7 @@
         <div id="subscribe" class="subscribe-card" data-newsletter-growth="ready">
           <div class="section-kicker">Daily Command Brief</div>
           <h3 class="card-title">Get the daily signal brief.</h3>
-          <p class="card-copy">Get a compressed daily read on subtle AI-era shifts in trust, behavior, and social life.</p>
+          <p class="card-copy">Compressed daily intelligence on frontier AI, labs, models, chips, and research that matters.</p>
           <form name="subscribe" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="subscribe" />
             <div class="row">
@@ -1312,7 +1326,7 @@
         <div id="contact" class="contact-card">
           <div class="section-kicker">Intelligence Desk</div>
           <h3 class="card-title">Send a lead.</h3>
-          <p class="card-copy">Send sourced leads on unusual human-AI interactions, synthetic media confusion, automation incidents, or social behavior changes worth investigation.</p>
+          <p class="card-copy">Send sourced tips on AI breakthroughs, lab news, chip developments, or incidents worth tracking.</p>
           <form name="tips" method="POST" data-netlify="true">
             <input type="hidden" name="form-name" value="tips" />
             <div class="row">
