@@ -1047,20 +1047,6 @@
       </div>
     </section>
 
-    <section id="celebrity-radar">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">AI Personalities</div>
-            <h2>AI Celebrity Radar</h2>
-          </div>
-          <p class="section-copy">Live stories involving major AI personalities and power players.</p>
-        </div>
-
-        <div class="signals-grid" id="celebrity-radar-grid"></div>
-      </div>
-    </section>
-
     <span id="capital" class="scroll-anchor" aria-hidden="true"></span>
     <span id="futures" class="scroll-anchor" aria-hidden="true"></span>
     <section id="briefings">
@@ -1687,45 +1673,7 @@
       return items.filter(item => isAISignal(item.title + " " + (item.summary || "")));
     }
 
-    const aiCelebs = [
-      "sam altman",
-      "demis hassabis",
-      "dario amodei",
-      "jensen huang",
-      "andrej karpathy",
-      "ilya sutskever",
-      "yann lecun",
-      "geoffrey hinton",
-      "andrew ng",
-      "fei fei li",
-      "emad mostaque",
-      "thomas wolf",
-      "clem delangue",
-      "greg brockman",
-      "lex fridman",
-      "dwarkesh patel",
-      "nick bostrom",
-      "max tegmark",
-      "vitalik buterin"
-    ];
 
-    function isAICelebritySignal(text = "") {
-      const t = text.toLowerCase();
-      return aiCelebs.some(name => t.includes(name));
-    }
-
-    function getCelebrityMatch(text = "") {
-      const t = text.toLowerCase();
-      const match = aiCelebs.find(name => t.includes(name));
-      if (!match) return null;
-      return match.split(' ').map(part => part.charAt(0).toUpperCase() + part.slice(1)).join(' ');
-    }
-
-    function filterCelebritySignals(items = []) {
-      return items.filter(item =>
-        isAICelebritySignal(item.title + " " + (item.summary || ""))
-      );
-    }
 
     function filterBlockedItems(items = []) {
       return (items || []).filter(item => {
@@ -1763,32 +1711,6 @@
           <a class="story-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
         </article>
       `).join('');
-    }
-
-    function renderCelebrityRadar(items) {
-      const box = document.getElementById('celebrity-radar-grid');
-      if (!box) return;
-
-      const entries = filterCelebritySignals(items || []);
-      if (!entries.length) {
-        box.innerHTML = '<div class="empty-state">No live personality signals right now. Monitoring active.</div>';
-        return;
-      }
-
-      box.innerHTML = entries.slice(0, 6).map(item => {
-        const cleanTitle = cleanHeadline(item.title || '');
-        const celeb = getCelebrityMatch(`${item.title || ''} ${item.summary || ''}`) || 'AI Figure';
-        return `
-          <article class="signal-card">
-            <div>
-              <div class="signal-type">AI Personalities</div>
-              <div class="signal-title">${escapeHtml(cleanTitle)}</div>
-              <div class="signal-meta"><span class="tag">${escapeHtml(item.source || 'Live')}</span><span class="tag">${escapeHtml(celeb)}</span></div>
-            </div>
-            <a class="signal-link" href="${escapeHtml(item.link)}" target="_blank" rel="noopener noreferrer">Open source →</a>
-          </article>
-        `;
-      }).join('');
     }
 
     function renderFrontBlast(items) {
@@ -2149,10 +2071,37 @@
 
       if (isGitHubPages) {
         status.textContent = 'STATIC';
-        const latest = document.getElementById('latest-signals');
-        if (latest && !latest.innerHTML.trim()) {
-          latest.innerHTML = '<div class="empty-state">GitHub preview mode: live backend is disabled here. Use Netlify deploy for live feeds.</div>';
+        const previewMeta = {
+          mainstreamHeadlines: [],
+          wireHeadlines: [],
+          researchBreakthroughs: [],
+          darkTech: [],
+          incidentLog: [],
+          aiCulture: [],
+          policyActivity: [],
+          humanDriftActivity: [],
+          market: null,
+          indexLinks: [],
+          items: []
+        };
+
+        const ticker = document.getElementById('ticker-track');
+        if (ticker) {
+          ticker.innerHTML = '<span>GitHub preview mode active</span><span>Deploy on Netlify for live AI feeds</span><span>GitHub preview mode active</span><span>Deploy on Netlify for live AI feeds</span>';
         }
+
+        renderFrontBlast([]);
+        renderLatest([]);
+        renderResearchBreakthroughs(previewMeta, []);
+        renderDarkTech(previewMeta, []);
+        renderIncidentLog(previewMeta, []);
+        renderBriefings([]);
+        renderMainstream(previewMeta);
+        renderMarket(previewMeta);
+        renderQuickMarketTape(previewMeta);
+        renderEditorials();
+        renderPolicyDesk(previewMeta);
+        renderHumanDrift(previewMeta);
         return;
       }
 
@@ -2179,7 +2128,6 @@
         renderTicker(items);
         renderFrontBlast(items);
         renderLatest(items);
-        renderCelebrityRadar(items);
         renderResearchBreakthroughs(safeMeta, items);
         renderDarkTech(safeMeta, items);
         renderIncidentLog(safeMeta, items);
