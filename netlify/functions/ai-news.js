@@ -418,13 +418,16 @@ function storyPriority(item) {
   return score;
 }
 
-async function fetchMarketSnapshot() {
-  return null;
-}
-
-async function fetchMarketSnapshotFallback() {
-  return null;
-}
+const MARKET_SYMBOLS = [
+  { ticker: 'NVDA', name: 'NVIDIA', yahooSymbol: 'NVDA', stooqSymbol: 'nvda.us', link: 'https://finance.yahoo.com/quote/NVDA' },
+  { ticker: 'MSFT', name: 'Microsoft', yahooSymbol: 'MSFT', stooqSymbol: 'msft.us', link: 'https://finance.yahoo.com/quote/MSFT' },
+  { ticker: 'GOOGL', name: 'Alphabet', yahooSymbol: 'GOOGL', stooqSymbol: 'googl.us', link: 'https://finance.yahoo.com/quote/GOOGL' },
+  { ticker: 'META', name: 'Meta', yahooSymbol: 'META', stooqSymbol: 'meta.us', link: 'https://finance.yahoo.com/quote/META' },
+  { ticker: 'TSLA', name: 'Tesla', yahooSymbol: 'TSLA', stooqSymbol: 'tsla.us', link: 'https://finance.yahoo.com/quote/TSLA' },
+  { ticker: 'AMD', name: 'AMD', yahooSymbol: 'AMD', stooqSymbol: 'amd.us', link: 'https://finance.yahoo.com/quote/AMD' },
+  { ticker: 'BTC', name: 'Bitcoin', yahooSymbol: 'BTC-USD', stooqSymbol: null, link: 'https://finance.yahoo.com/quote/BTC-USD' },
+  { ticker: 'ETH', name: 'Ethereum', yahooSymbol: 'ETH-USD', stooqSymbol: null, link: 'https://finance.yahoo.com/quote/ETH-USD' }
+];
 
 function toAsset(quote, name, ticker, link) {
   if (!quote) return null;
@@ -455,4 +458,95 @@ function toNumber(value) {
 function roundNumber(value, digits) {
   const factor = 10 ** digits;
   return Math.round(value * factor) / factor;
+}
+
+async function fetchMarketSnapshot() {
+  try {
+    const yahooUrl = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${MARKET_SYMBOLS.map(s => s.yahooSymbol).join(',')}`;
+    const response = await fetchWithTimeout(yahooUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 AISignals/1.0',
+        'Accept': 'application/json'
+      }
+    }, 5000);
+
+    let assets = [];
+    if (response.ok) {
+      const data = await response.json();
+      const quotes = Array.isArray(data?.quoteResponse?.result) ? data.quoteResponse.result : [];
+      const quoteBySymbol = new Map(quotes.map(q => [String(q.symbol || '').toUpperCase(), q]));
+
+      assets = MARKET_SYMBOLS
+        .map(symbol => toAsset(quoteBySymbol.get(symbol.yahooSymbol), symbol.name, symbol.ticker, symbol.link))
+        .filter(asset => asset && typeof asset.price === 'number');
+    }
+
+    if (assets.length < 3) {
+      assets = await fetchMarketSnapshotFallback();
+    }
+
+    if (!assets.length) return null;
+
+    const pulseValue = roundNumber(average(assets.map(a => a.changePct)), 2);
+    const pulse = pulseValue > 0.35 ? 'BULLISH' : pulseValue < -0.35 ? 'BEARISH' : 'FLAT';
+
+    return {
+      pulse,
+      pulseValue,
+      assets,
+      indexLinks: [
+        { name: 'NASDAQ Composite', link: 'https://finance.yahoo.com/quote/%5EIXIC' },
+        { name: 'QQQ ETF', link: 'https://finance.yahoo.com/quote/QQQ' }
+      ],
+      timestamp: new Date().toISOString()
+    };
+  } catch (error) {
+    console.warn('Market snapshot failed:', error.message);
+    return null;
+  }
+}
+
+async function fetchMarketSnapshotFallback() {
+  try {
+    const stooqSymbols = MARKET_SYMBOLS.filter(s => s.stooqSymbol).map(s => s.stooqSymbol).join(',');
+    const response = await fetchWithTimeout(
+      `https://stooq.com/q/l/?s=${stooqSymbols}&f=sd2t2ohlcv&h&e=csv`,
+      { headers: { 'User-Agent': 'Mozilla/5.0 AISignals/1.0' } },
+      5000
+    );
+
+    if (!response.ok) return [];
+
+    const csv = await response.text();
+    const rows = csv.split(/\r?\n/).filter(Boolean).slice(1);
+    const symbolByStooq = new Map(
+      MARKET_SYMBOLS
+        .filter(s => s.stooqSymbol)
+        .map(s => [s.stooqSymbol.toUpperCase(), s])
+    );
+
+    return rows.map(row => {
+      const cols = row.split(',');
+      const symbol = String(cols[0] || '').trim().toUpperCase();
+      const config = symbolByStooq.get(symbol);
+      if (!config) return null;
+
+      const open = toNumber(cols[3]);
+      const close = toNumber(cols[6]);
+      if (close == null) return null;
+
+      const changePct = open && open > 0 ? roundNumber(((close - open) / open) * 100, 2) : null;
+
+      return {
+        ticker: config.ticker,
+        name: config.name,
+        price: roundNumber(close, 2),
+        changePct,
+        trend: changePct > 0 ? 'UP' : changePct < 0 ? 'DOWN' : 'FLAT',
+        link: config.link
+      };
+    }).filter(Boolean);
+  } catch {
+    return [];
+  }
 }
