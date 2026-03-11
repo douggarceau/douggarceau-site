@@ -30,19 +30,8 @@ const SOURCES = [
   { name: 'Ars Technica', type: 'rss', category: 'tech', url: 'https://feeds.arstechnica.com/arstechnica/index' },
   { name: 'Hacker News AI', type: 'rss', category: 'tech', url: 'https://hnrss.org/newest?q=artificial+intelligence+OR+AI' },
   { name: 'Reuters Tech', type: 'rss', category: 'mainstream', url: 'https://feeds.reuters.com/reuters/technologyNews' },
-  { name: 'Reuters Business', type: 'rss', category: 'finance', url: 'https://feeds.reuters.com/reuters/businessNews' },
   { name: 'Reuters Politics', type: 'rss', category: 'politics', url: 'https://feeds.reuters.com/Reuters/PoliticsNews' },
-  { name: 'Trump AI + Markets', type: 'rss', category: 'politics', url: 'https://news.google.com/rss/search?q=trump+ai+technology+markets&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'Federal Reserve', type: 'rss', category: 'fed', url: 'https://www.federalreserve.gov/feeds/press_all.xml' },
-  { name: 'CNBC Top', type: 'rss', category: 'finance', url: 'https://www.cnbc.com/id/100003114/device/rss/rss.html' },
-  { name: 'CoinDesk', type: 'rss', category: 'finance', url: 'https://www.coindesk.com/arc/outboundfeeds/rss/' },
-  { name: 'MarketWatch', type: 'rss', category: 'finance', url: 'https://feeds.content.dowjones.io/public/rss/mw_topstories' },
-  { name: 'Yahoo Finance', type: 'rss', category: 'finance', url: 'https://feeds.finance.yahoo.com/rss/2.0/headline' },
-  { name: 'Business Insider Gen Z', type: 'rss', category: 'finance', url: 'https://www.businessinsider.com/gen-z' },
-  { name: 'Student Loan News', type: 'rss', category: 'politics', url: 'https://www.cnbc.com/search/?query=student+debt' },
-  { name: 'Housing Market', type: 'rss', category: 'finance', url: 'https://feeds.bloomberg.com/markets/news.rss' },
   { name: 'Social Media Policy', type: 'rss', category: 'tech', url: 'https://feeds.reuters.com/technology/socialmedia' },
-  { name: 'Gen Z Economy', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=gen+z+economy+housing+student+debt&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Elon Musk News', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Elon+Musk+AI+Tesla+SpaceX&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Sam Altman News', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Sam+Altman+OpenAI+artificial+intelligence&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Jensen Huang NVIDIA', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Jensen+Huang+NVIDIA+AI+chips&hl=en-US&gl=US&ceid=US:en' },
@@ -50,9 +39,7 @@ const SOURCES = [
   { name: 'Robotics News', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=robotics+robots+automation+AI&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Tech Gadgets & Toys', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=tech+gadgets+consumer+electronics+reviews+announcements&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Transhumanism News', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=transhumanism+human+enhancement+neural+interfaces+biotech&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'US Dollar News', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=US+dollar+currency+exchange+rates+inflation&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'Home Values & Real Estate', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=home+prices+real+estate+housing+market+nationwide&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'Jeff Bezos News', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=Jeff+Bezos+Amazon+business+technology&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Jeff Bezos News', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Jeff+Bezos+Amazon+business+technology&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Elon Musk AI Coverage', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Elon+Musk+Tesla+xAI+SpaceX+AI&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Satya Nadella Microsoft AI', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Satya+Nadella+Microsoft+OpenAI+Azure&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Sundar Pichai Google AI', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Sundar+Pichai+Google+Gemini+DeepMind&hl=en-US&gl=US&ceid=US:en' },
@@ -61,7 +48,7 @@ const SOURCES = [
   { name: 'Dario Amodei Anthropic', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Dario+Amodei+Anthropic+Claude&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Lisa Su AMD AI Chips', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Lisa+Su+AMD+AI+chips+GPU&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Alexandr Wang Scale AI', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Alexandr+Wang+Scale+AI+data+infrastructure&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'VC Funding & AI Startups', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=AI+startup+funding+Series+A+B+C+venture+capital+IPO&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'VC Funding & AI Startups', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+startup+funding+Series+A+B+C+venture+capital+IPO&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Quantum Computing', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=quantum+computing+IBM+Google+breakthrough&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Autonomous Vehicles', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=autonomous+vehicles+Tesla+Waymo+self+driving&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Ilya Sutskever', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Ilya+Sutskever+OpenAI+research&hl=en-US&gl=US&ceid=US:en' },
@@ -71,7 +58,7 @@ const SOURCES = [
   { name: 'Mustafa Suleyman AI', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Mustafa+Suleyman+Microsoft+DeepMind&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Yann LeCun', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Yann+LeCun+AI+godfather+research&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Emad Mostaque Stability', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Emad+Mostaque+Stable+Diffusion+open+source&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'Vitalik Buterin Crypto AI', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=Vitalik+Buterin+Ethereum+AI+crypto&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Vitalik Buterin Crypto AI', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Vitalik+Buterin+Ethereum+AI+crypto&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Nat Friedman Developer AI', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Nat+Friedman+open+source+AI+developer&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Balaji Srinivasan Tech Vision', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Balaji+Srinivasan+tech+futurism+Silicon+Valley&hl=en-US&gl=US&ceid=US:en' },
   { name: 'Young AI Builders & Founders', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=young+founder+Gen+Z+startup+AI+builder+teenager+student&hl=en-US&gl=US&ceid=US:en' },
@@ -164,8 +151,8 @@ exports.handler = async function handler() {
       .slice(0, 16)
       .map(item => ({ title: item.title, link: item.link, source: item.source, category: item.category }));
 
-    const fedActivity = items
-      .filter(item => item.source === 'Federal Reserve' || item.category === 'fed' || /federal reserve|fed|fomc|powell|rate decision|interest rate/i.test(item.title))
+    const policyActivity = items
+      .filter(item => /ai act|ai policy|ai regulation|model safety policy|executive order ai|governance/i.test(`${item.title} ${item.summary || ''}`))
       .slice(0, 10)
       .map(item => ({
         title: item.title,
@@ -174,8 +161,8 @@ exports.handler = async function handler() {
         pubDate: item.pubDate
       }));
 
-    const trumpActivity = items
-      .filter(item => /\btrump\b/i.test(item.title) && /ai|artificial intelligence|chip|technology|tech|market|trade|tariff|fed|rates|crypto|bitcoin|nvidia/i.test(item.title))
+    const humanDriftActivity = items
+      .filter(item => /(incident|failure|hallucination|deepfake|synthetic|identity|robot|autonomous|drone|surveillance|weapon|defense|attachment|companion|transhuman|enhancement|safety|misuse|breakdown)/i.test(`${item.title} ${item.summary || ''}`))
       .slice(0, 10)
       .map(item => ({
         title: item.title,
@@ -203,8 +190,8 @@ exports.handler = async function handler() {
           darkTech,
           incidentLog,
           aiCulture,
-          fedActivity,
-          trumpActivity,
+          policyActivity,
+          humanDriftActivity,
           market
         }
       })
@@ -432,119 +419,11 @@ function storyPriority(item) {
 }
 
 async function fetchMarketSnapshot() {
-  try {
-    const symbols = ['BTC-USD', 'GC=F', 'SI=F', '^GSPC', '^IXIC', '^DJI'];
-    const url = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${encodeURIComponent(symbols.join(','))}`;
-    const response = await fetchWithTimeout(url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 AISignals/1.0' }
-    }, 6500);
-
-    if (!response.ok) throw new Error(`Market API returned ${response.status}`);
-
-    const data = await response.json();
-    const results = (data && data.quoteResponse && data.quoteResponse.result) || [];
-  if (!results.length) throw new Error('Market API returned no quote results');
-    const bySymbol = Object.fromEntries(results.map(item => [item.symbol, item]));
-
-    const assets = [
-      toAsset(bySymbol['^GSPC'], 'S&P 500', 'SPX', 'https://finance.yahoo.com/quote/%5EGSPC'),
-      toAsset(bySymbol['^IXIC'], 'Nasdaq', 'NDX', 'https://finance.yahoo.com/quote/%5EIXIC'),
-      toAsset(bySymbol['^DJI'], 'Dow', 'DJI', 'https://finance.yahoo.com/quote/%5EDJI'),
-      toAsset(bySymbol['BTC-USD'], 'Bitcoin', 'BTC', 'https://finance.yahoo.com/quote/BTC-USD'),
-      toAsset(bySymbol['GC=F'], 'Gold', 'XAU', 'https://finance.yahoo.com/quote/GC=F'),
-      toAsset(bySymbol['SI=F'], 'Silver', 'XAG', 'https://finance.yahoo.com/quote/SI=F')
-    ].filter(Boolean);
-
-    const spx = bySymbol['^GSPC'];
-    const ndx = bySymbol['^IXIC'];
-    const pulseValue = average([spx && spx.regularMarketChangePercent, ndx && ndx.regularMarketChangePercent]);
-    const pulse = pulseValue > 0.15 ? 'UP' : pulseValue < -0.15 ? 'DOWN' : 'FLAT';
-
-    return {
-      pulse,
-      pulseValue: roundNumber(pulseValue, 2),
-      assets,
-      indexLinks: [
-        { name: 'S&P 500', link: 'https://finance.yahoo.com/quote/%5EGSPC' },
-        { name: 'NASDAQ', link: 'https://finance.yahoo.com/quote/%5EIXIC' }
-      ]
-    };
-  } catch (error) {
-    console.warn('Primary market snapshot failed, trying fallback', error.message || error);
-    return fetchMarketSnapshotFallback();
-  }
+  return null;
 }
 
 async function fetchMarketSnapshotFallback() {
-  try {
-    const symbols = [
-      { key: '^GSPC', name: 'S&P 500', ticker: 'SPX', link: 'https://finance.yahoo.com/quote/%5EGSPC', stooq: '%5Espx' },
-      { key: '^IXIC', name: 'Nasdaq', ticker: 'NDX', link: 'https://finance.yahoo.com/quote/%5EIXIC', stooq: '%5Endq' },
-      { key: '^DJI', name: 'Dow', ticker: 'DJI', link: 'https://finance.yahoo.com/quote/%5EDJI', stooq: '%5Edji' },
-      { key: 'BTC-USD', name: 'Bitcoin', ticker: 'BTC', link: 'https://finance.yahoo.com/quote/BTC-USD', stooq: 'btcusd' },
-      { key: 'GC=F', name: 'Gold', ticker: 'XAU', link: 'https://finance.yahoo.com/quote/GC=F', stooq: 'xauusd' },
-      { key: 'SI=F', name: 'Silver', ticker: 'XAG', link: 'https://finance.yahoo.com/quote/SI=F', stooq: 'xagusd' }
-    ];
-
-    const rows = await Promise.all(symbols.map(async symbol => {
-      const response = await fetchWithTimeout(`https://stooq.com/q/l/?s=${symbol.stooq}&f=sd2t2ohlcvn&h&e=csv`, {
-        headers: { 'User-Agent': 'Mozilla/5.0 AISignals/1.0' }
-      }, 6500);
-
-      if (!response.ok) throw new Error(`Fallback market API returned ${response.status} for ${symbol.key}`);
-
-      const csv = await response.text();
-      const line = csv.split('\n').map(part => part.trim()).filter(Boolean)[1] || '';
-      const columns = line.split(',');
-      if (columns.length < 7) return null;
-
-      const open = toNumber(columns[3]);
-      const close = toNumber(columns[6]);
-      const changePct = typeof open === 'number' && open !== 0 && typeof close === 'number'
-        ? ((close - open) / open) * 100
-        : null;
-
-      return {
-        key: symbol.key,
-        ticker: symbol.ticker,
-        name: symbol.name,
-        link: symbol.link,
-        price: typeof close === 'number' ? roundNumber(close, 2) : null,
-        changePct: typeof changePct === 'number' ? roundNumber(changePct, 2) : null
-      };
-    }));
-
-    const assets = rows
-      .filter(Boolean)
-      .map(row => ({
-        ticker: row.ticker,
-        name: row.name,
-        price: row.price,
-        changePct: row.changePct,
-        trend: row.changePct > 0 ? 'UP' : row.changePct < 0 ? 'DOWN' : 'FLAT',
-        link: row.link
-      }));
-
-    const spx = rows.find(row => row && row.key === '^GSPC');
-    const ndx = rows.find(row => row && row.key === '^IXIC');
-    const pulseValue = average([spx && spx.changePct, ndx && ndx.changePct]);
-    const pulse = pulseValue > 0.15 ? 'UP' : pulseValue < -0.15 ? 'DOWN' : 'FLAT';
-
-    if (!assets.length) return null;
-
-    return {
-      pulse,
-      pulseValue: roundNumber(pulseValue, 2),
-      assets,
-      indexLinks: [
-        { name: 'S&P 500', link: 'https://finance.yahoo.com/quote/%5EGSPC' },
-        { name: 'NASDAQ', link: 'https://finance.yahoo.com/quote/%5EIXIC' }
-      ]
-    };
-  } catch (error) {
-    console.warn('Fallback market snapshot failed', error.message || error);
-    return null;
-  }
+  return null;
 }
 
 function toAsset(quote, name, ticker, link) {
