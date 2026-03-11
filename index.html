@@ -178,8 +178,8 @@
       50% { box-shadow: 0 0 22px rgba(255,106,0,0.45); }
     }
 
-    .hero { padding: 38px 0 16px; position: relative; }
-    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 28px; align-items: start; }
+    .hero { padding: 28px 0 12px; position: relative; }
+    .hero-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
 
     .hero-panel,.panel,.signal-card,.stat-card,.story-card,.subscribe-card,.contact-card,.terminal {
       background: linear-gradient(180deg, rgba(20,15,11,0.86), rgba(10,8,7,0.94));
@@ -315,7 +315,7 @@
       border-bottom-color: rgba(255, 120, 24, 0.52);
     }
 
-    .hero-side { display: grid; grid-template-rows: 1fr auto; gap: 28px; }
+    .hero-side { display: grid; grid-template-rows: auto; gap: 14px; }
     .terminal { border-radius: 30px; padding: 22px; min-height: 340px; position: relative; overflow: hidden; }
     .terminal { animation: riseIn 900ms ease-out both; }
     .terminal::before { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent 30%, transparent 70%, rgba(255,255,255,0.02)); pointer-events: none; }
@@ -379,8 +379,8 @@
     .wire-panel, .market-panel, .editorials-panel, .fed-panel, .trump-panel { border-radius: 28px; padding: 24px; }
     .wire-panel, .market-panel, .editorials-panel, .fed-panel, .trump-panel { animation: riseIn 760ms ease-out both; }
 
-    .top-link-stack { display: grid; gap: 14px; align-content: start; }
-    .top-links-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .top-link-stack { display: grid; gap: 12px; align-content: start; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .top-links-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
     .top-card { border-radius: 20px; padding: 16px; }
     .outlet-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
     .outlet-link {
@@ -597,7 +597,8 @@
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 18px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 26px; }
 
     @media (max-width: 1120px) {
-      .hero-grid,.stories,.bottom-grid,.deep-grid,.top-links-grid { grid-template-columns: 1fr; }
+      .stories,.bottom-grid,.deep-grid,.top-links-grid { grid-template-columns: 1fr; }
+      .top-link-stack { grid-template-columns: repeat(2, 1fr); }
       .video-grid { grid-template-columns: 1fr; }
       .signals-grid { grid-template-columns: repeat(2, 1fr); }
       .stats { grid-template-columns: 1fr; }
@@ -634,16 +635,15 @@
         <span>AI Signals</span>
       </a>
       <div class="nav-links">
-        <a href="#signals">Models</a>
-        <a href="#compute">Compute</a>
-        <a href="#top-feeds">Markets</a>
-        <a href="#pulse">Pulse</a>
-        <a href="#video-feed">Video</a>
-        <a href="#signals">Research</a>
-        <a href="#capital">Capital</a>
-        <a href="#briefings">Briefings</a>
-        <a href="#top-feeds">Editorials</a>
-        <a href="#advertise">Advertise</a>
+        <a href="#top">Home</a>
+        <a href="#industry">AI Industry</a>
+        <a href="#personalities">Tech Personalities</a>
+        <a href="#futures">Future Humans</a>
+        <a href="#robotics">Robotics</a>
+        <a href="#culture">Gen-Z & Culture</a>
+        <a href="#startups">Startups</a>
+        <a href="#opinion">Opinion</a>
+        <a href="#team">About</a>
       </div>
       <a href="#subscribe" class="button button-primary">Subscribe</a>
     </div>
@@ -656,6 +656,7 @@
       <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.ft.com/">Financial Times</a>
       <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.reuters.com/">Reuters</a>
       <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.cnbc.com/">CNBC</a>
+      <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://finance.yahoo.com/">Yahoo Finance</a>
       <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.economist.com/">Economist</a>
       <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.coindesk.com/">CoinDesk</a>
       <a class="quick-link-pill" target="_blank" rel="noopener noreferrer" href="https://www.theinformation.com/">The Information</a>
