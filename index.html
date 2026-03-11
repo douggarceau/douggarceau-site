@@ -184,7 +184,7 @@
       50% { box-shadow: 0 0 22px rgba(255,106,0,0.45); }
     }
 
-    .hero { padding: 28px 0 12px; position: relative; }
+    .hero { padding: 10px 0; position: relative; }
     .hero-grid { display: grid; grid-template-columns: 1fr; gap: 16px; }
 
     .hero-panel,.panel,.signal-card,.stat-card,.story-card,.subscribe-card,.contact-card,.terminal {
@@ -194,7 +194,7 @@
     }
 
     .hero-panel {
-      border-radius: 34px; padding: 42px; overflow: hidden; position: relative;
+      border-radius: 34px; padding: 16px; overflow: hidden; position: relative;
       animation: riseIn 780ms ease-out both;
     }
     .hero-panel::before,.hero-panel::after { content: ""; position: absolute; inset: auto; pointer-events: none; }
@@ -213,10 +213,10 @@
     .status-pill { margin-top: 18px; font-size: 0.72rem; }
     .status-pill strong { color: var(--ok); }
 
-    h1 { margin: 0; font-family: "Orbitron", "Rajdhani", sans-serif; font-size: clamp(1.8rem, 3.8vw, 3rem); line-height: 0.98; letter-spacing: -0.01em; font-weight: 800; text-transform: uppercase; max-width: 11ch; }
+    h1 { margin: 0; font-family: "Orbitron", "Rajdhani", sans-serif; font-size: 1.6rem; line-height: 0.98; letter-spacing: -0.01em; font-weight: 800; text-transform: uppercase; max-width: 11ch; }
     .hero h1 span { color: #fff2e4; display: block; text-shadow: 0 0 24px rgba(255, 106, 0, 0.3); }
-    .hero-copy { margin: 24px 0 30px; max-width: 650px; color: #d6d6d6; font-size: clamp(1rem, 1.45vw, 1.18rem); line-height: 1.7; }
-    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+    .hero-copy { display: none; }
+    .hero-actions { display: none; }
     .hero-console {
       display: flex;
       flex-wrap: wrap;
@@ -254,7 +254,6 @@
       border-radius: 14px;
       background: rgba(255,255,255,0.02);
       padding: 12px;
-      min-height: 210px;
       display: grid;
       grid-template-rows: auto 1fr;
       gap: 10px;
@@ -352,7 +351,7 @@
     .section-copy { color: var(--muted); max-width: 680px; line-height: 1.7; font-size: 1rem; }
 
     .signals-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-    .signal-card { border-radius: 24px; padding: 24px; position: relative; overflow: hidden; min-height: 288px; display: grid; }
+    .signal-card { border-radius: 24px; padding: 20px; position: relative; overflow: hidden; display: grid; }
     .signal-card { animation: riseIn 700ms ease-out both; }
     .signal-card::before {
       content: ""; position: absolute; left: -10%; right: -10%; top: 0; height: 1px; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); opacity: 0.3;
@@ -387,20 +386,20 @@
 
     .top-link-stack { display: grid; gap: 12px; align-content: start; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
     .top-links-grid { display: grid; grid-template-columns: 1fr; gap: 12px; }
-    .top-card { border-radius: 20px; padding: 16px; }
-    .outlet-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 12px; }
+    .top-card { border-radius: 18px; padding: 12px; }
+    .outlet-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-top: 10px; }
     .outlet-link {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 10px 8px;
-      border-radius: 10px;
+      padding: 8px 6px;
+      border-radius: 8px;
       border: 1px solid rgba(255, 120, 24, 0.28);
       background: rgba(255,255,255,0.02);
       color: #fff;
-      font-size: 0.84rem;
-      letter-spacing: 0.04em;
+      font-size: 0.75rem;
+      letter-spacing: 0.03em;
       text-transform: uppercase;
     }
     .outlet-link:hover { background: rgba(255,120,24,0.14); border-color: rgba(255,120,24,0.6); }
@@ -739,11 +738,6 @@
 
           <div class="top-links-grid">
             <div class="panel top-card">
-              <div class="section-kicker">Policy Shock Monitor</div>
-              <h3 class="card-title" style="margin:0;">Fed Signal Watch</h3>
-              <div class="fed-list" id="fed-list"></div>
-            </div>
-            <div class="panel top-card">
               <div class="section-kicker">Primary Sources</div>
               <h3 class="card-title" style="margin:0;">Reference Links</h3>
               <div class="market-links" id="fed-links"></div>
@@ -779,20 +773,6 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Live Feed</div>
-            <h2>Latest Signals</h2>
-          </div>
-          <p class="section-copy">Track moments when familiar life patterns take an unexpected turn through AI systems, synthetic media, and automated decisions.</p>
-        </div>
-
-        <div class="story-stack" id="latest-signals"></div>
       </div>
     </section>
 
@@ -903,6 +883,20 @@
       </div>
     </section>
 
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <div class="section-kicker">Live Feed</div>
+            <h2>Latest Signals</h2>
+          </div>
+          <p class="section-copy">Track moments when familiar life patterns take an unexpected turn through AI systems, synthetic media, and automated decisions.</p>
+        </div>
+
+        <div class="story-stack" id="latest-signals"></div>
+      </div>
+    </section>
+
     <span id="capital" class="scroll-anchor" aria-hidden="true"></span>
     <span id="futures" class="scroll-anchor" aria-hidden="true"></span>
     <section id="briefings">
@@ -955,24 +949,24 @@
         <div class="video-grid">
           <article class="panel video-card">
             <div class="video-top">
-              <h3 class="card-title" style="margin:0;">AI + Tech Live</h3>
+              <h3 class="card-title" style="margin:0;">AI SIGNAL LIVE</h3>
               <span class="live-pill"><span class="live-dot"></span>Live Window</span>
             </div>
             <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed?listType=search&list=Bloomberg%20TV%20Live" title="Bloomberg live feed" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/L_Guz73e6fw" title="Sam Altman AI Interview" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="video-note">Bloomberg stream for macro, policy, and technology market context.</div>
+            <div class="video-note">Rotating interview feed covering AI leaders, research talks, and conference conversations.</div>
           </article>
 
           <article class="panel video-card">
             <div class="video-top">
-              <h3 class="card-title" style="margin:0;">Markets Live</h3>
+              <h3 class="card-title" style="margin:0;">SIGNAL DESK PODCAST</h3>
               <span class="live-pill"><span class="live-dot"></span>Live Window</span>
             </div>
             <div class="video-frame">
-              <iframe src="https://www.youtube.com/embed?listType=search&list=CNBC%20Live%20TV" title="CNBC live feed" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YRvf00NooN8" title="Elon Musk AI Discussion" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
-            <div class="video-note">CNBC stream for intraday risk shifts and capital rotation signals.</div>
+            <div class="video-note">Discussion playlist for long-form AI interviews, podcast segments, and synthetic-future analysis.</div>
           </article>
         </div>
       </div>
@@ -1188,6 +1182,34 @@
     function isBlockedHeadline(text = '') {
       const t = String(text || '').toLowerCase();
       return /\b(donald\s+trump|trump\s+campaign|trump\s+administration|trump)\b/i.test(t);
+    }
+
+    function isAISignal(text = "") {
+      const t = text.toLowerCase();
+      return /(ai|artificial intelligence|machine learning|llm|openai|anthropic|deepmind|nvidia|gpu|robot|automation|autonomous|deepfake|synthetic|voice clone|brain computer|transhuman|crypto|blockchain|bitcoin)/.test(t);
+    }
+
+    function filterAISignals(items = []) {
+      return items.filter(item => isAISignal(item.title + " " + (item.summary || "")));
+    }
+
+    const aiCelebs = [
+      "sam altman", "demis hassabis", "dario amodei", "jensen huang",
+      "andrej karpathy", "ilya sutskever", "yann lecun", "geoffrey hinton",
+      "andrew ng", "fei fei li", "emad mostaque", "thomas wolf",
+      "clem delangue", "greg brockman", "lex fridman", "dwarkesh patel",
+      "nick bostrom", "max tegmark", "vitalik buterin"
+    ];
+
+    function isAICelebritySignal(text = "") {
+      const t = text.toLowerCase();
+      return aiCelebs.some(name => t.includes(name));
+    }
+
+    function filterCelebritySignals(items = []) {
+      return items.filter(item =>
+        isAICelebritySignal(item.title + " " + (item.summary || ""))
+      );
     }
 
     function filterBlockedItems(items = []) {
