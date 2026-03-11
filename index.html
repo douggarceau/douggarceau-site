@@ -538,6 +538,22 @@
     .team-title { font-size: 0.88rem; text-transform: uppercase; letter-spacing: 0.12em; color: #ffceb8; }
     .team-bio { color: #d6d6d6; line-height: 1.65; font-size: 0.96rem; }
 
+    .briefing-title {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+      overflow: hidden;
+      line-clamp: 1;
+    }
+
+    .briefing-copy {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      line-clamp: 2;
+    }
+
     .fed-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
     .fed-list { display: grid; gap: 10px; margin-top: 14px; }
     .fed-link {
@@ -1057,9 +1073,9 @@
     <section id="pulse">
       <div class="wrap">
         <aside class="panel market-panel">
-          <div class="section-kicker">Company Pulse</div>
-          <h3 class="card-title">Frontier Company Watch</h3>
-          <p class="card-copy" id="market-copy">Company movement appears here as supporting context for where AI systems gain reach through compute, infrastructure, and deployment capacity.</p>
+          <div class="section-kicker">AI Company Signals</div>
+          <h3 class="card-title">Top AI Company Updates</h3>
+          <p class="card-copy" id="market-copy">This panel tracks major AI company momentum and updates so you can quickly see who is shipping, scaling, or shifting strategy.</p>
           <div class="market-grid" id="market-grid"></div>
           <div class="market-links" id="market-links"></div>
         </aside>
@@ -1109,47 +1125,98 @@
             <div class="section-kicker">Audio Briefing</div>
             <h2>Signal Desk Podcast</h2>
           </div>
-          <p class="section-copy">A daily audio briefing on subtle social changes around AI companions, synthetic media, automation, and the future of human judgment.</p>
+          <p class="section-copy">Six high-IQ AI podcasts with in-page players focused on frontier labs, alignment, policy, and technical depth.</p>
         </div>
 
         <div class="signals-grid">
           <article class="signal-card">
             <div>
-              <div class="signal-type">Synthetic Hosts</div>
-              <div class="signal-title">Alex Vega & Maya Chen</div>
-              <div class="signal-text">Two synthetic hosts review the stories where ordinary behavior begins adapting to unfamiliar machine systems.</div>
+              <div class="signal-type">Podcast 01</div>
+              <div class="signal-title">Lex Fridman: AI Alignment + Frontier Labs</div>
+              <div class="signal-text">Long-form technical interviews with researchers and founders on alignment, model capability, and AGI timelines.</div>
               <div class="signal-meta">
-                <span class="tag">Daily Show</span>
-                <span class="tag">AI Audio</span>
+                <span class="tag">Research</span>
+                <span class="tag">Alignment</span>
               </div>
             </div>
-            <a class="signal-link" href="#">Play episode →</a>
+            <div class="video-frame" style="margin-top:10px;">
+              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=Lex+Fridman+Podcast+AI+alignment" title="Lex Fridman AI podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
           </article>
 
           <article class="signal-card">
             <div>
-              <div class="signal-type">Today’s Episode</div>
-              <div class="signal-title">When the Phone Call Sounds Like Family</div>
-              <div class="signal-text">A calm breakdown of deepfake voice fraud, synthetic identity pressure, and how families and institutions adapt to uncertain authenticity.</div>
+              <div class="signal-type">Podcast 02</div>
+              <div class="signal-title">Dwarkesh Podcast: Scaling Laws + AGI</div>
+              <div class="signal-text">High-density conversations with top scientists on model scaling, reasoning, compute, and transformative AI forecasts.</div>
               <div class="signal-meta">
-                <span class="tag">Podcast</span>
-                <span class="tag">Future Shock</span>
+                <span class="tag">Compute</span>
+                <span class="tag">Theory</span>
               </div>
             </div>
-            <a class="signal-link" href="#">Listen now →</a>
+            <div class="video-frame" style="margin-top:10px;">
+              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=Dwarkesh+Podcast+AI+AGI" title="Dwarkesh AI podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
           </article>
 
           <article class="signal-card">
             <div>
-              <div class="signal-type">Coming Next</div>
-              <div class="signal-title">Children, Tutors, and Machine Authority</div>
-              <div class="signal-text">A briefing on AI tutors, developmental trust, and what changes when learning relationships move from classrooms to adaptive systems.</div>
+              <div class="signal-type">Podcast 03</div>
+              <div class="signal-title">Machine Learning Street Talk</div>
+              <div class="signal-text">Deep technical roundtables with researchers on architecture choices, interpretability, and empirical ML results.</div>
               <div class="signal-meta">
-                <span class="tag">Future Humans</span>
-                <span class="tag">Transhumanism</span>
+                <span class="tag">Technical</span>
+                <span class="tag">Interpretability</span>
               </div>
             </div>
-            <a class="signal-link" href="#">Queue episode →</a>
+            <div class="video-frame" style="margin-top:10px;">
+              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=Machine+Learning+Street+Talk+AI" title="Machine Learning Street Talk player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Podcast 04</div>
+              <div class="signal-title">The Cognitive Revolution</div>
+              <div class="signal-text">Practical and strategic analysis of frontier model releases, enterprise deployment, and agentic workflows.</div>
+              <div class="signal-meta">
+                <span class="tag">Industry</span>
+                <span class="tag">Frontier Models</span>
+              </div>
+            </div>
+            <div class="video-frame" style="margin-top:10px;">
+              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=The+Cognitive+Revolution+podcast+AI" title="The Cognitive Revolution podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Podcast 05</div>
+              <div class="signal-title">No Priors: AI + Tech Strategy</div>
+              <div class="signal-text">Founder-level interviews on AI product strategy, semiconductor dynamics, and platform-level competition.</div>
+              <div class="signal-meta">
+                <span class="tag">Strategy</span>
+                <span class="tag">Execution</span>
+              </div>
+            </div>
+            <div class="video-frame" style="margin-top:10px;">
+              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=No+Priors+podcast+AI" title="No Priors podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+          </article>
+
+          <article class="signal-card">
+            <div>
+              <div class="signal-type">Podcast 06</div>
+              <div class="signal-title">Eye on AI</div>
+              <div class="signal-text">Policy, safety, and geopolitics discussions with AI leaders, researchers, and governance experts.</div>
+              <div class="signal-meta">
+                <span class="tag">Policy</span>
+                <span class="tag">Safety</span>
+              </div>
+            </div>
+            <div class="video-frame" style="margin-top:10px;">
+              <iframe loading="lazy" src="https://www.youtube.com/embed?listType=search&list=Eye+on+AI+podcast" title="Eye on AI podcast player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
           </article>
         </div>
       </div>
@@ -1340,12 +1407,24 @@
       el.innerHTML = String(text || '');
       const decoded = el.value;
       return decoded
+        .replace(/^\s*(?:code|id|tag|xml|rss|json)\s*[:=\-]+\s*/i, '')
         .replace(/^\s*(?:\[[^\]]+\]|\{[^\}]+\}|\([A-Z0-9_\-]{2,20}\))\s*/, '')
         .replace(/^\s*(?:code:|id:|tag:)\s*/i, '')
+        .replace(/^\s*(?:<[^>]+>|\{\s*"[^"]+"\s*:|\[\s*\{)/, '')
         .replace(/^\s*[\|:\-\[\]{}()#@*_`~>]+\s*/, '')
         .replace(/^\s*\d+\s*[\)\].:-]\s*/, '')
         .replace(/\s+/g, ' ')
         .trim();
+    }
+
+    function isRenderableHeadline(text = '') {
+      const t = String(text || '').trim();
+      if (!t) return false;
+      if (t.length < 18) return false;
+      if (/^(code|id|tag|xml|rss|json)\b/i.test(t)) return false;
+      if (/^[\[{<]/.test(t)) return false;
+      if (/^[a-z0-9_-]{8,}$/.test(t)) return false;
+      return true;
     }
 
     function formatNumber(value) {
@@ -1622,7 +1701,10 @@
     }
 
     function filterBlockedItems(items = []) {
-      return (items || []).filter(item => !isBlockedHeadline(item?.title || ''));
+      return (items || []).filter(item => {
+        const clean = cleanHeadline(item?.title || '');
+        return !isBlockedHeadline(clean) && isRenderableHeadline(clean);
+      });
     }
 
     function detectTheme(text = '') {
@@ -1805,18 +1887,25 @@
 
     function renderBriefings(items) {
       const box = document.getElementById('briefing-stack');
-      if (!items.length) {
+      const pool = filterBlockedItems(items || []).filter(item => isAISignal(`${item.title || ''} ${item.summary || ''}`));
+
+      if (!pool.length) {
         box.innerHTML = '<div class="empty-state">Briefings are warming up. Check back in a moment.</div>';
         return;
       }
-      box.innerHTML = items.slice(0, 2).map((item, index) => `
+
+      box.innerHTML = pool.slice(0, 2).map((item, index) => {
+        const title = cleanHeadline(item.title || '');
+        const summary = summarize(cleanHeadline(item.summary || item.title || '')).slice(0, 150);
+        return `
         <article class="story-card">
           <div class="story-top"><span>${index === 0 ? 'Top Brief' : 'Brief'}</span><span>${escapeHtml(item.source || 'Live')}</span></div>
-          <div class="story-title">${escapeHtml(cleanHeadline(item.title))}</div>
-          <div class="story-copy">${escapeHtml(item.summary || summarize(cleanHeadline(item.title)))}</div>
+          <div class="story-title briefing-title">${escapeHtml(title)}</div>
+          <div class="story-copy briefing-copy">${escapeHtml(summary)}</div>
           <div class="story-impact">Impact: this development is active and moving in real time.</div>
         </article>
-      `).join('');
+      `;
+      }).join('');
     }
 
     function renderWatchlist(items) {
@@ -1869,13 +1958,13 @@
       const market = meta.market || null;
 
       if (!market || !Array.isArray(market.assets) || !market.assets.length) {
-        copy.textContent = 'AI company tracking is reconnecting.';
-        grid.innerHTML = '<div class="empty-state">Frontier company snapshot unavailable.</div>';
+        copy.textContent = 'AI company signal feed is reconnecting.';
+        grid.innerHTML = '<div class="empty-state">AI company snapshot unavailable.</div>';
         links.innerHTML = '';
         return;
       }
 
-      copy.textContent = `Frontier company pulse: ${market.pulse || 'FLAT'} ${typeof market.pulseValue === 'number' ? `(${market.pulseValue > 0 ? '+' : ''}${market.pulseValue}%)` : ''}`;
+      copy.textContent = `AI company pulse: ${market.pulse || 'FLAT'} ${typeof market.pulseValue === 'number' ? `(${market.pulseValue > 0 ? '+' : ''}${market.pulseValue}%)` : ''}`;
 
       grid.innerHTML = market.assets.map(asset => {
         const trendClass = (asset.trend || 'FLAT').toLowerCase();
