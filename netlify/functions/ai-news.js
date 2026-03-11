@@ -20,7 +20,74 @@ const SOURCES = [
   { name: 'Federal Reserve', type: 'rss', category: 'fed', url: 'https://www.federalreserve.gov/feeds/press_all.xml' },
   { name: 'CNBC Top', type: 'rss', category: 'finance', url: 'https://www.cnbc.com/id/100003114/device/rss/rss.html' },
   { name: 'CoinDesk', type: 'rss', category: 'finance', url: 'https://www.coindesk.com/arc/outboundfeeds/rss/' },
-  { name: 'MarketWatch', type: 'rss', category: 'finance', url: 'https://feeds.content.dowjones.io/public/rss/mw_topstories' }
+  { name: 'MarketWatch', type: 'rss', category: 'finance', url: 'https://feeds.content.dowjones.io/public/rss/mw_topstories' },
+  { name: 'Yahoo Finance', type: 'rss', category: 'finance', url: 'https://feeds.finance.yahoo.com/rss/2.0/headline' },
+  { name: 'Business Insider Gen Z', type: 'rss', category: 'finance', url: 'https://www.businessinsider.com/gen-z' },
+  { name: 'Student Loan News', type: 'rss', category: 'politics', url: 'https://www.cnbc.com/search/?query=student+debt' },
+  { name: 'Housing Market', type: 'rss', category: 'finance', url: 'https://feeds.bloomberg.com/markets/news.rss' },
+  { name: 'Social Media Policy', type: 'rss', category: 'tech', url: 'https://feeds.reuters.com/technology/socialmedia' },
+  { name: 'Gen Z Economy', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=gen+z+economy+housing+student+debt&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Elon Musk News', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Elon+Musk+AI+Tesla+SpaceX&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Sam Altman News', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Sam+Altman+OpenAI+artificial+intelligence&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Jensen Huang NVIDIA', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Jensen+Huang+NVIDIA+AI+chips&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Palantir News', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Palantir+AI+data+analytics&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Robotics News', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=robotics+robots+automation+AI&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Tech Gadgets & Toys', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=tech+gadgets+consumer+electronics+reviews+announcements&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Transhumanism News', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=transhumanism+human+enhancement+neural+interfaces+biotech&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'US Dollar News', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=US+dollar+currency+exchange+rates+inflation&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Home Values & Real Estate', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=home+prices+real+estate+housing+market+nationwide&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Jeff Bezos News', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=Jeff+Bezos+Amazon+business+technology&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Elon Musk AI Coverage', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Elon+Musk+Tesla+xAI+SpaceX+AI&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Satya Nadella Microsoft AI', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Satya+Nadella+Microsoft+OpenAI+Azure&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Sundar Pichai Google AI', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Sundar+Pichai+Google+Gemini+DeepMind&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Mark Zuckerberg Meta AI', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Mark+Zuckerberg+Meta+Llama+AI&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Demis Hassabis DeepMind', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Demis+Hassabis+Google+DeepMind+AI&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Dario Amodei Anthropic', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Dario+Amodei+Anthropic+Claude&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Lisa Su AMD AI Chips', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Lisa+Su+AMD+AI+chips+GPU&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Alexandr Wang Scale AI', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Alexandr+Wang+Scale+AI+data+infrastructure&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'VC Funding & AI Startups', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=AI+startup+funding+Series+A+B+C+venture+capital+IPO&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Quantum Computing', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=quantum+computing+IBM+Google+breakthrough&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Autonomous Vehicles', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=autonomous+vehicles+Tesla+Waymo+self+driving&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Ilya Sutskever', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Ilya+Sutskever+OpenAI+research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Andrej Karpathy', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Andrej+Karpathy+AI+machine+learning&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Lex Fridman AI Podcast', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Lex+Fridman+podcast+AI+interviews&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Gary Marcus AI Criticism', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Gary+Marcus+AI+critique+hype&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Mustafa Suleyman AI', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Mustafa+Suleyman+Microsoft+DeepMind&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Yann LeCun', type: 'rss', category: 'ai', url: 'https://news.google.com/rss/search?q=Yann+LeCun+AI+godfather+research&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Emad Mostaque Stability', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Emad+Mostaque+Stable+Diffusion+open+source&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Vitalik Buterin Crypto AI', type: 'rss', category: 'finance', url: 'https://news.google.com/rss/search?q=Vitalik+Buterin+Ethereum+AI+crypto&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Nat Friedman Developer AI', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Nat+Friedman+open+source+AI+developer&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Balaji Srinivasan Tech Vision', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=Balaji+Srinivasan+tech+futurism+Silicon+Valley&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Young AI Builders & Founders', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=young+founder+Gen+Z+startup+AI+builder+teenager+student&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'AI Artists & Creators', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+art+music+film+creator+artist+generative&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Open Source AI & Hackers', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=open+source+AI+hacker+developer+GitHub+mod&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Biohacking & Human Enhancement', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=biohacking+neural+implant+human+enhancement+longevity&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Robotics Hobbyists & Builders', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=robot+hobbyist+maker+personal+robot+DIY+robotics&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Virtual Influencers & Digital Identity', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=virtual+influencer+avatar+digital+identity+AI+persona&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'AI in Education & Student Life', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+learning+student+education+college+classroom&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'AI Daily Life & Lifestyle', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+lifestyle+productivity+dating+business+everyday+life&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'AI Gone Wrong', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+failure+error+hallucination+mistake+glitch&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Deepfake Reality', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=deepfake+synthetic+media+fake+video+voice+clone&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Automation Shock', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=automation+workers+job+displaced+robots+industry&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'The Surveillance Age', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=facial+recognition+surveillance+tracking+privacy&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'AI and War', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=autonomous+weapons+AI+military+drone+cyber+warfare&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Synthetic Humans', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+avatar+voice+clone+synthetic+person+indistinguishable&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Algorithmic Power', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=algorithm+recommendation+system+platform+power+influence&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Data Empires', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=data+collection+privacy+training+dataset+corporate&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'The Race to AGI', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AGI+artificial+general+intelligence+race+competition&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'What If It Works Too Well', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=superintelligence+runaway+AI+long+term+humanity+future&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'AI Relationships & Companions', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+digital+companions+emotional+connection+relationships&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Virtual Influencers & Synthetic Celebrities', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=virtual+influencers+AI+generated+celebrities+models&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Longevity & Biohacking', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=longevity+biohacking+life+extension+anti+aging&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Brain-Computer Interfaces', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=brain+computer+interface+neural+implants+cognitive+enhancement&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Synthetic Media & AI Entertainment', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+music+movies+digital+actors+synthetic+media&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'AI Startups & Young Founders', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+startup+young+founders+tech+entrepreneurs&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Digital Identity & Deepfakes', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=deepfakes+digital+identity+avatars+online+reputation&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Future of Work & AI Careers', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=jobs+automation+AI+careers+future+of+work&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Open-Source AI Movement', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=open+source+AI+hacker+developer+culture&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'AI Ethics & Tech Philosophy', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=AI+ethics+consciousness+AGI+moral+philosophy&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Internet Culture & Tech Communities', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=internet+subcultures+AI+art+hacker+culture+memes&hl=en-US&gl=US&ceid=US:en' },
+  { name: 'Space Tech & Civilization', type: 'rss', category: 'tech', url: 'https://news.google.com/rss/search?q=space+tech+Mars+SpaceX+orbital+infrastructure+AI&hl=en-US&gl=US&ceid=US:en' }
 ];
 
 exports.handler = async function handler() {
@@ -125,7 +192,7 @@ async function fetchSource(source) {
   try {
     const response = await fetchWithTimeout(source.url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 DougGarceauAISignals/1.0'
+        'User-Agent': 'Mozilla/5.0 AISignals/1.0'
       }
     }, 6500);
 
@@ -252,6 +319,14 @@ function decodeHtml(str = '') {
     .replace(/&#8221;/g, '”');
 }
 
+function sanitizeHeadline(value = '') {
+  return decodeHtml(value)
+    .replace(/^\s*(?:\[[^\]]+\]|\{[^\}]+\}|\([A-Z0-9_\-]{2,20}\))\s*/, '')
+    .replace(/^\s*(?:code:|id:|tag:)\s*/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function normalizeDate(value) {
   if (!value) return null;
   const date = new Date(value);
@@ -262,7 +337,7 @@ function cleanItem(item) {
   return {
     source: item.source || 'Live Feed',
     category: item.category || 'ai',
-    title: (item.title || '').replace(/\s+/g, ' ').trim(),
+    title: sanitizeHeadline(item.title || ''),
     link: (item.link || '').trim(),
     pubDate: item.pubDate || null,
     summary: (item.summary || '').replace(/\s+/g, ' ').trim()
@@ -283,7 +358,7 @@ async function fetchMarketSnapshot() {
     const symbols = ['BTC-USD', 'GC=F', 'SI=F', '^GSPC', '^IXIC'];
     const url = `https://query1.finance.yahoo.com/v7/finance/quote?symbols=${encodeURIComponent(symbols.join(','))}`;
     const response = await fetchWithTimeout(url, {
-      headers: { 'User-Agent': 'Mozilla/5.0 DougGarceauAISignals/1.0' }
+      headers: { 'User-Agent': 'Mozilla/5.0 AISignals/1.0' }
     }, 6500);
 
     if (!response.ok) throw new Error(`Market API returned ${response.status}`);
