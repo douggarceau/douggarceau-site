@@ -1,3 +1,7 @@
 [build]
   functions = "netlify/functions"
   publish = "."
+[[redirects]]
+from = "/success"
+to = "/thank-you.html"
+status = 200
