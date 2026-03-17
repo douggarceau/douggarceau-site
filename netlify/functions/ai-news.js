@@ -254,20 +254,60 @@ exports.handler = async function handler() {
         'Cache-Control': 'public, max-age=180'
       },
       body: JSON.stringify({
-        generatedAt: new Date().toISOString(),
-        items,
-        meta: {
-          sourceCounts,
-          total: items.length,
-          mainstreamHeadlines,
-          wireHeadlines,
-          researchBreakthroughs,
-          darkTech,
-          incidentLog,
-          aiCulture,
-          policyActivity,
-          humanDriftActivity,
-          market
+      const bostonTonight = items
+  .filter(item => /boston|cambridge|somerville|fenway|td garden|roadrunner|brighton|paradise/i.test(`${item.title} ${item.summary || ''} ${item.source || ''}`))
+  .slice(0, 16)
+  .map(item => ({
+    title: item.title,
+    link: item.link,
+    source: item.source,
+    category: item.category,
+    pubDate: item.pubDate
+  }));
+
+const providenceWeekend = items
+  .filter(item => /providence|rhode island|newport|waterfire|the met|pawtucket|warwick/i.test(`${item.title} ${item.summary || ''} ${item.source || ''}`))
+  .slice(0, 16)
+  .map(item => ({
+    title: item.title,
+    link: item.link,
+    source: item.source,
+    category: item.category,
+    pubDate: item.pubDate
+  }));
+
+const festivals = items
+  .filter(item => /festival|fair|waterfire|folk|jazz|arts|food|beer|wine|harbor|summer series/i.test(`${item.title} ${item.summary || ''}`) || item.category === 'festivals')
+  .slice(0, 16)
+  .map(item => ({
+    title: item.title,
+    link: item.link,
+    source: item.source,
+    category: item.category,
+    pubDate: item.pubDate
+  }));
+
+const majorShows = items
+  .filter(item => /arena|stadium|pavilion|amphitheater|garden|casino|opera house|house of blues|roadrunner|mgm/i.test(`${item.title} ${item.summary || ''} ${item.source || ''}`))
+  .slice(0, 16)
+  .map(item => ({
+    title: item.title,
+    link: item.link,
+    source: item.source,
+    category: item.category,
+    pubDate: item.pubDate
+  }));
+
+const topWeekend = items
+  .filter(item => /weekend|tonight|friday|saturday|sunday|this week|this weekend|concert|festival|live music|events/i.test(`${item.title} ${item.summary || ''}`))
+  .slice(0, 20)
+  .map(item => ({
+    title: item.title,
+    link: item.link,
+    source: item.source,
+    category: item.category,
+    pubDate: item.pubDate
+  }));
         }
       })
     };
