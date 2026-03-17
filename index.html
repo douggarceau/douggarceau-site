@@ -2363,5 +2363,38 @@
     loadFeed();
     setInterval(loadFeed, 30 * 60 * 1000);
   </script>
+<script>
+async function loadFeed() {
+  try {
+    const res = await fetch('/.netlify/functions/ai-news');
+    const data = await res.json();
+
+    renderList('bostonTonight', data.meta.bostonTonight);
+    renderList('providenceWeekend', data.meta.providenceWeekend);
+    renderList('festivals', data.meta.festivals);
+    renderList('topWeekend', data.meta.topWeekend);
+
+  } catch (e) {
+    console.error('Feed error', e);
+  }
+}
+
+function renderList(id, items) {
+  const el = document.getElementById(id);
+  if (!el) return;
+
+  el.innerHTML = items.map(i => `
+    <div style="margin-bottom:12px;">
+      <a href="${i.link}" target="_blank" style="color:#fff;font-weight:700;">
+        ${i.title}
+      </a>
+      <div style="font-size:12px;color:#aaa;">${i.source}</div>
+    </div>
+  `).join('');
+}
+
+loadFeed();
+</script>
+  
 </body>
 </html>
