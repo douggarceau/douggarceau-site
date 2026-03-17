@@ -1,9 +1,10 @@
 const SOURCES = [
-  { name: 'Boston Concerts', type: 'rss', category: 'music', url: 'https://news.google.com/rss/search?q=Boston+concerts+live+music&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'Providence Events', type: 'rss', category: 'music', url: 'https://news.google.com/rss/search?q=Providence+RI+concerts+events&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'New England Festivals', type: 'rss', category: 'festivals', url: 'https://news.google.com/rss/search?q=New+England+festivals+events&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'Boston Tonight', type: 'rss', category: 'music', url: 'https://news.google.com/rss/search?q=Boston+concerts+tonight&hl=en-US&gl=US&ceid=US:en' },
-  { name: 'Providence Weekend', type: 'rss', category: 'weekend', url: 'https://news.google.com/rss/search?q=Providence+RI+events+this+weekend&hl=en-US&gl=US&ceid=US:en' }
+ const SOURCES = [
+  { name: 'ArtsBoston', type: 'html', category: 'music', url: 'https://www.artsboston.org/abcalendar/' },
+  { name: 'GoProvidence', type: 'html', category: 'weekend', url: 'https://www.goprovidence.com/events/' },
+  { name: 'WaterFire', type: 'html', category: 'festivals', url: 'https://waterfire.org/event-calendar/' },
+  { name: 'The Met', type: 'html', category: 'music', url: 'https://themetri.com/events/' }
+];
 ];
 
 exports.handler = async function handler() {
