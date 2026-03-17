@@ -76,6 +76,46 @@ function render(id, items) {
 
 loadFeed();
 </script>
+<script>
+async function loadFeed() {
+  try {
+    const res = await fetch('/.netlify/functions/ai-news');
+    const data = await res.json();
 
+    render('bostonTonight', data.meta.bostonTonight);
+    render('providenceWeekend', data.meta.providenceWeekend);
+    render('festivals', data.meta.festivals);
+    render('topWeekend', data.meta.topWeekend);
+
+  } catch (e) {
+    console.error(e);
+  }
+}
+
+function render(id, items) {
+  const el = document.getElementById(id);
+  if (!items || !el) return;
+
+  el.innerHTML = items.map(i => {
+    const date = i.pubDate ? new Date(i.pubDate).toLocaleDateString() : '';
+
+    return `
+      <div style="margin-bottom:18px; padding-bottom:12px; border-bottom:1px solid #222;">
+        <a href="${i.link}" target="_blank" style="color:#fff; font-weight:700; font-size:16px;">
+          ${i.title}
+        </a>
+        <div style="font-size:12px; color:#ff5a00; margin-top:4px;">
+          ${i.category || 'event'}
+        </div>
+        <div style="font-size:12px; color:#888;">
+          ${i.source} ${date ? '• ' + date : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+}
+
+loadFeed();
+</script>
 </body>
 </html>
