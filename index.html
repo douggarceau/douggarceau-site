@@ -1,121 +1,476 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>New England Groove</title>
-
-<style>
-body {
-  background:#000;
-  color:#fff;
-  font-family:Arial, sans-serif;
-  margin:0;
-  padding:20px;
-}
-h1 { color:#ff5a00; }
-.section { margin-bottom:40px; }
-.item { margin-bottom:12px; }
-a { color:#fff; text-decoration:none; }
-a:hover { text-decoration:underline; }
-.source { font-size:12px; color:#888; }
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mortgage Calculator</title>
+  <style>
+    :root{
+      --bg:#0b0d11;
+      --panel:#141922;
+      --panel2:#1c232e;
+      --line:#2f3744;
+      --text:#f5f7fa;
+      --muted:#a8afbb;
+      --good:#d0ffe0;
+      --warn:#ffefbf;
+      --bad:#ffd8d8;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:linear-gradient(180deg,#090b10 0%,#111722 100%);color:var(--text)}
+    .app{max-width:1400px;margin:0 auto;padding:20px}
+    .hero{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap;margin-bottom:16px}
+    .hero h1{margin:0;font-size:34px;letter-spacing:-.03em}
+    .hero p{margin:8px 0 0;max-width:820px;color:var(--muted);line-height:1.55;font-size:14px}
+    .tabs,.toggle,.subtabs,.actions{display:flex;gap:8px;flex-wrap:wrap}
+    .tabs{margin-bottom:16px}
+    .tab,.toggle button,.subtab,.action-btn,.program-btn{border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:12px;cursor:pointer}
+    .tab,.toggle button,.subtab,.action-btn{padding:11px 14px;font-weight:800}
+    .tab.active,.toggle button.active,.subtab.active,.action-btn.primary{background:#fff;color:#11161d;border-color:#fff}
+    .layout{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+    .card{background:rgba(18,22,29,.96);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:0 18px 50px rgba(0,0,0,.22)}
+    .head{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+    .head h2{margin:0;font-size:24px;letter-spacing:-.02em}
+    .head p{margin:6px 0 0;color:var(--muted);font-size:14px}
+    .lead{background:var(--panel2);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:16px}
+    .lead h3{margin:0 0 8px;font-size:20px}
+    .lead p{margin:0 0 14px;color:var(--muted);font-size:14px;line-height:1.5}
+    .fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .field{display:flex;flex-direction:column;gap:7px}
+    .field label{font-size:13px;color:var(--muted)}
+    .field input,.field select{width:100%;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:12px;padding:13px 14px;font-size:15px;outline:none}
+    .program-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:16px}
+    .program-btn{padding:13px 12px;min-height:84px;text-align:left;background:var(--panel2)}
+    .program-btn.active{border-color:#fff;background:rgba(255,255,255,.08)}
+    .program-btn strong{display:block;font-size:14px;margin-bottom:4px}
+    .program-btn span{display:block;font-size:12px;color:var(--muted);line-height:1.35}
+    .facts{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:16px}
+    .fact{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:14px}
+    .fact h4{margin:0 0 8px;font-size:14px}
+    .fact ul,.fact p{margin:0;color:var(--muted);font-size:12.5px;line-height:1.5}
+    .fact ul{padding-left:17px}
+    .switchline{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--panel2);border-radius:999px;padding:9px 12px;font-size:13px}
+    .result-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:14px}
+    .result{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:16px}
+    .result .k{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .result .v{font-size:29px;font-weight:900;letter-spacing:-.03em}
+    .result .sub{margin-top:6px;color:var(--muted);font-size:13px;line-height:1.45}
+    .box{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:14px}
+    .line{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:14px}
+    .line:last-child{border-bottom:0}
+    .flags{display:flex;flex-direction:column;gap:8px}
+    .flag{padding:10px 12px;border-radius:12px;font-size:13px;line-height:1.45;border:1px solid rgba(255,255,255,.06)}
+    .flag.good{background:rgba(131,255,181,.08);color:var(--good)}
+    .flag.warn{background:rgba(255,223,121,.08);color:var(--warn)}
+    .flag.bad{background:rgba(255,130,130,.08);color:var(--bad)}
+    .detail{background:var(--panel2);border:1px solid var(--line);border-radius:18px;padding:18px;min-height:620px}
+    .detail h3{margin:0 0 8px;font-size:24px;letter-spacing:-.03em}
+    .summary{color:var(--muted);font-size:14px;line-height:1.6;margin-bottom:14px}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+    .chip{padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid var(--line);font-size:12px}
+    .list{margin:0;padding-left:18px}
+    .list li{margin-bottom:9px;color:var(--muted);line-height:1.55}
+    .sources{margin-top:16px;padding-top:14px;border-top:1px solid rgba(255,255,255,.08)}
+    .sources h4{margin:0 0 10px;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+    .sources ul{margin:0;padding-left:18px}
+    .sources li{margin-bottom:7px;color:var(--muted);line-height:1.45}
+    .hidden{display:none!important}
+    @media (max-width:1180px){.layout{grid-template-columns:1fr}.program-grid{grid-template-columns:repeat(3,1fr)}.facts{grid-template-columns:repeat(2,1fr)}}
+    @media (max-width:760px){.fields,.result-grid,.program-grid,.facts{grid-template-columns:1fr}.app{padding:14px}.hero h1{font-size:28px}}
+  </style>
 </head>
 <body>
-
-<h1>New England Groove</h1>
-
-<div class="section">
-  <h2>Boston Tonight</h2>
-  <div id="bostonTonight"></div>
-</div>
-
-<div class="section">
-  <h2>Providence Weekend</h2>
-  <div id="providenceWeekend"></div>
-</div>
-
-<div class="section">
-  <h2>Festivals</h2>
-  <div id="festivals"></div>
-</div>
-
-<div class="section">
-  <h2>Top This Weekend</h2>
-  <div id="topWeekend"></div>
-</div>
-
-<script>
-async function loadFeed() {
-  try {
-    const res = await fetch('/.netlify/functions/ai-news');
-    const data = await res.json();
-
-    render('bostonTonight', data.meta.bostonTonight);
-    render('providenceWeekend', data.meta.providenceWeekend);
-    render('festivals', data.meta.festivals);
-    render('topWeekend', data.meta.topWeekend);
-
-  } catch (e) {
-    console.error(e);
-  }
-}
-
-function render(id, items) {
-  const el = document.getElementById(id);
-  if (!items || !el) return;
-
-  el.innerHTML = items.map(i => `
-    <div class="item">
-      <a href="${i.link}" target="_blank">${i.title}</a>
-      <div class="source">${i.source}</div>
+  <div class="app">
+    <div class="hero">
+      <div>
+        <h1>Mortgage Calculator</h1>
+        <p>Estimate purchase and refinance payments, review key program facts, and open the full rule set only when you need it.</p>
+      </div>
     </div>
-  `).join('');
-}
 
-loadFeed();
-</script>
-<script>
-async function loadFeed() {
-  try {
-    const res = await fetch('/.netlify/functions/ai-news');
-    const data = await res.json();
+    <div class="tabs" id="mainTabs">
+      <button class="tab active" data-tab="calculator">Calculator</button>
+      <button class="tab" data-tab="rules">Loan Rules</button>
+      <button class="tab" data-tab="documents">Documents</button>
+    </div>
 
-    render('bostonTonight', data.meta.bostonTonight);
-    render('providenceWeekend', data.meta.providenceWeekend);
-    render('festivals', data.meta.festivals);
-    render('topWeekend', data.meta.topWeekend);
-
-  } catch (e) {
-    console.error(e);
-  }
-}
-
-function render(id, items) {
-  const el = document.getElementById(id);
-  if (!items || !el) return;
-
-  el.innerHTML = items.map(i => {
-    const date = i.pubDate ? new Date(i.pubDate).toLocaleDateString() : '';
-
-    return `
-      <div style="margin-bottom:18px; padding-bottom:12px; border-bottom:1px solid #222;">
-        <a href="${i.link}" target="_blank" style="color:#fff; font-weight:700; font-size:16px;">
-          ${i.title}
-        </a>
-        <div style="font-size:12px; color:#ff5a00; margin-top:4px;">
-          ${i.category || 'event'}
+    <div class="layout">
+      <div class="card">
+        <div class="lead" id="leadGate">
+          <h3>Get your estimate</h3>
+          <p>Enter your contact information and the loan type you need to unlock the calculator.</p>
+          <form name="mortgage-lead" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="leadForm">
+            <input type="hidden" name="form-name" value="mortgage-lead" />
+            <input type="hidden" name="bot-field" />
+            <div class="fields">
+              <div class="field">
+                <label for="leadName">Full name</label>
+                <input id="leadName" name="name" required />
+              </div>
+              <div class="field">
+                <label for="leadEmail">Email</label>
+                <input id="leadEmail" name="email" type="email" required />
+              </div>
+              <div class="field">
+                <label for="leadPhone">Phone</label>
+                <input id="leadPhone" name="phone" />
+              </div>
+              <div class="field">
+                <label for="leadNeed">Loan type needed</label>
+                <select id="leadNeed" name="loan_need" required>
+                  <option value="">Select one</option>
+                  <option value="Conventional purchase">Conventional purchase</option>
+                  <option value="FHA purchase">FHA purchase</option>
+                  <option value="VA purchase">VA purchase</option>
+                  <option value="USDA purchase">USDA purchase</option>
+                  <option value="Jumbo purchase">Jumbo purchase</option>
+                  <option value="Conventional refinance">Conventional refinance</option>
+                  <option value="FHA refinance">FHA refinance</option>
+                  <option value="VA refinance">VA refinance</option>
+                  <option value="USDA refinance">USDA refinance</option>
+                  <option value="Jumbo refinance">Jumbo refinance</option>
+                </select>
+              </div>
+            </div>
+            <div class="actions" style="margin-top:14px;">
+              <button class="action-btn primary" type="submit">Continue</button>
+            </div>
+          </form>
         </div>
-        <div style="font-size:12px; color:#888;">
-          ${i.source} ${date ? '• ' + date : ''}
+
+        <div id="calculatorShell" class="hidden">
+          <div class="head">
+            <div>
+              <h2>Estimate</h2>
+              <p>Choose the loan program and run the numbers.</p>
+            </div>
+            <div class="toggle" id="calcModeToggle">
+              <button class="active" data-mode="purchase">Purchase</button>
+              <button data-mode="refi">Refinance</button>
+            </div>
+          </div>
+
+          <div class="program-grid" id="programGrid"></div>
+
+          <div class="facts">
+            <div class="fact">
+              <h4>Quick facts</h4>
+              <ul id="quickFacts"></ul>
+            </div>
+            <div class="fact">
+              <h4>2026 loan limit</h4>
+              <p id="limitFact"></p>
+            </div>
+            <div class="fact">
+              <h4>Credit</h4>
+              <ul id="creditFacts"></ul>
+            </div>
+            <div class="fact">
+              <h4>Cash to close</h4>
+              <ul id="fundsFacts"></ul>
+            </div>
+          </div>
+
+          <div id="purchasePanel">
+            <div class="fields">
+              <div class="field"><label for="homePrice">Home price</label><input id="homePrice" value="500000" /></div>
+              <div class="field"><label for="downPayment">Down payment</label><input id="downPayment" value="25000" /></div>
+              <div class="field"><label for="interestRate">Interest rate %</label><input id="interestRate" value="6.25" /></div>
+              <div class="field"><label for="termYears">Term</label><select id="termYears"><option value="30">30 years</option><option value="20">20 years</option><option value="15">15 years</option></select></div>
+              <div class="field"><label for="propertyTax">Annual property tax</label><input id="propertyTax" value="6200" /></div>
+              <div class="field"><label for="insurance">Annual insurance</label><input id="insurance" value="1800" /></div>
+              <div class="field"><label for="hoa">Monthly HOA</label><input id="hoa" value="0" /></div>
+              <div class="field"><label for="creditScore">Credit score</label><input id="creditScore" value="720" /></div>
+              <div class="field"><label for="countyLimit">County conforming limit</label><input id="countyLimit" value="832750" /></div>
+              <div class="field"><label for="closingCostPercent">Estimated closing costs %</label><input id="closingCostPercent" value="3" /></div>
+            </div>
+            <div class="switchline" id="purchaseOptions"></div>
+          </div>
+
+          <div id="refiPanel" class="hidden">
+            <div class="fields">
+              <div class="field"><label for="homeValue">Current home value</label><input id="homeValue" value="500000" /></div>
+              <div class="field"><label for="currentBalance">Current loan balance</label><input id="currentBalance" value="365000" /></div>
+              <div class="field"><label for="currentRate">Current rate %</label><input id="currentRate" value="7.125" /></div>
+              <div class="field"><label for="remainingYears">Years remaining</label><select id="remainingYears"><option value="30">30 years</option><option value="25" selected>25 years</option><option value="20">20 years</option><option value="15">15 years</option><option value="10">10 years</option></select></div>
+              <div class="field"><label for="newRate">New rate %</label><input id="newRate" value="6.00" /></div>
+              <div class="field"><label for="newTermYears">New term</label><select id="newTermYears"><option value="30">30 years</option><option value="20">20 years</option><option value="15">15 years</option></select></div>
+              <div class="field"><label for="cashOutRequest">Cash out requested</label><input id="cashOutRequest" value="0" /></div>
+              <div class="field"><label for="refiClosingCosts">Closing costs</label><input id="refiClosingCosts" value="6500" /></div>
+              <div class="field"><label for="refiTax">Annual property tax</label><input id="refiTax" value="6200" /></div>
+              <div class="field"><label for="refiInsurance">Annual insurance</label><input id="refiInsurance" value="1800" /></div>
+              <div class="field"><label for="refiHoa">Monthly HOA</label><input id="refiHoa" value="0" /></div>
+              <div class="field"><label for="refiType">Refinance type</label><select id="refiType"></select></div>
+            </div>
+            <div class="switchline" id="refiOptions"></div>
+          </div>
+
+          <div class="actions" style="margin-top:16px;">
+            <button class="action-btn primary" id="runBtn" type="button">Run numbers</button>
+            <button class="action-btn" id="openRules" type="button">View loan rules</button>
+            <button class="action-btn" id="openDocs" type="button">View documents</button>
+          </div>
+        </div>
+
+        <div id="rulesPanel" class="hidden">
+          <div class="head">
+            <div>
+              <h2>Loan Rules</h2>
+              <p>Open the rule set for the selected program.</p>
+            </div>
+            <div class="subtabs" id="ruleTabs">
+              <button class="subtab active" data-sub="overview">Overview</button>
+              <button class="subtab" data-sub="credit">Credit</button>
+              <button class="subtab" data-sub="funds">Cash to close</button>
+              <button class="subtab" data-sub="refi">Refinance</button>
+            </div>
+          </div>
+          <div class="program-grid" id="rulesProgramGrid"></div>
+          <div class="actions" style="margin-top:8px;"><button class="action-btn" id="backToCalc1" type="button">Back to calculator</button></div>
+        </div>
+
+        <div id="documentsPanel" class="hidden">
+          <div class="head">
+            <div>
+              <h2>Documents</h2>
+              <p>Choose the borrower type for the checklist.</p>
+            </div>
+            <div class="toggle" id="employmentToggle">
+              <button class="active" data-employment="w2">W-2 / salaried</button>
+              <button data-employment="self">Self-employed</button>
+            </div>
+          </div>
+          <div class="program-grid" id="docsProgramGrid"></div>
+          <div class="actions" style="margin-top:8px;"><button class="action-btn" id="backToCalc2" type="button">Back to calculator</button></div>
         </div>
       </div>
-    `;
-  }).join('');
-}
 
-loadFeed();
-</script>
+      <div class="card">
+        <div class="head">
+          <div>
+            <h2 id="resultsTitle">Payment</h2>
+            <p id="resultsSubtitle">Live estimate</p>
+          </div>
+        </div>
+
+        <div class="result-grid">
+          <div class="result">
+            <div class="k" id="mainLabel">Estimated monthly payment</div>
+            <div class="v" id="mainValue">$0</div>
+            <div class="sub" id="mainSub">Principal, interest, taxes, insurance, HOA, and applicable mortgage charges.</div>
+          </div>
+          <div class="result">
+            <div class="k" id="secondaryLabel">Base loan amount</div>
+            <div class="v" id="secondaryValue">$0</div>
+            <div class="sub" id="secondarySub">Before financed upfront fees or financed closing costs.</div>
+          </div>
+        </div>
+
+        <div class="box" id="breakdownBox"></div>
+
+        <div class="box">
+          <div style="font-size:18px;font-weight:800;margin-bottom:10px;">What stands out</div>
+          <div class="flags" id="flagsBox"></div>
+        </div>
+
+        <div class="detail" id="detailBox"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const FALLBACK = {
+      meta:{ baselineConformingLimit:832750, highCostCeiling:1249125 },
+      programs:{
+        conventional:{
+          label:'Conventional', blurb:'Conforming / high-balance, PMI, gifts, seller concessions',
+          overview:{summary:'Conventional lending stays inside the county limit until it crosses into jumbo or investor-overlay territory.',chips:['2026 baseline $832,750','3% down on eligible 97% programs','PMI usually when LTV > 80%','County limit matters'],bullets:['The 2026 one-unit baseline conforming limit is $832,750, with a high-cost ceiling of $1,249,125.','Fannie\'s 97% LTV option is the clean 3% down version, but it is limited to DU, 1-unit principal residences, and fixed-rate loans up to 30 years.','High-balance loans and ARMs do not use the 97% structure.','Private mortgage insurance usually applies when LTV is above 80%.']},
+          credit:{summary:'Conventional credit rules depend on manual underwriting versus DU/LPA and on how many borrowers are on the file.',chips:['620 fixed manual baseline','640 ARM manual baseline','DU casefiles do not use one published minimum','Representative score rules'],bullets:['Fannie manual underwriting requires at least 620 for fixed-rate loans and 640 for ARMs.','DU casefiles are assessed through DU instead of one single published minimum score.','Pricing uses the representative score: lower of 2, middle of 3, then the lowest representative score across borrowers.','Certain manual multi-borrower eligibility decisions use average median credit score.']},
+          funds:{summary:'Gift funds, seller concessions, and lender credits all have separate treatment under conventional rules.',chips:['Gift funds on primary + second homes','Investment properties cannot use gifts','IPC caps 3 / 6 / 9 / 2','5% own funds in some higher-LTV files'],bullets:['Gift funds may be used on principal residences and second homes, but not on investment properties.','For a 1-unit primary residence, gift funds can cover all funds needed to close even above 80% LTV.','For 2–4 unit primary residences or second homes above 80% LTV, the borrower must contribute 5% from their own funds.','Interested-party contribution limits are 3% above 90% LTV/CLTV, 6% at 75.01% to 90%, 9% at 75% or less, and 2% on investment properties.','Lender credits can cover eligible closing costs and prepaids, but not the down payment or required reserves.']},
+          docs:{summary:'The checklist changes depending on employment type.',w2:['Most recent pay stubs covering at least 30 days','W-2 forms for the most recent 2 years','Bank statements or other asset statements for funds to close and reserves','Photo ID, purchase contract, homeowners insurance quote, and appraisal when required','Gift letter and donor transfer proof if gift funds are used'],self:['Personal federal tax returns or transcripts for the most recent 2 years with all schedules','Business federal tax returns or transcripts for the most recent 2 years when required by ownership and entity type','Written cash-flow analysis such as Fannie Form 1084 or equivalent','Year-to-date profit and loss statement when required by timing or lender review','Business evidence such as bank statements, license, or CPA letter if the lender needs proof the business remains active']},
+          refi:{summary:'Conventional refinance splits into limited cash-out and cash-out, with cash-out usually capped at 80% LTV.',chips:['Rate-term / limited cash-out','Cash-out usually 80% max LTV','Break-even matters','County limit still matters'],bullets:['Limited cash-out is the standard rate-and-term path.','Cash-out refinance is generally capped at 80% LTV under the standard agency rule set.','Closing costs, prepaids, and escrow handling change the true break-even result.','Once the county limit is exceeded, jumbo/investor rules take over.']},
+          sources:['FHFA 2026 conforming loan limits release','Fannie Mae credit score rules','Fannie Mae 97% LTV materials','Fannie Mae interested-party contribution rules','Fannie Mae gift-fund rules']
+        },
+        fha:{
+          label:'FHA', blurb:'3.5% / 10% down tiers, UFMIP, annual MIP, streamline rules',
+          overview:{summary:'FHA is the main government-insured low-down-payment option, but the financing level changes directly with the borrower\'s credit tier.',chips:['580+ = 3.5% down','500–579 = 10% down','Below 500 ineligible','UFMIP 1.75%'],bullets:['A minimum decision credit score of 580 or higher qualifies for the standard 3.5% down structure.','A minimum decision credit score from 500 to 579 is limited to 90% LTV, which effectively means 10% down.','Scores below 500 are not eligible for FHA-insured financing.','FHA upfront mortgage insurance premium is 1.75% of the base loan amount.']},
+          credit:{summary:'FHA uses a specific minimum decision credit score method.',chips:['Middle of 3','Lower of 2','Lowest borrower governs','Hard pull at application'],bullets:['FHA uses the middle of 3 scores, lower of 2 scores, or the single available score to determine the minimum decision credit score.','For multiple borrowers, FHA uses the lowest borrower\'s minimum decision credit score.','Mortgage lenders typically pull Equifax, Experian, and TransUnion merged credit during application or preapproval and may refresh before closing.','Mortgage prequalification can be soft-pull, but a full application is typically a hard inquiry.']},
+          funds:{summary:'FHA allows gifts and interested-party contributions, but contributions above the cap are treated differently.',chips:['Interested-party cap 6%','Gift funds from permitted sources','Document donor + transfer','Excess over 6% is not ordinary credit'],bullets:['Interested-party contributions are capped at 6% of the sales price.','Amounts above the 6% cap are treated as inducements to purchase rather than ordinary closing-cost credits.','Gift funds are allowed from permitted sources, but the lender must document the donor, no-repayment status, and transfer of funds.','Borrower-paid closing costs, seller-paid allowable costs, and upfront mortgage insurance should all be broken out clearly.']},
+          docs:{summary:'The checklist below reflects the standard full-doc path.',w2:['Most recent pay stubs and W-2s for the most recent 2 years','Bank statements for funds to close and verified earnest money when needed','Photo ID, purchase contract, insurance information, and FHA appraisal','Gift letter plus donor and transfer evidence if gift funds are used','Explanations for recent credit events if the underwriter requests them'],self:['Personal federal tax returns or IRS transcripts for the most recent 2 years with all schedules','Business returns when the borrower\'s ownership and business structure require them','Year-to-date profit and loss statement and, when required, a balance sheet','Business bank statements or other evidence the business remains active when requested','Asset statements, purchase contract, insurance information, and FHA appraisal']},
+          refi:{summary:'FHA refinance branches matter: streamline is not the same thing as cash-out.',chips:['Streamline requires existing FHA loan','Net tangible benefit','Cash-out separate path','MIP still matters'],bullets:['FHA streamline refinance requires an existing FHA-insured loan.','The streamline path must provide a net tangible benefit.','Cash-out refinance is a separate FHA refinance path and is typically capped at 80% LTV.','FHA MIP on refinances still depends on the transaction structure and current rules.']},
+          sources:['HUD FHA credit score guidance','HUD Handbook 4000.1','HUD Mortgagee Letter 2023-05 Appendix 1.0 MIP schedule','HUD upfront MIP guidance','HUD interested-party contribution update']
+        },
+        va:{
+          label:'VA', blurb:'0% down baseline, no monthly MI, funding fee, IRRRL / cash-out',
+          overview:{summary:'VA is the cleanest payment structure for eligible borrowers because the program is built around no down payment baseline and no monthly mortgage insurance.',chips:['0% down baseline','No monthly MI','Funding fee instead','IRRRL + cash-out branches'],bullets:['VA purchase loans generally allow no down payment for eligible borrowers, subject to entitlement, loan size, and lender overlays.','VA does not charge monthly mortgage insurance.','Instead, VA uses a one-time funding fee unless the borrower is exempt.','Current VA funding-fee tables separate purchase, cash-out refinance, and IRRRL.']},
+          credit:{summary:'VA itself does not publish one universal minimum credit score; lenders often add overlays.',chips:['No VA agency minimum','Lender overlays matter','Tri-merge mortgage credit','Refresh before close possible'],bullets:['VA does not publish a single universal minimum credit score for all VA-backed loans.','Lenders commonly apply their own score overlays on top of the VA program.','Mortgage lenders typically use merged credit from Equifax, Experian, and TransUnion at application or preapproval.','The lender may refresh credit again before closing.']},
+          funds:{summary:'VA makes a clear distinction between ordinary closing costs, credits, and seller concessions.',chips:['Seller concessions capped at 4%','Funding fee can be financed','No monthly MI','Gift funds commonly accepted when sourced'],bullets:['VA caps seller concessions at 4% of the reasonable value of the property.','For purchase loans, the VA funding fee can be financed into the loan amount.','VA separately discusses what counts as an ordinary closing cost versus a seller concession.','Gift funds are commonly acceptable when properly sourced and documented by the lender.']},
+          docs:{summary:'VA files need the normal income and asset stack plus VA-specific eligibility evidence.',w2:['Certificate of Eligibility (COE) or lender-generated COE output','Most recent pay stubs, W-2s, and asset statements needed for the file','Photo ID, purchase contract, insurance information, and appraisal when required','Documentation for earnest money, gift funds, or large deposits if requested','VA-specific disclosures and closing package items'],self:['Certificate of Eligibility (COE)','Personal and business tax returns or transcripts for the most recent 2 years when required','Year-to-date profit and loss statement and business evidence as requested by the lender','Asset statements, purchase contract, insurance information, and appraisal when required','VA-specific disclosures and eligibility documentation']},
+          refi:{summary:'VA refi splits into IRRRL and cash-out, with separate funding-fee treatment.',chips:['IRRRL 0.5% funding fee','Cash-out 2.15% / 3.3%','Old vs new loan comparison','No monthly MI'],bullets:['IRRRL is the VA streamline path for refinancing an existing VA loan and currently uses a 0.5% funding fee unless exempt.','VA cash-out refinance uses 2.15% for first use and 3.3% after first use under the current VA funding-fee table unless exempt.','IRRRL transactions require an old-versus-new loan comparison / certification disclosure.','VA refinance pricing still needs to be evaluated against closing costs and break-even.']},
+          sources:['VA funding fee and closing costs page','VA IRRRL page','VA cash-out refinance page']
+        },
+        usda:{
+          label:'USDA', blurb:'0% down baseline, rural / income limits, 1% upfront, 0.35% annual',
+          overview:{summary:'USDA guaranteed lending is a no-down-payment primary-residence program tied to rural eligibility and household-income limits.',chips:['0% down baseline','Primary residence only','Household income usually <=115% AMI','1% upfront + 0.35% annual'],bullets:['USDA guaranteed loans are built around 100% financing for eligible rural properties.','The program is for primary residences and generally limits household income to no more than 115% of median household income.','Current USDA guaranteed-loan training shows a 1% upfront guarantee fee.','Current USDA guaranteed-loan training shows a 0.35% annual fee.']},
+          credit:{summary:'USDA does not publish one universal agency minimum credit score, but lenders still evaluate repayment ability and often impose overlays.',chips:['No single USDA minimum','Lender overlays still common','Repayment ability matters','Tri-merge in practice'],bullets:['USDA says the program does not have one specific minimum credit score requirement.','Lenders still review credit history and ability to manage debt.','Mortgage lenders commonly use Equifax, Experian, and TransUnion merged credit in the mortgage process.','A lender may add score overlays to its USDA underwriting.']},
+          funds:{summary:'USDA allows eligible credits and contributions, but the cap and household-income test matter more than many borrowers expect.',chips:['Seller contributions capped at 6%','Gifts / grants can help','Primary residence only','Annual fee fixed for life of loan'],bullets:['USDA handbook materials cap seller or other interested-party contributions at 6% of the sales price for eligible purposes.','Gift funds and eligible assistance can be used when they are properly documented.','The annual fee is fixed at the time of closing and remains in effect for the life of the loan under the current structure.','All borrowers and certain household members can matter for income eligibility analysis.']},
+          docs:{summary:'USDA documentation is more household-wide than many borrowers expect because income eligibility is part of the file.',w2:['Income documentation for qualifying borrowers and household members when required for eligibility','Pay stubs, W-2s, tax returns or transcripts when requested by the lender or GUS/manual path','Bank statements and asset documentation for earnest money / funds to close','Photo ID, purchase contract, insurance information, and appraisal when required','USDA-specific disclosures and eligibility documentation'],self:['Personal and business tax returns or transcripts for the most recent 2 years','Year-to-date profit and loss statement','Business evidence or additional support if requested by the lender','Household income documentation for eligibility analysis','Asset statements, insurance information, contract, and appraisal when required']},
+          refi:{summary:'USDA refinance has specialized streamlined branches; this build keeps the refi side to payment planning and highlights the main restrictions.',chips:['No cash-out in this build','Streamlined paths exist','Appraisal often not required on streamlined versions','Eligibility still matters'],bullets:['USDA refinance paths include streamlined options that may not require a new appraisal in many cases.','This build does not treat USDA as a cash-out program.','The refinance still needs to make sense on payment and closing costs.','USDA-specific lender and handbook requirements still govern the actual file.']},
+          sources:['USDA SFH Guaranteed Loan Program page','USDA January 2026 Guaranteed Loan Program 101 training','USDA handbook / origination checklist materials']
+        },
+        jumbo:{
+          label:'Jumbo', blurb:'Above county limit, investor-specific overlays, heavier doc / reserve patterns',
+          overview:{summary:'Jumbo is not one agency program. Once the county limit is exceeded, investor-specific overlays control the file.',chips:['Above county limit','Investor-specific','Down payment often higher','Reserves often heavier'],bullets:['Jumbo begins when the loan amount exceeds the applicable county conforming or high-balance limit.','There is no single universal jumbo rule book like the agency guides.','Many jumbo programs require stronger credit, bigger reserves, and more conservative debt-to-income tolerance.','Because rules vary by investor, this calculator treats jumbo as a planning view rather than an approval engine.']},
+          credit:{summary:'Jumbo credit policy is investor-specific, so the calculator shows structure rather than pretending there is one universal score floor.',chips:['No single agency minimum','Investor overlays','Tri-merge still common','Credit + reserves matter together'],bullets:['There is no single government or agency jumbo minimum score.','Investors often combine score, reserves, LTV, and property type into the real decision.','Merged mortgage credit is still common in the process.','Borrowers should expect underwriting overlays to be more conservative than agency conventional.']},
+          funds:{summary:'Jumbo cash-to-close and reserve treatment vary by investor, but the file is usually stricter than standard agency conventional.',chips:['Investor specific','Reserve requirements often heavier','Seller credit caps vary','Gift rules vary by investor'],bullets:['Down payment and reserve rules often tighten materially once the loan is jumbo.','Seller credit and gift-fund treatment can vary by investor and occupancy.','The calculator keeps the payment math live while clearly warning that final jumbo rules are investor-specific.','When the borrower is near the county limit, testing both conforming and jumbo structures is often useful.']},
+          docs:{summary:'Jumbo documentation is often full-doc and reserve-heavy.',w2:['Pay stubs, W-2s, and asset statements with enough detail to verify down payment, closing costs, and reserves','Purchase contract, insurance information, appraisal, ID, and any investor-required supplemental disclosures','Statements for retirement / brokerage assets if those are being used for reserves'],self:['Personal and business tax returns or transcripts for the most recent 2 years','Year-to-date profit and loss statement and business support requested by the investor','Detailed asset and reserve documentation','Contract, appraisal, insurance information, and investor-specific disclosures']},
+          refi:{summary:'Jumbo refinance rules vary by investor. The calculator runs payment and planning math while the rule panel keeps the user in overlay territory mentally.',chips:['Investor-specific refi caps','Cash-out varies','Break-even matters','Reserves can dominate the decision'],bullets:['Rate-term and cash-out limits vary by investor.','Closing costs and reserve requirements can change the decision even when the rate improves.','This build uses 80% as the planning cap for jumbo cash-out math unless the lender says otherwise.','Always confirm the real jumbo matrix before treating the result as a final structure.']},
+          sources:['FHFA 2026 county limit structure','Investor-specific jumbo overlay environment rather than one agency guide']
+        }
+      }
+    };
+
+    const state = {
+      tab:'calculator',
+      mode:'purchase',
+      program:'conventional',
+      employment:'w2',
+      ruleSub:'overview',
+      unlocked:false,
+      data:FALLBACK,
+      purchaseOpts:{ vaFirstUse:true, vaExempt:false, financeVaFee:true, financeFhaFee:true, financeUsdaFee:true },
+      refiOpts:{ includeClosingCostsInLoan:true, vaFirstUse:true, vaExempt:false, financeVaFee:true, financeFhaFee:true }
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const money = (n,d=0) => Number(n||0).toLocaleString('en-US',{style:'currency',currency:'USD',minimumFractionDigits:d,maximumFractionDigits:d});
+    const clean = (v) => Number(String(v ?? '').replace(/[^0-9.-]/g,'')) || 0;
+    function payment(principal, annualRate, years){ const n=Number(years)*12; const r=Number(annualRate)/100/12; if(!principal||!n) return 0; if(!r) return principal/n; return principal*r/(1-Math.pow(1+r,-n)); }
+    function fhaMipRate(baseLoan, ltv, termYears, countyLimit){ const threshold=clean(countyLimit)||832750; const high=baseLoan>threshold; const term=Number(termYears); if(term>15){ if(!high) return ltv>95?0.55:0.50; return ltv>95?0.75:0.70; } if(!high) return ltv>90?0.40:0.15; if(ltv<=78) return 0.15; if(ltv<=90) return 0.40; return 0.65; }
+    function conventionalMipRate(ltv, score){ if(ltv<=80) return 0; const s=Number(score)||0; if(s>=760) return 0.18; if(s>=740) return 0.22; if(s>=720) return 0.28; if(s>=700) return 0.35; if(s>=680) return 0.52; if(s>=660) return 0.70; return 0.95; }
+    function vaPurchaseFee(downPct, firstUse, exempt){ if(exempt) return 0; if(downPct>=10) return 1.25; if(downPct>=5) return 1.50; return firstUse?2.15:3.30; }
+    function vaCashOutFee(firstUse, exempt){ if(exempt) return 0; return firstUse?2.15:3.30; }
+    function currentProgram(){ return state.data.programs[state.program]; }
+    function refiTypes(program){ if(program==='conventional') return [['rate-term','Rate-term / limited cash-out'],['cash-out','Cash-out']]; if(program==='fha') return [['rate-term','Rate-term'],['cash-out','Cash-out'],['streamline','Streamline']]; if(program==='va') return [['irrrl','IRRRL'],['cash-out','Cash-out']]; if(program==='usda') return [['streamlined','USDA streamlined / assist'],['rate-term','Standard payment check']]; return [['rate-term','Rate-term'],['cash-out','Cash-out']]; }
+
+    function renderProgramButtons(){
+      const keys=['conventional','fha','va','usda','jumbo'];
+      const html = keys.map(key => { const p=state.data.programs[key]; return `<button class="program-btn ${state.program===key?'active':''}" data-program="${key}"><strong>${p.label}</strong><span>${p.blurb}</span></button>`; }).join('');
+      $('programGrid').innerHTML=html; $('rulesProgramGrid').innerHTML=html; $('docsProgramGrid').innerHTML=html;
+      document.querySelectorAll('[data-program]').forEach(btn => btn.addEventListener('click', () => { state.program=btn.dataset.program; renderAll(); }));
+    }
+
+    function renderQuickFacts(){
+      const p=currentProgram();
+      $('quickFacts').innerHTML=p.overview.bullets.slice(0,3).map(x=>`<li>${x}</li>`).join('');
+      $('creditFacts').innerHTML=p.credit.bullets.slice(0,3).map(x=>`<li>${x}</li>`).join('');
+      $('fundsFacts').innerHTML=p.funds.bullets.slice(0,3).map(x=>`<li>${x}</li>`).join('');
+      $('limitFact').textContent=`1-unit baseline conforming limit ${money(state.data.meta.baselineConformingLimit)}. High-cost ceiling ${money(state.data.meta.highCostCeiling)}.`;
+    }
+
+    function checkboxHTML(id,label,group,key,checked){ return `<label class="pill"><input type="checkbox" id="${id}" data-group="${group}" data-key="${key}" ${checked?'checked':''} /> ${label}</label>`; }
+
+    function bindOptionInputs(){ document.querySelectorAll('[data-group]').forEach(el => el.addEventListener('change', () => { state[el.dataset.group][el.dataset.key]=el.checked; runCalc(); })); }
+
+    function renderPurchaseOptions(){
+      let row='';
+      if(state.program==='va'){ row += checkboxHTML('p1','First VA use','purchaseOpts','vaFirstUse',state.purchaseOpts.vaFirstUse); row += checkboxHTML('p2','Funding-fee exempt','purchaseOpts','vaExempt',state.purchaseOpts.vaExempt); row += checkboxHTML('p3','Finance funding fee','purchaseOpts','financeVaFee',state.purchaseOpts.financeVaFee); }
+      if(state.program==='fha'){ row += checkboxHTML('p4','Finance UFMIP','purchaseOpts','financeFhaFee',state.purchaseOpts.financeFhaFee); }
+      if(state.program==='usda'){ row += checkboxHTML('p5','Finance USDA upfront fee','purchaseOpts','financeUsdaFee',state.purchaseOpts.financeUsdaFee); }
+      $('purchaseOptions').innerHTML=row; bindOptionInputs();
+    }
+
+    function renderRefiOptions(){
+      $('refiType').innerHTML=refiTypes(state.program).map(([v,l])=>`<option value="${v}">${l}</option>`).join('');
+      let row=checkboxHTML('r1','Roll closing costs into new loan','refiOpts','includeClosingCostsInLoan',state.refiOpts.includeClosingCostsInLoan);
+      if(state.program==='va'){ row += checkboxHTML('r2','First VA use','refiOpts','vaFirstUse',state.refiOpts.vaFirstUse); row += checkboxHTML('r3','Funding-fee exempt','refiOpts','vaExempt',state.refiOpts.vaExempt); row += checkboxHTML('r4','Finance funding fee','refiOpts','financeVaFee',state.refiOpts.financeVaFee); }
+      if(state.program==='fha'){ row += checkboxHTML('r5','Finance UFMIP','refiOpts','financeFhaFee',state.refiOpts.financeFhaFee); }
+      $('refiOptions').innerHTML=row; bindOptionInputs();
+    }
+
+    function setTab(tab){ state.tab=tab; document.querySelectorAll('#mainTabs .tab').forEach(btn => btn.classList.toggle('active', btn.dataset.tab===tab)); $('calculatorShell').classList.toggle('hidden',tab!=='calculator'); $('rulesPanel').classList.toggle('hidden',tab!=='rules'); $('documentsPanel').classList.toggle('hidden',tab!=='documents'); renderDetail(); }
+    function setMode(mode){ state.mode=mode; document.querySelectorAll('#calcModeToggle button').forEach(btn => btn.classList.toggle('active', btn.dataset.mode===mode)); $('purchasePanel').classList.toggle('hidden',mode!=='purchase'); $('refiPanel').classList.toggle('hidden',mode!=='refi'); runCalc(); }
+    function setEmployment(type){ state.employment=type; document.querySelectorAll('#employmentToggle button').forEach(btn => btn.classList.toggle('active', btn.dataset.employment===type)); renderDetail(); }
+    function setRuleSub(sub){ state.ruleSub=sub; document.querySelectorAll('#ruleTabs .subtab').forEach(btn => btn.classList.toggle('active', btn.dataset.sub===sub)); renderDetail(); }
+
+    function renderDetail(){
+      const p=currentProgram();
+      let block;
+      if(state.tab==='documents') block={ title:`${p.label} documents`, summary:p.docs.summary, chips:[state.employment==='self'?'Self-employed':'W-2 / salaried'], bullets:state.employment==='self'?p.docs.self:p.docs.w2 };
+      else if(state.tab==='rules') block={ title:p.label, summary:p[state.ruleSub].summary, chips:p[state.ruleSub].chips, bullets:p[state.ruleSub].bullets };
+      else block={ title:p.label, summary:p.overview.summary, chips:p.overview.chips, bullets:p.overview.bullets };
+      $('detailBox').innerHTML=`<h3>${block.title}</h3><div class="summary">${block.summary}</div><div class="chips">${(block.chips||[]).map(x=>`<span class="chip">${x}</span>`).join('')}</div><ul class="list">${(block.bullets||[]).map(x=>`<li>${x}</li>`).join('')}</ul><div class="sources"><h4>Sources</h4><ul>${p.sources.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
+    }
+
+    function renderBreakdown(rows){ $('breakdownBox').innerHTML=rows.map(r=>`<div class="line"><span>${r.label}</span><strong>${r.value}</strong></div>`).join(''); }
+    function renderFlags(items){ $('flagsBox').innerHTML=items.map(i=>`<div class="flag ${i.level}">${i.text}</div>`).join(''); }
+
+    function runPurchase(){
+      const homePrice=clean($('homePrice').value), downPayment=clean($('downPayment').value), rate=clean($('interestRate').value), term=clean($('termYears').value), tax=clean($('propertyTax').value)/12, insurance=clean($('insurance').value)/12, hoa=clean($('hoa').value), score=clean($('creditScore').value), countyLimit=clean($('countyLimit').value), closingPct=clean($('closingCostPercent').value);
+      const baseLoan=Math.max(homePrice-downPayment,0), ltv=homePrice?(baseLoan/homePrice)*100:0, downPct=homePrice?(downPayment/homePrice)*100:0;
+      let financedFee=0, monthlyCharge=0, feeLabel='Monthly mortgage charge'; const flags=[];
+      if(state.program==='conventional'){ const mip=conventionalMipRate(ltv,score); monthlyCharge=baseLoan*(mip/100)/12; feeLabel=mip?`Estimated PMI (${mip.toFixed(2)}%)`:'PMI'; if(baseLoan>countyLimit) flags.push({level:'warn',text:'Base loan is above the county conforming limit. Treat this as jumbo / investor-overlay territory.'}); if(ltv>97) flags.push({level:'bad',text:'LTV is above the usual 97% conventional low-down-payment ceiling.'}); if(score<620) flags.push({level:'bad',text:'Conventional manual baseline starts at 620 for fixed-rate loans.'}); }
+      if(state.program==='fha'){ financedFee=state.purchaseOpts.financeFhaFee?baseLoan*0.0175:0; const mip=fhaMipRate(baseLoan,ltv,term,countyLimit); monthlyCharge=baseLoan*(mip/100)/12; feeLabel=`FHA annual MIP (${mip.toFixed(2)}%)`; if(score>=580&&downPct<3.5) flags.push({level:'bad',text:'At 580+ score, standard FHA financing expects at least 3.5% down.'}); if(score>=500&&score<580&&downPct<10) flags.push({level:'bad',text:'At 500–579 score, FHA is limited to 90% LTV / 10% down.'}); if(score<500) flags.push({level:'bad',text:'Below 500 is not eligible for FHA-insured financing.'}); }
+      if(state.program==='va'){ const pct=vaPurchaseFee(downPct,state.purchaseOpts.vaFirstUse,state.purchaseOpts.vaExempt); financedFee=state.purchaseOpts.financeVaFee?baseLoan*(pct/100):0; monthlyCharge=0; feeLabel='Monthly mortgage insurance'; flags.push({level:'good',text:'VA baseline structure uses no monthly mortgage insurance.'}); }
+      if(state.program==='usda'){ financedFee=state.purchaseOpts.financeUsdaFee?baseLoan*0.01:0; monthlyCharge=baseLoan*0.0035/12; feeLabel='USDA annual fee (0.35%)'; flags.push({level:'good',text:'USDA baseline structure uses 100% financing for eligible borrowers and properties.'}); }
+      if(state.program==='jumbo'){ monthlyCharge=0; feeLabel='Monthly mortgage insurance'; if(baseLoan<=countyLimit) flags.push({level:'warn',text:'Loan is still inside the county limit. Test a conventional structure before forcing jumbo.'}); if(downPct<10) flags.push({level:'warn',text:'Many jumbo investors want more cash down than this. Final rule is investor-specific.'}); }
+      const noteAmount=baseLoan+financedFee, pi=payment(noteAmount,rate,term), total=pi+tax+insurance+hoa+monthlyCharge, closingCosts=homePrice*(closingPct/100);
+      $('resultsTitle').textContent='Payment'; $('resultsSubtitle').textContent=`${currentProgram().label} purchase estimate`; $('mainLabel').textContent='Estimated monthly payment'; $('mainValue').textContent=money(total); $('mainSub').textContent='Principal, interest, taxes, insurance, HOA, and applicable mortgage charges.'; $('secondaryLabel').textContent='Base loan amount'; $('secondaryValue').textContent=money(baseLoan); $('secondarySub').textContent='Before financed upfront fees.';
+      renderBreakdown([{label:'Program',value:currentProgram().label},{label:'Down payment',value:`${money(downPayment)} (${downPct.toFixed(2)}%)`},{label:'Estimated LTV',value:`${ltv.toFixed(2)}%`},{label:'Base loan',value:money(baseLoan)},{label:'Financed upfront fee',value:money(financedFee)},{label:'Note amount used for P&I',value:money(noteAmount)},{label:'Principal & interest',value:money(pi)},{label:feeLabel,value:money(monthlyCharge)},{label:'Taxes + insurance + HOA',value:money(tax+insurance+hoa)},{label:'Estimated closing costs',value:money(closingCosts)}]);
+      flags.unshift({level:'warn',text:`Credit score entered: ${score || 'n/a'}. Final approval and pricing depend on the lender's full review.`}); if(!flags.length) flags.push({level:'good',text:'No immediate rule conflict was triggered by the numbers entered.'}); renderFlags(flags);
+    }
+
+    function runRefi(){
+      const homeValue=clean($('homeValue').value), currentBalance=clean($('currentBalance').value), currentRate=clean($('currentRate').value), remainingYears=clean($('remainingYears').value), newRate=clean($('newRate').value), newTerm=clean($('newTermYears').value), cashOutRequest=clean($('cashOutRequest').value), closingCosts=clean($('refiClosingCosts').value), tax=clean($('refiTax').value)/12, insurance=clean($('refiInsurance').value)/12, hoa=clean($('refiHoa').value), refiType=$('refiType').value;
+      const currentPI=payment(currentBalance,currentRate,remainingYears);
+      let maxLtv=0; if(state.program==='conventional') maxLtv=refiType==='cash-out'?80:95; if(state.program==='fha') maxLtv=refiType==='cash-out'?80:96.5; if(state.program==='va') maxLtv=refiType==='cash-out'?90:100; if(state.program==='usda') maxLtv=100; if(state.program==='jumbo') maxLtv=80;
+      const maxBase=homeValue*(maxLtv/100); let baseLoan=refiType==='cash-out'?Math.min(currentBalance+cashOutRequest,maxBase):currentBalance; let financed=state.refiOpts.includeClosingCostsInLoan?closingCosts:0; let monthlyCharge=0; let feeLabel='Monthly mortgage charge'; const flags=[];
+      if(state.program==='conventional'){ const newLtv=homeValue?(baseLoan/homeValue)*100:0; const mip=conventionalMipRate(newLtv,720); monthlyCharge=baseLoan*(mip/100)/12; feeLabel=mip?`Estimated PMI (${mip.toFixed(2)}%)`:'PMI'; }
+      if(state.program==='fha'){ if(state.refiOpts.financeFhaFee) financed += currentBalance*0.0175; const newLtv=homeValue?(baseLoan/homeValue)*100:0; const mip=fhaMipRate(baseLoan,newLtv,newTerm,832750); monthlyCharge=baseLoan*(mip/100)/12; feeLabel=`FHA annual MIP (${mip.toFixed(2)}%)`; if(refiType==='streamline') flags.push({level:'good',text:'FHA streamline requires an existing FHA-insured loan and a net tangible benefit.'}); }
+      if(state.program==='va'){ if(refiType==='irrrl'){ const pct=state.refiOpts.vaExempt?0:0.50; if(state.refiOpts.financeVaFee) financed += currentBalance*(pct/100); flags.push({level:'good',text:'IRRRL currently uses a 0.5% funding fee unless exempt.'}); } else if(refiType==='cash-out'){ const pct=vaCashOutFee(state.refiOpts.vaFirstUse,state.refiOpts.vaExempt); if(state.refiOpts.financeVaFee) financed += baseLoan*(pct/100); flags.push({level:'warn',text:'VA cash-out refinance uses the current VA cash-out funding-fee schedule unless the borrower is exempt.'}); } }
+      if(state.program==='usda' && refiType==='streamlined') flags.push({level:'good',text:'USDA streamlined paths often do not require a new appraisal.'});
+      if(state.program==='jumbo') flags.push({level:'warn',text:'Jumbo refinance caps and reserve requirements are investor-specific. This uses 80% cash-out planning logic.'});
+      const noteAmount=baseLoan+financed, newPI=payment(noteAmount,newRate,newTerm), oldTotal=currentPI+tax+insurance+hoa, newTotal=newPI+tax+insurance+hoa+monthlyCharge, monthlyChange=oldTotal-newTotal, breakEven=monthlyChange>0?closingCosts/monthlyChange:0, maxCashOut=Math.max(maxBase-currentBalance,0), actualCashOut=Math.max(baseLoan-currentBalance,0), newLtv=homeValue?(baseLoan/homeValue)*100:0;
+      $('resultsTitle').textContent='Refinance'; $('resultsSubtitle').textContent=`${currentProgram().label} refinance estimate`; $('mainLabel').textContent='New estimated monthly payment'; $('mainValue').textContent=money(newTotal); $('mainSub').textContent='New principal, interest, taxes, insurance, HOA, and applicable mortgage charges.'; $('secondaryLabel').textContent=monthlyChange>=0?'Estimated monthly savings':'Estimated monthly increase'; $('secondaryValue').textContent=money(Math.abs(monthlyChange)); $('secondarySub').textContent=monthlyChange>=0?'Old estimated payment minus new estimated payment.':'New estimated payment minus old estimated payment.';
+      renderBreakdown([{label:'Program',value:currentProgram().label},{label:'Refinance type',value:refiType},{label:'Current balance',value:money(currentBalance)},{label:'Home value',value:money(homeValue)},{label:'Max base loan by rule used here',value:money(maxBase)},{label:'New base loan',value:money(baseLoan)},{label:'New LTV',value:`${newLtv.toFixed(2)}%`},{label:'Financed fees / costs',value:money(financed)},{label:'Note amount used for P&I',value:money(noteAmount)},{label:'Current estimated P&I',value:money(currentPI)},{label:'New principal & interest',value:money(newPI)},{label:feeLabel,value:money(monthlyCharge)},{label:'Current total payment estimate',value:money(oldTotal)},{label:'New total payment estimate',value:money(newTotal)},{label:'Requested cash out',value:money(cashOutRequest)},{label:'Actual cash out used',value:money(actualCashOut)},{label:'Max cash out by rule used here',value:money(maxCashOut)},{label:'Break-even months',value:monthlyChange>0?breakEven.toFixed(1):'n/a'}]);
+      if(refiType==='cash-out'&&cashOutRequest>maxCashOut) flags.unshift({level:'bad',text:'Requested cash out is above the planning cap used for this program.'});
+      if(monthlyChange<=0) flags.unshift({level:'warn',text:'This refinance does not lower the monthly payment based on the numbers entered.'});
+      if(state.program==='conventional'&&refiType==='cash-out') flags.unshift({level:'warn',text:'Conventional cash-out is usually capped at 80% LTV under the standard agency rule set.'});
+      if(state.program==='va'&&refiType==='cash-out') flags.unshift({level:'warn',text:'VA cash-out planning in this build uses 90% LTV.'});
+      if(!flags.length) flags.push({level:'good',text:'No immediate rule conflict was triggered by the numbers entered.'}); renderFlags(flags);
+    }
+
+    function runCalc(){ if(!state.unlocked){ renderBreakdown([{label:'Access',value:'Complete the form to continue'}]); renderFlags([{level:'warn',text:'Name, email, and loan type are required before the calculator opens.'}]); renderDetail(); return; } if(state.mode==='purchase') runPurchase(); else runRefi(); renderDetail(); }
+
+    function renderAll(){ renderProgramButtons(); renderQuickFacts(); renderPurchaseOptions(); renderRefiOptions(); renderDetail(); runCalc(); }
+
+    async function loadData(){
+      try{ const res=await fetch('/.netlify/functions/mortgage-guidelines'); if(res.ok){ const data=await res.json(); if(data&&data.programs) state.data=data; } }catch(e){}
+      renderAll();
+    }
+
+    function bindUI(){
+      document.querySelectorAll('#mainTabs .tab').forEach(btn=>btn.addEventListener('click',()=>setTab(btn.dataset.tab)));
+      document.querySelectorAll('#calcModeToggle button').forEach(btn=>btn.addEventListener('click',()=>setMode(btn.dataset.mode)));
+      document.querySelectorAll('#ruleTabs .subtab').forEach(btn=>btn.addEventListener('click',()=>setRuleSub(btn.dataset.sub)));
+      document.querySelectorAll('#employmentToggle button').forEach(btn=>btn.addEventListener('click',()=>setEmployment(btn.dataset.employment)));
+      $('runBtn').addEventListener('click',runCalc); $('openRules').addEventListener('click',()=>setTab('rules')); $('openDocs').addEventListener('click',()=>setTab('documents')); $('backToCalc1').addEventListener('click',()=>setTab('calculator')); $('backToCalc2').addEventListener('click',()=>setTab('calculator'));
+      ['homePrice','downPayment','interestRate','termYears','propertyTax','insurance','hoa','creditScore','countyLimit','closingCostPercent','homeValue','currentBalance','currentRate','remainingYears','newRate','newTermYears','cashOutRequest','refiClosingCosts','refiTax','refiInsurance','refiHoa','refiType'].forEach(id=>{ const el=$(id); if(el){ el.addEventListener('input',runCalc); el.addEventListener('change',runCalc); } });
+      $('leadForm').addEventListener('submit', async (event) => {
+        event.preventDefault();
+        const name=$('leadName').value.trim(), email=$('leadEmail').value.trim(), need=$('leadNeed').value.trim();
+        if(!name||!email||!need){ alert('Please enter your name, email, and loan type.'); return; }
+        const formData=new FormData($('leadForm')); const body=new URLSearchParams(formData).toString();
+        try{ await fetch('/',{ method:'POST', headers:{ 'Content-Type':'application/x-www-form-urlencoded' }, body }); }catch(e){}
+        state.unlocked=true; $('leadGate').classList.add('hidden'); $('calculatorShell').classList.remove('hidden');
+        const needLower=need.toLowerCase(); if(needLower.includes('refi')) setMode('refi'); if(needLower.includes('fha')) state.program='fha'; if(needLower.includes('va')) state.program='va'; if(needLower.includes('usda')) state.program='usda'; if(needLower.includes('jumbo')) state.program='jumbo'; if(needLower.includes('conventional')) state.program='conventional';
+        renderAll();
+      });
+    }
+
+    bindUI();
+    loadData();
+  </script>
 </body>
 </html>
