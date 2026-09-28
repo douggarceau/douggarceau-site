@@ -43,7 +43,12 @@ input[type=range]{width:170px;accent-color:var(--hot)}
 .bpm{color:var(--ink);min-width:70px;font-weight:500}
 ol{margin:8px 0 0;padding-left:22px}
 li{margin:2px 0}
-button:focus-visible,input:focus-visible,.n:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
+.next{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:#0a0a0a;color:#ffffff;border:2px solid #0a0a0a;border-radius:18px;padding:16px 20px;margin-top:8px;text-decoration:none}
+.next b{font-size:22px;font-weight:600;display:block}
+.next span{color:#d9d9d9;font-size:15px}
+.next .arrow{background:#ffd35c;color:#0a0a0a;font-weight:600;border-radius:999px;padding:10px 18px;white-space:nowrap}
+.next:hover .arrow{background:#ffe9a8}
+button:focus-visible,input:focus-visible,.n:focus-visible,.next:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 </style>
 </head>
@@ -85,6 +90,10 @@ button:focus-visible,input:focus-visible,.n:focus-visible{outline:3px solid var(
 <div class="card"><h2>Your turn</h2><ol id="try"></ol></div>
 </div>
 </div>
+<a class="next" href="level7.html">
+<div><b>Ready for the real kit?</b><span>Level 7 and up: grooves on a full drum set, with sheet music.</span></div>
+<div class="arrow">Go to Level 7 →</div>
+</a>
 </main>
 <script>
 var LESSONS=[
@@ -100,7 +109,7 @@ tryit:["Start slow. Make the accents clearly louder.","Keep the double (RR and L
 var cur=0,ctx=null,master=null,nb=null,timer=null,step=0,nextT=0,running=false,bpm=76,tabs=document.getElementById("tabs"),svg=document.getElementById("staff");
 var NS="http://www.w3.org/2000/svg";
 function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
-function xs(n){var out=[],a=150,b=590;for(var i=0;i<n;i++)out.push(n===1?370:a+(b-a)*i/(n-1));return out;}
+function xs(n){var out=[],a=175,b=595;for(var i=0;i<n;i++)out.push(n===1?370:a+(b-a)*i/(n-1));return out;}
 function render(){var L=LESSONS[cur];svg.innerHTML="";var n=L.hands.length,X=xs(n);
 el("rect",{x:1,y:1,width:678,height:198,rx:14,fill:"none"},svg);
 el("line",{x1:40,y1:105,x2:645,y2:105,"stroke-width":2,class:"st"},svg);
@@ -110,7 +119,7 @@ var t2=el("text",{x:104,y:133,"font-size":34,"font-weight":600,"text-anchor":"mi
 el("line",{x1:640,y1:87,x2:640,y2:123,"stroke-width":3,class:"st"},svg);
 for(var i=0;i<n;i++){var g=el("g",{class:"n",id:"n"+i,tabindex:0,role:"button","aria-label":"Note "+(i+1)},svg),x=X[i];
 el("rect",{x:x-24,y:20,width:48,height:170,fill:"transparent"},g);
-el("ellipse",{cx:x,cy:105,rx:14,ry:10,transform:"rotate(-20 "+x+" 105)",class:"nh",style:"transform-box:fill-box;transform-origin:center"},g);
+el("ellipse",{cx:x,cy:105,rx:14,ry:10,transform:"rotate(-20 "+x+" 105)",class:"nh"},g);
 el("line",{x1:x+12,y1:101,x2:x+12,y2:52,"stroke-width":4,"stroke-linecap":"round",class:"st"},g);
 if(L.acc[i]&&n>4){el("polyline",{points:(x-8)+",30 "+(x+8)+",36 "+(x-8)+",42",fill:"none","stroke-width":3,"stroke-linecap":"round",class:"st"},g);}
 var lb=el("text",{x:x,y:158,class:"lbl "+(L.lab?"":L.hands[i])},g);lb.textContent=L.lab?L.lab[i]:L.hands[i];
