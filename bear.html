@@ -40,6 +40,11 @@ h2{font-size:24px;font-weight:600;margin:0 0 4px}
 .lbl.L{fill:var(--L)}.lbl.R{fill:var(--R)}
 .syl{font-size:17px;text-anchor:middle;fill:var(--muted)}
 .ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.clk{font:inherit;font-weight:500;font-size:16px;padding:9px 16px;border-radius:999px;border:2px solid var(--btn);background:var(--card);color:var(--ink);cursor:pointer}
+.clk[aria-pressed="true"]{background:var(--btn);color:var(--btnink)}
+.beats{display:flex;gap:8px;align-items:center}
+.bd{width:16px;height:16px;border-radius:50%;border:2px solid var(--line);background:transparent}
+.bd.on{background:var(--hot);border-color:var(--hot)}
 .go{font:inherit;font-weight:500;font-size:18px;padding:11px 22px;border-radius:999px;border:0;background:var(--btn);color:var(--btnink);cursor:pointer}
 label{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:15px}
 input[type=range]{width:170px;accent-color:var(--hot)}
@@ -109,7 +114,9 @@ button:focus-visible,input:focus-visible,.n:focus-visible,.next:focus-visible{ou
 <div class="card"><svg id="staff" viewBox="0 0 680 200" role="img" aria-label="Notation for the lesson"></svg></div>
 <div class="card ctrl">
 <button class="go" id="go">Play</button>
+<button class="clk" id="clk" type="button" aria-pressed="true">Click: on</button>
 <label>Tempo <input type="range" id="bpm" aria-label="Tempo"><span class="bpm" id="bpmv"></span></label>
+<div class="beats" id="beats" aria-hidden="true"></div>
 </div>
 <div class="card"><h2>Your turn</h2><ol id="try"></ol></div>
 </div>
@@ -124,7 +131,7 @@ var UNITS=[
 {name:"Counting",lessons:[
 {name:"Quarter notes",ts:[4,4],bpm:[50,76,120],notes:"q:L q:R q:L q:R",title:"Quarter notes: 1 beat each",
 text:"A quarter note is a black dot with a stem, and it gets one beat. Count 1 2 3 4 out loud and play on every number.",
-tryit:["Count 1 2 3 4 along with Bear.","Clap once on every note.","Play it on a pad, alternating hands."]},
+tryit:["Press Play: the click counts one bar (1 2 3 4) before Bear starts.","Count 1 2 3 4 along with Bear and the click.","Play it on a pad, alternating hands."]},
 {name:"Half notes",ts:[4,4],bpm:[50,72,110],notes:"h:R h:L",title:"Half notes: 2 beats each",
 text:"A half note has an open (hollow) head. It lasts two beats, so you play on 1 and 3 and keep counting through 2 and 4.",
 tryit:["Say all four counts, but only play on 1 and 3.","Let the stick bounce up and wait.","Try it with your eyes closed, still counting."]},
@@ -250,7 +257,7 @@ ev.forEach(function(e,i){if(e.roll&&ev[i+1]){var a=X(e.pos),b=X(ev[i+1].pos);el(
 document.getElementById("ttl").textContent=L.title;document.getElementById("txt").textContent=L.text;
 var ol=document.getElementById("try");ol.innerHTML="";L.tryit.forEach(function(s){var li=document.createElement("li");li.textContent=s;ol.appendChild(li);});
 var r=document.getElementById("bpm");r.min=L.bpm[0];r.max=L.bpm[2];r.value=L.bpm[1];bpm=L.bpm[1];document.getElementById("bpmv").textContent=bpm+" bpm";
-svg.setAttribute("aria-label","Notation for "+L.title);renderBoxes(L);}
+svg.setAttribute("aria-label","Notation for "+L.title);renderBoxes(L);drawBeats();}
 function restGlyph(g,x,d){if(d>=4){el("rect",{x:x-11,y:105,width:22,height:9,class:"bm"},g);}
 else if(d>=2){el("rect",{x:x-11,y:96,width:22,height:9,class:"bm"},g);}
 else if(d>=1){el("path",{d:"M"+(x-3)+" 80 L"+(x+6)+" 92 L"+(x-4)+" 103 L"+(x+6)+" 116 Q"+(x-8)+" 110 "+(x+1)+" 128",fill:"none","stroke-width":4,"stroke-linejoin":"round","stroke-linecap":"round",class:"st"},g);}
@@ -341,9 +348,17 @@ if(!e.rest){var v=(e.acc?1:.55)*(.95+Math.random()*.1);
  if(e.roll){var n=e.hands.length;for(var k=0;k<n;k++)snare(t+k*sec/n,.5,e.hands[k]);}
  else{if(e.flam)snare(t-.035,.25,other(e.h));if(e.drag){snare(t-.07,.22,other(e.h));snare(t-.035,.22,other(e.h));}snare(t,e.flam||e.drag?Math.max(v,.8):v,e.h);}}
 var D=Math.min(300,iv*1.9),w=(t-ctx.currentTime)*1000-(e.rest?0:.5*D);setTimeout(function(){vis(e,i,iv);},Math.max(0,w));}
-function tick(){var L=LESSONS[cur],n=L.ev.length;while(nextT<ctx.currentTime+.12){play(step,nextT);nextT+=L.ev[step].d*60/bpm;step=(step+1)%n;}}
+var clickOn=true,beatT=0,beatI=0;
+function click(t,strong){t=Math.max(t,ctx.currentTime);var o=ctx.createOscillator(),g=ctx.createGain();o.type="square";o.frequency.value=strong?1760:1175;
+g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(strong?.32:.2,t+.002);g.gain.exponentialRampToValueAtTime(.0001,t+.04);o.connect(g);g.connect(master);o.start(t);o.stop(t+.06);}
+function beatInfo(L){return L.ts[1]===8?{n:L.ts[0],len:.5,strong:[0,3]}:{n:L.ts[0],len:1,strong:[0]};}
+function drawBeats(){var L=LESSONS[cur],B=beatInfo(L),box=document.getElementById("beats");box.innerHTML="";for(var i=0;i<B.n;i++){var d=document.createElement("span");d.className="bd";box.appendChild(d);}}
+function lightBeat(i,t){setTimeout(function(){if(!running)return;var d=document.getElementById("beats").children;for(var k=0;k<d.length;k++)d[k].classList.toggle("on",k===i);},Math.max(0,(t-ctx.currentTime)*1000));}
+function tick(){var L=LESSONS[cur],n=L.ev.length,B=beatInfo(L),h=ctx.currentTime+.12;
+while(beatT<h){if(clickOn)click(beatT,B.strong.indexOf(beatI)>=0);lightBeat(beatI,beatT);beatT+=B.len*60/bpm;beatI=(beatI+1)%B.n;}
+while(nextT<h){play(step,nextT);nextT+=L.ev[step].d*60/bpm;step=(step+1)%n;}}
 function tap(i){if(!audio())return;play(i,ctx.currentTime+.08);}
-function toggle(){if(!audio())return;var b=document.getElementById("go");if(running){running=false;clearInterval(timer);b.textContent="Play";}else{running=true;step=0;nextT=ctx.currentTime+.1;timer=setInterval(tick,25);tick();b.textContent="Stop";}}
+function toggle(){if(!audio())return;var b=document.getElementById("go");if(running){running=false;clearInterval(timer);b.textContent="Play";[].forEach.call(document.getElementById("beats").children,function(d){d.classList.remove("on");});}else{running=true;step=0;var L=LESSONS[cur];beatT=ctx.currentTime+.1;beatI=0;nextT=beatT+L.len*60/bpm;timer=setInterval(tick,25);tick();b.textContent="Stop";}}
 document.getElementById("go").addEventListener("click",toggle);
 var st=document.getElementById("stage");st.addEventListener("click",toggle);st.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle();}});
 document.getElementById("bpm").addEventListener("input",function(e){bpm=+e.target.value;document.getElementById("bpmv").textContent=bpm+" bpm";});
@@ -355,6 +370,7 @@ if(!window.speechSynthesis)tb.hidden=true;
 tb.addEventListener("click",function(){if(talking){hush();return;}var L=LESSONS[cur],t=L.title+". "+L.text;(BOXES[L.name]||[]).forEach(function(b){t+=" "+b[1]+": "+b[2];});
 t=t.replace(/\b1 e & a\b/g,"one ee and uh").replace(/&/g," and ").replace(/\bRLRR LRLL\b/g,"right left right right, left right left left").replace(/\bRRLL R\b/g,"right right left left, right").replace(/\bLLRR L\b/g,"left left right right, left");
 var u=new SpeechSynthesisUtterance(t);u.rate=.95;u.pitch=1.15;u.onend=function(){setTalk(false);};u.onerror=function(){setTalk(false);};speechSynthesis.cancel();speechSynthesis.speak(u);setTalk(true);});
+var cb=document.getElementById("clk");cb.addEventListener("click",function(){clickOn=!clickOn;cb.setAttribute("aria-pressed",clickOn?"true":"false");cb.textContent="Click: "+(clickOn?"on":"off");});
 tabsBuild();render();
 </script>
 </body>
