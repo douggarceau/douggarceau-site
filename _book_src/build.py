@@ -66,7 +66,9 @@ def block_html(ch, b, counter):
             c='tip' if t == 'tip' else '', h=html.escape(b[1]), tag=tag, body=body)
     if t == 'ex':
         counter[0] += 1
-        return ex_html(ch['n'], counter[0], b[1])
+        ex = dict(b[1])
+        if ch['part'] == 6: ex['jazz'] = True
+        return ex_html(ch['n'], counter[0], ex)
     if t == 'raw': return b[1]
     raise ValueError('unknown block ' + t)
 

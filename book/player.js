@@ -12,7 +12,7 @@
   var HANDS = ["cr", "hh", "rd", "t1", "sn", "t2"], FEET = ["bd", "hf"];
   var STEM_TOP = 4, STEM_BOT = 140;
   var SRC = (document.currentScript && document.currentScript.src) || location.href;
-  var SAMPLES = { rd: new URL("../sounds/ride.mp3?v=2", SRC).href, rj: new URL("../sounds/ride-jazz.mp3?v=2", SRC).href }, BUFS = {}, BYTES = {};
+  var SAMPLES = { rd: new URL("../sounds/ride.mp3?v=2", SRC).href, rj: new URL("../sounds/ride-jazz.mp3?v=2", SRC).href, sj: new URL("../sounds/snare-jazz.mp3?v=1", SRC).href }, BUFS = {}, BYTES = {};
   Object.keys(SAMPLES).forEach(function (k) {
     BYTES[k] = fetch(SAMPLES[k]).then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); });
   });
@@ -30,7 +30,7 @@
       lines[k] = s;
     });
     ["st", "acc"].forEach(function (k) { if (spec[k]) { spec[k] = spec[k].replace(/ /g, "").replace(/_/g, " "); if (spec[k].length !== steps) throw new Error(k + " has " + spec[k].length + " steps, expected " + steps); } });
-    return { ties: spec.ties || [], ts: ts, compound: compound, beats: beats, sub: sub, bars: bars, steps: steps, lines: lines, st: spec.st || "", acc: spec.acc || "", swing: !!spec.swing, bpm: spec.bpm || 80, triplet: sub === 3 && !compound };
+    return { jazz: !!spec.jazz, ties: spec.ties || [], ts: ts, compound: compound, beats: beats, sub: sub, bars: bars, steps: steps, lines: lines, st: spec.st || "", acc: spec.acc || "", swing: !!spec.swing, bpm: spec.bpm || 80, triplet: sub === 3 && !compound };
   }
 
   function isNote(c) { return !!c && c !== "." && c !== "-"; }
@@ -293,20 +293,22 @@
       var i = this.step % P.steps, t = this.nextT, d = this.stepDur(i);
       ["cr", "hh", "rd", "t1", "sn", "t2", "bd", "hf"].forEach(function (k) {
         var c = P.lines[k] && P.lines[k][i]; if (!isNote(c)) return;
+        var jazz = P.jazz || P.swing, hk = k;
+        if (jazz && k === "rd" && BUFS.rj) hk = "rj";
+        if (jazz && k === "sn" && BUFS.sj) hk = "sj";
         if (self.tieT[k + ":" + i]) return;
         var v = P.acc[i] === ">" ? 1 : (c === "g" ? 0.22 : 0.62);
         if (k === "hh" && c === "O") { hit("ho", t, v); return; }
-        if (k === "rd" && (P.swing || P.triplet) && BUFS.rj) { hit("rj", t, v); return; }
-        if (c === "f") hit(k, t - 0.03, 0.2);
-        if (c === "d") { hit(k, t - 0.06, 0.18); hit(k, t - 0.03, 0.18); }
+        if (c === "f") hit(hk, t - 0.03, 0.2);
+        if (c === "d") { hit(hk, t - 0.06, 0.18); hit(hk, t - 0.03, 0.18); }
         if (c === "z" || c === "w") {
           var len = 1, j = i + 1; while (j < P.steps && !HANDS.some(function (q) { return isNote(P.lines[q] && P.lines[q][j]); })) { len++; j++; }
           var total = 0; for (var q = 0; q < len; q++) total += self.stepDur((i + q) % P.steps);
           var n = c === "w" ? Math.round(total / (60 / self.bpm) * 8) : Math.round(total / (60 / self.bpm) * 16);
-          for (var s2 = 0; s2 < n; s2++) hit(k, t + s2 * total / n, c === "w" ? 0.45 : 0.22 + Math.random() * 0.08);
+          for (var s2 = 0; s2 < n; s2++) hit(hk, t + s2 * total / n, c === "w" ? 0.45 : 0.22 + Math.random() * 0.08);
           return;
         }
-        hit(k, t, v);
+        hit(hk, t, v);
       });
       (function (gi, when) { setTimeout(function () { if (!self.running) return; self.groups.forEach(function (g, n) { g.classList.toggle("on", n === gi); }); }, Math.max(0, (when - ctx.currentTime) * 1000)); })(i, t);
       this.nextT += d; this.step++;

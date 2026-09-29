@@ -325,8 +325,8 @@ class Component extends DCLogic {
   }
   componentDidMount() {
     const get = (u) => fetch(u).then((r) => { if (!r.ok) throw 0; return r.arrayBuffer(); });
-    this.rideBytes = get('sounds/ride.mp3?v=2'); this.jazzBytes = get('sounds/ride-jazz.mp3?v=2');
-    this.rideBytes.catch(() => {}); this.jazzBytes.catch(() => {});
+    this.rideBytes = get('sounds/ride.mp3?v=2'); this.jazzBytes = get('sounds/ride-jazz.mp3?v=2'); this.jazzSnBytes = get('sounds/snare-jazz.mp3?v=1');
+    this.rideBytes.catch(() => {}); this.jazzBytes.catch(() => {}); this.jazzSnBytes.catch(() => {});
     if (window.speechSynthesis) window.speechSynthesis.getVoices();
     const m = /^#(\w+?)(?:-(\d))?$/.exec(window.location.hash || '');
     if (m && this.lessons[m[1]]) {
@@ -367,7 +367,7 @@ class Component extends DCLogic {
       this.bus.connect(comp);
       this.bus.connect(verb); verb.connect(wet); wet.connect(comp);
       const dec = (bytes, key) => bytes && bytes.then((b) => ctx.decodeAudioData(b.slice(0))).then((buf) => { this[key] = buf; }).catch(() => {});
-      dec(this.rideBytes, 'rideBuf'); dec(this.jazzBytes, 'jazzRideBuf');
+      dec(this.rideBytes, 'rideBuf'); dec(this.jazzBytes, 'jazzRideBuf'); dec(this.jazzSnBytes, 'jazzSnareBuf');
     }
     if (this.ctx.state === 'suspended') this.ctx.resume();
     return this.ctx;
@@ -419,6 +419,9 @@ class Component extends DCLogic {
       this.tone(ctx, t, 'sine', 160, 48, 0.09, 0.55, 1.0 * v);
       this.tone(ctx, t, 'triangle', 90, 45, 0.12, 0.25, 0.35 * v);
       this.noise(ctx, t, 0.012, 0.35 * v, 'highpass', 2500);
+    } else if (id === 'snare' && this.jazzSnareBuf && (this.lessons[this.state.lesson] || {}).swing) {
+      const src = ctx.createBufferSource(); src.buffer = this.jazzSnareBuf; src.playbackRate.value = 0.99 + Math.random() * 0.02;
+      const g = ctx.createGain(); g.gain.value = 0.9 * v; src.connect(g); g.connect(this.bus); src.start(t);
     } else if (id === 'snare') {
       this.tone(ctx, t, 'triangle', 240, 180, 0.04, 0.12, 0.55 * v);
       this.tone(ctx, t, 'sine', 340, 300, 0.05, 0.08, 0.25 * v);
