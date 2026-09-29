@@ -12,7 +12,8 @@
   var HANDS = ["cr", "hh", "rd", "t1", "sn", "t2"], FEET = ["bd", "hf"];
   var STEM_TOP = 4, STEM_BOT = 140;
   var SRC = (document.currentScript && document.currentScript.src) || location.href;
-  var SAMPLES = { rd: new URL("../sounds/ride.mp3?v=2", SRC).href, rj: new URL("../sounds/ride-jazz.mp3?v=2", SRC).href, sj: new URL("../sounds/snare-jazz.mp3?v=1", SRC).href }, BUFS = {}, BYTES = {};
+  var SAMPLES = { rd: new URL("../sounds/ride.mp3?v=2", SRC).href, rj: new URL("../sounds/ride-jazz.mp3?v=2", SRC).href, sj: new URL("../sounds/snare-jazz.mp3?v=1", SRC).href,
+    bj: new URL("../sounds/kick-jazz.mp3?v=1", SRC).href, t1j: new URL("../sounds/tom-jazz.mp3?v=1", SRC).href, t2j: new URL("../sounds/floortom-jazz.mp3?v=1", SRC).href }, RATE = { t1j: 1.335 }, BUFS = {}, BYTES = {};
   Object.keys(SAMPLES).forEach(function (k) {
     BYTES[k] = fetch(SAMPLES[k]).then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); });
   });
@@ -225,7 +226,7 @@
   function tone(t, type, a, b, sw, dur, vol) { var o = ctx.createOscillator(); o.type = type; o.frequency.setValueAtTime(a, t); o.frequency.exponentialRampToValueAtTime(b, t + sw); o.connect(env(t, vol, dur)); o.start(t); o.stop(t + dur + 0.05); }
   function metal(t, dur, vol, bp, hp, base) { var bn = ctx.createBiquadFilter(); bn.type = "bandpass"; bn.frequency.value = bp; bn.Q.value = 0.8; var hn = ctx.createBiquadFilter(); hn.type = "highpass"; hn.frequency.value = hp; bn.connect(hn); hn.connect(env(t, vol, dur, 0.001)); [2, 3, 4.16, 5.43, 6.79, 8.21].forEach(function (r) { var o = ctx.createOscillator(); o.type = "square"; o.frequency.value = (base || 40) * r; o.connect(bn); o.start(t); o.stop(t + dur + 0.05); }); }
   function sample(k, t, v) {
-    var s = ctx.createBufferSource(); s.buffer = BUFS[k]; s.playbackRate.value = 0.99 + Math.random() * 0.02;
+    var s = ctx.createBufferSource(); s.buffer = BUFS[k]; s.playbackRate.value = (RATE[k] || 1) * (0.99 + Math.random() * 0.02);
     var g = ctx.createGain(); g.gain.value = v; s.connect(g); g.connect(bus); s.start(t);
   }
   function hit(k, t, v) {
@@ -296,6 +297,9 @@
         var jazz = P.jazz || P.swing, hk = k;
         if (jazz && k === "rd" && BUFS.rj) hk = "rj";
         if (jazz && k === "sn" && BUFS.sj) hk = "sj";
+        if (jazz && k === "bd" && BUFS.bj) hk = "bj";
+        if (jazz && k === "t1" && BUFS.t1j) hk = "t1j";
+        if (jazz && k === "t2" && BUFS.t2j) hk = "t2j";
         if (self.tieT[k + ":" + i]) return;
         var v = P.acc[i] === ">" ? 1 : (c === "g" ? 0.22 : 0.62);
         if (k === "hh" && c === "O") { hit("ho", t, v); return; }

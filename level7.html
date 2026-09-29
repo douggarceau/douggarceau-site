@@ -325,7 +325,7 @@ class Component extends DCLogic {
   }
   componentDidMount() {
     const get = (u) => fetch(u).then((r) => { if (!r.ok) throw 0; return r.arrayBuffer(); });
-    this.rideBytes = get('sounds/ride.mp3?v=2'); this.jazzBytes = get('sounds/ride-jazz.mp3?v=2'); this.jazzSnBytes = get('sounds/snare-jazz.mp3?v=1');
+    this.rideBytes = get('sounds/ride.mp3?v=2'); this.jazzBytes = get('sounds/ride-jazz.mp3?v=2'); this.jazzSnBytes = get('sounds/snare-jazz.mp3?v=1'); this.jz = { kick: get('sounds/kick-jazz.mp3?v=1'), tom: get('sounds/tom-jazz.mp3?v=1'), floor: get('sounds/floortom-jazz.mp3?v=1') }; Object.values(this.jz).forEach((pr) => pr.catch(() => {}));
     this.rideBytes.catch(() => {}); this.jazzBytes.catch(() => {}); this.jazzSnBytes.catch(() => {});
     if (window.speechSynthesis) window.speechSynthesis.getVoices();
     const m = /^#(\w+?)(?:-(\d))?$/.exec(window.location.hash || '');
@@ -367,7 +367,7 @@ class Component extends DCLogic {
       this.bus.connect(comp);
       this.bus.connect(verb); verb.connect(wet); wet.connect(comp);
       const dec = (bytes, key) => bytes && bytes.then((b) => ctx.decodeAudioData(b.slice(0))).then((buf) => { this[key] = buf; }).catch(() => {});
-      dec(this.rideBytes, 'rideBuf'); dec(this.jazzBytes, 'jazzRideBuf'); dec(this.jazzSnBytes, 'jazzSnareBuf');
+      dec(this.rideBytes, 'rideBuf'); dec(this.jazzBytes, 'jazzRideBuf'); dec(this.jazzSnBytes, 'jazzSnareBuf'); this.jzBuf = {}; Object.keys(this.jz || {}).forEach((k) => this.jz[k].then((b) => ctx.decodeAudioData(b.slice(0))).then((buf) => { this.jzBuf[k] = buf; }).catch(() => {}));
     }
     if (this.ctx.state === 'suspended') this.ctx.resume();
     return this.ctx;
@@ -415,6 +415,13 @@ class Component extends DCLogic {
     if (!ctx) return;
     const t = ctx.currentTime + 0.005;
     const v = 0.85 + Math.random() * 0.15;
+    const swingNow = (this.lessons[this.state.lesson] || {}).swing, jb = this.jzBuf || {};
+    const jkey = { kick: 'kick', kickSoft: 'kick', tom: 'tom', floor: 'floor' }[id];
+    if (swingNow && jkey && jb[jkey]) {
+      const src = ctx.createBufferSource(); src.buffer = jb[jkey]; src.playbackRate.value = (jkey === 'tom' ? 1.335 : 1) * (0.99 + Math.random() * 0.02);
+      const g = ctx.createGain(); g.gain.value = (id === 'kickSoft' ? 0.35 : 1.0) * v; src.connect(g); g.connect(this.bus); src.start(t);
+      return;
+    }
     if (id === 'kick') {
       this.tone(ctx, t, 'sine', 160, 48, 0.09, 0.55, 1.0 * v);
       this.tone(ctx, t, 'triangle', 90, 45, 0.12, 0.25, 0.35 * v);
