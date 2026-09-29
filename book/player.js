@@ -11,6 +11,8 @@
   var XHEAD = { cr: 1, hh: 1, rd: 1, hf: 1 };
   var HANDS = ["cr", "hh", "rd", "t1", "sn", "t2"], FEET = ["bd", "hf"];
   var STEM_TOP = 4, STEM_BOT = 140;
+  var SRC = (document.currentScript && document.currentScript.src) || location.href;
+  var SAMPLES = { rd: new URL("../sounds/ride.mp3", SRC).href }, BUFS = {};
 
   function el(n, a, p) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
   function onLine(y) { return y >= 40 && y <= 104 && (y - 40) % 16 === 0; }
@@ -208,6 +210,10 @@
       for (var ch = 0; ch < 2; ch++) { var c = ir.getChannelData(ch); for (var j = 0; j < rl; j++) c[j] = (Math.random() * 2 - 1) * Math.pow(1 - j / rl, 3); }
       var verb = ctx.createConvolver(); verb.buffer = ir; var wet = ctx.createGain(); wet.gain.value = 0.14;
       bus = ctx.createGain(); bus.connect(comp); bus.connect(verb); verb.connect(wet); wet.connect(comp);
+      Object.keys(SAMPLES).forEach(function (k) {
+        fetch(SAMPLES[k]).then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); })
+          .then(function (b) { return ctx.decodeAudioData(b); }).then(function (buf) { BUFS[k] = buf; }).catch(function () {});
+      });
     }
     if (ctx.state === "suspended") ctx.resume();
     return ctx;
@@ -216,8 +222,13 @@
   function noise(t, dur, vol, type, freq, q, hp) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = type; f.frequency.value = freq; f.Q.value = q || 0.7; var last = f; s.connect(f); if (hp) { var h = ctx.createBiquadFilter(); h.type = "highpass"; h.frequency.value = hp; f.connect(h); last = h; } last.connect(env(t, vol, dur)); s.start(t, Math.random() * 0.5); s.stop(t + dur + 0.05); }
   function tone(t, type, a, b, sw, dur, vol) { var o = ctx.createOscillator(); o.type = type; o.frequency.setValueAtTime(a, t); o.frequency.exponentialRampToValueAtTime(b, t + sw); o.connect(env(t, vol, dur)); o.start(t); o.stop(t + dur + 0.05); }
   function metal(t, dur, vol, bp, hp, base) { var bn = ctx.createBiquadFilter(); bn.type = "bandpass"; bn.frequency.value = bp; bn.Q.value = 0.8; var hn = ctx.createBiquadFilter(); hn.type = "highpass"; hn.frequency.value = hp; bn.connect(hn); hn.connect(env(t, vol, dur, 0.001)); [2, 3, 4.16, 5.43, 6.79, 8.21].forEach(function (r) { var o = ctx.createOscillator(); o.type = "square"; o.frequency.value = (base || 40) * r; o.connect(bn); o.start(t); o.stop(t + dur + 0.05); }); }
+  function sample(k, t, v) {
+    var s = ctx.createBufferSource(); s.buffer = BUFS[k]; s.playbackRate.value = 0.99 + Math.random() * 0.02;
+    var g = ctx.createGain(); g.gain.value = v; s.connect(g); g.connect(bus); s.start(t);
+  }
   function hit(k, t, v) {
     v = v * (0.9 + Math.random() * 0.1);
+    if (BUFS[k]) { sample(k, t, v * 1.1); return; }
     switch (k) {
       case "bd": tone(t, "sine", 160, 48, 0.09, 0.5, v); tone(t, "triangle", 90, 45, 0.12, 0.22, 0.3 * v); noise(t, 0.012, 0.3 * v, "highpass", 2500); break;
       case "sn": tone(t, "triangle", 240, 180, 0.04, 0.12, 0.55 * v); noise(t, 0.24, 0.9 * v, "bandpass", 4200, 0.6, 1400); noise(t, 0.03, 0.35 * v, "highpass", 5000); break;
