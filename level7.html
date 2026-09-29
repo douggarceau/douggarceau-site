@@ -23,7 +23,7 @@ html,body{background:#0a0a0a}
 <div id="stagebox"><div id="app"></div></div>
 </div>
 <template id="tpl">
-<div style="width: 1280px; height: 1070px; box-sizing: border-box; background: #0a0a0a; color: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace;">
+<div style="width: 1280px; height: 1088px; box-sizing: border-box; background: #0a0a0a; color: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace;">
 
 <div style="display: flex; justify-content: space-between; align-items: flex-end; padding: 36px 56px 0 56px;">
 <div style="display: flex; flex-direction: column; gap: 4px;">
@@ -81,15 +81,17 @@ html,body{background:#0a0a0a}
 <button type="button" aria-label="Floor tom" onClick="{{floor.hit}}" style="position: absolute; left: 788px; top: 300px; width: 184px; height: 194px; padding: 0; border: 0; background: transparent; cursor: pointer; border-radius: 12px;"></button>
 <button type="button" aria-label="Snare drum" onClick="{{snare.hit}}" style="position: absolute; left: 396px; top: 262px; width: 148px; height: 96px; padding: 0; border: 0; background: transparent; cursor: pointer; border-radius: 12px;"></button>
 </div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 56px 0 56px; border-top: 1px solid #2a2a2a; height: 250px; box-sizing: border-box;">
-<div style="display: flex; align-items: center; gap: 12px;">
+<div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 56px 0 56px; border-top: 1px solid #2a2a2a; height: 268px; box-sizing: border-box;">
+<div style="display: flex; align-items: center; gap: 8px;">
 <div style="font-family: 'Bebas Neue', sans-serif; font-size: 30px; letter-spacing: 2px; margin-right: 8px;">READ IT</div>
-<button type="button" onClick="{{tabs.rock.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.rock.bg}}; color: {{tabs.rock.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">1 · ROCK 4/4</button>
-<button type="button" onClick="{{tabs.waltz.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.waltz.bg}}; color: {{tabs.waltz.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">2 · WALTZ 3/4</button>
-<button type="button" onClick="{{tabs.swing.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.swing.bg}}; color: {{tabs.swing.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">3 · SWING 4/4</button>
-<button type="button" onClick="{{tabs.rock16.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.rock16.bg}}; color: {{tabs.rock16.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">4 · ROCK 16THS</button>
-<button type="button" onClick="{{tabs.sync.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.sync.bg}}; color: {{tabs.sync.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">5 · SYNCOPATION</button>
-<button type="button" onClick="{{tabs.indep.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.indep.bg}}; color: {{tabs.indep.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">6 · INDEPENDENCE</button>
+<button type="button" onClick="{{tabs.rock.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.rock.bg}}; color: {{tabs.rock.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">1 · ROCK 4/4</button>
+<button type="button" onClick="{{tabs.waltz.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.waltz.bg}}; color: {{tabs.waltz.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">2 · WALTZ 3/4</button>
+<button type="button" onClick="{{tabs.swing.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.swing.bg}}; color: {{tabs.swing.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">3 · SWING 4/4</button>
+<button type="button" onClick="{{tabs.rock16.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.rock16.bg}}; color: {{tabs.rock16.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">4 · ROCK 16THS</button>
+<button type="button" onClick="{{tabs.sync.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.sync.bg}}; color: {{tabs.sync.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">5 · SYNCOPATION</button>
+<button type="button" onClick="{{tabs.indep.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.indep.bg}}; color: {{tabs.indep.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">6 · INDEPENDENCE</button>
+<button type="button" onClick="{{tabs.openhh.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.openhh.bg}}; color: {{tabs.openhh.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">7 · OPEN HI-HAT</button>
+<button type="button" onClick="{{tabs.fills.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.fills.bg}}; color: {{tabs.fills.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">8 · FILLS</button>
 </div>
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
 <div style="display: flex; align-items: center; gap: 8px;">
@@ -101,7 +103,7 @@ html,body{background:#0a0a0a}
 <div style="font-size: 15px; color: #ffffff; flex-grow: 1; margin-left: 12px;">{{varDesc}}</div>
 </div>
 <div style="display: flex; align-items: flex-start;">
-<svg viewBox="0 0 1140 130" width="1140" height="130" role="img" aria-label="{{nt.aria}}"><line x1="30" y1="40" x2="1110" y2="40" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="52" x2="1110" y2="52" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="64" x2="1110" y2="64" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="76" x2="1110" y2="76" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="88" x2="1110" y2="88" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="40" x2="30" y2="88" stroke="#ffffff" stroke-width="1.6"></line><rect x="42" y="52" width="5" height="24" fill="#ffffff"></rect><rect x="53" y="52" width="5" height="24" fill="#ffffff"></rect><text x="100" y="62" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#ffffff">{{ts}}</text><text x="100" y="86" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#ffffff">4</text><circle cx="1088" cy="58" r="3" fill="#ffffff"></circle><circle cx="1088" cy="70" r="3" fill="#ffffff"></circle><line x1="1098" y1="40" x2="1098" y2="88" stroke="#ffffff" stroke-width="1.6"></line><rect x="1103" y="40" width="7" height="48" fill="#ffffff"></rect><path d="{{nt.fillW}}" fill="#ffffff"></path><path d="{{nt.fillG}}" fill="#ffd35c"></path><path d="{{nt.thinW}}" fill="none" stroke="#ffffff" stroke-width="1.6"></path><path d="{{nt.thinG}}" fill="none" stroke="#ffd35c" stroke-width="1.6"></path><path d="{{nt.thickW}}" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path><path d="{{nt.thickG}}" fill="none" stroke="#ffd35c" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<svg viewBox="0 -18 1140 148" width="1140" height="148" role="img" aria-label="{{nt.aria}}"><line x1="30" y1="40" x2="1110" y2="40" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="52" x2="1110" y2="52" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="64" x2="1110" y2="64" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="76" x2="1110" y2="76" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="88" x2="1110" y2="88" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="40" x2="30" y2="88" stroke="#ffffff" stroke-width="1.6"></line><rect x="42" y="52" width="5" height="24" fill="#ffffff"></rect><rect x="53" y="52" width="5" height="24" fill="#ffffff"></rect><text x="100" y="62" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#ffffff">{{ts}}</text><text x="100" y="86" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#ffffff">4</text><circle cx="1088" cy="58" r="3" fill="#ffffff"></circle><circle cx="1088" cy="70" r="3" fill="#ffffff"></circle><line x1="1098" y1="40" x2="1098" y2="88" stroke="#ffffff" stroke-width="1.6"></line><rect x="1103" y="40" width="7" height="48" fill="#ffffff"></rect><path d="{{nt.fillW}}" fill="#ffffff"></path><path d="{{nt.fillG}}" fill="#ffd35c"></path><path d="{{nt.thinW}}" fill="none" stroke="#ffffff" stroke-width="1.6"></path><path d="{{nt.thinG}}" fill="none" stroke="#ffd35c" stroke-width="1.6"></path><path d="{{nt.thickW}}" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path><path d="{{nt.thickG}}" fill="none" stroke="#ffd35c" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
 </div>
 
@@ -203,7 +205,7 @@ html,body{background:#0a0a0a}
     patch(root,[].slice.call(frag.childNodes));
   }
   window.__mount=function(C){ comp=new C({bpm:80}); paint(); fit(); };
-  function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1070*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
+  function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1088*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
   window.addEventListener('resize',function(){ fit(); });
 })();
 </script>
@@ -264,11 +266,27 @@ class Component extends DCLogic {
           { name: 'Step 2', kick: [], snare: [2, 5], desc: 'Snare on 2 (with the ride) and on the & of 3 (between the ride notes).' },
           { name: 'Step 3', kick: [3, 7], snare: [], desc: 'Now the foot comps: a kick on the & of 2 and the & of 4.' },
           { name: 'Step 4', kick: [5], snare: [1], desc: 'Both: snare on the & of 1, kick on the & of 3. Hands and feet talk to each other.' }
+        ] },
+      openhh: { steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
+        title: 'Groove 7 · Open hi-hat · 4/4', legend: 'o = open the hi-hat (lift your foot) · next note closes it',
+        vars: [
+          { name: 'Step 1', kick: [0, 4], snare: [2, 6], open: [7], desc: 'Open the hi-hat on the & of 4, then close it with your foot on 1.' },
+          { name: 'Step 2', kick: [0, 4], snare: [2, 6], open: [3, 7], desc: 'Open on the & of 2 and the & of 4.' },
+          { name: 'Step 3', kick: [0, 2, 4, 6], snare: [2, 6], open: [1, 3, 5, 7], desc: 'Disco: kick on every beat, hi-hat open on every &, closed on the numbers.' },
+          { name: 'Step 4', kick: [0, 3, 4], snare: [2, 6], open: [5], desc: 'Kick on 1, the & of 2 and 3. Open the hi-hat on the & of 3.' }
+        ] },
+      fills: { steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: [0, 2, 4, 6, 8, 10], crash: 'bar', swing: false, feather: false, hhfoot: [],
+        title: 'Groove 8 · Fills · 4/4', legend: 'Play 3 beats of groove, fill beat 4 · top space = rack tom · 2nd space = floor tom',
+        vars: [
+          { name: 'Step 1', kick: [0, 8, 10], snare: [4], fill: { 12: 'snare', 13: 'snare', 14: 'snare', 15: 'snare' }, desc: 'Four 16ths on the snare on beat 4, then land on a crash.' },
+          { name: 'Step 2', kick: [0, 8, 10], snare: [4], fill: { 12: 'snare', 13: 'snare', 14: 'tom', 15: 'tom' }, desc: 'Two on the snare, two on the rack tom, then crash.' },
+          { name: 'Step 3', kick: [0, 8, 10], snare: [4], fill: { 12: 'tom', 13: 'tom', 14: 'floor', 15: 'floor' }, desc: 'Around the kit: rack tom, then floor tom, then crash.' },
+          { name: 'Step 4', kick: [0], snare: [4], hands: [0, 2, 4, 6], fill: { 8: 'snare', 9: 'snare', 10: 'snare', 11: 'snare', 12: 'tom', 13: 'tom', 14: 'floor', 15: 'floor' }, desc: 'Two-beat fill: snare on beat 3, toms on beat 4, then crash.' }
         ] }
     };
     this.timers = {};
     this.step = 0;
-    this.names = { crashL: 'Crash', crashR: 'Crash', hihat: 'Hi-hats', hhfoot: 'Hi-hat foot', kickSoft: 'Bass drum', ride: 'Ride', kick: 'Bass drum', snare: 'Snare', tom: 'Rack tom', floor: 'Floor tom' };
+    this.names = { crashL: 'Crash', crashR: 'Crash', hihat: 'Hi-hats', hhfoot: 'Hi-hat foot', kickSoft: 'Bass drum', hhopen: 'Open hi-hat', ride: 'Ride', kick: 'Bass drum', snare: 'Snare', tom: 'Rack tom', floor: 'Floor tom' };
   }
   componentWillUnmount() {
     this.stop();
@@ -367,6 +385,9 @@ class Component extends DCLogic {
     } else if (id === 'hhfoot') {
       this.metal(ctx, t, 0.05, 0.3 * v, 7500, 4500, 36);
       this.noise(ctx, t, 0.04, 0.12 * v, 'bandpass', 2500, 1);
+    } else if (id === 'hhopen') {
+      this.metal(ctx, t, 0.38, 0.45 * v, 9000, 6000);
+      this.noise(ctx, t, 0.32, 0.16 * v, 'highpass', 7000);
     } else if (id === 'hihat') {
       this.metal(ctx, t, 0.07, 0.5 * v, 10000, 7000);
       this.noise(ctx, t, 0.05, 0.18 * v, 'highpass', 8000);
@@ -384,7 +405,7 @@ class Component extends DCLogic {
   }
   hit(id) {
     this.sound(id);
-    const piece = { hhfoot: 'hihat', kickSoft: 'kick' }[id] || id;
+    const piece = { hhfoot: 'hihat', kickSoft: 'kick', hhopen: 'hihat' }[id] || id;
     this.setState((s) => ({ lit: Object.assign({}, s.lit, { [piece]: true }), last: this.names[id] }));
     clearTimeout(this.timers[piece]);
     this.timers[piece] = setTimeout(() => {
@@ -398,7 +419,11 @@ class Component extends DCLogic {
     const i = this.step % L.steps;
     const has = (arr) => arr.indexOf(i) >= 0;
     const ids = [];
-    if (has(L.hands)) ids.push(L.crash && i === 0 && this.step % (L.steps * 4) === 0 ? 'crashL' : L.hand);
+    const HN = V.hands || L.hands;
+    const crashNow = L.crash === 'bar' ? i === 0 : (L.crash && i === 0 && this.step % (L.steps * 4) === 0);
+    if (HN.indexOf(i) >= 0) ids.push(crashNow ? 'crashL' : ((V.open || []).indexOf(i) >= 0 ? 'hhopen' : L.hand));
+    else if (crashNow) ids.push('crashL');
+    if (V.fill && V.fill[i]) ids.push(V.fill[i]);
     if (has(V.kick)) ids.push('kick');
     else if (L.feather && i % L.sub === 0) ids.push('kickSoft');
     if (has(V.snare)) ids.push('snare');
@@ -417,7 +442,7 @@ class Component extends DCLogic {
   notation(L, V, cur) {
     const n = L.steps, sub = L.sub, dx = Math.round(900 / n);
     const X = (i) => 190 + i * dx;
-    const Y = { hihat: 34, ride: 40, snare: 70, kick: 82, hhfoot: 94 };
+    const Y = { hihat: 34, ride: 40, tom: 46, snare: 58, floor: 70, kick: 82, hhfoot: 94 };
     const out = { fillW: '', fillG: '', thinW: '', thinG: '', thickW: '', thickG: '' };
     const G = (i) => (i === cur ? 'G' : 'W');
     const xhead = (x, y, i) => { out['thick' + G(i)] += 'M' + (x - 5) + ' ' + (y - 5) + 'L' + (x + 5) + ' ' + (y + 5) + 'M' + (x - 5) + ' ' + (y + 5) + 'L' + (x + 5) + ' ' + (y - 5); };
@@ -428,8 +453,10 @@ class Component extends DCLogic {
     const hands = [], feet = [];
     for (let i = 0; i < n; i++) {
       const h = [], f = [];
-      if (L.hands.indexOf(i) >= 0) h.push(L.hand);
+      if ((V.hands || L.hands).indexOf(i) >= 0) h.push(L.hand);
       if (V.snare.indexOf(i) >= 0) h.push('snare');
+      if (V.fill && V.fill[i]) h.push(V.fill[i]);
+      if ((V.open || []).indexOf(i) >= 0) out['thick' + G(i)] += 'M' + (X(i) - 4.5) + ' -9a4.5 4.5 0 1 0 9 0a4.5 4.5 0 1 0 -9 0';
       if (V.kick.indexOf(i) >= 0 || (L.feather && i % sub === 0)) f.push('kick');
       if (L.hhfoot.indexOf(i) >= 0) f.push('hhfoot');
       hands.push(h); feet.push(f);
@@ -512,7 +539,7 @@ class Component extends DCLogic {
       tom: piece('tom', false),
       floor: piece('floor', false),
       last: this.state.last,
-      tabs: ['rock', 'waltz', 'swing', 'rock16', 'sync', 'indep'].reduce((o, k) => { o[k] = { pick: () => this.setLesson(k), bg: on(k) ? '#ffffff' : 'transparent', ink: on(k) ? '#0a0a0a' : '#ffffff' }; return o; }, {}),
+      tabs: ['rock', 'waltz', 'swing', 'rock16', 'sync', 'indep', 'openhh', 'fills'].reduce((o, k) => { o[k] = { pick: () => this.setLesson(k), bg: on(k) ? '#ffffff' : 'transparent', ink: on(k) ? '#0a0a0a' : '#ffffff' }; return o; }, {}),
       vars: L.vars.map((x, n) => ({
         label: String(n + 1),
         aria: 'Variation ' + (n + 1) + ': ' + x.desc,
