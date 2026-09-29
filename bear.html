@@ -15,11 +15,13 @@ box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:en
 html{scroll-padding-top:env(safe-area-inset-top,0px)}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'Fredoka','Trebuchet MS',system-ui,sans-serif;font-size:17px;line-height:1.5}
-main{max-width:980px;margin:0 auto;padding:22px 18px 40px}
+main{max-width:1060px;margin:0 auto;padding:22px 18px 40px}
 h1{font-size:32px;font-weight:600;margin:0 0 4px;letter-spacing:-.01em}
 .sub{color:var(--muted);margin:0 0 18px}
-.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
-.tab{font:inherit;font-weight:500;padding:9px 16px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
+.tabs{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
+.unit{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.uname{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);min-width:132px}
+.tab{font:inherit;font-weight:500;font-size:15px;padding:7px 13px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
 .tab[aria-pressed="true"]{background:var(--btn);color:var(--btnink);border-color:var(--btn)}
 .grid{display:grid;grid-template-columns:minmax(240px,320px) 1fr;gap:18px;align-items:start}
 @media (max-width:720px){.grid{grid-template-columns:1fr}.stage{max-width:300px;margin:0 auto}}
@@ -29,13 +31,13 @@ h1{font-size:32px;font-weight:600;margin:0 0 4px;letter-spacing:-.01em}
 h2{font-size:24px;font-weight:600;margin:0 0 4px}
 .card p{margin:0}
 #staff{width:100%;height:auto;display:block}
-.nh{fill:var(--ink)}.st{stroke:var(--ink)}.bm{fill:var(--ink)}
+.nh{fill:var(--ink)}.oh{fill:var(--card);stroke:var(--ink)}.n.on .oh{stroke:var(--hot)}.ts{fill:var(--ink)}.st{stroke:var(--ink)}.bm{fill:var(--ink)}
 .n.on .nh{fill:var(--hot)}.n.on .st{stroke:var(--hot)}.n.on .bm{fill:var(--hot)}
 .n{cursor:pointer}
-.lbl{font-size:24px;font-weight:600;text-anchor:middle;fill:var(--muted)}
+.lbl{font-size:22px;font-weight:600;text-anchor:middle;fill:var(--muted)}
 .n.on .lbl{fill:var(--hot)}
 .lbl.L{fill:var(--L)}.lbl.R{fill:var(--R)}
-.syl{font-size:18px;text-anchor:middle;fill:var(--muted)}
+.syl{font-size:17px;text-anchor:middle;fill:var(--muted)}
 .ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
 .go{font:inherit;font-weight:500;font-size:18px;padding:11px 22px;border-radius:999px;border:0;background:var(--btn);color:var(--btnink);cursor:pointer}
 label{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:15px}
@@ -98,58 +100,171 @@ button:focus-visible,input:focus-visible,.n:focus-visible,.next:focus-visible{ou
 </a>
 </main>
 <script>
-var LESSONS=[
-{name:"1. Quarter notes",unit:1,bpm:[50,76,120],title:"Quarter notes: 1 beat each",
-text:"A quarter note is a black dot with a stem, and it gets one beat. Count 1 2 3 4 and say \"ta\" on every note.",
-hands:"LRLR",acc:[1,1,1,1],lab:["1","2","3","4"],syl:"ta",beam:[],
-tryit:["Say ta ta ta ta along with Bear.","Clap once on every note.","Play it on a pad, alternating hands."]},
-{name:"2. Paradiddle",unit:0.5,bpm:[60,110,200],title:"Single paradiddle: RLRR LRLL",
-text:"Four notes per group, and the hand you start with changes each time. The first note of each group is an accent, so play it louder. The rest are soft ghost notes.",
-hands:"RLRRLRLL",acc:[1,0,0,0,1,0,0,0],lab:null,syl:"",beam:[[0,3],[4,7]],
-tryit:["Start slow. Make the accents clearly louder.","Keep the double (RR and LL) even in volume.","Raise the tempo a little at a time."]}
+var UNITS=[
+{name:"Counting",lessons:[
+{name:"Quarter notes",ts:[4,4],bpm:[50,76,120],notes:"q:L q:R q:L q:R",title:"Quarter notes: 1 beat each",
+text:"A quarter note is a black dot with a stem, and it gets one beat. Count 1 2 3 4 out loud and play on every number.",
+tryit:["Count 1 2 3 4 along with Bear.","Clap once on every note.","Play it on a pad, alternating hands."]},
+{name:"Half notes",ts:[4,4],bpm:[50,72,110],notes:"h:R h:L",title:"Half notes: 2 beats each",
+text:"A half note has an open (hollow) head. It lasts two beats, so you play on 1 and 3 and keep counting through 2 and 4.",
+tryit:["Say all four counts, but only play on 1 and 3.","Let the stick bounce up and wait.","Try it with your eyes closed, still counting."]},
+{name:"Whole note",ts:[4,4],bpm:[50,72,110],notes:"w:R",title:"Whole note: 4 beats",
+text:"A whole note is an open head with no stem. It fills the whole bar: play once on 1, then count 2 3 4 before the next one.",
+tryit:["Play on 1, then whisper 2 3 4.","Switch hands every bar.","Keep the count steady, don't rush the next 1."]},
+{name:"Mixing values",ts:[4,4],bpm:[50,72,110],notes:"h:R q:L q:R",title:"Half and quarter notes together",
+text:"Now the note lengths change inside one bar: a half note (2 beats), then two quarter notes (1 beat each). The count never changes.",
+tryit:["Count 1 2 3 4 the whole time.","Feel the space after the half note.","Then try it starting with the left hand."]},
+{name:"Quarter rests",ts:[4,4],bpm:[50,72,110],notes:"q:R q:- q:L q:-",title:"Quarter rests: 1 beat of silence",
+text:"A rest means don't play, but keep counting. The squiggly quarter rest is one beat of silence. Silence is part of the music.",
+tryit:["Play on 1 and 3. Say 2 and 4 out loud.","Raise your stick during the rest instead of freezing.","Try playing only on the rests instead."]},
+{name:"Half rest",ts:[4,4],bpm:[50,72,110],notes:"h:- q:R q:L",title:"Half rest: 2 beats of silence",
+text:"A half rest looks like a little hat sitting on the line. It's two beats of silence. Count 1 2 quietly, then play on 3 and 4.",
+tryit:["Count out loud through the rest.","Come in exactly on 3, not early.","Make 3 and 4 the same volume."]}
+]},
+{name:"Eighth notes",lessons:[
+{name:"Eighth notes",ts:[4,4],bpm:[50,70,120],notes:"e:R e:L e:R e:L e:R e:L e:R e:L",title:"Eighth notes: 2 per beat",
+text:"Eighth notes split each beat in half. Two eighths are joined by a beam. Count 1 & 2 & 3 & 4 &, one note on every word.",
+tryit:["Say 1 & 2 & 3 & 4 & with Bear.","Keep both hands the same height.","Tap your foot on the numbers only."]},
+{name:"Eighths and quarters",ts:[4,4],bpm:[50,70,110],notes:"q:R e:L e:R q:L e:R e:L",title:"Eighths and quarters",
+text:"Quarter, two eighths, quarter, two eighths. The quarter notes feel slow, the eighths twice as fast. Keep counting 1 & 2 &.",
+tryit:["Count every &, even when you don't play it.","Keep the hands alternating.","Speak it first: 'ta, ti-ti, ta, ti-ti'."]},
+{name:"Eighth rests",ts:[4,4],bpm:[50,70,110],notes:"e:R e:- e:L e:- e:R e:- e:L e:-",title:"Eighth rests: half a beat of silence",
+text:"The eighth rest looks like a small 7 with a dot. Here you play on the numbers and rest on every &. A single eighth note gets a flag instead of a beam.",
+tryit:["Play on the numbers, say '&' in the gaps.","Keep the gaps even.","Now switch: play only the &."]},
+{name:"Off-beats",ts:[4,4],bpm:[50,66,100],notes:"e:- e:R e:- e:L e:- e:R e:- e:L",title:"Off-beats: playing on the &",
+text:"This time the rest is on the number and you play on the &. Tricky! Tap your foot on the numbers and play in between.",
+tryit:["Foot on 1 2 3 4, sticks on every &.","Go slow until it feels natural.","Try saying 'rest-AND' out loud."]}
+]},
+{name:"Time signatures",lessons:[
+{name:"3/4 time",ts:[3,4],bpm:[50,80,130],notes:"q:R e:L e:R q:L",title:"3/4: three beats in a bar",
+text:"The top number of the time signature tells you how many beats are in a bar. In 3/4 there are three. Count 1 2 & 3, the feel of a waltz.",
+tryit:["Count 1 2 3, 1 2 3.","Lean a little on beat 1.","Try it on a pillow for a soft waltz."]},
+{name:"2/4 time",ts:[2,4],bpm:[60,90,140],notes:"e:R e:L q:R",title:"2/4: march time",
+text:"2/4 has two beats per bar, the feel of a marching band. Count 1 & 2, left-right like your feet.",
+tryit:["March in place and play along.","Play it over and over without stopping.","Speed it up a little each time."]},
+{name:"Dotted quarter",ts:[4,4],bpm:[50,70,110],notes:"dq:R e:L h:R",title:"The dot adds half",
+text:"A dot after a note makes it half again as long. A dotted quarter lasts 1 and a half beats, so the next note lands on the & of 2.",
+tryit:["Count 1 2 & 3 4 and play on 1, & and 3.","Say it: 'long, short, looooong'.","Clap it before you play it."]},
+{name:"6/8 time",ts:[6,8],bpm:[40,60,100],notes:"e>:R e:L e:R e>:L e:R e:L",title:"6/8: two groups of three",
+text:"In 6/8 an eighth note gets the count, six per bar, grouped in threes. Count 1 2 3 4 5 6 and accent 1 and 4 (the > marks).",
+tryit:["Count 1 2 3 4 5 6, louder on 1 and 4.","Notice the lead hand switches each group.","Rock side to side on 1 and 4."]}
+]},
+{name:"Sixteenth notes",lessons:[
+{name:"Sixteenth notes",ts:[4,4],bpm:[40,60,100],notes:"s:R s:L s:R s:L s:R s:L s:R s:L s:R s:L s:R s:L s:R s:L s:R s:L",title:"Sixteenth notes: 4 per beat",
+text:"Sixteenth notes split each beat into four and have two beams. Count 1 e & a, 2 e & a, and keep the hands perfectly even.",
+tryit:["Say '1 e & a' with Bear.","Start really slow.","Use small, relaxed strokes."]},
+{name:"Eighth + two 16ths",ts:[4,4],bpm:[40,60,100],notes:"e:R s:R s:L e:R s:R s:L e:R s:R s:L e:R s:R s:L",title:"Gallop: 1 & a",
+text:"One eighth and two sixteenths in each beat: count 1 & a. It sounds like a gallop. The right hand plays the eighth and leads the sixteenths.",
+tryit:["Say 'gal-lop-ing' slowly.","Keep the right hand on every beat.","Loop it until it feels like a horse."]},
+{name:"Two 16ths + eighth",ts:[4,4],bpm:[40,60,100],notes:"s:R s:L e:R s:R s:L e:R s:R s:L e:R s:R s:L e:R",title:"Backwards gallop: 1 e &",
+text:"Now the two sixteenths come first: 1 e &. It's the gallop turned around. Count out loud, it's easy to rush.",
+tryit:["Say 'quick-ly, go' each beat.","Compare it to the last lesson.","Make the eighth note land right on the &."]},
+{name:"16th accents",ts:[4,4],bpm:[40,60,100],notes:"s>:R s:L s:R s:L s>:R s:L s:R s:L s>:R s:L s:R s:L s>:R s:L s:R s:L",title:"Accents on the beat",
+text:"The > sign is an accent: play that note louder. Accent every beat and keep the other notes soft and low.",
+tryit:["Big stroke on the accent, tiny strokes after.","Keep the soft notes really soft.","Move the accent to the 'e' for a challenge."]}
+]},
+{name:"Rudiments",lessons:[
+{name:"Paradiddle",ts:[4,4],bpm:[60,100,200],notes:"e>:R e:L e:R e:R e>:L e:R e:L e:L",title:"Single paradiddle: RLRR LRLL",
+text:"Four notes per group, and the hand you start with changes each time. The first note of each group is an accent, so play it louder.",
+tryit:["Start slow. Make the accents clearly louder.","Keep the double (RR and LL) even in volume.","Raise the tempo a little at a time."]},
+{name:"Double strokes",ts:[4,4],bpm:[40,60,110],notes:"s:R s:R s:L s:L s:R s:R s:L s:L s:R s:R s:L s:L s:R s:R s:L s:L",title:"Double strokes: RRLL",
+text:"Two strokes with each hand. Played slow to fast, this becomes the long roll. Make the second stroke of each pair as strong as the first.",
+tryit:["Say 'right right left left'.","Listen: all notes the same volume.","Speed up slowly over a week."]},
+{name:"Flams",ts:[4,4],bpm:[40,60,100],notes:"qf:R qf:L qf:R qf:L",title:"Flams: a small note just before",
+text:"The tiny note is a grace note. Play it soft and low with one hand, just before the main note with the other hand. It sounds like 'fl-AM'.",
+tryit:["Start with one stick high, one low.","Grace note barely touches the pad.","Don't let the two notes hit together."]},
+{name:"Flam taps",ts:[4,4],bpm:[40,60,100],notes:"ef:R e:R ef:L e:L ef:R e:R ef:L e:L",title:"Flam taps",
+text:"A flam, then a tap with the same hand. The hands take turns leading. After the tap, that stick drops low for the next grace note.",
+tryit:["Flam-tap, flam-tap, say it out loud.","Keep the taps soft.","Watch that each flam sounds the same."]},
+{name:"Drags",ts:[4,4],bpm:[40,60,100],notes:"qg:R qg:L qg:R qg:L",title:"Drags: two little notes before",
+text:"A drag is like a flam with two grace notes, played as a quick soft bounce by one hand before the main note in the other.",
+tryit:["Let the grace-note stick bounce twice.","Keep the graces quiet.","Alternate which hand leads."]},
+{name:"Five-stroke roll",ts:[4,4],bpm:[40,60,100],notes:"er:RRLL e>:R q:- er:LLRR e>:L q:-",title:"Five-stroke roll",
+text:"Four quick strokes (two with each hand), then an accent: RRLL R. The slashes on the stem mean 'roll'. The curved tie joins the roll to its accent.",
+tryit:["Say 'rr-ll-BANG'.","Play the four strokes as even doubles.","Then try it starting on the left: LLRR L."]}
+]}
 ];
+var LESSONS=[];UNITS.forEach(function(u){u.lessons.forEach(function(L){LESSONS.push(L);});});
+var DUR={w:4,h:2,q:1,e:.5,s:.25};
+function parse(str){var pos=0;return str.trim().split(/\s+/).map(function(t){var m=/^(d?)([whqes])([>fgr]*):(.+)$/.exec(t);var d=DUR[m[2]]*(m[1]?1.5:1);
+var ev={d:d,base:m[2],dot:!!m[1],acc:m[3].indexOf(">")>=0,flam:m[3].indexOf("f")>=0,drag:m[3].indexOf("g")>=0,roll:m[3].indexOf("r")>=0,rest:m[4]==="-",hands:m[4],h:m[4][0],pos:pos};pos+=d;return ev;});}
+LESSONS.forEach(function(L){L.ev=parse(L.notes);L.len=L.ts[0]*4/L.ts[1];});
 var cur=0,ctx=null,master=null,nb=null,timer=null,step=0,nextT=0,running=false,bpm=76,tabs=document.getElementById("tabs"),svg=document.getElementById("staff");
 var NS="http://www.w3.org/2000/svg";
 function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
-function xs(n){var out=[],a=175,b=595;for(var i=0;i<n;i++)out.push(n===1?370:a+(b-a)*i/(n-1));return out;}
-function render(){var L=LESSONS[cur];svg.innerHTML="";var n=L.hands.length,X=xs(n);
-el("rect",{x:1,y:1,width:678,height:198,rx:14,fill:"none"},svg);
-el("line",{x1:40,y1:105,x2:645,y2:105,"stroke-width":2,class:"st"},svg);
+function countLabel(L,pos){if(L.ts[1]===8)return String(Math.round(pos/.5)+1);var b=Math.floor(pos+1e-6),f=pos-b;if(f<.1)return String(b+1);if(Math.abs(f-.5)<.1)return "&";return f<.5?"e":"a";}
+function render(){var L=LESSONS[cur];svg.innerHTML="";var ev=L.ev,x0=180,W=440,X=function(p){return x0+p/L.len*W;};
+var hasS=ev.some(function(e){return e.base==="s";}),rx=hasS?11:14,ry=hasS?8:10,Y=105,top=46;
+el("line",{x1:40,y1:Y,x2:645,y2:Y,"stroke-width":2,class:"st"},svg);
 el("rect",{x:52,y:87,width:6,height:36,class:"bm"},svg);el("rect",{x:64,y:87,width:6,height:36,class:"bm"},svg);
-var t1=el("text",{x:104,y:105,"font-size":34,"font-weight":600,"text-anchor":"middle",fill:"currentColor"},svg);t1.textContent="4";
-var t2=el("text",{x:104,y:133,"font-size":34,"font-weight":600,"text-anchor":"middle",fill:"currentColor"},svg);t2.textContent="4";
+var t1=el("text",{x:104,y:103,"font-size":34,"font-weight":600,"text-anchor":"middle",class:"ts"},svg);t1.textContent=L.ts[0];
+var t2=el("text",{x:104,y:133,"font-size":34,"font-weight":600,"text-anchor":"middle",class:"ts"},svg);t2.textContent=L.ts[1];
 el("line",{x1:640,y1:87,x2:640,y2:123,"stroke-width":3,class:"st"},svg);
-for(var i=0;i<n;i++){var g=el("g",{class:"n",id:"n"+i,tabindex:0,role:"button","aria-label":"Note "+(i+1)},svg),x=X[i];
-el("rect",{x:x-24,y:20,width:48,height:170,fill:"transparent"},g);
-el("ellipse",{cx:x,cy:105,rx:14,ry:10,transform:"rotate(-20 "+x+" 105)",class:"nh"},g);
-el("line",{x1:x+12,y1:101,x2:x+12,y2:52,"stroke-width":4,"stroke-linecap":"round",class:"st"},g);
-if(L.acc[i]&&n>4){el("polyline",{points:(x-8)+",30 "+(x+8)+",36 "+(x-8)+",42",fill:"none","stroke-width":3,"stroke-linecap":"round",class:"st"},g);}
-var lb=el("text",{x:x,y:158,class:"lbl "+(L.lab?"":L.hands[i])},g);lb.textContent=L.lab?L.lab[i]:L.hands[i];
-if(L.syl){var s=el("text",{x:x,y:184,class:"syl"},g);s.textContent=L.syl;}
-g.addEventListener("click",function(e){var k=+this.id.slice(1);if(!running)tap(k);e.stopPropagation();});
+var group=L.ts[1]===8?1.5:1,sx=function(e){return X(e.pos)+rx-2;};
+ev.forEach(function(e,i){var g=el("g",{class:"n",id:"n"+i,tabindex:0,role:"button","aria-label":(e.rest?"Rest":"Note")+" "+(i+1)},svg),x=X(e.pos);e.g=g;
+el("rect",{x:x-18,y:14,width:36,height:176,fill:"transparent"},g);
+if(e.rest){restGlyph(g,x,e.d);}
+else{
+ if(e.base==="w"||e.base==="h"){el("ellipse",{cx:x,cy:Y,rx:rx,ry:ry,transform:"rotate(-20 "+x+" "+Y+")",class:"oh","stroke-width":3.5},g);}
+ else el("ellipse",{cx:x,cy:Y,rx:rx,ry:ry,transform:"rotate(-20 "+x+" "+Y+")",class:"nh"},g);
+ if(e.base!=="w")el("line",{x1:x+rx-2,y1:Y-4,x2:x+rx-2,y2:top,"stroke-width":3.5,"stroke-linecap":"round",class:"st"},g);
+ if(e.dot)el("circle",{cx:x+rx+9,cy:Y-2,r:3.5,class:"nh"},g);
+ if(e.acc)el("polyline",{points:(x-8)+",20 "+(x+8)+",26 "+(x-8)+",32",fill:"none","stroke-width":3,"stroke-linecap":"round",class:"st"},g);
+ if(e.roll){for(var k=0;k<3;k++)el("line",{x1:x+rx-10,y1:70+k*8+4,x2:x+rx+6,y2:70+k*8-2,"stroke-width":3,class:"st"},g);}
+ if(e.flam)grace(g,x-24,1);
+ if(e.drag)grace(g,x-30,2);
 }
-L.beam.forEach(function(b){el("rect",{x:X[b[0]]+10,y:52,width:X[b[1]]-X[b[0]]+4,height:7,class:"bm"},svg);});
+var c=el("text",{x:x,y:152,class:"syl"},g);c.textContent=countLabel(L,e.pos);
+if(!e.rest){var lb=el("text",{x:x,y:182,class:"lbl "+e.h},g);lb.textContent=e.h;}
+g.addEventListener("click",function(ev2){var k=+this.id.slice(1);if(!running)tap(k);ev2.stopPropagation();});
+});
+// beams and flags
+var i=0;while(i<ev.length){var e=ev[i];if(e.rest||e.d>=1){i++;continue;}
+ var gi=Math.floor(e.pos/group+1e-6),j=i;while(j+1<ev.length&&!ev[j+1].rest&&ev[j+1].d<1&&Math.floor(ev[j+1].pos/group+1e-6)===gi)j++;
+ if(j>i){el("rect",{x:sx(ev[i])-1.7,y:top,width:sx(ev[j])-sx(ev[i])+3.4,height:7,class:"bm"},svg);
+  for(var k=i;k<j;k++){if(ev[k].base==="s"&&ev[k+1].base==="s")el("rect",{x:sx(ev[k])-1.7,y:top+12,width:sx(ev[k+1])-sx(ev[k])+3.4,height:7,class:"bm"},svg);}}
+ else{var fx=sx(e),n=e.base==="s"?2:1;for(var k=0;k<n;k++)el("path",{d:"M"+fx+" "+(top+k*12)+" q14 10 10 30",fill:"none","stroke-width":3.5,"stroke-linecap":"round",class:"st"},svg);}
+ i=j+1;}
+// ties from a roll to the next note
+ev.forEach(function(e,i){if(e.roll&&ev[i+1]){var a=X(e.pos),b=X(ev[i+1].pos);el("path",{d:"M"+(a+2)+" "+(Y+16)+" Q"+((a+b)/2)+" "+(Y+32)+" "+(b-2)+" "+(Y+16),fill:"none","stroke-width":2.5,class:"st"},svg);}});
 document.getElementById("ttl").textContent=L.title;document.getElementById("txt").textContent=L.text;
 var ol=document.getElementById("try");ol.innerHTML="";L.tryit.forEach(function(s){var li=document.createElement("li");li.textContent=s;ol.appendChild(li);});
-var r=document.getElementById("bpm");r.min=L.bpm[0];r.max=L.bpm[2];r.value=L.bpm[1];bpm=L.bpm[1];document.getElementById("bpmv").textContent=bpm+" bpm";}
-function tabsBuild(){LESSONS.forEach(function(L,i){var b=document.createElement("button");b.className="tab";b.textContent=L.name;b.setAttribute("aria-pressed",i===cur?"true":"false");b.addEventListener("click",function(){if(running)toggle();cur=i;[].forEach.call(tabs.children,function(c,j){c.setAttribute("aria-pressed",j===i?"true":"false");});render();});tabs.appendChild(b);});}
+var r=document.getElementById("bpm");r.min=L.bpm[0];r.max=L.bpm[2];r.value=L.bpm[1];bpm=L.bpm[1];document.getElementById("bpmv").textContent=bpm+" bpm";
+svg.setAttribute("aria-label","Notation for "+L.title);}
+function restGlyph(g,x,d){if(d>=4){el("rect",{x:x-11,y:105,width:22,height:9,class:"bm"},g);}
+else if(d>=2){el("rect",{x:x-11,y:96,width:22,height:9,class:"bm"},g);}
+else if(d>=1){el("path",{d:"M"+(x-3)+" 80 L"+(x+6)+" 92 L"+(x-4)+" 103 L"+(x+6)+" 116 Q"+(x-8)+" 110 "+(x+1)+" 128",fill:"none","stroke-width":4,"stroke-linejoin":"round","stroke-linecap":"round",class:"st"},g);}
+else{el("circle",{cx:x-4,cy:94,r:4.5,class:"nh"},g);el("path",{d:"M"+(x-4)+" 96 Q"+(x+2)+" 98 "+(x+6)+" 91 L"+(x-1)+" 118",fill:"none","stroke-width":3,"stroke-linecap":"round",class:"st"},g);}}
+function grace(g,x,n){var tops=[];for(var k=0;k<n;k++){var gx=x+k*12;el("ellipse",{cx:gx,cy:103,rx:6,ry:4.5,transform:"rotate(-20 "+gx+" 103)",class:"nh"},g);el("line",{x1:gx+5,y1:101,x2:gx+5,y2:74,"stroke-width":2,class:"st"},g);tops.push(gx+5);}
+if(n===1){el("path",{d:"M"+(x+5)+" 74 q8 5 6 14",fill:"none","stroke-width":2,class:"st"},g);el("line",{x1:x-2,y1:92,x2:x+13,y2:78,"stroke-width":2,class:"st"},g);}
+else{el("rect",{x:tops[0]-1,y:74,width:tops[n-1]-tops[0]+2,height:3.5,class:"bm"},g);el("rect",{x:tops[0]-1,y:80,width:tops[n-1]-tops[0]+2,height:3.5,class:"bm"},g);}}
+function tabsBuild(){var idx=0;UNITS.forEach(function(u){var row=document.createElement("div");row.className="unit";var h=document.createElement("span");h.className="uname";h.textContent=u.name;row.appendChild(h);
+u.lessons.forEach(function(L){var i=idx++;var b=document.createElement("button");b.className="tab";b.textContent=(i+1)+". "+L.name;b.setAttribute("aria-pressed",i===cur?"true":"false");
+b.addEventListener("click",function(){if(running)toggle();cur=i;[].forEach.call(tabs.querySelectorAll(".tab"),function(c,j){c.setAttribute("aria-pressed",j===i?"true":"false");});render();});row.appendChild(b);});tabs.appendChild(row);});}
 function audio(){if(!ctx){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;ctx=new C();master=ctx.createGain();master.gain.value=.8;var c=ctx.createDynamicsCompressor();master.connect(c);c.connect(ctx.destination);
 nb=ctx.createBuffer(1,Math.floor(ctx.sampleRate*.3),ctx.sampleRate);var d=nb.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1;}
 if(ctx.state==="suspended")ctx.resume();return ctx;}
-function snare(t,v,h){var o=ctx.createOscillator(),g=ctx.createGain();o.type="triangle";var f=h==="L"?210:190;o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*.65,t+.09);
+function snare(t,v,h){t=Math.max(t,ctx.currentTime);var o=ctx.createOscillator(),g=ctx.createGain();o.type="triangle";var f=h==="L"?210:190;o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*.65,t+.09);
 g.gain.setValueAtTime(.55*v,t);g.gain.exponentialRampToValueAtTime(.001,t+.13);o.connect(g);g.connect(master);o.start(t);o.stop(t+.15);
 var n=ctx.createBufferSource(),f2=ctx.createBiquadFilter(),ng=ctx.createGain();n.buffer=nb;f2.type="highpass";f2.frequency.value=1800;
 ng.gain.setValueAtTime(.75*v,t);ng.gain.exponentialRampToValueAtTime(.001,t+(v>.6?.2:.09));n.connect(f2);f2.connect(ng);ng.connect(master);n.start(t);n.stop(t+.25);}
 var RM=window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches;
-function vis(h,a,i,iv){var D=Math.min(300,iv*1.9),arm=document.getElementById(h==="L"?"aL":"aR"),rest=h==="L"?30:-30,sg=h==="L"?1:-1,c=.5*D;
-if(!RM){arm.animate([{transform:"rotate("+rest+"deg)"},{transform:"rotate("+((a?48:20)*sg)+"deg)",offset:.2},{transform:"rotate(0deg)",offset:.5},{transform:"rotate("+rest+"deg)"}],{duration:D,easing:"ease-out"});
-document.getElementById("dh").animate([{transform:"scale(1,1)"},{transform:"scale("+(a?1.05:1.02)+","+(a?.82:.94)+")",offset:.3},{transform:"scale(1,1)"}],{duration:Math.min(200,iv*1.5),delay:c});
-if(a)document.getElementById("head").animate([{transform:"rotate(0deg)"},{transform:"rotate("+(h==="L"?-5:5)+"deg)",offset:.4},{transform:"rotate(0deg)"}],{duration:D+60,delay:c*.6});}
-setTimeout(function(){var g=document.getElementById("n"+i);if(!g)return;g.classList.add("on");setTimeout(function(){g.classList.remove("on");},Math.min(260,iv*.9));},c);}
-function play(i,t){var L=LESSONS[cur],h=L.hands[i],a=L.acc[i],v=(a?1:.32)*(.95+Math.random()*.1);snare(t,v,h);var iv=L.unit*60000/bpm,D=Math.min(300,iv*1.9),w=(t-ctx.currentTime)*1000-.5*D;setTimeout(function(){vis(h,a,i,iv);},Math.max(0,w));}
-function tick(){var L=LESSONS[cur],n=L.hands.length;while(nextT<ctx.currentTime+.12){play(step,nextT);step=(step+1)%n;nextT+=L.unit*60/bpm;}}
-function tap(i){if(!audio())return;play(i,ctx.currentTime+.01);}
-function toggle(){if(!audio())return;var b=document.getElementById("go");if(running){running=false;clearInterval(timer);b.textContent="Play";}else{running=true;step=0;nextT=ctx.currentTime+.08;timer=setInterval(tick,25);tick();b.textContent="Stop";}}
+function arm(h,a,D,delay){if(RM)return;var el2=document.getElementById(h==="L"?"aL":"aR"),rest=h==="L"?30:-30,sg=h==="L"?1:-1;
+el2.animate([{transform:"rotate("+rest+"deg)"},{transform:"rotate("+((a?48:20)*sg)+"deg)",offset:.2},{transform:"rotate(0deg)",offset:.5},{transform:"rotate("+rest+"deg)"}],{duration:D,delay:delay||0,easing:"ease-out"});}
+function vis(e,i,iv){var D=Math.min(300,iv*1.9),c=.5*D;
+if(!e.rest){if(e.roll){var n=e.hands.length;for(var k=0;k<n;k++)arm(e.hands[k],false,Math.max(90,iv*1000/n*1.6/1000*1000/1000),k*iv/n);}else arm(e.h,e.acc,D);
+if(!RM){document.getElementById("dh").animate([{transform:"scale(1,1)"},{transform:"scale("+(e.acc?1.05:1.02)+","+(e.acc?.82:.94)+")",offset:.3},{transform:"scale(1,1)"}],{duration:Math.min(200,iv*1.5),delay:c});
+if(e.acc)document.getElementById("head").animate([{transform:"rotate(0deg)"},{transform:"rotate("+(e.h==="L"?-5:5)+"deg)",offset:.4},{transform:"rotate(0deg)"}],{duration:D+60,delay:c*.6});}}
+setTimeout(function(){var g=document.getElementById("n"+i);if(!g)return;g.classList.add("on");setTimeout(function(){g.classList.remove("on");},Math.max(120,Math.min(400,iv*.9)));},e.rest?0:c);}
+function other(h){return h==="L"?"R":"L";}
+function play(i,t){var L=LESSONS[cur],e=L.ev[i],sec=e.d*60/bpm,iv=Math.min(e.d,1)*60000/bpm;
+if(!e.rest){var v=(e.acc?1:.55)*(.95+Math.random()*.1);
+ if(e.roll){var n=e.hands.length;for(var k=0;k<n;k++)snare(t+k*sec/n,.5,e.hands[k]);}
+ else{if(e.flam)snare(t-.035,.25,other(e.h));if(e.drag){snare(t-.07,.22,other(e.h));snare(t-.035,.22,other(e.h));}snare(t,e.flam||e.drag?Math.max(v,.8):v,e.h);}}
+var D=Math.min(300,iv*1.9),w=(t-ctx.currentTime)*1000-(e.rest?0:.5*D);setTimeout(function(){vis(e,i,iv);},Math.max(0,w));}
+function tick(){var L=LESSONS[cur],n=L.ev.length;while(nextT<ctx.currentTime+.12){play(step,nextT);nextT+=L.ev[step].d*60/bpm;step=(step+1)%n;}}
+function tap(i){if(!audio())return;play(i,ctx.currentTime+.08);}
+function toggle(){if(!audio())return;var b=document.getElementById("go");if(running){running=false;clearInterval(timer);b.textContent="Play";}else{running=true;step=0;nextT=ctx.currentTime+.1;timer=setInterval(tick,25);tick();b.textContent="Stop";}}
 document.getElementById("go").addEventListener("click",toggle);
 var st=document.getElementById("stage");st.addEventListener("click",toggle);st.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle();}});
 document.getElementById("bpm").addEventListener("input",function(e){bpm=+e.target.value;document.getElementById("bpmv").textContent=bpm+" bpm";});
