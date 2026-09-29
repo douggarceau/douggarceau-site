@@ -156,22 +156,49 @@ html,body{background:#0a0a0a}
     }
     if(tag==='sc-if'){ if(look(WHOLE.exec(node.getAttribute('value'))[1],scope)) kids(node,scope,parent); return; }
     var el=document.createElementNS(node.namespaceURI,node.localName);
+    el.__on={};
     for(var i=0;i<node.attributes.length;i++){
       var a=node.attributes[i], name=a.name, val=a.value;
       if(name.indexOf('hint-')===0) continue;
-      if(/^on[a-z]+$/.test(name)){ var m=WHOLE.exec(val); if(m){ var fn=look(m[1],scope); if(typeof fn==='function') el.addEventListener(name.slice(2),fn); } continue; }
+      if(/^on[a-z]+$/.test(name)){ var m=WHOLE.exec(val); if(m){ var fn=look(m[1],scope); if(typeof fn==='function'){ el.__on[name.slice(2)]=fn; listen(name.slice(2)); } } continue; }
       el.setAttribute(name, interp(val,scope));
     }
     kids(node,scope,el);
     parent.appendChild(el);
   }
   function kids(node,scope,parent){ var c=(node.content||node).childNodes; for(var i=0;i<c.length;i++) build(c[i],scope,parent); }
+  // one delegated listener per event type; handlers live on the elements and are swapped in place
+  var listening={};
+  function listen(type){
+    if(listening[type]) return; listening[type]=true;
+    root.addEventListener(type,function(e){
+      var n=e.target;
+      while(n&&n!==root){ if(n.__on&&n.__on[type]){ n.__on[type](e); return; } n=n.parentNode; }
+    });
+  }
+  // update the live page in place so buttons are never swapped out mid-click
+  function patch(parent,news){
+    var olds=parent.childNodes, i;
+    for(i=0;i<news.length;i++){
+      var o=olds[i], n=news[i];
+      if(!o){ parent.appendChild(n); news=[].slice.call(news); continue; }
+      if(o.nodeType===3&&n.nodeType===3){ if(o.nodeValue!==n.nodeValue) o.nodeValue=n.nodeValue; continue; }
+      if(o.nodeType===1&&n.nodeType===1&&o.namespaceURI===n.namespaceURI&&o.localName===n.localName){
+        var k, oa=o.attributes, na=n.attributes;
+        for(k=oa.length-1;k>=0;k--){ if(!n.hasAttribute(oa[k].name)) o.removeAttribute(oa[k].name); }
+        for(k=0;k<na.length;k++){ if(o.getAttribute(na[k].name)!==na[k].value) o.setAttribute(na[k].name,na[k].value); }
+        o.__on=n.__on;
+        patch(o,[].slice.call(n.childNodes));
+        continue;
+      }
+      parent.replaceChild(n,o);
+    }
+    while(parent.childNodes.length>news.length) parent.removeChild(parent.lastChild);
+  }
   function paint(){
     var vals=comp.renderVals(), frag=document.createDocumentFragment();
-    var focusedLabel=document.activeElement&&document.activeElement.closest&&root.contains(document.activeElement)?document.activeElement.getAttribute('aria-label')||document.activeElement.textContent:null;
     kids(tpl.content,vals,frag);
-    root.replaceChildren(frag);
-    if(focusedLabel){ var b=[].slice.call(root.querySelectorAll('button')).filter(function(x){return (x.getAttribute('aria-label')||x.textContent)===focusedLabel;})[0]; if(b) b.focus({preventScroll:true}); }
+    patch(root,[].slice.call(frag.childNodes));
   }
   window.__mount=function(C){ comp=new C({bpm:80}); paint(); fit(); };
   function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1070*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
