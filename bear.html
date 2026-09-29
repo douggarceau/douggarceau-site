@@ -40,6 +40,8 @@ h2{font-size:24px;font-weight:600;margin:0 0 4px}
 .lbl.L{fill:var(--L)}.lbl.R{fill:var(--R)}
 .syl{font-size:17px;text-anchor:middle;fill:var(--muted)}
 .ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
+.go.alt{background:var(--card);color:var(--ink);border:2px solid var(--btn)}
+.go.alt[aria-pressed="true"]{background:var(--btn);color:var(--btnink)}
 .clk{font:inherit;font-weight:500;font-size:16px;padding:9px 16px;border-radius:999px;border:2px solid var(--btn);background:var(--card);color:var(--ink);cursor:pointer}
 .clk[aria-pressed="true"]{background:var(--btn);color:var(--btnink)}
 .beats{display:flex;gap:8px;align-items:center}
@@ -113,8 +115,9 @@ button:focus-visible,input:focus-visible,.n:focus-visible,.next:focus-visible{ou
 <div class="card"><h2 id="ttl"></h2><p id="txt"></p></div>
 <div class="card"><svg id="staff" viewBox="0 0 680 200" role="img" aria-label="Notation for the lesson"></svg></div>
 <div class="card ctrl">
-<button class="go" id="go">Play</button>
-<button class="clk" id="clk" type="button" aria-pressed="true">Click: on</button>
+<button class="go" id="go">Play with Bear</button>
+<button class="go alt" id="met" type="button">Metronome only</button>
+<button class="clk" id="clk" type="button" aria-pressed="true">Metronome sound: on</button>
 <label>Tempo <input type="range" id="bpm" aria-label="Tempo"><span class="bpm" id="bpmv"></span></label>
 <div class="beats" id="beats" aria-hidden="true"></div>
 </div>
@@ -131,7 +134,7 @@ var UNITS=[
 {name:"Counting",lessons:[
 {name:"Quarter notes",ts:[4,4],bpm:[50,76,120],notes:"q:L q:R q:L q:R",title:"Quarter notes: 1 beat each",
 text:"A quarter note is a black dot with a stem, and it gets one beat. Count 1 2 3 4 out loud and play on every number.",
-tryit:["Press Play: the click counts one bar (1 2 3 4) before Bear starts.","Count 1 2 3 4 along with Bear and the click.","Play it on a pad, alternating hands."]},
+tryit:["Press Play with Bear: the metronome counts one bar (1 2 3 4), then Bear starts.","Count 1 2 3 4 along with Bear and the click.","Play it on a pad, alternating hands."]},
 {name:"Half notes",ts:[4,4],bpm:[50,72,110],notes:"h:R h:L",title:"Half notes: 2 beats each",
 text:"A half note has an open (hollow) head. It lasts two beats, so you play on 1 and 3 and keep counting through 2 and 4.",
 tryit:["Say all four counts, but only play on 1 and 3.","Let the stick bounce up and wait.","Try it with your eyes closed, still counting."]},
@@ -326,7 +329,7 @@ var d=document.createElement("div");d.className="box";var h=document.createEleme
 var bb=document.createElement("div");bb.className="bb";if(b[0])bb.appendChild(sym(b[0]));var pp=document.createElement("p");pp.textContent=b[2];bb.appendChild(pp);d.appendChild(bb);box.appendChild(d);});}
 function tabsBuild(){var idx=0;UNITS.forEach(function(u){var row=document.createElement("div");row.className="unit";var h=document.createElement("span");h.className="uname";h.textContent=u.name;row.appendChild(h);
 u.lessons.forEach(function(L){var i=idx++;var b=document.createElement("button");b.className="tab";b.textContent=(i+1)+". "+L.name;b.setAttribute("aria-pressed",i===cur?"true":"false");
-b.addEventListener("click",function(){if(running)toggle();if(typeof hush==="function")hush();cur=i;[].forEach.call(tabs.querySelectorAll(".tab"),function(c,j){c.setAttribute("aria-pressed",j===i?"true":"false");});render();});row.appendChild(b);});tabs.appendChild(row);});}
+b.addEventListener("click",function(){if(running)stopAll();if(typeof hush==="function")hush();cur=i;[].forEach.call(tabs.querySelectorAll(".tab"),function(c,j){c.setAttribute("aria-pressed",j===i?"true":"false");});render();});row.appendChild(b);});tabs.appendChild(row);});}
 function audio(){if(!ctx){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;ctx=new C();master=ctx.createGain();master.gain.value=.8;var c=ctx.createDynamicsCompressor();master.connect(c);c.connect(ctx.destination);
 nb=ctx.createBuffer(1,Math.floor(ctx.sampleRate*.3),ctx.sampleRate);var d=nb.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1;}
 if(ctx.state==="suspended")ctx.resume();return ctx;}
@@ -355,10 +358,15 @@ function beatInfo(L){return L.ts[1]===8?{n:L.ts[0],len:.5,strong:[0,3]}:{n:L.ts[
 function drawBeats(){var L=LESSONS[cur],B=beatInfo(L),box=document.getElementById("beats");box.innerHTML="";for(var i=0;i<B.n;i++){var d=document.createElement("span");d.className="bd";box.appendChild(d);}}
 function lightBeat(i,t){setTimeout(function(){if(!running)return;var d=document.getElementById("beats").children;for(var k=0;k<d.length;k++)d[k].classList.toggle("on",k===i);},Math.max(0,(t-ctx.currentTime)*1000));}
 function tick(){var L=LESSONS[cur],n=L.ev.length,B=beatInfo(L),h=ctx.currentTime+.12;
-while(beatT<h){if(clickOn)click(beatT,B.strong.indexOf(beatI)>=0);lightBeat(beatI,beatT);beatT+=B.len*60/bpm;beatI=(beatI+1)%B.n;}
-while(nextT<h){play(step,nextT);nextT+=L.ev[step].d*60/bpm;step=(step+1)%n;}}
+while(beatT<h){if(clickOn||metOnly)click(beatT,B.strong.indexOf(beatI)>=0);lightBeat(beatI,beatT);beatT+=B.len*60/bpm;beatI=(beatI+1)%B.n;}
+while(!metOnly&&nextT<h){play(step,nextT);nextT+=L.ev[step].d*60/bpm;step=(step+1)%n;}}
 function tap(i){if(!audio())return;play(i,ctx.currentTime+.08);}
-function toggle(){if(!audio())return;var b=document.getElementById("go");if(running){running=false;clearInterval(timer);b.textContent="Play";[].forEach.call(document.getElementById("beats").children,function(d){d.classList.remove("on");});}else{running=true;step=0;var L=LESSONS[cur];beatT=ctx.currentTime+.1;beatI=0;nextT=beatT+L.len*60/bpm;timer=setInterval(tick,25);tick();b.textContent="Stop";}}
+var metOnly=false;
+function stopAll(){running=false;clearInterval(timer);metOnly=false;document.getElementById("go").textContent="Play with Bear";var m=document.getElementById("met");m.textContent="Metronome only";m.setAttribute("aria-pressed","false");[].forEach.call(document.getElementById("beats").children,function(d){d.classList.remove("on");});}
+function start(onlyClick){if(!audio())return;metOnly=onlyClick;running=true;step=0;var L=LESSONS[cur];beatT=ctx.currentTime+.1;beatI=0;nextT=beatT+L.len*60/bpm;timer=setInterval(tick,25);tick();
+if(onlyClick){var m=document.getElementById("met");m.textContent="Stop metronome";m.setAttribute("aria-pressed","true");}else document.getElementById("go").textContent="Stop";}
+function toggle(){if(running&&!metOnly){stopAll();return;}if(running)stopAll();start(false);}
+function toggleMet(){if(running&&metOnly){stopAll();return;}if(running)stopAll();start(true);}
 document.getElementById("go").addEventListener("click",toggle);
 var st=document.getElementById("stage");st.addEventListener("click",toggle);st.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle();}});
 document.getElementById("bpm").addEventListener("input",function(e){bpm=+e.target.value;document.getElementById("bpmv").textContent=bpm+" bpm";});
@@ -370,7 +378,8 @@ if(!window.speechSynthesis)tb.hidden=true;
 tb.addEventListener("click",function(){if(talking){hush();return;}var L=LESSONS[cur],t=L.title+". "+L.text;(BOXES[L.name]||[]).forEach(function(b){t+=" "+b[1]+": "+b[2];});
 t=t.replace(/\b1 e & a\b/g,"one ee and uh").replace(/&/g," and ").replace(/\bRLRR LRLL\b/g,"right left right right, left right left left").replace(/\bRRLL R\b/g,"right right left left, right").replace(/\bLLRR L\b/g,"left left right right, left");
 var u=new SpeechSynthesisUtterance(t);u.rate=.95;u.pitch=1.15;u.onend=function(){setTalk(false);};u.onerror=function(){setTalk(false);};speechSynthesis.cancel();speechSynthesis.speak(u);setTalk(true);});
-var cb=document.getElementById("clk");cb.addEventListener("click",function(){clickOn=!clickOn;cb.setAttribute("aria-pressed",clickOn?"true":"false");cb.textContent="Click: "+(clickOn?"on":"off");});
+document.getElementById("met").addEventListener("click",toggleMet);
+var cb=document.getElementById("clk");cb.addEventListener("click",function(){clickOn=!clickOn;cb.setAttribute("aria-pressed",clickOn?"true":"false");cb.textContent="Metronome sound: "+(clickOn?"on":"off");});
 tabsBuild();render();
 </script>
 </body>
