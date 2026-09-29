@@ -23,7 +23,7 @@ html,body{background:#0a0a0a}
 <div id="stagebox"><div id="app"></div></div>
 </div>
 <template id="tpl">
-<div style="width: 1280px; height: 1478px; box-sizing: border-box; background: #0a0a0a; color: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace;">
+<div style="width: 1280px; height: 1522px; box-sizing: border-box; background: #0a0a0a; color: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace;">
 
 <div style="display: flex; justify-content: space-between; align-items: flex-end; padding: 36px 56px 0 56px;">
 <div style="display: flex; flex-direction: column; gap: 4px;">
@@ -102,7 +102,7 @@ html,body{background:#0a0a0a}
 </div>
 <div style="display: flex; flex-direction: column; gap: 10px; padding: 16px 56px 0 56px; border-top: 1px solid #2a2a2a; height: 298px; box-sizing: border-box;">
 <div style="display: flex; align-items: center; gap: 8px;">
-<div style="font-family: 'Bebas Neue', sans-serif; font-size: 30px; letter-spacing: 2px; margin-right: 8px;">READ IT</div>
+<div id="readit" style="font-family: 'Bebas Neue', sans-serif; font-size: 30px; letter-spacing: 2px; margin-right: 8px;">READ IT</div>
 <button type="button" onClick="{{tabs.rock.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.rock.bg}}; color: {{tabs.rock.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">1 · ROCK 4/4</button>
 <button type="button" onClick="{{tabs.waltz.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.waltz.bg}}; color: {{tabs.waltz.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">2 · WALTZ 3/4</button>
 <button type="button" onClick="{{tabs.swing.pick}}" style="height: 40px; padding: 0 10px; border: 1px solid #ffffff; background: {{tabs.swing.bg}}; color: {{tabs.swing.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0; border-radius: 4px; cursor: pointer;">3 · SWING 4/4</button>
@@ -156,7 +156,11 @@ html,body{background:#0a0a0a}
 </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 18px 56px 0 56px; height: 214px; box-sizing: border-box; border-top: 1px solid #2a2a2a;">
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 16px 56px 0 56px; height: 44px; box-sizing: border-box; border-top: 1px solid #2a2a2a;">
+<span style="font-family: 'Bebas Neue', sans-serif; font-size: 26px; letter-spacing: 2px;">FROM THE LESSON BOOK</span>
+<a href="{{fullLink}}" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 16px; border: 2px solid #ffd35c; border-radius: 4px; color: #0a0a0a; background: #ffd35c; font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 600; text-decoration: none;">Read the full lesson: {{fullTitle}} →</a>
+</div>
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 14px 56px 0 56px; height: 214px; box-sizing: border-box;">
 <sc-for list="{{bookBoxes}}" as="bx" hint-placeholder-count="3">
 <div style="border: 2px solid #ffffff; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
 <div style="background: #ffffff; color: #0a0a0a; padding: 6px 14px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 600; letter-spacing: 1px;"><span>{{bx.title}}</span><span style="font-size: 11px; letter-spacing: 3px; color: #5a5a5a;">{{bx.tag}}</span></div>
@@ -239,8 +243,9 @@ html,body{background:#0a0a0a}
     kids(tpl.content,vals,frag);
     patch(root,[].slice.call(frag.childNodes));
   }
-  window.__mount=function(C){ comp=new C({bpm:80}); paint(); fit(); };
-  function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1478*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
+  window.__mount=function(C){ comp=new C({bpm:80}); paint(); fit(); if(comp.componentDidMount) comp.componentDidMount(); };
+  window.addEventListener('hashchange',function(){ if(comp&&comp.componentDidMount) comp.componentDidMount(); });
+  function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1522*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
   window.addEventListener('resize',function(){ fit(); });
 })();
 </script>
@@ -253,7 +258,7 @@ class Component extends DCLogic {
     const all = (n) => { const o = []; for (let i = 0; i < n; i++) o.push(i); return o; };
     const hatLegend = 'Top x = hi-hat · middle = snare · bottom = kick';
     this.lessons = {
-      rock: { boxes: [{ tag: "READ", title: "The drum staff", text: "Each drum has its own spot. Hi-hat: the x above the staff. Snare: the third space. Bass drum: the bottom space. Notes stacked on one stem are played together." }, { tag: "COUNT", title: "Eighth notes", text: "Count out loud: 1 & 2 & 3 & 4 &. The hi-hat plays on every count. The snare and bass drum only play on the counts where they are written." }, { tag: "PRACTICE", title: "Play it 10 times", text: "Play each step 10 times without stopping. If it falls apart, slow down by 10 BPM and try again. Only speed up when it feels easy." }], intro: 'Rock beat. On the staff: the x’s above are the hi-hat, the note in the middle is the snare, the note at the bottom is the kick. Read it left to right, one count at a time.', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
+      rock: { boxes: [{ tag: "READ", title: "The drum staff", text: "Each drum has its own spot. Hi-hat: the x above the staff. Snare: the third space up. Bass drum: the bottom space. Notes stacked on one stem are played together." }, { tag: "COUNT", title: "Eighth notes", text: "Count out loud: 1 & 2 & 3 & 4 &. The hi-hat plays on every count. The snare and bass drum only play on the counts where they are written." }, { tag: "PRACTICE", title: "Play it 10 times", text: "Play each step 10 times without stopping. If it falls apart, slow down by 10 BPM and try again. Only speed up when it feels easy." }], intro: 'Rock beat. On the staff: the x’s above are the hi-hat, the note in the middle is the snare, the note at the bottom is the kick. Read it left to right, one count at a time.', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 1 · Rock · 4/4', legend: hatLegend,
         vars: [
           { name: 'Basic', kick: [0, 4], snare: [2, 6], desc: 'Kick on 1 and 3. Snare on 2 and 4.' },
@@ -310,8 +315,8 @@ class Component extends DCLogic {
           { name: 'Step 3', kick: [0, 2, 4, 6], snare: [2, 6], open: [1, 3, 5, 7], desc: 'Disco: kick on every beat, hi-hat open on every &, closed on the numbers.' },
           { name: 'Step 4', kick: [0, 3, 4], snare: [2, 6], open: [5], desc: 'Kick on 1, the & of 2 and 3. Open the hi-hat on the & of 3.' }
         ] },
-      fills: { boxes: [{ tag: "READ", title: "What is a fill?", text: "A short break from the groove that leads back into it, usually at the end of a phrase. Land on a crash with the bass drum on 1." }, { tag: "READ", title: "Tom notes", text: "Top space = rack tom. Second space = floor tom. Moving from high to low gives the classic \u201caround the kit\u201d sound." }, { tag: "PRACTICE", title: "Count the bars", text: "Play three bars of groove and a fourth with the fill. Counting the bars out loud (1-2-3-FILL) keeps you from getting lost." }], intro: 'A fill is a short break that leads you back to the top. Three beats of groove, fill beat 4, then land on the crash on 1. Top space is the rack tom, second space is the floor tom.', book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: [0, 2, 4, 6, 8, 10], crash: 'bar', swing: false, feather: false, hhfoot: [],
-        title: 'Groove 8 · Fills · 4/4', legend: 'Play 3 beats of groove, fill beat 4 · top space = rack tom · 2nd space = floor tom',
+      fills: { boxes: [{ tag: "READ", title: "What is a fill?", text: "A short break from the groove that leads back into it, usually at the end of a phrase. Land on a crash with the bass drum on 1." }, { tag: "READ", title: "Tom notes", text: "Top space = rack tom. Second space up = floor tom. Moving from high to low gives the classic \u201caround the kit\u201d sound." }, { tag: "PRACTICE", title: "Count the bars", text: "Play three bars of groove and a fourth with the fill. Counting the bars out loud (1-2-3-FILL) keeps you from getting lost." }], intro: 'A fill is a short break that leads you back to the top. Three beats of groove, fill beat 4, then land on the crash on 1. Top space is the rack tom, second space up is the floor tom.', book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: [0, 2, 4, 6, 8, 10], crash: 'bar', swing: false, feather: false, hhfoot: [],
+        title: 'Groove 8 · Fills · 4/4', legend: 'Play 3 beats of groove, fill beat 4 · top space = rack tom · 2nd space up = floor tom',
         vars: [
           { name: 'Step 1', kick: [0, 8, 10], snare: [4], fill: { 12: 'snare', 13: 'snare', 14: 'snare', 15: 'snare' }, desc: 'Four 16ths on the snare on beat 4, then land on a crash.' },
           { name: 'Step 2', kick: [0, 8, 10], snare: [4], fill: { 12: 'snare', 13: 'snare', 14: 'tom', 15: 'tom' }, desc: 'Two on the snare, two on the rack tom, then crash.' },
@@ -325,6 +330,12 @@ class Component extends DCLogic {
   }
   componentDidMount() {
     if (window.speechSynthesis) window.speechSynthesis.getVoices();
+    const m = /^#(\w+?)(?:-(\d))?$/.exec(window.location.hash || '');
+    if (m && this.lessons[m[1]]) {
+      const n = Math.max(0, Math.min(3, (parseInt(m[2], 10) || 1) - 1));
+      this.setState({ lesson: m[1], v: n });
+      setTimeout(() => { const el = document.getElementById('readit'); if (el) el.scrollIntoView({ block: 'center' }); }, 60);
+    }
   }
   componentWillUnmount() {
     this.stop();
@@ -618,6 +629,8 @@ class Component extends DCLogic {
       nt: this.notation(L, V, this.state.step),
       legend: L.legend,
       bookBoxes: L.boxes || [],
+      fullLink: 'learn/' + this.state.lesson + '.html',
+      fullTitle: {'rock': 'The Rock Beat', 'waltz': 'The Waltz', 'swing': 'Swing Time', 'rock16': 'Rock with 16th-Note Hi-Hats', 'sync': 'Syncopation', 'indep': 'Coordinated Independence', 'openhh': 'Open Hi-Hat', 'fills': 'Fills'}[this.state.lesson],
       guide: L.intro + ' Step ' + (this.state.v + 1) + ': ' + V.desc,
       talk: () => this.talk(L.intro + ' Step ' + (this.state.v + 1) + '. ' + V.desc),
       talkLabel: this.state.talking ? 'STOP TALKING' : 'HEAR IT',
