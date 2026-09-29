@@ -23,7 +23,7 @@ html,body{background:#0a0a0a}
 <div id="stagebox"><div id="app"></div></div>
 </div>
 <template id="tpl">
-<div style="width: 1280px; height: 1264px; box-sizing: border-box; background: #0a0a0a; color: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace;">
+<div style="width: 1280px; height: 1478px; box-sizing: border-box; background: #0a0a0a; color: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace;">
 
 <div style="display: flex; justify-content: space-between; align-items: flex-end; padding: 36px 56px 0 56px;">
 <div style="display: flex; flex-direction: column; gap: 4px;">
@@ -156,6 +156,15 @@ html,body{background:#0a0a0a}
 </div>
 </div>
 
+<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; padding: 18px 56px 0 56px; height: 214px; box-sizing: border-box; border-top: 1px solid #2a2a2a;">
+<sc-for list="{{bookBoxes}}" as="bx" hint-placeholder-count="3">
+<div style="border: 2px solid #ffffff; border-radius: 10px; overflow: hidden; display: flex; flex-direction: column;">
+<div style="background: #ffffff; color: #0a0a0a; padding: 6px 14px; display: flex; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 600; letter-spacing: 1px;"><span>{{bx.title}}</span><span style="font-size: 11px; letter-spacing: 3px; color: #5a5a5a;">{{bx.tag}}</span></div>
+<div style="padding: 12px 14px; font-size: 14px; line-height: 1.5; color: #f2f2f2;">{{bx.text}}</div>
+</div>
+</sc-for>
+</div>
+
 </div>
 </template>
 <script>
@@ -231,7 +240,7 @@ html,body{background:#0a0a0a}
     patch(root,[].slice.call(frag.childNodes));
   }
   window.__mount=function(C){ comp=new C({bpm:80}); paint(); fit(); };
-  function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1264*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
+  function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1478*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
   window.addEventListener('resize',function(){ fit(); });
 })();
 </script>
@@ -244,7 +253,7 @@ class Component extends DCLogic {
     const all = (n) => { const o = []; for (let i = 0; i < n; i++) o.push(i); return o; };
     const hatLegend = 'Top x = hi-hat · middle = snare · bottom = kick';
     this.lessons = {
-      rock: { intro: 'Rock beat. On the staff: the x’s above are the hi-hat, the note in the middle is the snare, the note at the bottom is the kick. Read it left to right, one count at a time.', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
+      rock: { boxes: [{ tag: "READ", title: "The drum staff", text: "Each drum has its own spot. Hi-hat: the x above the staff. Snare: the third space. Bass drum: the bottom space. Notes stacked on one stem are played together." }, { tag: "COUNT", title: "Eighth notes", text: "Count out loud: 1 & 2 & 3 & 4 &. The hi-hat plays on every count. The snare and bass drum only play on the counts where they are written." }, { tag: "PRACTICE", title: "Play it 10 times", text: "Play each step 10 times without stopping. If it falls apart, slow down by 10 BPM and try again. Only speed up when it feels easy." }], intro: 'Rock beat. On the staff: the x’s above are the hi-hat, the note in the middle is the snare, the note at the bottom is the kick. Read it left to right, one count at a time.', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 1 · Rock · 4/4', legend: hatLegend,
         vars: [
           { name: 'Basic', kick: [0, 4], snare: [2, 6], desc: 'Kick on 1 and 3. Snare on 2 and 4.' },
@@ -252,7 +261,7 @@ class Component extends DCLogic {
           { name: '& of 2', kick: [0, 3, 4], snare: [2, 6], desc: 'Kick on 1, the & of 2, and 3. Snare on 2 and 4.' },
           { name: 'Busy', kick: [0, 1, 4, 5], snare: [2, 6, 7], desc: 'Kick on 1 &, 3 &. Snare on 2, 4 and the & of 4.' }
         ] },
-      waltz: { intro: 'A waltz counts in three. See the 3 on top of the time signature? Three beats a bar. Kick on 1, snare on 2 and 3. Very elegant. Like me.', steps: 6, sub: 2, beats: 3, labels: ['1', '&', '2', '&', '3', '&'], hand: 'hihat', hands: all(6), crash: true, swing: false, feather: false, hhfoot: [],
+      waltz: { boxes: [{ tag: "READ", title: "3/4 time", text: "Three quarter-note beats in every bar. Beat 1 is the strong beat. Beats 2 and 3 are lighter." }, { tag: "FEEL", title: "Boom, chick, chick", text: "The bass drum carries beat 1. The snare answers softly on 2 and 3. Keep the hi-hat smooth and even underneath." }, { tag: "PRACTICE", title: "Four bars and stop", text: "Count 1 & 2 & 3 & out loud. Play four bars, then stop cleanly on beat 1 of the next bar." }], intro: 'A waltz counts in three. See the 3 on top of the time signature? Three beats a bar. Kick on 1, snare on 2 and 3. Very elegant. Like me.', steps: 6, sub: 2, beats: 3, labels: ['1', '&', '2', '&', '3', '&'], hand: 'hihat', hands: all(6), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 2 · Waltz · 3/4', legend: hatLegend,
         vars: [
           { name: 'Basic', kick: [0], snare: [2, 4], desc: 'Count 1-2-3. Kick on 1. Snare on 2 and 3.' },
@@ -260,7 +269,7 @@ class Component extends DCLogic {
           { name: '& of 2', kick: [0, 3], snare: [2, 4], desc: 'Kick on 1 and the & of 2. Snare on 2 and 3.' },
           { name: 'Roll-in', kick: [0], snare: [2, 3, 4], desc: 'Kick on 1. Snare on 2, the & of 2, and 3.' }
         ] },
-      swing: { intro: 'Jazz time. The x on the top line is the ride: ding, ding-a, ding, ding-a. The x under the staff is your hi-hat foot on 2 and 4. Swing the eighths long-short.', steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
+      swing: { boxes: [{ tag: "READ", title: "The ride pattern", text: "The basic jazz ride rhythm: on the beat for 1 and 3, and \u201cding-da\u201d into 2 and 4. It is written as eighth notes but played swung." }, { tag: "FEEL", title: "Swing eighths", text: "A pair of swung eighths is long-short, like the first and last notes of a triplet. Count \u201c1 - a 2 - a\u201d and say \u201cdoo-bah\u201d." }, { tag: "PRACTICE", title: "Hi-hat and feathered kick", text: "Close the hi-hat with your foot on 2 and 4 so it lines up with the ride. Feather the bass drum on every beat, felt more than heard." }], intro: 'Jazz time. The x on the top line is the ride: ding, ding-a, ding, ding-a. The x under the staff is your hi-hat foot on 2 and 4. Swing the eighths long-short.', steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
         title: 'Groove 3 · Swing · 4/4',
         legend: 'Swing the 8ths long-short · top x = ride · x below = hi-hat foot',
         vars: [
@@ -269,7 +278,7 @@ class Component extends DCLogic {
           { name: 'Comp 3 & 4', kick: [], snare: [5, 7], desc: 'Snare comps on the a of 3 and the a of 4.' },
           { name: 'Bomb', kick: [7], snare: [3], desc: 'Comp on the a of 2, then drop a loud kick bomb on the a of 4.' }
         ] },
-      rock16: { intro: 'Same rock beat, but the hi-hat plays sixteenths, four per beat. Two beams mean sixteenths. Count 1 e & a out loud and keep that hand light.', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: all(16), crash: true, swing: false, feather: false, hhfoot: [],
+      rock16: { boxes: [{ tag: "READ", title: "Sixteenth notes", text: "Four notes per beat, joined by two beams. Count 1 e & a, 2 e & a, 3 e & a, 4 e & a." }, { tag: "PLAY", title: "One hand or two?", text: "At slow tempos, play all the 16ths with your right hand. When it gets too fast, alternate: right hand on 1 and &, left hand on e and a." }, { tag: "PRACTICE", title: "Add 5 at a time", text: "Start at 60 BPM. Each time you play the bar cleanly four times in a row, add 5 BPM." }], intro: 'Same rock beat, but the hi-hat plays sixteenths, four per beat. Two beams mean sixteenths. Count 1 e & a out loud and keep that hand light.', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: all(16), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 4 · Rock · 16th hats', legend: 'Top x = hi-hat (16ths) · middle = snare · bottom = kick',
         vars: [
           { name: 'Basic', kick: [0, 8], snare: [4, 12], desc: 'Hats on every 16th. Kick on 1 and 3. Snare on 2 and 4.' },
@@ -277,7 +286,7 @@ class Component extends DCLogic {
           { name: '& of 2', kick: [0, 6, 8], snare: [4, 12], desc: 'Kick on 1, the & of 2, and 3. Snare on 2 and 4.' },
           { name: 'a of 4', kick: [0, 8, 10], snare: [4, 12, 15], desc: 'Add a snare on the a of 4 to push into the next bar.' }
         ] },
-      sync: { intro: 'Reading practice. Your feet keep time underneath, your hands read the snare line. A note on the & goes right between the counts. Count out loud, I’m not doing it for you.', book: 'Ted Reed · Progressive Steps to Syncopation for the Modern Drummer', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: [], crash: false, swing: false, feather: true, hhfoot: [2, 6],
+      sync: { boxes: [{ tag: "READ", title: "Syncopation", text: "Syncopation means playing off the beat, on the & instead of the number. It is what makes a rhythm feel pushed forward." }, { tag: "COUNT", title: "Count every eighth", text: "Count 1 & 2 & 3 & 4 & the whole way through and only play where a note is written. The rests get counted too." }, { tag: "PRACTICE", title: "Three ways to play it", text: "Play each reading line three ways: on the snare, on the bass drum under a ride pattern, and around the toms. The same page becomes three different exercises." }], intro: 'Reading practice. Your feet keep time underneath, your hands read the snare line. A note on the & goes right between the counts. Count out loud, I’m not doing it for you.', book: 'Ted Reed · Progressive Steps to Syncopation for the Modern Drummer', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: [], crash: false, swing: false, feather: true, hhfoot: [2, 6],
         title: 'Groove 5 · Syncopation · 4/4', legend: 'Read the snare line · kick on every beat · hi-hat foot on 2 and 4',
         vars: [
           { name: 'Step 1', kick: [], snare: [0, 2, 3, 6], desc: 'Snare on 1, 2, the & of 2, and 4. Feet keep time underneath.' },
@@ -285,7 +294,7 @@ class Component extends DCLogic {
           { name: 'Step 3', kick: [], snare: [1, 2, 5, 6], desc: 'Snare on the & of 1, 2, the & of 3, and 4. Count out loud!' },
           { name: 'Step 4', kick: [], snare: [1, 3, 4, 6, 7], desc: 'Snare on the & of 1, the & of 2, 3, and 4 &. Nearly all off-beats.' }
         ] },
-      indep: { intro: 'Independence: every limb has its own job. Keep the ride and the hi-hat foot locked, then drop in the comp note. If the ride wobbles, slow me down.', book: 'Jim Chapin · Advanced Techniques for the Modern Drummer, Vol. 1', steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
+      indep: { boxes: [{ tag: "READ", title: "Coordinated independence", text: "Each limb plays its own part at the same time. The ride and hi-hat are the steady part. The comp notes are the free part." }, { tag: "FEEL", title: "Comping", text: "Comping means short snare or bass drum notes that talk back to the band, the way a piano player drops in chords." }, { tag: "PRACTICE", title: "Lock in, then add", text: "Play the ride and hi-hat until you can forget about them. Then add the comp note. If the ride changes when you add it, slow down." }], intro: 'Independence: every limb has its own job. Keep the ride and the hi-hat foot locked, then drop in the comp note. If the ride wobbles, slow me down.', book: 'Jim Chapin · Advanced Techniques for the Modern Drummer, Vol. 1', steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
         title: 'Groove 6 · Independence · Jazz', legend: 'Keep ride + hi-hat foot steady · add the comp note · swing the 8ths',
         vars: [
           { name: 'Step 1', kick: [], snare: [1], desc: 'Left hand: one snare note on the & of 1, between the ride notes.' },
@@ -293,7 +302,7 @@ class Component extends DCLogic {
           { name: 'Step 3', kick: [3, 7], snare: [], desc: 'Now the foot comps: a kick on the & of 2 and the & of 4.' },
           { name: 'Step 4', kick: [5], snare: [1], desc: 'Both: snare on the & of 1, kick on the & of 3. Hands and feet talk to each other.' }
         ] },
-      openhh: { intro: 'See the little o over a hi-hat note? That means open: lift your foot so the cymbals ring. The next note closes it, so press the foot back down.', book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
+      openhh: { boxes: [{ tag: "READ", title: "The open sign", text: "A small o over a hi-hat note means open: lift your foot so the cymbals ring. The next plain x means closed again." }, { tag: "FEEL", title: "Timing the close", text: "Your foot closes the hi-hat on the next count, usually right with the bass drum or snare. The open sound should last exactly until then, no longer." }, { tag: "PRACTICE", title: "Hands and foot first", text: "Play step 1 slowly with just the hi-hat hand and foot. Add the bass drum, then the snare." }], intro: 'See the little o over a hi-hat note? That means open: lift your foot so the cymbals ring. The next note closes it, so press the foot back down.', book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 7 · Open hi-hat · 4/4', legend: 'o = open the hi-hat (lift your foot) · next note closes it',
         vars: [
           { name: 'Step 1', kick: [0, 4], snare: [2, 6], open: [7], desc: 'Open the hi-hat on the & of 4, then close it with your foot on 1.' },
@@ -301,7 +310,7 @@ class Component extends DCLogic {
           { name: 'Step 3', kick: [0, 2, 4, 6], snare: [2, 6], open: [1, 3, 5, 7], desc: 'Disco: kick on every beat, hi-hat open on every &, closed on the numbers.' },
           { name: 'Step 4', kick: [0, 3, 4], snare: [2, 6], open: [5], desc: 'Kick on 1, the & of 2 and 3. Open the hi-hat on the & of 3.' }
         ] },
-      fills: { intro: 'A fill is a short break that leads you back to the top. Three beats of groove, fill beat 4, then land on the crash on 1. Top space is the rack tom, second space is the floor tom.', book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: [0, 2, 4, 6, 8, 10], crash: 'bar', swing: false, feather: false, hhfoot: [],
+      fills: { boxes: [{ tag: "READ", title: "What is a fill?", text: "A short break from the groove that leads back into it, usually at the end of a phrase. Land on a crash with the bass drum on 1." }, { tag: "READ", title: "Tom notes", text: "Top space = rack tom. Second space = floor tom. Moving from high to low gives the classic \u201caround the kit\u201d sound." }, { tag: "PRACTICE", title: "Count the bars", text: "Play three bars of groove and a fourth with the fill. Counting the bars out loud (1-2-3-FILL) keeps you from getting lost." }], intro: 'A fill is a short break that leads you back to the top. Three beats of groove, fill beat 4, then land on the crash on 1. Top space is the rack tom, second space is the floor tom.', book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: [0, 2, 4, 6, 8, 10], crash: 'bar', swing: false, feather: false, hhfoot: [],
         title: 'Groove 8 · Fills · 4/4', legend: 'Play 3 beats of groove, fill beat 4 · top space = rack tom · 2nd space = floor tom',
         vars: [
           { name: 'Step 1', kick: [0, 8, 10], snare: [4], fill: { 12: 'snare', 13: 'snare', 14: 'snare', 15: 'snare' }, desc: 'Four 16ths on the snare on beat 4, then land on a crash.' },
@@ -608,6 +617,7 @@ class Component extends DCLogic {
       ts: String(L.beats),
       nt: this.notation(L, V, this.state.step),
       legend: L.legend,
+      bookBoxes: L.boxes || [],
       guide: L.intro + ' Step ' + (this.state.v + 1) + ': ' + V.desc,
       talk: () => this.talk(L.intro + ' Step ' + (this.state.v + 1) + '. ' + V.desc),
       talkLabel: this.state.talking ? 'STOP TALKING' : 'HEAR IT',
