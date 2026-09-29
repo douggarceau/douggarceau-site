@@ -208,6 +208,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 
 <footer>
 <span>© Amadeus School of Drums</span>
+<span id="views" aria-live="polite"></span>
 <a href="#levels">Back to the lessons ↑</a>
 </footer>
 </div>
@@ -220,6 +221,18 @@ document.getElementById('f').addEventListener('submit',function(e){
   note.textContent='Thanks! Sign-ups aren’t switched on quite yet, so nothing was saved. Check back soon.';
   em.value='';
 });
+</script>
+<script>
+(function(){
+  var el=document.getElementById('views'), key='douggarceau-com-home-views';
+  var base='https://countapi.mileshilliard.com/api/v1/';
+  var seen=false; try{seen=sessionStorage.getItem('dg-counted')==='1';}catch(e){}
+  fetch(base+(seen?'get/':'hit/')+key).then(function(r){return r.json();}).then(function(d){
+    var n=parseInt(d.value,10); if(isNaN(n))return;
+    try{sessionStorage.setItem('dg-counted','1');}catch(e){}
+    el.textContent=n.toLocaleString()+(n===1?' view':' views');
+  }).catch(function(){});
+})();
 </script>
 </body>
 </html>
