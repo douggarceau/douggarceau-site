@@ -88,6 +88,8 @@ html,body{background:#0a0a0a}
 <button type="button" onClick="{{tabs.waltz.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.waltz.bg}}; color: {{tabs.waltz.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">2 · WALTZ 3/4</button>
 <button type="button" onClick="{{tabs.swing.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.swing.bg}}; color: {{tabs.swing.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">3 · SWING 4/4</button>
 <button type="button" onClick="{{tabs.rock16.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.rock16.bg}}; color: {{tabs.rock16.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">4 · ROCK 16THS</button>
+<button type="button" onClick="{{tabs.sync.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.sync.bg}}; color: {{tabs.sync.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">5 · SYNCOPATION</button>
+<button type="button" onClick="{{tabs.indep.pick}}" style="height: 40px; padding: 0 12px; border: 1px solid #ffffff; background: {{tabs.indep.bg}}; color: {{tabs.indep.ink}}; font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 1px; border-radius: 4px; cursor: pointer;">6 · INDEPENDENCE</button>
 </div>
 <div style="display: flex; justify-content: space-between; align-items: center; gap: 16px;">
 <div style="display: flex; align-items: center; gap: 8px;">
@@ -246,6 +248,22 @@ class Component extends DCLogic {
           { name: '& of 3', kick: [0, 8, 10], snare: [4, 12], desc: 'Kick on 1, 3 and the & of 3. Snare on 2 and 4.' },
           { name: '& of 2', kick: [0, 6, 8], snare: [4, 12], desc: 'Kick on 1, the & of 2, and 3. Snare on 2 and 4.' },
           { name: 'a of 4', kick: [0, 8, 10], snare: [4, 12, 15], desc: 'Add a snare on the a of 4 to push into the next bar.' }
+        ] },
+      sync: { steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: [], crash: false, swing: false, feather: true, hhfoot: [2, 6],
+        title: 'Groove 5 · Syncopation · 4/4', legend: 'Read the snare line · kick on every beat · hi-hat foot on 2 and 4',
+        vars: [
+          { name: 'Step 1', kick: [], snare: [0, 2, 3, 6], desc: 'Snare on 1, 2, the & of 2, and 4. Feet keep time underneath.' },
+          { name: 'Step 2', kick: [], snare: [0, 3, 4, 7], desc: 'Snare on 1, the & of 2, 3, and the & of 4.' },
+          { name: 'Step 3', kick: [], snare: [1, 2, 5, 6], desc: 'Snare on the & of 1, 2, the & of 3, and 4. Count out loud!' },
+          { name: 'Step 4', kick: [], snare: [1, 3, 4, 6, 7], desc: 'Snare on the & of 1, the & of 2, 3, and 4 &. Nearly all off-beats.' }
+        ] },
+      indep: { steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
+        title: 'Groove 6 · Independence · Jazz', legend: 'Keep ride + hi-hat foot steady · add the comp note · swing the 8ths',
+        vars: [
+          { name: 'Step 1', kick: [], snare: [1], desc: 'Left hand: one snare note on the & of 1, between the ride notes.' },
+          { name: 'Step 2', kick: [], snare: [2, 5], desc: 'Snare on 2 (with the ride) and on the & of 3 (between the ride notes).' },
+          { name: 'Step 3', kick: [3, 7], snare: [], desc: 'Now the foot comps: a kick on the & of 2 and the & of 4.' },
+          { name: 'Step 4', kick: [5], snare: [1], desc: 'Both: snare on the & of 1, kick on the & of 3. Hands and feet talk to each other.' }
         ] }
     };
     this.timers = {};
@@ -494,7 +512,7 @@ class Component extends DCLogic {
       tom: piece('tom', false),
       floor: piece('floor', false),
       last: this.state.last,
-      tabs: ['rock', 'waltz', 'swing', 'rock16'].reduce((o, k) => { o[k] = { pick: () => this.setLesson(k), bg: on(k) ? '#ffffff' : 'transparent', ink: on(k) ? '#0a0a0a' : '#ffffff' }; return o; }, {}),
+      tabs: ['rock', 'waltz', 'swing', 'rock16', 'sync', 'indep'].reduce((o, k) => { o[k] = { pick: () => this.setLesson(k), bg: on(k) ? '#ffffff' : 'transparent', ink: on(k) ? '#0a0a0a' : '#ffffff' }; return o; }, {}),
       vars: L.vars.map((x, n) => ({
         label: String(n + 1),
         aria: 'Variation ' + (n + 1) + ': ' + x.desc,
