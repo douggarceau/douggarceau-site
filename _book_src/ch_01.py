@@ -13,7 +13,7 @@ C(1, 1, 'How to Use This Book', 'Pages, examples and the player',
      'Play along slowly, then turn the tempo up a little at a time.',
      'Switch the metronome off and play it on your own.'),
   TIP('Go in order', 'The chapters build on each other. If a chapter feels hard, go back one or two and play those examples again. That is normal, and it is how everyone learns.'),
-  BOX('About the exercises', 'Some parts of this book follow the teaching order of classic drum methods, and those chapters say so. All the explanations and exercises are my own. For the complete original courses, get the books themselves.', 'NOTE'),
+  BOX('About the exercises', 'All the explanations and exercises in this book are original to the Amadeus School of Drums.', 'NOTE'),
 ),
 
 C(2, 1, 'Meet the Drum Set', 'The parts of the kit and what they do',

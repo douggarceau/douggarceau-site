@@ -144,7 +144,7 @@ C(79, 6, 'Feathering the Bass Drum', 'Felt, not heard',
 
 C(80, 6, 'Comping on the Snare', 'Talking to the band',
   P('While the ride and hi-hat keep time, the left hand adds short snare notes called <b>comping</b> (from “accompanying”). Comping answers the soloist and pushes the band.'),
-  P('This chapter follows the idea behind Jim Chapin’s independence method: keep the time pattern steady and move a single comp note around. The exercises are my own.'),
+  P('The method is simple: keep the time pattern completely steady and move a single comp note around it.'),
   E('Comp on the & of 2', None, swing=True, bpm=110, lines=dict(rd=SWING_RIDE, sn='...o ....', hf='..x. ..x.')),
   E('Comp on the & of 4', None, swing=True, bpm=110, lines=dict(rd=SWING_RIDE, sn='.... ...o', hf='..x. ..x.')),
   E('Comp on the & of 1 and 3', 'These fall between ride notes: the hardest ones.', swing=True, bpm=100, lines=dict(rd=SWING_RIDE, sn='.o.. .o..', hf='..x. ..x.')),
