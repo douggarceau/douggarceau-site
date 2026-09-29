@@ -12,8 +12,8 @@
   var HANDS = ["cr", "hh", "rd", "t1", "sn", "t2"], FEET = ["bd", "hf"];
   var STEM_TOP = 4, STEM_BOT = 140;
   var SRC = (document.currentScript && document.currentScript.src) || location.href;
-  var SAMPLES = { rd: new URL("../sounds/ride.mp3?v=2", SRC).href, rj: new URL("../sounds/ride-jazz.mp3?v=2", SRC).href, sj: new URL("../sounds/snare-jazz.mp3?v=1", SRC).href,
-    bj: new URL("../sounds/kick-jazz.mp3?v=1", SRC).href, t1j: new URL("../sounds/tom-jazz.mp3?v=1", SRC).href, t2j: new URL("../sounds/floortom-jazz.mp3?v=1", SRC).href }, RATE = { t1j: 1.335 }, BUFS = {}, BYTES = {};
+  var SAMPLES = { rd: new URL("../sounds/ride.mp3?v=3", SRC).href, rj: new URL("../sounds/ride-jazz.mp3?v=3", SRC).href, sj: new URL("../sounds/snare-jazz.mp3?v=1", SRC).href,
+    bj: new URL("../sounds/kick-jazz.mp3?v=2", SRC).href, t1j: new URL("../sounds/tom-jazz.mp3?v=1", SRC).href, t2j: new URL("../sounds/floortom-jazz.mp3?v=1", SRC).href }, RATE = { t1j: 1.335 }, GAIN = { rd: 0.55, rj: 0.5, bj: 1.5, sj: 1.0, t1j: 1.0, t2j: 1.0 }, BUFS = {}, BYTES = {};
   Object.keys(SAMPLES).forEach(function (k) {
     BYTES[k] = fetch(SAMPLES[k]).then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); });
   });
@@ -231,7 +231,7 @@
   }
   function hit(k, t, v) {
     v = v * (0.9 + Math.random() * 0.1);
-    if (BUFS[k]) { sample(k, t, v * 1.1); return; }
+    if (BUFS[k]) { sample(k, t, (k === "bj" && v < 0.3 ? 0.45 : v) * (GAIN[k] || 1)); return; }
     switch (k) {
       case "bd": tone(t, "sine", 160, 48, 0.09, 0.5, v); tone(t, "triangle", 90, 45, 0.12, 0.22, 0.3 * v); noise(t, 0.012, 0.3 * v, "highpass", 2500); break;
       case "sn": tone(t, "triangle", 240, 180, 0.04, 0.12, 0.55 * v); noise(t, 0.24, 0.9 * v, "bandpass", 4200, 0.6, 1400); noise(t, 0.03, 0.35 * v, "highpass", 5000); break;
