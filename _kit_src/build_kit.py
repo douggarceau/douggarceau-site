@@ -13,8 +13,6 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 FINISHES = {
     # blue sparkle, the original Level 7 kit
     'blue': (['#0c2266', '#3a74f0', '#8db8ff', '#2d5fd8', '#0a1d5c'], ['#ffffff', '#cfe0ff', '#9fc2ff']),
-    # champagne sparkle, after Elvin Jones's Maple Custom
-    'champagne': (['#4f4026', '#b89c5e', '#f3e6c0', '#c9b27a', '#4a3b22'], ['#ffffff', '#fff3cf', '#e8d39a']),
 }
 
 GLITTER = [(7.1, 3.3, 1.0, .84), (2.1, 12.8, 1.2, .37), (9.5, 1.5, .6, .39), (12.4, 20.8, 1.0, .92), (12.7, 8.7, 1.3, .68),
@@ -135,9 +133,6 @@ CONFIGS = {
                  racks=[('tom', 560, 112, 62, 86, 1)], floors=[('floor', 880, 326, 90, 140)]),
     'five': dict(finish='blue', label='LEVEL 7', kick=(640, 385, 152), crashR=(830, 78, 100, 15, -6),
                  racks=[('tom', 548, 120, 56, 78, 1), ('tom2', 706, 116, 60, 84, -1)], floors=[('floor', 880, 326, 90, 140)]),
-    'elvin': dict(finish='champagne', label='LEVEL 7', kick=(640, 410, 125), crashR=(830, 78, 100, 15, -6),
-                  racks=[('tom', 566, 158, 50, 70, 1), ('tom2', 700, 152, 55, 78, -1)],
-                  floors=[('floor', 880, 332, 84, 132), ('floor2', 1082, 318, 92, 150)]),
 }
 
 NAMES = {'crashL': 'Crash cymbal, left', 'crashR': 'Crash cymbal, right', 'ride': 'Ride cymbal', 'hihat': 'Hi-hats',
