@@ -142,7 +142,7 @@
           if (P.sub === 3) { for (var r = 0; r < pos[0]; r++) rest(groups[base + r], X(base + r), 1, up, 3); }
           else rest(groups[base], X(base), pos[0], up, P.sub);
         }
-        if (P.sub === 3 && pos.length > 1) for (var e = pos[0] + 1; e < P.sub; e++) if (pos.indexOf(e) < 0) rest(groups[base + e], X(base + e), 1, up, 3);
+        if (P.sub === 3 && !(pos.length === 1 && pos[0] === 0)) for (var e = pos[0] + 1; e < P.sub; e++) if (pos.indexOf(e) < 0) rest(groups[base + e], X(base + e), 1, up, 3);
         var stemX = [];
         pos.forEach(function (p, j) {
           var i = base + p, g = groups[i], x = X(i), ns = voiceNotes(P, set, i), ys = ns.map(function (n) { return Y[n.k]; });
@@ -160,7 +160,7 @@
             var slashes = roll.c === "z" ? 0 : Math.max(1, 3 - beamsHere);
             for (var sl = 0; sl < slashes; sl++) el("line", { x1: sx - 7, y1: 30 + sl * 7 + 4, x2: sx + 7, y2: 30 + sl * 7 - 2, class: "sl2" }, g);
             if (roll.c === "z") el("path", { d: "M" + (sx - 6) + " 26h12l-12 9h12", class: "zz" }, g);
-            var nx = i + d; if (nx < P.steps) el("path", { d: "M" + (x + 2) + " " + (Y[roll.k] + 10) + "Q" + ((x + X(nx)) / 2) + " " + (Y[roll.k] + 24) + " " + (X(nx) - 2) + " " + (Y[roll.k] + 10), class: "tie" }, svg);
+            var nx = i + d; var nxRoll = nx < P.steps && HANDS.some(function (q) { var cc = P.lines[q] && P.lines[q][nx]; return cc === "z" || cc === "w"; }); if (nx < P.steps && !nxRoll) el("path", { d: "M" + (x + 2) + " " + (Y[roll.k] + 10) + "Q" + ((x + X(nx)) / 2) + " " + (Y[roll.k] + 24) + " " + (X(nx) - 2) + " " + (Y[roll.k] + 10), class: "tie" }, svg);
           }
         });
         if (quarterAlone) continue;

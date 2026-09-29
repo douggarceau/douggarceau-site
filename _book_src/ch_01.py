@@ -17,7 +17,7 @@ C(1, 1, 'How to Use This Book', 'Pages, examples and the player',
 ),
 
 C(2, 1, 'Meet the Drum Set', 'The parts of the kit and what they do',
-  P('A standard drum set has five drums and two or three cymbals. Every drummer sets up a little differently, but the parts are the same.'),
+  P('A basic drum set has four or five drums (bass drum, snare, one or two rack toms and a floor tom) and two or three cymbals. Every drummer sets up a little differently, but the parts are the same. This book uses a four-piece kit.'),
   TABLE(('PART', 'WHAT IT DOES'),
     ('Bass drum', 'The big drum on the floor, played with your right foot on a pedal. It is the low heartbeat of the band.'),
     ('Snare drum', 'The drum between your knees. Metal wires (the snares) under the bottom head give it its crack. Most backbeats are played here.'),
