@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
 <style>
 body{margin:0;background:#0a0a0a;font-family:'IBM Plex Mono',monospace;color:#ffffff}
-a{color:#ffd35c}a:hover{color:#ffe9a8}
+a{color:#ffd35c}a:hover{color:#ffe9a8}@keyframes pend{from{transform:rotate(-24deg)}to{transform:rotate(24deg)}}@keyframes talk{from{transform:scaleY(.3)}to{transform:scaleY(1.9)}}
 </style>
 <style>
 html,body{background:#0a0a0a}
@@ -23,7 +23,7 @@ html,body{background:#0a0a0a}
 <div id="stagebox"><div id="app"></div></div>
 </div>
 <template id="tpl">
-<div style="width: 1280px; height: 1118px; box-sizing: border-box; background: #0a0a0a; color: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace;">
+<div style="width: 1280px; height: 1264px; box-sizing: border-box; background: #0a0a0a; color: #ffffff; display: flex; flex-direction: column; font-family: 'IBM Plex Mono', monospace;">
 
 <div style="display: flex; justify-content: space-between; align-items: flex-end; padding: 36px 56px 0 56px;">
 <div style="display: flex; flex-direction: column; gap: 4px;">
@@ -34,6 +34,25 @@ html,body{background:#0a0a0a}
 <div aria-live="polite" style="display: flex; flex-direction: column; align-items: flex-end; gap: 6px; min-width: 260px;">
 <div style="font-size: 12px; letter-spacing: 3px; color: #bdbdbd;">LAST HIT</div>
 <div style="font-family: 'Bebas Neue', sans-serif; font-size: 48px; line-height: 1; color: #ffd35c;">{{last}}</div>
+</div>
+</div>
+
+<div style="display: flex; align-items: center; gap: 22px; padding: 6px 56px 0 56px; height: 146px; box-sizing: border-box;">
+<svg viewBox="0 0 120 140" width="120" height="140" style="flex-shrink: 0;" role="img" aria-label="Tempo the metronome">
+<ellipse cx="60" cy="134" rx="46" ry="5" fill="#1c1c1c"></ellipse>
+<path d="M36 10 L84 10 L106 132 L14 132 Z" fill="#6b4226" stroke="#3b2314" stroke-width="3" stroke-linejoin="round"></path>
+<path d="M44 20 L76 20 L92 118 L28 118 Z" fill="#f1efe8"></path>
+<g style="transform-origin: 60px 112px; animation: {{pend}};"><line x1="60" y1="112" x2="60" y2="26" stroke="#141414" stroke-width="3"></line><rect x="53" y="44" width="14" height="12" rx="2" fill="#ffd35c" stroke="#141414" stroke-width="2"></rect></g>
+<rect x="30" y="62" width="60" height="16" rx="7" fill="#141414"></rect><rect x="33" y="65" width="23" height="10" rx="4" fill="#2b2b2b"></rect><rect x="64" y="65" width="23" height="10" rx="4" fill="#2b2b2b"></rect><line x1="56" y1="70" x2="64" y2="70" stroke="#141414" stroke-width="3"></line>
+<ellipse cx="60" cy="94" rx="11" ry="4" fill="#3b2314" style="transform-origin: 60px 94px; animation: {{mouth}};"></ellipse>
+<rect x="10" y="126" width="100" height="8" rx="3" fill="#3b2314"></rect>
+</svg>
+<div style="flex-grow: 1; border: 2px solid #ffffff; border-radius: 16px; padding: 12px 18px; display: flex; flex-direction: column; gap: 6px; position: relative;">
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<span style="font-size: 12px; letter-spacing: 3px; color: #ffd35c;">TEMPO SAYS</span>
+<button type="button" onClick="{{talk}}" style="height: 34px; padding: 0 14px; border: 1px solid #ffd35c; background: {{talkBg}}; color: {{talkInk}}; font-family: 'IBM Plex Mono', monospace; font-size: 13px; border-radius: 4px; cursor: pointer;">{{talkLabel}}</button>
+</div>
+<div style="font-size: 15px; line-height: 1.45; color: #ffffff;">{{guide}}</div>
 </div>
 </div>
 
@@ -212,7 +231,7 @@ html,body{background:#0a0a0a}
     patch(root,[].slice.call(frag.childNodes));
   }
   window.__mount=function(C){ comp=new C({bpm:80}); paint(); fit(); };
-  function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1118*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
+  function fit(){ var w=document.documentElement.clientWidth, s=Math.min(1,(w-16)/1280); var st=document.getElementById('stagebox'); st.style.transform='scale('+s+')'; st.style.height=(1264*s)+'px'; document.getElementById('shell').style.width=(1280*s)+'px'; }
   window.addEventListener('resize',function(){ fit(); });
 })();
 </script>
@@ -220,12 +239,12 @@ html,body{background:#0a0a0a}
 class Component extends DCLogic {
   constructor(props) {
     super(props);
-    this.state = { lit: {}, last: '—', playing: false, step: -1, bpm: props.bpm ?? 80, soundOn: true, lesson: 'rock', v: 0 };
+    this.state = { lit: {}, last: '—', playing: false, step: -1, bpm: props.bpm ?? 80, soundOn: true, lesson: 'rock', v: 0, talking: false };
     const E = ['1', '&', '2', '&', '3', '&', '4', '&'];
     const all = (n) => { const o = []; for (let i = 0; i < n; i++) o.push(i); return o; };
     const hatLegend = 'Top x = hi-hat · middle = snare · bottom = kick';
     this.lessons = {
-      rock: { steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
+      rock: { intro: 'Rock beat. On the staff: the x’s above are the hi-hat, the note in the middle is the snare, the note at the bottom is the kick. Read it left to right, one count at a time.', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 1 · Rock · 4/4', legend: hatLegend,
         vars: [
           { name: 'Basic', kick: [0, 4], snare: [2, 6], desc: 'Kick on 1 and 3. Snare on 2 and 4.' },
@@ -233,7 +252,7 @@ class Component extends DCLogic {
           { name: '& of 2', kick: [0, 3, 4], snare: [2, 6], desc: 'Kick on 1, the & of 2, and 3. Snare on 2 and 4.' },
           { name: 'Busy', kick: [0, 1, 4, 5], snare: [2, 6, 7], desc: 'Kick on 1 &, 3 &. Snare on 2, 4 and the & of 4.' }
         ] },
-      waltz: { steps: 6, sub: 2, beats: 3, labels: ['1', '&', '2', '&', '3', '&'], hand: 'hihat', hands: all(6), crash: true, swing: false, feather: false, hhfoot: [],
+      waltz: { intro: 'A waltz counts in three. See the 3 on top of the time signature? Three beats a bar. Kick on 1, snare on 2 and 3. Very elegant. Like me.', steps: 6, sub: 2, beats: 3, labels: ['1', '&', '2', '&', '3', '&'], hand: 'hihat', hands: all(6), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 2 · Waltz · 3/4', legend: hatLegend,
         vars: [
           { name: 'Basic', kick: [0], snare: [2, 4], desc: 'Count 1-2-3. Kick on 1. Snare on 2 and 3.' },
@@ -241,7 +260,7 @@ class Component extends DCLogic {
           { name: '& of 2', kick: [0, 3], snare: [2, 4], desc: 'Kick on 1 and the & of 2. Snare on 2 and 3.' },
           { name: 'Roll-in', kick: [0], snare: [2, 3, 4], desc: 'Kick on 1. Snare on 2, the & of 2, and 3.' }
         ] },
-      swing: { steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
+      swing: { intro: 'Jazz time. The x on the top line is the ride: ding, ding-a, ding, ding-a. The x under the staff is your hi-hat foot on 2 and 4. Swing the eighths long-short.', steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
         title: 'Groove 3 · Swing · 4/4',
         legend: 'Swing the 8ths long-short · top x = ride · x below = hi-hat foot',
         vars: [
@@ -250,7 +269,7 @@ class Component extends DCLogic {
           { name: 'Comp 3 & 4', kick: [], snare: [5, 7], desc: 'Snare comps on the a of 3 and the a of 4.' },
           { name: 'Bomb', kick: [7], snare: [3], desc: 'Comp on the a of 2, then drop a loud kick bomb on the a of 4.' }
         ] },
-      rock16: { steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: all(16), crash: true, swing: false, feather: false, hhfoot: [],
+      rock16: { intro: 'Same rock beat, but the hi-hat plays sixteenths, four per beat. Two beams mean sixteenths. Count 1 e & a out loud and keep that hand light.', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: all(16), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 4 · Rock · 16th hats', legend: 'Top x = hi-hat (16ths) · middle = snare · bottom = kick',
         vars: [
           { name: 'Basic', kick: [0, 8], snare: [4, 12], desc: 'Hats on every 16th. Kick on 1 and 3. Snare on 2 and 4.' },
@@ -258,7 +277,7 @@ class Component extends DCLogic {
           { name: '& of 2', kick: [0, 6, 8], snare: [4, 12], desc: 'Kick on 1, the & of 2, and 3. Snare on 2 and 4.' },
           { name: 'a of 4', kick: [0, 8, 10], snare: [4, 12, 15], desc: 'Add a snare on the a of 4 to push into the next bar.' }
         ] },
-      sync: { book: 'Ted Reed · Progressive Steps to Syncopation for the Modern Drummer', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: [], crash: false, swing: false, feather: true, hhfoot: [2, 6],
+      sync: { intro: 'Reading practice. Your feet keep time underneath, your hands read the snare line. A note on the & goes right between the counts. Count out loud, I’m not doing it for you.', book: 'Ted Reed · Progressive Steps to Syncopation for the Modern Drummer', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: [], crash: false, swing: false, feather: true, hhfoot: [2, 6],
         title: 'Groove 5 · Syncopation · 4/4', legend: 'Read the snare line · kick on every beat · hi-hat foot on 2 and 4',
         vars: [
           { name: 'Step 1', kick: [], snare: [0, 2, 3, 6], desc: 'Snare on 1, 2, the & of 2, and 4. Feet keep time underneath.' },
@@ -266,7 +285,7 @@ class Component extends DCLogic {
           { name: 'Step 3', kick: [], snare: [1, 2, 5, 6], desc: 'Snare on the & of 1, 2, the & of 3, and 4. Count out loud!' },
           { name: 'Step 4', kick: [], snare: [1, 3, 4, 6, 7], desc: 'Snare on the & of 1, the & of 2, 3, and 4 &. Nearly all off-beats.' }
         ] },
-      indep: { book: 'Jim Chapin · Advanced Techniques for the Modern Drummer, Vol. 1', steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
+      indep: { intro: 'Independence: every limb has its own job. Keep the ride and the hi-hat foot locked, then drop in the comp note. If the ride wobbles, slow me down.', book: 'Jim Chapin · Advanced Techniques for the Modern Drummer, Vol. 1', steps: 8, sub: 2, beats: 4, labels: E, hand: 'ride', hands: [0, 2, 3, 4, 6, 7], crash: false, swing: true, feather: true, hhfoot: [2, 6],
         title: 'Groove 6 · Independence · Jazz', legend: 'Keep ride + hi-hat foot steady · add the comp note · swing the 8ths',
         vars: [
           { name: 'Step 1', kick: [], snare: [1], desc: 'Left hand: one snare note on the & of 1, between the ride notes.' },
@@ -274,7 +293,7 @@ class Component extends DCLogic {
           { name: 'Step 3', kick: [3, 7], snare: [], desc: 'Now the foot comps: a kick on the & of 2 and the & of 4.' },
           { name: 'Step 4', kick: [5], snare: [1], desc: 'Both: snare on the & of 1, kick on the & of 3. Hands and feet talk to each other.' }
         ] },
-      openhh: { book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
+      openhh: { intro: 'See the little o over a hi-hat note? That means open: lift your foot so the cymbals ring. The next note closes it, so press the foot back down.', book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 8, sub: 2, beats: 4, labels: E, hand: 'hihat', hands: all(8), crash: true, swing: false, feather: false, hhfoot: [],
         title: 'Groove 7 · Open hi-hat · 4/4', legend: 'o = open the hi-hat (lift your foot) · next note closes it',
         vars: [
           { name: 'Step 1', kick: [0, 4], snare: [2, 6], open: [7], desc: 'Open the hi-hat on the & of 4, then close it with your foot on 1.' },
@@ -282,7 +301,7 @@ class Component extends DCLogic {
           { name: 'Step 3', kick: [0, 2, 4, 6], snare: [2, 6], open: [1, 3, 5, 7], desc: 'Disco: kick on every beat, hi-hat open on every &, closed on the numbers.' },
           { name: 'Step 4', kick: [0, 3, 4], snare: [2, 6], open: [5], desc: 'Kick on 1, the & of 2 and 3. Open the hi-hat on the & of 3.' }
         ] },
-      fills: { book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: [0, 2, 4, 6, 8, 10], crash: 'bar', swing: false, feather: false, hhfoot: [],
+      fills: { intro: 'A fill is a short break that leads you back to the top. Three beats of groove, fill beat 4, then land on the crash on 1. Top space is the rack tom, second space is the floor tom.', book: 'Michael S. Trabulsie · Rock Drumming Techniques, Book I', steps: 16, sub: 4, beats: 4, labels: ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'], hand: 'hihat', hands: [0, 2, 4, 6, 8, 10], crash: 'bar', swing: false, feather: false, hhfoot: [],
         title: 'Groove 8 · Fills · 4/4', legend: 'Play 3 beats of groove, fill beat 4 · top space = rack tom · 2nd space = floor tom',
         vars: [
           { name: 'Step 1', kick: [0, 8, 10], snare: [4], fill: { 12: 'snare', 13: 'snare', 14: 'snare', 15: 'snare' }, desc: 'Four 16ths on the snare on beat 4, then land on a crash.' },
@@ -297,6 +316,7 @@ class Component extends DCLogic {
   }
   componentWillUnmount() {
     this.stop();
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
     Object.keys(this.timers).forEach((k) => clearTimeout(this.timers[k]));
     if (this.ctx) this.ctx.close();
   }
@@ -442,7 +462,23 @@ class Component extends DCLogic {
     const dur = L.swing ? (i % 2 === 0 ? beat * 2 / 3 : beat / 3) : beat / L.sub;
     this.loop = setTimeout(() => this.tick(), dur);
   }
+  hush() {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    if (this.state.talking) this.setState({ talking: false });
+  }
+  talk(text) {
+    const synth = window.speechSynthesis;
+    if (!synth) return;
+    if (this.state.talking) { this.hush(); return; }
+    const u = new SpeechSynthesisUtterance(text.replace(/1 e & a/g, 'one ee and uh').replace(/&/g, ' and '));
+    u.rate = 1; u.pitch = 0.8;
+    u.onend = () => this.setState({ talking: false });
+    u.onerror = () => this.setState({ talking: false });
+    synth.cancel(); synth.speak(u);
+    this.setState({ talking: true });
+  }
   setVar(n) {
+    this.hush();
     this.stop();
     this.setState({ v: n, playing: false, step: -1 });
   }
@@ -506,6 +542,7 @@ class Component extends DCLogic {
     clearTimeout(this.loop);
   }
   setLesson(k) {
+    this.hush();
     this.stop();
     this.setState({ lesson: k, v: 0, playing: false, step: -1 });
   }
@@ -558,6 +595,13 @@ class Component extends DCLogic {
       ts: String(L.beats),
       nt: this.notation(L, V, this.state.step),
       legend: L.legend,
+      guide: L.intro + ' Step ' + (this.state.v + 1) + ': ' + V.desc,
+      talk: () => this.talk(L.intro + ' Step ' + (this.state.v + 1) + '. ' + V.desc),
+      talkLabel: this.state.talking ? 'STOP TALKING' : 'HEAR IT',
+      talkBg: this.state.talking ? '#ffd35c' : 'transparent',
+      talkInk: this.state.talking ? '#0a0a0a' : '#ffd35c',
+      mouth: this.state.talking ? 'talk 0.16s ease-in-out infinite alternate' : 'none',
+      pend: this.state.playing ? 'pend ' + (60 / this.state.bpm).toFixed(3) + 's ease-in-out infinite alternate' : 'none',
       hasBook: !!L.book,
       book: L.book || '',
       lessonTitle: L.title + ' · Variation ' + (this.state.v + 1),

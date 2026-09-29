@@ -48,6 +48,10 @@ ol{margin:8px 0 0;padding-left:22px}
 li{margin:2px 0}
 .home{display:inline-block;color:var(--muted);text-decoration:none;font-size:15px;padding:8px 0;margin-bottom:6px}.home:hover{color:var(--ink)}
 .leftcol{display:flex;flex-direction:column;gap:14px}
+.talkbtn{font:inherit;font-weight:500;font-size:17px;padding:10px 18px;border-radius:999px;border:2px solid var(--btn);background:var(--card);color:var(--ink);cursor:pointer}
+.talkbtn[aria-pressed="true"]{background:var(--btn);color:var(--btnink)}
+@keyframes bjaw{from{transform:scaleY(.4)}to{transform:scaleY(1.5)}}
+.talking #mouth{animation:bjaw .16s ease-in-out infinite alternate}
 .boxes{display:flex;flex-direction:column;gap:12px}
 .box{background:var(--card);border:2px solid var(--ink);border-radius:12px;overflow:hidden}
 .box h3{margin:0;background:var(--ink);color:var(--card);font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;display:flex;justify-content:space-between}
@@ -84,7 +88,7 @@ button:focus-visible,input:focus-visible,.n:focus-visible,.next:focus-visible{ou
 <circle cx="340" cy="155" r="74" fill="#8B5A2B"/>
 <polygon points="316,88 356,80 338,34" fill="#F2B233"/><circle cx="338" cy="32" r="7" fill="#E24B4B"/>
 <ellipse cx="340" cy="178" rx="36" ry="28" fill="#E8C08F"/>
-<path d="M318 190 Q340 222 362 190 Z" fill="#5A1F1F"/><ellipse cx="340" cy="205" rx="11" ry="9" fill="#E86A7A"/>
+<g id="mouth" style="transform-origin:340px 192px"><path d="M318 190 Q340 222 362 190 Z" fill="#5A1F1F"/><ellipse cx="340" cy="205" rx="11" ry="9" fill="#E86A7A"/></g>
 <ellipse cx="340" cy="166" rx="13" ry="9" fill="#3B2314"/>
 <circle cx="312" cy="135" r="16" fill="#fff"/><circle cx="318" cy="130" r="7" fill="#1E1E1E"/>
 <circle cx="370" cy="140" r="10" fill="#fff"/><circle cx="367" cy="144" r="5" fill="#1E1E1E"/>
@@ -97,6 +101,7 @@ button:focus-visible,input:focus-visible,.n:focus-visible,.next:focus-visible{ou
 <g id="aR" style="transform-origin:415px 275px;transform:rotate(-30deg)"><line x1="415" y1="275" x2="455" y2="335" stroke="#8B5A2B" stroke-width="34" stroke-linecap="round"/><line x1="455" y1="335" x2="393" y2="359" stroke="#E8D3A0" stroke-width="7" stroke-linecap="round"/><circle cx="391" cy="360" r="8" fill="#C9A45C"/><circle cx="455" cy="335" r="20" fill="#74491F"/></g>
 </svg>
 </div>
+<button class="talkbtn" id="talkbtn" type="button">Hear Bear explain</button>
 <section class="boxes" id="boxes" aria-label="New in this lesson"></section>
 </div>
 <div>
@@ -314,7 +319,7 @@ var d=document.createElement("div");d.className="box";var h=document.createEleme
 var bb=document.createElement("div");bb.className="bb";if(b[0])bb.appendChild(sym(b[0]));var pp=document.createElement("p");pp.textContent=b[2];bb.appendChild(pp);d.appendChild(bb);box.appendChild(d);});}
 function tabsBuild(){var idx=0;UNITS.forEach(function(u){var row=document.createElement("div");row.className="unit";var h=document.createElement("span");h.className="uname";h.textContent=u.name;row.appendChild(h);
 u.lessons.forEach(function(L){var i=idx++;var b=document.createElement("button");b.className="tab";b.textContent=(i+1)+". "+L.name;b.setAttribute("aria-pressed",i===cur?"true":"false");
-b.addEventListener("click",function(){if(running)toggle();cur=i;[].forEach.call(tabs.querySelectorAll(".tab"),function(c,j){c.setAttribute("aria-pressed",j===i?"true":"false");});render();});row.appendChild(b);});tabs.appendChild(row);});}
+b.addEventListener("click",function(){if(running)toggle();if(typeof hush==="function")hush();cur=i;[].forEach.call(tabs.querySelectorAll(".tab"),function(c,j){c.setAttribute("aria-pressed",j===i?"true":"false");});render();});row.appendChild(b);});tabs.appendChild(row);});}
 function audio(){if(!ctx){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;ctx=new C();master=ctx.createGain();master.gain.value=.8;var c=ctx.createDynamicsCompressor();master.connect(c);c.connect(ctx.destination);
 nb=ctx.createBuffer(1,Math.floor(ctx.sampleRate*.3),ctx.sampleRate);var d=nb.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1;}
 if(ctx.state==="suspended")ctx.resume();return ctx;}
@@ -342,6 +347,14 @@ function toggle(){if(!audio())return;var b=document.getElementById("go");if(runn
 document.getElementById("go").addEventListener("click",toggle);
 var st=document.getElementById("stage");st.addEventListener("click",toggle);st.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle();}});
 document.getElementById("bpm").addEventListener("input",function(e){bpm=+e.target.value;document.getElementById("bpmv").textContent=bpm+" bpm";});
+
+var talking=false,tb=document.getElementById("talkbtn");
+function setTalk(on){talking=on;tb.setAttribute("aria-pressed",on?"true":"false");tb.textContent=on?"Stop talking":"Hear Bear explain";document.getElementById("stage").classList.toggle("talking",on);}
+function hush(){if(window.speechSynthesis)speechSynthesis.cancel();setTalk(false);}
+if(!window.speechSynthesis)tb.hidden=true;
+tb.addEventListener("click",function(){if(talking){hush();return;}var L=LESSONS[cur],t=L.title+". "+L.text;(BOXES[L.name]||[]).forEach(function(b){t+=" "+b[1]+": "+b[2];});
+t=t.replace(/\b1 e & a\b/g,"one ee and uh").replace(/&/g," and ").replace(/\bRLRR LRLL\b/g,"right left right right, left right left left").replace(/\bRRLL R\b/g,"right right left left, right").replace(/\bLLRR L\b/g,"left left right right, left");
+var u=new SpeechSynthesisUtterance(t);u.rate=.95;u.pitch=1.15;u.onend=function(){setTalk(false);};u.onerror=function(){setTalk(false);};speechSynthesis.cancel();speechSynthesis.speak(u);setTalk(true);});
 tabsBuild();render();
 </script>
 </body>
