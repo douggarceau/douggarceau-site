@@ -314,6 +314,9 @@ class Component extends DCLogic {
     this.step = 0;
     this.names = { crashL: 'Crash', crashR: 'Crash', hihat: 'Hi-hats', hhfoot: 'Hi-hat foot', kickSoft: 'Bass drum', hhopen: 'Open hi-hat', ride: 'Ride', kick: 'Bass drum', snare: 'Snare', tom: 'Rack tom', floor: 'Floor tom' };
   }
+  componentDidMount() {
+    if (window.speechSynthesis) window.speechSynthesis.getVoices();
+  }
   componentWillUnmount() {
     this.stop();
     if (window.speechSynthesis) window.speechSynthesis.cancel();
@@ -462,6 +465,14 @@ class Component extends DCLogic {
     const dur = L.swing ? (i % 2 === 0 ? beat * 2 / 3 : beat / 3) : beat / L.sub;
     this.loop = setTimeout(() => this.tick(), dur);
   }
+  pickVoice(prefer) {
+    var s=window.speechSynthesis;if(!s)return null;var vs=s.getVoices().filter(function(v){return /^en[-_]/i.test(v.lang);});if(!vs.length)return null;
+    function score(v){var n=v.name,sc=0;if(/natural|neural/i.test(n))sc+=60;if(/premium/i.test(n))sc+=50;if(/enhanced/i.test(n))sc+=40;if(/^Google (US|UK) English/.test(n))sc+=30;
+    if(/\b(Ava|Samantha|Allison|Zoe|Evan|Tom|Nathan|Aaron|Jenny|Aria|Guy|Davis|Daniel|Serena|Karen|Moira)\b/.test(n))sc+=15;if(/en[-_]US/i.test(v.lang))sc+=5;
+    if(/compact|eloquence|novelty|Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Wobble|Zarvox|Trinoids|Whisper|Jester|Organ|Superstar|Ralph|Fred|Junior|Kathy|Grandma|Grandpa|Rocko|Shelley|Flo|Reed|Sandy/i.test(n))sc-=100;
+    (prefer||[]).forEach(function(p,i){if(n.indexOf(p)>=0)sc+=12-i;});return sc;}
+    vs.sort(function(a,b){return score(b)-score(a);});return vs[0];
+  }
   hush() {
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     if (this.state.talking) this.setState({ talking: false });
@@ -471,7 +482,9 @@ class Component extends DCLogic {
     if (!synth) return;
     if (this.state.talking) { this.hush(); return; }
     const u = new SpeechSynthesisUtterance(text.replace(/1 e & a/g, 'one ee and uh').replace(/&/g, ' and '));
-    u.rate = 1; u.pitch = 0.8;
+    const vv = this.pickVoice(['Evan', 'Tom', 'Nathan', 'Aaron', 'Guy', 'Davis', 'Daniel', 'Google US English']);
+    if (vv) { u.voice = vv; u.lang = vv.lang; }
+    u.rate = 0.97; u.pitch = 1;
     u.onend = () => this.setState({ talking: false });
     u.onerror = () => this.setState({ talking: false });
     synth.cancel(); synth.speak(u);

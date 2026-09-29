@@ -371,13 +371,20 @@ document.getElementById("go").addEventListener("click",toggle);
 var st=document.getElementById("stage");st.addEventListener("click",toggle);st.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();toggle();}});
 document.getElementById("bpm").addEventListener("input",function(e){bpm=+e.target.value;document.getElementById("bpmv").textContent=bpm+" bpm";});
 
+function pickVoice(prefer){var s=window.speechSynthesis;if(!s)return null;var vs=s.getVoices().filter(function(v){return /^en[-_]/i.test(v.lang);});if(!vs.length)return null;
+function score(v){var n=v.name,sc=0;if(/natural|neural/i.test(n))sc+=60;if(/premium/i.test(n))sc+=50;if(/enhanced/i.test(n))sc+=40;if(/^Google (US|UK) English/.test(n))sc+=30;
+if(/\b(Ava|Samantha|Allison|Zoe|Evan|Tom|Nathan|Aaron|Jenny|Aria|Guy|Davis|Daniel|Serena|Karen|Moira)\b/.test(n))sc+=15;if(/en[-_]US/i.test(v.lang))sc+=5;
+if(/compact|eloquence|novelty|Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Wobble|Zarvox|Trinoids|Whisper|Jester|Organ|Superstar|Ralph|Fred|Junior|Kathy|Grandma|Grandpa|Rocko|Shelley|Flo|Reed|Sandy/i.test(n))sc-=100;
+(prefer||[]).forEach(function(p,i){if(n.indexOf(p)>=0)sc+=12-i;});return sc;}
+vs.sort(function(a,b){return score(b)-score(a);});return vs[0];}
+if(window.speechSynthesis){speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=function(){speechSynthesis.getVoices();};}
 var talking=false,tb=document.getElementById("talkbtn");
 function setTalk(on){talking=on;tb.setAttribute("aria-pressed",on?"true":"false");tb.textContent=on?"Stop talking":"Hear Bear explain";document.getElementById("stage").classList.toggle("talking",on);}
 function hush(){if(window.speechSynthesis)speechSynthesis.cancel();setTalk(false);}
 if(!window.speechSynthesis)tb.hidden=true;
 tb.addEventListener("click",function(){if(talking){hush();return;}var L=LESSONS[cur],t=L.title+". "+L.text;(BOXES[L.name]||[]).forEach(function(b){t+=" "+b[1]+": "+b[2];});
 t=t.replace(/\b1 e & a\b/g,"one ee and uh").replace(/&/g," and ").replace(/\bRLRR LRLL\b/g,"right left right right, left right left left").replace(/\bRRLL R\b/g,"right right left left, right").replace(/\bLLRR L\b/g,"left left right right, left");
-var u=new SpeechSynthesisUtterance(t);u.rate=.95;u.pitch=1.15;u.onend=function(){setTalk(false);};u.onerror=function(){setTalk(false);};speechSynthesis.cancel();speechSynthesis.speak(u);setTalk(true);});
+var u=new SpeechSynthesisUtterance(t);var vv=pickVoice(["Ava","Samantha","Aria","Jenny","Allison","Zoe"]);if(vv){u.voice=vv;u.lang=vv.lang;}u.rate=.95;u.pitch=1;u.onend=function(){setTalk(false);};u.onerror=function(){setTalk(false);};speechSynthesis.cancel();speechSynthesis.speak(u);setTalk(true);});
 document.getElementById("met").addEventListener("click",toggleMet);
 var cb=document.getElementById("clk");cb.addEventListener("click",function(){clickOn=!clickOn;cb.setAttribute("aria-pressed",clickOn?"true":"false");cb.textContent="Metronome sound: "+(clickOn?"on":"off");});
 tabsBuild();render();
