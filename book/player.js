@@ -12,7 +12,7 @@
   var HANDS = ["cr", "hh", "rd", "t1", "sn", "t2"], FEET = ["bd", "hf"];
   var STEM_TOP = 4, STEM_BOT = 140;
   var SRC = (document.currentScript && document.currentScript.src) || location.href;
-  var SAMPLES = { rd: new URL("../sounds/ride.mp3", SRC).href }, BUFS = {};
+  var SAMPLES = { rd: new URL("../sounds/ride.mp3", SRC).href, rj: new URL("../sounds/ride-jazz.mp3", SRC).href }, BUFS = {};
 
   function el(n, a, p) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
   function onLine(y) { return y >= 40 && y <= 104 && (y - 40) % 16 === 0; }
@@ -294,6 +294,7 @@
         if (self.tieT[k + ":" + i]) return;
         var v = P.acc[i] === ">" ? 1 : (c === "g" ? 0.22 : 0.62);
         if (k === "hh" && c === "O") { hit("ho", t, v); return; }
+        if (k === "rd" && (P.swing || P.triplet) && BUFS.rj) { hit("rj", t, v); return; }
         if (c === "f") hit(k, t - 0.03, 0.2);
         if (c === "d") { hit(k, t - 0.06, 0.18); hit(k, t - 0.03, 0.18); }
         if (c === "z" || c === "w") {
