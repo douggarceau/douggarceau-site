@@ -324,6 +324,9 @@ class Component extends DCLogic {
     this.names = { crashL: 'Crash', crashR: 'Crash', hihat: 'Hi-hats', hhfoot: 'Hi-hat foot', kickSoft: 'Bass drum', hhopen: 'Open hi-hat', ride: 'Ride', kick: 'Bass drum', snare: 'Snare', tom: 'Rack tom', floor: 'Floor tom' };
   }
   componentDidMount() {
+    const get = (u) => fetch(u).then((r) => { if (!r.ok) throw 0; return r.arrayBuffer(); });
+    this.rideBytes = get('sounds/ride.mp3?v=2'); this.jazzBytes = get('sounds/ride-jazz.mp3?v=2');
+    this.rideBytes.catch(() => {}); this.jazzBytes.catch(() => {});
     if (window.speechSynthesis) window.speechSynthesis.getVoices();
     const m = /^#(\w+?)(?:-(\d))?$/.exec(window.location.hash || '');
     if (m && this.lessons[m[1]]) {
@@ -363,10 +366,8 @@ class Component extends DCLogic {
       this.bus = ctx.createGain();
       this.bus.connect(comp);
       this.bus.connect(verb); verb.connect(wet); wet.connect(comp);
-      fetch('sounds/ride.mp3').then((r) => { if (!r.ok) throw 0; return r.arrayBuffer(); })
-        .then((b) => ctx.decodeAudioData(b)).then((buf) => { this.rideBuf = buf; }).catch(() => {});
-      fetch('sounds/ride-jazz.mp3').then((r) => { if (!r.ok) throw 0; return r.arrayBuffer(); })
-        .then((b) => ctx.decodeAudioData(b)).then((buf) => { this.jazzRideBuf = buf; }).catch(() => {});
+      const dec = (bytes, key) => bytes && bytes.then((b) => ctx.decodeAudioData(b.slice(0))).then((buf) => { this[key] = buf; }).catch(() => {});
+      dec(this.rideBytes, 'rideBuf'); dec(this.jazzBytes, 'jazzRideBuf');
     }
     if (this.ctx.state === 'suspended') this.ctx.resume();
     return this.ctx;

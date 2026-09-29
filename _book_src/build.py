@@ -1,9 +1,11 @@
 """Build the Amadeus drum method book into /book.  Run from the repo root:  python3 _book_src/build.py"""
-import html, json, os, sys, importlib
+import html, json, os, sys, importlib, hashlib
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 OUT = os.path.join(HERE, '..', 'book')
+def _v(f): return hashlib.md5(open(os.path.join(OUT, f), 'rb').read()).hexdigest()[:8]
+CSSV, JSV = _v('book.css'), _v('player.js')
 
 PARTS = [
     (1, 'Getting Started'), (2, 'Reading Rhythm'), (3, 'Rudiments'), (4, 'Rock Grooves'),
@@ -26,7 +28,7 @@ HEAD = '''<!DOCTYPE html>
 <meta name="description" content="{desc}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="book.css">
+<link rel="stylesheet" href="book.css?v={cssv}">
 </head>
 <body>
 <div class="wrap">
@@ -74,11 +76,11 @@ def chapter_page(ch, prev, nxt):
     body = '\n'.join(block_html(ch, b, counter) for b in ch['blocks'])
     pv = '<a class="btn" href="{}">&larr; {}. {}</a>'.format(fname(prev), prev['n'], html.escape(prev['title'])) if prev else '<span></span>'
     nx = '<a class="btn" href="{}">{}. {} &rarr;</a>'.format(fname(nxt), nxt['n'], html.escape(nxt['title'])) if nxt else '<a class="btn" href="index.html">Contents</a>'
-    return (HEAD.format(title='{}. {} · Amadeus Drum Method'.format(ch['n'], html.escape(ch['title'])), desc=html.escape(ch['blurb'], quote=True))
+    return (HEAD.format(cssv=CSSV, title='{}. {} · Amadeus Drum Method'.format(ch['n'], html.escape(ch['title'])), desc=html.escape(ch['blurb'], quote=True))
             + '<nav class="top"><a href="index.html">&larr; Contents</a><a href="../index.html">Amadeus School of Drums</a></nav>\n'
             + '<p class="kicker">Part {} · {} · Chapter {}</p>\n<h1>{}</h1>\n'.format(ch['part'], html.escape(part), ch['n'], html.escape(ch['title']))
             + body
-            + '\n<div class="pager">{}{}</div>\n</div>\n<script src="player.js"></script>\n</body>\n</html>\n'.format(pv, nx))
+            + '\n<div class="pager">{}{}</div>\n</div>\n<script src="player.js?v={jsv}"></script>\n</body>\n</html>\n'.format(pv, nx, jsv=JSV))
 
 def fname(ch): return 'ch-{:03d}.html'.format(ch['n'])
 
@@ -90,7 +92,7 @@ def index_page(chs):
         parts += '<h2>Part {} · {}</h2><ol>'.format(pn, html.escape(pname)) + ''.join(
             '<li><a href="{}"><span class="n">{}</span><span class="t">{}</span><span class="d">{}</span></a></li>'.format(
                 fname(c), c['n'], html.escape(c['title']), html.escape(c['blurb'])) for c in items) + '</ol>'
-    return (HEAD.format(title='The Amadeus Drum Method', desc='A 100-chapter drum method with playable sheet music.')
+    return (HEAD.format(cssv=CSSV, title='The Amadeus Drum Method', desc='A 100-chapter drum method with playable sheet music.')
             + '<nav class="top"><a href="../index.html">&larr; Amadeus School of Drums</a><a href="../learn/index.html">Level 7 lessons</a></nav>\n'
             + '<p class="kicker">Amadeus School of Drums</p><h1>The Amadeus Drum Method</h1>\n'
             + '<p>A complete method in {} chapters, from holding the sticks to reading charts. Every chapter has sheet music you can press play on: it counts you in, keeps a metronome going, and lights up each note as it plays.</p>'.format(len(chs))

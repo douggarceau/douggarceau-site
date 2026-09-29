@@ -12,7 +12,10 @@
   var HANDS = ["cr", "hh", "rd", "t1", "sn", "t2"], FEET = ["bd", "hf"];
   var STEM_TOP = 4, STEM_BOT = 140;
   var SRC = (document.currentScript && document.currentScript.src) || location.href;
-  var SAMPLES = { rd: new URL("../sounds/ride.mp3", SRC).href, rj: new URL("../sounds/ride-jazz.mp3", SRC).href }, BUFS = {};
+  var SAMPLES = { rd: new URL("../sounds/ride.mp3?v=2", SRC).href, rj: new URL("../sounds/ride-jazz.mp3?v=2", SRC).href }, BUFS = {}, BYTES = {};
+  Object.keys(SAMPLES).forEach(function (k) {
+    BYTES[k] = fetch(SAMPLES[k]).then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); });
+  });
 
   function el(n, a, p) { var e = document.createElementNS(NS, n); for (var k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; }
   function onLine(y) { return y >= 40 && y <= 104 && (y - 40) % 16 === 0; }
@@ -211,8 +214,7 @@
       var verb = ctx.createConvolver(); verb.buffer = ir; var wet = ctx.createGain(); wet.gain.value = 0.14;
       bus = ctx.createGain(); bus.connect(comp); bus.connect(verb); verb.connect(wet); wet.connect(comp);
       Object.keys(SAMPLES).forEach(function (k) {
-        fetch(SAMPLES[k]).then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); })
-          .then(function (b) { return ctx.decodeAudioData(b); }).then(function (buf) { BUFS[k] = buf; }).catch(function () {});
+        BYTES[k].then(function (b) { return ctx.decodeAudioData(b.slice(0)); }).then(function (buf) { BUFS[k] = buf; }).catch(function () {});
       });
     }
     if (ctx.state === "suspended") ctx.resume();
