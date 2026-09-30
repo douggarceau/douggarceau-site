@@ -182,6 +182,9 @@
         if (note === '__roll') { if (!K.ready('snare-mp')) return false; for (var j = 0; j < 30; j++) K.play(ctx, bus, j % 2 ? 'snare-mp' : 'snare-mf', t + j * .04 + Math.random() * .004, .35 + j / 60, j % 2 ? .1 : -.1); return true; }
         return K.play(ctx, bus, note === 'piccolo' ? 'snare-mf' : 'snare-f', t, .95, 0, note === 'piccolo' ? 1.25 : 1);
       case 'snareroll': return real('snare', t, f, '__roll');
+      // Field drum: a deep snare, so the real snare recorded louder and tuned down; tenor drum: snares off, a deep tom.
+      case 'fielddrum': if (!K || !K.ready('snare-ff')) return false; K.play(ctx, bus, 'snare-ff', t, .95, 0, .8); return K.play(ctx, bus, 'floor', t, .35, 0, 1.35);
+      case 'tenordrum': if (!K || !K.ready('tom')) return false; return K.play(ctx, bus, 'tom', t, .95, 0, .72);
       case 'toms': if (!K) return false; return K.play(ctx, bus, f && f < 120 ? 'floor' : 'tom', t, .9, 0, f && f < 120 ? f / 92 : Math.max(.6, Math.min(1.6, f / 150)));
       case 'crash': if (!K || !K.ready('crash')) return false; var r = note === '16' ? 1.14 : note === '20' ? .88 : 1;
         K.play(ctx, bus, 'crash', t, .75, -.25, r); K.play(ctx, bus, 'crash', t + .012, .6, .25, r * 1.03); return true;

@@ -4,7 +4,7 @@
 (function () {
   var NAMES = ['kick-p', 'kick-mf', 'kick-f', 'snare-mp', 'snare-mf', 'snare-f', 'snare-ff', 'rim', 'hh', 'hh2', 'hh-open', 'hh-foot', 'ride', 'ride2', 'crash', 'tom', 'floor',
     'br-snare', 'br-snare2', 'br-snare-soft', 'br-swish', 'br-sweep', 'br-ride', 'br-crash', 'br-hh', 'br-tom', 'br-floor', 'crash-bell'];
-  var bufs = {}, started = false, rr = {};
+  var bufs = {}, started = false, rr = {}, open = [];
   function load(ctx, base) {
     if (started) return; started = true;
     NAMES.forEach(function (n) {
@@ -28,7 +28,14 @@
     var g = ctx.createGain(); g.gain.value = gain * (0.93 + Math.random() * 0.07);
     s.connect(g);
     if (pan && ctx.createStereoPanner) { var p = ctx.createStereoPanner(); p.pan.value = pan; g.connect(p); p.connect(dest); } else g.connect(dest);
-    s.start(Math.max(t, ctx.currentTime));
+    var at = Math.max(t, ctx.currentTime);
+    // Hi-hat choke: any closed note or foot chick closes a ringing open hi-hat, as the real cymbals do.
+    if (/^hh/.test(n)) {
+      open.forEach(function (o) { if (o.t < at) { try { o.g.gain.setTargetAtTime(0, at, 0.012); o.s.stop(at + 0.12); } catch (e) {} } });
+      open = open.filter(function (o) { return o.t >= at; });
+      if (n === 'hh-open') open.push({ s: s, g: g, t: at });
+    }
+    s.start(at);
     return true;
   }
   function ready(name) { return !!bufs[name]; }
