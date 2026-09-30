@@ -185,7 +185,31 @@
     claves: function (t) { sine(t, 2500, 0.5, 0.07); },
     castanets: function (t) { noise(t, 0.03, 0.8, 'bandpass', 3200, 4); noise(t + 0.06, 0.03, 0.8, 'bandpass', 3000, 4); },
     maracas: function (t) { noise(t, 0.09, 0.5, 'highpass', 5000); noise(t + 0.16, 0.09, 0.5, 'highpass', 5000); },
-    cowbell: function (t) { var b = ctx.createBiquadFilter(); b.type = 'bandpass'; b.frequency.value = 800; b.Q.value = 1.5; b.connect(env(t, 0.5, 0.35)); [540, 800].forEach(function (f) { var o = ctx.createOscillator(); o.type = 'square'; o.frequency.value = f; o.connect(b); o.start(t); o.stop(t + 0.4); }); },
+    // Cowbells: a bent steel box struck with a stick. A few strong, unevenly spaced modes (the two lowest sit
+    // about a fifth apart, which is the "clank"), each dying at its own rate, plus the stick's click. Bigger bells
+    // are lower and ring longer. Agogô: two welded bells, low and high. 808: the drum machine's two square waves.
+    cowbell: function (t, f, note) {
+      var v = note || 'rock';
+      if (v === '808') {
+        var b = ctx.createBiquadFilter(); b.type = 'bandpass'; b.frequency.value = 2640; b.Q.value = 0.5; var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 3500;
+        var g8 = ctx.createGain(); g8.gain.setValueAtTime(0, t); g8.gain.linearRampToValueAtTime(0.35, t + 0.001); g8.gain.setTargetAtTime(0.1, t + 0.001, 0.012); g8.gain.setTargetAtTime(0, t + 0.03, 0.12);
+        b.connect(lp); lp.connect(g8); g8.connect(bus);
+        [540, 800].forEach(function (fq) { var o = ctx.createOscillator(); o.type = 'square'; o.frequency.value = fq; o.connect(b); o.start(t); o.stop(t + 0.8); });
+        return;
+      }
+      var P = { rock: [560, 0.16, 0.9], mambo: [470, 0.28, 1], chacha: [820, 0.12, 0.8], bongo: [420, 0.34, 1], agogolow: [880, 0.35, 0.7], agogohigh: [1320, 0.3, 0.65] }[v] || [560, 0.16, 0.9];
+      var base = P[0], tau = P[1], vol = P[2], agogo = /agogo/.test(v);
+      var modes = agogo ? [[1, 1, 1], [2.71, .35, .5], [5.2, .12, .25]] : [[1, 1, 1], [1.505, .85, .8], [2.53, .38, .45], [3.87, .22, .3], [5.3, .12, .18]];
+      var sh = ctx.createWaveShaper(), cv = new Float32Array(1024); for (var k = 0; k < 1024; k++) { var x = k / 511.5 - 1; cv[k] = Math.tanh(2.2 * x) / Math.tanh(2.2); } sh.curve = cv;
+      var og = ctx.createGain(); og.gain.value = vol * 0.4; sh.connect(og); og.connect(bus);
+      modes.forEach(function (m, n) {
+        var o = ctx.createOscillator(), g = ctx.createGain(), fq = base * m[0] * (1 + (Math.random() - 0.5) * 0.004);
+        o.frequency.setValueAtTime(fq * 1.012, t); o.frequency.exponentialRampToValueAtTime(fq, t + 0.012);
+        g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(m[1] * 0.45, t + 0.0015); g.gain.setTargetAtTime(0, t + 0.0015, tau * m[2]);
+        o.connect(g); g.connect(sh); o.start(t); o.stop(t + tau * m[2] * 7 + 0.05);
+      });
+      noise(t, 0.012, 0.35 * vol, 'bandpass', agogo ? 5000 : 3800, 1.5, 0.0008);
+    },
     // Sleigh bells: a strap of small closed pellet bells. Each bell rings at its own pitch while the loose
     // pellet inside bounces a few times, so every bell gives a short pitched "chink" with a rattle.
     // Handle hit: fist on the handle, all bells sound together, tight and precise. Shake: looser, with a softer
@@ -221,7 +245,21 @@
     gong: function (t, f) { sine(t, f, 0.6, 5, 'sine', 0, 0, 0.01); sine(t, f * 2, 0.15, 3); sine(t, f * 3.02, 0.08, 2); metal(t, 1, 0.05, f, f * 6); },
     herdenglocken: function (t) { for (var i = 0; i < 9; i++) { var tt = t + Math.random() * 0.9, f = 500 + Math.random() * 500; sine(tt, f, 0.12, 0.5); sine(tt, f * 2.7, 0.05, 0.25); } },
     almglocken: function (t, f) { sine(t, f, 0.4, 1.2); sine(t, f * 2.2, 0.15, 0.6); sine(t, f * 3.4, 0.06, 0.3); },
-    anvil: function (t) { [1, 2.3, 3.9, 5.1].forEach(function (r, i) { sine(t, 820 * r, 0.3 / (i + 1), 1.4 - i * 0.2); }); noise(t, 0.02, 0.4, 'highpass', 3000); },
+    // Anvil: steel struck with a steel hammer. A hard, bright "tink" and a piercing ring made of a few strong
+    // bar modes plus clustered, slightly detuned modes that beat against each other (the clang). Smaller anvils
+    // are higher and ring shorter; a damped stroke has the other hand on the steel.
+    anvil: function (t, f, note) {
+      var v = (note || 'medium').split(':')[0], damp = /damp/.test(note || '');
+      var P = { small: [2350, 0.45], medium: [1560, 0.6], large: [980, 0.8] }[v] || [1560, 0.6], base = P[0], tau = damp ? 0.05 : P[1];
+      var sh = ctx.createWaveShaper(), cv = new Float32Array(1024); for (var k = 0; k < 1024; k++) { var x = k / 511.5 - 1; cv[k] = Math.tanh(1.8 * x) / Math.tanh(1.8); } sh.curve = cv;
+      var og = ctx.createGain(); og.gain.value = 0.45; sh.connect(og); og.connect(bus);
+      [[1, 1, 1], [1.007, .6, .9], [1.41, .35, .5], [2.76, .55, .45], [2.79, .3, .4], [3.62, .2, .25], [5.4, .22, .2], [8.93, .1, .1]].forEach(function (m) {
+        var o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.value = base * m[0];
+        g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(m[1] * 0.3, t + 0.001); g.gain.setTargetAtTime(0, t + 0.001, tau * m[2]);
+        o.connect(g); g.connect(sh); o.start(t); o.stop(t + tau * m[2] * 7 + 0.05);
+      });
+      noise(t, 0.006, 0.6, 'bandpass', 7500, 1.2, 0.0005); noise(t, 0.02, 0.25, 'bandpass', base * 2.2, 3, 0.0008);
+    },
     brakedrum: function (t) { [1, 1.7, 2.9, 4.4].forEach(function (r, i) { sine(t, 620 * r, 0.25 / (i + 1), 0.9); }); noise(t, 0.02, 0.3, 'highpass', 2500); },
     belltree: function (t) { for (var i = 0; i < 12; i++) { var f = 3200 - i * 170; sine(t + i * 0.06, f, 0.12, 1.2); } },
     marktree: function (t) { for (var i = 0; i < 20; i++) { var f = 2400 + i * 160; sine(t + i * 0.04, f, 0.06, 1.5); } },
