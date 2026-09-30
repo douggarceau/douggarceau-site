@@ -119,7 +119,7 @@ h1{margin:4px 0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-
 </head>
 <body>
 <div class="shell">
-<nav class="nav"><a href="index.html">← Amadeus School of Drums</a><span style="display:flex;gap:18px;flex-wrap:wrap"><a href="beats/">Famous beats →</a><a href="rudiments/">Rudiments →</a><a href="gear.html">Gear guide →</a></span></nav>
+<nav class="nav"><a href="index.html">← Amadeus School of Drums</a><span style="display:flex;gap:18px;flex-wrap:wrap"><a href="beats/">Famous beats →</a><a href="rudiments/">Rudiments →</a><a href="grooves/">Grooves →</a><a href="gear.html">Gear guide →</a></span></nav>
 <div id="app"></div>
 </div>
 <template id="tpl">
@@ -151,6 +151,13 @@ h1{margin:4px 0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-
 
 
 
+<div class="kitbar pad-x">
+<span class="lbl">PLAY WITH</span>
+<button type="button" class="chip {{stickCls}}" onClick="{{useSticks}}">STICKS</button><button type="button" class="chip {{brushCls}}" onClick="{{useBrushes}}">BRUSHES</button>
+<span class="lbl" style="margin-left:14px">PADS</span>
+<button type="button" class="chip {{midiCls}}" onClick="{{midiConnect}}">{{midiLabel}}</button>
+<p class="kitnote">{{midiNote}}</p>
+</div>
 <div class="kitbox">
 <!--KIT:BEGIN-->
 <div class="kitstage"><picture><source type="image/webp" srcset="images/kit-front.webp"><img src="images/kit-front.jpg" width="766" height="501" alt="Vintage white marine pearl four-piece drum kit in a music classroom" decoding="async"></picture><button type="button" class="pad round {{crashL.cls}}" aria-label="Crash cymbal" onClick="{{crashL.hit}}" style="left:23.24%;top:7.58%;width:22.19%;height:14.37%"></button><button type="button" class="pad round {{ride.cls}}" aria-label="Ride cymbal" onClick="{{ride.hit}}" style="left:62.4%;top:7.98%;width:22.98%;height:17.96%"></button><button type="button" class="pad round {{hihat.cls}}" aria-label="Hi-hats" onClick="{{hihat.hit}}" style="left:7.18%;top:21.56%;width:18.28%;height:8.78%"></button><button type="button" class="pad {{tom.cls}}" aria-label="Rack tom" onClick="{{tom.hit}}" style="left:43.08%;top:22.95%;width:14.62%;height:19.56%"></button><button type="button" class="pad {{snare.cls}}" aria-label="Snare drum" onClick="{{snare.hit}}" style="left:24.15%;top:36.93%;width:19.58%;height:17.56%"></button><button type="button" class="pad round {{kick.cls}}" aria-label="Bass drum" onClick="{{kick.hit}}" style="left:40.99%;top:43.51%;width:28.2%;height:42.71%"></button><button type="button" class="pad {{floor.cls}}" aria-label="Floor tom" onClick="{{floor.hit}}" style="left:69.84%;top:42.51%;width:19.97%;height:34.33%"></button></div>
@@ -271,14 +278,14 @@ h1{margin:4px 0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-
   window.addEventListener('hashchange',function(){ if(comp&&comp.componentDidMount) comp.componentDidMount(); });
 })();
 </script>
-<script src="sounds/kit/kit.js?v=1"></script>
+<script src="sounds/kit/kit.js?v=2"></script>
 <script>
 class Component extends DCLogic {
   constructor(props) {
     super(props);
     let kit = 'four';
     
-    this.state = { lit: {}, last: '—', playing: false, step: -1, bpm: props.bpm ?? 80, soundOn: true, lesson: 'rock', v: 0, talking: false, kit: kit };
+    this.state = { lit: {}, last: '—', playing: false, step: -1, bpm: props.bpm ?? 80, soundOn: true, lesson: 'rock', v: 0, talking: false, kit: kit, brushes: false, midi: '', midiName: '' };
     const E = ['1', '&', '2', '&', '3', '&', '4', '&'];
     const S16 = ['1', 'e', '&', 'a', '2', 'e', '&', 'a', '3', 'e', '&', 'a', '4', 'e', '&', 'a'];
     const all = (n) => { const o = []; for (let i = 0; i < n; i++) o.push(i); return o; };
@@ -493,7 +500,9 @@ class Component extends DCLogic {
     const v = 0.85 + Math.random() * 0.15;
     const swingNow = (this.lessons[this.state.lesson] || {}).swing, jb = this.jzBuf || {};
     if (window.KitSamples) {
-      const K = { kick: ['kick-f', 1.0], kickSoft: ['kick-p', 0.32], snare: ['snare-f', 0.85], hihat: ['hh', 0.6], hhopen: ['hh-open', 0.6], hhfoot: ['hh-foot', 0.55],
+      const B = this.state.brushes ? { snare: ['br-snare', 0.95], hihat: ['br-hh', 0.6], hhopen: ['br-hh', 0.7], ride: ['br-ride', 0.7], crashL: ['crash', 0.45], crashR: ['crash', 0.45],
+        tom: ['br-tom', 0.9], tom2: ['br-tom', 0.9, 1.12], floor: ['br-floor', 0.95], floor2: ['br-floor', 0.95, 0.9] }[id] : null;
+      const K = B || { kick: ['kick-f', 1.0], kickSoft: ['kick-p', 0.32], snare: ['snare-f', 0.85], hihat: ['hh', 0.6], hhopen: ['hh-open', 0.6], hhfoot: ['hh-foot', 0.55],
         ride: ['ride', 0.55], crashL: ['crash', 0.6], crashR: ['crash', 0.6], tom: ['tom', 0.85], tom2: ['tom', 0.85, 1.12], floor: ['floor', 0.9], floor2: ['floor', 0.9, 0.9] }[id];
       const pan = { hihat: -0.35, hhopen: -0.35, hhfoot: -0.3, crashL: -0.45, snare: -0.12, tom: -0.1, ride: 0.4, floor: 0.35 }[id] || 0;
       if (K && KitSamples.play(ctx, this.bus, K[0], t, K[1] * v, pan, K[2])) return;
@@ -605,6 +614,7 @@ class Component extends DCLogic {
       const L = this.lessons[this.state.lesson];
       const i = this.step % L.steps, t = this.next;
       this.stepIds(i).forEach((x) => this.hit(x, t));
+      if (this.state.brushes && L.swing && i % (L.sub * 2) === 0 && window.KitSamples && this.state.soundOn) KitSamples.play(ctx, this.bus, 'br-swish', t, 0.4, -0.1);
       const delay = Math.max(0, (t - ctx.currentTime) * 1000);
       setTimeout(() => { if (this.playing) this.setState({ step: i }); }, delay);
       this.step += 1;
@@ -645,6 +655,35 @@ class Component extends DCLogic {
     u.onerror = () => this.setState({ talking: false });
     synth.cancel(); synth.speak(u);
     this.setState({ talking: true });
+  }
+  midiConnect() {
+    if (this.state.midi === 'on') return;
+    if (!navigator.requestMIDIAccess) { this.setState({ midi: 'na' }); return; }
+    this.audio();
+    navigator.requestMIDIAccess().then((acc) => {
+      const attach = () => {
+        let names = [];
+        acc.inputs.forEach((inp) => { inp.onmidimessage = (e) => this.midiMsg(e.data); names.push(inp.name); });
+        this.setState({ midi: names.length ? 'on' : 'none', midiName: names.join(', ') });
+      };
+      attach(); acc.onstatechange = attach;
+    }, () => this.setState({ midi: 'denied' }));
+  }
+  midiMsg(d) {
+    if (!d || d.length < 3 || (d[0] & 0xf0) !== 0x90 || d[2] === 0) return;
+    const note = d[1], vel = d[2], br = this.state.brushes;
+    const MAP = { 35: 'kick', 36: 'kick', 37: 'rim', 38: 'snare', 39: 'snare', 40: 'snare', 42: 'hihat', 22: 'hihat', 44: 'hhfoot', 46: 'hhopen', 26: 'hhopen',
+      49: 'crashL', 52: 'crashL', 55: 'crashL', 57: 'crashL', 51: 'ride', 59: 'ride', 53: 'bell', 48: 'tom', 50: 'tom', 47: 'tom', 45: 'tom', 43: 'floor', 41: 'floor', 58: 'floor' };
+    const id = MAP[note]; if (!id) return;
+    const ctx = this.audio(); if (!ctx || !window.KitSamples) return;
+    const g = 0.2 + 0.8 * Math.pow(vel / 127, 1.3), t = ctx.currentTime;
+    let smp;
+    if (id === 'kick') smp = vel < 55 ? 'kick-p' : vel < 95 ? 'kick-mf' : 'kick-f';
+    else if (id === 'snare') smp = br ? (vel < 60 ? 'br-snare-soft' : 'br-snare') : vel < 45 ? 'snare-mp' : vel < 80 ? 'snare-mf' : vel < 110 ? 'snare-f' : 'snare-ff';
+    else smp = { rim: 'rim', hihat: br ? 'br-hh' : 'hh', hhfoot: 'hh-foot', hhopen: br ? 'br-hh' : 'hh-open', crashL: br ? 'br-crash' : 'crash', ride: br ? 'br-ride' : 'ride', bell: 'crash-bell', tom: br ? 'br-tom' : 'tom', floor: br ? 'br-floor' : 'floor' }[id];
+    const pan = { hihat: -0.35, hhopen: -0.35, hhfoot: -0.3, crashL: -0.45, snare: -0.12, rim: -0.12, tom: -0.1, ride: 0.4, bell: 0.4, floor: 0.35 }[id] || 0;
+    KitSamples.play(ctx, this.bus, smp, t, g * (id === 'kick' ? 1 : 0.9), pan);
+    this.light({ rim: 'snare', bell: 'ride' }[id] || id);
   }
   setVar(n) {
     this.hush();
@@ -754,6 +793,16 @@ class Component extends DCLogic {
       kitIs: { four: this.state.kit === 'four', five: this.state.kit === 'five' },
       kits: Object.keys(this.kitDefs).map((k) => ({ label: this.kitDefs[k].label, cls: k === this.state.kit ? 'on' : '', pick: () => this.setKit(k) })),
       kitNote: this.kitDefs[this.state.kit].note,
+      stickCls: this.state.brushes ? '' : 'on', brushCls: this.state.brushes ? 'on' : '',
+      useSticks: () => this.setState({ brushes: false }), useBrushes: () => this.setState({ brushes: true }),
+      midiCls: this.state.midi === 'on' ? 'on' : '',
+      midiLabel: this.state.midi === 'on' ? 'MIDI CONNECTED' : 'CONNECT MIDI PADS',
+      midiConnect: () => this.midiConnect(),
+      midiNote: this.state.midi === 'on' ? ('Playing from ' + (this.state.midiName || 'your MIDI device') + '. Hit harder for louder, brighter hits.') :
+        this.state.midi === 'none' ? 'No MIDI device found. Plug in your pads or e-kit by USB, then try again.' :
+        this.state.midi === 'na' ? 'This browser cannot read MIDI. Use Chrome or Edge on a computer.' :
+        this.state.midi === 'denied' ? 'MIDI access was blocked. Allow it in the browser and try again.' :
+        'Plug in drum pads or an electronic kit (USB MIDI) and play these real drum sounds.',
       last: this.state.last,
       feels: this.order.map((k, n) => ({ n: n + 1, label: this.lessons[k].label, cls: k === this.state.lesson ? 'on' : '', pick: () => this.setLesson(k) })),
       vars: L.vars.map((x, n) => ({ label: String(n + 1), aria: 'Variation ' + (n + 1) + ': ' + x.desc, pick: () => this.setVar(n), cls: n === this.state.v ? 'on' : '' })),

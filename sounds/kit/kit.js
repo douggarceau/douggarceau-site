@@ -2,7 +2,8 @@
    KitSamples.load(ctx, baseUrl) starts fetching; KitSamples.play(...) returns false until a sample is ready,
    so callers can fall back to their synthesized sound. */
 (function () {
-  var NAMES = ['kick-p', 'kick-mf', 'kick-f', 'snare-mp', 'snare-mf', 'snare-f', 'snare-ff', 'rim', 'hh', 'hh2', 'hh-open', 'hh-foot', 'ride', 'ride2', 'crash', 'tom', 'floor'];
+  var NAMES = ['kick-p', 'kick-mf', 'kick-f', 'snare-mp', 'snare-mf', 'snare-f', 'snare-ff', 'rim', 'hh', 'hh2', 'hh-open', 'hh-foot', 'ride', 'ride2', 'crash', 'tom', 'floor',
+    'br-snare', 'br-snare2', 'br-snare-soft', 'br-swish', 'br-sweep', 'br-ride', 'br-crash', 'br-hh', 'br-tom', 'br-floor', 'crash-bell'];
   var bufs = {}, started = false, rr = {};
   function load(ctx, base) {
     if (started) return; started = true;
@@ -13,7 +14,7 @@
     });
   }
   // Round-robin between alternates so repeated notes do not sound machine-gunned.
-  var ALT = { hh: ['hh', 'hh2'], ride: ['ride', 'ride2'] };
+  var ALT = { hh: ['hh', 'hh2'], ride: ['ride', 'ride2'], 'br-snare': ['br-snare', 'br-snare2'] };
   function pick(n) { var a = ALT[n]; if (!a) return n; rr[n] = ((rr[n] || 0) + 1) % a.length; return bufs[a[rr[n]]] ? a[rr[n]] : n; }
   function play(ctx, dest, name, t, gain, pan, rate) {
     var n = pick(name), buf = bufs[n];
