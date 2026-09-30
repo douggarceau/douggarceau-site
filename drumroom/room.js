@@ -93,7 +93,7 @@
     congas: function (t, f) { sine(t, f * 1.25, 0.7, 0.45, 'sine', f, 0.04); sine(t, f * 2.3, 0.1, 0.12); noise(t, 0.02, 0.2, 'bandpass', 2500, 2); },
     fielddrum: function (t) { sine(t, 200, 0.5, 0.15, 'triangle', 150, 0.05); noise(t, 0.4, 0.8, 'bandpass', 2500, 0.5); },
     tenordrum: function (t) { sine(t, 150, 0.8, 0.8, 'sine', 110, 0.08); noise(t, 0.08, 0.3, 'lowpass', 1500); },
-    rototoms: function (t, f) { sine(t, f * 1.2, 0.7, 0.6, 'sine', f, 0.05); noise(t, 0.03, 0.2, 'bandpass', f * 5, 1.5); },
+    rototoms: function (t, f) { sine(t, f * 1.08, 1.0, 1.8, 'sine', f, 0.06); sine(t, f * 1.59, 0.28, 1.1); sine(t, f * 2.14, 0.12, 0.7); noise(t, 0.035, 0.35, 'bandpass', f * 5, 1.5); },
     framedrum: function (t) { sine(t, 120, 0.7, 0.7, 'sine', 90, 0.1); noise(t, 0.05, 0.15, 'lowpass', 1200); },
     timbales: function (t, f) { sine(t, f, 0.5, 0.5); sine(t, f * 1.6, 0.25, 0.35); metal(t, 0.25, 0.08, f / 2, 3000); noise(t, 0.02, 0.3, 'bandpass', 4000, 2); },
     lionsroar: function (t) { var o = ctx.createOscillator(); o.type = 'sawtooth'; o.frequency.setValueAtTime(90, t); o.frequency.linearRampToValueAtTime(260, t + 1.1); o.frequency.linearRampToValueAtTime(120, t + 1.5);
@@ -184,6 +184,9 @@
       case 'snareroll': return real('snare', t, f, '__roll');
       // Field drum: a deep snare, so the real snare recorded louder and tuned down; tenor drum: snares off, a deep tom.
       case 'fielddrum': if (!K || !K.ready('snare-ff')) return false; K.play(ctx, bus, 'snare-ff', t, .95, 0, .8); return K.play(ctx, bus, 'floor', t, .35, 0, 1.35);
+      // Roto-toms: the real tom tuned to each pitch, with a long singing tone added for their open, ringing sound.
+      case 'rototoms': if (!K || !K.ready('tom')) return false; K.play(ctx, bus, 'tom', t, 1, 0, Math.max(.8, Math.min(2.6, f / 125)));
+        sine(t, f * 1.06, 0.55, 1.9, 'sine', f, 0.07); sine(t, f * 1.59, 0.12, 1.0); return true;
       case 'tenordrum': if (!K || !K.ready('tom')) return false; return K.play(ctx, bus, 'tom', t, .95, 0, .72);
       case 'toms': if (!K) return false; return K.play(ctx, bus, f && f < 120 ? 'floor' : 'tom', t, .9, 0, f && f < 120 ? f / 92 : Math.max(.6, Math.min(1.6, f / 150)));
       case 'crash': if (!K || !K.ready('crash')) return false; var r = note === '16' ? 1.14 : note === '20' ? .88 : 1;
