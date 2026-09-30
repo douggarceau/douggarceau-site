@@ -135,6 +135,7 @@
       var dd = noiseBuf.getChannelData(0); for (var i = 0; i < len; i++) dd[i] = Math.random() * 2 - 1;
       var comp = ctx.createDynamicsCompressor(); comp.threshold.value = -14; comp.ratio.value = 4;
       var m = ctx.createGain(); m.gain.value = 0.85; comp.connect(m); m.connect(ctx.destination); bus = comp;
+      if (window.KitSamples) KitSamples.load(ctx, '../sounds/kit/');
     }
     if (ctx.state === 'suspended') ctx.resume();
     return ctx;
@@ -145,6 +146,11 @@
     return gn;
   }
   function snare(t, v, pan, short) {
+    if (window.KitSamples) {
+      var n = v >= 0.9 ? 'snare-f' : v >= 0.4 ? 'snare-mp' : 'snare-mp';
+      var g = v >= 0.9 ? 0.9 : v >= 0.4 ? 0.55 : v * 1.6;
+      if (KitSamples.play(ctx, bus, n, t, g, pan * 0.6)) return;
+    }
     var dur = short ? 0.1 : 0.22;
     var o = ctx.createOscillator(); o.type = 'triangle'; o.frequency.setValueAtTime(250, t); o.frequency.exponentialRampToValueAtTime(185, t + 0.04);
     o.connect(out(t, 0.5 * v, 0.1, pan)); o.start(t); o.stop(t + 0.15);

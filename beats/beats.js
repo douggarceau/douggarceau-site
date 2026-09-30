@@ -117,6 +117,7 @@
       var comp = ctx.createDynamicsCompressor(); comp.threshold.value = -14; comp.ratio.value = 4;
       var master = ctx.createGain(); master.gain.value = 0.8; comp.connect(master); master.connect(ctx.destination);
       bus = ctx.createGain(); bus.connect(comp);
+      if (window.KitSamples) KitSamples.load(ctx, '../sounds/kit/');
       fetch('../sounds/ride.mp3?v=3').then(function (r) { return r.arrayBuffer(); }).then(function (b) { return ctx.decodeAudioData(b); }).then(function (buf) { rideBuf = buf; }).catch(function () {});
     }
     if (ctx.state === 'suspended') ctx.resume();
@@ -140,6 +141,12 @@
   }
   function hit(id, t, a) {
     var v = (0.85 + Math.random() * 0.15) * (a === 1 ? 1 : a === 2 ? 1.25 : 0.55);
+    if (window.KitSamples) {
+      var K = { kick: ['kick-f', 0.95], snare: [a === 0 ? 'snare-mp' : 'snare-f', a === 0 ? 0.5 : 0.8], rim: ['rim', 0.8], hihat: ['hh', 0.55], hhopen: ['hh-open', 0.55],
+        hhfoot: ['hh-foot', 0.5], ride: ['ride', 0.5], tom: ['tom', 0.85], floor: ['floor', 0.9] }[id];
+      var pan = { hihat: -0.35, hhopen: -0.35, hhfoot: -0.3, snare: -0.12, rim: -0.12, ride: 0.4, floor: 0.35, tom: -0.1 }[id] || 0;
+      if (K && KitSamples.play(ctx, bus, K[0], t, K[1] * v / (a === 2 ? 1.25 : a === 0 ? 0.55 : 1) * (a === 2 ? 1.15 : 1), pan)) return;
+    }
     if (id === 'kick') { tone(t, 'sine', 184, 55, 0.09, 0.55, v); tone(t, 'triangle', 104, 52, 0.12, 0.25, 0.35 * v); noise(t, 0.012, 0.35 * v, 'highpass', 2500); }
     else if (id === 'snare') { tone(t, 'triangle', 240, 180, 0.04, 0.12, 0.55 * v); noise(t, 0.24, 0.9 * v, 'bandpass', 4200, 0.6, 1400); noise(t, 0.03, 0.4 * v, 'highpass', 5000); }
     else if (id === 'rim') { tone(t, 'square', 1650, 1500, 0.01, 0.05, 0.25 * v); noise(t, 0.04, 0.5 * v, 'bandpass', 2200, 3); }

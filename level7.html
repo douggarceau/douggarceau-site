@@ -271,6 +271,7 @@ h1{margin:4px 0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-
   window.addEventListener('hashchange',function(){ if(comp&&comp.componentDidMount) comp.componentDidMount(); });
 })();
 </script>
+<script src="sounds/kit/kit.js?v=1"></script>
 <script>
 class Component extends DCLogic {
   constructor(props) {
@@ -436,6 +437,7 @@ class Component extends DCLogic {
       this.bus = ctx.createGain();
       this.bus.connect(comp);
       this.bus.connect(verb); verb.connect(wet); wet.connect(comp);
+      if (window.KitSamples) KitSamples.load(ctx, 'sounds/kit/');
       const dec = (bytes, key) => bytes && bytes.then((b) => ctx.decodeAudioData(b.slice(0))).then((buf) => { this[key] = buf; }).catch(() => {});
       dec(this.rideBytes, 'rideBuf'); dec(this.jazzBytes, 'jazzRideBuf'); dec(this.jazzSnBytes, 'jazzSnareBuf'); this.jzBuf = {}; Object.keys(this.jz || {}).forEach((k) => this.jz[k].then((b) => ctx.decodeAudioData(b.slice(0))).then((buf) => { this.jzBuf[k] = buf; }).catch(() => {}));
     }
@@ -490,6 +492,12 @@ class Component extends DCLogic {
     const t = Math.max(when || 0, ctx.currentTime + 0.005);
     const v = 0.85 + Math.random() * 0.15;
     const swingNow = (this.lessons[this.state.lesson] || {}).swing, jb = this.jzBuf || {};
+    if (window.KitSamples) {
+      const K = { kick: ['kick-f', 1.0], kickSoft: ['kick-p', 0.32], snare: ['snare-f', 0.85], hihat: ['hh', 0.6], hhopen: ['hh-open', 0.6], hhfoot: ['hh-foot', 0.55],
+        ride: ['ride', 0.55], crashL: ['crash', 0.6], crashR: ['crash', 0.6], tom: ['tom', 0.85], tom2: ['tom', 0.85, 1.12], floor: ['floor', 0.9], floor2: ['floor', 0.9, 0.9] }[id];
+      const pan = { hihat: -0.35, hhopen: -0.35, hhfoot: -0.3, crashL: -0.45, snare: -0.12, tom: -0.1, ride: 0.4, floor: 0.35 }[id] || 0;
+      if (K && KitSamples.play(ctx, this.bus, K[0], t, K[1] * v, pan, K[2])) return;
+    }
     const jkey = { kick: 'kick', kickSoft: 'kick', tom: 'tom', tom2: 'tom', floor: 'floor', floor2: 'floor' }[id];
     if (swingNow && jkey && jb[jkey]) {
       const rate = { tom: 1.335, tom2: 1.16, floor: 1, floor2: 0.86 }[id] || (jkey === 'kick' ? 1.12 : 1);
