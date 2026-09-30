@@ -139,6 +139,37 @@
     var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 8500; var tube = ctx.createBiquadFilter(); tube.type = 'peaking'; tube.frequency.value = 1300; tube.Q.value = 1.2; tube.gain.value = 5;
     var g = ctx.createGain(); g.gain.value = 0.6 * vol; src.connect(lp); lp.connect(tube); tube.connect(g); g.connect(bus); src.start(t);
   }
+  // Noise whose loudness, pitch and flutter follow a speed curve sp[] (0..1) over dur seconds.
+  function speedNoise(t, dur, sp, f0, f1, q, vol, fl0, fl1) {
+    var src = ctx.createBufferSource(); src.buffer = noiseBuf; src.loop = true;
+    var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = q; var bp2 = ctx.createBiquadFilter(); bp2.type = 'bandpass'; bp2.Q.value = q * 2;
+    var fc = new Float32Array(sp.length), fc2 = new Float32Array(sp.length), gc = new Float32Array(sp.length), lc = new Float32Array(sp.length);
+    for (var i = 0; i < sp.length; i++) { fc[i] = f0 + (f1 - f0) * sp[i]; fc2[i] = fc[i] * 2.3; gc[i] = vol * 0.35 * Math.pow(sp[i], 1.3); lc[i] = fl0 + (fl1 - fl0) * sp[i]; }
+    bp.frequency.setValueCurveAtTime(fc, t, dur); bp2.frequency.setValueCurveAtTime(fc2, t, dur);
+    var g = ctx.createGain(); g.gain.setValueCurveAtTime(gc, t, dur);
+    var am = ctx.createGain(); am.gain.value = 0.75; var lfo = ctx.createOscillator(); lfo.frequency.setValueCurveAtTime(lc, t, dur); var lg = ctx.createGain(); lg.gain.value = 0.25; lfo.connect(lg); lg.connect(am.gain);
+    var g2 = ctx.createGain(); g2.gain.value = 0.45;
+    src.connect(bp); bp.connect(am); src.connect(bp2); bp2.connect(g2); g2.connect(am); am.connect(g); g.connect(bus);
+    src.start(t, Math.random() * 2); src.stop(t + dur + 0.05); lfo.start(t); lfo.stop(t + dur + 0.05);
+  }
+  function blast(t, vol, far) {
+    var sh = ctx.createWaveShaper(), cv = new Float32Array(2048); for (var k = 0; k < 2048; k++) { var x = k / 1023.5 - 1; cv[k] = Math.tanh(4 * x) / Math.tanh(4); } sh.curve = cv;
+    var out = ctx.createGain(); out.gain.value = vol * (far ? 0.7 : 1); var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = far ? 450 : 16000;
+    sh.connect(lp); lp.connect(out); out.connect(bus);
+    // echoes: darker, later copies of the blast
+    var echoIn = ctx.createGain(); echoIn.gain.value = 1; lp.connect(echoIn);
+    [[0.32, .45, 900], [0.75, .32, 700], [1.3, .22, 500], [2.1, .14, 400], [3.0, .08, 300]].forEach(function (e) {
+      var d = ctx.createDelay(4); d.delayTime.value = e[0] * (far ? 1.3 : 1); var el = ctx.createBiquadFilter(); el.type = 'lowpass'; el.frequency.value = e[2]; var eg = ctx.createGain(); eg.gain.value = e[1] * (far ? 1.4 : 1);
+      echoIn.connect(d); d.connect(el); el.connect(eg); eg.connect(bus);
+    });
+    function src(dur, type, fq, q, peak, tau, att) { var n = ctx.createBufferSource(); n.buffer = noiseBuf; var fl = ctx.createBiquadFilter(); fl.type = type; fl.frequency.value = fq; fl.Q.value = q || 0.7; var g = ctx.createGain(); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(peak, t + (att || 0.0008)); g.gain.setTargetAtTime(0, t + (att || 0.0008), tau); n.connect(fl); fl.connect(g); g.connect(sh); n.start(t, Math.random() * 1.5); n.stop(t + dur); }
+    if (!far) { src(0.2, 'highpass', 600, 0.7, 1.6, 0.02); src(0.4, 'bandpass', 1800, 0.6, 0.9, 0.06); }
+    src(3, 'lowpass', far ? 180 : 260, 0.9, 1.4, far ? 0.9 : 0.55, far ? 0.03 : 0.002);
+    src(4.5, 'lowpass', 110, 1.2, 0.8, 1.4, 0.05);
+    var o = ctx.createOscillator(), og = ctx.createGain(); o.frequency.setValueAtTime(far ? 55 : 95, t); o.frequency.exponentialRampToValueAtTime(26, t + 0.9);
+    var oa = far ? 0.03 : 0.004; og.gain.setValueAtTime(0, t); og.gain.linearRampToValueAtTime(far ? 0.8 : 1.3, t + oa); og.gain.setTargetAtTime(0, t + oa, far ? 0.8 : 0.5);
+    o.connect(og); og.connect(sh); o.start(t); o.stop(t + 4);
+  }
   var VIBE = { pedal: 'down', ring: [] };
   function setPedal(v, card) {
     VIBE.pedal = v;
@@ -478,14 +509,117 @@
       var P = { slow: [7.5, 170], medium: [5.5, 200], quick: [2.4, 320] }[v] || [5.5, 200];
       rain(t, P[0], P[1], 1, false);
     },
-    windmachine: function (t) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.Q.value = 3;
-      f.frequency.setValueAtTime(300, t); f.frequency.linearRampToValueAtTime(1100, t + 1.5); f.frequency.linearRampToValueAtTime(400, t + 3); s.connect(f); f.connect(env(t, 0.7, 3.2, 1)); s.start(t); s.stop(t + 3.3); },
-    siren: function (t) { var o = ctx.createOscillator(); o.type = 'triangle'; o.frequency.setValueAtTime(200, t); o.frequency.exponentialRampToValueAtTime(1200, t + 1.6); o.frequency.exponentialRampToValueAtTime(300, t + 3);
-      o.connect(env(t, 0.3, 3.1, 0.3)); o.start(t); o.stop(t + 3.2); },
-    cannon: function (t) { sine(t, 55, 1, 2.5, 'sine', 30, 0.5, 0.005); noise(t, 1.8, 1, 'lowpass', 500); noise(t, 0.1, 0.6, 'lowpass', 3000); },
-    taxihorn: function (t) { [370, 466].forEach(function (f) { var o = ctx.createOscillator(); o.type = 'sawtooth'; o.frequency.value = f; var fl = ctx.createBiquadFilter(); fl.type = 'lowpass'; fl.frequency.value = 1800; o.connect(fl); fl.connect(env(t, 0.18, 0.6, 0.02)); o.start(t); o.stop(t + 0.65); }); },
-    typewriter: function (t) { for (var i = 0; i < 7; i++) noise(t + i * 0.11 + Math.random() * 0.03, 0.02, 0.7, 'bandpass', 2500, 2); sine(t + 0.95, 2100, 0.3, 1.2); },
-    slidewhistle: function (t) { var o = ctx.createOscillator(); o.frequency.setValueAtTime(600, t); o.frequency.exponentialRampToValueAtTime(1800, t + 0.6); o.frequency.exponentialRampToValueAtTime(700, t + 1.2); o.connect(env(t, 0.25, 1.3, 0.05)); o.start(t); o.stop(t + 1.4); },
+    // Wind machine: a slatted wooden drum turned by a crank against a canvas sheet. Speed is everything: faster
+    // turning makes the whoosh louder and higher, and the slats passing the canvas add a soft flutter whose rate
+    // follows the speed. Lengths from a single gust to a full storm of gusts.
+    windmachine: function (t, f, note) {
+      var v = note || 'medium', D = { gust: 2.2, medium: 4.5, long: 8, storm: 12 }[v] || 4.5, N = 200, sp = new Float32Array(N);
+      for (var i = 0; i < N; i++) { var x = i / (N - 1), e = Math.sin(Math.PI * Math.pow(x, v === 'gust' ? 0.8 : 0.7));
+        if (v === 'storm') e = 0.45 * e + 0.55 * e * Math.pow(Math.abs(Math.sin(x * Math.PI * 4.5 + 0.4)), 1.5);
+        if (v === 'long') e *= 0.85 + 0.15 * Math.sin(x * Math.PI * 3);
+        sp[i] = Math.max(0.0001, e); }
+      speedNoise(t, D, sp, 260, 1500, 0.8, 1.6, 7, 22);
+    },
+    // Siren: a hand-cranked mechanical siren. A spinning rotor chops air through the ports, so the pitch is the
+    // chopping rate: a buzzy, breathy tone. The heavy rotor rises slowly while cranked and coasts down for
+    // seconds after it is let go; the brake stops it fast.
+    siren: function (t, f, note) {
+      var v = note || 'wail', P = { wail: [2.6, 0, 820, 5.5], whoop: [0.8, 0, 560, 2.2], brake: [2.6, 1.2, 820, 0.45] }[v] || [2.6, 0, 820, 5.5];
+      var up = P[0], hold = P[1], top = P[2], down = P[3], end = t + up + hold + down + 0.3;
+      var o = ctx.createOscillator(), h = 24, re = new Float32Array(h), im = new Float32Array(h);
+      for (var k = 1; k < h; k++) im[k] = (k % 2 ? 1 : 0.55) / Math.pow(k, 0.9);
+      o.setPeriodicWave(ctx.createPeriodicWave(re, im));
+      var fq = o.frequency; fq.setValueAtTime(70, t); fq.setTargetAtTime(top, t, up / 2.2); fq.setValueAtTime(top * 0.98, t + up + hold);
+      fq.setTargetAtTime(v === 'brake' ? 60 : 55, t + up + hold, down / (v === 'brake' ? 2.5 : 3));
+      var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.Q.value = 2; lp.frequency.setValueAtTime(500, t); lp.frequency.setTargetAtTime(top * 4, t, up / 2.2); lp.frequency.setTargetAtTime(400, t + up + hold, down / 3);
+      var g = ctx.createGain(); g.gain.setValueAtTime(0.0001, t); g.gain.setTargetAtTime(0.24, t, up / 2.5); g.gain.setTargetAtTime(0, t + up + hold, down / 3);
+      o.connect(lp); lp.connect(g); g.connect(bus); o.start(t); o.stop(end);
+      var air = ctx.createBufferSource(); air.buffer = noiseBuf; air.loop = true; var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = 1.5;
+      bp.frequency.setValueAtTime(300, t); bp.frequency.setTargetAtTime(top * 3, t, up / 2.2); bp.frequency.setTargetAtTime(250, t + up + hold, down / 3);
+      var ag = ctx.createGain(); ag.gain.setValueAtTime(0.0001, t); ag.gain.setTargetAtTime(0.18, t, up / 2.5); ag.gain.setTargetAtTime(0, t + up + hold, down / 3.5);
+      air.connect(bp); bp.connect(ag); ag.connect(bus); air.start(t, Math.random() * 2); air.stop(end);
+    },
+    // Cannon: the muzzle blast is a violent, distorted crack, then a huge low boom that drops in pitch, a
+    // rumbling tail, and echoes coming back off the landscape. From far away the crack is lost: you hear a dark,
+    // softer boom and a long roll. A volley is several guns firing a moment apart.
+    cannon: function (t, f, note) {
+      var v = note || 'near';
+      if (v === 'volley') { [0, 0.42, 0.95].forEach(function (o, k) { blast(t + o, k === 1 ? 0.8 : 1, false); }); return; }
+      blast(t, 1, v === 'distant');
+    },
+    // Taxi horns: squeeze-bulb horns, a reed buzzing into a small brass bell. Nasal and buzzy; the pitch scoops
+    // up as the bulb is squeezed and sags as the air runs out. Klaxon: the old motor horn, "ah-oo-gah", its pitch
+    // and vowel swinging as the motor spins up and down. Modern car horn: two electric horns sounding together.
+    taxihorn: function (t, f, note) {
+      var v = note || 'mid';
+      function horn(tt, fq, dur, vol, glide, form) {
+        var o = ctx.createOscillator(), h = 30, re = new Float32Array(h), im = new Float32Array(h); for (var k = 1; k < h; k++) im[k] = 1 / Math.pow(k, 0.75); o.setPeriodicWave(ctx.createPeriodicWave(re, im));
+        if (glide) o.frequency.setValueCurveAtTime(glide, tt, dur); else { o.frequency.setValueAtTime(fq * 0.92, tt); o.frequency.exponentialRampToValueAtTime(fq, tt + 0.045); o.frequency.setValueAtTime(fq, tt + dur * 0.7); o.frequency.exponentialRampToValueAtTime(fq * 0.96, tt + dur); }
+        var hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 300;
+        var f1 = ctx.createBiquadFilter(); f1.type = 'peaking'; f1.frequency.value = form || 1900; f1.Q.value = 2; f1.gain.value = 12;
+        var f2 = ctx.createBiquadFilter(); f2.type = 'peaking'; f2.frequency.value = (form || 1900) * 1.6; f2.Q.value = 2.5; f2.gain.value = 7;
+        var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 6000;
+        var g = ctx.createGain(); g.gain.setValueAtTime(0, tt); g.gain.linearRampToValueAtTime(vol, tt + 0.02); g.gain.setValueAtTime(vol, tt + dur - 0.06); g.gain.linearRampToValueAtTime(0, tt + dur);
+        o.connect(hp); hp.connect(f1); f1.connect(f2); f2.connect(lp); lp.connect(g); g.connect(bus); o.start(tt); o.stop(tt + dur + 0.02);
+        return f1;
+      }
+      if (v === 'high') horn(t, 700, 0.32, 0.16);
+      else if (v === 'mid') horn(t, 520, 0.36, 0.17);
+      else if (v === 'low') horn(t, 370, 0.4, 0.18, null, 1500);
+      else if (v === 'klaxon') {
+        var N = 60, gl = new Float32Array(N); for (var i = 0; i < N; i++) { var x = i / (N - 1); gl[i] = 230 + 330 * Math.sin(Math.PI * Math.min(1, x * 1.35)) * (x < 0.74 ? 1 : 0.75); }
+        var fm = horn(t, 0, 1.0, 0.17, gl, 900); fm.frequency.setValueAtTime(700, t); fm.frequency.linearRampToValueAtTime(1500, t + 0.3); fm.frequency.linearRampToValueAtTime(800, t + 0.65); fm.frequency.linearRampToValueAtTime(1200, t + 1);
+      }
+      else if (v === 'car') { horn(t, 415, 0.55, 0.11, null, 2200); horn(t, 518, 0.55, 0.1, null, 2400); }
+    },
+    // Typewriter: each key sends a steel typebar slamming into the rubber platen (a sharp clack with a metallic
+    // ring and a thud through the frame), then the escapement ticks the carriage along. The space bar only moves
+    // the carriage (a dull thunk). Near the margin a small bell dings. The carriage return lever ratchets the paper
+    // up a line, then the carriage slides back and slams.
+    typewriter: function (t, f, note) {
+      var v = note || 'typing';
+      function key(tt, a) {
+        noise(tt - 0.02, 0.006, a * 0.15, 'bandpass', 1500, 1.5, 0.0005);
+        noise(tt, 0.007, a * 0.9, 'bandpass', 2800 + Math.random() * 800, 1.1, 0.0003);
+        ring(tt, 1150 + Math.random() * 60, a * 0.18, 0.018); ring(tt, 2450 + Math.random() * 100, a * 0.12, 0.012); ring(tt, 3900, a * 0.06, 0.008);
+        ring(tt, 170, a * 0.35, 0.025); noise(tt + 0.018, 0.004, a * 0.25, 'highpass', 4000, 0.7, 0.0003);
+      }
+      function space(tt) { ring(tt, 240, 0.35, 0.03); noise(tt, 0.02, 0.35, 'lowpass', 1400, 0.7, 0.001); noise(tt + 0.02, 0.004, 0.25, 'highpass', 4000, 0.7, 0.0003); }
+      function bell(tt) { ring(tt, 2780, 0.3, 0.45); ring(tt, 2780 * 2.41, 0.08, 0.18); ring(tt, 2780 * 4.1, 0.03, 0.08); noise(tt, 0.004, 0.2, 'highpass', 5000, 0.7, 0.0003); }
+      function ret(tt) {
+        for (var i = 0; i < 3; i++) { noise(tt + i * 0.045, 0.006, 0.5, 'bandpass', 2200, 2, 0.0003); ring(tt + i * 0.045, 900, 0.1, 0.01); }
+        var sN = ctx.createBufferSource(); sN.buffer = noiseBuf; var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.setValueAtTime(900, tt + 0.15); bp.frequency.linearRampToValueAtTime(1600, tt + 0.5); bp.Q.value = 1.2;
+        var g = ctx.createGain(); g.gain.setValueAtTime(0, tt + 0.15); g.gain.linearRampToValueAtTime(0.25, tt + 0.45); g.gain.linearRampToValueAtTime(0, tt + 0.52);
+        sN.connect(bp); bp.connect(g); g.connect(bus); sN.start(tt + 0.15, Math.random()); sN.stop(tt + 0.55);
+        ring(tt + 0.52, 150, 0.7, 0.05); ring(tt + 0.52, 820, 0.3, 0.04); ring(tt + 0.52, 1900, 0.15, 0.03); noise(tt + 0.52, 0.03, 0.8, 'bandpass', 1500, 0.8, 0.0005);
+      }
+      if (v === 'typing') { var at = t; for (var i = 0; i < 8; i++) { if (i === 4) { space(at); at += 0.1 + Math.random() * 0.05; continue; } key(at, 0.75 + Math.random() * 0.25); at += 0.08 + Math.random() * 0.07; } }
+      else if (v === 'key') key(t, 1);
+      else if (v === 'space') space(t);
+      else if (v === 'bell') bell(t);
+      else if (v === 'return') ret(t);
+    },
+    // Slide whistle: a breathy, flute-like tone whose pitch follows the plunger. Pushing the plunger in shortens
+    // the tube (pitch rises); pulling it out lowers it. The shape of the slide is the whole joke.
+    slidewhistle: function (t, f, note) {
+      var v = note || 'up', lo = 560, hi = 2100, S = {
+        up: [0.55, function (x) { return Math.pow(x, 0.8); }],
+        down: [0.55, function (x) { return 1 - Math.pow(x, 0.8); }],
+        updown: [1.1, function (x) { return Math.sin(Math.PI * x); }],
+        wobble: [1.3, function (x) { return 0.45 + 0.2 * Math.sin(x * Math.PI * 2 * 7) * (0.4 + 0.6 * x); }],
+        bomb: [2.4, function (x) { return 1 - Math.pow(x, 1.6); }],
+        zip: [0.18, function (x) { return x; }]
+      }[v] || null; if (!S) return;
+      var dur = S[0], N = 120, c = new Float32Array(N); for (var i = 0; i < N; i++) c[i] = lo * Math.pow(hi / lo, Math.max(0, Math.min(1, S[1](i / (N - 1)))));
+      var o = ctx.createOscillator(), o2 = ctx.createOscillator(), g2 = ctx.createGain(); o.frequency.setValueCurveAtTime(c, t, dur);
+      var c2 = new Float32Array(N); for (i = 0; i < N; i++) c2[i] = c[i] * 2; o2.frequency.setValueCurveAtTime(c2, t, dur); g2.gain.value = 0.12;
+      var vib = ctx.createOscillator(), vg = ctx.createGain(); vib.frequency.value = 5.5; vg.gain.value = 6; vib.connect(vg); vg.connect(o.frequency);
+      var g = ctx.createGain(); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(0.22, t + 0.03); g.gain.setValueAtTime(0.22, t + dur - 0.05); g.gain.linearRampToValueAtTime(0, t + dur);
+      o.connect(g); o2.connect(g2); g2.connect(g); g.connect(bus);
+      var br = ctx.createBufferSource(); br.buffer = noiseBuf; var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = 3; bp.frequency.setValueCurveAtTime(c, t, dur); var bg = ctx.createGain();
+      bg.gain.setValueAtTime(0, t); bg.gain.linearRampToValueAtTime(0.1, t + 0.02); bg.gain.setValueAtTime(0.1, t + dur - 0.05); bg.gain.linearRampToValueAtTime(0, t + dur); br.connect(bp); bp.connect(bg); bg.connect(bus);
+      [o, o2, vib].forEach(function (x) { x.start(t); x.stop(t + dur + 0.02); }); br.start(t, Math.random()); br.stop(t + dur + 0.02);
+    },
     birdwhistle: function (t) { for (var i = 0; i < 5; i++) { var o = ctx.createOscillator(), tt = t + i * 0.16; o.frequency.setValueAtTime(2600, tt); o.frequency.exponentialRampToValueAtTime(3400, tt + 0.07); o.frequency.exponentialRampToValueAtTime(2800, tt + 0.12); o.connect(env(tt, 0.2, 0.13, 0.01)); o.start(tt); o.stop(tt + 0.15); } },
     oceandrum: function (t) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.frequency.value = 3000; f.Q.value = 0.5; s.connect(f); f.connect(env(t, 0.5, 3, 1.3)); s.start(t); s.stop(t + 3.1); },
   };
