@@ -620,8 +620,61 @@
       bg.gain.setValueAtTime(0, t); bg.gain.linearRampToValueAtTime(0.1, t + 0.02); bg.gain.setValueAtTime(0.1, t + dur - 0.05); bg.gain.linearRampToValueAtTime(0, t + dur); br.connect(bp); bp.connect(bg); bg.connect(bus);
       [o, o2, vib].forEach(function (x) { x.start(t); x.stop(t + dur + 0.02); }); br.start(t, Math.random()); br.stop(t + dur + 0.02);
     },
-    birdwhistle: function (t) { for (var i = 0; i < 5; i++) { var o = ctx.createOscillator(), tt = t + i * 0.16; o.frequency.setValueAtTime(2600, tt); o.frequency.exponentialRampToValueAtTime(3400, tt + 0.07); o.frequency.exponentialRampToValueAtTime(2800, tt + 0.12); o.connect(env(tt, 0.2, 0.13, 0.01)); o.start(tt); o.stop(tt + 0.15); } },
-    oceandrum: function (t) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.frequency.value = 3000; f.Q.value = 0.5; s.connect(f); f.connect(env(t, 0.5, 3, 1.3)); s.start(t); s.stop(t + 3.1); },
+    // Bird whistles. Water warbler: a whistle half full of water; the bubbles make the pitch jump and gurgle
+    // like a nightingale. Cuckoo: two hollow notes falling a third. Songbird: quick bright chirps and a trill.
+    // Twist call: a metal stem turned in a wooden barrel, rubbed with rosin, gives scratchy squeaks. Owl: a low,
+    // breathy "hoo, hoo-hoo".
+    birdwhistle: function (t, f, note) {
+      var v = note || 'warbler', i, at;
+      function tone(tt, dur, curve, vol, breath, h3) {
+        var o = ctx.createOscillator(); o.frequency.setValueCurveAtTime(curve, tt, dur);
+        var g = ctx.createGain(); g.gain.setValueAtTime(0, tt); g.gain.linearRampToValueAtTime(vol, tt + Math.min(0.02, dur / 4)); g.gain.setValueAtTime(vol, tt + dur * 0.75); g.gain.linearRampToValueAtTime(0, tt + dur);
+        o.connect(g); g.connect(bus); o.start(tt); o.stop(tt + dur + 0.02);
+        if (h3) { var o3 = ctx.createOscillator(), c3 = new Float32Array(curve.length); for (var k = 0; k < curve.length; k++) c3[k] = curve[k] * 3; o3.frequency.setValueCurveAtTime(c3, tt, dur); var g3 = ctx.createGain(); g3.gain.value = h3; o3.connect(g3); g3.connect(g); o3.start(tt); o3.stop(tt + dur + 0.02); }
+        if (breath) { var n = ctx.createBufferSource(); n.buffer = noiseBuf; var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = 2; bp.frequency.setValueCurveAtTime(curve, tt, dur); var bg = ctx.createGain(); bg.gain.value = breath; n.connect(bp); bp.connect(bg); bg.connect(g); n.start(tt, Math.random()); n.stop(tt + dur + 0.02); }
+      }
+      function curve(n, fn) { var c = new Float32Array(n); for (var k = 0; k < n; k++) c[k] = fn(k / (n - 1)); return c; }
+      if (v === 'warbler') {
+        var ph = 0, c = curve(400, function (x) { ph += 0.2 + Math.random() * 0.25; return 2600 + 700 * Math.sin(ph) * (Math.random() < 0.15 ? 1.6 : 1) + 300 * Math.sin(x * 9); });
+        tone(t, 1.6, c, 0.16, 0.8, 0.05);
+        for (i = 0; i < 18; i++) noise(t + Math.random() * 1.6, 0.012, 0.05, 'bandpass', 1500 + Math.random() * 1500, 4, 0.002);
+      } else if (v === 'cuckoo') {
+        [0, 0.75].forEach(function (o) { tone(t + o, 0.24, curve(20, function (x) { return 780 * (1 - 0.01 * x); }), 0.26, 0.35, 0.06); tone(t + o + 0.3, 0.34, curve(20, function (x) { return 622 * (1 - 0.015 * x); }), 0.24, 0.35, 0.06); });
+      } else if (v === 'songbird') {
+        at = t;
+        for (i = 0; i < 5; i++) { var up = i % 2 === 0; tone(at, 0.07, curve(30, function (x) { return up ? 3200 + 2200 * x : 5600 - 2000 * x; }), 0.22, 0.15); at += 0.11; }
+        at += 0.12; for (i = 0; i < 10; i++) { tone(at, 0.035, curve(12, function (x) { return 4200 + 900 * Math.sin(Math.PI * x); }), 0.2, 0.1); at += 0.045; }
+        tone(at + 0.08, 0.16, curve(30, function (x) { return 4800 - 1800 * x; }), 0.22, 0.15);
+      } else if (v === 'twist') {
+        at = t;
+        for (i = 0; i < 6; i++) { var d = 0.09 + Math.random() * 0.05, b = 2300 + Math.random() * 800;
+          tone(at, d, curve(40, function (x) { return b + 900 * Math.sin(Math.PI * x) + 250 * Math.sin(x * 60); }), 0.13, 1.4, 0.2); at += d + 0.035 + (i === 2 ? 0.15 : 0); }
+      } else if (v === 'owl') {
+        [[0, 0.5], [0.8, 0.22], [1.08, 0.55]].forEach(function (p) { tone(t + p[0], p[1], curve(20, function (x) { return 390 - 25 * x; }), 0.3, 0.6, 0.03); });
+      }
+    },
+    // Ocean drum: a double-headed frame drum filled with small steel beads. Tilting it rolls the beads across the
+    // head: thousands of tiny bead-on-skin taps blur into a "shhh" that swells and recedes like a wave, the skin
+    // hums low underneath, and on a big wave the beads crash into the rim. A hand tap splashes the beads.
+    oceandrum: function (t, f, note) {
+      var v = note || 'gentle', P = { gentle: [3.2, 0.7, 1, 0], big: [4.2, 1, 1, 1], rolling: [9, 0.75, 3, 0], tap: [0.9, 0.7, 1, 0] }[v] || [3.2, 0.7, 1, 0];
+      var dur = P[0], vol = P[1], waves = P[2], N = 300, e = new Float32Array(N), br = new Float32Array(N);
+      for (var i = 0; i < N; i++) { var x = i / (N - 1), w;
+        if (v === 'tap') w = Math.exp(-x * 4) * (1 - Math.exp(-x * 60));
+        else { var ph = (x * waves) % 1; w = Math.pow(Math.sin(Math.PI * ph), 1.4); if (v === 'big') w = Math.pow(Math.sin(Math.PI * Math.pow(x, 0.75)), 1.2); }
+        e[i] = Math.max(0.0001, w * vol * 0.55); br[i] = 2200 + 3200 * w; }
+      var src = ctx.createBufferSource(); src.buffer = noiseBuf; src.loop = true;
+      var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.Q.value = 0.6; bp.frequency.setValueCurveAtTime(br, t, dur);
+      var hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 900;
+      var g = ctx.createGain(); g.gain.setValueCurveAtTime(e, t, dur);
+      src.connect(bp); bp.connect(hp); hp.connect(g); g.connect(bus);
+      var lo = ctx.createBiquadFilter(); lo.type = 'lowpass'; lo.frequency.value = 160; var lg = ctx.createGain(), le = new Float32Array(N); for (i = 0; i < N; i++) le[i] = e[i] * 0.9; lg.gain.setValueCurveAtTime(le, t, dur);
+      src.connect(lo); lo.connect(lg); lg.connect(bus); src.start(t, Math.random() * 2); src.stop(t + dur + 0.05);
+      var grains = Math.round(dur * 140);
+      for (i = 0; i < grains; i++) { var gx = Math.random(), gi = Math.floor(gx * (N - 1)); if (Math.random() > e[gi] / (vol * 0.55)) continue; noise(t + gx * dur, 0.003, 0.12 * vol, 'bandpass', 3000 + Math.random() * 4000, 3, 0.0003); }
+      if (v === 'tap') { ring(t, 110, 0.5, 0.12); noise(t, 0.02, 0.4, 'lowpass', 900, 0.7, 0.001); }
+      if (P[3]) { var tc = t + dur * 0.62; for (i = 0; i < 40; i++) noise(tc + Math.random() * 0.25, 0.006, 0.35 * Math.random(), 'bandpass', 2500 + Math.random() * 3000, 2, 0.0003); ring(tc, 95, 0.35, 0.2); }
+    },
   };
   // ---------- Real recordings ----------
   // Orchestral one-shots (Cinematic Percussion, Splice Originals, licensed to Doug Garceau) in sounds/orch,
