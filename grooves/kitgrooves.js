@@ -118,5 +118,5 @@
   $('#kgClick').addEventListener('change', function (e) { clickMode = e.target.value; });
   $('#kgStop').addEventListener('click', stop);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') stop(); });
-  fetch('kit.json?v=2').then(function (r) { return r.json(); }).then(function (d) { G = d; chips(); render(); });
+  fetch(root.getAttribute('data-src') || 'kit.json?v=4').then(function (r) { return r.json(); }).then(function (d) { G = d; chips(); render(); });
 })();
