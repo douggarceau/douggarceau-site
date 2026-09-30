@@ -36,7 +36,8 @@ section.step h2{line-height:1.05}@media(max-width:700px){section.step{padding:18
 :root{--lab-bg:#0d0b06;--lab-bg2:#15110a;--lab-p1:#1e180d;--lab-p2:#16120a;--lab-line:#3a2f1b;--lab-line2:#54442a;--lab-ink:#fbf4e6;--lab-mut:#bfae8c;--lab-acc:#f2b93b;--lab-acc2:#ffd98a;--lab-glow:242,185,59;--lab-halo:#2a1f08;
  --bg:var(--lab-bg);--ink:var(--lab-ink);--muted:var(--lab-mut);--line:var(--lab-line);--gold:var(--lab-acc);--gold2:var(--lab-acc2)}
 html[data-lab=cyan]{--lab-bg:#060e1c;--lab-bg2:#0a1628;--lab-p1:#10223b;--lab-p2:#0c1a2f;--lab-line:#1b3252;--lab-line2:#25446c;--lab-ink:#eaf2ff;--lab-mut:#8fa6c4;--lab-acc:#38d6ff;--lab-acc2:#8ee9ff;--lab-glow:56,214,255;--lab-halo:#0f2544}
-html[data-lab=red]{--lab-bg:#0e0607;--lab-bg2:#16090b;--lab-p1:#241014;--lab-p2:#1a0b0e;--lab-line:#3f1c22;--lab-line2:#5c2830;--lab-ink:#fbeef0;--lab-mut:#c69ea4;--lab-acc:#ff4d5e;--lab-acc2:#ff9aa3;--lab-glow:255,77,94;--lab-halo:#35090f}
+html[data-lab=red]{--lab-bg:#0b0404;--lab-bg2:#140606;--lab-p1:#220a0a;--lab-p2:#170707;--lab-line:#3a1515;--lab-line2:#5a1f1f;--lab-ink:#f7f1f0;--lab-mut:#b8a9a7;--lab-acc:#e10600;--lab-acc2:#ff3b30;--lab-glow:225,6,0;--lab-halo:#3a0404}
+html[data-lab=orange]{--lab-bg:#0d0905;--lab-bg2:#150d06;--lab-p1:#22160a;--lab-p2:#170f08;--lab-line:#3a2714;--lab-line2:#56391b;--lab-ink:#fbf4ea;--lab-mut:#bfa98f;--lab-acc:#e77500;--lab-acc2:#ff9a2e;--lab-glow:231,117,0;--lab-halo:#2e1602}
 body{background:radial-gradient(1200px 620px at 25% -10%,var(--lab-halo) 0%,transparent 62%),radial-gradient(900px 500px at 100% 0%,rgba(var(--lab-glow),.06),transparent 60%),var(--lab-bg);background-attachment:fixed;color:var(--lab-ink)}
 a{color:var(--lab-acc)}a:hover{color:var(--lab-acc2)}
 nav,nav.top{border-bottom-color:var(--lab-line)}
@@ -57,6 +58,7 @@ section.step h2 .n{color:var(--lab-acc)}
 .src{border-left-color:var(--lab-acc)}
 td{border-top-color:var(--lab-line)}
 html[data-lab=red] .go,html[data-lab=red] .try.solid,html[data-lab=red] .levelnav a.here{color:#fff}
+html[data-lab=orange] .go,html[data-lab=orange] .try.solid,html[data-lab=orange] .levelnav a.here{color:#1a0d00}
 
 /* page-specific controls */
 .ex,.bubble{background:linear-gradient(180deg,var(--lab-p1),var(--lab-p2));border:1px solid var(--lab-line2)!important;border-radius:14px;box-shadow:0 0 24px rgba(var(--lab-glow),.08)}
