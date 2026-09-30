@@ -53,7 +53,17 @@
       sine(t, f * 4, 0.06, 0.4);
     },
     chimes: function (t, f) { [[0.5, .12], [1, .35], [1.19, .2], [1.56, .18], [2, .14], [2.51, .1], [3.01, .06]].forEach(function (p) { sine(t, f * p[0], p[1], 4 - p[0] * 0.6); }); noise(t, 0.03, 0.15, 'bandpass', 2500, 2); },
-    timpani: function (t, f) { sine(t, f * 1.03, 0.9, 2.4, 'sine', f, 0.15, 0.004); sine(t, f * 1.5, 0.3, 1.2); sine(t, f * 2, 0.18, 0.8); noise(t, 0.12, 0.35, 'lowpass', 600); },
+    // Timpani: modal model of a kettledrum membrane. The pitch you hear is the (1,1) mode; its overtones sit near
+    // 1.5, 2, 2.5 and 3 times it, which is why a timpano has a clear note. The (0,1) mode is a short low thud,
+    // the felt mallet adds a soft attack, and the pitch settles slightly after the stroke.
+    timpani: function (t, f) {
+      [[1, 1, 3.2], [1.504, .5, 2.2], [1.742, .22, 1.6], [2.0, .32, 1.8], [2.245, .12, 1.2], [2.494, .16, 1.3], [2.8, .08, .9], [2.98, .07, .9]].forEach(function (m) {
+        sine(t, f * m[0] * 1.012, 0.55 * m[1], m[2], 'sine', f * m[0], 0.25, 0.006);
+      });
+      sine(t, f * 0.62, 0.45, 0.35, 'sine', f * 0.55, 0.2, 0.003);
+      noise(t, 0.09, 0.35, 'lowpass', 380, 0.8, 0.002);
+      noise(t, 0.04, 0.08, 'bandpass', 1800, 1.2, 0.001);
+    },
     snare: function (t) { sine(t, 240, 0.5, 0.1, 'triangle', 185, 0.04); noise(t, 0.25, 0.9, 'bandpass', 4000, 0.6); },
     snareroll: function (t) { for (var i = 0; i < 24; i++) V.snare(t + i * 0.045 + Math.random() * 0.004, 0); },
     bassdrum: function (t) { sine(t, 70, 1, 2.2, 'sine', 42, 0.4, 0.01); noise(t, 0.3, 0.3, 'lowpass', 300); },
