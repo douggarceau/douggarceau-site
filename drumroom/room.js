@@ -260,7 +260,22 @@
       });
       noise(t, 0.006, 0.6, 'bandpass', 7500, 1.2, 0.0005); noise(t, 0.02, 0.25, 'bandpass', base * 2.2, 3, 0.0008);
     },
-    brakedrum: function (t) { [1, 1.7, 2.9, 4.4].forEach(function (r, i) { sine(t, 620 * r, 0.25 / (i + 1), 0.9); }); noise(t, 0.02, 0.3, 'highpass', 2500); },
+    // Brake drum: a cast-iron car brake drum resting on padding. Cast iron is duller than steel, so it has a
+    // dense cluster of inharmonic modes that die quickly: a dry clank, not a long ring. The rim (lip) is higher
+    // and brighter; the side of the body is lower and darker; a bigger drum is lower still.
+    brakedrum: function (t, f, note) {
+      var v = (note || 'rim').split(':')[0], damp = /damp/.test(note || '');
+      var P = { rim: [1180, 0.2, 9000], body: [760, 0.16, 5500], large: [540, 0.24, 6000] }[v] || [1180, 0.2, 9000], base = P[0], tau = damp ? 0.03 : P[1];
+      var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = P[2]; var sh = ctx.createWaveShaper(), cv = new Float32Array(1024);
+      for (var k = 0; k < 1024; k++) { var x = k / 511.5 - 1; cv[k] = Math.tanh(2.5 * x) / Math.tanh(2.5); } sh.curve = cv;
+      var og = ctx.createGain(); og.gain.value = 0.5; sh.connect(lp); lp.connect(og); og.connect(bus);
+      [[1, 1, 1], [1.19, .7, .8], [1.61, .6, .7], [2.05, .5, .6], [2.37, .45, .5], [2.98, .35, .45], [3.51, .25, .35], [4.46, .18, .25], [5.3, .12, .2]].forEach(function (m) {
+        var o = ctx.createOscillator(), g = ctx.createGain(); o.frequency.value = base * m[0] * (1 + (Math.random() - .5) * .006);
+        g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(m[1] * 0.22, t + 0.001); g.gain.setTargetAtTime(0, t + 0.001, tau * m[2]);
+        o.connect(g); g.connect(sh); o.start(t); o.stop(t + tau * m[2] * 7 + 0.05);
+      });
+      noise(t, 0.008, 0.5, 'bandpass', 4500, 1, 0.0005); noise(t, 0.05, 0.12, 'bandpass', base * 1.6, 2, 0.001);
+    },
     belltree: function (t) { for (var i = 0; i < 12; i++) { var f = 3200 - i * 170; sine(t + i * 0.06, f, 0.12, 1.2); } },
     marktree: function (t) { for (var i = 0; i < 20; i++) { var f = 2400 + i * 160; sine(t + i * 0.04, f, 0.06, 1.5); } },
     flexatone: function (t) { var o = ctx.createOscillator(); o.frequency.value = 880; var l = ctx.createOscillator(); l.frequency.value = 9; var d = ctx.createGain(); d.gain.value = 40;
