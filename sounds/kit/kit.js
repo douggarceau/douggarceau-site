@@ -16,8 +16,12 @@
   // Round-robin between alternates so repeated notes do not sound machine-gunned.
   var ALT = { hh: ['hh', 'hh2'], ride: ['ride', 'ride2'], 'br-snare': ['br-snare', 'br-snare2'] };
   function pick(n) { var a = ALT[n]; if (!a) return n; rr[n] = ((rr[n] || 0) + 1) % a.length; return bufs[a[rr[n]]] ? a[rr[n]] : n; }
+  // The recorded floor tom is tuned almost as high as the rack tom (about 130 Hz vs 125 Hz), so it is
+  // played back lower to sit where a floor tom belongs, around 83 Hz, well below the rack tom.
+  var TUNE = { floor: 0.64 };
   function play(ctx, dest, name, t, gain, pan, rate) {
     var n = pick(name), buf = bufs[n];
+    rate = (rate || 1) * (TUNE[n] || 1);
     if (!buf) return false;
     var s = ctx.createBufferSource(); s.buffer = buf;
     s.playbackRate.value = (rate || 1) * (0.995 + Math.random() * 0.01);
