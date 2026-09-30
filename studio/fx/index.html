@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Movie Sound FX Board · Amadeus Sound Studio</title>
-<meta name="description" content="Score your own scene. Tap real movie sound effects: thunder, creaking doors, whooshes, trailer impacts, sci-fi lasers, crowds and DJ scratches. Layer ambiences and play one-click scenes.">
+<meta name="description" content="Score your own scene. Tap real movie sound effects: thunder, creaking doors, factory machines, steam and metal hits, whooshes, trailer impacts, sci-fi lasers, crowds and DJ scratches. Layer ambiences and play one-click scenes.">
 <link rel="canonical" href="https://douggarceau.com/studio/fx/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Amadeus School of Drums">
 <meta property="og:title" content="Movie Sound FX Board"><meta property="og:url" content="https://douggarceau.com/studio/fx/">
@@ -65,6 +65,7 @@ h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:32px;let
   <span class="lbl">SCENES</span>
   <button class="scene" data-scene="storm">&#9654; Thunderstorm</button>
   <button class="scene" data-scene="haunted">&#9654; Haunted house</button>
+  <button class="scene" data-scene="factory">&#9654; Factory</button>
   <button class="scene" data-scene="trailer">&#9654; Movie trailer</button>
   <button class="scene" data-scene="scifi">&#9654; Spaceship alarm</button>
   <button class="scene" data-scene="city">&#9654; City street</button>
@@ -83,6 +84,10 @@ var G=[
   ['fx-rain','Rain on the window',1],['fx-wind','Howling wind',1],['fx-leaves','Wind in the leaves',1],['fx-thunder-clap','Thunder clap'],['fx-thunder-close','Close lightning strike'],['fx-thunder-roll','Distant rumble']]},
  {id:'horror',name:'Horror',c:'#c0392b',d:'Creaks, chains and things that go bump in the night.',p:[
   ['fx-door-creak','Creaking door'],['fx-rusty-door','Rusty metal door'],['fx-footsteps','Footsteps on old boards',1],['fx-chains','Rattling chains'],['fx-ghost-wind','Ghostly wind',1],['fx-well','Drip in the well'],['fx-howl','Wolf howl'],['fx-monster','Growling monster'],['fx-banshee','Banshee scream']]},
+ {id:'industrial',name:'Industrial Loops',c:'#a6acaf',d:'Factories, furnaces and machines that keep running until you tap them again. The two metal grooves loop in perfect time.',p:[
+  ['ind-factory','Factory floor',1,{gain:.55}],['ind-boiler','Boiler room',1,{gain:.6}],['ind-furnace','Furnace',1,{gain:.6}],['ind-construction','Construction site',1,{gain:.6}],['ind-jet','Jet engine',1,{gain:.6}],['ind-reactor','Reactor hum',1,{gain:.6}],['ind-clanks','Metal clank groove',2,{end:15.4839}],['ind-fence','Banging fence groove',2,{end:14.1176}]]},
+ {id:'hits',name:'Industrial Hits',c:'#d35400',d:'Steam, power tools and heavy metal. Fire these over a factory loop.',p:[
+  ['ind-steam','Steam blast'],['ind-drill','Power drill'],['ind-grinder','Angle grinder'],['ind-hammer','Hammer on the wall'],['ind-metaldrop','Metal drop'],['ind-slam','Metal slam'],['ind-thuds','Heavy thuds'],['ind-crank','Rusty crank'],['ind-elevator','Freight elevator'],['ind-horn','Factory horn'],['ind-siren','Warning siren']]},
  {id:'trailer',name:'Movie Trailer',c:'#ffd35c',d:'Big hits and builds. Start a riser, then land an impact on the downbeat.',p:[
   ['fx-riser','Tension riser'],['fx-strings','String rise'],['fx-whoosh','Slow-motion whoosh'],['fx-impact','Trailer impact'],['fx-braam','Braam'],['fx-boom','Deep boom'],['fx-blast','Cinematic blast'],['fx-subdrop','Sub drop'],['fx-orchhit','Orchestra hit'],['fx-warhorn','War horn'],['fx-choir','Choir'],['fx-shimmer','Magic shimmer']]},
  {id:'scifi',name:'Sci-Fi',c:'#2ecc71',d:'Spaceship bridges, alien signals and ray guns.',p:[
@@ -92,6 +97,7 @@ var G=[
  {id:'dj',name:'DJ & Animals',c:'#af7ac5',d:'Scratches, rewinds and a few surprise guests.',p:[
   ['fx-scratch','Vinyl scratch'],['fx-rewind','Rewind'],['fx-tapestop','Tape stop'],['fx-vinylstop','Record stop'],['fx-cow','Cow'],['fx-crow','Crow']]}
 ];
+var CFG={}; G.forEach(function(g){ g.p.forEach(function(p){ CFG[p[0]]=p[3]||{}; }); });
 var KEYS='1234567890qwertyuiopasdfghjklzxcvbnm'.split('');
 var SCENES={
  storm:[[0,'fx-rain'],[0.3,'fx-leaves'],[2,'fx-thunder-roll'],[5.5,'fx-thunder-clap'],[11,'fx-thunder-close']],
@@ -99,6 +105,7 @@ var SCENES={
  trailer:[[0,'fx-riser'],[0.5,'fx-strings'],[9.2,'fx-braam'],[9.2,'fx-boom'],[12,'fx-whoosh'],[13.3,'fx-impact'],[14,'fx-choir']],
  scifi:[[0,'fx-drone'],[1,'fx-alarm'],[2.5,'fx-computer'],[4,'fx-sonar'],[5.5,'fx-laser'],[6.4,'fx-laser'],[7.5,'fx-spiral'],[10,'fx-portal']],
  city:[[0,'fx-traffic'],[0.4,'fx-subway'],[3,'fx-car'],[6,'fx-phone'],[9,'fx-hey']],
+ factory:[[0,'ind-factory'],[1,'ind-clanks'],[3.5,'ind-steam'],[5.5,'ind-drill'],[8,'ind-slam'],[10,'ind-horn'],[13.5,'ind-grinder'],[16.5,'ind-metaldrop'],[18,'ind-siren']],
  dj:[[0,'fx-hey'],[1.2,'fx-scratch'],[3.2,'fx-rewind'],[5,'fx-orchhit'],[5.6,'fx-subdrop'],[8,'fx-tapestop']]
 };
 var ctx,master,BUF={},LOAD={},playing={},loops={},sceneT=[];
@@ -107,14 +114,14 @@ function audio(){ if(!ctx){ var AC=window.AudioContext||window.webkitAudioContex
 function load(n){ if(!LOAD[n]) LOAD[n]=fetch('../../sounds/studio/'+n+'.mp3').then(function(r){return r.arrayBuffer();}).then(function(b){return new Promise(function(res,rej){ctx.decodeAudioData(b,res,rej);});}).then(function(b){BUF[n]=b;return b;}); return LOAD[n]; }
 function pad(n){ return document.querySelector('.pad[data-s="'+n+'"]'); }
 function play(n,when){
-  audio(); var el=pad(n), isLoop=el&&el.dataset.loop==='1';
+  audio(); var el=pad(n), isLoop=el&&!!el.dataset.loop, cf=CFG[n]||{}, vol=cf.gain||1;
   if(isLoop&&loops[n]){ stopOne(n); return; }
   if(el&&!BUF[n]) el.classList.add('loading');
   load(n).then(function(b){
     if(el) el.classList.remove('loading');
-    var s=ctx.createBufferSource(); s.buffer=b; var g=ctx.createGain(); g.gain.value=1; s.connect(g); g.connect(master);
+    var s=ctx.createBufferSource(); s.buffer=b; var g=ctx.createGain(); g.gain.value=vol; s.connect(g); g.connect(master);
     var t=Math.max(ctx.currentTime, when||0);
-    if(isLoop){ s.loop=true; s.loopStart=0.05; s.loopEnd=Math.max(1,b.duration-1.6); g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(1,t+0.8); loops[n]={s:s,g:g}; if(el) el.classList.add('looping'); }
+    if(isLoop){ s.loop=true; if(cf.end){ s.loopStart=0; s.loopEnd=Math.min(cf.end,b.duration); g.gain.setValueAtTime(vol,t); } else { s.loopStart=0.05; s.loopEnd=Math.max(1,b.duration-1.6); g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(vol,t+0.8); } loops[n]={s:s,g:g}; if(el) el.classList.add('looping'); }
     s.start(t); (playing[n]=playing[n]||[]).push({s:s,g:g});
     s.onended=function(){ playing[n]=(playing[n]||[]).filter(function(x){return x.s!==s;}); };
     if(el&&!isLoop){ var dl=Math.max(0,(t-ctx.currentTime)*1000); setTimeout(function(){ el.classList.add('hit'); setTimeout(function(){el.classList.remove('hit');},140); var pr=el.querySelector('.prog'); pr.style.transition='none'; pr.style.width='0'; void pr.offsetWidth; pr.style.transition='width '+b.duration+'s linear'; pr.style.width='100%'; setTimeout(function(){pr.style.transition='none';pr.style.width='0';},b.duration*1000); },dl); }
@@ -128,7 +135,7 @@ function stopAll(){ sceneT.forEach(clearTimeout); sceneT=[]; document.querySelec
 var host=document.getElementById('groups'), ki=0, keymap={};
 G.forEach(function(g){ var sec=document.createElement('section'); sec.className='grp'; sec.style.setProperty('--c',g.c);
   var h='<h2 style="color:'+g.c+'">'+g.name+'</h2><p>'+g.d+'</p><div class="pads">';
-  g.p.forEach(function(p){ var k=KEYS[ki++]||''; if(k) keymap[k]=p[0]; h+='<button class="pad" data-s="'+p[0]+'"'+(p[2]?' data-loop="1"':'')+' aria-label="'+p[1]+(p[2]?' (loops until tapped again)':'')+'">'+p[1]+(p[2]?'<span class="lp">LOOP</span>':'')+'<span class="k">'+k.toUpperCase()+'</span><span class="prog"></span></button>'; });
+  g.p.forEach(function(p){ var k=KEYS[ki++]||''; if(k) keymap[k]=p[0]; h+='<button class="pad" data-s="'+p[0]+'"'+(p[2]?' data-loop="'+p[2]+'"':'')+' aria-label="'+p[1]+(p[2]?' (loops until tapped again)':'')+'">'+p[1]+(p[2]?'<span class="lp">LOOP</span>':'')+'<span class="k">'+k.toUpperCase()+'</span><span class="prog"></span></button>'; });
   sec.innerHTML=h+'</div>'; host.appendChild(sec); });
 document.addEventListener('click',function(e){
   var p=e.target.closest('.pad'); if(p){ play(p.dataset.s); return; }
