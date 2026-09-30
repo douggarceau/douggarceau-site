@@ -116,6 +116,16 @@
     }
   }
   function skin(t, vol) { sine(t, 260, 0.42 * vol, 0.12, 'sine', 170, 0.05); noise(t, 0.05, 0.25 * vol, 'bandpass', 1100, 1); }
+  var WC = {
+    brass: { n: 24, lo: 2300, hi: 6200, gap: 0.035, after: 6, spread: 1.2, vol: 0.05, tau: 1, click: 0.4, modes: [[1, 1, 1.6], [2.76, .3, .5], [5.4, .1, .2]] },
+    aluminum: { n: 5, tuned: [523, 587, 659, 784, 880], gap: 0.09, after: 10, spread: 3, vol: 0.1, tau: 1, click: 0.2, modes: [[1, 1, 3.2], [2.76, .45, 1.2], [5.4, .18, .5], [8.93, .07, .2]] },
+    steel: { n: 8, lo: 1400, hi: 3600, gap: 0.06, after: 12, spread: 2.5, vol: 0.07, tau: 1, click: 0.4, modes: [[1, 1, 2.2], [1.006, .6, 2.2], [2.76, .4, .8], [5.4, .15, .3]] },
+    bronze: { n: 6, lo: 880, hi: 1900, gap: 0.08, after: 9, spread: 3, vol: 0.08, tau: 1, click: 0.2, modes: [[0.5, .3, 2.2], [1, 1, 1.7], [1.19, .5, 1.1], [1.5, .35, .8], [2, .3, .6], [2.5, .15, .3]] },
+    glass: { n: 10, lo: 2600, hi: 5600, gap: 0.045, after: 16, spread: 1.6, vol: 0.07, tau: 1, click: 0.9, modes: [[1, 1, .38], [2.91, .45, .14], [5.6, .18, .06]] },
+    bamboo: { n: 6, lo: 380, hi: 900, gap: 0.07, after: 14, spread: 1.8, vol: 0.35, tau: 0.07, wood: 1 },
+    hardwood: { n: 7, lo: 900, hi: 1900, gap: 0.06, after: 14, spread: 1.6, vol: 0.28, tau: 0.035, wood: 1 },
+    shell: { n: 16, lo: 3000, hi: 8000, gap: 0.025, after: 30, spread: 1.4, vol: 0.22, tau: 0.03, wood: 1 }
+  };
   var VIBE = { pedal: 'down', ring: [] };
   function setPedal(v, card) {
     VIBE.pedal = v;
@@ -291,7 +301,23 @@
         at += 0.05 * (1 - 0.35 * (k % N) / N);
       });
     },
-    marktree: function (t) { for (var i = 0; i < 20; i++) { var f = 2400 + i * 160; sine(t + i * 0.04, f, 0.06, 1.5); } },
+    // Wind chimes. The material decides everything: metal tubes and rods ring for seconds with bar-like overtones
+    // (aluminum lowest and longest, steel brighter, bronze bells with a hum and a minor-third partial), the brass
+    // mark tree is a fast shimmering glissando, glass is a high brittle "tink" with a short ring, bamboo is a
+    // hollow "tok", hardwood a dry click, and capiz shell a papery clatter. A stroke sweeps across the set, then
+    // the pieces keep bumping into each other as they settle.
+    marktree: function (t, f, note) {
+      var v = note || 'brass', M = WC[v] || WC.brass, fr = [], i, k;
+      for (i = 0; i < M.n; i++) fr.push(M.tuned ? M.tuned[i] : M.hi * Math.pow(M.lo / M.hi, i / (M.n - 1)) * (1 + (Math.random() - .5) * .04));
+      function hit(at, fq, vol) {
+        if (M.wood) { sine(at, fq, vol, M.tau * 1.4); sine(at, fq * 2.4, vol * 0.4, M.tau * 0.6); noise(at, M.tau, vol * 0.6, 'bandpass', fq * 1.8, 2.5, 0.0005); return; }
+        M.modes.forEach(function (m) { ring(at, fq * m[0], vol * m[1], m[2] * M.tau); });
+        if (M.click) noise(at, 0.004, vol * M.click, 'highpass', 5000, 0.7, 0.0004);
+      }
+      for (i = 0; i < M.n; i++) hit(t + i * M.gap, fr[i], M.vol);
+      var at = t + M.n * M.gap;
+      for (k = 0; k < M.after; k++) { at += 0.04 + Math.random() * M.spread / M.after * 2; var n = 1 - k / M.after; hit(at, fr[Math.floor(Math.random() * M.n)], M.vol * (0.25 + 0.5 * n * Math.random())); }
+    },
     flexatone: function (t) { var o = ctx.createOscillator(); o.frequency.value = 880; var l = ctx.createOscillator(); l.frequency.value = 9; var d = ctx.createGain(); d.gain.value = 40;
       l.connect(d); d.connect(o.frequency); o.frequency.setValueAtTime(700, t); o.frequency.linearRampToValueAtTime(1100, t + 1.2); o.connect(env(t, 0.25, 1.5, 0.02)); o.start(t); o.stop(t + 1.6); l.start(t); l.stop(t + 1.6); },
     thundersheet: function (t) { noise(t, 3, 0.8, 'lowpass', 400, 0.7, 0.05); noise(t, 2, 0.3, 'bandpass', 900, 1, 0.3); metal(t, 2.5, 0.08, 38, 500, 0.2); },
@@ -302,7 +328,23 @@
     rute: function (t) { for (var i = 0; i < 10; i++) noise(t + Math.random() * 0.03, 0.03, 0.4, 'bandpass', 3000 + Math.random() * 2000, 2); },
     guiro: function (t) { for (var i = 0; i < 14; i++) noise(t + i * 0.022, 0.015, 0.5, 'bandpass', 2800, 4); for (var j = 0; j < 4; j++) noise(t + 0.4 + j * 0.03, 0.015, 0.5, 'bandpass', 2800, 4); },
     cabasa: function (t) { noise(t, 0.12, 0.5, 'highpass', 6000, 0.7, 0.03); noise(t + 0.2, 0.08, 0.4, 'highpass', 6000); },
-    vibraslap: function (t) { for (var i = 0; i < 16; i++) noise(t + i * 0.045, 0.03, 0.6 * Math.pow(0.85, i), 'bandpass', 1800, 5); },
+    // Vibraslap: the palm hits the ball, the bent wire whips back and forth, and the loose metal teeth chatter
+    // inside the hollow wooden box. Each swing of the wire is one burst of several teeth clicking, colored by the
+    // box's woody resonance; the swings come fast at first and slow slightly as the energy dies away.
+    // Quijada: the original, a dried jawbone whose loose teeth give a drier, bonier rattle with no box.
+    vibraslap: function (t, f, note) {
+      var v = note || 'large', P = { large: [27, 1.5, 850, 1], small: [34, 1.1, 1300, 0.85], quijada: [22, 0.9, 1600, 0.9] }[v] || [27, 1.5, 850, 1];
+      var rate = P[0], dur = P[1], box = P[2], vol = P[3], bone = v === 'quijada';
+      sine(t, 160, 0.25 * vol, 0.06, 'sine', 110, 0.04); noise(t, 0.015, 0.25 * vol, 'bandpass', 1200, 1);
+      var at = t + 0.012, i = 0;
+      while (at < t + dur) {
+        var a = vol * Math.exp(-(at - t) / (dur * 0.33)) * (0.8 + Math.random() * 0.2);
+        for (var k = 0; k < 4; k++) { var tk = at + Math.random() * 0.006;
+          noise(tk, 0.008, a * 1.3, 'bandpass', bone ? 2200 + Math.random() * 1500 : 3500 + Math.random() * 3000, bone ? 2 : 6, 0.0003); }
+        if (!bone) noise(at, 0.035, a * 1.1, 'bandpass', box, 5, 0.001);
+        i++; at += (1 / rate) * (1 + i * 0.012);
+      }
+    },
     sandpaper: function (t) { noise(t, 0.35, 0.45, 'bandpass', 3500, 0.8, 0.1); noise(t + 0.45, 0.35, 0.45, 'bandpass', 3500, 0.8, 0.1); },
     rainstick: function (t) { for (var i = 0; i < 70; i++) { var tt = t + Math.random() * 2.2; noise(tt, 0.012, 0.25, 'bandpass', 2500 + Math.random() * 4000, 3); } },
     windmachine: function (t) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.Q.value = 3;
