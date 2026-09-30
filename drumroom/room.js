@@ -703,12 +703,23 @@
   var PRE = {
     timpani: ['timp-mf-lowDb', 'timp-mf-F', 'timp-mf-A', 'timp-mf-B', 'timp-mf-E', 'timp-mf-G', 'timp-mf-highDb'],
     bassdrum: ['bd-mp', 'bd-mf', 'bd-ff'], tamtam: ['tamtam-pp', 'tamtam-mf', 'tamtam-f'], gong: ['gong-E', 'gong-F'], chimes: ['chime-F'],
-    woodblock: ['wb-high_D', 'wb-mid_F', 'wb-low_G'], templeblocks: ['wb-high_F', 'wb-high_D', 'wb-high_A', 'wb-low_Bb', 'wb-low_F']
+    woodblock: ['wb-high_D', 'wb-mid_F', 'wb-low_G'], xylophone: ['xylo-Db5'], framedrum: ['frame-low', 'frame-open', 'frame-high', 'frame-short'], taxihorn: ['honker'], belltree: ['belltree-real'], rainstick: ['rainstick-real'], triangle: ['triangle-real'], templeblocks: ['wb-high_F', 'wb-high_D', 'wb-high_A', 'wb-low_Bb', 'wb-low_F']
   };
   function real(inst, t, f, note) {
     var K = window.KitSamples, d, m, s;
     if (PRE[inst]) preload(PRE[inst]);
     switch (inst) {
+      // Real recordings from Doug's own Splice library (Cinematic Percussion, Mickey Hart, Murda Beatz packs).
+      case 'xylophone': m = midiOf(note); if (m === null) return false; return oplay('xylo-Db5', t, .85, Math.pow(2, (m - 73) / 12));
+      case 'framedrum': return oplay({ low: 'frame-low', open: 'frame-open', high: 'frame-high', short: 'frame-short' }[note || 'open'] || 'frame-open', t, .9, 1);
+      case 'taxihorn': var hr = { high: 1.3, mid: 1, low: 0.72 }[note]; if (!hr) return false; return oplay('honker', t, .8, hr);
+      case 'belltree': if (note && note !== 'down') return false; return oplay('belltree-real', t, .9, 1);
+      case 'rainstick': if (note !== 'medium') return false; return oplay('rainstick-real', t, .9, 1);
+      case 'triangle':
+        var tv = (note || 'medium').split(':')[0]; if (/roll|muffled/.test(note || '')) return false;
+        if (!oplay('triangle-real', t, .75, { small: 1.15, medium: 1, large: .86 }[tv] || 1)) return false;
+        var tb = bus, tg = ctx.createGain(); tg.gain.value = 0.35; tg.connect(tb); bus = tg; try { V.triangle(t, 0, note); } finally { bus = tb; }
+        return true;
       case 'timpani':
         m = midiOf(note); if (m === null) return false; d = dyn(note, 'mf');
         var map = d === 'pp' ? TIMP_PP : TIMP; s = nearest(map, m);
