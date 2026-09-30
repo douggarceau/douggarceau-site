@@ -52,6 +52,9 @@ h1 span{color:var(--gold)}
 }
 .card .art picture{display:block;width:100%;height:100%;overflow:hidden}
 .kitphoto{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.levels.three{grid-template-columns:repeat(3,1fr)}
+@media (max-width:1000px){.levels.three{grid-template-columns:1fr 1fr}}
+@media (max-width:680px){.levels.three{grid-template-columns:1fr}}
 section{padding:64px 0;border-bottom:1px solid var(--line)}
 h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:56px;line-height:1;letter-spacing:1px;margin:0 0 8px}
 .sec-sub{color:var(--muted);margin:0 0 32px;max-width:640px}
@@ -118,7 +121,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 <div class="wrap">
 <header>
 <a class="mark" href="index.html">Amadeus School of Drums</a>
-<span style="display:flex;gap:22px;flex-wrap:wrap"><a class="navlink" href="beats/">Famous beats</a><a class="navlink" href="rudiments/">Rudiments</a><a class="navlink" href="grooves/">Grooves</a><a class="navlink" href="drumroom/">Drum room</a><a class="navlink" href="gear.html">Gear guide</a><a class="navlink" href="#signup">Get new lessons →</a></span>
+<span style="display:flex;gap:22px;flex-wrap:wrap"><a class="navlink" href="beginner/">Beginner</a><a class="navlink" href="intermediate/">Intermediate</a><a class="navlink" href="advanced/">Advanced</a><a class="navlink" href="drumroom/">Drum room</a><a class="navlink" href="grooves/">Grooves</a><a class="navlink" href="#signup">Get new lessons →</a></span>
 </header>
 
 </div>
@@ -141,9 +144,9 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 <div class="wrap">
 <section id="levels">
 <h2>Pick your level</h2>
-<p class="sec-sub">The lessons grow up with you. Young players start with Bear on a practice pad. Older students go straight to the full kit.</p>
-<div class="levels">
-<a class="card bear" href="bear.html">
+<p class="sec-sub">Three levels, from a child's first lesson to conservatory-level study. Each one has its own path through the rudiments, the kit, the famous beats and the orchestra's percussion section.</p>
+<div class="levels three">
+<a class="card bear" href="beginner/">
 <div class="art">
 <svg viewBox="200 20 280 420" aria-hidden="true">
 <ellipse cx="340" cy="300" rx="88" ry="82" fill="#8B5A2B"/><ellipse cx="340" cy="312" rx="56" ry="56" fill="#E8C08F"/>
@@ -164,21 +167,32 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 </svg>
 </div>
 <div class="body">
-<span class="tag">Young beginners · Practice pad</span>
-<h3>Bear's drum school</h3>
-<p>24 lessons: note values and rests, eighths and sixteenths, 3/4, 2/4 and 6/8, then paradiddles, flams, drags and rolls. Bear plays along and shows which hand goes next.</p>
-<span class="go">Drum with Bear →</span>
+<span class="tag">Beginner · Kids and first-timers</span>
+<h3>Bear's Drum School</h3>
+<p>Bear's practice-pad lessons, counting and reading, the essential rudiments, your first famous beats, and every instrument in the orchestra.</p>
+<span class="go">Start as a beginner →</span>
 </div>
 </a>
-<a class="card kit" href="level7.html">
+<a class="card kit" href="intermediate/">
 <div class="art">
 <picture><source type="image/webp" srcset="images/kit-front.webp"><img class="kitphoto" src="images/kit-front.jpg" width="766" height="501" alt="" loading="lazy" decoding="async"></picture>
 </div>
 <div class="body">
-<span class="tag">Grades 7–12 · Full drum set</span>
-<h3>Level 7 — The Kit</h3>
-<p>Nine time feels: straight 8ths, 3/4, swing, 16ths, syncopated reading, jazz independence, open hi-hat, fills and bebop. Four variations each, sheet music that lights up as it plays, a vintage kit you can tap to play, and a metronome up to 300.</p>
-<span class="go">Get behind the kit →</span>
+<span class="tag">Intermediate · Grooves and styles</span>
+<h3>Intermediate</h3>
+<p>All 40 rudiments, the Level 7 kit with nine time feels, famous beats in every style, fills, reading, and how to play every orchestral percussion instrument.</p>
+<span class="go">Level up →</span>
+</div>
+</a>
+<a class="card kit" href="advanced/">
+<div class="art">
+<picture><source type="image/webp" srcset="images/kit-room.webp"><img class="kitphoto" src="images/kit-room.jpg" width="763" height="501" alt="" loading="lazy" decoding="async"></picture>
+</div>
+<div class="body">
+<span class="tag">Advanced · Conservatory level</span>
+<h3>The Conservatory</h3>
+<p>Jazz independence, bebop and brushes, rudiments at tempo, transcribing from recorded grooves, and the orchestral repertoire and audition excerpts.</p>
+<span class="go">Go deeper →</span>
 </div>
 </a>
 </div>
