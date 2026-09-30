@@ -5,7 +5,7 @@
   function audio() {
     if (!ctx) {
       var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
-      ctx = new AC(); if (window.KitSamples) KitSamples.load(ctx, '../sounds/kit/');
+      ctx = new AC(); if (window.KitSamples) KitSamples.load(ctx, '../sounds/kit/'); setTimeout(function () { Object.keys(PRE).forEach(function (k) { preload(PRE[k]); }); ['timp-pp-G', 'timp-ff-G', 'timp-mf-C', 'timp-mf-Bb'].forEach(obuf); }, 0);
       var len = ctx.sampleRate * 3; noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
       var d = noiseBuf.getChannelData(0); for (var i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
       var comp = ctx.createDynamicsCompressor(); comp.threshold.value = -16; comp.ratio.value = 4;
@@ -71,7 +71,16 @@
     crash: function (t) { noise(t, 3, 0.7, 'highpass', 4500, 0.7, 0.002); metal(t, 2.6, 0.35, 330, 6000); noise(t, 0.8, 0.4, 'bandpass', 2500, 0.5); },
     suspended: function (t) { noise(t, 3.2, 0.5, 'highpass', 5000, 0.7, 1.8); metal(t, 3.2, 0.2, 360, 6500, 1.8); },
     tamtam: function (t) { metal(t, 7, 0.3, 45, 700, 0.5); sine(t, 62, 0.4, 6, 'sine', 0, 0, 0.3); noise(t, 6, 0.15, 'bandpass', 900, 1, 0.8); },
-    triangle: function (t) { sine(t, 1180, 0.25, 3.5); sine(t, 1180 * 2.76, 0.12, 2.5); sine(t, 1180 * 5.4, 0.06, 1.6); },
+    // Triangle: inharmonic partials of a bent steel bar. Size sets the pitch (small is higher and brighter);
+    // 'roll' alternates between two sides of a corner, 'muffled' is a short choked note.
+    triangle: function (t, f, note) {
+      var base = f || 1180, sizes = { small: 1550, medium: 1180, large: 880 }, v = (note || '').split(':')[0];
+      if (sizes[v]) base = sizes[v];
+      var one = function (tt, vol, dur) { [[1, .25], [2.76, .13], [5.4, .07], [8.93, .035], [13.3, .02]].forEach(function (p) { sine(tt, base * p[0], vol * p[1] / .25, dur - p[0] * .12); }); };
+      if (/roll/.test(note || '')) { for (var i = 0; i < 24; i++) one(t + i * .06, .1 + .12 * Math.sin(i / 23 * Math.PI), 1.2); return; }
+      if (/muffled/.test(note || '')) { one(t, .25, .25); return; }
+      one(t, .25, 3.6);
+    },
     tambourine: function (t) { for (var i = 0; i < 3; i++) noise(t + i * 0.012, 0.35, 0.5, 'bandpass', 7500, 1.2); sine(t, 300, 0.2, 0.08); },
     woodblock: function (t, f) { sine(t, f || 900, 0.6, 0.09); noise(t, 0.02, 0.3, 'bandpass', (f || 900) * 2, 3); },
     templeblocks: function (t, f) { V.woodblock(t, f); },
@@ -123,20 +132,70 @@
     birdwhistle: function (t) { for (var i = 0; i < 5; i++) { var o = ctx.createOscillator(), tt = t + i * 0.16; o.frequency.setValueAtTime(2600, tt); o.frequency.exponentialRampToValueAtTime(3400, tt + 0.07); o.frequency.exponentialRampToValueAtTime(2800, tt + 0.12); o.connect(env(tt, 0.2, 0.13, 0.01)); o.start(tt); o.stop(tt + 0.15); } },
     oceandrum: function (t) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.frequency.value = 3000; f.Q.value = 0.5; s.connect(f); f.connect(env(t, 0.5, 3, 1.3)); s.start(t); s.stop(t + 3.1); },
   };
-  // Real recorded drums where the sample pack has the instrument.
-  function real(inst, t, f) {
-    if (!window.KitSamples) return false;
-    var K = window.KitSamples;
-    if (inst === 'snare') return K.play(ctx, bus, 'snare-f', t, 0.95, 0);
-    if (inst === 'snareroll') { if (!K.ready('snare-mp')) return false; for (var i = 0; i < 24; i++) K.play(ctx, bus, i % 2 ? 'snare-mp' : 'snare-mf', t + i * 0.045 + Math.random() * 0.004, 0.55 + i / 60, i % 2 ? 0.1 : -0.1); return true; }
-    if (inst === 'toms') { var r = f ? Math.max(0.6, Math.min(1.6, f / 150)) : 1; return K.play(ctx, bus, f && f < 120 ? 'floor' : 'tom', t, 0.9, 0, f && f < 120 ? f / 92 : r); }
-    if (inst === 'suspended') return K.play(ctx, bus, 'crash', t, 0.7, 0);
+  // ---------- Real recordings ----------
+  // Orchestral one-shots (Cinematic Percussion, Splice Originals, licensed to Doug Garceau) in sounds/orch,
+  // and the drum-kit samples in sounds/kit. Anything not covered falls back to the synthesized voice.
+  var OB = {}, OL = {}, ORCH = '../sounds/orch/';
+  function obuf(name) {
+    if (OB[name]) return OB[name];
+    if (!OL[name]) OL[name] = fetch(ORCH + name + '.mp3?v=1').then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); })
+      .then(function (b) { return new Promise(function (res, rej) { ctx.decodeAudioData(b, res, rej); }); })
+      .then(function (b) { OB[name] = b; return b; }).catch(function () { OB[name] = null; });
+    return null;
+  }
+  function oplay(name, t, gain, rate) {
+    var b = obuf(name);
+    if (!b) { if (OB[name] === null) return false; var p = OL[name]; if (p) { p.then(function (bb) { if (bb) oplay(name, ctx.currentTime + .01, gain, rate); }); return true; } return false; }
+    var s = ctx.createBufferSource(); s.buffer = b; s.playbackRate.value = rate || 1;
+    var g = ctx.createGain(); g.gain.value = gain; s.connect(g); g.connect(bus); s.start(t); return true;
+  }
+  function preload(list) { list.forEach(obuf); }
+  var TIMP = { 36: 'C', 37: 'lowDb', 41: 'F', 45: 'A', 46: 'Bb', 47: 'B', 49: 'highDb', 52: 'E', 55: 'G' };
+  var TIMP_PP = { 37: 1, 41: 1, 45: 1, 47: 1, 49: 1, 52: 1, 55: 1 };
+  function nearest(map, m) { var best = null; Object.keys(map).forEach(function (k) { if (best === null || Math.abs(k - m) < Math.abs(best - m)) best = +k; }); return best; }
+  function dyn(note, dflt) { var d = /:(pp|p|mp|mf|f|ff)$/.exec(note || ''); return d ? d[1] : dflt; }
+  function midiOf(note) { var m = /^m(\d+)/.exec(note || ''); return m ? +m[1] : null; }
+  var PRE = {
+    timpani: ['timp-mf-lowDb', 'timp-mf-F', 'timp-mf-A', 'timp-mf-B', 'timp-mf-E', 'timp-mf-G', 'timp-mf-highDb'],
+    bassdrum: ['bd-mp', 'bd-mf', 'bd-ff'], tamtam: ['tamtam-pp', 'tamtam-mf', 'tamtam-f'], gong: ['gong-E', 'gong-F'], chimes: ['chime-F'],
+    woodblock: ['wb-high_D', 'wb-mid_F', 'wb-low_G'], templeblocks: ['wb-high_F', 'wb-high_D', 'wb-high_A', 'wb-low_Bb', 'wb-low_F']
+  };
+  function real(inst, t, f, note) {
+    var K = window.KitSamples, d, m, s;
+    if (PRE[inst]) preload(PRE[inst]);
+    switch (inst) {
+      case 'timpani':
+        m = midiOf(note); if (m === null) return false; d = dyn(note, 'mf');
+        var map = d === 'pp' ? TIMP_PP : TIMP; s = nearest(map, m);
+        return oplay('timp-' + d + '-' + TIMP[s], t, d === 'ff' ? .95 : d === 'pp' ? .9 : .9, Math.pow(2, (m - s) / 12));
+      case 'bassdrum': d = dyn(note, 'mf'); if (d === 'roll') return false;
+        if (note === 'roll') { if (!obuf('bd-mp')) return false; for (var i = 0; i < 20; i++) oplay('bd-mp', t + i * .09, .25 + i * .03, 1); return true; }
+        return oplay('bd-' + (d === 'f' ? 'ff' : d === 'p' || d === 'pp' ? 'mp' : d), t, 1, 1);
+      case 'tamtam': d = dyn(note, 'mf'); return oplay('tamtam-' + (d === 'ff' ? 'f' : d === 'p' ? 'pp' : d), t, 1, 1);
+      case 'gong': m = midiOf(note); if (m === null) return false;
+        var g = m < 59 ? ['gong-E', 52] : ['gong-F', 65]; return oplay(g[0], t, .9, Math.pow(2, (m - g[1]) / 12));
+      case 'chimes': m = midiOf(note); if (m === null) return false; return oplay('chime-F', t, .9, Math.pow(2, (m - 65) / 12));
+      case 'woodblock': return oplay(note && note.indexOf('wb-') === 0 ? note : 'wb-mid_F', t, .9, 1);
+      case 'templeblocks': var T = { '1040': 'wb-high_F', '880': 'wb-high_D', '740': 'wb-high_A', '620': 'wb-low_Bb', '520': 'wb-low_F' };
+        return oplay(T[note] || 'wb-low_G', t, .9, 1);
+      case 'snare': if (!K) return false;
+        if (note === '__roll') { if (!K.ready('snare-mp')) return false; for (var j = 0; j < 30; j++) K.play(ctx, bus, j % 2 ? 'snare-mp' : 'snare-mf', t + j * .04 + Math.random() * .004, .35 + j / 60, j % 2 ? .1 : -.1); return true; }
+        return K.play(ctx, bus, note === 'piccolo' ? 'snare-mf' : 'snare-f', t, .95, 0, note === 'piccolo' ? 1.25 : 1);
+      case 'snareroll': return real('snare', t, f, '__roll');
+      case 'toms': if (!K) return false; return K.play(ctx, bus, f && f < 120 ? 'floor' : 'tom', t, .9, 0, f && f < 120 ? f / 92 : Math.max(.6, Math.min(1.6, f / 150)));
+      case 'crash': if (!K || !K.ready('crash')) return false; var r = note === '16' ? 1.14 : note === '20' ? .88 : 1;
+        K.play(ctx, bus, 'crash', t, .75, -.25, r); K.play(ctx, bus, 'crash', t + .012, .6, .25, r * 1.03); return true;
+      case 'suspended': if (!K || !K.ready('crash')) return false; var rr = note === '16' ? 1.14 : note === '20' ? .88 : 1;
+        if (note === 'hit') return K.play(ctx, bus, 'crash', t, .8, 0, rr);
+        for (var q = 0; q < 26; q++) K.play(ctx, bus, 'crash', t + q * .075, .04 + Math.pow(q / 26, 2) * .5, q % 2 ? .2 : -.2, rr);
+        K.play(ctx, bus, 'crash', t + 26 * .075, .75, 0, rr); return true;
+    }
     return false;
   }
   function play(inst, note, btn) {
     if (!audio()) return;
     var t = ctx.currentTime + 0.02, f = note ? (/^\d+(\.\d+)?$/.test(note) ? +note : MIDI(+note.replace('m', ''))) : 0;
-    if (!real(inst, t, f)) V[inst](t, f);
+    if (!real(inst, t, f, note)) V[inst](t, f, note);
     if (btn) { btn.classList.add('hit'); setTimeout(function () { btn.classList.remove('hit'); }, 180); }
     if (window.gtag) gtag('event', 'drum_room_play', { instrument: inst });
   }
