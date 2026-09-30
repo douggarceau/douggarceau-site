@@ -395,7 +395,25 @@
     },
     logdrum: function (t, f) { sine(t, f, 0.6, 0.35); sine(t, f * 2.5, 0.12, 0.12); noise(t, 0.02, 0.2, 'bandpass', f * 3, 2); },
     rute: function (t) { for (var i = 0; i < 10; i++) noise(t + Math.random() * 0.03, 0.03, 0.4, 'bandpass', 3000 + Math.random() * 2000, 2); },
-    guiro: function (t) { for (var i = 0; i < 14; i++) noise(t + i * 0.022, 0.015, 0.5, 'bandpass', 2800, 4); for (var j = 0; j < 4; j++) noise(t + 0.4 + j * 0.03, 0.015, 0.5, 'bandpass', 2800, 4); },
+    // Güiro: a hollow gourd with ridges, scraped with a stick. Each ridge the stick crosses is a tiny click that
+    // excites the gourd's hollow cavity, so the scrape is a rasp with a woody, vowel-like body. The stick speeds
+    // up through the middle of a stroke. Long = down-stroke, short = quick up-stroke, tap = stick on the ridges.
+    // Güira: the metal scraper of merengue, scraped with a wire brush, brighter and with no hollow body.
+    guiro: function (t, f, note) {
+      var v = note || 'long', metal = /^gu/.test(v);
+      var P = { long: [0.36, 30], short: [0.085, 8], gulong: [0.22, 34], gushort: [0.07, 10] }[v];
+      var cav = ctx.createGain(); cav.gain.value = 1;
+      if (!metal) [[620, 6, 5], [1250, 5, 2.6], [2300, 4, 1]].forEach(function (b) { var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = b[0] * (v === 'short' ? 1.05 : 1); bp.Q.value = b[1]; var g = ctx.createGain(); g.gain.value = b[2]; cav.connect(bp); bp.connect(g); g.connect(bus); });
+      function tick(tt, a) {
+        var sN = ctx.createBufferSource(); sN.buffer = noiseBuf; var g = ctx.createGain(); g.gain.setValueAtTime(0, tt); g.gain.linearRampToValueAtTime(a, tt + 0.0006); g.gain.setTargetAtTime(0, tt + 0.0006, metal ? 0.0025 : 0.002);
+        var hp = ctx.createBiquadFilter(); hp.type = 'bandpass'; hp.frequency.value = metal ? 6000 : 2600; hp.Q.value = metal ? 1.5 : 1.2; var dg = ctx.createGain(); dg.gain.value = metal ? 1 : 0.35; sN.connect(g); g.connect(hp); hp.connect(dg); dg.connect(bus); if (!metal) g.connect(cav);
+        sN.start(tt, Math.random() * 2); sN.stop(tt + 0.03);
+        if (metal) { ring(tt, 3300 + Math.random() * 400, a * 0.08, 0.015); ring(tt, 5100 + Math.random() * 500, a * 0.05, 0.01); }
+      }
+      if (v === 'tap') { tick(t, 1); ring(t, 620, 0.3, 0.035); ring(t, 1250, 0.12, 0.02); return; }
+      var dur = P[0], n = P[1];
+      for (var i = 0; i < n; i++) { var x = i / (n - 1), pos = (1 - Math.cos(Math.PI * x)) / 2; tick(t + dur * (0.5 * x + 0.5 * pos) + Math.random() * 0.001, (metal ? 0.5 : 0.7) * (0.6 + 0.4 * Math.sin(Math.PI * x)) * (0.85 + Math.random() * 0.3)); }
+    },
     cabasa: function (t) { noise(t, 0.12, 0.5, 'highpass', 6000, 0.7, 0.03); noise(t + 0.2, 0.08, 0.4, 'highpass', 6000); },
     // Vibraslap: the palm hits the ball, the bent wire whips back and forth, and the loose metal teeth chatter
     // inside the hollow wooden box. Each swing of the wire is one burst of several teeth clicking, colored by the
@@ -404,13 +422,19 @@
     vibraslap: function (t, f, note) {
       var v = note || 'large', P = { large: [27, 1.5, 850, 1], small: [34, 1.1, 1300, 0.85], quijada: [22, 0.9, 1600, 0.9] }[v] || [27, 1.5, 850, 1];
       var rate = P[0], dur = P[1], box = P[2], vol = P[3], bone = v === 'quijada';
-      sine(t, 160, 0.25 * vol, 0.06, 'sine', 110, 0.04); noise(t, 0.015, 0.25 * vol, 'bandpass', 1200, 1);
+      // the first slap: all the teeth hit at once and the whole box knocks
+      sine(t, 190, 0.5 * vol, 0.08, 'sine', 120, 0.05);
+      if (!bone) { ring(t, box * 0.55, 0.7 * vol, 0.045); ring(t, box, 0.55 * vol, 0.035); ring(t, box * 1.7, 0.3 * vol, 0.02); }
+      else { ring(t, 1100, 0.5 * vol, 0.02); ring(t, 1900, 0.3 * vol, 0.012); }
+      noise(t, 0.012, 1.1 * vol, 'bandpass', bone ? 3000 : 2400, 1.2, 0.0003);
+      for (var z = 0; z < 6; z++) noise(t + Math.random() * 0.006, 0.008, 0.7 * vol, 'bandpass', 3500 + Math.random() * 3000, 5, 0.0003);
       var at = t + 0.012, i = 0;
       while (at < t + dur) {
         var a = vol * Math.exp(-(at - t) / (dur * 0.33)) * (0.8 + Math.random() * 0.2);
         for (var k = 0; k < 4; k++) { var tk = at + Math.random() * 0.006;
-          noise(tk, 0.008, a * 1.3, 'bandpass', bone ? 2200 + Math.random() * 1500 : 3500 + Math.random() * 3000, bone ? 2 : 6, 0.0003); }
-        if (!bone) noise(at, 0.035, a * 1.1, 'bandpass', box, 5, 0.001);
+          noise(tk, 0.008, a * 1.5, 'bandpass', bone ? 2200 + Math.random() * 1500 : 3500 + Math.random() * 3000, bone ? 2 : 6, 0.0003); }
+        if (!bone) { noise(at, 0.035, a * 1.5, 'bandpass', box, 4, 0.001); ring(at, box * 0.55, a * 0.35, 0.025); ring(at, box, a * 0.25, 0.02); }
+        else ring(at, 1100 + Math.random() * 200, a * 0.25, 0.012);
         i++; at += (1 / rate) * (1 + i * 0.012);
       }
     },
