@@ -1,7 +1,7 @@
 /* Drum Room sounds: snare, toms and suspended cymbal use the real recorded kit samples (sounds/kit);
    instruments with no recording yet are synthesized in the browser. */
 (function () {
-  var ctx, bus, noiseBuf;
+  var ctx, bus, noiseBuf, ROOT, IB = {}, SCT = {};
   function audio() {
     if (!ctx) {
       var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
@@ -15,6 +15,7 @@
       for (var c = 0; c < 2; c++) { var ch = ir.getChannelData(c); for (var j = 0; j < rl; j++) ch[j] = (Math.random() * 2 - 1) * Math.pow(1 - j / rl, 3); }
       var verb = ctx.createConvolver(); verb.buffer = ir; var wet = ctx.createGain(); wet.gain.value = 0.18;
       bus = ctx.createGain(); bus.connect(comp); bus.connect(verb); verb.connect(wet); wet.connect(comp);
+      ROOT = bus;
       var lim = ctx.createDynamicsCompressor(); lim.threshold.value = -6; lim.knee.value = 0; lim.ratio.value = 20; lim.attack.value = 0.001; lim.release.value = 0.15;
       comp.connect(master); master.connect(lim); lim.connect(ctx.destination);
     }
@@ -757,7 +758,7 @@
     if (!audio()) return;
     var t = when || ctx.currentTime + 0.02, f = note ? (/^\d+(\.\d+)?$/.test(note) ? +note : MIDI(+note.replace('m', ''))) : 0;
     if (note === '__roll') { inst = 'snareroll'; note = ''; }
-    var saved = bus; if (gain && gain !== 1) { var gg = ctx.createGain(); gg.gain.value = gain; gg.connect(saved); bus = gg; }
+    var saved = bus, ib = instBus(inst); bus = ib; if (gain && gain !== 1) { var gg = ctx.createGain(); gg.gain.value = gain; gg.connect(ib); bus = gg; }
     try { if (!real(inst, t, f, note)) V[inst](t, f, note); } finally { bus = saved; }
     if (btn) { var dl = Math.max(0, (t - ctx.currentTime) * 1000); setTimeout(function () { btn.classList.add('hit'); setTimeout(function () { btn.classList.remove('hit'); }, 160); }, dl); }
     if (!when && window.gtag) gtag('event', 'drum_room_play', { instrument: inst });
@@ -765,15 +766,36 @@
   function scale(inst, notes, card) {
     if (!audio()) return;
     var keys = card.querySelectorAll('[data-note]');
-    notes.forEach(function (n, i) { var at = i * 0.28; setTimeout(function () { play(inst, n, keys[i]); }, at * 1000); });
+    SCT[inst] = (SCT[inst] || []).concat(notes.map(function (n, i) { return setTimeout(function () { play(inst, n, keys[i]); }, i * 280); }));
   }
+  // ---------- Stop ----------
+  // Every instrument plays through its own channel. Stopping fades that channel out in a few milliseconds and
+  // throws it away, which silences everything it was playing: notes already scheduled by a pattern, long rolls,
+  // ringing vibes, thunder, rain. The next note simply gets a fresh channel.
+  function instBus(name) {
+    if (!IB[name]) { var g = ctx.createGain(); g.gain.value = 1; g.connect(ROOT); IB[name] = g; }
+    return IB[name];
+  }
+  function hush(name) {
+    (SCT[name] || []).forEach(clearTimeout); SCT[name] = [];
+    var g = IB[name]; if (!g || !ctx) return; delete IB[name];
+    g.gain.cancelScheduledValues(ctx.currentTime); g.gain.setTargetAtTime(0, ctx.currentTime, 0.012);
+    setTimeout(function () { try { g.disconnect(); } catch (e) {} }, 250);
+    if (name === 'vibraphone') VIBE.ring = [];
+  }
+  function stopInst(snd) {
+    if (patBtn && patBtn.getAttribute('data-inst') === snd) stopPat();
+    hush(snd); if (snd === 'snare') hush('snareroll');
+  }
+  function stopAll() { stopPat(); Object.keys(SCT).concat(Object.keys(IB)).forEach(hush); }
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') stopAll(); });
 
   // ---------- Patterns: three rhythmic ideas per instrument, played twice ----------
   var patTimer = null, patBtn = null;
   function stopPat() { if (patTimer) { patTimer.forEach(clearTimeout); patTimer = null; } if (patBtn) { patBtn.classList.remove('on'); patBtn = null; } }
   function playPat(btn) {
     if (!audio()) return;
-    var was = btn === patBtn; stopPat(); if (was) return;
+    var was = btn === patBtn; if (patBtn) hush(patBtn.getAttribute('data-inst')); stopPat(); if (was) return;
     var id = btn.getAttribute('data-pat').split(':'), D = (window.ORCH_PATTERNS || {})[id[0]]; if (!D) return;
     var P = D.p[+id[1]], bpm = P[0], sub = P[1], seq = P[2].trim().split(/\s+/), card = btn.closest('.inst');
     if (P[3]) setPedal(P[3]);
@@ -798,6 +820,7 @@
     if (window.gtag) gtag('event', 'drum_room_pattern', { pattern: btn.getAttribute('data-pat') });
   }
   document.addEventListener('click', function (e) {
+    var sb = e.target.closest('[data-stop]'); if (sb) { var w = sb.getAttribute('data-stop'); if (w === '*') stopAll(); else stopInst(w); return; }
     var pb = e.target.closest('[data-pat]'); if (pb) { playPat(pb); return; }
     var vp = e.target.closest('[data-vpedal]'); if (vp) { audio(); setPedal(vp.getAttribute('data-vpedal')); if (window.gtag) gtag('event', 'vibe_pedal', { pedal: vp.getAttribute('data-vpedal') }); return; }
     var b = e.target.closest('[data-inst]'); if (!b) return;
