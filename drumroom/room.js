@@ -276,7 +276,21 @@
       });
       noise(t, 0.008, 0.5, 'bandpass', 4500, 1, 0.0005); noise(t, 0.05, 0.12, 'bandpass', base * 1.6, 2, 0.001);
     },
-    belltree: function (t) { for (var i = 0; i < 12; i++) { var f = 3200 - i * 170; sine(t + i * 0.06, f, 0.12, 1.2); } },
+    // Bell tree: about 20 nested brass cup bells on a rod, smallest (highest) at the top. Gliding the beater
+    // down goes high to low; gliding up goes low to high. Each bell has a few inharmonic partials and rings on
+    // while the next ones sound, and the glide speeds up slightly as it goes.
+    belltree: function (t, f, note) {
+      var v = note || 'down', N = 20, fr = [];
+      for (var i = 0; i < N; i++) fr.push(5200 * Math.pow(1300 / 5200, i / (N - 1)) * (1 + (Math.random() - .5) * .03));
+      if (v === 'up') fr.reverse();
+      var order = v === 'both' ? fr.concat(fr.slice(0, -1).reverse()) : fr, at = t;
+      order.forEach(function (fq, k) {
+        var n = k / order.length, vol = 0.09 * (0.7 + 0.3 * Math.sin(n * Math.PI));
+        [[1, 1, 1.4], [2.02, .4, .6], [2.93, .25, .35], [4.13, .12, .2]].forEach(function (m) { ring(at, fq * m[0], vol * m[1], m[2] * (fq < 2500 ? 1.2 : 0.9)); });
+        noise(at, 0.004, 0.05, 'highpass', 6000, 0.7, 0.0005);
+        at += 0.05 * (1 - 0.35 * (k % N) / N);
+      });
+    },
     marktree: function (t) { for (var i = 0; i < 20; i++) { var f = 2400 + i * 160; sine(t + i * 0.04, f, 0.06, 1.5); } },
     flexatone: function (t) { var o = ctx.createOscillator(); o.frequency.value = 880; var l = ctx.createOscillator(); l.frequency.value = 9; var d = ctx.createGain(); d.gain.value = 40;
       l.connect(d); d.connect(o.frequency); o.frequency.setValueAtTime(700, t); o.frequency.linearRampToValueAtTime(1100, t + 1.2); o.connect(env(t, 0.25, 1.5, 0.02)); o.start(t); o.stop(t + 1.6); l.start(t); l.stop(t + 1.6); },
