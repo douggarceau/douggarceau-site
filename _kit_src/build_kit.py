@@ -1,4 +1,4 @@
-"""Draws the Level 7 drum kit in each configuration and splices it into level7.html.
+"""Draws the Level 7 drum kit (white marine pearl 4-piece) and splices it into level7.html.
 
 Run from the repo root:  python3 _kit_src/build_kit.py
 Everything between <!--KIT:BEGIN--> and <!--KIT:END--> in level7.html is replaced.
@@ -13,8 +13,6 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 FINISHES = {
     # white marine pearl, the current Level 7 kit
     'pearl': (['#bdb3b8', '#f7f1f3', '#ffffff', '#ece3e7', '#b7adb2'], None),
-    # blue sparkle, the original Level 7 kit
-    'blue': (['#0c2266', '#3a74f0', '#8db8ff', '#2d5fd8', '#0a1d5c'], ['#ffffff', '#cfe0ff', '#9fc2ff']),
 }
 
 GLITTER = [(7.1, 3.3, 1.0, .84), (2.1, 12.8, 1.2, .37), (9.5, 1.5, .6, .39), (12.4, 20.8, 1.0, .92), (12.7, 8.7, 1.3, .68),
