@@ -692,7 +692,7 @@
     var b = obuf(name);
     if (!b) { if (OB[name] === null) return false; var p = OL[name]; if (p) { p.then(function (bb) { if (bb) oplay(name, ctx.currentTime + .01, gain, rate); }); return true; } return false; }
     var s = ctx.createBufferSource(); s.buffer = b; s.playbackRate.value = rate || 1;
-    var g = ctx.createGain(); g.gain.value = gain; s.connect(g); g.connect(bus); s.start(t); return true;
+    var g = ctx.createGain(); g.gain.value = gain; s.connect(g); g.connect(bus); s.start(t); return g;
   }
   function preload(list) { list.forEach(obuf); }
   var TIMP = { 36: 'C', 37: 'lowDb', 41: 'F', 45: 'A', 46: 'Bb', 47: 'B', 49: 'highDb', 52: 'E', 55: 'G' };
@@ -703,14 +703,67 @@
   var PRE = {
     timpani: ['timp-mf-lowDb', 'timp-mf-F', 'timp-mf-A', 'timp-mf-B', 'timp-mf-E', 'timp-mf-G', 'timp-mf-highDb'],
     bassdrum: ['bd-mp', 'bd-mf', 'bd-ff'], tamtam: ['tamtam-pp', 'tamtam-mf', 'tamtam-f'], gong: ['gong-E', 'gong-F'], chimes: ['chime-F'],
-    woodblock: ['wb-high_D', 'wb-mid_F', 'wb-low_G'], xylophone: ['xylo-Db5'], framedrum: ['frame-low', 'frame-open', 'frame-high', 'frame-short'], taxihorn: ['honker'], belltree: ['belltree-real'], rainstick: ['rainstick-real'], triangle: ['triangle-real'], templeblocks: ['wb-high_F', 'wb-high_D', 'wb-high_A', 'wb-low_Bb', 'wb-low_F']
+    woodblock: ['wb-high_D', 'wb-mid_F', 'wb-low_G'], framedrum: ['frame-low', 'frame-open', 'frame-high', 'frame-short'], taxihorn: ['honker'], belltree: ['belltree-real'], rainstick: ['rainstick-real'], triangle: ['triangle-real'], templeblocks: ['wb-high_F', 'wb-high_D', 'wb-high_A', 'wb-low_Bb', 'wb-low_F']
   };
+  // Recordings from Doug's Splice library, by instrument and button. A value is a file, or [file, rate, gain].
+  var SMP = {
+    tambourine: { concert: 'tamb-concert', double: 'tamb-double', headless: 'tamb-headless', tap: 'tamb-tap', shake: 'tamb-shake' },
+    sleighbells: { hit: 'sleigh-hit', shake: 'sleigh-shake' },
+    triangle: { small: 'tri-small', medium: 'tri-medium', large: 'tri-large', 'medium:muffled': 'tri-muffled' },
+    cowbell: { mambo: 'cow-mambo', agogolow: ['agogo-b', 0.85], agogohigh: ['agogo-a', 1.12] },
+    belltree: { down: 'belltree-real', both: 'belltree-roll' },
+    castanets: { small: 'cast-small', large: 'cast-large', paddle: 'cast-paddle', roll: 'cast-roll' },
+    claves: { small: 'clave-a', medium: 'clave-b', large: 'clave-c' },
+    marktree: { brass: 'chime-brass', steel: 'chime-steel', glass: 'chime-glass', bamboo: 'chime-bamboo' },
+    vibraslap: { large: 'vs-large', small: 'vs-small' },
+    guiro: { long: 'guiro-long', tap: 'guiro-tap', gushort: 'guira' },
+    cabasa: { short: 'cabasa-short', long: 'cabasa-long' },
+    maracas: { shake: 'maraca-hit', single: 'maraca-roll' },
+    fingercymbals: { small: 'fc-small', large: 'fc-large', ching: 'fc-ching' },
+    anvil: { small: 'anvil-small', medium: 'anvil-medium', large: 'anvil-large', resonant: 'anvil-res' },
+    thundersheet: { shake: 'thunder-long', strike: 'thunder-01', distant: ['thunder-wet', 1, 0.6] },
+    slapstick: { '': 'slapstick' }, lionsroar: { '': 'lionsroar' },
+    flexatone: { up: 'flex-up', short: 'flex-short' },
+    typewriter: { typing: 'tw-type', key: 'tw-key', bell: 'tw-bell', 'return': 'tw-return' },
+    slidewhistle: { down: 'sw-jump', bomb: 'sw-bomb', wobble: 'sw-wobble' },
+    birdwhistle: { songbird: 'bird' },
+    rainstick: { slow: 'rain-long', medium: 'rainstick-real' },
+    oceandrum: { tap: 'ocean-tap' },
+    bongos: { '480': 'bongo-hi', '330': 'bongo-lo' },
+    congas: { '260': 'conga-open', '210': ['conga-tumba', 1.12], '170': 'conga-tumba' },
+    timbales: { '520': 'timb-hi', '400': 'timb' },
+    templeblocks: { '520': 'tb-low', '620': ['tb-mid', 0.89], '740': ['tb-mid', 1.06], '880': ['tb-high', 1.055], '1040': ['tb-high', 1.246] }
+  };
+  // Pitched instruments: [measured MIDI pitch of the recording, file]. Each key plays the nearest recording,
+  // shifted by the few semitones (and cents) needed to land exactly on the key's note.
+  var MS = {
+    xylophone: [[59.92, 'xylo-C4'], [66.96, 'xylo-G4'], [71.9, 'xylo-C5'], [76.78, 'xylo-F5']],
+    marimba: [[59.65, 'mar-C'], [62.03, 'mar-D3'], [66.38, 'mar-G']],
+    vibraphone: [[60.1, 'vib-C4'], [69.08, 'vib-A4'], [72.07, 'vib-C5']],
+    celesta: [[72.05, 'cel-C'], [78.97, 'cel-G']],
+    glockenspiel: [[86.02, 'glock-b'], [95.86, 'glock-c']],
+    crotales: [[87.09, 'crot-a']]
+  };
+  Object.keys(SMP).forEach(function (k) { PRE[k] = (PRE[k] || []).concat(Object.keys(SMP[k]).map(function (n) { var v = SMP[k][n]; return typeof v === 'string' ? v : v[0]; })); });
+  Object.keys(MS).forEach(function (k) { PRE[k] = MS[k].map(function (x) { return x[1]; }); });
   function real(inst, t, f, note) {
     var K = window.KitSamples, d, m, s;
     if (PRE[inst]) preload(PRE[inst]);
+    var sv = SMP[inst] && SMP[inst][note || ''];
+    if (sv) { if (typeof sv === 'string') sv = [sv]; if (oplay(sv[0], t, sv[2] || 0.9, sv[1] || 1)) return true; }
+    if (MS[inst]) {
+      m = midiOf(note); if (m === null) return false;
+      var best = MS[inst].reduce(function (a, b) { return Math.abs(b[0] - m) < Math.abs(a[0] - m) ? b : a; });
+      var rate = Math.pow(2, (m - best[0]) / 12);
+      if (inst === 'vibraphone') {
+        var vg = oplay(best[1], t, 0.9, rate); if (!vg) return false;
+        if (vg.gain) { if (VIBE.pedal === 'up') vg.gain.setTargetAtTime(0, t + 0.28, 0.06); else VIBE.ring.push({ g: vg, end: t + 12 }); }
+        return true;
+      }
+      return !!oplay(best[1], t, 0.85, rate);
+    }
     switch (inst) {
       // Real recordings from Doug's own Splice library (Cinematic Percussion, Mickey Hart, Murda Beatz packs).
-      case 'xylophone': m = midiOf(note); if (m === null) return false; return oplay('xylo-Db5', t, .85, Math.pow(2, (m - 73) / 12));
       case 'framedrum': return oplay({ low: 'frame-low', open: 'frame-open', high: 'frame-high', short: 'frame-short' }[note || 'open'] || 'frame-open', t, .9, 1);
       case 'taxihorn': var hr = { high: 1.3, mid: 1, low: 0.72 }[note]; if (!hr) return false; return oplay('honker', t, .8, hr);
       case 'belltree': if (note && note !== 'down') return false; return oplay('belltree-real', t, .9, 1);
