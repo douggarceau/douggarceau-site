@@ -218,6 +218,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .content-grid.three{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){.content-grid.three{grid-template-columns:1fr}}
 @media(max-width:650px){.zone-in{grid-template-columns:1fr}.zone-num{grid-row:auto}.zone-links{grid-column:1}}
+.nav-ctas{display:flex;gap:8px}.nav-cta.nav-shop{background:transparent;color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}.nav-cta.nav-shop:hover{background:var(--gold);color:#111}
+@media(max-width:650px){.nav-cta.nav-shop{display:none}}
 </style>
 </head>
 <body>
@@ -233,7 +235,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <a href="grooves/">Grooves</a>
 <a href="shop/">Gear Shop</a>
 </nav>
-<a href="#levels" class="nav-cta">START LEARNING</a>
+<span class="nav-ctas"><a href="shop/" class="nav-cta nav-shop">GEAR SHOP</a><a href="#levels" class="nav-cta">START LEARNING</a></span>
 <details class="menu"><summary aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
 <nav aria-label="Main navigation, compact">
 <a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="beats/">Famous Beats</a><a href="#signup">Get new lessons</a>
@@ -254,6 +256,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <div class="button-row">
 <a href="level7.html" class="button button-gold">PLAY THE KIT</a>
 <a href="#levels" class="button button-outline">START LEARNING</a>
+<a href="shop/" class="button button-outline">SHOP DRUM GEAR</a>
 </div>
 </div>
 </section>
