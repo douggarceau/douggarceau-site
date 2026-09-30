@@ -279,6 +279,7 @@ function loadHash(){
   var h=location.hash.slice(1); if(!h) return false; var q={};
   h.split('&').forEach(function(p){ var i=p.indexOf('='); if(i>0) q[p.slice(0,i)]=decodeURIComponent(p.slice(i+1)); });
   if(!KITS[q.k]) return false; kitId=q.k;
+  if(!q.g){ applyPreset(Object.keys(kit().presets)[0]); return true; }
   setBpm(Math.max(60,Math.min(180,+q.t||90))); $('swing').value=Math.max(0,Math.min(60,+q.s||0)); $('swv').textContent=$('swing').value; $('key').value=Math.max(0,Math.min(11,+q.n||0));
   var parts=(q.g||'').split('.'); grid={};
   kit().rows.forEach(function(r,ri){ var s=parts[ri]||''; grid[r[0]]=new Array(16).fill(0).map(function(_,i){ var v=+(s[i]||0); return isNaN(v)?0:Math.min(v,(r[4]==='b'||r[4]==='a')?6:4); }); });

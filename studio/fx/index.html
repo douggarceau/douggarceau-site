@@ -133,7 +133,7 @@ function stopOne(n){ (playing[n]||[]).forEach(fade); playing[n]=[]; delete loops
 function stopAll(){ sceneT.forEach(clearTimeout); sceneT=[]; document.querySelectorAll('.scene.on').forEach(function(b){b.classList.remove('on');}); Object.keys(playing).forEach(stopOne); document.querySelectorAll('.prog').forEach(function(p){p.style.transition='none';p.style.width='0';}); }
 // build
 var host=document.getElementById('groups'), ki=0, keymap={};
-G.forEach(function(g){ var sec=document.createElement('section'); sec.className='grp'; sec.style.setProperty('--c',g.c);
+G.forEach(function(g){ var sec=document.createElement('section'); sec.className='grp'; sec.id=g.id; sec.style.setProperty('--c',g.c);
   var h='<h2 style="color:'+g.c+'">'+g.name+'</h2><p>'+g.d+'</p><div class="pads">';
   g.p.forEach(function(p){ var k=KEYS[ki++]||''; if(k) keymap[k]=p[0]; h+='<button class="pad" data-s="'+p[0]+'"'+(p[2]?' data-loop="'+p[2]+'"':'')+' aria-label="'+p[1]+(p[2]?' (loops until tapped again)':'')+'">'+p[1]+(p[2]?'<span class="lp">LOOP</span>':'')+'<span class="k">'+k.toUpperCase()+'</span><span class="prog"></span></button>'; });
   sec.innerHTML=h+'</div>'; host.appendChild(sec); });
@@ -145,6 +145,7 @@ document.addEventListener('click',function(e){
     if(window.gtag) gtag('event','fx_scene',{scene:sc.dataset.scene}); return; }
   if(e.target.closest('#stopall')) stopAll();
 });
+if(location.hash){ var tg=document.getElementById(location.hash.slice(1)); if(tg) setTimeout(function(){ tg.scrollIntoView({block:'start'}); window.scrollBy(0,-90); },50); }
 document.getElementById('vol').addEventListener('input',function(){ if(master) master.gain.value=+this.value; });
 document.addEventListener('keydown',function(e){ if(e.metaKey||e.ctrlKey||e.altKey||e.target.tagName==='INPUT') return; if(e.key==='Escape'){stopAll();return;} var n=keymap[e.key.toLowerCase()]; if(n&&!e.repeat){ e.preventDefault(); play(n);} });
 // warm up the first sounds after the first interaction
