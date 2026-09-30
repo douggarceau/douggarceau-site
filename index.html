@@ -10,9 +10,9 @@
 <meta name="description" content="Free online drum lessons from a formally trained professional drummer: play-along grooves, reading, fills and drum kit lessons from beginner to advanced.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0a0a;--ink:#ffffff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#ffd35c;--gold2:#ffe9a8;--bearbg:#E8F3FA;--bearink:#12324A;--bearmuted:#46637a}
+:root{--bg:#0a0a0a;--ink:#ffffff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#ffd35c;--gold2:#ffe9a8}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:16px;line-height:1.6}
@@ -51,6 +51,8 @@ h1 span{color:var(--gold)}
   .drum-hero h1{font-size:clamp(48px,13vw,72px);text-shadow:none}
 }
 .card .art picture{display:block;width:100%;height:100%;overflow:hidden}
+.lab .art{background:#060e1c}.lab .go{color:#38d6ff}.lab h3 span{color:#38d6ff}
+.labphoto{object-position:center 4%}
 .kitphoto{display:block;width:100%;height:100%;object-fit:cover;object-position:center 30%}
 .levels.three{grid-template-columns:repeat(3,1fr)}
 @media (max-width:1000px){.levels.three{grid-template-columns:1fr 1fr}}
@@ -68,12 +70,6 @@ h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:56px;lin
 .card h3{margin:0;font-size:34px;line-height:1.05}
 .card p{margin:0}
 .card .go{margin-top:auto;padding-top:12px;font-weight:600}
-.bear{background:var(--bearbg);color:var(--bearink)}
-.bear .art{background:#ffffff}
-.bear h3{font-family:'Fredoka',system-ui,sans-serif;font-weight:600}
-.bear .tag,.bear p{color:var(--bearmuted)}
-.bear p{font-family:'Fredoka',system-ui,sans-serif;font-size:17px}
-.bear .go{color:var(--bearink);font-family:'Fredoka',system-ui,sans-serif;font-size:18px}
 .kit{background:#111111;color:var(--ink)}
 .kit .art{background:#0a0a0a;border-bottom:1px solid var(--line)}
 .kit h3{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:44px;letter-spacing:1px}
@@ -146,30 +142,14 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 <h2>Pick your level</h2>
 <p class="sec-sub">Three levels, from a child's first lesson to conservatory-level study. Each one has its own path through the rudiments, the kit, the famous beats and the orchestra's percussion section.</p>
 <div class="levels three">
-<a class="card bear" href="beginner/">
+<a class="card kit lab" href="beginner/">
 <div class="art">
-<svg viewBox="200 20 280 420" aria-hidden="true">
-<ellipse cx="340" cy="300" rx="88" ry="82" fill="#8B5A2B"/><ellipse cx="340" cy="312" rx="56" ry="56" fill="#E8C08F"/>
-<circle cx="285" cy="98" r="26" fill="#8B5A2B"/><circle cx="395" cy="98" r="26" fill="#8B5A2B"/><circle cx="285" cy="98" r="13" fill="#D9A066"/><circle cx="395" cy="98" r="13" fill="#D9A066"/>
-<circle cx="340" cy="155" r="74" fill="#8B5A2B"/>
-<polygon points="316,88 356,80 338,34" fill="#F2B233"/><circle cx="338" cy="32" r="7" fill="#E24B4B"/>
-<ellipse cx="340" cy="178" rx="36" ry="28" fill="#E8C08F"/>
-<path d="M318 190 Q340 222 362 190 Z" fill="#5A1F1F"/><ellipse cx="340" cy="205" rx="11" ry="9" fill="#E86A7A"/>
-<ellipse cx="340" cy="166" rx="13" ry="9" fill="#3B2314"/>
-<circle cx="312" cy="135" r="16" fill="#fff"/><circle cx="318" cy="130" r="7" fill="#1E1E1E"/>
-<circle cx="370" cy="140" r="10" fill="#fff"/><circle cx="367" cy="144" r="5" fill="#1E1E1E"/>
-<path d="M294 112 Q312 100 330 114" fill="none" stroke="#3B2314" stroke-width="5" stroke-linecap="round"/><path d="M358 130 L382 132" fill="none" stroke="#3B2314" stroke-width="5" stroke-linecap="round"/>
-<path d="M250 362 L250 425 A90 20 0 0 0 430 425 L430 362 Z" fill="#D94F4F"/>
-<polyline points="262,372 285,423 308,377 331,428 354,377 377,428 400,377 420,420" fill="none" stroke="#F6E7D0" stroke-width="3" stroke-linejoin="round"/>
-<ellipse cx="340" cy="362" rx="90" ry="22" fill="#F4E9D0" stroke="#B83A3A" stroke-width="4"/>
-<line x1="265" y1="275" x2="232" y2="330" stroke="#8B5A2B" stroke-width="34" stroke-linecap="round"/><line x1="232" y1="330" x2="290" y2="358" stroke="#E8D3A0" stroke-width="7" stroke-linecap="round"/>
-<line x1="415" y1="275" x2="448" y2="330" stroke="#8B5A2B" stroke-width="34" stroke-linecap="round"/><line x1="448" y1="330" x2="390" y2="358" stroke="#E8D3A0" stroke-width="7" stroke-linecap="round"/>
-</svg>
+<picture><source type="image/webp" srcset="assets/bear-drum-lab-stage.webp"><img class="kitphoto labphoto" src="assets/bear-drum-lab-stage.jpg" width="470" height="657" alt="" loading="lazy" decoding="async"></picture>
 </div>
 <div class="body">
 <span class="tag">Beginner · Kids and first-timers</span>
-<h3>Bear's Drum School</h3>
-<p>Bear's practice-pad lessons, counting and reading, the essential rudiments, your first famous beats, and every instrument in the orchestra.</p>
+<h3>Bear's Drum Lab</h3>
+<p>Bear's 24 lessons with notation that lights up, counting and reading, the essential rudiments, your first famous beats, and every instrument in the orchestra.</p>
 <span class="go">Start as a beginner →</span>
 </div>
 </a>

@@ -3,141 +3,306 @@
 <head>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RRYVXZXES0"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RRYVXZXES0');</script>
-
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bear's Drum School · Free Drum Lessons for Kids</title>
-<meta name="description" content="Bear's drum school: fun, free beginner drum lessons for kids, with play-along beats you can hear and watch light up.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#E8F3FA;--card:#FFFFFF;--ink:#12324A;--muted:#557086;--line:#B9D3E4;--hot:#D63A3A;--hotbg:#FBE3E3;--btn:#12324A;--btnink:#FFFFFF;--L:#2B78B8;--R:#D94F4F;
-box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F2233;--card:#16324A;--ink:#EAF3FA;--muted:#9DB6C9;--line:#2B4C68;--hot:#FF7A6B;--hotbg:#4A2B33;--btn:#F2B233;--btnink:#12324A;--L:#6FB4EE;--R:#FF8A80}}
-:root[data-theme="dark"]{--bg:#0F2233;--card:#16324A;--ink:#EAF3FA;--muted:#9DB6C9;--line:#2B4C68;--hot:#FF7A6B;--hotbg:#4A2B33;--btn:#F2B233;--btnink:#12324A;--L:#6FB4EE;--R:#FF8A80}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:'Fredoka','Trebuchet MS',system-ui,sans-serif;font-size:17px;line-height:1.5}
-main{max-width:1060px;margin:0 auto;padding:22px 18px 40px}
-h1{font-size:32px;font-weight:600;margin:0 0 4px;letter-spacing:-.01em}
-.sub{color:var(--muted);margin:0 0 6px}
-.src{color:var(--muted);font-size:15px;margin:0 0 18px;border-left:4px solid var(--hot);padding:2px 0 2px 10px}.src b{color:var(--ink)}
-.tabs{display:flex;flex-direction:column;gap:8px;margin-bottom:16px}
-.unit{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
-.uname{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);min-width:132px}
-.tab{font:inherit;font-weight:500;font-size:15px;padding:7px 13px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}
-.tab[aria-pressed="true"]{background:var(--btn);color:var(--btnink);border-color:var(--btn)}
-.grid{display:grid;grid-template-columns:minmax(240px,320px) 1fr;gap:18px;align-items:start}
-@media (max-width:720px){.grid{grid-template-columns:1fr}.stage{max-width:300px;margin:0 auto}}
-.stage{background:var(--card);border:2px solid var(--line);border-radius:22px;padding:8px;cursor:pointer}
-.stage svg{display:block;width:100%;height:auto}
-.card{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:16px 18px;margin-bottom:14px}
-h2{font-size:24px;font-weight:600;margin:0 0 4px}
-.card p{margin:0}
-#staff{width:100%;height:auto;display:block}
-.nh{fill:var(--ink)}.oh{fill:var(--card);stroke:var(--ink)}.n.on .oh{stroke:var(--hot)}.ts{fill:var(--ink)}.st{stroke:var(--ink)}.bm{fill:var(--ink)}
-.n.on .nh{fill:var(--hot)}.n.on .st{stroke:var(--hot)}.n.on .bm{fill:var(--hot)}
-.n{cursor:pointer}
-.lbl{font-size:22px;font-weight:600;text-anchor:middle;fill:var(--muted)}
-.n.on .lbl{fill:var(--hot)}
-.lbl.L{fill:var(--L)}.lbl.R{fill:var(--R)}
-.syl{font-size:17px;text-anchor:middle;fill:var(--muted)}
-.ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px}
-.go.alt{background:var(--card);color:var(--ink);border:2px solid var(--btn)}
-.go.alt[aria-pressed="true"]{background:var(--btn);color:var(--btnink)}
-.clk{font:inherit;font-weight:500;font-size:16px;padding:9px 16px;border-radius:999px;border:2px solid var(--btn);background:var(--card);color:var(--ink);cursor:pointer}
-.clk[aria-pressed="true"]{background:var(--btn);color:var(--btnink)}
-.beats{display:flex;gap:8px;align-items:center}
-.bd{width:16px;height:16px;border-radius:50%;border:2px solid var(--line);background:transparent}
-.bd.on{background:var(--hot);border-color:var(--hot)}
-.go{font:inherit;font-weight:500;font-size:18px;padding:11px 22px;border-radius:999px;border:0;background:var(--btn);color:var(--btnink);cursor:pointer}
-label{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:15px}
-input[type=range]{width:170px;accent-color:var(--hot)}
-.bpm{color:var(--ink);min-width:70px;font-weight:500}
-ol{margin:8px 0 0;padding-left:22px}
-li{margin:2px 0}
-.home{display:inline-block;color:var(--muted);text-decoration:none;font-size:15px;padding:8px 0;margin-bottom:6px}.home:hover{color:var(--ink)}
-.leftcol{display:flex;flex-direction:column;gap:14px}
-.talkbtn{font:inherit;font-weight:500;font-size:17px;padding:10px 18px;border-radius:999px;border:2px solid var(--btn);background:var(--card);color:var(--ink);cursor:pointer}
-.talkbtn[aria-pressed="true"]{background:var(--btn);color:var(--btnink)}
-@keyframes bjaw{from{transform:scaleY(.4)}to{transform:scaleY(1.5)}}
-.talking #mouth{animation:bjaw .16s ease-in-out infinite alternate}
-.boxes{display:flex;flex-direction:column;gap:12px}
-.box{background:var(--card);border:2px solid var(--ink);border-radius:12px;overflow:hidden}
-.box h3{margin:0;background:var(--ink);color:var(--card);font-size:14px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:5px 12px;display:flex;justify-content:space-between}
-.box h3 span{opacity:.75;font-weight:500}
-.box .bb{display:flex;gap:12px;align-items:center;padding:10px 12px}
-.box svg{width:88px;height:70px;flex:none}
-.box p{margin:0;font-size:15px;line-height:1.4}
-.sy{fill:var(--ink)}.sys{stroke:var(--ink)}.syo{fill:var(--card);stroke:var(--ink)}
-@media (max-width:720px){.leftcol .stage{max-width:300px;margin:0 auto}}
-.next{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:#0a0a0a;color:#ffffff;border:2px solid #0a0a0a;border-radius:18px;padding:16px 20px;margin-top:8px;text-decoration:none}
-.next b{font-size:22px;font-weight:600;display:block}
-.next span{color:#d9d9d9;font-size:15px}
-.next .arrow{background:#ffd35c;color:#0a0a0a;font-weight:600;border-radius:999px;padding:10px 18px;white-space:nowrap}
-.next:hover .arrow{background:#ffe9a8}
-button:focus-visible,input:focus-visible,.n:focus-visible,.next:focus-visible{outline:3px solid var(--hot);outline-offset:2px}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bear's Drum Lab · Free Drum Lessons for Kids and Beginners</title>
+<meta name="description" content="Bear's Drum Lab: 24 free beginner drum lessons with notation that lights up, play-along audio, a metronome, count-in and progress tracking. From quarter notes to paradiddles, flams, drags and rolls.">
 <link rel="canonical" href="https://douggarceau.com/bear.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Amadeus School of Drums">
-<meta property="og:title" content="Bear's Drum School · Free Drum Lessons for Kids">
+<meta property="og:title" content="Bear's Drum Lab · Free Drum Lessons for Kids and Beginners">
 <meta property="og:url" content="https://douggarceau.com/bear.html">
-<meta property="og:description" content="Bear's drum school: fun, free beginner drum lessons for kids, with play-along beats you can hear and watch light up.">
+<meta property="og:description" content="24 free beginner drum lessons with notation that lights up, play-along audio and progress tracking.">
+<meta property="og:image" content="https://douggarceau.com/assets/bear-drum-lab-stage.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#060e1c;--bg2:#0a1628;--panel:#0c1a2f;--panel2:#10223b;--line:#1b3252;--line2:#25446c;--cy:#38d6ff;--cy2:#8ee9ff;--cyd:rgba(56,214,255,.14);--ink:#eaf2ff;--mut:#8fa6c4;--gold:#ffd35c;--gold2:#ffe38f;--r:#ffd35c;--l:#38d6ff}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:radial-gradient(1200px 600px at 30% -10%,#0f2544 0%,transparent 60%),var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:15px;line-height:1.5;min-height:100vh}
+a{color:var(--cy)}
+button{font:inherit;color:inherit}
+svg.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* top bar */
+.top{display:flex;align-items:center;gap:18px;padding:10px 20px;border-bottom:1px solid var(--line);background:rgba(6,14,28,.85);backdrop-filter:blur(8px);position:sticky;top:0;z-index:20}
+.brand{text-decoration:none;color:var(--ink);line-height:1}
+.brand b{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:32px;letter-spacing:1.5px}.brand b span{color:var(--cy)}
+.brand small{display:block;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:4px;color:var(--mut);margin-top:4px}
+.tnav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+.tnav a{display:flex;flex-direction:column;align-items:center;gap:3px;min-width:74px;padding:7px 10px;border-radius:10px;border:1px solid transparent;text-decoration:none;color:var(--mut);font-size:12px}
+.tnav a:hover{color:var(--ink)}
+.tnav a.here{color:var(--ink);border-color:var(--cy);background:var(--cyd);box-shadow:0 0 18px rgba(56,214,255,.18) inset}
+.tprog{margin-left:auto;display:flex;align-items:center;gap:14px;border:1px solid var(--line2);border-radius:12px;padding:8px 14px;background:var(--panel)}
+.tprog .u{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--cy2);text-transform:uppercase}
+.tprog .n{font-size:13px}
+.dots{display:flex;gap:5px}.dots i{width:10px;height:10px;border-radius:50%;background:#1e3858;display:block}
+.dots i.done{background:var(--cy)}.dots i.cur{background:transparent;box-shadow:0 0 0 2px var(--cy)}
+.me{display:flex;align-items:center;gap:10px;font-size:12px;color:var(--mut)}.me img{width:38px;height:38px;border-radius:50%;border:2px solid var(--line2)}
+.me b{display:block;color:var(--ink);font-weight:600;font-size:13px}
+/* app grid */
+.app{display:grid;grid-template-columns:250px minmax(0,1fr) 290px;grid-template-areas:"nav hero coach" "nav stage coach" "nav mission mission";gap:16px;padding:16px 20px 24px;max-width:1680px;margin:0 auto}
+.panel{background:linear-gradient(180deg,var(--panel2),var(--panel));border:1px solid var(--line);border-radius:14px}
+/* left nav */
+.nav{grid-area:nav;align-self:start;position:sticky;top:84px;display:flex;flex-direction:column;gap:10px;max-height:calc(100vh - 100px);overflow:auto;scrollbar-width:thin}
+.unit{padding:12px}
+.unit>button{display:flex;align-items:center;gap:10px;width:100%;background:none;border:0;padding:0;text-align:left;cursor:pointer}
+.ring{--p:0;width:42px;height:42px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:'IBM Plex Mono',monospace;font-size:11px;background:conic-gradient(var(--cy) calc(var(--p)*1%),#1b3252 0);position:relative}
+.ring::before{content:"";position:absolute;inset:4px;border-radius:50%;background:var(--panel)}.ring span{position:relative}
+.unit h3{margin:0;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--cy2);font-weight:600}
+.unit p{margin:0;font-size:12px;color:var(--mut)}
+.unit ol{list-style:none;margin:10px 0 0;padding:0;display:none}
+.unit.open ol{display:block}
+.unit li button{display:flex;align-items:center;gap:10px;width:100%;min-height:38px;padding:6px 10px;border-radius:9px;border:1px solid transparent;background:none;text-align:left;cursor:pointer;font-size:13.5px;color:#cfdcf0}
+.unit li button:hover{background:#12294a}
+.unit li button .k{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--mut);width:18px}
+.unit li button .ck{margin-left:auto;color:var(--cy);visibility:hidden}
+.unit li button.done .ck{visibility:visible}
+.unit li button[aria-current=true]{border-color:var(--cy);background:var(--cyd);color:#fff;box-shadow:0 0 16px rgba(56,214,255,.2)}
+.quote{padding:14px 12px 4px;color:var(--mut);font-style:italic;font-size:13px}
+/* hero */
+.hero{grid-area:hero;display:grid;grid-template-columns:minmax(0,42%) minmax(0,1fr);gap:22px;align-items:start}
+.lt{padding-top:18px}
+.stagewrap{position:relative;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#050b16;cursor:pointer;aspect-ratio:470/657;max-height:560px;justify-self:stretch}
+.stagewrap img{display:block;width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .08s ease-out}
+.stagewrap::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(40% 25% at 50% 72%,rgba(56,214,255,.55),transparent 70%);opacity:0;transition:opacity .25s}
+.stagewrap.hit::after{opacity:.55;transition:opacity .03s}.stagewrap.hit.acc::after{opacity:.95}
+.stagewrap.hit img{transform:scale(1.008)}
+.stagewrap:focus-visible{outline:3px solid var(--cy);outline-offset:3px}
+.bubble{position:absolute;top:5%;right:4%;width:44%;padding:12px 14px;border:1.5px solid var(--cy);border-radius:18px;background:rgba(6,14,28,.82);color:#dff6ff;font-size:13.5px;line-height:1.35;box-shadow:0 0 22px rgba(56,214,255,.35);font-style:italic}
+.bubble::after{content:"";position:absolute;left:18%;bottom:-11px;width:18px;height:18px;background:rgba(6,14,28,.95);border-right:1.5px solid var(--cy);border-bottom:1.5px solid var(--cy);transform:rotate(45deg)}
+.stagewrap.talking .bubble{box-shadow:0 0 30px rgba(56,214,255,.7)}
+.meta{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:3px;color:var(--mut);text-transform:uppercase}
+.lt h1{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(56px,6.4vw,104px);line-height:.9;margin:6px 0 10px;letter-spacing:1px}
+.lt h2{font-size:22px;margin:0 0 8px;font-weight:700;line-height:1.25}
+.lt p{color:#c3d3ea;margin:0 0 16px;max-width:620px}
+.picker{display:none;margin:6px 0 12px;width:100%;min-height:46px;background:var(--panel);color:var(--ink);border:1px solid var(--line2);border-radius:10px;padding:0 12px;font:inherit}
+.modes{display:flex;border:1px solid var(--line2);border-radius:12px;overflow:hidden;background:var(--panel);width:max-content;max-width:100%}
+.modes button{display:flex;align-items:center;gap:8px;min-height:48px;padding:0 18px;border:0;background:none;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:12.5px;letter-spacing:1.5px;color:var(--mut);text-transform:uppercase;white-space:nowrap}
+.modes button[aria-pressed=true]{color:#fff;background:var(--cyd);box-shadow:inset 0 0 0 1.5px var(--cy),0 0 18px rgba(56,214,255,.25)}
+.modenote{font-size:13px;color:var(--mut);margin:10px 0 0;min-height:20px}
+/* stage */
+.stage{grid-area:stage;display:flex;flex-direction:column;gap:12px}
+.score{padding:14px 16px 10px}
+.score header{display:flex;justify-content:space-between;align-items:baseline;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--mut);text-transform:uppercase;margin-bottom:8px}
+.score header b{color:var(--cy2);font-size:14px;letter-spacing:2px}
+.staffbox{border:1px solid var(--line);border-radius:12px;background:#07111f;padding:6px 8px}
+#staff{display:block;width:100%;height:auto}
+#staff .st{stroke:#dfe9f7}#staff .bm,#staff .nh,#staff .ts{fill:#dfe9f7}#staff .oh{fill:none;stroke:#dfe9f7}
+#staff .syl{fill:var(--mut);font-family:'IBM Plex Mono',monospace;font-size:15px;text-anchor:middle}
+#staff .lbl{font-family:'IBM Plex Sans',sans-serif;font-size:22px;font-weight:700;text-anchor:middle}#staff .lbl.R{fill:var(--r)}#staff .lbl.L{fill:var(--l)}
+#staff .n{cursor:pointer}
+#staff .n.on .nh,#staff .n.on .bm{fill:var(--cy2)}#staff .n.on .st,#staff .n.on .oh{stroke:var(--cy2)}#staff .n.on .syl{fill:#fff}
+#staff .n.on{filter:drop-shadow(0 0 6px rgba(56,214,255,.9))}
+#staff .ph{stroke:var(--cy);stroke-width:3;filter:drop-shadow(0 0 5px rgba(56,214,255,.9));opacity:0;transition:opacity .15s}
+#staff.running .ph{opacity:1}
+.transport{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;padding:12px 16px}
+.tb{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;border:1px solid var(--line2);background:#0b1a30;cursor:pointer}
+.tb:hover{border-color:var(--cy)}
+.pp{width:66px;height:66px;border:2px solid var(--cy);box-shadow:0 0 22px rgba(56,214,255,.45),inset 0 0 18px rgba(56,214,255,.25);background:#08203a}
+.pp svg.i{width:28px;height:28px}
+.pp .stop{display:none}.pp.on .play{display:none}.pp.on .stop{display:block}
+.chip{display:flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:1px solid var(--line2);background:#0b1a30;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.chip.on{border-color:var(--cy);color:#fff;background:var(--cyd)}
+.sep{width:1px;align-self:stretch;background:var(--line)}
+.tempo{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--mut)}
+.tempo .row{display:flex;align-items:center;border:1px solid var(--line2);border-radius:10px;overflow:hidden}
+.tempo .row button{width:40px;height:40px;border:0;background:#0b1a30;cursor:pointer;font-size:20px;line-height:1}
+.tempo .row output{min-width:86px;text-align:center;font-weight:600;font-size:15px;color:var(--ink)}
+.tempo input{width:100%;accent-color:var(--cy)}
+.tog{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--mut)}
+.sw{position:relative;width:62px;height:32px;border-radius:999px;border:1px solid var(--line2);background:#0b1a30;cursor:pointer;padding:0}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#43597a;transition:left .15s,background .15s}
+.sw[aria-pressed=true]{border-color:var(--cy);background:#0c2c4a}.sw[aria-pressed=true]::after{left:33px;background:var(--cy)}
+.sw span{position:absolute;left:9px;top:6px;font-size:10px;font-family:'IBM Plex Mono',monospace;color:var(--cy2)}.sw[aria-pressed=false] span{left:32px;color:var(--mut)}
+.beat{display:flex;align-items:center;gap:18px;padding:12px 16px;flex-wrap:wrap}
+.beat h4{margin:0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:22px;letter-spacing:1px;color:var(--cy2)}
+#beats{display:flex;gap:14px}
+#beats .bd{display:flex;flex-direction:column;align-items:center;gap:6px;font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--mut)}
+#beats .bd i{width:18px;height:18px;border-radius:50%;border:2px solid #34506f;display:block;transition:all .06s}
+#beats .bd.on{color:#fff}#beats .bd.on i{background:var(--cy);border-color:var(--cy2);box-shadow:0 0 12px var(--cy)}
+.ci{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--gold);min-width:74px}
+#wave{flex:1;min-width:120px;height:40px}
+.hfp{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:3px;color:var(--mut);line-height:1.6}
+/* coach */
+.coach{grid-area:coach;display:flex;flex-direction:column;gap:12px;align-self:start;position:sticky;top:84px}
+.coach .panel{padding:14px}
+.ch{display:flex;align-items:center;gap:12px}.ch img{width:52px;height:52px;border-radius:50%;border:2px solid var(--cy);box-shadow:0 0 14px rgba(56,214,255,.4)}
+.ch h3{margin:0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:26px;letter-spacing:1px;color:var(--cy2)}
+.say{margin:12px 0 0;padding:12px;border:1px solid var(--line2);border-radius:12px;background:#0a1830;font-size:14px}
+.talkbtn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:44px;margin-top:10px;border-radius:10px;border:1px solid var(--cy);background:var(--cyd);cursor:pointer;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1px;text-transform:uppercase}
+.talkbtn[aria-pressed=true]{background:var(--cy);color:#04121f}
+.tip{display:flex;gap:10px}.tip svg.i{color:var(--gold);width:24px;height:24px}
+.tip h4{margin:0 0 4px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:2px;color:var(--gold)}
+.tip p{margin:0;font-size:13.5px;color:#c3d3ea}
+#boxes{display:flex;flex-direction:column;gap:8px}
+#boxes .box{border:1px solid var(--line);border-radius:10px;padding:10px;background:#0a1830}
+#boxes .box h3{margin:0 0 6px;font-size:13px;display:flex;justify-content:space-between;align-items:center}
+#boxes .box h3 span{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;color:var(--cy2);border:1px solid var(--cy);border-radius:999px;padding:1px 8px}
+#boxes .bb{display:flex;gap:10px;align-items:center}
+#boxes .bb svg{width:72px;height:58px;flex:none;background:#07111f;border-radius:8px}
+#boxes .sy{fill:#dfe9f7}#boxes .syo{fill:none;stroke:#dfe9f7}#boxes .sys{stroke:#dfe9f7}
+#boxes .bb p{margin:0;font-size:13px;color:#c3d3ea}
+.boxlbl{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:2px;color:var(--mut);margin:0 0 8px}
+/* mission */
+.mission{grid-area:mission;display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1.2fr) auto;gap:22px;align-items:center;padding:18px 22px}
+.mh{display:flex;gap:16px;align-items:center}.mh svg.i{width:54px;height:54px;color:var(--gold);stroke-width:1.5}
+.mh h3{margin:0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:34px;letter-spacing:1px;color:var(--cy2)}
+.mh p{margin:2px 0 0;font-size:16px}
+#try{list-style:none;counter-reset:m;margin:0;padding:0 0 0 22px;border-left:1px solid var(--line)}
+#try li{counter-increment:m;display:flex;gap:12px;align-items:baseline;margin:0 0 8px;color:#c3d3ea}
+#try li::before{content:counter(m);flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--mut);font-size:12px;color:var(--ink)}
+.acts{display:flex;flex-direction:column;gap:10px;min-width:250px}
+.cta{display:flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:12px;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:14px;letter-spacing:1.5px;text-transform:uppercase}
+.cta.go2{background:linear-gradient(180deg,var(--gold2),var(--gold));border:0;color:#1b1400;box-shadow:0 6px 22px rgba(255,211,92,.25)}
+.cta.done{background:transparent;border:1.5px solid var(--ink)}
+.cta.done[aria-pressed=true]{border-color:var(--cy);color:var(--cy2);background:var(--cyd)}
+/* footer */
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding:16px 20px 26px;border-top:1px solid var(--line);color:var(--mut);font-size:13px;max-width:1680px;margin:0 auto}
+.foot nav{display:flex;flex-wrap:wrap;gap:18px}.foot a{color:var(--mut);text-decoration:none}.foot a:hover{color:var(--ink)}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(--cy);outline-offset:2px}
+#met{display:none}
+/* tablet: drop the secondary coach panel */
+@media (max-width:1280px){
+ .app{grid-template-columns:230px minmax(0,1fr);grid-template-areas:"nav hero" "nav stage" "nav mission"}
+ .coach{display:none}
+ .tprog .dots{display:none}
+ .modes{width:100%}.modes button{flex:1;justify-content:center;padding:0 10px;letter-spacing:1px}
+}
+@media (max-width:1100px){.tnav a{min-width:0;padding:7px 8px}.me{display:none}}
+@media (max-width:980px){
+ .app{grid-template-columns:minmax(0,1fr);grid-template-areas:"hero" "stage" "mission"}
+ .nav{display:none}.picker{display:block}
+ .tnav{display:none}
+ .mission{grid-template-columns:1fr}
+}
+/* phone: title, Bear Coach, notation, playback, beat tracker, mission */
+@media (max-width:760px){
+ .app{grid-template-areas:"hero" "coach" "stage" "mission";padding:12px;gap:12px}
+ .coach{display:flex;position:static}
+ .coach .extra{display:none}
+ .hero{grid-template-columns:1fr}
+ .stagewrap{display:none}
+ .lt h1{font-size:64px}
+ .modes{width:100%}.modes button{flex:1;padding:0 8px;font-size:11px;letter-spacing:.5px;justify-content:center}
+ .modes button svg.i{display:none}
+ .top{padding:10px 12px}.tprog{padding:6px 10px}.tprog .u{display:none}
+ .brand b{font-size:26px}.brand small{letter-spacing:2px}
+ .transport{gap:10px}.sep{display:none}
+ .beat{gap:12px}#wave{display:none}.hfp{display:none}
+ .acts{min-width:0}
+ .mh{gap:12px}.mh svg.i{width:40px;height:40px}.mh h3{font-size:28px}
+ #try{padding-left:0;border-left:0}
+ .lt{padding-top:0}
+}
+@media (prefers-reduced-motion:reduce){.stagewrap img,.stagewrap::after,#beats .bd i{transition:none}}
+</style>
 </head>
 <body>
-<main>
-<a class="home" href="index.html">← Amadeus School of Drums</a>
-<h1>Bear's drum school</h1>
-<p class="sub">Pick a lesson, press play, and drum along with Bear.</p>
-<div class="tabs" id="tabs"></div>
-<div class="grid">
-<div class="leftcol">
-<div class="stage" id="stage" role="button" tabindex="0" aria-label="Bear the drummer. Press to start or stop.">
-<svg viewBox="0 0 680 470" role="img" aria-hidden="true">
-<ellipse cx="340" cy="450" rx="130" ry="9" fill="#000" opacity=".12"/>
-<ellipse cx="340" cy="300" rx="88" ry="82" fill="#8B5A2B"/><ellipse cx="340" cy="312" rx="56" ry="56" fill="#E8C08F"/>
-<g id="head" style="transform-origin:340px 230px">
-<circle cx="285" cy="98" r="26" fill="#8B5A2B"/><circle cx="395" cy="98" r="26" fill="#8B5A2B"/><circle cx="285" cy="98" r="13" fill="#D9A066"/><circle cx="395" cy="98" r="13" fill="#D9A066"/>
-<circle cx="340" cy="155" r="74" fill="#8B5A2B"/>
-<polygon points="316,88 356,80 338,34" fill="#F2B233"/><circle cx="338" cy="32" r="7" fill="#E24B4B"/>
-<ellipse cx="340" cy="178" rx="36" ry="28" fill="#E8C08F"/>
-<g id="mouth" style="transform-origin:340px 192px"><path d="M318 190 Q340 222 362 190 Z" fill="#5A1F1F"/><ellipse cx="340" cy="205" rx="11" ry="9" fill="#E86A7A"/></g>
-<ellipse cx="340" cy="166" rx="13" ry="9" fill="#3B2314"/>
-<circle cx="312" cy="135" r="16" fill="#fff"/><circle cx="318" cy="130" r="7" fill="#1E1E1E"/>
-<circle cx="370" cy="140" r="10" fill="#fff"/><circle cx="367" cy="144" r="5" fill="#1E1E1E"/>
-<path d="M294 112 Q312 100 330 114" fill="none" stroke="#3B2314" stroke-width="5" stroke-linecap="round"/><path d="M358 130 L382 132" fill="none" stroke="#3B2314" stroke-width="5" stroke-linecap="round"/>
-</g>
-<path d="M250 362 L250 425 A90 20 0 0 0 430 425 L430 362 Z" fill="#D94F4F"/>
-<polyline points="262,372 285,423 308,377 331,428 354,377 377,428 400,377 420,420" fill="none" stroke="#F6E7D0" stroke-width="3" stroke-linejoin="round"/>
-<ellipse id="dh" cx="340" cy="362" rx="90" ry="22" fill="#F4E9D0" stroke="#B83A3A" stroke-width="4" style="transform-origin:340px 362px"/>
-<g id="aL" style="transform-origin:265px 275px;transform:rotate(30deg)"><line x1="265" y1="275" x2="225" y2="335" stroke="#8B5A2B" stroke-width="34" stroke-linecap="round"/><line x1="225" y1="335" x2="287" y2="359" stroke="#E8D3A0" stroke-width="7" stroke-linecap="round"/><circle cx="289" cy="360" r="8" fill="#C9A45C"/><circle cx="225" cy="335" r="20" fill="#74491F"/></g>
-<g id="aR" style="transform-origin:415px 275px;transform:rotate(-30deg)"><line x1="415" y1="275" x2="455" y2="335" stroke="#8B5A2B" stroke-width="34" stroke-linecap="round"/><line x1="455" y1="335" x2="393" y2="359" stroke="#E8D3A0" stroke-width="7" stroke-linecap="round"/><circle cx="391" cy="360" r="8" fill="#C9A45C"/><circle cx="455" cy="335" r="20" fill="#74491F"/></g>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-lessons" viewBox="0 0 24 24"><path d="M9 18V5l11-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="17" cy="16" r="3"/></symbol>
+<symbol id="i-kit" viewBox="0 0 24 24"><ellipse cx="12" cy="7" rx="8" ry="3"/><path d="M4 7v8c0 1.7 3.6 3 8 3s8-1.3 8-3V7"/><path d="M4 11c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+<symbol id="i-rud" viewBox="0 0 24 24"><path d="M4 20 14 6"/><path d="M20 20 10 6"/><circle cx="14.5" cy="5.5" r="1.5"/><circle cx="9.5" cy="5.5" r="1.5"/></symbol>
+<symbol id="i-room" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 16V8M11 16v-5M15 16V9M19 16v-3"/></symbol>
+<symbol id="i-groove" viewBox="0 0 24 24"><path d="M3 12h2l2-6 3 12 3-9 2 5 2-2h4"/></symbol>
+<symbol id="i-level" viewBox="0 0 24 24"><path d="M4 20V14M10 20V9M16 20V4"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z" fill="currentColor"/></symbol>
+<symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="1.5" fill="currentColor"/></symbol>
+<symbol id="i-prev" viewBox="0 0 24 24"><path d="M6 5v14"/><path d="M19 5 9 12l10 7z" fill="currentColor"/></symbol>
+<symbol id="i-next" viewBox="0 0 24 24"><path d="M18 5v14"/><path d="M5 5l10 7-10 7z" fill="currentColor"/></symbol>
+<symbol id="i-met" viewBox="0 0 24 24"><path d="M9 3h6l4 18H5z"/><path d="M12 17 16 7"/><path d="M8 17h8"/></symbol>
+<symbol id="i-head" viewBox="0 0 24 24"><path d="M4 15v-3a8 8 0 0 1 16 0v3"/><rect x="3" y="14" width="4" height="7" rx="1.5"/><rect x="17" y="14" width="4" height="7" rx="1.5"/></symbol>
+<symbol id="i-drum" viewBox="0 0 24 24"><ellipse cx="12" cy="8" rx="8" ry="3"/><path d="M4 8v8c0 1.7 3.6 3 8 3s8-1.3 8-3V8"/><path d="M7 10.5v7M12 11v8M17 10.5v7"/></symbol>
+<symbol id="i-trophy" viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H5a3 3 0 0 0 3 4M16 6h3a3 3 0 0 1-3 4"/><path d="M12 13v4M8 20h8M9 17h6"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5 10 17 19 7"/></symbol>
+<symbol id="i-checkc" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12.5 11 15.5 16.5 9"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="11" cy="13" r="8"/><circle cx="11" cy="13" r="4.5"/><circle cx="11" cy="13" r="1.2" fill="currentColor"/><path d="M11 13 20 4M17 4h3v3"/></symbol>
+<symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/></symbol>
+<symbol id="i-speak" viewBox="0 0 24 24"><path d="M4 9v6h4l5 4V5L8 9z"/><path d="M16.5 8.5a5 5 0 0 1 0 7M19 6a8.5 8.5 0 0 1 0 12"/></symbol>
+<symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
 </svg>
+<header class="top">
+<a class="brand" href="bear.html"><b>BEAR'S <span>DRUM LAB</span></b><small>PLAY · LEARN · GROOVE · GROW</small></a>
+<nav class="tnav" aria-label="Amadeus School of Drums">
+<a class="here" href="bear.html" aria-current="page"><svg class="i"><use href="#i-lessons"/></svg>Lessons</a>
+<a href="beginner/"><svg class="i"><use href="#i-level"/></svg>Beginner path</a>
+<a href="rudiments/"><svg class="i"><use href="#i-rud"/></svg>Rudiments</a>
+<a href="level7.html"><svg class="i"><use href="#i-kit"/></svg>The Kit</a>
+<a href="drumroom/?level=beginner"><svg class="i"><use href="#i-room"/></svg>Drum Room</a>
+<a href="grooves/"><svg class="i"><use href="#i-groove"/></svg>Grooves</a>
+</nav>
+<div class="tprog" aria-label="Unit progress"><div><div class="u" id="tpUnit"></div><div class="n" id="tpLesson"></div></div><div class="dots" id="tpDots"></div></div>
+<div class="me"><img src="assets/bear-drum-lab-coach.png" width="38" height="38" alt=""><div>My progress<b id="meDone"></b></div></div>
+</header>
+<main class="app">
+<aside class="nav" id="tabs" aria-label="Lessons"></aside>
+<section class="hero">
+<div class="stagewrap" id="stage" role="button" tabindex="0" aria-label="Bear at his drum kit. Press to start or stop.">
+<picture><source type="image/webp" srcset="assets/bear-drum-lab-stage.webp"><img src="assets/bear-drum-lab-stage.jpg" width="470" height="657" alt="Bear, a cartoon bear in a hoodie, playing a white marine pearl drum kit"></picture>
+<div class="bubble" id="bubble" aria-live="polite"></div>
 </div>
-<button class="talkbtn" id="talkbtn" type="button">Hear Bear explain</button>
-<section class="boxes" id="boxes" aria-label="New in this lesson"></section>
+<div class="lt">
+<div class="meta" id="meta"></div>
+<label class="sr" for="picker">Choose a lesson</label><select class="picker" id="picker"></select>
+<h1 id="bigname"></h1>
+<h2 id="ttl"></h2>
+<p id="txt"></p>
+<div class="modes" role="group" aria-label="Practice mode">
+<button type="button" data-mode="listen" aria-pressed="true"><svg class="i"><use href="#i-head"/></svg>Listen &amp; learn</button>
+<button type="button" data-mode="along" aria-pressed="false"><svg class="i"><use href="#i-drum"/></svg>Play along</button>
+<button type="button" data-mode="challenge" aria-pressed="false"><svg class="i"><use href="#i-trophy"/></svg>Challenge</button>
 </div>
-<div>
-<div class="card"><h2 id="ttl"></h2><p id="txt"></p></div>
-<div class="card"><svg id="staff" viewBox="0 0 680 200" role="img" aria-label="Notation for the lesson"></svg></div>
-<div class="card ctrl">
-<button class="go" id="go">Play with Bear</button>
-<button class="go alt" id="met" type="button">Metronome only</button>
-<button class="clk" id="clk" type="button" aria-pressed="true">Metronome sound: on</button>
-<label>Tempo <input type="range" id="bpm" aria-label="Tempo"><span class="bpm" id="bpmv"></span></label>
-<div class="beats" id="beats" aria-hidden="true"></div>
+<p class="modenote" id="modenote"></p>
 </div>
-<div class="card"><h2>Your turn</h2><ol id="try"></ol></div>
+</section>
+<section class="stage">
+<div class="panel score">
+<header><b id="scoreName"></b><span id="scoreInfo"></span></header>
+<div class="staffbox"><svg id="staff" viewBox="0 0 680 200" role="img" aria-label="Notation for the lesson"></svg></div>
 </div>
+<div class="panel transport">
+<button type="button" class="tb" id="prev" aria-label="Previous lesson"><svg class="i"><use href="#i-prev"/></svg></button>
+<button type="button" class="tb pp" id="go" aria-label="Play"><svg class="i play"><use href="#i-play"/></svg><svg class="i stop"><use href="#i-stop"/></svg></button>
+<button type="button" class="tb" id="next" aria-label="Next lesson"><svg class="i"><use href="#i-next"/></svg></button>
+<button type="button" class="chip on" id="clk" aria-pressed="true"><svg class="i"><use href="#i-met"/></svg>Metronome</button>
+<button type="button" id="met">Metronome only</button>
+<span class="sep"></span>
+<div class="tempo"><span>Tempo</span><div class="row"><button type="button" id="bdn" aria-label="Slower">&minus;</button><output id="bpmv"></output><button type="button" id="bup" aria-label="Faster">+</button></div><input type="range" id="bpm" aria-label="Tempo"></div>
+<span class="sep"></span>
+<div class="tog"><span>Count-in</span><button type="button" class="sw" id="cnt" aria-pressed="true" aria-label="Count-in"><span>ON</span></button></div>
+<div class="tog"><span>Loop</span><button type="button" class="sw" id="lp" aria-pressed="true" aria-label="Loop"><span>ON</span></button></div>
 </div>
-<a class="next" href="level7.html">
-<div><b>Ready for the real kit?</b><span>Level 7 and up: grooves on a full drum set, with sheet music.</span></div>
-<div class="arrow">Go to Level 7 →</div>
-</a>
+<div class="panel beat">
+<h4>THE BEAT</h4>
+<div id="beats" aria-hidden="true"></div>
+<span class="ci" id="ci"></span>
+<canvas id="wave" width="360" height="80" aria-hidden="true"></canvas>
+<div class="hfp">HEAR IT.<br>FEEL IT.<br>PLAY IT.</div>
+</div>
+</section>
+<aside class="coach" aria-label="Bear Coach">
+<div class="panel">
+<div class="ch"><img src="assets/bear-drum-lab-coach.png" width="52" height="52" alt=""><h3>BEAR COACH</h3></div>
+<p class="say" id="coachSay"></p>
+<button type="button" class="talkbtn" id="talkbtn"><svg class="i"><use href="#i-speak"/></svg><span>Hear Bear explain</span></button>
+</div>
+<div class="panel tip" id="tipbox"><svg class="i"><use href="#i-bulb"/></svg><div><h4>PRO TIP</h4><p id="protip"></p></div></div>
+<div class="panel extra"><p class="boxlbl">NEW IN THIS LESSON</p><section id="boxes" aria-label="New in this lesson"></section></div>
+</aside>
+<section class="panel mission" aria-label="Your mission">
+<div class="mh"><svg class="i"><use href="#i-target"/></svg><div><h3>YOUR MISSION</h3><p id="mission"></p></div></div>
+<ol id="try"></ol>
+<div class="acts">
+<button type="button" class="cta go2" id="startPractice">Start practice <svg class="i"><use href="#i-arrow"/></svg></button>
+<button type="button" class="cta done" id="markDone" aria-pressed="false"><svg class="i"><use href="#i-checkc"/></svg><span>Mark as complete</span></button>
+</div>
+</section>
 </main>
+<footer class="foot">
+<span><a href="index.html">Amadeus School of Drums</a> · Bear's Drum Lab</span>
+<nav><a href="beginner/">Beginner</a><a href="intermediate/">Intermediate</a><a href="advanced/">Advanced</a><a href="level7.html">The Kit</a><a href="beats/">Famous Beats</a><a href="gear.html">Gear Guide</a></nav>
+</footer>
 <script>
 var UNITS=[
 {name:"Counting",lessons:[
@@ -269,7 +434,7 @@ ev.forEach(function(e,i){if(e.roll&&ev[i+1]){var a=X(e.pos),b=X(ev[i+1].pos);el(
 document.getElementById("ttl").textContent=L.title;document.getElementById("txt").textContent=L.text;
 var ol=document.getElementById("try");ol.innerHTML="";L.tryit.forEach(function(s){var li=document.createElement("li");li.textContent=s;ol.appendChild(li);});
 var r=document.getElementById("bpm");r.min=L.bpm[0];r.max=L.bpm[2];r.value=L.bpm[1];bpm=L.bpm[1];document.getElementById("bpmv").textContent=bpm+" bpm";
-svg.setAttribute("aria-label","Notation for "+L.title);renderBoxes(L);drawBeats();}
+svg.setAttribute("aria-label","Notation for "+L.title);renderBoxes(L);drawBeats();if(window.afterRender)afterRender(L);}
 function restGlyph(g,x,d){if(d>=4){el("rect",{x:x-11,y:105,width:22,height:9,class:"bm"},g);}
 else if(d>=2){el("rect",{x:x-11,y:96,width:22,height:9,class:"bm"},g);}
 else if(d>=1){el("path",{d:"M"+(x-3)+" 80 L"+(x+6)+" 92 L"+(x-4)+" 103 L"+(x+6)+" 116 Q"+(x-8)+" 110 "+(x+1)+" 128",fill:"none","stroke-width":4,"stroke-linejoin":"round","stroke-linecap":"round",class:"st"},g);}
@@ -336,22 +501,20 @@ return s;}
 function renderBoxes(L){var box=document.getElementById("boxes");box.innerHTML="";(BOXES[L.name]||[]).forEach(function(b){
 var d=document.createElement("div");d.className="box";var h=document.createElement("h3");h.textContent=b[1];var tag=document.createElement("span");tag.textContent="New";h.appendChild(tag);d.appendChild(h);
 var bb=document.createElement("div");bb.className="bb";if(b[0])bb.appendChild(sym(b[0]));var pp=document.createElement("p");pp.textContent=b[2];bb.appendChild(pp);d.appendChild(bb);box.appendChild(d);});}
-function tabsBuild(){var idx=0;UNITS.forEach(function(u){var row=document.createElement("div");row.className="unit";var h=document.createElement("span");h.className="uname";h.textContent=u.name;row.appendChild(h);
-u.lessons.forEach(function(L){var i=idx++;var b=document.createElement("button");b.className="tab";b.textContent=(i+1)+". "+L.name;b.setAttribute("aria-pressed",i===cur?"true":"false");
-b.addEventListener("click",function(){if(running)stopAll();if(typeof hush==="function")hush();cur=i;[].forEach.call(tabs.querySelectorAll(".tab"),function(c,j){c.setAttribute("aria-pressed",j===i?"true":"false");});render();});row.appendChild(b);});tabs.appendChild(row);});}
+function tabsBuild(){}
 function audio(){if(!ctx){var C=window.AudioContext||window.webkitAudioContext;if(!C)return null;ctx=new C();master=ctx.createGain();master.gain.value=.8;var c=ctx.createDynamicsCompressor();master.connect(c);c.connect(ctx.destination);
 nb=ctx.createBuffer(1,Math.floor(ctx.sampleRate*.3),ctx.sampleRate);var d=nb.getChannelData(0);for(var i=0;i<d.length;i++)d[i]=Math.random()*2-1;}
 if(ctx.state==="suspended")ctx.resume();return ctx;}
-function snare(t,v,h){t=Math.max(t,ctx.currentTime);var o=ctx.createOscillator(),g=ctx.createGain();o.type="triangle";var f=h==="L"?210:190;o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*.65,t+.09);
+function snare(t,v,h){if(bearGain<=0)return;v*=bearGain;t=Math.max(t,ctx.currentTime);var o=ctx.createOscillator(),g=ctx.createGain();o.type="triangle";var f=h==="L"?210:190;o.frequency.setValueAtTime(f,t);o.frequency.exponentialRampToValueAtTime(f*.65,t+.09);
 g.gain.setValueAtTime(.55*v,t);g.gain.exponentialRampToValueAtTime(.001,t+.13);o.connect(g);g.connect(master);o.start(t);o.stop(t+.15);
 var n=ctx.createBufferSource(),f2=ctx.createBiquadFilter(),ng=ctx.createGain();n.buffer=nb;f2.type="highpass";f2.frequency.value=1800;
 ng.gain.setValueAtTime(.75*v,t);ng.gain.exponentialRampToValueAtTime(.001,t+(v>.6?.2:.09));n.connect(f2);f2.connect(ng);ng.connect(master);n.start(t);n.stop(t+.25);}
 var RM=window.matchMedia&&matchMedia("(prefers-reduced-motion:reduce)").matches;
-function arm(h,a,D,delay){if(RM)return;var el2=document.getElementById(h==="L"?"aL":"aR"),rest=h==="L"?30:-30,sg=h==="L"?1:-1;
+function arm(h,a,D,delay){if(RM||!document.getElementById("aL"))return;var el2=document.getElementById(h==="L"?"aL":"aR"),rest=h==="L"?30:-30,sg=h==="L"?1:-1;
 el2.animate([{transform:"rotate("+rest+"deg)"},{transform:"rotate("+((a?48:20)*sg)+"deg)",offset:.2},{transform:"rotate(0deg)",offset:.5},{transform:"rotate("+rest+"deg)"}],{duration:D,delay:delay||0,easing:"ease-out"});}
-function vis(e,i,iv){var D=Math.min(300,iv*1.9),c=.5*D;
+function vis(e,i,iv){var D=Math.min(300,iv*1.9),c=.5*D;if(!e.rest&&window.hitFx)hitFx(e,c);
 if(!e.rest){if(e.roll){var n=e.hands.length;for(var k=0;k<n;k++)arm(e.hands[k],false,Math.max(90,iv*1000/n*1.6/1000*1000/1000),k*iv/n);}else arm(e.h,e.acc,D);
-if(!RM){document.getElementById("dh").animate([{transform:"scale(1,1)"},{transform:"scale("+(e.acc?1.05:1.02)+","+(e.acc?.82:.94)+")",offset:.3},{transform:"scale(1,1)"}],{duration:Math.min(200,iv*1.5),delay:c});
+if(!RM&&document.getElementById("dh")){document.getElementById("dh").animate([{transform:"scale(1,1)"},{transform:"scale("+(e.acc?1.05:1.02)+","+(e.acc?.82:.94)+")",offset:.3},{transform:"scale(1,1)"}],{duration:Math.min(200,iv*1.5),delay:c});
 if(e.acc)document.getElementById("head").animate([{transform:"rotate(0deg)"},{transform:"rotate("+(e.h==="L"?-5:5)+"deg)",offset:.4},{transform:"rotate(0deg)"}],{duration:D+60,delay:c*.6});}}
 setTimeout(function(){var g=document.getElementById("n"+i);if(!g)return;g.classList.add("on");setTimeout(function(){g.classList.remove("on");},Math.max(120,Math.min(400,iv*.9)));},e.rest?0:c);}
 function other(h){return h==="L"?"R":"L";}
@@ -360,20 +523,21 @@ if(!e.rest){var v=(e.acc?1:.55)*(.95+Math.random()*.1);
  if(e.roll){var n=e.hands.length;for(var k=0;k<n;k++)snare(t+k*sec/n,.5,e.hands[k]);}
  else{if(e.flam)snare(t-.035,.25,other(e.h));if(e.drag){snare(t-.07,.22,other(e.h));snare(t-.035,.22,other(e.h));}snare(t,e.flam||e.drag?Math.max(v,.8):v,e.h);}}
 var D=Math.min(300,iv*1.9),w=(t-ctx.currentTime)*1000-(e.rest?0:.5*D);setTimeout(function(){vis(e,i,iv);},Math.max(0,w));}
-var clickOn=true,beatT=0,beatI=0;
+var clickOn=true,beatT=0,beatI=0,bearGain=1,loopOn=true,countIn=true,stopAt=0;
 function click(t,strong){t=Math.max(t,ctx.currentTime);var o=ctx.createOscillator(),g=ctx.createGain();o.type="square";o.frequency.value=strong?1760:1175;
 g.gain.setValueAtTime(.0001,t);g.gain.exponentialRampToValueAtTime(strong?.32:.2,t+.002);g.gain.exponentialRampToValueAtTime(.0001,t+.04);o.connect(g);g.connect(master);o.start(t);o.stop(t+.06);}
 function beatInfo(L){return L.ts[1]===8?{n:L.ts[0],len:.5,strong:[0,3]}:{n:L.ts[0],len:1,strong:[0]};}
-function drawBeats(){var L=LESSONS[cur],B=beatInfo(L),box=document.getElementById("beats");box.innerHTML="";for(var i=0;i<B.n;i++){var d=document.createElement("span");d.className="bd";box.appendChild(d);}}
-function lightBeat(i,t){setTimeout(function(){if(!running)return;var d=document.getElementById("beats").children;for(var k=0;k<d.length;k++)d[k].classList.toggle("on",k===i);},Math.max(0,(t-ctx.currentTime)*1000));}
+function drawBeats(){var L=LESSONS[cur],B=beatInfo(L),box=document.getElementById("beats");box.innerHTML="";for(var i=0;i<B.n;i++){var d=document.createElement("span");d.className="bd";d.innerHTML="<i></i>"+(i+1);box.appendChild(d);}}
+function lightBeat(i,t){if(window.onBeat)onBeat(i,t);setTimeout(function(){if(!running)return;var d=document.getElementById("beats").children;for(var k=0;k<d.length;k++)d[k].classList.toggle("on",k===i);},Math.max(0,(t-ctx.currentTime)*1000));}
 function tick(){var L=LESSONS[cur],n=L.ev.length,B=beatInfo(L),h=ctx.currentTime+.12;
-while(beatT<h){if(clickOn||metOnly)click(beatT,B.strong.indexOf(beatI)>=0);lightBeat(beatI,beatT);beatT+=B.len*60/bpm;beatI=(beatI+1)%B.n;}
-while(!metOnly&&nextT<h){play(step,nextT);nextT+=L.ev[step].d*60/bpm;step=(step+1)%n;}}
+if(stopAt&&ctx.currentTime>=stopAt){stopAll();return;}
+while(beatT<h&&(!stopAt||beatT<stopAt-1e-3)){if(clickOn||metOnly)click(beatT,B.strong.indexOf(beatI)>=0);lightBeat(beatI,beatT);beatT+=B.len*60/bpm;beatI=(beatI+1)%B.n;}
+while(!metOnly&&!stopAt&&nextT<h){play(step,nextT);nextT+=L.ev[step].d*60/bpm;step=(step+1)%n;if(step===0&&!loopOn)stopAt=nextT;}}
 function tap(i){if(!audio())return;play(i,ctx.currentTime+.08);}
 var metOnly=false;
-function stopAll(){running=false;clearInterval(timer);metOnly=false;document.getElementById("go").textContent="Play with Bear";var m=document.getElementById("met");m.textContent="Metronome only";m.setAttribute("aria-pressed","false");[].forEach.call(document.getElementById("beats").children,function(d){d.classList.remove("on");});}
-function start(onlyClick){if(!audio())return;metOnly=onlyClick;running=true;step=0;var L=LESSONS[cur];beatT=ctx.currentTime+.1;beatI=0;nextT=beatT+L.len*60/bpm;timer=setInterval(tick,25);tick();
-if(onlyClick){var m=document.getElementById("met");m.textContent="Stop metronome";m.setAttribute("aria-pressed","true");}else document.getElementById("go").textContent="Stop";}
+function stopAll(){running=false;clearInterval(timer);metOnly=false;stopAt=0;setPlayUI(false);var m=document.getElementById("met");m.textContent="Metronome only";m.setAttribute("aria-pressed","false");[].forEach.call(document.getElementById("beats").children,function(d){d.classList.remove("on");});}
+function start(onlyClick){if(!audio())return;metOnly=onlyClick;running=true;step=0;var L=LESSONS[cur];beatT=ctx.currentTime+.1;beatI=0;nextT=beatT+(countIn&&!onlyClick?L.len*60/bpm:0);stopAt=0;if(window.onStart)onStart(beatT);timer=setInterval(tick,25);tick();
+if(onlyClick){var m=document.getElementById("met");m.textContent="Stop metronome";m.setAttribute("aria-pressed","true");}else setPlayUI(true);}
 function toggle(){if(running&&!metOnly){stopAll();return;}if(running)stopAll();start(false);}
 function toggleMet(){if(running&&metOnly){stopAll();return;}if(running)stopAll();start(true);}
 document.getElementById("go").addEventListener("click",toggle);
@@ -388,15 +552,134 @@ if(/compact|eloquence|novelty|Albert|Bad News|Bahh|Bells|Boing|Bubbles|Cellos|Wo
 vs.sort(function(a,b){return score(b)-score(a);});return vs[0];}
 if(window.speechSynthesis){speechSynthesis.getVoices();speechSynthesis.onvoiceschanged=function(){speechSynthesis.getVoices();};}
 var talking=false,tb=document.getElementById("talkbtn");
-function setTalk(on){talking=on;tb.setAttribute("aria-pressed",on?"true":"false");tb.textContent=on?"Stop talking":"Hear Bear explain";document.getElementById("stage").classList.toggle("talking",on);}
+function setTalk(on){talking=on;tb.setAttribute("aria-pressed",on?"true":"false");tb.querySelector("span").textContent=on?"Stop talking":"Hear Bear explain";document.getElementById("stage").classList.toggle("talking",on);}
 function hush(){if(window.speechSynthesis)speechSynthesis.cancel();setTalk(false);}
 if(!window.speechSynthesis)tb.hidden=true;
 tb.addEventListener("click",function(){if(talking){hush();return;}var L=LESSONS[cur],t=L.title+". "+L.text;(BOXES[L.name]||[]).forEach(function(b){t+=" "+b[1]+": "+b[2];});
 t=t.replace(/\b1 e & a\b/g,"one ee and uh").replace(/&/g," and ").replace(/\bRLRR LRLL\b/g,"right left right right, left right left left").replace(/\bRRLL R\b/g,"right right left left, right").replace(/\bLLRR L\b/g,"left left right right, left");
 var u=new SpeechSynthesisUtterance(t);var vv=pickVoice(["Ava","Samantha","Aria","Jenny","Allison","Zoe"]);if(vv){u.voice=vv;u.lang=vv.lang;}u.rate=.95;u.pitch=1;u.onend=function(){setTalk(false);};u.onerror=function(){setTalk(false);};speechSynthesis.cancel();speechSynthesis.speak(u);setTalk(true);});
 document.getElementById("met").addEventListener("click",toggleMet);
-var cb=document.getElementById("clk");cb.addEventListener("click",function(){clickOn=!clickOn;cb.setAttribute("aria-pressed",clickOn?"true":"false");cb.textContent="Metronome sound: "+(clickOn?"on":"off");});
-tabsBuild();render();
+var cb=document.getElementById("clk");cb.addEventListener("click",function(){clickOn=!clickOn;cb.setAttribute("aria-pressed",clickOn?"true":"false");cb.classList.toggle("on",clickOn);});
+
+</script>
+<script>
+/* Bear's Drum Lab interface layer. Everything here drives the original lesson engine above:
+   the same LESSONS data, notation renderer (render), audio (play/snare), metronome and scheduler (tick). */
+var UNIT_SUB={"Counting":"Note values and rests","Eighth notes":"Two notes per beat","Time signatures":"3/4, 2/4 and 6/8","Sixteenth notes":"Four notes per beat","Rudiments":"Master the building blocks"};
+var MISSIONS={
+"Quarter notes":"Lock every note to the click: four even notes, four even beats.",
+"Half notes":"Hold the count through the space: play on 1 and 3, feel 2 and 4.",
+"Whole note":"Play once, then count the whole bar without rushing the next 1.",
+"Mixing values":"Keep the beat steady while the note lengths change.",
+"Quarter rests":"Make the rests as exact as the notes.",
+"Half rest":"Wait two full beats, then come in exactly on 3.",
+"Eighth notes":"Two even notes in every beat, both hands the same height.",
+"Eighths and quarters":"Switch between slow and fast notes without the beat moving.",
+"Eighth rests":"Play the numbers and leave every & perfectly empty.",
+"Off-beats":"Foot on the beat, sticks on the &, all the way through.",
+"3/4 time":"Feel three beats in a bar, with beat 1 leading.",
+"2/4 time":"March it: steady, strong, and never rushing.",
+"Dotted quarter":"Land the eighth note exactly on the & of 2.",
+"6/8 time":"Two groups of three, with clear accents on 1 and 4.",
+"Sixteenth notes":"Four perfectly even notes in every beat.",
+"Eighth + two 16ths":"A smooth gallop, with the right hand on every beat.",
+"Two 16ths + eighth":"Keep the quick notes from rushing into the eighth.",
+"16th accents":"Big accents, tiny taps, and no change in tempo.",
+"Paradiddle":"Accent the first note of each group and keep the doubles even.",
+"Double strokes":"Make the second note of every pair as strong as the first.",
+"Flams":"One thick sound: the grace note just before the main note, never together.",
+"Flam taps":"Every flam sounds the same, whichever hand leads.",
+"Drags":"Make the grace notes almost disappear into the main stroke.",
+"Five-stroke roll":"Four even strokes that land cleanly on the accent."};
+var MODES={listen:{g:1,note:"Bear plays the lesson. Listen, watch the notes light up, and count along."},
+ along:{g:.45,note:"Play along with Bear. He plays softer so you can hear yourself."},
+ challenge:{g:0,note:""}};
+var mode="listen",done={},unitOf=[],unitStart=[],firstBar=0,bars=[],an=null,waveCtx=null;
+try{(JSON.parse(localStorage.getItem("bearLab.done")||"[]")).forEach(function(n){done[n]=true;});}catch(e){}
+function saveDone(){try{localStorage.setItem("bearLab.done",JSON.stringify(Object.keys(done).filter(function(k){return done[k];})));}catch(e){}}
+(function(){var i=0;UNITS.forEach(function(u,ui){unitStart.push(i);u.lessons.forEach(function(){unitOf[i++]=ui;});});})();
+function $(id){return document.getElementById(id);}
+function useIcon(n){return '<svg class="i"><use href="#i-'+n+'"/></svg>';}
+
+/* ---------- left curriculum navigation and phone picker ---------- */
+function buildNav(){var nav=$("tabs");nav.innerHTML="";var idx=0;
+ UNITS.forEach(function(u,ui){var p=document.createElement("div");p.className="panel unit";p.dataset.u=ui;
+  var hb=document.createElement("button");hb.type="button";hb.setAttribute("aria-expanded","false");
+  hb.innerHTML='<span class="ring"><span></span></span><span><h3></h3><p></p></span>';hb.querySelector("h3").textContent=u.name;hb.querySelector("p").textContent=UNIT_SUB[u.name]||"";
+  hb.addEventListener("click",function(){var o=!p.classList.contains("open");p.classList.toggle("open",o);hb.setAttribute("aria-expanded",o?"true":"false");});
+  p.appendChild(hb);var ol=document.createElement("ol");
+  u.lessons.forEach(function(L){var i=idx++;var li=document.createElement("li"),b=document.createElement("button");b.type="button";b.dataset.i=i;
+   b.innerHTML='<span class="k"></span><span class="nm"></span><span class="ck">'+useIcon("check")+'</span>';b.querySelector(".k").textContent=i+1;b.querySelector(".nm").textContent=L.name;
+   b.addEventListener("click",function(){select(i);});li.appendChild(b);ol.appendChild(li);});
+  p.appendChild(ol);nav.appendChild(p);});
+ var q=document.createElement("p");q.className="quote";q.textContent="“Better drummers make a brighter world.” — Bear";nav.appendChild(q);
+ var pk=$("picker");pk.innerHTML="";idx=0;UNITS.forEach(function(u){var g=document.createElement("optgroup");g.label=u.name;u.lessons.forEach(function(L){var o=document.createElement("option");o.value=idx;o.textContent=(idx+1)+". "+L.name;idx++;g.appendChild(o);});pk.appendChild(g);});
+ pk.addEventListener("change",function(){select(+pk.value);});}
+function refreshProgress(){var total=LESSONS.length,n=0;for(var k in done)if(done[k])n++;
+ $("meDone").textContent=n+" of "+total+" complete";
+ [].forEach.call(document.querySelectorAll("#tabs .unit"),function(p){var ui=+p.dataset.u,u=UNITS[ui],s=unitStart[ui],c=0;
+  u.lessons.forEach(function(L,j){if(done[s+j])c++;});var r=p.querySelector(".ring");r.style.setProperty("--p",Math.round(c/u.lessons.length*100));r.querySelector("span").textContent=c+"/"+u.lessons.length;
+  var open=unitOf[cur]===ui;if(open){p.classList.add("open");p.querySelector("button").setAttribute("aria-expanded","true");}});
+ [].forEach.call(document.querySelectorAll("#tabs li button"),function(b){var i=+b.dataset.i;b.classList.toggle("done",!!done[i]);b.setAttribute("aria-current",i===cur?"true":"false");});
+ var ui=unitOf[cur],u=UNITS[ui],s=unitStart[ui];$("tpUnit").textContent=u.name;$("tpLesson").textContent="Lesson "+(cur+1)+" of "+total;
+ var dots="";u.lessons.forEach(function(L,j){dots+='<i class="'+(s+j===cur?"cur":done[s+j]?"done":"")+'"></i>';});$("tpDots").innerHTML=dots;
+ var md=$("markDone");md.setAttribute("aria-pressed",done[cur]?"true":"false");md.querySelector("span").textContent=done[cur]?"Completed":"Mark as complete";}
+function select(i){if(i<0||i>=LESSONS.length)return;if(running)stopAll();if(typeof hush==="function")hush();cur=i;render();
+ try{localStorage.setItem("bearLab.cur",cur);history.replaceState(null,"","#lesson-"+(cur+1));}catch(e){}}
+
+/* ---------- called by render() after the notation is drawn ---------- */
+function afterRender(L){var ui=unitOf[cur];
+ $("meta").textContent="Lesson "+(cur+1)+" of "+LESSONS.length+"  ·  "+UNITS[ui].name;
+ $("bigname").textContent=L.name;$("scoreName").textContent=L.name;
+ var bars1=L.ts[0]+"/"+L.ts[1]+"  ·  1 bar";$("scoreInfo").textContent=bars1;
+ var sub=(L.title.split(":")[1]||L.title).trim();$("bubble").textContent=sub.charAt(0).toUpperCase()+sub.slice(1)+". Let's hear it!";
+ var bx=BOXES[L.name]||[];$("coachSay").textContent=bx.length?bx[0][2]:L.text;
+ var tip=bx.length>1?bx[1][2]:L.tryit[L.tryit.length-1];$("protip").textContent=tip;
+ $("mission").textContent=MISSIONS[L.name]||L.title;$("picker").value=cur;
+ $("prev").disabled=cur===0;$("next").disabled=cur===LESSONS.length-1;
+ var ph=el("line",{x1:180,y1:18,x2:180,y2:192,class:"ph"},svg);ph.id="ph";
+ if(mode==="challenge")applyChallenge();setModeNote();refreshProgress();}
+
+/* ---------- play button state (the engine calls this from start/stopAll) ---------- */
+function setPlayUI(on){var g=$("go");g.classList.toggle("on",on);g.setAttribute("aria-label",on?"Stop":"Play");svg.classList.toggle("running",on);if(!on){$("ci").textContent="";bars=[];}}
+function onStart(t0){firstBar=t0;bars=[];}
+function onBeat(i,t){if(i===0)bars.push(t);if(bars.length>8)bars.shift();}
+function hitFx(e,delay){if(RM)return;var s=$("stage");setTimeout(function(){s.classList.add("hit");s.classList.toggle("acc",!!e.acc);setTimeout(function(){s.classList.remove("hit","acc");},110);},delay||0);}
+
+/* ---------- playhead, count-in label and output meter, all read from the audio clock ---------- */
+function frame(){requestAnimationFrame(frame);if(!ctx)return;var now=ctx.currentTime,ph=$("ph");
+ if(running&&ph){var L=LESSONS[cur],bs=null;for(var k=bars.length-1;k>=0;k--)if(bars[k]<=now){bs=bars[k];break;}
+  if(bs!==null){var isCount=countIn&&Math.abs(bs-firstBar)<1e-4&&!metOnly;$("ci").textContent=isCount?"COUNT-IN":"";
+   var f=Math.min(1,(now-bs)/(L.len*60/bpm));var x=isCount?-20:180+f*440;ph.setAttribute("x1",x);ph.setAttribute("x2",x);}}
+ if(an&&waveCtx){var c=$("wave"),w=c.width,h=c.height,d=new Uint8Array(an.frequencyBinCount);an.getByteFrequencyData(d);waveCtx.clearRect(0,0,w,h);
+  var n=48;for(var j=0;j<n;j++){var v=d[Math.floor(j*d.length/n/2)]/255,bh=Math.max(2,v*h*.95);waveCtx.fillStyle=running?"#38d6ff":"#26405f";waveCtx.fillRect(j*(w/n),(h-bh)/2,w/n-3,bh);}}}
+var _audio=audio;audio=function(){var c=_audio();if(c&&!an){an=ctx.createAnalyser();an.fftSize=256;master.connect(an);waveCtx=$("wave").getContext("2d");}return c;};
+
+/* ---------- modes ---------- */
+function goalTempo(L){return Math.min(L.bpm[2],Math.round(L.bpm[1]*1.3));}
+function applyChallenge(){var L=LESSONS[cur],r=$("bpm");r.value=goalTempo(L);r.dispatchEvent(new Event("input"));}
+function setModeNote(){var L=LESSONS[cur];$("modenote").textContent=mode==="challenge"?"Challenge: play it alone at "+goalTempo(L)+" BPM with the click. Bear stays silent and lights up each note so you can check yourself.":MODES[mode].note;}
+function setMode(m){mode=m;bearGain=MODES[m].g;[].forEach.call(document.querySelectorAll("[data-mode]"),function(b){b.setAttribute("aria-pressed",b.dataset.mode===m?"true":"false");});
+ if(m==="challenge"){applyChallenge();if(!clickOn)$("clk").click();}else{var L=LESSONS[cur],r=$("bpm");if(+r.value===goalTempo(L)){r.value=L.bpm[1];r.dispatchEvent(new Event("input"));}}
+ setModeNote();}
+[].forEach.call(document.querySelectorAll("[data-mode]"),function(b){b.addEventListener("click",function(){setMode(b.dataset.mode);});});
+
+/* ---------- transport ---------- */
+$("prev").addEventListener("click",function(){select(cur-1);});
+$("next").addEventListener("click",function(){select(cur+1);});
+function nudge(d){var r=$("bpm"),v=Math.max(+r.min,Math.min(+r.max,+r.value+d));r.value=v;r.dispatchEvent(new Event("input"));}
+$("bdn").addEventListener("click",function(){nudge(-2);});$("bup").addEventListener("click",function(){nudge(2);});
+function sw(id,get,set){var b=$(id);b.addEventListener("click",function(){set(!get());b.setAttribute("aria-pressed",get()?"true":"false");b.querySelector("span").textContent=get()?"ON":"OFF";});}
+sw("cnt",function(){return countIn;},function(v){countIn=v;});
+sw("lp",function(){return loopOn;},function(v){loopOn=v;});
+$("startPractice").addEventListener("click",function(){setMode(mode==="listen"?"along":mode);if(!running)toggle();
+ if(window.innerWidth<980)document.querySelector(".stage").scrollIntoView({behavior:RM?"auto":"smooth",block:"start"});});
+$("markDone").addEventListener("click",function(){done[cur]=!done[cur];saveDone();refreshProgress();if(window.gtag&&done[cur])gtag("event","bear_lesson_complete",{lesson:cur+1});});
+document.addEventListener("keydown",function(e){if(e.code!=="Space")return;var t=e.target.tagName;if(t==="INPUT"||t==="SELECT"||t==="BUTTON"||t==="TEXTAREA"||e.target.getAttribute("role")==="button")return;e.preventDefault();toggle();});
+
+/* ---------- start ---------- */
+(function(){var i=0;var m=/^#lesson-(\d+)$/.exec(location.hash||"");if(m)i=+m[1]-1;else{try{var s=localStorage.getItem("bearLab.cur");if(s!==null)i=+s;}catch(e){}}
+ if(!(i>=0&&i<LESSONS.length))i=0;cur=i;buildNav();render();setMode("listen");frame();})();
 </script>
 </body>
 </html>
