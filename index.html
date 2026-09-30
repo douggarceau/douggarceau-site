@@ -428,11 +428,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <script>
 document.getElementById('f').addEventListener('submit',function(e){
   e.preventDefault();
-  var em=document.getElementById('email'), note=document.getElementById('note');
+  var em=document.getElementById('email'), note=document.getElementById('note'), btn=this.querySelector('button');
   if(!em.value||!em.checkValidity()){note.className='note';note.textContent='Please enter a valid email address.';em.focus();return;}
-  note.className='note ok';
-  note.textContent='Thanks! Sign-ups aren’t switched on quite yet, so nothing was saved. Check back soon.';
-  em.value='';
+  var fd=new FormData();fd.append('email',em.value);fd.append('embed','1');fd.append('tag','website');
+  btn.disabled=true;note.className='note';note.textContent='Signing you up...';
+  fetch('https://buttondown.com/api/emails/embed-subscribe/amadeusdrums',{method:'POST',body:fd,mode:'no-cors'})
+   .then(function(){note.className='note ok';note.textContent='Thanks! Check your inbox for a confirmation email, then click the link inside to finish signing up.';em.value='';if(window.gtag)gtag('event','sign_up',{method:'newsletter'});})
+   .catch(function(){note.className='note';note.textContent='Something went wrong. Please try again in a moment.';})
+   .then(function(){btn.disabled=false;});
 });
 </script>
 <script>
