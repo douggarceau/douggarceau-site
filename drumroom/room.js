@@ -438,7 +438,23 @@
         i++; at += (1 / rate) * (1 + i * 0.012);
       }
     },
-    sandpaper: function (t) { noise(t, 0.35, 0.45, 'bandpass', 3500, 0.8, 0.1); noise(t + 0.45, 0.35, 0.45, 'bandpass', 3500, 0.8, 0.1); },
+    // Sandpaper blocks: two wooden blocks faced with sandpaper, rubbed together. The grit changes the sound, not
+    // just the volume: coarse paper is louder, lower and audibly grainy (you hear individual scratches); medium is
+    // a smoother rasp; fine paper is a soft, high, even hiss. Slap: the blocks struck face to face.
+    sandpaper: function (t, f, note) {
+      var v = note || 'medium';
+      if (v === 'slap') { ring(t, 520, 0.45, 0.03); ring(t, 1150, 0.25, 0.018); noise(t, 0.03, 0.8, 'bandpass', 2200, 0.8, 0.0005); noise(t, 0.06, 0.3, 'bandpass', 5000, 0.7, 0.002); return; }
+      var P = { coarse: [1700, 0.6, 1, 260, 0.26], medium: [3000, 0.7, 0.75, 110, 0.24], fine: [5600, 0.9, 0.5, 0, 0.22] }[v] || [3000, 0.7, 0.75, 110, 0.24];
+      var dur = P[4], src = ctx.createBufferSource(); src.buffer = noiseBuf; src.loop = true;
+      var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = P[0]; bp.Q.value = P[1];
+      var hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = P[0] * 0.35;
+      var g = ctx.createGain(); g.gain.setValueAtTime(0, t);
+      for (var k = 0; k <= 12; k++) g.gain.linearRampToValueAtTime(P[2] * 0.75 * Math.pow(Math.sin(Math.PI * k / 12), 0.6), t + dur * k / 12);
+      src.connect(bp); bp.connect(hp); hp.connect(g); g.connect(bus); src.start(t, Math.random() * 2); src.stop(t + dur + 0.05);
+      var grains = Math.round(P[3] * dur);
+      for (var i = 0; i < grains; i++) { var x = Math.random(); noise(t + x * dur, 0.004, P[2] * 0.5 * Math.sin(Math.PI * x) * (0.4 + Math.random() * 0.6), 'bandpass', 1200 + Math.random() * 3500, 3, 0.0003); }
+      ring(t, 600, 0.08 * P[2], 0.012);
+    },
     rainstick: function (t) { for (var i = 0; i < 70; i++) { var tt = t + Math.random() * 2.2; noise(tt, 0.012, 0.25, 'bandpass', 2500 + Math.random() * 4000, 3); } },
     windmachine: function (t) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.Q.value = 3;
       f.frequency.setValueAtTime(300, t); f.frequency.linearRampToValueAtTime(1100, t + 1.5); f.frequency.linearRampToValueAtTime(400, t + 3); s.connect(f); f.connect(env(t, 0.7, 3.2, 1)); s.start(t); s.stop(t + 3.3); },
