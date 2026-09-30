@@ -75,6 +75,37 @@
     ['warm', 'bright'].forEach(function (kind) { R[kind].forEach(function (d) { var b = ctx.createBuffer(1, d.length, 44100); b.getChannelData(0).set(d); JING[kind].push(b); }); });
     return JING;
   }
+  var BELL = null, BRAW = null;
+  function bellRaw() {
+    if (BRAW) return BRAW; BRAW = [];
+    var sr = 44100, len = Math.floor(sr * 0.55);
+    for (var k = 0; k < 12; k++) {
+      var d = new Float32Array(len), f0 = 2300 * Math.pow(2.1, Math.random());
+      var parts = [[1, 1, 0.22 + Math.random() * 0.15], [1.004, 0.5, 0.25], [2.02, 0.35, 0.09], [2.93, 0.2, 0.05], [3.96, 0.1, 0.03]];
+      var hits = [[0, 1]], at = 0, a = 1; for (var h = 0; h < 3 + Math.floor(Math.random() * 4); h++) { at += 0.006 + Math.random() * 0.02; a *= 0.45 + Math.random() * 0.25; hits.push([at, a]); }
+      for (var j = 0; j < len; j++) {
+        var x = 0;
+        for (var e = 0; e < hits.length; e++) { var tt = j / sr - hits[e][0]; if (tt < 0) continue;
+          for (var q = 0; q < parts.length; q++) { var P = parts[q]; x += hits[e][1] * P[1] * Math.exp(-tt / P[2]) * Math.sin(6.283 * f0 * P[0] * tt + e * 1.3); }
+          x += hits[e][1] * (Math.random() * 2 - 1) * 1.5 * Math.exp(-tt / 0.0012); }
+        d[j] = x;
+      }
+      var m = 0; for (j = 0; j < len; j++) m = Math.max(m, Math.abs(d[j])); for (j = 0; j < len; j++) d[j] /= m;
+      BRAW.push(d);
+    }
+    return BRAW;
+  }
+  (window.requestIdleCallback || function (f) { setTimeout(f, 2500); })(function () { bellRaw(); });
+  function bells(t, count, vol, spread) {
+    if (!BELL) BELL = bellRaw().map(function (d) { var b = ctx.createBuffer(1, d.length, 44100); b.getChannelData(0).set(d); return b; });
+    var hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 1500; var out = ctx.createGain(); out.gain.value = vol * 0.28; hp.connect(out); out.connect(bus);
+    for (var i = 0; i < count; i++) {
+      var s = ctx.createBufferSource(); s.buffer = BELL[Math.floor(Math.random() * BELL.length)]; s.playbackRate.value = 0.97 + Math.random() * 0.06;
+      var g = ctx.createGain(); g.gain.value = 0.6 + Math.random() * 0.4; s.connect(g);
+      if (ctx.createStereoPanner) { var pn = ctx.createStereoPanner(); pn.pan.value = Math.random() * 0.8 - 0.4; g.connect(pn); pn.connect(hp); } else g.connect(hp);
+      s.start(t + Math.random() * spread);
+    }
+  }
   function clashes(t, count, vol, kind, spread) {
     var bank = jingBank()[kind];
     var hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 1800; var out = ctx.createGain(); out.gain.value = vol * 0.5; hp.connect(out); out.connect(bus);
@@ -155,7 +186,16 @@
     castanets: function (t) { noise(t, 0.03, 0.8, 'bandpass', 3200, 4); noise(t + 0.06, 0.03, 0.8, 'bandpass', 3000, 4); },
     maracas: function (t) { noise(t, 0.09, 0.5, 'highpass', 5000); noise(t + 0.16, 0.09, 0.5, 'highpass', 5000); },
     cowbell: function (t) { var b = ctx.createBiquadFilter(); b.type = 'bandpass'; b.frequency.value = 800; b.Q.value = 1.5; b.connect(env(t, 0.5, 0.35)); [540, 800].forEach(function (f) { var o = ctx.createOscillator(); o.type = 'square'; o.frequency.value = f; o.connect(b); o.start(t); o.stop(t + 0.4); }); },
-    sleighbells: function (t) { for (var i = 0; i < 14; i++) noise(t + Math.random() * 0.5, 0.18, 0.25, 'bandpass', 6000 + Math.random() * 3000, 3); },
+    // Sleigh bells: a strap of small closed pellet bells. Each bell rings at its own pitch while the loose
+    // pellet inside bounces a few times, so every bell gives a short pitched "chink" with a rattle.
+    // Handle hit: fist on the handle, all bells sound together, tight and precise. Shake: looser, with a softer
+    // return swing. Roll: continuous shaking that swells and fades.
+    sleighbells: function (t, f, note) {
+      var v = note || 'shake', i, n;
+      if (v === 'hit') { bells(t, 18, 1, 0.006); return; }
+      if (v === 'shake') { bells(t, 16, 0.9, 0.018); bells(t + 0.11, 10, 0.35, 0.02); return; }
+      for (i = 0; i < 28; i++) { n = Math.sin((i + 1) / 29 * Math.PI); bells(t + i * 0.055 + Math.random() * 0.008, 6, 0.25 + 0.5 * n, 0.02); }
+    },
     bongos: function (t, f) { sine(t, f * 1.2, 0.6, 0.22, 'sine', f, 0.03); noise(t, 0.02, 0.2, 'bandpass', 3000, 2); },
     congas: function (t, f) { sine(t, f * 1.25, 0.7, 0.45, 'sine', f, 0.04); sine(t, f * 2.3, 0.1, 0.12); noise(t, 0.02, 0.2, 'bandpass', 2500, 2); },
     fielddrum: function (t) { sine(t, 200, 0.5, 0.15, 'triangle', 150, 0.05); noise(t, 0.4, 0.8, 'bandpass', 2500, 0.5); },
