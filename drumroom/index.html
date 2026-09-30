@@ -115,6 +115,7 @@ function set(l){document.body.setAttribute('data-level',l);document.querySelecto
 try{var u=new URL(location.href);u.searchParams.set('level',{b:'beginner',i:'intermediate',a:'advanced'}[l]);history.replaceState(null,'',u);}catch(e){}}
 document.querySelectorAll('[data-lv]').forEach(function(b){b.addEventListener('click',function(){set(b.getAttribute('data-lv'));});});set(d);})();
 </script>
-<script src="room.js?v=2"></script>
+<script src="../sounds/kit/kit.js?v=2"></script>
+<script src="room.js?v=3"></script>
 </body>
 </html>

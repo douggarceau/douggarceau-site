@@ -1,10 +1,11 @@
-/* Drum Room sounds: every instrument is synthesized in the browser, no audio files. */
+/* Drum Room sounds: snare, toms and suspended cymbal use the real recorded kit samples (sounds/kit);
+   instruments with no recording yet are synthesized in the browser. */
 (function () {
   var ctx, bus, noiseBuf;
   function audio() {
     if (!ctx) {
       var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
-      ctx = new AC();
+      ctx = new AC(); if (window.KitSamples) KitSamples.load(ctx, '../sounds/kit/');
       var len = ctx.sampleRate * 3; noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
       var d = noiseBuf.getChannelData(0); for (var i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
       var comp = ctx.createDynamicsCompressor(); comp.threshold.value = -16; comp.ratio.value = 4;
@@ -112,10 +113,20 @@
     birdwhistle: function (t) { for (var i = 0; i < 5; i++) { var o = ctx.createOscillator(), tt = t + i * 0.16; o.frequency.setValueAtTime(2600, tt); o.frequency.exponentialRampToValueAtTime(3400, tt + 0.07); o.frequency.exponentialRampToValueAtTime(2800, tt + 0.12); o.connect(env(tt, 0.2, 0.13, 0.01)); o.start(tt); o.stop(tt + 0.15); } },
     oceandrum: function (t) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.frequency.value = 3000; f.Q.value = 0.5; s.connect(f); f.connect(env(t, 0.5, 3, 1.3)); s.start(t); s.stop(t + 3.1); },
   };
+  // Real recorded drums where the sample pack has the instrument.
+  function real(inst, t, f) {
+    if (!window.KitSamples) return false;
+    var K = window.KitSamples;
+    if (inst === 'snare') return K.play(ctx, bus, 'snare-f', t, 0.95, 0);
+    if (inst === 'snareroll') { if (!K.ready('snare-mp')) return false; for (var i = 0; i < 24; i++) K.play(ctx, bus, i % 2 ? 'snare-mp' : 'snare-mf', t + i * 0.045 + Math.random() * 0.004, 0.55 + i / 60, i % 2 ? 0.1 : -0.1); return true; }
+    if (inst === 'toms') { var r = f ? Math.max(0.6, Math.min(1.6, f / 150)) : 1; return K.play(ctx, bus, f && f < 120 ? 'floor' : 'tom', t, 0.9, 0, f && f < 120 ? f / 92 : r); }
+    if (inst === 'suspended') return K.play(ctx, bus, 'crash', t, 0.7, 0);
+    return false;
+  }
   function play(inst, note, btn) {
     if (!audio()) return;
     var t = ctx.currentTime + 0.02, f = note ? (/^\d+(\.\d+)?$/.test(note) ? +note : MIDI(+note.replace('m', ''))) : 0;
-    V[inst](t, f);
+    if (!real(inst, t, f)) V[inst](t, f);
     if (btn) { btn.classList.add('hit'); setTimeout(function () { btn.classList.remove('hit'); }, 180); }
     if (window.gtag) gtag('event', 'drum_room_play', { instrument: inst });
   }
