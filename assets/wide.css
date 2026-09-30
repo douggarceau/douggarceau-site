@@ -67,3 +67,5 @@ html[data-lab=orange] .go,html[data-lab=orange] .try.solid,html[data-lab=orange]
 .chip:hover,.feel:hover,.var:hover,.snd:hover,button.step:hover,.exc button:hover,.scale:hover,.seg button:hover{border-color:var(--lab-acc)!important;box-shadow:0 0 14px rgba(var(--lab-glow),.2)}
 .chip.on,.feel.on,.var.on,.play.on,.exc button.pl,.seg button.on,.seg button[aria-pressed=true],.chip[aria-pressed=true]{background:linear-gradient(180deg,var(--lab-acc2),var(--lab-acc));border-color:var(--lab-acc)!important;color:#140d02;box-shadow:0 0 16px rgba(var(--lab-glow),.3)}
 .play{border-color:var(--lab-acc)!important;box-shadow:0 0 18px rgba(var(--lab-glow),.25)}
+.exsvg svg{width:100%!important;max-width:1400px;height:auto}
+.box.tip>h3,.box.tip h3{background:linear-gradient(180deg,var(--lab-acc2),var(--lab-acc));color:#140d02}
