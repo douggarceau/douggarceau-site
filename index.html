@@ -32,6 +32,24 @@ h1 span{color:var(--gold)}
 .btn.line{color:var(--ink)}.btn.line:hover{border-color:var(--gold);color:var(--gold)}
 .hero svg{width:100%;height:auto;display:block}
 .hero .logo{width:100%;max-width:440px;height:auto;display:block;margin:0 auto;border-radius:12px}
+.drum-hero{position:relative;width:100%;max-width:1536px;margin:0 auto;height:min(66.67vw,1024px,88vh);min-height:560px;overflow:hidden;background:#111;display:flex;align-items:center;border-bottom:1px solid var(--line)}
+.drum-hero picture{position:absolute;inset:0}
+.drum-hero-bg{display:block;width:100%;height:100%;object-fit:cover;object-position:center}
+.drum-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.6) 34%,rgba(0,0,0,.14) 64%,rgba(0,0,0,.02) 100%)}
+.drum-hero-content{position:relative;width:min(640px,90%);margin-left:clamp(20px,6vw,110px);padding:64px 0}
+.drum-hero h1{font-size:clamp(52px,6vw,96px);text-shadow:0 2px 18px rgba(0,0,0,.45)}
+.drum-hero .lede{text-shadow:0 1px 10px rgba(0,0,0,.6)}
+.drum-hero .btn.line{background:rgba(0,0,0,.3)}
+.mark{display:inline-flex;align-items:center;gap:12px}.mark img{width:44px;height:44px;border-radius:6px;display:block}
+@media (max-width:760px){
+  header{flex-wrap:wrap}
+  .drum-hero{display:block;height:auto;min-height:0;border-bottom:1px solid var(--line)}
+  .drum-hero picture{position:static}
+  .drum-hero-bg{height:auto;object-fit:contain}
+  .drum-hero-overlay{display:none}
+  .drum-hero-content{width:auto;margin:0;padding:28px 20px 44px}
+  .drum-hero h1{font-size:clamp(48px,13vw,72px);text-shadow:none}
+}
 section{padding:64px 0;border-bottom:1px solid var(--line)}
 h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:56px;line-height:1;letter-spacing:1px;margin:0 0 8px}
 .sec-sub{color:var(--muted);margin:0 0 32px;max-width:640px}
@@ -99,23 +117,28 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(-
 <body>
 <div class="wrap">
 <header>
-<a class="mark" href="index.html">Amadeus School of Drums</a>
+<a class="mark" href="index.html"><img src="logo.jpg" width="44" height="44" alt="">Amadeus School of Drums</a>
 <span style="display:flex;gap:22px;flex-wrap:wrap"><a class="navlink" href="beats/">Famous beats</a><a class="navlink" href="rudiments/">Rudiments</a><a class="navlink" href="gear.html">Gear guide</a><a class="navlink" href="#signup">Get new lessons →</a></span>
 </header>
 
-<div class="hero">
-<div>
-<p class="kicker">FREE ONLINE DRUM LESSONS</p>
-<h1>Learn drums<br>at <span>home.</span></h1>
-<p class="lede">Lessons from a formally trained professional drummer and percussionist. Start with quarter notes on a practice pad, and work your way up to real grooves on a full drum kit.</p>
+</div>
+<div class="drum-hero">
+<picture>
+<source type="image/webp" srcset="images/drum-room-768.webp 768w, images/drum-room-1152.webp 1152w, images/drum-room-1536.webp 1536w" sizes="(max-width: 1536px) 100vw, 1536px">
+<img class="drum-hero-bg" src="images/drum-room-1536.jpg" srcset="images/drum-room-768.jpg 768w, images/drum-room-1152.jpg 1152w, images/drum-room-1536.jpg 1536w" sizes="(max-width: 1536px) 100vw, 1536px" width="1536" height="1024" alt="Vintage white marine pearl drum kit shown from four angles in a music classroom" fetchpriority="high" decoding="async">
+</picture>
+<div class="drum-hero-overlay"></div>
+<div class="drum-hero-content">
+<p class="kicker">ONLINE DRUM SCHOOL</p>
+<h1>Learn drums.<br><span>Understand the instrument.</span></h1>
+<p class="lede">Technique, coordination, groove, tuning, equipment, drum history, and practical musicianship, from a formally trained professional drummer and percussionist.</p>
 <div class="ctas">
-<a class="btn solid" href="bear.html">Start with Bear</a>
-<a class="btn line" href="level7.html">Jump to the kit</a>
+<a class="btn solid" href="#levels">Start learning</a>
+<a class="btn line" href="level7.html">Explore the drum room</a>
 </div>
 </div>
-<img class="logo" src="logo.jpg" width="800" height="800" alt="Amadeus School of Drums logo: a German Shepherd behind a snare drum with crossed drumsticks">
 </div>
-
+<div class="wrap">
 <section id="levels">
 <h2>Pick your level</h2>
 <p class="sec-sub">The lessons grow up with you. Young players start with Bear on a practice pad. Older students go straight to the full kit.</p>
