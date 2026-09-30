@@ -231,6 +231,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <a href="#learn">Learn</a>
 <a href="#gear">Gear</a>
 <a href="drumroom/">Drum Room</a>
+<a href="studio/fx/">Movie FX</a>
 <a href="studio/">Sound Studio</a>
 <a href="level7.html">The Kit</a>
 <a href="grooves/">Grooves</a>
@@ -260,6 +261,65 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <a href="shop/" class="button button-outline">SHOP DRUM GEAR</a>
 </div>
 </div>
+</section>
+
+<section class="fxb" id="movie-fx" aria-labelledby="fxb-h">
+<style>
+.fxb{background:radial-gradient(ellipse at 20% 0%,rgba(192,57,43,.28),transparent 60%),radial-gradient(ellipse at 90% 100%,rgba(255,211,92,.14),transparent 55%),#0b0b0b;border-top:1px solid #2e2e2e;border-bottom:1px solid #2e2e2e;padding:54px 0 58px}
+.fxb-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:36px;align-items:center}
+.fxb .eyebrow{color:#e74c3c}
+.fxb h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(48px,7vw,92px);line-height:.9;margin:6px 0 14px;letter-spacing:1px;color:#fff}
+.fxb h2 span{color:#ffd35c}
+.fxb p{color:#c4c4c4;font-size:18px;max-width:520px;margin:0 0 20px}
+.fxb-pads{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.fxb-pad{position:relative;min-height:92px;border-radius:12px;border:1px solid var(--c);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(0,0,0,.25));color:#fff;font:500 15px/1.25 'IBM Plex Sans',system-ui,sans-serif;text-align:left;padding:12px 10px 22px;cursor:pointer;transition:transform .06s,background .1s}
+.fxb-pad small{position:absolute;left:10px;bottom:7px;font:600 10px 'IBM Plex Mono',monospace;letter-spacing:2px;color:var(--c)}
+.fxb-pad:hover{background:rgba(255,255,255,.1)}
+.fxb-pad:active,.fxb-pad.hit{transform:scale(.97);background:var(--c);color:#0a0a0a}
+.fxb-pad.hit small{color:#0a0a0a}
+.fxb-pad.wait{opacity:.6}
+.fxb-pad:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.fxb-hint{font:13px 'IBM Plex Mono',monospace;color:#9a9a9a;margin-top:12px}
+@media (max-width:860px){.fxb-in{grid-template-columns:1fr;gap:22px}.fxb-pads{grid-template-columns:repeat(2,1fr)}}
+</style>
+<div class="home-container fxb-in">
+<div>
+<div class="eyebrow">NEW · MOVIE SOUND FX</div>
+<h2 id="fxb-h">SCORE YOUR<br><span>OWN SCENE.</span></h2>
+<p>Real, studio-quality sound effects you can play right here: thunder, creaking doors, wolf howls, trailer booms, sci-fi lasers and more. Layer them, loop the weather, or play a whole scene with one button.</p>
+<div class="button-row">
+<a href="studio/fx/" class="button button-gold">OPEN THE FX BOARD</a>
+<a href="studio/" class="button button-outline">SOUND STUDIO</a>
+</div>
+</div>
+<div>
+<div class="fxb-pads" role="group" aria-label="Try a sound effect">
+<button class="fxb-pad" data-s="fx-thunder-close" style="--c:#5dade2">Lightning strike<small>WEATHER</small></button>
+<button class="fxb-pad" data-s="fx-door-creak" style="--c:#e74c3c">Creaking door<small>HORROR</small></button>
+<button class="fxb-pad" data-s="fx-howl" style="--c:#e74c3c">Wolf howl<small>HORROR</small></button>
+<button class="fxb-pad" data-s="fx-banshee" style="--c:#e74c3c">Banshee scream<small>HORROR</small></button>
+<button class="fxb-pad" data-s="fx-braam" style="--c:#ffd35c">Braam<small>TRAILER</small></button>
+<button class="fxb-pad" data-s="fx-impact" style="--c:#ffd35c">Trailer impact<small>TRAILER</small></button>
+<button class="fxb-pad" data-s="fx-laser" style="--c:#48c9b0">Laser blast<small>SCI-FI</small></button>
+<button class="fxb-pad" data-s="fx-scratch" style="--c:#af7ac5">Record scratch<small>DJ</small></button>
+</div>
+<div class="fxb-hint">Tap a pad. Turn your sound up. &#9632; <a href="#movie-fx" id="fxb-stop" style="color:#9a9a9a">stop</a></div>
+</div>
+</div>
+<script>
+(function(){
+var ctx,out,B={},L={},live=[];
+function ac(){ if(!ctx){ ctx=new (window.AudioContext||window.webkitAudioContext)(); var c=ctx.createDynamicsCompressor(); c.threshold.value=-10; c.ratio.value=8; out=ctx.createGain(); out.gain.value=0.9; out.connect(c); c.connect(ctx.destination);} if(ctx.state==='suspended') ctx.resume(); }
+function load(n){ if(!L[n]) L[n]=fetch('sounds/studio/'+n+'.mp3').then(function(r){return r.arrayBuffer();}).then(function(a){return new Promise(function(y,x){ctx.decodeAudioData(a,y,x);});}).then(function(b){B[n]=b;return b;}); return L[n]; }
+document.querySelectorAll('.fxb-pad').forEach(function(p){ p.addEventListener('click',function(){
+  ac(); var n=p.dataset.s; if(!B[n]) p.classList.add('wait');
+  load(n).then(function(b){ p.classList.remove('wait'); var s=ctx.createBufferSource(), g=ctx.createGain(); s.buffer=b; s.connect(g); g.connect(out); s.start(); live.push({s:s,g:g}); s.onended=function(){ live=live.filter(function(v){return v.s!==s;}); };
+    p.classList.add('hit'); setTimeout(function(){p.classList.remove('hit');},160);
+    if(window.gtag) gtag('event','home_fx_pad',{sound:n}); });
+ }); });
+document.getElementById('fxb-stop').addEventListener('click',function(e){ e.preventDefault(); if(!ctx) return; live.forEach(function(v){ try{ v.g.gain.setTargetAtTime(0,ctx.currentTime,0.05); v.s.stop(ctx.currentTime+0.3);}catch(x){} }); live=[]; });
+})();
+</script>
 </section>
 
 <section class="zone" id="play"><div class="home-container zone-in"><div class="zone-num">01</div><div><h2>PLAY</h2><p>The interactive kit, the Beat Maker, movie sound effects, the Groove Library and the Drum Room.</p></div><nav class="zone-links" aria-label="PLAY"><a href="studio/">Sound Studio</a><a href="studio/beats/">Beat Maker</a><a href="studio/fx/">Movie FX</a><a href="drumroom/">Drum Room</a><a href="#interactive-kit">The Kit</a><a href="#instrument">Know the kit</a><a href="grooves/">Grooves</a></nav></div></section>
