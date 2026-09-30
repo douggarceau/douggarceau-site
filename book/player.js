@@ -205,7 +205,7 @@
   function audio() {
     if (!ctx) {
       var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
-      ctx = new AC();
+      ctx = new AC(); if (window.KitSamples) KitSamples.load(ctx, new URL("../sounds/kit/", SRC).href);
       var len = ctx.sampleRate * 2; noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
       var d = noiseBuf.getChannelData(0); for (var i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
       var comp = ctx.createDynamicsCompressor(); comp.threshold.value = -14; comp.ratio.value = 4;
@@ -232,6 +232,8 @@
   function hit(k, t, v) {
     v = v * (0.9 + Math.random() * 0.1);
     if (BUFS[k]) { sample(k, t, (k === "bj" && v < 0.3 ? 0.45 : v) * (GAIN[k] || 1)); return; }
+    if (window.KitSamples) { var nm = { bd: v < 0.3 ? "kick-p" : "kick-mf", sn: v > 0.8 ? "snare-f" : v > 0.45 ? "snare-mf" : "snare-mp", t1: "tom", t2: "floor", hh: "hh", ho: "hh-open", hf: "hh-foot", rd: "ride", cr: "crash" }[k];
+      if (nm && KitSamples.play(ctx, bus, nm, t, Math.min(1, 0.3 + v * 0.75), 0)) return; }
     switch (k) {
       case "bd": tone(t, "sine", 160, 48, 0.09, 0.5, v); tone(t, "triangle", 90, 45, 0.12, 0.22, 0.3 * v); noise(t, 0.012, 0.3 * v, "highpass", 2500); break;
       case "sn": tone(t, "triangle", 240, 180, 0.04, 0.12, 0.55 * v); noise(t, 0.24, 0.9 * v, "bandpass", 4200, 0.6, 1400); noise(t, 0.03, 0.35 * v, "highpass", 5000); break;
