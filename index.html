@@ -264,6 +264,29 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .ts-note:empty{display:none}
 .ts-note.ok{color:#8fe3a8}
 @media (max-width:700px){.topsign{padding:10px 12px}.ts-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "row" "note";padding:12px}.ts-row button{padding:0 12px;font-size:13px;letter-spacing:.06em}.ts-h{font-size:26px}}
+
+/* gear ad */
+.gearad{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:900;text-decoration:none;color:#0a0a0a}
+.ga-tab{display:block;writing-mode:vertical-rl;transform:rotate(180deg);background:#ffd35c;padding:18px 9px;border-radius:0 8px 8px 0;font:700 14px var(--mono,monospace);letter-spacing:.14em;box-shadow:0 6px 24px rgba(0,0,0,.5);transition:padding .15s}
+.gearad:hover .ga-tab{padding-top:26px;background:#ffe38a}
+.ga-card{display:none}
+.ga-h{display:block;font-family:var(--display);font-size:30px;line-height:1;color:#ffd35c;letter-spacing:.02em}
+.ga-t{display:block;font-size:14px;line-height:1.4;color:#d8d6cf;margin:10px 0 12px}
+.ga-b{display:inline-block;background:#ffd35c;color:#0a0a0a;font:700 12px var(--mono,monospace);letter-spacing:.12em;padding:9px 12px;border-radius:4px}
+.gearad-m{display:none}
+@media (min-width:1780px){
+ .gearad{left:18px}
+ .ga-tab{display:none}
+ .ga-card{display:block;width:196px;padding:16px;border:2px solid #ffd35c;border-radius:12px;background:rgba(10,10,10,.92);box-shadow:0 10px 30px rgba(0,0,0,.5);animation:nbglow 1.6s ease-in-out infinite}
+ .ga-card img{display:block;width:100%;height:auto;border-radius:6px;margin-top:12px}
+}
+@media (max-width:760px){
+ .gearad{display:none}
+ .gearad-m{display:block;margin:0;padding:22px 16px;background:#141008;border-top:2px solid #ffd35c;border-bottom:2px solid #ffd35c;text-decoration:none;text-align:center}
+ .gearad-m .ga-h{font-size:34px}
+}
+@media (min-width:761px) and (max-width:1779px){.home-container{width:min(calc(100% - 104px),var(--container))}}
+@media (prefers-reduced-motion:reduce){.ga-card{animation:none}}
 </style>
 </head>
 <body>
@@ -323,6 +346,15 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 </div>
 </section>
 
+<a class="gearad" href="shop/" aria-label="Order gear here: drum sets, sticks, cymbals and more">
+<span class="ga-tab">ORDER GEAR HERE! &#9656;</span>
+<span class="ga-card">
+<span class="ga-h">ORDER GEAR HERE!</span>
+<picture><source type="image/webp" srcset="images/kit-front.webp"><img src="images/kit-front.jpg" width="766" height="501" alt="" loading="lazy" decoding="async"></picture>
+<span class="ga-t">Drum sets, snares, sticks, cymbals, practice pads and more. Check today&rsquo;s prices and deals.</span>
+<span class="ga-b">SHOP GEAR &rarr;</span>
+</span>
+</a>
 <section class="fxb" id="movie-fx" aria-labelledby="fxb-h">
 <style>
 .fxb{background:radial-gradient(ellipse at 20% 0%,rgba(192,57,43,.28),transparent 60%),radial-gradient(ellipse at 90% 100%,rgba(255,211,92,.14),transparent 55%),#0b0b0b;border-top:1px solid #2e2e2e;border-bottom:1px solid #2e2e2e;padding:54px 0 58px}
@@ -382,6 +414,7 @@ document.getElementById('fxb-stop').addEventListener('click',function(e){ e.prev
 </script>
 </section>
 
+<a class="gearad-m" href="shop/"><span class="ga-h">ORDER GEAR HERE!</span><span class="ga-t">Drum sets, sticks, cymbals and more. Check today&rsquo;s prices and deals.</span><span class="ga-b">SHOP GEAR &rarr;</span></a>
 <section class="zone" id="play"><div class="home-container zone-in"><div class="zone-num">01</div><div><h2>PLAY</h2><p>The interactive kit, the Beat Maker, movie sound effects, the Groove Library and the Drum Room.</p></div><nav class="zone-links" aria-label="PLAY"><a href="studio/">Sound Studio</a><a href="studio/beats/">Beat Maker</a><a href="studio/fx/">Movie FX</a><a href="drumroom/">Drum Room</a><a href="#interactive-kit">The Kit</a><a href="#instrument">Know the kit</a><a href="grooves/">Grooves</a></nav></div></section>
 
 <section class="feature-section" id="interactive-kit">
