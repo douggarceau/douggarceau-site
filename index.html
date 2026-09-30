@@ -248,9 +248,33 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @media (min-width:1180px){.newbox{position:absolute;right:24px;top:50%;transform:translateY(-50%);margin:0}.home-hero h1,.hero-copy{max-width:calc(100% - 390px)}}
 @media (max-width:760px){.newbox{width:100%;margin-top:10px}.ticker{font-size:12px}}
 @media (prefers-reduced-motion:reduce){.tk-track{animation:none}.tk-view{overflow-x:auto}.tk-new,.nb-badge,.newbox,.site-nav a.nav-new b{animation:none}}
+
+/* top sign-up */
+.topsign{background:#0d0d0d;border-bottom:1px solid var(--border);padding:12px 24px}
+.ts-box{display:grid;grid-template-columns:auto minmax(0,440px);grid-template-areas:"copy row" "note note";align-items:center;gap:6px 22px;max-width:760px;padding:14px 18px;border:2px solid #ffd35c;border-radius:10px;background:linear-gradient(180deg,rgba(255,211,92,.1),rgba(255,211,92,.03))}
+.ts-copy{grid-area:copy;display:flex;flex-direction:column;line-height:1.15}
+.ts-h{font-family:var(--display);font-size:30px;letter-spacing:.03em;color:#ffd35c}
+.ts-sub{font-size:15px;color:#e8e6df}
+.ts-row{grid-area:row;display:flex;gap:8px}
+.ts-row input{flex:1;min-width:0;height:48px;padding:0 14px;font-size:17px;border:1px solid #555;border-radius:6px;background:#fff;color:#111}
+.ts-row button{height:48px;padding:0 18px;border:0;border-radius:6px;background:#ffd35c;color:#0a0a0a;font:700 14px var(--mono,monospace);letter-spacing:.1em;cursor:pointer;white-space:nowrap}
+.ts-row button:hover{background:#ffe38a}
+.ts-row button:disabled{opacity:.6}
+.ts-note{grid-area:note;margin:0;font-size:14px;color:#e8e6df;min-height:0}
+.ts-note:empty{display:none}
+.ts-note.ok{color:#8fe3a8}
+@media (max-width:700px){.topsign{padding:10px 12px}.ts-box{grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "row" "note";padding:12px}.ts-row button{padding:0 12px;font-size:13px;letter-spacing:.06em}.ts-h{font-size:26px}}
 </style>
 </head>
 <body>
+<div class="topsign" id="top-signup">
+<form class="ts-box" id="tf" novalidate>
+<div class="ts-copy"><span class="ts-h">SIGN ME UP. IT'S FREE.</span><span class="ts-sub">Just your email address.</span></div>
+<label class="sr-only" for="temail">Email address</label>
+<div class="ts-row"><input type="email" id="temail" name="email" autocomplete="email" placeholder="you@email.com" required><button type="submit">SIGN ME UP</button></div>
+<p class="ts-note" id="tnote" aria-live="polite"></p>
+</form>
+</div>
 <header class="site-header">
 <div class="ticker" role="region" aria-label="New on the site"><span class="tk-new">NEW</span><div class="tk-view"><div class="tk-track"><span class="tk-run"><a href="studio/fx/">Hollywood movie sound FX</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/#industrial">Industrial factory loops &amp; metal hits</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/#k=el">Electronic beat maker</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/">Hip-hop &amp; trap drum machine with 808s</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/#horror">Horror sound effects</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/#k=el">House &amp; techno beats</a><i aria-hidden="true">&#9670;</i><a href="studio/">Free in your browser. Tap and play</a><i aria-hidden="true">&#9670;</i></span><span class="tk-run" aria-hidden="true"><a tabindex="-1" href="studio/fx/">Hollywood movie sound FX</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/#industrial">Industrial factory loops &amp; metal hits</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/#k=el">Electronic beat maker</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/">Hip-hop &amp; trap drum machine with 808s</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/#horror">Horror sound effects</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/#k=el">House &amp; techno beats</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/">Free in your browser. Tap and play</a><i aria-hidden="true">&#9670;</i></span></div></div></div>
 <div class="site-header-inner">
@@ -549,17 +573,21 @@ document.getElementById('fxb-stop').addEventListener('click',function(e){ e.prev
 </footer>
 
 <script>
-document.getElementById('f').addEventListener('submit',function(e){
+function signup(formId,emailId,noteId,where){
+ document.getElementById(formId).addEventListener('submit',function(e){
   e.preventDefault();
-  var em=document.getElementById('email'), note=document.getElementById('note'), btn=this.querySelector('button');
-  if(!em.value||!em.checkValidity()){note.className='note';note.textContent='Please enter a valid email address.';em.focus();return;}
+  var em=document.getElementById(emailId), note=document.getElementById(noteId), btn=this.querySelector('button');
+  if(!em.value||!em.checkValidity()){note.className=note.className.replace(' ok','');note.textContent='Please enter a valid email address.';em.focus();return;}
   var fd=new FormData();fd.append('email',em.value);fd.append('embed','1');fd.append('tag','website');
-  btn.disabled=true;note.className='note';note.textContent='Signing you up...';
+  btn.disabled=true;note.className=note.className.replace(' ok','');note.textContent='Signing you up...';
   fetch('https://buttondown.com/api/emails/embed-subscribe/amadeusdrums',{method:'POST',body:fd,mode:'no-cors'})
-   .then(function(){note.className='note ok';note.textContent='Thanks! Check your inbox for a confirmation email (and your spam or promotions folder), then click the link inside to finish signing up.';em.value='';if(window.gtag)gtag('event','sign_up',{method:'newsletter'});})
-   .catch(function(){note.className='note';note.textContent='Something went wrong. Please try again in a moment.';})
+   .then(function(){note.className+=' ok';note.textContent='Thanks! Check your inbox for a confirmation email (and your spam or promotions folder), then click the link inside to finish signing up.';em.value='';if(window.gtag)gtag('event','sign_up',{method:where});})
+   .catch(function(){note.textContent='Something went wrong. Please try again in a moment.';})
    .then(function(){btn.disabled=false;});
-});
+ });
+}
+signup('f','email','note','newsletter');
+signup('tf','temail','tnote','top_bar');
 </script>
 <script>
 (function(){
