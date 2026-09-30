@@ -5,7 +5,7 @@
   function audio() {
     if (!ctx) {
       var AC = window.AudioContext || window.webkitAudioContext; if (!AC) return null;
-      ctx = new AC(); if (window.KitSamples) KitSamples.load(ctx, '../sounds/kit/'); setTimeout(function () { Object.keys(PRE).forEach(function (k) { preload(PRE[k]); }); ['timp-pp-G', 'timp-ff-G', 'timp-mf-C', 'timp-mf-Bb'].forEach(obuf); }, 0);
+      ctx = new AC(); if (window.KitSamples) KitSamples.load(ctx, '../sounds/kit/'); setTimeout(function () { Object.keys(PRE).forEach(function (k) { preload(PRE[k]); }); ['timp-pp-G', 'timp-ff-G', 'timp-mf-C', 'timp-mf-Bb'].forEach(obuf); }, 0); setTimeout(jingBank, 400);
       var len = ctx.sampleRate * 3; noiseBuf = ctx.createBuffer(1, len, ctx.sampleRate);
       var d = noiseBuf.getChannelData(0); for (var i = 0; i < len; i++) d[i] = Math.random() * 2 - 1;
       var comp = ctx.createDynamicsCompressor(); comp.threshold.value = -16; comp.ratio.value = 4;
@@ -15,7 +15,8 @@
       for (var c = 0; c < 2; c++) { var ch = ir.getChannelData(c); for (var j = 0; j < rl; j++) ch[j] = (Math.random() * 2 - 1) * Math.pow(1 - j / rl, 3); }
       var verb = ctx.createConvolver(); verb.buffer = ir; var wet = ctx.createGain(); wet.gain.value = 0.18;
       bus = ctx.createGain(); bus.connect(comp); bus.connect(verb); verb.connect(wet); wet.connect(comp);
-      comp.connect(master); master.connect(ctx.destination);
+      var lim = ctx.createDynamicsCompressor(); lim.threshold.value = -6; lim.knee.value = 0; lim.ratio.value = 20; lim.attack.value = 0.001; lim.release.value = 0.15;
+      comp.connect(master); master.connect(lim); lim.connect(ctx.destination);
     }
     if (ctx.state === 'suspended') ctx.resume();
     return ctx;
@@ -35,22 +36,78 @@
     var f = ctx.createBiquadFilter(); f.type = type; f.frequency.value = freq; f.Q.value = q || 0.7;
     s.connect(f); f.connect(env(t, vol, dur, att)); s.start(t, Math.random()); s.stop(t + dur + 0.05);
   }
+  function ring(t, f, vol, tau) {
+    var o = ctx.createOscillator(); o.frequency.value = f; var g = ctx.createGain(); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol, t + 0.002); g.gain.setTargetAtTime(0, t + 0.002, tau);
+    o.connect(g); g.connect(bus); o.start(t); o.stop(t + tau * 7);
+  }
   function metal(t, dur, vol, base, bp, att) {
     var band = ctx.createBiquadFilter(); band.type = 'bandpass'; band.frequency.value = bp; band.Q.value = 0.6;
     band.connect(env(t, vol, dur, att));
     [1, 1.47, 2.09, 2.56, 3.21, 4.12, 5.3].forEach(function (r) { var o = ctx.createOscillator(); o.type = 'square'; o.frequency.value = base * r; o.connect(band); o.start(t); o.stop(t + dur + 0.05); });
+  }
+  // ---- tambourine jingles: pre-rendered clash buffers (warm = bronze/silver concert jingles, bright = steel) ----
+  var JING = null, JRAW = null;
+  function jingRaw() {
+    if (JRAW) return JRAW; JRAW = { warm: [], bright: [] };
+    var sr = 44100, len = Math.floor(sr * 0.32);
+    ['warm', 'bright'].forEach(function (kind) {
+      for (var k = 0; k < 6; k++) {
+        var d = new Float32Array(len), lo = kind === 'warm' ? 2600 : 4200, hi = kind === 'warm' ? 9000 : 13000;
+        var parts = []; for (var p = 0; p < 14; p++) parts.push([lo * Math.pow(hi / lo, Math.random()), 0.3 + Math.random(), 0.025 + Math.random() * (kind === 'warm' ? 0.16 : 0.12), Math.random() * 6.283]);
+        var echo = [0, 0.002 + Math.random() * 0.004, 0.009 + Math.random() * 0.012];
+        for (var j = 0; j < len; j++) {
+          var x = 0, tt;
+          for (var e = 0; e < echo.length; e++) { tt = j / sr - echo[e]; if (tt < 0) continue; var a = e ? 0.45 / e : 1;
+            for (var q = 0; q < parts.length; q++) { var P = parts[q]; x += a * P[1] * Math.exp(-tt / P[2]) * Math.sin(6.283 * P[0] * tt + P[3] + e); }
+            x += a * (Math.random() * 2 - 1) * 2.2 * Math.exp(-tt / 0.0025); }
+          d[j] = x;
+        }
+        var m = 0; for (j = 0; j < len; j++) m = Math.max(m, Math.abs(d[j])); for (j = 0; j < len; j++) d[j] /= m;
+        JRAW[kind].push(d);
+      }
+    });
+    return JRAW;
+  }
+  // Build the jingle sounds while the page is idle, so the first tambourine tap plays at once.
+  (window.requestIdleCallback || function (f) { setTimeout(f, 1500); })(function () { jingRaw(); });
+  function jingBank() {
+    if (JING) return JING; var R = jingRaw(); JING = { warm: [], bright: [] };
+    ['warm', 'bright'].forEach(function (kind) { R[kind].forEach(function (d) { var b = ctx.createBuffer(1, d.length, 44100); b.getChannelData(0).set(d); JING[kind].push(b); }); });
+    return JING;
+  }
+  function clashes(t, count, vol, kind, spread) {
+    var bank = jingBank()[kind];
+    var hp = ctx.createBiquadFilter(); hp.type = 'highpass'; hp.frequency.value = 1800; var out = ctx.createGain(); out.gain.value = vol * 0.5; hp.connect(out); out.connect(bus);
+    for (var i = 0; i < count; i++) {
+      var s = ctx.createBufferSource(); s.buffer = bank[Math.floor(Math.random() * bank.length)]; s.playbackRate.value = 0.94 + Math.random() * 0.12;
+      var g = ctx.createGain(); g.gain.value = (i ? 0.7 * Math.pow(0.82, i) : 1) * (0.8 + Math.random() * 0.4);
+      s.connect(g); g.connect(hp); s.start(t + (i ? -Math.log(1 - Math.random()) * spread : 0));
+    }
+  }
+  function skin(t, vol) { sine(t, 260, 0.42 * vol, 0.12, 'sine', 170, 0.05); noise(t, 0.05, 0.25 * vol, 'bandpass', 1100, 1); }
+  var VIBE = { pedal: 'down', ring: [] };
+  function setPedal(v, card) {
+    VIBE.pedal = v;
+    if (v === 'up' && ctx) { var now = ctx.currentTime; VIBE.ring.forEach(function (r) { if (r.end > now) { r.g.gain.setTargetAtTime(0, now, 0.03); } }); VIBE.ring = []; }
+    [].forEach.call(document.querySelectorAll('[data-vpedal]'), function (b) { var on = b.getAttribute('data-vpedal') === v; b.classList.toggle('sel', on); b.setAttribute('aria-pressed', on); });
   }
   var MIDI = function (m) { return 440 * Math.pow(2, (m - 69) / 12); };
   var V = {
     xylophone: function (t, f) { sine(t, f, 0.5, 0.45); sine(t, f * 3, 0.12, 0.15); noise(t, 0.02, 0.2, 'bandpass', 3000, 1.5); },
     marimba: function (t, f) { sine(t, f, 0.6, 1.3, 'sine', 0, 0, 0.006); sine(t, f * 4, 0.12, 0.25); sine(t, f * 10, 0.03, 0.06); },
     glockenspiel: function (t, f) { sine(t, f, 0.35, 2.2); sine(t, f * 2.76, 0.12, 0.8); sine(t, f * 5.4, 0.05, 0.3); },
+    // Vibraphone: aluminum bar (fundamental, a tuned 4th partial and a faint 10th) with motor tremolo.
+    // Pedal down: dampers off, notes ring and blend. Pedal up: the damper bar sits on the bars, so each
+    // note stops almost at once, and lifting the pedal cuts off anything still ringing.
     vibraphone: function (t, f) {
-      var g = ctx.createGain(); g.gain.value = 1; var lfo = ctx.createOscillator(); lfo.frequency.value = 5.5; var dep = ctx.createGain(); dep.gain.value = 0.35;
-      lfo.connect(dep); dep.connect(g.gain); lfo.start(t); lfo.stop(t + 3.2);
-      var e = env(t, 0.45, 3, 0.004); e.disconnect(); e.connect(g); g.connect(bus);
-      var o = ctx.createOscillator(); o.frequency.value = f; o.connect(e); o.start(t); o.stop(t + 3.1);
-      sine(t, f * 4, 0.06, 0.4);
+      var down = VIBE.pedal === 'down', dur = down ? 8 : 0.6;
+      var g = ctx.createGain(); g.gain.value = 1; var lfo = ctx.createOscillator(); lfo.frequency.value = 5.5; var dep = ctx.createGain(); dep.gain.value = 0.3;
+      lfo.connect(dep); dep.connect(g.gain); lfo.start(t); lfo.stop(t + dur + 0.2);
+      var damp = ctx.createGain(); damp.gain.value = 1; g.connect(damp); damp.connect(bus);
+      var e = ctx.createGain(); e.gain.setValueAtTime(0, t); e.gain.linearRampToValueAtTime(0.45, t + 0.004); e.gain.setTargetAtTime(0, t + 0.004, down ? 1.5 : 0.07); e.connect(g);
+      [[1, 1], [4, 0.14], [10, 0.03]].forEach(function (p) { var o = ctx.createOscillator(); o.frequency.value = f * p[0]; var pg = ctx.createGain(); pg.gain.setValueAtTime(p[1], t); pg.gain.setTargetAtTime(0, t + 0.004, p[0] === 1 ? 10 : 0.3 / p[0] * 4); o.connect(pg); pg.connect(e); o.start(t); o.stop(t + dur + 0.1); });
+      noise(t, 0.012, 0.08, 'bandpass', 2500, 1.2);
+      VIBE.ring.push({ g: damp, end: t + dur }); VIBE.ring = VIBE.ring.filter(function (r) { return r.end > ctx.currentTime; });
     },
     chimes: function (t, f) { [[0.5, .12], [1, .35], [1.19, .2], [1.56, .18], [2, .14], [2.51, .1], [3.01, .06]].forEach(function (p) { sine(t, f * p[0], p[1], 4 - p[0] * 0.6); }); noise(t, 0.03, 0.15, 'bandpass', 2500, 2); },
     // Timpani: modal model of a kettledrum membrane. The pitch you hear is the (1,1) mode; its overtones sit near
@@ -81,7 +138,17 @@
       if (/muffled/.test(note || '')) { one(t, .25, .25); return; }
       one(t, .25, 3.6);
     },
-    tambourine: function (t) { for (var i = 0; i < 3; i++) noise(t + i * 0.012, 0.35, 0.5, 'bandpass', 7500, 1.2); sine(t, 300, 0.2, 0.08); },
+    // Tambourine: each jingle pair is a pair of thin metal discs. A stroke makes several quick clashes spread
+    // over a few milliseconds, each a burst of bright, inharmonic ringing. A headed tambourine adds the skin's thump.
+    tambourine: function (t, f, note) {
+      var v = (note || 'concert').split(':')[0], i, n;
+      if (v === 'concert') { skin(t, 1); clashes(t, 7, 0.95, 'warm', 0.014); }
+      else if (v === 'double') { skin(t, 0.9); clashes(t, 13, 0.9, 'warm', 0.02); clashes(t + 0.004, 5, 0.5, 'bright', 0.02); }
+      else if (v === 'headless') { clashes(t, 8, 1, 'bright', 0.012); }
+      else if (v === 'tap') { skin(t, 0.35); clashes(t, 3, 0.4, 'warm', 0.008); }
+      else if (v === 'shake') { for (i = 0; i < 16; i++) { n = Math.sin((i + 1) / 17 * Math.PI); clashes(t + i * 0.075 + Math.random() * 0.01, 3, 0.25 + 0.5 * n, 'warm', 0.018); } }
+      else if (v === 'thumb') { noise(t, 1.25, 0.05, 'bandpass', 900, 0.8, 0.05); for (i = 0; i < 40; i++) { n = 0.5 + 0.5 * Math.sin((i + 1) / 41 * Math.PI); clashes(t + i * 0.031 + Math.random() * 0.008, 1, 0.22 + 0.3 * n, 'warm', 0.004); } clashes(t + 1.26, 6, 0.9, 'warm', 0.014); skin(t + 1.26, 0.7); }
+    },
     woodblock: function (t, f) { sine(t, f || 900, 0.6, 0.09); noise(t, 0.02, 0.3, 'bandpass', (f || 900) * 2, 3); },
     templeblocks: function (t, f) { V.woodblock(t, f); },
     claves: function (t) { sine(t, 2500, 0.5, 0.07); },
@@ -100,7 +167,17 @@
       var f = ctx.createBiquadFilter(); f.type = 'lowpass'; f.frequency.value = 900; o.connect(f); f.connect(env(t, 0.35, 1.6, 0.25)); o.start(t); o.stop(t + 1.7); noise(t, 1.5, 0.15, 'bandpass', 500, 2, 0.2); },
     crotales: function (t, f) { sine(t, f, 0.3, 3.5); sine(t, f * 2.4, 0.08, 1.2); sine(t, f * 4.1, 0.04, 0.5); },
     celesta: function (t, f) { sine(t, f, 0.35, 1.4, 'sine', 0, 0, 0.004); sine(t, f * 2, 0.1, 0.6); sine(t, f * 3, 0.04, 0.3); },
-    fingercymbals: function (t) { sine(t, 2700, 0.2, 2.4); sine(t, 4300, 0.1, 1.6); sine(t, 6100, 0.05, 1); },
+    // Finger cymbals: two small bronze plates struck edge to edge. Each plate rings with its own set of
+    // inharmonic plate modes; the two plates are never exactly the same, so their tones beat against each
+    // other, which gives the shimmer. The lowest mode rings for several seconds; upper modes fade sooner.
+    fingercymbals: function (t, f, note) {
+      var big = note === 'large', f0 = big ? 1850 : 2650;
+      [0, 1].forEach(function (plate) {
+        var fp = f0 * (plate ? 1.017 : 1);
+        [[1, .16, 1.9], [1.73, .1, 1.1], [2.33, .08, .8], [3.91, .04, .35], [4.11, .03, .3]].forEach(function (m) { ring(t, fp * m[0], m[1] * (big ? 1.1 : 1), m[2] * (big ? 1.25 : 1)); });
+      });
+      noise(t, 0.012, 0.2, 'highpass', 6000, 0.7);
+    },
     gong: function (t, f) { sine(t, f, 0.6, 5, 'sine', 0, 0, 0.01); sine(t, f * 2, 0.15, 3); sine(t, f * 3.02, 0.08, 2); metal(t, 1, 0.05, f, f * 6); },
     herdenglocken: function (t) { for (var i = 0; i < 9; i++) { var tt = t + Math.random() * 0.9, f = 500 + Math.random() * 500; sine(tt, f, 0.12, 0.5); sine(tt, f * 2.7, 0.05, 0.25); } },
     almglocken: function (t, f) { sine(t, f, 0.4, 1.2); sine(t, f * 2.2, 0.15, 0.6); sine(t, f * 3.4, 0.06, 0.3); },
@@ -138,7 +215,7 @@
   var OB = {}, OL = {}, ORCH = '../sounds/orch/';
   function obuf(name) {
     if (OB[name]) return OB[name];
-    if (!OL[name]) OL[name] = fetch(ORCH + name + '.mp3?v=1').then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); })
+    if (!OL[name]) OL[name] = fetch(ORCH + name + '.mp3?v=2').then(function (r) { if (!r.ok) throw 0; return r.arrayBuffer(); })
       .then(function (b) { return new Promise(function (res, rej) { ctx.decodeAudioData(b, res, rej); }); })
       .then(function (b) { OB[name] = b; return b; }).catch(function () { OB[name] = null; });
     return null;
@@ -171,10 +248,10 @@
       case 'bassdrum': d = dyn(note, 'mf'); if (d === 'roll') return false;
         if (note === 'roll') { if (!obuf('bd-mp')) return false; for (var i = 0; i < 20; i++) oplay('bd-mp', t + i * .09, .25 + i * .03, 1); return true; }
         return oplay('bd-' + (d === 'f' ? 'ff' : d === 'p' || d === 'pp' ? 'mp' : d), t, 1, 1);
-      case 'tamtam': d = dyn(note, 'mf'); return oplay('tamtam-' + (d === 'ff' ? 'f' : d === 'p' ? 'pp' : d), t, 1, 1);
+      case 'tamtam': d = dyn(note, 'mf'); return oplay('tamtam-' + (d === 'ff' ? 'f' : d === 'p' ? 'pp' : d), t, /f/.test(d) && d !== 'mf' ? 1 : /p/.test(d) && d !== 'mp' ? .45 : .7, 1);
       case 'gong': m = midiOf(note); if (m === null) return false;
         var g = m < 59 ? ['gong-E', 52] : ['gong-F', 65]; return oplay(g[0], t, .9, Math.pow(2, (m - g[1]) / 12));
-      case 'chimes': m = midiOf(note); if (m === null) return false; return oplay('chime-F', t, .9, Math.pow(2, (m - 65) / 12));
+      case 'chimes': m = midiOf(note); if (m === null) return false; return oplay('chime-F', t, .65, Math.pow(2, (m - 65) / 12));
       case 'woodblock': return oplay(note && note.indexOf('wb-') === 0 ? note : 'wb-mid_F', t, .9, 1);
       case 'templeblocks': var T = { '1040': 'wb-high_F', '880': 'wb-high_D', '740': 'wb-high_A', '620': 'wb-low_Bb', '520': 'wb-low_F' };
         return oplay(T[note] || 'wb-low_G', t, .9, 1);
@@ -191,10 +268,21 @@
       case 'toms': if (!K) return false; return K.play(ctx, bus, f && f < 120 ? 'floor' : 'tom', t, .9, 0, f && f < 120 ? f / 92 : Math.max(.6, Math.min(1.6, f / 150)));
       case 'crash': if (!K || !K.ready('crash')) return false; var r = note === '16' ? 1.14 : note === '20' ? .88 : 1;
         K.play(ctx, bus, 'crash', t, .75, -.25, r); K.play(ctx, bus, 'crash', t + .012, .6, .25, r * 1.03); return true;
-      case 'suspended': if (!K || !K.ready('crash')) return false; var rr = note === '16' ? 1.14 : note === '20' ? .88 : 1;
-        if (note === 'hit') return K.play(ctx, bus, 'crash', t, .8, 0, rr);
-        for (var q = 0; q < 26; q++) K.play(ctx, bus, 'crash', t + q * .075, .04 + Math.pow(q / 26, 2) * .5, q % 2 ? .2 : -.2, rr);
-        K.play(ctx, bus, 'crash', t + 26 * .075, .75, 0, rr); return true;
+      // Suspended cymbal (recorded crash cymbal). Stick: a stick tip on the bow, a ping with a little wash.
+      // Crash: a full stroke. Roll: yarn mallets on opposite edges; the recording is entered after its stick
+      // attack, so the roll is a smooth swell of wash with no clicks, ending in a crash at the top.
+      case 'suspended': if (!K || !K.ready('crash')) return false;
+        var v = (note || 'crash').split(':')[0];
+        if (v === 'stick') { if (K.ready('ride')) K.play(ctx, bus, 'ride', t, .55, 0, 1.12); K.play(ctx, bus, 'crash', t, .18, 0, 1.05); return true; }
+        if (v === 'crash') { K.play(ctx, bus, 'crash', t, .8, -.15, 1); K.play(ctx, bus, 'crash', t + .008, .45, .15, 1.02); return true; }
+        var cb = K.buf && K.buf('crash'); if (!cb) return false;
+        var rl = 2.2, out = ctx.createGain(); out.gain.setValueAtTime(0.12, t); out.gain.linearRampToValueAtTime(1.1, t + rl); out.gain.setTargetAtTime(0.0001, t + rl, 0.05);
+        var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.setValueAtTime(2500, t); lp.frequency.exponentialRampToValueAtTime(14000, t + rl); lp.connect(out); out.connect(bus);
+        for (var q = 0; q < 30; q++) { var sb = ctx.createBufferSource(); sb.buffer = cb; sb.playbackRate.value = 0.97 + Math.random() * 0.06; var gq = ctx.createGain(), tq = t + q * rl / 30;
+          gq.gain.setValueAtTime(0, tq); gq.gain.linearRampToValueAtTime(0.35, tq + 0.06); gq.gain.setTargetAtTime(0, tq + 0.12, 0.25);
+          if (ctx.createStereoPanner) { var pq = ctx.createStereoPanner(); pq.pan.value = q % 2 ? .3 : -.3; sb.connect(gq); gq.connect(pq); pq.connect(lp); } else { sb.connect(gq); gq.connect(lp); }
+          sb.start(tq, 0.12 + Math.random() * 0.2); sb.stop(tq + 1.2); }
+        K.play(ctx, bus, 'crash', t + rl, .8, 0, 1); return true;
     }
     return false;
   }
@@ -221,6 +309,7 @@
     var was = btn === patBtn; stopPat(); if (was) return;
     var id = btn.getAttribute('data-pat').split(':'), D = (window.ORCH_PATTERNS || {})[id[0]]; if (!D) return;
     var P = D.p[+id[1]], bpm = P[0], sub = P[1], seq = P[2].trim().split(/\s+/), card = btn.closest('.inst');
+    if (P[3]) setPedal(P[3]);
     var keysEl = card ? card.querySelectorAll('.keys [data-inst]:not([data-scale])') : [];
     patTimer = []; patBtn = btn; btn.classList.add('on');
     var need = (PRE[D.snd] || []).concat(D.snd === 'timpani' ? ['timp-pp-G', 'timp-ff-G'] : []);
@@ -243,6 +332,7 @@
   }
   document.addEventListener('click', function (e) {
     var pb = e.target.closest('[data-pat]'); if (pb) { playPat(pb); return; }
+    var vp = e.target.closest('[data-vpedal]'); if (vp) { audio(); setPedal(vp.getAttribute('data-vpedal')); if (window.gtag) gtag('event', 'vibe_pedal', { pedal: vp.getAttribute('data-vpedal') }); return; }
     var b = e.target.closest('[data-inst]'); if (!b) return;
     var card = b.closest('.inst');
     if (b.hasAttribute('data-scale')) { var ks = [].map.call(card.querySelectorAll('[data-note]'), function (k) { return k.getAttribute('data-note'); }); scale(b.getAttribute('data-inst'), ks, card); return; }

@@ -39,5 +39,5 @@
     return true;
   }
   function ready(name) { return !!bufs[name]; }
-  window.KitSamples = { load: load, play: play, ready: ready };
+  window.KitSamples = { load: load, play: play, ready: ready, buf: function (n) { return bufs[n] || null; } };
 })();
