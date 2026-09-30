@@ -126,6 +126,19 @@
     hardwood: { n: 7, lo: 900, hi: 1900, gap: 0.06, after: 14, spread: 1.6, vol: 0.28, tau: 0.035, wood: 1 },
     shell: { n: 16, lo: 3000, hi: 8000, gap: 0.025, after: 30, spread: 1.4, vol: 0.22, tau: 0.03, wood: 1 }
   };
+  function rain(t, dur, peak, vol, burst) {
+    var sr = 44100, len = Math.floor(sr * (dur + 0.3)), b = ctx.createBuffer(2, len, sr), L = b.getChannelData(0), R = b.getChannelData(1), tt = 0;
+    while (tt < dur) {
+      var env = burst ? Math.sin(Math.PI * Math.min(1, tt / dur)) : (1 - Math.exp(-tt / 0.25)) * Math.exp(-tt / (dur * 0.45)) * (1 + 0.35 * Math.sin(tt * 2.3 + Math.sin(tt * 0.7) * 2));
+      var rate = Math.max(6, peak * env); tt += -Math.log(1 - Math.random()) / rate;
+      var a = Math.pow(Math.random(), 2.2) * 0.9 + 0.1, f1 = 2400 + Math.random() * 4800, f2 = 800 + Math.random() * 1400, t1 = 0.0006 + Math.random() * 0.0014, t2 = 0.002 + Math.random() * 0.003;
+      var pan = Math.random(), s0 = Math.floor(tt * sr), n = Math.min(len - s0, Math.floor(sr * 0.02));
+      for (var k = 0; k < n; k++) { var x = k / sr, y = a * (Math.exp(-x / t1) * Math.sin(6.283 * f1 * x) + 0.45 * Math.exp(-x / t2) * Math.sin(6.283 * f2 * x)); L[s0 + k] += y * (1 - pan * 0.7); R[s0 + k] += y * (0.3 + pan * 0.7); }
+    }
+    var src = ctx.createBufferSource(); src.buffer = b;
+    var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = 8500; var tube = ctx.createBiquadFilter(); tube.type = 'peaking'; tube.frequency.value = 1300; tube.Q.value = 1.2; tube.gain.value = 5;
+    var g = ctx.createGain(); g.gain.value = 0.6 * vol; src.connect(lp); lp.connect(tube); tube.connect(g); g.connect(bus); src.start(t);
+  }
   var VIBE = { pedal: 'down', ring: [] };
   function setPedal(v, card) {
     VIBE.pedal = v;
@@ -455,7 +468,16 @@
       for (var i = 0; i < grains; i++) { var x = Math.random(); noise(t + x * dur, 0.004, P[2] * 0.5 * Math.sin(Math.PI * x) * (0.4 + Math.random() * 0.6), 'bandpass', 1200 + Math.random() * 3500, 3, 0.0003); }
       ring(t, 600, 0.08 * P[2], 0.012);
     },
-    rainstick: function (t) { for (var i = 0; i < 70; i++) { var tt = t + Math.random() * 2.2; noise(tt, 0.012, 0.25, 'bandpass', 2500 + Math.random() * 4000, 3); } },
+    // Rainstick: a dried cactus tube with thorns pushed through it in a spiral, filled with pebbles or seeds.
+    // Tipped over, the pebbles trickle down past the thorns: a rush as the pile starts to slide, a dense, soft
+    // patter, then the flow thins out to the last few pebbles. Each pebble-on-thorn is a tiny bright tick with a
+    // little woody knock, and the hollow tube warms the whole sound.
+    rainstick: function (t, f, note) {
+      var v = note || 'medium';
+      if (v === 'shake') { [0, 0.35, 0.7].forEach(function (o, k) { rain(t + o, 0.45, 260, k === 2 ? 1 : 0.8, true); }); return; }
+      var P = { slow: [7.5, 170], medium: [5.5, 200], quick: [2.4, 320] }[v] || [5.5, 200];
+      rain(t, P[0], P[1], 1, false);
+    },
     windmachine: function (t) { var s = ctx.createBufferSource(); s.buffer = noiseBuf; var f = ctx.createBiquadFilter(); f.type = 'bandpass'; f.Q.value = 3;
       f.frequency.setValueAtTime(300, t); f.frequency.linearRampToValueAtTime(1100, t + 1.5); f.frequency.linearRampToValueAtTime(400, t + 3); s.connect(f); f.connect(env(t, 0.7, 3.2, 1)); s.start(t); s.stop(t + 3.3); },
     siren: function (t) { var o = ctx.createOscillator(); o.type = 'triangle'; o.frequency.setValueAtTime(200, t); o.frequency.exponentialRampToValueAtTime(1200, t + 1.6); o.frequency.exponentialRampToValueAtTime(300, t + 3);
