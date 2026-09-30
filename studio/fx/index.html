@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRYVXZXES0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RRYVXZXES0');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Movie Sound FX Board · Amadeus Sound Studio</title>
+<meta name="description" content="Score your own scene. Tap real movie sound effects: thunder, creaking doors, whooshes, trailer impacts, sci-fi lasers, crowds and DJ scratches. Layer ambiences and play one-click scenes.">
+<link rel="canonical" href="https://douggarceau.com/studio/fx/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Amadeus School of Drums">
+<meta property="og:title" content="Movie Sound FX Board"><meta property="og:url" content="https://douggarceau.com/studio/fx/">
+<meta property="og:description" content="Tap real movie sound effects, layer ambiences and play one-click scenes.">
+<meta property="og:image" content="https://douggarceau.com/logo-share.jpg">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/wide.css?v=7">
+<style>
+:root{--bg:#0a0a0a;--ink:#fff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#ffd35c;--gold2:#ffe9a8}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.6}
+a{color:var(--gold)}
+.wrap{max-width:1360px;margin:0 auto;padding:18px 16px 90px}
+nav.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:15px;padding:4px 0 14px}
+nav.top a{text-decoration:none}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:4px;color:var(--muted);margin:6px 0 4px}
+h1{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(46px,7vw,84px);line-height:.95;margin:0 0 10px;letter-spacing:1px}
+h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:32px;letter-spacing:1px;margin:0 0 10px}
+.lead{color:var(--muted);max-width:760px;margin:0 0 16px}
+.bar{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 0;margin-bottom:18px;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
+.bar .lbl{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:3px;color:var(--muted)}
+.scene{min-height:42px;padding:0 14px;border-radius:999px;border:1px solid var(--gold);background:transparent;color:var(--gold2);font:inherit;font-size:15px;cursor:pointer}
+.scene:hover,.scene.on{background:var(--gold);color:#0a0a0a}
+.vol{display:flex;align-items:center;gap:8px;margin-left:auto;font-size:14px;color:var(--muted)}
+.vol input{accent-color:var(--gold);width:140px}
+.stop{min-height:42px;padding:0 18px;border-radius:999px;border:0;background:#c0392b;color:#fff;font:inherit;font-weight:600;cursor:pointer}
+.stop:hover{background:#e74c3c}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:16px}
+.grp{border:1px solid var(--line);border-radius:12px;padding:14px;background:#111}
+.grp p{margin:-4px 0 10px;color:var(--muted);font-size:14px}
+.pads{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:8px}
+.pad{position:relative;min-height:74px;border-radius:10px;border:1px solid var(--c,#555);background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(0,0,0,.2));color:var(--ink);font:inherit;font-size:14px;font-weight:500;line-height:1.25;cursor:pointer;padding:10px 8px 18px;text-align:left;overflow:hidden;transition:transform .06s}
+.pad:hover{background:rgba(255,255,255,.08)}
+.pad:active{transform:scale(.97)}
+.pad .k{position:absolute;right:7px;bottom:5px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted)}
+.pad .lp{position:absolute;left:8px;bottom:5px;font-size:10px;letter-spacing:1px;color:var(--c,#999);font-family:'IBM Plex Mono',monospace}
+.pad.hit{background:var(--c,#555);color:#0a0a0a}
+.pad.looping{background:var(--c,#555);color:#0a0a0a;box-shadow:0 0 0 2px #fff inset}
+.pad .prog{position:absolute;left:0;bottom:0;height:3px;background:var(--c,#fff);width:0}
+.pad.loading{opacity:.55}
+.note{color:var(--muted);font-size:14px;margin-top:22px;max-width:820px}
+.more{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.more a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--gold);border-radius:6px;text-decoration:none}
+@media (max-width:520px){.groups{grid-template-columns:1fr}.vol{margin-left:0}.pads{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a href="../../index.html">&larr; Amadeus School of Drums</a><span style="display:flex;gap:18px;flex-wrap:wrap"><a href="../">Sound Studio</a><a href="../beats/">Beat Maker</a><a href="../../drumroom/">Drum Room</a></span></nav>
+<p class="kicker">AMADEUS SOUND STUDIO</p>
+<h1>Movie Sound FX</h1>
+<p class="lead">Score your own scene. Tap a pad to fire a real sound effect, and layer as many as you like. Weather and room sounds marked <b style="color:var(--gold)">LOOP</b> keep going until you tap them again. Or press a scene button and let it play.</p>
+<div class="bar" role="toolbar" aria-label="Scenes and controls">
+  <span class="lbl">SCENES</span>
+  <button class="scene" data-scene="storm">&#9654; Thunderstorm</button>
+  <button class="scene" data-scene="haunted">&#9654; Haunted house</button>
+  <button class="scene" data-scene="trailer">&#9654; Movie trailer</button>
+  <button class="scene" data-scene="scifi">&#9654; Spaceship alarm</button>
+  <button class="scene" data-scene="city">&#9654; City street</button>
+  <button class="scene" data-scene="dj">&#9654; DJ drop</button>
+  <label class="vol">Volume <input type="range" id="vol" min="0" max="1" step="0.01" value="0.85"></label>
+  <button class="stop" id="stopall" aria-label="Stop all sounds">&#9632; Stop all</button>
+</div>
+<div class="groups" id="groups"></div>
+<p class="note">Keys: the letter or number in the corner of each pad plays it from your keyboard. <b>Esc</b> stops everything. Sounds come from Doug Garceau's licensed Splice sample library.</p>
+<div class="more"><a href="../beats/">Make a beat &rarr;</a><a href="../../drumroom/">Every orchestral percussion instrument &rarr;</a><a href="../">All Sound Studio tools</a></div>
+</div>
+<script>
+(function(){
+var G=[
+ {id:'weather',name:'Weather',c:'#5dade2',d:'Rain, wind and thunder. Loop the rain and wind, then drop thunder on top.',p:[
+  ['fx-rain','Rain on the window',1],['fx-wind','Howling wind',1],['fx-leaves','Wind in the leaves',1],['fx-thunder-clap','Thunder clap'],['fx-thunder-close','Close lightning strike'],['fx-thunder-roll','Distant rumble']]},
+ {id:'horror',name:'Horror',c:'#c0392b',d:'Creaks, chains and things that go bump in the night.',p:[
+  ['fx-door-creak','Creaking door'],['fx-rusty-door','Rusty metal door'],['fx-footsteps','Footsteps on old boards',1],['fx-chains','Rattling chains'],['fx-ghost-wind','Ghostly wind',1],['fx-well','Drip in the well'],['fx-howl','Wolf howl'],['fx-monster','Growling monster'],['fx-banshee','Banshee scream']]},
+ {id:'trailer',name:'Movie Trailer',c:'#ffd35c',d:'Big hits and builds. Start a riser, then land an impact on the downbeat.',p:[
+  ['fx-riser','Tension riser'],['fx-strings','String rise'],['fx-whoosh','Slow-motion whoosh'],['fx-impact','Trailer impact'],['fx-braam','Braam'],['fx-boom','Deep boom'],['fx-blast','Cinematic blast'],['fx-subdrop','Sub drop'],['fx-orchhit','Orchestra hit'],['fx-warhorn','War horn'],['fx-choir','Choir'],['fx-shimmer','Magic shimmer']]},
+ {id:'scifi',name:'Sci-Fi',c:'#2ecc71',d:'Spaceship bridges, alien signals and ray guns.',p:[
+  ['fx-alarm','Red alert',1],['fx-drone','Engine hum',1],['fx-alien','Alien energy',1],['fx-computer','Computer beeps'],['fx-sonar','Sonar ping'],['fx-laser','Laser beam'],['fx-spiral','Spiral laser'],['fx-portal','Portal']]},
+ {id:'city',name:'City & People',c:'#e67e22',d:'Street life, crowds and phones.',p:[
+  ['fx-traffic','Street traffic',1],['fx-subway','Subway',1],['fx-protest','Crowd protest',1],['fx-car','Car starts'],['fx-phone','Phone ringing'],['fx-laugh','Studio laughter'],['fx-hey','Crowd: "Hey!"'],['fx-radio','Radio tuning']]},
+ {id:'dj',name:'DJ & Animals',c:'#af7ac5',d:'Scratches, rewinds and a few surprise guests.',p:[
+  ['fx-scratch','Vinyl scratch'],['fx-rewind','Rewind'],['fx-tapestop','Tape stop'],['fx-vinylstop','Record stop'],['fx-cow','Cow'],['fx-crow','Crow']]}
+];
+var KEYS='1234567890qwertyuiopasdfghjklzxcvbnm'.split('');
+var SCENES={
+ storm:[[0,'fx-rain'],[0.3,'fx-leaves'],[2,'fx-thunder-roll'],[5.5,'fx-thunder-clap'],[11,'fx-thunder-close']],
+ haunted:[[0,'fx-ghost-wind'],[1.2,'fx-footsteps'],[4,'fx-door-creak'],[8.5,'fx-chains'],[10.5,'fx-howl'],[15,'fx-banshee']],
+ trailer:[[0,'fx-riser'],[0.5,'fx-strings'],[9.2,'fx-braam'],[9.2,'fx-boom'],[12,'fx-whoosh'],[13.3,'fx-impact'],[14,'fx-choir']],
+ scifi:[[0,'fx-drone'],[1,'fx-alarm'],[2.5,'fx-computer'],[4,'fx-sonar'],[5.5,'fx-laser'],[6.4,'fx-laser'],[7.5,'fx-spiral'],[10,'fx-portal']],
+ city:[[0,'fx-traffic'],[0.4,'fx-subway'],[3,'fx-car'],[6,'fx-phone'],[9,'fx-hey']],
+ dj:[[0,'fx-hey'],[1.2,'fx-scratch'],[3.2,'fx-rewind'],[5,'fx-orchhit'],[5.6,'fx-subdrop'],[8,'fx-tapestop']]
+};
+var ctx,master,BUF={},LOAD={},playing={},loops={},sceneT=[];
+function audio(){ if(!ctx){ var AC=window.AudioContext||window.webkitAudioContext; ctx=new AC(); var comp=ctx.createDynamicsCompressor(); comp.threshold.value=-10; comp.ratio.value=8; master=ctx.createGain(); master.gain.value=+document.getElementById('vol').value; master.connect(comp); comp.connect(ctx.destination); }
+  if(ctx.state==='suspended') ctx.resume(); return ctx; }
+function load(n){ if(!LOAD[n]) LOAD[n]=fetch('../../sounds/studio/'+n+'.mp3').then(function(r){return r.arrayBuffer();}).then(function(b){return new Promise(function(res,rej){ctx.decodeAudioData(b,res,rej);});}).then(function(b){BUF[n]=b;return b;}); return LOAD[n]; }
+function pad(n){ return document.querySelector('.pad[data-s="'+n+'"]'); }
+function play(n,when){
+  audio(); var el=pad(n), isLoop=el&&el.dataset.loop==='1';
+  if(isLoop&&loops[n]){ stopOne(n); return; }
+  if(el&&!BUF[n]) el.classList.add('loading');
+  load(n).then(function(b){
+    if(el) el.classList.remove('loading');
+    var s=ctx.createBufferSource(); s.buffer=b; var g=ctx.createGain(); g.gain.value=1; s.connect(g); g.connect(master);
+    var t=Math.max(ctx.currentTime, when||0);
+    if(isLoop){ s.loop=true; s.loopStart=0.05; s.loopEnd=Math.max(1,b.duration-1.6); g.gain.setValueAtTime(0,t); g.gain.linearRampToValueAtTime(1,t+0.8); loops[n]={s:s,g:g}; if(el) el.classList.add('looping'); }
+    s.start(t); (playing[n]=playing[n]||[]).push({s:s,g:g});
+    s.onended=function(){ playing[n]=(playing[n]||[]).filter(function(x){return x.s!==s;}); };
+    if(el&&!isLoop){ var dl=Math.max(0,(t-ctx.currentTime)*1000); setTimeout(function(){ el.classList.add('hit'); setTimeout(function(){el.classList.remove('hit');},140); var pr=el.querySelector('.prog'); pr.style.transition='none'; pr.style.width='0'; void pr.offsetWidth; pr.style.transition='width '+b.duration+'s linear'; pr.style.width='100%'; setTimeout(function(){pr.style.transition='none';pr.style.width='0';},b.duration*1000); },dl); }
+  });
+  if(window.gtag&&!when) gtag('event','fx_pad',{sound:n});
+}
+function fade(x){ try{ x.g.gain.cancelScheduledValues(ctx.currentTime); x.g.gain.setTargetAtTime(0,ctx.currentTime,0.05); x.s.stop(ctx.currentTime+0.4);}catch(e){} }
+function stopOne(n){ (playing[n]||[]).forEach(fade); playing[n]=[]; delete loops[n]; var el=pad(n); if(el) el.classList.remove('looping'); }
+function stopAll(){ sceneT.forEach(clearTimeout); sceneT=[]; document.querySelectorAll('.scene.on').forEach(function(b){b.classList.remove('on');}); Object.keys(playing).forEach(stopOne); document.querySelectorAll('.prog').forEach(function(p){p.style.transition='none';p.style.width='0';}); }
+// build
+var host=document.getElementById('groups'), ki=0, keymap={};
+G.forEach(function(g){ var sec=document.createElement('section'); sec.className='grp'; sec.style.setProperty('--c',g.c);
+  var h='<h2 style="color:'+g.c+'">'+g.name+'</h2><p>'+g.d+'</p><div class="pads">';
+  g.p.forEach(function(p){ var k=KEYS[ki++]||''; if(k) keymap[k]=p[0]; h+='<button class="pad" data-s="'+p[0]+'"'+(p[2]?' data-loop="1"':'')+' aria-label="'+p[1]+(p[2]?' (loops until tapped again)':'')+'">'+p[1]+(p[2]?'<span class="lp">LOOP</span>':'')+'<span class="k">'+k.toUpperCase()+'</span><span class="prog"></span></button>'; });
+  sec.innerHTML=h+'</div>'; host.appendChild(sec); });
+document.addEventListener('click',function(e){
+  var p=e.target.closest('.pad'); if(p){ play(p.dataset.s); return; }
+  var sc=e.target.closest('.scene'); if(sc){ var was=sc.classList.contains('on'); stopAll(); if(was) return; audio(); sc.classList.add('on'); var list=SCENES[sc.dataset.scene];
+    list.forEach(function(x){ load(x[1]); }); var t0=ctx.currentTime+0.25; list.forEach(function(x){ sceneT.push(setTimeout(function(){ play(x[1]); }, x[0]*1000+250)); });
+    var end=Math.max.apply(null,list.map(function(x){return x[0];}))+10; sceneT.push(setTimeout(function(){ stopAll(); }, end*1000));
+    if(window.gtag) gtag('event','fx_scene',{scene:sc.dataset.scene}); return; }
+  if(e.target.closest('#stopall')) stopAll();
+});
+document.getElementById('vol').addEventListener('input',function(){ if(master) master.gain.value=+this.value; });
+document.addEventListener('keydown',function(e){ if(e.metaKey||e.ctrlKey||e.altKey||e.target.tagName==='INPUT') return; if(e.key==='Escape'){stopAll();return;} var n=keymap[e.key.toLowerCase()]; if(n&&!e.repeat){ e.preventDefault(); play(n);} });
+// warm up the first sounds after the first interaction
+document.addEventListener('pointerdown',function once(){ audio(); G.forEach(function(g){ g.p.slice(0,4).forEach(function(p){ load(p[0]); }); }); document.removeEventListener('pointerdown',once); });
+})();
+</script>
+</body>
+</html>

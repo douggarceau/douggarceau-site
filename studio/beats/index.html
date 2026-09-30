@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRYVXZXES0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RRYVXZXES0');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Beat Maker · Amadeus Sound Studio</title>
+<meta name="description" content="Make a beat in your browser. A 16-step drum machine with a hip-hop and trap kit with 808s, an electronic kit with house and techno sounds, and a real acoustic drum kit. Save and share your beat with a link.">
+<link rel="canonical" href="https://douggarceau.com/studio/beats/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Amadeus School of Drums">
+<meta property="og:title" content="Beat Maker · Hip-hop, Trap, Electronic and Acoustic"><meta property="og:url" content="https://douggarceau.com/studio/beats/">
+<meta property="og:description" content="A 16-step drum machine with 808s, house and techno sounds and a real drum kit. Share your beat with a link.">
+<meta property="og:image" content="https://douggarceau.com/logo-share.jpg">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/wide.css?v=7">
+<style>
+:root{--bg:#0a0a0a;--ink:#fff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#ffd35c;--gold2:#ffe9a8;--c:#ffd35c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.6}
+a{color:var(--gold)}
+.wrap{max-width:1180px;margin:0 auto;padding:18px 16px 90px}
+nav.top{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:15px;padding:4px 0 14px}
+nav.top a{text-decoration:none}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:4px;color:var(--muted);margin:6px 0 4px}
+h1{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(46px,7vw,84px);line-height:.95;margin:0 0 10px;letter-spacing:1px}
+h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:30px;letter-spacing:1px;margin:26px 0 8px}
+.lead{color:var(--muted);max-width:780px;margin:0 0 16px}
+.kits{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
+.kit{min-height:46px;padding:0 18px;border-radius:10px;border:1px solid var(--kc);background:transparent;color:var(--ink);font:inherit;font-weight:600;cursor:pointer}
+.kit[aria-pressed="true"]{background:var(--kc);color:#0a0a0a}
+.bar{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.95);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 0;margin-bottom:14px;display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center}
+.btn{min-height:42px;padding:0 16px;border-radius:999px;border:1px solid var(--gold);background:transparent;color:var(--gold2);font:inherit;font-size:15px;cursor:pointer}
+.btn:hover{background:rgba(255,211,92,.12)}
+.btn.on{background:var(--gold);color:#0a0a0a}
+.play{min-width:108px;background:var(--gold);color:#0a0a0a;font-weight:600;border:0}
+.play.playing{background:#c0392b;color:#fff}
+.ctl{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)}
+.ctl input[type=range]{accent-color:var(--gold);width:110px}
+.ctl b{color:var(--ink);font-family:'IBM Plex Mono',monospace;font-weight:600;min-width:3ch;display:inline-block}
+select{background:#161616;color:var(--ink);border:1px solid var(--line);border-radius:8px;min-height:38px;font:inherit;font-size:15px;padding:0 8px}
+.presets{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:0 0 12px}
+.presets .lbl{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:3px;color:var(--muted)}
+.gridwrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#111;padding:12px}
+.grid{min-width:600px}
+.row{display:grid;grid-template-columns:118px 34px repeat(16,1fr);gap:4px;align-items:center;margin-bottom:5px}
+.row.head{margin-bottom:6px}
+.row.head span{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted);text-align:center}
+.row.head span.beat{color:var(--gold2)}
+.name{min-height:40px;border-radius:8px;border:1px solid var(--line);background:#181818;color:var(--ink);font:inherit;font-size:14px;text-align:left;padding:0 10px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.name:hover{border-color:var(--c)}
+.mute{min-height:40px;border-radius:8px;border:1px solid var(--line);background:#181818;color:var(--muted);font:600 12px 'IBM Plex Mono',monospace;cursor:pointer;padding:0}
+.mute[aria-pressed="true"]{background:#c0392b;color:#fff;border-color:#c0392b}
+.row.muted .cell{opacity:.35}
+.cell{position:relative;min-height:40px;border-radius:6px;border:1px solid #333;background:#1c1c1c;cursor:pointer;padding:0;color:#0a0a0a;font:600 11px 'IBM Plex Mono',monospace}
+.cell.q{background:#262626}
+.cell.on{background:var(--c);border-color:var(--c)}
+.cell.now{box-shadow:0 0 0 2px #fff}
+.cell.now.on{filter:brightness(1.3)}
+.cell:focus-visible,.name:focus-visible,.btn:focus-visible,.kit:focus-visible{outline:2px solid #fff;outline-offset:2px}
+.help{color:var(--muted);font-size:14px;margin:10px 0 0}
+.help b{color:var(--ink)}
+.note{color:var(--muted);font-size:14px;margin-top:22px;max-width:820px}
+.more{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.more a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid var(--gold);border-radius:6px;text-decoration:none}
+.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:var(--gold);color:#0a0a0a;padding:10px 18px;border-radius:999px;font-weight:600;opacity:0;transition:opacity .2s;pointer-events:none;z-index:40}
+.toast.show{opacity:1}
+@media (max-width:620px){.row{grid-template-columns:84px 30px repeat(16,26px)}.grid{min-width:0;width:max-content}.bar{position:static}.swipe{display:block!important}.name{font-size:13px;padding:0 6px}.ctl input[type=range]{width:90px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a href="../../index.html">&larr; Amadeus School of Drums</a><span style="display:flex;gap:18px;flex-wrap:wrap"><a href="../">Sound Studio</a><a href="../fx/">Movie FX</a><a href="../../drumroom/">Drum Room</a></span></nav>
+<p class="kicker">AMADEUS SOUND STUDIO</p>
+<h1>Beat Maker</h1>
+<p class="lead">Pick a kit, tap the squares to build a pattern, and press Play. Each row is one sound and each column is one sixteenth note. Four columns make one beat.</p>
+
+<div class="kits" role="group" aria-label="Choose a kit">
+  <button class="kit" data-kit="hh" style="--kc:#e67e22" aria-pressed="true">Hip-hop &amp; Trap</button>
+  <button class="kit" data-kit="el" style="--kc:#5dade2" aria-pressed="false">Electronic</button>
+  <button class="kit" data-kit="ac" style="--kc:#ffd35c" aria-pressed="false">Acoustic drums</button>
+</div>
+
+<div class="bar" role="toolbar" aria-label="Transport">
+  <button class="btn play" id="play">&#9654; Play</button>
+  <label class="ctl">Tempo <input type="range" id="bpm" min="60" max="180" value="90"> <b id="bpmv">90</b></label>
+  <label class="ctl">Swing <input type="range" id="swing" min="0" max="60" value="0"> <b id="swv">0</b></label>
+  <label class="ctl">Key <select id="key"></select></label>
+  <button class="btn" id="edit" aria-pressed="false" title="When on, tapping a lit square changes its roll or its bass note">&#9998; Rolls &amp; notes</button>
+  <button class="btn" id="clear">Clear</button>
+  <button class="btn" id="share">Share link</button>
+  <label class="ctl">Volume <input type="range" id="vol" min="0" max="1" step="0.01" value="0.85"></label>
+</div>
+
+<div class="presets"><span class="lbl">START FROM</span><span id="presets" style="display:flex;gap:8px;flex-wrap:wrap"></span></div>
+
+<p class="swipe help" style="display:none;margin:0 0 8px">Swipe the grid sideways to see all 16 steps.</p>
+<div class="gridwrap"><div class="grid" id="grid"></div></div>
+<p class="help">Tap a row's name to hear it. <b>M</b> mutes a row. Turn on <b>Rolls &amp; notes</b>, then tap a lit square: on drum rows it adds a fast roll (2, 3 or 4 hits, the trap hi-hat sound), and on bass rows it changes the note. Space bar plays and stops.</p>
+
+<h2>What the kits are</h2>
+<p class="note" style="margin-top:0"><b style="color:var(--ink)">Hip-hop &amp; Trap</b> has a punchy kick, snare, clap, rim, hi-hats and a long 808 bass that you can play in any key. <b style="color:var(--ink)">Electronic</b> has house and techno drums, a crash, a percussion hit, a synth bass and an acid line. <b style="color:var(--ink)">Acoustic drums</b> is a real drum set recorded with the same sounds as the interactive kit on this site, including the ride cymbal and the hi-hat played with the foot.</p>
+
+<div class="more"><a href="../fx/">Add movie sound effects &rarr;</a><a href="../../grooves/">Learn real grooves in the Groove Library &rarr;</a><a href="../">All Sound Studio tools</a></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+var S='../../sounds/studio/', K='../../sounds/kit/';
+// row: [id, label, file, colour, bass base semitones (null = drum), choke group]
+var KITS={
+ hh:{name:'Hip-hop & Trap',rows:[
+  ['kick','Kick',S+'hh-kick','#e67e22'],
+  ['kick2','Punch kick',S+'hh-kick2','#e67e22'],
+  ['snare','Snare',S+'hh-snare','#f1c40f'],
+  ['clap','Clap',S+'hh-clap','#f1c40f'],
+  ['rim','Rim',S+'hh-rim','#d4ac0d'],
+  ['hat','Hi-hat',S+'hh-hat','#58d68d','h'],
+  ['open','Open hat',S+'hh-open','#2ecc71','h'],
+  ['bass','808',S+'hh-808','#e74c3c','b',0]],
+  presets:{
+   'Boom bap':{bpm:90,sw:28,key:0,g:{kick:'1000000100100000',snare:'0000100000001000',hat:'1010101010101010',open:'0000000000000010',rim:'0000000000000100'}},
+   'Trap':{bpm:140,sw:0,key:5,g:{kick:'1000000100100000',clap:'0000000010000000',snare:'0000000010000000',hat:'1111113111111141',open:'0000000000100000',bass:'1000000500100000'}},
+   'Lo-fi':{bpm:78,sw:40,key:9,g:{kick:'1000000001000000',snare:'0000100000001000',hat:'1010101010101010',rim:'0000000000000010',bass:'1000000002000000'}},
+   'Drill':{bpm:142,sw:0,key:2,g:{kick:'1000000000100000',snare:'0000000010000001',hat:'1002102012001030',kick2:'0000001000000000',bass:'1000001000303000'}}
+  }},
+ el:{name:'Electronic',rows:[
+  ['kick','Kick',S+'el-kick','#5dade2'],
+  ['kick2','Deep kick',S+'el-kick2','#3498db'],
+  ['snare','Snare',S+'el-snare','#af7ac5'],
+  ['clap','Clap',S+'el-clap','#bb8fce'],
+  ['hat','Hi-hat',S+'el-hat','#48c9b0','h'],
+  ['open','Open hat',S+'el-open','#1abc9c','h'],
+  ['perc','Perc',S+'el-perc','#f5b041'],
+  ['crash','Crash',S+'el-crash','#f7dc6f'],
+  ['bass','Synth bass',S+'el-bass','#ec7063','b',0],
+  ['acid','Acid line',S+'el-acid','#e74c3c','a',-6]],
+  presets:{
+   'House':{bpm:124,sw:10,key:0,g:{kick:'1000100010001000',clap:'0000100000001000',hat:'1010101010101010',open:'0010001000100010',bass:'0010001000100110',crash:'1000000000000000'}},
+   'Techno':{bpm:132,sw:0,key:9,g:{kick:'1000100010001000',open:'0010001000100010',perc:'0001000000010010',clap:'0000000000001000',acid:'1011011010110101'}},
+   'Electro':{bpm:118,sw:0,key:7,g:{kick:'1000001000100000',snare:'0000100000001000',hat:'1111111111111111',perc:'0000000100000001',bass:'1001001000100100'}},
+   'Drum and bass':{bpm:172,sw:0,key:5,g:{kick:'1000000000100000',snare:'0000100000001000',hat:'1010101010101010',kick2:'1000000000000000',bass:'1000000000000000'}}
+  }},
+ ac:{name:'Acoustic drums',rows:[
+  ['kick','Bass drum',K+'kick-mf','#ffd35c'],
+  ['snare','Snare',K+'snare-mf','#f5b041'],
+  ['rim','Cross-stick',K+'rim','#d4ac0d'],
+  ['hat','Hi-hat',K+'hh','#58d68d','h'],
+  ['open','Open hat',K+'hh-open','#2ecc71','h'],
+  ['foot','Hat (foot)',K+'hh-foot','#1abc9c','h'],
+  ['ride','Ride',K+'ride','#5dade2'],
+  ['crash','Crash',K+'crash','#aed6f1'],
+  ['tom','Tom',K+'tom','#e59866'],
+  ['floor','Floor tom',K+'floor','#dc7633']],
+  presets:{
+   'Rock':{bpm:100,sw:0,g:{kick:'1000000010100000',snare:'0000100000001000',hat:'1010101010101010',crash:'1000000000000000'}},
+   'Funk':{bpm:96,sw:12,g:{kick:'1001000000100100',snare:'0000100100001000',hat:'1111111111111111',open:'0000000000000010'}},
+   'Jazz ride':{bpm:132,sw:55,g:{ride:'1000101010001010',foot:'0000100000001000',kick:'1000000000000000'}},
+   'Bossa nova':{bpm:120,sw:0,g:{kick:'1001100110011001',rim:'1001001000100100',hat:'1010101010101010'}},
+   'Fill':{bpm:100,sw:0,g:{kick:'1000000000000000',snare:'0000000011110000',tom:'0000000000001100',floor:'0000000000000011',crash:'1000000000000000',hat:'1010101000000000'}}
+  }}
+};
+var DEG=[0,3,5,7,10,12], DEGN=['1','b3','4','5','b7','8'];
+var NOTES=['C','C#','D','Eb','E','F','F#','G','Ab','A','Bb','B'];
+var kitId='hh', grid={}, muted={}, step=0, playing=false, nextT=0, timer=null, editMode=false;
+var ctx=null, master=null, BUF={}, LOAD={}, voices={}, drawQ=[];
+var $=function(id){return document.getElementById(id);};
+
+NOTES.forEach(function(n,i){var o=document.createElement('option');o.value=i;o.textContent=n;$('key').appendChild(o);});
+
+function audio(){ if(!ctx){ var AC=window.AudioContext||window.webkitAudioContext; ctx=new AC(); var comp=ctx.createDynamicsCompressor(); comp.threshold.value=-8; comp.ratio.value=6; comp.attack.value=0.003; master=ctx.createGain(); master.gain.value=+$('vol').value; master.connect(comp); comp.connect(ctx.destination); }
+  if(ctx.state==='suspended') ctx.resume(); return ctx; }
+function load(f){ if(!LOAD[f]) LOAD[f]=fetch(f+'.mp3').then(function(r){if(!r.ok)throw 0;return r.arrayBuffer();}).then(function(b){return new Promise(function(res,rej){ctx.decodeAudioData(b,res,rej);});}).then(function(b){BUF[f]=b;return b;}).catch(function(){LOAD[f]=null;}); return LOAD[f]; }
+function kit(){ return KITS[kitId]; }
+function rowById(id){ return kit().rows.filter(function(r){return r[0]===id;})[0]; }
+function keyOff(){ var k=+$('key').value; return k>6?k-12:k; }
+
+function stopVoice(v,t){ try{ v.g.gain.cancelScheduledValues(t); v.g.gain.setTargetAtTime(0,t,0.012); v.s.stop(t+0.15);}catch(e){} }
+function trigger(r,t,val){
+  var b=BUF[r[2]]; if(!b) return;
+  var isBass=r[4]==='b'||r[4]==='a';
+  // choke: closed/open/foot hats share a group; each bass row cuts its own previous note
+  var grp=isBass?r[0]:r[4];
+  if(grp){ (voices[grp]||[]).forEach(function(v){stopVoice(v,t);}); voices[grp]=[]; }
+  var s=ctx.createBufferSource(); s.buffer=b; var g=ctx.createGain(); s.connect(g); g.connect(master);
+  if(isBass){ var semi=(r[5]||0)+keyOff()+DEG[Math.max(0,Math.min(5,val-1))]; s.playbackRate.value=Math.pow(2,semi/12); g.gain.value=0.9; }
+  else g.gain.value=0.9;
+  s.start(t);
+  var v={s:s,g:g}; (voices[grp||'_']=voices[grp||'_']||[]).push(v);
+  s.onended=function(){ var a=voices[grp||'_']; if(a){ var i=a.indexOf(v); if(i>=0)a.splice(i,1);} };
+}
+
+function stepDur(){ return 60/(+$('bpm').value)/4; }
+function schedule(){
+  while(nextT < ctx.currentTime+0.12){
+    var d=stepDur(), sw=(+$('swing').value)/100, t=nextT + ((step%2)?sw*d*0.66:0);
+    kit().rows.forEach(function(r){
+      var val=(grid[r[0]]||[])[step]||0; if(!val||muted[r[0]]) return;
+      var isBass=r[4]==='b'||r[4]==='a';
+      if(isBass||val===1) trigger(r,t,val);
+      else { var sub=d/val; for(var i=0;i<val;i++) trigger(r,t+i*sub,1); }
+    });
+    drawQ.push([step,t]);
+    nextT+=d; step=(step+1)%16;
+  }
+}
+function draw(){
+  if(!playing) return;
+  var cur=null; while(drawQ.length && drawQ[0][1]<=ctx.currentTime){ cur=drawQ.shift()[0]; }
+  if(cur!==null){ document.querySelectorAll('.cell.now').forEach(function(c){c.classList.remove('now');}); document.querySelectorAll('.cell[data-s="'+cur+'"]').forEach(function(c){c.classList.add('now');}); }
+  requestAnimationFrame(draw);
+}
+function preloadKit(){ if(!ctx) return Promise.resolve(); return Promise.all(kit().rows.map(function(r){return load(r[2]);})); }
+function start(){
+  audio(); $('play').disabled=true;
+  preloadKit().then(function(){
+    $('play').disabled=false; playing=true; step=0; drawQ=[]; nextT=ctx.currentTime+0.06;
+    schedule(); timer=setInterval(schedule,25); requestAnimationFrame(draw);
+    $('play').classList.add('playing'); $('play').innerHTML='&#9632; Stop';
+    if(window.gtag) gtag('event','beat_play',{kit:kitId,bpm:+$('bpm').value});
+  });
+}
+function stop(){
+  playing=false; clearInterval(timer); timer=null; drawQ=[];
+  if(ctx){ var t=ctx.currentTime; Object.keys(voices).forEach(function(k){ voices[k].forEach(function(v){stopVoice(v,t);}); voices[k]=[]; }); }
+  document.querySelectorAll('.cell.now').forEach(function(c){c.classList.remove('now');});
+  $('play').classList.remove('playing'); $('play').innerHTML='&#9654; Play';
+}
+function toggle(){ playing?stop():start(); }
+
+function label(r,val){ if(!val) return ''; if(r[4]==='b'||r[4]==='a') return DEGN[val-1]; return val>1?('x'+val):''; }
+function paintCell(c){ var r=rowById(c.dataset.r), val=(grid[r[0]]||[])[+c.dataset.s]||0; c.classList.toggle('on',!!val); c.textContent=label(r,val); c.setAttribute('aria-pressed',val?'true':'false'); }
+function build(){
+  var g=$('grid'); g.innerHTML='';
+  var h=document.createElement('div'); h.className='row head'; h.innerHTML='<span></span><span></span>';
+  for(var i=0;i<16;i++){ var s=document.createElement('span'); s.textContent=(i%4===0)?(i/4+1):['','e','&','a'][i%4]; if(i%4===0)s.className='beat'; h.appendChild(s); }
+  g.appendChild(h);
+  kit().rows.forEach(function(r){
+    if(!grid[r[0]]) grid[r[0]]=new Array(16).fill(0);
+    var row=document.createElement('div'); row.className='row'+(muted[r[0]]?' muted':''); row.style.setProperty('--c',r[3]);
+    var n=document.createElement('button'); n.className='name'; n.textContent=r[1]; n.title='Hear the '+r[1];
+    n.onclick=function(){ audio(); load(r[2]).then(function(){ trigger(r,ctx.currentTime+0.01,1); }); };
+    var m=document.createElement('button'); m.className='mute'; m.textContent='M'; m.setAttribute('aria-label','Mute '+r[1]); m.setAttribute('aria-pressed',muted[r[0]]?'true':'false');
+    m.onclick=function(){ muted[r[0]]=!muted[r[0]]; m.setAttribute('aria-pressed',muted[r[0]]?'true':'false'); row.classList.toggle('muted',!!muted[r[0]]); };
+    row.appendChild(n); row.appendChild(m);
+    for(var i=0;i<16;i++){
+      var c=document.createElement('button'); c.className='cell'+(Math.floor(i/4)%2?' q':''); c.dataset.r=r[0]; c.dataset.s=i;
+      c.setAttribute('aria-label',r[1]+' step '+(i+1));
+      c.onclick=function(){ var s=+this.dataset.s, a=grid[this.dataset.r], rr=rowById(this.dataset.r), isBass=rr[4]==='b'||rr[4]==='a';
+        if(editMode && a[s]) a[s]= isBass ? (a[s]%6)+1 : (a[s]%4)+1;
+        else a[s]=a[s]?0:1;
+        paintCell(this);
+        if(a[s] && !playing){ audio(); var me=this; load(rr[2]).then(function(){ trigger(rr,ctx.currentTime+0.01,a[s]); }); }
+        saveHash(); };
+      row.appendChild(c); paintCell(c);
+    }
+    g.appendChild(row);
+  });
+  var p=$('presets'); p.innerHTML='';
+  Object.keys(kit().presets).forEach(function(name){ var b=document.createElement('button'); b.className='btn'; b.textContent=name; b.onclick=function(){ applyPreset(name); }; p.appendChild(b); });
+  document.querySelectorAll('.kit').forEach(function(b){ b.setAttribute('aria-pressed',b.dataset.kit===kitId?'true':'false'); });
+  var hasBass=kit().rows.some(function(r){return r[4]==='b'||r[4]==='a';}); $('key').disabled=!hasBass; $('key').parentNode.style.opacity=hasBass?1:.4;
+}
+function applyPreset(name){
+  var pr=kit().presets[name]; grid={};
+  kit().rows.forEach(function(r){ var s=(pr.g[r[0]]||''); grid[r[0]]=new Array(16).fill(0).map(function(_,i){return +(s[i]||0);}); });
+  setBpm(pr.bpm); $('swing').value=pr.sw||0; $('swv').textContent=pr.sw||0; if(pr.key!=null) $('key').value=pr.key;
+  build(); saveHash(); if(window.gtag) gtag('event','beat_preset',{kit:kitId,preset:name});
+}
+function setBpm(v){ $('bpm').value=v; $('bpmv').textContent=v; }
+function setKit(id){ var was=playing; if(was) stop(); kitId=id; grid={}; muted={}; voices={}; applyPreset(Object.keys(kit().presets)[0]); if(ctx) preloadKit(); if(was) start(); }
+
+function encode(){ return 'k='+kitId+'&t='+$('bpm').value+'&s='+$('swing').value+'&n='+$('key').value+'&g='+kit().rows.map(function(r){return (grid[r[0]]||[]).join('');}).join('.'); }
+function saveHash(){ try{ history.replaceState(null,'','#'+encode()); }catch(e){} }
+function loadHash(){
+  var h=location.hash.slice(1); if(!h) return false; var q={};
+  h.split('&').forEach(function(p){ var i=p.indexOf('='); if(i>0) q[p.slice(0,i)]=decodeURIComponent(p.slice(i+1)); });
+  if(!KITS[q.k]) return false; kitId=q.k;
+  setBpm(Math.max(60,Math.min(180,+q.t||90))); $('swing').value=Math.max(0,Math.min(60,+q.s||0)); $('swv').textContent=$('swing').value; $('key').value=Math.max(0,Math.min(11,+q.n||0));
+  var parts=(q.g||'').split('.'); grid={};
+  kit().rows.forEach(function(r,ri){ var s=parts[ri]||''; grid[r[0]]=new Array(16).fill(0).map(function(_,i){ var v=+(s[i]||0); return isNaN(v)?0:Math.min(v,(r[4]==='b'||r[4]==='a')?6:4); }); });
+  build(); return true;
+}
+function toast(msg){ var t=$('toast'); t.textContent=msg; t.classList.add('show'); setTimeout(function(){t.classList.remove('show');},1800); }
+
+$('play').onclick=toggle;
+$('bpm').oninput=function(){ $('bpmv').textContent=this.value; saveHash(); };
+$('swing').oninput=function(){ $('swv').textContent=this.value; saveHash(); };
+$('key').onchange=saveHash;
+$('vol').oninput=function(){ if(master) master.gain.value=+this.value; };
+$('clear').onclick=function(){ kit().rows.forEach(function(r){ grid[r[0]]=new Array(16).fill(0); }); build(); saveHash(); };
+$('edit').onclick=function(){ editMode=!editMode; this.classList.toggle('on',editMode); this.setAttribute('aria-pressed',editMode?'true':'false'); };
+$('share').onclick=function(){ saveHash(); var u=location.href; if(window.gtag) gtag('event','beat_share',{kit:kitId});
+  if(navigator.clipboard&&navigator.clipboard.writeText) navigator.clipboard.writeText(u).then(function(){toast('Link copied. Send it to a friend!');},function(){toast('Copy the address bar to share');}); else toast('Copy the address bar to share'); };
+document.querySelectorAll('.kit').forEach(function(b){ b.onclick=function(){ setKit(b.dataset.kit); }; });
+document.addEventListener('keydown',function(e){
+  if(e.target.tagName==='INPUT'||e.target.tagName==='SELECT') return;
+  if(e.code==='Space'){ e.preventDefault(); toggle(); }
+  else if(e.key==='Escape') stop();
+});
+document.addEventListener('visibilitychange',function(){ if(document.hidden&&playing) stop(); });
+
+if(!loadHash()) applyPreset(Object.keys(kit().presets)[0]);
+})();
+</script>
+</body>
+</html>
