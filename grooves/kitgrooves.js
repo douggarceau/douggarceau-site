@@ -6,9 +6,10 @@
   var SND = {
     hihat: ['hh', .42], hhopen: ['hh-open', .45], ride: ['ride', .5], crash: ['crash', .55],
     snare: ['snare-f', .8], rim: ['rim', .7], tom: ['tom', .75], floor: ['floor', .8],
-    kick: ['kick-mf', .95], feather: ['kick-p', .32], hhfoot: ['hh-foot', .45]
+    kick: ['kick-mf', .95], feather: ['kick-p', .32], hhfoot: ['hh-foot', .45],
+    ghost: ['snare-mp', .22], bell: ['crash-bell', .42]
   };
-  var ROWS = [['crash', 'ride', 'hhopen', 'hihat'], ['snare', 'rim', 'tom', 'floor'], ['kick', 'feather', 'hhfoot']];
+  var ROWS = [['crash', 'bell', 'ride', 'hhopen', 'hihat'], ['snare', 'rim', 'tom', 'floor', 'ghost'], ['kick', 'feather', 'hhfoot']];
   var ROWN = ['Cymbals', 'Snare / toms', 'Feet'];
   function $(s, r) { return (r || document).querySelector(s); }
   function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
@@ -99,7 +100,7 @@
       return '<li class="kg" data-i="' + i + '"><div class="kh"><button type="button" class="kplay" aria-pressed="false" aria-label="Play ' + esc(g.name) + '">' + PLAY + '</button>' +
         '<div class="kt"><b>' + esc(g.name) + '</b><span>' + esc(g.cat) + ' · ' + g.bpm + ' BPM' + (g.swing ? ' · swung' : '') + (g.beats === 3 ? ' · 3/4' : '') + '</span></div></div>' +
         grid(g) + (g.desc ? '<p class="kd">' + esc(g.desc) + '</p>' : '') +
-        '<a class="kl" href="' + g.link + '">' + (g.link.indexOf('level7') >= 0 ? 'Open in The Kit' : 'Learn this beat') + ' &rarr;</a></li>';
+        (g.link ? '<a class="kl" href="' + g.link + '">' + (g.link.indexOf('level7') >= 0 ? 'Open in The Kit' : 'Learn this beat') + ' &rarr;</a>' : '') + '</li>';
     }).join('');
     $('#kgCount').textContent = list.length + ' grooves';
   }
@@ -117,5 +118,5 @@
   $('#kgClick').addEventListener('change', function (e) { clickMode = e.target.value; });
   $('#kgStop').addEventListener('click', stop);
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') stop(); });
-  fetch('kit.json?v=1').then(function (r) { return r.json(); }).then(function (d) { G = d; chips(); render(); });
+  fetch('kit.json?v=2').then(function (r) { return r.json(); }).then(function (d) { G = d; chips(); render(); });
 })();
