@@ -192,7 +192,14 @@
     },
     woodblock: function (t, f) { sine(t, f || 900, 0.6, 0.09); noise(t, 0.02, 0.3, 'bandpass', (f || 900) * 2, 3); },
     templeblocks: function (t, f) { V.woodblock(t, f); },
-    claves: function (t) { sine(t, 2500, 0.5, 0.07); },
+    // Claves: two dense hardwood sticks. One rests on the cupped hand, which acts as a resonating chamber;
+    // the other strikes it. The result is a bright, clearly pitched ring with a short but real sustain, plus a
+    // hard wooden click. Bigger claves are lower and ring a little longer.
+    claves: function (t, f, note) {
+      var P = { small: [2650, 0.085], medium: [2250, 0.1], large: [1800, 0.12] }[note || 'medium'] || [2250, 0.1], fq = P[0] * (1 + (Math.random() - .5) * .006), tau = P[1];
+      ring(t, fq, 0.55, tau); ring(t, fq * 1.004, 0.25, tau * 0.9); ring(t, fq * 2.76, 0.1, tau * 0.3); ring(t, fq * 0.33, 0.12, tau * 0.6);
+      noise(t, 0.004, 0.7, 'bandpass', fq * 1.6, 1.5, 0.0003);
+    },
     // Castanets: two hollowed hardwood shells. Each shell gives a very short, pitched, hollow "tock" from its
     // cavity, plus a dry knock; the two shells land a hair apart. The small (hembra, right hand) is higher, the
     // large (macho, left hand) lower. Paddle castanets strike against a wooden paddle: drier, with a board knock.
