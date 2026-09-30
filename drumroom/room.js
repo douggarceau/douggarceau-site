@@ -323,7 +323,24 @@
     thundersheet: function (t) { noise(t, 3, 0.8, 'lowpass', 400, 0.7, 0.05); noise(t, 2, 0.3, 'bandpass', 900, 1, 0.3); metal(t, 2.5, 0.08, 38, 500, 0.2); },
     hammer: function (t) { sine(t, 60, 1, 0.5, 'sine', 40, 0.1); noise(t, 0.15, 0.9, 'lowpass', 700); },
     slapstick: function (t) { noise(t, 0.05, 1, 'highpass', 1500); sine(t, 900, 0.3, 0.04); },
-    ratchet: function (t) { for (var i = 0; i < 18; i++) noise(t + i * 0.035, 0.02, 0.6, 'bandpass', 2200, 3); },
+    // Ratchet: turning the handle drags wooden tongues over a wooden cog. Each tooth gives a sharp wooden snap
+    // plus the hollow resonance of the frame; the orchestral ratchet has two tongues, so every tooth is a thick
+    // double clack. Cranking by hand makes the speed swell and sag slightly with each turn.
+    ratchet: function (t, f, note) {
+      var v = note || 'slow', P = { slow: [13, 1.6, 1], fast: [26, 1.6, 1], burst: [22, 0.45, 1], small: [30, 0.9, 0.55] }[v] || [13, 1.6, 1];
+      var rate = P[0], dur = P[1], big = P[2], small = v === 'small', at = t, ph = 0;
+      function clack(tt, a) {
+        noise(tt, 0.006, a * 0.9, 'bandpass', small ? 3800 : 2600, 1.4, 0.0003);
+        noise(tt, 0.035, a * 0.7, 'bandpass', small ? 1500 : 650, 3, 0.0008);
+        [[small ? 900 : 420, .5, .035], [small ? 1600 : 780, .35, .025], [small ? 2500 : 1150, .2, .015]].forEach(function (m) { ring(tt, m[0], a * m[1] * 0.6, m[2]); });
+      }
+      while (at < t + dur) {
+        var env = Math.min(1, (at - t) / 0.08) * (at > t + dur - 0.15 ? (t + dur - at) / 0.15 : 1);
+        var a = big * (0.55 + 0.45 * env) * (0.85 + Math.random() * 0.15);
+        clack(at, a); if (!small) clack(at + 0.009 + Math.random() * 0.004, a * 0.7);
+        ph += 0.35; at += 1 / (rate * (1 + 0.15 * Math.sin(ph)));
+      }
+    },
     logdrum: function (t, f) { sine(t, f, 0.6, 0.35); sine(t, f * 2.5, 0.12, 0.12); noise(t, 0.02, 0.2, 'bandpass', f * 3, 2); },
     rute: function (t) { for (var i = 0; i < 10; i++) noise(t + Math.random() * 0.03, 0.03, 0.4, 'bandpass', 3000 + Math.random() * 2000, 2); },
     guiro: function (t) { for (var i = 0; i < 14; i++) noise(t + i * 0.022, 0.015, 0.5, 'bandpass', 2800, 4); for (var j = 0; j < 4; j++) noise(t + 0.4 + j * 0.03, 0.015, 0.5, 'bandpass', 2800, 4); },
