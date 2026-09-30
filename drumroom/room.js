@@ -193,7 +193,22 @@
     woodblock: function (t, f) { sine(t, f || 900, 0.6, 0.09); noise(t, 0.02, 0.3, 'bandpass', (f || 900) * 2, 3); },
     templeblocks: function (t, f) { V.woodblock(t, f); },
     claves: function (t) { sine(t, 2500, 0.5, 0.07); },
-    castanets: function (t) { noise(t, 0.03, 0.8, 'bandpass', 3200, 4); noise(t + 0.06, 0.03, 0.8, 'bandpass', 3000, 4); },
+    // Castanets: two hollowed hardwood shells. Each shell gives a very short, pitched, hollow "tock" from its
+    // cavity, plus a dry knock; the two shells land a hair apart. The small (hembra, right hand) is higher, the
+    // large (macho, left hand) lower. Paddle castanets strike against a wooden paddle: drier, with a board knock.
+    // Roll: the flamenco finger roll, four fingers in turn.
+    castanets: function (t, f, note) {
+      var v = note || 'small';
+      function shell(tt, fq, a, tau) {
+        ring(tt, fq, a * 0.5, tau); ring(tt, fq * 1.58, a * 0.18, tau * 0.6); ring(tt, fq * 0.46, a * 0.15, tau * 0.5);
+        noise(tt, 0.005, a * 0.8, 'bandpass', fq * 1.25, 1.8, 0.0003);
+      }
+      function click(tt, fq, a) { shell(tt, fq, a, 0.012); shell(tt + 0.0012 + Math.random() * 0.0015, fq * 1.07, a * 0.8, 0.011); }
+      if (v === 'small') click(t, 2700, 1);
+      else if (v === 'large') click(t, 1850, 1.05);
+      else if (v === 'paddle') { click(t, 2200, 0.9); ring(t, 620, 0.25, 0.01); noise(t, 0.012, 0.35, 'bandpass', 900, 1.5, 0.0005); }
+      else if (v === 'roll') { for (var i = 0; i < 16; i++) click(t + i * 0.036 + Math.random() * 0.004, 2700 * (1 + (i % 4) * 0.01), 0.45 + 0.25 * ((i % 4) === 3 ? 1 : 0) + 0.2 * Math.random()); click(t + 16 * 0.036, 2700, 1); }
+    },
     maracas: function (t) { noise(t, 0.09, 0.5, 'highpass', 5000); noise(t + 0.16, 0.09, 0.5, 'highpass', 5000); },
     // Cowbells: a bent steel box struck with a stick. A few strong, unevenly spaced modes (the two lowest sit
     // about a fifth apart, which is the "clank"), each dying at its own rate, plus the stick's click. Bigger bells
@@ -320,7 +335,37 @@
     },
     flexatone: function (t) { var o = ctx.createOscillator(); o.frequency.value = 880; var l = ctx.createOscillator(); l.frequency.value = 9; var d = ctx.createGain(); d.gain.value = 40;
       l.connect(d); d.connect(o.frequency); o.frequency.setValueAtTime(700, t); o.frequency.linearRampToValueAtTime(1100, t + 1.2); o.connect(env(t, 0.25, 1.5, 0.02)); o.start(t); o.stop(t + 1.6); l.start(t); l.stop(t + 1.6); },
-    thundersheet: function (t) { noise(t, 3, 0.8, 'lowpass', 400, 0.7, 0.05); noise(t, 2, 0.3, 'bandpass', 900, 1, 0.3); metal(t, 2.5, 0.08, 38, 500, 0.2); },
+    // Thunder sheet: a large, thin steel sheet hung by one edge. Shaking it bends the whole sheet, so its low
+    // tones warble and the rumble rolls in waves with the hand; struck with a mallet it booms, then shimmers on
+    // for many seconds. Distant thunder is soft and dark; the thunderclap is a hard hit plus a violent shake.
+    thundersheet: function (t, f, note) {
+      var v = note || 'shake', P = {
+        shake: { dur: 7, vol: .9, cut: 700, shake: 5, roll: .45, boom: .3, crack: 0, att: .15 },
+        strike: { dur: 8.5, vol: .8, cut: 900, shake: 2.5, roll: .15, boom: 1, crack: .2, att: .004 },
+        distant: { dur: 7.5, vol: .55, cut: 260, shake: 3, roll: .6, boom: .2, crack: 0, att: .9 },
+        clap: { dur: 8, vol: 1, cut: 1400, shake: 7, roll: .5, boom: 1, crack: 1, att: .003 }
+      }[v] || null; if (!P) return;
+      var end = t + P.dur, out = ctx.createGain();
+      out.gain.setValueAtTime(0.0001, t); out.gain.linearRampToValueAtTime(P.vol, t + P.att); out.gain.setTargetAtTime(0, t + P.att + 0.05, P.dur / 3.5); out.connect(bus);
+      var rollL = ctx.createOscillator(), rollG = ctx.createGain(); rollL.frequency.value = 0.35 + Math.random() * 0.3; rollG.gain.setValueAtTime(P.roll * P.vol * 0.5, t); rollG.gain.setTargetAtTime(0, t + P.att + 0.05, P.dur / 3.5); rollL.connect(rollG); rollG.connect(out.gain); rollL.start(t); rollL.stop(end);
+      var src = ctx.createBufferSource(); src.buffer = noiseBuf; src.loop = true;
+      var lp = ctx.createBiquadFilter(); lp.type = 'lowpass'; lp.frequency.value = P.cut; lp.Q.value = 0.8; var lg = ctx.createGain(); lg.gain.value = 0.9; src.connect(lp); lp.connect(lg); lg.connect(out);
+      [[140, .7], [300, .5], [620, .35], [1200, .15]].forEach(function (b) {
+        var bp = ctx.createBiquadFilter(); bp.type = 'bandpass'; bp.frequency.value = Math.min(b[0], P.cut * 1.6); bp.Q.value = 3;
+        var l = ctx.createOscillator(), lgn = ctx.createGain(); l.frequency.value = P.shake * (0.8 + Math.random() * 0.4); lgn.gain.value = bp.frequency.value * 0.45; l.connect(lgn); lgn.connect(bp.frequency); l.start(t); l.stop(end);
+        var g = ctx.createGain(); g.gain.value = b[1]; src.connect(bp); bp.connect(g); g.connect(out);
+      });
+      src.start(t, Math.random() * 2); src.stop(end + 0.1);
+      [48, 67, 93, 131, 177, 242, 318, 437, 590].forEach(function (fq, k) {
+        if (fq > P.cut * 1.2) return;
+        var o = ctx.createOscillator(), g = ctx.createGain(), w = ctx.createOscillator(), wg = ctx.createGain();
+        o.frequency.value = fq * (1 + (Math.random() - .5) * .04); w.frequency.value = P.shake * (0.6 + Math.random() * 0.8); wg.gain.value = fq * 0.05; w.connect(wg); wg.connect(o.frequency);
+        g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(0.1 / (1 + k * 0.3), t + P.att + 0.01); g.gain.setTargetAtTime(0, t + P.att + 0.01, P.dur / (3 + k * 0.4));
+        o.connect(g); g.connect(out); o.start(t); w.start(t); o.stop(end); w.stop(end);
+      });
+      if (P.boom) { sine(t, 70, 0.6 * P.boom * P.vol, 1.2, 'sine', 45, 0.4, 0.004); noise(t, 0.5, 0.4 * P.boom, 'lowpass', 500, 0.7, 0.004); }
+      if (P.crack) { noise(t, 0.25, 0.7 * P.crack, 'highpass', 1800, 0.7, 0.001); noise(t + 0.02, 0.6, 0.45 * P.crack, 'bandpass', 2500, 1, 0.002); }
+    },
     hammer: function (t) { sine(t, 60, 1, 0.5, 'sine', 40, 0.1); noise(t, 0.15, 0.9, 'lowpass', 700); },
     slapstick: function (t) { noise(t, 0.05, 1, 'highpass', 1500); sine(t, 900, 0.3, 0.04); },
     // Ratchet: turning the handle drags wooden tongues over a wooden cog. Each tooth gives a sharp wooden snap
