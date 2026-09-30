@@ -433,7 +433,7 @@ document.getElementById('f').addEventListener('submit',function(e){
   var fd=new FormData();fd.append('email',em.value);fd.append('embed','1');fd.append('tag','website');
   btn.disabled=true;note.className='note';note.textContent='Signing you up...';
   fetch('https://buttondown.com/api/emails/embed-subscribe/amadeusdrums',{method:'POST',body:fd,mode:'no-cors'})
-   .then(function(){note.className='note ok';note.textContent='Thanks! Check your inbox for a confirmation email, then click the link inside to finish signing up.';em.value='';if(window.gtag)gtag('event','sign_up',{method:'newsletter'});})
+   .then(function(){note.className='note ok';note.textContent='Thanks! Check your inbox for a confirmation email (and your spam or promotions folder), then click the link inside to finish signing up.';em.value='';if(window.gtag)gtag('event','sign_up',{method:'newsletter'});})
    .catch(function(){note.className='note';note.textContent='Something went wrong. Please try again in a moment.';})
    .then(function(){btn.disabled=false;});
 });
