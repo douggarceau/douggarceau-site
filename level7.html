@@ -108,6 +108,25 @@ h1{margin:4px 0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-
   .slider span{display:none}
   .snd{order:6;min-height:34px;padding:0 10px;font-size:12px}
 }
+/* desktop: kit on the left, lesson on the right, all on one screen */
+@media (min-width:1100px) and (min-height:600px){
+ body .shell{max-width:1880px;padding:4px 28px 24px}
+ .shell>div>div{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,1fr);column-gap:32px;grid-template-areas:"top guide" "kit kitbar" "kit feels" "kit transport" "bookhead bookhead" "boxes boxes";align-items:start}
+ .top{grid-area:top;padding-top:0}.top h1,h1{font-size:clamp(38px,3.2vw,60px)}.top .sub{margin:2px 0 0}
+ .staff svg{min-width:0!important}
+ .guide{grid-area:guide;margin-top:0;align-self:end}.guide svg{width:72px;height:auto}
+ .kitbar{grid-area:kitbar;padding-top:0}.kitnote{display:none}
+ .kitbox{grid-area:kit;margin-top:6px}
+ .kitstage{max-width:min(100%,calc((100vh - 270px)*766/501));margin:0}
+ .top .last{display:none}.guide .say{font-size:14px}
+ .feels{grid-area:feels;border-top:0;padding-top:4px}
+ .transport{grid-area:transport;margin-top:8px;padding-top:10px;padding-bottom:6px}
+ .feels{gap:8px}
+ .transport{flex-wrap:nowrap}.transport .slider{flex:1;min-width:60px}.transport .slider input{width:100%}.play{min-width:0;padding:0 14px}
+}
+@media (min-width:1100px) and (max-height:760px){.lesson{display:none}.guide svg{display:none}
+ .bookhead{grid-area:bookhead}.boxes{grid-area:boxes}
+}
 @media (prefers-reduced-motion:reduce){.guide svg *{animation:none!important}}
 </style>
 <link rel="canonical" href="https://douggarceau.com/level7.html">
