@@ -1,4 +1,4 @@
-"""Builds the Level 7 interactive kit from the front-view photo of the white marine pearl kit.
+"""Builds the The Kit interactive kit from the front-view photo of the white marine pearl kit.
 
 Run from the repo root:  python3 _kit_src/build_kit.py
 Everything between <!--KIT:BEGIN--> and <!--KIT:END--> in level7.html is replaced.

@@ -79,6 +79,32 @@ ul.list{list-style:none;margin:0;padding:0}
 .styles div{border:1px solid var(--line);border-radius:10px;padding:12px;font-size:14px;color:var(--muted)}
 .styles b{color:var(--ink);display:block;margin-bottom:4px}
 @media (max-width:600px){.row{grid-template-columns:52px 1fr}.wv{grid-column:1/-1;height:44px}}
+.kitg h2,#recorded{margin-top:36px}
+.kgi{color:var(--muted);max-width:1000px}
+.kgchips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.kgbar{position:sticky;top:0;z-index:5;display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;padding:12px 16px;margin:0 0 14px;border:1px solid var(--lab-line2,#333);border-radius:12px;background:linear-gradient(180deg,var(--lab-p1,#181818),var(--lab-p2,#111));box-shadow:0 8px 24px rgba(0,0,0,.35)}
+#kgNow{flex:1;min-width:220px;color:var(--muted)}#kgNow b{color:var(--ink)}
+.kgt{display:flex;align-items:center;gap:8px}.kgt input{width:170px;accent-color:var(--gold)}
+.kgc{color:var(--muted);font-size:14px}
+.kglist{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px}
+.kg{display:flex;flex-direction:column;gap:10px;padding:16px;border:1px solid var(--lab-line,#2e2e2e);border-radius:14px;background:linear-gradient(180deg,var(--lab-p1,#181818),var(--lab-p2,#111));transition:box-shadow .2s,border-color .2s}
+.kg.playing{border-color:var(--gold);box-shadow:0 0 0 1px rgba(var(--lab-glow,255,211,92),.4),0 0 28px rgba(var(--lab-glow,255,211,92),.22)}
+.kh{display:flex;gap:12px;align-items:center}
+.kplay{flex:none;width:48px;height:48px;border-radius:50%;border:2px solid var(--gold);background:transparent;color:var(--gold);display:grid;place-items:center;cursor:pointer;box-shadow:0 0 14px rgba(var(--lab-glow,255,211,92),.25)}
+.kplay svg{width:22px;height:22px}.kplay[aria-pressed=true]{background:var(--gold);color:#140d02}
+.kt b{display:block;color:var(--ink);font-weight:600;line-height:1.3}.kt span{font-size:14px;color:var(--muted)}
+.kgrid{display:grid;gap:3px;padding:8px;border-radius:10px;background:rgba(0,0,0,.35)}
+.kgrid .col{display:grid;grid-template-rows:repeat(3,12px);gap:4px;padding:3px 0;border-radius:4px}
+.kgrid .col.bar{box-shadow:-2px 0 0 rgba(255,255,255,.25)}
+.kgrid i{display:block;border-radius:3px;background:rgba(255,255,255,.06)}
+.kgrid .col.beat i{background:rgba(255,255,255,.11)}
+.kgrid .col i.hit{background:var(--gold)}.kgrid .col i.v-snare,.kgrid .col i.v-rim,.kgrid .col i.v-tom,.kgrid .col i.v-floor{background:#f5f3ed}.kgrid .col i.v-kick{background:var(--lab-acc2,#ffd98a)}
+.kgrid .col i.v-feather,.kgrid .col i.v-hhfoot{background:rgba(255,255,255,.35)}.kgrid .col i.v-hhopen,.kgrid .col i.v-crash{background:#140d02;box-shadow:0 0 0 2px var(--gold) inset}
+.kgrid .col.on{background:rgba(var(--lab-glow,255,211,92),.3)}.kgrid .col.on i.hit{box-shadow:0 0 10px var(--gold)}
+.kgkey{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:14px;color:var(--muted);margin:0 0 12px}.kgkey i{display:inline-block;width:18px;height:10px;border-radius:3px;margin-right:6px;vertical-align:middle}.kgkey .k1{background:var(--gold)}.kgkey .k2{background:#f5f3ed}.kgkey .k3{background:#140d02;box-shadow:0 0 0 2px var(--gold) inset}.kgkey .k4{background:var(--lab-acc2,#ffd98a)}.kgkey .k5{background:rgba(255,255,255,.35)}
+.kd{margin:0;font-size:15px;color:var(--muted)}
+.kl{font-size:14px;margin-top:auto}
+@media(max-width:600px){.kglist{grid-template-columns:1fr}.kgt input{width:120px}}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="/assets/wide.css?v=3">
 </head>
@@ -87,7 +113,19 @@ ul.list{list-style:none;margin:0;padding:0}
 <nav><a href="../index.html">&larr; Amadeus School of Drums</a><span style="display:flex;gap:18px;flex-wrap:wrap"><a href="../level7.html">The kit</a><a href="../rudiments/">Rudiments</a><a href="../drumroom/">Drum room</a></span></nav>
 <p class="kicker">LISTEN · STUDY · PLAY ALONG</p>
 <h1>The Groove Library</h1>
-<p>163 grooves recorded by jazz drummer Andreas Klein on a real kit, from a 50 BPM brush ballad to 220 BPM swing. Every loop repeats seamlessly, so you can listen as long as you like, then play along. Turn on the click to hear exactly where the drummer sits against the time: set it to 2 and 4 for swing, the way jazz players practice.</p>
+<p>50 kit grooves, from AC/DC and Motown to reggae, bossa nova and bebop, plus 163 grooves recorded by jazz drummer Andreas Klein on a real kit, from a 50 BPM brush ballad to 220 BPM swing. Every loop repeats seamlessly, so you can listen as long as you like, then play along. Turn on the click to hear exactly where the drummer sits against the time: set it to 2 and 4 for swing, the way jazz players practice.</p>
+<section id="kitg" class="kitg">
+<h2>Kit grooves</h2>
+<p class="kgi">Rock, pop, soul, funk, hip-hop, reggae, Latin and jazz, plus every groove from the kit lessons: 50 beats played on real drum samples. Press play, change the tempo, add a click, and watch each step light up.</p>
+<div id="kgChips" class="kgchips"></div>
+<div class="kgbar"><span id="kgNow" aria-live="polite">Pick a groove and press play.</span>
+<label class="kgt">Tempo <input type="range" id="kgBpm" min="40" max="240" value="100" aria-label="Tempo"> <b id="kgBpmV">100</b> BPM</label>
+<label>Click <select id="kgClick"><option value="off">Off</option><option value="24">On 2 and 4</option><option value="all">Every beat</option></select></label>
+<button type="button" class="chip" id="kgStop">Stop</button><span id="kgCount" class="kgc"></span></div>
+<p class="kgkey"><span><i class="k1"></i>Hi-hat, ride or crash</span><span><i class="k3"></i>Open hi-hat or crash</span><span><i class="k2"></i>Snare or toms</span><span><i class="k4"></i>Bass drum</span><span><i class="k5"></i>Soft bass drum or hi-hat foot</span></p>
+<ul class="kglist" id="kgList"></ul>
+</section>
+<h2 id="recorded">Recorded jazz grooves</h2>
 <div class="styles">
 <div><b>Swing (sticks)</b>Swing time at 95, 127, 140, 160, 190 and 220 BPM. Play them in order and listen to how the feel changes as the tempo climbs.</div>
 <div><b>Brushes</b>Brush grooves from a 50 BPM ballad up to 175 BPM.</div>
@@ -104,6 +142,8 @@ ul.list{list-style:none;margin:0;padding:0}
 <p class="cta"><a class="try solid" href="../level7.html">Play the kit &rarr;</a> <a class="try" href="../index.html#signup">Get new lessons</a></p>
 </div>
 <script src="grooves.js?v=1"></script>
+<script src="../sounds/kit/kit.js?v=2"></script>
+<script src="kitgrooves.js?v=1"></script>
 <script src="/assets/shop.js?v=1"></script>
 </body>
 </html>
