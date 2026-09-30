@@ -192,19 +192,51 @@
     }
     return false;
   }
-  function play(inst, note, btn) {
+  function play(inst, note, btn, when, gain) {
     if (!audio()) return;
-    var t = ctx.currentTime + 0.02, f = note ? (/^\d+(\.\d+)?$/.test(note) ? +note : MIDI(+note.replace('m', ''))) : 0;
-    if (!real(inst, t, f, note)) V[inst](t, f, note);
-    if (btn) { btn.classList.add('hit'); setTimeout(function () { btn.classList.remove('hit'); }, 180); }
-    if (window.gtag) gtag('event', 'drum_room_play', { instrument: inst });
+    var t = when || ctx.currentTime + 0.02, f = note ? (/^\d+(\.\d+)?$/.test(note) ? +note : MIDI(+note.replace('m', ''))) : 0;
+    if (note === '__roll') { inst = 'snareroll'; note = ''; }
+    var saved = bus; if (gain && gain !== 1) { var gg = ctx.createGain(); gg.gain.value = gain; gg.connect(saved); bus = gg; }
+    try { if (!real(inst, t, f, note)) V[inst](t, f, note); } finally { bus = saved; }
+    if (btn) { var dl = Math.max(0, (t - ctx.currentTime) * 1000); setTimeout(function () { btn.classList.add('hit'); setTimeout(function () { btn.classList.remove('hit'); }, 160); }, dl); }
+    if (!when && window.gtag) gtag('event', 'drum_room_play', { instrument: inst });
   }
   function scale(inst, notes, card) {
     if (!audio()) return;
     var keys = card.querySelectorAll('[data-note]');
     notes.forEach(function (n, i) { var at = i * 0.28; setTimeout(function () { play(inst, n, keys[i]); }, at * 1000); });
   }
+
+  // ---------- Patterns: three rhythmic ideas per instrument, played twice ----------
+  var patTimer = null, patBtn = null;
+  function stopPat() { if (patTimer) { patTimer.forEach(clearTimeout); patTimer = null; } if (patBtn) { patBtn.classList.remove('on'); patBtn = null; } }
+  function playPat(btn) {
+    if (!audio()) return;
+    var was = btn === patBtn; stopPat(); if (was) return;
+    var id = btn.getAttribute('data-pat').split(':'), D = (window.ORCH_PATTERNS || {})[id[0]]; if (!D) return;
+    var P = D.p[+id[1]], bpm = P[0], sub = P[1], seq = P[2].trim().split(/\s+/), card = btn.closest('.inst');
+    var keysEl = card ? card.querySelectorAll('.keys [data-inst]:not([data-scale])') : [];
+    patTimer = []; patBtn = btn; btn.classList.add('on');
+    var need = (PRE[D.snd] || []).concat(D.snd === 'timpani' ? ['timp-pp-G', 'timp-ff-G'] : []);
+    need.forEach(obuf);
+    var waits = need.map(function (n) { return OL[n]; }).filter(Boolean);
+    Promise.all(waits).then(function () { if (patBtn !== btn) return; schedule(); });
+    function schedule() {
+    var step = 60 / bpm / sub, t0 = ctx.currentTime + 0.12, reps = 2, total = seq.length * step;
+    for (var r = 0; r < reps; r++) seq.forEach(function (tok, i) {
+      if (tok === '.') return;
+      var acc = tok.slice(-1) === '>', ks = tok.replace('>', '').split('+');
+      ks.forEach(function (k) {
+        var note = D.keys[+k], inst = D.snd;
+        play(inst, note || '', keysEl[+k], t0 + r * total + i * step, acc ? 1 : .62);
+      });
+    });
+    patTimer.push(setTimeout(stopPat, (reps * total + 1.2) * 1000));
+    }
+    if (window.gtag) gtag('event', 'drum_room_pattern', { pattern: btn.getAttribute('data-pat') });
+  }
   document.addEventListener('click', function (e) {
+    var pb = e.target.closest('[data-pat]'); if (pb) { playPat(pb); return; }
     var b = e.target.closest('[data-inst]'); if (!b) return;
     var card = b.closest('.inst');
     if (b.hasAttribute('data-scale')) { var ks = [].map.call(card.querySelectorAll('[data-note]'), function (k) { return k.getAttribute('data-note'); }); scale(b.getAttribute('data-inst'), ks, card); return; }
