@@ -11,6 +11,8 @@ W, H = 1280, 560
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 
 FINISHES = {
+    # white marine pearl, the current Level 7 kit
+    'pearl': (['#bdb3b8', '#f7f1f3', '#ffffff', '#ece3e7', '#b7adb2'], None),
     # blue sparkle, the original Level 7 kit
     'blue': (['#0c2266', '#3a74f0', '#8db8ff', '#2d5fd8', '#0a1d5c'], ['#ffffff', '#cfe0ff', '#9fc2ff']),
 }
@@ -28,14 +30,24 @@ def defs(finish):
     stops, sparks = FINISHES[finish]
     offs = [0, .28, .36, .5, 1]
     g = ''.join('<stop offset="%s" stop-color="%s"></stop>' % (o, c) for o, c in zip(offs, stops))
-    dots = ''.join('<circle cx="%s" cy="%s" r="%s" fill="%s" opacity="%s"></circle>' % (x, y, r, sparks[i % 3], o)
-                   for i, (x, y, r, o) in enumerate(GLITTER))
+    if sparks:
+        dots = ''.join('<circle cx="%s" cy="%s" r="%s" fill="%s" opacity="%s"></circle>' % (x, y, r, sparks[i % 3], o)
+                       for i, (x, y, r, o) in enumerate(GLITTER))
+        pat = '<pattern id="glit" width="22" height="22" patternUnits="userSpaceOnUse">' + dots + '</pattern>'
+    else:
+        # marine pearl: irregular shimmering flakes with fine grey edges and a faint iridescent tint
+        flakes = [('0,0 9,2 7,10 0,8', '#fbe9f0'), ('9,2 20,0 18,9 7,10', '#eef3fb'), ('20,0 28,3 26,12 18,9', '#fff7ea'),
+                  ('0,8 7,10 5,19 0,17', '#f1ecf8'), ('7,10 18,9 16,18 5,19', '#fdf2f6'), ('18,9 26,12 28,20 16,18', '#e9f1f6'),
+                  ('0,17 5,19 8,28 0,28', '#fff4ef'), ('5,19 16,18 17,28 8,28', '#f4eef9'), ('16,18 28,20 28,28 17,28', '#fbeef3')]
+        pat = ('<pattern id="glit" width="28" height="28" patternUnits="userSpaceOnUse">' +
+               ''.join('<polygon points="%s" fill="%s" opacity="0.8" stroke="#8f858a" stroke-opacity="0.5" stroke-width="0.6"></polygon>' % fl for fl in flakes) +
+               '</pattern>')
     return ('<defs>'
             '<linearGradient id="chrome" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#7c8088"></stop><stop offset="0.3" stop-color="#f4f5f7"></stop><stop offset="0.5" stop-color="#a7abb2"></stop><stop offset="0.75" stop-color="#e9ebee"></stop><stop offset="1" stop-color="#6c7078"></stop></linearGradient>'
             '<linearGradient id="bronze" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c9a15e"></stop><stop offset="0.5" stop-color="#9c7a3f"></stop><stop offset="1" stop-color="#d4b06a"></stop></linearGradient>'
             '<filter id="glow" x="-40%" y="-80%" width="180%" height="260%"><feGaussianBlur in="SourceAlpha" stdDeviation="10" result="b"></feGaussianBlur><feFlood flood-color="#ffcd5a" flood-opacity="0.9"></feFlood><feComposite in2="b" operator="in"></feComposite><feMerge><feMergeNode></feMergeNode><feMergeNode in="SourceGraphic"></feMergeNode></feMerge></filter>'
             '<linearGradient id="fin" x1="0" y1="0" x2="1" y2="0">' + g + '</linearGradient>'
-            '<pattern id="glit" width="22" height="22" patternUnits="userSpaceOnUse">' + dots + '</pattern>'
+            + pat +
             '<linearGradient id="lugchrome" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8a8f97"></stop><stop offset="0.35" stop-color="#ffffff"></stop><stop offset="0.6" stop-color="#b3b8bf"></stop><stop offset="1" stop-color="#6c7078"></stop></linearGradient>'
             '</defs>')
 
@@ -108,9 +120,9 @@ def floor(pid, cx, T, rx, h):
 
 def kick(cx, cy, r, label):
     s = r / 152
-    out = '<g filter="{{kick.filter}}"><circle cx="%s" cy="%s" r="%s" fill="#111111"></circle>' % (cx, cy, f(r))
-    out += '<circle cx="%s" cy="%s" r="%s" fill="none" stroke="url(#fin)" stroke-width="6"></circle>' % (cx, cy, f(r - 6))
-    out += '<circle cx="%s" cy="%s" r="%s" fill="none" stroke="url(#glit)" stroke-width="6"></circle>' % (cx, cy, f(r - 6))
+    out = '<g filter="{{kick.filter}}"><circle cx="%s" cy="%s" r="%s" fill="#0b0b0b"></circle>' % (cx, cy, f(r))
+    out += '<circle cx="%s" cy="%s" r="%s" fill="none" stroke="#f3eef0" stroke-width="3"></circle>' % (cx, cy, f(r - 3))
+    out += '<circle cx="%s" cy="%s" r="%s" fill="#111111"></circle>' % (cx, cy, f(r - 5))
     out += '<circle cx="%s" cy="%s" r="%s" fill="{{kick.head}}"></circle></g>' % (cx, cy, f(r - 14))
     import math
     for k in range(10):
@@ -118,9 +130,8 @@ def kick(cx, cy, r, label):
         x, y = cx + (r - 6) * math.cos(a), cy + (r - 6) * math.sin(a)
         out += '<rect x="%s" y="%s" width="10" height="18" rx="3" fill="url(#lugchrome)" stroke="#5f636a" stroke-width="0.8" transform="rotate(%s %s %s)"></rect>' % (
             f(x - 5), f(y - 9), 108 + 36 * k, f(x), f(y))
-    out += '<circle cx="%s" cy="%s" r="%s" fill="#0a0a0a" stroke="#9aa0a8" stroke-width="2"></circle>' % (f(cx + 60 * s), f(cy + 65 * s), f(16 * s))
-    out += '<text x="%s" y="%s" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="%s" fill="{{kick.ink}}" letter-spacing="3">%s</text>' % (cx, cy, f(46 * s), label)
-    out += '<text x="%s" y="%s" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="%s" fill="{{kick.ink}}" letter-spacing="2">AMADEUS SCHOOL OF DRUMS</text>' % (cx, f(cy + 27 * s), f(11 * s))
+    if label:
+        out += '<text x="%s" y="%s" text-anchor="middle" font-family="Bebas Neue, sans-serif" font-size="%s" fill="{{kick.ink}}" letter-spacing="3">%s</text>' % (cx, cy, f(46 * s), label)
     out += line(cx - 135 * s, cy + 95 * s, cx - 170 * s, 540, '#d8dbe0', 4) + line(cx + 135 * s, cy + 95 * s, cx + 170 * s, 540, '#d8dbe0', 4)
     return out
 
@@ -129,10 +140,8 @@ SNARE = open(ROOT / '_kit_src' / 'snare.svgpart').read()
 HIHAT = open(ROOT / '_kit_src' / 'hihat.svgpart').read()
 
 CONFIGS = {
-    'four': dict(finish='blue', label='LEVEL 7', kick=(640, 385, 152), crashR=(760, 100, 100, 15, -6),
+    'four': dict(finish='pearl', label='', kick=(640, 385, 152),
                  racks=[('tom', 560, 112, 62, 86, 1)], floors=[('floor', 880, 326, 90, 140)]),
-    'five': dict(finish='blue', label='LEVEL 7', kick=(640, 385, 152), crashR=(830, 78, 100, 15, -6),
-                 racks=[('tom', 548, 120, 56, 78, 1), ('tom2', 706, 116, 60, 84, -1)], floors=[('floor', 880, 326, 90, 140)]),
 }
 
 NAMES = {'crashL': 'Crash cymbal, left', 'crashR': 'Crash cymbal, right', 'ride': 'Ride cymbal', 'hihat': 'Hi-hats',
@@ -149,11 +158,10 @@ def pad(pid, x, y, w, h, round_=False):
 def config(key):
     c = CONFIGS[key]
     kx, ky, kr = c['kick']
-    rx_, ry_, rrx, rry, rrot = c['crashR']
     svg = '<svg viewBox="0 0 %d %d" aria-hidden="true">' % (W, H) + defs(c['finish'])
     svg += '<ellipse cx="640" cy="538" rx="580" ry="20" fill="#171717"></ellipse>'
-    svg += stand(200, 120, 48) + stand(rx_, ry_, 40) + stand(960, 235, 48)
-    svg += cymbal('crashL', 200, 120, 105, 16, 6) + cymbal('crashR', rx_, ry_, rrx, rry, rrot) + cymbal('ride', 960, 235, 128, 18, -5)
+    svg += stand(200, 120, 48) + stand(960, 235, 48)
+    svg += cymbal('crashL', 200, 120, 112, 17, 6) + cymbal('ride', 960, 235, 132, 19, -5)
     svg += kick(kx, ky, kr, c['label'])
     for pid, cx, T, rx, h, side in c['racks']:
         svg += rack(pid, cx, T, rx, h, side)
@@ -161,7 +169,7 @@ def config(key):
         svg += floor(pid, cx, T, rx, h)
     svg += SNARE + HIHAT + '</svg>'
     pads = pad('kick', kx - kr + 4, ky - kr + 4, 2 * kr - 8, 2 * kr - 8, True)
-    pads += pad('crashL', 85, 72, 230, 96) + pad('crashR', rx_ - rrx - 10, ry_ - 48, 2 * rrx + 20, 96) + pad('ride', 825, 190, 270, 70)
+    pads += pad('crashL', 80, 70, 240, 100) + pad('ride', 820, 185, 280, 75)
     pads += pad('hihat', 240, 160, 180, 100)
     for pid, cx, T, rx, h, side in c['racks']:
         pads += pad(pid, cx - rx - 2, T - 20, 2 * rx + 4, h + 42)
