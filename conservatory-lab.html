@@ -598,6 +598,6 @@ document.addEventListener("keydown",function(e){if(e.code!=="Space")return;var t
 (function(){var i=0;var m=/^#lesson-(\d+)$/.exec(location.hash||"");if(m)i=+m[1]-1;else{try{var s=localStorage.getItem("consLab.cur");if(s!==null)i=+s;}catch(e){}}
  if(!(i>=0&&i<LESSONS.length))i=0;cur=i;buildNav();render();setMode("listen");frame();})();
 </script>
-<script src="/assets/hype.js?v=3" defer></script>
+<script src="/assets/hype.js?v=4" defer></script>
 </body>
 </html>

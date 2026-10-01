@@ -40,10 +40,24 @@ function pickVoice(){if(!('speechSynthesis' in window))return;var v=speechSynthe
  voice=v.filter(function(x){return /^en/i.test(x.lang);})[0]||v[0];}
 if('speechSynthesis' in window){pickVoice();speechSynthesis.onvoiceschanged=pickVoice;}
 function plain(h){var d=document.createElement('div');d.innerHTML=h;return (d.textContent||'').replace(/\s+/g,' ').trim();}
+/* mouth: opens on every syllable, timed from the voice's word boundaries */
+var mouth=0,pulses=[],gotBoundary=false,flap=null,raf=null,saying=false;
+function syl(w){var m=(w.toLowerCase().replace(/[^a-z]/g,'').replace(/e$/,'').match(/[aeiouy]+/g)||[]).length;return Math.max(1,Math.min(5,m));}
+function pulse(at,amt){pulses.push([at,amt]);}
+function wordAt(t,i,len){var w=len?t.substr(i,len):(t.slice(i).match(/^\S+/)||[''])[0];var n=syl(w),dur=Math.max(160,w.length*62)/0.97,now=performance.now();
+ for(var k=0;k<n;k++)pulse(now+k*dur/n,0.75+Math.random()*0.25);}
+function loop(){var now=performance.now(),target=0;pulses=pulses.filter(function(p){var d=now-p[0];if(d<0)return true;if(d<150){target=Math.max(target,p[1]*Math.sin(Math.PI*d/150));return true;}return false;});
+ mouth+= (target-mouth)*0.55; var h=root&&root.querySelector('.amg-head'); if(h)h.style.setProperty('--o',mouth.toFixed(3));
+ if(saying||mouth>0.01)raf=requestAnimationFrame(loop);else{raf=null;if(h)h.style.setProperty('--o','0');}}
+function startMouth(){saying=true;gotBoundary=false;if(!raf)raf=requestAnimationFrame(loop);
+ clearTimeout(flap);flap=setTimeout(function fb(){if(!saying||gotBoundary)return;pulse(performance.now(),0.6+Math.random()*0.4);flap=setTimeout(fb,150+Math.random()*90);},700);}
+function stopMouth(){saying=false;clearTimeout(flap);pulses=[];}
 function speak(text){if(!('speechSynthesis' in window)||muted||!text)return false;
- try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(plain(text));if(voice)u.voice=voice;u.rate=0.97;u.pitch=0.85;
-  u.onstart=function(){spoken=true;talking(true);};u.onend=u.onerror=function(){talking(false);};speechSynthesis.speak(u);return true;}catch(e){return false;}}
-function stop(){if('speechSynthesis' in window)speechSynthesis.cancel();talking(false);}
+ try{speechSynthesis.cancel();var said=plain(text),u=new SpeechSynthesisUtterance(said);if(voice)u.voice=voice;u.rate=0.97;u.pitch=0.85;
+  u.onstart=function(){spoken=true;talking(true);startMouth();};
+  u.onboundary=function(e){if(e.name&&e.name!=='word')return;gotBoundary=true;wordAt(said,e.charIndex,e.charLength);};
+  u.onend=u.onerror=function(){stopMouth();talking(false);};speechSynthesis.speak(u);return true;}catch(e){return false;}}
+function stop(){if('speechSynthesis' in window)speechSynthesis.cancel();stopMouth();talking(false);}
 function setMute(m){muted=m;try{localStorage.setItem('amadeusMute',m?'1':'0');}catch(e){}if(m)stop();
  document.querySelectorAll('[data-amute]').forEach(function(b){b.innerHTML=m?'&#128263; Voice off':'&#128266; Voice on';b.setAttribute('aria-pressed',m?'true':'false');});}
 window.amadeusSpeak=function(t){return speak(t);};window.amadeusMute=setMute;
@@ -59,13 +73,13 @@ var css='.amg{position:fixed;right:16px;bottom:16px;z-index:1990;display:flex;fl
 '.amg-n{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin-top:9px}.amg-n span{font:600 11px "IBM Plex Mono",monospace;color:#777;margin-right:auto}'+
 '.amg-n a,.amg-n button{display:inline-flex;align-items:center;line-height:1.2;height:auto;min-height:0;width:auto;margin:0;box-shadow:none;letter-spacing:0;text-transform:none;font:700 12px "IBM Plex Sans",sans-serif;border:1px solid #ccc;background:#fff;color:#222;border-radius:6px;padding:5px 9px;cursor:pointer;text-decoration:none}.amg-n .go{background:#ffd35c;border-color:#d9a520;color:#111}'+
 '.amg-x{position:absolute;top:4px;right:8px;background:none;border:0;font-size:18px;cursor:pointer;color:#888}'+
-'.amg-f{display:flex;align-items:center;gap:8px;padding:4px 16px 4px 4px;border-radius:999px;border:2px solid #ffd35c;background:#111;color:#fff;font:700 15px "IBM Plex Sans",system-ui,sans-serif;cursor:pointer;box-shadow:0 0 18px rgba(255,211,92,.45)}'+
-'.amg-f video{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #ffd35c;background:#000}'+
+'.amg-f{display:flex;align-items:center;gap:10px;padding:4px 18px 4px 4px;border-radius:999px;border:2px solid #ffd35c;background:#111;color:#fff;font:700 15px "IBM Plex Sans",system-ui,sans-serif;cursor:pointer;box-shadow:0 0 18px rgba(255,211,92,.45)}'+
+'.amg-face{position:relative;flex:none;width:130px;height:130px;border-radius:50%;overflow:hidden;border:3px solid #ffd35c;background:#000}'+'.amg-face video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:opacity .2s}'+'.amg-head{position:absolute;inset:0;opacity:0;transition:opacity .2s;--o:0}.amg.talk .amg-head{opacity:1}.amg.talk .amg-face video{opacity:0}'+'.amg-head .b,.amg-head .j{position:absolute;inset:0;background:url(/assets/amadeus-head.jpg) center/cover}'+'.amg-head .m{position:absolute;left:37.5%;width:23%;top:74%;height:10%;border-radius:30% 30% 50% 50% / 25% 25% 75% 75%;background:linear-gradient(180deg,#050101 0,#1a0606 45%,#6e2a31 85%,#a4505a 100%);box-shadow:inset 0 3px 4px rgba(0,0,0,.8);transform-origin:50% 0;transform:scaleY(var(--o))}'+'.amg-head .j{clip-path:ellipse(15% 13% at 49.5% 86%);transform:translateY(calc(var(--o) * 9.5%))}'+
 '.amg-f span{text-align:left;line-height:1.15}.amg-f small{display:block;font:600 10px "IBM Plex Mono",monospace;color:#e8c27a;letter-spacing:.06em;margin-top:2px}'+
-'.amg.talk .amg-f video{animation:amgtalk .35s ease-in-out infinite alternate}@keyframes amgtalk{to{transform:scale(1.07)}}'+
+
 '.amg.talk .amg-f{box-shadow:0 0 30px rgba(255,211,92,.9)}'+
-'@media (max-width:520px){.amg-f video{width:52px;height:52px}.amg-f{font-size:13px}.amg-b{font-size:14.5px}}'+
-'@media (prefers-reduced-motion:reduce){.amg.talk .amg-f video,.amg-t i{animation:none}}';
+'@media (max-width:520px){.amg-face{width:88px;height:88px}.amg-f{font-size:13px}.amg-b{font-size:14.5px}}'+
+'@media (prefers-reduced-motion:reduce){.amg-t i{animation:none}}';
 var root,bub,txt,nav,cur='',typer;
 function talking(on){if(root)root.classList.toggle('talk',!!on);}
 function here(){return location.pathname.replace(/index\.html$/,'');}
@@ -89,7 +103,7 @@ function build(){
  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
  root=document.createElement('div');root.className='amg';
  root.innerHTML='<div class="amg-b" role="status" aria-live="polite" hidden><button class="amg-x" aria-label="Close">&times;</button><div class="amg-t"></div><div class="amg-n"></div></div>'+
-  '<button class="amg-f" aria-label="Amadeus: hear about this page"><video src="/assets/amadeus-dog.mp4" poster="/assets/amadeus-face.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><span>Amadeus<small>Tap me to hear about this page</small></span></button>';
+  '<button class="amg-f" aria-label="Amadeus: hear about this page"><span class="amg-face"><video src="/assets/amadeus-dog.mp4" poster="/assets/amadeus-face.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><span class="amg-head" aria-hidden="true"><span class="b"></span><span class="m"></span><span class="j"></span></span></span><span>Amadeus<small>Tap me to hear about this page</small></span></button>';
  document.body.appendChild(root);
  bub=root.querySelector('.amg-b');txt=root.querySelector('.amg-t');nav=root.querySelector('.amg-n');
  root.querySelector('.amg-x').onclick=hide;
