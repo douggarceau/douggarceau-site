@@ -1,16 +1,149 @@
 {
- "updated": "2026-10-01T03:17Z",
+ "updated": "2026-10-01T03:21Z",
  "sources": [
-  "Modern Drummer (0)",
-  "Drumming News Network (0)",
-  "Drummer's Review (0)",
-  "Drumeo (0)",
-  "Sick Drummer Magazine (0)",
-  "The UK Drum Show (0)"
+  "Modern Drummer (5)",
+  "Drumming News Network (5)",
+  "Beat It (5)",
+  "Drumeo (5)",
+  "Sick Drummer Magazine (5)"
  ],
  "errors": {
-  "Beat It": "HTTP Error 403: Forbidden"
+  "Drummer's Review": "mismatched tag: line 93, column 2",
+  "The UK Drum Show": "mismatched tag: line 93, column 2"
  },
- "raw_count": 0,
- "items": []
+ "raw_count": 22,
+ "items": [
+  {
+   "title": "Larry Mullen Jr. Isn\u2019t Sure He Can Handle a Full U2 Show After Neck Surgery",
+   "link": "https://www.drummingnewsnetwork.com/larry-mullen-jr-isnt-sure-he-can-handle-a-full-u2-show-after-neck-surgery/",
+   "source": "Drumming News Network",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Abe Laboriel Jr. performs with Pearl Jam",
+   "link": "https://en.beatit.tv/abe-laboriel-jr-performs-with-pearl-jam/",
+   "source": "Beat It",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Bonham Drumheads Rebrand | Same Quality, New Name Coming Soon",
+   "link": "https://www.drummingnewsnetwork.com/bonham-drumheads-rebrand-same-quality-new-name-coming-soon/",
+   "source": "Drumming News Network",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Colin Woolway has passed away",
+   "link": "https://en.beatit.tv/colin-woolway-has-passed-away/",
+   "source": "Beat It",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Kevin Paradis \u2013 Agonanist \u2013 Effacement \u2013 Exclusive Drum Play-through",
+   "link": "https://sickdrummermagazine.com/news/latest-news/kevin-paradis-agonanist-effacement-drum-play-through/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-29"
+  },
+  {
+   "title": "Europe Drummer Ian Haugland Restores His 1988 Yamaha Recording Custom Drum Kit For Upcoming Tour",
+   "link": "https://www.drummingnewsnetwork.com/europe-drummer-ian-haugland-restores-his-1988-yamaha-recording-custom-drum-kit-for-upcoming-tour/",
+   "source": "Drumming News Network",
+   "date": "2026-09-28"
+  },
+  {
+   "title": "Pearl Jam Surprises Ohana Festival Crowd With Surprise Performance and Abe Laborial Jr. On The Drums",
+   "link": "https://www.drummingnewsnetwork.com/pearl-jam-surprises-ohana-festival-crowd-with-surprise-performance-and-abe-laborial-jr-on-the-drums/",
+   "source": "Drumming News Network",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "NEW Hudson Release: Clyde Stubblefield: Sound of the Funky Drummer",
+   "link": "https://www.drummingnewsnetwork.com/new-hudson-release-clyde-stubblefield-sound-of-the-funky-drummer/",
+   "source": "Drumming News Network",
+   "date": "2026-09-27"
+  },
+  {
+   "title": "14\u2033x7\u2033 Tama S.L.P. G-Maple Mappa Burl Snare Drum",
+   "link": "https://en.beatit.tv/14x7-tama-s-l-p-g-maple-mappa-burl-snare-drum/",
+   "source": "Beat It",
+   "date": "2026-09-23"
+  },
+  {
+   "title": "Jay Weinberg joins Ludwig family",
+   "link": "https://en.beatit.tv/jay-weinberg-joins-ludwig-family/",
+   "source": "Beat It",
+   "date": "2026-09-19"
+  },
+  {
+   "title": "WOODIES Drumsticks Review",
+   "link": "https://sickdrummermagazine.com/s1-news/c82-product-reviews/woodies-drumsticks-review-why-the-5a-long-won-me-over/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-17"
+  },
+  {
+   "title": "Tama Starclassic Performer \u2018Blacked Out Black\u2019 Kit",
+   "link": "https://en.beatit.tv/tama-starclassic-performer-blacked-out-black-kit/",
+   "source": "Beat It",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "Zed Amarin \u2013 Esodic \u2013 Of The Grave \u2013 Drum Play-through",
+   "link": "https://sickdrummermagazine.com/news/latest-news/zed-amarin-esodic-of-the-grave-drum-play-through/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "Modern Drummer Announces Celeste Fox as the 2026 Winner of the Neil Peart Spirit of Drumming Scholarship",
+   "link": "https://www.moderndrummer.com/2026/09/modern-drummer-announces-celeste-fox-as-the-2026-winner-of-the-neil-peart-spirit-of-drumming-scholarship/",
+   "source": "Modern Drummer",
+   "date": "2026-09-15"
+  },
+  {
+   "title": "Modern Drummer presents Eric Singer\u2019s KISS Kruise Drum Off",
+   "link": "https://www.moderndrummer.com/2026/09/modern-drummer-presents-eric-singers-kiss-kruise-drum-off/",
+   "source": "Modern Drummer",
+   "date": "2026-09-14"
+  },
+  {
+   "title": "Guitar Center crowns champion of Drum-Off 2026 following national competition",
+   "link": "https://www.moderndrummer.com/2026/09/guitar-center-crowns-champion-of-drum-off-2026-following-national-competition/",
+   "source": "Modern Drummer",
+   "date": "2026-09-10"
+  },
+  {
+   "title": "Big, Loud and Muscular: Stephen Perkins\u2019 Return to \u201970s Rock",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-jimmy-page-dw-kit-panic-channel/",
+   "source": "Modern Drummer",
+   "date": "2026-09-08"
+  },
+  {
+   "title": "The Rebirth of Jane\u2019s Addiction: Stephen Perkins\u2019 1997 Relapse Tour Kit",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1997-janes-addiction-relapse-tour-kit/",
+   "source": "Modern Drummer",
+   "date": "2026-09-06"
+  },
+  {
+   "title": "Alex Lancia \u2013 Lecherous Nocturne \u2013 Metempsychosis \u2013 Drum Play-through",
+   "link": "https://sickdrummermagazine.com/news/latest-news/alex-lancia-lecherous-nocturne-metempsychosis-drum-play-through/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-04"
+  },
+  {
+   "title": "Tommy Aldridge Interview \u2013 June 2026 + Clinic Dates",
+   "link": "https://sickdrummermagazine.com/the-drummers/sick-drummer-hall-of-fame/tommy-aldridge-interview-june-2026-clinic-dates/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-06-19"
+  },
+  {
+   "title": "The Sound Behind The Videos You Love: Earthworks Audio Becomes Our Official Microphone Partner",
+   "link": "https://www.drumeo.com/beat/earthworks-audio/",
+   "source": "Drumeo",
+   "date": "2026-06-04"
+  },
+  {
+   "title": "J-Rod Sullivan Heard Dream Theater For The First Time\u2026 While Playing Cymbals Nobody Had Ever Seen Before",
+   "link": "https://www.drumeo.com/beat/j-rod-sabian/",
+   "source": "Drumeo",
+   "date": "2026-06-03"
+  }
+ ]
 }
