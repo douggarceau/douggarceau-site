@@ -504,6 +504,21 @@ html body .zone-links a:nth-child(7){animation-delay:-9.0s,-2.22s}
 html body .zone-links a:nth-child(8){animation-delay:-10.5s,-2.59s}
 html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 @media (prefers-reduced-motion:reduce){html body .zone-links a{animation:none}}
+
+/* experiment: Ludwig the studio dog in the hero */
+.hero-dog{display:none}
+@media (prefers-reduced-motion:reduce){.hero-dog video{animation:none}}
+@media (min-width:1300px){
+ html body .home-hero .newbox{width:380px}
+ html body .home-hero h1,html body .hero-copy{max-width:calc(100% - 720px)}
+ html body .home-hero-content{position:relative;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+ .hero-dog{display:block;position:absolute;z-index:1;top:0;bottom:0;right:calc(24px + 380px + 14px);width:280px;margin:0;pointer-events:none}
+ .hero-dog video{display:block;width:100%;height:100%;object-fit:cover;object-position:center 20%;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 22%,#000 80%,transparent),linear-gradient(0deg,transparent,#000 18%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent,#000 22%,#000 80%,transparent),linear-gradient(0deg,transparent,#000 18%);mask-composite:intersect;
+  filter:drop-shadow(0 0 30px rgba(255,190,80,.35))}
+ .hero-dog figcaption{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);white-space:nowrap;font:600 10px var(--mono,monospace);letter-spacing:.2em;color:#e8c27a;background:rgba(0,0,0,.6);border:1px solid rgba(232,194,122,.5);padding:4px 9px;border-radius:3px}
+ .hero-dog figcaption b{color:#ffd35c;margin-right:6px}
+}
 </style>
 </head>
 <body>
@@ -542,7 +557,9 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 <img class="home-hero-image" src="assets/home-hero-kit.jpg" width="1600" height="1051" alt="Vintage white marine pearl drum kit in a music teaching room" fetchpriority="high" decoding="async">
 </picture>
 <div class="home-hero-shade"></div>
+
 <div class="home-container home-hero-content">
+<figure class="hero-dog" aria-label="Ludwig, the studio dog"><video src="assets/ludwig.mp4" poster="assets/ludwig-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><figcaption><b>LUDWIG</b> HEAD OF SECURITY</figcaption></figure>
 <a class="newbox" href="studio/" aria-label="New: the Sound Studio">
 <span class="nb-badge">NEW</span>
 <span class="nb-title">THE SOUND STUDIO</span>
