@@ -1,10 +1,16 @@
 {
- "updated": "2026-10-01T14:52Z",
+ "updated": "2026-10-01T14:53Z",
  "items": [
   {
-   "id": "YUUrpIV5HxA",
-   "title": "I Forced my Lovers to Compete in my Gameshow",
-   "source": "Ludwig",
+   "id": "gWY5yb_i3fI",
+   "title": "Zildjian | All FX Cymbals Showcase",
+   "source": "Zildjian",
+   "date": "2026-10-01"
+  },
+  {
+   "id": "7t3Lk-bLFBg",
+   "title": "Zildjian | All FX Cymbals Showcase",
+   "source": "Zildjian",
    "date": "2026-10-01"
   },
   {
@@ -14,10 +20,40 @@
    "date": "2026-10-01"
   },
   {
+   "id": "wrJYLQpL1MU",
+   "title": "Can You Play the Pataflafla? #drumeo #rudiments #drumlessons",
+   "source": "Drumeo",
+   "date": "2026-10-01"
+  },
+  {
+   "id": "avhAB0cR6tc",
+   "title": "Vic Firth | All Artist Signature Series Sticks",
+   "source": "Vic Firth",
+   "date": "2026-09-30"
+  },
+  {
+   "id": "W_e5X7KshuM",
+   "title": "Vic Firth | All Signature Sticks",
+   "source": "Vic Firth",
+   "date": "2026-09-30"
+  },
+  {
    "id": "KvbqMhYvJS8",
    "title": "Meinl Cymbals - Pure Alloy Custom - Jeeves \"Deuce Deuce\" Demo",
    "source": "Meinl",
    "date": "2026-09-30"
+  },
+  {
+   "id": "T6nLd4MVEDA",
+   "title": "Learning \u201cWait and Bleed\u201d in 30 Minutes #drumeo #codyash #slipknot",
+   "source": "Drumeo",
+   "date": "2026-09-30"
+  },
+  {
+   "id": "UEEu_a5p398",
+   "title": "Zildjian Foundry Sessions | Jordi Radnoti - \"Deadweight\" by Turning Jane",
+   "source": "Zildjian",
+   "date": "2026-09-29"
   },
   {
    "id": "qmXYzj3XmeM",
@@ -26,60 +62,56 @@
    "date": "2026-09-29"
   },
   {
-   "id": "LRJ-0PZhvq0",
-   "title": "How Many Streamers Does It Take to Beat a Chess Pro?",
-   "source": "Ludwig",
+   "id": "cUlbWlrTMcE",
+   "title": "How Fast Can Jelly Roll\u2019s Drummer Learn Joey Jordison\u2019s \u201cWait And Bleed\u201d?",
+   "source": "Drumeo",
+   "date": "2026-09-29"
+  },
+  {
+   "id": "RrPxWz21SmA",
+   "title": "Where should you go busking?",
+   "source": "Roland",
    "date": "2026-09-28"
   },
   {
-   "id": "jSJWgXqvVGU",
-   "title": "\ud83d\udd34 MASSIVE POKEMON TOURNAMENT THEN WORLDS QUALIFIER WATCH PARTY",
+   "id": "JBsOMIcNwwM",
+   "title": "Shulamit Ran: Quadrophony",
+   "source": "Vic Firth",
+   "date": "2026-09-24"
+  },
+  {
+   "id": "XQp6X7y6P-U",
+   "title": "This isn\u2019t just another app. How will you use Piano Sphere?",
+   "source": "Roland",
+   "date": "2026-09-17"
+  },
+  {
+   "id": "HKf93EDiwNY",
+   "title": "Why This One-Man Band Prefers to Play on the Streets",
+   "source": "Roland",
+   "date": "2026-09-16"
+  },
+  {
+   "id": "OfX-I8nj23E",
+   "title": "Classic Oak 6.5x14 Snare | Tuning and Head Comparison",
    "source": "Ludwig",
-   "date": "2026-09-27"
-  },
-  {
-   "id": "IlTWdRPAqc8",
-   "title": "Set up your DW 9000X Boom Cymbal Stands (DWCP9700XIL, DWCP9701XIL)",
-   "source": "DW Drums",
-   "date": "2026-08-19"
-  },
-  {
-   "id": "Jb99-vY-A3s",
-   "title": "Set up your DW 9000X Tom Stands (DWCP9991X, DWCP9992X)",
-   "source": "DW Drums",
-   "date": "2026-08-19"
-  },
-  {
-   "id": "NWyEN7WnTYU",
-   "title": "Set up your DW 9000X AirLift\u2122 Cylinders (DWSMALCYLS,DWSMALCYLL)",
-   "source": "DW Drums",
-   "date": "2026-08-19"
-  },
-  {
-   "id": "MVv8HTS3FI0",
-   "title": "Amon Tobin - Dropped From The Sky (Live Version)",
-   "source": "Zildjian",
-   "date": "2012-05-31"
-  },
-  {
-   "id": "uLBftuNEwJA",
-   "title": "Original Black Magic - Infekto",
-   "source": "Zildjian",
-   "date": "2008-06-06"
+   "date": "2026-08-27"
   }
  ],
  "log": {
-  "Vic Firth": "@vicfirth UCe5fXi_cyD5Ur41gf7mvvzA (0)",
-  "Zildjian": "@zildjian UCtRLm6lRjf4Y9zHoV2-wARA (2)",
-  "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA (6)",
-  "Ludwig @LudwigDrums": "error: HTTP Error 404: Not Found",
-  "Ludwig @ludwigdrums": "error: HTTP Error 404: Not Found",
-  "Ludwig": "@Ludwig UCrPseYLGpNygVi34QpGNqpA (6)",
-  "Roland @RolandDrums": "error: HTTP Error 404: Not Found",
-  "Roland @RolandChannel": "error: HTTP Error 404: Not Found",
-  "Roland": "not found",
-  "Meinl": "@MeinlCymbals UCZjkQtRELyrearglF3lYa8Q (6)",
-  "Drumeo @drumeo": "error: HTTP Error 404: Not Found",
-  "Drumeo": "not found"
+  "Vic Firth": "@VicFirthCompany UC9N2JaiIWYR2GEN1tgHAczA Vic Firth (5)",
+  "Zildjian @Zildjian_Company": "error: HTTP Error 404: Not Found",
+  "Zildjian @zildjiancymbals": "error: HTTP Error 404: Not Found",
+  "Zildjian": "@ZildjianCompany UC7UDMFxe8e5JxiUIGe38mRA Avedis Zildjian Company (6)",
+  "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (6)",
+  "Ludwig @LudwigDrumsOfficial": "error: HTTP Error 404: Not Found",
+  "Ludwig @ludwig_drums": "error: HTTP Error 404: Not Found",
+  "Ludwig @LudwigDrumCo": "error: HTTP Error 404: Not Found",
+  "Ludwig": "search UCxdiLfkkokXj09724KntoOw Ludwig Drums (6)",
+  "Roland @Roland": "error: HTTP Error 404: Not Found",
+  "Roland": "@RolandGlobal UC4vbiZMU_yrheYVZH393-Zw RolandChannel (6)",
+  "Meinl": "@MeinlCymbals UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (6)",
+  "Drumeo @Drumeo": "error: HTTP Error 404: Not Found",
+  "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (3)"
  }
 }
