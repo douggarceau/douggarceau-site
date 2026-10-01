@@ -485,6 +485,25 @@ html body .fxb .button + .button{animation-delay:-8s,-1.3s}
 @media (max-width:1000px){html body .fxb-in{grid-template-columns:1fr}html body .fxb-pads{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media (max-width:520px){html body .fxb-pads{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (prefers-reduced-motion:reduce){html body .fxb-console,html body .fxb-pad,html body .fxb h2 span,html body .fxb .eyebrow,html body .fxb .button,html body .fxc-led{animation:none}}
+
+/* PLAY / LEARN / GEAR links: lit, pulsing video-game buttons */
+html body .zone-links{gap:8px}
+html body .zone-links a{border:2px solid rgba(0,0,0,.55);border-radius:8px;color:#0b0b0b!important;font-weight:700;text-shadow:0 1px 0 rgba(255,255,255,.35);
+ background:radial-gradient(ellipse at 50% 15%,rgba(255,255,255,.6),transparent 60%),var(--lit);
+ box-shadow:inset 0 2px 3px rgba(255,255,255,.55),inset 0 -4px 8px rgba(0,0,0,.28),0 0 10px var(--lit),0 0 26px color-mix(in srgb,var(--lit) 60%,transparent);
+ animation:padhue 12s linear infinite,padpulse 1.6s ease-in-out infinite alternate;transition:transform .08s}
+html body .zone-links a:hover{transform:translateY(-2px) scale(1.04);filter:brightness(1.3)!important;animation-play-state:running,paused}
+html body .zone-links a:active{transform:scale(.96)}
+html body .zone-links a:nth-child(1){animation-delay:-0.0s,-0.00s}
+html body .zone-links a:nth-child(2){animation-delay:-1.5s,-0.37s}
+html body .zone-links a:nth-child(3){animation-delay:-3.0s,-0.74s}
+html body .zone-links a:nth-child(4){animation-delay:-4.5s,-1.11s}
+html body .zone-links a:nth-child(5){animation-delay:-6.0s,-1.48s}
+html body .zone-links a:nth-child(6){animation-delay:-7.5s,-1.85s}
+html body .zone-links a:nth-child(7){animation-delay:-9.0s,-2.22s}
+html body .zone-links a:nth-child(8){animation-delay:-10.5s,-2.59s}
+html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
+@media (prefers-reduced-motion:reduce){html body .zone-links a{animation:none}}
 </style>
 </head>
 <body>
