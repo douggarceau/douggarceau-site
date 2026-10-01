@@ -222,7 +222,17 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @media(max-width:900px){.content-grid.three{grid-template-columns:1fr}}
 @media(max-width:650px){.zone-in{grid-template-columns:1fr}.zone-num{grid-row:auto}.zone-links{grid-column:1}}
 .nav-ctas{display:flex;gap:8px}.nav-cta.nav-shop{background:transparent;color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}.nav-cta.nav-shop:hover{background:var(--gold);color:#111}
-@media(max-width:650px){.nav-cta.nav-shop{display:none}}
+/* Gear Shop: lit emergency button in a hazard-stripe frame */
+.nav-cta.nav-shop{position:relative;min-height:44px;padding:0 18px;border:5px solid transparent;border-radius:12px;color:#fff;font-weight:700;letter-spacing:.12em;text-shadow:0 1px 2px rgba(0,0,0,.65),0 0 8px rgba(255,220,200,.6);
+ background:radial-gradient(ellipse at 50% 22%,#ffb3a8 0,#ff3b28 32%,#d11406 66%,#860a00 100%) padding-box,repeating-linear-gradient(-45deg,#ffcc00 0 6px,#141414 6px 12px) border-box;
+ box-shadow:inset 0 2px 3px rgba(255,255,255,.5),inset 0 -4px 7px rgba(0,0,0,.45),0 0 10px rgba(255,40,20,.7),0 0 26px rgba(255,40,20,.45);
+ animation:ebtn 1.3s ease-in-out infinite;transition:transform .08s}
+.nav-cta.nav-shop:hover{color:#fff;filter:brightness(1.15);background:radial-gradient(ellipse at 50% 22%,#ffc9c1 0,#ff4a36 32%,#e01a0a 66%,#940c00 100%) padding-box,repeating-linear-gradient(-45deg,#ffcc00 0 6px,#141414 6px 12px) border-box}
+.nav-cta.nav-shop:active{transform:translateY(2px);box-shadow:inset 0 3px 8px rgba(0,0,0,.55),0 0 8px rgba(255,40,20,.6)}
+@keyframes ebtn{0%,100%{box-shadow:inset 0 2px 3px rgba(255,255,255,.5),inset 0 -4px 7px rgba(0,0,0,.45),0 0 8px rgba(255,40,20,.55),0 0 18px rgba(255,40,20,.3)}
+ 50%{box-shadow:inset 0 2px 3px rgba(255,255,255,.6),inset 0 -4px 7px rgba(0,0,0,.35),0 0 14px rgba(255,60,30,1),0 0 38px rgba(255,40,20,.8),0 0 70px rgba(255,40,20,.35)}}
+@media (prefers-reduced-motion:reduce){.nav-cta.nav-shop{animation:none}}
+@media(max-width:650px){.nav-cta.nav-shop{padding:0 10px;min-height:40px;font-size:11px}.nav-ctas .nav-cta:not(.nav-shop){display:none}}
 
 /* ticker + new box */
 .ticker{display:flex;align-items:stretch;height:34px;background:#ffd35c;color:#0a0a0a;overflow:hidden;font:600 13px/34px 'IBM Plex Mono',monospace;letter-spacing:.04em}
