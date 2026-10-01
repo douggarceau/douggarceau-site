@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01T18:27Z",
+ "updated": "2026-10-01T23:54Z",
  "items": [
   {
    "title": "Thoughtful Things Engram: A Weird AI Groovebox Sampler From the Backrooms",
@@ -10,12 +10,12 @@
    "release": true
   },
   {
-   "title": "Audio AI firm Modulate, which runs an AI music detection tool, raises $25M",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVU5zVUkxOWktX0hrZUtKQy1waDA3elNFX2h4clpCaUl0LV9MdlRlLU5vbDRjWjdrRnRpNDE1YkJEcW5EUmxvUmVqSGlrb1lxVVBhLTZfcWdSTnVBQWxIQWp0eUQ2bVJCNzRnMmU2ZHB1NmE2WktqYlh3SHZNQy1kd2owZzZGbmZqWGFsaXhsN2c5NlV4VFlrb2VHZTNCX3l5Tm8yWEpSWklPUDM0emRfZQ?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-09-30",
+   "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
+   "source": "Bloomberg.com",
+   "date": "2026-10-01",
    "kind": "PRODUCT",
-   "release": false
+   "release": true
   },
   {
    "title": "Dr. Zoppa updates AMI-CMMAS generative MIDI plugins (incl. Windows support)",
@@ -68,7 +68,7 @@
   {
    "title": "AI Music Startup Suno Launches New Models That Pay Labels",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOU5fTHJzNkR2N3JZd1NHQndTUFBfSm9KNnJJYmU4eXVtZFQwRWxKQ1pfcEplUjd1bDVndnp0ZkJLYlcwaHBicGNGUXlORnFEMXZ3Y0hWekVjUHREYUJqLWIwMHUyaWhDeHNzQndTUkl5T09KdS1MaWdOd2xUUFE1M3h1dlFvOWlpV2JCV0ZoNVAtWWZLVGVaQTV4SFJQZkxBTS1rajVOb3NHLVhn?oc=5",
-   "source": "bloomberg.com",
+   "source": "Bloomberg.com",
    "date": "2026-09-09",
    "kind": "PRODUCT",
    "release": true
@@ -98,9 +98,17 @@
    "release": false
   },
   {
-   "title": "Watch Suno CEO: AI Could Reinvent How We Experience Music",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdHpkeUFuajE5LWhMSzNMZ1lpSTVab3FwSnU4VjZlTGw1blhxcVhWSjR2U0swUDdZX0NQbjY4Wm9OZTBYUEZfNGpxcHczb0F6aUNBTENTV2kwLVpyZlM0cm9WMW5CczZtNlRPaHZXTk81Mmc3M19YTnFoLTZjXzFwWW9QM3k2cHpNSllPSHM5WFJVUmRLWWItbFlkcFQtbjJSa0pNYy1BdEc?oc=5",
-   "source": "bloomberg.com",
+   "title": "Kelly Clarkson Shares Her \u2018Controversial\u2019 Take on AI: \u2018I Think It\u2019s Welcome to the\u00a0Table\u2019",
+   "link": "https://www.billboard.com/music/pop/kelly-clarkson-loves-ai-controversial-take-1236352403/",
+   "source": "Billboard",
+   "date": "2026-10-01",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Watch Suno's Mikey Shulman on the AI Music Landscape",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRjgtQVltdklKbXBLRFlBeVFScGJCR0k0V2pwcXlvM2xuVHc1eE1vc2xldmE3RXQxSWwxem9UWFlOaGRGSThBT2ZhLXlIMHJqb3doLWJfWEJuLUtCUmRXZ3A4VVl1SzZNOEhRbHZPUUFUbm9VWVhKUHozV3ZVcF9MWi1pc0FMSkplN3JKZ0NtMjFsYVY0c1FxTnhvRU9yYmhOT2tr?oc=5",
+   "source": "Bloomberg.com",
    "date": "2026-10-01",
    "kind": "NEWS",
    "release": false
@@ -119,14 +127,6 @@
    "source": "Rolling Stone",
    "date": "2026-09-30",
    "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "Indie publishers set out seven principles for AI licensing: \u2018The song must be properly valued.\u2019",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcW9uZTMtbnU0S3lRTG43NTFSZlZseklqeXFuVGdtTndSU2s5Tk1aWV9jdUU1SEk3WkZQTG9XR3VnenBua0tmMUx0NTFvdURxMWxfZWxrdTgyaGltTmlXUGNPazh4RkhHV0hEWnR3Vkl3THgxTkVIWlYwQzZZLUxVRUdoUWV1VVhnWk5GX1FZSjc0SV9hNktEd0h1MzdkeDdZamNQRTdMWENHNGlNY3U4dTFwZDd5ZkJKUEJueURTd2NMMkltVE5VemxKcw?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-09-30",
-   "kind": "NEWS",
    "release": false
   },
   {
@@ -204,6 +204,14 @@
    "release": true
   },
   {
+   "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
+   "source": "Bloomberg.com",
+   "date": "2026-10-01",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Dr. Zoppa updates AMI-CMMAS generative MIDI plugins (incl. Windows support)",
    "link": "https://rekkerd.org/dr-zoppa-updates-ami-cmmas-generative-midi-plugins-incl-windows-support/",
    "source": "Rekkerd",
@@ -255,7 +263,7 @@
   "Music Ally musically.com": 1,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -263,9 +271,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 39,
+  "Google News %22AI+music%22": 33,
   "Google News Suno+OR+Udio": 43,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 28,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 27,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 4,
