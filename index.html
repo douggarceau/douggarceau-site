@@ -162,7 +162,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .tagline{font-family:var(--mono);font-size:12px;letter-spacing:.18em}
 /* tablet */
 @media (max-width:1240px){.site-nav{gap:16px}.site-nav a{font-size:13px}.site-logo{font-size:22px!important}.site-header-inner{gap:18px!important}}
-.site-nav a{white-space:nowrap}
+.site-nav a{white-space:nowrap}@media (min-width:1281px){.site-logo{white-space:nowrap}}
+@media (max-width:1560px){.site-nav{gap:20px}.site-logo{font-size:24px!important}}
 @media (max-width:1120px){.site-nav{display:none}.menu{display:block}.site-header-inner{grid-template-columns:1fr auto auto!important;gap:12px!important}}
 @media (max-width:1000px){
  .site-nav{display:none}.menu{display:block}
@@ -247,6 +248,27 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .nb-go{display:inline-block;margin-top:14px;font:700 13px 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#0a0a0a;background:#ffd35c;padding:10px 14px;border-radius:4px}
 @media (min-width:1180px){.newbox{position:absolute;right:24px;top:50%;transform:translateY(-50%);margin:0}.home-hero h1,.hero-copy{max-width:calc(100% - 390px)}}
 @media (max-width:760px){.newbox{width:100%;margin-top:10px}.ticker{font-size:12px}}
+
+/* compact hero: about half the old height */
+.home-hero{min-height:0}
+.home-hero-content{padding:22px 0 24px}
+.home-hero h1{margin:6px 0 8px;font-size:clamp(36px,3.9vw,60px);line-height:.92;max-width:none}
+.hero-copy{font-size:16px;line-height:1.5;max-width:720px}
+.home-hero .button-row{margin-top:16px;gap:10px}
+.home-hero .button{padding:11px 18px;font-size:12px}
+.newbox{width:440px;padding:14px 18px 12px}
+.newbox .nb-title{font-size:30px;margin:2px 0 6px}
+.newbox .nb-list{display:grid;grid-template-columns:1fr 1fr;column-gap:14px}
+.newbox .nb-list span{font-size:14px;padding:5px 0}
+@media (min-width:761px){.newbox .nb-list span{white-space:nowrap}}
+@media (min-width:1180px){.home-hero h1,.hero-copy{max-width:calc(100% - 480px)}}
+@media (max-width:760px){.newbox{width:100%;max-width:100%;box-sizing:border-box}.newbox .nb-list{column-gap:10px}.newbox .nb-list span{font-size:13px;min-width:0}.home-hero h1{font-size:clamp(32px,9vw,48px)}.home-hero .hero-copy{display:none}.home-hero-content{padding:18px 0 20px}}
+/* slim On Tour strip */
+.otb{padding:12px 0 0}
+.otb-in{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;padding:12px 18px}
+.otb h2{font-size:clamp(26px,2.6vw,34px);margin:0;white-space:nowrap}
+.otb-l{flex:1 1 300px;font-size:14px;line-height:1.4}
+.otb-go{margin:0;white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.tk-track{animation:none}.tk-view{overflow-x:auto}.tk-new,.nb-badge,.newbox,.site-nav a.nav-new b{animation:none}}
 
 /* top sign-up */
@@ -380,16 +402,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <span class="nb-badge">NEW</span>
 <span class="nb-title">THE SOUND STUDIO</span>
 <span class="nb-list">
-<span onclick="event.preventDefault();location.href='studio/hart/'"><b style="--d:#f0932b"></b>Mickey Hart: 200 samples</span>
-<span onclick="event.preventDefault();location.href='studio/fx/'"><b style="--d:#e74c3c"></b>Hollywood movie sound FX</span>
-<span onclick="event.preventDefault();location.href='studio/fx/#industrial'"><b style="--d:#a6acaf"></b>Industrial loops &amp; hits</span>
-<span onclick="event.preventDefault();location.href='studio/beats/#k=el'"><b style="--d:#5dade2"></b>Electronic beat maker</span>
-<span onclick="event.preventDefault();location.href='studio/beats/'"><b style="--d:#e67e22"></b>Hip-hop &amp; trap drum machine</span>
+<span onclick="event.preventDefault();location.href='studio/hart/'"><b style="--d:#f0932b"></b>Mickey Hart 200</span>
+<span onclick="event.preventDefault();location.href='studio/fx/'"><b style="--d:#e74c3c"></b>Movie sound FX</span>
+<span onclick="event.preventDefault();location.href='studio/fx/#industrial'"><b style="--d:#a6acaf"></b>Industrial loops</span>
+<span onclick="event.preventDefault();location.href='studio/beats/#k=el'"><b style="--d:#5dade2"></b>Electronic beats</span>
+<span onclick="event.preventDefault();location.href='studio/beats/'"><b style="--d:#e67e22"></b>Hip-hop &amp; trap</span>
 </span>
 <span class="nb-go">PLAY NOW &rarr;</span>
 </a>
 <div class="eyebrow">ONLINE DRUM SCHOOL</div>
-<h1>LEARN DRUMS.<br><span>UNDERSTAND THE</span><br>INSTRUMENT.</h1>
+<h1>LEARN DRUMS.<br><span>UNDERSTAND THE INSTRUMENT.</span></h1>
 <p class="hero-copy">Technique, coordination, groove, reading, independence, drum history and practical musicianship, taught through sound, notation and the kit itself.</p>
 <div class="button-row">
 <a href="level7.html" class="button button-gold">PLAY THE KIT</a>
@@ -416,6 +438,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .otb h2{font-family:var(--display);font-weight:400;font-size:clamp(34px,5vw,58px);line-height:1;margin:8px 0 6px}
 .otb-l{display:block;color:#cfcac0;font-size:16px;max-width:900px}
 .otb-go{display:inline-block;margin-top:10px;font:700 13px var(--mono,monospace);letter-spacing:.12em;color:#ffd35c}
+.otb{padding:12px 0 0}.otb-in{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;padding:12px 18px}.otb h2{font-size:clamp(26px,2.6vw,34px);margin:0;white-space:nowrap}.otb-l{flex:1 1 300px;font-size:14px;line-height:1.4}.otb-go{margin:0;white-space:nowrap}
 @media (prefers-reduced-motion:reduce){.otb-k b{animation:none}}
 </style>
 </section>
