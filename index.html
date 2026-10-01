@@ -393,6 +393,21 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .clockbox{overflow:hidden;max-width:100%}
 @media (min-width:1100px){.topsign{flex-wrap:nowrap}.topsign .ts-box{flex:1 1 auto;max-width:none;grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "row" "note";padding:10px 16px;gap:6px}.topsign .ts-h{font-size:26px}.topsign .clockbox{flex:0 0 auto}.topsign .rotbox{flex:0 0 340px;min-width:0}.topsign .rotbox .hb-h{font-size:26px}}
 </style>
+<script>
+/* Show more stories until a column is as tall as the column(s) beside it. */
+document.head.insertAdjacentHTML("beforeend","<style>.dn-grid>[hidden],.aim-grid>[hidden]{display:none!important}</style>");
+window.fillCol=function(grid,target,base,step){
+ if(!grid) return; var items=[].slice.call(grid.children);
+ items.forEach(function(e,i){e.hidden=i>=base;});
+ var t=target(); if(!t) return;
+ var col=grid.parentElement, n=base;
+ while(n<items.length && col.getBoundingClientRect().height < t-40){
+  for(var k=0;k<step&&n<items.length;k++) items[n++].hidden=false;
+ }
+};
+window.refills=[];window.refill=function(){window.refills.forEach(function(f){try{f();}catch(e){}});};
+(function(){var tm;addEventListener('resize',function(){clearTimeout(tm);tm=setTimeout(refill,200);});addEventListener('load',function(){refill();});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){refill();});})();
+</script>
 </head>
 <body>
 <div class="topsign" id="top-signup">
@@ -511,7 +526,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @media (prefers-reduced-motion:reduce){.dn-live i,.dn-new{animation:none}}
 /* drum video boxes beside the news */
 .dn-wrap{display:grid;gap:20px;grid-template-columns:250px minmax(0,1fr) 250px;grid-template-areas:"l m r"}
-#side-l{grid-area:l}.dn-main{grid-area:m}#side-r{grid-area:r}
+#side-l{grid-area:l}.dn-main{grid-area:m;align-self:start}#side-r{grid-area:r}
 .dn-side{display:flex;flex-direction:column;gap:16px;align-self:start;min-width:0}
 .otr{padding:14px;border:2px solid #c0392b;border-radius:12px;background:#131210}
 .otr h3{font-family:var(--display);font-weight:400;font-size:28px;line-height:1;margin:0 0 10px;color:#fff;display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;white-space:nowrap}
@@ -543,13 +558,19 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 (function(){var C={'Modern Drummer':'#ffd35c','Drumming News Network':'#5dade2','Drummer\'s Review':'#e67e22','Beat It':'#58d68d','Drumeo':'#af7ac5','Sick Drummer Magazine':'#e74c3c','The UK Drum Show':'#48c9b0','Drummerworld':'#ff6b6b','Scott K Fish':'#c39bd3','The Drum Ninja':'#76d7c4','Electronic Drum Advisor':'#85c1e9','drum-tec':'#f1948a','The Drummer\'s Journal':'#d7bde2','MusicRadar':'#ff5e3a'};
 function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
 fetch('assets/news.json?ts='+Date.now()).then(function(r){return r.json();}).then(function(d){
- var g=document.getElementById('dn-grid'), it=(d.items||[]).slice(0,15);
+ var g=document.getElementById('dn-grid'), it=(d.items||[]).slice(0,40);
  if(!it.length){ document.getElementById('drum-news').style.display='none'; return; }
  var now=Date.now();
  g.innerHTML=it.map(function(x){ var age=(now-Date.parse(x.date))/864e5; var dt=new Date(x.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
   return '<a class="dn-item" href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow" style="--c:'+(C[x.source]||'#ffd35c')+'"><span class="dn-meta">'+(age<3?'<span class="dn-new">NEW</span>':'')+esc(x.source)+'<em>'+dt+'</em></span><b>'+esc(x.title)+'</b></a>'; }).join('');
  if(d.updated) document.getElementById('dn-up').textContent='Updated '+new Date(d.updated.replace('Z',':00Z')).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
  g.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&window.gtag)gtag('event','news_click',{url:a.href});});
+ var newsFill=function(){var m=document.querySelector('.dn-main'),L=document.getElementById('side-l'),R=document.getElementById('side-r');
+  var beside=L&&Math.abs(L.getBoundingClientRect().top-m.getBoundingClientRect().top)<40;
+  var cols=getComputedStyle(g).gridTemplateColumns.split(' ').length||1;
+  fillCol(g,function(){return beside?Math.max(L.getBoundingClientRect().height,R.getBoundingClientRect().height):0;},beside?Math.min(8,it.length):Math.min(15,it.length),cols);
+  if(!beside){[].forEach.call(g.children,function(e,i){e.hidden=i>=15;});}};
+ refills.push(newsFill); newsFill();
 }).catch(function(){ document.getElementById('drum-news').style.display='none'; });})();
 </script>
 <script>
@@ -568,7 +589,7 @@ fetch('assets/videos.json?ts='+Date.now()).then(function(r){return r.json();}).t
    f.title=b.getAttribute('aria-label'); f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen'; f.allowFullscreen=true;
    b.replaceWith(f); if(window.gtag) gtag('event','video_play',{id:b.dataset.id});});
  }
- box(document.getElementById('dv-left'),L,'DRUM TV'); box(document.getElementById('dv-right'),R,'GEAR TV');
+ box(document.getElementById('dv-left'),L,'DRUM TV'); setTimeout(refill,50); box(document.getElementById('dv-right'),R,'GEAR TV');
 }).catch(function(){});})();
 </script>
 <script>
@@ -718,10 +739,16 @@ fetch('assets/ai.json?ts='+Date.now()).then(function(r){return r.json();}).then(
  var R=(d.releases||[]).slice(0,6), RL={}; R.forEach(function(x){RL[x.link]=1;});
  if(R.length){ var now=Date.now(); document.getElementById('aim-rel-row').innerHTML=R.map(function(x){var days=Math.max(0,Math.round((now-Date.parse(x.date+'T12:00:00'))/864e5)), when=days<1?'TODAY':days==1?'1 DAY AGO':days+' DAYS AGO';
    return '<a href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow"><span><em>'+when+'</em>'+esc(x.source)+'</span><b>'+esc(x.title)+'</b></a>';}).join(''); document.getElementById('aim-rel').hidden=false; }
- var it=(d.items||[]).filter(function(x){return !RL[x.link];}).slice(0,9); if(it.length<3) return;
+ var it=(d.items||[]).filter(function(x){return !RL[x.link];}).slice(0,24); if(it.length<3) return;
  document.getElementById('aim-grid').innerHTML=it.map(function(x,i){var dt=new Date(x.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
   return '<a class="aim-it'+(i<3?' top':'')+'" href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow" style="--k:'+(K[x.kind]||'#43d7ff')+'"><span class="aim-m"><span class="aim-k">'+(L[x.kind]||'SIGNAL')+'</span>'+esc(x.source)+' &middot; '+dt+'</span><b>'+esc(x.title)+'</b></a>';}).join('');
  document.getElementById('ai-music').hidden=false;
+ var ag=document.getElementById('aim-grid'), aiFill=function(){var r=document.querySelector('.rbt'),l=document.querySelector('.aim-left');
+  var beside=r&&Math.abs(r.getBoundingClientRect().top-l.getBoundingClientRect().top)<40;
+  var cols=getComputedStyle(ag).gridTemplateColumns.split(' ').length||1;
+  if(!beside){[].forEach.call(ag.children,function(e,i){e.hidden=i>=9;});return;}
+  fillCol(ag,function(){return r.getBoundingClientRect().height;},Math.min(cols*2,it.length),cols);};
+ refills.push(aiFill); aiFill();
  document.querySelector('.hwn').addEventListener('click',function(e){var a=e.target.closest('a');if(window.gtag)gtag('event','halloween_ad_click',{url:a?a.getAttribute('href'):'shop/'});});
  document.getElementById('aim-grid').addEventListener('click',function(e){var a=e.target.closest('a');if(a&&window.gtag)gtag('event','ai_news_click',{url:a.href});});
 }).catch(function(){});})();
