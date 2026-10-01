@@ -598,7 +598,18 @@ var red=matchMedia('(prefers-reduced-motion: reduce)').matches;
 <a class="spon aim-spon" href="/advertise/" title="Sponsor this section">POWERED BY <span>YOUR BRAND HERE</span></a>
 </div>
 <div class="aim-rel" id="aim-rel" hidden><div class="aim-rel-h"><span class="aim-rel-b">JUST RELEASED</span><span class="aim-rel-s">New AI music tools from the last 30 days</span></div><div class="aim-rel-row" id="aim-rel-row"></div></div>
-<div class="aim-body"><div class="aim-grid" id="aim-grid"></div>
+<div class="aim-body"><div class="aim-left"><div class="aim-grid" id="aim-grid"></div>
+<div class="xmas" role="region" aria-label="Holiday Gear Shop">
+<span class="xm-garland" aria-hidden="true"></span>
+<span class="xm-lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+<span class="xm-in">
+<span class="xm-k">&#10052; THE AMADEUS &#10052;</span>
+<a class="xm-h" href="shop/">HOLIDAY GEAR SHOP</a>
+<span class="xm-s">Drums, cymbals and electronic kits from the biggest names. Shop early for the drummer on your list!</span>
+<a class="xm-go" href="shop/">CLICK HERE FOR HOLIDAY BUYS &amp; SALES &rarr;</a>
+</span>
+<span class="xm-brands"><a href="shop/#drumsets">DW Collector's</a><a href="shop/#drumsets">Sonor SQ2</a><a href="shop/#drumsets">Tama Star</a><a href="shop/#drumsets">Pearl Reference</a><a href="shop/#drumsets">Yamaha Recording Custom</a><a href="shop/#drumsets">Gretsch USA Custom</a><a href="shop/#drumsets">Ludwig Legacy</a><a href="shop/#snares">Craviotto</a><a href="shop/#snares">Noble &amp; Cooley</a><a href="shop/#snares">A&amp;F Drum Co.</a><a href="shop/#cymbals">Zildjian K</a><a href="shop/#cymbals">Sabian Artisan</a><a href="shop/#cymbals">Paiste Signature</a><a href="shop/#cymbals">Meinl Byzance</a><a href="shop/#cymbals">Istanbul Agop</a><a href="shop/#electronic">Roland V-Drums</a><a href="shop/#electronic">Yamaha DTX</a><a href="shop/#electronic">Alesis Strata</a><a href="shop/#sticks">Vic Firth</a><a href="shop/#sticks">Promark</a><a href="shop/#hardware">Evans</a><a href="shop/#hardware">Remo</a><a href="shop/#hardware">DW 9000</a><a href="shop/#percussion">LP Percussion</a></span>
+</div></div>
 <aside class="rbt" aria-labelledby="rbt-h">
 <h3 id="rbt-h">ROBOT DRUMMERS<i aria-hidden="true">_</i></h3>
 <p class="rbt-s">Robotic arms, prosthetics and robots breaking new ground behind the kit.</p>
@@ -644,6 +655,30 @@ var red=matchMedia('(prefers-reduced-motion: reduce)').matches;
 .aim-rel-row span{font:11px var(--mono,monospace);letter-spacing:.06em;color:#7fbf8a}
 .aim-rel-row em{font-style:normal;font-weight:700;color:#39ff14;margin-right:6px}
 @media (prefers-reduced-motion:reduce){.aim-rel-b{animation:none}}
+.aim-left{display:flex;flex-direction:column;gap:14px;min-width:0}
+.xmas{position:relative;display:block;overflow:hidden;padding:46px 20px 16px;border:3px solid #c8102e;border-radius:10px;color:#fff;
+ background:radial-gradient(circle at 12% 110%,rgba(255,255,255,.12) 0 2px,transparent 3px) 0 0/34px 34px,radial-gradient(circle at 70% 40%,rgba(255,255,255,.10) 0 1.5px,transparent 2.5px) 0 0/27px 27px,linear-gradient(160deg,#0f5132,#0a3d24 55%,#062716);
+ box-shadow:0 0 0 3px #f5c542 inset,0 0 26px rgba(200,16,46,.45);animation:xmglow 2s ease-in-out infinite}
+@keyframes xmglow{50%{box-shadow:0 0 0 3px #f5c542 inset,0 0 42px rgba(245,197,66,.55)}}
+.xm-garland{position:absolute;left:-10px;right:-10px;top:-14px;height:40px;background:radial-gradient(ellipse 16px 13px at 50% 60%,#1b7a3e 0 60%,transparent 62%) 0 0/24px 30px,radial-gradient(ellipse 14px 11px at 50% 40%,#0f5a2c 0 60%,transparent 62%) 12px 6px/24px 30px;filter:drop-shadow(0 3px 2px rgba(0,0,0,.5))}
+.xm-lights{position:absolute;left:0;right:0;top:20px;display:flex;justify-content:space-around;padding:0 6px}
+.xm-lights i{width:9px;height:13px;border-radius:50% 50% 45% 45%;background:var(--b);box-shadow:0 0 6px var(--b),0 0 14px var(--b);animation:xmb 1.2s steps(2,start) infinite;position:relative}
+.xm-lights i::before{content:"";position:absolute;left:2px;top:-4px;width:5px;height:4px;background:#2b2b2b;border-radius:1px}
+.xm-lights i:nth-child(4n+1){--b:#ff2d2d}.xm-lights i:nth-child(4n+2){--b:#ffd93b;animation-delay:.3s}.xm-lights i:nth-child(4n+3){--b:#39ff6a;animation-delay:.6s}.xm-lights i:nth-child(4n){--b:#3bb3ff;animation-delay:.9s}
+.xm-lights i:nth-child(odd){transform:translateY(5px) rotate(-8deg)}.xm-lights i:nth-child(even){transform:rotate(8deg)}
+@keyframes xmb{50%{opacity:.25;box-shadow:none}}
+.xm-in{display:block;text-align:center;position:relative}
+.xm-k{display:block;font:700 12px var(--mono,monospace);letter-spacing:.3em;color:#f5c542}
+.xm-h{display:block;text-decoration:none!important;font-family:var(--display);font-size:clamp(38px,4.6vw,60px);line-height:.95;letter-spacing:.03em;color:#fff;text-shadow:0 0 2px #fff,3px 3px 0 #c8102e,0 0 22px rgba(255,255,255,.35);margin:4px 0}
+.xm-s{display:block;color:#d9f2e1;font-size:15px;margin:0 auto 10px;max-width:560px}
+.xm-go{display:inline-block;text-decoration:none!important;font:700 14px var(--mono,monospace);letter-spacing:.1em;color:#fff;background:linear-gradient(180deg,#e8243f,#a50d24);border:2px solid #f5c542;border-radius:30px;padding:10px 20px;box-shadow:0 4px 0 #6b0716,0 0 18px rgba(232,36,63,.6);animation:xmgo 1s ease-in-out infinite}
+@keyframes xmgo{50%{transform:scale(1.05)}}
+.xm-go:hover{filter:brightness(1.15)}
+.xm-brands{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:14px}
+.xm-brands a{font:600 12px var(--mono,monospace);letter-spacing:.04em;color:#fff;text-decoration:none;padding:4px 9px;border-radius:14px;background:rgba(0,0,0,.35);border:1px solid rgba(245,197,66,.55)}
+.xm-brands a:nth-child(3n+1){border-color:rgba(255,77,77,.7)}.xm-brands a:nth-child(3n+2){border-color:rgba(57,255,106,.55)}
+.xm-brands a:hover{background:#c8102e;border-color:#f5c542}
+@media (prefers-reduced-motion:reduce){.xmas,.xm-lights i,.xm-go{animation:none}}
 .aim-body{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;align-items:start}
 .aim-body .aim-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
 @media (max-width:980px){.aim-body{grid-template-columns:minmax(0,1fr)}}
@@ -672,10 +707,11 @@ fetch('assets/ai.json?ts='+Date.now()).then(function(r){return r.json();}).then(
  var R=(d.releases||[]).slice(0,6), RL={}; R.forEach(function(x){RL[x.link]=1;});
  if(R.length){ var now=Date.now(); document.getElementById('aim-rel-row').innerHTML=R.map(function(x){var days=Math.max(0,Math.round((now-Date.parse(x.date+'T12:00:00'))/864e5)), when=days<1?'TODAY':days==1?'1 DAY AGO':days+' DAYS AGO';
    return '<a href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow"><span><em>'+when+'</em>'+esc(x.source)+'</span><b>'+esc(x.title)+'</b></a>';}).join(''); document.getElementById('aim-rel').hidden=false; }
- var it=(d.items||[]).filter(function(x){return !RL[x.link];}).slice(0,12); if(it.length<3) return;
+ var it=(d.items||[]).filter(function(x){return !RL[x.link];}).slice(0,9); if(it.length<3) return;
  document.getElementById('aim-grid').innerHTML=it.map(function(x,i){var dt=new Date(x.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
   return '<a class="aim-it'+(i<3?' top':'')+'" href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow" style="--k:'+(K[x.kind]||'#43d7ff')+'"><span class="aim-m"><span class="aim-k">'+(L[x.kind]||'SIGNAL')+'</span>'+esc(x.source)+' &middot; '+dt+'</span><b>'+esc(x.title)+'</b></a>';}).join('');
  document.getElementById('ai-music').hidden=false;
+ document.querySelector('.xmas').addEventListener('click',function(e){var a=e.target.closest('a');if(window.gtag)gtag('event','holiday_ad_click',{url:a?a.getAttribute('href'):'shop/'});});
  document.getElementById('aim-grid').addEventListener('click',function(e){var a=e.target.closest('a');if(a&&window.gtag)gtag('event','ai_news_click',{url:a.href});});
 }).catch(function(){});})();
 </script>
