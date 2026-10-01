@@ -1,12 +1,11 @@
 {
- "updated": "2026-10-01T14:54Z",
+ "updated": "2026-10-01T15:06Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
   "Drummer's Review (8)",
   "Beat It (8)",
   "Drumeo (8)",
-  "Sick Drummer Magazine (8)",
   "The UK Drum Show (8)",
   "Drummerworld (8)",
   "Scott K Fish (5)",
@@ -16,8 +15,10 @@
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
- "errors": {},
- "raw_count": 63,
+ "errors": {
+  "Sick Drummer Magazine": "The read operation timed out"
+ },
+ "raw_count": 58,
  "items": [
   {
    "title": "LOUISE BARTLE | From Bedroom Drummer to Bloc Party",
@@ -65,12 +66,6 @@
    "title": "Colin Woolway has passed away",
    "link": "https://en.beatit.tv/colin-woolway-has-passed-away/",
    "source": "Beat It",
-   "date": "2026-09-29"
-  },
-  {
-   "title": "Kevin Paradis \u2013 Agonanist \u2013 Effacement \u2013 Exclusive Drum Play-through",
-   "link": "https://sickdrummermagazine.com/news/latest-news/kevin-paradis-agonanist-effacement-drum-play-through/",
-   "source": "Sick Drummer Magazine",
    "date": "2026-09-29"
   },
   {
@@ -170,12 +165,6 @@
    "date": "2026-09-18"
   },
   {
-   "title": "WOODIES Drumsticks Review",
-   "link": "https://sickdrummermagazine.com/s1-news/c82-product-reviews/woodies-drumsticks-review-why-the-5a-long-won-me-over/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-09-17"
-  },
-  {
    "title": "Drumming For WILL SMITH | Greg Clark Jr. | The UK Drum Show",
    "link": "https://drummersreview.com/news/drumming-for-will-smith-greg-clark-jr-the-uk-drum-show/",
    "source": "Drummer's Review",
@@ -185,12 +174,6 @@
    "title": "Tama Starclassic Performer \u2018Blacked Out Black\u2019 Kit",
    "link": "https://en.beatit.tv/tama-starclassic-performer-blacked-out-black-kit/",
    "source": "Beat It",
-   "date": "2026-09-16"
-  },
-  {
-   "title": "Zed Amarin \u2013 Esodic \u2013 Of The Grave \u2013 Drum Play-through",
-   "link": "https://sickdrummermagazine.com/news/latest-news/zed-amarin-esodic-of-the-grave-drum-play-through/",
-   "source": "Sick Drummer Magazine",
    "date": "2026-09-16"
   },
   {
@@ -258,6 +241,24 @@
    "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1997-janes-addiction-relapse-tour-kit/",
    "source": "Modern Drummer",
    "date": "2026-09-06"
+  },
+  {
+   "title": "The Drum Kit That Gave Stephen Perkins a New Voice",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1992-porno-for-pyros-drum-kit/",
+   "source": "Modern Drummer",
+   "date": "2026-09-03"
+  },
+  {
+   "title": "Millenium unveils the MPS-1500 E-Drum Kit",
+   "link": "https://drummersreview.com/news/millenium-unveils-the-mps-1500-e-drum-kit/",
+   "source": "Drummer's Review",
+   "date": "2026-09-02"
+  },
+  {
+   "title": "Sabian HHX Evolution Performance Set review",
+   "link": "https://thedrumninja.com/sabian-hhx-evolution-performance-set-review/",
+   "source": "The Drum Ninja",
+   "date": "2026-09-02"
   }
  ]
 }

@@ -1,117 +1,148 @@
 {
- "updated": "2026-10-01T14:54Z",
+ "updated": "2026-10-01T15:06Z",
  "items": [
-  {
-   "id": "gWY5yb_i3fI",
-   "title": "Zildjian | All FX Cymbals Showcase",
-   "source": "Zildjian",
-   "date": "2026-10-01"
-  },
-  {
-   "id": "mD4FiJDRi54",
-   "title": "Meinl Cymbals - Aaron Gillespie - \"Generation No Surrender\" drum cam YouTube",
-   "source": "Meinl",
-   "date": "2026-10-01"
-  },
-  {
-   "id": "wrJYLQpL1MU",
-   "title": "Can You Play the Pataflafla? #drumeo #rudiments #drumlessons",
-   "source": "Drumeo",
-   "date": "2026-10-01"
-  },
-  {
-   "id": "avhAB0cR6tc",
-   "title": "Vic Firth | All Artist Signature Series Sticks",
-   "source": "Vic Firth",
-   "date": "2026-09-30"
-  },
-  {
-   "id": "W_e5X7KshuM",
-   "title": "Vic Firth | All Signature Sticks",
-   "source": "Vic Firth",
-   "date": "2026-09-30"
-  },
   {
    "id": "KvbqMhYvJS8",
    "title": "Meinl Cymbals - Pure Alloy Custom - Jeeves \"Deuce Deuce\" Demo",
    "source": "Meinl",
-   "date": "2026-09-30"
+   "date": "2026-09-30",
+   "kind": "DEMO"
   },
   {
-   "id": "T6nLd4MVEDA",
-   "title": "Learning \u201cWait and Bleed\u201d in 30 Minutes #drumeo #codyash #slipknot",
-   "source": "Drumeo",
-   "date": "2026-09-30"
+   "id": "iMUlR2OMOMc",
+   "title": "Bill Bruford Interview: Chatting About 'Group Chat' by Pete Roth Trio - Yesshift Ep 247",
+   "source": "Drumtalk TV",
+   "date": "2026-09-29",
+   "kind": "INTERVIEW"
   },
   {
-   "id": "UEEu_a5p398",
-   "title": "Zildjian Foundry Sessions | Jordi Radnoti - \"Deadweight\" by Turning Jane",
-   "source": "Zildjian",
-   "date": "2026-09-29"
+   "id": "BjsyDARUQTc",
+   "title": "Drumming Injury Talk - September 25, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-09-25",
+   "kind": "INTERVIEW"
   },
   {
-   "id": "qmXYzj3XmeM",
-   "title": "Meinl Cymbals - Berj Fazlian - \"The Great Imposter\" by Christophe Namour",
+   "id": "XyA1KXcfYHM",
+   "title": "Drum Talk TV News Desk Report - September 25, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-09-25",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "e-6zjzE73iI",
+   "title": "Meinl Cymbals - Byzance Traditional Thin Crashes Comparison",
    "source": "Meinl",
-   "date": "2026-09-29"
+   "date": "2026-09-23",
+   "kind": "DEMO"
   },
   {
-   "id": "cUlbWlrTMcE",
-   "title": "How Fast Can Jelly Roll\u2019s Drummer Learn Joey Jordison\u2019s \u201cWait And Bleed\u201d?",
-   "source": "Drumeo",
-   "date": "2026-09-29"
+   "id": "nmSChxUkCZQ",
+   "title": "Meinl Cymbals - Classics Custom Dark - Jeeves \"BRKBEAT\" Demo",
+   "source": "Meinl",
+   "date": "2026-09-22",
+   "kind": "DEMO"
   },
   {
-   "id": "JBsOMIcNwwM",
-   "title": "Shulamit Ran: Quadrophony",
-   "source": "Vic Firth",
-   "date": "2026-09-24"
-  },
-  {
-   "id": "LkEeVrtpAW8",
-   "title": "Zildjian | K Custom Family - Setups & Sound Demo",
-   "source": "Zildjian",
-   "date": "2026-09-24"
+   "id": "X3_EIcsiW1w",
+   "title": "CONNOR DENIS Interview || The Hang \u2013 with Nick D\u2019Virgilio",
+   "source": "Gretsch",
+   "date": "2026-09-19",
+   "kind": "INTERVIEW"
   },
   {
    "id": "OfX-I8nj23E",
    "title": "Classic Oak 6.5x14 Snare | Tuning and Head Comparison",
    "source": "Ludwig",
-   "date": "2026-08-27"
+   "date": "2026-08-27",
+   "kind": "DEMO"
   },
   {
-   "id": "IlTWdRPAqc8",
-   "title": "Set up your DW 9000X Boom Cymbal Stands (DWCP9700XIL, DWCP9701XIL)",
-   "source": "DW Drums",
-   "date": "2026-08-19"
+   "id": "yWToFFWz_bk",
+   "title": "Blake Richardson (BETWEEN THE BURIED AND ME) Soundcheck @Shibuya CYCLONE",
+   "source": "Tama",
+   "date": "2026-08-11",
+   "kind": "DEMO"
   },
   {
-   "id": "Jb99-vY-A3s",
-   "title": "Set up your DW 9000X Tom Stands (DWCP9991X, DWCP9992X)",
-   "source": "DW Drums",
-   "date": "2026-08-19"
+   "id": "yRrleOl5ly8",
+   "title": "PAISTE CYMBALS - Kiko Freitas - Studio Session & Interview",
+   "source": "Paiste",
+   "date": "2026-08-07",
+   "kind": "INTERVIEW"
   },
   {
-   "id": "NWyEN7WnTYU",
-   "title": "Set up your DW 9000X AirLift\u2122 Cylinders (DWSMALCYLS,DWSMALCYLL)",
-   "source": "DW Drums",
-   "date": "2026-08-19"
+   "id": "fVdgo2_A7IE",
+   "title": "THOM TALK: Will Kennedy & Matt Jordan",
+   "source": "Pearl",
+   "date": "2026-07-05",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "Wg4h0ZE54X8",
+   "title": "Justin Brown Soundcheck | TAMA Starclassic Bubinga",
+   "source": "Tama",
+   "date": "2026-05-30",
+   "kind": "DEMO"
+  },
+  {
+   "id": "wHfI_-hayhY",
+   "title": "Sabian Roundtable conversation with Mark Love, Nort Hargrove and Randy Ross",
+   "source": "Sabian",
+   "date": "2026-05-11",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "_vF153uCc0w",
+   "title": "PAISTE CYMBAL SOUNDCHECK - PST X Swiss Flanger Crash 12\"",
+   "source": "Paiste",
+   "date": "2026-05-01",
+   "kind": "DEMO"
   }
  ],
  "log": {
-  "Vic Firth": "@VicFirthCompany UC9N2JaiIWYR2GEN1tgHAczA Vic Firth (5)",
-  "Zildjian @Zildjian_Company": "error: HTTP Error 404: Not Found",
-  "Zildjian @zildjiancymbals": "error: HTTP Error 404: Not Found",
-  "Zildjian": "@ZildjianCompany UC7UDMFxe8e5JxiUIGe38mRA Avedis Zildjian Company (6)",
-  "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (6)",
-  "Ludwig @LudwigDrumsOfficial": "error: HTTP Error 404: Not Found",
-  "Ludwig @ludwig_drums": "error: HTTP Error 404: Not Found",
-  "Ludwig @LudwigDrumCo": "error: HTTP Error 404: Not Found",
-  "Ludwig": "search UCxdiLfkkokXj09724KntoOw Ludwig Drums (6)",
-  "Roland @Roland": "error: HTTP Error 404: Not Found",
-  "Roland": "@RolandGlobal UC4vbiZMU_yrheYVZH393-Zw RolandChannel (1)",
-  "Meinl": "@MeinlCymbals UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (6)",
-  "Drumeo @Drumeo": "error: HTTP Error 404: Not Found",
-  "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (3)"
+  "DW Drums": "search UC7NJyulp413F4y0xgL2orQQ DW Drums (0)",
+  "DW Drums skip UCXk1RvEDG5g-BCO8eI2-HLA": "DWe Drums",
+  "DW Drums skip UCk2D2acNXVmxKGflhB1S4pQ": "Danny Walker",
+  "Ludwig @LudwigDrums": "error: HTTP Error 404: Not Found",
+  "Ludwig": "search UCxdiLfkkokXj09724KntoOw Ludwig Drums (1)",
+  "Meinl": "@MeinlCymbals UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
+  "Meinl Drum Festival skip UCfWNjFlMw-OGiLttkFGfHCA": "meinldrumfestival",
+  "Meinl Drum Festival skip UCZjkQtRELyrearglF3lYa8Q": "MEINL Cymbals",
+  "Meinl Drum Festival skip UCp8n1rNtUUAl3ey9BDt-2hw": "MEINL Percussion Official",
+  "Meinl Drum Festival skip UCSuQUEW5HbwvQ9WRabqPELA": "Miguel Lamas",
+  "Meinl Drum Festival skip UCYAoif_MylBRX3v_lpzPOmg": "Cinbatteuse",
+  "Meinl Drum Festival": "not found",
+  "Roland": "search UCYQ4C_WcAjvEQiuMZhrt0gw Roland India (0)",
+  "Roland skip UCSxjUZznZGt-ynhmtsCxjXA": "THE ROLAND SHOW\u3010\u516c\u5f0f\u3011",
+  "Roland skip UCTsHVLTRhZSiqdSHcYVlw6w": "The Sheriff & Roland Channel",
+  "Drumeo": "search UCgGqEjAQ2D_dP-NsMZPW0rw Drumeo Clips (0)",
+  "Drumeo skip UCaNHpCKGR4oON6vwAUKsToQ": "Brandon Toews",
+  "Drumeo skip UChPVoBpjfJngjoKjxrwGSTw": "Drum Beats Online",
+  "Drumeo skip UC3unJShm6iXtw9QgDnb9KPg": "66Samus",
+  "Tama @tamadrumsofficial": "error: HTTP Error 404: Not Found",
+  "Tama": "search UCTSkpJG7QWeungk9q6Je2_g TAMA Drums Official (2)",
+  "Pearl @PearlDrumsUSA": "error: HTTP Error 404: Not Found",
+  "Pearl @PearlDrums": "error: HTTP Error 404: Not Found",
+  "Pearl": "search UCmGi7DMBXl7aTOG1HDbRWoQ Pearl Drums (1)",
+  "Gretsch": "search UCCi7ihBj53YSjNI9lY7nXtA gretschdrumsusa (1)",
+  "Sabian": "search UC7nv8pKAI5cANMCwF2XUWkA Sabian Cymbalholics (1)",
+  "Paiste @PaisteCymbals": "error: HTTP Error 404: Not Found",
+  "Paiste @paiste": "error: HTTP Error 404: Not Found",
+  "Paiste": "search UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (2)",
+  "Modern Drummer @ModernDrummer": "error: HTTP Error 404: Not Found",
+  "Modern Drummer @moderndrummermagazine": "error: HTTP Error 404: Not Found",
+  "Modern Drummer": "search UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (0)",
+  "Modern Drummer skip UCgDmm1_mjrdcyxqEf8lRvLA": "Frank Briggs",
+  "Modern Drummer skip UCygO7LVfWjI_qo2vunUiCdg": "Kevin Tutaj",
+  "Modern Drummer skip UCyn_Rfo3LT5SADp0ac4-wVw": "Matt Bissonette",
+  "Modern Drummer skip UC1SL0T2Mwy0N652l-FhSoSA": "Ulysses Owens Jr.",
+  "Drumtalk TV": "@DrumtalkTV UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
+  "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
+  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+\ud835\udff1\ud835\uddf8\u300d",
+  "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
+  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
+  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
  }
 }
