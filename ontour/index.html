@@ -35,6 +35,7 @@ h1 span{color:var(--gold)}
 .act{display:flex;flex-direction:column;border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:12px;background:#121212;padding:18px 18px 16px;transition:transform .12s,border-color .12s}
 .act:hover{transform:translateY(-3px);border-color:var(--gold)}
 .act.none{border-top-color:#444}
+.act.hit{border-color:#ffd35c;box-shadow:0 0 0 3px rgba(255,211,92,.4),0 0 40px rgba(255,211,92,.35)}
 .g{font:12px 'IBM Plex Mono',monospace;letter-spacing:.08em;color:#8d8b85;text-transform:uppercase}
 .act h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:36px;line-height:1;margin:4px 0 12px;letter-spacing:.5px}
 .role{font:700 11px 'IBM Plex Mono',monospace;letter-spacing:.16em;color:var(--gold);margin-top:2px}
@@ -80,11 +81,12 @@ function draw(){
   var body=has?(x.dr.length?'<div class="role">DRUMS</div><div class="who">'+names(x.dr)+chk+'</div>':'')+(x.pc.length?'<div class="role">PERCUSSION</div><div class="who p">'+names(x.pc)+'</div>':'')
    :'<div class="role">DRUMS</div><div class="who na">'+(x.note&&/solo|DJ/.test(x.note)?esc(x.note):'Touring drummer not announced')+'</div>';
   var note=has&&x.note?'<p class="note">'+esc(x.note)+'</p>':(!has&&x.note&&!/solo|DJ/.test(x.note)?'<p class="note">'+esc(x.note)+'</p>':'');
-  return '<article class="act'+(has?'':' none')+'"><span class="g">'+esc(x.g)+'</span><h2>'+esc(x.a)+'</h2>'+body+note+
+  return '<article id="'+x.slug+'" class="act'+(has?'':' none')+'"><span class="g">'+esc(x.g)+'</span><h2>'+esc(x.a)+'</h2>'+body+note+
    '<div class="foot"><span class="dates">'+x.n+' show'+(x.n==1?'':'s')+' through '+esc(x.u)+'</span><a href="https://concertful.com/tour/'+x.slug+'/" target="_blank" rel="noopener">Tour dates &rarr;</a>'+(x.src?'<a class="src" href="'+esc(x.src)+'" target="_blank" rel="noopener nofollow">source</a>':'')+'</div></article>';
  }).join('');
 }
 draw();
+(function(){var h=decodeURIComponent(location.hash.slice(1)),el=h&&document.getElementById(h);if(el){el.classList.add('hit');setTimeout(function(){el.scrollIntoView({block:'center'});},50);}})();
 document.getElementById('tip').onclick=function(e){e.preventDefault();location.href='mai'+'lto:'+['douggarceau','gmail.com'].join('@')+'?subject='+encodeURIComponent('On Tour tip');};
 </script>
 <script src="/assets/hype.js?v=1" defer></script>
