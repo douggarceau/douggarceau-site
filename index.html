@@ -386,8 +386,6 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .cb-date{display:flex;align-items:center;gap:3px;padding:4px 10px;border-radius:5px;background:linear-gradient(180deg,#110303,#050101);box-shadow:inset 0 0 8px rgba(0,0,0,.9)}
 .cb-dl{font:700 10px var(--mono,monospace);letter-spacing:.18em;color:#ff6a55;text-shadow:0 0 6px rgba(255,42,26,.8);margin-right:5px}
 .cb-dot{width:3px;height:3px;border-radius:50%;background:#ff2a1a;box-shadow:0 0 4px #ff2a1a;align-self:flex-end;margin:0 1px 2px}
-.cb-views{display:flex;align-items:center;padding:3px 10px;border-radius:5px;background:linear-gradient(180deg,#110303,#050101);box-shadow:inset 0 0 8px rgba(0,0,0,.9)}
-#cb-views{font:700 15px/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;color:#ff3b28;text-shadow:0 0 4px #ff2a1a,0 0 10px rgba(255,42,26,.7)}
 .cb-brand{font:700 8px var(--mono,monospace);letter-spacing:.35em;color:#c9a27a;opacity:.7;margin-top:1px}
 @media (max-width:700px){.clockbox{width:100%;min-width:0;max-width:100%;box-sizing:border-box}.cb-brand{letter-spacing:.2em}}
 @media (max-width:380px){.cb-main svg{height:28px!important}.cb-date svg{height:14px!important}.cb-side{display:none}}
@@ -419,7 +417,7 @@ window.refills=[];window.refill=function(){window.refills.forEach(function(f){tr
 <div class="ts-row"><input type="email" id="temail" name="email" autocomplete="email" placeholder="you@email.com" required><button type="submit">SIGN ME UP</button></div>
 <p class="ts-note" id="tnote" aria-live="polite"></p>
 </form>
-<div class="clockbox" role="img" aria-label="Current date and time" id="clockbox"><div class="cb-face"><div class="cb-main" id="cb-main"></div><div class="cb-side"><span class="cb-pm" id="cb-pm">PM</span><span class="cb-al">ALARM</span></div></div><div class="cb-date" id="cb-date"></div><div class="cb-views" title="Homepage views"><span class="cb-dl">VIEWS</span><span id="cb-views">&nbsp;------</span></div></div>
+<div class="clockbox" role="img" aria-label="Current date and time" id="clockbox"><div class="cb-face"><div class="cb-main" id="cb-main"></div><div class="cb-side"><span class="cb-pm" id="cb-pm">PM</span><span class="cb-al">ALARM</span></div></div><div class="cb-date" id="cb-date"></div><div class="cb-brand">AMADEUS</div></div>
 <div class="rotbox" id="rotbox" aria-live="polite"><a class="hartbox rb on" href="studio/hart/" style="--bc:#f0932b"><span class="hb-top"><b>ALL NEW</b> 200 SAMPLES</span><span class="hb-h">The Sounds of Mickey Hart</span><span class="hb-s">of the Grateful Dead</span><span class="hb-go">PLAY THEM NOW &rarr;</span></a><a class="hartbox rb" href="shop/#drumsets" style="--bc:#ffd35c" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUM SETS</span><span class="hb-h">DW Drums</span><span class="hb-s">Pro drum sets, explained</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#cymbals" style="--bc:#e6b450" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> CYMBALS</span><span class="hb-h">Zildjian Cymbals</span><span class="hb-s">Crashes, rides, hats and more</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#hardware" style="--bc:#5dade2" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUMHEADS</span><span class="hb-h">Evans Drumheads</span><span class="hb-s">Find the right head for your sound</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#sticks" style="--bc:#e67e22" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> STICKS</span><span class="hb-h">Vic Firth Sticks</span><span class="hb-s">Sticks, brushes and mallets</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#drumsets" style="--bc:#c0392b" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUM SETS</span><span class="hb-h">Ludwig Drums</span><span class="hb-s">Classic kits and snares</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#hardware" style="--bc:#a6acaf" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUMHEADS</span><span class="hb-h">Remo Drumheads</span><span class="hb-s">Heads for every drum</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#cymbals" style="--bc:#f1c40f" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> CYMBALS</span><span class="hb-h">Paiste Cymbals</span><span class="hb-s">Bright, musical cymbals</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#electronic" style="--bc:#9477ff" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> ELECTRONIC DRUMS</span><span class="hb-h">Roland V-Drums</span><span class="hb-s">Electronic kits and pads</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#percussion" style="--bc:#58d68d" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> PERCUSSION</span><span class="hb-h">LP Percussion</span><span class="hb-s">Congas, bongos, shakers and more</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb10" href="advertise/" data-adv="1" style="--bc:#ff3b2f" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>ADVERTISE</b> YOUR BRAND HERE</span><span class="hb-h">Your Drum Shop Here</span><span class="hb-s">Put your brand in front of drummers</span><span class="hb-go">GET IN TOUCH &rarr;</span></a></div>
 </div>
 <header class="site-header">
@@ -1027,7 +1025,6 @@ document.getElementById('fxb-stop').addEventListener('click',function(e){ e.prev
 <div class="home-container footer-layout">
 <div><b>AMADEUS SCHOOL OF DRUMS</b><div class="tagline">MUSIC BUILDS BRIGHTER HUMANS</div></div>
 <nav class="footer-links" aria-label="Footer"><a href="beginner/">Beginner</a><a href="intermediate/">Intermediate</a><a href="advanced/">Advanced</a><a href="drumroom/">Drum Room</a><a href="grooves/">Grooves</a><a href="book/index.html">The Book</a><a href="advertise/">Advertise</a></nav>
-<div><span id="views" aria-live="polite"></span></div>
 </div>
 <p class="adv-line" style="margin:14px 0 0;font-size:13px;color:#9a9a93">Advertiser-supported website. Advertising inquiries: <a href="advertise/" class="adv-mail-x" style="color:#ffd35c">contact for details</a></p>
 </footer>
@@ -1048,25 +1045,6 @@ function signup(formId,emailId,noteId,where){
 }
 signup('f','email','note','newsletter');
 signup('tf','temail','tnote','top_bar');
-</script>
-<script>
-(function(){
-  var foot=document.getElementById('views'), led=document.getElementById('cb-views'), key='douggarceau-com-home-views';
-  var base='https://countapi.mileshilliard.com/api/v1/';
-  function show(n){ if(foot) foot.textContent=n.toLocaleString()+(n===1?' view':' views');
-    if(led){ var t=String(n); while(t.length<6) t='0'+t; led.textContent=t.replace(/\B(?=(\d{3})+(?!\d))/g,','); } }
-  var last=0; try{last=parseInt(localStorage.getItem('dg-views'),10)||0;}catch(e){}
-  if(last) show(last);
-  var seen=false; try{seen=sessionStorage.getItem('dg-counted')==='1';}catch(e){}
-  function go(tries){
-    fetch(base+(seen?'get/':'hit/')+key,{cache:'no-store'}).then(function(r){return r.json();}).then(function(d){
-      var n=parseInt(d.value,10); if(isNaN(n)) throw 0;
-      try{sessionStorage.setItem('dg-counted','1');localStorage.setItem('dg-views',n);}catch(e){}
-      seen=true; show(n);
-    }).catch(function(){ if(tries>0) setTimeout(function(){go(tries-1);},3000); });
-  }
-  go(2);
-})();
 </script>
 <script>
 /* Live previews: load each page only when it scrolls near, then scale it to fit its frame. */
