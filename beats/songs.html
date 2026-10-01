@@ -86,6 +86,6 @@ f.addEventListener('input',function(){var q=f.value.toLowerCase().trim(),any=fal
 document.querySelectorAll('ul.songs').forEach(function(u){var vis=0;u.querySelectorAll('li').forEach(function(li){var ok=!q||li.getAttribute('data-s').indexOf(q)>=0;li.style.display=ok?'':'none';if(ok)vis++;});u.previousElementSibling.style.display=vis?'':'none';u.style.display=vis?'':'none';if(vis)any=true;});
 no.style.display=any?'none':'block';});})();
 </script>
-<script src="/assets/hype.js?v=1" defer></script>
+<script src="/assets/hype.js?v=2" defer></script>
 </body>
 </html>

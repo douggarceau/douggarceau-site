@@ -107,8 +107,8 @@ function hello(){var path=here(),t=HELLO[path];if(!t||path==='/')return;var key=
 window.amadeusSiteTourStart=function(){location.href=STOUR[0][0]+'?stour=1';};
 
 /* ---------- chat window ---------- */
-var css='.ask-l{position:fixed;right:16px;bottom:16px;z-index:1990;display:flex;align-items:center;gap:8px;padding:5px 14px 5px 5px;border-radius:999px;border:2px solid #ffd35c;background:#111;color:#fff;font:700 13px "IBM Plex Sans",system-ui,sans-serif;cursor:pointer;box-shadow:0 0 18px rgba(255,211,92,.45);animation:askp 2.2s ease-in-out infinite}'+
-'.ask-l img{width:40px;height:40px;border-radius:50%;object-fit:cover}@keyframes askp{50%{box-shadow:0 0 30px rgba(255,211,92,.8)}}'+
+var css='.ask-l{position:fixed;right:16px;bottom:16px;z-index:1990;display:flex;align-items:center;gap:8px;padding:4px 16px 4px 4px;border-radius:999px;border:2px solid #ffd35c;background:#111;color:#fff;font:700 15px "IBM Plex Sans",system-ui,sans-serif;cursor:pointer;box-shadow:0 0 18px rgba(255,211,92,.45);animation:askp 2.2s ease-in-out infinite}'+
+'.ask-l img,.ask-l video{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid #ffd35c;background:#000}.ask-l span{text-align:left;line-height:1.15}.ask-l small{display:block;font:600 10px "IBM Plex Mono",monospace;color:#e8c27a;letter-spacing:.06em;margin-top:2px}@keyframes askp{50%{box-shadow:0 0 30px rgba(255,211,92,.8)}}'+
 '.ask{position:fixed;right:16px;bottom:16px;z-index:1995;width:min(370px,calc(100vw - 32px));height:min(520px,calc(100vh - 100px));display:flex;flex-direction:column;border-radius:14px;overflow:hidden;background:#fffdf5;color:#141414;box-shadow:0 0 0 3px #ffd35c,0 14px 40px rgba(0,0,0,.6);font:15px/1.45 "IBM Plex Sans",system-ui,sans-serif}'+
 '.ask[hidden],.ask-l[hidden]{display:none}.ask-h{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#141414;color:#fff}.ask-h img{width:40px;height:40px;border-radius:50%;border:2px solid #ffd35c;object-fit:cover}.ask-h b{display:block;color:#ffd35c}.ask-h small{font-size:11px;color:#aaa}'+
 '.ask-h .x{margin-left:auto;background:none;border:0;color:#fff;font-size:22px;cursor:pointer}.ask-h [data-amute]{background:#222;border:1px solid #444;color:#ddd;border-radius:6px;font:600 11px "IBM Plex Sans",sans-serif;padding:4px 7px;cursor:pointer}'+
@@ -118,7 +118,7 @@ var css='.ask-l{position:fixed;right:16px;bottom:16px;z-index:1990;display:flex;
 '@media (prefers-reduced-motion:reduce){.ask-l{animation:none}}';
 function build(){
  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
- var l=document.createElement('button');l.className='ask-l';l.innerHTML='<img src="/assets/amadeus-face.jpg" alt="">Ask Amadeus';document.body.appendChild(l);
+ var l=document.createElement('button');l.className='ask-l';l.innerHTML='<video src="/assets/amadeus-dog.mp4" poster="/assets/amadeus-face.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><span>Ask Amadeus<small>Your drum school guide</small></span>';document.body.appendChild(l);
  var p=document.createElement('div');p.className='ask';p.hidden=true;p.setAttribute('role','dialog');p.setAttribute('aria-label','Ask Amadeus');
  p.innerHTML='<div class="ask-h"><img src="/assets/amadeus-face.jpg" alt=""><div><b>Amadeus</b><small>Site guide &middot; ask about the school</small></div><button class="x" aria-label="Close">&times;</button></div><div class="ask-log"></div><div class="ask-q"></div><form class="ask-f"><input placeholder="Ask a question" aria-label="Ask a question" maxlength="200"><button>Ask</button></form>';
  p.querySelector('.ask-h .x').insertAdjacentHTML('beforebegin','<button data-amute aria-pressed="false"></button>');
