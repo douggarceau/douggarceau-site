@@ -7,6 +7,7 @@ on:
     paths:
       - tools/fetch_news.py
       - tools/fetch_videos.py
+      - tools/fetch_ai.py
       - .github/workflows/drum-news.yml
 permissions:
   contents: write
@@ -21,9 +22,11 @@ jobs:
       - run: python tools/fetch_news.py
       - run: python tools/fetch_videos.py
         continue-on-error: true
+      - run: python tools/fetch_ai.py
+        continue-on-error: true
       - name: Commit if changed
         run: |
           git config user.name "drum-news-bot"
           git config user.email "drum-news-bot@users.noreply.github.com"
-          git add assets/news.json assets/videos.json 2>/dev/null || git add assets/news.json
+          for f in assets/news.json assets/videos.json assets/ai.json; do [ -f "$f" ] && git add "$f"; done
           git diff --cached --quiet || (git commit -m "Update drum industry news" && git pull --rebase && git push)
