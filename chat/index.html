@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RRYVXZXES0"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-RRYVXZXES0');</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drum Chat · Amadeus School of Drums</title>
+<meta name="description" content="Drum Chat: talk gear, practice, vintage drums, gigs and electronic kits with drummers everywhere.">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://douggarceau.com/chat/">
+<meta property="og:title" content="Drum Chat · Amadeus School of Drums"><meta property="og:url" content="https://douggarceau.com/chat/"><meta property="og:image" content="https://douggarceau.com/logo-share.jpg">
+<link rel="icon" href="/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0a0a;--ink:#f2f0ea;--muted:#a9a69e;--line:#2a2a2a;--panel:#121212;--gold:#ffd35c;--up:#ff7a00;--down:#5dade2}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:15.5px;line-height:1.5}
+a{color:var(--gold)}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1180px;margin:0 auto;padding:14px 16px 80px}
+nav.top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;font-size:15px;padding:2px 0 10px}nav.top a{text-decoration:none}
+.head{display:flex;flex-wrap:wrap;align-items:flex-end;gap:8px 18px;margin:0 0 12px}
+h1{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(44px,6vw,72px);line-height:.9;margin:0;letter-spacing:1px}h1 span{color:var(--gold)}
+.head p{margin:0 0 4px;color:var(--muted);flex:1 1 300px}
+.me{margin-left:auto;font:13px 'IBM Plex Mono',monospace;color:var(--muted);text-align:right}
+.layout{display:grid;grid-template-columns:220px minmax(0,1fr) 260px;gap:16px;align-items:start}
+.side,.rail{display:flex;flex-direction:column;gap:12px}
+.box{border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:12px}
+.box h3{margin:0 0 8px;font:700 11px 'IBM Plex Mono',monospace;letter-spacing:.18em;color:var(--muted)}
+.topics button{display:flex;align-items:center;gap:8px;width:100%;text-align:left;background:none;border:0;color:var(--ink);padding:7px 8px;border-radius:6px;font-size:14.5px}
+.topics button i{width:9px;height:9px;border-radius:50%;background:var(--c);box-shadow:0 0 6px var(--c)}
+.topics button:hover{background:#1b1b1b}.topics button.on{background:#222;color:var(--gold);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border:0;border-radius:8px;padding:10px 14px;background:var(--gold);color:#111;font-weight:700;font-size:14px;text-decoration:none}
+.btn.ghost{background:none;color:var(--ink);border:1px solid #3a3a3a}
+.btn.small{padding:6px 10px;font-size:13px}
+.bar{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin:0 0 10px}
+.bar button{background:#141414;border:1px solid #333;color:#ddd;border-radius:999px;padding:6px 13px;font-size:13.5px;font-weight:600}
+.bar button.on{background:var(--gold);border-color:var(--gold);color:#111}
+.bar input{flex:1 1 200px;min-width:0;background:#141414;border:1px solid #333;color:#fff;border-radius:999px;padding:7px 14px;font:inherit}
+.post{display:grid;grid-template-columns:44px minmax(0,1fr);gap:10px;border:1px solid var(--line);border-radius:10px;background:var(--panel);padding:10px 12px;margin:0 0 8px}
+.post:hover{border-color:#444}
+.vote{display:flex;flex-direction:column;align-items:center;gap:2px}
+.vote button{background:none;border:0;color:#777;font-size:18px;line-height:1;padding:2px 6px;border-radius:4px}
+.vote button.up.on,.vote button.up:hover{color:var(--up)}.vote button.dn.on,.vote button.dn:hover{color:var(--down)}
+.vote b{font:700 14px 'IBM Plex Mono',monospace}
+.meta{font:12px 'IBM Plex Mono',monospace;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center}
+.tag{color:#111;background:var(--c);padding:1px 7px;border-radius:3px;font-weight:700;font-size:11px}
+.post h2{margin:3px 0 3px;font-size:17px;line-height:1.3;font-weight:600}
+.post h2 a{color:var(--ink);text-decoration:none}.post h2 a:hover{color:var(--gold)}
+.snip{color:#cfcdc6;font-size:14.5px;margin:0 0 6px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.acts{display:flex;flex-wrap:wrap;gap:12px;font:600 12.5px 'IBM Plex Mono',monospace}
+.acts a,.acts button{background:none;border:0;color:var(--muted);padding:0;text-decoration:none}
+.acts a:hover,.acts button:hover{color:var(--gold)}
+.full .body{white-space:pre-wrap;word-wrap:break-word;color:#e4e2dc;margin:6px 0 10px}
+.comment{border-left:2px solid #333;padding:6px 0 6px 12px;margin:8px 0}
+.comment .body{white-space:pre-wrap;word-wrap:break-word;margin:2px 0 4px}
+textarea,input.f{width:100%;background:#0d0d0d;border:1px solid #333;color:#fff;border-radius:8px;padding:9px 11px;font:inherit}
+textarea{min-height:110px;resize:vertical}
+select{background:#0d0d0d;border:1px solid #333;color:#fff;border-radius:8px;padding:9px 11px;font:inherit}
+.form{display:flex;flex-direction:column;gap:8px}
+.note{font-size:13px;color:var(--muted)}
+.err{color:#ff8a7a;font-size:13.5px}
+.ok{color:#8fe388;font-size:13.5px}
+.empty{color:var(--muted);text-align:center;padding:30px 10px;border:1px dashed #333;border-radius:10px}
+.rules li{margin:0 0 6px;font-size:13.5px;color:#cfcdc6}
+.rules ol{margin:0;padding-left:18px}
+.demo{background:#2a1d00;border:1px solid #6b4b00;color:#ffd99a;border-radius:8px;padding:8px 12px;font-size:13.5px;margin:0 0 10px}
+.soon{border:2px solid var(--gold);border-radius:12px;padding:20px;background:#121110;margin:0 0 14px}
+@media(max-width:1000px){.layout{grid-template-columns:minmax(0,1fr)}.side{order:2}.rail{order:3}.topics{display:flex;flex-wrap:wrap;gap:4px}.topics button{width:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav class="top"><a href="../index.html">&larr; Amadeus School of Drums</a><span style="display:flex;flex-wrap:wrap;gap:6px 18px"><a href="../studio/">Sound Studio</a><a href="../shop/">Gear Shop</a><a href="../ontour/">On Tour</a><a href="../vintage/">Vintage Shops</a></span></nav>
+<div class="head"><h1>Drum <span>Chat</span></h1><p>Talk gear, practice, vintage drums, gigs and e-kits with drummers everywhere, and buy, sell or trade gear in the free classifieds.</p><div class="me" id="me"></div></div>
+<div id="banner"></div>
+<div class="layout">
+<aside class="side">
+<div class="box"><button class="btn" id="newbtn" style="width:100%">+ NEW POST</button></div>
+<div class="box"><h3>TOPICS</h3><div class="topics" id="topics"></div></div>
+</aside>
+<main id="main"></main>
+<aside class="rail">
+<div class="box" id="authbox"></div>
+<div class="box rules"><h3>HOUSE RULES</h3><ol>
+<li>Be kind. No insults, harassment or hate.</li>
+<li>Drums and music only. Buy and sell in For Sale and Wanted, never in other topics.</li>
+<li>Don't post your home address or phone number. Arrange details in replies.</li>
+<li>You must be 13 or older to post.</li>
+<li>Use Report on anything that breaks the rules.</li>
+</ol></div>
+<div class="box"><h3>MORE TO PLAY</h3><div style="display:flex;flex-direction:column;gap:6px;font-size:14px"><a href="../studio/beats/">Beat Maker</a><a href="../studio/fx/">Movie FX board</a><a href="../grooves/">Groove Library</a><a href="../rudiments/">The 40 Rudiments</a></div></div>
+</aside>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+/* ===== Settings: paste the two values from Supabase > Project Settings > API ===== */
+var SUPABASE_URL = '';
+var SUPABASE_ANON_KEY = '';
+/* ================================================================================ */
+var TOPICS=[['all','All topics','#ffd35c'],['general','General','#ffd35c'],['gear','Gear Talk','#ff7a00'],['practice','Practice & Technique','#39ff14'],['kits','Show Your Kit','#00b7ff'],['vintage','Vintage Drums','#c8963e'],['gigs','Gigs & Bands','#ff2d6f'],['electronic','E-Drums & MIDI','#b45cff'],['tech','AI & Tech','#00f0d0'],['forsale','For Sale','#58d68d'],['wanted','Wanted','#f1c40f']];
+var CLASS={forsale:1,wanted:1};
+var TC={};TOPICS.forEach(function(t){TC[t[0]]=t;});
+var DEMO=/[?&]demo=1/.test(location.search)||!SUPABASE_URL;
+var sb=null,user=null,profile=null,myVotes={},state={topic:'all',sort:'hot',q:''};
+function $(id){return document.getElementById(id);}
+function esc(t){return String(t==null?'':t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function ago(d){var s=(Date.now()-new Date(d))/1000;if(s<60)return 'just now';if(s<3600)return Math.floor(s/60)+'m ago';if(s<86400)return Math.floor(s/3600)+'h ago';if(s<86400*30)return Math.floor(s/86400)+'d ago';return new Date(d).toLocaleDateString();}
+function isAdmin(){return user&&user.email==='douggarceau@gmail.com';}
+
+/* ---------- data layer: Supabase, or sample data for previewing ---------- */
+var api;
+if(!DEMO){
+ sb=supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);
+ api={
+  session:function(){return sb.auth.getSession().then(function(r){return r.data.session&&r.data.session.user;});},
+  onAuth:function(f){sb.auth.onAuthStateChange(function(e,s){f(s&&s.user);});},
+  login:function(email){return sb.auth.signInWithOtp({email:email,options:{emailRedirectTo:location.origin+location.pathname}});},
+  logout:function(){return sb.auth.signOut();},
+  profile:function(id){return sb.from('profiles').select('*').eq('id',id).maybeSingle().then(function(r){return r.data;});},
+  setName:function(name){return sb.from('profiles').insert({id:user.id,username:name}).then(function(r){if(r.error)throw r.error;});},
+  posts:function(){return sb.from('post_feed').select('*').order('created_at',{ascending:false}).limit(300).then(function(r){if(r.error)throw r.error;return r.data;});},
+  post:function(id){return sb.from('post_feed').select('*').eq('id',id).maybeSingle().then(function(r){return r.data;});},
+  comments:function(id){return sb.from('comment_feed').select('*').eq('post_id',id).order('created_at').then(function(r){return r.data||[];});},
+  myVotes:function(){return user?sb.from('votes').select('post_id,value').eq('user_id',user.id).then(function(r){var m={};(r.data||[]).forEach(function(v){m[v.post_id]=v.value;});return m;}):Promise.resolve({});},
+  vote:function(pid,val){return val?sb.from('votes').upsert({post_id:pid,user_id:user.id,value:val}):sb.from('votes').delete().eq('post_id',pid).eq('user_id',user.id);},
+  addPost:function(p){return sb.from('posts').insert(p).select('id').single().then(function(r){if(r.error)throw r.error;return r.data.id;});},
+  addComment:function(pid,body){return sb.from('comments').insert({post_id:pid,body:body}).then(function(r){if(r.error)throw r.error;});},
+  delPost:function(id){return sb.from('posts').delete().eq('id',id);},
+  delComment:function(id){return sb.from('comments').delete().eq('id',id);},
+  report:function(pid,cid,reason){return sb.from('reports').insert({post_id:pid||null,comment_id:cid||null,reason:reason});}
+ };
+}else{
+ var H=3600e3,now=Date.now(),D={posts:[
+  {id:1,topic:'vintage',title:'Found a 1966 Ludwig Super Classic in my uncle\'s attic. What should I check first?',body:'Blue oyster pearl, all original badges. The heads are ancient. Where do I start before I play it?',created_at:new Date(now-2*H),username:'attic_find',score:24,replies:2},
+  {id:2,topic:'practice',title:'Paradiddle-diddle at 140: what finally made it click for you?',body:'I can do 120 clean but 140 falls apart on the left hand.',created_at:new Date(now-5*H),username:'lefty_lou',score:15,replies:1},
+  {id:3,topic:'gear',title:'K Constantinople or Byzance Jazz for a first pro ride?',body:'Mostly small-group jazz and some recording.',created_at:new Date(now-9*H),username:'swing8',score:11,replies:0},
+  {id:4,topic:'electronic',title:'Plugged my e-kit into The Kit on this site over USB and it just worked',body:'No drivers. Hi-hat pedal even works. Anyone mapped a ride bell?',created_at:new Date(now-26*H),username:'midi_mike',score:9,replies:0},
+  {id:6,topic:'forsale',title:'Sample listing: 14x5.5 chrome snare, great shape',body:'Sample classified so you can see how listings look.',price:'$300 or best offer',location:'Nashville, TN',created_at:new Date(now-3*H),username:'sample_seller',score:3,replies:0},
+  {id:5,topic:'gigs',title:'Wedding band drummers: how do you handle in-ear click on the first dance?',body:'',created_at:new Date(now-50*H),username:'gigpro',score:4,replies:0}],
+  comments:{1:[{id:1,post_id:1,body:'Check the bearing edges and the snare beds before anything else.',created_at:new Date(now-1.5*H),username:'edge_nerd'},{id:2,post_id:1,body:'Don\'t refinish it! Original wrap is worth way more.',created_at:new Date(now-1*H),username:'vintage_vic'}],2:[{id:3,post_id:2,body:'Slow it down to 100 with accents only. Took me two weeks.',created_at:new Date(now-4*H),username:'rudiment_rita'}]},
+  nid:100};
+ var demoUser=null;
+ api={
+  session:function(){return Promise.resolve(demoUser);},onAuth:function(){},
+  login:function(email){demoUser={id:'u1',email:email};setTimeout(function(){start();},10);return Promise.resolve({});},
+  logout:function(){demoUser=null;return Promise.resolve();},
+  profile:function(){return Promise.resolve(profile);},
+  setName:function(n){profile={id:'u1',username:n};return Promise.resolve();},
+  posts:function(){return Promise.resolve(D.posts.slice());},
+  post:function(id){return Promise.resolve(D.posts.filter(function(p){return p.id==id;})[0]);},
+  comments:function(id){return Promise.resolve((D.comments[id]||[]).slice());},
+  myVotes:function(){return Promise.resolve(myVotes);},
+  vote:function(pid,val){var p=D.posts.filter(function(x){return x.id==pid;})[0];p.score+=val-(myVotes[pid]||0);return Promise.resolve();},
+  addPost:function(p){var id=++D.nid;D.posts.unshift({id:id,topic:p.topic,title:p.title,body:p.body,price:p.price,location:p.location,created_at:new Date(),username:profile.username,user_id:'u1',score:0,replies:0});return Promise.resolve(id);},
+  addComment:function(pid,b){(D.comments[pid]=D.comments[pid]||[]).push({id:++D.nid,post_id:pid,body:b,created_at:new Date(),username:profile.username,user_id:'u1'});D.posts.forEach(function(p){if(p.id==pid)p.replies++;});return Promise.resolve();},
+  delPost:function(id){D.posts=D.posts.filter(function(p){return p.id!=id;});return Promise.resolve();},
+  delComment:function(){return Promise.resolve();},
+  report:function(){return Promise.resolve();}
+ };
+}
+
+/* ---------- UI ---------- */
+function banner(){
+ if(!SUPABASE_URL) $('banner').innerHTML='<div class="soon"><b style="color:var(--gold)">Drum Chat is opening soon.</b> <span class="note">You\'re looking at a preview with sample posts.</span></div>';
+ else if(DEMO) $('banner').innerHTML='<div class="demo">Preview mode with sample posts. Nothing here is saved.</div>';
+}
+function renderTopics(){
+ $('topics').innerHTML=TOPICS.map(function(t){return (t[0]==='forsale'?'<h3 style="margin:10px 0 4px;width:100%">FREE CLASSIFIEDS</h3>':'')+'<button data-t="'+t[0]+'" class="'+(state.topic===t[0]?'on':'')+'" style="--c:'+t[2]+'"><i></i>'+esc(t[1])+'</button>';}).join('');
+}
+$('topics').onclick=function(e){var b=e.target.closest('button');if(!b)return;state.topic=b.dataset.t;location.hash='';renderTopics();route();};
+function renderAuth(){
+ var b=$('authbox');
+ if(!user){b.innerHTML='<h3>JOIN THE CHAT</h3><div class="form"><input class="f" id="em" type="email" placeholder="you@email.com" autocomplete="email"><button class="btn" id="lg">EMAIL ME A LOGIN LINK</button><div class="note">No password. We email you a one-tap link.</div><div id="lgm"></div></div>';
+  $('lg').onclick=function(){var em=$('em').value.trim();if(!/^\S+@\S+\.\S+$/.test(em)){$('lgm').innerHTML='<div class="err">Enter a valid email.</div>';return;}
+   $('lg').disabled=true;api.login(em).then(function(r){if(r&&r.error)throw r.error;$('lgm').innerHTML=DEMO?'':'<div class="ok">Check your inbox (and spam) for the login link.</div>';}).catch(function(x){$('lgm').innerHTML='<div class="err">'+esc(x.message||'Could not send the link.')+'</div>';}).then(function(){$('lg').disabled=false;});};
+  $('me').textContent='';return;}
+ if(!profile){b.innerHTML='<h3>PICK A USERNAME</h3><div class="form"><input class="f" id="un" maxlength="20" placeholder="drummer_name"><button class="btn" id="unb">SAVE</button><div class="note">3 to 20 letters, numbers or _. Don\'t use your real full name.</div><div id="unm"></div></div>';
+  $('unb').onclick=function(){var n=$('un').value.trim();if(!/^[A-Za-z0-9_]{3,20}$/.test(n)){$('unm').innerHTML='<div class="err">3 to 20 letters, numbers or underscores.</div>';return;}
+   api.setName(n).then(function(){return start();}).catch(function(x){$('unm').innerHTML='<div class="err">'+(/duplicate|unique/i.test(x.message||'')?'That name is taken.':esc(x.message))+'</div>';});};
+  $('me').textContent=user.email;return;}
+ b.innerHTML='<h3>SIGNED IN</h3><div style="font-weight:600;color:var(--gold)">'+esc(profile.username)+'</div><div class="note" style="margin:2px 0 8px">'+(isAdmin()?'Moderator':'Member')+'</div><button class="btn ghost small" id="lo">Sign out</button>';
+ $('lo').onclick=function(){api.logout().then(function(){user=null;profile=null;myVotes={};renderAuth();route();});};
+ $('me').innerHTML='Posting as <b style="color:var(--gold)">'+esc(profile.username)+'</b>';
+}
+function needLogin(){if(user&&profile)return false;var e=$('em')||$('un');if(e){e.focus();e.scrollIntoView({block:'center',behavior:'smooth'});}return true;}
+function voteHtml(p){var v=myVotes[p.id]||0;return '<div class="vote"><button class="up'+(v>0?' on':'')+'" data-v="1" data-p="'+p.id+'" aria-label="Upvote">&#9650;</button><b>'+p.score+'</b><button class="dn'+(v<0?' on':'')+'" data-v="-1" data-p="'+p.id+'" aria-label="Downvote">&#9660;</button></div>';}
+function tag(t){var c=TC[t]||TC.general;return '<span class="tag" style="--c:'+c[2]+'">'+esc(c[1])+'</span>';}
+function cls(p){if(!CLASS[p.topic])return '';return (p.price?'<span style="color:#58d68d;font-weight:700">'+esc(p.price)+'</span>':'')+(p.location?'<span>&#128205; '+esc(p.location)+'</span>':'');}
+function hot(p){var h=(Date.now()-new Date(p.created_at))/36e5;return (p.score+p.replies*0.5+1)/Math.pow(h+2,1.5);}
+var cache=[];
+function list(){
+ var m=$('main');m.innerHTML='<div class="bar"><button data-s="hot">Hot</button><button data-s="new">New</button><button data-s="top">Top</button><input id="q" type="search" placeholder="Search Drum Chat" value="'+esc(state.q)+'"></div><div id="list"><div class="empty">Loading&hellip;</div></div>';
+ m.querySelectorAll('.bar button').forEach(function(b){b.classList.toggle('on',b.dataset.s===state.sort);b.onclick=function(){state.sort=b.dataset.s;list();};});
+ $('q').oninput=function(){state.q=this.value;draw();};
+ api.posts().then(function(ps){cache=ps;draw();}).catch(function(x){$('list').innerHTML='<div class="empty">Could not load posts. '+esc(x.message||'')+'</div>';});
+}
+function draw(){
+ var q=state.q.trim().toLowerCase(),ps=cache.filter(function(p){return (state.topic==='all'||p.topic===state.topic)&&(!q||(p.title+' '+p.body+' '+p.username).toLowerCase().indexOf(q)>=0);});
+ ps.sort(state.sort==='new'?function(a,b){return new Date(b.created_at)-new Date(a.created_at);}:state.sort==='top'?function(a,b){return b.score-a.score;}:function(a,b){return hot(b)-hot(a);});
+ $('list').innerHTML=ps.length?ps.map(function(p){return '<article class="post">'+voteHtml(p)+'<div><div class="meta">'+tag(p.topic)+'<span>'+esc(p.username)+'</span><span>'+ago(p.created_at)+'</span>'+cls(p)+'</div><h2><a href="#p'+p.id+'">'+esc(p.title)+'</a></h2>'+(p.body?'<p class="snip">'+esc(p.body)+'</p>':'')+'<div class="acts"><a href="#p'+p.id+'">&#128172; '+p.replies+' '+(p.replies===1?'reply':'replies')+'</a><button data-share="'+p.id+'">Share</button></div></div></article>';}).join(''):'<div class="empty">No posts here yet. Start the conversation!</div>';
+}
+function full(id){
+ var m=$('main');m.innerHTML='<div class="bar"><button id="back">&larr; Back to Drum Chat</button></div><div id="pv"><div class="empty">Loading&hellip;</div></div>';
+ $('back').onclick=function(){location.hash='';};
+ Promise.all([api.post(id),api.comments(id)]).then(function(r){var p=r[0],cs=r[1];if(!p){$('pv').innerHTML='<div class="empty">This post was removed.</div>';return;}
+  var mine=user&&(p.user_id===user.id);
+  $('pv').innerHTML='<article class="post full">'+voteHtml(p)+'<div><div class="meta">'+tag(p.topic)+'<span>'+esc(p.username)+'</span><span>'+ago(p.created_at)+'</span>'+cls(p)+'</div><h2>'+esc(p.title)+'</h2>'+(p.body?'<div class="body">'+esc(p.body)+'</div>':'')+
+   (CLASS[p.topic]?'<p class="note" style="border-left:3px solid #58d68d;padding-left:10px">Reply below to contact the seller. Stay safe: meet in a public place, inspect gear before paying, and never wire money or pay with gift cards. Amadeus School of Drums doesn\'t handle sales and can\'t guarantee any listing.</p>':'')+'<div class="acts"><button data-share="'+p.id+'">Share</button><button data-rep="p'+p.id+'">Report</button>'+((mine||isAdmin())?'<button data-delp="'+p.id+'">Delete</button>':'')+'</div>'+
+   '<h3 style="font:700 11px IBM Plex Mono,monospace;letter-spacing:.18em;color:var(--muted);margin:16px 0 4px">'+cs.length+' '+(cs.length===1?'REPLY':'REPLIES')+'</h3>'+
+   cs.map(function(c){var own=user&&c.user_id===user.id;return '<div class="comment"><div class="meta"><span style="color:var(--gold)">'+esc(c.username)+'</span><span>'+ago(c.created_at)+'</span></div><div class="body">'+esc(c.body)+'</div><div class="acts"><button data-rep="c'+c.id+'">Report</button>'+((own||isAdmin())?'<button data-delc="'+c.id+'">Delete</button>':'')+'</div></div>';}).join('')+
+   '<div class="form" style="margin-top:12px"><textarea id="rb" maxlength="2000" placeholder="Write a reply"></textarea><div><button class="btn" id="rs">REPLY</button></div><div id="rm"></div></div></div></article>';
+  $('rs').onclick=function(){if(needLogin())return;var t=$('rb').value.trim();if(!t)return;$('rs').disabled=true;api.addComment(p.id,t).then(function(){if(window.gtag)gtag('event','chat_reply');full(id);}).catch(function(x){$('rm').innerHTML='<div class="err">'+esc(x.message)+'</div>';$('rs').disabled=false;});};
+ });
+}
+function compose(){
+ if(needLogin())return;
+ var m=$('main');m.innerHTML='<div class="box"><h3>NEW POST</h3><div class="form"><select id="nt">'+TOPICS.slice(1).map(function(t){return '<option value="'+t[0]+'"'+(state.topic===t[0]?' selected':'')+'>'+esc(t[1])+'</option>';}).join('')+'</select><input class="f" id="nti" maxlength="140" placeholder="Title"><div id="clf" style="display:none;gap:8px"><input class="f" id="npr" maxlength="40" placeholder="Price (e.g. $450 or best offer)"><input class="f" id="nlo" maxlength="60" placeholder="City, state"></div><textarea id="nb" maxlength="5000" placeholder="Say more (optional)"></textarea><div style="display:flex;gap:8px"><button class="btn" id="ns">POST</button><button class="btn ghost" id="nc">Cancel</button></div><div id="nm"></div></div></div>';
+ var sw=function(){$('clf').style.display=CLASS[$('nt').value]?'flex':'none';$('nti').placeholder=$('nt').value==='forsale'?'What are you selling? (e.g. 1972 Ludwig Supraphonic 400)':$('nt').value==='wanted'?'What are you looking for?':'Title';};$('nt').onchange=sw;sw();
+ $('nc').onclick=function(){location.hash='';route();};
+ $('ns').onclick=function(){var t=$('nti').value.trim();if(t.length<3){$('nm').innerHTML='<div class="err">Give it a title (at least 3 characters).</div>';return;}
+  $('ns').disabled=true;api.addPost((function(){var o={topic:$('nt').value,title:t,body:$('nb').value.trim()};if(CLASS[o.topic]){o.price=$('npr').value.trim()||null;o.location=$('nlo').value.trim()||null;}return o;})()).then(function(id){if(window.gtag)gtag('event','chat_post');location.hash='p'+id;}).catch(function(x){$('nm').innerHTML='<div class="err">'+esc(x.message)+'</div>';$('ns').disabled=false;});};
+}
+$('newbtn').onclick=function(){location.hash='new';};
+document.addEventListener('click',function(e){
+ var v=e.target.closest('.vote button');
+ if(v){if(needLogin())return;var pid=+v.dataset.p,val=+v.dataset.v,cur=myVotes[pid]||0,nv=cur===val?0:val;
+  api.vote(pid,nv).then(function(){var d=nv-cur;myVotes[pid]=nv;cache.forEach(function(p){if(p.id===pid)p.score+=DEMO?0:d;});
+   var box=v.parentNode;box.querySelector('b').textContent=(+box.querySelector('b').textContent)+d;box.querySelector('.up').classList.toggle('on',nv>0);box.querySelector('.dn').classList.toggle('on',nv<0);});return;}
+ var s=e.target.closest('[data-share]');if(s){var u=location.origin+location.pathname+'#p'+s.dataset.share;if(navigator.share)navigator.share({title:'Drum Chat',url:u}).catch(function(){});else if(navigator.clipboard)navigator.clipboard.writeText(u).then(function(){s.textContent='Link copied';});return;}
+ var r=e.target.closest('[data-rep]');if(r){if(needLogin())return;var k=r.dataset.rep;api.report(k[0]==='p'?+k.slice(1):null,k[0]==='c'?+k.slice(1):null,'').then(function(){r.textContent='Reported. Thanks.';r.disabled=true;});return;}
+ var dp=e.target.closest('[data-delp]');if(dp){if(!window.confirm||confirm('Delete this post?'))api.delPost(+dp.dataset.delp).then(function(){location.hash='';});return;}
+ var dc=e.target.closest('[data-delc]');if(dc){api.delComment(+dc.dataset.delc).then(function(){route();});return;}
+});
+function route(){var h=location.hash;if(/^#p\d+$/.test(h))full(+h.slice(2));else if(h==='#new')compose();else list();}
+addEventListener('hashchange',route);
+function start(){
+ return api.session().then(function(u){user=u||null;return user?api.profile(user.id):null;}).then(function(p){profile=p||null;return api.myVotes();}).then(function(v){myVotes=v||{};renderAuth();route();});
+}
+api.onAuth(function(u){user=u||null;start();});
+banner();renderTopics();start();
+</script>
+<script src="/assets/hype.js?v=1" defer></script>
+</body>
+</html>
