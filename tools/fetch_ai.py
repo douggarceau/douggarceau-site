@@ -1,7 +1,7 @@
 """Fetch the newest AI-in-music stories into assets/ai.json.
 Runs on GitHub Actions with the news job. Keeps only headlines about AI and music,
 puts drum-related ones first, and tags each as DRUMS, PROBLEM, PRODUCT or NEWS."""
-import json, re, urllib.request, email.utils, datetime, html
+import json, re, urllib.request, urllib.parse, email.utils, datetime, html
 from xml.etree import ElementTree as ET
 
 # (name, feed url, needs a music word too?) - tech-only feeds must also mention music
@@ -36,7 +36,17 @@ MUSIC = re.compile(r"music|song|drum|beat|audio|artist|label|record|sample|produ
 DRUMS = re.compile(r"drum|drummer|percussion|beat ?maker|groove|rhythm|cymbal|snare|\bkit\b|808", re.I)
 PROBLEM = re.compile(r"lawsuit|\bsue[sd]?\b|copyright|infring|ban(s|ned)?\b|fake|deepfake|scam|fraud|strike|royalt|stream(ing)? farm|stolen|protest|backlash|threat|settle|unlicensed|backlash|lawmakers|regulat", re.I)
 DEAL = re.compile(r"on sale|\bsale\b|% off|\bdeal\b|deals\b|discount|black friday|giveaway|coupon", re.I)
-PRODUCT = re.compile(r"sampler|groovebox|instrument|model\b|launch|releas|unveil|introduc|debut|plugin|plug-in|app\b|update|announc|new\b|now available|beta|tool", re.I)
+PRODUCT = re.compile(r"sampler|groovebox|instrument|launch|releas|unveil|introduc|debut|plugin|plug-in|\bapp\b|now available|beta|\btool", re.I)
+# Google News results are kept only from these outlets
+TRUSTED = {s.lower() for s in ["Billboard", "Rolling Stone", "Variety", "The Hollywood Reporter", "Music Business Worldwide", "MusicRadar",
+    "Music Ally", "Digital Music News", "The Verge", "TechCrunch", "WIRED", "Wired", "Pitchfork", "NME", "The Guardian", "BBC", "BBC News",
+    "Reuters", "Associated Press", "AP News", "The New York Times", "Mashable", "Engadget", "Gearnews", "gearnews.com", "MusicTech",
+    "CDM Create Digital Music", "Rekkerd.org", "Mixmag", "DJ Mag", "Resident Advisor", "Forbes", "Fast Company", "Ars Technica",
+    "Gizmodo", "Attack Magazine", "Sound On Sound", "Drumeo", "Modern Drummer", "The Independent", "Los Angeles Times", "NPR",
+    "Bloomberg", "Bloomberg.com", "Financial Times", "The Wall Street Journal", "Axios", "CNN", "CNBC", "Consequence", "Stereogum",
+    "Spin", "Complex", "Hypebot", "Music Week", "Synthtopia", "MusicRadar.com", "Tom's Guide", "TechRadar", "9to5Mac", "Mixmag Asia",
+    "Yahoo", "Yahoo Entertainment", "Loudwire", "Guitar World", "Ultimate Classic Rock", "Drummer's Review", "edm.com", "EDM.com"]}
+NOT_MUSIC = re.compile(r"washing|laundry|dryer|brake|oil drum|tumble", re.I)
 UA = {"User-Agent": "Mozilla/5.0 (compatible; AmadeusDrumNews/1.0; +https://douggarceau.com/)"}
 
 def when(s):
@@ -70,7 +80,10 @@ for name, url, need_music in FEEDS:
                 if so is not None and (so.text or "").strip():
                     src = so.text.strip()
                     title = re.sub(r"\s+-\s+" + re.escape(src) + r"\s*$", "", title)
+                if src.lower() not in TRUSTED: continue
+            if "%" in title: title = urllib.parse.unquote_plus(title)
             if not title or not link.startswith("http") or not dt: continue
+            if NOT_MUSIC.search(title): continue
             if DEAL.search(title): continue
             if not (AI.search(title) or AI_CI.search(title)): continue
             if need_music and not MUSIC.search(title): continue
@@ -84,11 +97,15 @@ for name, url, need_music in FEEDS:
 cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=60)).strftime("%Y-%m-%d")
 items = [i for i in items if i["date"] >= cutoff]
 items.sort(key=lambda i: i["date"], reverse=True)
-seen, out = set(), []
+STOP = set("the a an and of to in for on with is are its it at by from as new ai music says say".split())
+def words(t): return {w for w in re.findall(r"[a-z0-9$]+", t.lower()) if w not in STOP and len(w) > 2}
+# the same story from several outlets: keep the first (newest), prefer music outlets for ties
+out = []
 for i in items:
-    k = re.sub(r"\W+", "", i["title"].lower())
-    if k in seen: continue
-    seen.add(k); out.append(i)
+    w = words(i["title"])
+    if any(len(w & o["_w"]) >= max(3, 0.4 * min(len(w), len(o["_w"]))) for o in out): continue
+    i["_w"] = w; out.append(i)
+for i in out: i.pop("_w")
 # drum stories from the last 30 days go to the front, then the newest of the rest
 recent = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
 out = [i for i in out if i["kind"] == "DRUMS" and i["date"] >= recent] + [i for i in out if not (i["kind"] == "DRUMS" and i["date"] >= recent)]
