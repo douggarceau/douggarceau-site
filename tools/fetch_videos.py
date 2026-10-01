@@ -7,25 +7,25 @@ from xml.etree import ElementTree as ET
 # (label, handles to try, search words, regex the channel's own name must match[, regex a title must match])
 DRUMWORDS = r"drum|percussion|cymbal|snare|\bkit\b"
 CHANNELS = [
-    ("DW Drums", ["DWDrums"], "DW Drums", r"\bdw\b|drum workshop"),
-    ("Ludwig", ["LudwigDrums"], "Ludwig Drums official", r"ludwig drum"),
-    ("Meinl", ["MeinlCymbals"], "Meinl Cymbals", r"meinl"),
-    ("Meinl Drum Festival", ["MeinlDrumFestival"], "Meinl Drum Festival", r"drum festival"),
-    ("Roland", ["RolandGlobal"], "Roland channel", r"^roland", DRUMWORDS + r"|v-drum|\btd-|\bspd|octapad|handsonic"),
-    ("Drumeo", ["drumeoofficial"], "Drumeo", r"drumeo"),
-    ("Tama", ["TAMAdrums", "tamadrumsofficial"], "TAMA drums official", r"^tama"),
-    ("Pearl", ["PearlDrumsUSA", "PearlDrums"], "Pearl Drums", r"pearl drums|pearl corporation|pearl music"),
-    ("Gretsch", ["GretschDrums"], "Gretsch Drums", r"gretsch"),
-    ("Sabian", ["SABIANcymbals", "sabian"], "SABIAN cymbals", r"sabian"),
-    ("Paiste", ["PaisteCymbals", "paiste"], "Paiste cymbals", r"paiste"),
-    ("Modern Drummer", ["ModernDrummer", "moderndrummermagazine"], "Modern Drummer magazine", r"modern drummer"),
-    ("Drumtalk TV", ["DrumtalkTV"], "Drumtalk TV", r"drumtalk"),
+    ("DW Drums", ["UC2OQnpI3N1yWsgFMSN_sekA", "DWDrums"], "DW Drums", r"\bdw\b|drum workshop"),
+    ("Ludwig", ["UCxdiLfkkokXj09724KntoOw"], "Ludwig Drums official", r"ludwig drum"),
+    ("Meinl", ["UCZjkQtRELyrearglF3lYa8Q"], "Meinl Cymbals", r"meinl"),
+    ("Meinl Drum Festival", ["UCfWNjFlMw-OGiLttkFGfHCA"], "Meinl Drum Festival", r"drum ?festival"),
+    ("Roland", ["UC4vbiZMU_yrheYVZH393-Zw"], "Roland channel", r"^roland", DRUMWORDS + r"|v-drum|\btd-|\bspd|octapad|handsonic"),
+    ("Drumeo", ["UCBiJBaDaM3K6vPVggLhTyWA", "drumeoofficial"], "Drumeo", r"drumeo"),
+    ("Tama", ["UCTSkpJG7QWeungk9q6Je2_g"], "TAMA drums official", r"^tama"),
+    ("Pearl", ["UCmGi7DMBXl7aTOG1HDbRWoQ"], "Pearl Drums", r"pearl drums|pearl corporation|pearl music"),
+    ("Gretsch", ["UCCi7ihBj53YSjNI9lY7nXtA"], "Gretsch Drums", r"gretsch"),
+    ("Sabian", ["SABIANcymbals", "sabiancymbals", "SABIANofficial"], "SABIAN cymbals official", r"^sabian( cymbals| ltd\.?)?$"),
+    ("Paiste", ["UC1F5S6gl2-dTch-TZ2q4b9Q"], "Paiste cymbals", r"paiste"),
+    ("Modern Drummer", ["UChdBw0Hg_27aS88DiG4p5qw"], "Modern Drummer magazine", r"modern drummer"),
+    ("Drumtalk TV", ["UCXtZ8sYopX36If_QH6b4IJQ"], "Drumtalk TV", r"drumtalk"),
     ("NAMM", ["NAMM", "NAMMvideos"], "NAMM", r"^namm", DRUMWORDS),
     ("Percussive Arts Society", ["PercussiveArtsSociety"], "Percussive Arts Society PASIC", r"percussive arts"),
 ]
 # Only these kinds of videos are kept (checked in this order)
 KINDS = [
-    ("INTERVIEW", r"interview|in conversation|conversation with|sits down|\btalks?\b|q ?& ?a|podcast|chat with|catches up|story behind"),
+    ("INTERVIEW", r"interview|in conversation|conversation with|sits down|talks (with|to|about)|thom talk|q ?& ?a|chat with|chatting|catches up|the hang|roundtable|story behind"),
     ("EVENT", r"\bnamm\b|pasic|drum ?fest|festival|drum show|drum-?off|clinic|musikmesse|summit|expo|convention|live at|\blive from"),
     ("DEMO", r"\bdemo\b|demonstration|sound ?test|comparison|first look|sound check|soundcheck|\bhear\b|in action"),
 ]
@@ -57,12 +57,13 @@ for ch in CHANNELS:
     cands = []
     for h in handles:
         try:
-            cid = channel_id(h)
-            if cid: cands.append(("@" + h, cid))
+            cid = h if re.fullmatch(r"UC[\w-]{22}", h) else channel_id(h)
+            if cid: cands.append((h if h == cid else "@" + h, cid))
         except Exception as ex:
             log[name + " @" + h] = "error: " + str(ex)[:60]
     try:
-        cands += [("search", c) for c in search(q)]
+        if not any(re.fullmatch(r"UC[\w-]{22}", h) for h in handles):
+            cands += [("search", c) for c in search(q)]
     except Exception as ex:
         log[name + " search"] = "error: " + str(ex)[:60]
     for h, cid in cands:
