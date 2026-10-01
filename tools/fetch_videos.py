@@ -4,15 +4,30 @@ Each brand lists one or more @handles to try; the first that resolves to a chann
 import json, re, urllib.request, urllib.parse, datetime, html
 from xml.etree import ElementTree as ET
 
-# (label, handles to try, search words, regex the channel's own name must match)
+# (label, handles to try, search words, regex the channel's own name must match[, regex a title must match])
+DRUMWORDS = r"drum|percussion|cymbal|snare|\bkit\b"
 CHANNELS = [
-    ("Vic Firth", ["vicfirth", "VicFirthCompany"], "Vic Firth sticks", r"vic ?firth"),
-    ("Zildjian", ["ZildjianCompany", "Zildjian_Company", "zildjiancymbals"], "Zildjian Company cymbals", r"zildjian"),
     ("DW Drums", ["DWDrums"], "DW Drums", r"\bdw\b|drum workshop"),
-    ("Ludwig", ["LudwigDrumsOfficial", "ludwig_drums", "LudwigDrumCo"], "Ludwig Drums official", r"ludwig drum"),
-    ("Roland", ["RolandGlobal", "Roland", "RolandUS"], "Roland channel", r"^roland", r"drum|v-drum|\btd-|\bspd|percussion|beat|groove|808|909|\btr-|octapad|handsonic"),
+    ("Ludwig", ["LudwigDrums"], "Ludwig Drums official", r"ludwig drum"),
     ("Meinl", ["MeinlCymbals"], "Meinl Cymbals", r"meinl"),
-    ("Drumeo", ["Drumeo", "drumeoofficial"], "Drumeo", r"drumeo"),
+    ("Meinl Drum Festival", ["MeinlDrumFestival"], "Meinl Drum Festival", r"drum festival"),
+    ("Roland", ["RolandGlobal"], "Roland channel", r"^roland", DRUMWORDS + r"|v-drum|\btd-|\bspd|octapad|handsonic"),
+    ("Drumeo", ["drumeoofficial"], "Drumeo", r"drumeo"),
+    ("Tama", ["TAMAdrums", "tamadrumsofficial"], "TAMA drums official", r"^tama"),
+    ("Pearl", ["PearlDrumsUSA", "PearlDrums"], "Pearl Drums", r"pearl drums|pearl corporation|pearl music"),
+    ("Gretsch", ["GretschDrums"], "Gretsch Drums", r"gretsch"),
+    ("Sabian", ["SABIANcymbals", "sabian"], "SABIAN cymbals", r"sabian"),
+    ("Paiste", ["PaisteCymbals", "paiste"], "Paiste cymbals", r"paiste"),
+    ("Modern Drummer", ["ModernDrummer", "moderndrummermagazine"], "Modern Drummer magazine", r"modern drummer"),
+    ("Drumtalk TV", ["DrumtalkTV"], "Drumtalk TV", r"drumtalk"),
+    ("NAMM", ["NAMM", "NAMMvideos"], "NAMM", r"^namm", DRUMWORDS),
+    ("Percussive Arts Society", ["PercussiveArtsSociety"], "Percussive Arts Society PASIC", r"percussive arts"),
+]
+# Only these kinds of videos are kept (checked in this order)
+KINDS = [
+    ("INTERVIEW", r"interview|in conversation|conversation with|sits down|\btalks?\b|q ?& ?a|podcast|chat with|catches up|story behind"),
+    ("EVENT", r"\bnamm\b|pasic|drum ?fest|festival|drum show|drum-?off|clinic|musikmesse|summit|expo|convention|live at|\blive from"),
+    ("DEMO", r"\bdemo\b|demonstration|sound ?test|comparison|first look|sound check|soundcheck|\bhear\b|in action"),
 ]
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36",
       "Accept-Language": "en-US,en;q=0.9", "Cookie": "CONSENT=YES+1"}
@@ -65,8 +80,10 @@ for ch in CHANNELS:
                 href = link.get("href") if link is not None else ""
                 if not vid or not title or pub[:10] < cutoff: continue
                 if only and not re.search(only, title, re.I): continue
-                if "/shorts/" in href and n >= 2: continue
-                items.append({"id": vid, "title": title[:120], "source": name, "date": pub[:10]})
+                if "/shorts/" in href or "#shorts" in title.lower(): continue
+                kind = next((k for k, rx in KINDS if re.search(rx, title, re.I)), None)
+                if not kind: continue
+                items.append({"id": vid, "title": title[:120], "source": name, "date": pub[:10], "kind": kind})
                 n += 1
                 if n >= 6: break
             log[name] = "%s %s %s (%d)" % (h, cid, author, n)
