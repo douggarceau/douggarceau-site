@@ -18,7 +18,7 @@ def when(s):
     except Exception: pass
     try: return datetime.datetime.fromisoformat(s.replace("Z", "+00:00")).astimezone(datetime.timezone.utc)
     except Exception: return None
-items, ok = [], []
+items, ok, errs = [], [], {}
 for name, url in FEEDS:
     try:
         raw = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=20).read()
@@ -38,9 +38,9 @@ for name, url in FEEDS:
             items.append({"title": title[:160], "link": link, "source": name, "date": dt.strftime("%Y-%m-%d")})
             n += 1
             if n >= 5: break
-        ok.append(name)
+        ok.append(name + ' (' + str(n) + ')')
     except Exception as e:
-        print("skip", name, e)
+        print("skip", name, e); errs[name] = str(e)[:120]
 cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=120)).strftime("%Y-%m-%d")
 items = [i for i in items if i["date"] >= cutoff]
 items.sort(key=lambda i: i["date"], reverse=True)
@@ -49,7 +49,6 @@ for i in items:
     k = i["title"].lower()
     if k in seen: continue
     seen.add(k); out.append(i)
-data = {"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "sources": ok, "items": out[:24]}
-if out or not __import__("os").path.exists("assets/news.json"):
-    json.dump(data, open("assets/news.json", "w"), indent=1)
+data = {"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "sources": ok, "errors": errs, "raw_count": len(items), "items": out[:24]}
+json.dump(data, open("assets/news.json", "w"), indent=1)
 print(len(out), "headlines from", ok)
