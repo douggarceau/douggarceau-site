@@ -518,6 +518,12 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
   filter:drop-shadow(0 0 30px rgba(255,190,80,.35))}
  .hero-dog figcaption{position:absolute;left:50%;bottom:14px;transform:translateX(-50%);white-space:nowrap;font:600 10px var(--mono,monospace);letter-spacing:.2em;color:#e8c27a;background:rgba(0,0,0,.6);border:1px solid rgba(232,194,122,.5);padding:4px 9px;border-radius:3px}
  .hero-dog figcaption b{color:#ffd35c;margin-right:6px}
+ .dog-say{position:absolute;left:50%;top:56%;transform:translateX(-50%) scale(.6);opacity:0;min-width:180px;max-width:250px;padding:9px 13px;border-radius:14px;background:#fffdf5;color:#141414;font:700 15px/1.3 'IBM Plex Sans',system-ui,sans-serif;text-align:center;box-shadow:0 0 0 3px #ffd35c,0 8px 24px rgba(0,0,0,.6),0 0 30px rgba(255,211,92,.45);transition:opacity .25s,transform .25s cubic-bezier(.3,1.6,.6,1);z-index:3}
+ .dog-say.on{opacity:1;transform:translateX(-50%) scale(1)}
+ .dog-say::before{content:"";position:absolute;left:50%;top:-12px;margin-left:-10px;border:10px solid transparent;border-top:0;border-bottom:12px solid #ffd35c}
+ .dog-say::after{content:"";position:absolute;left:50%;top:-8px;margin-left:-8px;border:8px solid transparent;border-top:0;border-bottom:10px solid #fffdf5}
+ .dog-say i{display:inline-block;width:2px;height:1em;background:#141414;vertical-align:-2px;margin-left:2px;animation:aimbl .8s steps(2,start) infinite}
+
 }
 </style>
 </head>
@@ -559,7 +565,7 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 <div class="home-hero-shade"></div>
 
 <div class="home-container home-hero-content">
-<figure class="hero-dog" aria-label="Amadeus, our namesake"><video src="assets/amadeus-dog.mp4" poster="assets/amadeus-dog-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><figcaption><b>AMADEUS</b> OUR NAMESAKE</figcaption></figure>
+<figure class="hero-dog" aria-label="Amadeus, our namesake"><video src="assets/amadeus-dog.mp4" poster="assets/amadeus-dog-poster.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><figcaption><b>AMADEUS</b> OUR NAMESAKE</figcaption><div class="dog-say" id="dog-say" aria-live="polite"></div></figure>
 <a class="newbox" href="studio/" aria-label="New: the Sound Studio">
 <span class="nb-badge">NEW</span>
 <span class="nb-title">THE SOUND STUDIO</span>
@@ -1225,6 +1231,17 @@ signup('tf','temail','tnote','top_bar');
   else boxes.forEach(load);
   window.addEventListener('resize',function(){boxes.forEach(fit);});
 })();
+</script>
+<script>
+(function(){var el=document.getElementById('dog-say');if(!el||!el.offsetParent&&getComputedStyle(el.parentNode).display==='none'){}
+var L=['My name is Amadeus.','Welcome to my drum school!','My name is Amadeus.','Tap a pad. I dare you.','Woof! Go play the kit.','My name is Amadeus.','Turn your sound up!'],i=0,red=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function say(){ if(getComputedStyle(el.parentNode).display==='none'){setTimeout(say,3000);return;}
+ var t=L[i++%L.length],n=0; el.classList.add('on');
+ if(red){el.textContent=t;setTimeout(hide,4200);return;}
+ el.innerHTML='<i></i>';
+ var iv=setInterval(function(){n++;el.innerHTML=t.slice(0,n).replace(/&/g,'&amp;').replace(/</g,'&lt;')+'<i></i>';if(n>=t.length){clearInterval(iv);setTimeout(hide,2600);}},55);}
+function hide(){el.classList.remove('on');setTimeout(say,2200);}
+setTimeout(say,900);})();
 </script>
 <script src="sounds/kit/kit.js?v=4"></script>
 <script>
