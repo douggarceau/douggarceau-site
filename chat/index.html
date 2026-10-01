@@ -134,15 +134,7 @@ if(!DEMO){
   report:function(pid,cid,reason){return sb.from('reports').insert({post_id:pid||null,comment_id:cid||null,reason:reason});}
  };
 }else{
- var H=3600e3,now=Date.now(),D={posts:[
-  {id:1,topic:'vintage',title:'Found a 1966 Ludwig Super Classic in my uncle\'s attic. What should I check first?',body:'Blue oyster pearl, all original badges. The heads are ancient. Where do I start before I play it?',created_at:new Date(now-2*H),username:'attic_find',score:24,replies:2},
-  {id:2,topic:'practice',title:'Paradiddle-diddle at 140: what finally made it click for you?',body:'I can do 120 clean but 140 falls apart on the left hand.',created_at:new Date(now-5*H),username:'lefty_lou',score:15,replies:1},
-  {id:3,topic:'gear',title:'K Constantinople or Byzance Jazz for a first pro ride?',body:'Mostly small-group jazz and some recording.',created_at:new Date(now-9*H),username:'swing8',score:11,replies:0},
-  {id:4,topic:'electronic',title:'Plugged my e-kit into The Kit on this site over USB and it just worked',body:'No drivers. Hi-hat pedal even works. Anyone mapped a ride bell?',created_at:new Date(now-26*H),username:'midi_mike',score:9,replies:0},
-  {id:6,topic:'forsale',title:'Sample listing: 14x5.5 chrome snare, great shape',body:'Sample classified so you can see how listings look.',price:'$300 or best offer',location:'Nashville, TN',created_at:new Date(now-3*H),username:'sample_seller',score:3,replies:0},
-  {id:5,topic:'gigs',title:'Wedding band drummers: how do you handle in-ear click on the first dance?',body:'',created_at:new Date(now-50*H),username:'gigpro',score:4,replies:0}],
-  comments:{1:[{id:1,post_id:1,body:'Check the bearing edges and the snare beds before anything else.',created_at:new Date(now-1.5*H),username:'edge_nerd'},{id:2,post_id:1,body:'Don\'t refinish it! Original wrap is worth way more.',created_at:new Date(now-1*H),username:'vintage_vic'}],2:[{id:3,post_id:2,body:'Slow it down to 100 with accents only. Took me two weeks.',created_at:new Date(now-4*H),username:'rudiment_rita'}]},
-  nid:100};
+ var D={posts:[],comments:{},nid:100};
  var demoUser=null;
  api={
   session:function(){return Promise.resolve(demoUser);},onAuth:function(){},
@@ -165,8 +157,8 @@ if(!DEMO){
 
 /* ---------- UI ---------- */
 function banner(){
- if(!SUPABASE_URL) $('banner').innerHTML='<div class="soon"><b style="color:var(--gold)">Drum Chat is opening soon.</b> <span class="note">You\'re looking at a preview with sample posts.</span></div>';
- else if(DEMO) $('banner').innerHTML='<div class="demo">Preview mode with sample posts. Nothing here is saved.</div>';
+ if(!SUPABASE_URL) $('banner').innerHTML='<div class="soon"><b style="color:var(--gold)">Drum Chat is opening soon.</b> <span class="note">Posting opens soon. Be one of the first members!</span></div>';
+ else if(DEMO) $('banner').innerHTML='<div class="demo">Preview mode. Nothing here is saved.</div>';
 }
 function renderTopics(){
  $('topics').innerHTML=TOPICS.map(function(t){return (t[0]==='forsale'?'<h3 style="margin:10px 0 4px;width:100%">FREE CLASSIFIEDS</h3>':'')+'<button data-t="'+t[0]+'" class="'+(state.topic===t[0]?'on':'')+'" style="--c:'+t[2]+'"><i></i>'+esc(t[1])+'</button>';}).join('');
@@ -201,7 +193,7 @@ function list(){
 function draw(){
  var q=state.q.trim().toLowerCase(),ps=cache.filter(function(p){return (state.topic==='all'||p.topic===state.topic)&&(!q||(p.title+' '+p.body+' '+p.username).toLowerCase().indexOf(q)>=0);});
  ps.sort(state.sort==='new'?function(a,b){return new Date(b.created_at)-new Date(a.created_at);}:state.sort==='top'?function(a,b){return b.score-a.score;}:function(a,b){return hot(b)-hot(a);});
- $('list').innerHTML=ps.length?ps.map(function(p){return '<article class="post">'+voteHtml(p)+'<div><div class="meta">'+tag(p.topic)+'<span>'+esc(p.username)+'</span><span>'+ago(p.created_at)+'</span>'+cls(p)+'</div><h2><a href="#p'+p.id+'">'+esc(p.title)+'</a></h2>'+(p.body?'<p class="snip">'+esc(p.body)+'</p>':'')+'<div class="acts"><a href="#p'+p.id+'">&#128172; '+p.replies+' '+(p.replies===1?'reply':'replies')+'</a><button data-share="'+p.id+'">Share</button></div></div></article>';}).join(''):'<div class="empty">No posts here yet. Start the conversation!</div>';
+ $('list').innerHTML=ps.length?ps.map(function(p){return '<article class="post">'+voteHtml(p)+'<div><div class="meta">'+tag(p.topic)+'<span>'+esc(p.username)+'</span><span>'+ago(p.created_at)+'</span>'+cls(p)+'</div><h2><a href="#p'+p.id+'">'+esc(p.title)+'</a></h2>'+(p.body?'<p class="snip">'+esc(p.body)+'</p>':'')+'<div class="acts"><a href="#p'+p.id+'">&#128172; '+p.replies+' '+(p.replies===1?'reply':'replies')+'</a><button data-share="'+p.id+'">Share</button></div></div></article>';}).join(''):(SUPABASE_URL?'<div class="empty">No posts here yet. Start the conversation!</div>':'<div class="empty">Drum Chat opens soon. Be the first to post when it does!</div>');
 }
 function full(id){
  var m=$('main');m.innerHTML='<div class="bar"><button id="back">&larr; Back to Drum Chat</button></div><div id="pv"><div class="empty">Loading&hellip;</div></div>';
