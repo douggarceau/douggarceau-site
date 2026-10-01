@@ -30,9 +30,13 @@ for name, url in FEEDS:
             def g(k):
                 for c in it:
                     if c.tag.split('}')[-1] == k: return c
-            t = g("title"); l = g("link"); d = g("pubDate") or g("published") or g("updated")
+            t = g("title"); l = g("link")
+            d = None
+            for k in ("pubDate", "published", "updated", "date"):
+                d = g(k)
+                if d is not None: break
             title = html.unescape(re.sub(r"<[^>]+>", "", (t.text or "") if t is not None else "")).strip()
-            link = (l.text or l.get("href") or "").strip() if l is not None else ""
+            link = ((l.text or "").strip() or (l.get("href") or "").strip()) if l is not None else ""
             dt = when(d.text if d is not None else None)
             if not title or not link.startswith("http") or not dt: continue
             items.append({"title": title[:160], "link": link, "source": name, "date": dt.strftime("%Y-%m-%d")})
