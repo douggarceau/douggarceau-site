@@ -24,7 +24,7 @@
     ['/shop/#cymbals', 'IN OUR GEAR SHOP', 'CYMBALS', 'Paiste Cymbals', 'Bright, musical cymbals', 'SEE THEM', '#f1c40f'],
     ['/shop/#electronic', 'IN OUR GEAR SHOP', 'ELECTRONIC DRUMS', 'Roland V-Drums', 'Electronic kits and pads', 'SEE THEM', '#9477ff'],
     ['/shop/#percussion', 'IN OUR GEAR SHOP', 'PERCUSSION', 'LP Percussion', 'Congas, bongos, shakers and more', 'SEE THEM', '#58d68d'],
-    ['#advertise', 'ADVERTISE', 'YOUR BRAND HERE', 'Your Drum Shop Here', 'Put your brand in front of drummers', 'GET IN TOUCH', '#ff3b2f']
+    ['/advertise/', 'ADVERTISE', 'YOUR BRAND HERE', 'Your Drum Shop Here', 'Put your brand in front of drummers', 'GET IN TOUCH', '#ff3b2f']
   ];
   function esc(t) { return String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;'); }
   var css = ''
@@ -62,7 +62,7 @@
     var s = b.querySelectorAll('a'), i = 0, paused = false;
     b.addEventListener('mouseenter', function () { paused = true; }); b.addEventListener('mouseleave', function () { paused = false; });
     b.querySelector('.hy-x').onclick = function () { b.remove(); try { sessionStorage.setItem('hyBox', 'x'); } catch (e) {} };
-    b.addEventListener('click', function (e) { var a = e.target.closest('a'); if (a && a.getAttribute('href') === '#advertise') { e.preventDefault(); location.href = 'mai' + 'lto:' + ['douggarceau', 'gmail.com'].join('@') + '?subject=' + encodeURIComponent('Advertising on Amadeus School of Drums'); } if (a && window.gtag) gtag('event', 'side_box_click', { target: a.getAttribute('href') }); });
+    b.addEventListener('click', function (e) { var a = e.target.closest('a'); if (a && a.getAttribute('href') === '#advertise-mail') { e.preventDefault(); location.href = 'mai' + 'lto:' + ['douggarceau', 'gmail.com'].join('@') + '?subject=' + encodeURIComponent('Advertising on Amadeus School of Drums'); } if (a && window.gtag) gtag('event', 'side_box_click', { target: a.getAttribute('href') }); });
     setInterval(function () {
       if (paused || document.hidden) return;
       s[i].classList.remove('on'); s[i].setAttribute('aria-hidden', 'true'); s[i].tabIndex = -1;
