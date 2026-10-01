@@ -68,6 +68,8 @@ h1 span{color:var(--gold)}
 .fine{color:#8d8b85;font-size:14px;margin-top:26px;max-width:820px}
 .spon{display:inline-flex;align-items:center;gap:8px;font:600 11px "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.16em;color:#8d8b85!important;text-decoration:none!important;border:1px dashed #4a4844;border-radius:4px;padding:5px 10px;opacity:.8;transition:opacity .2s,border-color .2s,color .2s}.spon span{color:#c9c4b8}.spon:hover{opacity:1;border-color:#ffd35c;color:#ffd35c!important}
 </style>
+<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Amadeus Drums"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script src="/assets/app.js?v=1" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -114,8 +116,8 @@ function draw(){
 draw();
 document.addEventListener('click',function(e){var a=e.target.closest('.tk,.tl a');if(a&&window.gtag)gtag('event','ticket_click',{url:a.href});});
 (function(){var h=decodeURIComponent(location.hash.slice(1)),el=h&&document.getElementById(h);if(el){el.classList.add('hit');setTimeout(function(){el.scrollIntoView({block:'center'});},50);}})();
-document.getElementById('tip').onclick=function(e){e.preventDefault();location.href='mai'+'lto:'+['douggarceau','gmail.com'].join('@')+'?subject='+encodeURIComponent('On Tour tip');};
+document.getElementById('tip').onclick=function(e){e.preventDefault();location.href='/contact/?r=story';};
 </script>
-<script src="/assets/hype.js?v=5" defer></script>
+<script src="/assets/hype.js?v=6" defer></script>
 </body>
 </html>

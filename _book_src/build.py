@@ -29,6 +29,8 @@ HEAD = '''<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="book.css?v={cssv}">
+<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Amadeus Drums"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script src="/assets/app.js?v=1" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -82,7 +84,7 @@ def chapter_page(ch, prev, nxt):
             + '<nav class="top"><a href="index.html">&larr; Contents</a><a href="../index.html">Amadeus School of Drums</a></nav>\n'
             + '<p class="kicker">Part {} · {} · Chapter {}</p>\n<h1>{}</h1>\n'.format(ch['part'], html.escape(part), ch['n'], html.escape(ch['title']))
             + body
-            + '\n<div class="pager">{}{}</div>\n</div>\n<script src="player.js?v={jsv}"></script>\n<script src="/assets/hype.js?v=5" defer></script>
+            + '\n<div class="pager">{}{}</div>\n</div>\n<script src="player.js?v={jsv}"></script>\n<script src="/assets/hype.js?v=6" defer></script>
 </body>\n</html>\n'.format(pv, nx, jsv=JSV))
 
 def fname(ch): return 'ch-{:03d}.html'.format(ch['n'])

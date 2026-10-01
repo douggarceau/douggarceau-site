@@ -61,6 +61,8 @@ h1 span{color:var(--or)}
 @media (max-width:620px){.bar{position:static}#chips{flex-wrap:nowrap!important;overflow-x:auto;max-width:100%;padding-bottom:4px}.chip{flex:none}.pads{grid-template-columns:repeat(2,1fr)}.stop{margin-left:0}.search{max-width:none}}
 @media (prefers-reduced-motion:reduce){.badge{animation:none}}
 </style>
+<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Amadeus Drums"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script src="/assets/app.js?v=1" defer></script>
 </head>
 <body>
 <header class="hero"><div class="wrap">
@@ -140,6 +142,6 @@ document.getElementById('vol').addEventListener('input',function(){ if(master) m
 document.addEventListener('keydown',function(e){ if(e.key==='Escape') stopAll(); });
 })();
 </script>
-<script src="/assets/hype.js?v=5" defer></script>
+<script src="/assets/hype.js?v=6" defer></script>
 </body>
 </html>

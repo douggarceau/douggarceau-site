@@ -14,6 +14,8 @@ var PAGES={
 '/drumroom/':"This is the Drum Room, where you can hear every instrument in the percussion section. There are 59 of them, from timpani, marimba and chimes to cowbells, anvils, a thunder sheet and even a cannon. Tap any instrument to hear it, and read how it's played and where you'd hear it in music.",
 '/shop/':"Welcome to the Gear Shop. Every piece of drum gear is explained here, from a first kit to DW, snares for every style, sticks and mallets, cymbals, electronic kits, recording gear and beat making. Tap a category tile to jump to it, or tap a brand button to see only that brand. Each item has links to buy, and some links help support the school.",
 '/ontour/':"This is On Tour. It shows who's behind the kit for 50 of the biggest acts touring now, from Metallica and Foo Fighters to Rush and Bruno Mars. Search for a band or a drummer, filter by style, and tap through for tour dates. The ticket buttons search Ticketmaster, StubHub and SeatGeek for you.",
+'/app/':"This is how you put me on your phone. On an iPhone, open the site in Safari, tap the Share button, then Add to Home Screen. On Android, tap Install the app, or use the Chrome menu. After that I live on your home screen, I open full screen, and the pages you've already visited keep working even without a signal.",
+'/contact/':"This is how you reach the webmaster. Pick a reason: advertising, a story idea, an interview request or feedback. Leave your name, your email so we can write back, and your message, then hit send. It goes straight to the person who runs this site.",
 '/vintage/':"These are ten of America's best vintage drum shops. Each one has its story, the owner, what they're known for, and the address, hours and phone number. Tap a state to narrow it down, tap the phone number to call, or tap the address for directions. Hours change, so call ahead, and tell them Amadeus sent you.",
 '/chat/':"This is Drum Chat, our forum. Talk gear, practice, vintage drums, gigs and electronic kits, and vote on the best posts. There are free classifieds too, for buying, selling and trading gear. To post, enter your email and tap the login link we send you. Be kind, and stay safe when you buy and sell.",
 '/rudiments/':"Here are all 40 rudiments, the building blocks of drumming. Each one has notation and playback so you can see it and hear it. Start slowly with a metronome, keep your sticks low and relaxed, and only speed up when it's clean. Five minutes a day makes a big difference.",
@@ -65,7 +67,7 @@ var css='.amg{position:fixed;right:16px;bottom:16px;z-index:1990;display:flex;fl
 '.amg-f span{text-align:left;line-height:1.15}.amg-f small{display:block;font:600 10px "IBM Plex Mono",monospace;color:#e8c27a;letter-spacing:.06em;margin-top:2px}'+
 
 '.amg.talk .amg-f{box-shadow:0 0 30px rgba(255,211,92,.9)}'+
-'@media (max-width:520px){.amg-face{width:88px;height:88px}.amg-f{font-size:13px}.amg-b{font-size:14.5px}}'+
+'@media (max-width:520px){.amg{right:10px;bottom:10px}.amg-face{width:66px;height:66px}.amg-f{padding:2px;font-size:13px}.amg-f>span:last-child{display:none}.amg-b{font-size:14.5px}}'+
 '@media (prefers-reduced-motion:reduce){.amg-t i,.amg.talk .amg-wave i{animation:none}}';
 var root,bub,txt,nav,cur='',typer;
 function talking(on){if(root)root.classList.toggle('talk',!!on);}

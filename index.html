@@ -538,6 +538,8 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 }
 @media (max-width:1099px){.hero-tour-m{display:inline-flex!important;align-items:center;gap:8px}.hero-tour-m img{width:26px;height:26px;border-radius:50%;object-fit:cover;border:2px solid #ffd35c}}
 </style>
+<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Amadeus Drums"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script src="/assets/app.js?v=1" defer></script>
 </head>
 <body>
 <div class="topsign" id="top-signup">
@@ -564,7 +566,7 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 <span class="nav-ctas"><a href="shop/" class="nav-cta nav-shop">GEAR SHOP</a><a href="#levels" class="nav-cta">START LEARNING</a></span>
 <details class="menu"><summary aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
 <nav aria-label="Main navigation, compact">
-<a href="studio/" style="color:#ffd35c;font-weight:600">Sound Studio (NEW)</a><a href="studio/hart/">Mickey Hart sounds (NEW)</a><a href="studio/fx/">Movie Sound FX</a><a href="studio/beats/">Beat Maker</a><a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="ontour/">On Tour</a><a href="vintage/">Vintage Drum Shops</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="beats/">Famous Beats</a><a href="#signup">Get new lessons</a>
+<a href="app/" style="color:#7dff9a;font-weight:700">&#x1F4F1; Get the App</a><a href="studio/" style="color:#ffd35c;font-weight:600">Sound Studio (NEW)</a><a href="studio/hart/">Mickey Hart sounds (NEW)</a><a href="studio/fx/">Movie Sound FX</a><a href="studio/beats/">Beat Maker</a><a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="ontour/">On Tour</a><a href="vintage/">Vintage Drum Shops</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="beats/">Famous Beats</a><a href="#signup">Get new lessons</a>
 </nav></details>
 </div>
 </header>
@@ -1087,7 +1089,7 @@ document.getElementById('fxb-stop').addEventListener('click',function(e){ e.prev
 </div>
 </section>
 
-<section class="zone" id="learn"><div class="home-container zone-in"><div class="zone-num">02</div><div><h2>LEARN</h2><p>Three interactive labs, the rudiments, the method book and famous beats.</p></div><nav class="zone-links" aria-label="LEARN"><a href="#levels">Pick your level</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="rudiments/">Rudiments</a><a href="book/index.html">The Book</a><a href="vintage/">Vintage Shops</a><a href="advertise/">Advertise</a></nav></div></section>
+<section class="zone" id="learn"><div class="home-container zone-in"><div class="zone-num">02</div><div><h2>LEARN</h2><p>Three interactive labs, the rudiments, the method book and famous beats.</p></div><nav class="zone-links" aria-label="LEARN"><a href="#levels">Pick your level</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="rudiments/">Rudiments</a><a href="book/index.html">The Book</a><a href="vintage/">Vintage Shops</a><a href="advertise/">Advertise</a><a href="contact/">Contact</a><a href="app/">Get the App</a></nav></div></section>
 
 <section class="home-section" id="levels">
 <div class="home-container">
@@ -1210,9 +1212,9 @@ document.getElementById('fxb-stop').addEventListener('click',function(e){ e.prev
 <footer class="site-footer">
 <div class="home-container footer-layout">
 <div><b>AMADEUS SCHOOL OF DRUMS</b><div class="tagline">MUSIC BUILDS BRIGHTER HUMANS</div></div>
-<nav class="footer-links" aria-label="Footer"><a href="beginner/">Beginner</a><a href="intermediate/">Intermediate</a><a href="advanced/">Advanced</a><a href="drumroom/">Drum Room</a><a href="grooves/">Grooves</a><a href="book/index.html">The Book</a><a href="advertise/">Advertise</a></nav>
+<nav class="footer-links" aria-label="Footer"><a href="beginner/">Beginner</a><a href="intermediate/">Intermediate</a><a href="advanced/">Advanced</a><a href="drumroom/">Drum Room</a><a href="grooves/">Grooves</a><a href="book/index.html">The Book</a><a href="advertise/">Advertise</a><a href="contact/">Contact</a><a href="app/">Get the App</a></nav>
 </div>
-<p class="adv-line" style="margin:14px 0 0;font-size:13px;color:#9a9a93">Advertiser-supported website. Advertising inquiries: <a href="advertise/" class="adv-mail-x" style="color:#ffd35c">contact for details</a></p>
+<p class="adv-line" style="margin:14px 0 0;font-size:13px;color:#9a9a93">Advertiser-supported website. Advertising, story ideas, interview requests and feedback: <a href="contact/" style="color:#ffd35c">contact the webmaster</a></p>
 </footer>
 
 <script>
@@ -1281,7 +1283,7 @@ window.amadeusTour=start;
 if(/[?&]tour=1/.test(location.search))setTimeout(start,800);
 })();
 </script>
-<script src="/assets/amadeus-ask.js?v=5" defer></script>
+<script src="/assets/amadeus-ask.js?v=6" defer></script>
 <script src="sounds/kit/kit.js?v=4"></script>
 <script>
 /* Know the kit: plays the same recorded drum samples the interactive kit uses. */
@@ -1313,8 +1315,7 @@ setInterval(function(){if(paused||document.hidden)return;s[i].classList.remove('
 box.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&window.gtag)gtag('event','top_box_click',{target:a.getAttribute('href')});});})();
 </script>
 <script>
-document.addEventListener('click',function(e){var a=e.target.closest('a[href="advertise/"]');if(!a)return;e.preventDefault();location.href='mai'+'lto:'+['douggarceau','gmail.com'].join('@')+'?subject='+encodeURIComponent('Advertising on Amadeus School of Drums');if(window.gtag)gtag('event','advertise_click');});
-(function(){var m=document.querySelector('.adv-mail');if(m)m.textContent=['douggarceau','gmail.com'].join('@');})();
+document.addEventListener('click',function(e){var a=e.target.closest('a[href="advertise/"],a[href="contact/"]');if(a&&window.gtag)gtag('event','contact_link',{target:a.getAttribute('href')});});
 </script>
 <script>
 (function(){var M=document.getElementById('cb-main'),D=document.getElementById('cb-date'),P=document.getElementById('cb-pm');if(!M)return;

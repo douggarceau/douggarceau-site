@@ -44,6 +44,8 @@ h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(34
 .contact{margin-top:48px;border:2px solid var(--gold);border-radius:14px;padding:28px;background:radial-gradient(ellipse at 10% 0%,rgba(255,211,92,.15),transparent 60%),#121110}
 .contact h2{margin-top:0}
 </style>
+<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Amadeus Drums"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script src="/assets/app.js?v=1" defer></script>
 </head>
 <body>
 <div class="wrap">
@@ -51,7 +53,7 @@ h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(34
 <p class="kicker">ADVERTISING &amp; SPONSORSHIP</p>
 <h1>Put your brand <span>behind the kit</span></h1>
 <p class="lead">Amadeus School of Drums is an online drum school and sound studio where drummers, percussionists and musicians come to learn, play and make music. Sponsor a section, put your brand in our rotation, or partner with us on something new.</p>
-<a class="cta adv-mail" href="#contact">START A CONVERSATION &rarr;</a>
+<a class="cta adv-mail" href="/contact/?r=advertising">START A CONVERSATION &rarr;</a>
 
 <h2>What&rsquo;s on the site</h2>
 <div class="stats">
@@ -91,12 +93,12 @@ h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(34
 <div class="contact" id="contact">
 <h2>Let&rsquo;s talk</h2>
 <p>Email Doug Garceau, founder of Amadeus School of Drums, with your brand and what you&rsquo;re looking for.</p>
-<a class="cta adv-mail" href="#contact">EMAIL ABOUT ADVERTISING &rarr;</a>
+<a class="cta adv-mail" href="/contact/?r=advertising">EMAIL ABOUT ADVERTISING &rarr;</a>
 </div>
 </div>
 <script>
-document.addEventListener('click',function(e){var a=e.target.closest('.adv-mail');if(!a)return;e.preventDefault();if(window.gtag)gtag('event','advertise_contact');location.href='mai'+'lto:'+['douggarceau','gmail.com'].join('@')+'?subject='+encodeURIComponent('Advertising on Amadeus School of Drums');});
+document.addEventListener('click',function(e){var a=e.target.closest('.adv-mail');if(!a)return;e.preventDefault();if(window.gtag)gtag('event','advertise_contact');location.href='/contact/?r=advertising';});
 </script>
-<script src="/assets/hype.js?v=5" defer></script>
+<script src="/assets/hype.js?v=6" defer></script>
 </body>
 </html>
