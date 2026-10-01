@@ -10,7 +10,7 @@ CHANNELS = [
     ("Zildjian", ["ZildjianCompany", "Zildjian_Company", "zildjiancymbals"], "Zildjian Company cymbals", r"zildjian"),
     ("DW Drums", ["DWDrums"], "DW Drums", r"\bdw\b|drum workshop"),
     ("Ludwig", ["LudwigDrumsOfficial", "ludwig_drums", "LudwigDrumCo"], "Ludwig Drums official", r"ludwig drum"),
-    ("Roland", ["RolandGlobal", "Roland", "RolandUS"], "Roland channel", r"^roland"),
+    ("Roland", ["RolandGlobal", "Roland", "RolandUS"], "Roland channel", r"^roland", r"drum|v-drum|\btd-|\bspd|percussion|beat|groove|808|909|\btr-|octapad|handsonic"),
     ("Meinl", ["MeinlCymbals"], "Meinl Cymbals", r"meinl"),
     ("Drumeo", ["Drumeo", "drumeoofficial"], "Drumeo", r"drumeo"),
 ]
@@ -36,7 +36,9 @@ def search(q):
 
 cutoff = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=365)).strftime("%Y-%m-%d")
 items, log = [], {}
-for name, handles, q, want in CHANNELS:
+for ch in CHANNELS:
+    name, handles, q, want = ch[:4]
+    only = ch[4] if len(ch) > 4 else None
     cands = []
     for h in handles:
         try:
@@ -62,6 +64,7 @@ for name, handles, q, want in CHANNELS:
                 link = e.find("a:link", NS)
                 href = link.get("href") if link is not None else ""
                 if not vid or not title or pub[:10] < cutoff: continue
+                if only and not re.search(only, title, re.I): continue
                 if "/shorts/" in href and n >= 2: continue
                 items.append({"id": vid, "title": title[:120], "source": name, "date": pub[:10]})
                 n += 1
@@ -75,8 +78,11 @@ for name, handles, q, want in CHANNELS:
 
 items.sort(key=lambda i: i["date"], reverse=True)
 # keep the mix varied: at most 3 per channel, 16 total
-per, out = {}, []
+per, out, seen = {}, [], set()
 for i in items:
+    k = re.sub(r"\W+", "", i["title"].lower())
+    if k in seen: continue
+    seen.add(k)
     if per.get(i["source"], 0) >= 3: continue
     per[i["source"]] = per.get(i["source"], 0) + 1
     out.append(i)
