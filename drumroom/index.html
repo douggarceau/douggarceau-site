@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://douggarceau.com/images/drum-room-1536.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<style>:root{--bg:#0a0a0a;--ink:#fff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#e3242b;--gold2:#ff8a8f}
+<style>:root{--bg:#0a0a0a;--ink:#fff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#ffd35c;--gold2:#ffe9a8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:16px;line-height:1.7}
 a{color:var(--gold)}a:hover{color:var(--gold2)}
@@ -27,14 +27,14 @@ p{margin:0 0 14px}
 b{color:var(--gold);font-weight:600}
 .pl{border:2px solid var(--ink);border-radius:10px;padding:14px;margin:22px 0}
 .ctl{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-bottom:12px}
-.go{min-height:48px;padding:0 22px;border:0;border-radius:4px;background:var(--gold);color:#fff;font-family:'Bebas Neue',Impact,sans-serif;font-size:24px;letter-spacing:2px;cursor:pointer}
+.go{min-height:48px;padding:0 22px;border:0;border-radius:4px;background:var(--gold);color:#0a0a0a;font-family:'Bebas Neue',Impact,sans-serif;font-size:24px;letter-spacing:2px;cursor:pointer}
 .go[aria-pressed=true]{background:var(--ink)}
 .tempo{display:flex;align-items:center;gap:10px;font-size:14px;letter-spacing:1px;flex:1;min-width:220px}
 .tempo input{flex:1;accent-color:var(--gold);min-height:32px}
 .counts{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 8px}
 .counts .c{min-width:30px;text-align:center;border:1px solid var(--line);border-radius:4px;padding:2px 4px;color:var(--muted)}
 .counts .c.beat{color:var(--ink);font-weight:600}
-.counts .c.on{background:var(--gold);border-color:var(--gold);color:#fff}
+.counts .c.on{background:var(--gold);border-color:var(--gold);color:#0a0a0a}
 .counts.sm .c{min-width:22px;font-size:13px}
 .counts .bar{padding:2px 2px;color:var(--muted)}
 .staff{overflow-x:auto;-webkit-overflow-scrolling:touch}
@@ -46,7 +46,7 @@ ol.steps li::before{counter-increment:s;content:counter(s);font-family:'Bebas Ne
 ul.mis,ul.rel{padding-left:20px;margin:0}ul.mis li,ul.rel li{margin:0 0 8px}
 .try{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border:2px solid var(--ink);border-radius:4px;text-decoration:none;color:var(--ink);font-family:'Bebas Neue',Impact,sans-serif;font-size:22px;letter-spacing:2px;margin:0 8px 10px 0}
 .try:hover{border-color:var(--gold);color:var(--gold)}
-.try.solid{background:var(--gold);border-color:var(--gold);color:#fff}.try.solid:hover{background:var(--gold2);color:#0a0a0a}
+.try.solid{background:var(--gold);border-color:var(--gold);color:#0a0a0a}.try.solid:hover{background:var(--gold2);color:#0a0a0a}
 .cta{margin-top:40px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
 .card{display:flex;flex-direction:column;gap:6px;border:2px solid var(--line);border-radius:10px;padding:14px;text-decoration:none;color:var(--muted);font-size:14px;line-height:1.5}
@@ -71,14 +71,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .pats{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-top:10px;padding-top:10px;border-top:1px dashed var(--line)}
 .plab{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-right:4px}
 .pats .pat{min-height:40px;padding:0 12px;border-radius:999px;border:1px solid var(--gold);background:transparent;color:var(--gold2);font:inherit;font-size:14px;cursor:pointer}
-.pats .pat.on{background:var(--gold);color:#fff}
+.pats .pat.on{background:var(--gold);color:#0a0a0a}
 .pats .stop{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid #c0392b;background:transparent;color:#ff8a7a;font:inherit;font-size:14px;font-weight:600;cursor:pointer;margin-left:auto}
 .pats .stop:hover{background:#c0392b;color:#fff}
 .stopall{position:fixed;right:18px;bottom:18px;z-index:50;min-height:48px;padding:0 20px;border-radius:999px;border:0;background:#c0392b;color:#fff;font:inherit;font-size:16px;font-weight:700;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,.5)}
 .stopall:hover{background:#e74c3c}
-.pedal{display:flex;align-items:center;gap:6px;margin-top:auto;padding-top:6px}.pedal button{min-height:40px;padding:0 12px;border-radius:6px;border:1px solid var(--gold);background:#141414;color:var(--ink);font:inherit;font-size:14px;cursor:pointer}.pedal button.sel{background:var(--gold);color:#fff;font-weight:600}.pedal+.keys{margin-top:0}
+.pedal{display:flex;align-items:center;gap:6px;margin-top:auto;padding-top:6px}.pedal button{min-height:40px;padding:0 12px;border-radius:6px;border:1px solid var(--gold);background:#141414;color:var(--ink);font:inherit;font-size:14px;cursor:pointer}.pedal button.sel{background:var(--gold);color:#0a0a0a;font-weight:600}.pedal+.keys{margin-top:0}
 .keys button:hover{background:#231d0c}
-.keys button.hit{background:var(--gold);color:#fff}
+.keys button.hit{background:var(--gold);color:#0a0a0a}
 .scale{border-color:var(--ink);color:var(--gold)}
 .wrap{max-width:1120px}
 .inst{min-width:0}
@@ -88,7 +88,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .keys .tube{flex:1 1 0;min-width:30px;min-height:0;padding:0 0 8px;border:0;color:#2a1d05;border-radius:3px 3px 8px 8px;cursor:pointer;display:flex;align-items:flex-end;justify-content:center;font:inherit;font-size:11px;font-weight:600;color:#2a1d05;background:linear-gradient(90deg,#7a5a22 0%,#c9a35a 22%,#f6dc98 42%,#c9a35a 62%,#8a6a2e 100%);box-shadow:inset 0 6px 0 #b9bdc4;transition:filter .1s,transform .1s;transform-origin:top center}
 .keys .tube.acc{background:linear-gradient(90deg,#5c4318 0%,#a4823f 22%,#d9bb74 42%,#a4823f 62%,#6c5020 100%)}
 .keys .tube:hover{filter:brightness(1.12)}
-.keys .tube.hit{filter:brightness(1.45) drop-shadow(0 0 12px rgba(227,36,43,.9));transform:rotate(1.5deg)}
+.keys .tube.hit{filter:brightness(1.45) drop-shadow(0 0 12px rgba(255,211,92,.9));transform:rotate(1.5deg)}
 .tube span{font-size:10px;letter-spacing:0;white-space:nowrap}
 .kitlink{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:18px;align-items:center;border:2px solid var(--line);border-radius:12px;overflow:hidden;text-decoration:none;color:var(--ink)}
 .kitlink img{display:block;width:100%;height:auto}.kitlink div{padding:18px}
@@ -96,7 +96,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offse
 .lvbar{position:sticky;top:0;z-index:5;background:rgba(10,10,10,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:12px 0;margin:18px 0 6px;display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
 .seg button{min-height:42px;padding:0 16px;border:0;background:#141414;color:var(--ink);font:inherit;font-size:14px;cursor:pointer}
-.seg button[aria-pressed=true]{background:var(--gold);color:#fff}
+.seg button[aria-pressed=true]{background:var(--gold);color:#0a0a0a}
 .jump{display:flex;flex-wrap:wrap;gap:6px 12px;font-size:13px}.jump a{text-decoration:none}
 .lv{display:none}.lv h4{margin:0 0 4px;font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:600}
 body[data-level=b] .lv-b,body[data-level=i] .lv-i,body[data-level=a] .lv-a{display:block}
@@ -107,7 +107,7 @@ body[data-level=b] .lv-b,body[data-level=i] .lv-i,body[data-level=a] .lv-a{displ
 </head>
 <body data-level="b">
 <div class="wrap">
-<nav><a href="../index.html">&larr; Amadeus School of Drums</a><span style="display:flex;gap:18px;flex-wrap:wrap"><a href="../studio/beats/" style="color:#ff8a8f;font-weight:600">Drum machine <b style="font:700 10px monospace;background:#c0392b;color:#fff;padding:2px 5px;border-radius:3px">NEW</b></a><a href="../studio/fx/">Movie FX</a><a href="../beginner/">Beginner</a><a href="../intermediate/">Intermediate</a><a href="../advanced/">Advanced</a></span></nav>
+<nav><a href="../index.html">&larr; Amadeus School of Drums</a><span style="display:flex;gap:18px;flex-wrap:wrap"><a href="../studio/beats/" style="color:#ffe9a8;font-weight:600">Drum machine <b style="font:700 10px monospace;background:#c0392b;color:#fff;padding:2px 5px;border-radius:3px">NEW</b></a><a href="../studio/fx/">Movie FX</a><a href="../beginner/">Beginner</a><a href="../intermediate/">Intermediate</a><a href="../advanced/">Advanced</a></span></nav>
 <p class="kicker">THE ORCHESTRA'S PERCUSSION SECTION</p>
 <h1>The Drum Room</h1>
 <p>Every percussion instrument you will find in an orchestra, all 59 of them, from the timpani to the wood block, the ratchet and the wind machine. Tap any button to hear it. Choose your level: beginners meet the instruments, intermediate players learn how to play them, and advanced players study where they appear in the repertoire.</p>

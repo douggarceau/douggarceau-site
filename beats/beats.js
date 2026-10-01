@@ -99,8 +99,8 @@
       '<line x1="30" y1="40" x2="30" y2="88" stroke="#fff" stroke-width="1.6"/><rect x="42" y="52" width="5" height="24" fill="#fff"/><rect x="53" y="52" width="5" height="24" fill="#fff"/>' +
       '<text x="95" y="62" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="30" fill="#fff">' + B.beats + '</text><text x="95" y="86" text-anchor="middle" font-family="Georgia,serif" font-weight="700" font-size="30" fill="#fff">4</text>' + mid +
       '<circle cx="' + (W - 52) + '" cy="58" r="3" fill="#fff"/><circle cx="' + (W - 52) + '" cy="70" r="3" fill="#fff"/><line x1="' + (W - 42) + '" y1="40" x2="' + (W - 42) + '" y2="88" stroke="#fff" stroke-width="1.6"/><rect x="' + (W - 37) + '" y="40" width="7" height="48" fill="#fff"/>' +
-      '<path d="' + o.fW + '" fill="#fff"/><path d="' + o.fG + '" fill="#e3242b"/><path d="' + o.tW + '" fill="none" stroke="#fff" stroke-width="1.6"/><path d="' + o.tG + '" fill="none" stroke="#e3242b" stroke-width="1.6"/>' +
-      '<path d="' + o.kW + '" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="' + o.kG + '" fill="none" stroke="#e3242b" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+      '<path d="' + o.fW + '" fill="#fff"/><path d="' + o.fG + '" fill="#ffd35c"/><path d="' + o.tW + '" fill="none" stroke="#fff" stroke-width="1.6"/><path d="' + o.tG + '" fill="none" stroke="#ffd35c" stroke-width="1.6"/>' +
+      '<path d="' + o.kW + '" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/><path d="' + o.kG + '" fill="none" stroke="#ffd35c" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     var cs = root.querySelectorAll('.counts .c');
     for (var c = 0; c < cs.length; c++) cs[c].classList.toggle('on', +cs[c].getAttribute('data-i') === cur);
   }

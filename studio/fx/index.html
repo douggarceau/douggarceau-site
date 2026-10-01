@@ -17,7 +17,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/wide.css?v=7">
 <style>
-:root{--bg:#0a0a0a;--ink:#fff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#e3242b;--gold2:#ff8a8f}
+:root{--bg:#0a0a0a;--ink:#fff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#ffd35c;--gold2:#ffe9a8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:17px;line-height:1.6}
 a{color:var(--gold)}
@@ -31,7 +31,7 @@ h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:32px;let
 .bar{position:sticky;top:0;z-index:20;background:rgba(10,10,10,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--line);padding:10px 0;margin-bottom:18px;display:flex;flex-wrap:wrap;gap:10px 16px;align-items:center}
 .bar .lbl{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:3px;color:var(--muted)}
 .scene{min-height:42px;padding:0 14px;border-radius:999px;border:1px solid var(--gold);background:transparent;color:var(--gold2);font:inherit;font-size:15px;cursor:pointer}
-.scene:hover,.scene.on{background:var(--gold);color:#fff}
+.scene:hover,.scene.on{background:var(--gold);color:#0a0a0a}
 .vol{display:flex;align-items:center;gap:8px;margin-left:auto;font-size:14px;color:var(--muted)}
 .vol input{accent-color:var(--gold);width:140px}
 .stop{min-height:42px;padding:0 18px;border-radius:999px;border:0;background:#c0392b;color:#fff;font:inherit;font-weight:600;cursor:pointer}
@@ -88,7 +88,7 @@ var G=[
   ['ind-factory','Factory floor',1,{gain:.55}],['ind-boiler','Boiler room',1,{gain:.6}],['ind-furnace','Furnace',1,{gain:.6}],['ind-construction','Construction site',1,{gain:.6}],['ind-jet','Jet engine',1,{gain:.6}],['ind-reactor','Reactor hum',1,{gain:.6}],['ind-clanks','Metal clank groove',2,{end:15.4839}],['ind-fence','Banging fence groove',2,{end:14.1176}]]},
  {id:'hits',name:'Industrial Hits',c:'#d35400',d:'Steam, power tools and heavy metal. Fire these over a factory loop.',p:[
   ['ind-steam','Steam blast'],['ind-drill','Power drill'],['ind-grinder','Angle grinder'],['ind-hammer','Hammer on the wall'],['ind-metaldrop','Metal drop'],['ind-slam','Metal slam'],['ind-thuds','Heavy thuds'],['ind-crank','Rusty crank'],['ind-elevator','Freight elevator'],['ind-horn','Factory horn'],['ind-siren','Warning siren']]},
- {id:'trailer',name:'Movie Trailer',c:'#e3242b',d:'Big hits and builds. Start a riser, then land an impact on the downbeat.',p:[
+ {id:'trailer',name:'Movie Trailer',c:'#ffd35c',d:'Big hits and builds. Start a riser, then land an impact on the downbeat.',p:[
   ['fx-riser','Tension riser'],['fx-strings','String rise'],['fx-whoosh','Slow-motion whoosh'],['fx-impact','Trailer impact'],['fx-braam','Braam'],['fx-boom','Deep boom'],['fx-blast','Cinematic blast'],['fx-subdrop','Sub drop'],['fx-orchhit','Orchestra hit'],['fx-warhorn','War horn'],['fx-choir','Choir'],['fx-shimmer','Magic shimmer']]},
  {id:'scifi',name:'Sci-Fi',c:'#2ecc71',d:'Spaceship bridges, alien signals and ray guns.',p:[
   ['fx-alarm','Red alert',1],['fx-drone','Engine hum',1],['fx-alien','Alien energy',1],['fx-computer','Computer beeps'],['fx-sonar','Sonar ping'],['fx-laser','Laser beam'],['fx-spiral','Spiral laser'],['fx-portal','Portal']]},

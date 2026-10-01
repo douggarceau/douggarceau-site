@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=IBM+Plex+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
 <style>
-:root{--bg:#0a0a0a;--ink:#fff;--muted:#bdbdbd;--line:#2a2a2a;--gold:#e3242b;--gold2:#ff8a8f}
+:root{--bg:#0a0a0a;--ink:#fff;--muted:#bdbdbd;--line:#2a2a2a;--gold:#ffd35c;--gold2:#ffe9a8}
 *{box-sizing:border-box}
 html,body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Mono',ui-monospace,monospace;-webkit-text-size-adjust:100%}
 a{color:var(--gold)}a:hover{color:var(--gold2)}
@@ -37,7 +37,7 @@ h1{margin:4px 0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-
 .bubble .who{font-size:12px;letter-spacing:3px;color:var(--gold)}
 .bubble .say{font-size:15px;line-height:1.5}
 .talk{min-height:36px;padding:0 14px;border:1px solid var(--gold);background:transparent;color:var(--gold);font-size:13px;border-radius:4px}
-.talk.on{background:var(--gold);color:#fff}
+.talk.on{background:var(--gold);color:#0a0a0a}
 .kitbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;padding-top:18px}
 .lbl{font-size:12px;letter-spacing:3px;color:var(--muted);margin-right:4px}
 .chip{min-height:40px;padding:0 12px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-size:13px;border-radius:4px}
@@ -52,22 +52,22 @@ h1{margin:4px 0;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-
 html.hh-open .kitstage img.hhc{opacity:0}
 .kitstage picture img{position:relative;z-index:0}.pad{z-index:2}
 .pad{cursor:pointer;transition:background .08s,box-shadow .08s}
-.pad:hover{box-shadow:inset 0 0 0 2px rgba(227,36,43,.55)}
-.pad.on{background:radial-gradient(closest-side,rgba(227,36,43,.75),rgba(227,36,43,.3) 70%,rgba(227,36,43,.08));box-shadow:0 0 34px 10px rgba(255,205,90,.6),inset 0 0 0 2px rgba(227,36,43,.9)}
+.pad:hover{box-shadow:inset 0 0 0 2px rgba(255,211,92,.55)}
+.pad.on{background:radial-gradient(closest-side,rgba(255,211,92,.75),rgba(255,211,92,.3) 70%,rgba(255,211,92,.08));box-shadow:0 0 34px 10px rgba(255,205,90,.6),inset 0 0 0 2px rgba(255,211,92,.9)}
 .feels{border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:12px}
 .row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .h2{font-family:'Bebas Neue',Impact,sans-serif;font-size:30px;letter-spacing:2px;margin-right:8px;line-height:1}
 .feel{min-height:40px;padding:0 10px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-size:12px;border-radius:4px;letter-spacing:.5px}
 .feel.on{background:var(--ink);color:#0a0a0a}
 .var{min-height:40px;min-width:44px;padding:0 12px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-size:16px;font-weight:600;border-radius:4px}
-.var.on{background:var(--gold);border-color:var(--gold);color:#fff}
+.var.on{background:var(--gold);border-color:var(--gold);color:#0a0a0a}
 .vdesc{font-size:15px;flex:1 1 280px;margin-left:8px}
 .lesson{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap}
 .lesson .t{font-size:14px}.lesson .d{font-size:13px;color:var(--muted)}
 .counts{display:flex;gap:4px;flex-wrap:wrap}
 .cnt{height:40px;min-width:30px;padding:0 4px;display:flex;align-items:center;justify-content:center;border:1px solid #3a3a3a;border-radius:4px;font-size:15px;font-weight:600}
 .cnt.sm{min-width:22px;font-size:13px}
-.cnt.on{background:var(--gold);color:#fff;border-color:var(--gold)}
+.cnt.on{background:var(--gold);color:#0a0a0a;border-color:var(--gold)}
 .swipe{display:none;margin:0;font-size:12px;color:var(--muted)}
 .staff{overflow-x:auto;-webkit-overflow-scrolling:touch}
 .staff svg{display:block;width:100%;min-width:700px;height:auto}
@@ -84,7 +84,7 @@ html.hh-open .kitstage img.hhc{opacity:0}
 .snd{min-height:44px;padding:0 16px;border:1px solid var(--ink);background:transparent;color:var(--ink);font-size:14px;border-radius:4px}
 .bookhead{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:16px}
 .bookhead .h2{font-size:26px}
-.full{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid var(--gold);border-radius:4px;color:#fff;background:var(--gold);font-size:14px;font-weight:600;text-decoration:none}
+.full{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid var(--gold);border-radius:4px;color:#0a0a0a;background:var(--gold);font-size:14px;font-weight:600;text-decoration:none}
 .full:hover{color:#0a0a0a;background:var(--gold2)}
 .boxes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding-top:14px}
 .box{border:2px solid var(--ink);border-radius:10px;overflow:hidden}
@@ -167,7 +167,7 @@ html.hh-open .kitstage img.hhc{opacity:0}
 <ellipse cx="60" cy="134" rx="46" ry="5" fill="#1c1c1c"></ellipse>
 <path d="M36 10 L84 10 L106 132 L14 132 Z" fill="#6b4226" stroke="#3b2314" stroke-width="3" stroke-linejoin="round"></path>
 <path d="M44 20 L76 20 L92 118 L28 118 Z" fill="#f1efe8"></path>
-<g style="transform-origin: 60px 112px; animation: {{pend}};"><line x1="60" y1="112" x2="60" y2="26" stroke="#141414" stroke-width="3"></line><rect x="53" y="44" width="14" height="12" rx="2" fill="#e3242b" stroke="#141414" stroke-width="2"></rect></g>
+<g style="transform-origin: 60px 112px; animation: {{pend}};"><line x1="60" y1="112" x2="60" y2="26" stroke="#141414" stroke-width="3"></line><rect x="53" y="44" width="14" height="12" rx="2" fill="#ffd35c" stroke="#141414" stroke-width="2"></rect></g>
 <rect x="30" y="62" width="60" height="16" rx="7" fill="#141414"></rect><rect x="33" y="65" width="23" height="10" rx="4" fill="#2b2b2b"></rect><rect x="64" y="65" width="23" height="10" rx="4" fill="#2b2b2b"></rect><line x1="56" y1="70" x2="64" y2="70" stroke="#141414" stroke-width="3"></line>
 <ellipse cx="60" cy="94" rx="11" ry="4" fill="#3b2314" style="transform-origin: 60px 94px; animation: {{mouth}};"></ellipse>
 <rect x="10" y="126" width="100" height="8" rx="3" fill="#3b2314"></rect>
@@ -209,7 +209,7 @@ html.hh-open .kitstage img.hhc{opacity:0}
 </div>
 <p class="swipe">Swipe the music sideways to see the whole bar →</p>
 <div class="staff">
-<svg viewBox="0 -18 1140 148" role="img" aria-label="{{nt.aria}}"><line x1="30" y1="40" x2="1110" y2="40" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="52" x2="1110" y2="52" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="64" x2="1110" y2="64" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="76" x2="1110" y2="76" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="88" x2="1110" y2="88" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="40" x2="30" y2="88" stroke="#ffffff" stroke-width="1.6"></line><rect x="42" y="52" width="5" height="24" fill="#ffffff"></rect><rect x="53" y="52" width="5" height="24" fill="#ffffff"></rect><text x="100" y="62" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#ffffff">{{ts}}</text><text x="100" y="86" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#ffffff">4</text><circle cx="1088" cy="58" r="3" fill="#ffffff"></circle><circle cx="1088" cy="70" r="3" fill="#ffffff"></circle><line x1="1098" y1="40" x2="1098" y2="88" stroke="#ffffff" stroke-width="1.6"></line><rect x="1103" y="40" width="7" height="48" fill="#ffffff"></rect><path d="{{nt.fillW}}" fill="#ffffff"></path><path d="{{nt.fillG}}" fill="#e3242b"></path><path d="{{nt.thinW}}" fill="none" stroke="#ffffff" stroke-width="1.6"></path><path d="{{nt.thinG}}" fill="none" stroke="#e3242b" stroke-width="1.6"></path><path d="{{nt.thickW}}" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path><path d="{{nt.thickG}}" fill="none" stroke="#e3242b" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+<svg viewBox="0 -18 1140 148" role="img" aria-label="{{nt.aria}}"><line x1="30" y1="40" x2="1110" y2="40" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="52" x2="1110" y2="52" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="64" x2="1110" y2="64" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="76" x2="1110" y2="76" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="88" x2="1110" y2="88" stroke="#ffffff" stroke-width="1.4"></line><line x1="30" y1="40" x2="30" y2="88" stroke="#ffffff" stroke-width="1.6"></line><rect x="42" y="52" width="5" height="24" fill="#ffffff"></rect><rect x="53" y="52" width="5" height="24" fill="#ffffff"></rect><text x="100" y="62" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#ffffff">{{ts}}</text><text x="100" y="86" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="30" fill="#ffffff">4</text><circle cx="1088" cy="58" r="3" fill="#ffffff"></circle><circle cx="1088" cy="70" r="3" fill="#ffffff"></circle><line x1="1098" y1="40" x2="1098" y2="88" stroke="#ffffff" stroke-width="1.6"></line><rect x="1103" y="40" width="7" height="48" fill="#ffffff"></rect><path d="{{nt.fillW}}" fill="#ffffff"></path><path d="{{nt.fillG}}" fill="#ffd35c"></path><path d="{{nt.thinW}}" fill="none" stroke="#ffffff" stroke-width="1.6"></path><path d="{{nt.thinG}}" fill="none" stroke="#ffd35c" stroke-width="1.6"></path><path d="{{nt.thickW}}" fill="none" stroke="#ffffff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path><path d="{{nt.thickG}}" fill="none" stroke="#ffd35c" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
 </div>
 </div>
 
@@ -814,7 +814,7 @@ class Component extends DCLogic {
     const lit = this.state.lit || {};
     const piece = (id, cym) => ({
       hit: () => this.hit(id),
-      head: lit[id] ? (cym ? '#ffe28a' : '#e3242b') : (cym ? 'url(#bronze)' : (id === 'kick' ? '#f1efe8' : '#ece8df')),
+      head: lit[id] ? (cym ? '#ffe28a' : '#ffd35c') : (cym ? 'url(#bronze)' : (id === 'kick' ? '#f1efe8' : '#ece8df')),
       ink: '#141414',
       filter: lit[id] ? 'url(#glow)' : 'none',
       cls: lit[id] ? 'on' : ''

@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#060e1c;--bg2:#0a1628;--panel:#0c1a2f;--panel2:#10223b;--line:#1b3252;--line2:#25446c;--cy:#38d6ff;--cy2:#8ee9ff;--cyd:rgba(56,214,255,.14);--ink:#eaf2ff;--mut:#8fa6c4;--gold:#e3242b;--gold2:#ffe38f;--r:#e3242b;--l:#38d6ff}
+:root{--bg:#060e1c;--bg2:#0a1628;--panel:#0c1a2f;--panel2:#10223b;--line:#1b3252;--line2:#25446c;--cy:#38d6ff;--cy2:#8ee9ff;--cyd:rgba(56,214,255,.14);--ink:#eaf2ff;--mut:#8fa6c4;--gold:#ffd35c;--gold2:#ffe38f;--r:#ffd35c;--l:#38d6ff}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%}
 body{margin:0;background:radial-gradient(1200px 600px at 30% -10%,#0f2544 0%,transparent 60%),var(--bg);color:var(--ink);font-family:'IBM Plex Sans',system-ui,sans-serif;font-size:15px;line-height:1.5;min-height:100vh}
@@ -155,7 +155,7 @@ svg.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-widt
 #try li::before{content:counter(m);flex:none;display:grid;place-items:center;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--mut);font-size:12px;color:var(--ink)}
 .acts{display:flex;flex-direction:column;gap:10px;min-width:250px}
 .cta{display:flex;align-items:center;justify-content:center;gap:10px;min-height:50px;padding:0 22px;border-radius:12px;cursor:pointer;font-family:'IBM Plex Mono',monospace;font-weight:600;font-size:14px;letter-spacing:1.5px;text-transform:uppercase}
-.cta.go2{background:linear-gradient(180deg,var(--gold2),var(--gold));border:0;color:#1b1400;box-shadow:0 6px 22px rgba(227,36,43,.25)}
+.cta.go2{background:linear-gradient(180deg,var(--gold2),var(--gold));border:0;color:#1b1400;box-shadow:0 6px 22px rgba(255,211,92,.25)}
 .cta.done{background:transparent;border:1.5px solid var(--ink)}
 .cta.done[aria-pressed=true]{border-color:var(--cy);color:var(--cy2);background:var(--cyd)}
 /* footer */
@@ -163,8 +163,8 @@ svg.i{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-widt
 .foot nav{display:flex;flex-wrap:wrap;gap:18px}.foot a{color:var(--mut);text-decoration:none}.foot a:hover{color:var(--ink)}
 a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(--cy);outline-offset:2px}
 #met{display:none}
-.tnav a.room{color:var(--ink);border-color:var(--gold);background:rgba(227,36,43,.12);box-shadow:0 0 16px rgba(227,36,43,.3)}
-.roomcard{position:relative;display:block;min-height:150px;overflow:hidden;text-decoration:none;color:var(--ink);border-color:var(--gold)!important;box-shadow:0 0 22px rgba(227,36,43,.2)}
+.tnav a.room{color:var(--ink);border-color:var(--gold);background:rgba(255,211,92,.12);box-shadow:0 0 16px rgba(255,211,92,.3)}
+.roomcard{position:relative;display:block;min-height:150px;overflow:hidden;text-decoration:none;color:var(--ink);border-color:var(--gold)!important;box-shadow:0 0 22px rgba(255,211,92,.2)}
 .roomcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55;transition:opacity .2s}.roomcard:hover img{opacity:.75}
 .roomcard span{position:relative;display:block;padding:12px 14px}.roomcard b{display:block;font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:28px;letter-spacing:1px;color:var(--gold2);line-height:1}
 .roomcard small{display:block;font-size:12.5px;color:#fff;text-shadow:0 1px 4px #000;margin-top:4px}
