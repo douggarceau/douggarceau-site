@@ -10,6 +10,13 @@ FEEDS = [
     ("Drumeo", "https://www.drumeo.com/beat/feed/"),
     ("Sick Drummer Magazine", "https://sickdrummermagazine.com/feed/"),
     ("The UK Drum Show", "https://theukdrumshow.com/feed/"),
+    ("Drummerworld", "https://www.drummerworld.com/feed/"),
+    ("Scott K Fish", "https://scottkfish.com/category/drummusic-news/feed/"),
+    ("The Drum Ninja", "https://thedrumninja.com/feed/"),
+    ("Electronic Drum Advisor", "https://electronicdrumadvisor.com/feed/"),
+    ("drum-tec", "https://www.drum-tec.com/blog/news?sRss=1"),
+    ("The Drummer's Journal", "https://www.thedrummersjournal.com/blog?format=RSS"),
+    ("MusicRadar", "https://www.musicradar.com/feeds/tag/drums"),
 ]
 UA = {"User-Agent": "Mozilla/5.0 (compatible; AmadeusDrumNews/1.0; +https://douggarceau.com/)"}
 def when(s):
@@ -41,7 +48,7 @@ for name, url in FEEDS:
             if not title or not link.startswith("http") or not dt: continue
             items.append({"title": title[:160], "link": link, "source": name, "date": dt.strftime("%Y-%m-%d")})
             n += 1
-            if n >= 5: break
+            if n >= 8: break
         ok.append(name + ' (' + str(n) + ')')
     except Exception as e:
         print("skip", name, e); errs[name] = str(e)[:120]
@@ -53,6 +60,6 @@ for i in items:
     k = i["title"].lower()
     if k in seen: continue
     seen.add(k); out.append(i)
-data = {"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "sources": ok, "errors": errs, "raw_count": len(items), "items": out[:24]}
+data = {"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "sources": ok, "errors": errs, "raw_count": len(items), "items": out[:40]}
 json.dump(data, open("assets/news.json", "w"), indent=1)
 print(len(out), "headlines from", ok)
