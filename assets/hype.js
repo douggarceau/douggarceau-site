@@ -7,6 +7,7 @@
     ['/studio/fx/', 'Hollywood movie sound FX'],
     ['/studio/beats/', 'Drum machine: hip-hop, trap, electronic and acoustic kits'],
     ['/studio/fx/#industrial', 'Industrial loops and metal hits'],
+    ['/ontour/', 'On Tour: who is behind the kit for 50 touring acts'],
     ['/drumroom/', 'The Drum Room: 59 percussion instruments'],
     ['/level7.html', 'Plug in your e-kit or MIDI pads and play The Kit'],
     ['/grooves/', '263 grooves to play along with'],
