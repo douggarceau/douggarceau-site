@@ -408,6 +408,47 @@ window.fillCol=function(grid,target,base,step){
 window.refills=[];window.refill=function(){window.refills.forEach(function(f){try{f();}catch(e){}});};
 (function(){var tm;addEventListener('resize',function(){clearTimeout(tm);tm=setTimeout(refill,200);});addEventListener('load',function(){refill();});if(document.fonts&&document.fonts.ready)document.fonts.ready.then(function(){refill();});})();
 </script>
+<style>
+/* compact lower half: same density as the top of the page */
+html body .fxb{padding:26px 0 28px}
+html body .fxb h2{font-size:clamp(36px,4vw,58px);margin:4px 0 8px}
+html body .fxb p{font-size:15.5px;margin:0 0 10px}
+html body .fxb .button-row{margin-top:12px}
+html body .fxb-pad{min-height:70px}
+html body .zone{padding:22px 0 12px}
+html body .zone-num{font-size:clamp(46px,4.6vw,70px)}
+html body .zone h2{font-size:clamp(36px,3.6vw,54px)}
+html body .zone p{font-size:15.5px;margin-top:2px}
+html body .home-section,html body .feature-section,html body .instrument-section{padding:36px 0}
+html body .section-heading{margin-bottom:20px}
+html body .section-heading h2,html body .feature-copy h2,html body .instrument-copy h2{font-size:clamp(30px,3vw,44px);margin:6px 0 8px}
+html body .section-heading p,html body .feature-copy p,html body .instrument-copy p{font-size:15.5px;line-height:1.55}
+html body .button-row{margin-top:18px}
+html body .button{padding-top:11px;padding-bottom:11px}
+html body .feature-list{margin:16px 0 18px}
+html body .feature-list li{padding:8px 4px;font-size:15px}
+html body .instrument-links{margin:16px 0 10px}
+html body .instrument-links a,html body .instrument-links button{padding:8px 4px;font-size:15px}
+html body .piece-note{min-height:0;margin:0 0 14px;font-size:15px}
+html body .big-card{min-height:260px}
+html body .big-card h3{font-size:clamp(26px,2.4vw,34px)}
+html body .level-card{min-height:330px}
+html body .level-card h3{font-size:clamp(26px,2.4vw,34px)}
+html body .level-card p{font-size:14.5px;margin-top:8px}
+html body .content-card{padding:18px 20px;min-height:0}
+html body .content-card h3{margin:10px 0 6px;font-size:24px}
+html body .content-card p{font-size:14.5px;margin:0 0 10px}
+html body .final-cta{padding:44px 0}
+html body .final-cta h2{font-size:clamp(40px,4.4vw,64px)}
+html body .final-cta p{font-size:16px}
+html body .newsletter{padding:26px 0}
+@media (min-width:1001px){
+ html body .feature-layout{grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:40px}
+ html body .feature-layout-reverse{grid-template-columns:minmax(0,560px) minmax(0,1fr)}
+ html body .instrument-layout{grid-template-columns:minmax(0,1fr) minmax(0,560px);gap:40px}
+ html body .content-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+</style>
 </head>
 <body>
 <div class="topsign" id="top-signup">
