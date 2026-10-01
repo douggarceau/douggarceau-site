@@ -597,6 +597,7 @@ var red=matchMedia('(prefers-reduced-motion: reduce)').matches;
 <p class="aim-sub">Breakthroughs, new products and the fights over AI in music. Drum stories first.</p>
 <a class="spon aim-spon" href="/advertise/" title="Sponsor this section">POWERED BY <span>YOUR BRAND HERE</span></a>
 </div>
+<div class="aim-rel" id="aim-rel" hidden><div class="aim-rel-h"><span class="aim-rel-b">JUST RELEASED</span><span class="aim-rel-s">New AI music tools from the last 30 days</span></div><div class="aim-rel-row" id="aim-rel-row"></div></div>
 <div class="aim-body"><div class="aim-grid" id="aim-grid"></div>
 <aside class="rbt" aria-labelledby="rbt-h">
 <h3 id="rbt-h">ROBOT DRUMMERS<i aria-hidden="true">_</i></h3>
@@ -632,6 +633,17 @@ var red=matchMedia('(prefers-reduced-motion: reduce)').matches;
 .aim-m{font:12px var(--mono,monospace);letter-spacing:.06em;color:#6f8f99}
 .aim-k{display:inline-block;font:700 10px var(--mono,monospace);letter-spacing:.16em;padding:2px 7px;border-radius:2px;margin-right:8px;color:#05090c;background:var(--k)}
 .aim-it.top .aim-k{animation:aimtk 1.1s steps(2,start) infinite}@keyframes aimtk{50%{opacity:.3}}
+.aim-rel{margin:0 0 18px;padding:12px;border:1px solid #2a6b3a;border-radius:6px;background:linear-gradient(90deg,rgba(57,255,20,.07),rgba(67,215,255,.05)),#07100b}
+.aim-rel-h{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:0 0 10px}
+.aim-rel-b{font:700 12px var(--mono,monospace);letter-spacing:.2em;color:#05090c;background:#39ff14;padding:4px 9px;border-radius:2px;box-shadow:0 0 12px rgba(57,255,20,.7);animation:aimtk 1.1s steps(2,start) infinite}
+.aim-rel-s{font:12px var(--mono,monospace);letter-spacing:.06em;color:#8fd19a}
+.aim-rel-row{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:10px}
+.aim-rel-row a{display:flex;flex-direction:column;gap:6px;padding:11px 12px;border:1px solid #1f4d2a;border-left:3px solid #39ff14;border-radius:4px;background:#0a1610;text-decoration:none;color:#eafbe9;transition:transform .12s,border-color .12s}
+.aim-rel-row a:hover{transform:translateY(-2px);border-color:#39ff14}
+.aim-rel-row b{font-weight:600;font-size:14.5px;line-height:1.3}
+.aim-rel-row span{font:11px var(--mono,monospace);letter-spacing:.06em;color:#7fbf8a}
+.aim-rel-row em{font-style:normal;font-weight:700;color:#39ff14;margin-right:6px}
+@media (prefers-reduced-motion:reduce){.aim-rel-b{animation:none}}
 .aim-body{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;align-items:start}
 .aim-body .aim-grid{grid-template-columns:repeat(auto-fill,minmax(min(100%,260px),1fr))}
 @media (max-width:980px){.aim-body{grid-template-columns:minmax(0,1fr)}}
@@ -657,7 +669,10 @@ var red=matchMedia('(prefers-reduced-motion: reduce)').matches;
 (function(){var K={DRUMS:'#ffd35c',PROBLEM:'#ff4d6d',PRODUCT:'#43d7ff',NEWS:'#b18cff'},L={DRUMS:'AI + DRUMS',PROBLEM:'FLASHPOINT',PRODUCT:'NEW TECH',NEWS:'SIGNAL'};
 function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
 fetch('assets/ai.json?ts='+Date.now()).then(function(r){return r.json();}).then(function(d){
- var it=(d.items||[]).slice(0,12); if(it.length<3) return;
+ var R=(d.releases||[]).slice(0,6), RL={}; R.forEach(function(x){RL[x.link]=1;});
+ if(R.length){ var now=Date.now(); document.getElementById('aim-rel-row').innerHTML=R.map(function(x){var days=Math.max(0,Math.round((now-Date.parse(x.date+'T12:00:00'))/864e5)), when=days<1?'TODAY':days==1?'1 DAY AGO':days+' DAYS AGO';
+   return '<a href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow"><span><em>'+when+'</em>'+esc(x.source)+'</span><b>'+esc(x.title)+'</b></a>';}).join(''); document.getElementById('aim-rel').hidden=false; }
+ var it=(d.items||[]).filter(function(x){return !RL[x.link];}).slice(0,12); if(it.length<3) return;
  document.getElementById('aim-grid').innerHTML=it.map(function(x,i){var dt=new Date(x.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric'});
   return '<a class="aim-it'+(i<3?' top':'')+'" href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow" style="--k:'+(K[x.kind]||'#43d7ff')+'"><span class="aim-m"><span class="aim-k">'+(L[x.kind]||'SIGNAL')+'</span>'+esc(x.source)+' &middot; '+dt+'</span><b>'+esc(x.title)+'</b></a>';}).join('');
  document.getElementById('ai-music').hidden=false;

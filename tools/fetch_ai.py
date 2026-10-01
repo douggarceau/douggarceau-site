@@ -29,6 +29,11 @@ FEEDS = [
     ("Google News", "https://news.google.com/rss/search?q=Suno+OR+Udio+when:30d&hl=en-US&gl=US&ceid=US:en", True),
     ("Google News", "https://news.google.com/rss/search?q=%22AI%22+music+lawsuit+OR+copyright+when:30d&hl=en-US&gl=US&ceid=US:en", True),
     ("Google News", "https://news.google.com/rss/search?q=%22AI%22+music+producer+plugin+when:30d&hl=en-US&gl=US&ceid=US:en", True),
+    ("Google News", "https://news.google.com/rss/search?q=%22AI%22+drum+plugin+OR+%22drum+machine%22+when:30d&hl=en-US&gl=US&ceid=US:en", True),
+    ("Google News", "https://news.google.com/rss/search?q=%22AI%22+stem+separation+when:30d&hl=en-US&gl=US&ceid=US:en", True),
+    ("Google News", "https://news.google.com/rss/search?q=%22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22+when:30d&hl=en-US&gl=US&ceid=US:en", True),
+    ("Google News", "https://news.google.com/rss/search?q=%22AI%22+MIDI+generator+OR+%22session+drummer%22+when:30d&hl=en-US&gl=US&ceid=US:en", True),
+
 ]
 AI = re.compile(r"\bAI\b|\bA\.I\.|\bAI-")  # case-sensitive so words like "said" never match
 AI_CI = re.compile(r"artificial intelligence|machine learning|generative|neural net|\bsuno\b|\budio\b|deepfake|voice[- ]clon|elevenlabs|lyria|musicgen|stable audio", re.I)
@@ -36,7 +41,7 @@ MUSIC = re.compile(r"music|song|drum|beat|audio|artist|label|record|sample|produ
 DRUMS = re.compile(r"drum|drummer|percussion|beat ?maker|groove|rhythm|cymbal|snare|\bkit\b|808", re.I)
 PROBLEM = re.compile(r"lawsuit|\bsue[sd]?\b|copyright|infring|ban(s|ned)?\b|fake|deepfake|scam|fraud|strike|royalt|stream(ing)? farm|stolen|protest|backlash|threat|settle|unlicensed|backlash|lawmakers|regulat", re.I)
 DEAL = re.compile(r"on sale|\bsale\b|% off|\bdeal\b|deals\b|discount|black friday|giveaway|coupon", re.I)
-PRODUCT = re.compile(r"sampler|groovebox|instrument|launch|releas|unveil|introduc|debut|plugin|plug-in|\bapp\b|now available|beta|\btool", re.I)
+PRODUCT = re.compile(r"stem|integrat|\bDAW\b|logic pro|ableton|fl studio|session (drummer|player)|sampler|groovebox|instrument|launch|releas|unveil|introduc|debut|plugin|plug-in|\bapp\b|now available|beta|\btool", re.I)
 # Google News results are kept only from these outlets
 TRUSTED = {s.lower() for s in ["Billboard", "Rolling Stone", "Variety", "The Hollywood Reporter", "Music Business Worldwide", "MusicRadar",
     "Music Ally", "Digital Music News", "The Verge", "TechCrunch", "WIRED", "Wired", "Pitchfork", "NME", "The Guardian", "BBC", "BBC News",
@@ -47,6 +52,9 @@ TRUSTED = {s.lower() for s in ["Billboard", "Rolling Stone", "Variety", "The Hol
     "Spin", "Complex", "Hypebot", "Music Week", "Synthtopia", "MusicRadar.com", "Tom's Guide", "TechRadar", "9to5Mac", "Mixmag Asia",
     "Yahoo", "Yahoo Entertainment", "Loudwire", "Guitar World", "Ultimate Classic Rock", "Drummer's Review", "edm.com", "EDM.com"]}
 NOT_MUSIC = re.compile(r"washing|laundry|dryer|brake|oil drum|tumble", re.I)
+RELEASE = re.compile(r"launch|releas|unveil|introduc|debut|announc|now available|rolls? out|\badds?\b|updates?\b|\bv\d|beta|arrives|\bdrops\b|unleash|reveal|brings|gets? (new|ai)|(new|free) .*(plugin|tool|app|model|feature|instrument|sampler|groovebox|software)", re.I)
+STRONG = re.compile(r"launch|releas|unveil|announc|introduc|debut|now available", re.I)
+PRODUCT_INTRO = re.compile(r"(:|\bis) (a|an|the) .{0,60}(sampler|groovebox|plugin|plug-in|synth|instrument|drum machine|app|tool|model|daw)\b", re.I)
 UA = {"User-Agent": "Mozilla/5.0 (compatible; AmadeusDrumNews/1.0; +https://douggarceau.com/)"}
 
 def when(s):
@@ -88,7 +96,8 @@ for name, url, need_music in FEEDS:
             if not (AI.search(title) or AI_CI.search(title)): continue
             if need_music and not MUSIC.search(title): continue
             kind = "DRUMS" if DRUMS.search(title) else "PROBLEM" if PROBLEM.search(title) else "PRODUCT" if PRODUCT.search(title) else "NEWS"
-            items.append({"title": title[:170], "link": link, "source": src, "date": dt.strftime("%Y-%m-%d"), "kind": kind})
+            rel = bool(STRONG.search(title) or PRODUCT_INTRO.search(title) or (RELEASE.search(title) and not PROBLEM.search(title)))
+            items.append({"title": title[:170], "link": link, "source": src, "date": dt.strftime("%Y-%m-%d"), "kind": kind, "release": rel})
             n += 1
         log[name + " " + (url.split('q=')[1].split('+when')[0] if 'q=' in url else url.split('/')[2])] = n
     except Exception as e:
@@ -118,8 +127,11 @@ for i in items:
 for i in out: i.pop("_w"); i.pop("_n")
 # drum stories from the last 30 days go to the front, then the newest of the rest
 recent = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
-out = [i for i in out if i["kind"] == "DRUMS" and i["date"] >= recent] + [i for i in out if not (i["kind"] == "DRUMS" and i["date"] >= recent)]
+# drum stories first, then good news about new AI tools, then everything else (each group newest first)
+rank = lambda i: 0 if (i["kind"] == "DRUMS" and i["date"] >= recent) else 1 if (i["kind"] == "PRODUCT" and i["date"] >= recent) else 2
+out.sort(key=rank)
 print(json.dumps(log, indent=1)); print(len(out), "AI stories")
 if out:
     json.dump({"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
-               "items": out[:24], "log": log}, open("assets/ai.json", "w"), indent=1)
+               "items": out[:24],
+               "releases": [i for i in out if i.get("release") and i["date"] >= recent][:8], "log": log}, open("assets/ai.json", "w"), indent=1)
