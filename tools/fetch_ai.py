@@ -100,12 +100,22 @@ items.sort(key=lambda i: i["date"], reverse=True)
 STOP = set("the a an and of to in for on with is are its it at by from as new ai music says say".split())
 def words(t): return {w for w in re.findall(r"[a-z0-9$]+", t.lower()) if w not in STOP and len(w) > 2}
 # the same story from several outlets: keep the first (newest), prefer music outlets for ties
-out = []
+COMMON = {"suno", "udio", "spotify", "sony", "universal", "umg", "warner", "billboard", "youtube", "tiktok", "apple", "google", "openai"}
+def names(t): return {w.lower() for w in re.findall(r"\b[A-Z][a-zA-Z]{3,}\b", t)[1:]} - COMMON - STOP
+out, keys = [], set()
 for i in items:
-    w = words(i["title"])
-    if any(len(w & o["_w"]) >= max(3, 0.4 * min(len(w), len(o["_w"]))) for o in out): continue
-    i["_w"] = w; out.append(i)
-for i in out: i.pop("_w")
+    key = re.sub(r"\W+", "", i["title"].lower())
+    if key in keys or i["title"].lower().startswith("all the latest"): continue
+    w, n = words(i["title"]), names(i["title"]) | ({re.findall(r"[A-Za-z]+", i["title"])[0].lower()} if re.match(r"[A-Z][a-z]{3,}", i["title"]) else set())
+    n -= COMMON | STOP
+    dup = False
+    for o in out:
+        shared = len(w & o["_w"])
+        if shared >= max(3, 0.3 * min(len(w), len(o["_w"]))) or (n & o["_n"] and shared >= 2):
+            dup = True; break
+    if dup: continue
+    keys.add(key); i["_w"], i["_n"] = w, n; out.append(i)
+for i in out: i.pop("_w"); i.pop("_n")
 # drum stories from the last 30 days go to the front, then the newest of the rest
 recent = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days=30)).strftime("%Y-%m-%d")
 out = [i for i in out if i["kind"] == "DRUMS" and i["date"] >= recent] + [i for i in out if not (i["kind"] == "DRUMS" and i["date"] >= recent)]
