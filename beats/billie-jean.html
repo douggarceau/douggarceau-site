@@ -15,7 +15,7 @@
 <meta property="og:description" content="Learn the drum beat from Michael Jackson&#x27;s &quot;Billie Jean&quot;: eighth-note hi-hat, kick on 1 and 3, snare on 2 and 4, with play-along audio.">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-<style>:root{--bg:#0a0a0a;--ink:#fff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#ffd35c;--gold2:#ffe9a8}
+<style>:root{--bg:#0a0a0a;--ink:#fff;--muted:#c4c4c4;--line:#2e2e2e;--gold:#e3242b;--gold2:#ff8a8f}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:'IBM Plex Mono',ui-monospace,monospace;font-size:16px;line-height:1.7}
 a{color:var(--gold)}a:hover{color:var(--gold2)}
@@ -29,14 +29,14 @@ p{margin:0 0 14px}
 b{color:var(--gold);font-weight:600}
 .pl{border:2px solid var(--ink);border-radius:10px;padding:14px;margin:22px 0}
 .ctl{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-bottom:12px}
-.go{min-height:48px;padding:0 22px;border:0;border-radius:4px;background:var(--gold);color:#0a0a0a;font-family:'Bebas Neue',Impact,sans-serif;font-size:24px;letter-spacing:2px;cursor:pointer}
+.go{min-height:48px;padding:0 22px;border:0;border-radius:4px;background:var(--gold);color:#fff;font-family:'Bebas Neue',Impact,sans-serif;font-size:24px;letter-spacing:2px;cursor:pointer}
 .go[aria-pressed=true]{background:var(--ink)}
 .tempo{display:flex;align-items:center;gap:10px;font-size:14px;letter-spacing:1px;flex:1;min-width:220px}
 .tempo input{flex:1;accent-color:var(--gold);min-height:32px}
 .counts{display:flex;flex-wrap:wrap;gap:4px;margin:0 0 8px}
 .counts .c{min-width:30px;text-align:center;border:1px solid var(--line);border-radius:4px;padding:2px 4px;color:var(--muted)}
 .counts .c.beat{color:var(--ink);font-weight:600}
-.counts .c.on{background:var(--gold);border-color:var(--gold);color:#0a0a0a}
+.counts .c.on{background:var(--gold);border-color:var(--gold);color:#fff}
 .counts.sm .c{min-width:22px;font-size:13px}
 .counts .bar{padding:2px 2px;color:var(--muted)}
 .staff{overflow-x:auto;-webkit-overflow-scrolling:touch}
@@ -48,7 +48,7 @@ ol.steps li::before{counter-increment:s;content:counter(s);font-family:'Bebas Ne
 ul.mis,ul.rel{padding-left:20px;margin:0}ul.mis li,ul.rel li{margin:0 0 8px}
 .try{display:inline-flex;align-items:center;min-height:48px;padding:0 20px;border:2px solid var(--ink);border-radius:4px;text-decoration:none;color:var(--ink);font-family:'Bebas Neue',Impact,sans-serif;font-size:22px;letter-spacing:2px;margin:0 8px 10px 0}
 .try:hover{border-color:var(--gold);color:var(--gold)}
-.try.solid{background:var(--gold);border-color:var(--gold);color:#0a0a0a}.try.solid:hover{background:var(--gold2);color:#0a0a0a}
+.try.solid{background:var(--gold);border-color:var(--gold);color:#fff}.try.solid:hover{background:var(--gold2);color:#0a0a0a}
 .cta{margin-top:40px}
 .cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
 .card{display:flex;flex-direction:column;gap:6px;border:2px solid var(--line);border-radius:10px;padding:14px;text-decoration:none;color:var(--muted);font-size:14px;line-height:1.5}

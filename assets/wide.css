@@ -33,11 +33,11 @@ section.step h2{font-size:clamp(32px,2.6vw,42px)}
 section.step h2{line-height:1.05}@media(max-width:700px){section.step{padding:18px}}
 
 /* ===== Lab skin: every page gets the Drum Lab look. Theme via <html data-lab="cyan|gold|red">; default gold. ===== */
-:root{--lab-bg:#0d0b06;--lab-bg2:#15110a;--lab-p1:#1e180d;--lab-p2:#16120a;--lab-line:#3a2f1b;--lab-line2:#54442a;--lab-ink:#fbf4e6;--lab-mut:#bfae8c;--lab-acc:#f2b93b;--lab-acc2:#ffd98a;--lab-glow:242,185,59;--lab-halo:#2a1f08;
+:root{--lab-bg:#0b0404;--lab-bg2:#140606;--lab-p1:#220a0a;--lab-p2:#170707;--lab-line:#3a1515;--lab-line2:#5a1f1f;--lab-ink:#f7f1f0;--lab-mut:#b8a9a7;--lab-acc:#e3242b;--lab-acc2:#ff5a5f;--lab-glow:227,36,43;--lab-halo:#3a0404;--lab-on:#fff;
  --bg:var(--lab-bg);--ink:var(--lab-ink);--muted:var(--lab-mut);--line:var(--lab-line);--gold:var(--lab-acc);--gold2:var(--lab-acc2)}
-html[data-lab=cyan]{--lab-bg:#060e1c;--lab-bg2:#0a1628;--lab-p1:#10223b;--lab-p2:#0c1a2f;--lab-line:#1b3252;--lab-line2:#25446c;--lab-ink:#eaf2ff;--lab-mut:#8fa6c4;--lab-acc:#38d6ff;--lab-acc2:#8ee9ff;--lab-glow:56,214,255;--lab-halo:#0f2544}
-html[data-lab=red]{--lab-bg:#0b0404;--lab-bg2:#140606;--lab-p1:#220a0a;--lab-p2:#170707;--lab-line:#3a1515;--lab-line2:#5a1f1f;--lab-ink:#f7f1f0;--lab-mut:#b8a9a7;--lab-acc:#e10600;--lab-acc2:#ff3b30;--lab-glow:225,6,0;--lab-halo:#3a0404}
-html[data-lab=orange]{--lab-bg:#0d0905;--lab-bg2:#150d06;--lab-p1:#22160a;--lab-p2:#170f08;--lab-line:#3a2714;--lab-line2:#56391b;--lab-ink:#fbf4ea;--lab-mut:#bfa98f;--lab-acc:#e77500;--lab-acc2:#ff9a2e;--lab-glow:231,117,0;--lab-halo:#2e1602}
+html[data-lab=cyan]{--lab-on:#06121a;--lab-bg:#060e1c;--lab-bg2:#0a1628;--lab-p1:#10223b;--lab-p2:#0c1a2f;--lab-line:#1b3252;--lab-line2:#25446c;--lab-ink:#eaf2ff;--lab-mut:#8fa6c4;--lab-acc:#38d6ff;--lab-acc2:#8ee9ff;--lab-glow:56,214,255;--lab-halo:#0f2544}
+html[data-lab=red]{--lab-on:#fff;--lab-bg:#0b0404;--lab-bg2:#140606;--lab-p1:#220a0a;--lab-p2:#170707;--lab-line:#3a1515;--lab-line2:#5a1f1f;--lab-ink:#f7f1f0;--lab-mut:#b8a9a7;--lab-acc:#e10600;--lab-acc2:#ff3b30;--lab-glow:225,6,0;--lab-halo:#3a0404}
+html[data-lab=orange]{--lab-on:#1a0d00;--lab-bg:#0d0905;--lab-bg2:#150d06;--lab-p1:#22160a;--lab-p2:#170f08;--lab-line:#3a2714;--lab-line2:#56391b;--lab-ink:#fbf4ea;--lab-mut:#bfa98f;--lab-acc:#e77500;--lab-acc2:#ff9a2e;--lab-glow:231,117,0;--lab-halo:#2e1602}
 body{background:radial-gradient(1200px 620px at 25% -10%,var(--lab-halo) 0%,transparent 62%),radial-gradient(900px 500px at 100% 0%,rgba(var(--lab-glow),.06),transparent 60%),var(--lab-bg);background-attachment:fixed;color:var(--lab-ink)}
 a{color:var(--lab-acc)}a:hover{color:var(--lab-acc2)}
 nav,nav.top{border-bottom-color:var(--lab-line)}
@@ -50,7 +50,7 @@ b{color:var(--lab-acc)}
 .spec h3,.box h3,.box>h3{background:rgba(var(--lab-glow),.14);color:var(--lab-acc2);border-bottom:1px solid var(--lab-line)}
 section.step h2{box-shadow:none;border:0}
 section.step h2 .n{color:var(--lab-acc)}
-.go,.try.solid,.levelnav a.here{background:linear-gradient(180deg,var(--lab-acc2),var(--lab-acc));border-color:var(--lab-acc)!important;color:#140d02;box-shadow:0 6px 22px rgba(var(--lab-glow),.28)}
+.go,.try.solid,.levelnav a.here{background:linear-gradient(180deg,var(--lab-acc2),var(--lab-acc));border-color:var(--lab-acc)!important;color:var(--lab-on,#fff);box-shadow:0 6px 22px rgba(var(--lab-glow),.28)}
 .try,.jump a,.levelnav a{border-color:var(--lab-line2)!important;color:var(--lab-ink)}
 .try:hover,.jump a:hover,.levelnav a:hover{border-color:var(--lab-acc)!important;color:var(--lab-acc2);box-shadow:0 0 16px rgba(var(--lab-glow),.2)}
 .counts .c{border-color:var(--lab-line)}.counts .c.on{background:var(--lab-acc);border-color:var(--lab-acc);box-shadow:0 0 12px rgba(var(--lab-glow),.6)}
@@ -65,7 +65,7 @@ html[data-lab=orange] .go,html[data-lab=orange] .try.solid,html[data-lab=orange]
 .box .bh{background:rgba(var(--lab-glow),.16);color:var(--lab-acc2)}
 .chip,.feel,.var,.snd,button.step,.exc button,.scale,.seg button,.opts select,.find,.find input{background:rgba(255,255,255,.02);border-color:var(--lab-line2)!important;color:var(--lab-ink)}
 .chip:hover,.feel:hover,.var:hover,.snd:hover,button.step:hover,.exc button:hover,.scale:hover,.seg button:hover{border-color:var(--lab-acc)!important;box-shadow:0 0 14px rgba(var(--lab-glow),.2)}
-.chip.sel,.chip.on,.feel.on,.var.on,.play.on,.exc button.pl,.seg button.on,.seg button[aria-pressed=true],.chip[aria-pressed=true]{background:linear-gradient(180deg,var(--lab-acc2),var(--lab-acc));border-color:var(--lab-acc)!important;color:#140d02;box-shadow:0 0 16px rgba(var(--lab-glow),.3)}
+.chip.sel,.chip.on,.feel.on,.var.on,.play.on,.exc button.pl,.seg button.on,.seg button[aria-pressed=true],.chip[aria-pressed=true]{background:linear-gradient(180deg,var(--lab-acc2),var(--lab-acc));border-color:var(--lab-acc)!important;color:var(--lab-on,#fff);box-shadow:0 0 16px rgba(var(--lab-glow),.3)}
 .play{border-color:var(--lab-acc)!important;box-shadow:0 0 18px rgba(var(--lab-glow),.25)}
 .exsvg svg{width:100%!important;max-width:1400px;height:auto}
-.box.tip>h3,.box.tip h3{background:linear-gradient(180deg,var(--lab-acc2),var(--lab-acc));color:#140d02}
+.box.tip>h3,.box.tip h3{background:linear-gradient(180deg,var(--lab-acc2),var(--lab-acc));color:var(--lab-on,#fff)}

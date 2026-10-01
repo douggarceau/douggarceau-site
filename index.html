@@ -21,7 +21,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="assets/home-hero-kit.webp" type="image/webp">
 <style>
-:root{--black:#050606;--black2:#0b0d0f;--panel:#101316;--white:#f5f3ed;--muted:#aaa9a3;--gold:#e7bd42;--cyan:#43d7ff;--violet:#9477ff;--border:rgba(255,255,255,.11);--container:1360px;
+:root{--black:#050606;--black2:#0b0d0f;--panel:#101316;--white:#f5f3ed;--muted:#aaa9a3;--gold:#c8102e;--cyan:#43d7ff;--violet:#9477ff;--border:rgba(255,255,255,.11);--container:1360px;
  --display:'Bebas Neue',"Arial Narrow","Roboto Condensed","Helvetica Neue Condensed",Arial,sans-serif;--body:'IBM Plex Sans',system-ui,-apple-system,"Segoe UI",Arial,sans-serif;--mono:'IBM Plex Mono',ui-monospace,monospace}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -41,7 +41,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .site-nav{display:flex;justify-content:center;gap:28px}
 .site-nav a{color:#b7b7b0;font-size:14px;transition:color .2s}
 .site-nav a:hover{color:#fff}
-.nav-cta{min-height:42px;padding:0 18px;display:inline-flex;align-items:center;background:var(--gold);color:#111;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.08em}
+.nav-cta{min-height:42px;padding:0 18px;display:inline-flex;align-items:center;background:var(--gold);color:#fff;font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.08em}
 .menu{display:none;position:relative}
 .menu summary{list-style:none;cursor:pointer;min-height:42px;min-width:42px;display:grid;place-items:center;border:1px solid var(--border)}
 .menu summary::-webkit-details-marker{display:none}
@@ -60,7 +60,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .button-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
 .button{min-height:52px;padding:0 26px;display:inline-flex;align-items:center;justify-content:center;gap:10px;border:1px solid transparent;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;transition:transform .18s ease,border-color .18s,background .18s;cursor:pointer}
 .button:hover{transform:translateY(-2px)}
-.button-gold{background:var(--gold);color:#111}
+.button-gold{background:var(--gold);color:#fff}
 .button-cyan{background:var(--cyan);color:#031017;box-shadow:0 0 26px rgba(67,215,255,.18)}
 .button-outline{color:#fff;border-color:rgba(255,255,255,.42);background:rgba(0,0,0,.2)}
 .button-outline:hover{border-color:#fff}
@@ -125,8 +125,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .instrument-photo img{width:100%;height:100%;object-fit:cover}
 .hot{position:absolute;border:0;padding:0;background:transparent;cursor:pointer;border-radius:12px;transition:box-shadow .15s,background .15s}
 .hot.round{border-radius:50%}
-.hot:hover{box-shadow:inset 0 0 0 2px rgba(231,189,66,.7)}
-.hot.on{background:radial-gradient(closest-side,rgba(231,189,66,.6),rgba(231,189,66,.2) 70%,transparent);box-shadow:0 0 30px 8px rgba(231,189,66,.5),inset 0 0 0 2px rgba(231,189,66,.95)}
+.hot:hover{box-shadow:inset 0 0 0 2px rgba(200,16,46,.7)}
+.hot.on{background:radial-gradient(closest-side,rgba(200,16,46,.6),rgba(200,16,46,.2) 70%,transparent);box-shadow:0 0 30px 8px rgba(200,16,46,.5),inset 0 0 0 2px rgba(200,16,46,.95)}
 .photo-hint{position:absolute;right:12px;bottom:12px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;background:rgba(0,0,0,.66);border:1px solid var(--border);padding:6px 10px;color:#fff;pointer-events:none}
 /* content */
 .content-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--border)}
@@ -138,7 +138,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .content-card p{color:var(--muted);font-size:16px;margin:0 0 18px}
 .content-card .text-link{margin-top:auto}
 /* final */
-.final-cta{padding:150px 0;text-align:center;background:radial-gradient(circle at center,rgba(231,189,66,.1),transparent 45%),#060707;border-bottom:1px solid var(--border)}
+.final-cta{padding:150px 0;text-align:center;background:radial-gradient(circle at center,rgba(200,16,46,.1),transparent 45%),#060707;border-bottom:1px solid var(--border)}
 .final-cta h2{font-size:clamp(56px,7vw,110px)}
 .final-cta p{max-width:660px;margin:0 auto;color:var(--muted);font-size:19px}
 .button-row-center{justify-content:center}
@@ -151,7 +151,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .newsletter-form .row{display:flex}
 .newsletter-form input{flex:1;min-width:0;height:52px;padding:0 16px;color:#fff;border:1px solid #393b3c;border-right:0;background:#090b0c;outline:none;font-size:16px}
 .newsletter-form input:focus{border-color:var(--gold)}
-.newsletter-form button{height:52px;border:0;padding:0 24px;background:var(--gold);color:#111;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.1em;cursor:pointer}
+.newsletter-form button{height:52px;border:0;padding:0 24px;background:var(--gold);color:#fff;font-family:var(--mono);font-size:13px;font-weight:600;letter-spacing:.1em;cursor:pointer}
 .note{font-size:15px;color:var(--muted);margin:10px 0 0;min-height:22px}.note.ok{color:var(--gold)}
 /* footer */
 .site-footer{padding:34px 0 40px;background:#030404;border-top:1px solid var(--border);color:#8a8b86;font-size:14px}
@@ -209,7 +209,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .big-copy h3{margin:8px 0 10px;font-family:var(--display);font-weight:400;font-size:clamp(34px,3vw,52px);line-height:.95}
 .big-copy p{color:#c9c8c2;max-width:560px;margin:0 0 14px}
 @media(max-width:900px){.big-grid{grid-template-columns:1fr}.big-card{min-height:380px}}
-.zone{padding:70px 0 26px;border-top:1px solid var(--border);background:linear-gradient(180deg,rgba(231,189,66,.07),transparent 80%)}
+.zone{padding:70px 0 26px;border-top:1px solid var(--border);background:linear-gradient(180deg,rgba(200,16,46,.07),transparent 80%)}
 .zone-in{display:grid;grid-template-columns:auto 1fr;gap:6px 26px;align-items:end}
 .zone-num{grid-row:span 2;font-family:var(--display);font-size:clamp(70px,8vw,130px);line-height:.8;color:var(--gold)}
 .zone h2{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(56px,6vw,96px);line-height:.9;letter-spacing:.02em}
@@ -220,11 +220,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .content-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:900px){.content-grid.three{grid-template-columns:1fr}}
 @media(max-width:650px){.zone-in{grid-template-columns:1fr}.zone-num{grid-row:auto}.zone-links{grid-column:1}}
-.nav-ctas{display:flex;gap:8px}.nav-cta.nav-shop{background:transparent;color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}.nav-cta.nav-shop:hover{background:var(--gold);color:#111}
+.nav-ctas{display:flex;gap:8px}.nav-cta.nav-shop{background:transparent;color:var(--gold);box-shadow:inset 0 0 0 1px var(--gold)}.nav-cta.nav-shop:hover{background:var(--gold);color:#fff}
 @media(max-width:650px){.nav-cta.nav-shop{display:none}}
 
 /* ticker + new box */
-.ticker{display:flex;align-items:stretch;height:34px;background:#ffd35c;color:#0a0a0a;overflow:hidden;font:600 13px/34px 'IBM Plex Mono',monospace;letter-spacing:.04em}
+.ticker{display:flex;align-items:stretch;height:34px;background:#e3242b;color:#fff;overflow:hidden;font:600 13px/34px 'IBM Plex Mono',monospace;letter-spacing:.04em}
 .tk-new{flex:none;background:#c0392b;color:#fff;padding:0 14px;letter-spacing:.2em;animation:nbflash 1.1s steps(2,start) infinite}
 .tk-view{flex:1;overflow:hidden;position:relative}
 .tk-track{display:flex;width:max-content;animation:tkscroll 38s linear infinite}
@@ -234,31 +234,31 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .tk-run i{font-style:normal;opacity:.55}
 @keyframes tkscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @keyframes nbflash{0%{background:#c0392b}50%{background:#ff3b2f}}
-@keyframes nbglow{0%,100%{box-shadow:0 0 0 1px #ffd35c,0 0 18px rgba(255,211,92,.35)}50%{box-shadow:0 0 0 2px #ffd35c,0 0 42px rgba(255,211,92,.8)}}
-.site-nav a.nav-new{color:#ffd35c;font-weight:600}
+@keyframes nbglow{0%,100%{box-shadow:0 0 0 1px #e3242b,0 0 18px rgba(227,36,43,.35)}50%{box-shadow:0 0 0 2px #e3242b,0 0 42px rgba(227,36,43,.8)}}
+.site-nav a.nav-new{color:#e3242b;font-weight:600}
 .site-nav a.nav-new b{font:700 10px 'IBM Plex Mono',monospace;background:#c0392b;color:#fff;padding:2px 5px;border-radius:3px;margin-left:4px;vertical-align:2px;animation:nbflash 1.1s steps(2,start) infinite}
 .newbox{display:block;position:relative;z-index:3;width:340px;padding:20px 22px 18px;border-radius:14px;background:rgba(8,8,8,.86);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;text-decoration:none;animation:nbglow 1.6s ease-in-out infinite;margin-bottom:26px}
 .nb-badge{position:absolute;top:-13px;left:18px;background:#c0392b;color:#fff;font:700 13px 'IBM Plex Mono',monospace;letter-spacing:.2em;padding:4px 10px;border-radius:4px;animation:nbflash 1.1s steps(2,start) infinite}
-.nb-title{display:block;font-family:var(--display);font-size:34px;line-height:1;letter-spacing:.02em;color:#ffd35c;margin:4px 0 12px}
+.nb-title{display:block;font-family:var(--display);font-size:34px;line-height:1;letter-spacing:.02em;color:#e3242b;margin:4px 0 12px}
 .nb-list{display:flex;flex-direction:column;gap:2px}
 .nb-list span{display:flex;align-items:center;gap:10px;font-size:16px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.08);cursor:pointer}
-.nb-list span:hover{color:#ffd35c}
+.nb-list span:hover{color:#e3242b}
 .nb-list b{width:9px;height:9px;border-radius:50%;background:var(--d);flex:none}
-.nb-go{display:inline-block;margin-top:14px;font:700 13px 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#0a0a0a;background:#ffd35c;padding:10px 14px;border-radius:4px}
+.nb-go{display:inline-block;margin-top:14px;font:700 13px 'IBM Plex Mono',monospace;letter-spacing:.12em;color:#fff;background:#e3242b;padding:10px 14px;border-radius:4px}
 @media (min-width:1180px){.newbox{position:absolute;right:24px;top:50%;transform:translateY(-50%);margin:0}.home-hero h1,.hero-copy{max-width:calc(100% - 390px)}}
 @media (max-width:760px){.newbox{width:100%;margin-top:10px}.ticker{font-size:12px}}
 @media (prefers-reduced-motion:reduce){.tk-track{animation:none}.tk-view{overflow-x:auto}.tk-new,.nb-badge,.newbox,.site-nav a.nav-new b{animation:none}}
 
 /* top sign-up */
 .topsign{background:#0d0d0d;border-bottom:1px solid var(--border);padding:12px 24px}
-.ts-box{display:grid;grid-template-columns:auto minmax(0,440px);grid-template-areas:"copy row" "note note";align-items:center;gap:6px 22px;max-width:760px;padding:14px 18px;border:2px solid #ffd35c;border-radius:10px;background:linear-gradient(180deg,rgba(255,211,92,.1),rgba(255,211,92,.03))}
+.ts-box{display:grid;grid-template-columns:auto minmax(0,440px);grid-template-areas:"copy row" "note note";align-items:center;gap:6px 22px;max-width:760px;padding:14px 18px;border:2px solid #e3242b;border-radius:10px;background:linear-gradient(180deg,rgba(227,36,43,.1),rgba(227,36,43,.03))}
 .ts-copy{grid-area:copy;display:flex;flex-direction:column;line-height:1.15}
-.ts-h{font-family:var(--display);font-size:30px;letter-spacing:.03em;color:#ffd35c}
+.ts-h{font-family:var(--display);font-size:30px;letter-spacing:.03em;color:#e3242b}
 .ts-sub{font-size:15px;color:#e8e6df}
 .ts-row{grid-area:row;display:flex;gap:8px}
 .ts-row input{flex:1;min-width:0;height:48px;padding:0 14px;font-size:17px;border:1px solid #555;border-radius:6px;background:#fff;color:#111}
-.ts-row button{height:48px;padding:0 18px;border:0;border-radius:6px;background:#ffd35c;color:#0a0a0a;font:700 14px var(--mono,monospace);letter-spacing:.1em;cursor:pointer;white-space:nowrap}
-.ts-row button:hover{background:#ffe38a}
+.ts-row button{height:48px;padding:0 18px;border:0;border-radius:6px;background:#e3242b;color:#fff;font:700 14px var(--mono,monospace);letter-spacing:.1em;cursor:pointer;white-space:nowrap}
+.ts-row button:hover{background:#ff4d55}
 .ts-row button:disabled{opacity:.6}
 .ts-note{grid-area:note;margin:0;font-size:14px;color:#e8e6df;min-height:0}
 .ts-note:empty{display:none}
@@ -267,22 +267,22 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 
 /* gear ad */
 .gearad{position:fixed;left:0;top:50%;transform:translateY(-50%);z-index:900;text-decoration:none;color:#0a0a0a}
-.ga-tab{display:block;writing-mode:vertical-rl;transform:rotate(180deg);background:#ffd35c;padding:18px 9px;border-radius:0 8px 8px 0;font:700 14px var(--mono,monospace);letter-spacing:.14em;box-shadow:0 6px 24px rgba(0,0,0,.5);transition:padding .15s}
-.gearad:hover .ga-tab{padding-top:26px;background:#ffe38a}
+.ga-tab{display:block;writing-mode:vertical-rl;transform:rotate(180deg);background:#e3242b;padding:18px 9px;border-radius:0 8px 8px 0;font:700 14px var(--mono,monospace);letter-spacing:.14em;box-shadow:0 6px 24px rgba(0,0,0,.5);transition:padding .15s}
+.gearad:hover .ga-tab{padding-top:26px;background:#ff4d55}
 .ga-card{display:none}
-.ga-h{display:block;font-family:var(--display);font-size:30px;line-height:1;color:#ffd35c;letter-spacing:.02em}
+.ga-h{display:block;font-family:var(--display);font-size:30px;line-height:1;color:#e3242b;letter-spacing:.02em}
 .ga-t{display:block;font-size:14px;line-height:1.4;color:#d8d6cf;margin:10px 0 12px}
-.ga-b{display:inline-block;background:#ffd35c;color:#0a0a0a;font:700 12px var(--mono,monospace);letter-spacing:.12em;padding:9px 12px;border-radius:4px}
+.ga-b{display:inline-block;background:#e3242b;color:#fff;font:700 12px var(--mono,monospace);letter-spacing:.12em;padding:9px 12px;border-radius:4px}
 .gearad-m{display:none}
 @media (min-width:1780px){
  .gearad{left:18px}
  .ga-tab{display:none}
- .ga-card{display:block;width:196px;padding:16px;border:2px solid #ffd35c;border-radius:12px;background:rgba(10,10,10,.92);box-shadow:0 10px 30px rgba(0,0,0,.5);animation:nbglow 1.6s ease-in-out infinite}
+ .ga-card{display:block;width:196px;padding:16px;border:2px solid #e3242b;border-radius:12px;background:rgba(10,10,10,.92);box-shadow:0 10px 30px rgba(0,0,0,.5);animation:nbglow 1.6s ease-in-out infinite}
  .ga-card img{display:block;width:100%;height:auto;border-radius:6px;margin-top:12px}
 }
 @media (max-width:760px){
  .gearad{display:none}
- .gearad-m{display:block;margin:0;padding:22px 16px;background:#141008;border-top:2px solid #ffd35c;border-bottom:2px solid #ffd35c;text-decoration:none;text-align:center}
+ .gearad-m{display:block;margin:0;padding:22px 16px;background:#141008;border-top:2px solid #e3242b;border-bottom:2px solid #e3242b;text-decoration:none;text-align:center}
  .gearad-m .ga-h{font-size:34px}
 }
 @media (min-width:761px) and (max-width:1779px){.home-container{width:min(calc(100% - 104px),var(--container))}}
@@ -296,7 +296,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .hb-top b{background:#c0392b;color:#fff;padding:2px 7px;border-radius:3px;margin-right:6px;animation:nbflash 1.1s steps(2,start) infinite}
 .hb-h{font-family:var(--display);font-size:30px;line-height:1;margin-top:6px}
 .hb-s{font-size:14px;color:#ffc078;letter-spacing:.06em}
-.hb-go{margin-top:6px;font:700 12px var(--mono,monospace);letter-spacing:.14em;color:#ffd35c}
+.hb-go{margin-top:6px;font:700 12px var(--mono,monospace);letter-spacing:.14em;color:#e3242b}
 .hartbox:hover .hb-go{text-decoration:underline}
 @media (max-width:700px){.hartbox{min-width:0;width:100%}.hb-h{font-size:26px}}
 @media (prefers-reduced-motion:reduce){.hartbox,.hb-top b{animation:none}}
@@ -313,15 +313,32 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @media (max-width:700px){.rotbox{min-width:0;width:100%}}
 @media (prefers-reduced-motion:reduce){.rotbox .hartbox,.rotbox .hartbox .hb-h,.rotbox .hb-top b{animation:none!important}}
 
-/* date and time box */
-.clockbox{display:flex;flex-direction:column;justify-content:center;align-items:center;min-width:150px;padding:10px 16px;border-radius:10px;border:2px solid #00e5ff;background:radial-gradient(ellipse at 50% 0%,rgba(0,229,255,.22),transparent 70%),#06121a;color:#e9fdff;text-align:center;animation:cbglow 2s ease-in-out infinite;font-family:var(--mono,monospace)}
-.cb-day{font-size:12px;letter-spacing:.3em;color:#00e5ff;font-weight:700}
-.cb-time{font-size:30px;font-weight:700;line-height:1.1;letter-spacing:.04em;color:#fff;text-shadow:0 0 12px rgba(0,229,255,.9)}
-.cb-date{font-size:13px;letter-spacing:.12em;color:#9fefff}
+/* date and time box: 1980s LED alarm clock */
+.clockbox{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:10px 12px 6px;border-radius:12px;min-width:220px;
+ background:repeating-linear-gradient(92deg,#3b2414 0 3px,#4a2e19 3px 7px,#2f1c0f 7px 9px,#452a16 9px 14px);border:2px solid #1a0f07;
+ box-shadow:inset 0 2px 0 rgba(255,255,255,.12),inset 0 -3px 6px rgba(0,0,0,.6),0 6px 16px rgba(0,0,0,.6),0 0 22px rgba(255,30,20,.25)}
+.cb-face{display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:6px;background:linear-gradient(180deg,#120404,#060101 60%,#0d0303);box-shadow:inset 0 0 12px rgba(0,0,0,.9),inset 0 1px 0 rgba(255,255,255,.06)}
+.cb-main{display:flex;align-items:center;gap:4px}
+.cb-main svg{display:block}
+.seg{fill:#1e0503}.seg.on{fill:#ff2a1a;filter:drop-shadow(0 0 3px #ff2a1a) drop-shadow(0 0 7px rgba(255,40,20,.7))}
+.cb-colon{display:flex;flex-direction:column;gap:9px;margin:0 2px}
+.cb-colon i{width:5px;height:5px;border-radius:50%;background:#ff2a1a;box-shadow:0 0 6px #ff2a1a}
+.cb-colon.off i{background:#2a0805;box-shadow:none}
+.cb-side{display:flex;flex-direction:column;gap:6px;font:700 9px var(--mono,monospace);letter-spacing:.1em}
+.cb-pm,.cb-al{color:#3a0d08;display:flex;align-items:center;gap:4px}
+.cb-pm:before,.cb-al:before{content:"";width:5px;height:5px;border-radius:50%;background:#3a0d08}
+.cb-pm.on{color:#ff6a55}.cb-pm.on:before{background:#ff2a1a;box-shadow:0 0 6px #ff2a1a}
+.cb-date{display:flex;align-items:center;gap:3px;padding:4px 10px;border-radius:5px;background:linear-gradient(180deg,#110303,#050101);box-shadow:inset 0 0 8px rgba(0,0,0,.9)}
+.cb-dl{font:700 10px var(--mono,monospace);letter-spacing:.18em;color:#ff6a55;text-shadow:0 0 6px rgba(255,42,26,.8);margin-right:5px}
+.cb-dot{width:3px;height:3px;border-radius:50%;background:#ff2a1a;box-shadow:0 0 4px #ff2a1a;align-self:flex-end;margin:0 1px 2px}
+.cb-brand{font:700 8px var(--mono,monospace);letter-spacing:.35em;color:#c9a27a;opacity:.7;margin-top:1px}
+@media (max-width:700px){.clockbox{width:100%;min-width:0;max-width:100%;box-sizing:border-box}.cb-brand{letter-spacing:.2em}}
+@media (max-width:380px){.cb-main svg{height:28px!important}.cb-date svg{height:14px!important}.cb-side{display:none}}
+@media (max-width:440px){.cb-main svg{height:34px;width:auto}.cb-date svg{height:17px;width:auto}.cb-face{padding:6px 8px}}
 @media (min-width:1100px){.topsign{flex-wrap:nowrap}.topsign .ts-box{flex:1 1 auto;max-width:none;grid-template-columns:minmax(0,1fr);grid-template-areas:"copy" "row" "note";padding:10px 16px;gap:6px}.topsign .ts-h{font-size:26px}.topsign .clockbox{flex:0 0 auto}.topsign .rotbox{flex:0 0 340px;min-width:0}.topsign .rotbox .hb-h{font-size:26px}}
 @keyframes cbglow{0%,100%{box-shadow:0 0 8px rgba(0,229,255,.45)}50%{box-shadow:0 0 0 2px rgba(0,229,255,.35),0 0 28px rgba(0,229,255,.9)}}
 @media (max-width:700px){.clockbox{flex-direction:row;gap:12px;width:100%;min-width:0;padding:8px 12px}.cb-time{font-size:24px}}
-@media (prefers-reduced-motion:reduce){.clockbox{animation:none}}
+
 </style>
 </head>
 <body>
@@ -332,8 +349,8 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <div class="ts-row"><input type="email" id="temail" name="email" autocomplete="email" placeholder="you@email.com" required><button type="submit">SIGN ME UP</button></div>
 <p class="ts-note" id="tnote" aria-live="polite"></p>
 </form>
-<div class="clockbox" aria-label="Today's date and time"><span class="cb-day" id="cb-day"></span><span class="cb-time" id="cb-time"></span><span class="cb-date" id="cb-date"></span></div>
-<div class="rotbox" id="rotbox" aria-live="polite"><a class="hartbox rb on" href="studio/hart/" style="--bc:#f0932b"><span class="hb-top"><b>ALL NEW</b> 200 SAMPLES</span><span class="hb-h">The Sounds of Mickey Hart</span><span class="hb-s">of the Grateful Dead</span><span class="hb-go">PLAY THEM NOW &rarr;</span></a><a class="hartbox rb" href="shop/#drumsets" style="--bc:#ffd35c" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUM SETS</span><span class="hb-h">DW Drums</span><span class="hb-s">Pro drum sets, explained</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#cymbals" style="--bc:#e6b450" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> CYMBALS</span><span class="hb-h">Zildjian Cymbals</span><span class="hb-s">Crashes, rides, hats and more</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#hardware" style="--bc:#5dade2" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUMHEADS</span><span class="hb-h">Evans Drumheads</span><span class="hb-s">Find the right head for your sound</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#sticks" style="--bc:#e67e22" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> STICKS</span><span class="hb-h">Vic Firth Sticks</span><span class="hb-s">Sticks, brushes and mallets</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#drumsets" style="--bc:#c0392b" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUM SETS</span><span class="hb-h">Ludwig Drums</span><span class="hb-s">Classic kits and snares</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#hardware" style="--bc:#a6acaf" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUMHEADS</span><span class="hb-h">Remo Drumheads</span><span class="hb-s">Heads for every drum</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#cymbals" style="--bc:#f1c40f" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> CYMBALS</span><span class="hb-h">Paiste Cymbals</span><span class="hb-s">Bright, musical cymbals</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#electronic" style="--bc:#9477ff" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> ELECTRONIC DRUMS</span><span class="hb-h">Roland V-Drums</span><span class="hb-s">Electronic kits and pads</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#percussion" style="--bc:#58d68d" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> PERCUSSION</span><span class="hb-h">LP Percussion</span><span class="hb-s">Congas, bongos, shakers and more</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb10" href="#advertise" data-adv="1" style="--bc:#ff3b2f" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>ADVERTISE</b> YOUR BRAND HERE</span><span class="hb-h">Your Drum Shop Here</span><span class="hb-s">Put your brand in front of drummers</span><span class="hb-go">GET IN TOUCH &rarr;</span></a></div>
+<div class="clockbox" role="img" aria-label="Current date and time" id="clockbox"><div class="cb-face"><div class="cb-main" id="cb-main"></div><div class="cb-side"><span class="cb-pm" id="cb-pm">PM</span><span class="cb-al">ALARM</span></div></div><div class="cb-date" id="cb-date"></div><div class="cb-brand">AMADEUS</div></div>
+<div class="rotbox" id="rotbox" aria-live="polite"><a class="hartbox rb on" href="studio/hart/" style="--bc:#f0932b"><span class="hb-top"><b>ALL NEW</b> 200 SAMPLES</span><span class="hb-h">The Sounds of Mickey Hart</span><span class="hb-s">of the Grateful Dead</span><span class="hb-go">PLAY THEM NOW &rarr;</span></a><a class="hartbox rb" href="shop/#drumsets" style="--bc:#e3242b" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUM SETS</span><span class="hb-h">DW Drums</span><span class="hb-s">Pro drum sets, explained</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#cymbals" style="--bc:#b8102a" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> CYMBALS</span><span class="hb-h">Zildjian Cymbals</span><span class="hb-s">Crashes, rides, hats and more</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#hardware" style="--bc:#5dade2" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUMHEADS</span><span class="hb-h">Evans Drumheads</span><span class="hb-s">Find the right head for your sound</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#sticks" style="--bc:#e67e22" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> STICKS</span><span class="hb-h">Vic Firth Sticks</span><span class="hb-s">Sticks, brushes and mallets</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#drumsets" style="--bc:#c0392b" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUM SETS</span><span class="hb-h">Ludwig Drums</span><span class="hb-s">Classic kits and snares</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#hardware" style="--bc:#a6acaf" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUMHEADS</span><span class="hb-h">Remo Drumheads</span><span class="hb-s">Heads for every drum</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#cymbals" style="--bc:#ff6b6b" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> CYMBALS</span><span class="hb-h">Paiste Cymbals</span><span class="hb-s">Bright, musical cymbals</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#electronic" style="--bc:#9477ff" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> ELECTRONIC DRUMS</span><span class="hb-h">Roland V-Drums</span><span class="hb-s">Electronic kits and pads</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#percussion" style="--bc:#58d68d" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> PERCUSSION</span><span class="hb-h">LP Percussion</span><span class="hb-s">Congas, bongos, shakers and more</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb10" href="#advertise" data-adv="1" style="--bc:#ff3b2f" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>ADVERTISE</b> YOUR BRAND HERE</span><span class="hb-h">Your Drum Shop Here</span><span class="hb-s">Put your brand in front of drummers</span><span class="hb-go">GET IN TOUCH &rarr;</span></a></div>
 </div>
 <header class="site-header">
 <div class="ticker" role="region" aria-label="New on the site"><span class="tk-new">NEW</span><div class="tk-view"><div class="tk-track"><span class="tk-run"><a href="studio/hart/">ALL NEW: 200 samples, the sounds of Mickey Hart of the Grateful Dead</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/">Hollywood movie sound FX</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/#industrial">Industrial factory loops &amp; metal hits</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/#k=el">Electronic beat maker</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/">Hip-hop &amp; trap drum machine with 808s</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/#horror">Horror sound effects</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/#k=el">House &amp; techno beats</a><i aria-hidden="true">&#9670;</i><a href="studio/">Free in your browser. Tap and play</a><i aria-hidden="true">&#9670;</i></span><span class="tk-run" aria-hidden="true"><a tabindex="-1" href="studio/hart/">ALL NEW: 200 samples, the sounds of Mickey Hart of the Grateful Dead</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/">Hollywood movie sound FX</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/#industrial">Industrial factory loops &amp; metal hits</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/#k=el">Electronic beat maker</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/">Hip-hop &amp; trap drum machine with 808s</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/#horror">Horror sound effects</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/#k=el">House &amp; techno beats</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/">Free in your browser. Tap and play</a><i aria-hidden="true">&#9670;</i></span></div></div></div>
@@ -349,7 +366,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <span class="nav-ctas"><a href="shop/" class="nav-cta nav-shop">GEAR SHOP</a><a href="#levels" class="nav-cta">START LEARNING</a></span>
 <details class="menu"><summary aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
 <nav aria-label="Main navigation, compact">
-<a href="studio/" style="color:#ffd35c;font-weight:600">Sound Studio (NEW)</a><a href="studio/hart/">Mickey Hart sounds (NEW)</a><a href="studio/fx/">Movie Sound FX</a><a href="studio/beats/">Beat Maker</a><a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="beats/">Famous Beats</a><a href="#signup">Get new lessons</a>
+<a href="studio/" style="color:#e3242b;font-weight:600">Sound Studio (NEW)</a><a href="studio/hart/">Mickey Hart sounds (NEW)</a><a href="studio/fx/">Movie Sound FX</a><a href="studio/beats/">Beat Maker</a><a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="beats/">Famous Beats</a><a href="#signup">Get new lessons</a>
 </nav></details>
 </div>
 </header>
@@ -399,10 +416,10 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @keyframes dnb{0%{opacity:1}50%{opacity:.15}}
 .dn-up{font:12px var(--mono,monospace);color:#8d8b85;letter-spacing:.06em}
 .dn-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
-.dn-item{display:flex;flex-direction:column;gap:8px;padding:16px 16px 14px;border:1px solid #2c2a26;border-left:4px solid var(--c,#ffd35c);border-radius:10px;background:#131210;text-decoration:none;color:#f2f0ea;transition:transform .12s,border-color .12s}
-.dn-item:hover{transform:translateY(-2px);border-color:var(--c,#ffd35c)}
+.dn-item{display:flex;flex-direction:column;gap:8px;padding:16px 16px 14px;border:1px solid #2c2a26;border-left:4px solid var(--c,#e3242b);border-radius:10px;background:#131210;text-decoration:none;color:#f2f0ea;transition:transform .12s,border-color .12s}
+.dn-item:hover{transform:translateY(-2px);border-color:var(--c,#e3242b)}
 .dn-item b{font-weight:600;font-size:16px;line-height:1.35}
-.dn-meta{font:12px var(--mono,monospace);letter-spacing:.06em;color:var(--c,#ffd35c)}
+.dn-meta{font:12px var(--mono,monospace);letter-spacing:.06em;color:var(--c,#e3242b)}
 .dn-meta em{font-style:normal;color:#8d8b85;margin-left:8px}
 .dn-new{display:inline-block;font:700 10px var(--mono,monospace);letter-spacing:.14em;background:#c0392b;color:#fff;padding:2px 6px;border-radius:3px;margin-right:8px;animation:nbflash 1.1s steps(2,start) infinite}
 .dn-empty,.dn-note{color:#8d8b85;font-size:14px;margin:0}
@@ -410,14 +427,14 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 @media (prefers-reduced-motion:reduce){.dn-live i,.dn-new{animation:none}}
 </style>
 <script>
-(function(){var C={'Modern Drummer':'#ffd35c','Drumming News Network':'#5dade2','Drummer\'s Review':'#e67e22','Beat It':'#58d68d','Drumeo':'#af7ac5','Sick Drummer Magazine':'#e74c3c','The UK Drum Show':'#48c9b0','Drummerworld':'#ff6b6b','Scott K Fish':'#c39bd3','The Drum Ninja':'#76d7c4','Electronic Drum Advisor':'#85c1e9','drum-tec':'#f1948a','The Drummer\'s Journal':'#d7bde2','MusicRadar':'#ff5e3a'};
+(function(){var C={'Modern Drummer':'#e3242b','Drumming News Network':'#5dade2','Drummer\'s Review':'#e67e22','Beat It':'#58d68d','Drumeo':'#af7ac5','Sick Drummer Magazine':'#e74c3c','The UK Drum Show':'#48c9b0','Drummerworld':'#ff6b6b','Scott K Fish':'#c39bd3','The Drum Ninja':'#76d7c4','Electronic Drum Advisor':'#85c1e9','drum-tec':'#f1948a','The Drummer\'s Journal':'#d7bde2','MusicRadar':'#ff5e3a'};
 function esc(t){return String(t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');}
 fetch('assets/news.json?ts='+Date.now()).then(function(r){return r.json();}).then(function(d){
  var g=document.getElementById('dn-grid'), it=(d.items||[]).slice(0,15);
  if(!it.length){ document.getElementById('drum-news').style.display='none'; return; }
  var now=Date.now();
  g.innerHTML=it.map(function(x){ var age=(now-Date.parse(x.date))/864e5; var dt=new Date(x.date+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
-  return '<a class="dn-item" href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow" style="--c:'+(C[x.source]||'#ffd35c')+'"><span class="dn-meta">'+(age<3?'<span class="dn-new">NEW</span>':'')+esc(x.source)+'<em>'+dt+'</em></span><b>'+esc(x.title)+'</b></a>'; }).join('');
+  return '<a class="dn-item" href="'+esc(x.link)+'" target="_blank" rel="noopener nofollow" style="--c:'+(C[x.source]||'#e3242b')+'"><span class="dn-meta">'+(age<3?'<span class="dn-new">NEW</span>':'')+esc(x.source)+'<em>'+dt+'</em></span><b>'+esc(x.title)+'</b></a>'; }).join('');
  if(d.updated) document.getElementById('dn-up').textContent='Updated '+new Date(d.updated.replace('Z',':00Z')).toLocaleString('en-US',{month:'short',day:'numeric',hour:'numeric',minute:'2-digit'});
  g.addEventListener('click',function(e){var a=e.target.closest('a');if(a&&window.gtag)gtag('event','news_click',{url:a.href});});
 }).catch(function(){ document.getElementById('drum-news').style.display='none'; });})();
@@ -435,11 +452,11 @@ fetch('assets/news.json?ts='+Date.now()).then(function(r){return r.json();}).the
 </a>
 <section class="fxb" id="movie-fx" aria-labelledby="fxb-h">
 <style>
-.fxb{background:radial-gradient(ellipse at 20% 0%,rgba(192,57,43,.28),transparent 60%),radial-gradient(ellipse at 90% 100%,rgba(255,211,92,.14),transparent 55%),#0b0b0b;border-top:1px solid #2e2e2e;border-bottom:1px solid #2e2e2e;padding:54px 0 58px}
+.fxb{background:radial-gradient(ellipse at 20% 0%,rgba(192,57,43,.28),transparent 60%),radial-gradient(ellipse at 90% 100%,rgba(227,36,43,.14),transparent 55%),#0b0b0b;border-top:1px solid #2e2e2e;border-bottom:1px solid #2e2e2e;padding:54px 0 58px}
 .fxb-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:36px;align-items:center}
 .fxb .eyebrow{color:#e74c3c}
 .fxb h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(48px,7vw,92px);line-height:.9;margin:6px 0 14px;letter-spacing:1px;color:#fff}
-.fxb h2 span{color:#ffd35c}
+.fxb h2 span{color:#e3242b}
 .fxb p{color:#c4c4c4;font-size:18px;max-width:520px;margin:0 0 20px}
 .fxb-pads{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
 .fxb-pad{position:relative;min-height:92px;border-radius:12px;border:1px solid var(--c);background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(0,0,0,.25));color:#fff;font:500 15px/1.25 'IBM Plex Sans',system-ui,sans-serif;text-align:left;padding:12px 10px 22px;cursor:pointer;transition:transform .06s,background .1s}
@@ -468,8 +485,8 @@ fetch('assets/news.json?ts='+Date.now()).then(function(r){return r.json();}).the
 <button class="fxb-pad" data-s="fx-door-creak" style="--c:#e74c3c">Creaking door<small>HORROR</small></button>
 <button class="fxb-pad" data-s="fx-howl" style="--c:#e74c3c">Wolf howl<small>HORROR</small></button>
 <button class="fxb-pad" data-s="fx-banshee" style="--c:#e74c3c">Banshee scream<small>HORROR</small></button>
-<button class="fxb-pad" data-s="fx-braam" style="--c:#ffd35c">Braam<small>TRAILER</small></button>
-<button class="fxb-pad" data-s="fx-impact" style="--c:#ffd35c">Trailer impact<small>TRAILER</small></button>
+<button class="fxb-pad" data-s="fx-braam" style="--c:#e3242b">Braam<small>TRAILER</small></button>
+<button class="fxb-pad" data-s="fx-impact" style="--c:#e3242b">Trailer impact<small>TRAILER</small></button>
 <button class="fxb-pad" data-s="fx-laser" style="--c:#48c9b0">Laser blast<small>SCI-FI</small></button>
 <button class="fxb-pad" data-s="fx-scratch" style="--c:#af7ac5">Record scratch<small>DJ</small></button>
 </div>
@@ -681,7 +698,7 @@ document.getElementById('fxb-stop').addEventListener('click',function(e){ e.prev
 <nav class="footer-links" aria-label="Footer"><a href="beginner/">Beginner</a><a href="intermediate/">Intermediate</a><a href="advanced/">Advanced</a><a href="drumroom/">Drum Room</a><a href="grooves/">Grooves</a><a href="book/index.html">The Book</a></nav>
 <div><span id="views" aria-live="polite"></span></div>
 </div>
-<p class="adv-line" style="margin:14px 0 0;font-size:13px;color:#9a9a93">Advertiser-supported website. Advertising inquiries: <a href="#advertise" class="adv-mail" style="color:#ffd35c">contact for details</a></p>
+<p class="adv-line" style="margin:14px 0 0;font-size:13px;color:#9a9a93">Advertiser-supported website. Advertising inquiries: <a href="#advertise" class="adv-mail" style="color:#e3242b">contact for details</a></p>
 </footer>
 
 <script>
@@ -761,9 +778,16 @@ document.addEventListener('click',function(e){var a=e.target.closest('a[href="#a
 (function(){var m=document.querySelector('.adv-mail');if(m)m.textContent=['douggarceau','gmail.com'].join('@');})();
 </script>
 <script>
-(function(){var d=document.getElementById('cb-day'),t=document.getElementById('cb-time'),dt=document.getElementById('cb-date');if(!t)return;
-function tick(){var n=new Date();d.textContent=n.toLocaleDateString('en-US',{weekday:'long'}).toUpperCase();t.textContent=n.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',second:'2-digit'});dt.textContent=n.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'}).toUpperCase();}
-tick();setInterval(tick,1000);})();
+(function(){var M=document.getElementById('cb-main'),D=document.getElementById('cb-date'),P=document.getElementById('cb-pm');if(!M)return;
+var SEG={0:'abcdef',1:'bc',2:'abged',3:'abgcd',4:'fgbc',5:'afgcd',6:'afgedc',7:'abc',8:'abcdefg',9:'abcdfg',' ':''};
+function dig(c,h){var w=h*0.55,t=h*0.13,m=h/2,g=1.5;function r(id,x,y,ww,hh){return '<rect class="seg'+((SEG[c]||'').indexOf(id)>=0?' on':'')+'" x="'+x+'" y="'+y+'" width="'+ww+'" height="'+hh+'" rx="'+(t/2)+'"/>';}
+ return '<svg width="'+(w+2)+'" height="'+h+'" viewBox="-1 0 '+(w+2)+' '+h+'">'+r('a',t*.6,0,w-t*1.2,t)+r('b',w-t,t*.6+g,t,m-t*1.1-g)+r('c',w-t,m+t*.5,t,m-t*1.1-g)+r('d',t*.6,h-t,w-t*1.2,t)+r('e',0,m+t*.5,t,m-t*1.1-g)+r('f',0,t*.6+g,t,m-t*1.1-g)+r('g',t*.6,m-t/2,w-t*1.2,t)+'</svg>';}
+var last='';function tick(){var n=new Date(),h=n.getHours(),pm=h>=12;h=h%12||12;var mm=('0'+n.getMinutes()).slice(-2),hh=(h<10?' ':'')+h,sec=n.getSeconds();
+ var key=hh+mm;if(key!==last){last=key;M.innerHTML=dig(hh[0],44)+dig(hh[1],44)+'<span class="cb-colon" id="cb-col"><i></i><i></i></span>'+dig(mm[0],44)+dig(mm[1],44);
+  var mo=('0'+(n.getMonth()+1)).slice(-2),dd=('0'+n.getDate()).slice(-2),yy=('0'+(n.getFullYear()%100)).slice(-2);
+  D.innerHTML='<span class="cb-dl">'+n.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+'</span>'+dig(mo[0],21)+dig(mo[1],21)+'<span class="cb-dot"></span>'+dig(dd[0],21)+dig(dd[1],21)+'<span class="cb-dot"></span>'+dig(yy[0],21)+dig(yy[1],21);}
+ P.classList.toggle('on',pm);var c=document.getElementById('cb-col');if(c)c.classList.toggle('off',sec%2===1);}
+tick();setInterval(tick,500);})();
 </script>
 </body>
 </html>
