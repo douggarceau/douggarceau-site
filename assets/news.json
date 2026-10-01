@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01T10:58Z",
+ "updated": "2026-10-01T14:52Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 63,
  "items": [
+  {
+   "title": "LOUISE BARTLE | From Bedroom Drummer to Bloc Party",
+   "link": "https://drummersreview.com/news/louise-bartle-from-bedroom-drummer-to-bloc-party/",
+   "source": "Drummer's Review",
+   "date": "2026-10-01"
+  },
   {
    "title": "Aquiles Priester joins Czarcie Kopyto family",
    "link": "https://en.beatit.tv/aquiles-priester-joins-czarcie-kopyto-family/",
@@ -252,12 +258,6 @@
    "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1997-janes-addiction-relapse-tour-kit/",
    "source": "Modern Drummer",
    "date": "2026-09-06"
-  },
-  {
-   "title": "Alex Lancia \u2013 Lecherous Nocturne \u2013 Metempsychosis \u2013 Drum Play-through",
-   "link": "https://sickdrummermagazine.com/news/latest-news/alex-lancia-lecherous-nocturne-metempsychosis-drum-play-through/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-09-04"
   }
  ]
 }
