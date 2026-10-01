@@ -137,7 +137,8 @@ def day(i): return datetime.date.fromisoformat(i["date"])
 releases = []
 for i in sorted([i for i in out if i.get("release") and i["date"] >= recent], key=lambda i: i["date"], reverse=True):
     c = caps(i["title"])
-    if any(c & caps(r["title"]) and abs((day(i) - day(r)).days) <= 3 for r in releases): continue
+    w = words(i["title"])
+    if any(c & caps(r["title"]) and len(w & words(r["title"])) >= 2 and abs((day(i) - day(r)).days) <= 3 for r in releases): continue
     releases.append(i)
 print(json.dumps(log, indent=1)); print(len(out), "AI stories,", len(releases), "releases")
 if out:
