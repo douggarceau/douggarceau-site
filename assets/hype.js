@@ -8,6 +8,7 @@
     ['/studio/beats/', 'Drum machine: hip-hop, trap, electronic and acoustic kits'],
     ['/studio/fx/#industrial', 'Industrial loops and metal hits'],
     ['/ontour/', 'On Tour: who is behind the kit for 50 touring acts'],
+    ['/vintage/', '10 of America\'s best vintage drum shops'],
     ['/drumroom/', 'The Drum Room: 59 percussion instruments'],
     ['/level7.html', 'Plug in your e-kit or MIDI pads and play The Kit'],
     ['/grooves/', '263 grooves to play along with'],
