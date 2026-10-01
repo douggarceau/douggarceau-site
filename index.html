@@ -460,15 +460,31 @@ html body .fxb-pad:hover{filter:brightness(1.12)}
 html body .fxb-pad:active,html body .fxb-pad.hit{transform:scale(.96);filter:brightness(1.3);background:#fff}
 @property --lit{syntax:'<color>';inherits:false;initial-value:#ff7a00}
 @keyframes padhue{0%,100%{--lit:#ff7a00}14%{--lit:#ffe600}28%{--lit:#39ff14}42%{--lit:#00f0d0}57%{--lit:#00a8ff}71%{--lit:#b45cff}85%{--lit:#ff2d6f}}
-html body .fxb-pad:nth-child(1){animation-delay:-0s}
-html body .fxb-pad:nth-child(2){animation-delay:-2s}
-html body .fxb-pad:nth-child(3){animation-delay:-4s}
-html body .fxb-pad:nth-child(4){animation-delay:-6s}
-html body .fxb-pad:nth-child(5){animation-delay:-8s}
-html body .fxb-pad:nth-child(6){animation-delay:-10s}
-html body .fxb-pad:nth-child(7){animation-delay:-12s}
-html body .fxb-pad:nth-child(8){animation-delay:-14s}
 @media (prefers-reduced-motion:reduce){html body .fxb-pad{animation:none}}
+
+/* FX console: glowing box, breathing pads, matching text */
+html body .fxb-in{grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr)}
+html body .fxb-console{position:relative;padding:10px 12px 12px;border:2px solid var(--lit);border-radius:10px;background:linear-gradient(180deg,#0d0d10,#060608);
+ box-shadow:0 0 0 1px rgba(0,0,0,.6) inset,0 0 18px var(--lit),0 0 46px color-mix(in srgb,var(--lit) 45%,transparent);animation:padhue 16s linear infinite}
+html body .fxc-top{display:flex;align-items:center;gap:8px;margin:0 0 8px;font:700 11px 'IBM Plex Mono',monospace;letter-spacing:.24em;color:#cfcfcf}
+html body .fxc-led{width:9px;height:9px;border-radius:50%;background:#39ff14;box-shadow:0 0 8px #39ff14;animation:aimbl 1s steps(2,start) infinite}
+html body .fxc-n{margin-left:auto;color:#8a8a8a}
+html body .fxb-pads{grid-template-columns:repeat(6,minmax(0,1fr));gap:7px}
+html body .fxb-pad{min-height:56px;padding:8px 7px 18px;font-size:12.5px;line-height:1.15;border-radius:8px;animation:padhue 16s linear infinite,padpulse 2.6s ease-in-out infinite alternate}
+html body .fxb-pad small{left:7px;bottom:5px;font-size:8.5px;letter-spacing:1.2px}
+html body .fxb-pad::before{right:6px;top:4px;font-size:9px}
+@keyframes padpulse{from{filter:brightness(.72) saturate(.9)}to{filter:brightness(1.22) saturate(1.15)}}
+html body .fxb-pad:hover{animation-play-state:running,paused;filter:brightness(1.3)}
+html body .fxb-hint{margin-top:8px;font-size:12px}
+html body .fxb h2{text-shadow:0 0 10px rgba(255,255,255,.18)}
+html body .fxb h2 span{color:var(--lit);text-shadow:0 0 8px var(--lit),0 0 26px color-mix(in srgb,var(--lit) 55%,transparent);animation:padhue 16s linear infinite}
+html body .fxb .eyebrow{color:var(--lit);text-shadow:0 0 8px var(--lit);animation:padhue 16s linear infinite;animation-delay:-5s}
+html body .fxb .button{border-radius:8px;border:2px solid rgba(0,0,0,.55);color:#0b0b0b;font-weight:700;background:radial-gradient(ellipse at 50% 15%,rgba(255,255,255,.55),transparent 60%),var(--lit);
+ box-shadow:inset 0 2px 3px rgba(255,255,255,.5),inset 0 -4px 8px rgba(0,0,0,.3),0 0 10px var(--lit),0 0 24px color-mix(in srgb,var(--lit) 50%,transparent);animation:padhue 16s linear infinite,padpulse 2.6s ease-in-out infinite alternate}
+html body .fxb .button + .button{animation-delay:-8s,-1.3s}
+@media (max-width:1000px){html body .fxb-in{grid-template-columns:1fr}html body .fxb-pads{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:520px){html body .fxb-pads{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (prefers-reduced-motion:reduce){html body .fxb-console,html body .fxb-pad,html body .fxb h2 span,html body .fxb .eyebrow,html body .fxb .button,html body .fxc-led{animation:none}}
 </style>
 </head>
 <body>
@@ -864,24 +880,53 @@ main(0,false);})();
 <div>
 <div class="eyebrow">NEW · MOVIE SOUND FX</div>
 <h2 id="fxb-h">SCORE YOUR<br><span>OWN SCENE.</span></h2>
-<p>Real, studio-quality sound effects you can play right here: thunder, creaking doors, wolf howls, factory machines, trailer booms, sci-fi lasers and more. Layer them, loop the weather, or play a whole scene with one button.</p>
+<p>Real, studio-quality sound effects you can play right here: thunder, creaking doors, wolf howls, factory machines, trailer booms, sci-fi lasers and more. Layer them, loop the weather, or play a whole scene with one button. 36 pads to try right here.</p>
 <div class="button-row">
 <a href="studio/fx/" class="button button-gold">OPEN THE FX BOARD</a>
 <a href="studio/" class="button button-outline">SOUND STUDIO</a>
 </div>
 </div>
 <div>
+<div class="fxb-console"><div class="fxc-top"><span class="fxc-led"></span>FX CONSOLE<span class="fxc-n">36 PADS</span></div>
 <div class="fxb-pads" role="group" aria-label="Try a sound effect">
-<button class="fxb-pad" data-n="01" data-s="fx-thunder-close" style="--c:#5dade2">Lightning strike<small>WEATHER</small></button>
-<button class="fxb-pad" data-n="02" data-s="fx-door-creak" style="--c:#e74c3c">Creaking door<small>HORROR</small></button>
-<button class="fxb-pad" data-n="03" data-s="fx-howl" style="--c:#e74c3c">Wolf howl<small>HORROR</small></button>
-<button class="fxb-pad" data-n="04" data-s="fx-banshee" style="--c:#e74c3c">Banshee scream<small>HORROR</small></button>
-<button class="fxb-pad" data-n="05" data-s="fx-braam" style="--c:#ffd35c">Braam<small>TRAILER</small></button>
-<button class="fxb-pad" data-n="06" data-s="fx-impact" style="--c:#ffd35c">Trailer impact<small>TRAILER</small></button>
-<button class="fxb-pad" data-n="07" data-s="fx-laser" style="--c:#48c9b0">Laser blast<small>SCI-FI</small></button>
-<button class="fxb-pad" data-n="08" data-s="fx-scratch" style="--c:#af7ac5">Record scratch<small>DJ</small></button>
+<button class="fxb-pad" data-n="01" data-s="fx-thunder-close" style="animation-delay:-0.0s,-0.00s">Lightning strike<small>WEATHER</small></button>
+<button class="fxb-pad" data-n="02" data-s="fx-thunder-roll" style="animation-delay:-1.7s,-0.53s">Rolling thunder<small>WEATHER</small></button>
+<button class="fxb-pad" data-n="03" data-s="fx-rain" style="animation-delay:-3.4s,-1.06s">Rain<small>WEATHER</small></button>
+<button class="fxb-pad" data-n="04" data-s="fx-wind" style="animation-delay:-5.1s,-1.59s">Wind<small>WEATHER</small></button>
+<button class="fxb-pad" data-n="05" data-s="fx-door-creak" style="animation-delay:-6.8s,-2.12s">Creaking door<small>HORROR</small></button>
+<button class="fxb-pad" data-n="06" data-s="fx-howl" style="animation-delay:-8.5s,-0.05s">Wolf howl<small>HORROR</small></button>
+<button class="fxb-pad" data-n="07" data-s="fx-banshee" style="animation-delay:-10.2s,-0.58s">Banshee scream<small>HORROR</small></button>
+<button class="fxb-pad" data-n="08" data-s="fx-ghost-wind" style="animation-delay:-11.9s,-1.11s">Ghost wind<small>HORROR</small></button>
+<button class="fxb-pad" data-n="09" data-s="fx-monster" style="animation-delay:-13.6s,-1.64s">Monster<small>HORROR</small></button>
+<button class="fxb-pad" data-n="10" data-s="fx-laugh" style="animation-delay:-15.3s,-2.17s">Evil laugh<small>HORROR</small></button>
+<button class="fxb-pad" data-n="11" data-s="fx-chains" style="animation-delay:-1.0s,-0.10s">Chains<small>HORROR</small></button>
+<button class="fxb-pad" data-n="12" data-s="fx-crow" style="animation-delay:-2.7s,-0.63s">Crow<small>HORROR</small></button>
+<button class="fxb-pad" data-n="13" data-s="fx-braam" style="animation-delay:-4.4s,-1.16s">Braam<small>TRAILER</small></button>
+<button class="fxb-pad" data-n="14" data-s="fx-impact" style="animation-delay:-6.1s,-1.69s">Trailer impact<small>TRAILER</small></button>
+<button class="fxb-pad" data-n="15" data-s="fx-boom" style="animation-delay:-7.8s,-2.22s">Boom<small>TRAILER</small></button>
+<button class="fxb-pad" data-n="16" data-s="fx-riser" style="animation-delay:-9.5s,-0.15s">Riser<small>TRAILER</small></button>
+<button class="fxb-pad" data-n="17" data-s="fx-whoosh" style="animation-delay:-11.2s,-0.68s">Whoosh<small>TRAILER</small></button>
+<button class="fxb-pad" data-n="18" data-s="fx-subdrop" style="animation-delay:-12.9s,-1.21s">Sub drop<small>TRAILER</small></button>
+<button class="fxb-pad" data-n="19" data-s="fx-warhorn" style="animation-delay:-14.6s,-1.74s">War horn<small>TRAILER</small></button>
+<button class="fxb-pad" data-n="20" data-s="fx-orchhit" style="animation-delay:-0.3s,-2.27s">Orchestra hit<small>TRAILER</small></button>
+<button class="fxb-pad" data-n="21" data-s="fx-laser" style="animation-delay:-2.0s,-0.20s">Laser blast<small>SCI-FI</small></button>
+<button class="fxb-pad" data-n="22" data-s="fx-alien" style="animation-delay:-3.7s,-0.73s">Alien<small>SCI-FI</small></button>
+<button class="fxb-pad" data-n="23" data-s="fx-portal" style="animation-delay:-5.4s,-1.26s">Portal<small>SCI-FI</small></button>
+<button class="fxb-pad" data-n="24" data-s="fx-sonar" style="animation-delay:-7.1s,-1.79s">Sonar<small>SCI-FI</small></button>
+<button class="fxb-pad" data-n="25" data-s="fx-computer" style="animation-delay:-8.8s,-2.32s">Computer<small>SCI-FI</small></button>
+<button class="fxb-pad" data-n="26" data-s="ind-hammer" style="animation-delay:-10.5s,-0.25s">Hammer<small>INDUSTRIAL</small></button>
+<button class="fxb-pad" data-n="27" data-s="ind-slam" style="animation-delay:-12.2s,-0.78s">Metal slam<small>INDUSTRIAL</small></button>
+<button class="fxb-pad" data-n="28" data-s="ind-siren" style="animation-delay:-13.9s,-1.31s">Siren<small>INDUSTRIAL</small></button>
+<button class="fxb-pad" data-n="29" data-s="ind-steam" style="animation-delay:-15.6s,-1.84s">Steam<small>INDUSTRIAL</small></button>
+<button class="fxb-pad" data-n="30" data-s="ind-jet" style="animation-delay:-1.3s,-2.37s">Jet<small>INDUSTRIAL</small></button>
+<button class="fxb-pad" data-n="31" data-s="fx-scratch" style="animation-delay:-3.0s,-0.30s">Record scratch<small>DJ</small></button>
+<button class="fxb-pad" data-n="32" data-s="fx-rewind" style="animation-delay:-4.7s,-0.83s">Rewind<small>DJ</small></button>
+<button class="fxb-pad" data-n="33" data-s="fx-vinylstop" style="animation-delay:-6.4s,-1.36s">Vinyl stop<small>DJ</small></button>
+<button class="fxb-pad" data-n="34" data-s="fx-tapestop" style="animation-delay:-8.1s,-1.89s">Tape stop<small>DJ</small></button>
+<button class="fxb-pad" data-n="35" data-s="hh-808" style="animation-delay:-9.8s,-2.42s">808 bass<small>BEATS</small></button>
+<button class="fxb-pad" data-n="36" data-s="hh-clap" style="animation-delay:-11.5s,-0.35s">Clap<small>BEATS</small></button>
 </div>
-<div class="fxb-hint">Tap a pad. Turn your sound up. &#9632; <a href="#movie-fx" id="fxb-stop" style="color:#9a9a9a">stop</a></div>
+<div class="fxb-hint">Tap a pad. Turn your sound up. &#9632; <a href="#movie-fx" id="fxb-stop" style="color:#9a9a9a">stop</a></div></div>
 </div>
 </div>
 <script>
