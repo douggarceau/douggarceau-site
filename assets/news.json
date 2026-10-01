@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-01T03:58Z",
+ "updated": "2026-10-01T10:58Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 63,
  "items": [
+  {
+   "title": "Aquiles Priester joins Czarcie Kopyto family",
+   "link": "https://en.beatit.tv/aquiles-priester-joins-czarcie-kopyto-family/",
+   "source": "Beat It",
+   "date": "2026-10-01"
+  },
   {
    "title": "Larry Mullen Jr. Isn\u2019t Sure He Can Handle a Full U2 Show After Neck Surgery",
    "link": "https://www.drummingnewsnetwork.com/larry-mullen-jr-isnt-sure-he-can-handle-a-full-u2-show-after-neck-surgery/",
@@ -252,12 +258,6 @@
    "link": "https://sickdrummermagazine.com/news/latest-news/alex-lancia-lecherous-nocturne-metempsychosis-drum-play-through/",
    "source": "Sick Drummer Magazine",
    "date": "2026-09-04"
-  },
-  {
-   "title": "The Drum Kit That Gave Stephen Perkins a New Voice",
-   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1992-porno-for-pyros-drum-kit/",
-   "source": "Modern Drummer",
-   "date": "2026-09-03"
   }
  ]
 }
