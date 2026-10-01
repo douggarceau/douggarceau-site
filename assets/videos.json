@@ -1,14 +1,8 @@
 {
- "updated": "2026-10-01T14:53Z",
+ "updated": "2026-10-01T14:54Z",
  "items": [
   {
    "id": "gWY5yb_i3fI",
-   "title": "Zildjian | All FX Cymbals Showcase",
-   "source": "Zildjian",
-   "date": "2026-10-01"
-  },
-  {
-   "id": "7t3Lk-bLFBg",
    "title": "Zildjian | All FX Cymbals Showcase",
    "source": "Zildjian",
    "date": "2026-10-01"
@@ -68,34 +62,40 @@
    "date": "2026-09-29"
   },
   {
-   "id": "RrPxWz21SmA",
-   "title": "Where should you go busking?",
-   "source": "Roland",
-   "date": "2026-09-28"
-  },
-  {
    "id": "JBsOMIcNwwM",
    "title": "Shulamit Ran: Quadrophony",
    "source": "Vic Firth",
    "date": "2026-09-24"
   },
   {
-   "id": "XQp6X7y6P-U",
-   "title": "This isn\u2019t just another app. How will you use Piano Sphere?",
-   "source": "Roland",
-   "date": "2026-09-17"
-  },
-  {
-   "id": "HKf93EDiwNY",
-   "title": "Why This One-Man Band Prefers to Play on the Streets",
-   "source": "Roland",
-   "date": "2026-09-16"
+   "id": "LkEeVrtpAW8",
+   "title": "Zildjian | K Custom Family - Setups & Sound Demo",
+   "source": "Zildjian",
+   "date": "2026-09-24"
   },
   {
    "id": "OfX-I8nj23E",
    "title": "Classic Oak 6.5x14 Snare | Tuning and Head Comparison",
    "source": "Ludwig",
    "date": "2026-08-27"
+  },
+  {
+   "id": "IlTWdRPAqc8",
+   "title": "Set up your DW 9000X Boom Cymbal Stands (DWCP9700XIL, DWCP9701XIL)",
+   "source": "DW Drums",
+   "date": "2026-08-19"
+  },
+  {
+   "id": "Jb99-vY-A3s",
+   "title": "Set up your DW 9000X Tom Stands (DWCP9991X, DWCP9992X)",
+   "source": "DW Drums",
+   "date": "2026-08-19"
+  },
+  {
+   "id": "NWyEN7WnTYU",
+   "title": "Set up your DW 9000X AirLift\u2122 Cylinders (DWSMALCYLS,DWSMALCYLL)",
+   "source": "DW Drums",
+   "date": "2026-08-19"
   }
  ],
  "log": {
@@ -109,7 +109,7 @@
   "Ludwig @LudwigDrumCo": "error: HTTP Error 404: Not Found",
   "Ludwig": "search UCxdiLfkkokXj09724KntoOw Ludwig Drums (6)",
   "Roland @Roland": "error: HTTP Error 404: Not Found",
-  "Roland": "@RolandGlobal UC4vbiZMU_yrheYVZH393-Zw RolandChannel (6)",
+  "Roland": "@RolandGlobal UC4vbiZMU_yrheYVZH393-Zw RolandChannel (1)",
   "Meinl": "@MeinlCymbals UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (6)",
   "Drumeo @Drumeo": "error: HTTP Error 404: Not Found",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (3)"
