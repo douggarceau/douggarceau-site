@@ -1,17 +1,23 @@
 {
- "updated": "2026-10-01T03:21Z",
+ "updated": "2026-10-01T03:58Z",
  "sources": [
-  "Modern Drummer (5)",
-  "Drumming News Network (5)",
-  "Beat It (5)",
-  "Drumeo (5)",
-  "Sick Drummer Magazine (5)"
+  "Modern Drummer (8)",
+  "Drumming News Network (8)",
+  "Drummer's Review (8)",
+  "Beat It (8)",
+  "Drumeo (8)",
+  "Sick Drummer Magazine (8)",
+  "The UK Drum Show (8)",
+  "Drummerworld (8)",
+  "Scott K Fish (5)",
+  "The Drum Ninja (8)",
+  "Electronic Drum Advisor (8)",
+  "drum-tec (8)",
+  "The Drummer's Journal (8)",
+  "MusicRadar (8)"
  ],
- "errors": {
-  "Drummer's Review": "mismatched tag: line 93, column 2",
-  "The UK Drum Show": "mismatched tag: line 93, column 2"
- },
- "raw_count": 22,
+ "errors": {},
+ "raw_count": 63,
  "items": [
   {
    "title": "Larry Mullen Jr. Isn\u2019t Sure He Can Handle a Full U2 Show After Neck Surgery",
@@ -23,6 +29,18 @@
    "title": "Abe Laboriel Jr. performs with Pearl Jam",
    "link": "https://en.beatit.tv/abe-laboriel-jr-performs-with-pearl-jam/",
    "source": "Beat It",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Jump Drum Transcription",
+   "link": "https://thedrumninja.com/jump-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-09-30"
+  },
+  {
+   "title": "Rock n Roll Drum Transcription",
+   "link": "https://thedrumninja.com/rock-n-roll-drum-transcription/",
+   "source": "The Drum Ninja",
    "date": "2026-09-30"
   },
   {
@@ -44,6 +62,12 @@
    "date": "2026-09-29"
   },
   {
+   "title": "Take Me Out Drum Transcription",
+   "link": "https://thedrumninja.com/take-me-out-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-09-29"
+  },
+  {
    "title": "Europe Drummer Ian Haugland Restores His 1988 Yamaha Recording Custom Drum Kit For Upcoming Tour",
    "link": "https://www.drummingnewsnetwork.com/europe-drummer-ian-haugland-restores-his-1988-yamaha-recording-custom-drum-kit-for-upcoming-tour/",
    "source": "Drumming News Network",
@@ -62,10 +86,58 @@
    "date": "2026-09-27"
   },
   {
+   "title": "Gibraltar Issues An Update On Fake Websites",
+   "link": "https://www.drummingnewsnetwork.com/gibraltar-issues-an-update-on-fake-websites/",
+   "source": "Drumming News Network",
+   "date": "2026-09-25"
+  },
+  {
+   "title": "Rohema Introduce NEW Nick Petrella Signature Drumsticks: Precision, Response and Feel",
+   "link": "https://www.drummingnewsnetwork.com/rohema-introduce-new-nick-petrella-signature-drumsticks-precision-response-and-feel/",
+   "source": "Drumming News Network",
+   "date": "2026-09-25"
+  },
+  {
+   "title": "JJ Wallace: Finding Your Own Sound",
+   "link": "https://drummersreview.com/news/jj-wallace-finding-your-own-sound/",
+   "source": "Drummer's Review",
+   "date": "2026-09-25"
+  },
+  {
+   "title": "Have You Ever Seen The rain Drum Transcription",
+   "link": "https://thedrumninja.com/have-you-ever-seen-the-rain-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-09-25"
+  },
+  {
+   "title": "YYZ Drum Transcription",
+   "link": "https://thedrumninja.com/yyz-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-09-25"
+  },
+  {
+   "title": "Rush Fans Help Reach $1 Million Neil Peart Memorial Goal",
+   "link": "https://www.drummingnewsnetwork.com/rush-fans-help-reach-1-million-neil-peart-memorial-goal/",
+   "source": "Drumming News Network",
+   "date": "2026-09-24"
+  },
+  {
+   "title": "Drumeo Is Giving Away Its \u00a320 Groove Book Free Ahead of The UK Drum Show",
+   "link": "https://drummersreview.com/news/drumeo-is-giving-away-its-20-groove-book-free-ahead-of-the-uk-drum-show/",
+   "source": "Drummer's Review",
+   "date": "2026-09-23"
+  },
+  {
    "title": "14\u2033x7\u2033 Tama S.L.P. G-Maple Mappa Burl Snare Drum",
    "link": "https://en.beatit.tv/14x7-tama-s-l-p-g-maple-mappa-burl-snare-drum/",
    "source": "Beat It",
    "date": "2026-09-23"
+  },
+  {
+   "title": "FAREWELL TO PEPE S\u00c1NCHEZ",
+   "link": "https://drummersreview.com/news/farewell-to-pepe-sanchez/",
+   "source": "Drummer's Review",
+   "date": "2026-09-21"
   },
   {
    "title": "Jay Weinberg joins Ludwig family",
@@ -74,10 +146,28 @@
    "date": "2026-09-19"
   },
   {
+   "title": "SIMON PHILLIPS on 50+ Years of Drumming | The UK Drum Show",
+   "link": "https://drummersreview.com/news/simon-phillips-on-50-years-of-drumming-the-uk-drum-show/",
+   "source": "Drummer's Review",
+   "date": "2026-09-18"
+  },
+  {
+   "title": "\u201cIt\u2019s hard to argue with the amount of features on offer here for such an affordable price\u201d: Millenium Drums MPS-350 E-Drum Set review",
+   "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-mps-350-e-drum-set-review",
+   "source": "MusicRadar",
+   "date": "2026-09-18"
+  },
+  {
    "title": "WOODIES Drumsticks Review",
    "link": "https://sickdrummermagazine.com/s1-news/c82-product-reviews/woodies-drumsticks-review-why-the-5a-long-won-me-over/",
    "source": "Sick Drummer Magazine",
    "date": "2026-09-17"
+  },
+  {
+   "title": "Drumming For WILL SMITH | Greg Clark Jr. | The UK Drum Show",
+   "link": "https://drummersreview.com/news/drumming-for-will-smith-greg-clark-jr-the-uk-drum-show/",
+   "source": "Drummer's Review",
+   "date": "2026-09-16"
   },
   {
    "title": "Tama Starclassic Performer \u2018Blacked Out Black\u2019 Kit",
@@ -89,6 +179,18 @@
    "title": "Zed Amarin \u2013 Esodic \u2013 Of The Grave \u2013 Drum Play-through",
    "link": "https://sickdrummermagazine.com/news/latest-news/zed-amarin-esodic-of-the-grave-drum-play-through/",
    "source": "Sick Drummer Magazine",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "Smoke on the Water Drum Transcription",
+   "link": "https://thedrumninja.com/smoke-on-the-water-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "The new Millenium Drums MPS-1500 e-kit could be the hybrid drum set you've been looking for",
+   "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-new-flagship-mps-1500-hybrid-x-electronic-drum-set-will-turn-some-heads",
+   "source": "MusicRadar",
    "date": "2026-09-16"
   },
   {
@@ -104,16 +206,40 @@
    "date": "2026-09-14"
   },
   {
+   "title": "Mapex StreetLite Hardware",
+   "link": "https://en.beatit.tv/mapex-streetlite-hardware/",
+   "source": "Beat It",
+   "date": "2026-09-11"
+  },
+  {
    "title": "Guitar Center crowns champion of Drum-Off 2026 following national competition",
    "link": "https://www.moderndrummer.com/2026/09/guitar-center-crowns-champion-of-drum-off-2026-following-national-competition/",
    "source": "Modern Drummer",
    "date": "2026-09-10"
   },
   {
+   "title": "One of Axl Rose's signature moves was almost cut from the Sweet Child O' Mine video",
+   "link": "https://www.musicradar.com/artists/i-thought-axls-snake-dancing-wasnt-rock-and-roll-so-i-actually-told-the-editor-to-cut-all-of-that-stuff-out-then-i-heard-someone-say-oh-my-god-thats-so-sexy-one-of-axl-roses-signature-moves-was-almost-cut-from-the-sweet-child-o-mine-video",
+   "source": "MusicRadar",
+   "date": "2026-09-09"
+  },
+  {
    "title": "Big, Loud and Muscular: Stephen Perkins\u2019 Return to \u201970s Rock",
    "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-jimmy-page-dw-kit-panic-channel/",
    "source": "Modern Drummer",
    "date": "2026-09-08"
+  },
+  {
+   "title": "Ben Sharp: From Teaching Drums, YUNGBLUD and The UK Drum Show",
+   "link": "https://drummersreview.com/news/ben-sharp-from-teaching-drums-yungblud-and-the-uk-drum-show/",
+   "source": "Drummer's Review",
+   "date": "2026-09-07"
+  },
+  {
+   "title": "New Peter Erskine signature snare",
+   "link": "https://en.beatit.tv/new-peter-erskine-signature-snare/",
+   "source": "Beat It",
+   "date": "2026-09-07"
   },
   {
    "title": "The Rebirth of Jane\u2019s Addiction: Stephen Perkins\u2019 1997 Relapse Tour Kit",
@@ -128,22 +254,10 @@
    "date": "2026-09-04"
   },
   {
-   "title": "Tommy Aldridge Interview \u2013 June 2026 + Clinic Dates",
-   "link": "https://sickdrummermagazine.com/the-drummers/sick-drummer-hall-of-fame/tommy-aldridge-interview-june-2026-clinic-dates/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-06-19"
-  },
-  {
-   "title": "The Sound Behind The Videos You Love: Earthworks Audio Becomes Our Official Microphone Partner",
-   "link": "https://www.drumeo.com/beat/earthworks-audio/",
-   "source": "Drumeo",
-   "date": "2026-06-04"
-  },
-  {
-   "title": "J-Rod Sullivan Heard Dream Theater For The First Time\u2026 While Playing Cymbals Nobody Had Ever Seen Before",
-   "link": "https://www.drumeo.com/beat/j-rod-sabian/",
-   "source": "Drumeo",
-   "date": "2026-06-03"
+   "title": "The Drum Kit That Gave Stephen Perkins a New Voice",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1992-porno-for-pyros-drum-kit/",
+   "source": "Modern Drummer",
+   "date": "2026-09-03"
   }
  ]
 }
