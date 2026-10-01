@@ -272,7 +272,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 
 /* cockpit indicator lights under the main menu */
 .site-nav a{position:relative;padding:4px 0 12px}
-.site-nav a::after{content:"";position:absolute;left:50%;bottom:0;width:20px;height:6px;margin-left:-10px;border-radius:3px;
+.site-nav a::after{content:"";position:absolute;left:50%;bottom:-1px;width:26px;height:7px;margin-left:-13px;border-radius:4px;
  background:radial-gradient(ellipse at 50% 30%,#fff 0,var(--led) 45%,color-mix(in srgb,var(--led) 70%,#000) 100%);
  box-shadow:0 0 3px var(--led),0 0 9px var(--led),0 0 18px color-mix(in srgb,var(--led) 55%,transparent);
  animation:led 2.8s ease-in-out infinite}
@@ -284,6 +284,13 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 .site-nav a:nth-of-type(6){--led:#39ff14}.site-nav a:nth-of-type(6)::after{animation-delay:-1.05s}
 .site-nav a:hover::after{box-shadow:0 0 4px var(--led),0 0 14px var(--led),0 0 30px var(--led);filter:brightness(1.3);animation:none}
 @keyframes led{0%,100%{opacity:1}50%{opacity:.62}}
+.menu nav a{display:flex;align-items:center;gap:12px}
+.menu nav a::before{content:"";flex:none;width:9px;height:9px;border-radius:50%;background:radial-gradient(circle at 40% 35%,#fff 0,var(--led) 50%,color-mix(in srgb,var(--led) 65%,#000) 100%);box-shadow:0 0 4px var(--led),0 0 10px var(--led);animation:led 2.8s ease-in-out infinite}
+.menu nav a:nth-child(4n+1){--led:#ff7a00}.menu nav a:nth-child(4n+2){--led:#39ff14}.menu nav a:nth-child(4n+3){--led:#ff1f3d}.menu nav a:nth-child(4n){--led:#00b7ff}
+.menu nav a:nth-child(2n)::before{animation-delay:-1.1s}.menu nav a:nth-child(3n)::before{animation-delay:-.6s}
+.menu summary{position:relative}
+.menu summary::after{content:"";position:absolute;right:-3px;top:-3px;width:8px;height:8px;border-radius:50%;background:#39ff14;box-shadow:0 0 4px #39ff14,0 0 10px #39ff14;animation:led 2.8s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){.menu nav a::before,.menu summary::after{animation:none}}
 @media (prefers-reduced-motion:reduce){.site-nav a::after{animation:none}}
 @media (prefers-reduced-motion:reduce){.tk-track{animation:none}.tk-view{overflow-x:auto}.tk-new,.nb-badge,.newbox,.site-nav a.nav-new b{animation:none}}
 
@@ -402,7 +409,7 @@ a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{o
 <span class="nav-ctas"><a href="shop/" class="nav-cta nav-shop">GEAR SHOP</a><a href="#levels" class="nav-cta">START LEARNING</a></span>
 <details class="menu"><summary aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
 <nav aria-label="Main navigation, compact">
-<a href="studio/" style="color:#ffd35c;font-weight:600">Sound Studio (NEW)</a><a href="studio/hart/">Mickey Hart sounds (NEW)</a><a href="studio/fx/">Movie Sound FX</a><a href="studio/beats/">Beat Maker</a><a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="beats/">Famous Beats</a><a href="#signup">Get new lessons</a>
+<a href="studio/" style="color:#ffd35c;font-weight:600">Sound Studio (NEW)</a><a href="studio/hart/">Mickey Hart sounds (NEW)</a><a href="studio/fx/">Movie Sound FX</a><a href="studio/beats/">Beat Maker</a><a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Bear's Drum Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="ontour/">On Tour</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="beats/">Famous Beats</a><a href="#signup">Get new lessons</a>
 </nav></details>
 </div>
 </header>
