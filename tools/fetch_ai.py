@@ -52,9 +52,10 @@ TRUSTED = {s.lower() for s in ["Billboard", "Rolling Stone", "Variety", "The Hol
     "Spin", "Complex", "Hypebot", "Music Week", "Synthtopia", "MusicRadar.com", "Tom's Guide", "TechRadar", "9to5Mac", "Mixmag Asia",
     "Yahoo", "Yahoo Entertainment", "Loudwire", "Guitar World", "Ultimate Classic Rock", "Drummer's Review", "edm.com", "EDM.com"]}
 NOT_MUSIC = re.compile(r"washing|laundry|dryer|brake|oil drum|tumble", re.I)
-RELEASE = re.compile(r"launch|releas|unveil|introduc|debut|announc|now available|rolls? out|\badds?\b|updates?\b|\bv\d|beta|arrives|\bdrops\b|unleash|reveal|brings|gets? (new|ai)|(new|free) .*(plugin|tool|app|model|feature|instrument|sampler|groovebox|software)", re.I)
+RELEASE = re.compile(r"launch|releas|unveil|introduc|debut|announc|now available|rolls? out|\badds?\b|updates?\b|\bv\d|beta|arrives|\bdrops\b|unleash|reveal|brings|gets? (new|ai|an? )|\b\d+\.\d+\b|(new|free) .*(plugin|tool|app|model|feature|instrument|sampler|groovebox|software)", re.I)
+NOT_RELEASE = re.compile(r"\braise[sd]?\b|funding|valuation|invest|acquir|\bIPO\b|advis[oe]r|hires|appoint|layoff|guest post|opinion|op-ed", re.I)
 STRONG = re.compile(r"launch|releas|unveil|announc|introduc|debut|now available", re.I)
-PRODUCT_INTRO = re.compile(r"(:|\bis) (a|an|the) .{0,60}(sampler|groovebox|plugin|plug-in|synth|instrument|drum machine|app|tool|model|daw)\b", re.I)
+PRODUCT_INTRO = re.compile(r"(:|\bis|\bgets) (a|an|the) .{0,60}(sampler|groovebox|plugin|plug-in|synth|instrument|drum machine|app|tool|model|daw|place to)", re.I)
 UA = {"User-Agent": "Mozilla/5.0 (compatible; AmadeusDrumNews/1.0; +https://douggarceau.com/)"}
 
 def when(s):
@@ -96,7 +97,7 @@ for name, url, need_music in FEEDS:
             if not (AI.search(title) or AI_CI.search(title)): continue
             if need_music and not MUSIC.search(title): continue
             kind = "DRUMS" if DRUMS.search(title) else "PROBLEM" if PROBLEM.search(title) else "PRODUCT" if PRODUCT.search(title) else "NEWS"
-            rel = bool(STRONG.search(title) or PRODUCT_INTRO.search(title) or (RELEASE.search(title) and not PROBLEM.search(title)))
+            rel = bool(STRONG.search(title) or PRODUCT_INTRO.search(title) or (RELEASE.search(title) and not PROBLEM.search(title))) and not NOT_RELEASE.search(title) and "?" not in title
             items.append({"title": title[:170], "link": link, "source": src, "date": dt.strftime("%Y-%m-%d"), "kind": kind, "release": rel})
             n += 1
         log[name + " " + (url.split('q=')[1].split('+when')[0] if 'q=' in url else url.split('/')[2])] = n
@@ -130,8 +131,16 @@ recent = (datetime.datetime.now(datetime.timezone.utc) - datetime.timedelta(days
 # drum stories first, then good news about new AI tools, then everything else (each group newest first)
 rank = lambda i: 0 if (i["kind"] == "DRUMS" and i["date"] >= recent) else 1 if (i["kind"] == "PRODUCT" and i["date"] >= recent) else 2
 out.sort(key=rank)
-print(json.dumps(log, indent=1)); print(len(out), "AI stories")
+# releases: newest first, one per story (same company named within 3 days = same story)
+def caps(t): return {w.lower() for w in re.findall(r"\b[A-Z][A-Za-z0-9]{3,}\b", t)} - STOP - {"music", "launches", "releases", "announces", "with", "new"}
+def day(i): return datetime.date.fromisoformat(i["date"])
+releases = []
+for i in sorted([i for i in out if i.get("release") and i["date"] >= recent], key=lambda i: i["date"], reverse=True):
+    c = caps(i["title"])
+    if any(c & caps(r["title"]) and abs((day(i) - day(r)).days) <= 3 for r in releases): continue
+    releases.append(i)
+print(json.dumps(log, indent=1)); print(len(out), "AI stories,", len(releases), "releases")
 if out:
     json.dump({"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"),
                "items": out[:24],
-               "releases": [i for i in out if i.get("release") and i["date"] >= recent][:8], "log": log}, open("assets/ai.json", "w"), indent=1)
+               "releases": releases[:8], "log": log}, open("assets/ai.json", "w"), indent=1)
