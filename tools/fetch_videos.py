@@ -26,6 +26,7 @@ CHANNELS = [
 # Only these kinds of videos are kept (checked in this order)
 KINDS = [
     ("INTERVIEW", r"interview|in conversation|conversation with|sits down|talks (with|to|about)|thom talk|q ?& ?a|chat with|chatting|catches up|the hang|roundtable|story behind"),
+    ("TALK", r"\btalks?\b|news desk|discussion|panel|podcast|\bshow\b.*ep\b|masterclass"),
     ("EVENT", r"\bnamm\b|pasic|drum ?fest|festival|drum show|drum-?off|clinic|musikmesse|summit|expo|convention|live at|\blive from"),
     ("DEMO", r"\bdemo\b|demonstration|sound ?test|comparison|first look|sound check|soundcheck|\bhear\b|in action"),
 ]
