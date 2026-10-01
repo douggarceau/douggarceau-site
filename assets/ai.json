@@ -1,173 +1,263 @@
 {
- "updated": "2026-10-01T15:43Z",
+ "updated": "2026-10-01T16:22Z",
  "items": [
   {
    "title": "Thoughtful Things Engram: A Weird AI Groovebox Sampler From the Backrooms",
    "link": "https://www.gearnews.com/thoughtful-things-engram-synth/",
    "source": "Gearnews",
    "date": "2026-10-01",
-   "kind": "DRUMS"
-  },
-  {
-   "title": "ElevenLabs has doubled its valuation to $22bn since February",
-   "link": "https://musically.com/2026/10/01/elevenlabs-has-doubled-its-valuation-to-22bn-since-february/",
-   "source": "Music Ally",
-   "date": "2026-10-01",
-   "kind": "NEWS"
-  },
-  {
-   "title": "AI Companies Are Raising Millions From Music They Took Without Permission (Guest Post)",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUnk0dFNfeFVrQXRJbGI2YW9sc0hfR1Njc2RzYl8tRXhMREE4WGhlSlV0S2RxNTdJSU5FVHBabUJXTlUydGNEd3JEX1d4aHhvWTRPRllITE0tZEFGd2M5NlVQUG5aTTFIRHB5akRLeWhKSEVjUVVaWDRLWWF5cVh3SVJDVmdkMDU1UEJKcWU4bDlnMEhyVThOWldCMlZ6Rjl5WTNmdmtaTlRjMERLNGlj?oc=5",
-   "source": "Variety",
-   "date": "2026-09-30",
-   "kind": "NEWS"
-  },
-  {
-   "title": "Feds Want Nearly 4 Years in Prison for AI Music Fraudster Who \u2018Stole Millions\u2019",
-   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbVpGSnlZSmpPdk1JNm14bXlISlRrTmRacXRSRGlPZnljUm1jdWhqc3RVc2tIQWM4WDMzLWVwbjhnN251UE8yQ1ZsOG5CYjR1RTNnWlN1WjNFQ2JKM2E3WkpTaDlwXzNURW5XNEJpTzRSQkJnVkxuMEdMUTNnN0FBOUpMSEV2d3BwZTh5azRLbkRROEwzMFd5dXVWSWNwNHQzUnFISkJJVEZObkluaUJqZ213UQ?oc=5",
-   "source": "Rolling Stone",
-   "date": "2026-09-30",
-   "kind": "PROBLEM"
-  },
-  {
-   "title": "Audio AI firm Modulate, which runs an AI music detection tool, raises $25M",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVU5zVUkxOWktX0hrZUtKQy1waDA3elNFX2h4clpCaUl0LV9MdlRlLU5vbDRjWjdrRnRpNDE1YkJEcW5EUmxvUmVqSGlrb1lxVVBhLTZfcWdSTnVBQWxIQWp0eUQ2bVJCNzRnMmU2ZHB1NmE2WktqYlh3SHZNQy1kd2owZzZGbmZqWGFsaXhsN2c5NlV4VFlrb2VHZTNCX3l5Tm8yWEpSWklPUDM0emRfZQ?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-09-30",
-   "kind": "PRODUCT"
-  },
-  {
-   "title": "Indie publishers set out seven principles for AI licensing: \u2018The song must be properly valued.\u2019",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcW9uZTMtbnU0S3lRTG43NTFSZlZseklqeXFuVGdtTndSU2s5Tk1aWV9jdUU1SEk3WkZQTG9XR3VnenBua0tmMUx0NTFvdURxMWxfZWxrdTgyaGltTmlXUGNPazh4RkhHV0hEWnR3Vkl3THgxTkVIWlYwQzZZLUxVRUdoUWV1VVhnWk5GX1FZSjc0SV9hNktEd0h1MzdkeDdZamNQRTdMWENHNGlNY3U4dTFwZDd5ZkJKUEJueURTd2NMMkltVE5VemxKcw?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-09-30",
-   "kind": "NEWS"
-  },
-  {
-   "title": "\"The hypocrisy in the industry is insane\": House legend Todd Edwards on sampling Suno",
-   "link": "https://www.musicradar.com/artists/i-resent-the-way-people-talk-about-this-technology-as-if-its-from-the-devil-the-hypocrisy-in-the-industry-is-insane-house-legend-todd-edwards-on-how-ai-has-transformed-his-approach-to-sampling",
-   "source": "MusicRadar",
-   "date": "2026-09-29",
-   "kind": "NEWS"
+   "kind": "DRUMS",
+   "release": true
   },
   {
    "title": "Dr. Zoppa updates AMI-CMMAS generative MIDI plugins (incl. Windows support)",
    "link": "https://rekkerd.org/dr-zoppa-updates-ami-cmmas-generative-midi-plugins-incl-windows-support/",
    "source": "Rekkerd",
    "date": "2026-09-29",
-   "kind": "PRODUCT"
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Guilt-free AI? What \u201cethical AI\u201d tools mean for musicians and producers",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMWVlTlZRWUpySU1YMmhMbmk1QXpMeV91cDlmNWtCTUJpX3pJMVJ2d3FXTU5EcWpEeVBYUmxBLWg1aWVFODNERlVEbThYS241YUdZWUxQWm9ZVjc0N1ljbnJiTHZQWVY2d01BM3FGelpmZ2NPbVc3UUNORnZfN1lEYldyc1JWVXFWMm1nNThBeDVzcE5kYXA3QzZPa0oyTzB4eWpZX000TWNnNkNzT3VYa2RwZFZuWE0?oc=5",
+   "source": "MusicRadar",
+   "date": "2026-09-19",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-17",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "Universal Audio LUNA 3.0: Free DAW Gets an AI Boost and a New Spark Studio Subscription",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51Y2szNGdvUXFsQW1nVlJWY0pRbDREaVdLem5VVzg5TGNHYTc5TG1DN1hhalhPc3ZsZnBfSnZkLVRoZElJd3BTclY1UHFuUUd2TEZhWXQ1NDdtX3Nzd3BpOU5oR0JyV1FjNWVNakV3?oc=5",
+   "source": "Gearnews.com",
+   "date": "2026-09-11",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "Universal Music is launching an AI music platform with ElevenLabs",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQW83TTNuQ2dtcEhoQXZVTFU0T0FLRGd5cURKb28tdzA3Wi1idFl3R1hCbVFfSDJ4YUVUbTFRQTNrdGVxZWI2U0ZuTVNicmhNTVFzeVMwX2VraXpoRENGRW5mOHVFVVFSVTFDYlVlcmZPV0tOWWFDLUppYkdkVVVMOHNmbmNsVDVWcXc4aWdNZWNJQQ?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-10",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Suno releases new AI music models in partnership with Warner Music, BMG",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLUU2OHhzTDE2cXROTGVBNkRiR2g1bWZSRUZDeXlDQjhidWkyVHBYeXJ2NUxfdlRhS0dxdzM1LTdiSnlHUTl5V0tzdnRGYW5DajVqWE9DaFhOckF6b2l0N2lwVmVVYWgtVmQwMmdhVWh3UWVfaWpfVTVXbDVyeDVTMEhQaXZPX3ZrUVUwZmx5a0h6NFFUeWg2RmxjcEcyOXRlSHl3RUVzMGRYNDFqV2hVZ19GUGFpU3RGR1lBWQ?oc=5",
+   "source": "Reuters",
+   "date": "2026-09-09",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "AI Music Startup Suno Launches New Models That Pay Labels",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOU5fTHJzNkR2N3JZd1NHQndTUFBfSm9KNnJJYmU4eXVtZFQwRWxKQ1pfcEplUjd1bDVndnp0ZkJLYlcwaHBicGNGUXlORnFEMXZ3Y0hWekVjUHREYUJqLWIwMHUyaWhDeHNzQndTUkl5T09KdS1MaWdOd2xUUFE1M3h1dlFvOWlpV2JCV0ZoNVAtWWZLVGVaQTV4SFJQZkxBTS1rajVOb3NHLVhn?oc=5",
+   "source": "Bloomberg.com",
+   "date": "2026-09-09",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Suno releases its first AI music model made with record industry help",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOT3Uyb1lENGxyemxQRkZ4WHdwMGpydHBkTExlZER5TW55bW16bHJZNElZb1ZkOGtKSE04V2JpaDNBanREZXNzbmltUFNvNlJ6dEVSemVjYkV6cGF4dFh5VU5USEkwRzNGbU5CUDVPa3JISEx6aHl6OC03VE5pbFY2LVhlWU04eWJXbWI4eTVaZ3Q1Q0IwdkRVSmNDMHd4V1pTTi1ZYjloaHRCZFR4Z2RmUFA5TUdrS2ZuT1oyUjBfNGZpS2VEcXFZ?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-09",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Armin van Buuren and Laidback Luke Join AI-Powered Music App Moises as Advisors",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVy1mSGR3QWUwNUlWQUNWYVhvZVhYVE1fSnVxU2xiSElORFo2aDZfajFWcGJEX0J5THFlSG92a3F0ams0dEZzbFRUNFc4eURsc2NLM2VRaXA0NEczakNuTUJodXgzdkNobTBGS0ZFY29CU2Zjak5qbzQtdGNIR0J1cE83aXphMkwzNXRjNkpHdG9KMDRBVng3Mnd3NA?oc=5",
+   "source": "edm.com",
+   "date": "2026-09-02",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "ElevenLabs has doubled its valuation to $22bn since February",
+   "link": "https://musically.com/2026/10/01/elevenlabs-has-doubled-its-valuation-to-22bn-since-february/",
+   "source": "Music Ally",
+   "date": "2026-10-01",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "AI Companies Are Raising Millions From Music They Took Without Permission (Guest Post)",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOUnk0dFNfeFVrQXRJbGI2YW9sc0hfR1Njc2RzYl8tRXhMREE4WGhlSlV0S2RxNTdJSU5FVHBabUJXTlUydGNEd3JEX1d4aHhvWTRPRllITE0tZEFGd2M5NlVQUG5aTTFIRHB5akRLeWhKSEVjUVVaWDRLWWF5cVh3SVJDVmdkMDU1UEJKcWU4bDlnMEhyVThOWldCMlZ6Rjl5WTNmdmtaTlRjMERLNGlj?oc=5",
+   "source": "Variety",
+   "date": "2026-09-30",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Feds Want Nearly 4 Years in Prison for AI Music Fraudster Who \u2018Stole Millions\u2019",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNbVpGSnlZSmpPdk1JNm14bXlISlRrTmRacXRSRGlPZnljUm1jdWhqc3RVc2tIQWM4WDMzLWVwbjhnN251UE8yQ1ZsOG5CYjR1RTNnWlN1WjNFQ2JKM2E3WkpTaDlwXzNURW5XNEJpTzRSQkJnVkxuMEdMUTNnN0FBOUpMSEV2d3BwZTh5azRLbkRROEwzMFd5dXVWSWNwNHQzUnFISkJJVEZObkluaUJqZ213UQ?oc=5",
+   "source": "Rolling Stone",
+   "date": "2026-09-30",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "'Frontier Audio AI Company' Modulate Announces $25M Raise",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA1bkxRS3NmNUFZUWFVTHpkQUFLVEZzczU2MHVjTGJGQkZkTDhHODBCSmVUcExCZDlDRUZCcnVDS0pSeURWb05XY3FJejROVV9kbVg3RzRKbXJYVk91dTNIaUNqcDcyTFR1blB2X1lJLVdNa1U0Snc?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-09-30",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
+   "title": "Indie publishers set out seven principles for AI licensing: \u2018The song must be properly valued.\u2019",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcW9uZTMtbnU0S3lRTG43NTFSZlZseklqeXFuVGdtTndSU2s5Tk1aWV9jdUU1SEk3WkZQTG9XR3VnenBua0tmMUx0NTFvdURxMWxfZWxrdTgyaGltTmlXUGNPazh4RkhHV0hEWnR3Vkl3THgxTkVIWlYwQzZZLUxVRUdoUWV1VVhnWk5GX1FZSjc0SV9hNktEd0h1MzdkeDdZamNQRTdMWENHNGlNY3U4dTFwZDd5ZkJKUEJueURTd2NMMkltVE5VemxKcw?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-09-30",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "AI music startup Suno admits to using copyrighted music, but says it's 'fair use'",
+   "link": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQSUZ5WlZMTmxFaHd1LXpkbE00WmxCM2p4MVBuampzeFkyQ2o2QXpoZHhoZXFlQTFrM0dRaENPd3BYWmJRcUdKSjlpdi1EWmRkS1hNWWc5X3Q4ZXdoRHlyM0s4ZkxWem85WUZJdFczTEtYbW9KSzZIcGsxNGNaUFR3eGR3T1NuLV95T05TN05JMFgxeDdWZnJVRmh6QlJ4RVlx?oc=5",
+   "source": "Mashable",
+   "date": "2026-09-30",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "Spotify takes down thousands of songs generated by AI startup Boomy",
+   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MRGdKWGY0VF9pb1NaMW5QYlAxYTR0VmVOeEVVSmE5S0NiWVBqQnJiNENyRzFRTlJVYTVSeFZKTHVXdHNKdjVTLW53ZHh3dWstOHZaVERhaEhfQmVVV1E?oc=5",
+   "source": "Mashable",
+   "date": "2026-09-30",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "\"The hypocrisy in the industry is insane\": House legend Todd Edwards on sampling Suno",
+   "link": "https://www.musicradar.com/artists/i-resent-the-way-people-talk-about-this-technology-as-if-its-from-the-devil-the-hypocrisy-in-the-industry-is-insane-house-legend-todd-edwards-on-how-ai-has-transformed-his-approach-to-sampling",
+   "source": "MusicRadar",
+   "date": "2026-09-29",
+   "kind": "NEWS",
+   "release": false
   },
   {
    "title": "Fred Again slams AI music: \"I've felt no pull whatsoever to even try it... the process is the magic\"",
    "link": "https://www.musicradar.com/artists/fred-again-slams-ai-music-ive-felt-no-pull-whatsoever-to-even-try-it-the-process-is-the-magic",
    "source": "MusicRadar",
    "date": "2026-09-28",
-   "kind": "NEWS"
+   "kind": "NEWS",
+   "release": false
   },
   {
    "title": "Major labels sued AI music firms, then licensed their catalogs as artists fear lost pay",
    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYTY0UzhKdl9PUmoxRkd0enB3OW1NTmthV21wTTl3c1dNOHNVb09CSlB0NUw0SHBWMWRSUlZpbjdlNTIxMnpJNFNHRUhTWHB3SXVudEdqcGd2TllqS3QwRUc1ajZFandpdkctUE9ETDk5ZVdPbloxVmxmblBxRm0wQ1JYVjJtUUNLZVlXbUI3YlpYMm9va01B?oc=5",
    "source": "Yahoo",
    "date": "2026-09-25",
-   "kind": "PROBLEM"
+   "kind": "PROBLEM",
+   "release": false
   },
   {
    "title": "No, AI music isn't taking over the world, as new Qobuz data proves \u2014 in fact, barely anyone's listening to fake music",
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQcFcxU2l0czJRSkdaUWhmZUF1a0NwZ21rWVl2bWd2SUlsXzFsYWpRRzZ1MzFFOUlHdGxVa2lZTnVaM245TC1YTDROMGI2MlRGX3M3ako2RnRXUkJXb2xlazdsUzJ6dzlFUXlBY0ZUNmdibnA0SVpTTV9SQWR2ZlRVdzFwMVZsc2MzN1R4RFo1TFFvdGV4dE11M1doTTRYN1FjUkFPa2xTb3JzNFg1WGl2eE8wVXVNUFExWUZvb3hkUER3SHJZVUd1MXNnRkV3LXJ4eGxlSEc1eHZLaUgyRHNrLXRrTEdHTV9PbXd3OGMwRQ?oc=5",
    "source": "TechRadar",
    "date": "2026-09-24",
-   "kind": "PROBLEM"
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "San Jose Sharks Nix Suno-Generated \u2018Slop Song\u2019 Following Intense Fan Backlash",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRGVkZHdHMXN3ZFJBcXZiVjU1QV80b05fUTVjUDdDSVR5Y2xLdlp3WXQ0ZmJHTEt5QmJIeTZuX2x1dllMVGNZaWw1V3ZjWEdxUzdLdVlEYzVyRUF0ZkZSS0xYdjBFUV9OY1hLVkVVQkJqNmRxQ1lOcG93ZzRiWFViZQ?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-09-24",
+   "kind": "PROBLEM",
+   "release": false
   },
   {
    "title": "Sony Music Group Becomes First Music Company to Join AI Content Coalition ARIAM",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdDVIcFdxenZfVEJLV2tVTTh2WkVRMy02U3dUaGNwc180WFJJejVqOW5tbVQ4a05YVGVjSzE2eXZSUm5Sb2ZmVllkZWk3UERMc1d4VDZkNjd2WXMtNzVWZVo5S09yeUEzWndMMElrRGNLMHkzS3pvaEFab1J2SWY5U19lT3J1bWh3azFFS0pDRF9vVk15QVlWTC1QdFVzQQ?oc=5",
    "source": "Variety",
    "date": "2026-09-23",
-   "kind": "NEWS"
+   "kind": "NEWS",
+   "release": false
   },
   {
    "title": "AI-music guru Fran\u00e7ois Pachet: \u2018It\u2019s no longer the jungle era\u2019",
    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNa0plM0ZXa1RHZTdwU1JvT3ZaVkdmV0NGclloTmpROGNyWDg3MWVVY2p5Q3ZQMXh5YzBfd3FId2FpYTc1UndWMDZ3ejRwZzJVTnQ2eEE4ZVVJX3ZkbjNjNXRjcU50aG1QcWszblIxdUxiM0lFTFk5cGNhRHdlVHZocktSUmVwV1RjQ2wwcEdhNFpMdXlCWlNF?oc=5",
    "source": "Music Ally",
    "date": "2026-09-23",
-   "kind": "NEWS"
+   "kind": "NEWS",
+   "release": false
+  }
+ ],
+ "releases": [
+  {
+   "title": "Thoughtful Things Engram: A Weird AI Groovebox Sampler From the Backrooms",
+   "link": "https://www.gearnews.com/thoughtful-things-engram-synth/",
+   "source": "Gearnews",
+   "date": "2026-10-01",
+   "kind": "DRUMS",
+   "release": true
   },
   {
-   "title": "AI-music startup Grai acquires social-music service Hangout",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdGZ6MU1wY0N6RWhBckxybGZNOWJramNJc0lCT2I5QlFIbHNCcmlBMHBsQzlGWVF2dlBrSkF5V0d0Y1pMMTBRbVZIYnNzRXc4aURjRmR0R09nNkdWWXNWdDkyVGZQTERZclROUHBscDdNcWhldldqMHZHSUVLQXd0bjZQcldIT2lUS1R1NjRJZTFBTGVYY3A5ZA?oc=5",
-   "source": "Music Ally",
-   "date": "2026-09-23",
-   "kind": "NEWS"
+   "title": "Dr. Zoppa updates AMI-CMMAS generative MIDI plugins (incl. Windows support)",
+   "link": "https://rekkerd.org/dr-zoppa-updates-ami-cmmas-generative-midi-plugins-incl-windows-support/",
+   "source": "Rekkerd",
+   "date": "2026-09-29",
+   "kind": "PRODUCT",
+   "release": true
   },
   {
-   "title": "Suno AI Music Lawsuit, Drake UMG Appeal, Diddy Lawyers & More Top Music Law News",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQenhqZkc5MnJfT0VGM1FhcVRCRHZkNGhqdGp5Mm9BNXlLQ2ROMmhvYUFJUFBvVzVtc2JsQ3pGdG1jRFd6T1ItT294dHZpOWpQazFVdVpFTk1qOC13T3dPUjRRUU1yR2dOUWM4enNjemh5SGdvZ3B0RkhLRkJUUG9sZUs5Nm94Vmp3WFBN?oc=5",
-   "source": "Billboard",
-   "date": "2026-09-22",
-   "kind": "PROBLEM"
-  },
-  {
-   "title": "Suno hits back at \u2018fundamentally flawed\u2019 UMG and Sony Music claims",
-   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZlFCWm14bjFsd09HbmdxaGNhNmRheUMwUXNQdW52cHVxQ2lTVGpFbE42WkRiWWRjMmRUUzY2RGxBOXQ1aC1TVnRkS0lpWm81RXlaUWFZLUp5Q085VGtJb1FxTm93ZDdhc2VSUmdOYmtDVmNnUXJETkNPeXM0eG9fWkZwR3FhR215dlhUaHBua3BIWm1GbnBvdE81R1h1cFE?oc=5",
-   "source": "Music Ally",
-   "date": "2026-09-22",
-   "kind": "NEWS"
-  },
-  {
-   "title": "South Korea\u2019s Komca withdrew plans to register AI-assisted music",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxOek5YamxYaFFNNk5uMW9EdFFpamV6eXhhTGxUZENCMG0zV0JSZG1fcnhWN2VoYlB6TE5GMnNQZ3NnQ2VJRzd3MlRRdmNCSWRPSU5uZGUzelgtQVFkZVNfMDNVNUZDQUVvUDdEYnZpRlZzSG43b0hNQ21qTDN5VFZOZXZSS3QydHNhakVwR29qS2gxWEJVOU1qNDVsWXd0dw?oc=5",
-   "source": "Music Ally",
-   "date": "2026-09-21",
-   "kind": "NEWS"
-  },
-  {
-   "title": "Universal and Warner labels ask court to dismiss musicians\u2019 AI licensing lawsuit",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZUtkaXdJYWFQRTZWX2xvSldSQ2dQbWF0U1ZwMEM0Nkloc2tWX1NmOHJqTm1FYU5fQklSellYYzA5bTY1NmNyc1RCRjZzMi0wMlZ4MHRfS1Z4dExielp3ay1hNkpYU1owQXlqM0JseGFBTzNGVURmTzJPbEhuQXBacFVnQzlsT1NmNzZKWVhsbk5mem1heWNobFpxZ3dNeEdRRllESElhRHk5bWszaV9Vc1VRWVpoMkxuSEE?oc=5",
-   "source": "NME",
-   "date": "2026-09-21",
-   "kind": "PROBLEM"
-  },
-  {
-   "title": "Suno\u2019s Latest AI Model Got Some Label Support. But Not All of Them",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOVhUUmdjVWhqY3pkV1VfY1VUOFBpRzQ1eUo2TWtscVEzM2lFNjhKd0tYbFpFc2RyOGxITUVsRXFTTTZDQWp3eEFzaDBCVml2LUhBVk1lMG5IdTc0YmY2U05ZSXF6SUxUVjhySEVpTHNueDNzam4teWpWaVRBWkh3ZllCQjEtMkZCeEI1c213WEVpN0pnazR6djNFUQ?oc=5",
-   "source": "Gizmodo",
+   "title": "Guilt-free AI? What \u201cethical AI\u201d tools mean for musicians and producers",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMWVlTlZRWUpySU1YMmhMbmk1QXpMeV91cDlmNWtCTUJpX3pJMVJ2d3FXTU5EcWpEeVBYUmxBLWg1aWVFODNERlVEbThYS241YUdZWUxQWm9ZVjc0N1ljbnJiTHZQWVY2d01BM3FGelpmZ2NPbVc3UUNORnZfN1lEYldyc1JWVXFWMm1nNThBeDVzcE5kYXA3QzZPa0oyTzB4eWpZX000TWNnNkNzT3VYa2RwZFZuWE0?oc=5",
+   "source": "MusicRadar",
    "date": "2026-09-19",
-   "kind": "NEWS"
+   "kind": "PRODUCT",
+   "release": true
   },
   {
-   "title": "AI-generated music drives legal frenzy",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQRDJjdXotV09RYzYzN2Z2eDE2NVplMHJfZkpvRkFpVzlkMEExRkV1S0NsNXpYUjVOR0IxQV9YUVB0RU51ekh4N0loYnNEUHM0Y3RRMF9pbmNDMWxRdnJEOEN1X3hpbjF1SG85cFVKdXcwVGJ1NUxiZ05mcHBpN1FJZG9iXzBpUFZCeExranR1N2FKOFJ5SlJB?oc=5",
-   "source": "Axios",
-   "date": "2026-09-19",
-   "kind": "NEWS"
+   "title": "Universal Music is launching an AI music platform with ElevenLabs",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQW83TTNuQ2dtcEhoQXZVTFU0T0FLRGd5cURKb28tdzA3Wi1idFl3R1hCbVFfSDJ4YUVUbTFRQTNrdGVxZWI2U0ZuTVNicmhNTVFzeVMwX2VraXpoRENGRW5mOHVFVVFSVTFDYlVlcmZPV0tOWWFDLUppYkdkVVVMOHNmbmNsVDVWcXc4aWdNZWNJQQ?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-10",
+   "kind": "PRODUCT",
+   "release": true
   },
   {
-   "title": "UMG sues DistroKid for allegedly distributing AI 'slop' music",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOVTFEWnVyX1FjUS13TF9xYzFYOUhUWkpCNzFXTHJZMTZDdENNR0d5Zm5jbktRSjM5T0Y3dWgtcU5wLUtWRzZDcFE3cWJYSS10TEJETU9DUW45Qkh5RDN4UVZFUVd0OHViU25oVV80V3NxeW9VU3BCaGpkeWxyRmlZeWJVSElWSy1JX1plRTJHZmZGWVdjcTRTenlldEZvRFIwck1GeE8wbTlvQW1sLXI4YQ?oc=5",
+   "title": "Suno releases new AI music models in partnership with Warner Music, BMG",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLUU2OHhzTDE2cXROTGVBNkRiR2g1bWZSRUZDeXlDQjhidWkyVHBYeXJ2NUxfdlRhS0dxdzM1LTdiSnlHUTl5V0tzdnRGYW5DajVqWE9DaFhOckF6b2l0N2lwVmVVYWgtVmQwMmdhVWh3UWVfaWpfVTVXbDVyeDVTMEhQaXZPX3ZrUVUwZmx5a0h6NFFUeWg2RmxjcEcyOXRlSHl3RUVzMGRYNDFqV2hVZ19GUGFpU3RGR1lBWQ?oc=5",
    "source": "Reuters",
-   "date": "2026-09-16",
-   "kind": "PROBLEM"
+   "date": "2026-09-09",
+   "kind": "PRODUCT",
+   "release": true
   },
   {
-   "title": "Believe and TuneCore won\u2019t feed music to Suno without giving artists choice to opt in: \u2018The artist must consent first, period.\u2019",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9wMUgtUFVNOEtYcEU4Tnc5QW5mSFM5Ymwtd05LSUtnOExySmxpamZoWFp4d091NVBsczBSLXo4enFWbVJOQV9LMTMyWmtpOHpvTTg1RnFoTUZUTGUtMHpUdjVDMVFzYkdHclpmTUI1c01BZjNZcmU3aGlKcmo3QQ?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-09-16",
-   "kind": "NEWS"
+   "title": "AI Music Startup Suno Launches New Models That Pay Labels",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOU5fTHJzNkR2N3JZd1NHQndTUFBfSm9KNnJJYmU4eXVtZFQwRWxKQ1pfcEplUjd1bDVndnp0ZkJLYlcwaHBicGNGUXlORnFEMXZ3Y0hWekVjUHREYUJqLWIwMHUyaWhDeHNzQndTUkl5T09KdS1MaWdOd2xUUFE1M3h1dlFvOWlpV2JCV0ZoNVAtWWZLVGVaQTV4SFJQZkxBTS1rajVOb3NHLVhn?oc=5",
+   "source": "Bloomberg.com",
+   "date": "2026-09-09",
+   "kind": "PRODUCT",
+   "release": true
   },
   {
-   "title": "Universal Music Group accuses music distributor of spreading AI \u2018slop\u2019 in lawsuit",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNak1oZkFzYUJuVDFqWklLU3VGQ2hZV05fbnJETU9LdlN1UGFzUEg2VHA0eWFxZDloUjhHVFgyMVdBUTJadDdDV1dicm5ZQU12TUVGbERmSmd0emVmbUhSRE8yT3ZYM01vcWl6ZXdFdWJUdmVPUS0yV0E5Q09BY3FSQ0V3YjMyUWdIRFA5S283VlFNXzlBUlhkWEtyMzFmM1pPMDdRR0MyOWM0NzVjRjFEeFlsSU8tRWJZbVhzWkFwb0JxZnFiS0E?oc=5",
-   "source": "Los Angeles Times",
-   "date": "2026-09-15",
-   "kind": "PROBLEM"
+   "title": "Suno releases its first AI music model made with record industry help",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOT3Uyb1lENGxyemxQRkZ4WHdwMGpydHBkTExlZER5TW55bW16bHJZNElZb1ZkOGtKSE04V2JpaDNBanREZXNzbmltUFNvNlJ6dEVSemVjYkV6cGF4dFh5VU5USEkwRzNGbU5CUDVPa3JISEx6aHl6OC03VE5pbFY2LVhlWU04eWJXbWI4eTVaZ3Q1Q0IwdkRVSmNDMHd4V1pTTi1ZYjloaHRCZFR4Z2RmUFA5TUdrS2ZuT1oyUjBfNGZpS2VEcXFZ?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-09",
+   "kind": "PRODUCT",
+   "release": true
   },
   {
-   "title": "Method Man to Guest Star on CBS Drama \u2018Cupertino\u2019 as Rapper Suing AI Music Studio (EXCLUSIVE)",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPeXZxT2tGSVFEU1FhQjBPZzVHUWpuSnpQbkxZcUM3eURBbUMtYmdGR3Z2WXB5TnF6a3NUSFNqN0h1RDUtY1FtZlhoTUFDQW1HZ2hFdVU0eERJQjJqM2E3QTRuYXZRbzQtQXhDTzhOb1JidnR6NC02cUJIMEVBR3JIT2NLX29Ydw?oc=5",
-   "source": "Variety",
-   "date": "2026-09-15",
-   "kind": "NEWS"
+   "title": "'Frontier Audio AI Company' Modulate Announces $25M Raise",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFA1bkxRS3NmNUFZUWFVTHpkQUFLVEZzczU2MHVjTGJGQkZkTDhHODBCSmVUcExCZDlDRUZCcnVDS0pSeURWb05XY3FJejROVV9kbVg3RzRKbXJYVk91dTNIaUNqcDcyTFR1blB2X1lJLVdNa1U0Snc?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-09-30",
+   "kind": "NEWS",
+   "release": true
   }
  ],
  "log": {
@@ -189,9 +279,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 41,
-  "Google News Suno+OR+Udio": 44,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 30,
-  "Google News %22AI%22+music+producer+plugin": 0
+  "Google News %22AI+music%22": 40,
+  "Google News Suno+OR+Udio": 45,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 29,
+  "Google News %22AI%22+music+producer+plugin": 0,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
+  "Google News %22AI%22+stem+separation": 4,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
+  "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
