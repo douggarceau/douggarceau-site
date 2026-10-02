@@ -580,18 +580,27 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 
 <div class="home-container home-hero-content">
 
-<a class="newbox" href="studio/" aria-label="New: the Sound Studio">
-<span class="nb-badge">NEW</span>
-<span class="nb-title">THE SOUND STUDIO</span>
+<a class="newbox kitbox" href="level7.html" aria-label="Play the Kit">
+<span class="nb-badge">PLAY NOW</span>
+<span class="nb-title">THE KIT</span>
+<span class="kb-t">A real recorded vintage drum set, right in your browser.</span>
 <span class="nb-list">
-<span onclick="event.preventDefault();location.href='studio/hart/'"><b style="--d:#f0932b"></b>Mickey Hart 200</span>
-<span onclick="event.preventDefault();location.href='studio/fx/'"><b style="--d:#e74c3c"></b>Movie sound FX</span>
-<span onclick="event.preventDefault();location.href='studio/fx/#industrial'"><b style="--d:#a6acaf"></b>Industrial loops</span>
-<span onclick="event.preventDefault();location.href='studio/beats/#k=el'"><b style="--d:#5dade2"></b>Electronic beats</span>
-<span onclick="event.preventDefault();location.href='studio/beats/'"><b style="--d:#e67e22"></b>Hip-hop &amp; trap</span>
+<span><b style="--d:#ffd35c"></b>Tap any drum or cymbal</span>
+<span><b style="--d:#39ff14"></b>Sticks or brushes</span>
+<span><b style="--d:#00e5ff"></b>Play along with grooves</span>
+<span><b style="--d:#ff2bd6"></b>Plug in your e-kit (MIDI)</span>
 </span>
-<span class="nb-go">PLAY NOW &rarr;</span>
+<span class="nb-go">PLAY THE KIT &rarr;</span>
 </a>
+<style>
+html body .kitbox{border:2px solid #ffd35c;box-shadow:0 0 26px rgba(255,211,92,.55),0 10px 40px rgba(0,0,0,.6);animation:kbg 1.8s ease-in-out infinite alternate}
+@keyframes kbg{to{box-shadow:0 0 46px rgba(255,211,92,.9),0 10px 40px rgba(0,0,0,.6)}}
+html body .kitbox .nb-badge{background:#ffd35c;color:#111}
+html body .kitbox .nb-title{font-size:58px;line-height:.9;color:#ffd35c;text-shadow:0 0 18px rgba(255,211,92,.6)}
+html body .kitbox .kb-t{display:block;color:#eee;font-size:15px;margin:0 0 8px}
+html body .kitbox .nb-go{display:block;text-align:center;background:#ffd35c;color:#111;border-radius:10px;padding:12px;margin-top:10px;font-weight:800;letter-spacing:.12em}
+@media (prefers-reduced-motion:reduce){html body .kitbox{animation:none}}
+</style>
 <div class="eyebrow">ONLINE DRUM SCHOOL</div>
 <h1>LEARN DRUMS.<br><span>UNDERSTAND THE INSTRUMENT.</span></h1>
 <p class="hero-copy">Technique, coordination, groove, reading, independence, drum history and practical musicianship, taught through sound, notation and the kit itself.</p>
@@ -1348,7 +1357,7 @@ signup('tf','temail','tnote','top_bar');
 (function(){
 var STEPS=[
  ['.home-hero','Welcome to my drum school. Come on, let me show you around!'],
- ['.newbox','The Sound Studio: Mickey Hart\'s 200 samples, movie sound effects and drum machines. Tap any pad and play.'],
+ ['.newbox','This is the Kit: a real recorded vintage drum set. Tap any drum or cymbal, play along with grooves, or plug in your own electronic kit.'],
  ['.drm','This is my favorite room: the Drum Room. Every instrument in the orchestra, from timpani to chimes, and you play them by tapping the pictures. Everything lights up when you hit it.'],
  ['.otb','Ever wonder who drums for Dropkick Murphys, System of a Down or Rod Stewart? On Tour lists the drummers with 50 currently touring acts.'],
  ['.vtg','These are America\'s best vintage drum shops: Steve Maxwell Vintage and Custom Drums, Revival Drum Shop, Hawthorne Drum Shop, Wood and Weather, Nelson Drum Shop, Drugan\'s Drums, Good Hands Drum Shop, A Drummer\'s Tradition, Memphis Drum Shop and Fork\'s Drum Closet.'],
