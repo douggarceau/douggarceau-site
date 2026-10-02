@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T14:46Z",
+ "updated": "2026-10-02T20:46Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 62,
  "items": [
+  {
+   "title": "Ohana Festival",
+   "link": "https://www.moderndrummer.com/2026/10/ohana-festival/",
+   "source": "Modern Drummer",
+   "date": "2026-10-02"
+  },
   {
    "title": "2026 Florida Drum Fest Brings Florida\u2019s Drum Community Together for Its Inaugural Event",
    "link": "https://www.drummingnewsnetwork.com/2026-florida-drum-fest-brings-floridas-drum-community-together-for-its-inaugural-event/",
@@ -252,12 +258,6 @@
    "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-jimmy-page-dw-kit-panic-channel/",
    "source": "Modern Drummer",
    "date": "2026-09-08"
-  },
-  {
-   "title": "Ben Sharp: From Teaching Drums, YUNGBLUD and The UK Drum Show",
-   "link": "https://drummersreview.com/news/ben-sharp-from-teaching-drums-yungblud-and-the-uk-drum-show/",
-   "source": "Drummer's Review",
-   "date": "2026-09-07"
   }
  ]
 }

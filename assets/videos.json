@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-02T14:46Z",
+ "updated": "2026-10-02T20:47Z",
  "items": [
   {
    "id": "voPkBNKTbp8",
@@ -23,6 +23,13 @@
    "kind": "EVENT"
   },
   {
+   "id": "My1iiJV8abU",
+   "title": "Larry Mullen Jr. Returns to U2 & More - Drum Talk TV News Desk Report - October 2nd, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-10-02",
+   "kind": "TALK"
+  },
+  {
    "id": "KvbqMhYvJS8",
    "title": "Meinl Cymbals - Pure Alloy Custom - Jeeves \"Deuce Deuce\" Demo",
    "source": "Meinl",
@@ -39,13 +46,6 @@
   {
    "id": "BjsyDARUQTc",
    "title": "Drumming Injury Talk - September 25, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-09-25",
-   "kind": "TALK"
-  },
-  {
-   "id": "XyA1KXcfYHM",
-   "title": "Drum Talk TV News Desk Report - September 25, 2026",
    "source": "Drumtalk TV",
    "date": "2026-09-25",
    "kind": "TALK"
@@ -127,10 +127,10 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (0)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
   "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+\ud835\udff1\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
-  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
+  "Percussive Arts Society skip UCXcie4leLm1PJqr040u42Pw": "Fahad Malick"
  }
 }
