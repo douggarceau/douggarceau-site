@@ -37,15 +37,20 @@
   function has(g, v, i) { var p = g.parts[v]; return p && p.indexOf(i) >= 0; }
   function playStep(g, i, t) {
     var tt = t + offset(g, i);
+    var onBeat = i % g.sub === 0, beatN2 = Math.floor(i / g.sub), backbeat = onBeat && beatN2 % 2 === 1, half = g.sub === 4 && i % 2 === 0;
     Object.keys(g.parts).forEach(function (v) {
       if (!has(g, v, i)) return;
       var s = SND[v]; if (!s) return;
-      var gain = s[1];
-      if ((v === 'hihat' || v === 'ride') && i % g.sub === 0) gain *= 1.15;
+      var name = s[0], gain = s[1], th = (Math.random() - .5) * .006;
+      // Play it like a drummer: velocity layers and accents instead of one flat hit.
+      if (v === 'snare') { if (backbeat) { name = has(g, 'crash', i) ? 'snare-ff' : 'snare-f'; th += .004; } else { name = 'snare-mf'; gain *= .78; } }
+      if (v === 'kick') { if (i === 0) name = 'kick-f'; else if (!onBeat) gain *= .88; }
+      if (v === 'hihat' || v === 'ride') gain *= onBeat ? 1.15 : half ? .9 : .68;
+      if (v === 'ghost') gain *= .8 + Math.random() * .3;
       if (v === 'hihat' && has(g, 'snare', i)) gain *= .85;
       if (v === 'hihat' && i > 0 && has(g, 'hhopen', i - 1) && window.KitSamples) KitSamples.play(ctx, master, 'hh-foot', tt, .3, 0);
       var pan = v === 'hihat' || v === 'hhopen' || v === 'hhfoot' ? -.3 : v === 'ride' || v === 'floor' ? .3 : v === 'tom' ? .12 : 0;
-      if (window.KitSamples) KitSamples.play(ctx, master, s[0], tt, gain, pan);
+      if (window.KitSamples) KitSamples.play(ctx, master, name, tt + th, gain, pan);
     });
     if (clickMode !== 'off' && i % g.sub === 0) {
       var beat = Math.floor(i / g.sub) % g.beats;
@@ -71,10 +76,15 @@
   function start(i) {
     if (!audio()) return;
     stop(); cur = i; var g = G[i]; bpm = g.bpm; syncTempo();
-    step = 0; nextT = ctx.currentTime + .12; timer = setInterval(tick, 25); tick();
+    var need = ['kick-mf', 'snare-f', 'hh', 'ride'], tries = 0;
+    (function go() {
+      if (cur !== i) return;
+      if (window.KitSamples && !need.every(KitSamples.ready) && tries++ < 60) { $('#kgNow').textContent = 'Loading the drum kit…'; setTimeout(go, 100); return; }
+      $('#kgNow').innerHTML = '<b>' + esc(g.name) + '</b> · ' + esc(g.cat);
+      step = 0; nextT = ctx.currentTime + .12; timer = setInterval(tick, 25); tick();
+    })();
     var card = root.querySelector('.kg[data-i="' + i + '"]'); card.classList.add('playing');
     var b = $('.kplay', card); b.setAttribute('aria-pressed', 'true'); b.innerHTML = STOP;
-    $('#kgNow').innerHTML = '<b>' + esc(g.name) + '</b> · ' + esc(g.cat);
     if (window.gtag) gtag('event', 'kit_groove_play', { groove: g.id });
   }
   function syncTempo() { $('#kgBpm').value = bpm; $('#kgBpmV').textContent = bpm; }
