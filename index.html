@@ -510,8 +510,8 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 .tour[hidden]{display:none}
 .tour img{flex:none;width:80px;height:80px;border-radius:50%;object-fit:cover;border:3px solid #ffd35c;box-shadow:0 0 0 3px #111,0 0 24px rgba(255,211,92,.6);animation:tourbob 2.4s ease-in-out infinite}
 @keyframes tourbob{50%{transform:translateY(-5px) rotate(-3deg)}}
-.tour-b{position:relative;flex:1;background:#fffdf5;color:#141414;border-radius:14px;padding:12px 14px 10px;box-shadow:0 0 0 3px #ffd35c,0 10px 30px rgba(0,0,0,.6),0 0 30px rgba(255,211,92,.35);margin-bottom:18px}
-.tour-b::after{content:"";position:absolute;left:-12px;bottom:14px;border:8px solid transparent;border-right:12px solid #fffdf5;border-left:0}
+.tour-b{position:relative;flex:1;background:#fff;color:#000;border-radius:16px;padding:13px 15px 11px;box-shadow:0 0 0 3px #fff,0 0 0 5px #ffd35c,0 12px 32px rgba(0,0,0,.65),0 0 40px rgba(255,255,255,.45);margin-bottom:18px}
+.tour-b::after{content:"";position:absolute;left:-12px;bottom:14px;border:8px solid transparent;border-right:12px solid #fff;border-left:0}
 .tour-t{font:600 15px/1.4 'IBM Plex Sans',system-ui,sans-serif;min-height:42px}
 .tour-n{display:flex;align-items:center;gap:6px;margin-top:8px;flex-wrap:wrap}
 .tour-n span{font:600 11px 'IBM Plex Mono',monospace;color:#777;margin-right:auto}
@@ -1337,7 +1337,7 @@ window.amadeusTour=start;
 if(/[?&]tour=1/.test(location.search))setTimeout(start,800);
 })();
 </script>
-<script src="/assets/amadeus-ask.js?v=10" defer></script>
+<script src="/assets/amadeus-ask.js?v=11" defer></script>
 <script src="sounds/kit/kit.js?v=4"></script>
 <script>
 /* Know the kit: plays the same recorded drum samples the interactive kit uses. */
