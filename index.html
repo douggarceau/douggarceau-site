@@ -540,6 +540,20 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 </style>
 <link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Amadeus Drums"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script src="/assets/app.js?v=1" defer></script>
+<style>
+html body .aim{padding:26px 0 24px}
+html body .aim-title{font-size:clamp(30px,3.6vw,48px);letter-spacing:.08em}
+html body .aim-sub{margin:6px 0 14px;font-size:15px}
+html body .aim-rel{margin:0 0 12px;padding:10px}
+html body .aim-rel-row a:nth-child(n+5){display:none}
+html body .aim-it{padding:11px 12px 10px;gap:5px}
+html body .aim-it b{font-size:15px;line-height:1.3}
+html body .aim .hwn{display:none}
+html body .aim-body{grid-template-columns:minmax(0,1fr) 300px!important}
+html body .rbt-list>*:nth-child(n+3){display:none}
+html body .aim-note{margin:8px 0 0}
+@media(max-width:900px){html body .aim-body{grid-template-columns:1fr!important}}
+</style>
 </head>
 <body>
 <div class="topsign" id="top-signup">
@@ -1156,8 +1170,8 @@ fetch('assets/ai.json?ts='+Date.now()).then(function(r){return r.json();}).then(
  var ag=document.getElementById('aim-grid'), aiFill=function(){var r=document.querySelector('.rbt'),l=document.querySelector('.aim-left');
   var beside=r&&Math.abs(r.getBoundingClientRect().top-l.getBoundingClientRect().top)<40;
   var cols=getComputedStyle(ag).gridTemplateColumns.split(' ').length||1;
-  if(!beside){[].forEach.call(ag.children,function(e,i){e.hidden=i>=9;});return;}
-  fillCol(ag,function(){return r.getBoundingClientRect().height;},Math.min(cols*2,it.length),cols);};
+  if(!beside){[].forEach.call(ag.children,function(e,i){e.hidden=i>=6;});return;}
+  [].forEach.call(ag.children,function(e,i){e.hidden=i>=6;});};
  refills.push(aiFill); aiFill();
  document.querySelector('.hwn').addEventListener('click',function(e){var a=e.target.closest('a');if(window.gtag)gtag('event','halloween_ad_click',{url:a?a.getAttribute('href'):'shop/'});});
  document.getElementById('aim-grid').addEventListener('click',function(e){var a=e.target.closest('a');if(a&&window.gtag)gtag('event','ai_news_click',{url:a.href});});
