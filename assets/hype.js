@@ -8,7 +8,7 @@
     ['/studio/fx/', 'Hollywood movie sound FX'],
     ['/studio/beats/', 'Drum machine: hip-hop, trap, electronic and acoustic kits'],
     ['/studio/fx/#industrial', 'Industrial loops and metal hits'],
-    ['/ontour/', 'On Tour: who is behind the kit for 50 touring acts'],
+    ['/ontour/', 'On Tour: who is behind the kit for 50 currently touring acts'],
     ['/vintage/', '10 of America\'s best vintage drum shops'],
     ['/drumroom/', 'The Drum Room: 59 percussion instruments'],
     ['/level7.html', 'Plug in your e-kit or MIDI pads and play The Kit'],
@@ -74,5 +74,5 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build); else build();
   // Amadeus, the site guide
-  var am = document.createElement('script'); am.src = '/assets/amadeus-ask.js?v=13'; am.defer = true; document.head.appendChild(am);
+  var am = document.createElement('script'); am.src = '/assets/amadeus-ask.js?v=14'; am.defer = true; document.head.appendChild(am);
 })();
