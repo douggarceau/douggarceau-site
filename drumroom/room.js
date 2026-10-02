@@ -889,7 +889,7 @@
     var vp = e.target.closest('[data-vpedal]'); if (vp) { audio(); setPedal(vp.getAttribute('data-vpedal')); if (window.gtag) gtag('event', 'vibe_pedal', { pedal: vp.getAttribute('data-vpedal') }); return; }
     var b = e.target.closest('[data-inst]'); if (!b) return;
     var card = b.closest('.inst');
-    if (b.hasAttribute('data-scale')) { var ks = [].map.call(card.querySelectorAll('[data-note]'), function (k) { return k.getAttribute('data-note'); }); scale(b.getAttribute('data-inst'), ks, card); return; }
+    if (b.hasAttribute('data-scale')) { var ks = [].map.call(card.querySelectorAll('.keys [data-note]'), function (k) { return k.getAttribute('data-note'); }); scale(b.getAttribute('data-inst'), ks, card); return; }
     play(b.getAttribute('data-inst'), b.getAttribute('data-note'), b);
   });
 })();
