@@ -1281,7 +1281,7 @@ signup('tf','temail','tnote','top_bar');
 <div class="tour" id="tour" hidden role="dialog" aria-label="Tour with Amadeus">
 <img src="assets/amadeus-face.jpg" width="80" height="80" alt="Amadeus">
 <div class="tour-b"><div class="tour-t" id="tour-t"></div>
-<div class="tour-n"><span id="tour-c"></span><button id="tour-p">&larr; Back</button><button data-amute aria-pressed="false">&#128266; Voice on</button><button id="tour-x">End tour</button><button id="tour-go" class="go">Next &rarr;</button></div></div>
+<div class="tour-n"><span id="tour-c"></span><button id="tour-p">&larr; Back</button><span class="amg-snd" data-amute></span><button id="tour-x">End tour</button><button id="tour-go" class="go">Next &rarr;</button></div></div>
 </div>
 <script>
 (function(){
@@ -1298,6 +1298,7 @@ var STEPS=[
  ['#gear-shop','Need gear? 174 pieces of drum gear, each one explained. Go fetch!'],
  ['#signup','Sign up and I\'ll let you know when new lessons drop. Want to see the rest of my school? Click Next and I\'ll walk you through every page!']];
 var T=document.getElementById('tour'),tt=document.getElementById('tour-t'),k=0,lit=null,typer;
+window.amadeusTourLine=function(){return T&&!T.hidden&&STEPS[k]?STEPS[k][1]:null;};
 function type(t){clearInterval(typer);var n=0;tt.textContent='';typer=setInterval(function(){n++;tt.textContent=t.slice(0,n);if(n>=t.length)clearInterval(typer);},22);}
 function show(n){k=Math.max(0,Math.min(STEPS.length-1,n));var st=STEPS[k],el=document.querySelector(st[0]);
  if(lit)lit.classList.remove('tour-lit'); if(el&&!el.hidden){lit=el;el.classList.add('tour-lit');var y=el.getBoundingClientRect().top+scrollY-110;scrollTo({top:Math.max(0,y),behavior:'smooth'});}
@@ -1315,7 +1316,7 @@ window.amadeusTour=start;
 if(/[?&]tour=1/.test(location.search))setTimeout(start,800);
 })();
 </script>
-<script src="/assets/amadeus-ask.js?v=7" defer></script>
+<script src="/assets/amadeus-ask.js?v=8" defer></script>
 <script src="sounds/kit/kit.js?v=4"></script>
 <script>
 /* Know the kit: plays the same recorded drum samples the interactive kit uses. */

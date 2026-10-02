@@ -75,5 +75,5 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build); else build();
   // Amadeus, the site guide
-  var am = document.createElement('script'); am.src = '/assets/amadeus-ask.js?v=7'; am.defer = true; document.head.appendChild(am);
+  var am = document.createElement('script'); am.src = '/assets/amadeus-ask.js?v=8'; am.defer = true; document.head.appendChild(am);
 })();
