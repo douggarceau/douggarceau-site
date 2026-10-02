@@ -4,7 +4,6 @@
   if (window.__hype) return; window.__hype = 1;
   var TICK = [
     ['/app/', 'NEW: Get the Amadeus app on your phone'],
-    ['/artist/', 'COMING SOON: Artist of the Month by Doug Garceau'],
     ['/studio/hart/', 'ALL NEW: 200 samples, the sounds of Mickey Hart of the Grateful Dead'],
     ['/studio/fx/', 'Hollywood movie sound FX'],
     ['/studio/beats/', 'Drum machine: hip-hop, trap, electronic and acoustic kits'],
@@ -75,5 +74,5 @@
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', build); else build();
   // Amadeus, the site guide
-  var am = document.createElement('script'); am.src = '/assets/amadeus-ask.js?v=11'; am.defer = true; document.head.appendChild(am);
+  var am = document.createElement('script'); am.src = '/assets/amadeus-ask.js?v=12'; am.defer = true; document.head.appendChild(am);
 })();
