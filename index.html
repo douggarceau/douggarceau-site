@@ -656,7 +656,7 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 <div class="aotm-body">
 <div class="aotm-q" aria-hidden="true">?</div>
 <div class="aotm-txt"><h2 id="aotm-h">Artist <i>of the</i> Month</h2>
-<p>One drummer. One in-depth interview, in print, every month. Interviews by Doug Garceau, former Seattle rock music journalist.</p></div>
+<p>One drummer. One in-depth interview, every month. Interviews by Doug Garceau, former Seattle rock music journalist.</p></div>
 <div class="aotm-go"><span class="aotm-b1">SEE WHAT&rsquo;S COMING &rarr;</span><span class="aotm-b2" data-href="contact/?r=interview">SUGGEST A DRUMMER</span></div>
 </div></a></div>
 <style>
@@ -679,6 +679,27 @@ html body .zone-links a:nth-child(9){animation-delay:-12.0s,-2.96s}
 @media (prefers-reduced-motion:reduce){.aotm-soon{animation:none}}
 </style>
 <script>document.querySelector('.aotm-b2').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();location.href=this.dataset.href;});</script>
+</section>
+
+<section class="aotm adbox" aria-labelledby="adbox-h">
+<div class="home-container"><a class="aotm-in" href="advertise/">
+<div class="aotm-mast"><span class="aotm-soon">YOUR BRAND HERE</span><span class="aotm-vol">SPONSORSHIPS &middot; AD PLACEMENTS</span></div>
+<div class="aotm-body">
+<div class="aotm-q" aria-hidden="true">$</div>
+<div class="aotm-txt"><h2 id="adbox-h">Advertise <i>with</i> Amadeus</h2>
+<p>Put your brand in front of drummers, percussionists and the people who buy their gear: homepage, news, videos, On Tour, the Gear Shop and Artist of the Month.</p></div>
+<div class="aotm-go"><span class="aotm-b1">SEE THE MEDIA KIT &rarr;</span><span class="aotm-b2" data-href="contact/?r=advertising">CONTACT US</span></div>
+</div></a></div>
+<style>
+.adbox .aotm-in{border-color:#ffd35c;box-shadow:0 0 22px rgba(255,211,92,.25);background:repeating-linear-gradient(0deg,rgba(255,211,92,.03) 0 2px,transparent 2px 4px),linear-gradient(180deg,#17140a,#0a0905)}
+.adbox .aotm-mast{border-bottom-color:#ffd35c}
+.adbox .aotm-soon{background:#ffd35c;color:#0a0a0a;box-shadow:0 0 14px rgba(255,211,92,.7)}
+.adbox .aotm-q{background:radial-gradient(circle at 35% 30%,#fff6cf,#ffd35c 55%,#a87a12);box-shadow:0 0 0 3px #0a0a0a,0 0 0 5px #ffd35c,0 0 26px rgba(255,211,92,.5)}
+.adbox h2 i{color:#ffd35c}
+.adbox .aotm-b1{background:#ffd35c}.adbox .aotm-in:hover .aotm-b1{background:#fff}
+.adbox .aotm-b2{border-color:#ffd35c;color:#ffd35c}
+</style>
+<script>document.querySelector('.adbox .aotm-b2').addEventListener('click',function(e){e.preventDefault();e.stopPropagation();location.href=this.dataset.href;});</script>
 </section>
 
 <section class="dnews" id="drum-news" aria-labelledby="dn-h">
@@ -1290,7 +1311,7 @@ var STEPS=[
  ['.newbox','The Sound Studio: Mickey Hart\'s 200 samples, movie sound effects and drum machines. All free to play.'],
  ['.otb','Ever wonder who drums for Dropkick Murphys, System of a Down or Rod Stewart? On Tour lists the drummers with 50 touring acts.'],
  ['.vtg','These are America\'s best vintage drum shops: Steve Maxwell Vintage and Custom Drums, Revival Drum Shop, Hawthorne Drum Shop, Wood and Weather, Nelson Drum Shop, Drugan\'s Drums, Good Hands Drum Shop, A Drummer\'s Tradition, Memphis Drum Shop and Fork\'s Drum Closet.'],
-['.aotm','Coming soon: Artist of the Month. Every month Doug sits down with one drummer for a full in-depth interview, written the way a real music magazine would run it. Doug covered the Seattle rock scene as a music journalist. Know a drummer he should talk to? Tap Suggest a drummer.'],
+['.aotm','Coming soon: Artist of the Month. Every month Doug interviews one drummer in depth. Doug covered the Seattle rock scene as a music journalist. Know a drummer he should talk to? Tap Suggest a drummer.'],
  ['#drum-news','Fresh drum news, video demos and interviews. It updates itself all day long.'],
  ['#ai-music','AI is changing music. Even robots are learning to drum. Watch the Robot Drummers!'],
  ['#movie-fx','My favorite: 36 sound pads. Tap one. Then tap them all!'],
@@ -1316,7 +1337,7 @@ window.amadeusTour=start;
 if(/[?&]tour=1/.test(location.search))setTimeout(start,800);
 })();
 </script>
-<script src="/assets/amadeus-ask.js?v=8" defer></script>
+<script src="/assets/amadeus-ask.js?v=9" defer></script>
 <script src="sounds/kit/kit.js?v=4"></script>
 <script>
 /* Know the kit: plays the same recorded drum samples the interactive kit uses. */
