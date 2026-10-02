@@ -249,6 +249,18 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(
 .lnext button small{display:block;font:700 11px 'IBM Plex Mono',monospace;letter-spacing:.12em;opacity:.75}
 .lnext button[disabled]{visibility:hidden}
 @media(max-width:760px){.lgrid .row{grid-template-columns:repeat(6,1fr)}.lgrid button{min-height:52px;font-size:22px}}
+
+.ns{max-width:1400px;margin:10px auto 0;padding:16px;border:2px solid #ffd35c;border-radius:14px;background:radial-gradient(ellipse at 0% 0%,rgba(255,211,92,.14),transparent 55%),#0d0c09;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;align-items:center;box-shadow:0 0 22px rgba(255,211,92,.25)}
+.ns[hidden]{display:none}
+.ns .vid{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;background:#000}
+.ns iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.ns .k{font:800 12px 'IBM Plex Mono',monospace;letter-spacing:.18em;color:#111;background:#ffd35c;display:inline-block;padding:3px 9px;border-radius:4px}
+.ns h2{font-family:'Bebas Neue',Impact,sans-serif;font-weight:400;font-size:clamp(34px,3.4vw,52px);line-height:.95;margin:10px 0 8px;color:#fff}
+.ns h2 span{color:#ffd35c}
+.ns p{color:#e2ddd2;margin:0 0 10px;font-size:16px;line-height:1.55}
+.ns ul{margin:0 0 10px;padding-left:18px;color:#e2ddd2}
+.ns a.yt{color:#ffd35c;font-size:14px}
+@media(max-width:860px){.ns{grid-template-columns:1fr}}
 </style>
 <link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Amadeus Drums"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script src="/assets/app.js?v=1" defer></script>
@@ -290,6 +302,14 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(
 <div class="me"><img src="assets/amadeus-face.jpg" width="38" height="38" alt="" style="border-radius:50%"><div>My progress<b id="meDone"></b></div></div>
 </header>
 <nav class="lgrid" aria-label="All 24 lessons"><h2>Pick any lesson &middot; <b id="lgNow"></b></h2><div class="row" id="lgRow"></div></nav>
+<section class="ns" id="northstar" aria-labelledby="ns-h">
+<div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/v0V4Aqs2D48?rel=0" title="Buddy Rich on why he doesn't use matched grip" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div><span class="k">START HERE &middot; OUR NORTH STAR</span>
+<h2 id="ns-h">Buddy Rich on <span>traditional grip</span></h2>
+<p>Before your first note, watch the greatest drummer who ever lived explain why he played traditional grip. This school learns traditional grip first.</p>
+<ul><li>Left stick rests in the web between thumb and first finger, palm turned up.</li><li>Hold it loosely, with just enough grip to keep it in your hand.</li><li>Relaxed wrists, good posture, and let the stick bounce.</li></ul>
+<a class="yt" href="https://www.youtube.com/watch?v=v0V4Aqs2D48" target="_blank" rel="noopener">Video not playing? Watch it on YouTube &rarr;</a></div>
+</section>
 <main class="app">
 <aside class="nav" id="tabs" aria-label="Lessons"></aside>
 <section class="hero">
@@ -743,7 +763,7 @@ function updLG(){[].forEach.call(document.querySelectorAll("#lgRow button"),func
  var p=$("pv2"),n=$("nx2");p.disabled=cur===0;n.disabled=cur===LESSONS.length-1;
  if(cur>0)p.innerHTML="<small>&#9664; PREVIOUS</small>"+(cur)+". "+LESSONS[cur-1].name;
  if(cur<LESSONS.length-1)n.innerHTML="<small>NEXT LESSON &#9654;</small>"+(cur+2)+". "+LESSONS[cur+1].name;}
-var _rp0=refreshProgress;refreshProgress=function(){_rp0();updLG();};
+var _rp0=refreshProgress;refreshProgress=function(){_rp0();updLG();var ns=document.getElementById('northstar');if(ns)ns.hidden=cur!==0;};
 
 /* ---------- start ---------- */
 (function(){var i=0;var m=/^#lesson-(\d+)$/.exec(location.hash||"");if(m)i=+m[1]-1;else{try{var s=localStorage.getItem("bearLab.cur");if(s!==null)i=+s;}catch(e){}}
