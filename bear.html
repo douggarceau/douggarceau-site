@@ -230,6 +230,25 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(
 @media (min-width:1100px) and (max-height:760px){.beat{display:none}.mh svg.i{display:none}.mh h3{font-size:24px}.mission{gap:10px;padding:12px}}
 @media (min-width:1100px) and (max-height:820px){#tipbox{display:none}.lt p{font-size:14px}}
 @media (prefers-reduced-motion:reduce){.stagewrap img,.stagewrap::after,#beats .bd i{transition:none}}
+
+.picker{display:none!important}
+.lgrid{max-width:1400px;margin:10px auto 0;padding:12px 16px;border:2px solid #43d7ff;border-radius:14px;background:linear-gradient(180deg,#0f2440,#0a1628);box-shadow:0 0 22px rgba(67,215,255,.25)}
+.lgrid h2{margin:0 0 8px;font:700 13px 'IBM Plex Mono',monospace;letter-spacing:.18em;color:#43d7ff;text-transform:uppercase}
+.lgrid h2 b{color:#ffd35c}
+.lgrid .row{display:grid;grid-template-columns:repeat(12,1fr);gap:7px}
+.lgrid button{position:relative;min-height:48px;border-radius:10px;border:2px solid #34506f;background:#13294a;color:#fff;font:800 20px 'IBM Plex Sans',sans-serif;cursor:pointer;padding:0}
+.lgrid button:hover{border-color:#43d7ff;background:#1b3a66}
+.lgrid button.done{background:#155a32;border-color:#3fdc78}
+.lgrid button.done::after{content:"\2713";position:absolute;top:2px;right:5px;font-size:11px;color:#9dffbe}
+.lgrid button[aria-current=true]{background:#ffd35c;border-color:#fff;color:#111;box-shadow:0 0 16px rgba(255,211,92,.8);transform:scale(1.06)}
+.lgrid .units{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px;font:600 12px 'IBM Plex Mono',monospace;color:#8fb3d9}
+.lnext{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 6px}
+.lnext button{flex:1 1 200px;min-height:56px;border-radius:12px;font:800 17px 'IBM Plex Sans',sans-serif;cursor:pointer;padding:8px 14px;text-align:left}
+.lnext #nx2{background:#ffd35c;color:#111;border:0;box-shadow:0 0 18px rgba(255,211,92,.6);text-align:right}
+.lnext #pv2{background:transparent;color:#cfe6ff;border:2px solid #34506f}
+.lnext button small{display:block;font:700 11px 'IBM Plex Mono',monospace;letter-spacing:.12em;opacity:.75}
+.lnext button[disabled]{visibility:hidden}
+@media(max-width:760px){.lgrid .row{grid-template-columns:repeat(6,1fr)}.lgrid button{min-height:52px;font-size:22px}}
 </style>
 <link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#0a0a0a"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta name="apple-mobile-web-app-title" content="Amadeus Drums"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <script src="/assets/app.js?v=1" defer></script>
@@ -270,6 +289,7 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(
 <div class="tprog" aria-label="Unit progress"><div><div class="u" id="tpUnit"></div><div class="n" id="tpLesson"></div></div><div class="dots" id="tpDots"></div></div>
 <div class="me"><img src="assets/bear-drum-lab-coach.png" width="38" height="38" alt=""><div>My progress<b id="meDone"></b></div></div>
 </header>
+<nav class="lgrid" aria-label="All 24 lessons"><h2>Pick any lesson &middot; <b id="lgNow"></b></h2><div class="row" id="lgRow"></div></nav>
 <main class="app">
 <aside class="nav" id="tabs" aria-label="Lessons"></aside>
 <section class="hero">
@@ -283,6 +303,7 @@ a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid var(
 <h1 id="bigname"></h1>
 <h2 id="ttl"></h2>
 <p id="txt"></p>
+<div class="lnext"><button type="button" id="pv2"></button><button type="button" id="nx2"></button></div>
 <div class="modes" role="group" aria-label="Practice mode">
 <button type="button" data-mode="listen" aria-pressed="true"><svg class="i"><use href="#i-head"/></svg>Listen &amp; learn</button>
 <button type="button" data-mode="along" aria-pressed="false"><svg class="i"><use href="#i-drum"/></svg>Play along</button>
@@ -713,6 +734,16 @@ $("startPractice").addEventListener("click",function(){setMode(mode==="listen"?"
  if(window.innerWidth<980)document.querySelector(".stage").scrollIntoView({behavior:RM?"auto":"smooth",block:"start"});});
 $("markDone").addEventListener("click",function(){done[cur]=!done[cur];saveDone();refreshProgress();if(window.gtag&&done[cur])gtag("event","bear_lesson_complete",{lesson:cur+1});});
 document.addEventListener("keydown",function(e){if(e.code!=="Space")return;var t=e.target.tagName;if(t==="INPUT"||t==="SELECT"||t==="BUTTON"||t==="TEXTAREA"||e.target.getAttribute("role")==="button")return;e.preventDefault();toggle();});
+
+/* ---------- big lesson grid + next/previous buttons ---------- */
+(function(){var row=$("lgRow");LESSONS.forEach(function(L,i){var b=document.createElement("button");b.type="button";b.textContent=i+1;b.title=(i+1)+". "+L.name;b.setAttribute("aria-label","Lesson "+(i+1)+": "+L.name);b.addEventListener("click",function(){select(i);window.scrollTo({top:0,behavior:"smooth"});});row.appendChild(b);});
+ $("pv2").addEventListener("click",function(){select(cur-1);});$("nx2").addEventListener("click",function(){select(cur+1);window.scrollTo({top:0,behavior:"smooth"});});})();
+function updLG(){[].forEach.call(document.querySelectorAll("#lgRow button"),function(b,i){b.setAttribute("aria-current",i===cur?"true":"false");b.classList.toggle("done",!!done[i]);});
+ $("lgNow").textContent="You are on lesson "+(cur+1)+" of "+LESSONS.length;
+ var p=$("pv2"),n=$("nx2");p.disabled=cur===0;n.disabled=cur===LESSONS.length-1;
+ if(cur>0)p.innerHTML="<small>&#9664; PREVIOUS</small>"+(cur)+". "+LESSONS[cur-1].name;
+ if(cur<LESSONS.length-1)n.innerHTML="<small>NEXT LESSON &#9654;</small>"+(cur+2)+". "+LESSONS[cur+1].name;}
+var _rp0=refreshProgress;refreshProgress=function(){_rp0();updLG();};
 
 /* ---------- start ---------- */
 (function(){var i=0;var m=/^#lesson-(\d+)$/.exec(location.hash||"");if(m)i=+m[1]-1;else{try{var s=localStorage.getItem("bearLab.cur");if(s!==null)i=+s;}catch(e){}}
