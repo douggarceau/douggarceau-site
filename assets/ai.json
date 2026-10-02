@@ -1,19 +1,19 @@
 {
- "updated": "2026-10-02T05:41Z",
+ "updated": "2026-10-02T14:46Z",
  "items": [
-  {
-   "title": "Thoughtful Things Engram: A Weird AI Groovebox Sampler From the Backrooms",
-   "link": "https://www.gearnews.com/thoughtful-things-engram-synth/",
-   "source": "Gearnews",
-   "date": "2026-10-01",
-   "kind": "DRUMS",
-   "release": true
-  },
   {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
-   "source": "bloomberg.com",
+   "source": "Bloomberg.com",
    "date": "2026-10-01",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
+   "link": "https://www.musicradar.com/music-tech/engram-is-a-generative-audio-sampler-that-applies-circuit-bending-principles-to-ai-audio-models",
+   "source": "MusicRadar",
+   "date": "2026-09-30",
    "kind": "PRODUCT",
    "release": true
   },
@@ -26,17 +26,9 @@
    "release": false
   },
   {
-   "title": "Dr. Zoppa updates AMI-CMMAS generative MIDI plugins (incl. Windows support)",
-   "link": "https://rekkerd.org/dr-zoppa-updates-ami-cmmas-generative-midi-plugins-incl-windows-support/",
-   "source": "Rekkerd",
-   "date": "2026-09-29",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Guilt-free AI? What \u201cethical AI\u201d tools mean for musicians and producers",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMWVlTlZRWUpySU1YMmhMbmk1QXpMeV91cDlmNWtCTUJpX3pJMVJ2d3FXTU5EcWpEeVBYUmxBLWg1aWVFODNERlVEbThYS241YUdZWUxQWm9ZVjc0N1ljbnJiTHZQWVY2d01BM3FGelpmZ2NPbVc3UUNORnZfN1lEYldyc1JWVXFWMm1nNThBeDVzcE5kYXA3QzZPa0oyTzB4eWpZX000TWNnNkNzT3VYa2RwZFZuWE0?oc=5",
-   "source": "MusicRadar",
+   "source": "musicradar.com",
    "date": "2026-09-19",
    "kind": "PRODUCT",
    "release": false
@@ -76,7 +68,7 @@
   {
    "title": "AI Music Startup Suno Launches New Models That Pay Labels",
    "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOU5fTHJzNkR2N3JZd1NHQndTUFBfSm9KNnJJYmU4eXVtZFQwRWxKQ1pfcEplUjd1bDVndnp0ZkJLYlcwaHBicGNGUXlORnFEMXZ3Y0hWekVjUHREYUJqLWIwMHUyaWhDeHNzQndTUkl5T09KdS1MaWdOd2xUUFE1M3h1dlFvOWlpV2JCV0ZoNVAtWWZLVGVaQTV4SFJQZkxBTS1rajVOb3NHLVhn?oc=5",
-   "source": "bloomberg.com",
+   "source": "Bloomberg.com",
    "date": "2026-09-09",
    "kind": "PRODUCT",
    "release": true
@@ -90,11 +82,35 @@
    "release": true
   },
   {
-   "title": "Armin van Buuren and Laidback Luke Join AI-Powered Music App Moises as Advisors",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVy1mSGR3QWUwNUlWQUNWYVhvZVhYVE1fSnVxU2xiSElORFo2aDZfajFWcGJEX0J5THFlSG92a3F0ams0dEZzbFRUNFc4eURsc2NLM2VRaXA0NEczakNuTUJodXgzdkNobTBGS0ZFY29CU2Zjak5qbzQtdGNIR0J1cE83aXphMkwzNXRjNkpHdG9KMDRBVng3Mnd3NA?oc=5",
-   "source": "edm.com",
-   "date": "2026-09-02",
-   "kind": "PRODUCT",
+   "title": "\u201cIt frustrates me to hear people bashing something that\u2019s so amazing\u201d: Todd Edwards is optimistic about AI in music production",
+   "link": "https://musictech.com/news/music/todd-edwards-is-optimistic-about-ai-in-music-production/",
+   "source": "MusicTech",
+   "date": "2026-10-02",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Suno is \u2018far beyond\u2019 2m subscribers and $300m of annual revenue",
+   "link": "https://musically.com/2026/10/02/suno-is-far-beyond-2m-subscribers-and-300m-of-annual-revenue/",
+   "source": "Music Ally",
+   "date": "2026-10-02",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "AI music maker Suno now generates spoken words",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1003925/suno-speech-ai-voice-feature-beta-availability",
+   "source": "The Verge",
+   "date": "2026-10-02",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Russia\u2019s Latest Propaganda? A.I.-Generated War Songs.",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNOG8yVU1aUnRKU1BST0JNbTJvYkVCa2UzQVEyQ3B2dkR5N1J2MmowcGp1T0pGd3p1bkRYNWk2Z3Z6M1RHLW95eE45TEZjOEZsQWRFUG42NkxjbUk1SGQzX2dXWE1GZkppcjJtSk1xX1o5ejgwbnF1a2Rtbng3bGVSNWx6ajRPSU56cVE?oc=5",
+   "source": "The New York Times",
+   "date": "2026-10-02",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -108,7 +124,7 @@
   {
    "title": "Watch Suno's Mikey Shulman on the AI Music Landscape",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNRjgtQVltdklKbXBLRFlBeVFScGJCR0k0V2pwcXlvM2xuVHc1eE1vc2xldmE3RXQxSWwxem9UWFlOaGRGSThBT2ZhLXlIMHJqb3doLWJfWEJuLUtCUmRXZ3A4VVl1SzZNOEhRbHZPUUFUbm9VWVhKUHozV3ZVcF9MWi1pc0FMSkplN3JKZ0NtMjFsYVY0c1FxTnhvRU9yYmhOT2tr?oc=5",
-   "source": "bloomberg.com",
+   "source": "Bloomberg.com",
    "date": "2026-10-01",
    "kind": "NEWS",
    "release": false
@@ -130,27 +146,11 @@
    "release": false
   },
   {
-   "title": "Spotify takes down thousands of songs generated by AI startup Boomy",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5MRGdKWGY0VF9pb1NaMW5QYlAxYTR0VmVOeEVVSmE5S0NiWVBqQnJiNENyRzFRTlJVYTVSeFZKTHVXdHNKdjVTLW53ZHh3dWstOHZaVERhaEhfQmVVV1E?oc=5",
-   "source": "Mashable",
+   "title": "News Fred again.. on AI-generated music: \u201cI\u2019m not worried about the threat of AI\u201d",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVkNFSzdIWU91YmhxR3M5akRyWEM5NGpQUm5BajZJNHVaWFRaNEJ6NUI2ZzZCRXRnbElYbEJVX2xHX0w3TDE2T0ZhbWdlOFR4LWhVSUdvSEJXYjhSeXhleFplWWlKMTNUVzI1U0Nlc3J6NGx2Qlk3WUZFTDN2WG5lWHlQT0xtU19ZemxTMnY1cno?oc=5",
+   "source": "Mixmag Asia",
    "date": "2026-09-30",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "\"The hypocrisy in the industry is insane\": House legend Todd Edwards on sampling Suno",
-   "link": "https://www.musicradar.com/artists/i-resent-the-way-people-talk-about-this-technology-as-if-its-from-the-devil-the-hypocrisy-in-the-industry-is-insane-house-legend-todd-edwards-on-how-ai-has-transformed-his-approach-to-sampling",
-   "source": "MusicRadar",
-   "date": "2026-09-29",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Fred Again slams AI music: \"I've felt no pull whatsoever to even try it... the process is the magic\"",
-   "link": "https://www.musicradar.com/artists/fred-again-slams-ai-music-ive-felt-no-pull-whatsoever-to-even-try-it-the-process-is-the-magic",
-   "source": "MusicRadar",
-   "date": "2026-09-28",
-   "kind": "NEWS",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -159,6 +159,14 @@
    "source": "Yahoo",
    "date": "2026-09-25",
    "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "From Warner Music\u2019s leadership shake-up to Suno\u2019s courtroom defiance\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
+   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPZm9LT29Tak1DLUxFN0FzM3A0RWZqNVNuN1BhLWZYNV96RUZsSVJtQlZoVEI1Wnd2NkppVGN2b0xlRDB3YV9wWlA5RW5tcUx3b0J3UTVQYVZWa215V2dvSGRYYWZtOTZmWTdWblVNWUpmQ21LWWpqOFZOUnp6eWwzVWtuUkEwSElHZXp4STUtU3A4SUI2NWFUYk9RM1RQVHoxVHRGRW5jalBYWHZXRTIyU1RFZDg2RUVqUlFQTmNzMC01UHhOTkRGNFpRNA?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-09-25",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -184,38 +192,22 @@
    "date": "2026-09-23",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "AI-music startup Grai acquires social-music service Hangout",
-   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQdGZ6MU1wY0N6RWhBckxybGZNOWJramNJc0lCT2I5QlFIbHNCcmlBMHBsQzlGWVF2dlBrSkF5V0d0Y1pMMTBRbVZIYnNzRXc4aURjRmR0R09nNkdWWXNWdDkyVGZQTERZclROUHBscDdNcWhldldqMHZHSUVLQXd0bjZQcldIT2lUS1R1NjRJZTFBTGVYY3A5ZA?oc=5",
-   "source": "Music Ally",
-   "date": "2026-09-23",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
   {
-   "title": "Thoughtful Things Engram: A Weird AI Groovebox Sampler From the Backrooms",
-   "link": "https://www.gearnews.com/thoughtful-things-engram-synth/",
-   "source": "Gearnews",
-   "date": "2026-10-01",
-   "kind": "DRUMS",
-   "release": true
-  },
-  {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
-   "source": "bloomberg.com",
+   "source": "Bloomberg.com",
    "date": "2026-10-01",
    "kind": "PRODUCT",
    "release": true
   },
   {
-   "title": "Dr. Zoppa updates AMI-CMMAS generative MIDI plugins (incl. Windows support)",
-   "link": "https://rekkerd.org/dr-zoppa-updates-ami-cmmas-generative-midi-plugins-incl-windows-support/",
-   "source": "Rekkerd",
-   "date": "2026-09-29",
+   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
+   "link": "https://www.musicradar.com/music-tech/engram-is-a-generative-audio-sampler-that-applies-circuit-bending-principles-to-ai-audio-models",
+   "source": "MusicRadar",
+   "date": "2026-09-30",
    "kind": "PRODUCT",
    "release": true
   },
@@ -255,28 +247,28 @@
  "log": {
   "MusicRadar www.musicradar.com": 0,
   "Music Business Worldwide www.musicbusinessworldwide.com": 1,
-  "Digital Music News www.digitalmusicnews.com/feed/": "error: not well-formed (invalid token): line 1, column 119",
+  "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 403: Forbidden",
   "CDM cdm.link": 0,
-  "Gearnews www.gearnews.com": 1,
-  "MusicTech musictech.com": 0,
-  "Rekkerd rekkerd.org": 1,
+  "Gearnews www.gearnews.com": 0,
+  "MusicTech musictech.com": 1,
+  "Rekkerd rekkerd.org": 0,
   "Music Ally musically.com": 1,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
-  "The Verge www.theverge.com": 0,
+  "The Verge www.theverge.com": 1,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 41,
-  "Google News Suno+OR+Udio": 47,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 30,
+  "Google News Suno+OR+Udio": 48,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 28,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
-  "Google News %22AI%22+stem+separation": 4,
+  "Google News %22AI%22+stem+separation": 2,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }

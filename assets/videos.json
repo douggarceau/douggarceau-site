@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-02T05:41Z",
+ "updated": "2026-10-02T14:46Z",
  "items": [
+  {
+   "id": "voPkBNKTbp8",
+   "title": "Meinl Cymbals - Ramon Montagner - \"Aurora\" - Meinl Drum Festival 2026",
+   "source": "Meinl",
+   "date": "2026-10-02",
+   "kind": "EVENT"
+  },
+  {
+   "id": "85OoO1xwMVk",
+   "title": "Dan Wilding (CARCASS) Soundcheck @Daikanyama Space ODD",
+   "source": "Tama",
+   "date": "2026-10-02",
+   "kind": "DEMO"
+  },
   {
    "id": "jmzfDALlynM",
    "title": "Noah F\u00fcrbringer - \"Malik Solo\" live at The Europe Drumshow 2026",
@@ -9,50 +23,114 @@
    "kind": "EVENT"
   },
   {
+   "id": "KvbqMhYvJS8",
+   "title": "Meinl Cymbals - Pure Alloy Custom - Jeeves \"Deuce Deuce\" Demo",
+   "source": "Meinl",
+   "date": "2026-09-30",
+   "kind": "DEMO"
+  },
+  {
+   "id": "iMUlR2OMOMc",
+   "title": "Bill Bruford Interview: Chatting About 'Group Chat' by Pete Roth Trio - Yesshift Ep 247",
+   "source": "Drumtalk TV",
+   "date": "2026-09-29",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "BjsyDARUQTc",
+   "title": "Drumming Injury Talk - September 25, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-09-25",
+   "kind": "TALK"
+  },
+  {
+   "id": "XyA1KXcfYHM",
+   "title": "Drum Talk TV News Desk Report - September 25, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-09-25",
+   "kind": "TALK"
+  },
+  {
+   "id": "e-6zjzE73iI",
+   "title": "Meinl Cymbals - Byzance Traditional Thin Crashes Comparison",
+   "source": "Meinl",
+   "date": "2026-09-23",
+   "kind": "DEMO"
+  },
+  {
    "id": "X3_EIcsiW1w",
    "title": "CONNOR DENIS Interview || The Hang \u2013 with Nick D\u2019Virgilio",
    "source": "Gretsch",
    "date": "2026-09-19",
    "kind": "INTERVIEW"
+  },
+  {
+   "id": "OfX-I8nj23E",
+   "title": "Classic Oak 6.5x14 Snare | Tuning and Head Comparison",
+   "source": "Ludwig",
+   "date": "2026-08-27",
+   "kind": "DEMO"
+  },
+  {
+   "id": "yWToFFWz_bk",
+   "title": "Blake Richardson (BETWEEN THE BURIED AND ME) Soundcheck @Shibuya CYCLONE",
+   "source": "Tama",
+   "date": "2026-08-11",
+   "kind": "DEMO"
+  },
+  {
+   "id": "yRrleOl5ly8",
+   "title": "PAISTE CYMBALS - Kiko Freitas - Studio Session & Interview",
+   "source": "Paiste",
+   "date": "2026-08-07",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "fVdgo2_A7IE",
+   "title": "THOM TALK: Will Kennedy & Matt Jordan",
+   "source": "Pearl",
+   "date": "2026-07-05",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "Wg4h0ZE54X8",
+   "title": "Justin Brown Soundcheck | TAMA Starclassic Bubinga",
+   "source": "Tama",
+   "date": "2026-05-30",
+   "kind": "DEMO"
+  },
+  {
+   "id": "_vF153uCc0w",
+   "title": "PAISTE CYMBAL SOUNDCHECK - PST X Swiss Flanger Crash 12\"",
+   "source": "Paiste",
+   "date": "2026-05-01",
+   "kind": "DEMO"
   }
  ],
  "log": {
-  "DW Drums @UC2OQnpI3N1yWsgFMSN_sekA": "error: HTTP Error 404: Not Found",
-  "DW Drums @@DWDrums": "error: HTTP Error 404: Not Found",
-  "DW Drums": "not found",
-  "Ludwig @UCxdiLfkkokXj09724KntoOw": "error: HTTP Error 500: Internal Server Error",
-  "Ludwig": "not found",
-  "Meinl @UCZjkQtRELyrearglF3lYa8Q": "error: HTTP Error 404: Not Found",
-  "Meinl": "not found",
-  "Meinl Drum Festival @UCfWNjFlMw-OGiLttkFGfHCA": "error: HTTP Error 404: Not Found",
-  "Meinl Drum Festival": "not found",
-  "Roland @UC4vbiZMU_yrheYVZH393-Zw": "error: HTTP Error 404: Not Found",
-  "Roland": "not found",
-  "Drumeo @UCBiJBaDaM3K6vPVggLhTyWA": "error: HTTP Error 404: Not Found",
-  "Drumeo @@drumeoofficial": "error: HTTP Error 404: Not Found",
-  "Drumeo": "not found",
-  "Tama @UCTSkpJG7QWeungk9q6Je2_g": "error: HTTP Error 500: Internal Server Error",
-  "Tama": "not found",
-  "Pearl @UCmGi7DMBXl7aTOG1HDbRWoQ": "error: HTTP Error 500: Internal Server Error",
-  "Pearl": "not found",
+  "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
+  "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (1)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
+  "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
+  "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
+  "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
+  "Tama": "UCTSkpJG7QWeungk9q6Je2_g UCTSkpJG7QWeungk9q6Je2_g TAMA Drums Official (3)",
+  "Pearl": "UCmGi7DMBXl7aTOG1HDbRWoQ UCmGi7DMBXl7aTOG1HDbRWoQ Pearl Drums (1)",
   "Gretsch": "UCCi7ihBj53YSjNI9lY7nXtA UCCi7ihBj53YSjNI9lY7nXtA gretschdrumsusa (2)",
-  "Sabian @@SABIANcymbals": "error: HTTP Error 404: Not Found",
-  "Sabian @@sabiancymbals": "error: HTTP Error 404: Not Found",
-  "Sabian @@SABIANofficial": "error: HTTP Error 404: Not Found",
-  "Sabian @search": "error: HTTP Error 404: Not Found",
-  "Sabian": "not found",
-  "Paiste @UC1F5S6gl2-dTch-TZ2q4b9Q": "error: HTTP Error 404: Not Found",
-  "Paiste": "not found",
-  "Modern Drummer @UChdBw0Hg_27aS88DiG4p5qw": "error: HTTP Error 500: Internal Server Error",
-  "Modern Drummer": "not found",
-  "Drumtalk TV @UCXtZ8sYopX36If_QH6b4IJQ": "error: HTTP Error 404: Not Found",
-  "Drumtalk TV": "not found",
+  "Sabian skip UCJbu6KNGcKK5KsVAxLoh2xA": "sabiancymbals",
+  "Sabian skip UCNmSiKDIL1GKy71hbnSMUvQ": "SabianOfficial",
+  "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
+  "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
+  "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
+  "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
+  "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (2)",
+  "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (0)",
+  "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM @@NAMMvideos": "error: HTTP Error 500: Internal Server Error",
-  "NAMM @search": "error: HTTP Error 500: Internal Server Error",
-  "NAMM": "not found",
-  "Percussive Arts Society @@PercussiveArtsSociety": "error: HTTP Error 404: Not Found",
+  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+\ud835\udff1\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
-  "Percussive Arts Society @search": "error: HTTP Error 404: Not Found"
+  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
+  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
  }
 }
