@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /admin/
 Disallow: /thank-you.html
 
 Sitemap: https://douggarceau.com/sitemap.xml

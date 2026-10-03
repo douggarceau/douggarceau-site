@@ -1,5 +1,7 @@
 /* Amadeus School of Drums phone app: offline support and the install button. */
 (function () {
+  /* iPhone: play sound even when the ring/silent switch is on (Safari 17+). */
+  try { if (navigator.audioSession) navigator.audioSession.type = 'playback'; } catch (e) {}
   if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
     window.addEventListener('load', function () { navigator.serviceWorker.register('/sw.js').catch(function () {}); });
   }
