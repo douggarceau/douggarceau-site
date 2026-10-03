@@ -1,0 +1,5 @@
+# GitHub Pages publishes this repo as-is. Keep build scripts and config off the live site.
+exclude:
+  - tools
+  - netlify.toml
+  - .github
