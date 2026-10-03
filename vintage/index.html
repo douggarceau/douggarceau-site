@@ -193,6 +193,6 @@ var B=document.querySelector('.bar');B.addEventListener('click',function(e){var 
 document.addEventListener('click',function(e){var p=e.target.closest('.ph');if(p&&!matchMedia('(pointer:coarse)').matches){var n=p.textContent.replace(/^[^:]*:\s*/,'');try{navigator.clipboard.writeText(n);}catch(x){}var t=document.querySelector('.phtoast')||document.body.appendChild(Object.assign(document.createElement('div'),{className:'phtoast'}));t.textContent='Copied '+n+' \u2014 computers can\u2019t place calls, so dial it from your phone (or tap this link on your phone).';clearTimeout(t._t);t.hidden=false;t._t=setTimeout(function(){t.hidden=true;},6000);}});
 document.addEventListener('click',function(e){var a=e.target.closest('.web,.ph');if(a&&window.gtag)gtag('event',a.classList.contains('web')?'vintage_shop_site':'vintage_shop_call',{shop:a.closest('.shop').querySelector('h2').textContent});});
 </script>
-<script src="/assets/hype.js?v=7" defer></script>
+<script src="/assets/hype.js?v=8" defer></script>
 </body>
 </html>

@@ -60,6 +60,8 @@ for i in items:
     k = i["title"].lower()
     if k in seen: continue
     seen.add(k); out.append(i)
+if not out:
+    raise SystemExit("No headlines fetched; keeping the existing assets/news.json")
 data = {"updated": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%MZ"), "sources": ok, "errors": errs, "raw_count": len(items), "items": out[:40]}
 json.dump(data, open("assets/news.json", "w"), indent=1)
 print(len(out), "headlines from", ok)

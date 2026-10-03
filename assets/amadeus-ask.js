@@ -31,7 +31,7 @@ var PAGES={
 };
 
 /* ---------- site-wide tour ---------- */
-var STOUR=['/studio/','/studio/fx/','/studio/hart/','/studio/beats/','/level7.html','/grooves/','/drumroom/','/shop/','/ontour/','/vintage/','/chat/'];
+var STOUR=['/studio/','/studio/fx/','/studio/hart/','/studio/beats/','/level7.html','/grooves/','/drumroom/','/shop/','/ontour/','/vintage/'];
 
 /* ---------- voice ---------- */
 var muted=false;try{muted=localStorage.getItem('amadeusMute')==='1';}catch(e){}

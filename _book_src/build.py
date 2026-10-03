@@ -84,7 +84,7 @@ def chapter_page(ch, prev, nxt):
             + '<nav class="top"><a href="index.html">&larr; Contents</a><a href="../index.html">Amadeus School of Drums</a></nav>\n'
             + '<p class="kicker">Part {} · {} · Chapter {}</p>\n<h1>{}</h1>\n'.format(ch['part'], html.escape(part), ch['n'], html.escape(ch['title']))
             + body
-            + '\n<div class="pager">{}{}</div>\n</div>\n<script src="player.js?v={jsv}"></script>\n<script src="/assets/hype.js?v=7" defer></script>
+            + '\n<div class="pager">{}{}</div>\n</div>\n<script src="player.js?v={jsv}"></script>\n<script src="/assets/hype.js?v=8" defer></script>
 </body>\n</html>\n'.format(pv, nx, jsv=JSV))
 
 def fname(ch): return 'ch-{:03d}.html'.format(ch['n'])
