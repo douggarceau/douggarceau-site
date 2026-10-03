@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-03T13:25Z",
+ "updated": "2026-10-03T13:47Z",
  "items": [
   {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
@@ -44,15 +44,23 @@
   {
    "title": "Universal Audio LUNA 3.0: Free DAW Gets an AI Boost and a New Spark Studio Subscription",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51Y2szNGdvUXFsQW1nVlJWY0pRbDREaVdLem5VVzg5TGNHYTc5TG1DN1hhalhPc3ZsZnBfSnZkLVRoZElJd3BTclY1UHFuUUd2TEZhWXQ1NDdtX3Nzd3BpOU5oR0JyV1FjNWVNakV3?oc=5",
-   "source": "Gearnews.com",
+   "source": "gearnews.com",
    "date": "2026-09-11",
    "kind": "PRODUCT",
    "release": true
   },
   {
-   "title": "Suno launches v6 AI music models in partnership with WMG, BMG, and Believe",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPR05oODYtY2g0RXNXYzNjWHBmX1pVUG1LNkhXQkpnN3J0ZXFMUE1nRXZuS0N0SUtMUTNfTjJIVjdPUWNKRXZnMWNDU295bWlaNDJ4NTItcjRLb1dKOHVDWTZib082ZWk5bVlSUWRsbl92NFJYNk1sb2hZcVhvUld0aHVWdy1TOGxRdFNPVGJfMUFTRFZncklwTy1Jd3I1cHNhNGh5MTk4ZWUtd0JIbnhv?oc=5",
-   "source": "Music Business Worldwide",
+   "title": "Suno releases new AI music models in partnership with Warner Music, BMG",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLUU2OHhzTDE2cXROTGVBNkRiR2g1bWZSRUZDeXlDQjhidWkyVHBYeXJ2NUxfdlRhS0dxdzM1LTdiSnlHUTl5V0tzdnRGYW5DajVqWE9DaFhOckF6b2l0N2lwVmVVYWgtVmQwMmdhVWh3UWVfaWpfVTVXbDVyeDVTMEhQaXZPX3ZrUVUwZmx5a0h6NFFUeWg2RmxjcEcyOXRlSHl3RUVzMGRYNDFqV2hVZ19GUGFpU3RGR1lBWQ?oc=5",
+   "source": "Reuters",
+   "date": "2026-09-09",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "AI Music Startup Suno Launches New Models That Pay Labels",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOU5fTHJzNkR2N3JZd1NHQndTUFBfSm9KNnJJYmU4eXVtZFQwRWxKQ1pfcEplUjd1bDVndnp0ZkJLYlcwaHBicGNGUXlORnFEMXZ3Y0hWekVjUHREYUJqLWIwMHUyaWhDeHNzQndTUkl5T09KdS1MaWdOd2xUUFE1M3h1dlFvOWlpV2JCV0ZoNVAtWWZLVGVaQTV4SFJQZkxBTS1rajVOb3NHLVhn?oc=5",
+   "source": "Bloomberg.com",
    "date": "2026-09-09",
    "kind": "PRODUCT",
    "release": true
@@ -162,6 +170,14 @@
    "release": false
   },
   {
+   "title": "Major labels sued AI music firms, then licensed their catalogs as artists fear lost pay",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOYTY0UzhKdl9PUmoxRkd0enB3OW1NTmthV21wTTl3c1dNOHNVb09CSlB0NUw0SHBWMWRSUlZpbjdlNTIxMnpJNFNHRUhTWHB3SXVudEdqcGd2TllqS3QwRUc1ajZFandpdkctUE9ETDk5ZVdPbloxVmxmblBxRm0wQ1JYVjJtUUNLZVlXbUI3YlpYMm9va01B?oc=5",
+   "source": "Yahoo",
+   "date": "2026-09-24",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "No, AI music isn't taking over the world, as new Qobuz data proves \u2014 in fact, barely anyone's listening to fake music",
    "link": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQcFcxU2l0czJRSkdaUWhmZUF1a0NwZ21rWVl2bWd2SUlsXzFsYWpRRzZ1MzFFOUlHdGxVa2lZTnVaM245TC1YTDROMGI2MlRGX3M3ako2RnRXUkJXb2xlazdsUzJ6dzlFUXlBY0ZUNmdibnA0SVpTTV9SQWR2ZlRVdzFwMVZsc2MzN1R4RFo1TFFvdGV4dE11M1doTTRYN1FjUkFPa2xTb3JzNFg1WGl2eE8wVXVNUFExWUZvb3hkUER3SHJZVUd1MXNnRkV3LXJ4eGxlSEc1eHZLaUgyRHNrLXRrTEdHTV9PbXd3OGMwRQ?oc=5",
    "source": "TechRadar",
@@ -175,22 +191,6 @@
    "source": "Variety",
    "date": "2026-09-23",
    "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "AI-music guru Fran\u00e7ois Pachet: \u2018It\u2019s no longer the jungle era\u2019",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNa0plM0ZXa1RHZTdwU1JvT3ZaVkdmV0NGclloTmpROGNyWDg3MWVVY2p5Q3ZQMXh5YzBfd3FId2FpYTc1UndWMDZ3ejRwZzJVTnQ2eEE4ZVVJX3ZkbjNjNXRjcU50aG1QcWszblIxdUxiM0lFTFk5cGNhRHdlVHZocktSUmVwV1RjQ2wwcEdhNFpMdXlCWlNF?oc=5",
-   "source": "Music Ally",
-   "date": "2026-09-23",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "San Jose Sharks Nix Suno-Generated \u2018Slop Song\u2019 Following Intense Fan Backlash",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPRGVkZHdHMXN3ZFJBcXZiVjU1QV80b05fUTVjUDdDSVR5Y2xLdlp3WXQ0ZmJHTEt5QmJIeTZuX2x1dllMVGNZaWw1V3ZjWEdxUzdLdVlEYzVyRUF0ZkZSS0xYdjBFUV9OY1hLVkVVQkJqNmRxQ1lOcG93ZzRiWFViZQ?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-09-23",
-   "kind": "PROBLEM",
    "release": false
   }
  ],
@@ -222,23 +222,15 @@
   {
    "title": "Universal Audio LUNA 3.0: Free DAW Gets an AI Boost and a New Spark Studio Subscription",
    "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51Y2szNGdvUXFsQW1nVlJWY0pRbDREaVdLem5VVzg5TGNHYTc5TG1DN1hhalhPc3ZsZnBfSnZkLVRoZElJd3BTclY1UHFuUUd2TEZhWXQ1NDdtX3Nzd3BpOU5oR0JyV1FjNWVNakV3?oc=5",
-   "source": "Gearnews.com",
+   "source": "gearnews.com",
    "date": "2026-09-11",
    "kind": "PRODUCT",
    "release": true
   },
   {
-   "title": "Suno launches v6 AI music models in partnership with WMG, BMG, and Believe",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPR05oODYtY2g0RXNXYzNjWHBmX1pVUG1LNkhXQkpnN3J0ZXFMUE1nRXZuS0N0SUtMUTNfTjJIVjdPUWNKRXZnMWNDU295bWlaNDJ4NTItcjRLb1dKOHVDWTZib082ZWk5bVlSUWRsbl92NFJYNk1sb2hZcVhvUld0aHVWdy1TOGxRdFNPVGJfMUFTRFZncklwTy1Jd3I1cHNhNGh5MTk4ZWUtd0JIbnhv?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-09-09",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Suno releases its first AI music model made with record industry help",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOT3Uyb1lENGxyemxQRkZ4WHdwMGpydHBkTExlZER5TW55bW16bHJZNElZb1ZkOGtKSE04V2JpaDNBanREZXNzbmltUFNvNlJ6dEVSemVjYkV6cGF4dFh5VU5USEkwRzNGbU5CUDVPa3JISEx6aHl6OC03VE5pbFY2LVhlWU04eWJXbWI4eTVaZ3Q1Q0IwdkRVSmNDMHd4V1pTTi1ZYjloaHRCZFR4Z2RmUFA5TUdrS2ZuT1oyUjBfNGZpS2VEcXFZ?oc=5",
-   "source": "The Verge",
+   "title": "Suno releases new AI music models in partnership with Warner Music, BMG",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNLUU2OHhzTDE2cXROTGVBNkRiR2g1bWZSRUZDeXlDQjhidWkyVHBYeXJ2NUxfdlRhS0dxdzM1LTdiSnlHUTl5V0tzdnRGYW5DajVqWE9DaFhOckF6b2l0N2lwVmVVYWgtVmQwMmdhVWh3UWVfaWpfVTVXbDVyeDVTMEhQaXZPX3ZrUVUwZmx5a0h6NFFUeWg2RmxjcEcyOXRlSHl3RUVzMGRYNDFqV2hVZ19GUGFpU3RGR1lBWQ?oc=5",
+   "source": "Reuters",
    "date": "2026-09-09",
    "kind": "PRODUCT",
    "release": true
@@ -263,9 +255,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 0,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 30,
-  "Google News Suno+OR+Udio": 32,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 19,
+  "Google News %22AI+music%22": 38,
+  "Google News Suno+OR+Udio": 43,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 26,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
