@@ -1,6 +1,27 @@
 {
- "updated": "2026-10-02T20:47Z",
+ "updated": "2026-10-03T13:25Z",
  "items": [
+  {
+   "id": "F2P6E8_x3FE",
+   "title": "Meinl Cymbals - Byzance Traditional Medium Crashes Comparison",
+   "source": "Meinl",
+   "date": "2026-10-03",
+   "kind": "DEMO"
+  },
+  {
+   "id": "My1iiJV8abU",
+   "title": "Larry Mullen Jr. Returns to U2 & More - Drum Talk TV News Desk Report - October 2nd, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-10-03",
+   "kind": "TALK"
+  },
+  {
+   "id": "PJRLSV1fSSU",
+   "title": "Drum Talk TV News Desk Repot - October 9, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-10-03",
+   "kind": "TALK"
+  },
   {
    "id": "voPkBNKTbp8",
    "title": "Meinl Cymbals - Ramon Montagner - \"Aurora\" - Meinl Drum Festival 2026",
@@ -23,11 +44,11 @@
    "kind": "EVENT"
   },
   {
-   "id": "My1iiJV8abU",
-   "title": "Larry Mullen Jr. Returns to U2 & More - Drum Talk TV News Desk Report - October 2nd, 2026",
-   "source": "Drumtalk TV",
+   "id": "yPzYWqf0_bQ",
+   "title": "Neil Peart: No One's Disciple - Director Sam Dunn Interview",
+   "source": "Modern Drummer",
    "date": "2026-10-02",
-   "kind": "TALK"
+   "kind": "INTERVIEW"
   },
   {
    "id": "KvbqMhYvJS8",
@@ -42,20 +63,6 @@
    "source": "Drumtalk TV",
    "date": "2026-09-29",
    "kind": "INTERVIEW"
-  },
-  {
-   "id": "BjsyDARUQTc",
-   "title": "Drumming Injury Talk - September 25, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-09-25",
-   "kind": "TALK"
-  },
-  {
-   "id": "e-6zjzE73iI",
-   "title": "Meinl Cymbals - Byzance Traditional Thin Crashes Comparison",
-   "source": "Meinl",
-   "date": "2026-09-23",
-   "kind": "DEMO"
   },
   {
    "id": "X3_EIcsiW1w",
@@ -124,13 +131,12 @@
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
   "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (2)",
-  "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (0)",
+  "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (1)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
   "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
-  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+\ud835\udff1\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
-  "Percussive Arts Society skip UCXcie4leLm1PJqr040u42Pw": "Fahad Malick"
+  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
  }
 }
