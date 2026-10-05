@@ -3,7 +3,7 @@
   if (window.__amadeusChat) return; window.__amadeusChat = 1;
 
   /* Paste the Worker address here once it's set up (see worker/README.md). Empty = chat stays hidden. */
-  var RELAY = '';
+  var RELAY = 'https://amadeus-helper.douggarceau.workers.dev';
   if (!RELAY) return;
 
   var KEY = 'amadeus-chat-v1', msgs = [];
