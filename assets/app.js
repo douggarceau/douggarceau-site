@@ -27,6 +27,6 @@
 /* Ask Amadeus AI chat: loaded on every page that loads this file. */
 (function () {
   var s = document.createElement('script');
-  s.src = '/assets/amadeus-chat.js?v=2'; s.defer = true;
+  s.src = '/assets/amadeus-chat.js?v=3'; s.defer = true;
   document.head.appendChild(s);
 })();

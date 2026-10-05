@@ -1,5 +1,5 @@
 // Amadeus School of Drums app: works offline with pages you've visited.
-var V = 'amadeus-v2';
+var V = 'amadeus-v3';
 var CORE = ['/', '/offline.html', '/manifest.webmanifest', '/assets/app-icon-192.png', '/logo.jpg', '/favicon.png'];
 self.addEventListener('install', function (e) {
   e.waitUntil(caches.open(V).then(function (c) { return c.addAll(CORE); }).then(function () { return self.skipWaiting(); }));
