@@ -23,3 +23,10 @@
   window.addEventListener('appinstalled', function () { if (window.gtag) gtag('event', 'app_installed'); });
   if (window.amadeusApp.installed() && window.gtag) gtag('event', 'app_open');
 })();
+
+/* Ask Amadeus AI chat: loaded on every page that loads this file. */
+(function () {
+  var s = document.createElement('script');
+  s.src = '/assets/amadeus-chat.js?v=1'; s.defer = true;
+  document.head.appendChild(s);
+})();
