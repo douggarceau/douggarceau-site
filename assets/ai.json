@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-06T18:24Z",
+ "updated": "2026-10-06T23:50Z",
  "items": [
   {
    "title": "Fender revamps its website with AI tool and more artist content",
@@ -130,6 +130,14 @@
    "release": false
   },
   {
+   "title": "AI Music Streaming Fraudster Sentenced to 1.5 Years in Prison for $8M Royalties\u00a0Scam",
+   "link": "https://www.billboard.com/pro/ai-music-streaming-fraud-sentence-man-18-months-prison-scam/",
+   "source": "Billboard",
+   "date": "2026-10-06",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "Sony Music Has Requested the Removal of Over 260,000 AI Deepfake Songs From Digital Platforms",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZGhCNDlSTkVVdHBkNUVEcTlGMU5ObENsSHVLUFVQMzBwZDIxcDIyMUdPakpXRmhSSGNpU1RqN2ZUemhOangyX0Q1NWtDUXRWVW0wRC1sOEVqYjNoZjIya1J4MEdGOXVmd3J3QTNDa18xb2FxUzllc1piRXZMazdNVkp4WQ?oc=5",
    "source": "Billboard",
@@ -149,14 +157,6 @@
    "title": "Pope delivers AI warning: \u2018Algorithms lack the spark of humanity\u2019",
    "link": "https://musically.com/2026/10/05/pope-delivers-ai-warning-algorithms-lack-the-spark-of-humanity/",
    "source": "Music Ally",
-   "date": "2026-10-05",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "A US appeals court has rejected a \u2018fair use\u2019 defense over AI training. What does it mean for the labels\u2019 fight with Suno?",
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNG1UUFV4dTV3dkhweVdfdHR5R1BSLUU3c2kxTGxiNWhGSFZmMjVEd2l2bGxIWE93UE5MZC11RTV3Q2ZrRUFBZGxCRE9qYk1CazNKbjQ0dURrc0VfQlR2SjhqX3NwVnhuY3pkWFpBRmNNbk9FUWxTekx5UlY5alJEbWdFLXpDWmw0NXJKLVdoSTdHVzhIMFlRZGpzMXF4dXU2X1RIWUgxOTVsNXl3VkJicnhWY3JXelhwSExUR2Q2YVpkd3Z6bU5HUmdOaFJzRWZDcGptcjduTUNOQngySl9mNEdZUWxnc01Sd3NWbA?oc=5",
-   "source": "Music Business Worldwide",
    "date": "2026-10-05",
    "kind": "NEWS",
    "release": false
@@ -212,6 +212,14 @@
    "release": true
   },
   {
+   "title": "UMG and Sony Music file new Suno complaint over v6 models",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaHFpY1hVMTVHLWVrdDJPbWU3TXpycGpLemVERjNDYmc3X05NQXVJc2hVOU8xRUVQVTc2b3NfcUZsSnlVYVVvNnN4VTVHY1pDb2VNTEhidW9HT0JXUXFBWUtJN0FPVWN0ck45XzEwLUVuWDhmbEoyRW9wVTV2eDhxX0xQYlpvbHphT3VSVHVPbXZqTDR6enc?oc=5",
+   "source": "Music Ally",
+   "date": "2026-09-21",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
    "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
    "source": "The Verge",
@@ -255,7 +263,7 @@
   "Music Ally musically.com": 4,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -264,12 +272,12 @@
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 42,
-  "Google News Suno+OR+Udio": 46,
+  "Google News Suno+OR+Udio": 44,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 20,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
