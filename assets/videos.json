@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-06T23:50Z",
+ "updated": "2026-10-07T15:35Z",
  "items": [
+  {
+   "id": "OBJJ_6x-UOY",
+   "title": "Meinl Cymbals - Classics Custom Brilliant - Jeeves \"Heard It\" Demo",
+   "source": "Meinl",
+   "date": "2026-10-07",
+   "kind": "DEMO"
+  },
   {
    "id": "9wSS18huR7k",
    "title": "Sully Erna \"Live at Mohegan Sun\" and the History of \"Battle of the Drums\" - Modern Drummer Interview",
@@ -65,13 +72,6 @@
    "kind": "INTERVIEW"
   },
   {
-   "id": "KvbqMhYvJS8",
-   "title": "Meinl Cymbals - Pure Alloy Custom - Jeeves \"Deuce Deuce\" Demo",
-   "source": "Meinl",
-   "date": "2026-09-30",
-   "kind": "DEMO"
-  },
-  {
    "id": "X3_EIcsiW1w",
    "title": "CONNOR DENIS Interview || The Hang \u2013 with Nick D\u2019Virgilio",
    "source": "Gretsch",
@@ -117,7 +117,7 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (1)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (4)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -129,11 +129,12 @@
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
   "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
+  "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (2)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM": "search UCx-aX_SThYdePajxjTTpgKw Namm - Topic (0)",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"

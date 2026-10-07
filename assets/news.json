@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T06:03Z",
+ "updated": "2026-10-07T15:34Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 61,
  "items": [
+  {
+   "title": "150 Only: Drumeo \u00d7 SABIAN Bundle Lands at The UK Drum Show",
+   "link": "https://drummersreview.com/news/150-only-drumeo-x-sabian-bundle-lands-at-the-uk-drum-show/",
+   "source": "Drummer's Review",
+   "date": "2026-10-07"
+  },
   {
    "title": "CJ HOKDAL: From \u201cThat Swedish Drummer\u201d to The UK Drum Show",
    "link": "https://drummersreview.com/news/cj-hokdal-from-that-swedish-drummer-to-the-uk-drum-show/",
@@ -224,12 +230,6 @@
    "date": "2026-09-17"
   },
   {
-   "title": "Drumming For WILL SMITH | Greg Clark Jr. | The UK Drum Show",
-   "link": "https://drummersreview.com/news/drumming-for-will-smith-greg-clark-jr-the-uk-drum-show/",
-   "source": "Drummer's Review",
-   "date": "2026-09-16"
-  },
-  {
    "title": "Tama Starclassic Performer \u2018Blacked Out Black\u2019 Kit",
    "link": "https://en.beatit.tv/tama-starclassic-performer-blacked-out-black-kit/",
    "source": "Beat It",
@@ -239,6 +239,12 @@
    "title": "Zed Amarin \u2013 Esodic \u2013 Of The Grave \u2013 Drum Play-through",
    "link": "https://sickdrummermagazine.com/news/latest-news/zed-amarin-esodic-of-the-grave-drum-play-through/",
    "source": "Sick Drummer Magazine",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "Drumming For WILL SMITH | Greg Clark Jr. | The UK Drum Show",
+   "link": "https://theukdrumshow.com/show-news/drumming-for-will-smith-greg-clark-jr-the-uk-drum-show/",
+   "source": "The UK Drum Show",
    "date": "2026-09-16"
   },
   {
@@ -252,12 +258,6 @@
    "link": "https://www.moderndrummer.com/2026/09/modern-drummer-announces-celeste-fox-as-the-2026-winner-of-the-neil-peart-spirit-of-drumming-scholarship/",
    "source": "Modern Drummer",
    "date": "2026-09-15"
-  },
-  {
-   "title": "Modern Drummer presents Eric Singer\u2019s KISS Kruise Drum Off",
-   "link": "https://www.moderndrummer.com/2026/09/modern-drummer-presents-eric-singers-kiss-kruise-drum-off/",
-   "source": "Modern Drummer",
-   "date": "2026-09-14"
   }
  ]
 }

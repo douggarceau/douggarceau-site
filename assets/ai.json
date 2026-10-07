@@ -1,6 +1,22 @@
 {
- "updated": "2026-10-07T06:04Z",
+ "updated": "2026-10-07T15:35Z",
  "items": [
+  {
+   "title": "Tencent Music integrated DeepSeek into its streaming service. Now parent company Tencent is among the biggest backers of the AI company\u2019s $12B+ funding round (report)",
+   "link": "https://www.musicbusinessworldwide.com/tencent-music-integrated-deepseek-into-its-streaming-service-now-parent-company-tencent-is-among-the-biggest-backers-of-the-ai-companys-12b-funding-round-report/",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-07",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "TikTok brings its global ad network to the US and unveils agentic AI tools",
+   "link": "https://www.musicbusinessworldwide.com/tiktok-brings-its-global-ad-network-to-the-us-and-unveils-agentic-ai-tools/",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-07",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "Fender revamps its website with AI tool and more artist content",
    "link": "https://musically.com/2026/10/06/fender-revamps-its-website-with-ai-tool-and-more-artist-content/",
@@ -13,7 +29,7 @@
    "title": "Executive Turntable: Believe Unveils New Unified Structure; Suno Hires Marketing & Music Biz Development Execs",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWFZ4MGdBVXpKYktjWWIxWjQwWVVQUnZKOV9pX1UzbTV3alJwMFREN0Z5V3pUSHB6TVA1V1JDWEdhRUxfbk1DeXpKTWQ4QzROcjFRYTJZTlJScmlQbGswS3BVWUg0NGlKc1llLURtQ3Z4aXlqOC1iN29vSkFaUUNQcw?oc=5",
    "source": "Billboard",
-   "date": "2026-10-05",
+   "date": "2026-10-06",
    "kind": "PRODUCT",
    "release": false
   },
@@ -26,20 +42,12 @@
    "release": true
   },
   {
-   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
-   "link": "https://www.musicradar.com/music-tech/engram-is-a-generative-audio-sampler-that-applies-circuit-bending-principles-to-ai-audio-models",
-   "source": "MusicRadar",
-   "date": "2026-09-30",
+   "title": "Engram is a sampler that turns broken AI hallucinations into music",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRU9NemN0NjZpNTlUSHJOc2JwRnJXQnYwZ3VCMEF1eUtFMExLay1ZSzZPc0lHV2ZpTy1MLXNPeVF3azBjY0g5OEdyT1QyVVpDV25Kb1M0dW1MZjE1cGxlZ21tdWdwVGgyb1Jid3FhUXNjNGlibGdlaUhOamRBNGx3YTlTd2dKNndOTHdFbzRjc0U2QWNQUkgtaS1OcUNWX0U?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-27",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "Audio AI firm Modulate, which runs an AI music detection tool, raises $25M",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQVU5zVUkxOWktX0hrZUtKQy1waDA3elNFX2h4clpCaUl0LV9MdlRlLU5vbDRjWjdrRnRpNDE1YkJEcW5EUmxvUmVqSGlrb1lxVVBhLTZfcWdSTnVBQWxIQWp0eUQ2bVJCNzRnMmU2ZHB1NmE2WktqYlh3SHZNQy1kd2owZzZGbmZqWGFsaXhsN2c5NlV4VFlrb2VHZTNCX3l5Tm8yWEpSWklPUDM0emRfZQ?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-09-30",
-   "kind": "PRODUCT",
-   "release": false
   },
   {
    "title": "Guilt-free AI? What \u201cethical AI\u201d tools mean for musicians and producers",
@@ -98,6 +106,54 @@
    "release": true
   },
   {
+   "title": "Michael Smith, man behind $8M AI song and bot streaming fraud, sentenced to 18 months in prison",
+   "link": "https://www.musicbusinessworldwide.com/man-behind-8m-ai-song-and-bot-streaming-fraud-is-sentenced-to-18-months-in-prison/",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-07",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "Italy\u2019s competition watchdog probes Suno over \u2018unfair terms\u2019",
+   "link": "https://musically.com/2026/10/07/italys-competition-watchdog-probes-suno-over-unfair-terms/",
+   "source": "Music Ally",
+   "date": "2026-10-07",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Olivia Dean Lawsuit, AI Fraudster Sentence, Erica Campbell Case & More Top Music Law\u00a0News",
+   "link": "https://www.billboard.com/pro/legal-beat-olivia-dean-lawsuit-ai-fraud-erica-campbell/",
+   "source": "Billboard",
+   "date": "2026-10-07",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "Google\u2019s new SynthID website can identify AI-generated media",
+   "link": "https://techcrunch.com/2026/10/07/googles-new-synthid-website-can-identify-ai-generated-media/",
+   "source": "TechCrunch",
+   "date": "2026-10-07",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Guy Who Made Millions by Creating AI Music Ouroboros Receives 18-Month Prison Sentence",
+   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOU0lnclZsT3pKVGxTOWtfZzgtQ21BSmIzRUlORkJ5WkdwLWtfSmdMVkhOTkd1UjJ0Y2dpMEFNWXkzUmREbF9ucEpQaUZfVEJzRDA0ZUhRclpIUWhMbG1wVEpROWFWTGdJU3JZalVQNDM1TWxqOHRSOHk0Ti1tRzdqOWZmWFc0YVNLX0F0SWlyS2RpQktRdVY3eFFNMDVMZUszVFRYSG1MMWpQUEdyOFJQSDJXaDRUTGFt?oc=5",
+   "source": "Gizmodo",
+   "date": "2026-10-07",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "RIAA CEO Mitch Glazier on AI, Copyright & Congress | On the Record",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ySmh0dXk2dnpvNTVBYkV0Z1lVREYzNUpUZjF4dEluTW9VaEpEbmVWcXFTQUlPM0ZYM0dhRUdhVTY3R3RnRGNqbXNDeVdMRkdvQTk5SmpTSlBWMlNhc1RLT3Y2U2cyWVBPUTV2WHVJNERXblluUG94R1pR?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-07",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "\"It\u2019s becoming an uphill struggle\u201d: Sony reveals the number of deepfake AI tracks has doubled in six months",
    "link": "https://www.musicradar.com/music-industry/we-will-keep-enforcing-our-artists-rights-but-its-becoming-an-uphill-struggle-sony-music-reveals-the-number-of-deepfake-ai-tracks-its-asked-to-be-removed-has-doubled-in-six-months",
    "source": "MusicRadar",
@@ -114,27 +170,11 @@
    "release": false
   },
   {
-   "title": "Suno faces investigation in Italy over terms of service",
-   "link": "https://www.musicbusinessworldwide.com/suno-faces-investigation-in-italy-over-its-terms-of-service/",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-06",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "ARIA boss warns Australian politicians on AI lobbying demands",
    "link": "https://musically.com/2026/10/06/aria-boss-warns-australian-politicians-on-ai-lobbying-demands/",
    "source": "Music Ally",
    "date": "2026-10-06",
    "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "AI Music Streaming Fraudster Sentenced to 1.5 Years in Prison for $8M Royalties Scam",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbUFQbDVaZzB1UkpncV9TVjNreUNfUWVDZ1lTZGN1cFBmM2xQeWIwdmgxdlRQdXQwOXktVE9wNzlFYl9uMjRYVVZydWwzXzZaZ21FU2k4UWRQWHlPeGRUcG44VHh4cjNRVnI5NDgwcDB6blowbVFsbWw1MFFkUzY0LW5TUE5mSWtVZW1kbjVhd3psaHhR?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-06",
-   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -152,49 +192,17 @@
    "date": "2026-10-05",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Pope delivers AI warning: \u2018Algorithms lack the spark of humanity\u2019",
-   "link": "https://musically.com/2026/10/05/pope-delivers-ai-warning-algorithms-lack-the-spark-of-humanity/",
-   "source": "Music Ally",
-   "date": "2026-10-05",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "A US appeals court has rejected a \u2018fair use\u2019 defense over AI training. What does it mean for the labels\u2019 fight with Suno?",
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPNG1UUFV4dTV3dkhweVdfdHR5R1BSLUU3c2kxTGxiNWhGSFZmMjVEd2l2bGxIWE93UE5MZC11RTV3Q2ZrRUFBZGxCRE9qYk1CazNKbjQ0dURrc0VfQlR2SjhqX3NwVnhuY3pkWFpBRmNNbk9FUWxTekx5UlY5alJEbWdFLXpDWmw0NXJKLVdoSTdHVzhIMFlRZGpzMXF4dXU2X1RIWUgxOTVsNXl3VkJicnhWY3JXelhwSExUR2Q2YVpkd3Z6bU5HUmdOaFJzRWZDcGptcjduTUNOQngySl9mNEdZUWxnc01Sd3NWbA?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-05",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Musicians Versus the A.I. Machine. Why Bother Writing Songs Anymore?",
-   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNUGFiQXo4MjJXb09GcEt6RlBQbXZWVWRUQ2cxNkdPT2lLUG9feWNrZWtlU2t4cVNPOWNfa0xNNFZldFEtcEFDR2hlVHRBWFlrTkdGTi1RbmxYUUcxd0pDQl9uRkN6ZWFVUWVoR053aVp6YU94bHVPNTFYRjVDZGQ3TEZBcUIxeHRRTmcw?oc=5",
-   "source": "The New York Times",
-   "date": "2026-10-03",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "\u201cIt frustrates me to hear people bashing something that\u2019s so amazing\u201d: Todd Edwards is optimistic about AI in music production",
-   "link": "https://musictech.com/news/music/todd-edwards-is-optimistic-about-ai-in-music-production/",
-   "source": "MusicTech",
-   "date": "2026-10-02",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Sean Parker is rebuilding Stability AI around music",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNbXR2LUs2d3ZmSjJKWXA1a0JzVU9EQ3RDZ0xEbTRHRUk5dFJGV0dqVnkwZnpNc1RkV2poX0JBU1haLS1rY05hUzh0LW1lUndCSC1YVElOckw5WUJLaWRKMUdLWkJHNnRvOGdNNFgtcXhRZ2JVTHhXdmRhYXlFYWM0VVVia1BBY05pc1UtNzBPZw?oc=5",
-   "source": "TechCrunch",
-   "date": "2026-10-02",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "TikTok brings its global ad network to the US and unveils agentic AI tools",
+   "link": "https://www.musicbusinessworldwide.com/tiktok-brings-its-global-ad-network-to-the-us-and-unveils-agentic-ai-tools/",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-07",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
@@ -204,10 +212,10 @@
    "release": true
   },
   {
-   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
-   "link": "https://www.musicradar.com/music-tech/engram-is-a-generative-audio-sampler-that-applies-circuit-bending-principles-to-ai-audio-models",
-   "source": "MusicRadar",
-   "date": "2026-09-30",
+   "title": "Engram is a sampler that turns broken AI hallucinations into music",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRU9NemN0NjZpNTlUSHJOc2JwRnJXQnYwZ3VCMEF1eUtFMExLay1ZSzZPc0lHV2ZpTy1MLXNPeVF3azBjY0g5OEdyT1QyVVpDV25Kb1M0dW1MZjE1cGxlZ21tdWdwVGgyb1Jid3FhUXNjNGlibGdlaUhOamRBNGx3YTlTd2dKNndOTHdFbzRjc0U2QWNQUkgtaS1OcUNWX0U?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-27",
    "kind": "PRODUCT",
    "release": true
   },
@@ -254,26 +262,26 @@
  ],
  "log": {
   "MusicRadar www.musicradar.com": 0,
-  "Music Business Worldwide www.musicbusinessworldwide.com": 2,
-  "Digital Music News www.digitalmusicnews.com/feed/": "error: not well-formed (invalid token): line 1, column 119",
+  "Music Business Worldwide www.musicbusinessworldwide.com": 4,
+  "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 403: Forbidden",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
   "Rekkerd rekkerd.org": 0,
-  "Music Ally musically.com": 4,
+  "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
-  "TechCrunch techcrunch.com": 0,
+  "TechCrunch techcrunch.com": 1,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 42,
-  "Google News Suno+OR+Udio": 45,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 20,
+  "Google News %22AI+music%22": 43,
+  "Google News Suno+OR+Udio": 44,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 22,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
