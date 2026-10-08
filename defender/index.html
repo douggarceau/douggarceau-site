@@ -24,12 +24,19 @@ html,body{margin:0;height:100%;background:var(--cabinet);color:var(--ink);overfl
 #touch .acts{grid-template-columns:repeat(2,70px);grid-template-rows:repeat(2,46px)}
 #touch button{pointer-events:auto;font:700 10px ui-monospace,Menlo,monospace;color:#fff;background:#12121a;border:1px solid #3a3a4a;border-radius:6px;touch-action:none}
 #touch button.on{background:#2a48ff}
+/* credit: fine print in the scanner-frame blue (palette 0x81), set under the Hall of Fame tables */
+#credit{position:fixed;left:0;right:0;top:calc(100vh * 222 / 248);top:calc(100dvh * 222 / 248);z-index:2;text-align:center;padding-left:.34em;font:500 clamp(7px, 1.05vh, 11px)/1 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.34em;color:#2600a0;text-decoration:none}
+#credit[hidden],#hint[hidden]{display:none}
+/* in-game key hint: same fine print, along the bottom edge of the play field */
+#hint{position:fixed;left:0;right:0;bottom:calc(.7vh + env(safe-area-inset-bottom, 0px));z-index:2;text-align:center;padding-left:.34em;font:500 clamp(7px, 1.05vh, 11px)/1 "Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:.34em;color:#2600a0;pointer-events:none;white-space:pre}
+@media (pointer:coarse){#hint{display:none}}
 @media (pointer:coarse){#touch{display:flex}}
 </style>
+<div id="hint" hidden>← →  FLY          B  SMART BOMB</div>
 </head>
 <body>
 <canvas id="screen" width="304" height="248" tabindex="0" aria-label="Defender game screen. Press Enter to start."></canvas>
-<a id="home" href="../">CODED AND BUILT BY DOUG GARCEAU</a>
+<a id="credit" href="../" hidden>CODED AND BUILT BY DOUG GARCEAU 2026</a>
 <div id="touch" aria-label="Touch controls">
   <div class="pad">
     <span></span><button data-k="Tup">&#9650;</button><span></span>
@@ -100,7 +107,8 @@ function txtW(str){let w=0;for(const ch of String(str).toUpperCase())w+=(GLY[ch]
 function txtC(str,y,c){return txt(str,Math.round((W-txtW(str))/2),y,c);}
 // 3x5 fine-print face for the credit line
 const TINY={C:'111100100100111',O:'111101101101111',D:'110101101101110',E:'111100110100111',A:'010101111101101',N:'101111111101101',
- B:'110101110101110',U:'101101101101111',I:'111010010010111',L:'100100100100111',T:'111010010010010',Y:'101101010010010',G:'111100101101111',R:'110101110101101'};
+ B:'110101110101110',U:'101101101101111',I:'111010010010111',L:'100100100100111',T:'111010010010010',Y:'101101010010010',G:'111100101101111',R:'110101110101101',
+ '0':'111101101101111','2':'111001111100111','6':'111100111101111'};
 function tinyTxtC(str,y,c){const w=str.length*4-1;let x=Math.round((W-w)/2);
   for(const ch of str){const g=TINY[ch];if(g)for(let i=0;i<15;i++)if(g[i]==='1')pset(x+i%3,y+(i/3|0),c);x+=4;}}
 const LOGO=mk(DATA.logo.map(r=>r.replace(/#/g,'C').replace(/s/g,'2')));
@@ -706,7 +714,7 @@ function drawHofTable(list,xr,xi,xs){
     const s=String(r[1]);txt(s,xs+(6-s.length)*8,y);});}
 function attract(){
   pageT++;
-  if(IN.start()){snd('coin');setTimeout(()=>{},0);newGame();return;}
+  if(IN.start()){newGame();return;}   // Enter is the player-1 start button; newGame plays the start sound
   if(page===0&&pageT>600){page=1;pageT=0;demoInit();}
   else if(page===1&&demoStep()){page=2;pageT=0;}
   // amode1.src: logo page (AMODES) -> build-in, then STALT 60 x NAPP 10 -> HALDIS -> 60 x 10 -> LEDRET demo -> AMODES
@@ -719,7 +727,6 @@ function drawAttract(){
     txt('HALL OF FAME',112,84);txt('TODAYS',68,104);txt('ALL TIME',192,104);txt('GREATEST',60,114);txt('GREATEST',190,114);
     hline(60,121,123,1);hline(60,121,124,1);hline(190,251,123,1);hline(190,251,124,1);
     drawHofTable(HOF.today(),48,58,86);drawHofTable(HOF.all(),178,188,216);
-    tinyTxtC('CODED AND BUILT BY DOUG GARCEAU',226,7);
   }else if(page===1)drawDemo();
   else{
     // logo page: the DEFENDER letters build in, then flash (CBOMB on colour C)
@@ -846,6 +853,8 @@ function update(){
   if(frameN%8===0||scnDirty)buildScanner();
   sndTick(state==='play'&&ship.alive&&ship.thrust);
   if(homeEl)homeEl.hidden=state!=='attract';
+  if(creditEl)creditEl.hidden=!(state==='attract'&&page===0);
+  if(hintEl)hintEl.hidden=state!=='play'&&state!=='dying';
   jp.clear();
 }
 function render(){
@@ -874,7 +883,7 @@ function render(){
   for(let i=0;i<fb.length;i++)px32[i]=P[fb[i]];
   ctx.putImageData(img,0,0);
 }
-const homeEl=document.getElementById('home');
+const homeEl=document.getElementById('home'),creditEl=document.getElementById('credit'),hintEl=document.getElementById('hint');
 let last=performance.now(),acc=0;
 function frame(now){acc+=Math.min(120,now-last);last=now;while(acc>=1000/60){update();acc-=1000/60;}render();requestAnimationFrame(frame);}
 function start(){attractInit();cv.focus({preventScroll:true});requestAnimationFrame(frame);}
