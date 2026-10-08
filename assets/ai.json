@@ -1,19 +1,19 @@
 {
- "updated": "2026-10-08T06:09Z",
+ "updated": "2026-10-08T15:39Z",
  "items": [
+  {
+   "title": "Google launches AI-powered \u2018experimental gaming\u2019 platform Playground",
+   "link": "https://musically.com/2026/10/08/google-launches-ai-powered-experimental-gaming-platform-playground/",
+   "source": "Music Ally",
+   "date": "2026-10-08",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "Tencent Music integrated DeepSeek into its streaming service. Now parent company Tencent is among the biggest backers of the AI company\u2019s $12B+ funding round (report)",
    "link": "https://www.musicbusinessworldwide.com/tencent-music-integrated-deepseek-into-its-streaming-service-now-parent-company-tencent-is-among-the-biggest-backers-of-the-ai-companys-12b-funding-round-report/",
    "source": "Music Business Worldwide",
    "date": "2026-10-07",
-   "kind": "PRODUCT",
-   "release": false
-  },
-  {
-   "title": "Fender revamps its website with AI tool and more artist content",
-   "link": "https://musically.com/2026/10/06/fender-revamps-its-website-with-ai-tool-and-more-artist-content/",
-   "source": "Music Ally",
-   "date": "2026-10-06",
    "kind": "PRODUCT",
    "release": false
   },
@@ -106,11 +106,11 @@
    "release": true
   },
   {
-   "title": "ARIA Warns Lawmakers That Australia Could Be Used as \u2018Trojan Horse for Big\u00a0AI\u2019",
-   "link": "https://www.billboard.com/pro/aria-warns-australia-trojan-horse-big-ai/",
-   "source": "Billboard",
+   "title": "Elon Musk says X\u2019s AI-bot Grok will use Suno for music tasks",
+   "link": "https://musically.com/2026/10/08/elon-musk-says-xs-ai-bot-grok-will-use-suno-for-music-tasks/",
+   "source": "Music Ally",
    "date": "2026-10-08",
-   "kind": "PROBLEM",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -119,6 +119,14 @@
    "source": "The New York Times",
    "date": "2026-10-08",
    "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "The Most Powerful Man in Music Isn\u2019t Afraid of AI",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMzJYVk5SbjdpaTJHX0FzVWd3Rm9GTTRJUHcyeXcxdmZ5TzlDODhkbnFjaEVWeUJLSUp5UEl0Z1I3QXRjejJ3Nml4TUFRcC10aGswNWxiSTZvNmRzYmV5bnZnV1pPM3ZNZ3NyVHo5N3RXQXBnLVM5NHFyMTBEVnRwN1pGSUljTlltM25BdkVGbEhxZFZvUGs2Z0drT3hyQXJqTGF1S2ItQnVwV2tBTTZCbDgzUHBJdTBXRnJUWmI3RQ?oc=5",
+   "source": "The Hollywood Reporter",
+   "date": "2026-10-08",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -154,9 +162,9 @@
    "release": false
   },
   {
-   "title": "Grok Bot to Begin Using Suno for Music Generation, Musk Says",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yZS02d0ItRElTR19PQzNHMVlCemV1Z2tBZlFSWVNxUlBkNkxBaXZSOTdfb09XbmpxUGpFcVNUUE5DSzRibEhjaG9HUjkwNTdDQ1IzNTlkdjJlSm1HdnVMcGZyZldNQTBrc3c?oc=5",
-   "source": "Digital Music News",
+   "title": "Olivia Rodrigo Will 'Never' Use AI in Her Music: 'Hard Line on That'",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9GZEJEUk1MMzJpbEFiVUs2MFNsTmZQRnluTnZlUzZuSTI4N3E2STZrMWdieWlrNG9FaG1LOGRrT3dwUTRSeHhmZjBPNUM4NWFPVWhhZXBMejdfdHoyLUtvWFVxSl83ZnhSeW9UTGxLZzZKbEVaWGc5S1FpRGR0QQ?oc=5",
+   "source": "Complex",
    "date": "2026-10-07",
    "kind": "NEWS",
    "release": false
@@ -184,17 +192,17 @@
    "date": "2026-10-06",
    "kind": "PROBLEM",
    "release": false
-  },
-  {
-   "title": "ARIA boss warns Australian politicians on AI lobbying demands",
-   "link": "https://musically.com/2026/10/06/aria-boss-warns-australian-politicians-on-ai-lobbying-demands/",
-   "source": "Music Ally",
-   "date": "2026-10-06",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Google launches AI-powered \u2018experimental gaming\u2019 platform Playground",
+   "link": "https://musically.com/2026/10/08/google-launches-ai-powered-experimental-gaming-platform-playground/",
+   "source": "Music Ally",
+   "date": "2026-10-08",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
@@ -263,7 +271,7 @@
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -271,9 +279,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 47,
-  "Google News Suno+OR+Udio": 46,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 23,
+  "Google News %22AI+music%22": 48,
+  "Google News Suno+OR+Udio": 43,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 24,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
