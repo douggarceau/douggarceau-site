@@ -553,9 +553,39 @@ html body .aim-body{grid-template-columns:minmax(0,1fr) 300px!important}
 html body .rbt-list>*:nth-child(n+3){display:none}
 html body .aim-note{margin:8px 0 0}
 @media(max-width:900px){html body .aim-body{grid-template-columns:1fr!important}}
+
+/* Defender arcade banner, very top of the homepage */
+.dfb{position:relative;display:block;min-height:210px;overflow:hidden;background:#000;border-bottom:3px solid #ff2bd6;text-decoration:none!important;color:#f5f3ed;isolation:isolate}
+.dfb-cv{position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;image-rendering:crisp-edges;z-index:-1}
+.dfb::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(0,0,0,.82) 0%,rgba(0,0,0,.55) 45%,rgba(0,0,0,0) 75%)}
+.dfb-in{display:flex;align-items:center;gap:22px 28px;max-width:var(--container,1360px);margin:0 auto;padding:26px 24px;min-height:210px;box-sizing:border-box;flex-wrap:wrap}
+.dfb-new{flex:0 0 auto;font-family:var(--display);font-size:46px;line-height:1;letter-spacing:.04em;color:#111;background:#ffe600;padding:10px 14px 6px;border-radius:6px;transform:rotate(-6deg);box-shadow:0 0 0 3px #ff2bd6,0 0 28px rgba(255,230,0,.75);animation:dfbflash .9s steps(2,start) infinite}
+.dfb-txt{display:flex;flex-direction:column;gap:4px;min-width:0;flex:0 1 auto}
+.dfb-top{font:600 13px var(--mono,monospace);letter-spacing:.18em;color:#43d7ff}
+.dfb-h{font-family:var(--display);font-size:96px;line-height:.9;letter-spacing:.06em;background:linear-gradient(180deg,#fff6a0 0%,#ffb020 45%,#ff5010 58%,#c01020 100%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(4px 4px 0 #6020c0) drop-shadow(0 0 18px rgba(255,120,0,.35))}
+.dfb-s{font-size:17px;color:#e8e6df;max-width:44ch}
+.dfb-go{flex:0 0 auto;margin-left:auto;font:700 16px var(--mono,monospace);letter-spacing:.12em;color:#111;background:#39ff14;padding:16px 24px;border-radius:8px;box-shadow:0 0 22px rgba(57,255,20,.55);transition:transform .15s,box-shadow .15s}
+.dfb:hover .dfb-go,.dfb:focus-visible .dfb-go{transform:scale(1.06);box-shadow:0 0 34px rgba(57,255,20,.9)}
+.dfb:focus-visible{outline:3px solid #43d7ff;outline-offset:-3px}
+@keyframes dfbflash{0%{background:#ffe600}50%{background:#ff2bd6;color:#fff}}
+@media (max-width:900px){.dfb-h{font-size:72px}.dfb-go{margin-left:0}}
+@media (max-width:600px){.dfb,.dfb-in{min-height:0}.dfb-in{padding:18px 16px;gap:12px 16px}.dfb-new{font-size:34px}.dfb-h{font-size:58px}.dfb-s{font-size:15px}.dfb-top{font-size:11px}.dfb-go{width:100%;text-align:center;box-sizing:border-box}.dfb::after{background:rgba(0,0,0,.6)}}
+@media (prefers-reduced-motion:reduce){.dfb-new{animation:none}}
 </style>
 </head>
 <body>
+<a class="dfb" href="defender/" aria-label="New: play Defender, the 1981 arcade classic, free in your browser">
+<canvas class="dfb-cv" aria-hidden="true"></canvas>
+<span class="dfb-in">
+<span class="dfb-new">NEW!</span>
+<span class="dfb-txt">
+<span class="dfb-top">ARCADE BREAK &middot; FREE IN YOUR BROWSER</span>
+<span class="dfb-h">DEFENDER</span>
+<span class="dfb-s">The 1981 arcade classic. Save the humanoids, then get back to practice.</span>
+</span>
+<span class="dfb-go">PLAY NOW &#9654;</span>
+</span>
+</a>
 <div class="topsign" id="top-signup">
 <form class="ts-box" id="tf" novalidate>
 <div class="ts-copy"><span class="ts-h">SIGN ME UP. IT'S FREE.</span><span class="ts-sub">Just your email address.</span></div>
@@ -567,7 +597,7 @@ html body .aim-note{margin:8px 0 0}
 <div class="rotbox" id="rotbox" aria-live="polite"><a class="hartbox rb on" href="studio/hart/" style="--bc:#f0932b"><span class="hb-top"><b>ALL NEW</b> 200 SAMPLES</span><span class="hb-h">The Sounds of Mickey Hart</span><span class="hb-s">of the Grateful Dead</span><span class="hb-go">PLAY THEM NOW &rarr;</span></a><a class="hartbox rb" href="shop/#drumsets" style="--bc:#ffd35c" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUM SETS</span><span class="hb-h">DW Drums</span><span class="hb-s">Pro drum sets, explained</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#cymbals" style="--bc:#e6b450" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> CYMBALS</span><span class="hb-h">Zildjian Cymbals</span><span class="hb-s">Crashes, rides, hats and more</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#hardware" style="--bc:#5dade2" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUMHEADS</span><span class="hb-h">Evans Drumheads</span><span class="hb-s">Find the right head for your sound</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#sticks" style="--bc:#e67e22" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> STICKS</span><span class="hb-h">Vic Firth Sticks</span><span class="hb-s">Sticks, brushes and mallets</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#drumsets" style="--bc:#c0392b" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUM SETS</span><span class="hb-h">Ludwig Drums</span><span class="hb-s">Classic kits and snares</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#hardware" style="--bc:#a6acaf" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> DRUMHEADS</span><span class="hb-h">Remo Drumheads</span><span class="hb-s">Heads for every drum</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#cymbals" style="--bc:#f1c40f" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> CYMBALS</span><span class="hb-h">Paiste Cymbals</span><span class="hb-s">Bright, musical cymbals</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#electronic" style="--bc:#9477ff" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> ELECTRONIC DRUMS</span><span class="hb-h">Roland V-Drums</span><span class="hb-s">Electronic kits and pads</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb" href="shop/#percussion" style="--bc:#58d68d" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>IN OUR GEAR SHOP</b> PERCUSSION</span><span class="hb-h">LP Percussion</span><span class="hb-s">Congas, bongos, shakers and more</span><span class="hb-go">SEE THEM &rarr;</span></a><a class="hartbox rb10" href="advertise/" data-adv="1" style="--bc:#ff3b2f" aria-hidden="true" tabindex="-1"><span class="hb-top"><b>ADVERTISE</b> YOUR BRAND HERE</span><span class="hb-h">Your Drum Shop Here</span><span class="hb-s">Put your brand in front of drummers</span><span class="hb-go">GET IN TOUCH &rarr;</span></a></div>
 </div>
 <header class="site-header">
-<div class="ticker" role="region" aria-label="New on the site"><span class="tk-new">NEW</span><div class="tk-view"><div class="tk-track"><span class="tk-run"><a href="studio/hart/">ALL NEW: 200 samples, the sounds of Mickey Hart of the Grateful Dead</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/">Hollywood movie sound FX</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/#industrial">Industrial factory loops &amp; metal hits</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/#k=el">Electronic beat maker</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/">Hip-hop &amp; trap drum machine with 808s</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/#horror">Horror sound effects</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/#k=el">House &amp; techno beats</a><i aria-hidden="true">&#9670;</i><a href="studio/">Free in your browser. Tap and play</a><i aria-hidden="true">&#9670;</i></span><span class="tk-run" aria-hidden="true"><a tabindex="-1" href="studio/hart/">ALL NEW: 200 samples, the sounds of Mickey Hart of the Grateful Dead</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/">Hollywood movie sound FX</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/#industrial">Industrial factory loops &amp; metal hits</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/#k=el">Electronic beat maker</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/">Hip-hop &amp; trap drum machine with 808s</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/#horror">Horror sound effects</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/#k=el">House &amp; techno beats</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/">Free in your browser. Tap and play</a><i aria-hidden="true">&#9670;</i></span></div></div></div>
+<div class="ticker" role="region" aria-label="New on the site"><span class="tk-new">NEW</span><div class="tk-view"><div class="tk-track"><span class="tk-run"><a href="defender/">NEW: Play DEFENDER, the 1981 arcade classic, free</a><i aria-hidden="true">&#9670;</i><a href="studio/hart/">ALL NEW: 200 samples, the sounds of Mickey Hart of the Grateful Dead</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/">Hollywood movie sound FX</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/#industrial">Industrial factory loops &amp; metal hits</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/#k=el">Electronic beat maker</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/">Hip-hop &amp; trap drum machine with 808s</a><i aria-hidden="true">&#9670;</i><a href="studio/fx/#horror">Horror sound effects</a><i aria-hidden="true">&#9670;</i><a href="studio/beats/#k=el">House &amp; techno beats</a><i aria-hidden="true">&#9670;</i><a href="studio/">Free in your browser. Tap and play</a><i aria-hidden="true">&#9670;</i></span><span class="tk-run" aria-hidden="true"><a tabindex="-1" href="defender/">NEW: Play DEFENDER, the 1981 arcade classic, free</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/hart/">ALL NEW: 200 samples, the sounds of Mickey Hart of the Grateful Dead</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/">Hollywood movie sound FX</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/#industrial">Industrial factory loops &amp; metal hits</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/#k=el">Electronic beat maker</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/">Hip-hop &amp; trap drum machine with 808s</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/fx/#horror">Horror sound effects</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/beats/#k=el">House &amp; techno beats</a><i aria-hidden="true">&#9670;</i><a tabindex="-1" href="studio/">Free in your browser. Tap and play</a><i aria-hidden="true">&#9670;</i></span></div></div></div>
 <div class="site-header-inner">
 <a href="index.html" class="site-logo">AMADEUS SCHOOL OF DRUMS</a>
 <nav class="site-nav" aria-label="Main navigation">
@@ -580,7 +610,7 @@ html body .aim-note{margin:8px 0 0}
 <span class="nav-ctas"><a href="shop/" class="nav-cta nav-shop">GEAR SHOP</a><a href="#levels" class="nav-cta">START LEARNING</a></span>
 <details class="menu"><summary aria-label="Menu"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
 <nav aria-label="Main navigation, compact">
-<a href="app/" style="color:#7dff9a;font-weight:700">&#x1F4F1; Get the App</a><a href="studio/" style="color:#ffd35c;font-weight:600">Sound Studio (NEW)</a><a href="studio/hart/">Mickey Hart sounds (NEW)</a><a href="studio/fx/">Movie Sound FX</a><a href="studio/beats/">Beat Maker</a><a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Beginner Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="ontour/">On Tour</a><a href="vintage/">Vintage Drum Shops</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="#signup">Get new lessons</a>
+<a href="app/" style="color:#7dff9a;font-weight:700">&#x1F4F1; Get the App</a><a href="defender/" style="color:#ff2bd6;font-weight:700">Play Defender (NEW)</a><a href="studio/" style="color:#ffd35c;font-weight:600">Sound Studio (NEW)</a><a href="studio/hart/">Mickey Hart sounds (NEW)</a><a href="studio/fx/">Movie Sound FX</a><a href="studio/beats/">Beat Maker</a><a href="level7.html">The Kit</a><a href="#levels">Lessons</a><a href="bear.html">Beginner Lab</a><a href="intermediate-lab.html">Intermediate Lab</a><a href="conservatory-lab.html">Conservatory Lab</a><a href="grooves/">Groove Library</a><a href="ontour/">On Tour</a><a href="vintage/">Vintage Drum Shops</a><a href="drumroom/">Drum Room</a><a href="rudiments/">Rudiments</a><a href="shop/">Gear Shop</a><a href="book/index.html">The Book</a><a href="#signup">Get new lessons</a>
 </nav></details>
 </div>
 </header>
@@ -1447,6 +1477,53 @@ var last='';function tick(){var n=new Date(),h=n.getHours(),pm=h>=12;h=h%12||12;
   D.innerHTML='<span class="cb-dl">'+n.toLocaleDateString('en-US',{weekday:'short'}).toUpperCase()+'</span>'+dig(mo[0],21)+dig(mo[1],21)+'<span class="cb-dot"></span>'+dig(dd[0],21)+dig(dd[1],21)+'<span class="cb-dot"></span>'+dig(yy[0],21)+dig(yy[1],21);}
  P.classList.toggle('on',pm);var c=document.getElementById('cb-col');if(c)c.classList.toggle('off',sec%2===1);}
 tick();setInterval(tick,500);})();
+</script>
+<script>
+/* Defender banner: a small attract-mode scene behind the headline */
+(function(){
+var cv=document.querySelector('.dfb-cv');if(!cv||!cv.getContext)return;
+var g=cv.getContext('2d'),S=3,w=0,h=0,t=0,cam=0,run=true,still=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+var P={w:'#fff',m:'#ff30ff',p:'#a050ff',g:'#30ff30',y:'#ffff20',r:'#ff2020',c:'#20ffff'};
+function px(rows){var o=[];rows.forEach(function(r,y){for(var x=0;x<r.length;x++)if(r[x]!='.')o.push([x-(r.length-1)/2,y-(rows.length-1)/2,P[r[x]]]);});return o;}
+var SHIP=px(["ww..............","www.............","wwwwwwwwwww.....","wmmmmmmwwwwwww..","wwwwwwwwwwwwwwwc",".pppwwwwwwww...."]),
+LAND=px(["...ggg...",".ggyyygg.","gyygygyyg","ggyyyyygg",".gg.g.gg.",".g..g..g.","g...g...g","y.......y"]),
+HUM=px([".y.","mmm","mmm",".m.","g.g","g.g"]);
+var WW=1600,ter=[],stars=[],L=[],B=[],X=[],ship={y:0,x:0};
+function size(){var r=cv.getBoundingClientRect();w=Math.max(80,Math.round(r.width/S));h=Math.max(40,Math.round(r.height/S));cv.width=w;cv.height=h;}
+function init(){size();var pk=[],x=0;while(x<WW){pk.push([x,8+Math.random()*22,Math.random()<.5?1:.5]);x+=40+Math.random()*80;}
+for(var i=0;i<WW;i++){var m=0;pk.forEach(function(p){var d=Math.abs(i-p[0]);d=Math.min(d,WW-d);var v=p[1]-d*p[2];if(v>m)m=v;});ter.push(m);}
+for(var j=0;j<40;j++)stars.push([Math.random()*WW,Math.random(),['#fff','#f3f','#ff3','#3ff','#f33'][j%5]]);
+for(var k=0;k<5;k++)L.push({x:Math.random()*WW,y:.2+Math.random()*.4,ph:Math.random()*6});}
+function sx(x){return ((x-cam)%WW+WW)%WW;}
+function draw(sp,x,y,s){for(var i=0;i<sp.length;i++){g.fillStyle=sp[i][2];g.fillRect(Math.round(x+sp[i][0]*s),Math.round(y+sp[i][1]*s),1,1);}}
+function step(){
+ t++;cam=(cam+1.6)%WW;
+ ship.x=w*.62;ship.y=h*.45+Math.sin(t*.03)*h*.18;
+ if(t%40==0)B.push({x:ship.x+8,y:Math.round(ship.y+1),l:0});
+ B.forEach(function(b){b.l+=9;});
+ B=B.filter(function(b){
+  for(var i=0;i<L.length;i++){var l=L[i],lx=sx(l.x),ly=l.y*h;if(Math.abs(ly-b.y)<5&&lx>b.x&&lx<b.x+b.l){X.push({x:l.x,y:ly,t:0,sp:LAND});l.x=(cam+w+60+Math.random()*400)%WW;return false;}}
+  return b.x+b.l<w+20;});
+ L.forEach(function(l){l.x=(l.x-.25+WW)%WW;l.ph+=.05;});
+ X.forEach(function(e){e.t++;});X=X.filter(function(e){return e.t<34;});
+}
+function render(){
+ g.fillStyle='#000';g.fillRect(0,0,w,h);
+ stars.forEach(function(s){var x=((s[0]-cam*.5)%WW+WW)%WW;if(x<w&&(t+x|0)%70>3){g.fillStyle=s[2];g.fillRect(x|0,(s[1]*h*.7)|0,1,1);}});
+ g.fillStyle='#b8642a';var base=h-2;for(var x=0;x<w;x++){g.fillRect(x,Math.round(base-ter[Math.floor(cam+x)%WW]*h/90),1,1);}
+ for(var k=0;k<4;k++){var hx=sx(k*400+t*.1);if(hx<w)draw(HUM,hx,h-6,1);}
+ L.forEach(function(l){var lx=sx(l.x);if(lx<w+6)draw(LAND,lx,l.y*h+Math.sin(l.ph)*2,1);});
+ B.forEach(function(b){for(var i=0;i<b.l;i++){var xx=b.x+i;if(xx>w)break;var d=b.l-i;if(d>8&&((xx>>2)*7+t)%5<2)continue;g.fillStyle=d<8?'#fff':['#f00','#ff0','#0f0','#0ff','#f0f'][((xx>>2)+t)%5];g.fillRect(xx,b.y,1,1);}});
+ draw(SHIP,ship.x,ship.y,1);
+ if(t%4<3){g.fillStyle=['#f00','#ff0','#fff'][t%3];g.fillRect(Math.round(ship.x-8-3-(t%3)),Math.round(ship.y),3+(t%3),1);}
+ X.forEach(function(e){var m=1+e.t*.4,ex=sx(e.x);if(e.t>24&&t%2)return;draw(e.sp,ex,e.y,m);});
+}
+function loop(){if(run){step();render();}requestAnimationFrame(loop);}
+init();
+if(still){for(var i=0;i<60;i++)step();render();}
+else{if('IntersectionObserver' in window)new IntersectionObserver(function(es){run=es[0].isIntersecting;}).observe(cv);requestAnimationFrame(loop);}
+var rt;window.addEventListener('resize',function(){clearTimeout(rt);rt=setTimeout(function(){size();render();},150);});
+})();
 </script>
 </body>
 </html>
