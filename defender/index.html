@@ -98,6 +98,11 @@ const GLY={};for(const k in FONT)GLY[k]=mk(FONT[k]);
 function txt(str,x,y,c){c=c||1;for(const ch0 of String(str).toUpperCase()){const g=GLY[ch0]||GLY['?'];blit(g,x,y,0,c);x+=g.w+2;}return x;}
 function txtW(str){let w=0;for(const ch of String(str).toUpperCase())w+=(GLY[ch]||GLY['?']).w+2;return w-2;}
 function txtC(str,y,c){return txt(str,Math.round((W-txtW(str))/2),y,c);}
+// 3x5 fine-print face for the credit line
+const TINY={C:'111100100100111',O:'111101101101111',D:'110101101101110',E:'111100110100111',A:'010101111101101',N:'101111111101101',
+ B:'110101110101110',U:'101101101101111',I:'111010010010111',L:'100100100100111',T:'111010010010010',Y:'101101010010010',G:'111100101101111',R:'110101110101101'};
+function tinyTxtC(str,y,c){const w=str.length*4-1;let x=Math.round((W-w)/2);
+  for(const ch of str){const g=TINY[ch];if(g)for(let i=0;i<15;i++)if(g[i]==='1')pset(x+i%3,y+(i/3|0),c);x+=4;}}
 const LOGO=mk(DATA.logo.map(r=>r.replace(/#/g,'C').replace(/s/g,'2')));
 
 // ---------------------------------------------------------------- terrain & stars
@@ -720,7 +725,7 @@ function drawAttract(){
     if(t<48){}else if(t<95){const size=95-t;LOGOSL.forEach((bl,i)=>{const cx=96+8*i+4;for(const b of bl){const bx=cx+b.ox*size+b.ox,by=156+b.oy*size+b.oy;for(let k=0;k<4;k++)pset(bx+(k&1),by+(k>>1),b.p[k]);}});}
     else blit(LOGO,96,144);
     if(t<135)pal[12]=0x3F;
-    if(t>=8)txtC('CODED AND BUILT BY',88);if(t>=24)txtC('DOUG GARCEAU',108);
+    tinyTxtC('CODED AND BUILT BY DOUG GARCEAU',202,1);
     txtC('ARROWS FLY  SPACE FIRE  B SMART BOMB',214,1);
     txtC('H HYPERSPACE  P PAUSE  M MUTE',224,1);
   }
