@@ -709,7 +709,8 @@ function attract(){
   if(IN.start()){snd('coin');setTimeout(()=>{},0);newGame();return;}
   if(page===0&&pageT>600){page=1;pageT=0;demoInit();}
   else if(page===1&&demoStep()){page=2;pageT=0;}
-  else if(page===2&&pageT>900){page=0;pageT=0;HOF.refresh();}
+  // amode1.src: logo page (AMODES) -> build-in, then STALT 60 x NAPP 10 -> HALDIS -> 60 x 10 -> LEDRET demo -> AMODES
+  else if(page===2&&pageT>95+600){page=0;pageT=0;HOF.refresh();}
   if(page===1){for(const e of exps)e.size+=e.grow;exps=exps.filter(e=>e.size<=48);}
 }
 function drawAttract(){
@@ -718,16 +719,14 @@ function drawAttract(){
     txt('HALL OF FAME',112,84);txt('TODAYS',68,104);txt('ALL TIME',192,104);txt('GREATEST',60,114);txt('GREATEST',190,114);
     hline(60,121,123,1);hline(60,121,124,1);hline(190,251,123,1);hline(190,251,124,1);
     drawHofTable(HOF.today(),48,58,86);drawHofTable(HOF.all(),178,188,216);
+    tinyTxtC('CODED AND BUILT BY DOUG GARCEAU',226,7);
   }else if(page===1)drawDemo();
   else{
-    // title page: the DEFENDER letters build in, then flash (CBOMB on colour C)
+    // logo page: the DEFENDER letters build in, then flash (CBOMB on colour C)
     const t=pageT;
     if(t<48){}else if(t<95){const size=95-t;LOGOSL.forEach((bl,i)=>{const cx=96+8*i+4;for(const b of bl){const bx=cx+b.ox*size+b.ox,by=156+b.oy*size+b.oy;for(let k=0;k<4;k++)pset(bx+(k&1),by+(k>>1),b.p[k]);}});}
     else blit(LOGO,96,144);
     if(t<135)pal[12]=0x3F;
-    tinyTxtC('CODED AND BUILT BY DOUG GARCEAU',202,1);
-    txtC('ARROWS FLY  SPACE FIRE  B SMART BOMB',214,1);
-    txtC('H HYPERSPACE  P PAUSE  M MUTE',224,1);
   }
   if((frameN>>5)&1)txtC('PRESS ENTER TO START',236);
 }
@@ -878,7 +877,7 @@ function render(){
 const homeEl=document.getElementById('home');
 let last=performance.now(),acc=0;
 function frame(now){acc+=Math.min(120,now-last);last=now;while(acc>=1000/60){update();acc-=1000/60;}render();requestAnimationFrame(frame);}
-function start(){attractInit();page=2;pageT=0;cv.focus({preventScroll:true});requestAnimationFrame(frame);}
+function start(){attractInit();cv.focus({preventScroll:true});requestAnimationFrame(frame);}
 start();
 </script>
 
