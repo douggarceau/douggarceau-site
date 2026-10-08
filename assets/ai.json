@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T21:20Z",
+ "updated": "2026-10-08T06:09Z",
  "items": [
   {
    "title": "Tencent Music integrated DeepSeek into its streaming service. Now parent company Tencent is among the biggest backers of the AI company\u2019s $12B+ funding round (report)",
@@ -106,6 +106,22 @@
    "release": true
   },
   {
+   "title": "ARIA Warns Lawmakers That Australia Could Be Used as \u2018Trojan Horse for Big\u00a0AI\u2019",
+   "link": "https://www.billboard.com/pro/aria-warns-australia-trojan-horse-big-ai/",
+   "source": "Billboard",
+   "date": "2026-10-08",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "A.I. Music Fraudster Who Drew Millions in Royalties Is Sentenced to 18 Months",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNY05ZdlEzR3pwcWs2U0RWX1J4YXEzWFdMSkktWFRvZ0xicEplR3J2ZGMtZWlXYm00UzNoZGd5Y3NoM0ZPQ3I5MzBaaUFJZVhkdXpidmdyZmlpYkY0TWwzR2lCVFJ3d00zRnZDZWJ0RktNR1M3TzRIVFlYaEZlejJ4cEhTY1JxQzZvTThmag?oc=5",
+   "source": "The New York Times",
+   "date": "2026-10-08",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "Italy\u2019s competition watchdog probes Suno over \u2018unfair terms\u2019",
    "link": "https://musically.com/2026/10/07/italys-competition-watchdog-probes-suno-over-unfair-terms/",
    "source": "Music Ally",
@@ -130,17 +146,17 @@
    "release": false
   },
   {
-   "title": "A.I. Music Fraudster Who Drew Millions in Royalties Is Sentenced to 18 Months",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNY05ZdlEzR3pwcWs2U0RWX1J4YXEzWFdMSkktWFRvZ0xicEplR3J2ZGMtZWlXYm00UzNoZGd5Y3NoM0ZPQ3I5MzBaaUFJZVhkdXpidmdyZmlpYkY0TWwzR2lCVFJ3d00zRnZDZWJ0RktNR1M3TzRIVFlYaEZlejJ4cEhTY1JxQzZvTThmag?oc=5",
-   "source": "The New York Times",
-   "date": "2026-10-07",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
    "title": "Who Actually Made This? The Question AI Is Forcing Music to Ask.",
    "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPbnNHZ2VSUENPd01sSDdNWW5ULWVCYkxFSzkyclF6WUd1OS1GSllfbFE5Y0FaMGl0VEZYU3dSQ21pdFJfcmpvVlJLdTNIUmd0MFVOOW9wWlozY1lkNGx2blZQZl91c21ackpqbFBXYTAxRnV4c2l5MjIzS1Uzd2pEWXl5N0ZLUEdYdExLU1ZXXzM?oc=5",
    "source": "Hypebot",
+   "date": "2026-10-07",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Grok Bot to Begin Using Suno for Music Generation, Musk Says",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yZS02d0ItRElTR19PQzNHMVlCemV1Z2tBZlFSWVNxUlBkNkxBaXZSOTdfb09XbmpxUGpFcVNUUE5DSzRibEhjaG9HUjkwNTdDQ1IzNTlkdjJlSm1HdnVMcGZyZldNQTBrc3c?oc=5",
+   "source": "Digital Music News",
    "date": "2026-10-07",
    "kind": "NEWS",
    "release": false
@@ -174,22 +190,6 @@
    "link": "https://musically.com/2026/10/06/aria-boss-warns-australian-politicians-on-ai-lobbying-demands/",
    "source": "Music Ally",
    "date": "2026-10-06",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Sony Music Has Requested the Removal of Over 260,000 AI Deepfake Songs From Digital Platforms",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOZGhCNDlSTkVVdHBkNUVEcTlGMU5ObENsSHVLUFVQMzBwZDIxcDIyMUdPakpXRmhSSGNpU1RqN2ZUemhOangyX0Q1NWtDUXRWVW0wRC1sOEVqYjNoZjIya1J4MEdGOXVmd3J3QTNDa18xb2FxUzllc1piRXZMazdNVkp4WQ?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-06",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "\u201cNot a high crime or misdemeanour\u201d: Joe Bonamassa has sympathy for up-and-coming artists using AI",
-   "link": "https://www.musicradar.com/artists/guitarists/were-in-the-entertainment-business-if-someone-uses-suno-to-write-a-lyric-its-not-a-high-crime-or-misdemeanour-joe-bonamassa-has-sympathy-for-up-and-coming-artists-using-ai-to-get-an-edge",
-   "source": "MusicRadar",
-   "date": "2026-10-05",
    "kind": "NEWS",
    "release": false
   }
@@ -263,21 +263,21 @@
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 1,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
-  "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 45,
-  "Google News Suno+OR+Udio": 45,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 22,
+  "Google News %22AI%22+drummer": 1,
+  "Google News %22AI+music%22": 47,
+  "Google News Suno+OR+Udio": 46,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 23,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
