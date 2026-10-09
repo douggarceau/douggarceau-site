@@ -102,6 +102,8 @@ window.amadeusSiteTourStart=function(){location.href=STOUR[0]+'?stour=1';};
 function build(){
  var t=pageText();if(!t)return;
  var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
+ /* A page can keep the optional tour controls without the automatic talking widget. */
+ if(document.body.getAttribute('data-amadeus-guide')==='off')return;
  root=document.createElement('div');root.className='amg';
  root.innerHTML='<div class="amg-b" role="status" aria-live="polite" hidden><button class="amg-x" aria-label="Close">&times;</button><div class="amg-t"></div><div class="amg-n"></div></div>'+
   '<button class="amg-f" aria-label="Amadeus: hear about this page"><span class="amg-face"><video src="/assets/amadeus-dog.mp4" poster="/assets/amadeus-face.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true"></video><span class="amg-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span></span><span>Amadeus<small>Tap me to hear about this page</small></span></button>';
