@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T05:56Z",
+ "updated": "2026-10-10T14:29Z",
  "items": [
   {
    "title": "Sound Overflow releases Genator generative synthesizer for Windows",
@@ -34,14 +34,6 @@
    "release": true
   },
   {
-   "title": "Guilt-free AI? What \u201cethical AI\u201d tools mean for musicians and producers",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMWVlTlZRWUpySU1YMmhMbmk1QXpMeV91cDlmNWtCTUJpX3pJMVJ2d3FXTU5EcWpEeVBYUmxBLWg1aWVFODNERlVEbThYS241YUdZWUxQWm9ZVjc0N1ljbnJiTHZQWVY2d01BM3FGelpmZ2NPbVc3UUNORnZfN1lEYldyc1JWVXFWMm1nNThBeDVzcE5kYXA3QzZPa0oyTzB4eWpZX000TWNnNkNzT3VYa2RwZFZuWE0?oc=5",
-   "source": "MusicRadar",
-   "date": "2026-09-19",
-   "kind": "PRODUCT",
-   "release": false
-  },
-  {
    "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
    "source": "The Verge",
@@ -58,14 +50,6 @@
    "release": true
   },
   {
-   "title": "Universal Music is launching an AI music platform with ElevenLabs",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNQW83TTNuQ2dtcEhoQXZVTFU0T0FLRGd5cURKb28tdzA3Wi1idFl3R1hCbVFfSDJ4YUVUbTFRQTNrdGVxZWI2U0ZuTVNicmhNTVFzeVMwX2VraXpoRENGRW5mOHVFVVFSVTFDYlVlcmZPV0tOWWFDLUppYkdkVVVMOHNmbmNsVDVWcXc4aWdNZWNJQQ?oc=5",
-   "source": "The Verge",
-   "date": "2026-09-10",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Man sent to prison for using an army of bots to boost his AI music streams \u2014 he made $8m from the scheme and had nearly 10 times the plays of Taylor Swift",
    "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOWFZxVEpKWkNWUmQ2emgtblNlU2lDeURhS0FqS2QzNHhNNjg5SlN1c2wwYzBZSnhXRXhFeU9JQzJJUS1lSWttV0w3U0prbnc5bC1Wa1Fub2EtdWUzS1JMR2V6VFJJT3o4blNaNmc4eGd5OUNaWUVlR0N5cHNfUDQxaHVoQzFoSi1Yck5pV0I3Z1pvWk83akZFSzVpMEFKZ2tQN1RLTUZjWFdGMk9yOWNkdW5ic2d6Z1BjS3dKU0lRblhRUXJRaXd6ZEVWSm1UR1V4eU42MWxmb2tTSThDR05mN1l4X2NWcnFFbk5iZGxtU3pyVkVqUHZPdTY1X0JEYnlTM3VvcktWcW1lNThGMnFMY09QWmIwZw?oc=5",
    "source": "TechRadar",
@@ -74,9 +58,9 @@
    "release": false
   },
   {
-   "title": "Latest Music Industry Hires: Live Nation, Suno, GoDigital, More",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOdE4ycWlJcXVkSnM4SUhSMUZtbjZ3MVFqakw2Szd5QTAyYXpyb1BiTjY1bXplZ2YzdzZESnNrNzAwVzV5NGN0SlJncGVSN1NrY0NfZC1LcUk3Xy1abnRjSlBlN2ZIeVRxRVhzSmRVMGQ3blJzZTVqUmpHZnFDUWwtaDlB?oc=5",
-   "source": "Digital Music News",
+   "title": "As Suno Rolls Out Its New AI Models With Industry Licenses, What Does That Mean For the Music Business?",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOcEtEZ3NjLTg4Z2JuRWNIVlVYTGExazRUb3N0aWthNGZUNGIzRExiV3BKSFAyajFIbHBnbWNCbjJoSGVWTUlmdV9kYVc2MFlnZVpfb21hVEktcS05aGJJR2F4SVU5aEF5dkNwM2tZZUtnQTFPSWVCQjQxSE53TEdQNDR1ZFVSSnJ3MWw3UzZkWU5COW9p?oc=5",
+   "source": "Billboard",
    "date": "2026-10-10",
    "kind": "NEWS",
    "release": false
@@ -110,6 +94,14 @@
    "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPeWpQWjZrbFBTaUpfUGY4cXFlak5mS2ZISVhqdGJfS0IwN20tSy1PdVNKdTd1NmRfaEdjaExsalBKR0pxaTc2VjFPZEh1TW5wSklmcFRwN1VJaDk4YUNmUDJVcUd5Y2VVMmZwMjkxUzVxdkZHeVNFXzZEaHo5cmZaNEJBX25xQi1oZVktLUNEUHFhUUJEYXpxWnlKQnlCRGhybzdUNWZyV2VCaTNDdjYxMk5rSUV3dTkxdDdkai1tcm5obXpnZDN6VjdXQ2lGS3VfNDZKcFhrLUJPOHlPSzJobjlZNGxBbndhM2NpUWRNYTJGNXdVMmlxUGlQMktZeTMxT2RwSzlubkhmRW12UWVHMnVRWWphU0JGemNRSHRFTWw3akZmN3RvVlhEYXNNd2wxbWl4OG50dzRXVTBMWURsTG5ZQlM?oc=5",
    "source": "TechRadar",
    "date": "2026-10-09",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Suno hires Ticketmaster\u2019s Michael Chua to lead its live music team, including Songkick",
+   "link": "https://www.musicbusinessworldwide.com/suno-hires-ticketmasters-michael-chua-to-lead-its-live-music-team-including-songkick/",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-08",
    "kind": "NEWS",
    "release": false
   },
@@ -179,7 +171,7 @@
   },
   {
    "title": "Olivia Dean Lawsuit, AI Fraudster Sentence, Erica Campbell Case & More Top Music Law News",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOU3lVTDFlZTJkWGp2RXljOTlTNE9landKYW1ULVRGVUVWQTh3UEdoLUJ1aUd6MEZlYU1EZ2NLUGtiR0tlMzhHYWd6WnRwa19QVF81T25zUmEzQlc0RWd5SnNNN0pWWlh2Q0dZTTZmanFXTmxQSXJxNDF6TnlOYWlzdEo2LVpVWWNtMWZqMg?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdnpSX1ZsYzdIckRsa21HVUpoMnlONENFamI1aUxTNUZLTUlPcE5YNXJXRHJReWtBc3lJNW96VVdtNUZTUGlyOF81N0NBWG1vOHZ2SjdXRll0VDBveHRzc2lEbTZQVzVwLWtpY19GWWFrUUtHY2FrSDVKSnhZTzR0V0xObnJ0Wnl5eDBnRjRB?oc=5",
    "source": "Billboard",
    "date": "2026-10-07",
    "kind": "PROBLEM",
@@ -190,6 +182,14 @@
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1ySmh0dXk2dnpvNTVBYkV0Z1lVREYzNUpUZjF4dEluTW9VaEpEbmVWcXFTQUlPM0ZYM0dhRUdhVTY3R3RnRGNqbXNDeVdMRkdvQTk5SmpTSlBWMlNhc1RLT3Y2U2cyWVBPUTV2WHVJNERXblluUG94R1pR?oc=5",
    "source": "Billboard",
    "date": "2026-10-07",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "\"It\u2019s becoming an uphill struggle\u201d: Sony reveals the number of deepfake AI tracks has doubled in six months",
+   "link": "https://www.musicradar.com/music-industry/we-will-keep-enforcing-our-artists-rights-but-its-becoming-an-uphill-struggle-sony-music-reveals-the-number-of-deepfake-ai-tracks-its-asked-to-be-removed-has-doubled-in-six-months",
+   "source": "MusicRadar",
+   "date": "2026-10-06",
    "kind": "PROBLEM",
    "release": false
   }
@@ -279,13 +279,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 41,
-  "Google News Suno+OR+Udio": 36,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 24,
+  "Google News %22AI+music%22": 39,
+  "Google News Suno+OR+Udio": 32,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 21,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }

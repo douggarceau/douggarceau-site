@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-09T20:56Z",
+ "updated": "2026-10-10T14:29Z",
  "items": [
+  {
+   "id": "PJRLSV1fSSU",
+   "title": "Drum Talk TV News Desk Repot - October 9, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-10-10",
+   "kind": "TALK"
+  },
   {
    "id": "damH8X-Mlg0",
    "title": "Meinl Cymbals - Matt Garstka - Solo #1 Meinl Drum Festival 2026",
@@ -35,13 +42,6 @@
    "source": "Meinl",
    "date": "2026-10-03",
    "kind": "DEMO"
-  },
-  {
-   "id": "PJRLSV1fSSU",
-   "title": "Drum Talk TV News Desk Repot - October 9, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-10-03",
-   "kind": "TALK"
   },
   {
    "id": "My1iiJV8abU",
@@ -117,7 +117,7 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (1)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (5)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (4)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -134,9 +134,10 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
-  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
-  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
+  "Percussive Arts Society skip UC-B0wx_W7TKkb66dzumzY9A": "Millikin Percussion Ensemble",
+  "Percussive Arts Society skip UCz06PVOhdjBL6R0-aZ7cA3g": "Liberty HS Percussion"
  }
 }
