@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T04:36Z",
+ "updated": "2026-10-11T08:36Z",
  "items": [
   {
    "title": "Sound Overflow releases Genator generative synthesizer for Windows",
@@ -38,14 +38,6 @@
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
    "source": "The Verge",
    "date": "2026-09-17",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Universal Audio LUNA 3.0: Free DAW Gets an AI Boost and a New Spark Studio Subscription",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE51Y2szNGdvUXFsQW1nVlJWY0pRbDREaVdLem5VVzg5TGNHYTc5TG1DN1hhalhPc3ZsZnBfSnZkLVRoZElJd3BTclY1UHFuUUd2TEZhWXQ1NDdtX3Nzd3BpOU5oR0JyV1FjNWVNakV3?oc=5",
-   "source": "Gearnews.com",
-   "date": "2026-09-11",
    "kind": "PRODUCT",
    "release": true
   },
@@ -192,6 +184,14 @@
    "date": "2026-10-06",
    "kind": "PROBLEM",
    "release": false
+  },
+  {
+   "title": "AI Music Streaming Fraudster Sentenced to 1.5 Years in Prison for $8M Royalties Scam",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbUFQbDVaZzB1UkpncV9TVjNreUNfUWVDZ1lTZGN1cFBmM2xQeWIwdmgxdlRQdXQwOXktVE9wNzlFYl9uMjRYVVZydWwzXzZaZ21FU2k4UWRQWHlPeGRUcG44VHh4cjNRVnI5NDgwcDB6blowbVFsbWw1MFFkUzY0LW5TUE5mSWtVZW1kbjVhd3psaHhR?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-06",
+   "kind": "PROBLEM",
+   "release": false
   }
  ],
  "releases": [
@@ -244,14 +244,6 @@
    "release": true
   },
   {
-   "title": "UMG and Sony Music file new Suno complaint over v6 models",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaHFpY1hVMTVHLWVrdDJPbWU3TXpycGpLemVERjNDYmc3X05NQXVJc2hVOU8xRUVQVTc2b3NfcUZsSnlVYVVvNnN4VTVHY1pDb2VNTEhidW9HT0JXUXFBWUtJN0FPVWN0ck45XzEwLUVuWDhmbEoyRW9wVTV2eDhxX0xQYlpvbHphT3VSVHVPbXZqTDR6enc?oc=5",
-   "source": "Music Ally",
-   "date": "2026-09-21",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
    "source": "The Verge",
@@ -279,13 +271,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 41,
-  "Google News Suno+OR+Udio": 32,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 21,
+  "Google News %22AI+music%22": 39,
+  "Google News Suno+OR+Udio": 30,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 22,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
-  "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
+  "Google News %22AI%22+stem+separation": 1,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 1,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
