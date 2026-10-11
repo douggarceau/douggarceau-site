@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T08:36Z",
+ "updated": "2026-10-11T12:40Z",
  "items": [
   {
    "title": "Sound Overflow releases Genator generative synthesizer for Windows",
@@ -244,6 +244,14 @@
    "release": true
   },
   {
+   "title": "UMG and Sony Music file new Suno complaint over v6 models",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaHFpY1hVMTVHLWVrdDJPbWU3TXpycGpLemVERjNDYmc3X05NQXVJc2hVOU8xRUVQVTc2b3NfcUZsSnlVYVVvNnN4VTVHY1pDb2VNTEhidW9HT0JXUXFBWUtJN0FPVWN0ck45XzEwLUVuWDhmbEoyRW9wVTV2eDhxX0xQYlpvbHphT3VSVHVPbXZqTDR6enc?oc=5",
+   "source": "Music Ally",
+   "date": "2026-09-21",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
    "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
    "source": "The Verge",
@@ -270,8 +278,8 @@
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
-  "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 39,
+  "Google News %22AI%22+drummer": 0,
+  "Google News %22AI+music%22": 41,
   "Google News Suno+OR+Udio": 30,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 22,
   "Google News %22AI%22+music+producer+plugin": 0,
