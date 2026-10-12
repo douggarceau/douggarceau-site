@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T16:32Z",
+ "updated": "2026-10-12T20:32Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 61,
  "items": [
+  {
+   "title": "Dominic Howard (Muse) joins Ludwig family",
+   "link": "https://en.beatit.tv/dominic-howard-muse-joins-ludwig-family/",
+   "source": "Beat It",
+   "date": "2026-10-12"
+  },
   {
    "title": "Godsmack\u2019s Live at Mohegan Sun Earns GRAMMY\u00ae Consideration Across Three Categories \u2013 Sully Erna & Shannon Larkin",
    "link": "https://www.drummingnewsnetwork.com/godsmacks-live-at-mohegan-sun-earns-grammy-consideration-across-three-categories-sully-erna-shannon-larkin/",
@@ -252,12 +258,6 @@
    "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-new-flagship-mps-1500-hybrid-x-electronic-drum-set-will-turn-some-heads",
    "source": "MusicRadar",
    "date": "2026-09-16"
-  },
-  {
-   "title": "Modern Drummer Announces Celeste Fox as the 2026 Winner of the Neil Peart Spirit of Drumming Scholarship",
-   "link": "https://www.moderndrummer.com/2026/09/modern-drummer-announces-celeste-fox-as-the-2026-winner-of-the-neil-peart-spirit-of-drumming-scholarship/",
-   "source": "Modern Drummer",
-   "date": "2026-09-15"
   }
  ]
 }

@@ -1,19 +1,26 @@
 {
- "updated": "2026-10-12T16:32Z",
+ "updated": "2026-10-12T20:32Z",
  "items": [
+  {
+   "id": "O_yGzTnQtak",
+   "title": "Mirko DeMaio Interview: The Flower Kings' New Album 'Hope'",
+   "source": "Drumtalk TV",
+   "date": "2026-10-12",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "qv8aY2Wa5tU",
+   "title": "Rob Toulson Interview on Drum Talk TV",
+   "source": "Drumtalk TV",
+   "date": "2026-10-12",
+   "kind": "INTERVIEW"
+  },
   {
    "id": "iSpMM7eLqxc",
    "title": "Julie Frost Interview: Tribute to Keith Moon Benefit Concert",
    "source": "Drumtalk TV",
    "date": "2026-10-11",
    "kind": "INTERVIEW"
-  },
-  {
-   "id": "PJRLSV1fSSU",
-   "title": "Drum Talk TV News Desk Repot - October 9, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-10-10",
-   "kind": "TALK"
   },
   {
    "id": "damH8X-Mlg0",
@@ -42,13 +49,6 @@
    "source": "Meinl",
    "date": "2026-10-03",
    "kind": "DEMO"
-  },
-  {
-   "id": "My1iiJV8abU",
-   "title": "Larry Mullen Jr. Returns to U2 & More - Drum Talk TV News Desk Report - October 2nd, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-10-03",
-   "kind": "TALK"
   },
   {
    "id": "85OoO1xwMVk",
@@ -117,7 +117,7 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (1)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (4)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -129,12 +129,13 @@
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
   "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
+  "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCKDTw8myziWbkT3R2dh9vKQ Namm (0)",
-  "NAMM skip UCskHtWjeXXvWvP2AQ9kTuHQ": "Elias Namm",
+  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
