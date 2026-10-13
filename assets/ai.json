@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T08:45Z",
+ "updated": "2026-10-13T12:46Z",
  "items": [
   {
    "title": "Diphonic launches Counterpart AI assistant for your DAW",
@@ -66,6 +66,22 @@
    "release": true
   },
   {
+   "title": "Deezer to let users block AI-generated music from search results",
+   "link": "https://www.musicbusinessworldwide.com/deezer-to-let-users-block-ai-generated-music-from-search-results/",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-13",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "RAYE Blames \u2018AI Bots\u2019 After Presale For Intimate London Show Clocks 1.8 Million Sign-Ups: \u2018This Experience Has Really Opened My\u00a0Eyes\u2019",
+   "link": "https://www.billboard.com/music/pop/raye-royal-albert-hall-ai-bots-scalpers-ticket-sales-1236359638/",
+   "source": "Billboard",
+   "date": "2026-10-13",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
    "title": "Man who made $8 million in AI streaming fraud scheme given 18-month prison sentence",
    "link": "https://musictech.com/news/industry/man-who-made-8-million-in-ai-streaming-fraud-scheme-given-18-month-prison-sentence/",
    "source": "MusicTech",
@@ -98,14 +114,6 @@
    "release": false
   },
   {
-   "title": "From Sony Music\u2019s 260,000 deepfake takedowns to Suno\u2019s live music expansion\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
-   "link": "https://www.musicbusinessworldwide.com/from-sony-musics-260000-deepfake-takedowns-to-sunos-live-music-expansion-its-mbws-weekly-round-up/",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-09",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
    "title": "New Suno live music division to help make it the \u201cfirst creative entertainment platform\u201d",
    "link": "https://musically.com/2026/10/09/new-suno-live-music-division-to-help-make-it-the-first-creative-entertainment-platform/",
    "source": "Music Ally",
@@ -114,19 +122,19 @@
    "release": false
   },
   {
-   "title": "Meta and TikTok announce new agentic AI advertising features",
-   "link": "https://musically.com/2026/10/09/meta-and-tiktok-announce-new-agentic-ai-advertising-features/",
-   "source": "Music Ally",
-   "date": "2026-10-09",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "'Please, no library or AI music. Love your game, love your handiwork' \u2014 Control Resonant composer suggests studios should appreciate music more if they 'value and respect",
    "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPeWpQWjZrbFBTaUpfUGY4cXFlak5mS2ZISVhqdGJfS0IwN20tSy1PdVNKdTd1NmRfaEdjaExsalBKR0pxaTc2VjFPZEh1TW5wSklmcFRwN1VJaDk4YUNmUDJVcUd5Y2VVMmZwMjkxUzVxdkZHeVNFXzZEaHo5cmZaNEJBX25xQi1oZVktLUNEUHFhUUJEYXpxWnlKQnlCRGhybzdUNWZyV2VCaTNDdjYxMk5rSUV3dTkxdDdkai1tcm5obXpnZDN6VjdXQ2lGS3VfNDZKcFhrLUJPOHlPSzJobjlZNGxBbndhM2NpUWRNYTJGNXdVMmlxUGlQMktZeTMxT2RwSzlubkhmRW12UWVHMnVRWWphU0JGemNRSHRFTWw3akZmN3RvVlhEYXNNd2wxbWl4OG50dzRXVTBMWURsTG5ZQlM?oc=5",
    "source": "TechRadar",
    "date": "2026-10-09",
    "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "From Sony Music\u2019s 260,000 deepfake takedowns to Suno\u2019s live music expansion\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPY29GOUdrd3dVS0NnWElSc0dtQUVJZEhiNTYyNHVyUmNfTXBIcDdSSjk4NFdoTWQ2ZFktX3NpWmpzVENENXBjMkZEV1YtVXBWWmhUY0hQTktpdVdhX24yQ1p3Q0QxdENFdlZHYm9NaS0xdWZBNUFiMmFhS3RCLUtleDFhSjA5NmNTb3N3dV91REw0OEJSUVRWRWZGT211RVZZUFFEUkE1VGZCYkU2bHF2Ykh0WjJTenJJMjZpa1BiVFdzaXprQVhhaDFoNWpWaFI3X2VN?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-09",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -184,17 +192,17 @@
    "date": "2026-10-07",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Grok Bot to Begin Using Suno for Music Generation, Musk Says",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yZS02d0ItRElTR19PQzNHMVlCemV1Z2tBZlFSWVNxUlBkNkxBaXZSOTdfb09XbmpxUGpFcVNUUE5DSzRibEhjaG9HUjkwNTdDQ1IzNTlkdjJlSm1HdnVMcGZyZldNQTBrc3c?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-10-07",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "RAYE Blames \u2018AI Bots\u2019 After Presale For Intimate London Show Clocks 1.8 Million Sign-Ups: \u2018This Experience Has Really Opened My\u00a0Eyes\u2019",
+   "link": "https://www.billboard.com/music/pop/raye-royal-albert-hall-ai-bots-scalpers-ticket-sales-1236359638/",
+   "source": "Billboard",
+   "date": "2026-10-13",
+   "kind": "NEWS",
+   "release": true
+  },
   {
    "title": "Diphonic launches Counterpart AI assistant for your DAW",
    "link": "https://rekkerd.org/diphonic-launches-counterpart-ai-assistant-for-your-daw/",
@@ -209,14 +217,6 @@
    "source": "Rekkerd",
    "date": "2026-10-09",
    "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Meta and TikTok announce new agentic AI advertising features",
-   "link": "https://musically.com/2026/10/09/meta-and-tiktok-announce-new-agentic-ai-advertising-features/",
-   "source": "Music Ally",
-   "date": "2026-10-09",
-   "kind": "NEWS",
    "release": true
   },
   {
@@ -271,7 +271,7 @@
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
