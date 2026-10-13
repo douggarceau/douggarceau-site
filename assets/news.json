@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T12:45Z",
+ "updated": "2026-10-13T16:34Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,18 @@
  "errors": {},
  "raw_count": 61,
  "items": [
+  {
+   "title": "DW\u2019s Design Series Goes Exotic",
+   "link": "https://drummersreview.com/news/dws-design-series-goes-exotic/",
+   "source": "Drummer's Review",
+   "date": "2026-10-13"
+  },
+  {
+   "title": "Medeli to make debut at The UK Drum Show",
+   "link": "https://theukdrumshow.com/show-news/medeli-to-make-debut-at-the-uk-drum-show/",
+   "source": "The UK Drum Show",
+   "date": "2026-10-13"
+  },
   {
    "title": "Canopus Drums Introduces the BA-1470 Baritone Series Snare Drum",
    "link": "https://www.drummingnewsnetwork.com/canopus-drums-introduces-the-ba-1470-baritone-series-snare-drum/",
@@ -219,8 +231,8 @@
   },
   {
    "title": "SIMON PHILLIPS on 50+ Years of Drumming | The UK Drum Show",
-   "link": "https://drummersreview.com/news/simon-phillips-on-50-years-of-drumming-the-uk-drum-show/",
-   "source": "Drummer's Review",
+   "link": "https://theukdrumshow.com/show-news/simon-phillips-on-50-years-of-drumming-the-uk-drum-show/",
+   "source": "The UK Drum Show",
    "date": "2026-09-18"
   },
   {
@@ -245,18 +257,6 @@
    "title": "Zed Amarin \u2013 Esodic \u2013 Of The Grave \u2013 Drum Play-through",
    "link": "https://sickdrummermagazine.com/news/latest-news/zed-amarin-esodic-of-the-grave-drum-play-through/",
    "source": "Sick Drummer Magazine",
-   "date": "2026-09-16"
-  },
-  {
-   "title": "Drumming For WILL SMITH | Greg Clark Jr. | The UK Drum Show",
-   "link": "https://theukdrumshow.com/show-news/drumming-for-will-smith-greg-clark-jr-the-uk-drum-show/",
-   "source": "The UK Drum Show",
-   "date": "2026-09-16"
-  },
-  {
-   "title": "The new Millenium Drums MPS-1500 e-kit could be the hybrid drum set you've been looking for",
-   "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-new-flagship-mps-1500-hybrid-x-electronic-drum-set-will-turn-some-heads",
-   "source": "MusicRadar",
    "date": "2026-09-16"
   }
  ]

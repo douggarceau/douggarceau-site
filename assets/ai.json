@@ -1,6 +1,14 @@
 {
- "updated": "2026-10-13T12:46Z",
+ "updated": "2026-10-13T16:34Z",
  "items": [
+  {
+   "title": "Save 70% on Looma generative MIDI plugin by Addwave",
+   "link": "https://rekkerd.org/looma-generative-midi-plugin-by-addwave-on-sale/",
+   "source": "Rekkerd",
+   "date": "2026-10-13",
+   "kind": "PRODUCT",
+   "release": false
+  },
   {
    "title": "Diphonic launches Counterpart AI assistant for your DAW",
    "link": "https://rekkerd.org/diphonic-launches-counterpart-ai-assistant-for-your-daw/",
@@ -24,14 +32,6 @@
    "date": "2026-10-08",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "Tencent Music integrated DeepSeek into its streaming service. Now parent company Tencent is among the biggest backers of the AI company\u2019s $12B+ funding round (report)",
-   "link": "https://news.google.com/rss/articles/CBMipwJBVV95cUxQUTVxS1U5ZE42M1pvRlprTXNoR3JTOUpNNFc3bUhKbllmTnVQNFJPbGNLOWo0bUZtVUFpY3B5YnU1U1pJcDZMYklKS3dSYzhBdWNhclkwNlVoV2l1T1F2eXVvdnpwdVlPdmUwV0FDS0R1MWkzZE1OQlM5Rm5vVEJZcWRMTEh6dkx4LV9ldWp1b1FVVDNrUDhjU0xYNGJ6bjN4Sm1tMWQyVVdHdEpyZ2VEV3hKa0JsQkx0MDdrd2hEVThkYjYyUDVwV2VObnprVzRmZFdLMFZycTlMazFTUkxuaEZJUUdOQjdpeGp2eW9BcnU0WVdXQllqd3VJSVk5bjRFWWxmeHVhWld1ZGhLLVJjYnpqRGxhMEdOUWg4NTlhRjhfWmx4ZzlR?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-07",
-   "kind": "PRODUCT",
-   "release": false
   },
   {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
@@ -72,14 +72,6 @@
    "date": "2026-10-13",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "RAYE Blames \u2018AI Bots\u2019 After Presale For Intimate London Show Clocks 1.8 Million Sign-Ups: \u2018This Experience Has Really Opened My\u00a0Eyes\u2019",
-   "link": "https://www.billboard.com/music/pop/raye-royal-albert-hall-ai-bots-scalpers-ticket-sales-1236359638/",
-   "source": "Billboard",
-   "date": "2026-10-13",
-   "kind": "NEWS",
-   "release": true
   },
   {
    "title": "Man who made $8 million in AI streaming fraud scheme given 18-month prison sentence",
@@ -192,17 +184,17 @@
    "date": "2026-10-07",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "Grok Bot to Begin Using Suno for Music Generation, Musk Says",
+   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yZS02d0ItRElTR19PQzNHMVlCemV1Z2tBZlFSWVNxUlBkNkxBaXZSOTdfb09XbmpxUGpFcVNUUE5DSzRibEhjaG9HUjkwNTdDQ1IzNTlkdjJlSm1HdnVMcGZyZldNQTBrc3c?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-10-07",
+   "kind": "NEWS",
+   "release": false
   }
  ],
  "releases": [
-  {
-   "title": "RAYE Blames \u2018AI Bots\u2019 After Presale For Intimate London Show Clocks 1.8 Million Sign-Ups: \u2018This Experience Has Really Opened My\u00a0Eyes\u2019",
-   "link": "https://www.billboard.com/music/pop/raye-royal-albert-hall-ai-bots-scalpers-ticket-sales-1236359638/",
-   "source": "Billboard",
-   "date": "2026-10-13",
-   "kind": "NEWS",
-   "release": true
-  },
   {
    "title": "Diphonic launches Counterpart AI assistant for your DAW",
    "link": "https://rekkerd.org/diphonic-launches-counterpart-ai-assistant-for-your-daw/",
@@ -258,6 +250,14 @@
    "date": "2026-09-21",
    "kind": "NEWS",
    "release": true
+  },
+  {
+   "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-17",
+   "kind": "PRODUCT",
+   "release": true
   }
  ],
  "log": {
@@ -267,11 +267,11 @@
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
-  "Rekkerd rekkerd.org": 2,
+  "Rekkerd rekkerd.org": 3,
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -279,7 +279,7 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 40,
+  "Google News %22AI+music%22": 38,
   "Google News Suno+OR+Udio": 28,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 20,
   "Google News %22AI%22+music+producer+plugin": 0,
