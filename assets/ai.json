@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T16:34Z",
+ "updated": "2026-10-13T20:31Z",
  "items": [
   {
    "title": "Save 70% on Looma generative MIDI plugin by Addwave",
@@ -71,6 +71,22 @@
    "source": "Music Business Worldwide",
    "date": "2026-10-13",
    "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "10 Key Issues Driving the Latin Music Industry Today: AI, Distribution, Touring & More at Latin Music\u00a0Week",
+   "link": "https://www.billboard.com/lists/latin-music-week-2026-key-issues-business-panels/",
+   "source": "Billboard",
+   "date": "2026-10-13",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Summer Walker Lawsuit, DistroKid AI Slop Case, Top Dawg Ruling & More Top Music Law News",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxONUhWNWJrR01UVDhxYU1YUlpfQ2wxMGxSdFdWUFJBRXBsQjZneEEyNmZyMXgxRmtyTFRwSUV3MjdsUHlOWUNxdlJ4Q1JlcUJ3eF9KVTFYMnFBUk9fSW0yT2pTWXhYaFJuUzJQTWJUbkxxME9SbjgtRExnWXVyQjBRNw?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-13",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -176,22 +192,6 @@
    "date": "2026-10-07",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Olivia Rodrigo Will 'Never' Use AI in Her Music: 'Hard Line on That'",
-   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9GZEJEUk1MMzJpbEFiVUs2MFNsTmZQRnluTnZlUzZuSTI4N3E2STZrMWdieWlrNG9FaG1LOGRrT3dwUTRSeHhmZjBPNUM4NWFPVWhhZXBMejdfdHoyLUtvWFVxSl83ZnhSeW9UTGxLZzZKbEVaWGc5S1FpRGR0QQ?oc=5",
-   "source": "Complex",
-   "date": "2026-10-07",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Grok Bot to Begin Using Suno for Music Generation, Musk Says",
-   "link": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9yZS02d0ItRElTR19PQzNHMVlCemV1Z2tBZlFSWVNxUlBkNkxBaXZSOTdfb09XbmpxUGpFcVNUUE5DSzRibEhjaG9HUjkwNTdDQ1IzNTlkdjJlSm1HdnVMcGZyZldNQTBrc3c?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-10-07",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
@@ -271,7 +271,7 @@
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -279,9 +279,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 38,
-  "Google News Suno+OR+Udio": 28,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 20,
+  "Google News %22AI+music%22": 36,
+  "Google News Suno+OR+Udio": 29,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 22,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 1,

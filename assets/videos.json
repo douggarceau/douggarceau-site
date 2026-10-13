@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T16:34Z",
+ "updated": "2026-10-13T20:30Z",
  "items": [
   {
    "id": "7vZrYKcwlj4",
@@ -9,15 +9,15 @@
    "kind": "DEMO"
   },
   {
-   "id": "O_yGzTnQtak",
-   "title": "Mirko DeMaio Interview: The Flower Kings' New Album 'Hope'",
+   "id": "qv8aY2Wa5tU",
+   "title": "Rob Toulson Interview on Drum Talk TV",
    "source": "Drumtalk TV",
    "date": "2026-10-12",
    "kind": "INTERVIEW"
   },
   {
-   "id": "qv8aY2Wa5tU",
-   "title": "Rob Toulson Interview on Drum Talk TV",
+   "id": "O_yGzTnQtak",
+   "title": "Mirkko DeMaio Interview: The Flower Kings' New Album 'Hope'",
    "source": "Drumtalk TV",
    "date": "2026-10-12",
    "kind": "INTERVIEW"
@@ -100,13 +100,6 @@
    "kind": "INTERVIEW"
   },
   {
-   "id": "fVdgo2_A7IE",
-   "title": "THOM TALK: Will Kennedy & Matt Jordan",
-   "source": "Pearl",
-   "date": "2026-07-05",
-   "kind": "INTERVIEW"
-  },
-  {
    "id": "Wg4h0ZE54X8",
    "title": "Justin Brown Soundcheck | TAMA Starclassic Bubinga",
    "source": "Tama",
@@ -122,19 +115,18 @@
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
   "Tama": "UCTSkpJG7QWeungk9q6Je2_g UCTSkpJG7QWeungk9q6Je2_g TAMA Drums Official (3)",
-  "Pearl": "UCmGi7DMBXl7aTOG1HDbRWoQ UCmGi7DMBXl7aTOG1HDbRWoQ Pearl Drums (1)",
+  "Pearl": "UCmGi7DMBXl7aTOG1HDbRWoQ UCmGi7DMBXl7aTOG1HDbRWoQ Pearl Drums (0)",
   "Gretsch": "UCCi7ihBj53YSjNI9lY7nXtA UCCi7ihBj53YSjNI9lY7nXtA gretschdrumsusa (2)",
   "Sabian skip UCJbu6KNGcKK5KsVAxLoh2xA": "sabiancymbals",
   "Sabian skip UCNmSiKDIL1GKy71hbnSMUvQ": "SabianOfficial",
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
   "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
-  "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
   "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
