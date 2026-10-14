@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T20:31Z",
+ "updated": "2026-10-14T00:58Z",
  "items": [
   {
    "title": "Save 70% on Looma generative MIDI plugin by Addwave",
@@ -66,17 +66,17 @@
    "release": true
   },
   {
-   "title": "Deezer to let users block AI-generated music from search results",
-   "link": "https://www.musicbusinessworldwide.com/deezer-to-let-users-block-ai-generated-music-from-search-results/",
+   "title": "Raye says ticket scalpers used AI bots to create \u2018hundreds of thousands of fake registrations\u2019 as 1.8M sign up for 5,000 Royal Albert Hall seats",
+   "link": "https://www.musicbusinessworldwide.com/raye-says-scalpers-used-ai-bots-to-create-hundreds-of-thousands-of-fake-registrations-as-1-8m-sign-up-for-5000-royal-albert-hall-seats/",
    "source": "Music Business Worldwide",
    "date": "2026-10-13",
-   "kind": "NEWS",
+   "kind": "PROBLEM",
    "release": false
   },
   {
-   "title": "10 Key Issues Driving the Latin Music Industry Today: AI, Distribution, Touring & More at Latin Music\u00a0Week",
-   "link": "https://www.billboard.com/lists/latin-music-week-2026-key-issues-business-panels/",
-   "source": "Billboard",
+   "title": "Deezer to let users block AI-generated music from search results",
+   "link": "https://www.musicbusinessworldwide.com/deezer-to-let-users-block-ai-generated-music-from-search-results/",
+   "source": "Music Business Worldwide",
    "date": "2026-10-13",
    "kind": "NEWS",
    "release": false
@@ -101,14 +101,6 @@
    "title": "Apple hires employees and licenses tech from AI podcast startup Huxe",
    "link": "https://musically.com/2026/10/12/apple-hires-employees-and-licenses-tech-from-ai-podcast-startup-huxe/",
    "source": "Music Ally",
-   "date": "2026-10-12",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Elon Musk creates his own cringe name for AI music after it was branded \u2018slopcore\u2019",
-   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQTzFnMDUtcm5mYTcxTmZEUTVPR0JnWFdMZkFsY2VCaGtEczNCUjJqM1Q0R3pGX1VVNnpBYTVSQlpqbkdrbnFfQm9MZHZ5eGhuektGNy1aaFV5WXRGUDI0d19DM3BkalZueWlubnJNVEhUYmxnNmZlV0JiV3NDaVZYLTB5V2h2QQ?oc=5",
-   "source": "The Independent",
    "date": "2026-10-12",
    "kind": "NEWS",
    "release": false
@@ -157,6 +149,14 @@
    "title": "New Report Finds a 'Supermajority' of Canadians Dislike AI-Generated Music",
    "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE43TU11WUk5NmVlRGV6YWdRNkRQZko5VFBvOTk4WlVhNjdQcmRaRnZPX0p5a3BSRWgzT0NKMkQzT0IyVzZ6eE01NUtuODNyOElHanBLcm5OemhSb1RXOUs3Vng5LXVfd3NSdzZxcm8yRUtBaHg4?oc=5",
    "source": "Billboard",
+   "date": "2026-10-08",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Elon Musk says Grok Bot will use Suno\u2019s AI music models, alongside Anthropic\u2019s Claude and Midjourney",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMHIzVkZ5SmdSN1BOR19jc1JNNkxUR2Q2bXptQlJWU3RHZzBDZ2F6cVRNN3Zablc3VE5yOXRPQjl4S2lrS19Ya0xVeWdnME1nUEdjME9aSlN6R0VNLVpaU1gya2RUQUo3S09JVUxyaU5Cc193QzAySWZMelBFUW5hVkpsZ0lsT2Q0SC1YSlEyT2g2RmVrS192d2xvdmtFOXNzU3NndURSVU1TOVRVWUVuSDF6R2RCWXB1aE5fMFFkWFlKa1FIWXF6TllQa003RV9FOUpZ?oc=5",
+   "source": "Music Business Worldwide",
    "date": "2026-10-08",
    "kind": "NEWS",
    "release": false
@@ -244,14 +244,6 @@
    "release": true
   },
   {
-   "title": "UMG and Sony Music file new Suno complaint over v6 models",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaHFpY1hVMTVHLWVrdDJPbWU3TXpycGpLemVERjNDYmc3X05NQXVJc2hVOU8xRUVQVTc2b3NfcUZsSnlVYVVvNnN4VTVHY1pDb2VNTEhidW9HT0JXUXFBWUtJN0FPVWN0ck45XzEwLUVuWDhmbEoyRW9wVTV2eDhxX0xQYlpvbHphT3VSVHVPbXZqTDR6enc?oc=5",
-   "source": "Music Ally",
-   "date": "2026-09-21",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
    "source": "The Verge",
@@ -262,7 +254,7 @@
  ],
  "log": {
   "MusicRadar www.musicradar.com": 0,
-  "Music Business Worldwide www.musicbusinessworldwide.com": 1,
+  "Music Business Worldwide www.musicbusinessworldwide.com": 2,
   "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 403: Forbidden",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
@@ -271,7 +263,7 @@
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -279,9 +271,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 36,
-  "Google News Suno+OR+Udio": 29,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 22,
+  "Google News %22AI+music%22": 35,
+  "Google News Suno+OR+Udio": 30,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 21,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 1,
