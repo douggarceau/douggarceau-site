@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T16:31Z",
+ "updated": "2026-10-15T20:27Z",
  "items": [
   {
    "id": "WfgzcTFOqO8",
@@ -7,6 +7,13 @@
    "source": "Meinl",
    "date": "2026-10-15",
    "kind": "DEMO"
+  },
+  {
+   "id": "LVpj3__DSEU",
+   "title": "Yes \"Ariadne\" Video, Jon & Band Geeks' Europe Tour Ends & More - Yesshift News Desk Edition 10/15/26",
+   "source": "Drumtalk TV",
+   "date": "2026-10-15",
+   "kind": "TALK"
   },
   {
    "id": "O_yGzTnQtak",
@@ -20,13 +27,6 @@
    "title": "Jon Berger Interview",
    "source": "Drumtalk TV",
    "date": "2026-10-15",
-   "kind": "INTERVIEW"
-  },
-  {
-   "id": "qv8aY2Wa5tU",
-   "title": "Rob Toulson Interview on Drum Talk TV",
-   "source": "Drumtalk TV",
-   "date": "2026-10-14",
    "kind": "INTERVIEW"
   },
   {
@@ -120,10 +120,10 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM": "search UCvp7nLHT_oIKUX5t9YSa2oA NAMM Foundation (0)",
   "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
-  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer",
-  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia"
+  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
+  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
  }
 }
