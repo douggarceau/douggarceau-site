@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-14T20:27Z",
+ "updated": "2026-10-15T08:37Z",
  "items": [
+  {
+   "id": "O_yGzTnQtak",
+   "title": "Mirko De Maio Interview: The Flower Kings' New Album 'Hope'",
+   "source": "Drumtalk TV",
+   "date": "2026-10-15",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "3wd36z2Oyig",
+   "title": "Jon Berger Interview",
+   "source": "Drumtalk TV",
+   "date": "2026-10-15",
+   "kind": "INTERVIEW"
+  },
   {
    "id": "qv8aY2Wa5tU",
    "title": "Rob Toulson Interview on Drum Talk TV",
@@ -14,20 +28,6 @@
    "source": "Meinl",
    "date": "2026-10-13",
    "kind": "DEMO"
-  },
-  {
-   "id": "O_yGzTnQtak",
-   "title": "Mirko De Maio Interview: The Flower Kings' New Album 'Hope'",
-   "source": "Drumtalk TV",
-   "date": "2026-10-12",
-   "kind": "INTERVIEW"
-  },
-  {
-   "id": "iSpMM7eLqxc",
-   "title": "Julie Frost Interview: Tribute to Keith Moon Benefit Concert",
-   "source": "Drumtalk TV",
-   "date": "2026-10-11",
-   "kind": "INTERVIEW"
   },
   {
    "id": "damH8X-Mlg0",
@@ -115,6 +115,7 @@
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
   "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
+  "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
