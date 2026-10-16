@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T00:56Z",
+ "updated": "2026-10-16T04:31Z",
  "items": [
   {
    "title": "YouTube Music to label AI-generated tracks using its own system",
@@ -58,20 +58,20 @@
    "release": true
   },
   {
+   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
+   "source": "MusicTech",
+   "date": "2026-09-23",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Guilt-free AI? What \u201cethical AI\u201d tools mean for musicians and producers",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMWVlTlZRWUpySU1YMmhMbmk1QXpMeV91cDlmNWtCTUJpX3pJMVJ2d3FXTU5EcWpEeVBYUmxBLWg1aWVFODNERlVEbThYS241YUdZWUxQWm9ZVjc0N1ljbnJiTHZQWVY2d01BM3FGelpmZ2NPbVc3UUNORnZfN1lEYldyc1JWVXFWMm1nNThBeDVzcE5kYXA3QzZPa0oyTzB4eWpZX000TWNnNkNzT3VYa2RwZFZuWE0?oc=5",
    "source": "MusicRadar",
    "date": "2026-09-19",
    "kind": "PRODUCT",
    "release": false
-  },
-  {
-   "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
-   "source": "The Verge",
-   "date": "2026-09-17",
-   "kind": "PRODUCT",
-   "release": true
   },
   {
    "title": "Suno-made track \u2018The Adult I Dreamed Of\u2019 is a hit in South Korea",
@@ -170,14 +170,6 @@
    "release": false
   },
   {
-   "title": "'Please, no library or AI music. Love your game, love your handiwork' \u2014 Control Resonant composer suggests studios should appreciate music more if they 'value and respect",
-   "link": "https://news.google.com/rss/articles/CBMixAJBVV95cUxPeWpQWjZrbFBTaUpfUGY4cXFlak5mS2ZISVhqdGJfS0IwN20tSy1PdVNKdTd1NmRfaEdjaExsalBKR0pxaTc2VjFPZEh1TW5wSklmcFRwN1VJaDk4YUNmUDJVcUd5Y2VVMmZwMjkxUzVxdkZHeVNFXzZEaHo5cmZaNEJBX25xQi1oZVktLUNEUHFhUUJEYXpxWnlKQnlCRGhybzdUNWZyV2VCaTNDdjYxMk5rSUV3dTkxdDdkai1tcm5obXpnZDN6VjdXQ2lGS3VfNDZKcFhrLUJPOHlPSzJobjlZNGxBbndhM2NpUWRNYTJGNXdVMmlxUGlQMktZeTMxT2RwSzlubkhmRW12UWVHMnVRWWphU0JGemNRSHRFTWw3akZmN3RvVlhEYXNNd2wxbWl4OG50dzRXVTBMWURsTG5ZQlM?oc=5",
-   "source": "TechRadar",
-   "date": "2026-10-09",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "New Suno live music division to help make it the \u201cfirst creative entertainment platform\u201d",
    "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeXpYem9OQ2p4MTl3eGdXN01QS2xQWkd2d1F6emVrUUl0STBQbWkwMk5tSzdnNU14UVRCN21KZVZtTGk3S1VsZkhGbnlxN3BqSnNOZ0NhTzRDTGhEUVNfZkNnN0tzOXM2b3ZBWV9CTWxPcFNvUDRmTktsQTVWZExiUmJsSGtETHN3TDI5TG5oVmFtRFQ3b29ZYlNCOGhQVDRtUC1ESF9UZm9JRUxocUZDUHZDT2xGTkZSX3JWeg?oc=5",
    "source": "Music Ally",
@@ -191,6 +183,14 @@
    "source": "Music Business Worldwide",
    "date": "2026-10-09",
    "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "The Most Powerful Man in Music Isn\u2019t Afraid of AI",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMzJYVk5SbjdpaTJHX0FzVWd3Rm9GTTRJUHcyeXcxdmZ5TzlDODhkbnFjaEVWeUJLSUp5UEl0Z1I3QXRjejJ3Nml4TUFRcC10aGswNWxiSTZvNmRzYmV5bnZnV1pPM3ZNZ3NyVHo5N3RXQXBnLVM5NHFyMTBEVnRwN1pGSUljTlltM25BdkVGbEhxZFZvUGs2Z0drT3hyQXJqTGF1S2ItQnVwV2tBTTZCbDgzUHBJdTBXRnJUWmI3RQ?oc=5",
+   "source": "The Hollywood Reporter",
+   "date": "2026-10-08",
+   "kind": "NEWS",
    "release": false
   }
  ],
@@ -252,10 +252,10 @@
    "release": true
   },
   {
-   "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
-   "source": "The Verge",
-   "date": "2026-09-17",
+   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
+   "source": "MusicTech",
+   "date": "2026-09-23",
    "kind": "PRODUCT",
    "release": true
   }
@@ -278,14 +278,14 @@
   "TechCrunch techcrunch.com": 2,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 0,
-  "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 34,
-  "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
+  "Google News %22AI%22+drummer": 0,
+  "Google News %22AI+music%22": 33,
+  "Google News Suno+OR+Udio": 27,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 1,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
