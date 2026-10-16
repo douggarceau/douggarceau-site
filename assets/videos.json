@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-16T16:29Z",
+ "updated": "2026-10-16T20:28Z",
  "items": [
+  {
+   "id": "stjaiJr2fhM",
+   "title": "Drumming Injury Talk - October 16, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-10-16",
+   "kind": "TALK"
+  },
+  {
+   "id": "dguAYRJK-_4",
+   "title": "Drum Talk TV News Desk Report - October 16, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-10-16",
+   "kind": "TALK"
+  },
   {
    "id": "LVpj3__DSEU",
    "title": "Yes \"Ariadne\" Video, Jon & Band Geeks' Europe Tour Ends & More - Yesshift News Desk Edition 10/15/26",
@@ -14,20 +28,6 @@
    "source": "Meinl",
    "date": "2026-10-15",
    "kind": "DEMO"
-  },
-  {
-   "id": "O_yGzTnQtak",
-   "title": "Mirko De Maio Interview: The Flower Kings' New Album 'Hope'",
-   "source": "Drumtalk TV",
-   "date": "2026-10-15",
-   "kind": "INTERVIEW"
-  },
-  {
-   "id": "3wd36z2Oyig",
-   "title": "Jon Berger Interview",
-   "source": "Drumtalk TV",
-   "date": "2026-10-15",
-   "kind": "INTERVIEW"
   },
   {
    "id": "7vZrYKcwlj4",
@@ -115,13 +115,12 @@
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
   "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
-  "Sabian skip UCNwqYSN33acjHqMszer6q-Q": "Marty French3rd",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UC_j46UBomarVtfl-EXHuiJQ namm (0)",
-  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
+  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM skip UCbZy00QuaZ0uEv_4U8wLR0g": "N.A.M.M.",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"

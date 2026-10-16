@@ -1,6 +1,14 @@
 {
- "updated": "2026-10-16T16:30Z",
+ "updated": "2026-10-16T20:28Z",
  "items": [
+  {
+   "title": "Universal Music and Sony Want to Know How Many AI-Generated Songs DistroKid Releases",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUGRSVVFOa2RWUXNMRGQwTjlkbVFHS3kxNTd5bjF1RTBWejVPRnZOVzU2MHdrR0xtdlhUT0tnZTVfN3JSV1JNTFg0aWswV3FTMnBsUmRXQnFGamVUU0M5TXZCSF83emZwWXpTcWlWekJ4cXRWVGo0STlITUhnTjBRWlZNdlZOWmhUeHpYMjJKMVZ4X0NNazdqYkdnbVltVTd3cG9ESGd5UVJMNFN3N1V5Xw?oc=5",
+   "source": "The Hollywood Reporter",
+   "date": "2026-10-16",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "YouTube Music to label AI-generated tracks using its own system",
    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMUtGNlphNGROYWdUb3dPTmREV0ZJaFU3VlJmYjdxb3FlRFFhMk9qMzJiZERHUGhhTnl5eHE5eW8ybnd4YWgtMHFVdGtEMU1OVUJBR1F4dWdYSm1XOGdUcWZSMTNZbk1PeUJwcGRBcmhWZm50V0lJaW16ZjVoSTJrc0VDRzZPa1VxNFl6NjFfeTVUWkIxWk8wR3pJTlg1dw?oc=5",
@@ -8,14 +16,6 @@
    "date": "2026-10-15",
    "kind": "PRODUCT",
    "release": false
-  },
-  {
-   "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-   "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-   "source": "TechCrunch",
-   "date": "2026-10-14",
-   "kind": "PRODUCT",
-   "release": true
   },
   {
    "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
@@ -82,14 +82,6 @@
    "release": false
   },
   {
-   "title": "UMG & Sony Demand DistroKid Tell How Many AI Songs It Uploads From Suno: \u2018Staggering Scale\u2019",
-   "link": "https://www.billboard.com/pro/umg-sony-demand-distrokid-admit-suno-song-uploads/",
-   "source": "Billboard",
-   "date": "2026-10-16",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "'Avatar' Composer and More Speak Out About AI at WSA Film Music Days",
    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZnZtSGs4cWhKRVNKZ0Q1UTUyTjJJbjV1NTFMSWhFbW5DZnZyUXBaVkd0MXVLM3J5ay1sNjMwVXNkUUpBYXNVbElPbTNfRTN1Xzgta284cFpUc20yZURLMkVMZE1FR2VjMTcwcmpkdkFKT2pKSjVSY0xCbnFuMmF5TGNKenZrYUJGX1o3WFA5TExRVjF4YXc?oc=5",
    "source": "Variety",
@@ -106,20 +98,20 @@
    "release": false
   },
   {
-   "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tWFdrdkRtODRib3N0eW1ucFlieC1yVU9DS3hDSXBIbHllVFhwalZwTE5HR1BORzZPNG9SMDN0UlZ4aWxSRGJkWFlGamJFdHh5NmtybF9YRjE5MlJLMU96ZmkwM3p2RS16NTk4UUtxdkxBRk83UGpnQ1dnRkRXTlk?oc=5",
-   "source": "Ars Technica",
-   "date": "2026-10-15",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "YouTube Music and Deezer add new AI music controls",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
    "source": "Mashable",
    "date": "2026-10-15",
    "kind": "NEWS",
    "release": true
+  },
+  {
+   "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tWFdrdkRtODRib3N0eW1ucFlieC1yVU9DS3hDSXBIbHllVFhwalZwTE5HR1BORzZPNG9SMDN0UlZ4aWxSRGJkWFlGamJFdHh5NmtybF9YRjE5MlJLMU96ZmkwM3p2RS16NTk4UUtxdkxBRk83UGpnQ1dnRkRXTlk?oc=5",
+   "source": "Ars Technica",
+   "date": "2026-10-15",
+   "kind": "NEWS",
+   "release": false
   },
   {
    "title": "A$AP Rocky Has a Very Diplomatic Stance on AI in Music: \u2018Who Am I to Say What\u2019s Standard\u2019",
@@ -138,17 +130,17 @@
    "release": false
   },
   {
-   "title": "Deezer Will Let Listeners Completely Filter Out AI Music",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNWZlRmk3c0lOMWhicThZNmQzNXpIMzU2czR6UjV2MTNnb2hLekRkTDB6RlNpNnFmNHBsbGRUWENtS19QQzl4czU2YlRNUkhESkdzSnVFRjJrZGl0aXFJS05BbXR6YURTV3ZEOERoNkJuSmU3ZUhWNFRkSG9FU1kyMkkzT0VwczdYcm5aRThqcFR3ZlI4?oc=5",
-   "source": "Engadget",
+   "title": "Deezer will soon let you filter out AI-generated music",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPdTQ5dnFyRkpEV1p6eTVac0ZzWG5Tc09vOEg3amVLSVlXbnpBTTdKNDIzdWJ4RmVTbW5UU3RGcm8ySjlwdmVhdGswS3lDSHNFTFZjOFdOUXNfR3Q0SVN1OXdNTWZjMEpTWFpvcjhzT2VTdkFEMWFXeXd4bnIyM1YzLVF1d2pBc1JSQ3hiLXVpOGhMZE0?oc=5",
+   "source": "TechCrunch",
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": false
   },
   {
-   "title": "YouTube Music Adds Labels for Tracks Made 'Primarily' With AI",
-   "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9oY2R0RWtjNFpacUdLVE9QRm1PY1FYdW1TT1lLcnVCMVpmdVFnMlRMWkIyd3RyRzhVOVVRUU1CWmxQYjltUThRbDF5OTRkZER1VDM2Wm1SSi1QQkhwM3N3Mzh6VXdjck43dzJ2RUk1dDF6ZzJHOGlR?oc=5",
-   "source": "Digital Music News",
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": true
@@ -192,9 +184,25 @@
    "date": "2026-10-09",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "The Most Powerful Man in Music Isn\u2019t Afraid of AI",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMzJYVk5SbjdpaTJHX0FzVWd3Rm9GTTRJUHcyeXcxdmZ5TzlDODhkbnFjaEVWeUJLSUp5UEl0Z1I3QXRjejJ3Nml4TUFRcC10aGswNWxiSTZvNmRzYmV5bnZnV1pPM3ZNZ3NyVHo5N3RXQXBnLVM5NHFyMTBEVnRwN1pGSUljTlltM25BdkVGbEhxZFZvUGs2Z0drT3hyQXJqTGF1S2ItQnVwV2tBTTZCbDgzUHBJdTBXRnJUWmI3RQ?oc=5",
+   "source": "The Hollywood Reporter",
+   "date": "2026-10-08",
+   "kind": "NEWS",
+   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Universal Music and Sony Want to Know How Many AI-Generated Songs DistroKid Releases",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUGRSVVFOa2RWUXNMRGQwTjlkbVFHS3kxNTd5bjF1RTBWejVPRnZOVzU2MHdrR0xtdlhUT0tnZTVfN3JSV1JNTFg0aWswV3FTMnBsUmRXQnFGamVUU0M5TXZCSF83emZwWXpTcWlWekJ4cXRWVGo0STlITUhnTjBRWlZNdlZOWmhUeHpYMjJKMVZ4X0NNazdqYkdnbVltVTd3cG9ESGd5UVJMNFN3N1V5Xw?oc=5",
+   "source": "The Hollywood Reporter",
+   "date": "2026-10-16",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "YouTube Music and Deezer add new AI music controls",
    "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
@@ -204,19 +212,19 @@
    "release": true
   },
   {
-   "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-   "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
-   "source": "TechCrunch",
-   "date": "2026-10-14",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
    "source": "EDM.com",
    "date": "2026-10-14",
    "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-14",
+   "kind": "NEWS",
    "release": true
   },
   {
@@ -263,17 +271,17 @@
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
-  "TechCrunch techcrunch.com": 1,
+  "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 0,
-  "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 33,
+  "Google News %22AI%22+drums": 1,
+  "Google News %22AI%22+drummer": 1,
+  "Google News %22AI+music%22": 35,
   "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 14,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 1,
