@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T04:31Z",
+ "updated": "2026-10-16T08:36Z",
  "items": [
   {
    "title": "YouTube Music to label AI-generated tracks using its own system",
@@ -44,7 +44,7 @@
   {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
-   "source": "Bloomberg.com",
+   "source": "Bloomberg",
    "date": "2026-10-01",
    "kind": "PRODUCT",
    "release": true
@@ -58,19 +58,27 @@
    "release": true
   },
   {
-   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
-   "source": "MusicTech",
-   "date": "2026-09-23",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Guilt-free AI? What \u201cethical AI\u201d tools mean for musicians and producers",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMWVlTlZRWUpySU1YMmhMbmk1QXpMeV91cDlmNWtCTUJpX3pJMVJ2d3FXTU5EcWpEeVBYUmxBLWg1aWVFODNERlVEbThYS241YUdZWUxQWm9ZVjc0N1ljbnJiTHZQWVY2d01BM3FGelpmZ2NPbVc3UUNORnZfN1lEYldyc1JWVXFWMm1nNThBeDVzcE5kYXA3QzZPa0oyTzB4eWpZX000TWNnNkNzT3VYa2RwZFZuWE0?oc=5",
    "source": "MusicRadar",
    "date": "2026-09-19",
    "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-17",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "'Avatar' Composer and More Speak Out About AI at WSA Film Music Days",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZnZtSGs4cWhKRVNKZ0Q1UTUyTjJJbjV1NTFMSWhFbW5DZnZyUXBaVkd0MXVLM3J5ay1sNjMwVXNkUUpBYXNVbElPbTNfRTN1Xzgta284cFpUc20yZURLMkVMZE1FR2VjMTcwcmpkdkFKT2pKSjVSY0xCbnFuMmF5TGNKenZrYUJGX1o3WFA5TExRVjF4YXc?oc=5",
+   "source": "Variety",
+   "date": "2026-10-16",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -98,14 +106,6 @@
    "release": false
   },
   {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-15",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "A$AP Rocky Has a Very Diplomatic Stance on AI in Music: \u2018Who Am I to Say What\u2019s Standard\u2019",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQjZURnhGRXYtVnNNTEZqTkJvNGR5eGF5NlVmZ0IwQmw0MXJwV0pzZG1RRzV1YXRvbk5jY0NFZlI4dUlDVGNPSGhlemI5aDV3M3RtUnVxczJ6QVFPTWUtZkg4QVd6cHVSS2h5UW1GWWg1ZDRqTUIwMS1wZkgyMHpuZlpya2VwWGVDZi0w?oc=5",
    "source": "Billboard",
@@ -128,6 +128,14 @@
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "YouTube Music and Deezer add new AI music controls",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-14",
+   "kind": "NEWS",
+   "release": true
   },
   {
    "title": "YouTube Music Adds Labels for Tracks Made 'Primarily' With AI",
@@ -184,25 +192,9 @@
    "date": "2026-10-09",
    "kind": "PROBLEM",
    "release": false
-  },
-  {
-   "title": "The Most Powerful Man in Music Isn\u2019t Afraid of AI",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMzJYVk5SbjdpaTJHX0FzVWd3Rm9GTTRJUHcyeXcxdmZ5TzlDODhkbnFjaEVWeUJLSUp5UEl0Z1I3QXRjejJ3Nml4TUFRcC10aGswNWxiSTZvNmRzYmV5bnZnV1pPM3ZNZ3NyVHo5N3RXQXBnLVM5NHFyMTBEVnRwN1pGSUljTlltM25BdkVGbEhxZFZvUGs2Z0drT3hyQXJqTGF1S2ItQnVwV2tBTTZCbDgzUHBJdTBXRnJUWmI3RQ?oc=5",
-   "source": "The Hollywood Reporter",
-   "date": "2026-10-08",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
-  {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-15",
-   "kind": "NEWS",
-   "release": true
-  },
   {
    "title": "Today in Music AI news: Raye gets botted; UMG senior AI role; Character\u2022AI bankruptcy; Rocketship launches",
    "link": "https://musically.com/2026/10/14/today-in-music-ai-news-raye-gets-botted-umg-senior-ai-role-characterai-bankruptcy-rocketship-launches/",
@@ -228,6 +220,14 @@
    "release": true
   },
   {
+   "title": "YouTube Music and Deezer add new AI music controls",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-14",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
    "title": "\u201cWe\u2019re in the entertainment business. If someone uses Suno to write a lyric, it\u2019s not a high crime or misdemeanour\u201d: Joe Bonamassa has sympathy for up-and-coming artists ",
    "link": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxObUlITDNxTEQydllOTzR3S0Y4YlRsblVsUXoybkJ3VWt5VTUzdjdLQjhGdGY4VFN6Z2ZEZzNLZGtyVlVzdVpZZUtXOGJTOFVOMmZJUTgxOXFIeUV4eDR4Nkh4UWF4eEhzeG9GM1dFTzV6R0lHTXh5cWdQdVd6M0VOTUcwQ0VuRWhXTnlBXzAxSDd2cHZzbW5zVXJmUnRwSXRHVGI5c3hZcmoxUXFDUDY3d1ZodklESmRYb0Q4VlpRZ1JsTlZ6Vzc0ZThpV0hYdVFQdF9IdXdEZWtsUTZVcnFFRUVldXg5S3hSSFd4ZE1kWXZiRGFwNnh1QzVmVDdONy1oNG92Q2o0c3JyeGlTdjd5T1BiclQ2OUo3NjFDc0xvYkNfbTlVTmtBdXhnZWRYQWQwNldMY0VwN2oxMmxzSmRSck51WjNGYm44Q1c2UmVNdV9hQQ?oc=5",
    "source": "MusicRadar",
@@ -238,7 +238,7 @@
   {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
-   "source": "Bloomberg.com",
+   "source": "Bloomberg",
    "date": "2026-10-01",
    "kind": "PRODUCT",
    "release": true
@@ -252,10 +252,10 @@
    "release": true
   },
   {
-   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
-   "source": "MusicTech",
-   "date": "2026-09-23",
+   "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
+   "source": "The Verge",
+   "date": "2026-09-17",
    "kind": "PRODUCT",
    "release": true
   }
@@ -280,8 +280,8 @@
   "Google News %22AI%22+drums": 0,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 33,
-  "Google News Suno+OR+Udio": 27,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
+  "Google News Suno+OR+Udio": 26,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 1,

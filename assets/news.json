@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T04:31Z",
+ "updated": "2026-10-16T08:35Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 62,
  "items": [
+  {
+   "title": "Give The Drummer Some: Roland announce they\u2019re updating their TD-07 series",
+   "link": "https://www.musicradar.com/drums/electronic-drums/roland-updates-its-best-selling-td-07-electronic-drum-kit-series",
+   "source": "MusicRadar",
+   "date": "2026-10-16"
+  },
   {
    "title": "MHADLY ONE: Does This TINY Device Really Work?",
    "link": "https://drummersreview.com/news/mhadly-one-does-this-tiny-device-really-work/",
@@ -252,12 +258,6 @@
    "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-mps-350-e-drum-set-review",
    "source": "MusicRadar",
    "date": "2026-09-18"
-  },
-  {
-   "title": "WOODIES Drumsticks Review",
-   "link": "https://sickdrummermagazine.com/s1-news/c82-product-reviews/woodies-drumsticks-review-why-the-5a-long-won-me-over/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-09-17"
   }
  ]
 }
