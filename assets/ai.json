@@ -1,9 +1,9 @@
 {
- "updated": "2026-10-16T12:40Z",
+ "updated": "2026-10-16T16:30Z",
  "items": [
   {
    "title": "YouTube Music to label AI-generated tracks using its own system",
-   "link": "https://musically.com/2026/10/15/youtube-music-to-label-ai-generated-tracks-using-its-own-system/",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNMUtGNlphNGROYWdUb3dPTmREV0ZJaFU3VlJmYjdxb3FlRFFhMk9qMzJiZERHUGhhTnl5eHE5eW8ybnd4YWgtMHFVdGtEMU1OVUJBR1F4dWdYSm1XOGdUcWZSMTNZbk1PeUJwcGRBcmhWZm50V0lJaW16ZjVoSTJrc0VDRzZPa1VxNFl6NjFfeTVUWkIxWk8wR3pJTlg1dw?oc=5",
    "source": "Music Ally",
    "date": "2026-10-15",
    "kind": "PRODUCT",
@@ -50,20 +50,20 @@
    "release": true
   },
   {
+   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
+   "source": "MusicTech",
+   "date": "2026-09-23",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Guilt-free AI? What \u201cethical AI\u201d tools mean for musicians and producers",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOMWVlTlZRWUpySU1YMmhMbmk1QXpMeV91cDlmNWtCTUJpX3pJMVJ2d3FXTU5EcWpEeVBYUmxBLWg1aWVFODNERlVEbThYS241YUdZWUxQWm9ZVjc0N1ljbnJiTHZQWVY2d01BM3FGelpmZ2NPbVc3UUNORnZfN1lEYldyc1JWVXFWMm1nNThBeDVzcE5kYXA3QzZPa0oyTzB4eWpZX000TWNnNkNzT3VYa2RwZFZuWE0?oc=5",
    "source": "MusicRadar",
    "date": "2026-09-19",
    "kind": "PRODUCT",
    "release": false
-  },
-  {
-   "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
-   "source": "The Verge",
-   "date": "2026-09-17",
-   "kind": "PRODUCT",
-   "release": true
   },
   {
    "title": "Publishing body ICMP blasts potential AI rules in Australia",
@@ -77,6 +77,14 @@
    "title": "Duke Sanford study explores AI-music encounters on Spotify",
    "link": "https://musically.com/2026/10/16/duke-sanford-study-explores-ai-music-encounters-on-spotify/",
    "source": "Music Ally",
+   "date": "2026-10-16",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "UMG & Sony Demand DistroKid Tell How Many AI Songs It Uploads From Suno: \u2018Staggering Scale\u2019",
+   "link": "https://www.billboard.com/pro/umg-sony-demand-distrokid-admit-suno-song-uploads/",
+   "source": "Billboard",
    "date": "2026-10-16",
    "kind": "NEWS",
    "release": false
@@ -106,6 +114,14 @@
    "release": false
   },
   {
+   "title": "YouTube Music and Deezer add new AI music controls",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-15",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
    "title": "A$AP Rocky Has a Very Diplomatic Stance on AI in Music: \u2018Who Am I to Say What\u2019s Standard\u2019",
    "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQjZURnhGRXYtVnNNTEZqTkJvNGR5eGF5NlVmZ0IwQmw0MXJwV0pzZG1RRzV1YXRvbk5jY0NFZlI4dUlDVGNPSGhlemI5aDV3M3RtUnVxczJ6QVFPTWUtZkg4QVd6cHVSS2h5UW1GWWg1ZDRqTUIwMS1wZkgyMHpuZlpya2VwWGVDZi0w?oc=5",
    "source": "Billboard",
@@ -122,20 +138,12 @@
    "release": false
   },
   {
-   "title": "Deezer will soon let you filter out AI-generated music",
-   "link": "https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/",
-   "source": "TechCrunch",
+   "title": "Deezer Will Let Listeners Completely Filter Out AI Music",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNWZlRmk3c0lOMWhicThZNmQzNXpIMzU2czR6UjV2MTNnb2hLekRkTDB6RlNpNnFmNHBsbGRUWENtS19QQzl4czU2YlRNUkhESkdzSnVFRjJrZGl0aXFJS05BbXR6YURTV3ZEOERoNkJuSmU3ZUhWNFRkSG9FU1kyMkkzT0VwczdYcm5aRThqcFR3ZlI4?oc=5",
+   "source": "Engadget",
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-14",
-   "kind": "NEWS",
-   "release": true
   },
   {
    "title": "YouTube Music Adds Labels for Tracks Made 'Primarily' With AI",
@@ -162,11 +170,11 @@
    "release": false
   },
   {
-   "title": "Man who made $8 million in AI streaming fraud scheme given 18-month prison sentence",
-   "link": "https://musictech.com/news/industry/man-who-made-8-million-in-ai-streaming-fraud-scheme-given-18-month-prison-sentence/",
-   "source": "MusicTech",
-   "date": "2026-10-12",
-   "kind": "PROBLEM",
+   "title": "Man sent to prison for using an army of bots to boost his AI music streams \u2014 he made $8m from the scheme and had nearly 10 times the plays of Taylor Swift",
+   "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOWFZxVEpKWkNWUmQ2emgtblNlU2lDeURhS0FqS2QzNHhNNjg5SlN1c2wwYzBZSnhXRXhFeU9JQzJJUS1lSWttV0w3U0prbnc5bC1Wa1Fub2EtdWUzS1JMR2V6VFJJT3o4blNaNmc4eGd5OUNaWUVlR0N5cHNfUDQxaHVoQzFoSi1Yck5pV0I3Z1pvWk83akZFSzVpMEFKZ2tQN1RLTUZjWFdGMk9yOWNkdW5ic2d6Z1BjS3dKU0lRblhRUXJRaXd6ZEVWSm1UR1V4eU42MWxmb2tTSThDR05mN1l4X2NWcnFFbk5iZGxtU3pyVkVqUHZPdTY1X0JEYnlTM3VvcktWcW1lNThGMnFMY09QWmIwZw?oc=5",
+   "source": "TechRadar",
+   "date": "2026-10-10",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -184,17 +192,17 @@
    "date": "2026-10-09",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "The Most Powerful Man in Music Isn\u2019t Afraid of AI",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMzJYVk5SbjdpaTJHX0FzVWd3Rm9GTTRJUHcyeXcxdmZ5TzlDODhkbnFjaEVWeUJLSUp5UEl0Z1I3QXRjejJ3Nml4TUFRcC10aGswNWxiSTZvNmRzYmV5bnZnV1pPM3ZNZ3NyVHo5N3RXQXBnLVM5NHFyMTBEVnRwN1pGSUljTlltM25BdkVGbEhxZFZvUGs2Z0drT3hyQXJqTGF1S2ItQnVwV2tBTTZCbDgzUHBJdTBXRnJUWmI3RQ?oc=5",
-   "source": "The Hollywood Reporter",
-   "date": "2026-10-08",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "YouTube Music and Deezer add new AI music controls",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-15",
+   "kind": "NEWS",
+   "release": true
+  },
   {
    "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
    "link": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/",
@@ -209,14 +217,6 @@
    "source": "EDM.com",
    "date": "2026-10-14",
    "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-14",
-   "kind": "NEWS",
    "release": true
   },
   {
@@ -244,10 +244,10 @@
    "release": true
   },
   {
-   "title": "Lunacy Audio Nova is a place to build and sell your own AI-powered music plug-ins",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1uZTdrcHg2QjRsRVZ1SzAtUVEtRjhlZmNrdjBOcUJjR3VQMnp5ZWpfS19OUkl0NUVuRldPSTlnT2c2T3VRajRTRW1mWi1uemZmdnBJYVl5V19jZ3p5WlZIc1N4cnVGLXMybXExcjVpTFFQUWZqRHN3OEpja011QVU?oc=5",
-   "source": "The Verge",
-   "date": "2026-09-17",
+   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
+   "source": "MusicTech",
+   "date": "2026-09-23",
    "kind": "PRODUCT",
    "release": true
   }
@@ -258,26 +258,26 @@
   "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 403: Forbidden",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
-  "MusicTech musictech.com": 1,
+  "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 2,
-  "Music Ally musically.com": 4,
+  "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
-  "TechCrunch techcrunch.com": 2,
+  "TechCrunch techcrunch.com": 1,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 0,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 32,
-  "Google News Suno+OR+Udio": 25,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
+  "Google News %22AI+music%22": 33,
+  "Google News Suno+OR+Udio": 26,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 14,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
