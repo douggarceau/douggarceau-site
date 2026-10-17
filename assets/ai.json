@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T16:27Z",
+ "updated": "2026-10-17T20:26Z",
  "items": [
   {
    "title": "Universal Music and Sony Want to Know How Many AI-Generated Songs DistroKid Releases",
@@ -178,17 +178,17 @@
    "release": false
   },
   {
-   "title": "New Suno live music division to help make it the \u201cfirst creative entertainment platform\u201d",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeXpYem9OQ2p4MTl3eGdXN01QS2xQWkd2d1F6emVrUUl0STBQbWkwMk5tSzdnNU14UVRCN21KZVZtTGk3S1VsZkhGbnlxN3BqSnNOZ0NhTzRDTGhEUVNfZkNnN0tzOXM2b3ZBWV9CTWxPcFNvUDRmTktsQTVWZExiUmJsSGtETHN3TDI5TG5oVmFtRFQ3b29ZYlNCOGhQVDRtUC1ESF9UZm9JRUxocUZDUHZDT2xGTkZSX3JWeg?oc=5",
-   "source": "Music Ally",
-   "date": "2026-10-09",
+   "title": "The Most Powerful Man in Music Isn\u2019t Afraid of AI",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMzJYVk5SbjdpaTJHX0FzVWd3Rm9GTTRJUHcyeXcxdmZ5TzlDODhkbnFjaEVWeUJLSUp5UEl0Z1I3QXRjejJ3Nml4TUFRcC10aGswNWxiSTZvNmRzYmV5bnZnV1pPM3ZNZ3NyVHo5N3RXQXBnLVM5NHFyMTBEVnRwN1pGSUljTlltM25BdkVGbEhxZFZvUGs2Z0drT3hyQXJqTGF1S2ItQnVwV2tBTTZCbDgzUHBJdTBXRnJUWmI3RQ?oc=5",
+   "source": "The Hollywood Reporter",
+   "date": "2026-10-08",
    "kind": "NEWS",
    "release": false
   },
   {
-   "title": "The Most Powerful Man in Music Isn\u2019t Afraid of AI",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMzJYVk5SbjdpaTJHX0FzVWd3Rm9GTTRJUHcyeXcxdmZ5TzlDODhkbnFjaEVWeUJLSUp5UEl0Z1I3QXRjejJ3Nml4TUFRcC10aGswNWxiSTZvNmRzYmV5bnZnV1pPM3ZNZ3NyVHo5N3RXQXBnLVM5NHFyMTBEVnRwN1pGSUljTlltM25BdkVGbEhxZFZvUGs2Z0drT3hyQXJqTGF1S2ItQnVwV2tBTTZCbDgzUHBJdTBXRnJUWmI3RQ?oc=5",
-   "source": "The Hollywood Reporter",
+   "title": "Elon Musk says Grok Bot will use Suno\u2019s AI music models, alongside Anthropic\u2019s Claude and Midjourney",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMHIzVkZ5SmdSN1BOR19jc1JNNkxUR2Q2bXptQlJWU3RHZzBDZ2F6cVRNN3Zablc3VE5yOXRPQjl4S2lrS19Ya0xVeWdnME1nUEdjME9aSlN6R0VNLVpaU1gya2RUQUo3S09JVUxyaU5Cc193QzAySWZMelBFUW5hVkpsZ0lsT2Q0SC1YSlEyT2g2RmVrS192d2xvdmtFOXNzU3NndURSVU1TOVRVWUVuSDF6R2RCWXB1aE5fMFFkWFlKa1FIWXF6TllQa003RV9FOUpZ?oc=5",
+   "source": "Music Business Worldwide",
    "date": "2026-10-08",
    "kind": "NEWS",
    "release": false
@@ -277,11 +277,11 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 0,
+  "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 35,
-  "Google News Suno+OR+Udio": 27,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 19,
+  "Google News Suno+OR+Udio": 26,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
