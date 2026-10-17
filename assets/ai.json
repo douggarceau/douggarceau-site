@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T04:30Z",
+ "updated": "2026-10-17T08:31Z",
  "items": [
   {
    "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
@@ -66,6 +66,14 @@
    "release": false
   },
   {
+   "title": "Sony Music, UMG File New Legal Action Against DistroKid to Force Disclosure of Its AI Upload Volumes",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPdGQ2eWxURnZ3aUk0R0ZNMzdLQmZTNFNLeHYxc205S3h5NWVuMklnUEpQb2FGVksxcUdkeHdIeG52ZDhwS19zei1RaktQWnFqY2djMDRrR3lSV3h6bXcxUWttOUtPdFI5dVRMQU0wczF0ejdEa2c0ZTJuMUdhTDBwb2RJMWR2WFdhaFVObHM2NW9QaElXWDBrWWJB?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-10-17",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Publishing body ICMP blasts potential AI rules in Australia",
    "link": "https://musically.com/2026/10/16/publishing-body-icmp-blasts-potential-ai-rules-in-australia/",
    "source": "Music Ally",
@@ -77,14 +85,6 @@
    "title": "Duke Sanford study explores AI-music encounters on Spotify",
    "link": "https://musically.com/2026/10/16/duke-sanford-study-explores-ai-music-encounters-on-spotify/",
    "source": "Music Ally",
-   "date": "2026-10-16",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "UMG & Sony Demand DistroKid Tell How Many AI Songs It Uploads From Suno: \u2018Staggering Scale\u2019",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQTTdnanlYTVltQUFOY3dpakZURVJyUTE1MDczSENPN19wWDU4Um1uRVZ0ckRLUlJqNXF2anlZajVQd0tMV3lqMkduMDVKWV90ZDNqSzdwdkkwTmVWemdlbXhFY3U4dDlfSDNmNk1SN0JGX0poR2UtNG80cnlHZF95OXZPOEdJWm8?oc=5",
-   "source": "Billboard",
    "date": "2026-10-16",
    "kind": "NEWS",
    "release": false
@@ -186,11 +186,11 @@
    "release": false
   },
   {
-   "title": "The Most Powerful Man in Music Isn\u2019t Afraid of AI",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMzJYVk5SbjdpaTJHX0FzVWd3Rm9GTTRJUHcyeXcxdmZ5TzlDODhkbnFjaEVWeUJLSUp5UEl0Z1I3QXRjejJ3Nml4TUFRcC10aGswNWxiSTZvNmRzYmV5bnZnV1pPM3ZNZ3NyVHo5N3RXQXBnLVM5NHFyMTBEVnRwN1pGSUljTlltM25BdkVGbEhxZFZvUGs2Z0drT3hyQXJqTGF1S2ItQnVwV2tBTTZCbDgzUHBJdTBXRnJUWmI3RQ?oc=5",
-   "source": "The Hollywood Reporter",
-   "date": "2026-10-08",
-   "kind": "NEWS",
+   "title": "From Sony Music\u2019s 260,000 deepfake takedowns to Suno\u2019s live music expansion\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPY29GOUdrd3dVS0NnWElSc0dtQUVJZEhiNTYyNHVyUmNfTXBIcDdSSjk4NFdoTWQ2ZFktX3NpWmpzVENENXBjMkZEV1YtVXBWWmhUY0hQTktpdVdhX24yQ1p3Q0QxdENFdlZHYm9NaS0xdWZBNUFiMmFhS3RCLUtleDFhSjA5NmNTb3N3dV91REw0OEJSUVRWRWZGT211RVZZUFFEUkE1VGZCYkU2bHF2Ykh0WjJTenJJMjZpa1BiVFdzaXprQVhhaDFoNWpWaFI3X2VN?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-09",
+   "kind": "PROBLEM",
    "release": false
   }
  ],
@@ -271,13 +271,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 34,
-  "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
+  "Google News %22AI+music%22": 35,
+  "Google News Suno+OR+Udio": 28,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 19,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
