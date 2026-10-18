@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T08:32Z",
+ "updated": "2026-10-18T12:35Z",
  "items": [
   {
    "id": "3wd36z2Oyig",
@@ -110,17 +110,20 @@
   "Tama": "UCTSkpJG7QWeungk9q6Je2_g UCTSkpJG7QWeungk9q6Je2_g TAMA Drums Official (3)",
   "Pearl": "UCmGi7DMBXl7aTOG1HDbRWoQ UCmGi7DMBXl7aTOG1HDbRWoQ Pearl Drums (0)",
   "Gretsch": "UCCi7ihBj53YSjNI9lY7nXtA UCCi7ihBj53YSjNI9lY7nXtA gretschdrumsusa (1)",
-  "Sabian search": "error: HTTP Error 302: The HTTP server returned a redirect error th",
   "Sabian skip UCJbu6KNGcKK5KsVAxLoh2xA": "sabiancymbals",
   "Sabian skip UCNmSiKDIL1GKy71hbnSMUvQ": "SabianOfficial",
-  "Sabian": "not found",
+  "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
+  "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
+  "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
+  "Sabian skip UChKaKpI7_7sXYCbFAhrvYTw": "sabianparagonlounge",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
-  "NAMM search": "error: HTTP Error 302: The HTTP server returned a redirect error th",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "@NAMMvideos UCbkzeiu-r47PhCTNaPsUu-A nammvideos (0)",
-  "Percussive Arts Society search": "error: HTTP Error 302: The HTTP server returned a redirect error th",
-  "Percussive Arts Society": "@PercussiveArtsSociety UCuYb7irDBJx-ep94c9b2qMw Percussive Arts Society (0)"
+  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
+  "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
+  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
+  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
  }
 }
