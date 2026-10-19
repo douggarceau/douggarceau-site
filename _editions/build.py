@@ -19,6 +19,7 @@ CITIES = {
    districts=[('A1','Downtown / North End / Chinatown'),('A7','East Boston'),('A15','Charlestown'),('B2','Roxbury'),('B3','Mattapan'),('C6','South Boston'),('C11','Dorchester'),('D4','South End / Back Bay / Fenway'),('D14','Allston / Brighton'),('E5','West Roxbury / Roslindale'),('E13','Jamaica Plain'),('E18','Hyde Park')],
    scan=[['46343','Boston Fire','Boston Fire Department dispatch','#ff2a14'],['36636','Boston EMS','Boston EMS dispatch','#ff6a00'],['43752','MBTA Transit Police','Transit police across the T','#1e90ff']],
    live=True,
+   brand='The Boston Rambler', mast='img/rambler-masthead.png', cover='img/cover-rambler-fall2026.jpg',
  ),
  'nyc': dict(
    slug='nyc', name='New York', short='NYC', poss="New York's", upper='NYC', pd='NYPD', pdlong='New York police',
@@ -140,6 +141,13 @@ def main(city, out):
         h = h.replace(f'Seattle {lab}', f'{S} {lab}')
     h = h.replace('Seattle', N)
 
+    # city brand (Boston = The Boston Rambler, a Guitar Doug Report)
+    if C.get('brand'):
+        B = C['brand']
+        h = h.replace('img/gdr-masthead-tight.webp', C['mast']).replace('img/cover-gdr-fall2026.jpg', C['cover'])
+        h = h.replace(f'<div class="edition">{N} Edition</div>', '<div class="edition">A Guitar Doug Report</div>')
+        h = h.replace('THE GUITAR DOUG REPORT', B.upper()).replace('The Guitar Doug Report', B).replace('the Guitar Doug Report', B)
+        h = h.replace('alt="' + B + '" width="1000" height="240"', 'alt="' + B + '" width="961" height="214"')
     # neighborhood ticker
     span = ''.join(f'<span>{x}</span>' for x in C['hoods'])
     h = re.sub(r'<span class="nhm-r">(?:<span>[^<]*</span>)+</span>', f'<span class="nhm-r">{span}{span}</span>', h, count=1)
@@ -200,8 +208,10 @@ def main(city, out):
     json.dump(sports, open(d + '/data/sports.json', 'w'), ensure_ascii=False)
     shutil.copy(f'{SRC}/data/pm-teaser.json', d + '/data/pm-teaser.json')
     shutil.copytree(f'{SRC}/img', d + '/img', dirs_exist_ok=True)
+    if os.path.isdir(f'{ED}/{city}_assets'):
+        shutil.copytree(f'{ED}/{city}_assets', d + '/img', dirs_exist_ok=True)
     man = json.load(open(f'{SRC}/manifest.webmanifest'))
-    man.update(name=f'The Guitar Doug Report — {N}', short_name=f'GDR {S}', id=f'/{C["slug"]}/', start_url=f'/{C["slug"]}/?source=app', scope=f'/{C["slug"]}/')
+    man.update(name=C.get('brand') or f'The Guitar Doug Report — {N}', short_name=(C.get('brand','').replace('The ','') or f'GDR {S}'), id=f'/{C["slug"]}/', start_url=f'/{C["slug"]}/?source=app', scope=f'/{C["slug"]}/')
     man['icons'] = [dict(i, src='https://seattlesinner.com' + i['src']) for i in man['icons']]
     json.dump(man, open(d + '/manifest.webmanifest', 'w'), indent=1)
     sw = open(f'{SRC}/sw.js').read().replace("const V='gdr-app-v1'", f"const V='gdr-{C['slug']}-v1'").replace("['/','/app/icon-192.png','/app/icon-512.png','/img/gdr-masthead-tight.webp']", f"['/{C['slug']}/','/{C['slug']}/img/gdr-masthead-tight.webp']").replace("caches.match('/')", f"caches.match('/{C['slug']}/')")
