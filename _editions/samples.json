@@ -1,0 +1,455 @@
+{
+ "stories": {
+  "slug": "no-kings-march-seattle-center-voting-fair",
+  "topic": "streets",
+  "date": "2026-10-19",
+  "minutes": 2,
+  "title": "Thousands March to Seattle Center in 'No Kings' Rally Focused on Voting",
+  "dek": "Marchers walked from Westlake Park to a voting fair at Seattle Center on Oct. 17 in one of dozens of No Kings events held nationwide ahead of the Nov. 3 election.",
+  "body": [
+   "Thousands of people marched from downtown Seattle to Seattle Center on Saturday, Oct. 17, in a No Kings demonstration that organizers built around a voting fair rather than a traditional protest rally, according to KOMO News, KIRO 7 and FOX 13.",
+   "None of the outlets reported an official crowd estimate, and none reported arrests, clashes or counter-protesters.",
+   "## The March",
+   "The march began just after 2:15 p.m. near Westlake Park and moved north on Fourth Avenue to the International Fountain at Seattle Center, KOMO reported. There was no rally at Westlake Park; most of the day's activities took place at Seattle Center. The Seattle Department of Transportation had warned of rolling road closures downtown, MyNorthwest reported.",
+   "FOX 13 described it as the largest No Kings event in Washington that day. The station reported that the event included a display honoring 85 people who died in U.S. Immigration and Customs Enforcement custody.",
+   "## Organizers' Message",
+   "Seattle Indivisible was among the event's organizers. Kathleen Carson, the group's president, told FOX 13 that the main goal was to turn public engagement into votes, and that voting is the first step. She urged marchers to vote early, KIRO reported.",
+   "> \"This election is so important.\" — Kathleen Carson, Seattle Indivisible",
+   "According to FOX 13, organizers shifted the focus toward voter registration, ballot education, election protection and nonviolent civic engagement. One attendee who had been to earlier No Kings events told the station this one was less of a rally but still important.",
+   "Participants interviewed by KIRO criticized the slow release of the Epstein files, the federal immigration crackdown, the war in Iran and other policies of President Donald Trump's administration.",
+   "The events are billed as nonpartisan but are tied to No Kings marches held over the past two years by opponents of Trump's policies, MyNorthwest and the Associated Press reported. Organizers describe the movement as peaceful demonstrations asserting that power belongs to the people, KOMO reported. None of the coverage included a response from the White House or Republican officials to the Seattle event.",
+   "## National Events",
+   "Similar events took place the same day in Washington, D.C., New York City, Atlanta and dozens of other communities, according to MyNorthwest and the AP. A March 28 No Kings protest in Seattle drew at least 75,000 marchers, according to the Seattle Police Department, MyNorthwest reported.",
+   "## Ballot Deadlines",
+   "Washington's general election is Nov. 3. KIRO reported that the Secretary of State's office recommends mailing ballots as soon as possible after many ballots in the August primary were postmarked late. Drop boxes accept ballots through Election Day."
+  ],
+  "sources": [
+   {
+    "outlet": "KOMO News",
+    "title": "Thousands march to Seattle Center for 'No Kings' rally and voting fair",
+    "date": "Oct 17, 2026",
+    "url": "https://komonews.com/news/local/saturday-no-kings-rally-march-vote-election-president-trump-authoritarianism-westlake-park-downtown-seattle"
+   },
+   {
+    "outlet": "KIRO 7",
+    "title": "Thousands take part in Seattle 'No Kings' march, voting fair, as protests take place nationwide",
+    "date": "Oct 17, 2026",
+    "url": "https://www.kiro7.com/news/local/thousands-take-part-seattle-no-kings-march-voting-fair-protests-take-place-nationwide/MLX6RA6SDRHVFPVS7TUZ6JARWA/"
+   },
+   {
+    "outlet": "FOX 13 Seattle",
+    "title": "Thousands gather at Seattle Center for No Kings voting fair",
+    "date": "Oct 17, 2026",
+    "url": "https://www.fox13seattle.com/news/no-kings-seattle-center"
+   },
+   {
+    "outlet": "MyNorthwest",
+    "title": "No Kings protests and marches in Seattle and across the country encourage early voting",
+    "date": "Oct 17, 2026",
+    "url": "https://mynorthwest.com/local/no-kings-protests-and-marches-in-seattle-and-across-the-country-encourage-early-voting/4287490"
+   }
+  ]
+ },
+ "wire": [
+  {
+   "kind": "news",
+   "venue": "",
+   "hood": "Ballard",
+   "headline": "Ballard Light Rail Now Stuck Till 2042: Sound Transit Faces Locals Tonight at Nordic Museum",
+   "date": "2026-10-19",
+   "blurb": "Sound Transit and city officials hold a forum Monday 6-8 p.m. at the National Nordic Museum on the Ballard extension voters approved a decade ago, now not expected until 2042 amid a $34.5 billion budget gap. CEO Dow Constantine and Councilmember Dan Strauss are expected.",
+   "url": "https://www.kiro7.com/news/local/sound-transit-provide-update-delayed-ballard-light-rail-project/DW7GUUIWJREYHLZ66GWD5NAEIE/",
+   "outlet": "KIRO 7"
+  },
+  {
+   "kind": "club",
+   "venue": "Timbre Room at Kremwerk",
+   "hood": "Downtown / Denny Triangle",
+   "headline": "'Hack the Planet' 90s-only rave marks a two-year anniversary at Timbre Room Oct. 23",
+   "date": "2026-10-19",
+   "blurb": "The crew behind the Trainspotting Rave throws a Hackers-themed, 90s-only all-nighter Oct. 23, 10 p.m.-2 a.m., with Riki Healing, only/hank, Slynky b2b Solanum and LSDFJ. 21+.",
+   "url": "https://www.kremwerk.com/upcoming/2026/10/23/sts-presents-hack-the-planet",
+   "outlet": "Kremwerk"
+  }
+ ],
+ "crime": [
+  {
+   "kind": "shooting",
+   "headline": "Another night of gunfire rattles the Central District",
+   "blurb": "911 callers reported shots across several Central District blocks starting around 2:23 a.m. Sunday, including near 21st and E Cherry and 24th and Yesler. No injuries were reported.",
+   "hood": "Central District",
+   "spd": [
+    "CENTRAL AREA/SQUIRE PARK"
+   ],
+   "date": "2026-10-18",
+   "url": "https://www.capitolhillseattle.com/2026/10/911-calls-track-another-night-of-gunfire-in-the-central-district/",
+   "outlet": "Capitol Hill Seattle Blog"
+  },
+  {
+   "kind": "other",
+   "headline": "Dangerous CO2 levels force evacuations on Ballard Ave",
+   "blurb": "Seattle Fire hazmat crews found dangerous carbon dioxide levels at a commercial building near the 5400 block of Ballard Ave. Nearby businesses were evacuated as a precaution until the leak was secured. No injuries were reported.",
+   "hood": "Ballard",
+   "spd": [
+    "BALLARD SOUTH"
+   ],
+   "date": "2026-10-17",
+   "url": "https://www.fox13seattle.com/news/carbon-dioxide-evacuations-ballard",
+   "outlet": "FOX 13"
+  },
+  {
+   "kind": "other",
+   "headline": "Car found half-sunk in Union Bay off East Montlake Park",
+   "blurb": "Before dawn Saturday a vehicle was found partly submerged a few feet from shore near E Shelby St and E Park Dr E. Seattle Fire rescue swimmers searched the water; how it got there was not yet known.",
+   "hood": "Montlake",
+   "spd": [
+    "MONTLAKE/PORTAGE BAY"
+   ],
+   "date": "2026-10-17",
+   "url": "https://hoodline.com/2026/10/vehicle-found-partly-submerged-near-montlake-park-rescue-swimmers-search-union-bay/",
+   "outlet": "Hoodline"
+  }
+ ],
+ "cal": [
+  {
+   "date": "2026-10-17",
+   "time": "",
+   "venue": "Paramount Theatre",
+   "hood": "Downtown",
+   "artists": "DJ Shadow w/ DJ D Sharp",
+   "genre": "electronic",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/metro-areas/2846-us-seattle/genre/hip-hop"
+  },
+  {
+   "date": "2026-10-17",
+   "time": "",
+   "venue": "Climate Pledge Arena",
+   "hood": "Seattle Center",
+   "artists": "Maná",
+   "genre": "latin",
+   "price": "",
+   "ages": "",
+   "url": "https://www.songkick.com/metro-areas/2846-us-seattle/genre/latin"
+  }
+ ],
+ "scene": [
+  {
+   "date": "2026-10-15",
+   "end": "2026-10-31",
+   "time": "",
+   "title": "This Is Halloween",
+   "venue": "The Triple Door",
+   "hood": "Downtown",
+   "kind": "burlesque",
+   "blurb": "Theatrical Halloween show mixing live music, cabaret and burlesque; 9pm shows are 21+, Sunday 5pm shows all ages.",
+   "price": "$35-$75",
+   "url": "https://respectmyregion.com/best-halloween-events-in-seattle-2026/"
+  },
+  {
+   "date": "2026-10-17",
+   "end": "2026-11-07",
+   "time": "",
+   "title": "Georgetown Morgue Haunted House",
+   "venue": "Georgetown Morgue, 5000 E Marginal Way S",
+   "hood": "Georgetown",
+   "kind": "halloween",
+   "blurb": "Long-running adults-and-teens haunted house in a historic former morgue, open through Nov 7.",
+   "price": "",
+   "url": "https://www.kiro7.com/news/local/georgetown-morgue-haunted-house-returns-spooky-season-seattle/KHWHFCDU5JETXAPD4QCXUGXW4A/"
+  }
+ ],
+ "sports": [
+  {
+   "date": "2026-10-20",
+   "time": "6:40 PM",
+   "artists": "Kraken vs. Detroit Red Wings",
+   "venue": "Climate Pledge Arena",
+   "hood": "Seattle Center",
+   "genre": "sports",
+   "price": "",
+   "ages": "All ages",
+   "url": "https://climatepledgearena.com/events/",
+   "src": "league schedules"
+  },
+  {
+   "date": "2026-10-22",
+   "time": "7:00 PM",
+   "artists": "Kraken vs. Utah Mammoth",
+   "venue": "Climate Pledge Arena",
+   "hood": "Seattle Center",
+   "genre": "sports",
+   "price": "",
+   "ages": "All ages",
+   "url": "https://climatepledgearena.com/events/",
+   "src": "league schedules"
+  }
+ ],
+ "venues": [
+  {
+   "id": "sea-8a1f2f095731",
+   "name": "Angel of the Winds Arena",
+   "cat": "Arenas, stadiums & motorsports",
+   "city": "Everett",
+   "region": "North King & Snohomish County",
+   "addr": "2000 Hewitt Ave, Everett, WA",
+   "hood": null,
+   "desc": "Hockey; concerts; touring shows; arena events",
+   "url": "https://www.angelofthewindsarena.com/about/contact-us"
+  },
+  {
+   "id": "sea-0d897033246b",
+   "name": "accesso ShoWare Center",
+   "cat": "Arenas, stadiums & motorsports",
+   "city": "Kent",
+   "region": "South King County",
+   "addr": "625 W James St, Kent, WA",
+   "hood": null,
+   "desc": "Hockey; concerts; indoor sports; family shows",
+   "url": "https://www.accessoshowarecenter.com/"
+  }
+ ],
+ "vst": {
+  "sea-25b8f08976d1": {
+   "status": "open",
+   "url": "https://babayagaseattle.com/",
+   "cal": "https://babayagaseattle.com/seattle-pioneer-square-baba-yaga-events-days"
+  },
+  "sea-809aff4be07a": {
+   "status": "open",
+   "url": "https://historicseattle.org/gsc-chapel-space/",
+   "cal": "https://www.waywardmusic.org/"
+  }
+ },
+ "vnews": [
+  {
+   "item_id": "vn-8d3b1950970a",
+   "item_type": "event_announcement",
+   "venue_ids": [
+    "sea-891adf68b8ba"
+   ],
+   "headline": "Krem Fest 2026 ran Sept 25-27 across the Kremwerk complex",
+   "factual_summary": "Resident Advisor listed Krem Fest 2026 at the Kremwerk-Timbre Room-Cherry complex (1809 Minor Ave #10), from 11 PM Friday Sept 25 through 6 AM Sunday Sept 27, with a lineup of more than 20 DJs including Black Rave Culture, Swami Sound, Ctrl.mp3 and Manwell.",
+   "why_it_matters": "The complex's own multi-day festival is its biggest annual showcase of local DJ and nightlife talent.",
+   "verification_status": "confirmed",
+   "published_at": null,
+   "discovered_at": "2026-10-19T09:53:45+00:00",
+   "event_start_local": "2026-09-25T23:00",
+   "sources": [
+    {
+     "url": "https://de.ra.co/events/2476459",
+     "publisher": "Resident Advisor",
+     "title": "Krem Fest 2026"
+    }
+   ]
+  },
+  {
+   "item_id": "vn-ee585e0b42ef",
+   "item_type": "event_announcement",
+   "venue_ids": [
+    "sea-e1fcfde92407"
+   ],
+   "headline": "The Suitcase Junket album-release show at Ballard Homestead Nov 7",
+   "factual_summary": "Abbey Arts Presents lists The Suitcase Junket with Erika Lundahl at Ballard Homestead on Sat Nov 7, 2026 (doors 7, show 7:30), billed as the release show for the album 'To Go On'. All ages, mostly seated.",
+   "why_it_matters": "An album-release booking at a small Ballard room that earlier runs had marked as unclear.",
+   "verification_status": "confirmed",
+   "published_at": null,
+   "discovered_at": "2026-10-19T06:21:59+00:00",
+   "event_start_local": "2026-11-07T19:30",
+   "sources": [
+    {
+     "url": "https://events.humanitix.com/26-11-7-suitcasejunket",
+     "publisher": "Abbey Arts Presents (Humanitix)",
+     "title": "The Suitcase Junket, Erika Lundahl @ Ballard Homestead"
+    }
+   ]
+  }
+ ],
+ "vup": [
+  {
+   "venue_id": "sea-25b8f08976d1",
+   "title": "Disposable Parts Edition 5 Party",
+   "start_local": "2026-10-19",
+   "precision": "date_only",
+   "kind": "other",
+   "url": "https://ma.to/venue/babayagaseattle"
+  },
+  {
+   "venue_id": "sea-2ff188769ce2",
+   "title": "Xquisite Corpse (listed Oct 19-23)",
+   "start_local": "2026-10-19",
+   "precision": "date_only",
+   "kind": "other",
+   "url": "https://www.teentix.org/venues/12th-avenue-arts/"
+  },
+  {
+   "venue_id": "sea-25b8f08976d1",
+   "title": "Music Karaoke",
+   "start_local": "2026-10-19",
+   "precision": "date_only",
+   "kind": "other",
+   "url": "https://ma.to/venue/babayagaseattle"
+  }
+ ],
+ "bands": [
+  {
+   "id": "band_7e624a50d82a50eab4f7",
+   "name": "Pearl Jam",
+   "lists": [
+    "top_100_bands"
+   ],
+   "cat": "Grunge, classic rock, and hard rock",
+   "ord": 1,
+   "type": "original_band",
+   "city": "Seattle",
+   "conn": "Seattle-area act in the recovered selection; Seattle.",
+   "genre": "Alternative rock",
+   "genre2": [
+    "grunge"
+   ],
+   "desc": "Big guitar arrangements and communal rock choruses.",
+   "status": "unknown",
+   "url": "https://pearljam.com/",
+   "tour": "https://pearljam.com/tour",
+   "bc": null,
+   "social": null
+  },
+  {
+   "id": "band_0344b0dc01f45a419bc3",
+   "name": "Alice in Chains",
+   "lists": [
+    "top_100_bands"
+   ],
+   "cat": "Grunge, classic rock, and hard rock",
+   "ord": 2,
+   "type": "original_band",
+   "city": "Seattle",
+   "conn": "Seattle-area act in the recovered selection; Seattle.",
+   "genre": "Alternative metal",
+   "genre2": [
+    "grunge"
+   ],
+   "desc": "Dark harmonies and heavy, slow-burning riffs.",
+   "status": "unknown",
+   "url": "https://aliceinchains.com/",
+   "tour": null,
+   "bc": null,
+   "social": {
+    "platform": "Instagram",
+    "url": "https://www.instagram.com/aliceinchains/",
+    "identity_verified_at": "2026-10-17",
+    "identity_source_url": "https://aliceinchains.com/",
+    "content_access": "fetch_failed; no posts checked"
+   }
+  }
+ ],
+ "bst": {
+  "band_7e624a50d82a50eab4f7": {
+   "status": "active",
+   "url": "https://pearljam.com/",
+   "tour": "https://pearljam.com/tour"
+  },
+  "band_7edc1ea52f9250c2b17c": {
+   "status": "unknown",
+   "url": "https://fourlightsrock.bandcamp.com/music"
+  }
+ },
+ "bnews": [
+  {
+   "item_id": "bn-04e9fcae7332",
+   "item_type": "performance",
+   "band_ids": [
+    "band_7100551030ed5f6085c5"
+   ],
+   "venue_ids": [
+    "sea-5f55b6f1ecd4"
+   ],
+   "headline": "Straight To Video booked at Slim's Last Chance on Nov. 12",
+   "factual_summary": "Slim's Last Chance's Bandsintown venue calendar lists Seattle pop-punk band Straight To Video for Thursday, Nov. 12, 2026 at 8 p.m. The date is the first night of the venue's Seattle Pop Punk Fest run (Nov. 12-15), though the listing does not show the full bill.",
+   "verification_status": "secondary_reported",
+   "published_at": null,
+   "discovered_at": "2026-10-19T10:54:17+00:00",
+   "event_or_release_date": "2026-11-12",
+   "sources": [
+    {
+     "url": "https://bandsintown.com/v/10059716-slim%27s-last-chance",
+     "publisher": "Bandsintown",
+     "title": "Slim's Last Chance upcoming shows"
+    },
+    {
+     "url": "https://www.bandsintown.com/f/230682",
+     "publisher": "Bandsintown",
+     "title": "Seattle Pop Punk Fest 2026"
+    }
+   ]
+  },
+  {
+   "item_id": "bn-2c97237c7a9c",
+   "item_type": "tour",
+   "band_ids": [
+    "band_74ee6371daef5da5b811"
+   ],
+   "venue_ids": [],
+   "headline": "Drawn and Quartered head to Europe for 'Lord of Sacrifice' tour with Noroth",
+   "factual_summary": "Seattle death metal band Drawn and Quartered is headlining a European run billed as the Lord of Sacrifice European Tour, with Noroth as support. Setlist.fm lists dates beginning 2026-10-29 at 1000FRYD in Aalborg, Denmark, followed by Groningen and Namur. The Hague's city events listing shows a stop at Musicon on 2026-11-03 and calls the band Seattle death metal veterans who began as Plague Bearer. A Bristol listing at The Gryphon on 2026-11-02 with Noroth and Mortal Filth looks like part of the same run, but it does not name the band's hometown.",
+   "verification_status": "independently_corroborated",
+   "published_at": null,
+   "discovered_at": "2026-10-19T07:13:46+00:00",
+   "event_or_release_date": "2026-10-29",
+   "sources": [
+    {
+     "url": "https://denhaag.com/en/node/40877",
+     "publisher": "denhaag.com",
+     "title": "Drawn and Quartered + Noroth - Lord of Sacrifice European Tour"
+    },
+    {
+     "url": "https://www.setlist.fm/setlists/drawn-and-quartered-2bd73092.html",
+     "publisher": "setlist.fm",
+     "title": "Drawn and Quartered Concert Setlists & Tour Dates"
+    },
+    {
+     "url": "https://www.ents24.com/bristol-events/the-gryphon/drawn-and-quartered/7538396",
+     "publisher": "Ents24",
+     "title": "Drawn & Quartered - The Gryphon, Bristol"
+    }
+   ]
+  }
+ ],
+ "bev": [
+  {
+   "id": "event_781806c96e77569f8852",
+   "band_ids": [
+    "band_7edc1ea52f9250c2b17c",
+    "band_0088444d621951bab0b8",
+    "band_def5143dd1535cb7b588"
+   ],
+   "venue_ids": [
+    "sea-5f55b6f1ecd4"
+   ],
+   "venue_name": "Slim’s Last Chance",
+   "type": "festival",
+   "headline": "Four Lights / Big Smack / Trash Sound Conglomerate — Slim’s Last Chance",
+   "date": "2026-11-12/2026-11-14",
+   "status": "announced",
+   "url": "https://tdrecs.com/products/sppf26"
+  },
+  {
+   "id": "event_0a3537d67c1a55ccb6bd",
+   "band_ids": [
+    "band_202e43c68cd25e18861d",
+    "band_0ce6189dfc5e5bbb818c",
+    "band_9fe0625088ee5982a0ea"
+   ],
+   "venue_ids": [
+    "sea-a2f6304d5394"
+   ],
+   "venue_name": "Tim’s Tavern",
+   "type": "performance",
+   "headline": "Radio Weekend / Denim Denim / The Disorderlies — Tim’s Tavern",
+   "date": "2026-10-10",
+   "status": "past_listing_occurrence_unconfirmed",
+   "url": "https://tickets.venuepilot.com/e/the-disorderlies-denim-denim-radio-weekend-2026-10-10-tim-s-tavern-seattle-689e69"
+  }
+ ]
+}
