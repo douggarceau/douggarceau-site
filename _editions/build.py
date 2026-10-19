@@ -30,6 +30,7 @@ CITIES = {
    districts=[('MANHATTAN','Manhattan'),('BROOKLYN','Brooklyn'),('QUEENS','Queens'),('BRONX','Bronx'),('STATEN ISLAND','Staten Island')],
    scan=[['47753','NYPD Citywide','NYPD citywide dispatch','#1e90ff'],['1189','NYPD Transit','Bronx and Manhattan transit police','#6fc3ff'],['47800','FDNY','Fire dispatch, all boroughs','#ff2a14']],
    live=False,
+   brand='New York City Scream', mast='img/scream-masthead.png', cover='img/cover-scream-fall2026.jpg',
  ),
 }
 
@@ -159,8 +160,12 @@ def main(city, out):
         h = h.replace('content="Guitar Doug"', f'content="{B}"')
         h = h.replace('sole property of Guitar Doug', 'sole property of ' + B).replace('© 2026 Guitar Doug', '© 2026 ' + B)
         h = h.replace('Guitar Doug Report', B).replace('Guitar Doug', B)
+        if not B.startswith('The '):
+            h = h.replace('The ' + B, B).replace('THE ' + B.upper(), B.upper()).replace('the ' + B, B)
         h = h.replace('THE GUITAR DOUG REPORT', B.upper()).replace('The Guitar Doug Report', B).replace('the Guitar Doug Report', B)
-        h = h.replace('alt="' + B + '" width="1000" height="240"', 'alt="' + B + '" width="961" height="214"')
+        h = h.replace('alt="' + B + '" width="1000" height="240"', 'alt="' + B + '" width="' + ('942' if city == 'nyc' else '961') + '" height="' + ('217' if city == 'nyc' else '214') + '"')
+    # every carried-over story counts as a feature, not local news
+    h = re.sub(r"const FEATURES=new Set\(\[[^\]]*\]\)", 'const FEATURES=new Set(' + json.dumps(sorted(x['slug'] for x in national)) + ')', h, count=1)
     # neighborhood ticker
     span = ''.join(f'<span>{x}</span>' for x in C['hoods'])
     h = re.sub(r'<span class="nhm-r">(?:<span>[^<]*</span>)+</span>', f'<span class="nhm-r">{span}{span}</span>', h, count=1)
