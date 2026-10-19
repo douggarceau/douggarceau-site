@@ -116,7 +116,7 @@ def main(city, out):
      ('seattlesinner.com%2F', f'douggarceau.com%2F{C["slug"]}%2F'),
      ("'/data/", "'data/"), ('"/data/', '"data/'),
      ("'/snd/", "'https://seattlesinner.com/snd/"),
-     ('href="/tech/"', 'href="https://seattlesinner.com/tech/"'), ("href='/tech/'", "href='https://seattlesinner.com/tech/'"),
+     ('href="/tech/"', 'href="https://seattlesinner.com/tech/"'), ('href:"/tech/"', 'href:"https://seattlesinner.com/tech/"'), ("href='/tech/'", "href='https://seattlesinner.com/tech/'"),
      ('"/manifest.webmanifest"', '"manifest.webmanifest"'), ("'/sw.js'", "'sw.js'"),
      ('"/app/', '"https://seattlesinner.com/app/'), ("'/app/", "'https://seattlesinner.com/app/"),
      ('lat=47.6062&amp;lon=-122.3321', f'lat={C["lat"]}&amp;lon={C["lon"]}'),
@@ -145,7 +145,13 @@ def main(city, out):
     if C.get('brand'):
         B = C['brand']
         h = h.replace('img/gdr-masthead-tight.webp', C['mast']).replace('img/cover-gdr-fall2026.jpg', C['cover'])
-        h = h.replace(f'<div class="edition">{N} Edition</div>', '<div class="edition">A Guitar Doug Report</div>')
+        h = h.replace(f'<div class="edition">{N} Edition</div>', '')
+        h = h.replace('NEW SOFTWARE BY GUITAR DOUG', 'NEW SOFTWARE').replace('New software by Guitar Doug', 'New software')
+        h = h.replace('A new social media platform by Guitar Doug', 'A new social media platform')
+        h = h.replace('The%20Guitar%20Doug%20Report', B.replace(' ', '%20'))
+        h = h.replace('content="Guitar Doug"', f'content="{B}"')
+        h = h.replace('sole property of Guitar Doug', 'sole property of ' + B).replace('© 2026 Guitar Doug', '© 2026 ' + B)
+        h = h.replace('Guitar Doug Report', B).replace('Guitar Doug', B)
         h = h.replace('THE GUITAR DOUG REPORT', B.upper()).replace('The Guitar Doug Report', B).replace('the Guitar Doug Report', B)
         h = h.replace('alt="' + B + '" width="1000" height="240"', 'alt="' + B + '" width="961" height="214"')
     # neighborhood ticker
