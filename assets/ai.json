@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T01:03Z",
+ "updated": "2026-10-19T04:34Z",
  "items": [
   {
    "title": "Universal Music and Sony Want to Know How Many AI-Generated Songs DistroKid Releases",
@@ -87,6 +87,14 @@
    "source": "MusicRadar",
    "date": "2026-09-19",
    "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "Kylie Minogue songs already used to train AI as tech firms \u2018strong-arm\u2019 Australian government, music body warns",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSFlnUkhCN01RZ09wX0ozaUZCcWY4bHMtQ0NPMXctSDNpR0F3aXhBOUw5MHZ1Q1RmUUpUWURzRkt0elhjZnp1ZVNjTHRESmY5RnBaTjZmMTA1TzVSUVVGTk1SZ29OTHJRcUY0cko0enRmRzYzOXJ2RllPbkJNZzlQZnV0NDNoTVhRaE9DX0I4anBJYTZwRDc2aGtBdGJXSTdMN3pCR1hmZmhUampManc?oc=5",
+   "source": "The Guardian",
+   "date": "2026-10-19",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -184,14 +192,6 @@
    "date": "2026-10-09",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "From Sony Music\u2019s 260,000 deepfake takedowns to Suno\u2019s live music expansion\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
-   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPY29GOUdrd3dVS0NnWElSc0dtQUVJZEhiNTYyNHVyUmNfTXBIcDdSSjk4NFdoTWQ2ZFktX3NpWmpzVENENXBjMkZEV1YtVXBWWmhUY0hQTktpdVdhX24yQ1p3Q0QxdENFdlZHYm9NaS0xdWZBNUFiMmFhS3RCLUtleDFhSjA5NmNTb3N3dV91REw0OEJSUVRWRWZGT211RVZZUFFEUkE1VGZCYkU2bHF2Ykh0WjJTenJJMjZpa1BiVFdzaXprQVhhaDFoNWpWaFI3X2VN?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-09",
-   "kind": "PROBLEM",
-   "release": false
   }
  ],
  "releases": [
@@ -271,9 +271,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 35,
-  "Google News Suno+OR+Udio": 25,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
+  "Google News %22AI+music%22": 36,
+  "Google News Suno+OR+Udio": 23,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
