@@ -59,7 +59,14 @@ def main(city, out):
     seattle_st, _, _ = grab(h, 'const STORIES=')
     m = re.search(r"const FEATURES=new Set\((\[[^\]]*\])\)", h)
     feats = set(json.loads(m.group(1).replace("'", '"')))
-    national = [x for x in seattle_st if x['slug'] in feats]
+    iss = re.search(r'const ISSUES=\[\{.*?lines:\[(.*?)\]\}', h, re.S)
+    if iss:
+        feats |= set(re.findall(r'\["([a-z0-9-]+)"', iss.group(1)))
+    national = [json.loads(json.dumps(x)) for x in seattle_st if x['slug'] in feats]
+    for x in national:
+        if x['slug'] == 'homeless-by-choice':
+            x['dek'] = "You're a 23-year-old Seattle resident with no car, no loans and a job you hate. The city will feed you, wash you, insure you and, if you get in, house you for free. We ran the numbers on quitting. Here's the bill."
+            x['body'] = [p.replace('Picture a 23-year-old who never went to college', 'Picture a 23-year-old Seattle resident who never went to college', 1) for p in x['body']]
     local = load(city, 'stories', [])
     for x in local:
         x['date'] = x.get('date') or '2026-10-19'
