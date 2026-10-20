@@ -25,6 +25,18 @@
 {
 "url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
 "reason": "fetch failed twice (client error)"
+},
+{
+"url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
+"reason": "Original BPD page fetch failed twice (client error); post absent from BPD missing-persons listing (newest Oct 12, 2026); WebSearch found no other credible outlet covering this Oct 17, 2026 alert (results were older, unrelated cases)."
+},
+{
+"url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
+"reason": "Duplicate of same item: Original BPD page fetch failed twice (client error); post absent from BPD missing-persons listing (newest Oct 12, 2026); WebSearch found no other credible outlet covering this Oct 17, 2026 alert (results were older, unrelated cases)."
+},
+{
+"url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
+"reason": "Duplicate of same item: Original BPD page fetch failed twice (client error); post absent from BPD missing-persons listing (newest Oct 12, 2026); WebSearch found no other credible outlet covering this Oct 17, 2026 alert (results were older, unrelated cases)."
 }
 ]
 }

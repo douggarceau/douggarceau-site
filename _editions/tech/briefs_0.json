@@ -1,0 +1,77 @@
+{
+ "stories": [
+  {
+   "slug": "intel-jumps-on-jpmorgan-upgrade-datadog-rallies-in-premarket-trading",
+   "topic": "tech",
+   "date": "2026-10-19",
+   "minutes": 1,
+   "title": "Intel and Datadog Rise in Premarket Trading After Analyst Upgrades",
+   "dek": "Intel and Datadog shares gained before Monday's open after upgrades from JPMorgan and Bernstein SocGen Group, according to Investing.com.",
+   "body": [
+    "Shares of Intel rose nearly 4% and Datadog gained 3.6% in premarket trading Monday, Oct. 19, after both received analyst upgrades, Investing.com reported. U.S. stock futures were higher as AI-linked stocks tried to recover from the previous week's selloff, according to the report.",
+    "JPMorgan raised Intel to Neutral from Underweight late Friday, citing a more balanced risk-reward profile as the stock approached the firm's $85 price target, Investing.com said. The shares had fallen about 36% from their June peak. Analyst Harlan Sur said the turnaround would take years but that management had made a solid start, and he pointed to AI-related demand as a possible tailwind, according to the report.",
+    "Bernstein SocGen Group upgraded Datadog to Outperform from Market Perform and raised its price target to $350 from $237, the outlet reported. The firm had downgraded the stock last quarter after a contract worth about $100 million in annual recurring revenue with its largest AI-focused customer, believed to be OpenAI, was reduced, according to Investing.com.",
+    "Other movers included Red Cat Holdings, up 6.6% after announcing an all-cash tender offer of 39 euros per share for Austrian engine maker Steyr Motors, a deal valued at about 204.8 million euros, the report said. Nebius Group rose 3.6% after losing roughly 21% of its market value the prior week, and Silgan Holdings advanced 5.5% after agreeing to buy Trivium Packaging in a $3.4 billion all-cash deal, according to Investing.com.",
+    "As of early Monday, S&P 500 futures were up 0.5% and Nasdaq 100 futures were up 1.1%, while Dow futures were roughly flat, the outlet reported."
+   ],
+   "sources": [
+    {
+     "outlet": "Investing.com",
+     "title": "Premarket movers: Intel jumps on JPMorgan upgrade; Datadog rallies",
+     "date": "Oct 19, 2026",
+     "url": "https://www.investing.com/news/stock-market-news/intel-jumps-on-jpmorgan-upgrade-datadog-rallies-4957102"
+    }
+   ],
+   "item_url": "https://www.investing.com/news/stock-market-news/intel-jumps-on-jpmorgan-upgrade-datadog-rallies-4957102"
+  },
+  {
+   "slug": "nvidia-reportedly-pushes-tsmc-3nm-base-dies-for-memory-makers",
+   "topic": "tech",
+   "date": "2026-10-19",
+   "minutes": 1,
+   "title": "Nvidia Reportedly Asks Memory Makers to Use TSMC 3nm Base Dies for Custom HBM",
+   "dek": "Nvidia has asked Samsung, SK hynix and Micron to build base dies for its custom high-bandwidth memory on TSMC's 3nm process, according to reports cited by TrendForce.",
+   "body": [
+    "Nvidia has asked Samsung, SK hynix and Micron to use TSMC's 3nm process for the base dies of NVHBM, the custom high-bandwidth memory product Nvidia unveiled in August, TrendForce reported Oct. 19, citing Seoul Economic Daily.",
+    "Samsung's Device Solutions division, which oversees its foundry business, agreed to the requirement after an internal review, according to the report. Nvidia wants to standardize production across its suppliers to keep memory performance consistent and simplify product validation, the report said. TrendForce did not say that any of the companies had confirmed the arrangement.",
+    "The custom base die includes a memory controller traditionally housed in the GPU, which requires advanced logic manufacturing, according to TrendForce. Nvidia has said NVHBM offers up to 30% more memory bandwidth and 15% lower memory power use than standard HBM4E, the outlet reported. Industry estimates cited by Seoul Economic Daily put TSMC's 3nm yields above 90%, compared with about 60% for Samsung Foundry's 2nm process.",
+    "Samsung is also validating NVHBM base die production on its own 2nm process as a backup if TSMC capacity runs short, according to the report. Samsung and TSMC compete for major foundry customers such as Qualcomm and Tesla, TrendForce noted.",
+    "TSMC said on its Oct. 15 earnings call that 3nm capacity is tight, with the node accounting for 33% of third-quarter wafer sales, according to TrendForce. Chairman and CEO C.C. Wei announced plans for another 3nm fab in Tainan targeted for mass production in the first half of 2028, the outlet reported, citing Economic Daily News."
+   ],
+   "sources": [
+    {
+     "outlet": "TrendForce",
+     "title": "[News] NVIDIA Reportedly Pushes TSMC 3nm NVHBM Base Dies for Samsung, SK hynix, Micron, Uniting Foundry Rivals",
+     "date": "Oct 19, 2026",
+     "url": "https://www.trendforce.com/news/2026/10/19/news-nvidia-reportedly-pushes-tsmc-3nm-nvhbm-base-dies-for-samsung-sk-hynix-micron-in-unlikely-foundry-tie-up/"
+    }
+   ],
+   "item_url": "https://www.trendforce.com/news/2026/10/19/news-nvidia-reportedly-pushes-tsmc-3nm-nvhbm-base-dies-for-samsung-sk-hynix-micron-in-unlikely-foundry-tie-up/"
+  },
+  {
+   "slug": "sk-hynix-backs-chip-suppliers-with-2-trillion-won-in-financing",
+   "topic": "tech",
+   "date": "2026-10-19",
+   "minutes": 1,
+   "title": "SK Hynix Arranges 2 Trillion Won in Financing for Chip Suppliers",
+   "dek": "SK hynix signed an agreement with South Korea's trade ministry, a state export insurer and four banks to provide about $1.4 billion in financing to its suppliers, according to Seoul Economic Daily.",
+   "body": [
+    "SK hynix is working with the South Korean government and financial institutions to provide 2 trillion won, about $1.4 billion, in financing to suppliers of semiconductor materials, parts and equipment, Seoul Economic Daily reported Oct. 19.",
+    "The company said it signed a memorandum of understanding on export supply chain guarantees with the Ministry of Trade, Industry and Energy, the Korea Trade Insurance Corporation and four banks: KB Kookmin, Shinhan, Woori and Hana, according to the report. The signing took place at the Yongin semiconductor cluster in Gyeonggi Province and was attended by SK hynix President Kwak Noh-jung and Trade Minister Kim Jung-kwan, the outlet said.",
+    "Under the program, SK hynix and the banks contribute the funds and the state trade insurer provides guarantees, the report said. It is aimed at small and mid-sized suppliers that struggle to raise capital, with the goal of raising their borrowing limits and lowering interest and guarantee costs. The first guarantee certificate was presented to a supplier at the event, according to Seoul Economic Daily.",
+    "SK hynix also plans to support suppliers' technology development through the Trinity Fab, a verification facility under construction inside the Yongin cluster's first chip plant, the report said. The government, local authorities and SK hynix are jointly investing 870 billion won in the facility, according to the outlet.",
+    "Kwak said a strong supplier ecosystem is essential to Korea's chip competitiveness and that the financing and the verification facility would help strengthen technology leadership, the newspaper reported."
+   ],
+   "sources": [
+    {
+     "outlet": "Seoul Economic Daily",
+     "title": "SK hynix Backs Chip Suppliers With 2 Trillion Won in Financing",
+     "date": "Oct 19, 2026",
+     "url": "https://en.sedaily.com/finance/2026/10/19/sk-hynix-backs-chip-suppliers-with-2-trillion-won-in"
+    }
+   ],
+   "item_url": "https://en.sedaily.com/finance/2026/10/19/sk-hynix-backs-chip-suppliers-with-2-trillion-won-in"
+  }
+ ],
+ "dropped": []
+}

@@ -1,106 +1,6 @@
 {
 "queued": [
 {
-"kind": "club",
-"venue": "Refuge",
-"hood": "Brooklyn",
-"headline": "Floating Points Headlines Refuge Saturday Oct. 24",
-"date": "2026-10-19",
-"blurb": "Refuge's Saturday party on Oct. 24 features Floating Points, starting at 10 p.m. The club marked its first anniversary in September with a 72-hour party.",
-"url": "https://thebestparties.org/events/refuge-1997642240717",
-"outlet": "The Best Parties"
-},
-{
-"kind": "club",
-"venue": "Refuge",
-"hood": "Brooklyn",
-"headline": "Victor Calderone Leads Refuge's Halloween Morning Marathon Oct. 31",
-"date": "2026-10-19",
-"blurb": "Refuge opens a Halloween Saturday morning marathon at 6 a.m. on Oct. 31 with Victor Calderone.",
-"url": "https://thebestparties.org/events/refuge-1987579987246",
-"outlet": "The Best Parties"
-},
-{
-"kind": "music",
-"venue": "Knockdown Center",
-"hood": "Queens – Maspeth",
-"headline": "L7 Brings 'Last Hurrah' Tour to Knockdown Center Oct. 24",
-"date": "2026-10-19",
-"blurb": "Los Angeles rock band L7 plays Knockdown Center on Saturday, Oct. 24 on what it calls The Last Hurrah Tour. Tickets start at $51.",
-"url": "https://thebestparties.org/events/knockdown-2026-10-24-l7-the-last-hurrah-tour-2026",
-"outlet": "The Best Parties"
-},
-{
-"kind": "music",
-"venue": "Knockdown Center",
-"hood": "Queens – Maspeth",
-"headline": "Helado Negro and Reyna Tropical Team Up for 'Helado Tropical' at Knockdown Oct. 25",
-"date": "2026-10-19",
-"blurb": "Helado Negro and Reyna Tropical present a joint night, Helado Tropical, at Knockdown Center on Sunday, Oct. 25. Tickets from $38.",
-"url": "https://thebestparties.org/events/knockdown-2026-10-25-helado-negro-and-reyna-tropical-present-helado-tro",
-"outlet": "The Best Parties"
-},
-{
-"kind": "club",
-"venue": "Brooklyn Storehouse",
-"hood": "Brooklyn – Navy Yard",
-"headline": "Circoloco Halloween Weekend Sells Out Brooklyn Storehouse",
-"date": "2026-10-19",
-"blurb": "Teksupport's two-night Circoloco Halloween at Brooklyn Storehouse on Oct. 30 and 31 is listed as sold out, with tickets that started at $182. The Navy Yard venue has announced it is shutting down.",
-"url": "https://thebestparties.org/events/teksupport-6a7a25045051510001170f93",
-"outlet": "The Best Parties"
-},
-{
-"kind": "club",
-"venue": "Pacha NYC",
-"hood": "Manhattan – Hell's Kitchen",
-"headline": "Kaytranada Plays Pacha NYC Halloween Eve",
-"date": "2026-10-19",
-"blurb": "Kaytranada headlines Pacha NYC on Friday, Oct. 30 at 10 p.m., with tickets from $222.",
-"url": "https://thebestparties.org/events/dice-pacha-6a835ae4d44b2b00019c8d32",
-"outlet": "The Best Parties"
-},
-{
-"kind": "club",
-"venue": "Pacha NYC",
-"hood": "Manhattan – Hell's Kitchen",
-"headline": "Purple Disco Machine Takes Halloween Night at Pacha NYC",
-"date": "2026-10-19",
-"blurb": "German producer Purple Disco Machine plays Pacha NYC on Saturday, Oct. 31. Tickets from $133.",
-"url": "https://thebestparties.org/events/dice-pacha-6a7c839d98c64d0001869ab8",
-"outlet": "The Best Parties"
-},
-{
-"kind": "club",
-"venue": "Marquee New York",
-"hood": "Manhattan – Chelsea",
-"headline": "Lost Frequencies at Marquee New York Oct. 30",
-"date": "2026-10-19",
-"blurb": "Belgian DJ Lost Frequencies plays Marquee New York on Oct. 30 at 11 p.m. 21+, with tables or general admission.",
-"url": "https://thebestparties.org/events/marquee-10-30-2026-lost-frequencies-marquee",
-"outlet": "The Best Parties"
-},
-{
-"kind": "club",
-"venue": "Marquee New York",
-"hood": "Manhattan – Chelsea",
-"headline": "Two Friends Close Out Halloween at Marquee",
-"date": "2026-10-19",
-"blurb": "The DJ duo Two Friends headline Marquee New York on Halloween night, Oct. 31, at 11 p.m. 21+.",
-"url": "https://thebestparties.org/events/marquee-10-31-2026-two-friends-marquee",
-"outlet": "The Best Parties"
-},
-{
-"kind": "news",
-"venue": "",
-"hood": "Manhattan – Midtown",
-"headline": "Blakeman Uses Fatal Subway Shooting as Campaign Cudgel Against Hochul",
-"date": "2026-10-19",
-"blurb": "Republican Bruce Blakeman seized on the deadly Midtown subway shooting to attack Gov. Hochul, whose campaign pointed to state money she has steered to NYPD subway overtime.",
-"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/19/blakeman-uses-fatal-subway-shooting-as-campaign-cudgel",
-"outlet": "NY1"
-},
-{
 "kind": "news",
 "venue": "",
 "hood": "Queens – Astoria",
@@ -389,6 +289,74 @@
 {
 "url": "https://www.amny.com/news/man-stabbed-dead-queens-park-10072026/",
 "reason": "fetch failed twice (client error, likely dead page)"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/19/queens-officers-save-baby-s-life-in-frantic-cpr-rescue",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/education/2026/10/19/investigation-details-hourslong-ordeal-for-six-students-on-school-bus",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/19/brooklyn-conservatory-of-music-opens-second-campus-",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.amny.com/entertainment/music/santos-bravos-celebrates-first-anniversary-k-pop-nara/",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/17/new-charges-in-fit-student-s-fentanyl-death--officials-say",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/politics/2026/10/16/mamdani-asks-nyc-parking-lot--garage-owners-to-deny-ice-access",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/15/the-plaza-hotel-announces-four-year-closure-for-renovations",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/politics/2026/10/13/full-debate--kathy-hochul--bruce-blakeman-spar-off-in-gubernatorial-debate",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/12/arturo-o-farrill-brings-afro-latin-jazz-to-harlem",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://ny1.com/nyc/all-boroughs/politics/2026/10/09/attorney-general-candidates-trade-blows-in-fiery-ny1-debate-letitia-james-saritha-komatireddy",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.eventbrite.com/e/neirs-tavern-197th-anniversary-block-party-tickets-1993090219499",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.sevenrooms.com/experiences/tokyorecordbar",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.eventbrite.com/e/disco-tehran-anniversary-party-tickets-1995466938329",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.axs.com/events/1607124/westside-cowboy-tickets",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.amny.com/new-york/bronx/senior-bronx-shot-girlfriend-love-triangle-10182026/",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.brooklynpaper.com/melissa-brooks-officer-bribery-indictment/",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.amny.com/news/man-stabbed-dead-queens-park-10072026/",
+"reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
 }
 ]
 }

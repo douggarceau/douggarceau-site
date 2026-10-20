@@ -1,0 +1,134 @@
+{
+ "stories": [
+  {
+   "slug": "wall-street-futures-climb-as-ai-stocks-rebound-oil-and-yields-fall",
+   "topic": "tech",
+   "date": "2026-10-19",
+   "minutes": 1,
+   "title": "Wall Street Futures Rise as AI Stocks Rebound; Oil and Yields Fall",
+   "dek": "U.S. stock index futures gained Monday as artificial intelligence shares recovered from the previous week's selloff, Reuters reported.",
+   "body": [
+    "U.S. stock index futures rose early Monday, Oct. 19, as shares tied to artificial intelligence recovered from a sharp selloff the week before, according to a Reuters report published by Investing.com.",
+    "The S&P 500 and the Nasdaq Composite posted their largest weekly declines since late June on Friday, led by technology companies, Reuters reported. The drop was driven by concern that higher interest rates could weigh on spending for AI infrastructure, particularly by data center operators.",
+    "As of 4:59 a.m. ET, Nasdaq 100 E-minis were up 292.25 points, or 0.99%, S&P 500 E-minis were up 36 points, or 0.47%, and Dow E-minis were up 18 points, or 0.03%, according to the report. In premarket trading, Broadcom rose 2.3%, CoreWeave 1.3% and Nvidia 1.1%. Intel gained 3.8% after JPMorgan raised its rating to neutral from underweight.",
+    "Brent crude futures fell 1.8% to about $107 a barrel after President Donald Trump waived some sanctions on Russia, Reuters reported. Secretary of State Marco Rubio said Saturday the president could take up to 60 days to assess the economic impact. The 10-year Treasury yield fell to 5.085%.",
+    "Investors are watching a busy week of earnings, Reuters reported, with SpaceX scheduled to report Tuesday and Tesla on Wednesday. Netflix, General Motors and GE Aerospace are also due to report this week."
+   ],
+   "sources": [
+    {
+     "outlet": "Investing.com (Reuters)",
+     "title": "Wall St futures climb as AI stocks rebound; oil, yields fall",
+     "date": "Oct 19, 2026",
+     "url": "https://ca.investing.com/news/economy-news/wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall-4887703"
+    }
+   ],
+   "item_url": "https://ca.investing.com/news/economy-news/wall-st-futures-climb-as-ai-stocks-rebound-oil-yields-fall-4887703"
+  },
+  {
+   "slug": "palantir-shares-fall-7-percent-amid-broad-tech-selloff",
+   "topic": "tech",
+   "date": "2026-10-19",
+   "minutes": 1,
+   "title": "Palantir Shares Fall 7% Amid Broad Tech Selloff",
+   "dek": "Palantir stock dropped 7% on Friday as investors reassessed the valuations of artificial intelligence companies, according to TIKR.",
+   "body": [
+    "Shares of Palantir Technologies fell 7% on Friday, Oct. 16, closing near $186, according to an analysis published by the investment research site TIKR.",
+    "TIKR attributed the decline mainly to investor concern over high valuations of artificial intelligence companies, along with worries about rising borrowing costs and whether large AI investments will produce adequate returns. A broad technology selloff pushed the Nasdaq Composite down about 2% that day, the site said, adding that the move did not reflect new operational problems at the company.",
+    "The drop followed recent price target increases from analysts. Baird raised its target to $250 from $200 on Oct. 12, and Mizuho raised its target to $245 from $215 on Oct. 15 while keeping an Outperform rating, according to TIKR.",
+    "Palantir reported second-quarter revenue of $1.935 billion, up 93% from a year earlier, TIKR said. U.S. commercial revenue rose 149% to $764 million, and U.S. government revenue rose 90% to $809 million. Management's revenue outlook for 2026 is about $8.15 billion, according to the report.",
+    "The company is scheduled to report its next quarterly results on Nov. 2. The stock's 52-week range is $106 to $213, TIKR said."
+   ],
+   "sources": [
+    {
+     "outlet": "TIKR",
+     "title": "Palantir Stock Fell 7% on Friday. Here's Where Shares Could Go in 2026",
+     "date": "Oct 19, 2026",
+     "url": "https://www.tikr.com/blog/palantir-stock-fell-7-on-friday-heres-where-shares-could-go-in-2026"
+    }
+   ],
+   "item_url": "https://www.tikr.com/blog/palantir-stock-fell-7-on-friday-heres-where-shares-could-go-in-2026"
+  },
+  {
+   "slug": "jp-morgan-upgrades-intel-to-neutral-shares-rise-premarket",
+   "topic": "tech",
+   "date": "2026-10-19",
+   "minutes": 1,
+   "title": "J.P. Morgan Upgrades Intel to Neutral; Shares Rise Premarket",
+   "dek": "Intel shares rose more than 4% in premarket trading Monday after a J.P. Morgan analyst lifted his rating from Underweight, TipRanks reported.",
+   "body": [
+    "Intel shares rose more than 4% in premarket trading on Monday, Oct. 19, after J.P. Morgan analyst Harlan Sur upgraded the chipmaker to Neutral from Underweight, according to TipRanks.",
+    "Sur set a price target of $85, about 5.4% below the stock's latest close of $89.85, TipRanks reported. He said the stock's risk-reward balance had improved after shares fell about 36% from their June peak, and credited better execution under Chief Executive Lip-Bu Tan in client and data center chips and in manufacturing.",
+    "The analyst also pointed to continued market share losses, according to the report. Intel's server CPU share fell from 77% to 53%, and its PC CPU share fell from 81% to 68%, and Sur expects further declines, particularly in servers. Intel's external foundry revenue remained under $1 billion annualized in the first half of 2026, compared with about $150 billion at TSMC, TipRanks said.",
+    "Sur said he sees potential in custom chips and expects AI agent workloads to support demand for CPUs, the report said.",
+    "Intel is scheduled to report third-quarter results on Oct. 29. Analysts expect adjusted earnings of 40 cents a share on revenue of $16.50 billion, according to TipRanks."
+   ],
+   "sources": [
+    {
+     "outlet": "TipRanks",
+     "title": "Why Intel Stock (INTC) Is Rising Following J.P. Morgan Upgrade",
+     "date": "Oct 19, 2026",
+     "url": "https://www.tipranks.com/news/j-p-morgans-take-on-intel"
+    }
+   ],
+   "item_url": "https://www.tipranks.com/news/j-p-morgans-take-on-intel"
+  },
+  {
+   "slug": "samsung-and-tsmc-team-up-on-custom-memory-chips-for-nvidia",
+   "topic": "tech",
+   "date": "2026-10-18",
+   "minutes": 1,
+   "title": "Samsung and TSMC Team Up on Custom Memory Chips for Nvidia",
+   "dek": "Samsung is working with rival TSMC on the base die for Nvidia's custom high-bandwidth memory, the Seoul Economic Daily reported.",
+   "body": [
+    "Samsung Electronics is working with its foundry rival TSMC on a key component of Nvidia's custom high-bandwidth memory, known as NVHBM, the Seoul Economic Daily reported on Oct. 18, citing industry sources.",
+    "Nvidia is co-designing the memory's base die, the logic layer at the bottom of the memory stack, with both companies, according to the report. Nvidia wants the base die made on TSMC's 3-nanometer process, which industry estimates put at a yield above 90%, compared with roughly 60% for Samsung's comparable 2-nanometer process.",
+    "The design moves the memory controller off the graphics processor and onto the base die, freeing space for more computing circuits, the newspaper said. It reported that NVHBM can widen memory bandwidth by up to 30% and reduce power use by 15% compared with standard HBM4E.",
+    "The arrangement comes amid a projected supply gap. UBS estimates next year's demand for high-bandwidth memory at about 61.5 billion gigabits, up 91%, while new shipments are expected to reach 54.6 billion gigabits, according to the report. TSMC has said it will add 3-nanometer production lines in Taiwan, Arizona and Japan.",
+    "Samsung is also validating base die production on its own 2-nanometer process in case TSMC's capacity runs short, an unnamed industry official told the newspaper. The two companies previously worked together on TSMC's packaging technology for AI chips about four years ago."
+   ],
+   "sources": [
+    {
+     "outlet": "Seoul Economic Daily",
+     "title": "Samsung, TSMC Join Forces to Expand Custom HBM Output for Nvidia",
+     "date": "Oct 18, 2026",
+     "url": "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm"
+    }
+   ],
+   "item_url": "https://en.sedaily.com/finance/2026/10/18/samsung-to-tap-tsmc-3-nanometer-lines-for-nvidia-custom-hbm"
+  },
+  {
+   "slug": "deepseek-releases-updated-v4-1-flash-model",
+   "topic": "tech",
+   "date": "2026-10-18",
+   "minutes": 1,
+   "title": "DeepSeek Releases Updated V4.1-Flash Model",
+   "dek": "The Chinese company said the update shortens task execution time and output length, SiliconANGLE reported.",
+   "body": [
+    "Chinese artificial intelligence developer DeepSeek released an updated version of its V4.1-Flash model on Oct. 18, about five weeks after the original launched on Sept. 10, SiliconANGLE reported.",
+    "The model card on Hugging Face describes DeepSeek-V4.1-Flash-1017 as a minor update that reduces task execution time and output length, according to the report. DeepSeek did not say by how much.",
+    "In DeepSeek's own testing, the update resolved 77% of tasks on the DeepSWE v1.1 software engineering benchmark, up from 74.2% for the September version, SiliconANGLE said. Anthropic's Claude Opus 5 scored 74% on that test but led on seven of the 11 benchmarks DeepSeek published.",
+    "DeepSeek also introduced search and page-fetch interfaces for agent software, each priced at 75 cents per 1,000 successful requests, according to the report. Calls made through DeepSeek's own Harness tool, Anthropic's Claude Code or OpenAI's Codex are free until Nov. 1.",
+    "The release follows a nearly five-hour API outage on Oct. 15, which Yicai Global counted among DeepSeek's worst this year, SiliconANGLE reported. The company apologized and issued credits to users. The updated model is available in DeepSeek's apps and through its API at unchanged prices, and its weights are published under the MIT license."
+   ],
+   "sources": [
+    {
+     "outlet": "SiliconANGLE",
+     "title": "DeepSeek releases updated V4.1-Flash model it says completes tasks faster",
+     "date": "Oct 18, 2026",
+     "url": "https://siliconangle.com/2026/10/18/deepseek-releases-updated-v4-1-flash-model-it-says-completes-tasks-faster/"
+    }
+   ],
+   "item_url": "https://siliconangle.com/2026/10/18/deepseek-releases-updated-v4-1-flash-model-it-says-completes-tasks-faster/"
+  }
+ ],
+ "dropped": [
+  {
+   "url": "https://www.sammyfans.com/2026/10/17/samsung-building-another-texas-chip-factory-before-its-first-opens/",
+   "reason": "not read: WebFetch proxy returned HTTP 429 (rate limited) and instructed not to refetch; alternate-source pages also rate-limited. Not a dead page; can be retried in a later pass."
+  },
+  {
+   "url": "https://en.sedaily.com/international/2026/10/16/apple-ceo-signals-openness-to-chinese-memory-chips",
+   "reason": "not read: WebFetch proxy returned HTTP 429 (rate limited) and instructed not to refetch. Not a dead page; can be retried in a later pass."
+  }
+ ]
+}

@@ -127,6 +127,23 @@ def main(city, out):
     brief_list.sort(key=lambda x: x.get('date', ''), reverse=True)
     stories = stories + [b for b in brief_list if b['slug'] not in {y['slug'] for y in stories}]
     json.dump({'queued': queue, 'dropped': dropped}, open(f'{ED}/{city}/queue.json', 'w'), ensure_ascii=False, indent=0)
+    # Tech & AI desk items rewritten as our own stories
+    tech_by = {}
+    for fp in sorted(glob.glob(f'{ED}/tech/briefs_*.json')):
+        for t in json.load(open(fp)).get('stories', []):
+            if t.get('slug') and t.get('body') and t.get('item_url') and t['slug'] not in {y['slug'] for y in stories}:
+                t.setdefault('minutes', 1); stories.append(t); tech_by[t['item_url']] = t['slug']
+    TECHOBJ, _, _ = grab(h, 'const TECH=/*TECH_START*/')
+    def tlink(o):
+        if isinstance(o, dict):
+            for k in ('u', 'url', 'link'):
+                if isinstance(o.get(k), str) and o[k] in tech_by:
+                    o['src_' + k] = o[k]; o[k] = '?story=' + tech_by[o[k]]
+            for v in o.values(): tlink(v)
+        elif isinstance(o, list):
+            for v in o: tlink(v)
+    tlink(TECHOBJ)
+    h = put(h, 'const TECH=/*TECH_START*/', TECHOBJ)
 
     # rule: no drag / gay content
     bad = re.compile(r'\bdrag\b|\bqueer\b|\bgay\b|lgbt|\bpride\b|drag (show|brunch|queen)', re.I)

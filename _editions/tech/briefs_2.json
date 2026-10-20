@@ -1,0 +1,202 @@
+{
+ "stories": [
+  {
+   "slug": "nasdaq-climbs-as-tech-stocks-rebound-from-sell-off",
+   "topic": "tech",
+   "date": "2026-10-19",
+   "minutes": 1,
+   "title": "Nasdaq Climbs as Tech Stocks Rebound From Last Week's Sell-Off",
+   "dek": "The Nasdaq rose about 1.1% on Monday, led by Amazon, Palantir and Tesla, after Friday's retreat from tech and AI shares.",
+   "body": [
+    "Technology shares recovered on Monday, Oct. 19, with the Nasdaq closing up about 1.1%, according to TheStreet. The S&P 500 gained 0.41% while the Dow finished down 0.07%.",
+    "The rebound followed a Friday session in which stocks closed lower as investors pulled back from tech and AI names over doubts about AI capital spending and returns, TheStreet reported.",
+    "Among the day's biggest gainers, Amazon rose 4.95%, Palantir 4.36%, Tesla 3.74% and Micron 2.95%, the outlet said. Amazon's advance came after Morgan Stanley raised its price target to $350 from $335. CoreWeave climbed 6.12% after Goldman Sachs upgraded it to Buy, and Datadog gained 5.48% on a Bernstein upgrade. Intel rose about 4% in premarket trading after JPMorgan moved it to Neutral from Underweight. Meta fell 0.54% and Apple slipped 0.14%.",
+    "Outside of tech, West Texas Intermediate crude rose more than 2%, to about $103.73 a barrel by mid-afternoon, after Houthi forces claimed attacks on Saudi oil and airport targets, according to TheStreet. Gold fell 0.47%. The National Association of Home Builders index dropped 3 points to 29, its lowest reading since June 2012, the outlet reported.",
+    "Investors now turn to a heavy earnings week. Netflix and SpaceX are scheduled to report after the close on Tuesday, with Tesla, Meta, IBM and Texas Instruments due Wednesday, according to TheStreet."
+   ],
+   "sources": [
+    {
+     "outlet": "TheStreet",
+     "title": "Stock Market Today (Oct. 19, 2026): Nasdaq climbs as tech rebounds from sell-off",
+     "date": "Oct 19, 2026",
+     "url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+    }
+   ],
+   "item_url": "https://www.thestreet.com/stock-market-today/stock-market-today-oct-19-2026-nasdaq-futures-climb-as-tech-rebound-from-sell-off"
+  },
+  {
+   "slug": "sk-hynix-falls-another-3-after-brutal-24-rout",
+   "topic": "tech",
+   "date": "2026-10-18",
+   "minutes": 1,
+   "title": "SK Hynix Shares Slide Further After Worst Week Since 2008",
+   "dek": "The South Korean memory maker fell 3.2% in early Monday trading after a 24.3% weekly drop tied to concerns over AI data-center financing.",
+   "body": [
+    "Shares of SK Hynix fell 3.2% to 1,231,000 won in early trading in Seoul on Monday, extending a steep decline, according to Invezz. The stock lost 24.3% the prior week, its worst weekly drop since the 2008 financial crisis, the outlet reported.",
+    "Between Oct. 12 and Oct. 16, the shares fell from 1,681,000 won to 1,272,000 won, Invezz said. Foreign investors were net sellers of 5.36 trillion won of SK Hynix stock during the week, citing Korea Exchange figures. Samsung Electronics lost 17.8% over the same period.",
+    "According to Invezz, the selling reflects investor questions about how the AI data-center buildout will be financed rather than a demonstrated fall in chip demand. The outlet noted that evidence of weaker chip orders remains limited. Analysts cited in the report said higher borrowing costs could lead cloud operators to delay projects, which would eventually affect memory orders.",
+    "An analyst at Kiwoom Securities urged investors to watch CoreWeave shares, corporate bond yields and default-insurance premiums, Invezz reported. CoreWeave fell almost 12% on Friday, the outlet said.",
+    "SK Hynix is scheduled to report third-quarter earnings on Oct. 28. Invezz said investors will look for detail on high-bandwidth memory orders, 2027 demand and pricing. Market tracker TrendForce expects conventional DRAM contract prices to rise 10% to 15% this quarter, according to the report."
+   ],
+   "sources": [
+    {
+     "outlet": "Invezz",
+     "title": "SK Hynix stock falls another 3% after brutal 24% rout: when will the selling stop?",
+     "date": "Oct 18, 2026",
+     "url": "https://invezz.com/news/2026/10/19/sk-hynix-stock-falls-another-3-after-brutal-24-rout-when-will-the-selling-stop/"
+    }
+   ],
+   "item_url": "https://invezz.com/news/2026/10/19/sk-hynix-stock-falls-another-3-after-brutal-24-rout-when-will-the-selling-stop/"
+  },
+  {
+   "slug": "whats-going-on-with-intel-stock-monday",
+   "topic": "tech",
+   "date": "2026-10-19",
+   "minutes": 1,
+   "title": "Intel Shares Rise Ahead of Earnings as Chip Stocks Rebound",
+   "dek": "Intel gained about 4% in premarket trading Monday as a broader tech rally lifted semiconductor shares ahead of its Oct. 29 report.",
+   "body": [
+    "Intel shares rose about 4% in premarket trading on Monday, Oct. 19, reaching $93.26, according to Benzinga, citing Benzinga Pro data. The gain came as a broader technology rally lifted semiconductor stocks following a sell-off the previous week.",
+    "The move extends Intel's rally this year, which Benzinga put at 140%. Nasdaq futures were up 1.11% and S&P 500 futures had gained 0.53% at the time, the outlet reported.",
+    "Intel also announced same-day support for Meta's Muse Spark Open, an 816-billion-parameter model, on its Xeon processors and upcoming GPU D-series, according to Benzinga. The company tested the model on four GPU D-series cards with 160 GB of memory each. Benzinga noted the announcement did not disclose customer commitments, expected revenue or a launch date for the GPU line.",
+    "Benzinga reported that Intel could benefit from capacity constraints at TSMC as chipmakers compete for limited supply, though it described potential foundry deals with companies such as Apple and Nvidia as speculative.",
+    "Intel is scheduled to report third-quarter results on Thursday, Oct. 29. Analysts expect earnings of 39 cents per share, up from 23 cents a year earlier, on revenue of $16.44 billion, compared with $13.65 billion, according to Benzinga."
+   ],
+   "sources": [
+    {
+     "outlet": "Benzinga",
+     "title": "What's Going On With Intel Stock Monday?",
+     "date": "Oct 19, 2026",
+     "url": "https://www.benzinga.com/markets/tech/26/10/62432246/whats-going-on-with-intel-stock-monday-8"
+    }
+   ],
+   "item_url": "https://www.benzinga.com/markets/tech/26/10/62432246/whats-going-on-with-intel-stock-monday-8"
+  },
+  {
+   "slug": "samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm",
+   "topic": "tech",
+   "date": "2026-10-18",
+   "minutes": 1,
+   "title": "Samsung to Use TSMC for Base Die in Nvidia's Custom HBM",
+   "dek": "Samsung will rely on TSMC's 3-nanometer process for part of Nvidia's custom high-bandwidth memory, Seoul Economic Daily reported, citing industry sources.",
+   "body": [
+    "Samsung Electronics will use TSMC's 3-nanometer process to manufacture the base die for Nvidia's custom high-bandwidth memory, known as NVHBM, according to a report published Oct. 18 by Seoul Economic Daily, citing industry sources. The paper described it as the first manufacturing-stage partnership between the two chipmakers.",
+    "Samsung previously produced both the core die and the base die for all of its HBM supply in-house, the report said. Nvidia asked its three NVHBM suppliers, Samsung, SK hynix and Micron, to use TSMC's 3nm process for the base die and to standardize the core die on the sixth-generation DRAM process known as 1c, according to the paper. Nvidia said differing manufacturing methods make consistent performance difficult, and that standardization reduces validation work for each supplier, the report said.",
+    "NVHBM is based on the HBM4E architecture, the seventh generation of the technology, and was unveiled by Nvidia in August, according to Seoul Economic Daily. Samsung's Device Solutions division accepted Nvidia's request after an internal review, the paper reported.",
+    "Samsung will keep its in-house approach for standard HBM, using its own 4nm foundry process for the base die of HBM4 and HBM4E, and for custom HBM for other customers including AMD, according to the report.",
+    "The company is also checking whether it can produce the NVHBM base die at its own foundry, the paper said. An unnamed industry official described that as a hedge in case demand exceeds TSMC's capacity."
+   ],
+   "sources": [
+    {
+     "outlet": "Seoul Economic Daily",
+     "title": "Samsung to Tap TSMC for Nvidia's Custom HBM Base Die",
+     "date": "Oct 18, 2026",
+     "url": "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm"
+    }
+   ],
+   "item_url": "https://en.sedaily.com/finance/2026/10/18/samsung-to-use-tsmc-for-base-die-in-nvidias-custom-hbm"
+  },
+  {
+   "slug": "anthropic-offers-blackstone-over-10-on-60b-ai-chip-financing",
+   "topic": "tech",
+   "date": "2026-10-17",
+   "minutes": 1,
+   "title": "Anthropic Offers Investors Over 10% Yield in $60 Billion Chip Financing",
+   "dek": "The reported deal would fund about 1.5 gigawatts of Google chips, with Broadcom guaranteeing the senior debt and Blackstone funds taking part of the junior portion.",
+   "body": [
+    "Anthropic is offering investors a yield above 10% as part of a proposed $60 billion financing to acquire about 1.5 gigawatts of Google's custom tensor processing units, according to Analytics Insight, which cited a Financial Times report based on people familiar with the discussions. The outlet said the arrangement, called Project North Star, could become the largest chip financing on record.",
+    "About $42 billion of the package would be senior debt guaranteed by Broadcom, which works with Google on chip development, according to the report. The remaining $18 billion of junior debt would be split into two $9 billion portions. Funds managed by Blackstone are reported to be providing the first portion, while Anthropic plans to offer the second to other investors in the coming months, the outlet said.",
+    "The offer carries a 10% coupon, with discounts and fees pushing total yield above that level, according to the report. Analytics Insight compared this with roughly 7% for borrowers with similar credit ratings in public bond markets. Anthropic's chip lease payments over five years would support the borrowing.",
+    "Credit rating firm KBRA placed Anthropic one notch below investment grade in June, the outlet reported. Sources expect the junior debt to receive a similar assessment, it said.",
+    "The terms have been reported through anonymous sources, and the article did not include confirmation from Anthropic, Blackstone, Broadcom or Google."
+   ],
+   "sources": [
+    {
+     "outlet": "Analytics Insight (FT)",
+     "title": "Anthropic Offers Blackstone Over 10% on USD 60B AI Chip Deal",
+     "date": "Oct 17, 2026",
+     "url": "https://www.analyticsinsight.net/news/anthropic-offers-blackstone-over-10-on-usd-60b-ai-chip-deal"
+    }
+   ],
+   "item_url": "https://www.analyticsinsight.net/news/anthropic-offers-blackstone-over-10-on-usd-60b-ai-chip-deal"
+  },
+  {
+   "slug": "deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner",
+   "topic": "tech",
+   "date": "2026-10-17",
+   "minutes": 1,
+   "title": "DeepSeek Releases Updated Model It Says Is Faster and Leaner",
+   "dek": "The Chinese startup released V4.1-Flash-1017, a minor update it says scores better on benchmarks and completes tasks faster.",
+   "body": [
+    "Chinese startup DeepSeek released an updated version of its model on Saturday, Oct. 17, saying it is faster and leaner than the previous version, according to Bloomberg. The model, V4.1-Flash-1017, was announced in a series of posts on X, the outlet reported.",
+    "The company said the update offers stronger benchmark performance, faster task completion and shorter outputs, according to Bloomberg. It is available on the web, in DeepSeek's app and on its developer platform.",
+    "DeepSeek described the release as a minor update to its earlier V4.1-Flash model, Bloomberg reported. A technical report the company posted on Hugging Face cites improvements across reasoning, coding, agentic tasks and visual benchmarks. On the Humanity's Last Exam benchmark, the updated model scored in a range of 36.8 to 42.6, compared with 36.8 to 39.1 for V4.1-Flash, according to Bloomberg.",
+    "The Hangzhou-based company competes with U.S. developers including Anthropic and OpenAI, as well as Chinese rivals Moonshot and Z.ai, the outlet said. Bloomberg reported that DeepSeek suffered an outage of about five hours earlier in the week that left its servers unreachable, which some experts attributed to insufficient computing resources.",
+    "The earlier V4.1-Flash, released in early September, was priced low enough that shares of rivals including MiniMax, Z.ai and Alibaba fell in Hong Kong trading, according to Bloomberg."
+   ],
+   "sources": [
+    {
+     "outlet": "Bloomberg (via Yahoo Finance)",
+     "title": "DeepSeek Pushes Out Updated AI Model It Says Is Faster, Leaner",
+     "date": "Oct 17, 2026",
+     "url": "https://finance.yahoo.com/technology/ai/articles/deepseek-pushes-updated-ai-model-134714989.html"
+    }
+   ],
+   "item_url": "https://www.bloomberg.com/news/articles/2026-10-17/deepseek-pushes-out-updated-ai-model-it-says-is-faster-leaner"
+  }
+ ],
+ "dropped": [
+  {
+   "url": "https://thequantuminsider.com/2026/10/16/google-demonstrates-method-to-cut-errors-in-quantum-computings-magic-states/",
+   "reason": "fetch failed: WebFetch proxy returned HTTP 429 rate limit and said not to retry this page; no alternate source could be read (retry later); alternates tried: interestingengineering.com, blog.google, quantumcomputingreport.com (all 429)"
+  },
+  {
+   "url": "https://www.marketbeat.com/instant-alerts/price-oracle-nyse-orcl-stock-falls-46-heres-what-happened-2026-10-16/",
+   "reason": "fetch failed: WebFetch proxy returned HTTP 429 rate limit and said not to retry this page; no alternate source could be read (retry later)"
+  },
+  {
+   "url": "https://www.theblock.co/news/business/2026-10-16-openai-says-research-model-spent-another-wallets-testnet-eth-without-authorization-on-coding-task-418798",
+   "reason": "fetch failed: WebFetch proxy returned HTTP 429 rate limit and said not to retry this page; no alternate source could be read (retry later)"
+  },
+  {
+   "url": "https://venturebeat.com/technology/google-makes-gemini-4-argon-broadly-available-with-limited-time-low-api-pricing-of-2-10-per-1m-token",
+   "reason": "fetch failed: WebFetch proxy returned HTTP 429 rate limit and said not to retry this page; no alternate source could be read (retry later)"
+  },
+  {
+   "url": "https://www.bloomberg.com/news/articles/2026-10-16/softbank-is-said-to-weigh-buying-largest-us-security-firm-allied",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  },
+  {
+   "url": "https://heygotrade.com/en/news/meta-meta-stock-news-october-15-2026",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  },
+  {
+   "url": "https://www.cnbc.com/2026/10/15/tsmc-third-quarter-profit-global-ai-.html",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  },
+  {
+   "url": "https://www.anthropic.com/claude-mythos-preview-risk-report",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  },
+  {
+   "url": "https://www.anthropic.com/research/emergent-misalignment-reward-hacking",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  },
+  {
+   "url": "https://www.eweek.com/news/replit-ai-coding-assistant-failure/",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  },
+  {
+   "url": "https://www.lesswrong.com/posts/Zu4ai9GFpwezyfB2K/metr-recent-frontier-models-are-reward-hacking",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  },
+  {
+   "url": "https://www.defenseone.com/ideas/2026/05/pentagons-54-billion-bet-autonomous-warfare/413735/",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  },
+  {
+   "url": "https://www.armscontrol.org/act/2026-04/news-briefs/pentagon-labels-ai-company-supply-chain-risk",
+   "reason": "not processed: fetching halted after persistent WebFetch proxy HTTP 429 rate limits across all sites (retry later)"
+  }
+ ]
+}
