@@ -145,6 +145,26 @@ def main(city, out):
     tlink(TECHOBJ)
     h = put(h, 'const TECH=/*TECH_START*/', TECHOBJ)
 
+    # voice rewrites (one writer, one tone) and hand-written features
+    vo = {}
+    for fp in sorted(glob.glob(f'{ED}/voices/out_*.json')):
+        vo.update(json.load(open(fp)))
+    for x in stories + [y for y in locals().get('brief_list', [])]:
+        v = vo.get(x['slug'])
+        if v and v.get('body'):
+            x['title'], x['dek'], x['body'] = v.get('title') or x['title'], v.get('dek') or x['dek'], v['body']
+    feats_ = []
+    for fp in sorted(glob.glob(f'{ED}/features/*.json')):
+        for ft in json.load(open(fp)):
+            if ft['slug'] not in {y['slug'] for y in stories}:
+                feats_.append(ft)
+    stories = feats_ + stories
+    TECHOBJ2, _, _ = grab(h, 'const TECH=/*TECH_START*/')
+    for ft in reversed(feats_):
+        if ft.get('feature_tech'):
+            e = dict(ft['feature_tech']); e['u'] = '?story=' + ft['slug']; TECHOBJ2['news'].insert(0, e)
+    h = put(h, 'const TECH=/*TECH_START*/', TECHOBJ2)
+
     # house bylines: one writer per column
     COLS = {
       'crime': ('Ray Kessler', 'Crime Watch'), 'courts': ('Miriam Sloane', 'The Courts'), 'cold': ('Agnes Ward', 'Cold File'),
@@ -155,7 +175,7 @@ def main(city, out):
     natl = {x['slug'] for x in national}
     def column(x):
         t = (x.get('title', '') + ' ' + x.get('dek', '')).lower(); tp = x.get('topic', '')
-        if x.get('col') in COLS: return x['col']
+        if x.get('by'): return None
         if tp == 'streets' and re.search(r'years ago|anniversary|remembered', t): return 'cold'
         if tp == 'tech':
             return 'markets' if re.search(r'stock|shares|futures|nasdaq|s&p|analyst|upgrade|downgrade|earnings|investor|valuation|%|premarket|capex|financing|debt', t) else 'tech'
@@ -168,7 +188,8 @@ def main(city, out):
         return 'crime'
     for x in stories:
         if x['slug'] in natl: continue
-        k = column(x); x['col'], x['by'] = COLS[k][1], COLS[k][0]
+        k = column(x)
+        if k: x['col'], x['by'] = COLS[k][1], COLS[k][0]
 
     # rule: no drag / gay content
     bad = re.compile(r'\bdrag\b|\bqueer\b|\bgay\b|lgbt|\bpride\b|drag (show|brunch|queen)', re.I)
