@@ -145,6 +145,31 @@ def main(city, out):
     tlink(TECHOBJ)
     h = put(h, 'const TECH=/*TECH_START*/', TECHOBJ)
 
+    # house bylines: one writer per column
+    COLS = {
+      'crime': ('Ray Kessler', 'Crime Watch'), 'courts': ('Miriam Sloane', 'The Courts'), 'cold': ('Agnes Ward', 'Cold File'),
+      'politics': ('Tom Brannigan', 'City Hall'), 'surveillance': ('Nina Reyes', 'Overreach'), 'nightlife': ('Jules Marlow', 'After Dark'),
+      'music': ('Cass Delaney', 'The Bill'), 'bands': ('Joey Vance', 'Local Noise'), 'venues': ('Harold Finch', 'The Rooms'),
+      'culture': ('Tess Morrow', 'The Scene'), 'tech': ('Evan Cole', 'Machine Age'), 'markets': ('Gil Mercer', 'The Ticker'),
+    }
+    natl = {x['slug'] for x in national}
+    def column(x):
+        t = (x.get('title', '') + ' ' + x.get('dek', '')).lower(); tp = x.get('topic', '')
+        if x.get('col') in COLS: return x['col']
+        if tp == 'streets' and re.search(r'years ago|anniversary|remembered', t): return 'cold'
+        if tp == 'tech':
+            return 'markets' if re.search(r'stock|shares|futures|nasdaq|s&p|analyst|upgrade|downgrade|earnings|investor|valuation|%|premarket|capex|financing|debt', t) else 'tech'
+        if tp == 'surveillance': return 'surveillance'
+        if tp == 'politics': return 'politics'
+        if tp == 'nightlife': return 'nightlife'
+        if tp == 'music': return 'music'
+        if tp == 'culture': return 'venues' if re.search(r'\b(bar|club|venue|tavern|restaurant|hotel|lounge|theater|theatre)\b', t) else 'culture'
+        if re.search(r'trial|jury|verdict|sentenc|plead|plea|arraign|indict|judge|court|convicted|acquitted|guilty', t): return 'courts'
+        return 'crime'
+    for x in stories:
+        if x['slug'] in natl: continue
+        k = column(x); x['col'], x['by'] = COLS[k][1], COLS[k][0]
+
     # rule: no drag / gay content
     bad = re.compile(r'\bdrag\b|\bqueer\b|\bgay\b|lgbt|\bpride\b|drag (show|brunch|queen)', re.I)
     def ok(x):
@@ -217,6 +242,10 @@ def main(city, out):
         h = h.replace('alt="' + B + '" width="1000" height="240"', 'alt="' + B + '" width="' + ('942' if city == 'nyc' else '961') + '" height="' + ('217' if city == 'nyc' else '214') + '"')
     # every carried-over story counts as a feature, not local news
     h = re.sub(r"const FEATURES=new Set\(\[[^\]]*\]\)", 'const FEATURES=new Set(' + json.dumps(sorted(x['slug'] for x in national)) + ')', h, count=1)
+    # bylines on the story page and story cards
+    h = h.replace(f'<div class="byl"><span>By <b>{C.get("brand") or "The Guitar Doug Report"}</b></span>',
+                  '<div class="byl"><span>By <b>${esc(s.by||"' + (C.get('brand') or 'The Guitar Doug Report') + '")}</b>${s.col?" · "+esc(s.col):""}</span>', 1)
+    h = h.replace('<p>${esc(s.dek)}</p><span class="meta">${s.minutes} min read</span>', '<p>${esc(s.dek)}</p><span class="meta">${s.by?esc(s.by)+" · ":""}${s.minutes} min read</span>', 1)
     # neighborhood ticker
     span = ''.join(f'<span>{x}</span>' for x in C['hoods'])
     h = re.sub(r'<span class="nhm-r">(?:<span>[^<]*</span>)+</span>', f'<span class="nhm-r">{span}{span}</span>', h, count=1)
