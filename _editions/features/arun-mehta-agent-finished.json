@@ -1,0 +1,88 @@
+[
+ {
+  "slug": "your-ai-agent-says-its-finished-thats-when-the-work-starts",
+  "topic": "tech",
+  "col": "AI",
+  "by": "Arun Mehta",
+  "date": "2026-10-20",
+  "minutes": 3,
+  "title": "Your AI Agent Says It's Finished. That's When the Work Starts.",
+  "dek": "Everybody's selling cheaper intelligence. Nobody wants to talk about the cost of checking its work.",
+  "body": [
+   "I keep hearing that AI is making software development cheaper. And maybe it is. But there's a question nobody seems particularly eager to answer: cheaper for whom?",
+   "The model provider? Absolutely. The guy paying the API bill? Probably. The engineer who has to figure out why the beautifully written code doesn't actually work? That's a different conversation.",
+   "You can generate an entire application in an afternoon now. Authentication, database, payment processing, admin dashboard. Ask nicely and the agent will even congratulate itself when it's finished.",
+   "Then you open the thing.",
+   "The login works until somebody resets a password. The payment page looks beautiful but doesn't handle a declined card. The database permissions are configured so generously that users can potentially read records belonging to other users.",
+   "And the agent says everything passed.",
+   "That's the part that interests me.",
+   "## Forty cents of intelligence, three hours of cleanup",
+   "Stanford's 2025 AI Index documented something remarkable: between November 2022 and October 2024, the cost of inference at approximately GPT-3.5-level performance fell more than 280-fold.",
+   "That's an extraordinary engineering achievement. It reflects improvements in hardware, algorithms, and model efficiency.",
+   "But inference cost is only one component of what it costs to get useful work out of these systems.",
+   "Imagine two coding agents.",
+   "One costs forty cents per attempt and finishes the task correctly 80 percent of the time. Another costs ninety cents and succeeds 96 percent of the time.",
+   "Those are hypothetical numbers, not vendor benchmarks.",
+   "If failures are independent and you can retry indefinitely, the cheaper model costs about fifty cents per successful completion in model fees. The expensive one costs roughly ninety-four cents.",
+   "Fine. Buy the cheaper model.",
+   "Except now somebody has to investigate the failures. If that takes an engineer fifteen minutes, the economics change immediately.",
+   "And retries aren't always independent. Sometimes the agent makes the same mistake repeatedly because it misunderstood the architecture in the first place.",
+   "You can't retry your way out of every bad assumption.",
+   "## The benchmark tells you what the model can do. Not what it will do.",
+   "Here's another thing.",
+   "A coding benchmark can tell you whether a model solved a particular collection of programming problems. That's useful.",
+   "It doesn't necessarily tell you whether the same model can spend six hours modifying a production application without quietly breaking something unrelated.",
+   "Those are different abilities.",
+   "Real software has dependencies, undocumented assumptions, aging libraries, deployment environments, and people who made questionable decisions five years ago.",
+   "A model can be brilliant at writing a function and terrible at understanding why changing that function breaks the rest of the application.",
+   "That's not an argument against AI coding. It's an argument for measuring the right thing.",
+   "I want to know how often an agent finishes a task without human intervention. How many defects survive its tests? How often does it introduce a security regression? How much engineering time does it actually eliminate?",
+   "And I want those numbers from production-like environments, not just carefully packaged benchmark exercises.",
+   "## Bigger isn't automatically better",
+   "The other obsession is model size.",
+   "For a genuinely difficult architectural problem, I'd rather have a capable frontier model working through the design than a tiny model confidently improvising.",
+   "But should that same frontier model spend its time changing button labels, formatting JSON, or writing routine database queries?",
+   "Probably not.",
+   "There are plenty of tasks where a smaller, specialized model is sufficient.",
+   "The interesting engineering problem is deciding which model gets which job, and when to escalate.",
+   "A good routing system should recognize when a task requires deeper reasoning, when the evidence is insufficient, and when the potential cost of a mistake justifies a more expensive model or human review.",
+   "That's a much more useful product than simply giving everybody access to the biggest model available.",
+   "## What I'd actually pay for",
+   "Give me an AI coding system that understands the repository, makes a controlled change, runs meaningful tests, checks authorization boundaries, and tells me exactly what it couldn't verify.",
+   "Don't tell me everything is perfect.",
+   "Tell me which tests ran. Tell me which files changed. Tell me whether the application was deployed. Tell me what might still be broken.",
+   "If it can't establish something, I want it to say so.",
+   "That kind of honesty isn't a personality feature. It's part of a reliable engineering system.",
+   "The companies that figure this out will have something considerably more valuable than another benchmark trophy.",
+   "They'll have software that people can actually trust to finish the job.",
+   "And I'll happily pay more than forty cents for that.",
+   "Editorial note: This is a technology opinion column. The cost comparison and software scenarios are illustrative, not the results of original testing."
+  ],
+  "sources": [
+   {
+    "outlet": "Stanford HAI",
+    "title": "AI Index 2025: historical inference-cost improvements",
+    "date": "",
+    "url": "https://hai.stanford.edu/ai-index/2025-ai-index-report"
+   },
+   {
+    "outlet": "SWE-bench",
+    "title": "Benchmark methodology and repository-level software engineering tasks",
+    "date": "",
+    "url": "https://www.swebench.com/"
+   },
+   {
+    "outlet": "NIST",
+    "title": "AI Risk Management Framework: Generative AI Profile",
+    "date": "",
+    "url": "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+   }
+  ],
+  "feature_tech": {
+   "t": "Your AI Agent Says It's Finished. That's When the Work Starts.",
+   "src": "Arun Mehta",
+   "d": "2026-10-20",
+   "co": "Anthropic"
+  }
+ }
+]
