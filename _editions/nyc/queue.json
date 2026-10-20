@@ -1,36 +1,6 @@
 {
 "queued": [
 {
-"kind": "news",
-"venue": "",
-"hood": "Queens – Astoria",
-"headline": "Queens Officers Revive Infant in Frantic CPR Rescue",
-"date": "2026-10-19",
-"blurb": "Two NYPD officers answering a call in Astoria performed CPR on a 1-month-old boy who was not breathing and had no pulse, saving his life.",
-"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/19/queens-officers-save-baby-s-life-in-frantic-cpr-rescue",
-"outlet": "NY1"
-},
-{
-"kind": "news",
-"venue": "",
-"hood": "Brooklyn – Crown Heights",
-"headline": "Investigation Details Hourslong Ordeal for Six Nonverbal Students on School Bus",
-"date": "2026-10-19",
-"blurb": "Six students ages 6 to 8, all nonverbal with special needs, reached school more than four hours late after their bus went off route, an investigation found.",
-"url": "https://ny1.com/nyc/all-boroughs/education/2026/10/19/investigation-details-hourslong-ordeal-for-six-students-on-school-bus",
-"outlet": "NY1"
-},
-{
-"kind": "scene",
-"venue": "",
-"hood": "Brooklyn",
-"headline": "Brooklyn Conservatory of Music Opens Second Campus",
-"date": "2026-10-19",
-"blurb": "The Brooklyn Conservatory of Music has opened a second campus, NY1 reported.",
-"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/19/brooklyn-conservatory-of-music-opens-second-campus-",
-"outlet": "NY1"
-},
-{
 "kind": "music",
 "venue": "",
 "hood": "Manhattan",
@@ -39,76 +9,6 @@
 "blurb": "Santos Bravos, billed as the voice of a new Latin generation, celebrated its first anniversary with fans at K-Pop Nara ahead of the group's New York debut.",
 "url": "https://www.amny.com/entertainment/music/santos-bravos-celebrates-first-anniversary-k-pop-nara/",
 "outlet": "amNY"
-},
-{
-"kind": "news",
-"venue": "",
-"hood": "Manhattan – Chelsea",
-"headline": "New Charges Filed in FIT Student's Fentanyl Death",
-"date": "2026-10-16",
-"blurb": "Prosecutors brought new charges in the March fentanyl death of a Fashion Institute of Technology student, officials said.",
-"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/17/new-charges-in-fit-student-s-fentanyl-death--officials-say",
-"outlet": "NY1"
-},
-{
-"kind": "news",
-"venue": "",
-"hood": "Manhattan – City Hall",
-"headline": "Mamdani Asks Parking Lot and Garage Owners to Deny ICE Access",
-"date": "2026-10-16",
-"blurb": "Following the Oct. 8 Marble Hill shooting, the mayor asked private parking lot and garage operators to refuse access to immigration agents. Elected officials separately urged Target to stop ICE use of its Marble Hill lot.",
-"url": "https://ny1.com/nyc/all-boroughs/politics/2026/10/16/mamdani-asks-nyc-parking-lot--garage-owners-to-deny-ice-access",
-"outlet": "NY1"
-},
-{
-"kind": "news",
-"venue": "",
-"hood": "Manhattan – Midtown",
-"headline": "Plaza Hotel to Close in January for Four-Year Renovation",
-"date": "2026-10-15",
-"blurb": "The Plaza's last day of service is set for Jan. 19, with renovation work starting the next day, according to a report.",
-"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/15/the-plaza-hotel-announces-four-year-closure-for-renovations",
-"outlet": "NY1"
-},
-{
-"kind": "news",
-"venue": "",
-"hood": "Statewide",
-"headline": "Hochul and Blakeman Clash in Governor's Debate",
-"date": "2026-10-13",
-"blurb": "Gov. Kathy Hochul and Republican challenger Bruce Blakeman sparred in a televised gubernatorial debate ahead of the Nov. 3 election.",
-"url": "https://ny1.com/nyc/all-boroughs/politics/2026/10/13/full-debate--kathy-hochul--bruce-blakeman-spar-off-in-gubernatorial-debate",
-"outlet": "NY1"
-},
-{
-"kind": "music",
-"venue": "",
-"hood": "Manhattan – Harlem",
-"headline": "Arturo O'Farrill Brings Afro Latin Jazz to Harlem",
-"date": "2026-10-12",
-"blurb": "Bandleader Arturo O'Farrill talked with NY1 about bringing his Afro Latin jazz to Harlem.",
-"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/12/arturo-o-farrill-brings-afro-latin-jazz-to-harlem",
-"outlet": "NY1"
-},
-{
-"kind": "news",
-"venue": "",
-"hood": "Statewide",
-"headline": "James and Komatireddy Trade Blows in Attorney General Debate",
-"date": "2026-10-08",
-"blurb": "Attorney General Letitia James called Republican challenger Saritha Komatireddy a Trump puppet in a fiery NY1 debate and defended her remarks on the Cornell rape case.",
-"url": "https://ny1.com/nyc/all-boroughs/politics/2026/10/09/attorney-general-candidates-trade-blows-in-fiery-ny1-debate-letitia-james-saritha-komatireddy",
-"outlet": "NY1"
-},
-{
-"kind": "scene",
-"venue": "Neir's Tavern",
-"hood": "Queens – Woodhaven",
-"headline": "Neir's Tavern Marks 197 Years With Free Block Party",
-"date": "2026-10-01",
-"blurb": "Woodhaven's Neir's Tavern, among the city's oldest bars, threw a free 197th anniversary block party on Oct. 3 with music, food and drinks.",
-"url": "https://www.eventbrite.com/e/neirs-tavern-197th-anniversary-block-party-tickets-1993090219499",
-"outlet": "No Sleep Club"
 },
 {
 "kind": "music",
@@ -129,46 +29,6 @@
 "blurb": "The Disco Tehran party marked its anniversary with a 4-10 p.m. rooftop session at Elsewhere on Sunday, Oct. 4.",
 "url": "https://www.eventbrite.com/e/disco-tehran-anniversary-party-tickets-1995466938329",
 "outlet": "No Sleep Club"
-},
-{
-"kind": "music",
-"venue": "Music Hall of Williamsburg",
-"hood": "Brooklyn – Williamsburg",
-"headline": "Westside Cowboy Plays Music Hall of Williamsburg",
-"date": "2026-10-01",
-"blurb": "Westside Cowboy played Music Hall of Williamsburg on Tuesday, Oct. 6.",
-"url": "https://www.axs.com/events/1607124/westside-cowboy-tickets",
-"outlet": "No Sleep Club"
-},
-{
-"kind": "shooting",
-"headline": "Bronx senior accused of shooting girlfriend, 70, and man, 60, then barricading himself",
-"blurb": "An older man shot his 70-year-old girlfriend and a 60-year-old man in a Claremont building hallway, then barricaded himself, in what sources described as the end of an apparent love triangle.",
-"hood": "Bronx – Claremont",
-"spd": [],
-"date": "2026-10-18",
-"url": "https://www.amny.com/new-york/bronx/senior-bronx-shot-girlfriend-love-triangle-10182026/",
-"outlet": "amNY"
-},
-{
-"kind": "other",
-"headline": "New charges filed in FIT student's fentanyl death",
-"blurb": "Prosecutors announced new charges in the March fentanyl death of a Fashion Institute of Technology student.",
-"hood": "Manhattan – Chelsea",
-"spd": [],
-"date": "2026-10-16",
-"url": "https://ny1.com/nyc/all-boroughs/news/2026/10/17/new-charges-in-fit-student-s-fentanyl-death--officials-say",
-"outlet": "NY1"
-},
-{
-"kind": "other",
-"headline": "Sunset Park federal jail officer indicted in contraband bribery scheme",
-"blurb": "A federal corrections officer at the Brooklyn jail in Sunset Park was indicted on charges of taking bribes to smuggle contraband.",
-"hood": "Brooklyn – Sunset Park",
-"spd": [],
-"date": "2026-10-14",
-"url": "https://www.brooklynpaper.com/melissa-brooks-officer-bribery-indictment/",
-"outlet": "Brooklyn Paper"
 },
 {
 "kind": "homicide",
@@ -357,6 +217,22 @@
 {
 "url": "https://www.amny.com/news/man-stabbed-dead-queens-park-10072026/",
 "reason": "RETRY - not processed: WebFetch proxy returned HTTP 429 (rate limited) on every fetch after the first 10 items, including after 1, 5 and 10 minute waits; not a content or source problem"
+},
+{
+"url": "https://www.amny.com/entertainment/music/santos-bravos-celebrates-first-anniversary-k-pop-nara/",
+"reason": "no readable credible source: amNY page returned repeated client errors on fetch; searches found only the amNY link, a K-Pop Nara social post and content-scraper sites, with no other credible outlet covering the anniversary event"
+},
+{
+"url": "https://www.sevenrooms.com/experiences/tokyorecordbar",
+"reason": "no readable source: SevenRooms listing blocked (permission/provenance refusal); searches found only the 2025 (108th birthday) event press release and no credible coverage of the 2026 109th-birthday event"
+},
+{
+"url": "https://www.eventbrite.com/e/disco-tehran-anniversary-party-tickets-1995466938329",
+"reason": "no readable source: Eventbrite listing blocked (permission/provenance refusal); searches found no listing or credible coverage of a Disco Tehran anniversary party at Elsewhere"
+},
+{
+"url": "https://www.amny.com/news/man-stabbed-dead-queens-park-10072026/",
+"reason": "duplicate: same Oct. 7, 2026 fatal stabbing in a Queens park (Major Mark Park, Jamaica) already published in nyc/briefs_2.json as bronx-man-accused-of-stabbing-homeless-man-to-death-in-jamaica-park (from QNS). amNY page itself could not be fetched (repeated client errors); match is by date, borough, park setting and incident type"
 }
 ]
 }
