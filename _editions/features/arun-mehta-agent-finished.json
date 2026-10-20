@@ -3,7 +3,6 @@
   "slug": "your-ai-agent-says-its-finished-thats-when-the-work-starts",
   "topic": "tech",
   "col": "AI",
-  "by": "Arun Mehta",
   "date": "2026-10-20",
   "minutes": 3,
   "title": "Your AI Agent Says It's Finished. That's When the Work Starts.",
@@ -80,7 +79,7 @@
   ],
   "feature_tech": {
    "t": "Your AI Agent Says It's Finished. That's When the Work Starts.",
-   "src": "Arun Mehta",
+   "src": "@@BRAND@@",
    "d": "2026-10-20",
    "co": "Anthropic"
   }

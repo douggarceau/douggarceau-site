@@ -3,7 +3,6 @@
   "slug": "everybody-wants-an-ai-supercomputer-nobody-wants-to-pay-the-electric-bill",
   "topic": "tech",
   "col": "Chips & Power",
-  "by": "Vikram Shah",
   "date": "2026-10-20",
   "minutes": 4,
   "title": "Everybody Wants an AI Supercomputer. Nobody Wants to Pay the Electric Bill.",
@@ -103,7 +102,7 @@
   ],
   "feature_tech": {
    "t": "Everybody Wants an AI Supercomputer. Nobody Wants to Pay the Electric Bill.",
-   "src": "Vikram Shah",
+   "src": "@@BRAND@@",
    "d": "2026-10-20",
    "co": "Nvidia"
   }

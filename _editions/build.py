@@ -162,15 +162,15 @@ def main(city, out):
     TECHOBJ2, _, _ = grab(h, 'const TECH=/*TECH_START*/')
     for ft in reversed(feats_):
         if ft.get('feature_tech'):
-            e = dict(ft['feature_tech']); e['u'] = '?story=' + ft['slug']; TECHOBJ2['news'].insert(0, e)
+            e = dict(ft['feature_tech']); e['src'] = C.get('brand', e.get('src')) if e.get('src') == '@@BRAND@@' else e.get('src'); e['u'] = '?story=' + ft['slug']; TECHOBJ2['news'].insert(0, e)
     h = put(h, 'const TECH=/*TECH_START*/', TECHOBJ2)
 
     # house bylines: one writer per column
     COLS = {
-      'crime': ('Ray Kessler', 'Crime Watch'), 'courts': ('Miriam Sloane', 'The Courts'), 'cold': ('Agnes Ward', 'Cold File'),
-      'politics': ('Tom Brannigan', 'City Hall'), 'surveillance': ('Nina Reyes', 'Overreach'), 'nightlife': ('Jules Marlow', 'After Dark'),
-      'music': ('Cass Delaney', 'The Bill'), 'bands': ('Joey Vance', 'Local Noise'), 'venues': ('Harold Finch', 'The Rooms'),
-      'culture': ('Tess Morrow', 'The Scene'), 'tech': ('Evan Cole', 'Machine Age'), 'markets': ('Gil Mercer', 'The Ticker'),
+      'crime': ('', 'Crime Watch'), 'courts': ('', 'The Courts'), 'cold': ('', 'Cold File'),
+      'politics': ('', 'City Hall'), 'surveillance': ('', 'Overreach'), 'nightlife': ('', 'After Dark'),
+      'music': ('', 'The Bill'), 'bands': ('', 'Local Noise'), 'venues': ('', 'The Rooms'),
+      'culture': ('', 'The Scene'), 'tech': ('', 'Machine Age'), 'markets': ('', 'The Ticker'),
     }
     natl = {x['slug'] for x in national}
     def column(x):
@@ -189,7 +189,7 @@ def main(city, out):
     for x in stories:
         if x['slug'] in natl: continue
         k = column(x)
-        if k: x['col'], x['by'] = COLS[k][1], COLS[k][0]
+        if k: x['col'] = COLS[k][1]
 
     # rule: no drag / gay content
     bad = re.compile(r'\bdrag\b|\bqueer\b|\bgay\b|lgbt|\bpride\b|drag (show|brunch|queen)', re.I)

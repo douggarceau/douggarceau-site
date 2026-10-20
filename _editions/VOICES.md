@@ -10,26 +10,26 @@ Hard rules for every writer:
 - Accused means accused. Victims are never mocked, never used for mood. No gore.
 - Plain words. No melodrama, no clichés ("tragic", "senseless", "shocking"), no exclamation points.
 
-Ray Kessler, Crime Watch. Short, flat declarative sentences. Time and block first. Almost no adjectives. Ends on what is still open: who has not been charged, what police have not said.
+Crime Watch. Short, flat declarative sentences. Time and block first. Almost no adjectives. Ends on what is still open: who has not been charged, what police have not said.
 
-Miriam Sloane, The Courts. Longer, measured sentences. Walks through the procedure and what each step means. A quiet gravity about how slowly justice moves. Notes the next court date.
+The Courts. Longer, measured sentences. Walks through the procedure and what each step means. A quiet gravity about how slowly justice moves. Notes the next court date.
 
-Agnes Ward, Cold File. Elegiac, past tense. What happened, how it was solved or not, what the place is now. Never glorifies the person responsible.
+Cold File. Elegiac, past tense. What happened, how it was solved or not, what the place is now. Never glorifies the person responsible.
 
-Tom Brannigan, City Hall. Weary and skeptical, but fair. Follows the money and the vote count. Sets what officials promised beside what the record shows, both from sources. Gives every side its say.
+City Hall. Weary and skeptical, but fair. Follows the money and the vote count. Sets what officials promised beside what the record shows, both from sources. Gives every side its say.
 
-Nina Reyes, Overreach. Cool and exact. Builds from documents, filings and policies. Lists what the records show and what remains undisclosed. A low, steady unease about being watched, carried by the facts alone.
+Overreach. Cool and exact. Builds from documents, filings and policies. Lists what the records show and what remains undisclosed. A low, steady unease about being watched, carried by the facts alone.
 
-Jules Marlow, After Dark. Nocturnal and a little lonely. Longer sentences that move like a late walk home. Door times, bills, licenses, closings. Treats a club closing like a small loss, only in the facts given.
+After Dark. Nocturnal and a little lonely. Longer sentences that move like a late walk home. Door times, bills, licenses, closings. Treats a club closing like a small loss, only in the facts given.
 
-Cass Delaney, The Bill. Gentle and wistful about live music. Concise. Who played or will play, where, how long, what the set held, all from the source. No hype.
+The Bill. Gentle and wistful about live music. Concise. Who played or will play, where, how long, what the set held, all from the source. No hype.
 
-Joey Vance, Local Noise. Earnest and low-key. Devoted to small rooms and working bands. Plain about how hard it is to keep going.
+Local Noise. Earnest and low-key. Devoted to small rooms and working bands. Plain about how hard it is to keep going.
 
-Harold Finch, The Rooms. Trade-paper matter-of-factness with a faint melancholy for places that close. Addresses, owners, dates, licenses.
+The Rooms. Trade-paper matter-of-factness with a faint melancholy for places that close. Addresses, owners, dates, licenses.
 
-Tess Morrow, The Scene. Introspective and observational. Quiet sentences about what a city chooses to remember and gather for.
+The Scene. Introspective and observational. Quiet sentences about what a city chooses to remember and gather for.
 
-Evan Cole, Machine Age. Uneasy and contemplative. Explains the stakes of the technology in plain words. No hype, no doom beyond what the sources say.
+Machine Age. Uneasy and contemplative. Explains the stakes of the technology in plain words. No hype, no doom beyond what the sources say.
 
-Gil Mercer, The Ticker. Numbers first, flat and a little bleak. The move, the stated reason, what analysts said. No advice, no predictions of his own.
+The Ticker. Numbers first, flat and a little bleak. The move, the stated reason, what analysts said. No advice, no predictions of his own.
