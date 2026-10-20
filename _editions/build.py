@@ -348,6 +348,7 @@ def main(city, out):
       '</script>'
     )
     h = h.replace('</body>', js + '</body>', 1)
+    h = h.replace("<div class=\"lbl\"><b>AI gone rogue</b>", "${(()=>{const fs=STORIES.filter(s=>s.topic==='tech'&&s.by&&['AI','Chips & Power'].includes(s.col));return fs.length?`<div class=\"lbl\"><b>Features</b><span>${fs.length}</span></div><div class=\"stack\">${fs.map(storyCard).join('')}</div>`:''})()}<div class=\"lbl\"><b>AI gone rogue</b>", 1)
     h = h.replace('@@NSTAG@@', 'The network for Seattle and beyond')
     for k, v in keep.items():
         h = h.replace(k, v)
