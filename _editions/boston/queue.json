@@ -1,0 +1,30 @@
+{
+"queued": [
+{
+"kind": "news",
+"venue": "",
+"hood": "",
+"headline": "Boston Police Ask Public's Help Finding Missing 84-Year-Old Man",
+"date": "2026-10-17",
+"blurb": "Boston police issued a missing person alert and are asking the public for help locating an 84-year-old man.",
+"url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
+"outlet": "Boston Police"
+},
+{
+"kind": "other",
+"headline": "Missing 84-year-old man sought by Boston police",
+"blurb": "Boston police are asking for help locating a missing 84-year-old man.",
+"hood": "",
+"spd": [],
+"date": "2026-10-17",
+"url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
+"outlet": "Boston Police"
+}
+],
+"dropped": [
+{
+"url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
+"reason": "fetch failed twice (client error)"
+}
+]
+}

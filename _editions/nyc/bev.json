@@ -1,0 +1,265 @@
+[
+ {
+  "id": "event_77581492534950ba022e",
+  "band_ids": [
+   "band_5bdaa05368f5dfa85890"
+  ],
+  "venue_ids": [],
+  "venue_name": "TV Eye",
+  "type": "performance",
+  "headline": "Semaphore / Lavisher / Sungaze / Soft Spot — TV Eye",
+  "date": "2026-10-21",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43375921-semaphore-at-tv-eye"
+ },
+ {
+  "id": "event_21c0e625ee3ed15b1f46",
+  "band_ids": [
+   "band_2c993bdaf715b97c3663"
+  ],
+  "venue_ids": [],
+  "venue_name": "Webster Hall",
+  "type": "performance",
+  "headline": "Castle Rat / Unto Others / Wraith Knight — Webster Hall",
+  "date": "2026-10-21",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43252790-castle-rat-at-webster-hall"
+ },
+ {
+  "id": "event_35ef8601b501810d50b9",
+  "band_ids": [
+   "band_6ffa5382471f60cc09a9"
+  ],
+  "venue_ids": [],
+  "venue_name": "Alphaville",
+  "type": "performance",
+  "headline": "Stay Inside / footnote — Alphaville",
+  "date": "2026-10-24",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43392615-stay-inside-at-alphaville"
+ },
+ {
+  "id": "event_94def83eb4eb1a0103b2",
+  "band_ids": [
+   "band_0045438c8e98a4a10907"
+  ],
+  "venue_ids": [],
+  "venue_name": "Gold Sounds",
+  "type": "performance",
+  "headline": "Robot Princess / Painted Zeros — Gold Sounds",
+  "date": "2026-10-24",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43429654-robot-princess-at-gold-sounds"
+ },
+ {
+  "id": "event_ed39cfd2e574d8cfabf9",
+  "band_ids": [
+   "band_f407aa8749e9eabaaa37"
+  ],
+  "venue_ids": [],
+  "venue_name": "Pianos",
+  "type": "performance",
+  "headline": "Veldt / Honeychild Coleman / Spirit Hotel / Dead Leaf Echo / Weegee / the shining hours — Pianos",
+  "date": "2026-10-24",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43434249-veldt-at-pianos-showroom"
+ },
+ {
+  "id": "event_5f237f520c58c5bdf2e4",
+  "band_ids": [
+   "band_26d5e2c369848435c26d"
+  ],
+  "venue_ids": [],
+  "venue_name": "Berlin",
+  "type": "performance",
+  "headline": "Robert Leslie / Pinc Louds — Berlin",
+  "date": "2026-10-25",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43382335-robert-leslie-at-berlin-under-a"
+ },
+ {
+  "id": "event_e95fa25da4669b5ea6a1",
+  "band_ids": [
+   "band_3011f99768132505b62b"
+  ],
+  "venue_ids": [],
+  "venue_name": "Elsewhere",
+  "type": "performance",
+  "headline": "Fury / Combust / Square One — Elsewhere",
+  "date": "2026-10-25",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43419873-fury-at-hall-elsewhere"
+ },
+ {
+  "id": "event_96e37924e7b23a608806",
+  "band_ids": [
+   "band_5d1a0143d9e6118bfb3f"
+  ],
+  "venue_ids": [],
+  "venue_name": "Union Pool",
+  "type": "performance",
+  "headline": "Rev. Vince Anderson — Union Pool",
+  "date": "2026-10-26",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43354170-rev-vince-anderson-at-union-pool"
+ },
+ {
+  "id": "event_a28acdba84399680d500",
+  "band_ids": [
+   "band_0ee977ab9b33f6efc425",
+   "band_a5080a39775938d8337f",
+   "band_18db54bccd1fca06da38"
+  ],
+  "venue_ids": [],
+  "venue_name": "Knockdown Center",
+  "type": "performance",
+  "headline": "The Lemon Twigs / Swamp Dogg / Sheer Mag / Jacuzzi Boys / The Mystery Lights / Daddy Long Legs / Shilpa Ray — Knockdown Center",
+  "date": "2026-10-30",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43363339-lemon-twigs-at-knockdown-center"
+ },
+ {
+  "id": "event_71e056bcd842a1704cc4",
+  "band_ids": [
+   "band_d2f767a3b6760ba7c17d"
+  ],
+  "venue_ids": [],
+  "venue_name": "Music Hall of Williamsburg",
+  "type": "performance",
+  "headline": "Les Savy Fav — Music Hall of Williamsburg",
+  "date": "2026-10-30",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43334124-les-savy-fav-at-music-hall-of-williamsburg"
+ },
+ {
+  "id": "event_f1f9381734f89bdb2b16",
+  "band_ids": [
+   "band_e67e1fa795a0818ed50b"
+  ],
+  "venue_ids": [],
+  "venue_name": "Saint Vitus",
+  "type": "performance",
+  "headline": "Ink And Dagger / Saetia — Saint Vitus",
+  "date": "2026-10-30",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43434973-ink-and-dagger-at-saint-vitus-bar"
+ },
+ {
+  "id": "event_8dcf0030a4e464b37d56",
+  "band_ids": [
+   "band_b071b46ead89fec6ecde"
+  ],
+  "venue_ids": [],
+  "venue_name": "Warsaw",
+  "type": "performance",
+  "headline": "Neurosis / Uniform — Warsaw",
+  "date": "2026-10-30",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43406807-neurosis-at-warsaw"
+ },
+ {
+  "id": "event_e02f01a6c2e378b7a2be",
+  "band_ids": [
+   "band_2e33a87232750fce53e0"
+  ],
+  "venue_ids": [],
+  "venue_name": "Baby's All Right",
+  "type": "performance",
+  "headline": "Beach Fossils / Winter — Baby's All Right",
+  "date": "2026-10-31",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43433165-beach-fossils-at-babys-all-right"
+ },
+ {
+  "id": "event_da88f4cf3e306b367c39",
+  "band_ids": [
+   "band_5d1a0143d9e6118bfb3f"
+  ],
+  "venue_ids": [],
+  "venue_name": "Union Pool",
+  "type": "performance",
+  "headline": "Rev. Vince Anderson — Union Pool",
+  "date": "2026-11-02",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43354175-rev-vince-anderson-at-union-pool"
+ },
+ {
+  "id": "event_7cc7b9f9f34504d92cae",
+  "band_ids": [
+   "band_5d1a0143d9e6118bfb3f"
+  ],
+  "venue_ids": [],
+  "venue_name": "Union Pool",
+  "type": "performance",
+  "headline": "Rev. Vince Anderson — Union Pool",
+  "date": "2026-11-09",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43354178-rev-vince-anderson-at-union-pool"
+ },
+ {
+  "id": "event_8d025e88da1bf861f1ec",
+  "band_ids": [
+   "band_85e5e81efb3f218ed78d",
+   "band_1c6e7af264a80510f1d1"
+  ],
+  "venue_ids": [],
+  "venue_name": "Elsewhere",
+  "type": "performance",
+  "headline": "A Place To Bury Strangers / Adult. / Kill Alters — Elsewhere",
+  "date": "2026-11-09",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43220902-a-place-to-bury-strangers-at-elsewhere"
+ },
+ {
+  "id": "event_e5435a4d49c1dd1a71f2",
+  "band_ids": [
+   "band_5655641e0874fd992342"
+  ],
+  "venue_ids": [],
+  "venue_name": "Hart Bar",
+  "type": "performance",
+  "headline": "Axis: Sova / Upper Wilds — Hart Bar",
+  "date": "2026-11-12",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43363178-axis-sova-at-hart-bar"
+ },
+ {
+  "id": "event_453646f095101e60bc34",
+  "band_ids": [
+   "band_ea451c46693e67c0b270"
+  ],
+  "venue_ids": [],
+  "venue_name": "Arlene's Grocery",
+  "type": "performance",
+  "headline": "Brandi and the Alexanders / Mel and The Tall Boys — Arlene's Grocery",
+  "date": "2026-11-13",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43368085-brandi-and-the-alexanders-at-arlenes-grocery"
+ },
+ {
+  "id": "event_98a010921cf937f1793c",
+  "band_ids": [
+   "band_70f597b271b5ef245267"
+  ],
+  "venue_ids": [],
+  "venue_name": "Knockdown Center",
+  "type": "performance",
+  "headline": "LCD Soundsystem — Knockdown Center",
+  "date": "2026-11-19/2026-11-22",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43442729-lcd-soundsystem-at-ruins-knockdown-center"
+ },
+ {
+  "id": "event_2a30b05252eaa43d0fd2",
+  "band_ids": [
+   "band_211fe759ce6e6af80b5c"
+  ],
+  "venue_ids": [],
+  "venue_name": "Brooklyn Steel",
+  "type": "performance",
+  "headline": "Pain of Truth / Madball / Rotting Out / Locked Shut — Brooklyn Steel",
+  "date": "2026-11-21",
+  "status": "announced",
+  "url": "https://www.songkick.com/concerts/43354061-pain-of-truth-at-brooklyn-steel"
+ }
+]

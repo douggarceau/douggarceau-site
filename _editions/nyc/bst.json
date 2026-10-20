@@ -1,0 +1,802 @@
+{
+ "band_6c06d2c587d8408bf2de": {
+  "status": "inactive",
+  "url": "https://www.ramones.com/"
+ },
+ "band_7b01aacf4136bbd456a0": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Velvet_Underground"
+ },
+ "band_7c2ab44e9b74ded0fce5": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Talking_Heads"
+ },
+ "band_fd583292a4f3aff4308e": {
+  "status": "active",
+  "url": "https://www.blondie.net/"
+ },
+ "band_a5582f78302c5a2c8cfa": {
+  "status": "inactive",
+  "url": "https://www.beastieboys.com/"
+ },
+ "band_a29e434df145498e97b9": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Run-DMC"
+ },
+ "band_0771a3a618d017e17537": {
+  "status": "unknown",
+  "url": "https://wutangclan.com/"
+ },
+ "band_b99f4f767bcc2a979424": {
+  "status": "active",
+  "url": "https://www.thestrokes.com/"
+ },
+ "band_ecc92bd994e658aec902": {
+  "status": "active",
+  "url": "https://www.yeahyeahyeahs.com/"
+ },
+ "band_eb4594a2bc58182dd4af": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Interpol_(band)"
+ },
+ "band_70f597b271b5ef245267": {
+  "status": "active",
+  "url": "https://lcdsoundsystem.com/"
+ },
+ "band_feb915ef0a3433f9d10e": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Sonic_Youth"
+ },
+ "band_9c639dcb5eb4789176a1": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Television_(band)"
+ },
+ "band_34fc7e1bde0d4ab64469": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/New_York_Dolls"
+ },
+ "band_25c5b0aa12de48b88d32": {
+  "status": "inactive",
+  "url": "https://www.kissonline.com/"
+ },
+ "band_494084d2e38ef4284ab6": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Public_Enemy"
+ },
+ "band_1d2e1a9eb7e5c1cf8ab4": {
+  "status": "active",
+  "url": "https://www.vampireweekend.com/"
+ },
+ "band_3888e1eda7f781157719": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/TV_on_the_Radio"
+ },
+ "band_64d3b48a2e43e4979526": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Parquet_Courts"
+ },
+ "band_48e6d3a389243dcd23e6": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_National_(band)"
+ },
+ "band_e2179c5f9f64a0ac8651": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Simon_%26_Garfunkel"
+ },
+ "band_953d0ad5138770f70af1": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Lovin%27_Spoonful"
+ },
+ "band_43272e21de0a4510b2a7": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Ronettes"
+ },
+ "band_a9de5e7c0df7426d4454": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Shangri-Las"
+ },
+ "band_31529f55cb54e112f9dc": {
+  "status": "active",
+  "url": "https://www.pattismith.net/"
+ },
+ "band_2e1dfc6db53930e68c77": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Suicide_(band)"
+ },
+ "band_844c2764bd9eb4c5455f": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Richard_Hell_and_the_Voidoids"
+ },
+ "band_ff4e52ff435977303314": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_Dictators"
+ },
+ "band_f8ba3e8770891cdaefb0": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Agnostic_Front"
+ },
+ "band_9b97eb934a3e2e613872": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Cro-Mags"
+ },
+ "band_aaad4de1517a7552e108": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sick_of_It_All"
+ },
+ "band_4af288ef07358375823d": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Gorilla_Biscuits"
+ },
+ "band_211fe759ce6e6af80b5c": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Madball"
+ },
+ "band_e254a9c340a061c903b5": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Quicksand_(band)"
+ },
+ "band_c8c7857ad9182d37d1ca": {
+  "status": "active",
+  "url": "https://www.anthrax.com/"
+ },
+ "band_00050e22652285c61089": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Type_O_Negative"
+ },
+ "band_571204ad0f88b504ae2b": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Biohazard_(band)"
+ },
+ "band_41db0935443d3d2758f8": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Life_of_Agony"
+ },
+ "band_9b5b4bfb637768bce1c4": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Helmet_(band)"
+ },
+ "band_e604381e988a78dec277": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Prong_(band)"
+ },
+ "band_6a8726a7f8f224b7c464": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/White_Zombie_(band)"
+ },
+ "band_14164c25863f6997c2b0": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Living_Colour"
+ },
+ "band_87723e337f340782f71b": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Blue_%C3%96yster_Cult"
+ },
+ "band_5d01e8b33a2467f1b357": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/A_Tribe_Called_Quest"
+ },
+ "band_1904c380ebedbd4bb5c0": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/De_La_Soul"
+ },
+ "band_aef72b6fc6c604b20bf1": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Mobb_Deep"
+ },
+ "band_cf4e0a47d8426f179338": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/EPMD"
+ },
+ "band_1c906f337afd74675c1a": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Eric_B._%26_Rakim"
+ },
+ "band_c8d5aa958c89c5b68f15": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Boogie_Down_Productions"
+ },
+ "band_87dad4ab4a8030daca05": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Grandmaster_Flash_and_the_Furious_Five"
+ },
+ "band_05891feb1ad622b83d91": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Salt-N-Pepa"
+ },
+ "band_cf08a45128149159dbd4": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Black_Star_(rap_duo)"
+ },
+ "band_d8f91f4d9fa44017a70f": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Onyx_(group)"
+ },
+ "band_497bc4e92900d1f2bc06": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Stetsasonic"
+ },
+ "band_21b2f6ea659181aabf54": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Whodini"
+ },
+ "band_3d51e83a02afc1c40dbb": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Lox"
+ },
+ "band_a7fe669b8d3274bd08f8": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Chic_(band)"
+ },
+ "band_44316bd646a4cb01f5e1": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/ESG_(band)"
+ },
+ "band_c6d67a729bc7bc206ea0": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Liquid_Liquid"
+ },
+ "band_d68d97d51ec7a107014e": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Kid_Creole_and_the_Coconuts"
+ },
+ "band_f5b16aec14e93e34f815": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Swans_(band)"
+ },
+ "band_5977273e3389678dfec6": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/DNA_(American_band)"
+ },
+ "band_0975278bac9a4156a5ab": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Teenage_Jesus_and_the_Jerks"
+ },
+ "band_21428c015e9efd8fa16d": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Lounge_Lizards"
+ },
+ "band_6b69c8ec24cc8563f7c4": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Bush_Tetras"
+ },
+ "band_bcbe12997e94e6ad177e": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Fugs"
+ },
+ "band_717c8882a91b2307e225": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Heartbreakers"
+ },
+ "band_370a6afe065bf740187e": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Mink_DeVille"
+ },
+ "band_bf9248f2c74e51f7c09d": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Fleshtones"
+ },
+ "band_d424050d726602115b9c": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Tom_Tom_Club"
+ },
+ "band_3822a0e1d0f8e0136577": {
+  "status": "active",
+  "url": "https://www.tmbg.com/"
+ },
+ "band_3e0eb8d31795b8d8dd99": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Luna_(band)"
+ },
+ "band_d48e7798251eedcb29a1": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Nada_Surf"
+ },
+ "band_1b8f1c52850ab59e81c2": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Fountains_of_Wayne"
+ },
+ "band_8c8a006f067d33110a5a": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Jon_Spencer_Blues_Explosion"
+ },
+ "band_e6bf540dc5d49461c50b": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Cibo_Matto"
+ },
+ "band_1ede001df9130d4e622d": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Moldy_Peaches"
+ },
+ "band_6d477ca439cb59fb2cce": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Gogol_Bordello"
+ },
+ "band_24d313c86535022b22bf": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Antibalas"
+ },
+ "band_8cfdfc24c7fbdc94efbb": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Sharon_Jones_%26_The_Dap-Kings"
+ },
+ "band_25fc2cdf7d73d3c356b1": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Walkmen"
+ },
+ "band_df85ced226457aa1416f": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Hold_Steady"
+ },
+ "band_52e05bbdb228fccef34d": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Clap_Your_Hands_Say_Yeah"
+ },
+ "band_f53ab3a07490e163bc5e": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Grizzly_Bear_(band)"
+ },
+ "band_7b5fbd832ce6b9d5a0bb": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Dirty_Projectors"
+ },
+ "band_064c24ee8b071f3435a5": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Yeasayer"
+ },
+ "band_90c5a2e4d9a31446f04c": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Battles_(band)"
+ },
+ "band_040647eb7b98993c0c11": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sleigh_Bells_(band)"
+ },
+ "band_22dd89ffc0f9ee3d5fa6": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Diiv"
+ },
+ "band_2e33a87232750fce53e0": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Beach_Fossils"
+ },
+ "band_f3c77134309481f77932": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Big_Thief"
+ },
+ "band_3bf59d75bd6639da27ac": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Brand_New_(band)"
+ },
+ "band_17aebe5891aa5037308e": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Taking_Back_Sunday"
+ },
+ "band_8d8ef2ca8c85c50f9efc": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Glassjaw"
+ },
+ "band_84b0a65154be75918356": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Dion_and_the_Belmonts"
+ },
+ "band_6ddbee6009089274e8fd": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Frankie_Lymon_%26_the_Teenagers"
+ },
+ "band_cb8f66f1f3dfa18d7aa7": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Chiffons"
+ },
+ "band_4e7219f35edb12221046": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Crystals"
+ },
+ "band_45f670776b6c5739e420": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Blood,_Sweat_%26_Tears"
+ },
+ "band_db4088127c7dc481f91f": {
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Left_Banke"
+ },
+ "band_5d1a0143d9e6118bfb3f": {
+  "status": "active",
+  "url": null
+ },
+ "band_f407aa8749e9eabaaa37": {
+  "status": "active",
+  "url": null
+ },
+ "band_0045438c8e98a4a10907": {
+  "status": "active",
+  "url": null
+ },
+ "band_26d5e2c369848435c26d": {
+  "status": "active",
+  "url": null
+ },
+ "band_6ffa5382471f60cc09a9": {
+  "status": "active",
+  "url": null
+ },
+ "band_e67e1fa795a0818ed50b": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Saetia"
+ },
+ "band_5655641e0874fd992342": {
+  "status": "active",
+  "url": null
+ },
+ "band_1c6e7af264a80510f1d1": {
+  "status": "active",
+  "url": null
+ },
+ "band_85e5e81efb3f218ed78d": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/A_Place_to_Bury_Strangers"
+ },
+ "band_d2f767a3b6760ba7c17d": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Les_Savy_Fav"
+ },
+ "band_3011f99768132505b62b": {
+  "status": "active",
+  "url": null
+ },
+ "band_5bdaa05368f5dfa85890": {
+  "status": "active",
+  "url": null
+ },
+ "band_ea451c46693e67c0b270": {
+  "status": "active",
+  "url": null
+ },
+ "band_2c993bdaf715b97c3663": {
+  "status": "active",
+  "url": null
+ },
+ "band_b071b46ead89fec6ecde": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Uniform_(band)"
+ },
+ "band_a5080a39775938d8337f": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Mystery_Lights"
+ },
+ "band_18db54bccd1fca06da38": {
+  "status": "active",
+  "url": null
+ },
+ "band_0ee977ab9b33f6efc425": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Lemon_Twigs"
+ },
+ "band_563f18455ffeb5535df2": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Bodega_(band)"
+ },
+ "band_39330e02c5d4489b1ed8": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Geese_(band)"
+ },
+ "band_f3f6a85c7a29b3030115": {
+  "status": "active",
+  "url": null
+ },
+ "band_425b3aa351e1c80edc99": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Water_from_Your_Eyes"
+ },
+ "band_4e11ddaec32bda9124d5": {
+  "status": "active",
+  "url": null
+ },
+ "band_07b3908a1977e8959e35": {
+  "status": "active",
+  "url": null
+ },
+ "band_ea348ce01b552025997c": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sunflower_Bean"
+ },
+ "band_80c5f6ed5b1db01a3bce": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Nation_of_Language"
+ },
+ "band_63db2b4ba12f32e251f1": {
+  "status": "active",
+  "url": null
+ },
+ "band_16f93cbf8e12af95adac": {
+  "status": "active",
+  "url": null
+ },
+ "band_dd6ecfc9349a3726787a": {
+  "status": "active",
+  "url": null
+ },
+ "band_ebd9f9db8a1071d8566a": {
+  "status": "active",
+  "url": null
+ },
+ "band_b535ad45650ca9ff0eed": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Bambara_(band)"
+ },
+ "band_f1eee98b7c3909c6a909": {
+  "status": "active",
+  "url": null
+ },
+ "band_3d62ffc413336df00dcb": {
+  "status": "active",
+  "url": null
+ },
+ "band_f528bc4e60fa4871d4d5": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Show_Me_the_Body"
+ },
+ "band_ee7305598ee324712a66": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Imperial_Triumphant"
+ },
+ "band_5bf9a67795fec0187171": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Pyrrhon"
+ },
+ "band_f5eba68e7e270b18ffc4": {
+  "status": "active",
+  "url": null
+ },
+ "band_ca8b0752d3838c3fee45": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Slackers"
+ },
+ "band_efe1e7f052a44d287a4b": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Frankie_Cosmos"
+ },
+ "band_b79b18646094926ac386": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Crumb_(band)"
+ },
+ "band_aa5b019bcb8e5b3c6f07": {
+  "status": "active",
+  "url": null
+ },
+ "band_a590e31d3f3a63496c50": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Rubblebucket"
+ },
+ "band_da67c8418df96525d299": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Escort_(band)"
+ },
+ "band_e596fd0c3ed3d9b1c38e": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_So_So_Glos"
+ },
+ "band_6481b83e8dea7167b968": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Liturgy_(band)"
+ },
+ "band_ec00486f686d9b8fda8d": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Krallice"
+ },
+ "band_d65612e81e271999b68f": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Tombs_(band)"
+ },
+ "band_449964377ef21b717b97": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_cc97d8f2b5cd42e1caa8": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_5036941345b68d027b31": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_1cc81e3c5cf7eb4cd793": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Murphy%27s_Law_(band)"
+ },
+ "band_acc0a9e025025bb7309f": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sheer_Terror"
+ },
+ "band_b3addc7a37a7e9ca6853": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_9eb8636981aa50d775a6": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_36c43fde4a0ed45a2c6c": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_77719b967a84a3388551": {
+  "status": "active",
+  "url": null
+ },
+ "band_d04a25ca1deb958c682b": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_a4a23138e0e3da3f85a2": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_996940d3d9e1ad45f30e": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_e289104f49e86a17f480": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Gang_Gang_Dance"
+ },
+ "band_657f602302f55d7b6a7b": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Black_Dice"
+ },
+ "band_2add6e6761f03f855e1f": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Oneida_(band)"
+ },
+ "band_47fd2754f189cc1afab1": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Endless_Boogie"
+ },
+ "band_1eb771e30ff75adc7e14": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_1359e1ccbcbd5ecd8a97": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_f39e0976fce12d032d05": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_3c25abf24cf75f468316": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_Men_(band)"
+ },
+ "band_867ea6fee5b1b0ad93cd": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Charly_Bliss"
+ },
+ "band_61a2db41b6ff9ffa3f1c": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Pom_Pom_Squad"
+ },
+ "band_9548d7da3682793c56c0": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_6b90c4ecbf4102c4d9a5": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_fc3885201077091d7ed5": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_e6308b68458c05eb4be2": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_83dc8246852d48e73f92": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_7ac5ec15d4572b2d0928": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_497ae726e2c7124885a0": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_656d140181dd98c1c88d": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_8e81864727b240cf86e3": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_3611afe9e5bfa1879fe2": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_8b0cfe3d1fed4ec12223": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_8e1475e067d4a4b4c44f": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_7989c171152c4a9f4171": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_bcf77f239fafcfa62efa": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_68aaf68b0226f8199025": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_4294eef692c50ec56190": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_351121b0397cb20282eb": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_9d88a065859be5c76d28": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_7fc4874e5f39b68ca68e": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_fa16286316b61cdc997e": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_2a1264ef4975df4d759e": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_0d33df2c1012b806c822": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Mutoid_Man"
+ },
+ "band_21f94be52bb31397aa71": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_68f71544e44f12406adb": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Matt_and_Kim"
+ },
+ "band_6c48294a1bebebdc94f6": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Spin_Doctors"
+ },
+ "band_90fa2ead1bc084039e1a": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_2c796f985a467df77877": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_c9b1220f261f44979414": {
+  "status": "unknown",
+  "url": null
+ },
+ "band_179e23eb72be0c8c3861": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Blonde_Redhead"
+ },
+ "band_02495684771ffa6c751b": {
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Bayside_(band)"
+ },
+ "band_360694c9540efcc01153": {
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_Movielife"
+ }
+}

@@ -1,0 +1,4501 @@
+[
+ {
+  "id": "band_6c06d2c587d8408bf2de",
+  "name": "Ramones",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 1,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Forest Hills, Queens, in 1974; CBGB regulars.",
+  "genre": "Punk rock",
+  "genre2": [
+   "punk"
+  ],
+  "desc": "Fast, stripped-down three-chord songs with buzzsaw guitar.",
+  "status": "inactive",
+  "url": "https://www.ramones.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7b01aacf4136bbd456a0",
+  "name": "The Velvet Underground",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 2,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1964; house band of Andy Warhol's Factory.",
+  "genre": "Art rock",
+  "genre2": [
+   "proto-punk",
+   "experimental rock"
+  ],
+  "desc": "Droning viola, feedback and blunt street-level songwriting.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Velvet_Underground",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7c2ab44e9b74ded0fce5",
+  "name": "Talking Heads",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 3,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York in 1975 and came up at CBGB.",
+  "genre": "New wave",
+  "genre2": [
+   "art punk",
+   "funk rock"
+  ],
+  "desc": "Nervy art-punk that grew into layered, polyrhythmic funk.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Talking_Heads",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_fd583292a4f3aff4308e",
+  "name": "Blondie",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 4,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1974; CBGB and Max's Kansas City scene.",
+  "genre": "New wave",
+  "genre2": [
+   "punk",
+   "power pop"
+  ],
+  "desc": "Punk-era pop songs crossing into disco, reggae and rap.",
+  "status": "active",
+  "url": "https://www.blondie.net/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a5582f78302c5a2c8cfa",
+  "name": "Beastie Boys",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 5,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1981 as a hardcore punk band.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "rap rock",
+   "punk"
+  ],
+  "desc": "Sample-heavy hip-hop with punk energy and live instruments.",
+  "status": "inactive",
+  "url": "https://www.beastieboys.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a29e434df145498e97b9",
+  "name": "Run-DMC",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 6,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Hollis, Queens, in the early 1980s.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "rap rock"
+  ],
+  "desc": "Hard drum-machine beats, shouted dual verses and rock guitar.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Run-DMC",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0771a3a618d017e17537",
+  "name": "Wu-Tang Clan",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 7,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Staten Island in 1992, with members from Brooklyn.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "East Coast hip-hop"
+  ],
+  "desc": "Gritty soul-sample beats and a rotating cast of rappers.",
+  "status": "unknown",
+  "url": "https://wutangclan.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_b99f4f767bcc2a979424",
+  "name": "The Strokes",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 8,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1998; Lower East Side club circuit.",
+  "genre": "Garage rock revival",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Interlocking clipped guitars and detached, crooned vocals.",
+  "status": "active",
+  "url": "https://www.thestrokes.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ecc92bd994e658aec902",
+  "name": "Yeah Yeah Yeahs",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 9,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York in 2000; Brooklyn and Lower East Side scene.",
+  "genre": "Indie rock",
+  "genre2": [
+   "art punk",
+   "garage rock"
+  ],
+  "desc": "Wiry guitar, minimal drums and a howling frontwoman.",
+  "status": "active",
+  "url": "https://www.yeahyeahyeahs.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_eb4594a2bc58182dd4af",
+  "name": "Interpol",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 10,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1997.",
+  "genre": "Post-punk revival",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Dark, driving post-punk with baritone vocals and taut bass.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Interpol_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_70f597b271b5ef245267",
+  "name": "LCD Soundsystem",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 11,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2002 around the DFA Records label.",
+  "genre": "Dance-punk",
+  "genre2": [
+   "electronic",
+   "indie rock"
+  ],
+  "desc": "Long-building dance-punk grooves with deadpan vocals.",
+  "status": "active",
+  "url": "https://lcdsoundsystem.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_feb915ef0a3433f9d10e",
+  "name": "Sonic Youth",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "No wave, noise, and experimental",
+  "ord": 12,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1981 out of the downtown no-wave scene.",
+  "genre": "Noise rock",
+  "genre2": [
+   "alternative rock",
+   "experimental"
+  ],
+  "desc": "Alternate-tuned guitars, feedback and sprawling song forms.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Sonic_Youth",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_9c639dcb5eb4789176a1",
+  "name": "Television",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 13,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1973; among the first bands at CBGB.",
+  "genre": "Art punk",
+  "genre2": [
+   "post-punk"
+  ],
+  "desc": "Twin-guitar interplay and long, spiraling solos.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Television_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_34fc7e1bde0d4ab64469",
+  "name": "New York Dolls",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 14,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1971; Mercer Arts Center scene.",
+  "genre": "Glam punk",
+  "genre2": [
+   "proto-punk",
+   "glam rock"
+  ],
+  "desc": "Loose, swaggering rock and roll with glam-era trash.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/New_York_Dolls",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_25c5b0aa12de48b88d32",
+  "name": "Kiss",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 15,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1973; founders raised in Queens, Brooklyn and the Bronx.",
+  "genre": "Hard rock",
+  "genre2": [
+   "heavy metal",
+   "glam rock"
+  ],
+  "desc": "Arena-sized hard rock anthems and stage theatrics.",
+  "status": "inactive",
+  "url": "https://www.kissonline.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_494084d2e38ef4284ab6",
+  "name": "Public Enemy",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 16,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island act; formed in 1985 at Adelphi University, Garden City.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "political hip-hop"
+  ],
+  "desc": "Dense, noisy Bomb Squad production and political rhymes.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Public_Enemy",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1d2e1a9eb7e5c1cf8ab4",
+  "name": "Vampire Weekend",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 17,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed at Columbia University in Manhattan in 2006.",
+  "genre": "Indie rock",
+  "genre2": [
+   "indie pop",
+   "baroque pop"
+  ],
+  "desc": "Crisp guitar pop with African-pop and chamber influences.",
+  "status": "active",
+  "url": "https://www.vampireweekend.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3888e1eda7f781157719",
+  "name": "TV on the Radio",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 18,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2001.",
+  "genre": "Indie rock",
+  "genre2": [
+   "art rock",
+   "post-punk"
+  ],
+  "desc": "Layered harmonies over droning guitars and electronics.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/TV_on_the_Radio",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_64d3b48a2e43e4979526",
+  "name": "Parquet Courts",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 19,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band formed in 2010 by Texas-raised members.",
+  "genre": "Indie rock",
+  "genre2": [
+   "post-punk",
+   "garage punk"
+  ],
+  "desc": "Talky, wiry post-punk with angular dual guitars.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Parquet_Courts",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_48e6d3a389243dcd23e6",
+  "name": "The National",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 20,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band formed in 1999 by Cincinnati natives.",
+  "genre": "Indie rock",
+  "genre2": [
+   "post-punk revival",
+   "chamber rock"
+  ],
+  "desc": "Brooding baritone vocals over slow-building, orchestral rock.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_National_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e2179c5f9f64a0ac8651",
+  "name": "Simon & Garfunkel",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 21,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Duo from Kew Gardens Hills, Queens; began recording in the late 1950s.",
+  "genre": "Folk rock",
+  "genre2": [
+   "folk"
+  ],
+  "desc": "Close two-part harmonies over acoustic folk-rock arrangements.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Simon_%26_Garfunkel",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_953d0ad5138770f70af1",
+  "name": "The Lovin' Spoonful",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 22,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Greenwich Village in 1965.",
+  "genre": "Folk rock",
+  "genre2": [
+   "pop rock"
+  ],
+  "desc": "Jug-band-flavored folk-pop with bright, easy melodies.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Lovin%27_Spoonful",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_43272e21de0a4510b2a7",
+  "name": "The Ronettes",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 23,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Girl group from Spanish Harlem, Manhattan.",
+  "genre": "Pop",
+  "genre2": [
+   "girl group",
+   "R&B"
+  ],
+  "desc": "Wall-of-sound pop with big drums and lead-vocal drama.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Ronettes",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a9de5e7c0df7426d4454",
+  "name": "The Shangri-Las",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 24,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Girl group from Cambria Heights, Queens.",
+  "genre": "Pop",
+  "genre2": [
+   "girl group"
+  ],
+  "desc": "Melodramatic teen pop with spoken asides and sound effects.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Shangri-Las",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_31529f55cb54e112f9dc",
+  "name": "Patti Smith Group",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 25,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1974 around the CBGB scene.",
+  "genre": "Punk rock",
+  "genre2": [
+   "art rock",
+   "poetry"
+  ],
+  "desc": "Poetry-driven rock built on garage riffs and long builds.",
+  "status": "active",
+  "url": "https://www.pattismith.net/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2e1dfc6db53930e68c77",
+  "name": "Suicide",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "No wave, noise, and experimental",
+  "ord": 26,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Manhattan duo formed in 1970 by Alan Vega and Martin Rev.",
+  "genre": "Synth-punk",
+  "genre2": [
+   "electronic",
+   "no wave"
+  ],
+  "desc": "Primitive drum machine, cheap keyboard drones and haunted vocals.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Suicide_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_844c2764bd9eb4c5455f",
+  "name": "Richard Hell and the Voidoids",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 27,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1976; CBGB scene.",
+  "genre": "Punk rock",
+  "genre2": [
+   "art punk"
+  ],
+  "desc": "Jagged guitar and nervy vocals on early New York punk.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Richard_Hell_and_the_Voidoids",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ff4e52ff435977303314",
+  "name": "The Dictators",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 28,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in the Bronx in 1973.",
+  "genre": "Punk rock",
+  "genre2": [
+   "hard rock"
+  ],
+  "desc": "Loud, guitar-heavy proto-punk with pop hooks.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_Dictators",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f8ba3e8770891cdaefb0",
+  "name": "Agnostic Front",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 29,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed on the Lower East Side in 1980.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "crossover thrash"
+  ],
+  "desc": "Fast, heavy New York hardcore with gang vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Agnostic_Front",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_9b97eb934a3e2e613872",
+  "name": "Cro-Mags",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 30,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed on the Lower East Side in 1981.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "crossover thrash",
+   "metal"
+  ],
+  "desc": "Metallic hardcore with thick, chugging riffs.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Cro-Mags",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_aaad4de1517a7552e108",
+  "name": "Sick of It All",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 31,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 1986.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "New York hardcore"
+  ],
+  "desc": "Short, fast hardcore with sing-along breakdowns.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sick_of_It_All",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4af288ef07358375823d",
+  "name": "Gorilla Biscuits",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 32,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 1986.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "youth crew"
+  ],
+  "desc": "Upbeat, melodic youth-crew hardcore.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Gorilla_Biscuits",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_211fe759ce6e6af80b5c",
+  "name": "Madball",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 33,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 1988.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "metallic hardcore"
+  ],
+  "desc": "Groove-heavy hardcore with bilingual shouts.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Madball",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e254a9c340a061c903b5",
+  "name": "Quicksand",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 34,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York in 1990 by hardcore scene veterans.",
+  "genre": "Post-hardcore",
+  "genre2": [
+   "alternative metal"
+  ],
+  "desc": "Heavy, groove-based post-hardcore with melodic vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Quicksand_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c8c7857ad9182d37d1ca",
+  "name": "Anthrax",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 35,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 1981.",
+  "genre": "Thrash metal",
+  "genre2": [
+   "heavy metal",
+   "crossover"
+  ],
+  "desc": "Fast thrash riffing with hardcore and rap crossovers.",
+  "status": "active",
+  "url": "https://www.anthrax.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_00050e22652285c61089",
+  "name": "Type O Negative",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 36,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 1989.",
+  "genre": "Gothic metal",
+  "genre2": [
+   "doom metal"
+  ],
+  "desc": "Slow, crushing goth-doom with deep, sardonic vocals.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Type_O_Negative",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_571204ad0f88b504ae2b",
+  "name": "Biohazard",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 37,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 1987.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "groove metal",
+   "rap metal"
+  ],
+  "desc": "Heavy hardcore and metal with traded rap-style vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Biohazard_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_41db0935443d3d2758f8",
+  "name": "Life of Agony",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 38,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 1989.",
+  "genre": "Alternative metal",
+  "genre2": [
+   "hardcore",
+   "doom"
+  ],
+  "desc": "Downtuned alternative metal with melodic, emotional vocals.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Life_of_Agony",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_9b5b4bfb637768bce1c4",
+  "name": "Helmet",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 39,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1989.",
+  "genre": "Alternative metal",
+  "genre2": [
+   "noise rock",
+   "post-hardcore"
+  ],
+  "desc": "Staccato, drop-tuned riffs played with precision.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Helmet_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e604381e988a78dec277",
+  "name": "Prong",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 40,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1986; CBGB scene.",
+  "genre": "Groove metal",
+  "genre2": [
+   "industrial metal",
+   "crossover"
+  ],
+  "desc": "Tight, mechanical thrash-groove riffs.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Prong_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6a8726a7f8f224b7c464",
+  "name": "White Zombie",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 41,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1985.",
+  "genre": "Groove metal",
+  "genre2": [
+   "noise rock",
+   "industrial metal"
+  ],
+  "desc": "Horror-movie groove metal with heavy, sampled riffs.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/White_Zombie_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_14164c25863f6997c2b0",
+  "name": "Living Colour",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 42,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1984.",
+  "genre": "Funk metal",
+  "genre2": [
+   "hard rock",
+   "alternative rock"
+  ],
+  "desc": "Virtuosic hard rock mixing funk, metal and jazz.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Living_Colour",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_87723e337f340782f71b",
+  "name": "Blue Öyster Cult",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 43,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island act; formed in Stony Brook in 1967.",
+  "genre": "Hard rock",
+  "genre2": [
+   "heavy metal",
+   "psychedelic rock"
+  ],
+  "desc": "Literate hard rock with layered guitars and harmonies.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Blue_%C3%96yster_Cult",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5d01e8b33a2467f1b357",
+  "name": "A Tribe Called Quest",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 44,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in St. Albans, Queens, in 1985.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "jazz rap",
+   "alternative hip-hop"
+  ],
+  "desc": "Jazz-sampling beats and conversational trade-off verses.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/A_Tribe_Called_Quest",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1904c380ebedbd4bb5c0",
+  "name": "De La Soul",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 45,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island act; formed in Amityville in 1987.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "alternative hip-hop"
+  ],
+  "desc": "Playful, sample-collage hip-hop with offbeat rhymes.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/De_La_Soul",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_aef72b6fc6c604b20bf1",
+  "name": "Mobb Deep",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 46,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Duo from the Queensbridge Houses, Queens; formed 1991.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "hardcore hip-hop"
+  ],
+  "desc": "Bleak, piano-loop beats and street-level rhymes.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Mobb_Deep",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_cf4e0a47d8426f179338",
+  "name": "EPMD",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 47,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island act; formed in Brentwood in 1986.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "funk rap"
+  ],
+  "desc": "Laid-back funk samples and slow, tag-team flows.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/EPMD",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1c906f337afd74675c1a",
+  "name": "Eric B. & Rakim",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 48,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island duo; Rakim from Wyandanch, formed in 1986.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "golden age hip-hop"
+  ],
+  "desc": "Funk breaks behind dense, internally rhymed verses.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Eric_B._%26_Rakim",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c8d5aa958c89c5b68f15",
+  "name": "Boogie Down Productions",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 49,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in the South Bronx in 1985.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "conscious hip-hop"
+  ],
+  "desc": "Sparse, hard beats and didactic rhymes.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Boogie_Down_Productions",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_87dad4ab4a8030daca05",
+  "name": "Grandmaster Flash and the Furious Five",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 50,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in the South Bronx in 1978.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "old-school hip-hop"
+  ],
+  "desc": "Early turntable-led hip-hop and storytelling raps.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Grandmaster_Flash_and_the_Furious_Five",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_05891feb1ad622b83d91",
+  "name": "Salt-N-Pepa",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 51,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 1985.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "pop rap"
+  ],
+  "desc": "Hook-driven pop-rap with dance beats.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Salt-N-Pepa",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_cf08a45128149159dbd4",
+  "name": "Black Star",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 52,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn duo of Mos Def and Talib Kweli, formed in 1997.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "conscious hip-hop"
+  ],
+  "desc": "Soulful boom-bap and socially minded verses.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Black_Star_(rap_duo)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d8f91f4d9fa44017a70f",
+  "name": "Onyx",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 53,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in South Jamaica, Queens, in 1988.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "hardcore hip-hop"
+  ],
+  "desc": "Shouted, aggressive group raps over hard beats.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Onyx_(group)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_497bc4e92900d1f2bc06",
+  "name": "Stetsasonic",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 54,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 1981; an early hip-hop band with live instruments.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "old-school hip-hop"
+  ],
+  "desc": "Live-band hip-hop with jazz and funk samples.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Stetsasonic",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_21b2f6ea659181aabf54",
+  "name": "Whodini",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 55,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 1981.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "electro"
+  ],
+  "desc": "Electro-funk beats and smooth, story-based raps.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Whodini",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3d51e83a02afc1c40dbb",
+  "name": "The LOX",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hip-hop and rap",
+  "ord": 56,
+  "type": "original_band",
+  "city": "Westchester",
+  "conn": "Yonkers, N.Y., trio formed in 1994.",
+  "genre": "Hip-hop",
+  "genre2": [
+   "East Coast hip-hop"
+  ],
+  "desc": "Hard-edged posse cuts and rapid-fire trade-offs.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Lox",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a7fe669b8d3274bd08f8",
+  "name": "Chic",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Funk, soul, and world groove",
+  "ord": 57,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York in 1972 by Nile Rodgers and Bernard Edwards.",
+  "genre": "Disco",
+  "genre2": [
+   "funk",
+   "R&B"
+  ],
+  "desc": "Chicken-scratch rhythm guitar and melodic bass grooves.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Chic_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_44316bd646a4cb01f5e1",
+  "name": "ESG",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Funk, soul, and world groove",
+  "ord": 58,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Sister-led band from the South Bronx, formed in 1978.",
+  "genre": "Post-punk",
+  "genre2": [
+   "dance-punk",
+   "funk"
+  ],
+  "desc": "Minimal bass-and-percussion grooves with chanted vocals.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/ESG_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c6d67a729bc7bc206ea0",
+  "name": "Liquid Liquid",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "No wave, noise, and experimental",
+  "ord": 59,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1980.",
+  "genre": "Post-punk",
+  "genre2": [
+   "dance-punk",
+   "no wave"
+  ],
+  "desc": "Percussion-heavy, bass-led downtown dance grooves.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Liquid_Liquid",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d68d97d51ec7a107014e",
+  "name": "Kid Creole and the Coconuts",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Funk, soul, and world groove",
+  "ord": 60,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York in 1980 by August Darnell.",
+  "genre": "Disco",
+  "genre2": [
+   "Latin",
+   "new wave"
+  ],
+  "desc": "Big-band Latin and Caribbean pop with disco rhythms.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Kid_Creole_and_the_Coconuts",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f5b16aec14e93e34f815",
+  "name": "Swans",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "No wave, noise, and experimental",
+  "ord": 61,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1982 by Michael Gira.",
+  "genre": "Experimental rock",
+  "genre2": [
+   "no wave",
+   "post-rock"
+  ],
+  "desc": "Repetitive, crushing crescendos and ritualistic dynamics.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Swans_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5977273e3389678dfec6",
+  "name": "DNA",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "No wave, noise, and experimental",
+  "ord": 62,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1977; core no-wave band.",
+  "genre": "No wave",
+  "genre2": [
+   "noise rock"
+  ],
+  "desc": "Splintered guitar, jerky rhythms and short bursts of noise.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/DNA_(American_band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0975278bac9a4156a5ab",
+  "name": "Teenage Jesus and the Jerks",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "No wave, noise, and experimental",
+  "ord": 63,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1976 by Lydia Lunch.",
+  "genre": "No wave",
+  "genre2": [
+   "noise rock"
+  ],
+  "desc": "Abrasive slide guitar and tiny, brutal songs.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Teenage_Jesus_and_the_Jerks",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_21428c015e9efd8fa16d",
+  "name": "The Lounge Lizards",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "No wave, noise, and experimental",
+  "ord": 64,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1978 by John Lurie.",
+  "genre": "Jazz",
+  "genre2": [
+   "no wave",
+   "avant-garde jazz"
+  ],
+  "desc": "Noir-ish fake-jazz played with punk attitude.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Lounge_Lizards",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6b69c8ec24cc8563f7c4",
+  "name": "Bush Tetras",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 65,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1979.",
+  "genre": "Post-punk",
+  "genre2": [
+   "dance-punk",
+   "no wave"
+  ],
+  "desc": "Choppy funk guitar and terse post-punk vocals.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Bush_Tetras",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_bcbe12997e94e6ad177e",
+  "name": "The Fugs",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 66,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in the East Village in 1964.",
+  "genre": "Folk rock",
+  "genre2": [
+   "satirical rock",
+   "protest music"
+  ],
+  "desc": "Ragged, satirical folk-rock and protest songs.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Fugs",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_717c8882a91b2307e225",
+  "name": "The Heartbreakers",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 67,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1975 by Johnny Thunders and Jerry Nolan.",
+  "genre": "Punk rock",
+  "genre2": [
+   "rock and roll"
+  ],
+  "desc": "Sloppy, loud rock and roll with Chuck Berry roots.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Heartbreakers",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_370a6afe065bf740187e",
+  "name": "Mink DeVille",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 68,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Fronted by Willy DeVille; CBGB house act from 1975.",
+  "genre": "Rock",
+  "genre2": [
+   "R&B",
+   "new wave"
+  ],
+  "desc": "Soul and Latin-tinged rock with street-corner romance.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Mink_DeVille",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_bf9248f2c74e51f7c09d",
+  "name": "The Fleshtones",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 69,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 1976.",
+  "genre": "Garage rock",
+  "genre2": [
+   "punk"
+  ],
+  "desc": "Frat-party garage rock with organ and handclaps.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Fleshtones",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d424050d726602115b9c",
+  "name": "Tom Tom Club",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, new wave, and art rock",
+  "ord": 70,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in 1981 by Talking Heads' Tina Weymouth and Chris Frantz.",
+  "genre": "New wave",
+  "genre2": [
+   "dance",
+   "funk"
+  ],
+  "desc": "Light, sample-ready funk with playful vocals.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Tom_Tom_Club",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3822a0e1d0f8e0136577",
+  "name": "They Might Be Giants",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 71,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 1982.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "indie pop"
+  ],
+  "desc": "Quirky, hook-dense pop songs with accordion and horns.",
+  "status": "active",
+  "url": "https://www.tmbg.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3e0eb8d31795b8d8dd99",
+  "name": "Luna",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 72,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1991 by Dean Wareham.",
+  "genre": "Indie rock",
+  "genre2": [
+   "dream pop"
+  ],
+  "desc": "Gentle, Velvet-inspired guitar pop.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Luna_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d48e7798251eedcb29a1",
+  "name": "Nada Surf",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 73,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1992.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "power pop",
+   "indie rock"
+  ],
+  "desc": "Melodic guitar pop with earnest vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Nada_Surf",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1b8f1c52850ab59e81c2",
+  "name": "Fountains of Wayne",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 74,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York in 1995.",
+  "genre": "Power pop",
+  "genre2": [
+   "alternative rock"
+  ],
+  "desc": "Tightly crafted power pop with suburban-detail lyrics.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Fountains_of_Wayne",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8c8a006f067d33110a5a",
+  "name": "The Jon Spencer Blues Explosion",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 75,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1991.",
+  "genre": "Garage punk",
+  "genre2": [
+   "blues rock",
+   "noise rock"
+  ],
+  "desc": "Bass-less, raw blues-punk with shouted showmanship.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Jon_Spencer_Blues_Explosion",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e6bf540dc5d49461c50b",
+  "name": "Cibo Matto",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 76,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1994.",
+  "genre": "Trip hop",
+  "genre2": [
+   "alternative",
+   "pop"
+  ],
+  "desc": "Sample-based pop mixing hip-hop, bossa nova and rock.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Cibo_Matto",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1ede001df9130d4e622d",
+  "name": "The Moldy Peaches",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 77,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1994; anti-folk scene.",
+  "genre": "Anti-folk",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Lo-fi, childlike acoustic songs with blunt humor.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Moldy_Peaches",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6d477ca439cb59fb2cce",
+  "name": "Gogol Bordello",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Funk, soul, and world groove",
+  "ord": 78,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed on the Lower East Side in 1999.",
+  "genre": "Gypsy punk",
+  "genre2": [
+   "punk",
+   "folk"
+  ],
+  "desc": "Punk energy with Eastern European folk fiddle and accordion.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Gogol_Bordello",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_24d313c86535022b22bf",
+  "name": "Antibalas",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Funk, soul, and world groove",
+  "ord": 79,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 1998.",
+  "genre": "Afrobeat",
+  "genre2": [
+   "funk"
+  ],
+  "desc": "Large-ensemble Afrobeat with horns and long grooves.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Antibalas",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8cfdfc24c7fbdc94efbb",
+  "name": "Sharon Jones & the Dap-Kings",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Funk, soul, and world groove",
+  "ord": 80,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn soul band formed around Daptone Records in 1996.",
+  "genre": "Soul",
+  "genre2": [
+   "funk",
+   "R&B"
+  ],
+  "desc": "Vintage-styled soul and funk recorded live to tape.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Sharon_Jones_%26_The_Dap-Kings",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_25fc2cdf7d73d3c356b1",
+  "name": "The Walkmen",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 81,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 2000 by D.C.-raised musicians.",
+  "genre": "Indie rock",
+  "genre2": [
+   "post-punk revival"
+  ],
+  "desc": "Echo-heavy guitar, organ and strained, soaring vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Walkmen",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_df85ced226457aa1416f",
+  "name": "The Hold Steady",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 82,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band formed in 2003 by Minneapolis natives.",
+  "genre": "Indie rock",
+  "genre2": [
+   "heartland rock"
+  ],
+  "desc": "Bar-rock riffs with dense, talk-sung storytelling.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Hold_Steady",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_52e05bbdb228fccef34d",
+  "name": "Clap Your Hands Say Yeah",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 83,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2004.",
+  "genre": "Indie rock",
+  "genre2": [
+   "indie pop"
+  ],
+  "desc": "Jittery guitars and yelping, high vocals.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Clap_Your_Hands_Say_Yeah",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f53ab3a07490e163bc5e",
+  "name": "Grizzly Bear",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 84,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2002.",
+  "genre": "Indie rock",
+  "genre2": [
+   "chamber pop",
+   "psychedelic folk"
+  ],
+  "desc": "Lush harmonies and intricate, slow-building arrangements.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Grizzly_Bear_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7b5fbd832ce6b9d5a0bb",
+  "name": "Dirty Projectors",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 85,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based project led by David Longstreth.",
+  "genre": "Art pop",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Hocketed vocal harmonies and angular guitar parts.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Dirty_Projectors",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_064c24ee8b071f3435a5",
+  "name": "Yeasayer",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 86,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2006.",
+  "genre": "Experimental pop",
+  "genre2": [
+   "psychedelic pop"
+  ],
+  "desc": "Psychedelic pop with world rhythms and synth textures.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Yeasayer",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_90c5a2e4d9a31446f04c",
+  "name": "Battles",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "No wave, noise, and experimental",
+  "ord": 87,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York in 2002.",
+  "genre": "Math rock",
+  "genre2": [
+   "experimental rock"
+  ],
+  "desc": "Looped guitars and machine-tight drumming.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Battles_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_040647eb7b98993c0c11",
+  "name": "Sleigh Bells",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 88,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn duo formed in 2008.",
+  "genre": "Noise pop",
+  "genre2": [
+   "electronic rock"
+  ],
+  "desc": "Blown-out guitar riffs and cheerleader-style vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sleigh_Bells_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_22dd89ffc0f9ee3d5fa6",
+  "name": "DIIV",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 89,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2011.",
+  "genre": "Shoegaze",
+  "genre2": [
+   "dream pop",
+   "post-punk"
+  ],
+  "desc": "Hazy, chorus-drenched guitars and driving motorik drums.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Diiv",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2e33a87232750fce53e0",
+  "name": "Beach Fossils",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 90,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2009.",
+  "genre": "Indie rock",
+  "genre2": [
+   "jangle pop",
+   "dream pop"
+  ],
+  "desc": "Jangly, reverb-soaked guitar pop.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Beach_Fossils",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f3c77134309481f77932",
+  "name": "Big Thief",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 91,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2015.",
+  "genre": "Indie folk",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Intimate folk-rock that shifts into loose, loud jams.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Big_Thief",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3bf59d75bd6639da27ac",
+  "name": "Brand New",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 92,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island act; formed in Merrick in 2000.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "emo",
+   "post-hardcore"
+  ],
+  "desc": "Emo-rooted rock that turned darker and noisier.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Brand_New_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_17aebe5891aa5037308e",
+  "name": "Taking Back Sunday",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie and alternative rock",
+  "ord": 93,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island act; formed in Amityville in 1999.",
+  "genre": "Emo",
+  "genre2": [
+   "pop-punk",
+   "post-hardcore"
+  ],
+  "desc": "Dual-vocal emo with big pop-punk choruses.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Taking_Back_Sunday",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8d8ef2ca8c85c50f9efc",
+  "name": "Glassjaw",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Hardcore, metal, and heavy rock",
+  "ord": 94,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island act; formed in Hempstead in 1993.",
+  "genre": "Post-hardcore",
+  "genre2": [
+   "experimental rock"
+  ],
+  "desc": "Volatile post-hardcore with screamed and crooned vocals.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Glassjaw",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_84b0a65154be75918356",
+  "name": "Dion and the Belmonts",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 95,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Doo-wop group from the Belmont section of the Bronx.",
+  "genre": "Doo-wop",
+  "genre2": [
+   "rock and roll"
+  ],
+  "desc": "Street-corner harmonies over early rock and roll.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Dion_and_the_Belmonts",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6ddbee6009089274e8fd",
+  "name": "Frankie Lymon & the Teenagers",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 96,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Doo-wop group from Washington Heights, Manhattan.",
+  "genre": "Doo-wop",
+  "genre2": [
+   "R&B"
+  ],
+  "desc": "High-voiced teenage doo-wop.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Frankie_Lymon_%26_the_Teenagers",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_cb8f66f1f3dfa18d7aa7",
+  "name": "The Chiffons",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 97,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Girl group from the Bronx, formed in 1960.",
+  "genre": "Pop",
+  "genre2": [
+   "girl group"
+  ],
+  "desc": "Sweet girl-group pop with doo-wop backing.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Chiffons",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4e7219f35edb12221046",
+  "name": "The Crystals",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 98,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Girl group from Brooklyn, formed in 1960.",
+  "genre": "Pop",
+  "genre2": [
+   "girl group"
+  ],
+  "desc": "Wall-of-sound girl-group pop.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Crystals",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_45f670776b6c5739e420",
+  "name": "Blood, Sweat & Tears",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 99,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1967.",
+  "genre": "Jazz rock",
+  "genre2": [
+   "rock"
+  ],
+  "desc": "Horn-driven rock with jazz arrangements.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Blood,_Sweat_%26_Tears",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_db4088127c7dc481f91f",
+  "name": "The Left Banke",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, pop, and soul",
+  "ord": 100,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1965.",
+  "genre": "Baroque pop",
+  "genre2": [
+   "pop"
+  ],
+  "desc": "Harpsichord and string-laced 1960s pop.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Left_Banke",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5d1a0143d9e6118bfb3f",
+  "name": "Rev. Vince Anderson",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Soul, ska, and roots",
+  "ord": 1,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn performer with a long-running Monday-night residency at Union Pool in Williamsburg.",
+  "genre": "Gospel rock",
+  "genre2": [
+   "soul",
+   "funk"
+  ],
+  "desc": "Organ-led gospel, soul and funk with a full backing band.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f407aa8749e9eabaaa37",
+  "name": "Dead Leaf Echo",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 2,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn shoegaze band.",
+  "genre": "Shoegaze",
+  "genre2": [
+   "dream pop"
+  ],
+  "desc": "Layered, reverb-heavy guitars and hazy vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0045438c8e98a4a10907",
+  "name": "Painted Zeros",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 3,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn indie rock project led by Katie Lau.",
+  "genre": "Indie rock",
+  "genre2": [
+   "shoegaze"
+  ],
+  "desc": "Fuzzy guitar rock with dreamy, melodic vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_26d5e2c369848435c26d",
+  "name": "Pinc Louds",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 4,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York band that grew out of frontwoman Claudia Lucia's subway-station busking.",
+  "genre": "Indie rock",
+  "genre2": [
+   "art pop",
+   "folk"
+  ],
+  "desc": "Theatrical, ramshackle indie rock with wide-ranging vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6ffa5382471f60cc09a9",
+  "name": "Stay Inside",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 5,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Emo",
+  "genre2": [
+   "post-hardcore",
+   "indie rock"
+  ],
+  "desc": "Emotional, dynamic guitar rock with spoken and sung vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e67e1fa795a0818ed50b",
+  "name": "Saetia",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 6,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York City in 1997; reunited in the 2020s.",
+  "genre": "Emo",
+  "genre2": [
+   "screamo",
+   "post-hardcore"
+  ],
+  "desc": "Chaotic screamo with melodic guitar passages.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Saetia",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5655641e0874fd992342",
+  "name": "Upper Wilds",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 7,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn trio led by Dan Friel.",
+  "genre": "Noise rock",
+  "genre2": [
+   "punk"
+  ],
+  "desc": "Loud, distorted guitar riffs with pop structures.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1c6e7af264a80510f1d1",
+  "name": "Kill Alters",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 8,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City experimental band fronted by Bonnie Baxter.",
+  "genre": "Industrial",
+  "genre2": [
+   "noise",
+   "experimental"
+  ],
+  "desc": "Abrasive electronics, drums and screamed vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_85e5e81efb3f218ed78d",
+  "name": "A Place to Bury Strangers",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 9,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 2003 by Oliver Ackermann.",
+  "genre": "Noise rock",
+  "genre2": [
+   "shoegaze",
+   "post-punk"
+  ],
+  "desc": "Extremely loud, effects-driven noise and post-punk.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/A_Place_to_Bury_Strangers",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d2f767a3b6760ba7c17d",
+  "name": "Les Savy Fav",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 10,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band; formed in Providence, R.I., in 1995.",
+  "genre": "Post-hardcore",
+  "genre2": [
+   "art punk",
+   "indie rock"
+  ],
+  "desc": "Angular art-punk guitars behind a volatile frontman.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Les_Savy_Fav",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3011f99768132505b62b",
+  "name": "Combust",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 11,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City hardcore band.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "New York hardcore"
+  ],
+  "desc": "Heavy, mosh-ready New York hardcore.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5bdaa05368f5dfa85890",
+  "name": "Soft Spot",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 12,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Art pop",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Atmospheric art-pop with intricate arrangements.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ea451c46693e67c0b270",
+  "name": "Brandi and the Alexanders",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Soul, ska, and roots",
+  "ord": 13,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City soul band.",
+  "genre": "Soul",
+  "genre2": [
+   "R&B",
+   "funk"
+  ],
+  "desc": "Horn-backed retro soul with a powerhouse lead vocal.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2c993bdaf715b97c3663",
+  "name": "Castle Rat",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 14,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Doom metal",
+  "genre2": [
+   "heavy metal",
+   "stoner rock"
+  ],
+  "desc": "Fantasy-themed doom riffs with theatrical staging.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_b071b46ead89fec6ecde",
+  "name": "Uniform",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 15,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City duo formed in 2013.",
+  "genre": "Industrial",
+  "genre2": [
+   "noise rock",
+   "metal"
+  ],
+  "desc": "Harsh industrial noise and metal riffs.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Uniform_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a5080a39775938d8337f",
+  "name": "The Mystery Lights",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 16,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band originally from Salinas, Calif.",
+  "genre": "Garage rock",
+  "genre2": [
+   "psychedelic rock"
+  ],
+  "desc": "Organ-and-guitar garage rock with psychedelic edges.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Mystery_Lights",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_18db54bccd1fca06da38",
+  "name": "Daddy Long Legs",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Soul, ska, and roots",
+  "ord": 17,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Blues rock",
+  "genre2": [
+   "garage rock",
+   "rock and roll"
+  ],
+  "desc": "Harmonica-driven raw rhythm and blues.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0ee977ab9b33f6efc425",
+  "name": "The Lemon Twigs",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 18,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island act; brothers Brian and Michael D'Addario from Hicksville.",
+  "genre": "Power pop",
+  "genre2": [
+   "baroque pop",
+   "glam rock"
+  ],
+  "desc": "Harmony-rich 1960s- and '70s-inspired pop rock.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Lemon_Twigs",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_563f18455ffeb5535df2",
+  "name": "Bodega",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 19,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Post-punk",
+  "genre2": [
+   "art punk"
+  ],
+  "desc": "Talk-sung post-punk with sharp, repetitive guitar.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Bodega_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_39330e02c5d4489b1ed8",
+  "name": "Geese",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 20,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn by high school classmates.",
+  "genre": "Indie rock",
+  "genre2": [
+   "art rock",
+   "post-punk"
+  ],
+  "desc": "Loose, unpredictable rock with yelping vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Geese_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f3f6a85c7a29b3030115",
+  "name": "Been Stellar",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 21,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band formed by students at NYU.",
+  "genre": "Indie rock",
+  "genre2": [
+   "shoegaze",
+   "post-punk"
+  ],
+  "desc": "Dense, driving guitar rock with shoegaze texture.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_425b3aa351e1c80edc99",
+  "name": "Water From Your Eyes",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 22,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn duo of Rachel Brown and Nate Amos.",
+  "genre": "Experimental pop",
+  "genre2": [
+   "art rock",
+   "electronic"
+  ],
+  "desc": "Fractured pop songs built from loops and heavy guitar.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Water_from_Your_Eyes",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4e11ddaec32bda9124d5",
+  "name": "Hello Mary",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 23,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Indie rock",
+  "genre2": [
+   "grunge",
+   "shoegaze"
+  ],
+  "desc": "Heavy, melodic guitar rock with grunge dynamics.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_07b3908a1977e8959e35",
+  "name": "Gustaf",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 24,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Post-punk",
+  "genre2": [
+   "art punk",
+   "dance-punk"
+  ],
+  "desc": "Minimal, bass-driven post-punk with deadpan vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ea348ce01b552025997c",
+  "name": "Sunflower Bean",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 25,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York City in 2013.",
+  "genre": "Indie rock",
+  "genre2": [
+   "psychedelic rock",
+   "glam rock"
+  ],
+  "desc": "Glam- and psych-tinged guitar rock.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sunflower_Bean",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_80c5f6ed5b1db01a3bce",
+  "name": "Nation of Language",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 26,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band formed in 2016.",
+  "genre": "Synth-pop",
+  "genre2": [
+   "post-punk",
+   "new wave"
+  ],
+  "desc": "Melancholy synth-pop with motorik rhythms.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Nation_of_Language",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_63db2b4ba12f32e251f1",
+  "name": "Model/Actriz",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 27,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band; formed in Boston.",
+  "genre": "Dance-punk",
+  "genre2": [
+   "noise rock",
+   "industrial"
+  ],
+  "desc": "Pummeling dance-punk with clanging guitar and drums.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_16f93cbf8e12af95adac",
+  "name": "Lip Critic",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 28,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Electronic punk",
+  "genre2": [
+   "hardcore",
+   "experimental"
+  ],
+  "desc": "Two drummers, samples and frantic shouted vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_dd6ecfc9349a3726787a",
+  "name": "Frost Children",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 29,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City-based sibling duo originally from St. Louis.",
+  "genre": "Electropop",
+  "genre2": [
+   "hyperpop",
+   "dance"
+  ],
+  "desc": "Bright, genre-hopping electronic pop.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ebd9f9db8a1071d8566a",
+  "name": "Fcukers",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 30,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City duo.",
+  "genre": "Dance",
+  "genre2": [
+   "electronic",
+   "indie"
+  ],
+  "desc": "Club-ready dance pop with breakbeats and cool vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_b535ad45650ca9ff0eed",
+  "name": "Bambara",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 31,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band formed by Athens, Ga., natives.",
+  "genre": "Post-punk",
+  "genre2": [
+   "gothic rock",
+   "noise rock"
+  ],
+  "desc": "Dark, cinematic post-punk with narrative vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Bambara_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f1eee98b7c3909c6a909",
+  "name": "Weeping Icon",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 32,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Noise rock",
+  "genre2": [
+   "post-punk"
+  ],
+  "desc": "Abrasive, feedback-heavy noise rock.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3d62ffc413336df00dcb",
+  "name": "Acid Dad",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 33,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Psychedelic rock",
+  "genre2": [
+   "garage rock"
+  ],
+  "desc": "Fuzzed-out garage psych with driving rhythms.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f528bc4e60fa4871d4d5",
+  "name": "Show Me the Body",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 34,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 2014.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "noise rock",
+   "sludge"
+  ],
+  "desc": "Banjo-laced hardcore and sludge with shouted vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Show_Me_the_Body",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ee7305598ee324712a66",
+  "name": "Imperial Triumphant",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 35,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band formed in 2005.",
+  "genre": "Avant-garde metal",
+  "genre2": [
+   "black metal",
+   "death metal"
+  ],
+  "desc": "Dissonant extreme metal with jazz influences.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Imperial_Triumphant",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5bf9a67795fec0187171",
+  "name": "Pyrrhon",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 36,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Technical death metal",
+  "genre2": [
+   "noise rock"
+  ],
+  "desc": "Chaotic, dissonant technical death metal.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Pyrrhon",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f5eba68e7e270b18ffc4",
+  "name": "Couch Slut",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 37,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Noise rock",
+  "genre2": [
+   "sludge metal",
+   "hardcore"
+  ],
+  "desc": "Harsh, heavy noise rock with screamed vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ca8b0752d3838c3fee45",
+  "name": "The Slackers",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Soul, ska, and roots",
+  "ord": 38,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York City in 1991.",
+  "genre": "Ska",
+  "genre2": [
+   "rocksteady",
+   "reggae"
+  ],
+  "desc": "Rocksteady and early-reggae grooves with horns and organ.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Slackers",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_efe1e7f052a44d287a4b",
+  "name": "Frankie Cosmos",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 39,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band led by Greta Kline.",
+  "genre": "Indie pop",
+  "genre2": [
+   "lo-fi"
+  ],
+  "desc": "Short, intimate indie-pop songs.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Frankie_Cosmos",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_b79b18646094926ac386",
+  "name": "Crumb",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 40,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band; formed at Tufts University.",
+  "genre": "Psychedelic rock",
+  "genre2": [
+   "jazz",
+   "dream pop"
+  ],
+  "desc": "Hazy, jazz-tinged psychedelic grooves.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Crumb_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_aa5b019bcb8e5b3c6f07",
+  "name": "Hotline TNT",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 41,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City-based band led by Will Anderson, who started the project in Minneapolis.",
+  "genre": "Shoegaze",
+  "genre2": [
+   "indie rock",
+   "power pop"
+  ],
+  "desc": "Loud, fuzzy shoegaze with pop melodies.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a590e31d3f3a63496c50",
+  "name": "Rubblebucket",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 42,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band; formed in Burlington, Vt.",
+  "genre": "Indie pop",
+  "genre2": [
+   "dance",
+   "Afrobeat"
+  ],
+  "desc": "Horn-heavy, danceable indie pop.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Rubblebucket",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_da67c8418df96525d299",
+  "name": "Escort",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Soul, ska, and roots",
+  "ord": 43,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Disco",
+  "genre2": [
+   "funk",
+   "nu-disco"
+  ],
+  "desc": "Large-ensemble disco with strings and horns.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Escort_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e596fd0c3ed3d9b1c38e",
+  "name": "The So So Glos",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 44,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Punk rock",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Anthemic punk with sing-along choruses.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_So_So_Glos",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6481b83e8dea7167b968",
+  "name": "Liturgy",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 45,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band led by Haela Hunt-Hendrix.",
+  "genre": "Black metal",
+  "genre2": [
+   "experimental"
+  ],
+  "desc": "Maximalist black metal with classical structures.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Liturgy_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ec00486f686d9b8fda8d",
+  "name": "Krallice",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 46,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band formed in 2008.",
+  "genre": "Black metal",
+  "genre2": [
+   "progressive metal"
+  ],
+  "desc": "Dense, fast black metal with intricate guitar work.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Krallice",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d65612e81e271999b68f",
+  "name": "Tombs",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 47,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Black metal",
+  "genre2": [
+   "post-metal",
+   "sludge"
+  ],
+  "desc": "Dark, heavy fusion of black metal and post-metal.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Tombs_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_449964377ef21b717b97",
+  "name": "Black Anvil",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 48,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Black metal",
+  "genre2": [
+   "thrash metal"
+  ],
+  "desc": "Thrashing black metal with hardcore roots.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_cc97d8f2b5cd42e1caa8",
+  "name": "Sannhet",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 49,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn instrumental trio.",
+  "genre": "Post-metal",
+  "genre2": [
+   "black metal",
+   "shoegaze"
+  ],
+  "desc": "Instrumental post-metal with blast beats and shimmer.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5036941345b68d027b31",
+  "name": "Yellow Eyes",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 50,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Black metal",
+  "genre2": [
+   "atmospheric black metal"
+  ],
+  "desc": "Raw, atmospheric black metal.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1cc81e3c5cf7eb4cd793",
+  "name": "Murphy's Law",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 51,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 1982.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "crossover",
+   "ska punk"
+  ],
+  "desc": "Party-minded hardcore mixing punk, ska and metal.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Murphy%27s_Law_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_acc0a9e025025bb7309f",
+  "name": "Sheer Terror",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 52,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York City in 1984.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "New York hardcore"
+  ],
+  "desc": "Gruff, mid-tempo New York hardcore.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sheer_Terror",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_b3addc7a37a7e9ca6853",
+  "name": "Killing Time",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 53,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City hardcore band.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "New York hardcore"
+  ],
+  "desc": "Fast, tough late-1980s-style hardcore.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_9eb8636981aa50d775a6",
+  "name": "Crown of Thornz",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 54,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn hardcore band.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "metallic hardcore"
+  ],
+  "desc": "Heavy, groove-based New York hardcore.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_36c43fde4a0ed45a2c6c",
+  "name": "Skarhead",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 55,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City hardcore band.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "New York hardcore"
+  ],
+  "desc": "Aggressive New York hardcore with hip-hop influence.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_77719b967a84a3388551",
+  "name": "Krimewatch",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 56,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City hardcore band.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "punk"
+  ],
+  "desc": "Fast, raw hardcore with bilingual vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d04a25ca1deb958c682b",
+  "name": "Hank Wood and the Hammerheads",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 57,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn hardcore band.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "garage punk"
+  ],
+  "desc": "Organ-laced, fast and noisy hardcore.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a4a23138e0e3da3f85a2",
+  "name": "Haram",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 58,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City hardcore band.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "punk"
+  ],
+  "desc": "Raw hardcore with Arabic-language vocals.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_996940d3d9e1ad45f30e",
+  "name": "Native Sun",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 59,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Punk rock",
+  "genre2": [
+   "post-punk"
+  ],
+  "desc": "Fast, noisy punk with post-punk edges.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e289104f49e86a17f480",
+  "name": "Gang Gang Dance",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 60,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York City in 2001.",
+  "genre": "Experimental",
+  "genre2": [
+   "art pop",
+   "electronic"
+  ],
+  "desc": "Polyrhythmic, psychedelic dance music.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Gang_Gang_Dance",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_657f602302f55d7b6a7b",
+  "name": "Black Dice",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 61,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band; formed in Providence, R.I.",
+  "genre": "Noise",
+  "genre2": [
+   "experimental",
+   "electronic"
+  ],
+  "desc": "Collage-like noise and mutated electronic loops.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Black_Dice",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2add6e6761f03f855e1f",
+  "name": "Oneida",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 62,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Brooklyn in 1997.",
+  "genre": "Psychedelic rock",
+  "genre2": [
+   "krautrock",
+   "noise rock"
+  ],
+  "desc": "Repetitive, heavy psych and kraut-rock jams.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Oneida_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_47fd2754f189cc1afab1",
+  "name": "Endless Boogie",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 63,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Psychedelic rock",
+  "genre2": [
+   "boogie rock",
+   "blues rock"
+  ],
+  "desc": "Long, hypnotic boogie-rock jams.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Endless_Boogie",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1eb771e30ff75adc7e14",
+  "name": "Sunwatchers",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 64,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Psychedelic jazz",
+  "genre2": [
+   "free jazz",
+   "rock"
+  ],
+  "desc": "Saxophone-led psych-jazz-rock freakouts.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1359e1ccbcbd5ecd8a97",
+  "name": "75 Dollar Bill",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 65,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City duo of Che Chen and Rick Brown.",
+  "genre": "Experimental",
+  "genre2": [
+   "minimalism",
+   "blues"
+  ],
+  "desc": "Hypnotic microtonal guitar over percussion.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f39e0976fce12d032d05",
+  "name": "Ava Luna",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 66,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Art rock",
+  "genre2": [
+   "soul",
+   "indie rock"
+  ],
+  "desc": "Nervy art-rock with soul vocal arrangements.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3c25abf24cf75f468316",
+  "name": "The Men",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 67,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band formed in 2008.",
+  "genre": "Punk rock",
+  "genre2": [
+   "noise rock",
+   "garage rock"
+  ],
+  "desc": "Shifting punk, noise and roots-rock.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_Men_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_867ea6fee5b1b0ad93cd",
+  "name": "Charly Bliss",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 68,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Power pop",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Bright, sugary power pop with crunchy guitars.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Charly_Bliss",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_61a2db41b6ff9ffa3f1c",
+  "name": "Pom Pom Squad",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 69,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band led by Mia Berrin.",
+  "genre": "Indie rock",
+  "genre2": [
+   "grunge",
+   "punk"
+  ],
+  "desc": "Grungy punk-pop with vintage girl-group touches.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Pom_Pom_Squad",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_9548d7da3682793c56c0",
+  "name": "Habibi",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 70,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Garage rock",
+  "genre2": [
+   "surf rock",
+   "psychedelic"
+  ],
+  "desc": "Surf- and psych-tinged garage pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6b90c4ecbf4102c4d9a5",
+  "name": "Sloppy Jane",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 71,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band led by Haley Dahl.",
+  "genre": "Art rock",
+  "genre2": [
+   "chamber pop",
+   "punk"
+  ],
+  "desc": "Theatrical chamber-punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_fc3885201077091d7ed5",
+  "name": "Grim Streaker",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 72,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Punk rock",
+  "genre2": [
+   "post-punk"
+  ],
+  "desc": "Fast, wiry punk with sardonic vocals.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e6308b68458c05eb4be2",
+  "name": "Dead Tooth",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 73,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Post-punk",
+  "genre2": [
+   "garage rock"
+  ],
+  "desc": "Gritty, swaggering post-punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_83dc8246852d48e73f92",
+  "name": "Activity",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 74,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Post-punk",
+  "genre2": [
+   "experimental rock"
+  ],
+  "desc": "Tense, atmospheric post-punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7ac5ec15d4572b2d0928",
+  "name": "Small Black",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 75,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Synth-pop",
+  "genre2": [
+   "chillwave"
+  ],
+  "desc": "Hazy, melancholic synth-pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_497ae726e2c7124885a0",
+  "name": "Bethlehem Steel",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 76,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Indie rock",
+  "genre2": [
+   "grunge"
+  ],
+  "desc": "Loud, emotive guitar rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_656d140181dd98c1c88d",
+  "name": "Big Bliss",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 77,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Indie rock",
+  "genre2": [
+   "post-punk",
+   "jangle pop"
+  ],
+  "desc": "Intricate, jangly guitar pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8e81864727b240cf86e3",
+  "name": "Russian Baths",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 78,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Noise pop",
+  "genre2": [
+   "shoegaze"
+  ],
+  "desc": "Noisy, dreamy guitar rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3611afe9e5bfa1879fe2",
+  "name": "Patio",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 79,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn trio.",
+  "genre": "Post-punk",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Minimal, bass-forward post-punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8b0cfe3d1fed4ec12223",
+  "name": "PC Worship",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 80,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Noise rock",
+  "genre2": [
+   "experimental"
+  ],
+  "desc": "Sprawling, noisy experimental rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8e1475e067d4a4b4c44f",
+  "name": "Kalbells",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 81,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn project of Kalmia Traver.",
+  "genre": "Art pop",
+  "genre2": [
+   "synth-pop"
+  ],
+  "desc": "Colorful synth-led art pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7989c171152c4a9f4171",
+  "name": "Field Mouse",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 82,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Indie pop",
+  "genre2": [
+   "dream pop"
+  ],
+  "desc": "Shimmering, melodic guitar pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_bcf77f239fafcfa62efa",
+  "name": "Honduras",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 83,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Punk rock",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Brash punk with hooks.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_68aaf68b0226f8199025",
+  "name": "Tredici Bacci",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Soul, ska, and roots",
+  "ord": 84,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City ensemble led by Simon Hanes.",
+  "genre": "Orchestral pop",
+  "genre2": [
+   "soundtrack",
+   "pop"
+  ],
+  "desc": "Italian film-score-inspired orchestral pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4294eef692c50ec56190",
+  "name": "The Muckers",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 85,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Psychedelic rock",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Swirling, organ-heavy psych rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_351121b0397cb20282eb",
+  "name": "Dirty Fences",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 86,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Punk rock",
+  "genre2": [
+   "garage rock",
+   "power pop"
+  ],
+  "desc": "High-energy garage punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_9d88a065859be5c76d28",
+  "name": "Public Practice",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 87,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn band.",
+  "genre": "Post-punk",
+  "genre2": [
+   "dance-punk"
+  ],
+  "desc": "Funky, angular post-punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7fc4874e5f39b68ca68e",
+  "name": "Nymph",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 88,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Psychedelic rock",
+  "genre2": [
+   "world"
+  ],
+  "desc": "Hypnotic psych grooves with global influences.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_fa16286316b61cdc997e",
+  "name": "Mother Feather",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 89,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Hard rock",
+  "genre2": [
+   "glam rock"
+  ],
+  "desc": "Theatrical, riff-heavy glam rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2a1264ef4975df4d759e",
+  "name": "Yvette",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Shoegaze, noise, and psych",
+  "ord": 90,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn noise duo.",
+  "genre": "Noise rock",
+  "genre2": [
+   "industrial"
+  ],
+  "desc": "Abrasive, rhythmic noise rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0d33df2c1012b806c822",
+  "name": "Mutoid Man",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 91,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn-based band formed in 2012.",
+  "genre": "Metal",
+  "genre2": [
+   "hardcore",
+   "progressive"
+  ],
+  "desc": "Fast, riff-heavy metal with pop hooks.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Mutoid_Man",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_21f94be52bb31397aa71",
+  "name": "Car Bomb",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal and heavy music",
+  "ord": 92,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island band.",
+  "genre": "Mathcore",
+  "genre2": [
+   "progressive metal"
+  ],
+  "desc": "Precise, polyrhythmic mathcore.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_68f71544e44f12406adb",
+  "name": "Matt and Kim",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 93,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn duo formed in 2004.",
+  "genre": "Indie pop",
+  "genre2": [
+   "dance-punk"
+  ],
+  "desc": "Keyboard-and-drums party pop with shouted choruses.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Matt_and_Kim",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6c48294a1bebebdc94f6",
+  "name": "Spin Doctors",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Soul, ska, and roots",
+  "ord": 94,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Manhattan in 1988.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "jam rock",
+   "funk rock"
+  ],
+  "desc": "Funky bar-band rock with fast vocal delivery.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Spin_Doctors",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_90fa2ead1bc084039e1a",
+  "name": "Haybaby",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Post-punk and indie rock",
+  "ord": 95,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Brooklyn trio.",
+  "genre": "Grunge",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Slow-burning, heavy grunge-pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2c796f985a467df77877",
+  "name": "Tchotchke",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 96,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City band.",
+  "genre": "Psychedelic pop",
+  "genre2": [
+   "garage pop"
+  ],
+  "desc": "Retro, 1960s-flavored girl-group pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c9b1220f261f44979414",
+  "name": "Overcoats",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie pop and synth",
+  "ord": 97,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "New York City duo.",
+  "genre": "Electropop",
+  "genre2": [
+   "indie pop"
+  ],
+  "desc": "Close-harmony electronic pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_179e23eb72be0c8c3861",
+  "name": "Blonde Redhead",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Experimental and art rock",
+  "ord": 98,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in New York City in 1993.",
+  "genre": "Art rock",
+  "genre2": [
+   "dream pop",
+   "noise pop"
+  ],
+  "desc": "Dreamy, dissonant art rock with breathy dual vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Blonde_Redhead",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_02495684771ffa6c751b",
+  "name": "Bayside",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 99,
+  "type": "original_band",
+  "city": "New York City",
+  "conn": "Formed in Queens in 2000.",
+  "genre": "Pop-punk",
+  "genre2": [
+   "emo",
+   "alternative rock"
+  ],
+  "desc": "Melodic punk with fast guitar leads and earnest vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Bayside_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_360694c9540efcc01153",
+  "name": "The Movielife",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Hardcore and punk",
+  "ord": 100,
+  "type": "original_band",
+  "city": "Long Island",
+  "conn": "Long Island band formed in 1997.",
+  "genre": "Pop-punk",
+  "genre2": [
+   "melodic hardcore"
+  ],
+  "desc": "Fast, melodic punk with hardcore edge.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_Movielife",
+  "tour": null,
+  "bc": null,
+  "social": null
+ }
+]

@@ -1,0 +1,881 @@
+{
+ "asof": "2026-10-19T17:00:00-04:00",
+ "items": [
+  {
+   "kind": "arrest",
+   "headline": "Two officers hurt as suspect fights arrest",
+   "blurb": "Boston police say a suspect resisted arrest and injured two officers before being taken into custody.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-19",
+   "url": "https://police.boston.gov/2026/10/19/suspect-arrested-after-resisting-arrest-and-injuring-two-officers/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "courts",
+   "headline": "Hopkinton man accused of holding man underwater at lake",
+   "blurb": "A Hopkinton man faces attempted murder charges after prosecutors say he held a man underwater at a lake. He was arraigned Monday.",
+   "hood": "Hopkinton",
+   "spd": [],
+   "date": "2026-10-19",
+   "url": "https://bostonglobe.com/2026/10/19/metro/hopkinton-lake-drowning-arraignment-indictment",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "Abington mother denies abusing infant",
+   "blurb": "An Abington woman pleaded not guilty to a charge that she physically abused her two-month-old child.",
+   "hood": "Abington",
+   "spd": [],
+   "date": "2026-10-19",
+   "url": "https://www.bostonglobe.com/2026/10/19/metro/abington-woman-allegedly-abused-infant-child/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Woman, 18, shot in chest in Dorchester apartment building",
+   "blurb": "An 18-year-old woman was shot in the chest inside a Dorchester apartment building.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-18",
+   "url": "https://www.boston.com/news/crime/2026/10/18/woman-18-shot-inside-dorchester-apartment-building/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Two women shot in Hyde Park",
+   "blurb": "Two women were shot in Hyde Park; one suffered life-threatening injuries.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-18",
+   "url": "https://www.boston.com/news/crime/2026/10/18/two-women-shot-in-hyde-park/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "crash",
+   "headline": "Rollover in Allston after car strikes four parked vehicles",
+   "blurb": "A driver police say had no license hit four parked cars and flipped an SUV in Allston.",
+   "hood": "Allston",
+   "spd": [
+    "D14"
+   ],
+   "date": "2026-10-18",
+   "url": "https://www.boston.com/news/local-news/2026/10/18/allegedly-unlicensed-driver-hits-4-parked-cars-rolls-over-suv-in-allston-crash/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "other",
+   "headline": "Couple in their 70s found dead in Andover",
+   "blurb": "A man and woman in their 70s were found dead in their Andover home.",
+   "hood": "Andover",
+   "spd": [],
+   "date": "2026-10-18",
+   "url": "https://boston.com/news/local-news/2026/10/18/couple-in-their-70s-found-dead-in-andover-home",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "crash",
+   "headline": "Quincy pedestrian critically hurt",
+   "blurb": "A woman struck by a vehicle in Quincy suffered life-threatening injuries.",
+   "hood": "Quincy",
+   "spd": [],
+   "date": "2026-10-18",
+   "url": "https://www.boston.com/news/local-news/2026/10/18/quincy-woman-suffers-life-threatening-injuries-after-being-struck-by-vehicle/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "fire",
+   "headline": "Two hurt in fire at Somerville veterans housing",
+   "blurb": "A fire at a Somerville veterans housing building injured two people and displaced residents.",
+   "hood": "Somerville",
+   "spd": [],
+   "date": "2026-10-18",
+   "url": "https://www.boston.com/news/local-news/2026/10/18/fire-at-somerville-veterans-housing-leaves-2-injured-residents-displaced/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Early-morning shooting in Hyde Park sends two women to hospital",
+   "blurb": "Police are investigating an early-morning shooting in Hyde Park that wounded two women, one critically.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-17",
+   "url": "https://www.bostonglobe.com/2026/10/17/metro/hyde-park-shooting/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "arrest",
+   "headline": "B-3 officers seize loaded revolver, arrest Hyde Park man",
+   "blurb": "District B-3 officers arrested a Hyde Park man and recovered a loaded revolver.",
+   "hood": "Mattapan",
+   "spd": [
+    "B3"
+   ],
+   "date": "2026-10-17",
+   "url": "https://police.boston.gov/2026/10/17/district-b-3-officers-arrest-hyde-park-man-recover-loaded-revolver/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "other",
+   "headline": "Missing 84-year-old man sought by Boston police",
+   "blurb": "Boston police are asking for help locating a missing 84-year-old man.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-17",
+   "url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "police",
+   "headline": "Rape case at Martha's Vineyard State Police barracks",
+   "blurb": "The State Police barracks on Martha's Vineyard is the site of a rape investigation involving a Boston Public Schools employee.",
+   "hood": "Martha's Vineyard",
+   "spd": [],
+   "date": "2026-10-17",
+   "url": "https://www.bostonglobe.com/2026/10/17/metro/state-police-barracks-is-site-of-rape-investigation/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "theft",
+   "headline": "Two sought in Jamaica Plain larceny",
+   "blurb": "Detectives released a community alert seeking two people in connection with a larceny in Jamaica Plain.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-10-16",
+   "url": "https://police.boston.gov/2026/10/16/bpd-community-alert-detectives-seek-publics-assistance-in-efforts-to-identify-two-individuals-in-relation-to-a-larceny-investigation-in-jamaica-plain/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Woman wounded in Dorchester shooting",
+   "blurb": "A woman was shot in Dorchester and is expected to survive. Police are investigating.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-16",
+   "url": "https://www.bostonglobe.com/2026/10/16/metro/dorchester-shooting-of-woman-under-investigation/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "other",
+   "headline": "Climbers reach 52nd floor of unfinished South Station Tower",
+   "blurb": "Police are trying to learn why several young men got 52 floors up inside the unfinished South Station Tower.",
+   "hood": "Downtown",
+   "spd": [
+    "A1"
+   ],
+   "date": "2026-10-16",
+   "url": "https://www.boston.com/news/local-news/2026/10/16/police-want-to-know-why-these-young-men-snuck-up-52-floors-in-unfinished-south-station-tower/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Arrest in shooting near Worcester strip club",
+   "blurb": "A Southbridge man was arrested in connection with a deadly shooting near a Worcester strip club.",
+   "hood": "Worcester",
+   "spd": [],
+   "date": "2026-10-16",
+   "url": "https://www.bostonglobe.com/2026/10/16/metro/worcester-strip-club-shooting-suspect-arrested/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "crash",
+   "headline": "One dead after ejection in Sharon crash",
+   "blurb": "A man was killed when he was thrown from a vehicle in Sharon.",
+   "hood": "Sharon",
+   "spd": [],
+   "date": "2026-10-16",
+   "url": "https://www.bostonglobe.com/2026/10/16/metro/sharon-fatal-crash-leaves-one-dead/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "Texts and testimony aired at Farwell murder trial",
+   "blurb": "The murder trial of former Stoughton police officer Matthew Farwell heard testimony about graphic text messages and other evidence.",
+   "hood": "Stoughton",
+   "spd": [],
+   "date": "2026-10-16",
+   "url": "https://www.boston.com/crime/live/live-updates-matthew-farwell-trial-sandra-birchmore-oct-16-2026/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "police",
+   "headline": "Healey speaks on alleged rape at State Police barracks",
+   "blurb": "Gov. Maura Healey addressed allegations that a woman was raped inside a State Police barracks on Martha's Vineyard.",
+   "hood": "Martha's Vineyard",
+   "spd": [],
+   "date": "2026-10-16",
+   "url": "https://www.bostonglobe.com/2026/10/16/metro/healey-state-police-rape-allegations-marthas-vineyard/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "Ex-Healey aide jailed after federal fraud arrest",
+   "blurb": "LaMar Cook, a former Healey aide facing a drug trafficking case, was sent back to jail after his arrest on federal SNAP fraud charges.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-15",
+   "url": "https://www.bostonglobe.com/2026/10/15/metro/lamar-cook-healey-bail-revoked-federal-arrest/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "Friend testifies at Farwell trial",
+   "blurb": "A friend testified that she went to police after the woman's death and urged them to look at former Stoughton officer Matthew Farwell.",
+   "hood": "Stoughton",
+   "spd": [],
+   "date": "2026-10-15",
+   "url": "https://www.bostonglobe.com/2026/10/15/metro/sandra-birchmore-trial-live-updates/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "Key witnesses testify in Farwell trial",
+   "blurb": "Key witnesses took the stand in the murder trial of former Stoughton police officer Matthew Farwell.",
+   "hood": "Stoughton",
+   "spd": [],
+   "date": "2026-10-15",
+   "url": "https://www.boston.com/crime/live/live-updates-matthew-farwell-trial-sandra-birchmore-oct-15-2026/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Former Healey aide arrested on federal SNAP fraud charges",
+   "blurb": "LaMar Cook, already facing a drug trafficking case, was arrested on federal charges alleging SNAP fraud.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-14",
+   "url": "https://www.bostonglobe.com/2026/10/14/metro/lamar-cook-arrest-snap-fraud-drug-trafficking-healey/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "BPS employee charged with rape at State Police barracks",
+   "blurb": "A Boston Public Schools employee was charged with raping a woman at the State Police barracks on Martha's Vineyard.",
+   "hood": "Martha's Vineyard",
+   "spd": [],
+   "date": "2026-10-14",
+   "url": "https://www.boston.com/news/crime/2026/10/14/boston-public-schools-employee-charged-with-raping-woman-at-state-police-barracks-on-marthas-vineyard/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "courts",
+   "headline": "State trooper describes first Farwell interview",
+   "blurb": "A state trooper testified about the initial investigation and the first police interview with former Stoughton officer Matthew Farwell.",
+   "hood": "Stoughton",
+   "spd": [],
+   "date": "2026-10-14",
+   "url": "https://www.boston.com/crime/live/live-updates-matthew-farwell-trial-sandra-birchmore-oct-14-2026/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Gun recovered after Mattapan foot chase",
+   "blurb": "Mattapan officers recovered a firearm after chasing a suspect on foot.",
+   "hood": "Mattapan",
+   "spd": [
+    "B3"
+   ],
+   "date": "2026-10-14",
+   "url": "https://police.boston.gov/2026/10/14/mattapan-officers-recovered-a-firearm-following-a-foot-chase/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "theft",
+   "headline": "Juveniles charged in liquor store theft and assault",
+   "blurb": "Two juveniles were charged with stealing from a liquor store, and one is also accused of assaulting a worker.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-14",
+   "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/10/14/two-juveniles-charged-with-stealing-from-liquor-store-one-charged-with-assaulting-worker",
+   "outlet": "Suffolk DA"
+  },
+  {
+   "kind": "courts",
+   "headline": "Second guilty plea in 2023 stabbing of woman, 39",
+   "blurb": "A second defendant pleaded guilty in the 2023 stabbing of a 39-year-old woman, Suffolk prosecutors said.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-14",
+   "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/10/14/second-person-pleads-guilty-in-2023-stabbing-of-39-year-old-woman",
+   "outlet": "Suffolk DA"
+  },
+  {
+   "kind": "homicide",
+   "headline": "One killed in Worcester double shooting",
+   "blurb": "One person died and another was hurt in a double shooting in Worcester.",
+   "hood": "Worcester",
+   "spd": [],
+   "date": "2026-10-14",
+   "url": "https://www.boston.com/news/crime/2026/10/14/1-killed-in-double-shooting-in-worcester/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "fire",
+   "headline": "Two elderly residents found dead after Attleboro fire",
+   "blurb": "An elderly man and woman were found dead in an Attleboro home with signs of fire.",
+   "hood": "Attleboro",
+   "spd": [],
+   "date": "2026-10-14",
+   "url": "https://www.bostonglobe.com/2026/10/14/metro/attleboro-elderly-bodies-found-fire/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "assault",
+   "headline": "Blackstone Square attacker arrested after hurting people and officers",
+   "blurb": "Police arrested a man accused of assaulting several people and officers in Blackstone Square.",
+   "hood": "South End",
+   "spd": [
+    "D4"
+   ],
+   "date": "2026-10-13",
+   "url": "https://police.boston.gov/2026/10/13/violent-suspect-arrested-after-assaulting-multiple-victims-and-officers-in-blackstone-square/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "other",
+   "headline": "Police seek help in South Station Tower trespass",
+   "blurb": "Detectives asked the public for help in a trespassing investigation at the South Station Tower construction site.",
+   "hood": "Downtown",
+   "spd": [
+    "A1"
+   ],
+   "date": "2026-10-13",
+   "url": "https://police.boston.gov/2026/10/13/bpd-community-alert-detectives-seek-publics-assistance-in-trespassing-investigation-at-south-station-tower/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "courts",
+   "headline": "Prison sentence in 2023 killing near Mass. and Cass",
+   "blurb": "A Boston man who pleaded guilty in the 2023 fatal stabbing of a woman near Mass. and Cass was sentenced to prison.",
+   "hood": "South End",
+   "spd": [
+    "D4"
+   ],
+   "date": "2026-10-13",
+   "url": "https://www.bostonglobe.com/2026/10/13/metro/boston-man-sentenced-after-pleading-guilty-in-2023-fatal-stabbing/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "Man charged in alleged attempt to disarm officer",
+   "blurb": "A man faces charges after police say he tried to take an officer's weapon during a violent arrest.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-13",
+   "url": "https://www.boston.com/news/crime/2026/10/13/man-charged-after-allegedly-trying-to-disarm-officer-during-violent-street-arrest/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "homicide",
+   "headline": "One dead, one hurt near Worcester club",
+   "blurb": "Shootings near a Worcester strip club left one dead and another injured.",
+   "hood": "Worcester",
+   "spd": [],
+   "date": "2026-10-13",
+   "url": "https://www.bostonglobe.com/2026/10/13/metro/worcester-strip-club-shooting-two-injured/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "Coworker testifies suicide reports did not add up",
+   "blurb": "At the Farwell trial, a coworker of the woman testified that reports she died by suicide did not make sense to her.",
+   "hood": "Stoughton",
+   "spd": [],
+   "date": "2026-10-13",
+   "url": "https://bostonglobe.com/2026/10/13/metro/sandra-birchmore-trial-live-updates",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "other",
+   "headline": "Partial collapse forces Chelsea evacuation",
+   "blurb": "Residents were evacuated after part of a Chelsea residence collapsed; officials deemed it structurally unsafe.",
+   "hood": "Chelsea",
+   "spd": [],
+   "date": "2026-10-13",
+   "url": "https://www.bostonglobe.com/2026/10/13/metro/residents-evacuated-after-partial-building-collapse-in-chelsea/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "crash",
+   "headline": "Arborway crash victim identified",
+   "blurb": "Officials identified the person killed in a crash on the Arborway in Jamaica Plain.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-10-13",
+   "url": "https://www.boston.com/news/local-news/2026/10/13/jamaica-plain-arborway-crash-victim-identified/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Whitfield Street homicide victim identified",
+   "blurb": "Police identified the victim of the homicide at 7 Whitfield Street in Dorchester.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-12",
+   "url": "https://police.boston.gov/2026/10/12/investigation-update-victim-identified-in-7-whitfield-street-homicide/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Suspect accused of trying to disarm officers",
+   "blurb": "Boston police arrested a man they say tried to disarm officers.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-12",
+   "url": "https://police.boston.gov/2026/10/12/violent-suspect-arrested-for-attempting-to-disarm-officers-in-boston/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "crash",
+   "headline": "Criminal probe after deadly Jamaica Plain crash",
+   "blurb": "A criminal investigation is underway after a person was killed in a crash in Jamaica Plain.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-10-12",
+   "url": "https://www.boston.com/news/local-news/2026/10/12/person-killed-in-jp-crash/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "other",
+   "headline": "Man killed by Red Line third rail",
+   "blurb": "A man died after making contact with the third rail on the Red Line.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-12",
+   "url": "https://boston.com/news/local-news/2026/10/12/man-dies-after-coming-into-contact-with-third-rail-on-red-line",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "crash",
+   "headline": "Driver dies in Jamaica Plain crash",
+   "blurb": "A driver was killed in a Jamaica Plain crash now under criminal investigation.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-10-11",
+   "url": "https://www.bostonglobe.com/2026/10/11/metro/jamaica-plain-crash/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "courts",
+   "headline": "Farwell murder trial opens",
+   "blurb": "Live coverage began as former Stoughton police officer Matthew Farwell went on trial for murder.",
+   "hood": "Stoughton",
+   "spd": [],
+   "date": "2026-10-09",
+   "url": "https://www.bostonglobe.com/2026/10/09/metro/sandra-birchmore-trial-live-updates/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Arrest in Hyde Park Avenue homicide",
+   "blurb": "Boston police made an arrest in connection with the homicide on Hyde Park Avenue.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-09",
+   "url": "https://police.boston.gov/2026/10/09/arrest-made-in-connection-to-homicide-on-hyde-park-avenue/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Teen surrenders in Hyde Park killing, DA says",
+   "blurb": "A Boston teen turned himself in after a fatal shooting in Hyde Park, according to the DA.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-09",
+   "url": "https://www.boston.com/news/crime/2026/10/09/da-boston-teen-turned-himself-in-after-fatal-hyde-park-shooting/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Arrest in Brighton triple stabbing",
+   "blurb": "Police arrested a suspect in a triple stabbing in Brighton.",
+   "hood": "Brighton",
+   "spd": [
+    "D14"
+   ],
+   "date": "2026-10-09",
+   "url": "https://police.boston.gov/2026/10/09/investigation-update-suspect-arrested-for-triple-stabbing-in-brighton/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "courts",
+   "headline": "Brighton man faces charges in machete case",
+   "blurb": "A Brighton man was charged in a triple stabbing after an arrest involving a machete.",
+   "hood": "Brighton",
+   "spd": [
+    "D14"
+   ],
+   "date": "2026-10-09",
+   "url": "https://www.boston.com/news/crime/2026/10/09/brighton-man-machete-triple-stabbing/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Man shot dead in Hyde Park gas station",
+   "blurb": "Police asked for tips after a man was shot to death at a gas station in Hyde Park.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-08",
+   "url": "https://www.boston.com/news/crime/2026/10/08/hyde-park-gas-station-shooting/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Person shot near Central Square",
+   "blurb": "One person was shot overnight near Central Square in Cambridge and hospitalized.",
+   "hood": "Cambridge",
+   "spd": [],
+   "date": "2026-10-08",
+   "url": "https://www.bostonglobe.com/2026/10/08/metro/cambridge-shooting-one-hospitalized/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Lynn arrests in stabbing of NYPD detective",
+   "blurb": "Two men accused of stabbing a New York police detective were arrested in Lynn.",
+   "hood": "Lynn",
+   "spd": [],
+   "date": "2026-10-08",
+   "url": "https://www.boston.com/news/crime/2026/10/08/2-men-who-allegedly-stabbed-n-y-police-detective-arrested-in-lynn/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Death investigation at 1171 Hyde Park Avenue",
+   "blurb": "Boston police opened a death investigation in the area of 1171 Hyde Park Avenue.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-07",
+   "url": "https://police.boston.gov/2026/10/07/death-investigation-in-the-area-of-1171-hyde-park-avenue-in-hyde-park/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Man killed in Hyde Park shooting",
+   "blurb": "A man was shot and killed in Hyde Park.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-10-07",
+   "url": "https://www.bostonglobe.com/2026/10/07/metro/man-killed-hyde-park-shooting/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Knife found on rooftop leads to Roxbury stabbing arrest",
+   "blurb": "Detectives arrested a suspect in a Roxbury stabbing after recovering a knife from a rooftop.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-10-07",
+   "url": "https://police.boston.gov/2026/10/07/suspect-arrested-in-roxbury-stabbing-after-detectives-recover-knife-from-rooftop/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "courts",
+   "headline": "Fourth defendant charged in June Mattapan shooting",
+   "blurb": "A fourth person was charged in a June shooting that killed one man and injured four others.",
+   "hood": "Mattapan",
+   "spd": [
+    "B3"
+   ],
+   "date": "2026-10-07",
+   "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/10/7/fourth-person-charged-in-june-shooting-that-killed-one-man-and-injured-four-others",
+   "outlet": "Suffolk DA"
+  },
+  {
+   "kind": "other",
+   "headline": "Missing Dorchester teen, 17",
+   "blurb": "Boston police issued a missing person alert for a 17-year-old from Dorchester.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-07",
+   "url": "https://police.boston.gov/2026/10/07/bpd-missing-person-alert-17-year-old-hermoni-maisonet-of-dorchester/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "courts",
+   "headline": "Jury pool trimmed for Farwell trial",
+   "blurb": "About a quarter of the 411 people initially called as jurors for the Farwell trial could be excused.",
+   "hood": "Stoughton",
+   "spd": [],
+   "date": "2026-10-07",
+   "url": "https://www.bostonglobe.com/2026/10/07/metro/sandra-birchmore-matthew-farwell-trial/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Shooting near Cambridge athletic field",
+   "blurb": "One person was injured in a shooting near a Cambridge athletic field.",
+   "hood": "Cambridge",
+   "spd": [],
+   "date": "2026-10-06",
+   "url": "https://www.boston.com/news/local-news/2026/10/06/1-injured-in-shooting-near-cambridge-athletic-field/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "courts",
+   "headline": "Acton teen arraigned in deaths of mother and brother",
+   "blurb": "A teen from Acton was arraigned for murder in the killing of his mother and brother.",
+   "hood": "Acton",
+   "spd": [],
+   "date": "2026-10-06",
+   "url": "https://www.boston.com/news/crime/2026/10/06/chat-gpt-arjun-aravind-acton-murder/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Dorchester man, 20, charged with murder",
+   "blurb": "A 20-year-old Dorchester man was charged with murder after a fatal shooting.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-06",
+   "url": "https://dorchesterpost.com/2026/10/06/20-year-old-dorchester-man-charged-with-murder-after-fatal-shooting/",
+   "outlet": "Dorchester Post"
+  },
+  {
+   "kind": "crash",
+   "headline": "Brockton teen killed by vehicle in Raynham",
+   "blurb": "A teen from Brockton was struck and killed while crossing a street in Raynham.",
+   "hood": "Raynham",
+   "spd": [],
+   "date": "2026-10-06",
+   "url": "https://www.boston.com/news/local-news/2026/10/06/raynham-fatal-pedestrian-crash-brockton-teen/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "courts",
+   "headline": "Guilty plea in Russian plutonium sale case",
+   "blurb": "A Massachusetts man pleaded guilty to selling Russian plutonium.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-06",
+   "url": "https://www.boston.com/news/crime/2026/10/06/mass-man-pleads-guilty-to-selling-russian-plutonium/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "arrest",
+   "headline": "Dorchester traffic stop yields gun arrest",
+   "blurb": "A traffic stop in Dorchester led to an arrest and a recovered firearm.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-05",
+   "url": "https://police.boston.gov/2026/10/05/traffic-stop-leads-to-suspect-arrested-and-firearm-recovered-in-dorchester/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "police",
+   "headline": "Fatal Cambridge police shooting ruled justified",
+   "blurb": "A judicial inquest deemed a fatal shooting by Cambridge police justified; bodycam footage was released.",
+   "hood": "Cambridge",
+   "spd": [],
+   "date": "2026-10-05",
+   "url": "https://www.boston.com/news/local-news/2026/10/05/fatal-cambridge-police-shooting-judicial-inquest/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "courts",
+   "headline": "Buyers charged in Cambridge brothel ring case",
+   "blurb": "A look at the people charged with paying for sex in the Cambridge brothel ring and the price they paid.",
+   "hood": "Cambridge",
+   "spd": [],
+   "date": "2026-10-05",
+   "url": "https://www.boston.com/news/the-boston-globe/2026/10/05/they-were-charged-with-paying-for-sex-in-the-cambridge-brothel-ring-and-paid-a-unique-price/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Stabbing in Downtown Crossing",
+   "blurb": "A person stabbed in Downtown Crossing was hospitalized with life-threatening injuries.",
+   "hood": "Downtown",
+   "spd": [
+    "A1"
+   ],
+   "date": "2026-10-04",
+   "url": "https://www.boston.com/news/crime/2026/10/04/person-stabbed-in-downtown-crossing-hospitalized-with-life-threatening-injuries/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Murder charge in Whitfield Street killing",
+   "blurb": "Police charged a suspect with murder in the 7 Whitfield Street homicide in Dorchester.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-01",
+   "url": "https://police.boston.gov/2026/10/01/suspect-charged-with-murder-in-7-whitfield-street-homicide-investigation/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "courts",
+   "headline": "Man, 20, facing murder charges in Dorchester",
+   "blurb": "A 20-year-old faces murder charges in a fatal shooting in Dorchester.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-10-01",
+   "url": "https://www.boston.com/news/crime/2026/10/01/man-20-facing-murder-charges-in-fatal-dorchester-shooting/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Photos released in Roxbury face stabbing",
+   "blurb": "Police released photos of a person of interest in a stabbing in Roxbury that injured the victim's face.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-10-01",
+   "url": "https://www.boston.com/news/crime/2026/10/01/police-reveal-photos-of-person-of-interest-in-roxbury-face-stabbing/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "crash",
+   "headline": "Woman killed as vehicle hits Faulkner Hospital",
+   "blurb": "A vehicle crashed into Faulkner Hospital, killing a woman.",
+   "hood": "Jamaica Plain",
+   "spd": [
+    "E13"
+   ],
+   "date": "2026-10-01",
+   "url": "https://www.bostonglobe.com/2026/10/01/metro/faulkner-hospital-crash/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "assault",
+   "headline": "Sexual assaults reported in Cambridge gym locker room",
+   "blurb": "Police responded to reports of sexual assaults in the women's locker room at a Cambridge Planet Fitness.",
+   "hood": "Cambridge",
+   "spd": [],
+   "date": "2026-10-01",
+   "url": "https://www.boston.com/news/local-news/2026/10/01/police-respond-to-report-of-sexual-assault-in-womens-locker-room-at-cambridge-planet-fitness/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "other",
+   "headline": "Missing girl, 14, sought",
+   "blurb": "Boston police asked for help finding a missing 14-year-old girl.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-10-01",
+   "url": "https://www.boston.com/news/local-news/2026/10/01/boston-police-seek-help-finding-missing-girl-14/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "fire",
+   "headline": "Teele Square fire displaces more than 40",
+   "blurb": "More than 40 people were displaced by a fire at a Somerville apartment building in Teele Square.",
+   "hood": "Somerville",
+   "spd": [],
+   "date": "2026-10-01",
+   "url": "https://www.boston.com/news/local-news/2026/10/01/teele-square-fire-somerville/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "shooting",
+   "headline": "Man shot in Dorchester; homicide unit called",
+   "blurb": "A man was shot in Dorchester and a homicide investigation was opened.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-09-30",
+   "url": "https://www.bostonglobe.com/2026/09/30/metro/dorchester-shooting-homicide-investigation/",
+   "outlet": "Boston Globe"
+  },
+  {
+   "kind": "stabbing",
+   "headline": "Detectives seek man in Roxbury stabbing",
+   "blurb": "Boston police asked the public to help identify a person sought in a Roxbury stabbing investigation.",
+   "hood": "Roxbury",
+   "spd": [
+    "B2"
+   ],
+   "date": "2026-09-30",
+   "url": "https://police.boston.gov/2026/09/30/bpd-community-alert-detectives-seek-publics-assistance-in-efforts-to-identify-individual-in-relation-to-a-stabbing-investigation-in-roxbury/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "other",
+   "headline": "Accused kidnapper threatened victim, police say",
+   "blurb": "Police say a man accused of kidnapping someone in Rhode Island threatened the victim with death, mentioning Boston.",
+   "hood": "",
+   "spd": [],
+   "date": "2026-09-29",
+   "url": "https://www.boston.com/news/crime/2026/09/29/police-alleged-kidnapper-asked-ri-victim-if-they-wanted-to-die-here-or-in-boston/",
+   "outlet": "Boston.com"
+  },
+  {
+   "kind": "homicide",
+   "headline": "Fatal shooting on Walter Street",
+   "blurb": "The Homicide Unit is investigating a fatal shooting on Walter Street in Hyde Park.",
+   "hood": "Hyde Park",
+   "spd": [
+    "E18"
+   ],
+   "date": "2026-09-28",
+   "url": "https://police.boston.gov/2026/09/28/boston-police-homicide-unit-investigates-fatal-shooting-on-walter-street-in-hyde-park/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "robbery",
+   "headline": "Suspects sought in Dorchester armed robbery",
+   "blurb": "Detectives are seeking help identifying people involved in an armed robbery in Dorchester.",
+   "hood": "Dorchester",
+   "spd": [
+    "C11"
+   ],
+   "date": "2026-09-25",
+   "url": "https://police.boston.gov/2026/09/25/bpd-community-alert-detectives-seek-publics-assistance-in-efforts-to-identify-individuals-in-relation-to-an-armed-robbery-in-dorchester/",
+   "outlet": "Boston Police"
+  },
+  {
+   "kind": "other",
+   "headline": "Explosive device set off during Charlestown confrontation",
+   "blurb": "Police say a man detonated an explosive device during a confrontation with officers in Charlestown.",
+   "hood": "Charlestown",
+   "spd": [
+    "A15"
+   ],
+   "date": "2026-09-22",
+   "url": "https://www.boston.com/news/crime/2026/09/22/man-detonated-explosive-device-during-confrontation-with-officers-in-charlestown-police-say/",
+   "outlet": "Boston.com"
+  }
+ ]
+}

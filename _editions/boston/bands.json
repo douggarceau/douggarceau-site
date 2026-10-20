@@ -1,0 +1,2997 @@
+[
+ {
+  "id": "band_9faed3004eb054623373",
+  "name": "Aerosmith",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 1,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1970; lived and rehearsed at 1325 Commonwealth Ave. in Allston.",
+  "genre": "Hard rock",
+  "genre2": [
+   "blues rock"
+  ],
+  "desc": "Blues-based hard rock with swaggering riffs and power ballads.",
+  "status": "inactive",
+  "url": "https://www.aerosmith.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c72637b916f88905e1ef",
+  "name": "Boston",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 2,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Tom Scholz's band, named for the city; debut built from his home basement studio recordings.",
+  "genre": "Arena rock",
+  "genre2": [
+   "hard rock"
+  ],
+  "desc": "Layered multi-tracked guitars and soaring high-register vocals.",
+  "status": "unknown",
+  "url": "https://www.bandboston.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_14d56cd33cbb0e2d7714",
+  "name": "The Cars",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 3,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1976; broke through on WBCN airplay.",
+  "genre": "New wave",
+  "genre2": [
+   "power pop"
+  ],
+  "desc": "Clipped guitar riffs, synthesizer hooks and cool, detached vocals.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Cars",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_489fc7ba6c2b3625b31e",
+  "name": "New Kids on the Block",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 4,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Assembled in Dorchester and Roxbury in 1984.",
+  "genre": "Pop",
+  "genre2": [
+   "boy band"
+  ],
+  "desc": "Choreographed teen pop and dance-pop harmonies.",
+  "status": "active",
+  "url": "https://www.nkotb.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_293b97f99c3acff5fa91",
+  "name": "Pixies",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 5,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1986 by UMass Amherst roommates.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Quiet-loud dynamics, surf guitar and screamed, surreal lyrics.",
+  "status": "active",
+  "url": "https://www.pixiesmusic.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_630d616b9201ec6ed02e",
+  "name": "Dropkick Murphys",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 6,
+  "type": "original_band",
+  "city": "Quincy",
+  "conn": "Formed in Quincy in 1996; long-running St. Patrick's Day shows in Boston.",
+  "genre": "Celtic punk",
+  "genre2": [
+   "street punk"
+  ],
+  "desc": "Bagpipes, tin whistle and gang-vocal punk anthems.",
+  "status": "active",
+  "url": "https://www.dropkickmurphys.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4fbadedfccef215e803e",
+  "name": "The Mighty Mighty Bosstones",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Ska and ska-punk",
+  "ord": 7,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1983.",
+  "genre": "Ska punk",
+  "genre2": [
+   "ska"
+  ],
+  "desc": "Horn-driven ska punk with gravel-voiced vocals.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Mighty_Mighty_Bosstones",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ee5987a927b42182d628",
+  "name": "The J. Geils Band",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 8,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Worcester in 1967 and based in Boston.",
+  "genre": "Rock",
+  "genre2": [
+   "blues rock",
+   "R&B"
+  ],
+  "desc": "Harmonica-heavy R&B-rooted bar rock that later went pop.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_J._Geils_Band",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5247bcf3157f458780a9",
+  "name": "Dinosaur Jr.",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 9,
+  "type": "original_band",
+  "city": "Amherst",
+  "conn": "Western Massachusetts: formed in Amherst in 1984.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "noise rock"
+  ],
+  "desc": "Loud fuzzed-out guitar solos over slack, melodic songs.",
+  "status": "active",
+  "url": "https://www.dinosaurjr.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_95a4120f3feb6647a995",
+  "name": "Godsmack",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 10,
+  "type": "original_band",
+  "city": "Lawrence",
+  "conn": "Formed in Lawrence in 1995 and based north of Boston.",
+  "genre": "Hard rock",
+  "genre2": [
+   "alternative metal"
+  ],
+  "desc": "Heavy, tribal-drum-driven hard rock.",
+  "status": "active",
+  "url": "https://www.godsmack.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6454d4f9fd6d3868bbb0",
+  "name": "Morphine",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 11,
+  "type": "original_band",
+  "city": "Cambridge",
+  "conn": "Formed in Cambridge in 1989 by Mark Sandman.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "jazz rock"
+  ],
+  "desc": "Two-string slide bass, baritone sax and drums; no guitar.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Morphine_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_42c4c2f601f8a2a2b66e",
+  "name": "The Modern Lovers",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 12,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Jonathan Richman's band, formed in Boston in 1970.",
+  "genre": "Proto-punk",
+  "genre2": [
+   "garage rock"
+  ],
+  "desc": "Simple, insistent rock with plainspoken vocals and organ drones.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Modern_Lovers",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ef1bf2db9044d2327e99",
+  "name": "Mission of Burma",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 13,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1979.",
+  "genre": "Post-punk",
+  "genre2": [
+   "art punk"
+  ],
+  "desc": "Dense, tape-looped post-punk with angular guitars.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Mission_of_Burma",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4c88ee9f69d75c0732c6",
+  "name": "Throwing Muses",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 14,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Newport, R.I.; based in Boston during their 4AD rise.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Jagged rhythms and Kristin Hersh's intense, shifting vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Throwing_Muses",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2133c03d45c85ed8a0f6",
+  "name": "Galaxie 500",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 15,
+  "type": "original_band",
+  "city": "Cambridge",
+  "conn": "Formed by Harvard students in Cambridge in 1987.",
+  "genre": "Dream pop",
+  "genre2": [
+   "slowcore"
+  ],
+  "desc": "Slow, reverb-washed guitar songs with fragile vocals.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Galaxie_500",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2fa4d67f33fe8765d2b1",
+  "name": "Converge",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 16,
+  "type": "original_band",
+  "city": "Salem",
+  "conn": "Formed in Salem in 1990.",
+  "genre": "Metalcore",
+  "genre2": [
+   "hardcore punk"
+  ],
+  "desc": "Chaotic, technically intense metallic hardcore.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Converge_(band)",
+  "tour": null,
+  "bc": "https://converge.bandcamp.com/",
+  "social": null
+ },
+ {
+  "id": "band_52905644673cec8333eb",
+  "name": "Passion Pit",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 17,
+  "type": "original_band",
+  "city": "Cambridge",
+  "conn": "Formed in Cambridge in 2007 around Emerson students.",
+  "genre": "Synth-pop",
+  "genre2": [
+   "indie pop"
+  ],
+  "desc": "Bright synthesizers and falsetto electro-pop hooks.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Passion_Pit",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f0479fb7643821d6ebb4",
+  "name": "Guster",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 18,
+  "type": "original_band",
+  "city": "Medford",
+  "conn": "Formed at Tufts University in 1991.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "pop rock"
+  ],
+  "desc": "Harmony-rich pop rock, originally built on hand percussion.",
+  "status": "active",
+  "url": "https://guster.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_26ee9b8ab40cdb803f56",
+  "name": "Letters to Cleo",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 19,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1990.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "power pop"
+  ],
+  "desc": "Hook-heavy 1990s alt-pop with crunchy guitars.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c8f30e03e3948b716261",
+  "name": "Big D and the Kids Table",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Ska and ska-punk",
+  "ord": 20,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1995.",
+  "genre": "Ska punk",
+  "genre2": [
+   "ska"
+  ],
+  "desc": "Fast ska punk and dub-influenced horn music.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_68ccaa03f5f0aad5567a",
+  "name": "New Edition",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 21,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Roxbury in 1978.",
+  "genre": "R&B",
+  "genre2": [
+   "new jack swing"
+  ],
+  "desc": "Vocal-group R&B and pop with tight harmonies.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/New_Edition",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_16c89b09b65ad9bd2661",
+  "name": "Bell Biv DeVoe",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 22,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "New Edition offshoot trio from Roxbury, formed 1989.",
+  "genre": "New jack swing",
+  "genre2": [
+   "R&B",
+   "hip-hop"
+  ],
+  "desc": "Hip-hop-flavored R&B with hard drum programming.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Bell_Biv_DeVoe",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_148e307e77d9482a3d1d",
+  "name": "Buffalo Tom",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 23,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed at UMass Amherst in 1986 and based in Boston.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Rough-edged, melodic guitar rock with heartfelt choruses.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Buffalo_Tom",
+  "tour": null,
+  "bc": "https://buffalotom.bandcamp.com/",
+  "social": null
+ },
+ {
+  "id": "band_fd8ff6be74eea9bbe886",
+  "name": "The Lemonheads",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 24,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1986 by Commonwealth School students.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "power pop"
+  ],
+  "desc": "Short, catchy, jangling guitar pop.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/The_Lemonheads",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ffd8382ae05028ebae7c",
+  "name": "Extreme",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 25,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Malden in 1985.",
+  "genre": "Hard rock",
+  "genre2": [
+   "funk metal"
+  ],
+  "desc": "Virtuoso guitar hard rock with funk grooves and acoustic ballads.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Extreme_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1cad7d41bdbf02ba8e4a",
+  "name": "'Til Tuesday",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 26,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1982 with Aimee Mann.",
+  "genre": "New wave",
+  "genre2": [
+   "synth-pop"
+  ],
+  "desc": "Synth-laced new wave with literate pop melodies.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/%27Til_Tuesday",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_08ff03aa1e606f044177",
+  "name": "The Dresden Dolls",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 27,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2000.",
+  "genre": "Dark cabaret",
+  "genre2": [
+   "punk"
+  ],
+  "desc": "Piano-and-drums duo playing theatrical punk cabaret.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/The_Dresden_Dolls",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_821510ab8a327bdf7993",
+  "name": "Killswitch Engage",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 28,
+  "type": "original_band",
+  "city": "Westfield",
+  "conn": "Western Massachusetts: formed in Westfield in 1999.",
+  "genre": "Metalcore",
+  "genre2": [
+   "heavy metal"
+  ],
+  "desc": "Melodic metalcore alternating sung and screamed vocals.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Killswitch_Engage",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5d133b41d5434161ca75",
+  "name": "Staind",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 29,
+  "type": "original_band",
+  "city": "Springfield",
+  "conn": "Western Massachusetts: formed in Springfield in 1995.",
+  "genre": "Alternative metal",
+  "genre2": [
+   "post-grunge"
+  ],
+  "desc": "Heavy, brooding post-grunge with confessional lyrics.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Staind",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d266ded3b5198d0b0a1d",
+  "name": "Cave In",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 30,
+  "type": "original_band",
+  "city": "Methuen",
+  "conn": "Formed in Methuen in 1995.",
+  "genre": "Alternative metal",
+  "genre2": [
+   "metalcore",
+   "space rock"
+  ],
+  "desc": "Heavy riffs moving between hardcore and spacey rock.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Cave_In",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_326bdd1e08c47c5dbcdc",
+  "name": "Isis",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 31,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1997.",
+  "genre": "Post-metal",
+  "genre2": [
+   "sludge metal"
+  ],
+  "desc": "Long, slow-building post-metal with layered guitars.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Isis_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_46a755c7f09d69ff5652",
+  "name": "Unearth",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 32,
+  "type": "original_band",
+  "city": "Winthrop",
+  "conn": "Formed in Winthrop in 1998.",
+  "genre": "Metalcore",
+  "genre2": [
+   "thrash"
+  ],
+  "desc": "Fast, riff-heavy metalcore with breakdowns.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_aab1c9bf50ab15b1cde0",
+  "name": "Four Year Strong",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 33,
+  "type": "original_band",
+  "city": "Worcester",
+  "conn": "Formed in Worcester in 2001.",
+  "genre": "Pop punk",
+  "genre2": [
+   "easycore"
+  ],
+  "desc": "Pop-punk hooks over hardcore breakdowns.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8087155498c7369c89c0",
+  "name": "Gang Green",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 34,
+  "type": "original_band",
+  "city": "Braintree",
+  "conn": "Formed in Braintree in 1980.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "crossover thrash"
+  ],
+  "desc": "Fast early Boston hardcore and crossover.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Gang_Green",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_aa5f674df26d528d87ae",
+  "name": "SS Decontrol",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 35,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1981.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "straight edge"
+  ],
+  "desc": "Pounding straight-edge hardcore, later hard rock.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/SS_Decontrol",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_74e93e2574d3b270b490",
+  "name": "Slapshot",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 36,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1985.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "straight edge"
+  ],
+  "desc": "Blunt, mid-tempo Boston hardcore.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e6d14717c1d30db7a3f6",
+  "name": "DYS",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 37,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1981.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "straight edge"
+  ],
+  "desc": "Early straight-edge hardcore from the Boston Crew scene.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_34f489d1b1873412eb1c",
+  "name": "Bane",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 38,
+  "type": "original_band",
+  "city": "Worcester",
+  "conn": "Formed in Worcester in 1995.",
+  "genre": "Hardcore punk",
+  "genre2": [],
+  "desc": "Melodic, high-energy hardcore with sing-along breakdowns.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_02d7f59af2cbad1928db",
+  "name": "American Nightmare",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 39,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1998.",
+  "genre": "Hardcore punk",
+  "genre2": [],
+  "desc": "Bleak, fast, emotionally raw hardcore.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7ccc0d906da918f3a2aa",
+  "name": "Have Heart",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 40,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in the Boston area in 2003.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "straight edge"
+  ],
+  "desc": "Melodic straight-edge hardcore with shouted vocals.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_058e308afc78fda8ded5",
+  "name": "Street Dogs",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 41,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2002 by former Dropkick Murphys singer Mike McColgan.",
+  "genre": "Street punk",
+  "genre2": [
+   "Celtic punk"
+  ],
+  "desc": "Working-class street punk with gang choruses.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d963e86b385fbdb93ee3",
+  "name": "The Ducky Boys",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 42,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston street-punk band formed in the mid-1990s.",
+  "genre": "Street punk",
+  "genre2": [],
+  "desc": "Gruff, melodic street punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_23e8310909bbd853567f",
+  "name": "Blood for Blood",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 43,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1994.",
+  "genre": "Hardcore punk",
+  "genre2": [],
+  "desc": "Hard-hitting, bleak street hardcore.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_60be58c3330a33902c11",
+  "name": "Defeater",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 44,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2008.",
+  "genre": "Melodic hardcore",
+  "genre2": [],
+  "desc": "Narrative-driven melodic hardcore.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c85ffa4e58060e7295ae",
+  "name": "Transit",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 45,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2006.",
+  "genre": "Pop punk",
+  "genre2": [
+   "emo"
+  ],
+  "desc": "Emotive pop punk with clean choruses.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1466520f2c1eae09aa6c",
+  "name": "Piebald",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 46,
+  "type": "original_band",
+  "city": "Andover",
+  "conn": "Formed in Andover in 1994.",
+  "genre": "Emo",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Wry, melodic emo and indie rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_da0c5d9f5352c2b7bcea",
+  "name": "Sebadoh",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 47,
+  "type": "original_band",
+  "city": "Northampton",
+  "conn": "Western Massachusetts: formed in Westfield/Northampton in 1986.",
+  "genre": "Indie rock",
+  "genre2": [
+   "lo-fi"
+  ],
+  "desc": "Lo-fi indie rock swinging between gentle and noisy.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Sebadoh",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_572645bf0ac586f160c8",
+  "name": "Speedy Ortiz",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 48,
+  "type": "original_band",
+  "city": "Northampton",
+  "conn": "Western Massachusetts: formed in Northampton in 2011, long Boston-area based.",
+  "genre": "Indie rock",
+  "genre2": [],
+  "desc": "Twisting, crunchy guitar indie rock.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Speedy_Ortiz",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8f39b0bed7c5b4cd7170",
+  "name": "Pile",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 49,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2007.",
+  "genre": "Noise rock",
+  "genre2": [
+   "post-hardcore"
+  ],
+  "desc": "Lurching, dynamic noise rock with cathartic vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": "https://pile.bandcamp.com/",
+  "social": null
+ },
+ {
+  "id": "band_ca015ca1f9670d877811",
+  "name": "Palehound",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 50,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Ellen Kempner's project, formed in Boston.",
+  "genre": "Indie rock",
+  "genre2": [],
+  "desc": "Intimate, guitar-driven indie rock.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_823ed56a2753d7549841",
+  "name": "Lake Street Dive",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 51,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed at New England Conservatory in Boston in 2004.",
+  "genre": "Pop soul",
+  "genre2": [
+   "indie pop"
+  ],
+  "desc": "Retro soul-pop with jazz-trained musicianship.",
+  "status": "active",
+  "url": "https://www.lakestreetdive.com/",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_fec16e3ca18a7c2c0ee2",
+  "name": "Juliana Hatfield Three",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 52,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Juliana Hatfield's Boston-based trio, formed 1992.",
+  "genre": "Alternative rock",
+  "genre2": [],
+  "desc": "Hooky, fuzzed 1990s alt-rock.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Juliana_Hatfield",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_31440e2908dac561d43a",
+  "name": "Blake Babies",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 53,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1986 by Berklee students.",
+  "genre": "Indie rock",
+  "genre2": [
+   "jangle pop"
+  ],
+  "desc": "Jangly college rock with bright harmonies.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Blake_Babies",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d0c04d17f1ab3e9ac67e",
+  "name": "Fiddlehead",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 54,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2014 by Have Heart singer Pat Flynn.",
+  "genre": "Post-hardcore",
+  "genre2": [
+   "emo"
+  ],
+  "desc": "Emotional post-hardcore with shouted, melodic vocals.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e7e7fff547d5d3372da2",
+  "name": "The Remains",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 55,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed at Boston University in 1964.",
+  "genre": "Garage rock",
+  "genre2": [],
+  "desc": "Tough mid-1960s garage rock.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/The_Remains_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_653ade4b53d9337bb005",
+  "name": "The Lyres",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 56,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1979 by Jeff Conolly.",
+  "genre": "Garage rock",
+  "genre2": [],
+  "desc": "Farfisa-driven 1960s-style garage rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_27929e72c7a3ceba349f",
+  "name": "The Real Kids",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 57,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1972.",
+  "genre": "Power pop",
+  "genre2": [
+   "punk rock"
+  ],
+  "desc": "Raw, catchy guitar power pop.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1d477937815f39c172a7",
+  "name": "DMZ",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 58,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1976.",
+  "genre": "Garage punk",
+  "genre2": [],
+  "desc": "Snarling garage punk.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3e5b476c6a92be13e9d5",
+  "name": "The Neighborhoods",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 59,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1978.",
+  "genre": "Power pop",
+  "genre2": [
+   "punk rock"
+  ],
+  "desc": "Punchy power-pop punk.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_aea13d95964843e7aa91",
+  "name": "Human Sexual Response",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 60,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1978.",
+  "genre": "New wave",
+  "genre2": [],
+  "desc": "Quirky new wave with multiple lead vocalists.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_604094c60e954b059ea2",
+  "name": "The Fools",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 61,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston-area new wave band and longtime local club fixture.",
+  "genre": "New wave",
+  "genre2": [
+   "rock"
+  ],
+  "desc": "Humorous-minded bar-band new wave.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c0878a166653a325782b",
+  "name": "Tavares",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 62,
+  "type": "original_band",
+  "city": "New Bedford",
+  "conn": "Brothers' vocal group from New Bedford, formed 1959.",
+  "genre": "R&B",
+  "genre2": [
+   "disco",
+   "soul"
+  ],
+  "desc": "Smooth soul and disco vocal harmonies.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_717209e81a35ae95095f",
+  "name": "Barrence Whitfield & the Savages",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 63,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1983.",
+  "genre": "Rhythm and blues",
+  "genre2": [
+   "garage rock"
+  ],
+  "desc": "Wild, shouted R&B and rock 'n' roll.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a2b442461ed74463f168",
+  "name": "The James Montgomery Band",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 64,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston blues band led by harmonica player James Montgomery since 1970.",
+  "genre": "Blues rock",
+  "genre2": [],
+  "desc": "Harmonica-led blues rock.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ac877959e30c9c74d94b",
+  "name": "Aztec Two-Step",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 65,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Folk-rock duo formed in Boston in 1971.",
+  "genre": "Folk rock",
+  "genre2": [],
+  "desc": "Acoustic folk-rock harmonies.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Aztec_Two-Step",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e85bc5aba60f33f439d6",
+  "name": "Orpheus",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 66,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston psychedelic pop band of the 1960s Bosstown Sound era.",
+  "genre": "Psychedelic pop",
+  "genre2": [
+   "baroque pop"
+  ],
+  "desc": "Soft, orchestrated psychedelic pop.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_bb94cb7684b75429ff1a",
+  "name": "Ultimate Spinach",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 67,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston psychedelic band of the 1960s Bosstown Sound era.",
+  "genre": "Psychedelic rock",
+  "genre2": [],
+  "desc": "Organ-heavy psychedelic rock.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Ultimate_Spinach",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_efff87a2ea768a8fb0ba",
+  "name": "Come",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 68,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1990.",
+  "genre": "Indie rock",
+  "genre2": [
+   "noise rock"
+  ],
+  "desc": "Dark, bluesy, twin-guitar indie rock.",
+  "status": "inactive",
+  "url": "https://en.wikipedia.org/wiki/Come_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4142d811531c37f6d48f",
+  "name": "Swirlies",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 69,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1990.",
+  "genre": "Shoegaze",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Noisy, detuned shoegaze and lo-fi pop.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Swirlies",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_58d77654cc7b22e7021d",
+  "name": "Karate",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 70,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1993.",
+  "genre": "Indie rock",
+  "genre2": [
+   "post-hardcore",
+   "jazz"
+  ],
+  "desc": "Jazz-inflected, intricate indie rock.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/Karate_(band)",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_14338544e217d70af9a1",
+  "name": "Treat Her Right",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 71,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in the mid-1980s with Mark Sandman.",
+  "genre": "Blues rock",
+  "genre2": [
+   "roots rock"
+  ],
+  "desc": "Spare, low-down blues rock.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ddf6692f15df397e1df0",
+  "name": "Scruffy the Cat",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 72,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in the mid-1980s.",
+  "genre": "Roots rock",
+  "genre2": [
+   "cowpunk"
+  ],
+  "desc": "Upbeat, banjo-tinged roots rock.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_64743a2cb0e971386072",
+  "name": "Tribe",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 73,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in the late 1980s.",
+  "genre": "Alternative rock",
+  "genre2": [],
+  "desc": "Moody, keyboard-textured alternative rock.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e391b7adc0833b106f26",
+  "name": "The Sheila Divine",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 74,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in the mid-1990s.",
+  "genre": "Alternative rock",
+  "genre2": [],
+  "desc": "Big, emotive guitar rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0289bd56050d15379296",
+  "name": "The Dambuilders",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 75,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Moved from Honolulu to Boston, where they were based from 1989.",
+  "genre": "Alternative rock",
+  "genre2": [],
+  "desc": "Violin-laced noisy alt-rock.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8fa3275963058ddfc886",
+  "name": "Bim Skala Bim",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Ska and ska-punk",
+  "ord": 76,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1983.",
+  "genre": "Ska",
+  "genre2": [
+   "reggae"
+  ],
+  "desc": "Second-wave-style ska with horns.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_27da5d4a6e2bfe84b486",
+  "name": "State Radio",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 77,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2002 by Chad Urmston.",
+  "genre": "Alternative rock",
+  "genre2": [
+   "reggae rock"
+  ],
+  "desc": "Politically minded rock with reggae and punk accents.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e1c7a3f7900d0c83ec80",
+  "name": "The Click Five",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 78,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed at Berklee College of Music in Boston in 2003.",
+  "genre": "Power pop",
+  "genre2": [],
+  "desc": "Polished, radio-friendly power pop.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a3febfbfc2c8edb70019",
+  "name": "Bad Rabbits",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 79,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston funk and R&B band.",
+  "genre": "Funk",
+  "genre2": [
+   "R&B"
+  ],
+  "desc": "Funk and R&B with rock energy.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_25168dd766fe35c34787",
+  "name": "Bent Knee",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 80,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed at Berklee College of Music in Boston in 2009.",
+  "genre": "Art rock",
+  "genre2": [
+   "progressive rock"
+  ],
+  "desc": "Dramatic, genre-blending art rock.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_153ef1938134d470933f",
+  "name": "Vundabar",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 81,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in the early 2010s.",
+  "genre": "Indie rock",
+  "genre2": [],
+  "desc": "Jittery, catchy guitar indie rock.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d32c4754e3e75603248c",
+  "name": "Krill",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 82,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in the early 2010s.",
+  "genre": "Indie rock",
+  "genre2": [],
+  "desc": "Wiry, anxious indie rock.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4d620479750344ad5960",
+  "name": "Guerilla Toss",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 83,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2010, later based in New York.",
+  "genre": "Art punk",
+  "genre2": [
+   "dance-punk"
+  ],
+  "desc": "Frenetic, colorful dance-punk.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c8289e9f427f655021f4",
+  "name": "Kal Marks",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 84,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston noise rock band.",
+  "genre": "Noise rock",
+  "genre2": [],
+  "desc": "Heavy, rough-hewn noise rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7d234d8b2b097e0f2e64",
+  "name": "Doomriders",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 85,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2004.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "sludge metal"
+  ],
+  "desc": "Rock 'n' roll-infused heavy hardcore.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a8df3cfccd0c5ab47f7f",
+  "name": "Old Man Gloom",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 86,
+  "type": "original_band",
+  "city": "Salem",
+  "conn": "Formed in Massachusetts in 1999 with members tied to the Boston/Salem scene.",
+  "genre": "Sludge metal",
+  "genre2": [
+   "post-metal"
+  ],
+  "desc": "Crushing sludge with noise interludes.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5d25670d50549c03cad7",
+  "name": "All That Remains",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 87,
+  "type": "original_band",
+  "city": "Springfield",
+  "conn": "Western Massachusetts: formed in Springfield in 1998.",
+  "genre": "Metalcore",
+  "genre2": [
+   "melodic death metal"
+  ],
+  "desc": "Melodic metalcore with harmony guitar leads.",
+  "status": "active",
+  "url": "https://en.wikipedia.org/wiki/All_That_Remains",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c39b2fc3d4e8bf53c4e2",
+  "name": "Shadows Fall",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 88,
+  "type": "original_band",
+  "city": "Springfield",
+  "conn": "Western Massachusetts: formed in Springfield in 1995.",
+  "genre": "Metalcore",
+  "genre2": [
+   "thrash"
+  ],
+  "desc": "Thrash-rooted melodic metalcore.",
+  "status": "unknown",
+  "url": "https://en.wikipedia.org/wiki/Shadows_Fall",
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_53dc745c2f568e6cfecd",
+  "name": "Caspian",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 89,
+  "type": "original_band",
+  "city": "Beverly",
+  "conn": "Formed in Beverly in 2004.",
+  "genre": "Post-rock",
+  "genre2": [],
+  "desc": "Expansive instrumental post-rock.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_070d6ee8811985f15033",
+  "name": "The Hotelier",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 90,
+  "type": "original_band",
+  "city": "Worcester",
+  "conn": "Formed in Dudley and based in Worcester.",
+  "genre": "Emo",
+  "genre2": [
+   "indie rock"
+  ],
+  "desc": "Intense, literate emo.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_843008f385439b5ec689",
+  "name": "Ripe",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 91,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed at Berklee College of Music in Boston.",
+  "genre": "Funk",
+  "genre2": [
+   "pop rock"
+  ],
+  "desc": "Horn-powered funk-pop.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6f8d52b25f5c8b62e579",
+  "name": "Hallelujah the Hills",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 92,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2005.",
+  "genre": "Indie rock",
+  "genre2": [],
+  "desc": "Literate, ramshackle indie rock.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_ea0ccf3d4430d6bcab8b",
+  "name": "Avoid One Thing",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Ska and ska-punk",
+  "ord": 93,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston band led by Bosstones bassist Joe Gittleman.",
+  "genre": "Pop punk",
+  "genre2": [],
+  "desc": "Hooky pop punk.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0aa67985ca58ee4d4114",
+  "name": "Bang Camaro",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 94,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 2005.",
+  "genre": "Hard rock",
+  "genre2": [],
+  "desc": "Arena hard rock sung by a large chorus of vocalists.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8697213019ebf984965d",
+  "name": "Apollo Sunshine",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 95,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed at Berklee College of Music in Boston.",
+  "genre": "Indie rock",
+  "genre2": [
+   "psychedelic rock"
+  ],
+  "desc": "Freewheeling psychedelic indie rock.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_97d48e4888d4e45f5106",
+  "name": "Boy Harsher",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 96,
+  "type": "original_band",
+  "city": "Northampton",
+  "conn": "Western Massachusetts: based in Northampton.",
+  "genre": "Darkwave",
+  "genre2": [
+   "synth-pop"
+  ],
+  "desc": "Cold, pulsing darkwave.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_38db5a13c579b9819c49",
+  "name": "Mr. Airplane Man",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 97,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston blues-garage duo.",
+  "genre": "Garage blues",
+  "genre2": [],
+  "desc": "Primitive, hypnotic garage blues.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1d481062d4f730b3f047",
+  "name": "The Freeze",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 98,
+  "type": "original_band",
+  "city": "Cape Cod",
+  "conn": "Formed on Cape Cod in 1978 and part of early Boston hardcore.",
+  "genre": "Hardcore punk",
+  "genre2": [],
+  "desc": "Early, fast Boston-scene hardcore.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_b161315150f995f577eb",
+  "name": "Moving Targets",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 99,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed in Boston in 1981.",
+  "genre": "Punk rock",
+  "genre2": [
+   "post-hardcore"
+  ],
+  "desc": "Melodic, speedy punk.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_d8252214afa7e1acb4c7",
+  "name": "Bullet LaVolta",
+  "lists": [
+   "top_100_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 100,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston punk band of the late 1980s.",
+  "genre": "Hardcore punk",
+  "genre2": [
+   "hard rock"
+  ],
+  "desc": "Hard-rocking punk.",
+  "status": "inactive",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5717f9b8e3841c487241",
+  "name": "The Dogmatics",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 1,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston punk band from the early-1980s scene, back playing local shows.",
+  "genre": "Punk rock",
+  "genre2": [],
+  "desc": "Fast, melodic old-school punk.",
+  "status": "active",
+  "url": "https://thedogmatics.com/",
+  "tour": "https://thedogmatics.com/shows",
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_5e523b58f179fba6798d",
+  "name": "Muck and the Mires",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 2,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston garage-rock band; listed at Deep Cuts in Medford in Sept. 2026.",
+  "genre": "Garage rock",
+  "genre2": [
+   "power pop"
+  ],
+  "desc": "1960s-style garage rock with Farfisa and fuzz.",
+  "status": "active",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a039b68194789279d581",
+  "name": "Gozu",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 3,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston stoner-rock band.",
+  "genre": "Stoner rock",
+  "genre2": [
+   "hard rock"
+  ],
+  "desc": "Groove-heavy stoner rock with soaring vocals.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_95aefcb216170b0d7c6a",
+  "name": "Worshipper",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 4,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston heavy rock band.",
+  "genre": "Heavy metal",
+  "genre2": [
+   "doom"
+  ],
+  "desc": "Heavy, melodic 1970s-rooted hard rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0999fc759d4f90ed39b1",
+  "name": "Fuming Mouth",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Metal, metalcore, and heavy music",
+  "ord": 5,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston death metal band.",
+  "genre": "Death metal",
+  "genre2": [
+   "hardcore punk"
+  ],
+  "desc": "Crust-tinged death metal.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_9e99490a87b0de906d8f",
+  "name": "Horse Jumper of Love",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 6,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston indie rock band.",
+  "genre": "Indie rock",
+  "genre2": [
+   "slowcore"
+  ],
+  "desc": "Slow, hazy guitar songs with heavy swells.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0b155cb97095d81fa7ce",
+  "name": "Mint Green",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 7,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston indie rock band.",
+  "genre": "Indie rock",
+  "genre2": [
+   "pop punk"
+  ],
+  "desc": "Bright, punchy guitar pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6d5973d69da2ea6f96b1",
+  "name": "Hans Gruber and the Die Hards",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 8,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston punk band.",
+  "genre": "Punk rock",
+  "genre2": [
+   "surf rock"
+  ],
+  "desc": "Fast, playful surf-punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_18651cae0716589e2b6c",
+  "name": "Petty Morals",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 9,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston rock band.",
+  "genre": "Rock",
+  "genre2": [
+   "new wave"
+  ],
+  "desc": "Hook-driven rock with group vocals.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_35a4d8b5e3381a143905",
+  "name": "The Rationales",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 10,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston rock band.",
+  "genre": "Rock",
+  "genre2": [
+   "Americana"
+  ],
+  "desc": "Guitar-driven heartland-style rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_8f50833db8e57310423b",
+  "name": "Bearstronaut",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 11,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston synth-pop band.",
+  "genre": "Synth-pop",
+  "genre2": [],
+  "desc": "Danceable synthesizer pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_3a8c1a3b89d532a35ed3",
+  "name": "Tigerman WOAH",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 12,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston folk-rock band.",
+  "genre": "Folk rock",
+  "genre2": [],
+  "desc": "Raucous, acoustic-based folk rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1a187aa5778b67d5ab89",
+  "name": "Black Beach",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 13,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston punk band.",
+  "genre": "Punk rock",
+  "genre2": [
+   "garage rock"
+  ],
+  "desc": "Loud, abrasive garage punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_030e024ebd94a4b83b62",
+  "name": "Thalia Zedek Band",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 14,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Band led by longtime Boston musician Thalia Zedek of Come.",
+  "genre": "Indie rock",
+  "genre2": [],
+  "desc": "Dark, viola-textured rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_2f4f05c159142e2a90a2",
+  "name": "Rebuilder",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 15,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston punk band.",
+  "genre": "Punk rock",
+  "genre2": [],
+  "desc": "Anthemic, working-class punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0d61507b3cee6b1ef22d",
+  "name": "Save Ends",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 16,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston pop-punk band.",
+  "genre": "Pop punk",
+  "genre2": [
+   "emo"
+  ],
+  "desc": "Melodic pop punk with dual vocals.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f0f72c603425c35a66f4",
+  "name": "Restraining Order",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Punk, hardcore, and Celtic punk",
+  "ord": 17,
+  "type": "original_band",
+  "city": "Worcester",
+  "conn": "Massachusetts hardcore band from Worcester.",
+  "genre": "Hardcore punk",
+  "genre2": [],
+  "desc": "Early-1980s-style hardcore.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_45f26483e5e8c2959541",
+  "name": "Darlingside",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 18,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston-area band formed at Williams College.",
+  "genre": "Indie folk",
+  "genre2": [
+   "chamber pop"
+  ],
+  "desc": "Close-harmony folk-pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0f8cdb4b51e7f7712ac0",
+  "name": "Juice",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Pop, R&B, and vocal groups",
+  "ord": 19,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Formed at Berklee College of Music in Boston.",
+  "genre": "Pop rock",
+  "genre2": [
+   "R&B"
+  ],
+  "desc": "Polished pop rock with string and vocal arrangements.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e912175ef6c5b24e4b28",
+  "name": "Mellow Bravo",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 20,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston rock band.",
+  "genre": "Hard rock",
+  "genre2": [],
+  "desc": "Big, horn-backed party rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f5b817bb1560ea39c104",
+  "name": "Ward Hayden & the Outliers",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Country, folk, and roots",
+  "ord": 21,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston country band led by Ward Hayden.",
+  "genre": "Country",
+  "genre2": [
+   "honky-tonk"
+  ],
+  "desc": "Traditional honky-tonk country.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_170990ed23fbbfbdfb61",
+  "name": "Girls Guns and Glory",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Country, folk, and roots",
+  "ord": 22,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston roots band led by Ward Hayden.",
+  "genre": "Americana",
+  "genre2": [
+   "rockabilly"
+  ],
+  "desc": "Twangy roots rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_1cec9a196f090f21bb5b",
+  "name": "The Upper Crust",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 23,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston rock band.",
+  "genre": "Hard rock",
+  "genre2": [],
+  "desc": "AC/DC-style hard rock with period costume.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4b80ad38d4ce7fde6b60",
+  "name": "Kingsley Flood",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Country, folk, and roots",
+  "ord": 24,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston folk-rock band.",
+  "genre": "Folk rock",
+  "genre2": [
+   "Americana"
+  ],
+  "desc": "Brass-tinged roots rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_690275085be4a92aeb8a",
+  "name": "The Chandler Travis Philharmonic",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Country, folk, and roots",
+  "ord": 25,
+  "type": "original_band",
+  "city": "Cape Cod",
+  "conn": "Cape Cod band led by Chandler Travis.",
+  "genre": "Rock",
+  "genre2": [
+   "jazz"
+  ],
+  "desc": "Horn-heavy eclectic pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_c3a5464b6427e3aa5b42",
+  "name": "Coral Moons",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 26,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston rock band.",
+  "genre": "Rock",
+  "genre2": [
+   "soul"
+  ],
+  "desc": "Soulful, bluesy rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_7ea37e61e189955c80bf",
+  "name": "Animal Flag",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 27,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston indie rock band.",
+  "genre": "Indie rock",
+  "genre2": [],
+  "desc": "Earnest, swelling guitar rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_6d7da38664c0d21cc7b3",
+  "name": "Pet Fox",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 28,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston indie rock band.",
+  "genre": "Indie rock",
+  "genre2": [
+   "emo"
+  ],
+  "desc": "Moody, melodic guitar rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a59401e18c45c074226e",
+  "name": "Dutch Tulips",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 29,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston indie band.",
+  "genre": "Indie pop",
+  "genre2": [],
+  "desc": "Fuzzy, catchy indie pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_24485735c9872419223f",
+  "name": "Paper Lady",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 30,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston indie rock band.",
+  "genre": "Indie rock",
+  "genre2": [],
+  "desc": "Lush, guitar-driven indie rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_987449000dfb3127f4c5",
+  "name": "Lady Pills",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 31,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston indie rock band.",
+  "genre": "Indie rock",
+  "genre2": [
+   "grunge"
+  ],
+  "desc": "Fuzzy, grunge-leaning indie rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_e30be41c370ae1ef4b55",
+  "name": "Pray for Sound",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 32,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston post-rock band.",
+  "genre": "Post-rock",
+  "genre2": [],
+  "desc": "Cinematic instrumental post-rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_b680dfdcc0aed5138d66",
+  "name": "Township",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Classic rock, hard rock, and arena rock",
+  "ord": 33,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston rock band.",
+  "genre": "Hard rock",
+  "genre2": [],
+  "desc": "Riff-driven hard rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4b021d71e6cea1c69857",
+  "name": "Dirty Bangs",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 34,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston rock band.",
+  "genre": "Garage rock",
+  "genre2": [],
+  "desc": "Brash, catchy rock 'n' roll.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_b078fec2f93ea791a114",
+  "name": "Fat Creeps",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 35,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston garage-pop band.",
+  "genre": "Garage rock",
+  "genre2": [
+   "indie pop"
+  ],
+  "desc": "Scrappy, catchy garage pop.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_a6fcff025ec7102d3657",
+  "name": "Sun Parade",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Indie, alternative, and college rock",
+  "ord": 36,
+  "type": "original_band",
+  "city": "Northampton",
+  "conn": "Western Massachusetts band from Northampton.",
+  "genre": "Indie pop",
+  "genre2": [
+   "folk rock"
+  ],
+  "desc": "Sunny folk-pop with harmonies.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_f95eec6ecce148cfa0b1",
+  "name": "The Monsieurs",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 37,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston garage-punk band.",
+  "genre": "Garage punk",
+  "genre2": [],
+  "desc": "Raw, fast garage punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_4efa4dfdabade6b27e67",
+  "name": "Gene Dante and the Future Starlets",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Garage, proto-punk, and new wave",
+  "ord": 38,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston glam-rock band.",
+  "genre": "Glam rock",
+  "genre2": [],
+  "desc": "Theatrical glam rock.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_22b28616af195aa87d6b",
+  "name": "Westbound Train",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Ska and ska-punk",
+  "ord": 39,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston ska band.",
+  "genre": "Ska",
+  "genre2": [
+   "soul"
+  ],
+  "desc": "Soul-rooted traditional ska.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ },
+ {
+  "id": "band_0ce1582287bd9d0b819b",
+  "name": "Kicked in the Head",
+  "lists": [
+   "top_100_bar_bands"
+  ],
+  "cat": "Ska and ska-punk",
+  "ord": 40,
+  "type": "original_band",
+  "city": "Boston",
+  "conn": "Boston ska-punk band.",
+  "genre": "Ska punk",
+  "genre2": [],
+  "desc": "Brassy ska punk.",
+  "status": "unknown",
+  "url": null,
+  "tour": null,
+  "bc": null,
+  "social": null
+ }
+]

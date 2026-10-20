@@ -96,6 +96,38 @@ def main(city, out):
     bev = load(city, 'bev', [])
     sports = load(city, 'sports', {'asof': '', 'events': []})
 
+    # our own short stories for wire/crime items; items we have not rewritten wait in the queue
+    briefs, dropped = [], []
+    import glob
+    for fp in sorted(glob.glob(f'{ED}/{city}/briefs_*.json')):
+        d0 = json.load(open(fp)); briefs += d0.get('stories', []); dropped += d0.get('dropped', [])
+    byurl, seen_slug = {}, {x['slug'] for x in stories}
+    for b in briefs:
+        if not b.get('slug') or not b.get('body') or b['slug'] in seen_slug:
+            continue
+        seen_slug.add(b['slug']); b.setdefault('minutes', 1)
+        byurl.setdefault(b.get('item_url', ''), b)
+    for x in stories:
+        for so in x.get('sources', []):
+            byurl.setdefault(so.get('url', ''), x)
+    queue = []
+    def link(L):
+        out = []
+        for x in L:
+            st_ = byurl.get(x.get('url', ''))
+            if st_:
+                x = dict(x, src_url=x.get('url', ''), url='?story=' + st_['slug'], story=st_['slug'])
+                out.append(x)
+            else:
+                queue.append(x)
+        return out
+    wire = link(wire); crime['items'] = link(crime['items'])
+    used = {b['slug'] for b in byurl.values()}
+    brief_list = [b for b in briefs if b['slug'] in used and b not in stories]
+    brief_list.sort(key=lambda x: x.get('date', ''), reverse=True)
+    stories = stories + [b for b in brief_list if b['slug'] not in {y['slug'] for y in stories}]
+    json.dump({'queued': queue, 'dropped': dropped}, open(f'{ED}/{city}/queue.json', 'w'), ensure_ascii=False, indent=0)
+
     # rule: no drag / gay content
     bad = re.compile(r'\bdrag\b|\bqueer\b|\bgay\b|lgbt|\bpride\b|drag (show|brunch|queen)', re.I)
     def ok(x):
@@ -159,7 +191,9 @@ def main(city, out):
         h = h.replace('The%20Guitar%20Doug%20Report', B.replace(' ', '%20'))
         h = h.replace('content="Guitar Doug"', f'content="{B}"')
         h = h.replace('sole property of Guitar Doug', 'sole property of ' + B).replace('© 2026 Guitar Doug', '© 2026 ' + B)
+        h = h.replace('THE GUITAR DOUG REPORT', B.upper()).replace('The Guitar Doug Report', B).replace('the Guitar Doug Report', B)
         h = h.replace('Guitar Doug Report', B).replace('Guitar Doug', B)
+        h = h.replace('The The ', 'The ').replace('THE THE ', 'THE ').replace('the The ', 'The ')
         if not B.startswith('The '):
             h = h.replace('The ' + B, B).replace('THE ' + B.upper(), B.upper()).replace('the ' + B, B)
         h = h.replace('THE GUITAR DOUG REPORT', B.upper()).replace('The Guitar Doug Report', B).replace('the Guitar Doug Report', B)
@@ -194,7 +228,8 @@ def main(city, out):
       "async function cwLoad(force){if(!force&&Date.now()-CW.t<240000)return;const ago=h=>new Date(Date.now()-h*36e5).toLocaleString('sv-SE',{timeZone:'" + C['tz'] + "'}).replace(' ','T');\n"
       "  const j=u=>fetch(u,{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);\n"
       + ("  " + boston_q + "\n  const bp=j('https://data.boston.gov/api/3/action/datastore_search_sql?sql='+encodeURIComponent(bq)).then(d=>d&&d.result&&Array.isArray(d.result.records)?d.result.records.map(r=>({report_number:r.INCIDENT_NUMBER,offense_date:String(r.OCCURRED_ON_DATE||'').replace(' ','T').replace(/\\+00(:?00)?$/,''),nibrs_offense_code_description:String(r.OFFENSE_DESCRIPTION||'').toLowerCase().replace(/\\b\\w/g,c=>c.toUpperCase()),offense_sub_category:'',shooting_type_group:(r.SHOOTING==='1'||r.SHOOTING===1||r.SHOOTING==='Y')?'shooting':'-',block_address:r.STREET||'',neighborhood:(CITYD[r.DISTRICT]||r.DISTRICT||''),precinct:r.DISTRICT||''})):null);\n" if C['live'] else "  const bp=Promise.resolve(null);\n")
-      + "  let [n,s]=await Promise.all([j('data/crime.json?'+Math.floor(Date.now()/6e5)),bp]);let f=null;\n"
+      + "  let n=await j('data/crime.json?'+Math.floor(Date.now()/6e5));let s=await Promise.race([bp,new Promise(r=>setTimeout(()=>r(null),1500))]);let f=null;\n"
+      "  if(s===null)bp.then(x=>{if(Array.isArray(x)&&x.length){const u=[],sn=new Set();for(const r of x){if(sn.has(r.report_number))continue;sn.add(r.report_number);u.push(r)}CW.spd=u.slice(0,60);cwFill()}});\n"
       "  if(n&&n.items){const it=n.items.filter(x=>cwMatch(x));if(!Array.isArray(s)||!s.length)s=it.map(x=>({report_number:x.url||x.headline,offense_date:(x.date||'')+'T12:00',nibrs_offense_code_description:x.headline,offense_sub_category:x.kind,shooting_type_group:x.kind==='shooting'?'shooting':'-',block_address:'',neighborhood:x.hood||'',precinct:'',_u:x.url,_k:x.kind}));\n"
       "   f=n.items.filter(x=>['fire','crash'].includes(x.kind)||/fire|blaze|crash|rescue|collision/i.test(x.headline||'')).slice(0,25).map(x=>({type:x.headline,address:x.hood||'',datetime:(x.date||'')+'T12:00',_u:x.url}))}\n  "
     )
@@ -213,6 +248,39 @@ def main(city, out):
 
     # the Top Story banner: first local story
     h = h.replace("STORIES.find(x=>x.slug==='ballard-light-rail-2042-forum')||", '')
+    # ---------- layout tweaks for the city editions ----------
+    # section menu sits at the very top, right under the top strip
+    mn = re.search(r'\n  <nav class="navbar" id="nav".*?</nav>\n', h, re.S)
+    if mn:
+        h = h[:mn.start()] + '\n' + h[mn.end():]
+        h = h.replace('<div class="wrap">\n  <header class="mast">', '<div class="wrap">\n' + mn.group(0).strip('\n') + '\n  <header class="mast">', 1)
+    css = (
+      '<style id="edtweak">'
+      # top strip in brushed steel, like the cover lettering
+      '.clsbar.top{background:linear-gradient(180deg,#f4f5f6 0%,#c9cdd2 38%,#9da3aa 62%,#d2d5d9 100%)!important;color:#15181b!important;border-bottom:1px solid #6d737a!important;text-shadow:0 1px 0 rgba(255,255,255,.55)!important}'
+      '.clsbar.top *{color:#15181b!important}.clsbar.top .rec i{background:#c40d00!important;box-shadow:none!important}'
+      # lower masthead, no orange glow
+      '.mast .lgimg{margin:4px auto 6px!important;max-width:520px!important}'
+      '.lgimg img{width:min(100%,520px)!important;filter:drop-shadow(0 2px 6px rgba(0,0,0,.7))!important;animation:none!important}'
+      '.wrap>.navbar{margin:8px auto 6px}'
+      '#visits{margin-left:14px;opacity:.9}'
+      '</style>'
+    )
+    h = h.replace('</head>', css + '</head>', 1)
+    js = (
+      '<script>'
+      # our own stories open in place
+      'document.addEventListener("click",e=>{const a=e.target.closest&&e.target.closest(\'a[href^="?story="]\');if(!a)return;const q=a.getAttribute("href").slice(7);'
+      'if(typeof STORIES==="undefined"||!STORIES.some(s=>s.slug===q))return;e.preventDefault();STATE.prev=STATE.view==="read"?(STATE.prev||"front"):(STATE.view||"front");STATE.story=q;STATE.view="read";render();scrollTo(0,0)},true);'
+      'document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(\'a[href^="?story="][target]\').forEach(a=>a.removeAttribute("target"))});'
+      'new MutationObserver(()=>{document.querySelectorAll(\'a[href^="?story="][target]\').forEach(a=>a.removeAttribute("target"))}).observe(document.documentElement,{childList:true,subtree:true});'
+      # visitor counter in the bottom strip
+      '(()=>{const go=()=>{const b=document.querySelector(".clsbar.bot");if(!b)return;const s=document.createElement("span");s.id="visits";b.appendChild(s);'
+      'fetch("https://api.counterapi.dev/v1/douggarceau-com/' + C['slug'] + '-visits/up").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.count)s.textContent="VISITORS "+Number(d.count).toLocaleString("en-US")}).catch(()=>{})};'
+      'document.readyState==="loading"?document.addEventListener("DOMContentLoaded",go):go()})();'
+      '</script>'
+    )
+    h = h.replace('</body>', js + '</body>', 1)
     h = h.replace('@@NSTAG@@', 'The network for Seattle and beyond')
     for k, v in keep.items():
         h = h.replace(k, v)

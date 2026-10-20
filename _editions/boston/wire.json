@@ -1,0 +1,852 @@
+[
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Officers Hurt as Suspect Resists Arrest, Boston Police Say",
+  "date": "2026-10-19",
+  "blurb": "Boston police arrested a suspect who they say resisted arrest and injured two officers.",
+  "url": "https://police.boston.gov/2026/10/19/suspect-arrested-after-resisting-arrest-and-injuring-two-officers/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Hopkinton",
+  "headline": "Hopkinton Man Arraigned on Attempted Murder Charges in Lake Attack",
+  "date": "2026-10-19",
+  "blurb": "A Hopkinton man was arraigned on attempted murder charges after prosecutors say he held another man underwater at a lake.",
+  "url": "https://bostonglobe.com/2026/10/19/metro/hopkinton-lake-drowning-arraignment-indictment",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Abington",
+  "headline": "Abington Mother Pleads Not Guilty to Abusing Two-Month-Old",
+  "date": "2026-10-19",
+  "blurb": "An Abington woman pleaded not guilty to a charge that she physically abused her two-month-old baby.",
+  "url": "https://www.bostonglobe.com/2026/10/19/metro/abington-woman-allegedly-abused-infant-child/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "music",
+  "venue": "MGM Music Hall at Fenway",
+  "hood": "Fenway",
+  "headline": "Beck Brings Tour to MGM Music Hall at Fenway",
+  "date": "2026-10-19",
+  "blurb": "Beck played MGM Music Hall at Fenway on Oct. 17; Boston.com published a review and the full setlist.",
+  "url": "https://www.boston.com/culture/concert-reviews/2026/10/19/review-setlist-beck-at-mgm-music-hall-oct-17-2026/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Allston",
+  "headline": "Unlicensed Driver Accused of Hitting Four Parked Cars in Allston Rollover",
+  "date": "2026-10-18",
+  "blurb": "A driver police say was unlicensed struck four parked cars and rolled an SUV in an Allston crash.",
+  "url": "https://www.boston.com/news/local-news/2026/10/18/allegedly-unlicensed-driver-hits-4-parked-cars-rolls-over-suv-in-allston-crash/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Dorchester",
+  "headline": "Woman, 18, Shot in the Chest Inside Dorchester Apartment Building",
+  "date": "2026-10-18",
+  "blurb": "An 18-year-old woman was shot in the chest inside an apartment building in Dorchester, the latest in a string of weekend shootings in the city.",
+  "url": "https://www.boston.com/news/crime/2026/10/18/woman-18-shot-inside-dorchester-apartment-building/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Andover",
+  "headline": "Couple in Their 70s Found Dead Inside Andover Home",
+  "date": "2026-10-18",
+  "blurb": "A man and woman in their 70s were found dead inside a home in Andover.",
+  "url": "https://boston.com/news/local-news/2026/10/18/couple-in-their-70s-found-dead-in-andover-home",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Somerville",
+  "headline": "Fire Tears Through Somerville Veterans Housing, Two Injured",
+  "date": "2026-10-18",
+  "blurb": "Two people were hurt and residents were displaced after a fire at a veterans housing building in Somerville.",
+  "url": "https://www.boston.com/news/local-news/2026/10/18/fire-at-somerville-veterans-housing-leaves-2-injured-residents-displaced/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Quincy",
+  "headline": "Quincy Woman Struck by Vehicle, Suffers Life-Threatening Injuries",
+  "date": "2026-10-18",
+  "blurb": "A woman in Quincy was struck by a vehicle and taken to the hospital with life-threatening injuries.",
+  "url": "https://www.boston.com/news/local-news/2026/10/18/quincy-woman-suffers-life-threatening-injuries-after-being-struck-by-vehicle/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "music",
+  "venue": "MGM Music Hall at Fenway",
+  "hood": "Fenway",
+  "headline": "Globe Critic Finds Beck's MGM Music Hall Set Dispassionate",
+  "date": "2026-10-18",
+  "blurb": "The Boston Globe's review of Beck at MGM Music Hall at Fenway described the performance as dispassionate.",
+  "url": "https://www.bostonglobe.com/2026/10/18/arts/beck-dispassionate-mgm-music-hall-at-fenway/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Hyde Park",
+  "headline": "Two Women Shot in Early-Morning Hyde Park Gunfire, One Critically Hurt",
+  "date": "2026-10-17",
+  "blurb": "Two women were hospitalized after an early-morning shooting in Hyde Park, one of them with life-threatening injuries, police said.",
+  "url": "https://www.bostonglobe.com/2026/10/17/metro/hyde-park-shooting/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Mattapan",
+  "headline": "Hyde Park Man Arrested, Loaded Revolver Seized by District B-3 Officers",
+  "date": "2026-10-17",
+  "blurb": "Officers from the Mattapan-based District B-3 arrested a Hyde Park man and recovered a loaded revolver, police said.",
+  "url": "https://police.boston.gov/2026/10/17/district-b-3-officers-arrest-hyde-park-man-recover-loaded-revolver/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Boston Police Ask Public's Help Finding Missing 84-Year-Old Man",
+  "date": "2026-10-17",
+  "blurb": "Boston police issued a missing person alert and are asking the public for help locating an 84-year-old man.",
+  "url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Martha's Vineyard",
+  "headline": "Rape Allegation at State Police Barracks Shakes Martha's Vineyard",
+  "date": "2026-10-17",
+  "blurb": "A State Police barracks on Martha's Vineyard has become the scene of a rape investigation after a Boston Public Schools employee was charged.",
+  "url": "https://www.bostonglobe.com/2026/10/17/metro/state-police-barracks-is-site-of-rape-investigation/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Stoughton",
+  "headline": "Farwell Murder Trial Puts Focus on the Woman at the Center of the Case",
+  "date": "2026-10-17",
+  "blurb": "A Globe piece looks at how others pressed for answers after the death of the woman former Stoughton police officer Matthew Farwell is accused of killing, as his murder trial continues.",
+  "url": "https://bostonglobe.com/2026/10/17/metro/sandra-birchmore-murder-trial-matthew-farwell-boston",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "music",
+  "venue": "TD Garden",
+  "hood": "West End",
+  "headline": "Olivia Rodrigo Opens Three Sold-Out Nights at TD Garden",
+  "date": "2026-10-17",
+  "blurb": "Olivia Rodrigo played the first of three sold-out TD Garden shows on Oct. 15.",
+  "url": "https://www.boston.com/culture/concert-reviews/2026/10/17/review-setlist-olivia-rodrigo-td-garden-boston-oct-15-2026/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Downtown",
+  "headline": "Police Seek Answers After Young Men Climb 52 Floors of Unfinished South Station Tower",
+  "date": "2026-10-16",
+  "blurb": "Boston police want to know why a group of young men made their way up 52 floors inside the unfinished South Station Tower.",
+  "url": "https://www.boston.com/news/local-news/2026/10/16/police-want-to-know-why-these-young-men-snuck-up-52-floors-in-unfinished-south-station-tower/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Dorchester",
+  "headline": "Woman Expected to Survive Dorchester Shooting",
+  "date": "2026-10-16",
+  "blurb": "Police are investigating a shooting in Dorchester that wounded a woman, who is expected to survive.",
+  "url": "https://www.bostonglobe.com/2026/10/16/metro/dorchester-shooting-of-woman-under-investigation/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Martha's Vineyard",
+  "headline": "Healey Responds to Alleged Rape Inside State Police Barracks",
+  "date": "2026-10-16",
+  "blurb": "Gov. Maura Healey addressed allegations that a woman was raped inside a State Police barracks on Martha's Vineyard.",
+  "url": "https://www.bostonglobe.com/2026/10/16/metro/healey-state-police-rape-allegations-marthas-vineyard/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Worcester",
+  "headline": "Southbridge Man Arrested in Deadly Shooting Near Worcester Strip Club",
+  "date": "2026-10-16",
+  "blurb": "A Southbridge man was arrested in connection with a shooting near a Worcester strip club that left one person dead and another wounded.",
+  "url": "https://www.bostonglobe.com/2026/10/16/metro/worcester-strip-club-shooting-suspect-arrested/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Sharon",
+  "headline": "Man Killed After Being Ejected From Vehicle in Sharon Crash",
+  "date": "2026-10-16",
+  "blurb": "One man died after he was thrown from a vehicle in a crash in Sharon.",
+  "url": "https://www.bostonglobe.com/2026/10/16/metro/sharon-fatal-crash-leaves-one-dead/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Jamaica Plain",
+  "headline": "Detectives Seek Two People in Jamaica Plain Larceny Case",
+  "date": "2026-10-16",
+  "blurb": "Boston police released a community alert asking for help identifying two people in a larceny investigation in Jamaica Plain.",
+  "url": "https://police.boston.gov/2026/10/16/bpd-community-alert-detectives-seek-publics-assistance-in-efforts-to-identify-two-individuals-in-relation-to-a-larceny-investigation-in-jamaica-plain/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "scene",
+  "venue": "",
+  "hood": "",
+  "headline": "Nominees Announced for the 2026 Boston Music Awards",
+  "date": "2026-10-16",
+  "blurb": "The full slate of nominees for this year's Boston Music Awards has been released.",
+  "url": "https://www.bostonglobe.com/2026/10/16/arts/boston-music-awards-nominees/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "opening",
+  "venue": "",
+  "hood": "",
+  "headline": "Five New Restaurant Openings and Dining Updates (Oct. 16)",
+  "date": "2026-10-16",
+  "blurb": "Boston.com's latest weekly roundup of new restaurant and bar openings around the city.",
+  "url": "https://www.boston.com/food/restaurants/2026/10/16/best-restaurant-openings-october-16-2026/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Former Healey Aide LaMar Cook Jailed Again After Federal SNAP Fraud Charges",
+  "date": "2026-10-15",
+  "blurb": "LaMar Cook, a former aide to Gov. Healey already facing a drug trafficking case, had his bail revoked and was sent back to jail after his arrest on federal SNAP fraud charges.",
+  "url": "https://www.bostonglobe.com/2026/10/15/metro/lamar-cook-healey-bail-revoked-federal-arrest/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Wu Proposes Free City-Run Shuttles to Expand Fare-Free Transit",
+  "date": "2026-10-15",
+  "blurb": "Mayor Michelle Wu unveiled a plan to widen free public transit in Boston through free shuttles run by the city.",
+  "url": "https://www.boston.com/news/local-news/2026/10/15/wus-new-plan-to-expand-free-public-transit-free-city-run-shuttles/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Jury Orders Boston Water and Sewer Commission to Pay $1 Million for Retaliation",
+  "date": "2026-10-15",
+  "blurb": "A jury found the Boston Water and Sewer Commission must pay $1 million for retaliating against a former employee.",
+  "url": "https://www.bostonglobe.com/2026/10/15/metro/boston-water-sewer-commission-verdict-employment-discrimination/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "opening",
+  "venue": "Museum of Science",
+  "hood": "West End",
+  "headline": "Museum of Science Opens New Venue With Live Music on the Agenda",
+  "date": "2026-10-15",
+  "blurb": "The Museum of Science's new venue is set to host live music; the Globe's report centers on Jacob Collier.",
+  "url": "https://www.bostonglobe.com/2026/10/15/arts/museum-of-science-jacob-collier/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Martha's Vineyard",
+  "headline": "Boston Schools Employee Charged With Rape at State Police Barracks",
+  "date": "2026-10-14",
+  "blurb": "A Boston Public Schools employee was charged with raping a woman at the State Police barracks on Martha's Vineyard.",
+  "url": "https://www.boston.com/news/crime/2026/10/14/boston-public-schools-employee-charged-with-raping-woman-at-state-police-barracks-on-marthas-vineyard/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Mattapan",
+  "headline": "Mattapan Officers Recover Gun After Foot Chase",
+  "date": "2026-10-14",
+  "blurb": "Officers in Mattapan recovered a firearm following a foot chase, Boston police said.",
+  "url": "https://police.boston.gov/2026/10/14/mattapan-officers-recovered-a-firearm-following-a-foot-chase/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Worcester",
+  "headline": "One Killed, One Wounded in Double Shooting in Worcester",
+  "date": "2026-10-14",
+  "blurb": "One person was killed and another injured in a double shooting in Worcester.",
+  "url": "https://www.boston.com/news/crime/2026/10/14/1-killed-in-double-shooting-in-worcester/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Two Juveniles Charged in Liquor Store Theft, One Accused of Assaulting Worker",
+  "date": "2026-10-14",
+  "blurb": "Suffolk prosecutors charged two juveniles with stealing from a liquor store; one is also accused of assaulting a worker.",
+  "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/10/14/two-juveniles-charged-with-stealing-from-liquor-store-one-charged-with-assaulting-worker",
+  "outlet": "Suffolk DA"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Attleboro",
+  "headline": "Elderly Man and Woman Found Dead in Attleboro Home After Fire",
+  "date": "2026-10-14",
+  "blurb": "An elderly man and woman were found dead in an Attleboro home that showed signs of fire, officials said.",
+  "url": "https://www.bostonglobe.com/2026/10/14/metro/attleboro-deaths-man-woman-found-dead-after-fire/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "scene",
+  "venue": "",
+  "hood": "",
+  "headline": "Weekend Picks: Fort Point Open Studios and Boston Book Festival",
+  "date": "2026-10-14",
+  "blurb": "WBUR's weekend guide highlights Fort Point Open Studios and the Boston Book Festival among five things to do.",
+  "url": "https://www.wbur.org/news/2026/10/14/weekend-boston-book-festival-and-fort-point-open-studios",
+  "outlet": "WBUR"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "South End",
+  "headline": "Suspect Arrested After Attacking Several People and Officers in Blackstone Square",
+  "date": "2026-10-13",
+  "blurb": "Boston police arrested a suspect accused of assaulting multiple people and officers in Blackstone Square in the South End.",
+  "url": "https://police.boston.gov/2026/10/13/violent-suspect-arrested-after-assaulting-multiple-victims-and-officers-in-blackstone-square/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Man Charged After Allegedly Trying to Grab Officer's Gun During Street Arrest",
+  "date": "2026-10-13",
+  "blurb": "A man was charged after police say he tried to disarm an officer during a violent arrest on a Boston street.",
+  "url": "https://www.boston.com/news/crime/2026/10/13/man-charged-after-allegedly-trying-to-disarm-officer-during-violent-street-arrest/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "South End",
+  "headline": "Boston Man Sentenced in 2023 Fatal Stabbing of Woman Near Mass. and Cass",
+  "date": "2026-10-13",
+  "blurb": "A Boston man who pleaded guilty in the 2023 fatal stabbing of a woman near Massachusetts Avenue and Melnea Cass Boulevard was sentenced to prison.",
+  "url": "https://www.bostonglobe.com/2026/10/13/metro/boston-man-sentenced-after-pleading-guilty-in-2023-fatal-stabbing/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Chelsea",
+  "headline": "Chelsea Building Declared Structurally Unsafe After Partial Collapse",
+  "date": "2026-10-13",
+  "blurb": "Residents were displaced after a partial collapse left a Chelsea residence deemed structurally unsafe, officials said.",
+  "url": "https://www.bostonglobe.com/2026/10/13/metro/residents-evacuated-after-partial-building-collapse-in-chelsea/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Jamaica Plain",
+  "headline": "Victim Identified in Fatal Arborway Crash in Jamaica Plain",
+  "date": "2026-10-13",
+  "blurb": "Authorities identified the person killed in a crash on the Arborway in Jamaica Plain, which is under criminal investigation.",
+  "url": "https://www.boston.com/news/local-news/2026/10/13/jamaica-plain-arborway-crash-victim-identified/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "opening",
+  "venue": "The Sports Bra Boston",
+  "hood": "Downtown",
+  "headline": "Women's Sports Bar The Sports Bra Readies Downtown Boston Opening",
+  "date": "2026-10-13",
+  "blurb": "The Sports Bra, a women's sports bar franchise, is preparing for opening day at its downtown Boston location.",
+  "url": "https://www.boston.com/sports/sports-news/2026/10/13/the-sports-bra-boston-opening-day-downtown/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "opening",
+  "venue": "The Sports Bra Boston",
+  "hood": "Downtown",
+  "headline": "The Sports Bra Franchise Announces Boston Location",
+  "date": "2026-10-13",
+  "blurb": "The women's sports bar franchise The Sports Bra announced it is coming to Boston.",
+  "url": "https://www.bostonglobe.com/2026/10/13/sports/the-sports-bra-sports-bar-boston/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "safety",
+  "venue": "",
+  "hood": "Worcester",
+  "headline": "Shooting Outside Worcester Strip Club Leaves One Dead, One Injured",
+  "date": "2026-10-13",
+  "blurb": "One person was killed and another wounded in shootings near a strip club in Worcester.",
+  "url": "https://www.bostonglobe.com/2026/10/13/metro/worcester-strip-club-shooting-two-injured/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Dorchester",
+  "headline": "Victim Identified in Whitfield Street Homicide",
+  "date": "2026-10-12",
+  "blurb": "Boston police identified the victim killed at 7 Whitfield Street in Dorchester, where a 20-year-old has been charged with murder.",
+  "url": "https://police.boston.gov/2026/10/12/investigation-update-victim-identified-in-7-whitfield-street-homicide/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Man Dies After Contact With Red Line Third Rail",
+  "date": "2026-10-12",
+  "blurb": "A man died after coming into contact with the electrified third rail on the MBTA Red Line.",
+  "url": "https://boston.com/news/local-news/2026/10/12/man-dies-after-coming-into-contact-with-third-rail-on-red-line",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Jamaica Plain",
+  "headline": "Driver Killed in Jamaica Plain Crash; Criminal Investigation Underway",
+  "date": "2026-10-11",
+  "blurb": "A driver died in a crash in Jamaica Plain and a criminal investigation has been opened.",
+  "url": "https://www.bostonglobe.com/2026/10/11/metro/jamaica-plain-crash/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "music",
+  "venue": "TD Garden",
+  "hood": "West End",
+  "headline": "Teddy Swims Brings Soul Revue to TD Garden",
+  "date": "2026-10-10",
+  "blurb": "Teddy Swims played TD Garden; Boston.com reviewed the show and posted the setlist.",
+  "url": "https://www.boston.com/culture/concert-reviews/2026/10/10/review-setlist-teddy-swims-brings-the-soul-and-flying-hotdogs-to-td-garden/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "music",
+  "venue": "",
+  "hood": "",
+  "headline": "The Chicks Bring Their Tour to Boston",
+  "date": "2026-10-10",
+  "blurb": "The Chicks performed in the Boston area; Boston.com published a review and setlist.",
+  "url": "https://www.boston.com/culture/concert-reviews/2026/10/10/review-setlist-the-chicks-bring-fiery-journey-to-stage/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Hyde Park",
+  "headline": "Teen Turned Himself In After Fatal Hyde Park Gas Station Shooting, DA Says",
+  "date": "2026-10-09",
+  "blurb": "A Boston teenager surrendered after a man was shot to death at a Hyde Park gas station, according to the Suffolk District Attorney.",
+  "url": "https://www.boston.com/news/crime/2026/10/09/da-boston-teen-turned-himself-in-after-fatal-hyde-park-shooting/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Brighton",
+  "headline": "Brighton Man Charged in Triple Stabbing After Machete Arrest",
+  "date": "2026-10-09",
+  "blurb": "A Brighton man was charged in a triple stabbing in Brighton following an arrest involving a machete.",
+  "url": "https://www.boston.com/news/crime/2026/10/09/brighton-man-machete-triple-stabbing/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Lynn",
+  "headline": "Two Men Wanted in Stabbing of NYPD Detective Arrested in Lynn",
+  "date": "2026-10-08",
+  "blurb": "Two men accused of stabbing a New York City police detective were arrested in Lynn.",
+  "url": "https://www.boston.com/news/crime/2026/10/08/2-men-who-allegedly-stabbed-n-y-police-detective-arrested-in-lynn/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Cambridge",
+  "headline": "One Shot Overnight Near Central Square in Cambridge",
+  "date": "2026-10-08",
+  "blurb": "A person was shot overnight near Central Square in Cambridge and taken to the hospital, police said.",
+  "url": "https://www.boston.com/news/local-news/2026/10/08/1-shot-overnight-near-central-square-in-cambridge-police-say/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "scene",
+  "venue": "",
+  "hood": "",
+  "headline": "Globe Weekend Guide: Things to Do In and Around Boston",
+  "date": "2026-10-08",
+  "blurb": "The Boston Globe's roundup of shows and events in and around Boston for the weekend.",
+  "url": "https://www.bostonglobe.com/2026/10/08/arts/things-to-do-boston-this-weekend/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Hyde Park",
+  "headline": "Man Shot and Killed in Hyde Park",
+  "date": "2026-10-07",
+  "blurb": "A man was shot and killed in Hyde Park, and Boston police opened a homicide investigation.",
+  "url": "https://www.bostonglobe.com/2026/10/07/metro/man-killed-hyde-park-shooting/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Mattapan",
+  "headline": "Fourth Person Charged in Deadly June Shooting in Mattapan",
+  "date": "2026-10-07",
+  "blurb": "Suffolk prosecutors charged a fourth person in a June shooting that killed one man and wounded four others.",
+  "url": "https://www.suffolkdistrictattorney.com/press-releases/items/2026/10/7/fourth-person-charged-in-june-shooting-that-killed-one-man-and-injured-four-others",
+  "outlet": "Suffolk DA"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Roxbury",
+  "headline": "Detectives Find Knife on Rooftop, Arrest Suspect in Roxbury Stabbing",
+  "date": "2026-10-07",
+  "blurb": "Boston police arrested a suspect in a Roxbury stabbing after detectives recovered a knife from a rooftop.",
+  "url": "https://police.boston.gov/2026/10/07/suspect-arrested-in-roxbury-stabbing-after-detectives-recover-knife-from-rooftop/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "music",
+  "venue": "TD Garden",
+  "hood": "West End",
+  "headline": "Phoebe Bridgers Plays Phone-Free Show at TD Garden",
+  "date": "2026-10-07",
+  "blurb": "Phoebe Bridgers performed a phone-free concert at TD Garden.",
+  "url": "https://www.boston.com/culture/concert-reviews/2026/10/07/review-setlist-phoebe-bridgers-brings-phone-free-cosmic-show-to-td-garden/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Cambridge",
+  "headline": "One Hurt in Shooting Near Cambridge Athletic Field",
+  "date": "2026-10-06",
+  "blurb": "One person was injured in a shooting near an athletic field in Cambridge.",
+  "url": "https://www.boston.com/news/local-news/2026/10/06/1-injured-in-shooting-near-cambridge-athletic-field/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Acton",
+  "headline": "Acton Teen Arraigned in Killing of His Mother and Brother",
+  "date": "2026-10-06",
+  "blurb": "A teenager from Acton was arraigned on murder charges in the deaths of his mother and brother.",
+  "url": "https://www.boston.com/news/crime/2026/10/06/chat-gpt-arjun-aravind-acton-murder/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Massachusetts Man Pleads Guilty in Scheme to Sell Russian Plutonium",
+  "date": "2026-10-06",
+  "blurb": "A Massachusetts man pleaded guilty to charges connected to selling plutonium from Russia.",
+  "url": "https://www.boston.com/news/crime/2026/10/06/mass-man-pleads-guilty-to-selling-russian-plutonium/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Raynham",
+  "headline": "Brockton Teen Struck and Killed Crossing Street in Raynham",
+  "date": "2026-10-06",
+  "blurb": "A Brockton teenager was hit and killed while crossing a street in Raynham.",
+  "url": "https://www.boston.com/news/local-news/2026/10/06/raynham-fatal-pedestrian-crash-brockton-teen/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Cambridge",
+  "headline": "Inquest Finds Fatal Cambridge Police Shooting Justified; Bodycam Released",
+  "date": "2026-10-05",
+  "blurb": "A judicial inquest found a fatal shooting by Cambridge police was justified, and body camera footage was made public.",
+  "url": "https://www.boston.com/news/local-news/2026/10/05/fatal-cambridge-police-shooting-judicial-inquest/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Dorchester",
+  "headline": "Traffic Stop in Dorchester Ends in Gun Arrest",
+  "date": "2026-10-05",
+  "blurb": "A traffic stop in Dorchester led to an arrest and the recovery of a firearm, Boston police said.",
+  "url": "https://police.boston.gov/2026/10/05/traffic-stop-leads-to-suspect-arrested-and-firearm-recovered-in-dorchester/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "opening",
+  "venue": "Bloom",
+  "hood": "Seaport",
+  "headline": "Bloom, a Cafe by Day and Cocktail Bar by Night, Opens in the Seaport",
+  "date": "2026-10-05",
+  "blurb": "Bloom has opened in the Seaport as a daytime tea cafe that turns into a craft cocktail bar in the evening.",
+  "url": "https://www.boston.com/food/food-news/2026/10/05/bloom-tea-and-cocktail-bar-opens-in-boston-seaport/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "opening",
+  "venue": "",
+  "hood": "Downtown",
+  "headline": "New Restaurant With Skyline Views Opens Above South Station",
+  "date": "2026-10-05",
+  "blurb": "A new restaurant with sweeping views of the skyline has opened above South Station.",
+  "url": "https://www.boston.com/food/food-news/2026/10/05/a-new-restaurant-with-sweeping-skyline-opens-above-south-station/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Downtown",
+  "headline": "Person Stabbed in Downtown Crossing, Life-Threatening Injuries",
+  "date": "2026-10-04",
+  "blurb": "A person was stabbed in Downtown Crossing and hospitalized with life-threatening injuries.",
+  "url": "https://www.boston.com/news/crime/2026/10/04/person-stabbed-in-downtown-crossing-hospitalized-with-life-threatening-injuries/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "music",
+  "venue": "TD Garden",
+  "hood": "West End",
+  "headline": "Smashing Pumpkins Mark 'Mellon Collie' With Three-Hour TD Garden Show",
+  "date": "2026-10-03",
+  "blurb": "The Smashing Pumpkins played a three-hour TD Garden concert built around 'Mellon Collie and the Infinite Sadness' on Oct. 2.",
+  "url": "https://www.boston.com/culture/concert-reviews/2026/10/03/smashing-pumpkins-td-garden-october-2-review-setlist/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "music",
+  "venue": "TD Garden",
+  "hood": "West End",
+  "headline": "Gorillaz Launch '5/4' Tour at TD Garden",
+  "date": "2026-10-02",
+  "blurb": "Gorillaz brought the debut of their '5/4' tour and a large visual production to TD Garden on Oct. 1.",
+  "url": "https://www.boston.com/culture/concert-reviews/2026/10/02/gorillaz-td-garden-october-1-2026-review-setlist/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "opening",
+  "venue": "",
+  "hood": "",
+  "headline": "Five New Restaurant Openings and Dining Updates Around Boston",
+  "date": "2026-10-02",
+  "blurb": "Boston.com's roundup of the newest restaurant openings and dining news for the week of Oct. 2.",
+  "url": "https://www.boston.com/food/restaurants/2026/10/02/best-restaurant-openings-october-2-2026/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "opening",
+  "venue": "",
+  "hood": "",
+  "headline": "Boston Magazine's October Guide to New Places to Eat and Drink",
+  "date": "2026-10-02",
+  "blurb": "Boston Magazine lists the hot new restaurants and bars to visit around Greater Boston in October.",
+  "url": "https://www.bostonmagazine.com/restaurants/2026/10/02/hot-new-boston-restaurants-october-2026/",
+  "outlet": "Boston Magazine"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Dorchester",
+  "headline": "Man, 20, Charged With Murder in Fatal Dorchester Shooting",
+  "date": "2026-10-01",
+  "blurb": "A 20-year-old man was arrested and charged with murder in a fatal shooting on Whitfield Street in Dorchester.",
+  "url": "https://www.bostonglobe.com/2026/10/01/metro/dorchester-shooting-arrest-whitfield-street/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Jamaica Plain",
+  "headline": "Woman Killed When Vehicle Slams Into Faulkner Hospital",
+  "date": "2026-10-01",
+  "blurb": "A woman was killed when a vehicle crashed into a building at Faulkner Hospital.",
+  "url": "https://www.bostonglobe.com/2026/10/01/metro/faulkner-hospital-crash/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Cambridge",
+  "headline": "Man Accused of Sexual Assaults in Women's Locker Room at Cambridge Gym",
+  "date": "2026-10-01",
+  "blurb": "Police say a man committed sexual assaults inside the women's locker room at a Cambridge gym.",
+  "url": "https://www.bostonglobe.com/2026/10/01/metro/man-assaults-women-cambridge-gym/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Wu Endorses Healey for Re-Election",
+  "date": "2026-10-01",
+  "blurb": "Boston Mayor Michelle Wu endorsed Gov. Maura Healey's bid for a second term.",
+  "url": "https://www.wbur.org/news/2026/10/01/massachusetts-governor-healey-boston-mayor-wu-endorsement-reelection",
+  "outlet": "WBUR"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Roxbury",
+  "headline": "Police Release Photos of Person of Interest in Roxbury Face Stabbing",
+  "date": "2026-10-01",
+  "blurb": "Boston police released images of a person of interest in a stabbing in Roxbury in which the victim was cut in the face.",
+  "url": "https://www.boston.com/news/crime/2026/10/01/police-reveal-photos-of-person-of-interest-in-roxbury-face-stabbing/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Boston Police Seek Missing 14-Year-Old Girl",
+  "date": "2026-10-01",
+  "blurb": "Boston police asked for the public's help locating a missing 14-year-old girl.",
+  "url": "https://www.boston.com/news/local-news/2026/10/01/boston-police-seek-help-finding-missing-girl-14/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "opening",
+  "venue": "",
+  "hood": "",
+  "headline": "Five Boston Restaurants to Watch in October",
+  "date": "2026-10-01",
+  "blurb": "Boston.com picks five restaurants it is eager to try this month.",
+  "url": "https://www.boston.com/food/restaurants/2026/10/01/5-restaurants-we-cant-wait-to-try-in-october-2026/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "music",
+  "venue": "MGM Music Hall at Fenway",
+  "hood": "Fenway",
+  "headline": "Ringo Starr and Friends Play MGM Music Hall",
+  "date": "2026-10-01",
+  "blurb": "Ringo Starr played MGM Music Hall at Fenway on Sept. 30; Boston.com reviewed the show and posted the setlist.",
+  "url": "https://www.boston.com/culture/concert-reviews/2026/10/01/review-setlist-ringo-starr-mgm-music-hall-sept-30/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Somerville",
+  "headline": "Five-Alarm Fire in Somerville's Teele Square Displaces 43 Residents",
+  "date": "2026-09-30",
+  "blurb": "A five-alarm fire swept through a mixed-use building in Teele Square, displacing 43 residents.",
+  "url": "https://www.bostonglobe.com/2026/09/30/metro/5-alarm-somerville-fire-residents-displaced/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Dorchester",
+  "headline": "Man Shot in Dorchester; Homicide Detectives Investigating",
+  "date": "2026-09-30",
+  "blurb": "A man was shot in Dorchester and police opened a homicide investigation.",
+  "url": "https://www.bostonglobe.com/2026/09/30/metro/dorchester-shooting-homicide-investigation/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "trend",
+  "venue": "",
+  "hood": "",
+  "headline": "New York Times Adds Seven Boston Restaurants to Its 2026 Dining Guide",
+  "date": "2026-09-30",
+  "blurb": "Seven Boston restaurants were added to the New York Times' 2026 dining guide.",
+  "url": "https://www.boston.com/food/food-news/2026/09/30/new-york-times-best-boston-restaurants-guide-2026/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "",
+  "headline": "Police Say Accused Kidnapper Threatened Rhode Island Victim With Death",
+  "date": "2026-09-29",
+  "blurb": "Police say a man accused of kidnapping a Rhode Island victim asked whether the victim wanted to die there or in Boston.",
+  "url": "https://www.boston.com/news/crime/2026/09/29/police-alleged-kidnapper-asked-ri-victim-if-they-wanted-to-die-here-or-in-boston/",
+  "outlet": "Boston.com"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Hyde Park",
+  "headline": "Man Killed in Shooting on Walter Street in Hyde Park",
+  "date": "2026-09-28",
+  "blurb": "The Boston Police Homicide Unit is investigating a fatal shooting on Walter Street in Hyde Park.",
+  "url": "https://police.boston.gov/2026/09/28/boston-police-homicide-unit-investigates-fatal-shooting-on-walter-street-in-hyde-park/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Dorchester",
+  "headline": "Detectives Seek Suspects in Dorchester Armed Robbery",
+  "date": "2026-09-25",
+  "blurb": "Boston police asked for help identifying the people involved in an armed robbery in Dorchester.",
+  "url": "https://police.boston.gov/2026/09/25/bpd-community-alert-detectives-seek-publics-assistance-in-efforts-to-identify-individuals-in-relation-to-an-armed-robbery-in-dorchester/",
+  "outlet": "Boston Police"
+ },
+ {
+  "kind": "scene",
+  "venue": "",
+  "hood": "",
+  "headline": "Globe Weekend Guide for Sept. 25-27",
+  "date": "2026-09-24",
+  "blurb": "The Boston Globe's weekend roundup of concerts and events in and around Boston.",
+  "url": "https://www.bostonglobe.com/2026/09/24/arts/things-to-do-boston-this-weekend/",
+  "outlet": "Boston Globe"
+ },
+ {
+  "kind": "news",
+  "venue": "",
+  "hood": "Charlestown",
+  "headline": "Man Set Off Explosive Device During Standoff With Officers in Charlestown, Police Say",
+  "date": "2026-09-22",
+  "blurb": "Police say a man detonated an explosive device during a confrontation with officers in Charlestown.",
+  "url": "https://www.boston.com/news/crime/2026/09/22/man-detonated-explosive-device-during-confrontation-with-officers-in-charlestown-police-say/",
+  "outlet": "Boston.com"
+ }
+]
