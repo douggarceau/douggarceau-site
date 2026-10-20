@@ -1094,10 +1094,8 @@ h2.room{text-shadow:0 2px 0 #000,0 0 30px rgba(0,0,0,.7)!important;filter:satura
     </div>
   </header>
   <div id="coverSlot"></div>
-
 <div class="shrpop" id="shrPop" hidden><b>Share New York City Scream</b><a data-sh="fb" href="#">Facebook</a><a data-sh="x" href="#">X / Twitter</a><a data-sh="sms" href="#">Text message</a><a data-sh="mail" href="#">Email</a><a data-sh="copy" href="#">Copy link</a></div>
 
-  <div class="ticker" aria-label="The wire: running news"><span class="tlab">● THE WIRE</span><div class="run" id="tick"></div></div>
   <div class="hdrtools">
       <div class="mstat" id="mstat" hidden></div>
       <input class="hsearch" id="q" type="search" hidden>
@@ -1146,6 +1144,7 @@ h2.room{text-shadow:0 2px 0 #000,0 0 30px rgba(0,0,0,.7)!important;filter:satura
   <div class="fsnd" style="text-align:center;margin:14px 0 0"><button type="button" id="sndBtn" aria-pressed="true" style="all:unset;cursor:pointer;margin:0 6px;padding:5px 10px;border:1px solid #3a4048;border-radius:4px;font:700 11px/1 var(--mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase;color:#9aa4ad">🔊 Sound on</button><button type="button" id="ambBtn" aria-pressed="false" title="Low background drone." style="all:unset;cursor:pointer;margin:0 6px;padding:5px 10px;border:1px solid #3a4048;border-radius:4px;font:700 11px/1 var(--mono,ui-monospace,monospace);letter-spacing:.08em;text-transform:uppercase;color:#9aa4ad">🎧 Ambience off</button></div>
   <p class="pv" style="margin:14px 0 0;text-align:center;font:600 12px/1.4 var(--mono,ui-monospace,monospace);letter-spacing:.08em;color:#c9a227">Page visits: <b id="visits">…</b></p>
   <p class="legal" style="margin:10px 0 0;text-align:center;font:400 10.5px/1.5 var(--mono,ui-monospace,monospace);letter-spacing:.04em;color:#7d858d">© 2026 New York City Scream. All stories, content, designs and software on this site, including Newspace and the Tech &amp; AI Power Map, are the sole property of New York City Scream. All rights reserved.</p>
+  <div class="ticker" style="margin-top:18px" aria-label="The wire: running news"><span class="tlab">● THE WIRE</span><div class="run" id="tick"></div></div>
 </div>
 
 <script>
@@ -1155,7 +1154,7 @@ const CAL=[{"date": "2026-10-19", "time": "", "venue": "Birdland Theater", "hood
 const SCENE=[{"date": "2026-11-08", "end": "2026-11-08", "time": "7:30 PM", "title": "New York Comedy Festival: Marc Maron", "venue": "Beacon Theatre", "hood": "Upper West Side", "kind": "comedy", "blurb": "Marc Maron performs at the Beacon as part of the New York Comedy Festival; listed for 7:30 p.m.", "price": "", "url": "https://www.tickpick.com/buy-new-york-comedy-festival-marc-maron-tickets-beacon-theatre-ny-11-8-26-7pm/8130724/"}, {"date": "2026-11-12", "end": "2026-11-12", "time": "8:00 PM", "title": "New York Comedy Festival: Jordan Jensen", "venue": "Beacon Theatre", "hood": "Upper West Side", "kind": "comedy", "blurb": "Stand-up Jordan Jensen headlines a New York Comedy Festival show at the Beacon; listed for 8 p.m.", "price": "", "url": "https://www.tickpick.com/buy-new-york-comedy-festival-jordan-jensen-tickets-beacon-theatre-ny-11-12-26-8pm/8130720/"}, {"date": "2026-11-13", "end": "2026-11-13", "time": "6:45 PM", "title": "New York Comedy Festival: Ilana Glazer", "venue": "Beacon Theatre", "hood": "Upper West Side", "kind": "comedy", "blurb": "Ilana Glazer plays the Beacon during the New York Comedy Festival; listed for 6:45 p.m.", "price": "", "url": "https://www.tickpick.com/buy-new-york-comedy-festival-ilana-glazer-tickets-beacon-theatre-ny-11-13-26-6pm/8130721/"}, {"date": "2026-11-14", "end": "2026-11-14", "time": "7:00 PM", "title": "New York Comedy Festival: Daniel Sloss", "venue": "Beacon Theatre", "hood": "Upper West Side", "kind": "comedy", "blurb": "Scottish comic Daniel Sloss brings a New York Comedy Festival set to the Beacon; listed for 7 p.m.", "price": "", "url": "https://www.tickpick.com/buy-new-york-comedy-festival-daniel-sloss-tickets-beacon-theatre-ny-11-14-26-7pm/8130723/"}, {"date": "2026-11-15", "end": "2026-11-15", "time": "6:30 PM", "title": "New York Comedy Festival: Mojo Brookzz", "venue": "Beacon Theatre", "hood": "Upper West Side", "kind": "comedy", "blurb": "Mojo Brookzz headlines a New York Comedy Festival show at the Beacon; listed for 6:30 p.m.", "price": "", "url": "https://www.tickpick.com/buy-new-york-comedy-festival-mojo-brookzz-tickets-beacon-theatre-ny-11-15-26-6pm/8130722/"}, {"date": "2026-11-22", "end": "2026-11-22", "time": "", "title": "John Oliver and Seth Meyers", "venue": "Beacon Theatre", "hood": "Upper West Side", "kind": "comedy", "blurb": "John Oliver and Seth Meyers share the bill for a live comedy night at the Beacon.", "price": "", "url": "https://www.songkick.com/concerts/43191723-john-oliver-at-beacon-theatre"}];
 const UPDATED="Oct 17, 2026";
 const COVERS=[];
-const ISSUES=[{no:1,month:'Fall 2026',src:"img/cover-scream-fall2026.jpg",lines:[
+const ISSUES=[{no:1,month:'Fall 2026',src:"img/cover-scream-fall2026.jpg?v=3",lines:[
  ["who-said-martial-law", "Who Said Martial Law?", "Trump, the midterms, and the limits of presidential power."],
  ["homeless-by-choice", "Homeless by Choice", "The real cost of quitting the rat race."],
  ["the-swarm", "OpenAI’s Agents Break Out", "A hacking test. A hidden network. A breach at Hugging Face."],
@@ -1287,7 +1286,7 @@ function vCover(I){if(!I||!I.src)return '';
   <div class="sea-g">${loc.map(x=>`<button data-story="${x.slug}" style="--sc:${tc(x.topic)}"><small>${esc(tl(x.topic))}</small><b>${esc(x.title)}</b></button>`).join('')}</div>
   <div class="sea-h nat"><b>In the ${esc(I.month)} issue</b></div>
   <div class="nat-l">${I.lines.map(([slug,h])=>`<button data-story="${slug}">${esc(h)}</button>`).join('')}</div>
-  </div></div><div class="cvcrime">${(window.CRIMEITEMS||[]).length?`<div class="sea-h crm"><b>NYC Crime</b><button data-go="crime">Crime Watch →</button></div><div class="sea-g crm-g">${window.CRIMEITEMS.filter(x=>!window.TOPCRIME||x.url!==window.TOPCRIME.url).slice(0,12).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener"><small>${esc((x.kind||'crime')+(x.hood?' · '+x.hood:''))}</small><b>${esc(x.headline)}</b></a>`).join('')}</div>`:''}</div></section>`}
+  </div></div><div class="cvcrime">${(window.CRIMEITEMS||[]).length?`<div class="sea-h crm"><b>NYC Crime</b><button data-go="crime">Crime Watch →</button></div><div class="sea-g crm-g">${(()=>{const CS=window.CSBY||{};const L=window.CRIMEITEMS.filter(x=>!window.TOPCRIME||x.headline!==window.TOPCRIME.headline);return L.filter(x=>CS[x.headline]).concat(L.filter(x=>!CS[x.headline]))})().slice(0,12).map(x=>{const st=(window.CSBY||{})[x.headline],lab=`<small>${esc((x.kind||'crime')+(x.hood?' · '+x.hood:''))}</small><b>${esc(x.headline)}</b>`;return st?`<button data-story="${esc(st.slug)}" style="--sc:#e3170a">${lab}</button>`:`<a href="${esc(x.url)}" target="_blank" rel="noopener">${lab}</a>`}).join('')}</div>`:''}</div></section>`}
 
 const TK={'safety test':'#ff3a2a','real-world incident':'#e3170a','research finding':'#ff7a1a','warning':'#d9a400','doctrine':'#8fb3d9','treaty/debate':'#8fb3d9','battlefield':'#e3170a','drone swarm':'#2fd3c8','loitering munition':'#ff7a1a','autonomous weapon':'#ff3a2a','armed robot':'#39ff14'};
 const pcol=v=>/^\s*-/.test(v||'')?'#ff3a2a':/^\s*\+/.test(v||'')?'#39ff14':'#2fd3c8';
@@ -1443,7 +1442,7 @@ document.addEventListener('change',e=>{if(e.target.id==='nwHood'){STATE.nh=e.tar
 const cwAgo=s=>{if(!s)return'';const d=new Date(s.length<20?s+(s.length>10?'':'T12:00'):s);const m=(Date.now()-d)/6e4;return m<60?Math.max(1,Math.round(m))+'m ago':m<1440?Math.round(m/60)+'h ago':Math.round(m/1440)+'d ago'};
 const cwLocal=s=>{try{const d=new Date(s);return d.toLocaleString('en-US',{weekday:'short',hour:'numeric',minute:'2-digit'})}catch(e){return s}};
 function cwSpdKind(r){const s=(r.nibrs_offense_code_description||'')+' '+(r.offense_sub_category||'');if(r.shooting_type_group&&r.shooting_type_group!=='-')return'shooting';if(/homicide|murder/i.test(s))return'homicide';if(/robbery/i.test(s))return'robbery';if(/aggravated|assault|intimidation/i.test(s))return'assault';if(/burglary|breaking/i.test(s))return'burglary';if(/theft|larceny|stolen|shoplift/i.test(s))return'theft';return'other'}
-function cwNewsRow(n){const k=CRK[n.kind]||CRK.other;return `<a class="crrow" href="${esc(n.url)}" target="_blank" rel="noopener"><span class="crtag" style="--k:${k[0]}">${k[1]}</span><span><b>${esc(n.headline)}</b><span class="m">${esc(n.hood||'New York')} · ${shortDay(n.date)} · ${esc(n.outlet||'')}</span>${n.blurb?`<p>${esc(n.blurb)}</p>`:''}</span></a>`}
+function cwNewsRow(n){const k=CRK[n.kind]||CRK.other;return `${cwHref(n,'crrow')}<span class="crtag" style="--k:${k[0]}">${k[1]}</span><span><b>${esc(n.headline)}</b><span class="m">${esc(n.hood||'New York')} · ${shortDay(n.date)} · ${esc(n.outlet||'')}</span>${n.blurb?`<p>${esc(n.blurb)}</p>`:''}</span></a>`}
 function cwMap(q){return 'https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(q+', New York, NY')}
 function cwBlk(b){return (b||'').replace(/^(\d+)XX\s+BLOCK\s+OF\s+/i,(m,n)=>n+'00 ').replace(/\s+\/\s+/,' & ')}
 function cwSpdRow(r){const k=CRK[r._k&&CRK[r._k]?r._k:cwSpdKind(r)];const id=r.report_number;const isNew=CW.t&&!CW.seen.has(id);return `<a class="crrow${isNew?' new':''}" data-rn="${esc(id||'')}" href="${esc(r._u||cwMap(cwBlk(r.block_address)||((r.neighborhood||'')+' neighborhood')))}" target="_blank" rel="noopener" title="Show this block on a map"><span class="crtag" style="--k:${k[0]}">${k[1]}</span><span><b>${esc(r.nibrs_offense_code_description||'Report')}</b><span class="m">${esc((r.neighborhood||r.precinct||'New York').replace(/\b\w+/g,w=>w[0]+w.slice(1).toLowerCase()))} · ${esc((r.block_address||'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase()))} · ${cwLocal(r.offense_date)} · map ↗</span></span></a>`}
@@ -1466,7 +1465,7 @@ function cwFill(){const q=id=>document.getElementById(id);
   if(q('cwSpd'))q('cwSpd').innerHTML=CW.spd.slice(0,60).map(cwSpdRow).join('')||'<div class="empty">'+(CW.t?'No reports found.':'Loading NYPD reports…')+'</div>';
   if(q('cwFire'))q('cwFire').innerHTML=CW.fire.map(cwFireRow).join('')||'<div class="empty">No major 911 dispatches in the last 12 hours.</div>';
   if(q('cwStat')&&CW.t){const c=k=>CW.spd.filter(r=>cwSpdKind(r)===k).length;q('cwStat').innerHTML=`<div><b>${CW.spd.length}</b>NYPD reports, ${CW.hood?esc(cwHL(CW.hood))+', last 30 days':'last 4 days'}</div><div><b>${c('shooting')}</b>shooting reports</div><div><b>${c('assault')}</b>assaults</div><div><b>${c('robbery')}</b>robberies</div><div><b>${CW.fire.length}</b>fire &amp; rescue calls, 12h</div>`}
-  if(q('cwFront'))q('cwFront').innerHTML=CW.news.slice(0,3).map(n=>{const k=CRK[n.kind]||CRK.other;return `<a class="crrow" href="${esc(n.url)}" target="_blank" rel="noopener"><span class="crtag" style="--k:${k[0]}">${k[1]}</span><span><b>${esc(n.headline)}</b><span class="m">${esc(n.hood||'New York')} · ${shortDay(n.date)}</span></span></a>`}).join('')+CW.spd.slice(0,3).map(cwSpdRow).join('')||'<div class="empty">Loading…</div>';
+  if(q('cwFront'))q('cwFront').innerHTML=CW.news.slice(0,3).map(n=>{const k=CRK[n.kind]||CRK.other;return `${cwHref(n,'crrow')}<span class="crtag" style="--k:${k[0]}">${k[1]}</span><span><b>${esc(n.headline)}</b><span class="m">${esc(n.hood||'New York')} · ${shortDay(n.date)}</span></span></a>`}).join('')+CW.spd.slice(0,3).map(cwSpdRow).join('')||'<div class="empty">Loading…</div>';
   if(q('cwUp'))q('cwUp').textContent='Updated '+new Date(CW.t).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'})}
 setInterval(()=>{if(document.getElementById('cwSpd')||document.getElementById('cwFront'))cwLoad(true)},300000);
 const SCAN=[["47753", "NYPD Citywide", "NYPD citywide dispatch", "#1e90ff"], ["1189", "NYPD Transit", "Bronx and Manhattan transit police", "#6fc3ff"], ["47800", "FDNY", "Fire dispatch, all boroughs", "#ff2a14"]];
@@ -1508,10 +1507,14 @@ function memberBox(){const u=window.SS_USER;const go=u?`<a class="mb-go" href="$
  return `<div class="mbox"><b>Keep reading</b><p>The national cover stories are for members of New York City Scream: $4.99 a month, cancel anytime. New York news stays free.</p>${go}${u?'':'<small>Already a member? Log in with the email you used.</small>'}</div>`}
 function xShare(s){const u='https://douggarceau.com/nyc/'+(s?'?story='+s.slug:'');const t=s?s.title+' | New York City Scream':'New York City Scream';return 'https://twitter.com/intent/tweet?text='+encodeURIComponent(t)+'&url='+encodeURIComponent(u)}
 function xBtn(s){return `<a class="xbtn" href="${xShare(s)}" target="_blank" rel="noopener" aria-label="Share on X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-7.6 8.7L23 22h-6.8l-5.3-6.9L4.8 22H1.7l8.1-9.3L1 2h7l4.8 6.3L18.9 2zm-1.2 18h1.9L7.4 4H5.4l12.3 16z"/></svg>Share on X</a>`}
+/* Report-written crime stories (data/crimestories.json): NYC Crime box headlines open these first; outside links only when no story exists. */
+window.CSTORIES=[];window.CSBY={};function cwSt(x){return x&&(window.CSBY||{})[x.headline]}
+function cwHref(x,cls){const st=cwSt(x);return st?`<a class="${cls}" href="#" data-story="${esc(st.slug)}">`:`<a class="${cls}" href="${esc(x.url)}" target="_blank" rel="noopener">`}
+window.CSP=fetch('data/crimestories.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(L=>{if(!Array.isArray(L))return;window.CSTORIES=L;const M={};L.forEach(x=>{if(x&&x.item_headline&&x.slug)M[x.item_headline]=x});window.CSBY=M;if(typeof STATE!=='undefined'&&(STATE.view==='front'||STATE.view==='read')&&typeof render==='function')render();else if(typeof cwFill==='function')try{cwFill()}catch(e){}}).catch(()=>{});
 /* Top Crime Story banner: the most serious recent New York crime headline from data/crime.json (refreshed by the Crime Watch desk). */
 window.TOPCRIME=null;
 function crimeBanner(){const x=window.TOPCRIME;if(!x)return '<div class="spr crime-spr" style="min-height:64px"><span class="spr-tag">TOP CRIME STORY</span><span><b>Loading…</b></span></div>';
- return `<a class="spr crime-spr" href="${esc(x.url)}" target="_blank" rel="noopener"><span class="spr-tag">TOP CRIME STORY</span><span><b>${esc(x.headline)}</b><small>${esc((x.hood?x.hood+' · ':'')+(x.blurb||''))}</small></span><span class="spr-go">Read it →</span></a>`}
+ return `${cwHref(x,'spr crime-spr')}<span class="spr-tag">TOP CRIME STORY</span><span><b>${esc(x.headline)}</b><small>${esc((x.hood?x.hood+' · ':'')+(x.blurb||''))}</small></span><span class="spr-go">Read it →</span></a>`}
 fetch('data/crime.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d||!d.items||!d.items.length)return;
  const SEV={homicide:10,stabbing:9,shooting:8,assault:7,robbery:6,arson:6,fire:4,burglary:4,crash:3,arrest:3,theft:2,police:2,courts:2,other:1};
  const W=/killed|dead|death|fatal|murder|homicide|gunned|shot and|stabbed|kidnap|abduct|rape|sexual assault|child|teen|missing|body|carjack|hostage|machete|knife/i;
@@ -1519,7 +1522,7 @@ fetch('data/crime.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>
  const X=/kidnap|abduct|rape|hostage|child|killed|murdered|gunned down|stabbed to death/i,OLD=/years (on|later|ago)|cold case|anniversar/i;let best=null,bs=-1e9;d.items.forEach((x,i)=>{const age=(top-ds[i])/864e5;if(age>4)return;const t=x.headline+' '+(x.blurb||'');let sc=(/murder/i.test(x.headline)?60:0)+(SEV[x.kind]||1)+(W.test(x.headline)?5:0)+(X.test(x.headline)?3:0)+(W.test(x.blurb||'')?1:0)-age*0.7-(/no injur/i.test(x.blurb||'')?3:0)-(OLD.test(t)?8:0);if(sc>bs){bs=sc;best=x}});
  window.CRIMEITEMS=__mfirst(d.items.slice().sort((a,b)=>(b.date||'').localeCompare(a.date||'')));window.TOPCRIME=best||d.items[0];if(typeof STATE!=='undefined'&&STATE.view==='front'&&typeof render==='function')render()}).catch(()=>{});
 function vReader(slug){
-  const s=STORIES.find(x=>x.slug===slug); if(!s) return vFront();
+  const s=STORIES.find(x=>x.slug===slug)||(window.CSTORIES||[]).find(x=>x.slug===slug); if(!s) return vFront();
   const LOCK=!!(PAY_LINK&&typeof FEATURES!=='undefined'&&FEATURES.has(s.slug)&&!window.SS_MEMBER);
   let B=s.body;if(LOCK){let n=0;B=[];for(const p of s.body){if(p.startsWith('#T ')||p.startsWith('= '))continue;B.push(p);if(!/^(## |> )/.test(p)&&++n>=3&&!/:\s*$/.test(p))break}}
   return `<article class="reader styled" style="${sty(s.slug)}">
@@ -1695,10 +1698,10 @@ document.addEventListener('click',async e=>{
 },true);
 
 function render(){
-  const v=STATE.view;
+  const v=STATE.view,__y=scrollY;
   {const cs=document.getElementById('coverSlot');if(cs)cs.innerHTML=v==='front'?vCover(CUR):''}
   {const sb=document.getElementById('seaBanner');if(sb){const L=STORIES.find(x=>!(typeof FEATURES!=='undefined'&&FEATURES.has(x.slug)));sb.innerHTML=v==='front'&&L?`<button type="button" class="spr sea-spr" data-story="${L.slug}"><span class="spr-tag">NYC · TOP STORY</span><span><b>${esc(L.title)}</b><small>${esc(L.dek)}</small></span><span class="spr-go">Read it →</span></button>`:''}}
-  $('#view').innerHTML=`<div style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px">${v==='front'?vFront():v==='stories'?vStories():v==='bars'?vBars():v==='venues'?vVenues():v==='bands'?vBands():v==='advertise'?vAdvertise():v==='tech'?vTech():v==='crime'?vCrime():v==='cal'?vCal():v==='scene'?vScene():v==='submit'?vSubmit():v==='inbox'?vInbox():v==='read'?vReader(STATE.story):v==='search'?vSearch(STATE.q):vFront()}</div>`;
+  $('#view').innerHTML=`<div style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px">${v!=='front'&&v!=='read'&&!(v==='venues'&&STATE.vsel)&&!(v==='bands'&&STATE.bsel)?'<button class="back" data-go="front">← Back</button>':''}${v==='front'?vFront():v==='stories'?vStories():v==='bars'?vBars():v==='venues'?vVenues():v==='bands'?vBands():v==='advertise'?vAdvertise():v==='tech'?vTech():v==='crime'?vCrime():v==='cal'?vCal():v==='scene'?vScene():v==='submit'?vSubmit():v==='inbox'?vInbox():v==='read'?vReader(STATE.story):v==='search'?vSearch(STATE.q):vFront()}</div>`;
   document.querySelectorAll('#nav .nb').forEach(b=>b.toggleAttribute('aria-current',b.dataset.go===(v==='read'?STATE.prev:v))||b.setAttribute('aria-current','page'));
   document.querySelectorAll('#nav .nb').forEach(b=>{if(b.dataset.go===(v==='read'?STATE.prev:v))b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
   if(v==='submit') wireSubmit();
@@ -1706,14 +1709,23 @@ function render(){
   if(v==='venues'&&!STATE.vsel) paintVenues();
   if(v==='bands'&&!STATE.bsel) paintBands();
   if(v==='read') watchCmts(STATE.story);
+  hSync(__y);
 }
 function top_(){const y=$('#view').getBoundingClientRect().top+scrollY-90;if(scrollY>y)scrollTo({top:Math.max(0,y),behavior:'instant'})}
 function go(v){if(v!=='read'&&v!=='search')STATE.prev=v;STATE.view=v;render();top_();}
+/* Browser history: each section and story gets its own entry, so the browser Back button stays on the site. */
+var HNAV=false;try{history.scrollRestoration='manual'}catch(e){}
+function hKey(){return STATE.view==='read'?'read:'+STATE.story:STATE.view}
+function hUrl(){const b=location.pathname;return STATE.view==='read'&&STATE.story?b+'?story='+encodeURIComponent(STATE.story):STATE.view==='front'?b:b+'#'+STATE.view}
+function hSync(y){if(HNAV)return;const k=hKey(),st=history.state;try{if(!st||!st.k){history.replaceState({k,v:STATE.view,s:STATE.story,p:STATE.prev,n:0,y:0,boot:1},'');return}
+ if(st.boot){history.replaceState({k,v:STATE.view,s:STATE.story,p:STATE.prev,n:0,y:0,boot:1},'',hUrl());return}
+ if(st.k===k)return;history.replaceState(Object.assign({},st,{y}),'');history.pushState({k,v:STATE.view,s:STATE.story,p:STATE.prev,n:(st.n||0)+1,y:0},'',hUrl())}catch(e){}}
+addEventListener('popstate',e=>{const s=e.state;if(!s||!s.k)return;HNAV=true;try{STATE.view=s.v;STATE.story=s.s;STATE.prev=s.p||'front';render()}finally{HNAV=false}const y=s.y||0;requestAnimationFrame(()=>scrollTo({top:y,behavior:'instant'}))});
 document.addEventListener('click',e=>{
   const zm=e.target.closest('[data-zoom]'); if(zm){const d=document.createElement('div');d.className='zoom';d.innerHTML=`<img src="${zm.dataset.zoom}" alt="New York City Scream, full size">`;d.onclick=()=>d.remove();document.body.appendChild(d);return}
   if(e.target.closest('.zoom'))return;
-  const g=e.target.closest('[data-go]'); if(g){e.preventDefault();go(g.dataset.go);return}
-  const s=e.target.closest('[data-story]'); if(s){STATE.story=s.dataset.story;if(STATE.view!=='read')STATE.prev=STATE.view==='search'?'stories':STATE.view;STATE.view='read';render();const y=$('#view').getBoundingClientRect().top+scrollY-90;scrollTo({top:Math.max(0,y),behavior:'instant'});return}
+  const g=e.target.closest('[data-go]'); if(g){e.preventDefault();if(g.classList.contains('back')&&history.state&&history.state.n>0){history.back();return}go(g.dataset.go);return}
+  const s=e.target.closest('[data-story]'); if(s){if(s.tagName==='A')e.preventDefault();STATE.story=s.dataset.story;if(STATE.view!=='read')STATE.prev=STATE.view==='search'?'stories':STATE.view;STATE.view='read';render();const y=$('#view').getBoundingClientRect().top+scrollY-90;scrollTo({top:Math.max(0,y),behavior:'instant'});return}
   const t=e.target.closest('[data-topic]'); if(t){STATE.topic=t.dataset.topic;render();return}
   const gn=e.target.closest('[data-genre]'); if(gn){STATE.genre=gn.dataset.genre;render();return}
   const k=e.target.closest('[data-kind]'); if(k){STATE.kind=k.dataset.kind;render();return}
@@ -1903,8 +1915,9 @@ const SFX=(function(){let ctx=null,out=null,on=true,last=0;try{on=localStorage.g
 (()=>{let last=null;setInterval(()=>{const t=[...document.querySelectorAll('.vtile')];if(!t.length||document.hidden)return;if(last)last.classList.remove('lit');const n=t[Math.floor(Math.random()*t.length)];if(n.matches(':hover'))return;n.classList.add('lit');last=n;setTimeout(()=>n.classList.remove('lit'),1600)},900)})();
 </script>
 <script>
-(()=>{const P=new URLSearchParams(location.search),g=P.get('go')||location.hash.slice(1);if(g&&['tech','crime','stories','bars','cal','scene','ink','screen','venues','bands','front'].includes(g)){go(g)}})();
+(()=>{const P=new URLSearchParams(location.search),g=P.get('go')||location.hash.slice(1),sl=P.get('story');if(sl){STATE.prev='front';STATE.story=sl;STATE.view='read';render();return}if(g&&['tech','crime','stories','bars','cal','scene','ink','screen','venues','bands','front'].includes(g)){go(g)}})();
 (()=>{const q=new URLSearchParams(location.search).get('story');if(!q||typeof STORIES==='undefined'||!STORIES.some(s=>s.slug===q))return;STATE.story=q;STATE.prev='front';STATE.view='read';render();scrollTo(0,0)})();
+try{const s=history.state;if(s&&s.boot)history.replaceState(Object.assign({},s,{boot:0}),'')}catch(e){}
 </script>
 <script>
 setInterval(()=>{if(document.hidden)return;const r=document.querySelectorAll('.troom .bwl .bwr');if(r.length){const n=r[Math.floor(Math.random()*r.length)];n.classList.add('flash');setTimeout(()=>n.classList.remove('flash'),900)}
@@ -1981,7 +1994,7 @@ function pmTeaser(a){if(!a)return;const box=a.parentNode;box.className=box.class
   setInterval(()=>{if(live())showC(false)},4200)}).catch(()=>{})}
 const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
 function flipTo(a,s){if(!a)return;if(still){fill(a,s);return}const b=a.parentNode;b.classList.add('flip');setTimeout(()=>{fill(a,s);b.classList.remove('flip')},460)}
-let i=0,j=0;fill($('lsA'),{tag:'NYC CRIME',bigText:'Crime headlines',name:'New York',sub:'Loading the latest…',go:'Crime Watch',theme:'cw',href:'#crime',view:'crime'});fill($('lsB'),NW[0]);fill($('lsC'),CWX[0]);j=Math.min(4,Math.max(0,WRF.length-1));fill($('lsD'),WRF[j]||STF[0]);let q=0;fill($('lsE'),SCF[0]);let a2=0;const BEAT=/corrupt|scandal|misconduct|fraud|brib|ethic|indict|lawsuit|\bsued\b|investigat|reprimand|complaint|probe|resign|fired|deficit|hiding|cover-?up|subpoena|audit|kickback|embezzl|police chief|lieutenant|officers? (fired|charged|disciplined)/i;
+let i=0,j=0;fill($('lsA'),{tag:'NYC CRIME',bigText:'Crime headlines',name:'New York',sub:'Loading the latest…',go:'Crime Watch',theme:'cw',href:'#crime',view:'crime'});fill($('lsB'),NW[0]);fill($('lsC'),CWX[0]);j=Math.min(4,Math.max(0,WRF.length-1));fill($('lsD'),CWX[0]);let q=0;fill($('lsE'),SCF[0]);let a2=0;const BEAT=/corrupt|scandal|misconduct|fraud|brib|ethic|indict|lawsuit|\bsued\b|investigat|reprimand|complaint|probe|resign|fired|deficit|hiding|cover-?up|subpoena|audit|kickback|embezzl|police chief|lieutenant|officers? (fired|charged|disciplined)/i;
 const CORR=(typeof BARS!=='undefined'?BARS:[]).filter(x=>x&&x.url&&x.headline&&BEAT.test(x.headline)).slice(0,40).map(x=>({tag:'NYC · CORRUPTION & SCANDAL',bigText:x.headline,name:(x.venue||x.hood||'New York'),when:(typeof shortDay==='function'&&x.date?shortDay(x.date):(x.date||''))+(x.outlet?' · '+x.outlet:''),sub:x.blurb||'',go:'Read it',theme:'cw',cwi:1,href:x.url,ext:1}));
 let CRX=[];fill($('lsH'),CORR[0]||AIF[0]);
 const spdIntro={tag:'NYPD LIVE · New York police reports',big:'Live<em>from the NYPD report stream</em>',name:'Updated every few minutes',sub:'Assaults, robberies and shootings as New York police log them, straight from the city\'s open data.',go:'Watch the stream',theme:'spd',href:'#crime',view:'crime'};
@@ -1990,18 +2003,20 @@ const spdPull=()=>{try{const g=(typeof CW!=='undefined'&&CW.spd)||[];const V=g.f
  SPF=V.map(r=>{const k=CRK[cwSpdKind(r)]||CRK.other;const cap=t=>(t||'').toLowerCase().replace(/\b\w/g,c=>c.toUpperCase());return {tag:'NYPD LIVE · '+k[1],big:esc(r.nibrs_offense_code_description||k[1])+'<em>'+esc(cap(r.neighborhood||r.precinct||'New York'))+'</em>',name:cap(r.block_address||''),when:(typeof cwLocal==='function'?cwLocal(r.offense_date):''),go:'See it on Crime Watch',theme:'spd',href:'#crime',rep:r.report_number,hood:r.neighborhood||'',k:k[0]}})}catch(e){}};
 setInterval(spdPull,15000);setTimeout(spdPull,4000);
 let u=0;fill($('lsF'),MUF[0]);
-let c=0;fetch('data/crime.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).then(d=>{if(!d||!d.items)return;
- const it=d.items.slice(0,40).map(x=>({tag:'CRIME WATCH · '+(x.kind||'police'),bigText:x.headline,name:(x.hood||'New York'),when:(typeof shortDay==='function'?shortDay(x.date):x.date)+(x.outlet?' · '+x.outlet:''),sub:x.blurb,go:'Read it',theme:'cw',cwi:1,href:x.url,ext:1}));
- CWX=CWX.concat(it);CRX=d.items.slice(0,40).map(x=>({tag:'NYC CRIME · '+(x.kind||'police'),bigText:x.headline,name:(x.hood||'New York'),when:(typeof shortDay==='function'?shortDay(x.date):x.date)+(x.outlet?' · '+x.outlet:''),sub:x.blurb,go:'Read it',theme:'cw',cwi:1,href:x.url,ext:1}));if(CRX.length)fill($('lsA'),CRX[0])}).catch(()=>{});
+let c=0;Promise.all([fetch('data/crime.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null),(window.CSP||Promise.resolve()).catch(()=>{})]).then(([d])=>{if(!d||!d.items)return;const SL=x=>{const st=typeof cwSt==='function'&&cwSt(x);return st?{story:st.slug,href:'#',ext:0}:{href:x.url,ext:1}};
+ const it=d.items.slice(0,40).map(x=>({tag:'CRIME WATCH · '+(x.kind||'police'),bigText:x.headline,name:(x.hood||'New York'),when:(typeof shortDay==='function'?shortDay(x.date):x.date)+(x.outlet?' · '+x.outlet:''),sub:x.blurb,go:'Read it',theme:'cw',cwi:1,...SL(x)}));
+ CWX=CWX.concat(it);CRX=d.items.filter(x=>typeof cwSt!=='function'||cwSt(x)).slice(0,40).map(x=>({tag:'NYC CRIME · '+(x.kind||'police'),bigText:x.headline,name:(x.hood||'New York'),when:(typeof shortDay==='function'?shortDay(x.date):x.date)+(x.outlet?' · '+x.outlet:''),sub:x.blurb,go:'Read it',theme:'cw',cwi:1,...SL(x)}));if(CRX.length)fill($('lsA'),CRX[0])}).catch(()=>{});
 setInterval(()=>{i++;setTimeout(()=>flipTo($('lsB'),NW[i%NW.length]),450);setTimeout(()=>{if(SCF.length>1){q=(q+1)%SCF.length;flipTo($('lsE'),SCF[q])}},1350);setTimeout(()=>{if(MUF.length>1){u=(u+1)%MUF.length;flipTo($('lsF'),MUF[u])}},1800);setTimeout(()=>{if(SPF.length>1){sp=(sp+1)%SPF.length;flipTo($('lsG'),SPF[sp])}},2250);setTimeout(()=>{if(CORR.length>1){a2=(a2+1)%CORR.length;flipTo($('lsH'),CORR[a2])}},2700);setTimeout(()=>{if(CRX.length>1){c=(c+1)%CRX.length;flipTo($('lsA'),CRX[c])}},900)},5600);
-if(WRF.length>1)setInterval(()=>{j=(j+1)%WRF.length;flipTo($('lsD'),WRF[j])},6000);
-const XT=[['lsI',()=>CRX.length?CRX:WRF,4],['lsJ',()=>WRF,2],['lsK',()=>WRF,12],['lsL',()=>CORR,1],['lsM',()=>CRX.length?CRX:WRF,12],['lsN',()=>MUF,3],['lsO',()=>SCF,2],['lsP',()=>WRF,7]];
+/* Crime-styled tiles prefer the Report's own crime stories (CRX) over outside wire links. */
+const CRW=()=>CRX.length?CRX:WRF;
+setInterval(()=>{const L=CRW();if(L.length>1){j=(j+1)%L.length;flipTo($('lsD'),L[j])}},6000);
+const XT=[['lsI',()=>CRX.length?CRX:WRF,4],['lsJ',CRW,2],['lsK',CRW,12],['lsL',()=>CORR,1],['lsM',()=>CRX.length?CRX:WRF,12],['lsN',()=>MUF,3],['lsO',()=>SCF,2],['lsP',CRW,7]];
 const xk=XT.map(()=>0),xf=XT.map(()=>false);
 const xtFill=(n,flip)=>{const [id,g,o]=XT[n];const L=g()||[];if(!L.length)return;const s=L[(o+xk[n])%L.length];if(flip&&xf[n])flipTo($(id),s);else fill($(id),s);xf[n]=true};
 XT.forEach((_,n)=>xtFill(n,false));
 setInterval(()=>XT.forEach((_,n)=>setTimeout(()=>{xk[n]++;xtFill(n,true)},300+(n%10)*420)),6400);
 /* Fill the side margins with news boxes all the way down the page */
-const XP=[()=>WRF,()=>CRX.length?CRX:WRF,()=>CORR.length?CORR:WRF,()=>STF,()=>CRX.length?CRX:WRF,()=>WRF];
+const XP=[CRW,CRW,()=>CORR.length?CORR:WRF,()=>STF,CRW,CRW];
 const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.lsrow'),w=document.querySelector('.wrap'),s=document.querySelector('.lspot');if(!row||!w||!s)return;
  const step=s.offsetHeight+12,rows=Math.floor((w.offsetHeight-150-40)/step);
  for(let t=9;t<=rows;t++)['l','r'].forEach((side,si)=>{const id='lsX'+t+side;if(document.getElementById(id))return;
@@ -2120,6 +2135,11 @@ html body #coverSlot .nat-l button{font:700 19px/1.25 var(--hd)!important;color:
 html body #coverSlot .nat-l button:hover{color:#fff!important}
 html body #coverSlot .cvcrime{padding:0 16px 16px}
 @media (min-width:900px){html body #coverSlot .cvcrime .crm-g{grid-template-columns:repeat(3,minmax(0,1fr))!important}}
+
+/* Back button pulses so readers can always find their way back */
+@keyframes backPulse{0%,100%{box-shadow:0 0 8px rgba(30,144,255,.55);transform:scale(1)}50%{box-shadow:0 0 24px rgba(30,144,255,1),0 0 6px #cfe8ff;transform:scale(1.06)}}
+html body .back{animation:backPulse 1.6s ease-in-out infinite!important}
+@media (prefers-reduced-motion:reduce){html body .back{animation:none!important}}
 </style>
 <script>document.addEventListener("click",e=>{const a=e.target.closest&&e.target.closest('a[href^="?story="]');if(!a)return;const q=a.getAttribute("href").slice(7);if(typeof STORIES==="undefined"||!STORIES.some(s=>s.slug===q))return;e.preventDefault();STATE.prev=STATE.view==="read"?(STATE.prev||"front"):(STATE.view||"front");STATE.story=q;STATE.view="read";render();scrollTo(0,0)},true);document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll('a[href^="?story="][target]').forEach(a=>a.removeAttribute("target"))});new MutationObserver(()=>{document.querySelectorAll('a[href^="?story="][target]').forEach(a=>a.removeAttribute("target"))}).observe(document.documentElement,{childList:true,subtree:true});(()=>{const go=()=>{const b=document.querySelector(".clsbar.bot");if(!b)return;const s=document.createElement("span");s.id="visits";b.appendChild(s);fetch("https://api.counterapi.dev/v1/douggarceau-com/nyc-visits/up").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.count)s.textContent="VISITORS "+Number(d.count).toLocaleString("en-US")}).catch(()=>{})};document.readyState==="loading"?document.addEventListener("DOMContentLoaded",go):go()})();</script></body>
 </html>
