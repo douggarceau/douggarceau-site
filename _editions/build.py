@@ -316,6 +316,8 @@ def main(city, out):
     # the Top Story banner: first local story
     h = h.replace("STORIES.find(x=>x.slug==='ballard-light-rail-2042-forum')||", '')
     # ---------- layout tweaks for the city editions ----------
+    h = re.sub(r'<style id="edtweak">.*?</style>', '', h, flags=re.S)
+    h = re.sub(r'<script>\(\(\)=>\{const go=\(\)=>\{const b=document\.querySelector\("\.clsbar\.(?:bot|top)".*?</script>', '', h, flags=re.S)
     # section menu sits at the very top, right under the top strip
     mn = re.search(r'\n  <nav class="navbar" id="nav".*?</nav>\n', h, re.S)
     if mn:
@@ -330,7 +332,8 @@ def main(city, out):
       '.mast .lgimg{margin:4px auto 6px!important;max-width:520px!important}'
       '.lgimg img{width:min(100%,520px)!important;filter:drop-shadow(0 2px 6px rgba(0,0,0,.7))!important;animation:none!important}'
       '.wrap>.navbar{margin:8px auto 6px}'
-      '#visits{margin-left:14px;opacity:.9}'
+      '#vstrip{margin-left:14px;opacity:.9}'
+      '#shr{margin-left:10px;font:800 10px/1 var(--kick,inherit);letter-spacing:.08em;text-transform:uppercase;background:none;border:1px solid #4b5157;border-radius:3px;padding:2px 6px;cursor:pointer;color:#15181b}#shr:hover{background:rgba(255,255,255,.5)}'
       '</style>'
     )
     h = h.replace('</head>', css + '</head>', 1)
@@ -341,8 +344,11 @@ def main(city, out):
       'if(typeof STORIES==="undefined"||!STORIES.some(s=>s.slug===q))return;e.preventDefault();STATE.prev=STATE.view==="read"?(STATE.prev||"front"):(STATE.view||"front");STATE.story=q;STATE.view="read";render();scrollTo(0,0)},true);'
       'document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(\'a[href^="?story="][target]\').forEach(a=>a.removeAttribute("target"))});'
       'new MutationObserver(()=>{document.querySelectorAll(\'a[href^="?story="][target]\').forEach(a=>a.removeAttribute("target"))}).observe(document.documentElement,{childList:true,subtree:true});'
+      # tiny share button in the top strip
+      '(()=>{const go=()=>{const b=document.querySelector(".clsbar.top");if(!b||document.getElementById("shr"))return;const x=document.createElement("button");x.id="shr";x.type="button";x.textContent="Share";x.onclick=async()=>{const u=location.href.split("#")[0],d={title:document.title,url:u};try{if(navigator.share){await navigator.share(d)}else{await navigator.clipboard.writeText(u);x.textContent="Copied";setTimeout(()=>x.textContent="Share",1500)}}catch(e){}};b.appendChild(x)};'
+      'document.readyState==="loading"?document.addEventListener("DOMContentLoaded",go):go()})();'
       # visitor counter in the bottom strip
-      '(()=>{const go=()=>{const b=document.querySelector(".clsbar.bot");if(!b)return;const s=document.createElement("span");s.id="visits";b.appendChild(s);'
+      '(()=>{const go=()=>{const b=document.querySelector(".clsbar.bot");if(!b)return;const s=document.createElement("span");s.id="vstrip";b.appendChild(s);'
       'fetch("https://api.counterapi.dev/v1/douggarceau-com/' + C['slug'] + '-visits/up").then(r=>r.ok?r.json():null).then(d=>{if(d&&d.count)s.textContent="VISITORS "+Number(d.count).toLocaleString("en-US")}).catch(()=>{})};'
       'document.readyState==="loading"?document.addEventListener("DOMContentLoaded",go):go()})();'
       '</script>'
