@@ -1,10 +1,9 @@
 {
- "updated": "2026-10-21T16:30Z",
+ "updated": "2026-10-21T20:28Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
   "Drummer's Review (8)",
-  "Beat It (8)",
   "Drumeo (8)",
   "Sick Drummer Magazine (8)",
   "The UK Drum Show (8)",
@@ -12,13 +11,14 @@
   "Scott K Fish (5)",
   "The Drum Ninja (8)",
   "Electronic Drum Advisor (8)",
+  "drum-tec (8)",
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
  "errors": {
-  "drum-tec": "<urlopen error timed out>"
+  "Beat It": "HTTP Error 502: Bad Gateway"
  },
- "raw_count": 61,
+ "raw_count": 53,
  "items": [
   {
    "title": "WFL III Drums Announces Pause in Operations",
@@ -42,12 +42,6 @@
    "title": "Ludwig Evolution Series Welcomes the New Moon Dust Finish",
    "link": "https://www.drummingnewsnetwork.com/ludwig-evolution-series-welcomes-the-new-moon-dust-finish/",
    "source": "Drumming News Network",
-   "date": "2026-10-19"
-  },
-  {
-   "title": "DW Design Mapa Burl over European Birch",
-   "link": "https://en.beatit.tv/dw-design-mapa-burl-over-european-birch/",
-   "source": "Beat It",
    "date": "2026-10-19"
   },
   {
@@ -93,12 +87,6 @@
    "date": "2026-10-14"
   },
   {
-   "title": "Sabian mid-year and fall releases",
-   "link": "https://en.beatit.tv/sabian-mid-year-and-fall-releases/",
-   "source": "Beat It",
-   "date": "2026-10-14"
-  },
-  {
    "title": "Drum Workshop, Inc. (DW) announces the Design Series\u00ae Limited Mapa Burl over European Birch",
    "link": "https://www.drummingnewsnetwork.com/drum-workshop-inc-dw-announces-the-design-series-limited-mapa-burl-over-european-birch/",
    "source": "Drumming News Network",
@@ -129,12 +117,6 @@
    "date": "2026-10-12"
   },
   {
-   "title": "Dominic Howard (Muse) joins Ludwig family",
-   "link": "https://en.beatit.tv/dominic-howard-muse-joins-ludwig-family/",
-   "source": "Beat It",
-   "date": "2026-10-12"
-  },
-  {
    "title": "150 Only: Drumeo \u00d7 SABIAN Bundle Lands at The UK Drum Show",
    "link": "https://drummersreview.com/news/150-only-drumeo-x-sabian-bundle-lands-at-the-uk-drum-show/",
    "source": "Drummer's Review",
@@ -156,12 +138,6 @@
    "title": "Conn Selmer Europe Announces 2026 Scholarship Winner",
    "link": "https://drummersreview.com/news/conn-selmer-europe-announces-2026-scholarship-winner/",
    "source": "Drummer's Review",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "New Tama Starclassic Walnut/Birch Duracover finishes",
-   "link": "https://en.beatit.tv/new-tama-starclassic-walnut-birch-duracover-finishes/",
-   "source": "Beat It",
    "date": "2026-10-06"
   },
   {
@@ -195,12 +171,6 @@
    "date": "2026-10-01"
   },
   {
-   "title": "Aquiles Priester joins Czarcie Kopyto family",
-   "link": "https://en.beatit.tv/aquiles-priester-joins-czarcie-kopyto-family/",
-   "source": "Beat It",
-   "date": "2026-10-01"
-  },
-  {
    "title": "Every Breath You Take Drum Transcription",
    "link": "https://thedrumninja.com/every-breath-you-take-drum-transcription/",
    "source": "The Drum Ninja",
@@ -211,12 +181,6 @@
    "link": "https://thedrumninja.com/this-love-drum-transcription/",
    "source": "The Drum Ninja",
    "date": "2026-10-01"
-  },
-  {
-   "title": "Abe Laboriel Jr. performs with Pearl Jam",
-   "link": "https://en.beatit.tv/abe-laboriel-jr-performs-with-pearl-jam/",
-   "source": "Beat It",
-   "date": "2026-09-30"
   },
   {
    "title": "Jump Drum Transcription",
@@ -231,12 +195,6 @@
    "date": "2026-09-30"
   },
   {
-   "title": "Colin Woolway has passed away",
-   "link": "https://en.beatit.tv/colin-woolway-has-passed-away/",
-   "source": "Beat It",
-   "date": "2026-09-29"
-  },
-  {
    "title": "Kevin Paradis \u2013 Agonanist \u2013 Effacement \u2013 Exclusive Drum Play-through",
    "link": "https://sickdrummermagazine.com/news/latest-news/kevin-paradis-agonanist-effacement-drum-play-through/",
    "source": "Sick Drummer Magazine",
@@ -249,16 +207,58 @@
    "date": "2026-09-25"
   },
   {
-   "title": "14\u2033x7\u2033 Tama S.L.P. G-Maple Mappa Burl Snare Drum",
-   "link": "https://en.beatit.tv/14x7-tama-s-l-p-g-maple-mappa-burl-snare-drum/",
-   "source": "Beat It",
-   "date": "2026-09-23"
-  },
-  {
    "title": "Drumeo Is Giving Away Its \u00a320 Groove Book Free Ahead of The UK Drum Show",
    "link": "https://theukdrumshow.com/show-news/drumeo-is-giving-away-its-20-groove-book-free-ahead-of-the-uk-drum-show/",
    "source": "The UK Drum Show",
    "date": "2026-09-23"
+  },
+  {
+   "title": "\u201cIt\u2019s hard to argue with the amount of features on offer here for such an affordable price\u201d: Millenium Drums MPS-350 E-Drum Set review",
+   "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-mps-350-e-drum-set-review",
+   "source": "MusicRadar",
+   "date": "2026-09-18"
+  },
+  {
+   "title": "WOODIES Drumsticks Review",
+   "link": "https://sickdrummermagazine.com/s1-news/c82-product-reviews/woodies-drumsticks-review-why-the-5a-long-won-me-over/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-17"
+  },
+  {
+   "title": "Zed Amarin \u2013 Esodic \u2013 Of The Grave \u2013 Drum Play-through",
+   "link": "https://sickdrummermagazine.com/news/latest-news/zed-amarin-esodic-of-the-grave-drum-play-through/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "The new Millenium Drums MPS-1500 e-kit could be the hybrid drum set you've been looking for",
+   "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-new-flagship-mps-1500-hybrid-x-electronic-drum-set-will-turn-some-heads",
+   "source": "MusicRadar",
+   "date": "2026-09-16"
+  },
+  {
+   "title": "Modern Drummer Announces Celeste Fox as the 2026 Winner of the Neil Peart Spirit of Drumming Scholarship",
+   "link": "https://www.moderndrummer.com/2026/09/modern-drummer-announces-celeste-fox-as-the-2026-winner-of-the-neil-peart-spirit-of-drumming-scholarship/",
+   "source": "Modern Drummer",
+   "date": "2026-09-15"
+  },
+  {
+   "title": "Modern Drummer presents Eric Singer\u2019s KISS Kruise Drum Off",
+   "link": "https://www.moderndrummer.com/2026/09/modern-drummer-presents-eric-singers-kiss-kruise-drum-off/",
+   "source": "Modern Drummer",
+   "date": "2026-09-14"
+  },
+  {
+   "title": "Guitar Center crowns champion of Drum-Off 2026 following national competition",
+   "link": "https://www.moderndrummer.com/2026/09/guitar-center-crowns-champion-of-drum-off-2026-following-national-competition/",
+   "source": "Modern Drummer",
+   "date": "2026-09-10"
+  },
+  {
+   "title": "One of Axl Rose's signature moves was almost cut from the Sweet Child O' Mine video",
+   "link": "https://www.musicradar.com/artists/i-thought-axls-snake-dancing-wasnt-rock-and-roll-so-i-actually-told-the-editor-to-cut-all-of-that-stuff-out-then-i-heard-someone-say-oh-my-god-thats-so-sexy-one-of-axl-roses-signature-moves-was-almost-cut-from-the-sweet-child-o-mine-video",
+   "source": "MusicRadar",
+   "date": "2026-09-09"
   }
  ]
 }
