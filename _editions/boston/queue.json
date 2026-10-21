@@ -1,5 +1,16 @@
 {
-"queued": [],
+"queued": [
+{
+"url": "https://www.boston25news.com/news/local/2-rockland-men-arrested-connection-string-thefts-pembroke-country-club/AV4PXBCHPNCDRJZVG4AIOU6WHA/",
+"headline": "2 Rockland men arrested in connection to string of thefts from Pembroke Country Club",
+"reason": "WebFetch permission request timed out; could not read"
+},
+{
+"url": "https://whdh.com/news/local/police-respond-to-bus-crash-in-roxbury/",
+"headline": "Police respond to bus crash in Roxbury (71 Elm Hill Ave, Oct 20)",
+"reason": "Read, but too thin for a 150-word story (one injured, no other details); needs a follow-up source"
+}
+],
 "dropped": [
 {
 "url": "https://police.boston.gov/2026/10/17/missing-person-alert-boston-police-seek-publics-assistance-in-efforts-to-locate-84-year-old-robert-kern/",
