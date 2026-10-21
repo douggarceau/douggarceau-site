@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T12:39Z",
+ "updated": "2026-10-21T16:30Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -12,11 +12,12 @@
   "Scott K Fish (5)",
   "The Drum Ninja (8)",
   "Electronic Drum Advisor (8)",
-  "drum-tec (8)",
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
- "errors": {},
+ "errors": {
+  "drum-tec": "<urlopen error timed out>"
+ },
  "raw_count": 61,
  "items": [
   {
