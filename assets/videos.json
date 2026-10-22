@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T16:32Z",
+ "updated": "2026-10-22T20:28Z",
  "items": [
   {
    "id": "j7mqwWTq_dQ",
@@ -7,6 +7,13 @@
    "source": "Gretsch",
    "date": "2026-10-22",
    "kind": "DEMO"
+  },
+  {
+   "id": "QAGMRI8D8qU",
+   "title": "Jon Davison of Yes Interview Fri. 10/23!",
+   "source": "Drumtalk TV",
+   "date": "2026-10-22",
+   "kind": "INTERVIEW"
   },
   {
    "id": "Aitj_86kXCI",
@@ -32,13 +39,6 @@
   {
    "id": "stjaiJr2fhM",
    "title": "Drumming Injury Talk - October 16, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-10-17",
-   "kind": "TALK"
-  },
-  {
-   "id": "dguAYRJK-_4",
-   "title": "Drum Talk TV News Desk Report - October 16, 2026",
    "source": "Drumtalk TV",
    "date": "2026-10-17",
    "kind": "TALK"
@@ -120,7 +120,7 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCTInFrw5xOiRGCIAEvGAbvg NAMM TV KAZ (0)",
+  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
