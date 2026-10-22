@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T20:28Z",
+ "updated": "2026-10-22T00:57Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -98,11 +98,19 @@
    "release": true
   },
   {
-   "title": "Anthropic, music publishers to make key arguments in AI training case",
+   "title": "AI-Generated Music and the Future of Creativity Discussed at Billboard Latin Music Week",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNT2pLeXExODAxTEVGNzMwdXF6NGt6VG8yV2Rfa2ZnQnlkYldkcE9lX3Z6bVRvdFI0NDBkRWdETU81Y3Q5OUV2UEVzS1hJUW5nR0Zmenp4azV3TUhKbUp0MkZ1SjR3SlVDNUhWakFUeENuSHgwTUZfUGsxTTVISUNHUlM3SjloQ1FMaXZONkVDVS1tS0U?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-21",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Anthropic, music publishers square off on 'fair use' defense in AI copyright case",
    "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNT3pZQUU3NTI4WFhrZkxldDBxUTRpT20za0J4X2JkYTUxdExnbFdaUEoyam5PWmFTa2xNWHpTTGZqdTl6SWhuOW4tcXMyNE9uOHNqcHlIRGhHendlM2JyYkJVRjE1RnNSUDhpVjFZNEY3Vy1kamtSVTJXaFdiWE1oYXlxS2Q1Ylg4NV9kNmhLMElBOTAxdXJVa0E1eEt6NUkxWU9UcTU1MGIyeDdBUy1jcXFvR04?oc=5",
    "source": "Reuters",
    "date": "2026-10-21",
-   "kind": "NEWS",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -154,14 +162,6 @@
    "release": false
   },
   {
-   "title": "'Avatar' Composer and More Speak Out About AI at WSA Film Music Days",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNZnZtSGs4cWhKRVNKZ0Q1UTUyTjJJbjV1NTFMSWhFbW5DZnZyUXBaVkd0MXVLM3J5ay1sNjMwVXNkUUpBYXNVbElPbTNfRTN1Xzgta284cFpUc20yZURLMkVMZE1FR2VjMTcwcmpkdkFKT2pKSjVSY0xCbnFuMmF5TGNKenZrYUJGX1o3WFA5TExRVjF4YXc?oc=5",
-   "source": "Variety",
-   "date": "2026-10-16",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tWFdrdkRtODRib3N0eW1ucFlieC1yVU9DS3hDSXBIbHllVFhwalZwTE5HR1BORzZPNG9SMDN0UlZ4aWxSRGJkWFlGamJFdHh5NmtybF9YRjE5MlJLMU96ZmkwM3p2RS16NTk4UUtxdkxBRk83UGpnQ1dnRkRXTlk?oc=5",
    "source": "Ars Technica",
@@ -178,18 +178,18 @@
    "release": false
   },
   {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-14",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "YouTube to Label AI-Generated Songs Across Its Platforms: Listeners \u2018Want Transparency\u2019",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOSkQ1RkJjUWFyTy1kcWJheF9wVEE5S1p5Njh4UVJMYms1cGRVaW9yMVR5NmNVeFBNXzIzaEZQUTVRNHV2UlpNX2lybk1xek9UYUlPLTdnWUxkQ2lBTTNlbWhyQVd1VzZmeEd4OUh1dnpDbFM0ZnhDcmN2SGljVy1IUHNiSHBqcUFYSmo2NkYwYjNyVTg?oc=5",
    "source": "Variety",
    "date": "2026-10-14",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "New Suno live music division to help make it the \u201cfirst creative entertainment platform\u201d",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNeXpYem9OQ2p4MTl3eGdXN01QS2xQWkd2d1F6emVrUUl0STBQbWkwMk5tSzdnNU14UVRCN21KZVZtTGk3S1VsZkhGbnlxN3BqSnNOZ0NhTzRDTGhEUVNfZkNnN0tzOXM2b3ZBWV9CTWxPcFNvUDRmTktsQTVWZExiUmJsSGtETHN3TDI5TG5oVmFtRFQ3b29ZYlNCOGhQVDRtUC1ESF9UZm9JRUxocUZDUHZDT2xGTkZSX3JWeg?oc=5",
+   "source": "Music Ally",
+   "date": "2026-10-09",
    "kind": "NEWS",
    "release": false
   }
@@ -228,14 +228,6 @@
    "release": true
   },
   {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-14",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "\u201cWe\u2019re in the entertainment business. If someone uses Suno to write a lyric, it\u2019s not a high crime or misdemeanour\u201d: Joe Bonamassa has sympathy for up-and-coming artists ",
    "link": "https://news.google.com/rss/articles/CBMi0gJBVV95cUxObUlITDNxTEQydllOTzR3S0Y4YlRsblVsUXoybkJ3VWt5VTUzdjdLQjhGdGY4VFN6Z2ZEZzNLZGtyVlVzdVpZZUtXOGJTOFVOMmZJUTgxOXFIeUV4eDR4Nkh4UWF4eEhzeG9GM1dFTzV6R0lHTXh5cWdQdVd6M0VOTUcwQ0VuRWhXTnlBXzAxSDd2cHZzbW5zVXJmUnRwSXRHVGI5c3hZcmoxUXFDUDY3d1ZodklESmRYb0Q4VlpRZ1JsTlZ6Vzc0ZThpV0hYdVFQdF9IdXdEZWtsUTZVcnFFRUVldXg5S3hSSFd4ZE1kWXZiRGFwNnh1QzVmVDdONy1oNG92Q2o0c3JyeGlTdjd5T1BiclQ2OUo3NjFDc0xvYkNfbTlVTmtBdXhnZWRYQWQwNldMY0VwN2oxMmxzSmRSck51WjNGYm44Q1c2UmVNdV9hQQ?oc=5",
    "source": "MusicRadar",
@@ -256,6 +248,14 @@
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNRU9NemN0NjZpNTlUSHJOc2JwRnJXQnYwZ3VCMEF1eUtFMExLay1ZSzZPc0lHV2ZpTy1MLXNPeVF3azBjY0g5OEdyT1QyVVpDV25Kb1M0dW1MZjE1cGxlZ21tdWdwVGgyb1Jid3FhUXNjNGlibGdlaUhOamRBNGx3YTlTd2dKNndOTHdFbzRjc0U2QWNQUkgtaS1OcUNWX0U?oc=5",
    "source": "The Verge",
    "date": "2026-09-27",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
+   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
+   "source": "MusicTech",
+   "date": "2026-09-23",
    "kind": "PRODUCT",
    "release": true
   }
@@ -281,7 +281,7 @@
   "Google News %22AI%22+drummer": 1,
   "Google News %22AI+music%22": 39,
   "Google News Suno+OR+Udio": 25,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 12,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 25,
   "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
