@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T00:57Z",
+ "updated": "2026-10-22T04:31Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -90,14 +90,6 @@
    "release": true
   },
   {
-   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
-   "source": "MusicTech",
-   "date": "2026-09-23",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "AI-Generated Music and the Future of Creativity Discussed at Billboard Latin Music Week",
    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNT2pLeXExODAxTEVGNzMwdXF6NGt6VG8yV2Rfa2ZnQnlkYldkcE9lX3Z6bVRvdFI0NDBkRWdETU81Y3Q5OUV2UEVzS1hJUW5nR0Zmenp4azV3TUhKbUp0MkZ1SjR3SlVDNUhWakFUeENuSHgwTUZfUGsxTTVISUNHUlM3SjloQ1FMaXZONkVDVS1tS0U?oc=5",
    "source": "Billboard",
@@ -165,6 +157,14 @@
    "title": "Singer or clanker? YouTube Music will tell you with new gen AI labeling.",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5tWFdrdkRtODRib3N0eW1ucFlieC1yVU9DS3hDSXBIbHllVFhwalZwTE5HR1BORzZPNG9SMDN0UlZ4aWxSRGJkWFlGamJFdHh5NmtybF9YRjE5MlJLMU96ZmkwM3p2RS16NTk4UUtxdkxBRk83UGpnQ1dnRkRXTlk?oc=5",
    "source": "Ars Technica",
+   "date": "2026-10-15",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "A$AP Rocky Has a Very Diplomatic Stance on AI in Music: \u2018Who Am I to Say What\u2019s Standard\u2019",
+   "link": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNQjZURnhGRXYtVnNNTEZqTkJvNGR5eGF5NlVmZ0IwQmw0MXJwV0pzZG1RRzV1YXRvbk5jY0NFZlI4dUlDVGNPSGhlemI5aDV3M3RtUnVxczJ6QVFPTWUtZkg4QVd6cHVSS2h5UW1GWWg1ZDRqTUIwMS1wZkgyMHpuZlpya2VwWGVDZi0w?oc=5",
+   "source": "Billboard",
    "date": "2026-10-15",
    "kind": "NEWS",
    "release": false
@@ -250,14 +250,6 @@
    "date": "2026-09-27",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "Lunacy Audio launches new AI-powered plugin sharing platform, NOVA",
-   "link": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9wUmgxS2VFSlFrLVktN1o3S2NPOHBXc21idzcycVN4YTktZkdrTkRvWlROTUtZSjdsV0RYOU9JZXVBVThnMjAyLVJYS2tSOGduWFJwLU4tU1NvZ3FWMHN5WjZrTDY?oc=5",
-   "source": "MusicTech",
-   "date": "2026-09-23",
-   "kind": "PRODUCT",
-   "release": true
   }
  ],
  "log": {
@@ -279,13 +271,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 39,
-  "Google News Suno+OR+Udio": 25,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 25,
+  "Google News %22AI+music%22": 40,
+  "Google News Suno+OR+Udio": 27,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 24,
   "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 1,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
