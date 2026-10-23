@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T16:32Z",
+ "updated": "2026-10-23T20:29Z",
  "items": [
   {
    "id": "tMw4BLiDZbs",
@@ -7,6 +7,13 @@
    "source": "Meinl",
    "date": "2026-10-23",
    "kind": "DEMO"
+  },
+  {
+   "id": "UbYShZX2AZM",
+   "title": "Drum Talk TV News Desk Report - October 3, 06",
+   "source": "Drumtalk TV",
+   "date": "2026-10-23",
+   "kind": "TALK"
   },
   {
    "id": "j7mqwWTq_dQ",
@@ -35,13 +42,6 @@
    "source": "Meinl",
    "date": "2026-10-20",
    "kind": "DEMO"
-  },
-  {
-   "id": "3wd36z2Oyig",
-   "title": "Jon Berger Interview on Drum Talk TV",
-   "source": "Drumtalk TV",
-   "date": "2026-10-18",
-   "kind": "INTERVIEW"
   },
   {
    "id": "LdcUjzTTR_w",
@@ -120,7 +120,7 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCvp7nLHT_oIKUX5t9YSa2oA NAMM Foundation (0)",
+  "NAMM": "search UCHruT6ypiqqK7QiYo_48vZQ NamM (0)",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
