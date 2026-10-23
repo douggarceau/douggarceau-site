@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-23T08:35Z",
+ "updated": "2026-10-23T12:37Z",
  "items": [
+  {
+   "id": "tMw4BLiDZbs",
+   "title": "Meinl Cymbals - Classics Custom Dark - Jeeves \"Deuce Deuce\" Demo",
+   "source": "Meinl",
+   "date": "2026-10-23",
+   "kind": "DEMO"
+  },
   {
    "id": "j7mqwWTq_dQ",
    "title": "GRETSCH CATALINA EVO - All Kits Sound Demo",
@@ -42,13 +49,6 @@
    "source": "Drumtalk TV",
    "date": "2026-10-17",
    "kind": "TALK"
-  },
-  {
-   "id": "WfgzcTFOqO8",
-   "title": "Meinl Cymbals - Byzance Traditional - Jeeves \"Plant Boy\" Demo",
-   "source": "Meinl",
-   "date": "2026-10-15",
-   "kind": "DEMO"
   },
   {
    "id": "9wSS18huR7k",
@@ -103,24 +103,25 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (1)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (4)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
   "Tama": "UCTSkpJG7QWeungk9q6Je2_g UCTSkpJG7QWeungk9q6Je2_g TAMA Drums Official (3)",
   "Pearl": "UCmGi7DMBXl7aTOG1HDbRWoQ UCmGi7DMBXl7aTOG1HDbRWoQ Pearl Drums (0)",
   "Gretsch": "UCCi7ihBj53YSjNI9lY7nXtA UCCi7ihBj53YSjNI9lY7nXtA gretschdrumsusa (1)",
-  "Sabian search": "error: HTTP Error 302: The HTTP server returned a redirect error th",
   "Sabian skip UCJbu6KNGcKK5KsVAxLoh2xA": "sabiancymbals",
   "Sabian skip UCNmSiKDIL1GKy71hbnSMUvQ": "SabianOfficial",
-  "Sabian": "not found",
+  "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
+  "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
+  "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
-  "NAMM search": "error: HTTP Error 302: The HTTP server returned a redirect error th",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "@NAMMvideos UCbkzeiu-r47PhCTNaPsUu-A nammvideos (0)",
-  "Percussive Arts Society search": "error: HTTP Error 302: The HTTP server returned a redirect error th",
-  "Percussive Arts Society": "@PercussiveArtsSociety UCuYb7irDBJx-ep94c9b2qMw Percussive Arts Society (0)"
+  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
+  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
+  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
  }
 }
