@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T12:37Z",
+ "updated": "2026-10-23T16:32Z",
  "items": [
   {
    "id": "tMw4BLiDZbs",
@@ -23,6 +23,13 @@
    "kind": "INTERVIEW"
   },
   {
+   "id": "y19jTvY7BUw",
+   "title": "Jon Davison Interview - Yesshift Ep 250",
+   "source": "Drumtalk TV",
+   "date": "2026-10-21",
+   "kind": "INTERVIEW"
+  },
+  {
    "id": "Aitj_86kXCI",
    "title": "Meinl Cymbals - Byzance Traditional Extra Thin Hammered Crashes Comparison",
    "source": "Meinl",
@@ -42,13 +49,6 @@
    "source": "Meinl",
    "date": "2026-10-17",
    "kind": "DEMO"
-  },
-  {
-   "id": "stjaiJr2fhM",
-   "title": "Drumming Injury Talk - October 16, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-10-17",
-   "kind": "TALK"
   },
   {
    "id": "9wSS18huR7k",
@@ -115,11 +115,12 @@
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
   "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
+  "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM": "search UCvp7nLHT_oIKUX5t9YSa2oA NAMM Foundation (0)",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
