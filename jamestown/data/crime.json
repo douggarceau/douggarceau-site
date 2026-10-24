@@ -1,0 +1,89 @@
+{
+ "asof": "2026-10-24T12:00:00-04:00",
+ "items": [
+  {
+   "kind": "courts",
+   "headline": "Jamestown resident indicted in Ohio college funds case",
+   "blurb": "An Ohio grand jury indicted Jamestown resident Michael Perik on 12 felony counts tied to an alleged $20 million diversion from Eastern Gateway Community College. His attorney says no crimes occurred; the allegations are unproven.",
+   "date": "2026-10-22",
+   "url": "https://www.jamestownpress.com/articles/scandal-forces-perik-out-as-dem-chair/",
+   "outlet": "Jamestown Press",
+   "hood": "Jamestown",
+   "spd": [
+    "JT"
+   ]
+  },
+  {
+   "kind": "police",
+   "headline": "Police chief honored by council for bridge rescue",
+   "blurb": "At its Oct. 19 meeting the town council recognized Police Chief Jamie Campbell, who on Sept. 16 stopped on the Verrazzano Bridge and helped a woman in crisis to safety. He will receive the department's Life-Saving Award.",
+   "date": "2026-10-22",
+   "url": "https://www.jamestownpress.com/articles/police-chief-lauded-by-town-council-for-saving-womans-life/",
+   "outlet": "Jamestown Press",
+   "hood": "Jamestown",
+   "spd": [
+    "JT"
+   ]
+  },
+  {
+   "kind": "arrest",
+   "headline": "State police detective charged with DUI on North Main Road",
+   "blurb": "Jamestown police charged a Rhode Island State Police detective with suspicion of DUI and refusal to submit to a chemical test after a stop late Oct. 15 on North Main Road. He is presumed innocent; State Police called it an open personnel matter.",
+   "date": "2026-10-15",
+   "url": "https://turnto10.com/news/local/rhode-island-state-trooper-charges-dui-refusal-submit-chemical-test-north-main-road-jamestown-october-15-2026",
+   "outlet": "NBC 10 News",
+   "hood": "Jamestown",
+   "spd": [
+    "JT"
+   ]
+  },
+  {
+   "kind": "police",
+   "headline": "Jamestown police part of $65K crisis-intervention training grant",
+   "blurb": "The Rhode Island Foundation awarded $65,000 to Crisis Intervention Teams of Rhode Island to train officers in Jamestown and five other Aquidneck-area towns on behavioral health calls.",
+   "date": "2026-10-15",
+   "url": "https://www.jamestownpress.com/articles/local-police-to-benefit-from-grant/",
+   "outlet": "Jamestown Press",
+   "hood": "Jamestown",
+   "spd": [
+    "JT"
+   ]
+  },
+  {
+   "kind": "courts",
+   "headline": "Smithfield man charged in 1985 cold-case killing of Jamestown woman",
+   "blurb": "A 61-year-old Smithfield man was arraigned in Newport District Court on a first-degree murder charge after the Attorney General's cold case unit used new DNA analysis. He is held without bail and is presumed innocent.",
+   "date": "2026-10-06",
+   "url": "https://www.jamestownpress.com/articles/smithfield-man-charged-in-1985-cold-case-killing-of-local-woman-then-22/",
+   "outlet": "Jamestown Press",
+   "hood": "Jamestown",
+   "spd": [
+    "JT"
+   ]
+  },
+  {
+   "kind": "other",
+   "headline": "No suspects after state police Flock camera near bridge knocked down",
+   "blurb": "State police say they have no leads after the Flock license-plate camera on Route 138 near the Helm Street exit was knocked down in August; they are seeking tips.",
+   "date": "2026-09-24",
+   "url": "https://www.jamestownpress.com/articles/no-suspects-in-flock-camera-vandalism/",
+   "outlet": "Jamestown Press",
+   "hood": "Jamestown",
+   "spd": [
+    "JT"
+   ]
+  },
+  {
+   "kind": "arrest",
+   "headline": "Jamestown man arrested on reckless driving warrant",
+   "blurb": "Rhode Island State Police arrested a 52-year-old Jamestown man at his Howland Avenue home on a reckless driving warrant. He was arraigned and released with a court date.",
+   "date": "2026-09-22",
+   "url": "https://patch.com/rhode-island/jamestown/jamestown-man-wanted-reckless-driving-charge-nabbed-cops",
+   "outlet": "Patch",
+   "hood": "Jamestown",
+   "spd": [
+    "JT"
+   ]
+  }
+ ]
+}
