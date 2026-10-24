@@ -1,4 +1,4 @@
-/* Jamestown RI app: fresh news first, saved copy when offline. */
+/* Jamestown Island News app: fresh news first, saved copy when offline. */
 const V='jamestown-v1';
 const CORE=['/jamestown/','/jamestown/img/jamestown-masthead.png'];
 self.addEventListener('install',e=>{e.waitUntil(caches.open(V).then(c=>c.addAll(CORE)).catch(()=>{}));self.skipWaiting();});
