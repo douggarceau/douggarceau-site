@@ -177,7 +177,7 @@ html body #view .scbtn{font:800 12px/1 var(--lb)!important;letter-spacing:.12em!
 html body #view .dayh,html body #view .ch2 b,html body #view .dayh *{font:800 13px/1.2 var(--lb)!important;letter-spacing:.14em!important;text-transform:uppercase!important}
 html body #view .vb i{font:800 10px/1.2 var(--lb)!important;letter-spacing:.1em!important}
 </style>
-<style id="riHide">#nav [data-go="bars"],#nav [data-go="cal"],#nav [data-go="scene"],#nav [data-go="venues"],#nav [data-go="bands"],#nav [data-go="tech"]{display:none!important}</style></head>
+<style id="riHide">#nav [data-go="bars"],#nav [data-go="cal"],#nav [data-go="scene"],#nav [data-go="venues"],#nav [data-go="bands"],#nav [data-go="tech"]{display:none!important}#view .ticker{display:none!important}.lsrow .lspot.ri-cut{display:none!important}</style></head>
 <body>
 <title>Rhode Island Hurricane</title>
 <meta name="claude:viewport-fit-sides" content="cover">
@@ -1277,8 +1277,7 @@ function vFront(){setTimeout(()=>{cwFill();cwLoad()},0);
       <section class="box" style="--c:#d9a400"><div class="bh"><b>The wire · nightlife &amp; scene</b><span>${BARS.length} items</span></div>
         <div class="bwl">${BARS.slice(0,7).map(b=>{const k=BK[b.kind]||BK.other;return `<a class="bwr" href="${esc(b.url)}" target="_blank" rel="noopener"><span class="gtag" style="--gc:${k[0]}">${k[1]}</span><span class="bwt"><b>${esc(b.headline)}</b><span>${esc(b.venue)}${b.hood?' · '+esc(b.hood):''} · ${shortDay(b.date)}</span></span></a>`}).join('')||'<div class="empty">The wire is loading.</div>'}</div>
         <div style="padding:10px 14px;border-top:1px solid var(--line)"><button class="nb" data-go="bars">Full wire →</button></div></section>
-      <div class="lbl"><b>Also in this issue</b><span>${rest.length} stories</span></div>
-      <div class="sgrid">${[lead,...rest].filter(Boolean).slice(1,7).map(storyCard).join('')}</div>
+
 
       
     </div>
@@ -1305,9 +1304,9 @@ function vGuide(compact){const cats=Object.keys(VSHORT).filter(c=>VENUES.some(v=
   <div class="vtiles">${cats.map(c=>`<button class="vtile" data-vguide="${esc(c)}" style="--gc:${VCAT[c]}"><b>${VENUES.filter(v=>v.cat===c).length}</b><span>${esc(VSHORT[c])}</span><small>${esc(ex(c))}</small></button>`).join('')}</div>
   <div class="two" style="gap:10px;grid-template-columns:1fr"><button class="go" data-vguide="all">Browse all ${VENUES.length} venues →</button></div></div></section>`}
 function vCover(I){if(!I||!I.src)return '';
-  const loc=STORIES.filter(x=>!(typeof FEATURES!=='undefined'&&FEATURES.has(x.slug))&&x.slug!=='jayapal-office-suspicious-envelope').slice(0,7);
+  const CVS=new Set(I.lines.map(l=>l[0]));const loc=STORIES.filter(x=>!CVS.has(x.slug)&&!(typeof FEATURES!=='undefined'&&FEATURES.has(x.slug))).slice(0,7);
   return `<section class="box" style="--c:#ff6a00"><div class="cvr"><button class="cimg" data-zoom="${I.src}" aria-label="Open the ${esc(I.month)} cover full size"><img src="${I.src}" alt="Rhode Island Hurricane, ${esc(I.month)}"></button>
-  <div class="cvside"><div class="sea-h"><b>Rhode Island News</b><button data-go="stories">All Rhode Island stories →</button></div>
+  <div class="cvside">${loc.length?`<div class="sea-h"><b>Rhode Island News</b><button data-go="stories">All Rhode Island stories →</button></div>`:''}
   <div class="sea-g">${loc.map(x=>`<button data-story="${x.slug}" style="--sc:${tc(x.topic)}"><small>${esc(tl(x.topic))}</small><b>${esc(x.title)}</b></button>`).join('')}</div>
   <div class="sea-h nat"><b>In the ${esc(I.month)} issue</b></div>
   <div class="nat-l">${I.lines.map(([slug,h])=>`<button data-story="${slug}">${esc(h)}</button>`).join('')}</div>
@@ -1718,7 +1717,7 @@ document.addEventListener('click',async e=>{
 function render(){
   const v=STATE.view;
   {const cs=document.getElementById('coverSlot');if(cs)cs.innerHTML=v==='front'?vCover(CUR):''}
-  {const sb=document.getElementById('seaBanner');if(sb){const L=STORIES.find(x=>!(typeof FEATURES!=='undefined'&&FEATURES.has(x.slug)));sb.innerHTML=v==='front'&&L?`<button type="button" class="spr sea-spr" data-story="${L.slug}"><span class="spr-tag">RHODE ISLAND · TOP STORY</span><span><b>${esc(L.title)}</b><small>${esc(L.dek)}</small></span><span class="spr-go">Read it →</span></button>`:''}}
+  {const sb=document.getElementById('seaBanner');if(sb){const CV=new Set(((typeof CUR!=='undefined'&&CUR&&CUR.lines)||[]).map(l=>l[0]));const L=STORIES.find(x=>!CV.has(x.slug)&&!(typeof FEATURES!=='undefined'&&FEATURES.has(x.slug)));sb.innerHTML=v==='front'&&L?`<button type="button" class="spr sea-spr" data-story="${L.slug}"><span class="spr-tag">RHODE ISLAND · TOP STORY</span><span><b>${esc(L.title)}</b><small>${esc(L.dek)}</small></span><span class="spr-go">Read it →</span></button>`:''}}
   $('#view').innerHTML=`<div style="display:grid;grid-template-columns:minmax(0,1fr);gap:16px">${v==='front'?vFront():v==='stories'?vStories():v==='bars'?vBars():v==='venues'?vVenues():v==='bands'?vBands():v==='advertise'?vAdvertise():v==='tech'?vTech():v==='crime'?vCrime():v==='cal'?vCal():v==='scene'?vScene():v==='submit'?vSubmit():v==='inbox'?vInbox():v==='read'?vReader(STATE.story):v==='search'?vSearch(STATE.q):vFront()}</div>`;
   document.querySelectorAll('#nav .nb').forEach(b=>b.toggleAttribute('aria-current',b.dataset.go===(v==='read'?STATE.prev:v))||b.setAttribute('aria-current','page'));
   document.querySelectorAll('#nav .nb').forEach(b=>{if(b.dataset.go===(v==='read'?STATE.prev:v))b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
@@ -2042,7 +2041,7 @@ setInterval(()=>XT.forEach((_,n)=>setTimeout(()=>{xk[n]++;xtFill(n,true)},300+(n
 /* Fill the side margins with news boxes all the way down the page */
 const XP=[()=>WRF,()=>CRX.length?CRX:WRF,()=>CORR.length?CORR:WRF,()=>STF,()=>CRX.length?CRX:WRF,()=>WRF];
 const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.lsrow'),w=document.querySelector('.wrap'),s=document.querySelector('.lspot'),V=document.getElementById('view');if(!row||!w||!s||!V)return;
- row.querySelectorAll('.lspot').forEach(x=>x.style.removeProperty('height'));
+ row.querySelectorAll('.lspot').forEach(x=>{x.style.removeProperty('height');x.classList.remove('ri-cut')});
  const step=s.offsetHeight+12,lsh=s.offsetHeight,rt=row.getBoundingClientRect().top,vb=V.getBoundingClientRect().bottom-rt,rg=document.getElementById('regSpot'),rgH=rg&&rg.offsetParent?rg.offsetHeight+24:0;
  const mt=side=>{const x=[...row.querySelectorAll('.lspot.'+side)].find(e=>e.offsetParent&&!e.classList.contains('t1')&&e!==rg);return x?parseFloat(getComputedStyle(x).marginTop)||0:0};
  const cap={l:0,r:0};['l','r'].forEach(side=>{const m=mt(side),extra=side==='r'?rgH:0;let n=8;while(150+n*step+m+lsh+extra<=vb)n++;cap[side]=n});
@@ -2051,6 +2050,7 @@ const lsMore=()=>{if(innerWidth<1280)return;const row=document.querySelector('.l
   const d=document.createElement('div');d.className='lspot '+side+' ls-extra';d.style.top='calc(150px + '+(t-1)+'*(var(--lsh) + 12px))';d.innerHTML='<a id="'+id+'"></a>';row.appendChild(d);
   XT.push([id,XP[(t*2+si)%XP.length],9+t*3+si*5]);xk.push(0);xf.push(false);xtFill(XT.length-1,false)});
  if(rg&&rg.offsetParent){let m=0;row.querySelectorAll('.lspot.r').forEach(x=>{if(x!==rg&&x.offsetParent)m=Math.max(m,x.offsetTop+x.offsetHeight)});if(m)rg.style.setProperty('top',(m+24)+'px','important')}
+ {const vb2=V.getBoundingClientRect().bottom;row.querySelectorAll('.lspot').forEach(x=>{if(x.offsetParent&&x.getBoundingClientRect().bottom>vb2+1)x.classList.add('ri-cut')})}
  ['l','r'].forEach(side=>{const L=[...row.querySelectorAll('.lspot.'+side)].filter(x=>x.offsetParent);if(!L.length)return;const last=L.reduce((a,x)=>x.getBoundingClientRect().bottom>a.getBoundingClientRect().bottom?x:a);const g=vb-(last.getBoundingClientRect().bottom-rt);if(Math.abs(g)<step)last.style.setProperty('height',(last.offsetHeight+g)+'px','important')})};
 setTimeout(lsMore,1500);setTimeout(lsMore,5000);let lsR;const lsQ=()=>{clearTimeout(lsR);lsR=setTimeout(lsMore,400)};addEventListener('resize',lsQ);try{const V=document.getElementById('view');if(V&&window.ResizeObserver)new ResizeObserver(lsQ).observe(V)}catch(_){}
 
