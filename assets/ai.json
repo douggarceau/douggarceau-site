@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T20:29Z",
+ "updated": "2026-10-24T00:56Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -130,6 +130,14 @@
    "release": false
   },
   {
+   "title": "UMG Licenses Gaming-Focused AI Music Platform Tyger",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5FWmxFNFNoY1pRSFhCRFFTZDNhaXU5ZXdBTjBZSElwWnFUeTVEQ1ZqRmFlejR5TWFGOGloRFEweG5mcG8wWHFSUVJTR3YwbWZnTkpGcWp1QXozaG9MWTgydDVqaG1kSTF3ZnhvY2t5amNlTXdaSHp3b25IVEI?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-10-23",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Spotify\u2019s current AI bet is about being the music service that agents choose",
    "link": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
    "source": "TechCrunch",
@@ -181,14 +189,6 @@
    "title": "UMG and Sony ask court to force DistroKid to hand over AI music data for Suno case",
    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPa0Z4NDI1TXE3bnpRdFJ2MVY5Q2VhcDJsMmE4Z3NYTTBVZjRHelJwNjRabU1ONTAwaFRfNVowVHFabXZtTnoxdGtCdnFwdmVsNUxWZXI4WlBWbkZ4OFBLcGZMMWpYSklfQ3ZJMVFaQnlzbzVUT1F2a1dIWGlkV3NXUC1zaEFTa00zSGkyRmo2R0ZfM1JsNk95S2MxZjQ5WUF4Nml5c1NRQWliQUZacFRpMF9waUVPQ1hCbWltOXBScw?oc=5",
    "source": "Music Business Worldwide",
-   "date": "2026-10-19",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Suno Investor Lightspeed Faces Major Label Documents Demand",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWHd6V2wwSkVDejJ1NVEtZjh1Z2tCV1ROZVBRLTRUQ25UaE5OcUVPNGZnNWpXVVRjSnJvSDkxaE1XUHlVTjRNZm9lc3lJcThwUkE5SUMtTUdNZTdHVWgwMmd4aWZtb2FoWDdXTTJVQU56VFNzbFJCQ2NXSmhLNWZxUi14MA?oc=5",
-   "source": "Digital Music News",
    "date": "2026-10-19",
    "kind": "NEWS",
    "release": false
@@ -263,9 +263,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 36,
-  "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 22,
+  "Google News %22AI+music%22": 38,
+  "Google News Suno+OR+Udio": 27,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 23,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
