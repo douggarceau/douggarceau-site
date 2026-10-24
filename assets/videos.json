@@ -1,19 +1,26 @@
 {
- "updated": "2026-10-23T20:29Z",
+ "updated": "2026-10-24T08:32Z",
  "items": [
+  {
+   "id": "UbYShZX2AZM",
+   "title": "Drum Talk TV News Desk Report - October 3, 06",
+   "source": "Drumtalk TV",
+   "date": "2026-10-24",
+   "kind": "TALK"
+  },
+  {
+   "id": "y19jTvY7BUw",
+   "title": "Jon Davison Interview - Yesshift Ep 250",
+   "source": "Drumtalk TV",
+   "date": "2026-10-24",
+   "kind": "INTERVIEW"
+  },
   {
    "id": "tMw4BLiDZbs",
    "title": "Meinl Cymbals - Classics Custom Dark - Jeeves \"Deuce Deuce\" Demo",
    "source": "Meinl",
    "date": "2026-10-23",
    "kind": "DEMO"
-  },
-  {
-   "id": "UbYShZX2AZM",
-   "title": "Drum Talk TV News Desk Report - October 3, 06",
-   "source": "Drumtalk TV",
-   "date": "2026-10-23",
-   "kind": "TALK"
   },
   {
    "id": "j7mqwWTq_dQ",
@@ -27,13 +34,6 @@
    "title": "Jon Davison of Yes Interview Fri. 10/23!",
    "source": "Drumtalk TV",
    "date": "2026-10-22",
-   "kind": "INTERVIEW"
-  },
-  {
-   "id": "y19jTvY7BUw",
-   "title": "Jon Davison Interview - Yesshift Ep 250",
-   "source": "Drumtalk TV",
-   "date": "2026-10-21",
    "kind": "INTERVIEW"
   },
   {
@@ -120,7 +120,8 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCHruT6ypiqqK7QiYo_48vZQ NamM (0)",
+  "NAMM": "search UCZmLgg7oR3WLfoBXnTgE4sg namm (0)",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"

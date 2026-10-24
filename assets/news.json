@@ -1,8 +1,7 @@
 {
- "updated": "2026-10-24T04:29Z",
+ "updated": "2026-10-24T08:31Z",
  "sources": [
   "Modern Drummer (8)",
-  "Drumming News Network (8)",
   "Drummer's Review (8)",
   "Drumeo (8)",
   "Sick Drummer Magazine (8)",
@@ -16,9 +15,10 @@
   "MusicRadar (8)"
  ],
  "errors": {
+  "Drumming News Network": "The read operation timed out",
   "Beat It": "HTTP Error 502: Bad Gateway"
  },
- "raw_count": 53,
+ "raw_count": 45,
  "items": [
   {
    "title": "SIMEN SANDNES: The Art of Drumming\u2026",
@@ -27,58 +27,16 @@
    "date": "2026-10-23"
   },
   {
-   "title": "Gretsch Drums Launches E-Drum Series Catalina Evo",
-   "link": "https://www.drummingnewsnetwork.com/gretsch-drums-launches-e-drum-series-catalina-evo/",
-   "source": "Drumming News Network",
-   "date": "2026-10-22"
-  },
-  {
-   "title": "Travis Barker: \u201cLouder Than Fear\u201d \u2013 Available on Hulu",
-   "link": "https://www.drummingnewsnetwork.com/travis-barker-louder-than-fear-available-on-hulu/",
-   "source": "Drumming News Network",
-   "date": "2026-10-22"
-  },
-  {
    "title": "\u201cLess time navigating technology, more time playing drums\u201d: Gretsch launch new electronic drum kit",
    "link": "https://www.musicradar.com/drums/electronic-drums/less-time-navigating-technology-and-more-time-doing-what-they-love-playing-drums-gretschs-first-electronic-drum-kit-revealed",
    "source": "MusicRadar",
    "date": "2026-10-22"
   },
   {
-   "title": "WFL III Drums Announces Pause in Operations",
-   "link": "https://www.drummingnewsnetwork.com/wfl-iii-drums-announces-pause-in-operations/",
-   "source": "Drumming News Network",
-   "date": "2026-10-20"
-  },
-  {
-   "title": "Aerosmith\u2019s Joey Kramer Set for Hollywood Bowl Comeback Shows",
-   "link": "https://www.drummingnewsnetwork.com/aerosmiths-joey-kramer-set-for-hollywood-bowl-comeback-shows/",
-   "source": "Drumming News Network",
-   "date": "2026-10-20"
-  },
-  {
    "title": "Ben Thatcher: The Drummer Behind Royal Blood\u2019s Explosive Sound",
    "link": "https://drummersreview.com/news/ben-thatcher-the-drummer-behind-royal-bloods-explosive-sound/",
    "source": "Drummer's Review",
    "date": "2026-10-20"
-  },
-  {
-   "title": "Ludwig Evolution Series Welcomes the New Moon Dust Finish",
-   "link": "https://www.drummingnewsnetwork.com/ludwig-evolution-series-welcomes-the-new-moon-dust-finish/",
-   "source": "Drumming News Network",
-   "date": "2026-10-19"
-  },
-  {
-   "title": "PDP Announces New Hickory Drumsticks: Made to Be Played",
-   "link": "https://www.drummingnewsnetwork.com/pdp-announces-new-hickory-drumsticks-made-to-be-played/",
-   "source": "Drumming News Network",
-   "date": "2026-10-18"
-  },
-  {
-   "title": "Sweetwater Tops Off $36.7 Million Distribution Center Expansion in Fort Wayne",
-   "link": "https://www.drummingnewsnetwork.com/sweetwater-tops-off-36-7-million-distribution-center-expansion-in-fort-wayne/",
-   "source": "Drumming News Network",
-   "date": "2026-10-16"
   },
   {
    "title": "Roland Updates the Popular TD-07 Series V-Drums Lineup",
@@ -103,12 +61,6 @@
    "link": "https://www.electronicdrumadvisor.com/best-room-mics-for-drums/",
    "source": "Electronic Drum Advisor",
    "date": "2026-10-15"
-  },
-  {
-   "title": "Rick Beato Tours the Noble & Cooley Factory \u2013 Watch Here",
-   "link": "https://www.drummingnewsnetwork.com/rick-beato-tours-the-noble-cooley-factory-watch-here/",
-   "source": "Drumming News Network",
-   "date": "2026-10-14"
   },
   {
    "title": "DW\u2019s Design Series Goes Exotic",
@@ -259,6 +211,54 @@
    "link": "https://www.moderndrummer.com/2026/09/modern-drummer-presents-eric-singers-kiss-kruise-drum-off/",
    "source": "Modern Drummer",
    "date": "2026-09-14"
+  },
+  {
+   "title": "Guitar Center crowns champion of Drum-Off 2026 following national competition",
+   "link": "https://www.moderndrummer.com/2026/09/guitar-center-crowns-champion-of-drum-off-2026-following-national-competition/",
+   "source": "Modern Drummer",
+   "date": "2026-09-10"
+  },
+  {
+   "title": "One of Axl Rose's signature moves was almost cut from the Sweet Child O' Mine video",
+   "link": "https://www.musicradar.com/artists/i-thought-axls-snake-dancing-wasnt-rock-and-roll-so-i-actually-told-the-editor-to-cut-all-of-that-stuff-out-then-i-heard-someone-say-oh-my-god-thats-so-sexy-one-of-axl-roses-signature-moves-was-almost-cut-from-the-sweet-child-o-mine-video",
+   "source": "MusicRadar",
+   "date": "2026-09-09"
+  },
+  {
+   "title": "Big, Loud and Muscular: Stephen Perkins\u2019 Return to \u201970s Rock",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-jimmy-page-dw-kit-panic-channel/",
+   "source": "Modern Drummer",
+   "date": "2026-09-08"
+  },
+  {
+   "title": "The Rebirth of Jane\u2019s Addiction: Stephen Perkins\u2019 1997 Relapse Tour Kit",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1997-janes-addiction-relapse-tour-kit/",
+   "source": "Modern Drummer",
+   "date": "2026-09-06"
+  },
+  {
+   "title": "Alex Lancia \u2013 Lecherous Nocturne \u2013 Metempsychosis \u2013 Drum Play-through",
+   "link": "https://sickdrummermagazine.com/news/latest-news/alex-lancia-lecherous-nocturne-metempsychosis-drum-play-through/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-04"
+  },
+  {
+   "title": "The Drum Kit That Gave Stephen Perkins a New Voice",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1992-porno-for-pyros-drum-kit/",
+   "source": "Modern Drummer",
+   "date": "2026-09-03"
+  },
+  {
+   "title": "\u201cIt works in different music styles\u201d: Anika Nilles and TAMA collaborate on a signature snare",
+   "link": "https://www.musicradar.com/drums/snare-drums/reflects-her-lifelong-love-for-vintage-snares-anika-nilles-and-tama-collaborate-on-a-signature-snare",
+   "source": "MusicRadar",
+   "date": "2026-09-02"
+  },
+  {
+   "title": "MMMF\u2019s annual benefit concert to host Tribute to Keith Moon with special guest drummers Gregg Bissonette and Stephen Perkins on November 1st at Central Machine ",
+   "link": "https://www.moderndrummer.com/2026/08/mmmfs-annual-benefit-concert-to-host-tribute-to-keith-moon-with-special-guest-drummers-gregg-bissonette-and-stephen-perkins-on-november-1st-at-central-machine-works-in-austin/",
+   "source": "Modern Drummer",
+   "date": "2026-08-27"
   }
  ]
 }
