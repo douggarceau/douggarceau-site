@@ -178,6 +178,14 @@ html body #view .dayh,html body #view .ch2 b,html body #view .dayh *{font:800 13
 html body #view .vb i{font:800 10px/1.2 var(--lb)!important;letter-spacing:.1em!important}
 </style>
 <style id="riHide">#nav [data-go="bars"],#nav [data-go="scene"],#nav [data-go="venues"],#nav [data-go="bands"],#nav [data-go="tech"]{display:none!important}#view .ticker{display:none!important}.lsrow .lspot.ri-cut{display:none!important}</style><style id="pvrule">.pv{display:none!important}html.stats .pv{display:block!important}</style><script>try{if(/[?&]stats\b/.test(location.search)||sessionStorage.getItem("pvstats")==="1"){sessionStorage.setItem("pvstats","1");document.documentElement.classList.add("stats")}}catch(_){}</script><style>html body .sh i.calb{font-style:normal!important;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-top:5px;font:400 13px/1.45 Georgia,serif!important;text-transform:none!important;letter-spacing:normal!important;color:#aab2ba!important}</style>
+<style id="adBoxes">
+.lspot.t-ad{border-top:3px solid var(--k)!important;background:radial-gradient(120% 80% at 0 0,color-mix(in srgb,var(--k) 34%,transparent) 0,transparent 60%),linear-gradient(180deg,#0d1014 0,#07090c 100%)!important;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--k) 30%,transparent)}
+.lspot.t-ad .ls-tag{color:var(--k)!important}
+.lspot.t-ad .ls-big{font:700 clamp(24px,calc(var(--ls)*.115),38px)/1.02 Georgia,"Times New Roman",serif!important;color:#fff!important;letter-spacing:-.01em;text-shadow:0 0 18px color-mix(in srgb,var(--k) 45%,transparent)}
+.lspot.t-ad .ls-big em{display:block;font:italic 700 1em/1.05 Georgia,"Times New Roman",serif!important;letter-spacing:0!important;text-transform:none!important;color:var(--k)!important;margin-top:2px}
+.lspot.t-ad b{color:#fff!important}
+.lspot.t-ad .ls-go{color:var(--k)!important}
+</style>
 </head>
 <body>
 <title>Jamestown Island News</title>
@@ -1163,7 +1171,7 @@ const CAL=[];
 const SCENE=[];
 const UPDATED="Oct 21, 2026";
 const COVERS=[];
-const ISSUES=[{no:1,month:'November 2026',src:"img/cover-jamestown-nov2026.jpg",lines:[
+const ISSUES=[{no:1,month:'Fall 2026',src:"img/cover-jamestown-fall2026.jpg",lines:[
  ["perik-indicted-eastern-gateway", "Ohio Indictment Lands on a Jamestown Doorstep", "A Jamestown businessman faces 12 felony counts over an Ohio college's aid money, and his wife has stepped down as RI Democratic chair."],
  ["the-island-after-the-season", "The Island After the Season", "Beavertail’s tower is dark until May. Here’s where Jamestown goes instead: the trail, the library, the Rec Center and a $3 lunch."],
  ["november-in-the-arts-center-kitchen", "November in the Arts Center Kitchen", "Ramen from scratch, General Tso’s at home and a Thanksgiving leftovers remix: the Valley Street kitchen’s fall lineup."],
@@ -1236,7 +1244,7 @@ const tc=t=>(TOPIC[t]||['#8fb3d9',t])[0], tl=t=>(TOPIC[t]||['',t])[1];
 // issue stamps
 (()=>{const d=new Date(),k=d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');
   
-  $('#issueBar').textContent='NOVEMBER 2026';})();
+  $('#issueBar').textContent='FALL 2026';})();
 $('#mstat').innerHTML=[[STORIES.length,'Stories','#e3170a'],[up.length,'Shows ahead','#1e90ff'],[upScene.length,'Scene events','#39ff14']]
   .map(([n,l,c])=>`<div class="ms" style="--c:${c}"><b>${n}</b><small>${l}</small></div>`).join('');
 $('#tick').innerHTML=(()=>{const src=BARS.length?BARS.slice(0,40).map(x=>`<a href="${esc(x.url)}" target="_blank" rel="noopener"><b style="color:${(BK[x.kind]||BK.other)[0]}">● ${(BK[x.kind]||BK.other)[1].toUpperCase()}</b> <i>${esc(x.headline)}</i></a>`):up.slice(0,40).map(e=>`<span><b>${shortDay(e.date).toUpperCase()}</b> <i>${esc(e.artists)}</i> @ ${esc(e.venue)}</span>`);const h=src.join('');return h+h})();
@@ -1578,9 +1586,9 @@ function vScene(){
   <div class="sgrid">${L.map(evCard).join('')||'<div class="empty">No events listed.</div>'}</div>`;
 }
 
-const ADPK=[['featured','Featured listing','Top of your category in the Venue Guide, glowing, above every other listing.'],['spotlight','Front-page spotlight','Your venue in the Venue Guide on the front page, where every reader lands.'],['event','Event promo','Push a show or party on The Wire, the music calendar and your venue page.'],['story','Sponsored feature','A labeled sponsored story about your place, in the Report voice.']];
+const ADPK=[['box','Margin box · $29.99 / 30 days','Your colored box in the side rotation on every page, linked to your site or phone.'],['featured','Featured listing','Top of your category in the Venue Guide, glowing, above every other listing.'],['spotlight','Front-page spotlight','Your venue in the Venue Guide on the front page, where every reader lands.'],['event','Event promo','Push a show or party on The Wire, the music calendar and your venue page.'],['story','Sponsored feature','A labeled sponsored story about your place, in the Report voice.']];
 function vAdvertise(){const c=STATE.adcat||'';
-  return `<h2 class="room">Advertise</h2><div class="intro"><b>Get in front of Jamestown</b><p>The Report's Venue Guide covers ${VENUES.length} bars, clubs, stages and lanes, and readers come here to decide where they're going tonight. Pick a spot, tell us about your place, and the editor will get back to you with rates.</p></div>
+  return `<h2 class="room">Advertise</h2><div class="intro"><b>Get in front of Jamestown</b><p>A margin box on Jamestown Island News runs $29.99 per 30 days. Your box rotates through the colored side spots on every page, desktop and phone, with your name, a line about you and a link. Tell us about your business below and the editor will set it up.</p></div>
   <div class="vtiles">${ADPK.map(([k,t,d])=>`<div class="vtile" style="--gc:${k==='featured'?'#ff6a00':k==='spotlight'?'#ff3a2a':k==='event'?'#1e90ff':'#d9a400'};cursor:default"><span>${t}</span><small>${d}</small></div>`).join('')}</div>
   <section class="box" style="--c:#ff6a00"><div class="bh"><b>Request a spot</b></div>
   <form class="form" id="adF"><datalist id="vlistdl">${VENUES.map(v=>`<option value="${esc(v.name)}">`).join('')}</datalist>
@@ -1976,7 +1984,18 @@ const $=id=>document.getElementById(id),esc=t=>String(t).replace(/&/g,'&amp;').r
 const promoTimers=new WeakMap();
 const promoKey=s=>s.rep?'report:'+s.rep:'title:'+String(s.bigText||s.big||s.name||s.story||s.href).replace(/\s+/g,' ').trim().toLowerCase();
 const narrowExtra=box=>innerWidth<1280&&box.classList.contains('ls-extra');
-function showPromo(id,pool,offset=0,flip=false){
+function showPromo(id,pool,off,flip){const A=adPool();const on=document.querySelectorAll('.lspot.t-ad').length;
+ if(A.length&&on<2&&Math.random()<(on?0.15:0.3))return showPromo0(id,adShuf(A),0,flip);return showPromo0(id,pool,off,flip)}
+function adShuf(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+function adPool(){if(adPool.L)return adPool.L;const P='$29.99 / 30 days';return adPool.L=[['#19b3a6','Your shop<em>right here</em>','A margin box on every page of Jamestown Island News.'],
+['#ff6f61','Restaurants<em>&amp; cafés</em>','Put tonight’s special in front of the island.'],
+['#e8b818','Marinas<em>&amp; boatyards</em>','Moorings, storage, haul-outs and repairs.'],
+['#2f8fdd','Builders<em>&amp; trades</em>','Contractors, landscapers, painters and plumbers.'],
+['#9b7be0','Galleries<em>&amp; shops</em>','Downtown, Valley Street and East Ferry.'],
+['#6fbf73','Realtors<em>&amp; rentals</em>','Listings and seasonal rentals, seen by islanders.']]
+ .map(([k,big,sub])=>({tag:'Advertise here',big,name:P,sub,go:'Book a box',theme:'ad',k,view:'advertise',href:'#advertise'}))}
+setTimeout(()=>{const ids=[...document.querySelectorAll('.lsrow a[id]')].filter(x=>!x.parentNode.hidden&&x.parentNode.style.display!=='none').map(x=>x.id);if(ids.length)showPromo0(ids[Math.floor(Math.random()*ids.length)],adShuf(adPool()),0,true)},2500);
+function showPromo0(id,pool,offset=0,flip=false){
  const a=$(id);if(!a||a.parentNode.style.display==='none')return;const box=a.parentNode;
  if(flip&&a.contains(document.activeElement))return;
  clearTimeout(promoTimers.get(a));box.classList.remove('flip');delete a.dataset.promoNext;
