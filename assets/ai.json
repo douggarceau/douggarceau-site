@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T16:27Z",
+ "updated": "2026-10-24T20:26Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -98,6 +98,14 @@
    "release": false
   },
   {
+   "title": "Pennsylvania will require labels on AI-generated ads",
+   "link": "https://www.theverge.com/ai-artificial-intelligence/1018187/pennsylvania-ai-deceptive-advertising-act",
+   "source": "The Verge",
+   "date": "2026-10-24",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Chase & Status on the upside of AI for music",
    "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeVRTdVNLdTZONl9PSVpiLVJXTjdHOXlpRG9KejZodFBHcmd4cnU0UUQ0QUl4Tmdva1BkTVNOajdsdUJDTlVxbVI2Q01mSEtYVllRVldkaG5UT0l1bW1GbXVfN25JaXFEUi1saXF3bzhXSkVXYUdmdmkxTzFkZU9PYlo5aG5pRWZnUFFrTWdFeVVNWmlB?oc=5",
    "source": "Reuters",
@@ -184,14 +192,6 @@
    "date": "2026-10-21",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "ICMP says AI firms are trying to \u2018strong-arm\u2019 Australia on copyright \u2013 and that Kylie Minogue\u2019s songs have already been used to train AI (report)",
-   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOTjhJRlVVZGkzNlBRRThYNEVEQUx3b3liWEpiQkxPZ2ZNS2ZqN1pRbWNJYVNhcWdHQmE5dWRxZjRaWk4xZG44bmRMVS1NNGlXajRTMXBvbXkzb2s2NFBZWUFxVTZzYTZQV1Q4MGlvN0ZtQk4zYnY3Nm1ZRnIyS1c4WnRrSFUxeUpoVjlJU3UyeE5oVWtBV0lrbzI3WEppRk9HT2pVZHYwYWxCLWgyclFmajF6NlhDdlA1enRXNFEtcFNaQlVMUEdnUUdjX0RzampjR3NJbGR5OXcxcjl1N21ZbENnZjV1Y25CSzJJM2ZheGJsN1NvbnNab3VBMWRaTTk1NmlOblRIc0UwUQ?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-20",
-   "kind": "PROBLEM",
-   "release": false
   }
  ],
  "releases": [
@@ -217,14 +217,6 @@
    "source": "DJ Mag",
    "date": "2026-10-19",
    "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-14",
-   "kind": "NEWS",
    "release": true
   },
   {
@@ -266,14 +258,14 @@
   "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
-  "The Verge www.theverge.com": 0,
+  "The Verge www.theverge.com": 1,
   "TechCrunch techcrunch.com": 1,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 39,
+  "Google News %22AI+music%22": 40,
   "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 27,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 28,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
