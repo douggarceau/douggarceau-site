@@ -4,18 +4,6 @@
   {
    "date": "2026-10-24",
    "time": "4:00 PM",
-   "artists": "Fright Night VI",
-   "venue": "Fort Getty",
-   "hood": "Jamestown",
-   "genre": "community",
-   "price": "No charge",
-   "ages": "",
-   "url": "https://www.jamestownpress.com/articles/fright-night-saturday-at-fort-getty/",
-   "src": "Jamestown Press"
-  },
-  {
-   "date": "2026-10-24",
-   "time": "4:00 PM",
    "artists": "A Killer Dinner Party — Halloween cooking class",
    "venue": "Jamestown Arts Center",
    "hood": "Jamestown",
@@ -74,18 +62,6 @@
    "src": "allevents.in"
   },
   {
-   "date": "2026-10-27",
-   "time": "7:00 PM",
-   "artists": "Zoning Board of Review meeting",
-   "venue": "Town Hall",
-   "hood": "Jamestown",
-   "genre": "civic",
-   "price": "",
-   "ages": "",
-   "url": "https://www.jamestownpress.com/articles/meetings-359/",
-   "src": "Jamestown Press"
-  },
-  {
    "date": "2026-10-28",
    "time": "7:00 PM",
    "artists": "Imprint and Playback: Performance and Artist Talk with Hunter Whitaker-Morrow and L.A. Samuelson",
@@ -122,18 +98,6 @@
    "src": "allevents.in"
   },
   {
-   "date": "2026-10-31",
-   "time": "4:30 PM",
-   "artists": "Halloween Parade (St. Matthew's Church to East Ferry along Narragansett Ave)",
-   "venue": "Narragansett Avenue",
-   "hood": "Jamestown",
-   "genre": "community",
-   "price": "",
-   "ages": "",
-   "url": "https://www.jamestownpress.com/articles/rec-department-takes-over-halloween-parade/",
-   "src": "Jamestown Press"
-  },
-  {
    "date": "2026-11-02",
    "time": "4:00 PM",
    "artists": "Homemade Ramen — cooking class",
@@ -144,30 +108,6 @@
    "ages": "",
    "url": "https://jamestownartcenter.org/",
    "src": "The Jamestown Calendar"
-  },
-  {
-   "date": "2026-11-02",
-   "time": "",
-   "artists": "Town Council public hearing on north end fire station",
-   "venue": "Town Council",
-   "hood": "Jamestown",
-   "genre": "civic",
-   "price": "",
-   "ages": "",
-   "url": "https://www.jamestownpress.com/articles/public-hearing-set-for-north-end-fire-station/",
-   "src": "Jamestown Press"
-  },
-  {
-   "date": "2026-11-03",
-   "time": "",
-   "artists": "General Election Day",
-   "venue": "",
-   "hood": "Jamestown",
-   "genre": "civic",
-   "price": "",
-   "ages": "",
-   "url": "https://www.jamestownpress.com/articles/early-voting-opens-for-general-election/",
-   "src": "Jamestown Press"
   },
   {
    "date": "2026-11-04",
@@ -276,18 +216,6 @@
    "ages": "",
    "url": "https://jamestownartcenter.org/",
    "src": "The Jamestown Calendar"
-  },
-  {
-   "date": "2026-11-15",
-   "time": "2:00 PM",
-   "artists": "Jamestown Community Piano Association: Roberto Plano, piano",
-   "venue": "St. Matthew's Church",
-   "hood": "Jamestown",
-   "genre": "classical",
-   "price": "No charge (donations accepted)",
-   "ages": "",
-   "url": "https://www.jamestownpress.com/articles/piano-association-to-celebrate-25th-season/",
-   "src": "Jamestown Press"
   },
   {
    "date": "2026-11-16",
