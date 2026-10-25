@@ -1,10 +1,12 @@
 {
- "updated": "2026-10-25T12:34Z",
+ "updated": "2026-10-25T16:27Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
+  "Drummer's Review (8)",
   "Drumeo (8)",
   "Sick Drummer Magazine (8)",
+  "The UK Drum Show (8)",
   "Drummerworld (8)",
   "Scott K Fish (5)",
   "The Drum Ninja (8)",
@@ -14,17 +16,21 @@
   "MusicRadar (8)"
  ],
  "errors": {
-  "Drummer's Review": "mismatched tag: line 93, column 2",
-  "Beat It": "HTTP Error 502: Bad Gateway",
-  "The UK Drum Show": "mismatched tag: line 93, column 2"
+  "Beat It": "HTTP Error 502: Bad Gateway"
  },
- "raw_count": 37,
+ "raw_count": 53,
  "items": [
   {
    "title": "Bonham Drumheads Officially Rebrands as Kitson Drumheads",
    "link": "https://www.drummingnewsnetwork.com/bonham-drumheads-officially-rebrands-as-kitson-drumheads/",
    "source": "Drumming News Network",
    "date": "2026-10-25"
+  },
+  {
+   "title": "SIMEN SANDNES: The Art of Drumming\u2026",
+   "link": "https://drummersreview.com/uncategorized/simen-sandnes-the-art-of-drumming/",
+   "source": "Drummer's Review",
+   "date": "2026-10-23"
   },
   {
    "title": "Gretsch Drums Launches E-Drum Series Catalina Evo",
@@ -57,6 +63,12 @@
    "date": "2026-10-20"
   },
   {
+   "title": "Ben Thatcher: The Drummer Behind Royal Blood\u2019s Explosive Sound",
+   "link": "https://drummersreview.com/news/ben-thatcher-the-drummer-behind-royal-bloods-explosive-sound/",
+   "source": "Drummer's Review",
+   "date": "2026-10-20"
+  },
+  {
    "title": "Ludwig Evolution Series Welcomes the New Moon Dust Finish",
    "link": "https://www.drummingnewsnetwork.com/ludwig-evolution-series-welcomes-the-new-moon-dust-finish/",
    "source": "Drumming News Network",
@@ -75,10 +87,22 @@
    "date": "2026-10-16"
   },
   {
+   "title": "Roland Updates the Popular TD-07 Series V-Drums Lineup",
+   "link": "https://drummersreview.com/news/roland-updates-the-popular-td-07-series-v-drums-lineup/",
+   "source": "Drummer's Review",
+   "date": "2026-10-16"
+  },
+  {
    "title": "Give The Drummer Some: Roland announce they\u2019re updating their TD-07 series",
    "link": "https://www.musicradar.com/drums/electronic-drums/roland-updates-its-best-selling-td-07-electronic-drum-kit-series",
    "source": "MusicRadar",
    "date": "2026-10-16"
+  },
+  {
+   "title": "MHADLY ONE: Does This TINY Device Really Work?",
+   "link": "https://drummersreview.com/news/mhadly-one-does-this-tiny-device-really-work/",
+   "source": "Drummer's Review",
+   "date": "2026-10-15"
   },
   {
    "title": "The 6 Best Room Mics for Drums of 2026",
@@ -87,16 +111,52 @@
    "date": "2026-10-15"
   },
   {
+   "title": "DW\u2019s Design Series Goes Exotic",
+   "link": "https://drummersreview.com/news/dws-design-series-goes-exotic/",
+   "source": "Drummer's Review",
+   "date": "2026-10-13"
+  },
+  {
+   "title": "Medeli to make debut at The UK Drum Show",
+   "link": "https://theukdrumshow.com/show-news/medeli-to-make-debut-at-the-uk-drum-show/",
+   "source": "The UK Drum Show",
+   "date": "2026-10-13"
+  },
+  {
    "title": "Don\u2019t Stop Me Now Drum Transcription",
    "link": "https://thedrumninja.com/dont-stop-me-now-drum-transcription/",
    "source": "The Drum Ninja",
    "date": "2026-10-13"
   },
   {
+   "title": "150 Only: Drumeo \u00d7 SABIAN Bundle Lands at The UK Drum Show",
+   "link": "https://drummersreview.com/news/150-only-drumeo-x-sabian-bundle-lands-at-the-uk-drum-show/",
+   "source": "Drummer's Review",
+   "date": "2026-10-07"
+  },
+  {
    "title": "Fluorescent Adolescent Drum Transcription",
    "link": "https://thedrumninja.com/fluorescent-adolescent-drum-transcription/",
    "source": "The Drum Ninja",
    "date": "2026-10-07"
+  },
+  {
+   "title": "CJ HOKDAL: From \u201cThat Swedish Drummer\u201d to The UK Drum Show",
+   "link": "https://drummersreview.com/news/cj-hokdal-from-that-swedish-drummer-to-the-uk-drum-show/",
+   "source": "Drummer's Review",
+   "date": "2026-10-06"
+  },
+  {
+   "title": "Conn Selmer Europe Announces 2026 Scholarship Winner",
+   "link": "https://drummersreview.com/news/conn-selmer-europe-announces-2026-scholarship-winner/",
+   "source": "Drummer's Review",
+   "date": "2026-10-06"
+  },
+  {
+   "title": "SWISS DRUM WORLD IS COMING TO THE UK DRUM SHOW 2026!",
+   "link": "https://theukdrumshow.com/show-news/swiss-drum-world-is-coming-to-the-uk-drum-show-2026/",
+   "source": "The UK Drum Show",
+   "date": "2026-10-06"
   },
   {
    "title": "EFNOTE 3X Review",
@@ -115,6 +175,12 @@
    "link": "https://www.moderndrummer.com/2026/10/ohana-festival/",
    "source": "Modern Drummer",
    "date": "2026-10-02"
+  },
+  {
+   "title": "LOUISE BARTLE | From Bedroom Drummer to Bloc Party",
+   "link": "https://theukdrumshow.com/show-news/louise-bartle-from-bedroom-drummer-to-bloc-party/",
+   "source": "The UK Drum Show",
+   "date": "2026-10-01"
   },
   {
    "title": "Every Breath You Take Drum Transcription",
@@ -145,6 +211,18 @@
    "link": "https://sickdrummermagazine.com/news/latest-news/kevin-paradis-agonanist-effacement-drum-play-through/",
    "source": "Sick Drummer Magazine",
    "date": "2026-09-29"
+  },
+  {
+   "title": "JJ Wallace: Finding Your Own Sound",
+   "link": "https://theukdrumshow.com/show-news/jj-wallace-finding-your-own-sound/",
+   "source": "The UK Drum Show",
+   "date": "2026-09-25"
+  },
+  {
+   "title": "Drumeo Is Giving Away Its \u00a320 Groove Book Free Ahead of The UK Drum Show",
+   "link": "https://theukdrumshow.com/show-news/drumeo-is-giving-away-its-20-groove-book-free-ahead-of-the-uk-drum-show/",
+   "source": "The UK Drum Show",
+   "date": "2026-09-23"
   },
   {
    "title": "\u201cIt\u2019s hard to argue with the amount of features on offer here for such an affordable price\u201d: Millenium Drums MPS-350 E-Drum Set review",
@@ -181,66 +259,6 @@
    "link": "https://www.moderndrummer.com/2026/09/modern-drummer-presents-eric-singers-kiss-kruise-drum-off/",
    "source": "Modern Drummer",
    "date": "2026-09-14"
-  },
-  {
-   "title": "Guitar Center crowns champion of Drum-Off 2026 following national competition",
-   "link": "https://www.moderndrummer.com/2026/09/guitar-center-crowns-champion-of-drum-off-2026-following-national-competition/",
-   "source": "Modern Drummer",
-   "date": "2026-09-10"
-  },
-  {
-   "title": "One of Axl Rose's signature moves was almost cut from the Sweet Child O' Mine video",
-   "link": "https://www.musicradar.com/artists/i-thought-axls-snake-dancing-wasnt-rock-and-roll-so-i-actually-told-the-editor-to-cut-all-of-that-stuff-out-then-i-heard-someone-say-oh-my-god-thats-so-sexy-one-of-axl-roses-signature-moves-was-almost-cut-from-the-sweet-child-o-mine-video",
-   "source": "MusicRadar",
-   "date": "2026-09-09"
-  },
-  {
-   "title": "Big, Loud and Muscular: Stephen Perkins\u2019 Return to \u201970s Rock",
-   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-jimmy-page-dw-kit-panic-channel/",
-   "source": "Modern Drummer",
-   "date": "2026-09-08"
-  },
-  {
-   "title": "The Rebirth of Jane\u2019s Addiction: Stephen Perkins\u2019 1997 Relapse Tour Kit",
-   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1997-janes-addiction-relapse-tour-kit/",
-   "source": "Modern Drummer",
-   "date": "2026-09-06"
-  },
-  {
-   "title": "Alex Lancia \u2013 Lecherous Nocturne \u2013 Metempsychosis \u2013 Drum Play-through",
-   "link": "https://sickdrummermagazine.com/news/latest-news/alex-lancia-lecherous-nocturne-metempsychosis-drum-play-through/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-09-04"
-  },
-  {
-   "title": "The Drum Kit That Gave Stephen Perkins a New Voice",
-   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1992-porno-for-pyros-drum-kit/",
-   "source": "Modern Drummer",
-   "date": "2026-09-03"
-  },
-  {
-   "title": "\u201cIt works in different music styles\u201d: Anika Nilles and TAMA collaborate on a signature snare",
-   "link": "https://www.musicradar.com/drums/snare-drums/reflects-her-lifelong-love-for-vintage-snares-anika-nilles-and-tama-collaborate-on-a-signature-snare",
-   "source": "MusicRadar",
-   "date": "2026-09-02"
-  },
-  {
-   "title": "MMMF\u2019s annual benefit concert to host Tribute to Keith Moon with special guest drummers Gregg Bissonette and Stephen Perkins on November 1st at Central Machine ",
-   "link": "https://www.moderndrummer.com/2026/08/mmmfs-annual-benefit-concert-to-host-tribute-to-keith-moon-with-special-guest-drummers-gregg-bissonette-and-stephen-perkins-on-november-1st-at-central-machine-works-in-austin/",
-   "source": "Modern Drummer",
-   "date": "2026-08-27"
-  },
-  {
-   "title": "Travis Barker\u2019s new doc is out today - here's 8 other drummers whose incredible stories deserve to be told on screen",
-   "link": "https://www.musicradar.com/artists/drummers/travis-barkers-new-doc-is-out-today-heres-8-other-drummers-whose-incredible-stories-deserve-to-be-told-on-screen",
-   "source": "MusicRadar",
-   "date": "2026-08-13"
-  },
-  {
-   "title": "Alesis and Zildjian forge partnership they hope will \"raise bar for electronic drums\"",
-   "link": "https://www.musicradar.com/drums/alesis-and-zildjian-forge-a-perfect-partnership-that-they-hope-will-raise-the-bar-for-electronic-drums",
-   "source": "MusicRadar",
-   "date": "2026-08-06"
   }
  ]
 }
