@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T20:26Z",
+ "updated": "2026-10-26T01:02Z",
  "items": [
   {
    "id": "UbYShZX2AZM",
@@ -20,13 +20,6 @@
    "title": "Meinl Cymbals - Classics Custom Dark - Jeeves \"Deuce Deuce\" Demo",
    "source": "Meinl",
    "date": "2026-10-23",
-   "kind": "DEMO"
-  },
-  {
-   "id": "j7mqwWTq_dQ",
-   "title": "GRETSCH CATALINA EVO - All Kits Sound Demo",
-   "source": "Gretsch",
-   "date": "2026-10-22",
    "kind": "DEMO"
   },
   {
@@ -51,25 +44,11 @@
    "kind": "DEMO"
   },
   {
-   "id": "9wSS18huR7k",
-   "title": "Sully Erna \"Live at Mohegan Sun\" and the History of \"Battle of the Drums\" - Modern Drummer Interview",
-   "source": "Modern Drummer",
-   "date": "2026-10-06",
-   "kind": "INTERVIEW"
-  },
-  {
    "id": "85OoO1xwMVk",
    "title": "Dan Wilding (CARCASS) Soundcheck @Daikanyama Space ODD",
    "source": "Tama",
    "date": "2026-10-02",
    "kind": "DEMO"
-  },
-  {
-   "id": "yPzYWqf0_bQ",
-   "title": "Neil Peart: No One's Disciple - Director Sam Dunn Interview",
-   "source": "Modern Drummer",
-   "date": "2026-10-02",
-   "kind": "INTERVIEW"
   },
   {
    "id": "OfX-I8nj23E",
@@ -101,28 +80,38 @@
   }
  ],
  "log": {
-  "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
+  "DW Drums": "UC2OQnpI3N1yWsgFMSN_sekA UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
+  "DW Drums @@DWDrums": "error: HTTP Error 500: Internal Server Error",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (1)",
   "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
+  "Drumeo @UCBiJBaDaM3K6vPVggLhTyWA": "error: HTTP Error 500: Internal Server Error",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
   "Tama": "UCTSkpJG7QWeungk9q6Je2_g UCTSkpJG7QWeungk9q6Je2_g TAMA Drums Official (3)",
-  "Pearl": "UCmGi7DMBXl7aTOG1HDbRWoQ UCmGi7DMBXl7aTOG1HDbRWoQ Pearl Drums (0)",
-  "Gretsch": "UCCi7ihBj53YSjNI9lY7nXtA UCCi7ihBj53YSjNI9lY7nXtA gretschdrumsusa (1)",
+  "Pearl @UCmGi7DMBXl7aTOG1HDbRWoQ": "error: HTTP Error 500: Internal Server Error",
+  "Pearl": "not found",
+  "Gretsch @UCCi7ihBj53YSjNI9lY7nXtA": "error: HTTP Error 500: Internal Server Error",
+  "Gretsch": "not found",
+  "Sabian @@SABIANcymbals": "error: HTTP Error 500: Internal Server Error",
   "Sabian skip UCJbu6KNGcKK5KsVAxLoh2xA": "sabiancymbals",
   "Sabian skip UCNmSiKDIL1GKy71hbnSMUvQ": "SabianOfficial",
-  "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
-  "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
+  "Sabian @search": "error: HTTP Error 404: Not Found",
   "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
+  "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
   "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
+  "Sabian": "not found",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
-  "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
+  "Modern Drummer @UChdBw0Hg_27aS88DiG4p5qw": "error: HTTP Error 500: Internal Server Error",
+  "Modern Drummer": "not found",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
-  "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM @@NAMM": "error: HTTP Error 404: Not Found",
+  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM @search": "error: HTTP Error 500: Internal Server Error",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
-  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
-  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
+  "Percussive Arts Society @search": "error: HTTP Error 404: Not Found",
+  "Percussive Arts Society skip UC-B0wx_W7TKkb66dzumzY9A": "Millikin Percussion Ensemble",
+  "Percussive Arts Society skip UCXcie4leLm1PJqr040u42Pw": "Fahad Malick"
  }
 }

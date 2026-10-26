@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T20:26Z",
+ "updated": "2026-10-26T01:02Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -178,19 +178,19 @@
    "release": false
   },
   {
+   "title": "Universal Music Group becomes first major music company to license TYGER, which uses AI to adapt songs to gameplay in real time",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRkVBTXI4TXJFM3V4elljNklWOGI1NEd0SFQwU2RWdUZLZExlcVRwZTVuR0RfLUU5eTh2dk9pT0duc0tCZTVvNGZZYjVSTV9vMlhzdHp0X1hfQmpVNlB2Q3loLWtTNFgwanFjZlRxNEVlRXJSemt5TER5ek9mbWZnMjNrblFnNGNqWHAwWVk3YUdmLU1DX0RFQk5OeWRDUUpfanlqZkRJZmUtZWJ2WXh4Snpkd092SktBSUYxQWttM3BaeEFSUkJ3dl83ZFhNYlhrSkdZQ1JOVThqWG1oQnpISHNB?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-22",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Suno admits it has not deleted all the recordings used to train its AI, in answer to UMG and Sony\u2019s \u2018laundering\u2019 lawsuit",
    "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNd2c3RWhiZDdPODBpQkotSXJIY3N6c2NhbmZGWVZhNm05QVk0UUFmUGotVC1Ed2tqM3Z1U3FxLU9NMDdXVXMwZ3VwTWhnNG9LSkw1c0xIZHViRkRkVUh1MlRSQmtfQU5kakJEeW5XVDdQNmk4S0QyMldyUUJPMFpfYVdjcG5GeC1YR0FETlJXNmJjSmtuRllnYUc5ZURpRXlJeWN2Qlh5ZzZQZVFHQ25ZanB0cGpMSHE0ZTJOUmptS2xPajV5NExMQlZCRkd2dHVnNEg1ZDgwN1RQUXRxZjZ1cDJIOFJVaXl2d254eA?oc=5",
    "source": "Music Business Worldwide",
    "date": "2026-10-22",
    "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "AI-Generated Music and the Future of Creativity Discussed at Billboard Latin Music Week",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNT2pLeXExODAxTEVGNzMwdXF6NGt6VG8yV2Rfa2ZnQnlkYldkcE9lX3Z6bVRvdFI0NDBkRWdETU81Y3Q5OUV2UEVzS1hJUW5nR0Zmenp4azV3TUhKbUp0MkZ1SjR3SlVDNUhWakFUeENuSHgwTUZfUGsxTTVISUNHUlM3SjloQ1FMaXZONkVDVS1tS0U?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-21",
-   "kind": "NEWS",
    "release": false
   }
  ],
@@ -217,6 +217,14 @@
    "source": "DJ Mag",
    "date": "2026-10-19",
    "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "YouTube Music and Deezer add new AI music controls",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-14",
+   "kind": "NEWS",
    "release": true
   },
   {
@@ -263,9 +271,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 40,
-  "Google News Suno+OR+Udio": 27,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 30,
+  "Google News %22AI+music%22": 44,
+  "Google News Suno+OR+Udio": 26,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 31,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
