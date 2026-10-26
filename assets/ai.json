@@ -1,14 +1,6 @@
 {
- "updated": "2026-10-26T08:45Z",
+ "updated": "2026-10-26T14:04Z",
  "items": [
-  {
-   "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
-   "source": "Music Ally",
-   "date": "2026-10-20",
-   "kind": "DRUMS",
-   "release": true
-  },
   {
    "title": "Spotify Co-CEOs Talk AI Remixing Tool: \u2018We\u2019re the Right Company to Do This\u2019",
    "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObEJzc1AxX2piZ193a09GcW1ES1RyNWdSZ1UzUEtyUWhFSFhMTEk0N1BkR3RvU2ZESVZ6bVdrYkFXaVZTdTE5UTRmcVVaR2dzY2hORTlCQ1dLNDVEYUlUUmVWcG9pa1B4Qm81MzBNRk5kZWxlXzRtOWRJTW8xSC1INmdQV2tOdHN1UVRWYnFPRQ?oc=5",
@@ -38,6 +30,14 @@
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1FSd0RBYk1uUXZsTkRMYmpOaEF5ejJXbW1Jckt0U0h1eFdNeFRMODBoYWRpTWtRR2k3RmltYXpuaW44bEVFNmJsdXllTFhQN25iNV9aaXE5VW5ZVXBfMU80dDlaMWsxS2E4bDNzbmpyeVpzOVhNSGhmNnkwYjBqSVJUVTZ4eEFhblRRNUVwVkZwZGtfVkRuSnV3X1gwUlVJZHh3d3hjX3M?oc=5",
    "source": "Variety",
    "date": "2026-10-20",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "YouTube Music introduces labels for AI-generated tracks",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxeFQ4LWFRZ3ZrbHlpZkNONFVFbFVEWnotclVDeXRrZ1pzeEhIOVFoMHhpRDkyZjNZYzRYYzdvVjlVTUdvTXBTdFQzdnRJWC1pSHRZaWxYVHNDbHh0UloxVUtZN3ZyZlNYMGNzYWU4ZUc0b2VVbThMV25ILUE3eUE?oc=5",
+   "source": "DJ Mag",
+   "date": "2026-10-19",
    "kind": "PRODUCT",
    "release": true
   },
@@ -82,11 +82,35 @@
    "release": true
   },
   {
-   "title": "Anthropic sued for \u2018using Elvis Presley songs to train AI without permission\u2019",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPTVByd2lseGdQMGcwdzdsd0dERTgtSC1OUzdhYjFzUlNhZVRpLUZZQ3NqX1YxRDlOQ2hjN1h2Nk9NSW5veHlhclYzeWdqeWtaUk1sNU00R3Z5c2dlUUxEOUljUHp6N25IV0FBSUJ3blBYRnQwb0VqazJLWWl3RWZscGY0MGJlWm9INGlBRzVEcWZrNnU1WWRhSS12U096WWh2d1A1WVZfNEc1d2lCNEFrYnpiZHFvejJGbHVVZkF3?oc=5",
-   "source": "The Independent",
+   "title": "\u201cCopyright infringement at a scale never seen before\u201d: AI firm hit with $41 million lawsuit by owners of Elvis catalogue",
+   "link": "https://www.musicradar.com/music-industry/claude-admitted-these-renders-keep-landing-very-close-to-the-originals-same-structure-same-hooks-reused-with-light-rewording-and-full-sets-of-verses-choruses-bridges-ai-firm-hit-with-usd41-million-lawsuit-by-owners-of-elvis-catalogue",
+   "source": "MusicRadar",
    "date": "2026-10-26",
    "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "Your AI\u2019s nothin\u2019 but a hound dog\u2026 Elvis Presley IP owner sues Anthropic",
+   "link": "https://musically.com/2026/10/26/your-ais-nothin-but-a-hound-dog-elvis-presley-ip-owner-sues-anthropic/",
+   "source": "Music Ally",
+   "date": "2026-10-26",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "AI-powered film studio Utopai raises $60m at $1bn valuation",
+   "link": "https://musically.com/2026/10/26/ai-powered-film-studio-utopai-raises-60m-at-1bn-valuation/",
+   "source": "Music Ally",
+   "date": "2026-10-26",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "\u2018Movin\u2019 to the Sun\u2019 shows grey areas between AI and human music",
+   "link": "https://musically.com/2026/10/26/movin-to-the-sun-shows-grey-areas-between-ai-and-human-music/",
+   "source": "Music Ally",
+   "date": "2026-10-26",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -168,41 +192,9 @@
    "date": "2026-10-22",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Universal Music Group becomes first major music company to license TYGER, which uses AI to adapt songs to gameplay in real time",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRkVBTXI4TXJFM3V4elljNklWOGI1NEd0SFQwU2RWdUZLZExlcVRwZTVuR0RfLUU5eTh2dk9pT0duc0tCZTVvNGZZYjVSTV9vMlhzdHp0X1hfQmpVNlB2Q3loLWtTNFgwanFjZlRxNEVlRXJSemt5TER5ek9mbWZnMjNrblFnNGNqWHAwWVk3YUdmLU1DX0RFQk5OeWRDUUpfanlqZkRJZmUtZWJ2WXh4Snpkd092SktBSUYxQWttM3BaeEFSUkJ3dl83ZFhNYlhrSkdZQ1JOVThqWG1oQnpISHNB?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-22",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Suno admits it has not deleted all the recordings used to train its AI, in answer to UMG and Sony\u2019s \u2018laundering\u2019 lawsuit",
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNd2c3RWhiZDdPODBpQkotSXJIY3N6c2NhbmZGWVZhNm05QVk0UUFmUGotVC1Ed2tqM3Z1U3FxLU9NMDdXVXMwZ3VwTWhnNG9LSkw1c0xIZHViRkRkVUh1MlRSQmtfQU5kakJEeW5XVDdQNmk4S0QyMldyUUJPMFpfYVdjcG5GeC1YR0FETlJXNmJjSmtuRllnYUc5ZURpRXlJeWN2Qlh5ZzZQZVFHQ25ZanB0cGpMSHE0ZTJOUmptS2xPajV5NExMQlZCRkd2dHVnNEg1ZDgwN1RQUXRxZjZ1cDJIOFJVaXl2d254eA?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-22",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "AI-Generated Music and the Future of Creativity Discussed at Billboard Latin Music Week",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNT2pLeXExODAxTEVGNzMwdXF6NGt6VG8yV2Rfa2ZnQnlkYldkcE9lX3Z6bVRvdFI0NDBkRWdETU81Y3Q5OUV2UEVzS1hJUW5nR0Zmenp4azV3TUhKbUp0MkZ1SjR3SlVDNUhWakFUeENuSHgwTUZfUGsxTTVISUNHUlM3SjloQ1FMaXZONkVDVS1tS0U?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-21",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
-  {
-   "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
-   "source": "Music Ally",
-   "date": "2026-10-20",
-   "kind": "DRUMS",
-   "release": true
-  },
   {
    "title": "Human-AI Indian Music Label Raagverse Launches With \u2018Janaa Hai Toh Jao\u2019 (EXCLUSIVE)",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1FSd0RBYk1uUXZsTkRMYmpOaEF5ejJXbW1Jckt0U0h1eFdNeFRMODBoYWRpTWtRR2k3RmltYXpuaW44bEVFNmJsdXllTFhQN25iNV9aaXE5VW5ZVXBfMU80dDlaMWsxS2E4bDNzbmpyeVpzOVhNSGhmNnkwYjBqSVJUVTZ4eEFhblRRNUVwVkZwZGtfVkRuSnV3X1gwUlVJZHh3d3hjX3M?oc=5",
@@ -212,11 +204,11 @@
    "release": true
   },
   {
-   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-14",
-   "kind": "NEWS",
+   "title": "YouTube Music introduces labels for AI-generated tracks",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxeFQ4LWFRZ3ZrbHlpZkNONFVFbFVEWnotclVDeXRrZ1pzeEhIOVFoMHhpRDkyZjNZYzRYYzdvVjlVTUdvTXBTdFQzdnRJWC1pSHRZaWxYVHNDbHh0UloxVUtZN3ZyZlNYMGNzYWU4ZUc0b2VVbThMV25ILUE3eUE?oc=5",
+   "source": "DJ Mag",
+   "date": "2026-10-19",
+   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -252,7 +244,7 @@
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 0,
-  "Music Ally musically.com": 3,
+  "Music Ally musically.com": 6,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
@@ -261,11 +253,11 @@
   "The Verge www.theverge.com": 1,
   "TechCrunch techcrunch.com": 1,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 1,
+  "Google News %22AI%22+drums": 0,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 41,
-  "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 31,
+  "Google News %22AI+music%22": 42,
+  "Google News Suno+OR+Udio": 27,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 29,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,

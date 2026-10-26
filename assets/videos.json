@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-26T08:45Z",
+ "updated": "2026-10-26T14:04Z",
  "items": [
+  {
+   "id": "OpblARSuufY",
+   "title": "Meinl Cymbals - Pure Alloy+Byzance - Ryan Seaman \"Community Library\" Demo",
+   "source": "Meinl",
+   "date": "2026-10-26",
+   "kind": "DEMO"
+  },
   {
    "id": "UbYShZX2AZM",
    "title": "Drum Talk TV News Desk Report - October 3, 06",
@@ -41,13 +48,6 @@
    "title": "Meinl Cymbals - Byzance Traditional Extra Thin Hammered Crashes Comparison",
    "source": "Meinl",
    "date": "2026-10-20",
-   "kind": "DEMO"
-  },
-  {
-   "id": "LdcUjzTTR_w",
-   "title": "Meinl Cymbals - Pure Alloy - Ryan Seaman \"Public Transportation\" Demo",
-   "source": "Meinl",
-   "date": "2026-10-17",
    "kind": "DEMO"
   },
   {
@@ -103,7 +103,7 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (1)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (4)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -120,7 +120,7 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCTInFrw5xOiRGCIAEvGAbvg NAMM TV KAZ (0)",
+  "NAMM": "search UCdmv6DMtxBqEGLkINjSHLiA Namm Spa Dubai (0)",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
