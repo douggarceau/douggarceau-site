@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T16:25Z",
+ "updated": "2026-10-27T20:23Z",
  "items": [
   {
    "id": "oXldX3B-vME",
@@ -7,6 +7,13 @@
    "source": "Meinl",
    "date": "2026-10-27",
    "kind": "DEMO"
+  },
+  {
+   "id": "DmNGntm3pJE",
+   "title": "Halloween Special for Drum Talk TV Brilliance Premium Membership!",
+   "source": "Drumtalk TV",
+   "date": "2026-10-27",
+   "kind": "TALK"
   },
   {
    "id": "OpblARSuufY",
@@ -17,7 +24,7 @@
   },
   {
    "id": "UbYShZX2AZM",
-   "title": "Drum Talk TV News Desk Report - October 3, 06",
+   "title": "Drum Talk TV News Desk Report - October 23rd, 2026",
    "source": "Drumtalk TV",
    "date": "2026-10-24",
    "kind": "TALK"
@@ -42,13 +49,6 @@
    "source": "Gretsch",
    "date": "2026-10-22",
    "kind": "DEMO"
-  },
-  {
-   "id": "QAGMRI8D8qU",
-   "title": "Jon Davison of Yes Interview Fri. 10/23!",
-   "source": "Drumtalk TV",
-   "date": "2026-10-22",
-   "kind": "INTERVIEW"
   },
   {
    "id": "9wSS18huR7k",
@@ -115,12 +115,12 @@
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
   "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
-  "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
   "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
