@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T04:32Z",
+ "updated": "2026-10-27T08:37Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -34,14 +34,6 @@
    "release": false
   },
   {
-   "title": "Universal Music and Sony Want to Know How Many AI-Generated Songs DistroKid Releases",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUGRSVVFOa2RWUXNMRGQwTjlkbVFHS3kxNTd5bjF1RTBWejVPRnZOVzU2MHdrR0xtdlhUT0tnZTVfN3JSV1JNTFg0aWswV3FTMnBsUmRXQnFGamVUU0M5TXZCSF83emZwWXpTcWlWekJ4cXRWVGo0STlITUhnTjBRWlZNdlZOWmhUeHpYMjJKMVZ4X0NNazdqYkdnbVltVTd3cG9ESGd5UVJMNFN3N1V5Xw?oc=5",
-   "source": "The Hollywood Reporter",
-   "date": "2026-10-16",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
    "source": "Guitar World",
@@ -58,8 +50,24 @@
    "release": true
   },
   {
+   "title": "Suno Investor In the Hot Seat After Undermining the Platform\u2019s Fair Use Defense: Judge Green-Lights Deposition of Ex-Menlo Employee Who Deleted Incriminating Tweet",
+   "link": "https://www.digitalmusicnews.com/2026/10/26/cc-gong-suno-tweet-deposition/",
+   "source": "Digital Music News",
+   "date": "2026-10-27",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Suno Files Subpoena Demands Against Apple As Major Label Legal War Intensifies",
    "link": "https://www.digitalmusicnews.com/2026/10/26/suno-files-subpoena-demands-apple/",
+   "source": "Digital Music News",
+   "date": "2026-10-27",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "MLC, Apple Music, & Others Face Subpoenas Amid UMG v. Suno",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWx2ZWx6VEZSNXF5R0F6a2tyNFVab3NSOE5fQU01ZWZIWXdxM01TNC04Q0xIaGYyMGwxbGJ2cDBETnJ2SnlqS250UmNJZG9weWpBYU5VYnU4cXlSRW1lSGliWVl2U0FEcEhKY3JyZk40eXE3R2RfMUE3Tm1QbVNVNw?oc=5",
    "source": "Digital Music News",
    "date": "2026-10-27",
    "kind": "NEWS",
@@ -71,22 +79,6 @@
    "source": "MusicRadar",
    "date": "2026-10-26",
    "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "Universal and Sony cleared to depose ex-Menlo Ventures exec over deleted post: \u2018I\u2019ve personally shifted most of my listening to Suno\u2019",
-   "link": "https://www.musicbusinessworldwide.com/universal-and-sony-cleared-to-depose-ex-menlo-ventures-exec-over-deleted-post-ive-personally-shifted-most-of-my-listening-to-suno/",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-26",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "As UMG v. Suno Subpoenas Target the MLC, Multiple Investors, DistroKid, and Now Apple Music, Are Game-Changing Disclosures on the Horizon?",
-   "link": "https://www.digitalmusicnews.com/2026/10/26/suno-subpoenas-umg-apple-music/",
-   "source": "Digital Music News",
-   "date": "2026-10-26",
-   "kind": "NEWS",
    "release": false
   },
   {
@@ -116,14 +108,6 @@
   {
    "title": "At ADE 2026, a Top Music Lawyer Talks AI, Independence & What the Biz Can Learn From\u00a0Radiohead",
    "link": "https://www.billboard.com/lists/ade-2026-cliff-fluet-talk-ai-streaming-fan-engagement/",
-   "source": "Billboard",
-   "date": "2026-10-26",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Jay-Z Slams AI, Says to \u2018Question Everything\u2019 After SoFi Concert Criticism: \u2018We Got Real Intelligence, Not Artificial Intelligence\u2019",
-   "link": "https://www.billboard.com/music/rb-hip-hop/jay-z-slams-ai-sofi-stadium-concert-ticket-resales-audio-1236368314/",
    "source": "Billboard",
    "date": "2026-10-26",
    "kind": "NEWS",
@@ -186,10 +170,26 @@
    "release": false
   },
   {
-   "title": "YouTube report provides insight into latest AI UGC trend",
-   "link": "https://musically.com/2026/10/23/youtube-report-provides-insight-into-latest-ai-ugc-trend/",
-   "source": "Music Ally",
+   "title": "AI music\u2019s proliferation on streaming services has been a boon for this Spotify competitor",
+   "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBGdllUYzBRNDZEWDU3YS03cWlPSDZpcno4ZnpNdUVEd0hYVWgwNGlMN0tCRHp1WFhwT2JBRUlzZElnMkFnTnptZjBEa1M4RjN5Z3duVHE1VEk3XzhwSU1PZ1FNeTlsU2JGS1hGaFhRb3JBUEtG?oc=5",
+   "source": "Fast Company",
    "date": "2026-10-23",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Would You Listen to A.I. Music? Maybe You Already Do.",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2hWWnhmcUFxYmRuLU9TMUFXaUZTOFJoQXo3VVVXRkNiSTJ3V3pTWUVCSXh1Vnd4SFVrbVp6dTlUSmFtMnVMWkNmdzBNMlk4WU1POHByWWRuUEY3N0cwWXRqdDJRcFVRU0x3Y1RoZWstckZmdlNRMHROWmVRcmlEMGpKd0p0WXFHRWduU3d2YUg5dW4wZXY0YjZwTllYdlUzZk5QWmdKV20?oc=5",
+   "source": "The New York Times",
+   "date": "2026-10-22",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Universal Music Group becomes first major music company to license TYGER, which uses AI to adapt songs to gameplay in real time",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRkVBTXI4TXJFM3V4elljNklWOGI1NEd0SFQwU2RWdUZLZExlcVRwZTVuR0RfLUU5eTh2dk9pT0duc0tCZTVvNGZZYjVSTV9vMlhzdHp0X1hfQmpVNlB2Q3loLWtTNFgwanFjZlRxNEVlRXJSemt5TER5ek9mbWZnMjNrblFnNGNqWHAwWVk3YUdmLU1DX0RFQk5OeWRDUUpfanlqZkRJZmUtZWJ2WXh4Snpkd092SktBSUYxQWttM3BaeEFSUkJ3dl83ZFhNYlhrSkdZQ1JOVThqWG1oQnpISHNB?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-22",
    "kind": "NEWS",
    "release": false
   }
@@ -209,14 +209,6 @@
    "source": "Music Ally",
    "date": "2026-10-20",
    "kind": "DRUMS",
-   "release": true
-  },
-  {
-   "title": "Universal Music and Sony Want to Know How Many AI-Generated Songs DistroKid Releases",
-   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQUGRSVVFOa2RWUXNMRGQwTjlkbVFHS3kxNTd5bjF1RTBWejVPRnZOVzU2MHdrR0xtdlhUT0tnZTVfN3JSV1JNTFg0aWswV3FTMnBsUmRXQnFGamVUU0M5TXZCSF83emZwWXpTcWlWekJ4cXRWVGo0STlITUhnTjBRWlZNdlZOWmhUeHpYMjJKMVZ4X0NNazdqYkdnbVltVTd3cG9ESGd5UVJMNFN3N1V5Xw?oc=5",
-   "source": "The Hollywood Reporter",
-   "date": "2026-10-16",
-   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -252,19 +244,19 @@
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
   "Rekkerd rekkerd.org": 0,
-  "Music Ally musically.com": 6,
+  "Music Ally musically.com": 5,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 2,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 1,
-  "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 41,
-  "Google News Suno+OR+Udio": 29,
+  "Google News %22AI%22+drummer": 0,
+  "Google News %22AI+music%22": 42,
+  "Google News Suno+OR+Udio": 26,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
