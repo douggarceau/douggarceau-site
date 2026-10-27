@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T12:41Z",
+ "updated": "2026-10-27T16:26Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -8,6 +8,14 @@
    "date": "2026-10-20",
    "kind": "DRUMS",
    "release": true
+  },
+  {
+   "title": "Massive XL is here: Native Instruments supersizes its flagship soft synth with AI-powered preset generation, custom wavetables and much more",
+   "link": "https://www.musicradar.com/music-tech/massive-xl-is-here-native-instruments-supersizes-its-flagship-soft-synth-with-ai-powered-preset-generation-custom-wavetables-and-much-more",
+   "source": "MusicRadar",
+   "date": "2026-10-27",
+   "kind": "PRODUCT",
+   "release": false
   },
   {
    "title": "AFM launches 'Human Made, Human Paid' AI Music Campaign",
@@ -66,6 +74,30 @@
    "release": false
   },
   {
+   "title": "Save 30% on LALAL.AI audio separation 12-month Pro subscription",
+   "link": "https://rekkerd.org/lalal-ai-audio-separation-subscription-sale/",
+   "source": "Rekkerd",
+   "date": "2026-10-27",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Edged Out Records built \u2018the first costume shop for AI agents\u2019",
+   "link": "https://musically.com/2026/10/27/edged-out-records-built-the-first-costume-shop-for-ai-agents/",
+   "source": "Music Ally",
+   "date": "2026-10-27",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHpWc1VNTjUxQzFTcVpud0NhOWp0N194Z29OdFlhYnB3OHhNV3FPV2xpbl90NmdQcENWdXIyT0p0MjZJOWxORklDa0llS2xoN1ZfcUVfUDIzSU5TSmFYQkdTSXdfaXpTS3J5OG5zbTUzVWNvZ1dsemZLX3Ixc3dZeVpzcjNXc2dxRkliakFlN1RVNzJfMjFGZm5RNnNVZzQxMmo3Mw?oc=5",
+   "source": "9to5Mac",
+   "date": "2026-10-27",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
    "title": "MLC, Apple Music, & Others Face Subpoenas Amid UMG v. Suno",
    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPdWx2ZWx6VEZSNXF5R0F6a2tyNFVab3NSOE5fQU01ZWZIWXdxM01TNC04Q0xIaGYyMGwxbGJ2cDBETnJ2SnlqS250UmNJZG9weWpBYU5VYnU4cXlSRW1lSGliWVl2U0FEcEhKY3JyZk40eXE3R2RfMUE3Tm1QbVNVNw?oc=5",
    "source": "Digital Music News",
@@ -101,14 +133,6 @@
    "title": "\u2018Movin\u2019 to the Sun\u2019 shows grey areas between AI and human music",
    "link": "https://musically.com/2026/10/26/movin-to-the-sun-shows-grey-areas-between-ai-and-human-music/",
    "source": "Music Ally",
-   "date": "2026-10-26",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "At ADE 2026, a Top Music Lawyer Talks AI, Independence & What the Biz Can Learn From\u00a0Radiohead",
-   "link": "https://www.billboard.com/lists/ade-2026-cliff-fluet-talk-ai-streaming-fan-engagement/",
-   "source": "Billboard",
    "date": "2026-10-26",
    "kind": "NEWS",
    "release": false
@@ -168,33 +192,17 @@
    "date": "2026-10-23",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Would You Listen to A.I. Music? Maybe You Already Do.",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2hWWnhmcUFxYmRuLU9TMUFXaUZTOFJoQXo3VVVXRkNiSTJ3V3pTWUVCSXh1Vnd4SFVrbVp6dTlUSmFtMnVMWkNmdzBNMlk4WU1POHByWWRuUEY3N0cwWXRqdDJRcFVRU0x3Y1RoZWstckZmdlNRMHROWmVRcmlEMGpKd0p0WXFHRWduU3d2YUg5dW4wZXY0YjZwTllYdlUzZk5QWmdKV20?oc=5",
-   "source": "The New York Times",
-   "date": "2026-10-22",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Universal Music Group becomes first major music company to license TYGER, which uses AI to adapt songs to gameplay in real time",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQRkVBTXI4TXJFM3V4elljNklWOGI1NEd0SFQwU2RWdUZLZExlcVRwZTVuR0RfLUU5eTh2dk9pT0duc0tCZTVvNGZZYjVSTV9vMlhzdHp0X1hfQmpVNlB2Q3loLWtTNFgwanFjZlRxNEVlRXJSemt5TER5ek9mbWZnMjNrblFnNGNqWHAwWVk3YUdmLU1DX0RFQk5OeWRDUUpfanlqZkRJZmUtZWJ2WXh4Snpkd092SktBSUYxQWttM3BaeEFSUkJ3dl83ZFhNYlhrSkdZQ1JOVThqWG1oQnpISHNB?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-22",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Fans of AI K-pop band left scratching their heads after being told one of the virtual members was somehow \u2018pregnant\u2019",
-   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRTlBeVQxMkJGNzVUVEJtenI3ZEt0ajIzMm1pdnhYcHM0OXNKc3VXZHphX2VfbE9hSWVnVlVDTzZNcm9iUFYzVVhVa1hMb3pLM2pDQll6UXJieVpFLURJX2RfcXBMelRNYUlsSGFVemFNaVU4eEpHX3JEenYxR1hmWVRwUDlzcXZCR1lLTA?oc=5",
-   "source": "Yahoo",
-   "date": "2026-10-22",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHpWc1VNTjUxQzFTcVpud0NhOWp0N194Z29OdFlhYnB3OHhNV3FPV2xpbl90NmdQcENWdXIyT0p0MjZJOWxORklDa0llS2xoN1ZfcUVfUDIzSU5TSmFYQkdTSXdfaXpTS3J5OG5zbTUzVWNvZ1dsemZLX3Ixc3dZeVpzcjNXc2dxRkliakFlN1RVNzJfMjFGZm5RNnNVZzQxMmo3Mw?oc=5",
+   "source": "9to5Mac",
+   "date": "2026-10-27",
+   "kind": "NEWS",
+   "release": true
+  },
   {
    "title": "AFM launches 'Human Made, Human Paid' AI Music Campaign",
    "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb3VMWXlUVUtnS3NvSk8wY0hITWJfR3RmNmdIWmtKNDVEVlAzNERmR3lqaFlqYk5pRGdJeDR3VlNPVzZXY2NUVzBJTmoyM3Bfb3JrenBwbHplWWRpOUFYS2JnUWtsckQ2dkRzd2RJSm1IR19fRmNkYnJiZGVNeUxtQUJKWQ?oc=5",
@@ -251,25 +259,25 @@
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
-  "Rekkerd rekkerd.org": 0,
-  "Music Ally musically.com": 4,
+  "Rekkerd rekkerd.org": 1,
+  "Music Ally musically.com": 6,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 1,
+  "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 43,
-  "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 19,
+  "Google News %22AI+music%22": 40,
+  "Google News Suno+OR+Udio": 28,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 20,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 1,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
