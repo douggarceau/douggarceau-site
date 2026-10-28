@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T04:25Z",
+ "updated": "2026-10-28T08:27Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -26,10 +26,10 @@
    "release": true
   },
   {
-   "title": "AFM launches 'Human Made, Human Paid' AI Music Campaign",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb3VMWXlUVUtnS3NvSk8wY0hITWJfR3RmNmdIWmtKNDVEVlAzNERmR3lqaFlqYk5pRGdJeDR3VlNPVzZXY2NUVzBJTmoyM3Bfb3JrenBwbHplWWRpOUFYS2JnUWtsckQ2dkRzd2RJSm1IR19fRmNkYnJiZGVNeUxtQUJKWQ?oc=5",
-   "source": "Hypebot",
-   "date": "2026-10-22",
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-27",
    "kind": "PRODUCT",
    "release": true
   },
@@ -40,6 +40,14 @@
    "date": "2026-10-21",
    "kind": "PRODUCT",
    "release": false
+  },
+  {
+   "title": "Human-AI Indian Music Label Raagverse Launches With \u2018Janaa Hai Toh Jao\u2019 (EXCLUSIVE)",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1FSd0RBYk1uUXZsTkRMYmpOaEF5ejJXbW1Jckt0U0h1eFdNeFRMODBoYWRpTWtRR2k3RmltYXpuaW44bEVFNmJsdXllTFhQN25iNV9aaXE5VW5ZVXBfMU80dDlaMWsxS2E4bDNzbmpyeVpzOVhNSGhmNnkwYjBqSVJUVTZ4eEFhblRRNUVwVkZwZGtfVkRuSnV3X1gwUlVJZHh3d3hjX3M?oc=5",
+   "source": "Variety",
+   "date": "2026-10-19",
+   "kind": "PRODUCT",
+   "release": true
   },
   {
    "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
@@ -58,18 +66,18 @@
    "release": false
   },
   {
-   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
-   "source": "EDM.com",
-   "date": "2026-10-14",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
    "source": "Bloomberg.com",
    "date": "2026-10-01",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRzRxYmhXRUV6ZktnaUJoOWxpS2huWVItZ3gxc3Fpa1gzWU1Bd2Q1ckRtR3FNZ3c0bHNMdXVsNnVuRGxQQkxYcmF0QXlfUnVPbjZvMlZIWjZEODd3eEVocWdSUHlOcmZOYWZIa2lUdWNOQ3I0SmxuLVZsN1Itdm9DR3ZwaFVDbTdsT2tUbUg5OHJIbmtMZHR4SUpId3gyVkliNElDcldvWmExRlljblIzMms3V0R2Zmh5WlhuNFdwMmFnUHpzX3oxOHpVNjJ2dw?oc=5",
+   "source": "MusicRadar",
+   "date": "2026-09-30",
    "kind": "PRODUCT",
    "release": true
   },
@@ -184,14 +192,6 @@
    "date": "2026-10-23",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Generative AI Audio Company Sonilo, Led by Ex-TikTokers, Raises $11 Million",
-   "link": "https://www.digitalmusicnews.com/2026/10/22/sonilo-funding-raise/",
-   "source": "Digital Music News",
-   "date": "2026-10-23",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
@@ -199,6 +199,14 @@
    "title": "Tracktion Waveform Pro 14.1 Update Adds AI-Assisted Plugin Creation",
    "link": "https://www.gearnews.com/tracktion-waveform-pro-studio/",
    "source": "Gearnews",
+   "date": "2026-10-27",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
    "date": "2026-10-27",
    "kind": "PRODUCT",
    "release": true
@@ -212,14 +220,6 @@
    "release": true
   },
   {
-   "title": "AFM launches 'Human Made, Human Paid' AI Music Campaign",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb3VMWXlUVUtnS3NvSk8wY0hITWJfR3RmNmdIWmtKNDVEVlAzNERmR3lqaFlqYk5pRGdJeDR3VlNPVzZXY2NUVzBJTmoyM3Bfb3JrenBwbHplWWRpOUFYS2JnUWtsckQ2dkRzd2RJSm1IR19fRmNkYnJiZGVNeUxtQUJKWQ?oc=5",
-   "source": "Hypebot",
-   "date": "2026-10-22",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
    "source": "Music Ally",
@@ -228,10 +228,10 @@
    "release": true
   },
   {
-   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
-   "source": "EDM.com",
-   "date": "2026-10-14",
+   "title": "Human-AI Indian Music Label Raagverse Launches With \u2018Janaa Hai Toh Jao\u2019 (EXCLUSIVE)",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1FSd0RBYk1uUXZsTkRMYmpOaEF5ejJXbW1Jckt0U0h1eFdNeFRMODBoYWRpTWtRR2k3RmltYXpuaW44bEVFNmJsdXllTFhQN25iNV9aaXE5VW5ZVXBfMU80dDlaMWsxS2E4bDNzbmpyeVpzOVhNSGhmNnkwYjBqSVJUVTZ4eEFhblRRNUVwVkZwZGtfVkRuSnV3X1gwUlVJZHh3d3hjX3M?oc=5",
+   "source": "Variety",
+   "date": "2026-10-19",
    "kind": "PRODUCT",
    "release": true
   },
@@ -280,12 +280,12 @@
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 40,
-  "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 22,
+  "Google News Suno+OR+Udio": 30,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 21,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 1,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
