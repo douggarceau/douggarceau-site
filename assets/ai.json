@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T12:30Z",
+ "updated": "2026-10-28T16:26Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -42,10 +42,10 @@
    "release": false
   },
   {
-   "title": "AFM launches 'Human Made, Human Paid' AI Music Campaign",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb3VMWXlUVUtnS3NvSk8wY0hITWJfR3RmNmdIWmtKNDVEVlAzNERmR3lqaFlqYk5pRGdJeDR3VlNPVzZXY2NUVzBJTmoyM3Bfb3JrenBwbHplWWRpOUFYS2JnUWtsckQ2dkRzd2RJSm1IR19fRmNkYnJiZGVNeUxtQUJKWQ?oc=5",
-   "source": "Hypebot",
-   "date": "2026-10-22",
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-27",
    "kind": "PRODUCT",
    "release": true
   },
@@ -162,16 +162,8 @@
    "release": false
   },
   {
-   "title": "AI-powered film studio Utopai raises $60m at $1bn valuation",
-   "link": "https://musically.com/2026/10/26/ai-powered-film-studio-utopai-raises-60m-at-1bn-valuation/",
-   "source": "Music Ally",
-   "date": "2026-10-26",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "\u2018Movin\u2019 to the Sun\u2019 shows grey areas between AI and human music",
-   "link": "https://musically.com/2026/10/26/movin-to-the-sun-shows-grey-areas-between-ai-and-human-music/",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRW0xdkRzQkFmanlMMl9GZGx4RWFsdkF6OEVGdDVxX0hyQXhodDRnZUFSMmpIV0dnTmhGcFNKVVR4UXl0RnU2Vi12Q3J3TUFZcUE0NHkyWGo0SVcwM05HT1Y3UEtHRVZEU0cwbjh2UWdTUEhBaXQxV1U5eDlndl9xVkcxOGJRdC1yNWtEbFNmTlJyUHROdTZFeTlB?oc=5",
    "source": "Music Ally",
    "date": "2026-10-26",
    "kind": "NEWS",
@@ -186,10 +178,18 @@
    "release": false
   },
   {
-   "title": "Chase & Status on the upside of AI for music",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeVRTdVNLdTZONl9PSVpiLVJXTjdHOXlpRG9KejZodFBHcmd4cnU0UUQ0QUl4Tmdva1BkTVNOajdsdUJDTlVxbVI2Q01mSEtYVllRVldkaG5UT0l1bW1GbXVfN25JaXFEUi1saXF3bzhXSkVXYUdmdmkxTzFkZU9PYlo5aG5pRWZnUFFrTWdFeVVNWmlB?oc=5",
-   "source": "Reuters",
-   "date": "2026-10-24",
+   "title": "UMG Licenses Gaming-Focused AI Music Platform Tyger",
+   "link": "https://www.digitalmusicnews.com/2026/10/23/umg-gaming-focused-ai-tyger/",
+   "source": "Digital Music News",
+   "date": "2026-10-23",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Generative AI Audio Company Sonilo, Led by Ex-TikTokers, Raises $11 Million",
+   "link": "https://www.digitalmusicnews.com/2026/10/22/sonilo-funding-raise/",
+   "source": "Digital Music News",
+   "date": "2026-10-23",
    "kind": "NEWS",
    "release": false
   }
@@ -209,14 +209,6 @@
    "source": "9to5Mac",
    "date": "2026-10-27",
    "kind": "NEWS",
-   "release": true
-  },
-  {
-   "title": "AFM launches 'Human Made, Human Paid' AI Music Campaign",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb3VMWXlUVUtnS3NvSk8wY0hITWJfR3RmNmdIWmtKNDVEVlAzNERmR3lqaFlqYk5pRGdJeDR3VlNPVzZXY2NUVzBJTmoyM3Bfb3JrenBwbHplWWRpOUFYS2JnUWtsckQ2dkRzd2RJSm1IR19fRmNkYnJiZGVNeUxtQUJKWQ?oc=5",
-   "source": "Hypebot",
-   "date": "2026-10-22",
-   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -258,6 +250,14 @@
    "date": "2026-10-01",
    "kind": "PRODUCT",
    "release": true
+  },
+  {
+   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRzRxYmhXRUV6ZktnaUJoOWxpS2huWVItZ3gxc3Fpa1gzWU1Bd2Q1ckRtR3FNZ3c0bHNMdXVsNnVuRGxQQkxYcmF0QXlfUnVPbjZvMlZIWjZEODd3eEVocWdSUHlOcmZOYWZIa2lUdWNOQ3I0SmxuLVZsN1Itdm9DR3ZwaFVDbTdsT2tUbUg5OHJIbmtMZHR4SUpId3gyVkliNElDcldvWmExRlljblIzMms3V0R2Zmh5WlhuNFdwMmFnUHpzX3oxOHpVNjJ2dw?oc=5",
+   "source": "MusicRadar",
+   "date": "2026-09-30",
+   "kind": "PRODUCT",
+   "release": true
   }
  ],
  "log": {
@@ -268,7 +268,7 @@
   "Gearnews www.gearnews.com": 1,
   "MusicTech musictech.com": 1,
   "Rekkerd rekkerd.org": 2,
-  "Music Ally musically.com": 6,
+  "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
@@ -279,13 +279,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 5,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 41,
+  "Google News %22AI+music%22": 38,
   "Google News Suno+OR+Udio": 26,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 20,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 3,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
