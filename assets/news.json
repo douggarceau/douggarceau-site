@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T20:23Z",
+ "updated": "2026-10-29T00:45Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -20,9 +20,21 @@
  "raw_count": 61,
  "items": [
   {
+   "title": "ASBA Drums Announces the Signature R\u00e9mi Serafino 14\u201d \u00d7 8\u201d Snare",
+   "link": "https://www.drummingnewsnetwork.com/asba-drums-announces-the-signature-remi-serafino-14-x-8-snare/",
+   "source": "Drumming News Network",
+   "date": "2026-10-28"
+  },
+  {
    "title": "Drumming News Network\u2019s Paul Rogne Makes Modern Drummer Debut with Mike Mangini Feature",
    "link": "https://www.drummingnewsnetwork.com/drumming-news-networks-paul-rogne-makes-modern-drummer-debut-with-mike-mangini-feature/",
    "source": "Drumming News Network",
+   "date": "2026-10-28"
+  },
+  {
+   "title": "\u201cTicks all the right boxes for budding drummers\u201d: Roland TD-07DMK2 review",
+   "link": "https://www.musicradar.com/drums/electronic-drums/roland-td-07dmk2-review",
+   "source": "MusicRadar",
    "date": "2026-10-28"
   },
   {
@@ -76,12 +88,6 @@
   {
    "title": "WFL III Drums Announces Pause in Operations",
    "link": "https://www.drummingnewsnetwork.com/wfl-iii-drums-announces-pause-in-operations/",
-   "source": "Drumming News Network",
-   "date": "2026-10-20"
-  },
-  {
-   "title": "Aerosmith\u2019s Joey Kramer Set for Hollywood Bowl Comeback Shows",
-   "link": "https://www.drummingnewsnetwork.com/aerosmiths-joey-kramer-set-for-hollywood-bowl-comeback-shows/",
    "source": "Drumming News Network",
    "date": "2026-10-20"
   },
@@ -252,12 +258,6 @@
    "link": "https://sickdrummermagazine.com/news/latest-news/kevin-paradis-agonanist-effacement-drum-play-through/",
    "source": "Sick Drummer Magazine",
    "date": "2026-09-29"
-  },
-  {
-   "title": "JJ Wallace: Finding Your Own Sound",
-   "link": "https://theukdrumshow.com/show-news/jj-wallace-finding-your-own-sound/",
-   "source": "The UK Drum Show",
-   "date": "2026-09-25"
   }
  ]
 }
