@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T04:25Z",
+ "updated": "2026-10-29T08:27Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -50,6 +50,14 @@
    "release": false
   },
   {
+   "title": "AFM launches 'Human Made, Human Paid' AI Music Campaign",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb3VMWXlUVUtnS3NvSk8wY0hITWJfR3RmNmdIWmtKNDVEVlAzNERmR3lqaFlqYk5pRGdJeDR3VlNPVzZXY2NUVzBJTmoyM3Bfb3JrenBwbHplWWRpOUFYS2JnUWtsckQ2dkRzd2RJSm1IR19fRmNkYnJiZGVNeUxtQUJKWQ?oc=5",
+   "source": "Hypebot",
+   "date": "2026-10-22",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
    "source": "Guitar World",
@@ -66,18 +74,18 @@
    "release": false
   },
   {
-   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
-   "source": "EDM.com",
-   "date": "2026-10-14",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
    "source": "Bloomberg.com",
    "date": "2026-10-01",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRzRxYmhXRUV6ZktnaUJoOWxpS2huWVItZ3gxc3Fpa1gzWU1Bd2Q1ckRtR3FNZ3c0bHNMdXVsNnVuRGxQQkxYcmF0QXlfUnVPbjZvMlZIWjZEODd3eEVocWdSUHlOcmZOYWZIa2lUdWNOQ3I0SmxuLVZsN1Itdm9DR3ZwaFVDbTdsT2tUbUg5OHJIbmtMZHR4SUpId3gyVkliNElDcldvWmExRlljblIzMms3V0R2Zmh5WlhuNFdwMmFnUHpzX3oxOHpVNjJ2dw?oc=5",
+   "source": "MusicRadar",
+   "date": "2026-09-30",
    "kind": "PRODUCT",
    "release": true
   },
@@ -146,17 +154,17 @@
    "release": false
   },
   {
-   "title": "\u201cCopyright infringement at a scale never seen before\u201d: AI firm hit with $41 million lawsuit by owners of Elvis catalogue",
-   "link": "https://www.musicradar.com/music-industry/claude-admitted-these-renders-keep-landing-very-close-to-the-originals-same-structure-same-hooks-reused-with-light-rewording-and-full-sets-of-verses-choruses-bridges-ai-firm-hit-with-usd41-million-lawsuit-by-owners-of-elvis-catalogue",
-   "source": "MusicRadar",
-   "date": "2026-10-26",
+   "title": "Anthropic sued for allegedly using Elvis Presley's music to train Claude AI",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOM2xOOFZqNWFrcmxCT0xWSmVmRHg2VnJxa3dkTHhoaVFKR2ZLYjdZcTJ1b1dkeWwyNVZCS0RSRExtZHRtalpUVGVPWkFYNVpqd1VLbjRrQVJlOWVrTXFzdVNrYXZlM2Q3SDFNU1J6YmhzNGdiU1ZqY3NQMk50RUNPRnllSVlaVTFVODRMdEZ3VnBNLWJG?oc=5",
+   "source": "Yahoo",
+   "date": "2026-10-27",
    "kind": "PROBLEM",
    "release": false
   },
   {
-   "title": "Your AI\u2019s nothin\u2019 but a hound dog\u2026 Elvis Presley IP owner sues Anthropic",
-   "link": "https://musically.com/2026/10/26/your-ais-nothin-but-a-hound-dog-elvis-presley-ip-owner-sues-anthropic/",
-   "source": "Music Ally",
+   "title": "\u201cCopyright infringement at a scale never seen before\u201d: AI firm hit with $41 million lawsuit by owners of Elvis catalogue",
+   "link": "https://www.musicradar.com/music-industry/claude-admitted-these-renders-keep-landing-very-close-to-the-originals-same-structure-same-hooks-reused-with-light-rewording-and-full-sets-of-verses-choruses-bridges-ai-firm-hit-with-usd41-million-lawsuit-by-owners-of-elvis-catalogue",
+   "source": "MusicRadar",
    "date": "2026-10-26",
    "kind": "PROBLEM",
    "release": false
@@ -184,14 +192,6 @@
    "date": "2026-10-24",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "UMG Licenses Gaming-Focused AI Music Platform Tyger",
-   "link": "https://www.digitalmusicnews.com/2026/10/23/umg-gaming-focused-ai-tyger/",
-   "source": "Digital Music News",
-   "date": "2026-10-23",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
@@ -212,6 +212,14 @@
    "release": true
   },
   {
+   "title": "AFM launches 'Human Made, Human Paid' AI Music Campaign",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPb3VMWXlUVUtnS3NvSk8wY0hITWJfR3RmNmdIWmtKNDVEVlAzNERmR3lqaFlqYk5pRGdJeDR3VlNPVzZXY2NUVzBJTmoyM3Bfb3JrenBwbHplWWRpOUFYS2JnUWtsckQ2dkRzd2RJSm1IR19fRmNkYnJiZGVNeUxtQUJKWQ?oc=5",
+   "source": "Hypebot",
+   "date": "2026-10-22",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
    "source": "Music Ally",
@@ -220,25 +228,17 @@
    "release": true
   },
   {
-   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
-   "source": "EDM.com",
+   "title": "YouTube Music and Deezer add new AI music controls",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
+   "source": "Mashable",
    "date": "2026-10-14",
-   "kind": "PRODUCT",
+   "kind": "NEWS",
    "release": true
   },
   {
    "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
    "source": "Billboard",
-   "date": "2026-10-14",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": true
@@ -277,14 +277,14 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 3,
+  "Google News %22AI%22+drums": 5,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 39,
+  "Google News %22AI+music%22": 41,
   "Google News Suno+OR+Udio": 29,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 20,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 21,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
-  "Google News %22AI%22+stem+separation": 3,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
+  "Google News %22AI%22+stem+separation": 4,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }

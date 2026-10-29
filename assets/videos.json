@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-28T20:23Z",
+ "updated": "2026-10-29T08:27Z",
  "items": [
+  {
+   "id": "rORrT3bj32A",
+   "title": "Nic Collins & Better Strangers: The Unreleased Interview | Live at Gramps",
+   "source": "Modern Drummer",
+   "date": "2026-10-28",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "OkZblxW-wpo",
+   "title": "Don't Miss Out on This Halloween Special at Drum Talk TV Brilliance!",
+   "source": "Drumtalk TV",
+   "date": "2026-10-28",
+   "kind": "TALK"
+  },
   {
    "id": "oXldX3B-vME",
    "title": "Meinl Cymbals - Byzance Traditional & Dark Trash Crashes Comparison",
@@ -28,13 +42,6 @@
    "source": "Drumtalk TV",
    "date": "2026-10-24",
    "kind": "TALK"
-  },
-  {
-   "id": "y19jTvY7BUw",
-   "title": "Jon Davison Interview - Yesshift Ep 250",
-   "source": "Drumtalk TV",
-   "date": "2026-10-24",
-   "kind": "INTERVIEW"
   },
   {
    "id": "tMw4BLiDZbs",
@@ -113,15 +120,13 @@
   "Sabian skip UCJbu6KNGcKK5KsVAxLoh2xA": "sabiancymbals",
   "Sabian skip UCNmSiKDIL1GKy71hbnSMUvQ": "SabianOfficial",
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
-  "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
-  "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
+  "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
-  "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
+  "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (3)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCvp7nLHT_oIKUX5t9YSa2oA NAMM Foundation (0)",
-  "NAMM skip UC9aMx0tacVOH6VrxyZrVzVQ": "Grupo Namm",
+  "NAMM": "search UCKDTw8myziWbkT3R2dh9vKQ Namm (0)",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
