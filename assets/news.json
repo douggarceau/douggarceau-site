@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T12:30Z",
+ "updated": "2026-10-29T16:25Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -7,7 +7,6 @@
   "Drumeo (8)",
   "Sick Drummer Magazine (8)",
   "The UK Drum Show (8)",
-  "Drummerworld (8)",
   "Scott K Fish (5)",
   "The Drum Ninja (8)",
   "Electronic Drum Advisor (8)",
@@ -16,7 +15,8 @@
   "MusicRadar (8)"
  ],
  "errors": {
-  "Beat It": "junk after document element: line 223, column 0"
+  "Beat It": "junk after document element: line 223, column 0",
+  "Drummerworld": "The read operation timed out"
  },
  "raw_count": 53,
  "items": [
