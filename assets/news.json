@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-30T08:27Z",
+ "updated": "2026-10-30T12:30Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
-  "Drummer's Review (8)",
+  "Beat It (8)",
   "Drumeo (8)",
-  "The UK Drum Show (8)",
+  "Sick Drummer Magazine (8)",
   "Drummerworld (8)",
   "Scott K Fish (5)",
   "The Drum Ninja (8)",
@@ -15,16 +15,22 @@
   "MusicRadar (8)"
  ],
  "errors": {
-  "Beat It": "junk after document element: line 223, column 0",
-  "Sick Drummer Magazine": "<urlopen error timed out>"
+  "Drummer's Review": "mismatched tag: line 93, column 2",
+  "The UK Drum Show": "mismatched tag: line 93, column 2"
  },
- "raw_count": 49,
+ "raw_count": 45,
  "items": [
   {
    "title": "Glen Caruba Named President of Pearl Corporation",
    "link": "https://www.drummingnewsnetwork.com/glen-caruba-named-president-of-pearl-corporation/",
    "source": "Drumming News Network",
    "date": "2026-10-30"
+  },
+  {
+   "title": "Meinl HCS Dark Cymbals",
+   "link": "https://en.beatit.tv/meinl-hcs-dark-cymbals/",
+   "source": "Beat It",
+   "date": "2026-10-29"
   },
   {
    "title": "By the Way Drum Transcription",
@@ -69,12 +75,6 @@
    "date": "2026-10-25"
   },
   {
-   "title": "SIMEN SANDNES: The Art of Drumming\u2026",
-   "link": "https://drummersreview.com/uncategorized/simen-sandnes-the-art-of-drumming/",
-   "source": "Drummer's Review",
-   "date": "2026-10-23"
-  },
-  {
    "title": "Gretsch Drums Launches E-Drum Series Catalina Evo",
    "link": "https://www.drummingnewsnetwork.com/gretsch-drums-launches-e-drum-series-catalina-evo/",
    "source": "Drumming News Network",
@@ -87,22 +87,22 @@
    "date": "2026-10-22"
   },
   {
+   "title": "Roland Updates the Popular TD-07 Series V-Drums Lineup",
+   "link": "https://en.beatit.tv/roland-updates-the-popular-td-07-series-v-drums-lineup/",
+   "source": "Beat It",
+   "date": "2026-10-22"
+  },
+  {
    "title": "\u201cLess time navigating technology, more time playing drums\u201d: Gretsch launch new electronic drum kit",
    "link": "https://www.musicradar.com/drums/electronic-drums/less-time-navigating-technology-and-more-time-doing-what-they-love-playing-drums-gretschs-first-electronic-drum-kit-revealed",
    "source": "MusicRadar",
    "date": "2026-10-22"
   },
   {
-   "title": "Ben Thatcher: The Drummer Behind Royal Blood\u2019s Explosive Sound",
-   "link": "https://drummersreview.com/news/ben-thatcher-the-drummer-behind-royal-bloods-explosive-sound/",
-   "source": "Drummer's Review",
-   "date": "2026-10-20"
-  },
-  {
-   "title": "Roland Updates the Popular TD-07 Series V-Drums Lineup",
-   "link": "https://drummersreview.com/news/roland-updates-the-popular-td-07-series-v-drums-lineup/",
-   "source": "Drummer's Review",
-   "date": "2026-10-16"
+   "title": "DW Design Mapa Burl over European Birch",
+   "link": "https://en.beatit.tv/dw-design-mapa-burl-over-european-birch/",
+   "source": "Beat It",
+   "date": "2026-10-19"
   },
   {
    "title": "Give The Drummer Some: Roland announce they\u2019re updating their TD-07 series",
@@ -111,28 +111,16 @@
    "date": "2026-10-16"
   },
   {
-   "title": "MHADLY ONE: Does This TINY Device Really Work?",
-   "link": "https://drummersreview.com/news/mhadly-one-does-this-tiny-device-really-work/",
-   "source": "Drummer's Review",
-   "date": "2026-10-15"
-  },
-  {
    "title": "The 6 Best Room Mics for Drums of 2026",
    "link": "https://www.electronicdrumadvisor.com/best-room-mics-for-drums/",
    "source": "Electronic Drum Advisor",
    "date": "2026-10-15"
   },
   {
-   "title": "DW\u2019s Design Series Goes Exotic",
-   "link": "https://drummersreview.com/news/dws-design-series-goes-exotic/",
-   "source": "Drummer's Review",
-   "date": "2026-10-13"
-  },
-  {
-   "title": "Medeli to make debut at The UK Drum Show",
-   "link": "https://theukdrumshow.com/show-news/medeli-to-make-debut-at-the-uk-drum-show/",
-   "source": "The UK Drum Show",
-   "date": "2026-10-13"
+   "title": "Sabian mid-year and fall releases",
+   "link": "https://en.beatit.tv/sabian-mid-year-and-fall-releases/",
+   "source": "Beat It",
+   "date": "2026-10-14"
   },
   {
    "title": "Don\u2019t Stop Me Now Drum Transcription",
@@ -141,10 +129,10 @@
    "date": "2026-10-13"
   },
   {
-   "title": "150 Only: Drumeo \u00d7 SABIAN Bundle Lands at The UK Drum Show",
-   "link": "https://drummersreview.com/news/150-only-drumeo-x-sabian-bundle-lands-at-the-uk-drum-show/",
-   "source": "Drummer's Review",
-   "date": "2026-10-07"
+   "title": "Dominic Howard (Muse) joins Ludwig family",
+   "link": "https://en.beatit.tv/dominic-howard-muse-joins-ludwig-family/",
+   "source": "Beat It",
+   "date": "2026-10-12"
   },
   {
    "title": "Fluorescent Adolescent Drum Transcription",
@@ -153,21 +141,9 @@
    "date": "2026-10-07"
   },
   {
-   "title": "CJ HOKDAL: From \u201cThat Swedish Drummer\u201d to The UK Drum Show",
-   "link": "https://drummersreview.com/news/cj-hokdal-from-that-swedish-drummer-to-the-uk-drum-show/",
-   "source": "Drummer's Review",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "Conn Selmer Europe Announces 2026 Scholarship Winner",
-   "link": "https://drummersreview.com/news/conn-selmer-europe-announces-2026-scholarship-winner/",
-   "source": "Drummer's Review",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "SWISS DRUM WORLD IS COMING TO THE UK DRUM SHOW 2026!",
-   "link": "https://theukdrumshow.com/show-news/swiss-drum-world-is-coming-to-the-uk-drum-show-2026/",
-   "source": "The UK Drum Show",
+   "title": "New Tama Starclassic Walnut/Birch Duracover finishes",
+   "link": "https://en.beatit.tv/new-tama-starclassic-walnut-birch-duracover-finishes/",
+   "source": "Beat It",
    "date": "2026-10-06"
   },
   {
@@ -189,9 +165,9 @@
    "date": "2026-10-02"
   },
   {
-   "title": "LOUISE BARTLE | From Bedroom Drummer to Bloc Party",
-   "link": "https://theukdrumshow.com/show-news/louise-bartle-from-bedroom-drummer-to-bloc-party/",
-   "source": "The UK Drum Show",
+   "title": "Aquiles Priester joins Czarcie Kopyto family",
+   "link": "https://en.beatit.tv/aquiles-priester-joins-czarcie-kopyto-family/",
+   "source": "Beat It",
    "date": "2026-10-01"
   },
   {
@@ -207,28 +183,40 @@
    "date": "2026-10-01"
   },
   {
+   "title": "Abe Laboriel Jr. performs with Pearl Jam",
+   "link": "https://en.beatit.tv/abe-laboriel-jr-performs-with-pearl-jam/",
+   "source": "Beat It",
+   "date": "2026-09-30"
+  },
+  {
    "title": "Jump Drum Transcription",
    "link": "https://thedrumninja.com/jump-drum-transcription/",
    "source": "The Drum Ninja",
    "date": "2026-09-30"
   },
   {
-   "title": "JJ Wallace: Finding Your Own Sound",
-   "link": "https://theukdrumshow.com/show-news/jj-wallace-finding-your-own-sound/",
-   "source": "The UK Drum Show",
-   "date": "2026-09-25"
-  },
-  {
-   "title": "Drumeo Is Giving Away Its \u00a320 Groove Book Free Ahead of The UK Drum Show",
-   "link": "https://theukdrumshow.com/show-news/drumeo-is-giving-away-its-20-groove-book-free-ahead-of-the-uk-drum-show/",
-   "source": "The UK Drum Show",
-   "date": "2026-09-23"
+   "title": "Kevin Paradis \u2013 Agonanist \u2013 Effacement \u2013 Exclusive Drum Play-through",
+   "link": "https://sickdrummermagazine.com/news/latest-news/kevin-paradis-agonanist-effacement-drum-play-through/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-29"
   },
   {
    "title": "\u201cIt\u2019s hard to argue with the amount of features on offer here for such an affordable price\u201d: Millenium Drums MPS-350 E-Drum Set review",
    "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-mps-350-e-drum-set-review",
    "source": "MusicRadar",
    "date": "2026-09-18"
+  },
+  {
+   "title": "WOODIES Drumsticks Review",
+   "link": "https://sickdrummermagazine.com/s1-news/c82-product-reviews/woodies-drumsticks-review-why-the-5a-long-won-me-over/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-17"
+  },
+  {
+   "title": "Zed Amarin \u2013 Esodic \u2013 Of The Grave \u2013 Drum Play-through",
+   "link": "https://sickdrummermagazine.com/news/latest-news/zed-amarin-esodic-of-the-grave-drum-play-through/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-16"
   },
   {
    "title": "The new Millenium Drums MPS-1500 e-kit could be the hybrid drum set you've been looking for",
@@ -259,6 +247,18 @@
    "link": "https://www.musicradar.com/artists/i-thought-axls-snake-dancing-wasnt-rock-and-roll-so-i-actually-told-the-editor-to-cut-all-of-that-stuff-out-then-i-heard-someone-say-oh-my-god-thats-so-sexy-one-of-axl-roses-signature-moves-was-almost-cut-from-the-sweet-child-o-mine-video",
    "source": "MusicRadar",
    "date": "2026-09-09"
+  },
+  {
+   "title": "Big, Loud and Muscular: Stephen Perkins\u2019 Return to \u201970s Rock",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-jimmy-page-dw-kit-panic-channel/",
+   "source": "Modern Drummer",
+   "date": "2026-09-08"
+  },
+  {
+   "title": "The Rebirth of Jane\u2019s Addiction: Stephen Perkins\u2019 1997 Relapse Tour Kit",
+   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1997-janes-addiction-relapse-tour-kit/",
+   "source": "Modern Drummer",
+   "date": "2026-09-06"
   }
  ]
 }
