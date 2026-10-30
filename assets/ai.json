@@ -1,6 +1,14 @@
 {
- "updated": "2026-10-30T00:47Z",
+ "updated": "2026-10-30T04:24Z",
  "items": [
+  {
+   "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
+   "source": "Music Ally",
+   "date": "2026-10-20",
+   "kind": "DRUMS",
+   "release": true
+  },
   {
    "title": "Suno launches MCP server to \u2018create music right from the chat\u2019",
    "link": "https://musically.com/2026/10/29/suno-launches-mcp-server-to-create-music-right-from-the-chat/",
@@ -82,12 +90,12 @@
    "release": true
   },
   {
-   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRzRxYmhXRUV6ZktnaUJoOWxpS2huWVItZ3gxc3Fpa1gzWU1Bd2Q1ckRtR3FNZ3c0bHNMdXVsNnVuRGxQQkxYcmF0QXlfUnVPbjZvMlZIWjZEODd3eEVocWdSUHlOcmZOYWZIa2lUdWNOQ3I0SmxuLVZsN1Itdm9DR3ZwaFVDbTdsT2tUbUg5OHJIbmtMZHR4SUpId3gyVkliNElDcldvWmExRlljblIzMms3V0R2Zmh5WlhuNFdwMmFnUHpzX3oxOHpVNjJ2dw?oc=5",
-   "source": "MusicRadar",
-   "date": "2026-09-30",
-   "kind": "PRODUCT",
-   "release": true
+   "title": "Anthropic sued over Elvis catalog \u2014 and the 274-song copyright battle shows the AI industry's 'fair use' excuses are getting old",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNa2Z3VjdTZ0RCOVBWZTJRRkduZU16TUYtaVdfR0lJS2hMbXFnZzdSMHBoZW5sV25CVndXUEtXeTVPMDVDTWhhTTZIajZhUEZOMzJOTWE3WWNlVDI1YlZzYV9BNVFZaU9QbjRUQi1JYXB3ak9QR2Q0dkNBZ0pZTmUyWmVUMnBmd3NYNHJKbi1sT2JYX3l4dG5LTzh0ZWxjc2dyaGUzazhwNXFQbzZuMEFtNFhsUEdBSExsaTdpR1dlVzhWZk1oYV9UbWlXdjBGa0RzTzhrVVdEbnBrMVY5TTZjUVQzckQ0ZnN5Ul94dkNXX3JPd3BQb0c0Q3FWYVZKLTEt?oc=5",
+   "source": "TechRadar",
+   "date": "2026-10-30",
+   "kind": "PROBLEM",
+   "release": false
   },
   {
    "title": "Universal Music Posts 12% Q3 \u201926 Revenue Growth Thanks to Downtown \u2014 But Amid an AI Avalanche, Grainge Says \u2018The Structure of Our DSP Agreements Has to Change\u2019",
@@ -146,22 +154,6 @@
    "release": false
   },
   {
-   "title": "\u201cCopyright infringement at a scale never seen before\u201d: AI firm hit with $41 million lawsuit by owners of Elvis catalogue",
-   "link": "https://www.musicradar.com/music-industry/claude-admitted-these-renders-keep-landing-very-close-to-the-originals-same-structure-same-hooks-reused-with-light-rewording-and-full-sets-of-verses-choruses-bridges-ai-firm-hit-with-usd41-million-lawsuit-by-owners-of-elvis-catalogue",
-   "source": "MusicRadar",
-   "date": "2026-10-26",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNelFOZFdTZmw2a1FtcjAxZk5lYktWT09FRTRaT0g0MmFrRFpHX0dIbk1IeVJNYmxVVlhBZHRYWk1YZzFHRjh0N29jSEdWd2s3OEJrcFM4SW9Tb29tLTQ5VjJaQ3BFQThpRXNJUzVPbXcwOElvcVJUNl9aZE1SaWVZTTR1VTYtcHNGZVdjU2t4MVItd2ZKYlhZZGd3cw?oc=5",
-   "source": "The Guardian",
-   "date": "2026-10-26",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
    "title": "\u2018Movin\u2019 to the Sun\u2019 shows grey areas between AI and human music",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRW0xdkRzQkFmanlMMl9GZGx4RWFsdkF6OEVGdDVxX0hyQXhodDRnZUFSMmpIV0dnTmhGcFNKVVR4UXl0RnU2Vi12Q3J3TUFZcUE0NHkyWGo0SVcwM05HT1Y3UEtHRVZEU0cwbjh2UWdTUEhBaXQxV1U5eDlndl9xVkcxOGJRdC1yNWtEbFNmTlJyUHROdTZFeTlB?oc=5",
    "source": "Music Ally",
@@ -188,6 +180,14 @@
   {
    "title": "UMG Licenses Gaming-Focused AI Music Platform Tyger",
    "link": "https://www.digitalmusicnews.com/2026/10/23/umg-gaming-focused-ai-tyger/",
+   "source": "Digital Music News",
+   "date": "2026-10-23",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Generative AI Audio Company Sonilo, Led by Ex-TikTokers, Raises $11 Million",
+   "link": "https://www.digitalmusicnews.com/2026/10/22/sonilo-funding-raise/",
    "source": "Digital Music News",
    "date": "2026-10-23",
    "kind": "NEWS",
@@ -228,6 +228,14 @@
    "release": true
   },
   {
+   "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
+   "source": "Music Ally",
+   "date": "2026-10-20",
+   "kind": "DRUMS",
+   "release": true
+  },
+  {
    "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
    "source": "Billboard",
@@ -250,14 +258,6 @@
    "date": "2026-10-01",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "Engram is a \u2018generative audio sampler\u2019 that applies circuit bending principles to AI audio models",
-   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRzRxYmhXRUV6ZktnaUJoOWxpS2huWVItZ3gxc3Fpa1gzWU1Bd2Q1ckRtR3FNZ3c0bHNMdXVsNnVuRGxQQkxYcmF0QXlfUnVPbjZvMlZIWjZEODd3eEVocWdSUHlOcmZOYWZIa2lUdWNOQ3I0SmxuLVZsN1Itdm9DR3ZwaFVDbTdsT2tUbUg5OHJIbmtMZHR4SUpId3gyVkliNElDcldvWmExRlljblIzMms3V0R2Zmh5WlhuNFdwMmFnUHpzX3oxOHpVNjJ2dw?oc=5",
-   "source": "MusicRadar",
-   "date": "2026-09-30",
-   "kind": "PRODUCT",
-   "release": true
   }
  ],
  "log": {
@@ -277,13 +277,13 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 3,
+  "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 37,
-  "Google News Suno+OR+Udio": 30,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
+  "Google News %22AI+music%22": 39,
+  "Google News Suno+OR+Udio": 28,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
   "Google News %22AI%22+music+producer+plugin": 1,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 3,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
