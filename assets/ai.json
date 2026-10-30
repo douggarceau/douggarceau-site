@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T12:30Z",
+ "updated": "2026-10-30T16:23Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -35,15 +35,7 @@
   },
   {
    "title": "Suno launches MCP server to \u2018create music right from the chat\u2019",
-   "link": "https://musically.com/2026/10/29/suno-launches-mcp-server-to-create-music-right-from-the-chat/",
-   "source": "Music Ally",
-   "date": "2026-10-29",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "SkillBox has launched an \u201cAI-powered \u2018event creation\u2019 engine",
-   "link": "https://musically.com/2026/10/29/skillbox-has-launched-an-ai-powered-event-creation-engine/",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNR25sNEJJMVZtb25HdG1iUWFNdnBjQVMxSHg5Z0V4RktMOVh4VFEwSHp4YWZ6Z3ppVEY2NW9wbzBJTjB3MEtVbFNoaXpGSGx6WmtWb0NNX1F2MUhrQkVSMVM5N3Nnb3dxSVd3MkZ2ZFhWcGE5RXdFaUk4bDk0bF9JQTUxZEIxQXRGMTJVekxTN180MUhfblhNMWFn?oc=5",
    "source": "Music Ally",
    "date": "2026-10-29",
    "kind": "PRODUCT",
@@ -117,6 +109,14 @@
    "title": "Zeds Dead on two decades of sampling: \u201cThe interest is in the history; AI has no history\u201d",
    "link": "https://musictech.com/features/interviews/zeds-dead-interview-sampling-ai/",
    "source": "MusicTech",
+   "date": "2026-10-30",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "UMG talks\u00a0AI music: \u2018The volume is growing faster than the safeguards\u2019",
+   "link": "https://musically.com/2026/10/30/umg-talks-ai-music-the-volume-is-growing-faster-than-the-safeguards/",
+   "source": "Music Ally",
    "date": "2026-10-30",
    "kind": "NEWS",
    "release": false
@@ -212,14 +212,6 @@
    "release": true
   },
   {
-   "title": "SkillBox has launched an \u201cAI-powered \u2018event creation\u2019 engine",
-   "link": "https://musically.com/2026/10/29/skillbox-has-launched-an-ai-powered-event-creation-engine/",
-   "source": "Music Ally",
-   "date": "2026-10-29",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Universal Music Group Posts $3.78 Billion in Revenue For Q3, Signals Fight Against AI Slop",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSkkwXy1lNWlOZ0JJTDVkYVFnZkwxN3Vzc25ucGFRamtnZjZ6SE1RTE1keWsxY29uTnNfZG9abEh5TzM3cGJKTksyalcyNDFNR2I0YnVvMVRaUUZHQ21xaFZkdFRXd3ZmVm9BT0x6UFI1dzJTVGZUdXktSUdYaXNWRk5QXzdMdkNzWThwSV9vNjQtb0dHNlgzOGhHZmJzSjd5ekRMcWkyb3o?oc=5",
    "source": "The Hollywood Reporter",
@@ -258,6 +250,14 @@
    "date": "2026-10-20",
    "kind": "DRUMS",
    "release": true
+  },
+  {
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-14",
+   "kind": "NEWS",
+   "release": true
   }
  ],
  "log": {
@@ -278,10 +278,10 @@
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 4,
-  "Google News %22AI%22+drummer": 1,
+  "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 42,
   "Google News Suno+OR+Udio": 30,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 4,
