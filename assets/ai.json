@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T04:24Z",
+ "updated": "2026-10-30T08:27Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -7,6 +7,14 @@
    "source": "Music Ally",
    "date": "2026-10-20",
    "kind": "DRUMS",
+   "release": true
+  },
+  {
+   "title": "Spotify aims to launch AI music remix service early next year",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
+   "source": "Financial Times",
+   "date": "2026-10-30",
+   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -154,6 +162,14 @@
    "release": false
   },
   {
+   "title": "Elvis Presley AI Lawsuit, Neil Young Trump Case, Drake Spotify Ruling & More Music Law News",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOalgtSzEtaHMzQmZrd3hIYjV0YkU2Z1N2T3BYNE5CQjRfUGVKUGpwRUNCcHh4STdjVzdhWjhBdi1TckNXNlFmN0lmYS1ua0REVEJvVHUxRnZxRlcwTXJHUmE4ZUgzcVdxRTAzQlgtVW9OZzVHdzRDZkJrM2ZnNjFVTjJ0Rzh5a3c?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-27",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "\u2018Movin\u2019 to the Sun\u2019 shows grey areas between AI and human music",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRW0xdkRzQkFmanlMMl9GZGx4RWFsdkF6OEVGdDVxX0hyQXhodDRnZUFSMmpIV0dnTmhGcFNKVVR4UXl0RnU2Vi12Q3J3TUFZcUE0NHkyWGo0SVcwM05HT1Y3UEtHRVZEU0cwbjh2UWdTUEhBaXQxV1U5eDlndl9xVkcxOGJRdC1yNWtEbFNmTlJyUHROdTZFeTlB?oc=5",
    "source": "Music Ally",
@@ -176,25 +192,17 @@
    "date": "2026-10-24",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "UMG Licenses Gaming-Focused AI Music Platform Tyger",
-   "link": "https://www.digitalmusicnews.com/2026/10/23/umg-gaming-focused-ai-tyger/",
-   "source": "Digital Music News",
-   "date": "2026-10-23",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Generative AI Audio Company Sonilo, Led by Ex-TikTokers, Raises $11 Million",
-   "link": "https://www.digitalmusicnews.com/2026/10/22/sonilo-funding-raise/",
-   "source": "Digital Music News",
-   "date": "2026-10-23",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Spotify aims to launch AI music remix service early next year",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
+   "source": "Financial Times",
+   "date": "2026-10-30",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "Suno launches MCP server to \u2018create music right from the chat\u2019",
    "link": "https://musically.com/2026/10/29/suno-launches-mcp-server-to-create-music-right-from-the-chat/",
@@ -250,14 +258,6 @@
    "date": "2026-10-05",
    "kind": "NEWS",
    "release": true
-  },
-  {
-   "title": "AI Startup Suno\u2019s New Tool Puts Music to Spoken Word",
-   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUUlwX19xVEpZcmlyNTQ0dGdVOGVWa1hwdkV4UWFtSnhYdTVJeW5sejhnM0Zsd0NvMjlBY3hEeHBoQmgtZjlNVlNQVHAya0l2U3htTnIzaVFHMlFUQzFiTG5WZVVVUEdwOEZWLWZ0WE1USWl2WW03Uk5EU2k5djFvU3RiLVhBZ3RnWU51cktzcDZTcTM5bUNWbkhkTURpdnNBaGxPT1lB?oc=5",
-   "source": "Bloomberg.com",
-   "date": "2026-10-01",
-   "kind": "PRODUCT",
-   "release": true
   }
  ],
  "log": {
@@ -279,9 +279,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 39,
+  "Google News %22AI+music%22": 38,
   "Google News Suno+OR+Udio": 28,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 23,
   "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 3,

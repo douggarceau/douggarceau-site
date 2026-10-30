@@ -1,30 +1,36 @@
 {
- "updated": "2026-10-30T04:24Z",
+ "updated": "2026-10-30T08:27Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
   "Drummer's Review (8)",
   "Drumeo (8)",
-  "Sick Drummer Magazine (8)",
   "The UK Drum Show (8)",
   "Drummerworld (8)",
   "Scott K Fish (5)",
+  "The Drum Ninja (8)",
+  "Electronic Drum Advisor (8)",
   "drum-tec (8)",
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
  "errors": {
   "Beat It": "junk after document element: line 223, column 0",
-  "The Drum Ninja": "mismatched tag: line 93, column 2",
-  "Electronic Drum Advisor": "mismatched tag: line 93, column 2"
+  "Sick Drummer Magazine": "<urlopen error timed out>"
  },
- "raw_count": 44,
+ "raw_count": 49,
  "items": [
   {
    "title": "Glen Caruba Named President of Pearl Corporation",
    "link": "https://www.drummingnewsnetwork.com/glen-caruba-named-president-of-pearl-corporation/",
    "source": "Drumming News Network",
    "date": "2026-10-30"
+  },
+  {
+   "title": "By the Way Drum Transcription",
+   "link": "https://thedrumninja.com/by-the-way-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-10-29"
   },
   {
    "title": "ASBA Drums Announces the Signature R\u00e9mi Serafino 14\u201d \u00d7 8\u201d Snare",
@@ -111,6 +117,12 @@
    "date": "2026-10-15"
   },
   {
+   "title": "The 6 Best Room Mics for Drums of 2026",
+   "link": "https://www.electronicdrumadvisor.com/best-room-mics-for-drums/",
+   "source": "Electronic Drum Advisor",
+   "date": "2026-10-15"
+  },
+  {
    "title": "DW\u2019s Design Series Goes Exotic",
    "link": "https://drummersreview.com/news/dws-design-series-goes-exotic/",
    "source": "Drummer's Review",
@@ -123,9 +135,21 @@
    "date": "2026-10-13"
   },
   {
+   "title": "Don\u2019t Stop Me Now Drum Transcription",
+   "link": "https://thedrumninja.com/dont-stop-me-now-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-10-13"
+  },
+  {
    "title": "150 Only: Drumeo \u00d7 SABIAN Bundle Lands at The UK Drum Show",
    "link": "https://drummersreview.com/news/150-only-drumeo-x-sabian-bundle-lands-at-the-uk-drum-show/",
    "source": "Drummer's Review",
+   "date": "2026-10-07"
+  },
+  {
+   "title": "Fluorescent Adolescent Drum Transcription",
+   "link": "https://thedrumninja.com/fluorescent-adolescent-drum-transcription/",
+   "source": "The Drum Ninja",
    "date": "2026-10-07"
   },
   {
@@ -147,6 +171,18 @@
    "date": "2026-10-06"
   },
   {
+   "title": "EFNOTE 3X Review",
+   "link": "https://thedrumninja.com/efnote-3x-review/",
+   "source": "The Drum Ninja",
+   "date": "2026-10-06"
+  },
+  {
+   "title": "Sex on Fire Drum Transcription",
+   "link": "https://thedrumninja.com/sex-on-fire-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-10-05"
+  },
+  {
    "title": "Ohana Festival",
    "link": "https://www.moderndrummer.com/2026/10/ohana-festival/",
    "source": "Modern Drummer",
@@ -159,10 +195,22 @@
    "date": "2026-10-01"
   },
   {
-   "title": "Kevin Paradis \u2013 Agonanist \u2013 Effacement \u2013 Exclusive Drum Play-through",
-   "link": "https://sickdrummermagazine.com/news/latest-news/kevin-paradis-agonanist-effacement-drum-play-through/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-09-29"
+   "title": "Every Breath You Take Drum Transcription",
+   "link": "https://thedrumninja.com/every-breath-you-take-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "This Love Drum Transcription",
+   "link": "https://thedrumninja.com/this-love-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "Jump Drum Transcription",
+   "link": "https://thedrumninja.com/jump-drum-transcription/",
+   "source": "The Drum Ninja",
+   "date": "2026-09-30"
   },
   {
    "title": "JJ Wallace: Finding Your Own Sound",
@@ -181,18 +229,6 @@
    "link": "https://www.musicradar.com/drums/electronic-drums/millenium-drums-mps-350-e-drum-set-review",
    "source": "MusicRadar",
    "date": "2026-09-18"
-  },
-  {
-   "title": "WOODIES Drumsticks Review",
-   "link": "https://sickdrummermagazine.com/s1-news/c82-product-reviews/woodies-drumsticks-review-why-the-5a-long-won-me-over/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-09-17"
-  },
-  {
-   "title": "Zed Amarin \u2013 Esodic \u2013 Of The Grave \u2013 Drum Play-through",
-   "link": "https://sickdrummermagazine.com/news/latest-news/zed-amarin-esodic-of-the-grave-drum-play-through/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-09-16"
   },
   {
    "title": "The new Millenium Drums MPS-1500 e-kit could be the hybrid drum set you've been looking for",
@@ -223,42 +259,6 @@
    "link": "https://www.musicradar.com/artists/i-thought-axls-snake-dancing-wasnt-rock-and-roll-so-i-actually-told-the-editor-to-cut-all-of-that-stuff-out-then-i-heard-someone-say-oh-my-god-thats-so-sexy-one-of-axl-roses-signature-moves-was-almost-cut-from-the-sweet-child-o-mine-video",
    "source": "MusicRadar",
    "date": "2026-09-09"
-  },
-  {
-   "title": "Big, Loud and Muscular: Stephen Perkins\u2019 Return to \u201970s Rock",
-   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-jimmy-page-dw-kit-panic-channel/",
-   "source": "Modern Drummer",
-   "date": "2026-09-08"
-  },
-  {
-   "title": "The Rebirth of Jane\u2019s Addiction: Stephen Perkins\u2019 1997 Relapse Tour Kit",
-   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1997-janes-addiction-relapse-tour-kit/",
-   "source": "Modern Drummer",
-   "date": "2026-09-06"
-  },
-  {
-   "title": "Alex Lancia \u2013 Lecherous Nocturne \u2013 Metempsychosis \u2013 Drum Play-through",
-   "link": "https://sickdrummermagazine.com/news/latest-news/alex-lancia-lecherous-nocturne-metempsychosis-drum-play-through/",
-   "source": "Sick Drummer Magazine",
-   "date": "2026-09-04"
-  },
-  {
-   "title": "The Drum Kit That Gave Stephen Perkins a New Voice",
-   "link": "https://www.moderndrummer.com/2026/09/stephen-perkins-1992-porno-for-pyros-drum-kit/",
-   "source": "Modern Drummer",
-   "date": "2026-09-03"
-  },
-  {
-   "title": "\u201cIt works in different music styles\u201d: Anika Nilles and TAMA collaborate on a signature snare",
-   "link": "https://www.musicradar.com/drums/snare-drums/reflects-her-lifelong-love-for-vintage-snares-anika-nilles-and-tama-collaborate-on-a-signature-snare",
-   "source": "MusicRadar",
-   "date": "2026-09-02"
-  },
-  {
-   "title": "MMMF\u2019s annual benefit concert to host Tribute to Keith Moon with special guest drummers Gregg Bissonette and Stephen Perkins on November 1st at Central Machine ",
-   "link": "https://www.moderndrummer.com/2026/08/mmmfs-annual-benefit-concert-to-host-tribute-to-keith-moon-with-special-guest-drummers-gregg-bissonette-and-stephen-perkins-on-november-1st-at-central-machine-works-in-austin/",
-   "source": "Modern Drummer",
-   "date": "2026-08-27"
   }
  ]
 }
