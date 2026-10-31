@@ -76,7 +76,7 @@ btns.forEach(function(b){b.onclick=function(){pick(b.dataset.r);document.getElem
 R.onchange=function(){pick(R.value);};
 var q=(new URLSearchParams(location.search).get('r')||'').toLowerCase(),map={advertising:'Advertising',story:'Story idea',interview:'Interview request',feedback:'Feedback'};
 pick(map[q]||'Feedback');
-var to=['doug','garceau'].join('')+'@'+['gmail','com'].join('.');
+var to=['doug','islandnewsmedia'].join(String.fromCharCode(64))+'.com';
 // After FormSubmit activation, replace KEY with the random code it gives you so the address never appears.
 var KEY='';
 var F=document.getElementById('cf'),N=document.getElementById('note');
