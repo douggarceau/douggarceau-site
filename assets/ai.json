@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T12:23Z",
+ "updated": "2026-10-31T16:20Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -54,14 +54,6 @@
    "link": "https://rekkerd.org/midi-agent-ai-powered-midi-generation-plugin-sale/",
    "source": "Rekkerd",
    "date": "2026-10-28",
-   "kind": "PRODUCT",
-   "release": false
-  },
-  {
-   "title": "Massive XL is here: Native Instruments supersizes its flagship soft synth with AI-powered preset generation, custom wavetables and much more",
-   "link": "https://www.musicradar.com/music-tech/massive-xl-is-here-native-instruments-supersizes-its-flagship-soft-synth-with-ai-powered-preset-generation-custom-wavetables-and-much-more",
-   "source": "MusicRadar",
-   "date": "2026-10-27",
    "kind": "PRODUCT",
    "release": false
   },
@@ -192,6 +184,14 @@
    "date": "2026-10-22",
    "kind": "PROBLEM",
    "release": false
+  },
+  {
+   "title": "ICMP says AI firms are trying to \u2018strong-arm\u2019 Australia on copyright \u2013 and that Kylie Minogue\u2019s songs have already been used to train AI (report)",
+   "link": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOTjhJRlVVZGkzNlBRRThYNEVEQUx3b3liWEpiQkxPZ2ZNS2ZqN1pRbWNJYVNhcWdHQmE5dWRxZjRaWk4xZG44bmRMVS1NNGlXajRTMXBvbXkzb2s2NFBZWUFxVTZzYTZQV1Q4MGlvN0ZtQk4zYnY3Nm1ZRnIyS1c4WnRrSFUxeUpoVjlJU3UyeE5oVWtBV0lrbzI3WEppRk9HT2pVZHYwYWxCLWgyclFmajF6NlhDdlA1enRXNFEtcFNaQlVMUEdnUUdjX0RzampjR3NJbGR5OXcxcjl1N21ZbENnZjV1Y25CSzJJM2ZheGJsN1NvbnNab3VBMWRaTTk1NmlOblRIc0UwUQ?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-20",
+   "kind": "PROBLEM",
+   "release": false
   }
  ],
  "releases": [
@@ -252,9 +252,9 @@
    "release": true
   },
   {
-   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
-   "source": "Billboard",
+   "title": "YouTube Music and Deezer add new AI music controls",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
+   "source": "Mashable",
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": true
@@ -277,14 +277,14 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 5,
+  "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 36,
   "Google News Suno+OR+Udio": 29,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
-  "Google News %22AI%22+stem+separation": 3,
+  "Google News %22AI%22+stem+separation": 4,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
