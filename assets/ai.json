@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T20:20Z",
+ "updated": "2026-11-01T00:45Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -154,6 +154,14 @@
    "release": false
   },
   {
+   "title": "Elvis Presley AI Lawsuit, Neil Young Trump Case, Drake Spotify Ruling & More Music Law News",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOalgtSzEtaHMzQmZrd3hIYjV0YkU2Z1N2T3BYNE5CQjRfUGVKUGpwRUNCcHh4STdjVzdhWjhBdi1TckNXNlFmN0lmYS1ua0REVEJvVHUxRnZxRlcwTXJHUmE4ZUgzcVdxRTAzQlgtVW9OZzVHdzRDZkJrM2ZnNjFVTjJ0Rzh5a3c?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-27",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "\u2018Movin\u2019 to the Sun\u2019 shows grey areas between AI and human music",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRW0xdkRzQkFmanlMMl9GZGx4RWFsdkF6OEVGdDVxX0hyQXhodDRnZUFSMmpIV0dnTmhGcFNKVVR4UXl0RnU2Vi12Q3J3TUFZcUE0NHkyWGo0SVcwM05HT1Y3UEtHRVZEU0cwbjh2UWdTUEhBaXQxV1U5eDlndl9xVkcxOGJRdC1yNWtEbFNmTlJyUHROdTZFeTlB?oc=5",
    "source": "Music Ally",
@@ -181,14 +189,6 @@
    "title": "Would You Listen to A.I. Music? Maybe You Already Do.",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2hWWnhmcUFxYmRuLU9TMUFXaUZTOFJoQXo3VVVXRkNiSTJ3V3pTWUVCSXh1Vnd4SFVrbVp6dTlUSmFtMnVMWkNmdzBNMlk4WU1POHByWWRuUEY3N0cwWXRqdDJRcFVRU0x3Y1RoZWstckZmdlNRMHROWmVRcmlEMGpKd0p0WXFHRWduU3d2YUg5dW4wZXY0YjZwTllYdlUzZk5QWmdKV20?oc=5",
    "source": "The New York Times",
-   "date": "2026-10-22",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "AI Music Instruction Startup ArtMaster Just Raised $2.4 Million, With WMG Chief Robert Kyncl Among the Backers",
-   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeERVTWM2MjhjS183ZEFncTRlcUx4dnctLV9icHZ0cFpGeHk4QWpLSmtsdmtLZmlLTldVcmVJTVNZZ051QWFpRGQtM190cDVGckJnR1pYOUxsektESWNYSDAwSUw3SVVrZTQ3ei1qNDBXeDFEcGpPc29yclBuSFlGeXE4SXRGdjR5R0xfalpURUlGYVE?oc=5",
-   "source": "Digital Music News",
    "date": "2026-10-22",
    "kind": "NEWS",
    "release": false
@@ -252,9 +252,9 @@
    "release": true
   },
   {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": true
@@ -279,9 +279,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 41,
+  "Google News %22AI+music%22": 39,
   "Google News Suno+OR+Udio": 26,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 27,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 3,
