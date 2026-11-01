@@ -1,11 +1,12 @@
 {
- "updated": "2026-11-01T17:56Z",
+ "updated": "2026-11-01T23:35Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
   "Drummer's Review (8)",
   "Beat It (8)",
   "Drumeo (8)",
+  "Sick Drummer Magazine (8)",
   "The UK Drum Show (8)",
   "Drummerworld (8)",
   "Scott K Fish (5)",
@@ -15,10 +16,8 @@
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
- "errors": {
-  "Sick Drummer Magazine": "<urlopen error _ssl.c:993: The handshake operation timed out>"
- },
- "raw_count": 57,
+ "errors": {},
+ "raw_count": 61,
  "items": [
   {
    "title": "Glen Caruba Named President of Pearl Corporation",
@@ -255,10 +254,10 @@
    "date": "2026-09-30"
   },
   {
-   "title": "JJ Wallace: Finding Your Own Sound",
-   "link": "https://theukdrumshow.com/show-news/jj-wallace-finding-your-own-sound/",
-   "source": "The UK Drum Show",
-   "date": "2026-09-25"
+   "title": "Kevin Paradis \u2013 Agonanist \u2013 Effacement \u2013 Exclusive Drum Play-through",
+   "link": "https://sickdrummermagazine.com/news/latest-news/kevin-paradis-agonanist-effacement-drum-play-through/",
+   "source": "Sick Drummer Magazine",
+   "date": "2026-09-29"
   }
  ]
 }
