@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T11:16Z",
+ "updated": "2026-11-01T17:57Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -82,6 +82,14 @@
    "release": false
   },
   {
+   "title": "Is Suno the Music Industry\u2019s Biggest Nightmare \u2014 or Greatest Hope?",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zVTJkLW1QMFB6OWk1TVNKYThVNTVtblpNMlBhVnVweU42VjZ6b1JkczdFR1BYWHVXZVQ3bUtRZkRsWFBHcG84ZTR6RV9yWmVMdXlDMDhxdGtYVGcxMTVoWXluREVNNEc5ald5UnFILXZDdw?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-31",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "From Universal Music\u2019s $3.90bn quarter to Spotify\u2019s AI remix gamble\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
    "link": "https://www.musicbusinessworldwide.com/from-universal-musics-3-90bn-quarter-to-spotifys-ai-remix-gamble-its-mbws-weekly-round-up/",
    "source": "Music Business Worldwide",
@@ -154,6 +162,14 @@
    "release": false
   },
   {
+   "title": "Elvis Presley AI Lawsuit, Neil Young Trump Case, Drake Spotify Ruling & More Music Law News",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOalgtSzEtaHMzQmZrd3hIYjV0YkU2Z1N2T3BYNE5CQjRfUGVKUGpwRUNCcHh4STdjVzdhWjhBdi1TckNXNlFmN0lmYS1ua0REVEJvVHUxRnZxRlcwTXJHUmE4ZUgzcVdxRTAzQlgtVW9OZzVHdzRDZkJrM2ZnNjFVTjJ0Rzh5a3c?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-27",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "\u2018Movin\u2019 to the Sun\u2019 shows grey areas between AI and human music",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNRW0xdkRzQkFmanlMMl9GZGx4RWFsdkF6OEVGdDVxX0hyQXhodDRnZUFSMmpIV0dnTmhGcFNKVVR4UXl0RnU2Vi12Q3J3TUFZcUE0NHkyWGo0SVcwM05HT1Y3UEtHRVZEU0cwbjh2UWdTUEhBaXQxV1U5eDlndl9xVkcxOGJRdC1yNWtEbFNmTlJyUHROdTZFeTlB?oc=5",
    "source": "Music Ally",
@@ -175,22 +191,6 @@
    "source": "Digital Music News",
    "date": "2026-10-23",
    "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Would You Listen to A.I. Music? Maybe You Already Do.",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2hWWnhmcUFxYmRuLU9TMUFXaUZTOFJoQXo3VVVXRkNiSTJ3V3pTWUVCSXh1Vnd4SFVrbVp6dTlUSmFtMnVMWkNmdzBNMlk4WU1POHByWWRuUEY3N0cwWXRqdDJRcFVRU0x3Y1RoZWstckZmdlNRMHROWmVRcmlEMGpKd0p0WXFHRWduU3d2YUg5dW4wZXY0YjZwTllYdlUzZk5QWmdKV20?oc=5",
-   "source": "The New York Times",
-   "date": "2026-10-22",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Reservoir sues Suno and Anthropic for infringing songs by Joni Mitchell, Johnny Cash, Madonna and more",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUmRxZlpmZVRhSkc2RDExdlNxNXB1cHViMXVUUXVRUGtVLURUVHhqd0xkSnlNdS1lSmRaTThoUnBacy0wUVUzVTQ2YXNSRFBvUE5lMUh2U280azhaR2lhaFdNcF9uY3JSNUVRUGNqVnROU1NwTmxMdHlhTGxvRG4tRHh5c09tMlFwSWQ4V3NZOWdGYm9kcUYyMFNhTmhHS1AyMUdLNWVScjEwSDBmZ200QnFRRm9FYXZ3c0FYX0pNVHdnb2Frak1tczVRbWE5dkdjU1VCaVVUMXVaeUNydUlqYVF1M0tLS2N1Ymc?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-22",
-   "kind": "PROBLEM",
    "release": false
   }
  ],
@@ -252,9 +252,9 @@
    "release": true
   },
   {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": true
@@ -280,8 +280,8 @@
   "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 39,
-  "Google News Suno+OR+Udio": 22,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 14,
+  "Google News Suno+OR+Udio": 27,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 28,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 3,
