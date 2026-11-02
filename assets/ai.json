@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T23:36Z",
+ "updated": "2026-11-02T06:03Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -7,6 +7,14 @@
    "source": "Music Ally",
    "date": "2026-10-20",
    "kind": "DRUMS",
+   "release": true
+  },
+  {
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
+   "date": "2026-11-02",
+   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -71,6 +79,14 @@
    "source": "Guitar World",
    "date": "2026-10-16",
    "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "Vickie Nauman talks games (and why AI drones are more worrying than AI tunes)",
+   "link": "https://musically.com/2026/11/02/vickie-nauman-talks-games-and-why-ai-drones-are-more-worrying-than-ai-tunes/",
+   "source": "Music Ally",
+   "date": "2026-11-02",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -146,19 +162,19 @@
    "release": false
   },
   {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHpWc1VNTjUxQzFTcVpud0NhOWp0N194Z29OdFlhYnB3OHhNV3FPV2xpbl90NmdQcENWdXIyT0p0MjZJOWxORklDa0llS2xoN1ZfcUVfUDIzSU5TSmFYQkdTSXdfaXpTS3J5OG5zbTUzVWNvZ1dsemZLX3Ixc3dZeVpzcjNXc2dxRkliakFlN1RVNzJfMjFGZm5RNnNVZzQxMmo3Mw?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-10-27",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Suno Files Subpoena Demands Against Apple As Major Label Legal War Intensifies",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTVsdXpfRlljbEl4SXdJOVVHMGF4b192TkRiMjBZOVpHaFZBNVN3MklvYUdtTDFGZTVsUmZEMlN2OWVpMkxRdHhpdU8zaTJvS2ZCVVFHVWdQcW9vWFNpckViYTNnQURXY29ud2JLLXJib0t5S3UzT3pXQW1SN3piUnJIYWM?oc=5",
    "source": "Digital Music News",
    "date": "2026-10-27",
    "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Elvis Presley AI Lawsuit, Neil Young Trump Case, Drake Spotify Ruling & More Music Law News",
+   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOalgtSzEtaHMzQmZrd3hIYjV0YkU2Z1N2T3BYNE5CQjRfUGVKUGpwRUNCcHh4STdjVzdhWjhBdi1TckNXNlFmN0lmYS1ua0REVEJvVHUxRnZxRlcwTXJHUmE4ZUgzcVdxRTAzQlgtVW9OZzVHdzRDZkJrM2ZnNjFVTjJ0Rzh5a3c?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-27",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -176,25 +192,17 @@
    "date": "2026-10-22",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Reservoir sues Suno and Anthropic for infringing songs by Joni Mitchell, Johnny Cash, Madonna and more",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOUmRxZlpmZVRhSkc2RDExdlNxNXB1cHViMXVUUXVRUGtVLURUVHhqd0xkSnlNdS1lSmRaTThoUnBacy0wUVUzVTQ2YXNSRFBvUE5lMUh2U280azhaR2lhaFdNcF9uY3JSNUVRUGNqVnROU1NwTmxMdHlhTGxvRG4tRHh5c09tMlFwSWQ4V3NZOWdGYm9kcUYyMFNhTmhHS1AyMUdLNWVScjEwSDBmZ200QnFRRm9FYXZ3c0FYX0pNVHdnb2Frak1tczVRbWE5dkdjU1VCaVVUMXVaeUNydUlqYVF1M0tLS2N1Ymc?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-22",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "Suno admits it has not deleted all the recordings used to train its AI, in answer to UMG and Sony\u2019s \u2018laundering\u2019 lawsuit",
-   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNd2c3RWhiZDdPODBpQkotSXJIY3N6c2NhbmZGWVZhNm05QVk0UUFmUGotVC1Ed2tqM3Z1U3FxLU9NMDdXVXMwZ3VwTWhnNG9LSkw1c0xIZHViRkRkVUh1MlRSQmtfQU5kakJEeW5XVDdQNmk4S0QyMldyUUJPMFpfYVdjcG5GeC1YR0FETlJXNmJjSmtuRllnYUc5ZURpRXlJeWN2Qlh5ZzZQZVFHQ25ZanB0cGpMSHE0ZTJOUmptS2xPajV5NExMQlZCRkd2dHVnNEg1ZDgwN1RQUXRxZjZ1cDJIOFJVaXl2d254eA?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-22",
-   "kind": "PROBLEM",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
+   "date": "2026-11-02",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "Suno\u2019s new MCP tool lets users make songs inside ChatGPT, Claude, and Gemini \u2013 as its developer API gets a sign-in portal but remains in beta",
    "link": "https://www.musicbusinessworldwide.com/sunos-new-mcp-tool-lets-users-make-songs-inside-chatgpt-claude-and-gemini-as-its-developer-api-gets-a-sign-in-portal-but-remains-in-beta/",
@@ -225,14 +233,6 @@
    "source": "MusicRadar",
    "date": "2026-10-28",
    "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHpWc1VNTjUxQzFTcVpud0NhOWp0N194Z29OdFlhYnB3OHhNV3FPV2xpbl90NmdQcENWdXIyT0p0MjZJOWxORklDa0llS2xoN1ZfcUVfUDIzSU5TSmFYQkdTSXdfaXpTS3J5OG5zbTUzVWNvZ1dsemZLX3Ixc3dZeVpzcjNXc2dxRkliakFlN1RVNzJfMjFGZm5RNnNVZzQxMmo3Mw?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-10-27",
-   "kind": "NEWS",
    "release": true
   },
   {
@@ -268,7 +268,7 @@
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
   "Rekkerd rekkerd.org": 2,
-  "Music Ally musically.com": 2,
+  "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
@@ -277,15 +277,15 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 4,
+  "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 32,
-  "Google News Suno+OR+Udio": 23,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
+  "Google News %22AI+music%22": 33,
+  "Google News Suno+OR+Udio": 27,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 29,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 4,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
