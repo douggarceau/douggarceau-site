@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-02T18:23Z",
+ "updated": "2026-11-03T02:20Z",
  "items": [
+  {
+   "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
+   "link": "https://rekkerd.org/session-loops-releases-drumnet-2-ai-powered-drum-machine/",
+   "source": "Rekkerd",
+   "date": "2026-11-03",
+   "kind": "DRUMS",
+   "release": true
+  },
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
    "source": "Music Ally",
    "date": "2026-10-20",
    "kind": "DRUMS",
-   "release": true
-  },
-  {
-   "title": "Apple debuts new musically-inclined AI assistant for creators",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
-   "source": "Mashable",
-   "date": "2026-11-02",
-   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -58,6 +58,14 @@
    "release": true
   },
   {
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-27",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Human-AI Indian Music Label Raagverse Launches With \u2018Janaa Hai Toh Jao\u2019 (EXCLUSIVE)",
    "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1FSd0RBYk1uUXZsTkRMYmpOaEF5ejJXbW1Jckt0U0h1eFdNeFRMODBoYWRpTWtRR2k3RmltYXpuaW44bEVFNmJsdXllTFhQN25iNV9aaXE5VW5ZVXBfMU80dDlaMWsxS2E4bDNzbmpyeVpzOVhNSGhmNnkwYjBqSVJUVTZ4eEFhblRRNUVwVkZwZGtfVkRuSnV3X1gwUlVJZHh3d3hjX3M?oc=5",
    "source": "Variety",
@@ -79,6 +87,14 @@
    "source": "MusicRadar",
    "date": "2026-11-02",
    "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Alphabet shareholder sues Sundar Pichai and 12 others over training Google\u2019s AI, including Lyria, on copyrighted works",
+   "link": "https://www.musicbusinessworldwide.com/alphabet-shareholder-sues-sundar-pichai-and-12-others-over-training-googles-ai-including-lyria-on-copyrighted-works/",
+   "source": "Music Business Worldwide",
+   "date": "2026-11-02",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -122,6 +138,14 @@
    "release": false
   },
   {
+   "title": "Cardi B Tells Students to Pass Exams Without Using AI: \u2018Don\u2019t Ask ChatGPT for the\u00a0Answer\u2019",
+   "link": "https://www.billboard.com/music/rb-hip-hop/cardi-b-students-dont-use-ai-chatgpt-1236372365/",
+   "source": "Billboard",
+   "date": "2026-11-02",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Is Suno the Music Industry\u2019s Biggest Nightmare \u2014 or Greatest Hope?",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zVTJkLW1QMFB6OWk1TVNKYThVNTVtblpNMlBhVnVweU42VjZ6b1JkczdFR1BYWHVXZVQ3bUtRZkRsWFBHcG84ZTR6RV9yWmVMdXlDMDhxdGtYVGcxMTVoWXluREVNNEc5ald5UnFILXZDdw?oc=5",
    "source": "Billboard",
@@ -132,14 +156,6 @@
   {
    "title": "From Universal Music\u2019s $3.90bn quarter to Spotify\u2019s AI remix gamble\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
    "link": "https://www.musicbusinessworldwide.com/from-universal-musics-3-90bn-quarter-to-spotifys-ai-remix-gamble-its-mbws-weekly-round-up/",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-30",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Suno fights to make Apple testify on whether Apple Music could survive without UMG and Sony, claiming the majors use their catalogs \u2018as a cudgel\u2019 to win anti-AI concessio",
-   "link": "https://www.musicbusinessworldwide.com/suno-fights-to-make-apple-testify-on-whether-apple-music-could-survive-without-umg-and-sony-claiming-the-majors-use-their-catalogs-as-a-cudgel-to-win-anti-ai-concessions/",
    "source": "Music Business Worldwide",
    "date": "2026-10-30",
    "kind": "NEWS",
@@ -162,45 +178,29 @@
    "release": false
   },
   {
+   "title": "Suno fights to make Apple testify on whether Apple Music could survive without UMG and Sony, claiming the majors use their catalogs \u2018as a cudgel\u2019 to win anti-AI concessio",
+   "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQdTJvMmZPYk9JZzBaSGxnZUtNTWRPWEpveXEzRFlWeFN5X0o1clpXeXVCSHRQQzNoMl9KTWlKaEJ5RHZ3NEJnWjQ1V01tT0JrbTliTDJSYlQ5Zm9RM3NIZlp5eGN5bnFGeDhuc2owaDkzQ19PUU9TLTh2ZUVWeWZpSlNUX1pEUmtGMG83MDJoTW5fcUdNbk4zaU43c1duRjgzekhnemdpdG5yUEVnRzBpblNhM0lYUElTSXlPTk8tNG55VzBTa3dYQVFCVlVVeGdZNVNRRS1DdFFXRm00UFg5OThYZGtpT19zZVZ3eUJxbkRNYVplXzl1ejI3S3BQVERXMlVheUI0dTd4QWRya28zVnVpZ09jSFM1ZmV1SkZTbjQ3cE9qWkJnLUJHTlZSWWFESDg0?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-30",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Anthropic sued over Elvis catalog \u2014 and the 274-song copyright battle shows the AI industry's 'fair use' excuses are getting old",
    "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNa2Z3VjdTZ0RCOVBWZTJRRkduZU16TUYtaVdfR0lJS2hMbXFnZzdSMHBoZW5sV25CVndXUEtXeTVPMDVDTWhhTTZIajZhUEZOMzJOTWE3WWNlVDI1YlZzYV9BNVFZaU9QbjRUQi1JYXB3ak9QR2Q0dkNBZ0pZTmUyWmVUMnBmd3NYNHJKbi1sT2JYX3l4dG5LTzh0ZWxjc2dyaGUzazhwNXFQbzZuMEFtNFhsUEdBSExsaTdpR1dlVzhWZk1oYV9UbWlXdjBGa0RzTzhrVVdEbnBrMVY5TTZjUVQzckQ0ZnN5Ul94dkNXX3JPd3BQb0c0Q3FWYVZKLTEt?oc=5",
    "source": "TechRadar",
    "date": "2026-10-30",
    "kind": "PROBLEM",
    "release": false
-  },
-  {
-   "title": "What does the music industry want from the future of AI \u2013 and how can the UK lead the way?",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSUViN0p3eWNlVlFoVzJmWWh2eTVrQUZmZ3M1UjNDWjZIYmYyT0E3dV91RElkdTVic3RSaEdJeE14X1ZtM2VNWnZfdC1VVDJZa1VKQ1FaSmlHZVRsUmZ5VUZ6S1FJWV9RbmpCMlJBNXNOc3R6QTNKa1FHTHM3M3pNSHlhTnpFYUxjQnlBUXJaaXdyWENxMVV1OElNVDAyTU5XVUVTWkMyb3J3bVJ0Z1FJd1JRNHlZckU?oc=5",
-   "source": "NME",
-   "date": "2026-10-30",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Universal Music Group Posts $3.78 Billion in Revenue For Q3, Signals Fight Against AI Slop",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSkkwXy1lNWlOZ0JJTDVkYVFnZkwxN3Vzc25ucGFRamtnZjZ6SE1RTE1keWsxY29uTnNfZG9abEh5TzM3cGJKTksyalcyNDFNR2I0YnVvMVRaUUZHQ21xaFZkdFRXd3ZmVm9BT0x6UFI1dzJTVGZUdXktSUdYaXNWRk5QXzdMdkNzWThwSV9vNjQtb0dHNlgzOGhHZmJzSjd5ekRMcWkyb3o?oc=5",
-   "source": "The Hollywood Reporter",
-   "date": "2026-10-29",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
-   "title": "Suno Files Subpoena Demands Against Apple As Major Label Legal War Intensifies",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTVsdXpfRlljbEl4SXdJOVVHMGF4b192TkRiMjBZOVpHaFZBNVN3MklvYUdtTDFGZTVsUmZEMlN2OWVpMkxRdHhpdU8zaTJvS2ZCVVFHVWdQcW9vWFNpckViYTNnQURXY29ud2JLLXJib0t5S3UzT3pXQW1SN3piUnJIYWM?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-10-27",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
   {
-   "title": "Apple debuts new musically-inclined AI assistant for creators",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
-   "source": "Mashable",
-   "date": "2026-11-02",
-   "kind": "PRODUCT",
+   "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
+   "link": "https://rekkerd.org/session-loops-releases-drumnet-2-ai-powered-drum-machine/",
+   "source": "Rekkerd",
+   "date": "2026-11-03",
+   "kind": "DRUMS",
    "release": true
   },
   {
@@ -267,21 +267,21 @@
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
-  "Rekkerd rekkerd.org": 1,
+  "Rekkerd rekkerd.org": 2,
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 2,
+  "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 35,
   "Google News Suno+OR+Udio": 28,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 31,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 4,
