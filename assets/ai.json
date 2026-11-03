@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T02:20Z",
+ "updated": "2026-11-03T11:56Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -42,14 +42,6 @@
    "release": true
   },
   {
-   "title": "Save 60% on MIDI Agent AI-powered MIDI generation plugin",
-   "link": "https://rekkerd.org/midi-agent-ai-powered-midi-generation-plugin-sale/",
-   "source": "Rekkerd",
-   "date": "2026-10-28",
-   "kind": "PRODUCT",
-   "release": false
-  },
-  {
    "title": "Apple goes all in on AI with Logic Pro 13, introducing an intelligent assistant that can control your DAW",
    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0MwNmQ2V1VOekctdm5hclNxQ3Fwd2JrNzgtZkIzLTNTdC1wZWIxU3NLMVNlWXhiQ2pVcnhSNnRQTVlrLXU0UVZqeHBFZVg3NkduYUpQM0YzSXRfdERLbzRUY2NRQTBaV3BZMHBsd0NHRm9nZFF4NjlzRkdfbW1VbHlFN3FyVU1vZk9NSnBVVVdHZE93M0txMm1lZXpBVk5NZjJuX3pFemc5UlBCdHVQQ1FINGN6NWtTbHcyQmt0RGtPcWhnVExnbUZ3ZExNQ1J2ODk5SDdYSXV4QQ?oc=5",
    "source": "MusicRadar",
@@ -79,6 +71,14 @@
    "source": "Guitar World",
    "date": "2026-10-16",
    "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "Is Suno the Music Industry\u2019s Biggest Nightmare \u2014 or Greatest Hope?",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zVTJkLW1QMFB6OWk1TVNKYThVNTVtblpNMlBhVnVweU42VjZ6b1JkczdFR1BYWHVXZVQ3bUtRZkRsWFBHcG84ZTR6RV9yWmVMdXlDMDhxdGtYVGcxMTVoWXluREVNNEc5ald5UnFILXZDdw?oc=5",
+   "source": "Billboard",
+   "date": "2026-11-03",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -138,22 +138,6 @@
    "release": false
   },
   {
-   "title": "Cardi B Tells Students to Pass Exams Without Using AI: \u2018Don\u2019t Ask ChatGPT for the\u00a0Answer\u2019",
-   "link": "https://www.billboard.com/music/rb-hip-hop/cardi-b-students-dont-use-ai-chatgpt-1236372365/",
-   "source": "Billboard",
-   "date": "2026-11-02",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Is Suno the Music Industry\u2019s Biggest Nightmare \u2014 or Greatest Hope?",
-   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zVTJkLW1QMFB6OWk1TVNKYThVNTVtblpNMlBhVnVweU42VjZ6b1JkczdFR1BYWHVXZVQ3bUtRZkRsWFBHcG84ZTR6RV9yWmVMdXlDMDhxdGtYVGcxMTVoWXluREVNNEc5ald5UnFILXZDdw?oc=5",
-   "source": "Billboard",
-   "date": "2026-11-02",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "From Universal Music\u2019s $3.90bn quarter to Spotify\u2019s AI remix gamble\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
    "link": "https://www.musicbusinessworldwide.com/from-universal-musics-3-90bn-quarter-to-spotifys-ai-remix-gamble-its-mbws-weekly-round-up/",
    "source": "Music Business Worldwide",
@@ -192,6 +176,22 @@
    "date": "2026-10-30",
    "kind": "PROBLEM",
    "release": false
+  },
+  {
+   "title": "What does the music industry want from the future of AI \u2013 and how can the UK lead the way?",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSUViN0p3eWNlVlFoVzJmWWh2eTVrQUZmZ3M1UjNDWjZIYmYyT0E3dV91RElkdTVic3RSaEdJeE14X1ZtM2VNWnZfdC1VVDJZa1VKQ1FaSmlHZVRsUmZ5VUZ6S1FJWV9RbmpCMlJBNXNOc3R6QTNKa1FHTHM3M3pNSHlhTnpFYUxjQnlBUXJaaXdyWENxMVV1OElNVDAyTU5XVUVTWkMyb3J3bVJ0Z1FJd1JRNHlZckU?oc=5",
+   "source": "NME",
+   "date": "2026-10-30",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Universal Music Group Posts $3.78 Billion in Revenue For Q3, Signals Fight Against AI Slop",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSkkwXy1lNWlOZ0JJTDVkYVFnZkwxN3Vzc25ucGFRamtnZjZ6SE1RTE1keWsxY29uTnNfZG9abEh5TzM3cGJKTksyalcyNDFNR2I0YnVvMVRaUUZHQ21xaFZkdFRXd3ZmVm9BT0x6UFI1dzJTVGZUdXktSUdYaXNWRk5QXzdMdkNzWThwSV9vNjQtb0dHNlgzOGhHZmJzSjd5ekRMcWkyb3o?oc=5",
+   "source": "The Hollywood Reporter",
+   "date": "2026-10-29",
+   "kind": "NEWS",
+   "release": true
   }
  ],
  "releases": [
@@ -244,19 +244,19 @@
    "release": true
   },
   {
+   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHpWc1VNTjUxQzFTcVpud0NhOWp0N194Z29OdFlhYnB3OHhNV3FPV2xpbl90NmdQcENWdXIyT0p0MjZJOWxORklDa0llS2xoN1ZfcUVfUDIzSU5TSmFYQkdTSXdfaXpTS3J5OG5zbTUzVWNvZ1dsemZLX3Ixc3dZeVpzcjNXc2dxRkliakFlN1RVNzJfMjFGZm5RNnNVZzQxMmo3Mw?oc=5",
+   "source": "9to5Mac",
+   "date": "2026-10-27",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
    "source": "Music Ally",
    "date": "2026-10-20",
    "kind": "DRUMS",
-   "release": true
-  },
-  {
-   "title": "Human-AI Indian Music Label Raagverse Launches With \u2018Janaa Hai Toh Jao\u2019 (EXCLUSIVE)",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1FSd0RBYk1uUXZsTkRMYmpOaEF5ejJXbW1Jckt0U0h1eFdNeFRMODBoYWRpTWtRR2k3RmltYXpuaW44bEVFNmJsdXllTFhQN25iNV9aaXE5VW5ZVXBfMU80dDlaMWsxS2E4bDNzbmpyeVpzOVhNSGhmNnkwYjBqSVJUVTZ4eEFhblRRNUVwVkZwZGtfVkRuSnV3X1gwUlVJZHh3d3hjX3M?oc=5",
-   "source": "Variety",
-   "date": "2026-10-19",
-   "kind": "PRODUCT",
    "release": true
   }
  ],
@@ -267,21 +267,21 @@
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
-  "Rekkerd rekkerd.org": 2,
+  "Rekkerd rekkerd.org": 1,
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 3,
+  "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 35,
-  "Google News Suno+OR+Udio": 28,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
+  "Google News %22AI+music%22": 36,
+  "Google News Suno+OR+Udio": 26,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 4,
