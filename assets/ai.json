@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T12:09Z",
+ "updated": "2026-11-04T19:45Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -74,18 +74,34 @@
    "release": false
   },
   {
-   "title": "CISAC Reports Record Global Creator Royalties, Warns of \u2018Largest Test\u2019 From\u00a0AI",
-   "link": "https://www.billboard.com/pro/cisac-record-global-creator-royalties-warns-ai-threat/",
-   "source": "Billboard",
+   "title": "5 things to know about CISAC\u2019s global report, as songwriter royalty collections hit record $15.9B in 2025, with $900M+ from The MLC and AI in focus",
+   "link": "https://www.musicbusinessworldwide.com/5-things-to-know-about-cisacs-global-report-as-songwriter-royalty-collections-hit-record-15-9b-in-2025-with-900m-from-the-mlc-and-ai-in-focus/",
+   "source": "Music Business Worldwide",
    "date": "2026-11-04",
    "kind": "PROBLEM",
    "release": false
   },
   {
-   "title": "AI roundup: Lyria lawsuit, Anthropic\u2019s Q3, OpenAI pile-in",
-   "link": "https://musically.com/2026/11/03/ai-roundup-lyria-lawsuit-anthropics-q3-openai-pile-in/",
+   "title": "Suno asks court to dismiss Jason Isbell\u2019s right-of-publicity class action. It claims artist names are \u2018shorthand\u2019 for musical genres.",
+   "link": "https://www.musicbusinessworldwide.com/suno-asks-court-to-dismiss-jason-isbells-right-of-publicity-class-action-it-claims-artist-names-are-shorthand-for-musical-genres/",
+   "source": "Music Business Worldwide",
+   "date": "2026-11-04",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Shopify says sellers are seeing sales boosts from AI channels",
+   "link": "https://musically.com/2026/11/04/shopify-says-sellers-are-seeing-sales-boosts-from-ai-channels/",
    "source": "Music Ally",
-   "date": "2026-11-03",
+   "date": "2026-11-04",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "AI Detector False Positives Threaten Indie Musicians and the Music Industry",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5SSlpfZnR5YU83aDJpNElaR3BvajF6N2NVT3R1aGtfU0FkUzNqNkF4bURYR3E3bHo4T3dRUzdtUEpOSWZoeXdhRzJjRnpUVTloeFYtV2J0VkNWV2h5bXd2VGo2VWhfWS1fNHh5NWdSUWluQVgxQndKSlBZYXU?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-11-04",
    "kind": "PROBLEM",
    "release": false
   },
@@ -98,41 +114,9 @@
    "release": false
   },
   {
-   "title": "Suno Says Jason Isbell Lawsuit Over Artist \u2018Identities\u2019 Must Be Dismissed: \u2018Nothing Unlawful About That\u2019",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3LU1vczZqNFVGN0xGTzFxUHpYZ1FEcHoxaFludTl0NzlJam5hamZNREoyVVZQc3dUaFV2VURoS3IzdUNKXy1TXy1HeWJZTUNhZDJKeFRtN0loN1BpY2pDUXZCYTdhaXRhZzVPU1RMcGhuaXl4cTQ3Qk1pZTdsejA?oc=5",
-   "source": "Billboard",
-   "date": "2026-11-03",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
    "title": "FT report suggests Spotify AI remixes could be on their way for 2027",
    "link": "https://www.musicradar.com/music-industry/streaming-sharing/spotify-ai-remixes-could-be-on-their-way-for-2027",
    "source": "MusicRadar",
-   "date": "2026-11-02",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Alphabet shareholder sues Sundar Pichai and 12 others over training Google\u2019s AI, including Lyria, on copyrighted works",
-   "link": "https://www.musicbusinessworldwide.com/alphabet-shareholder-sues-sundar-pichai-and-12-others-over-training-googles-ai-including-lyria-on-copyrighted-works/",
-   "source": "Music Business Worldwide",
-   "date": "2026-11-02",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "GEMA on AI: \u2018The most important thing is we get an output remuneration\u2019",
-   "link": "https://musically.com/2026/11/02/gema-on-ai-the-most-important-thing-is-we-get-an-output-remuneration/",
-   "source": "Music Ally",
-   "date": "2026-11-02",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
-   "title": "Vickie Nauman talks games (and why AI drones are more worrying than AI tunes)",
-   "link": "https://musically.com/2026/11/02/vickie-nauman-talks-games-and-why-ai-drones-are-more-worrying-than-ai-tunes/",
-   "source": "Music Ally",
    "date": "2026-11-02",
    "kind": "NEWS",
    "release": false
@@ -192,6 +176,22 @@
    "date": "2026-10-29",
    "kind": "NEWS",
    "release": true
+  },
+  {
+   "title": "Suno Files Subpoena Demands Against Apple As Major Label Legal War Intensifies",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTVsdXpfRlljbEl4SXdJOVVHMGF4b192TkRiMjBZOVpHaFZBNVN3MklvYUdtTDFGZTVsUmZEMlN2OWVpMkxRdHhpdU8zaTJvS2ZCVVFHVWdQcW9vWFNpckViYTNnQURXY29ud2JLLXJib0t5S3UzT3pXQW1SN3piUnJIYWM?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-10-26",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNelFOZFdTZmw2a1FtcjAxZk5lYktWT09FRTRaT0g0MmFrRFpHX0dIbk1IeVJNYmxVVlhBZHRYWk1YZzFHRjh0N29jSEdWd2s3OEJrcFM4SW9Tb29tLTQ5VjJaQ3BFQThpRXNJUzVPbXcwOElvcVJUNl9aZE1SaWVZTTR1VTYtcHNGZVdjU2t4MVItd2ZKYlhZZGd3cw?oc=5",
+   "source": "The Guardian",
+   "date": "2026-10-26",
+   "kind": "PROBLEM",
+   "release": false
   }
  ],
  "releases": [
@@ -201,14 +201,6 @@
    "source": "Rekkerd",
    "date": "2026-11-03",
    "kind": "DRUMS",
-   "release": true
-  },
-  {
-   "title": "GEMA on AI: \u2018The most important thing is we get an output remuneration\u2019",
-   "link": "https://musically.com/2026/11/02/gema-on-ai-the-most-important-thing-is-we-get-an-output-remuneration/",
-   "source": "Music Ally",
-   "date": "2026-11-02",
-   "kind": "NEWS",
    "release": true
   },
   {
@@ -244,48 +236,56 @@
    "release": true
   },
   {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNUHpWc1VNTjUxQzFTcVpud0NhOWp0N194Z29OdFlhYnB3OHhNV3FPV2xpbl90NmdQcENWdXIyT0p0MjZJOWxORklDa0llS2xoN1ZfcUVfUDIzSU5TSmFYQkdTSXdfaXpTS3J5OG5zbTUzVWNvZ1dsemZLX3Ixc3dZeVpzcjNXc2dxRkliakFlN1RVNzJfMjFGZm5RNnNVZzQxMmo3Mw?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-10-27",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
    "source": "Music Ally",
    "date": "2026-10-20",
    "kind": "DRUMS",
    "release": true
+  },
+  {
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-14",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
+   "title": "YouTube Music and Deezer add new AI music controls",
+   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-14",
+   "kind": "NEWS",
+   "release": true
   }
  ],
  "log": {
   "MusicRadar www.musicradar.com": 0,
-  "Music Business Worldwide www.musicbusinessworldwide.com": 1,
+  "Music Business Worldwide www.musicbusinessworldwide.com": 2,
   "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 520: <none>",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 1,
-  "Music Ally musically.com": 3,
+  "Music Ally musically.com": 1,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 4,
+  "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 36,
-  "Google News Suno+OR+Udio": 28,
+  "Google News %22AI+music%22": 34,
+  "Google News Suno+OR+Udio": 25,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
-  "Google News %22AI%22+stem+separation": 4,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
+  "Google News %22AI%22+stem+separation": 3,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
