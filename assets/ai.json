@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T00:37Z",
+ "updated": "2026-11-04T12:09Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -58,19 +58,27 @@
    "release": true
   },
   {
-   "title": "Human-AI Indian Music Label Raagverse Launches With \u2018Janaa Hai Toh Jao\u2019 (EXCLUSIVE)",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOU1FSd0RBYk1uUXZsTkRMYmpOaEF5ejJXbW1Jckt0U0h1eFdNeFRMODBoYWRpTWtRR2k3RmltYXpuaW44bEVFNmJsdXllTFhQN25iNV9aaXE5VW5ZVXBfMU80dDlaMWsxS2E4bDNzbmpyeVpzOVhNSGhmNnkwYjBqSVJUVTZ4eEFhblRRNUVwVkZwZGtfVkRuSnV3X1gwUlVJZHh3d3hjX3M?oc=5",
-   "source": "Variety",
-   "date": "2026-10-19",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
    "source": "Guitar World",
    "date": "2026-10-16",
    "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "YouTube Music starts labeling AI-generated songs, using partner disclosures and its own detection tools",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOcm5pek10ZDlUdlJLZGRLTU5WbmRjUDBCZ0JIdnhfVl8zQnMtQjZxSzg2SHJEMEFCZHpGdjVxWUh0T2FDeVBwc0hyM3ZPUHRtX3VLUFNTWXNLb2N3ZFgzdl8wM1R6X0pxQnZtYTNxOWdUWXpOSktrSkt4VzF6YmZPWUwzQkdzMlViNFNNR3hsLUM3WTJqYlZwMWJoMGRMdEctQ0VYMF9leG5vOVZWUEY0bk8wUHd5RDFjaVZ6M3JXODFjbVdkcnhlRHYwNG4zYmk3QW1oSE82Z3hHUQ?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-14",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "CISAC Reports Record Global Creator Royalties, Warns of \u2018Largest Test\u2019 From\u00a0AI",
+   "link": "https://www.billboard.com/pro/cisac-record-global-creator-royalties-warns-ai-threat/",
+   "source": "Billboard",
+   "date": "2026-11-04",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -82,19 +90,19 @@
    "release": false
   },
   {
-   "title": "Suno Says Jason Isbell Lawsuit Over Artist \u2018Identities\u2019 Must Be Dismissed: \u2018Nothing Unlawful About\u00a0That\u2019",
-   "link": "https://www.billboard.com/pro/suno-responds-jason-isbell-ai-music-lawsuit/",
-   "source": "Billboard",
-   "date": "2026-11-03",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
    "title": "Is Suno the Music Industry\u2019s Biggest Nightmare \u2014 or Greatest Hope?",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE9zVTJkLW1QMFB6OWk1TVNKYThVNTVtblpNMlBhVnVweU42VjZ6b1JkczdFR1BYWHVXZVQ3bUtRZkRsWFBHcG84ZTR6RV9yWmVMdXlDMDhxdGtYVGcxMTVoWXluREVNNEc5ald5UnFILXZDdw?oc=5",
    "source": "Billboard",
    "date": "2026-11-03",
    "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Suno Says Jason Isbell Lawsuit Over Artist \u2018Identities\u2019 Must Be Dismissed: \u2018Nothing Unlawful About That\u2019",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA3LU1vczZqNFVGN0xGTzFxUHpYZ1FEcHoxaFludTl0NzlJam5hamZNREoyVVZQc3dUaFV2VURoS3IzdUNKXy1TXy1HeWJZTUNhZDJKeFRtN0loN1BpY2pDUXZCYTdhaXRhZzVPU1RMcGhuaXl4cTQ3Qk1pZTdsejA?oc=5",
+   "source": "Billboard",
+   "date": "2026-11-03",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -146,14 +154,6 @@
    "release": false
   },
   {
-   "title": "Zeds Dead on two decades of sampling: \u201cThe interest is in the history; AI has no history\u201d",
-   "link": "https://musictech.com/features/interviews/zeds-dead-interview-sampling-ai/",
-   "source": "MusicTech",
-   "date": "2026-10-30",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "UMG talks AI music: \u2018The volume is growing faster than the safeguards\u2019",
    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEEzVmo1UHNmSDdVWjBsZld4NVJMZENKc1V2aWdoTXY0Y0w4eWRBNjRhNGdSNGdudzJVUWEySEc4Q0U2aFVvdFlSbWhDaXZYSXE1bXpVWjJhRU1PbmxzUkNmaU1UTERaN21BdXRhSk5pQmNNckxaQURPbkZFWkYzVWt3NVpxb1phWGEzUXE0TkhHRFB0QW1UZXdYOENGNWtIX1Fn?oc=5",
    "source": "Music Ally",
@@ -167,14 +167,6 @@
    "source": "Music Business Worldwide",
    "date": "2026-10-30",
    "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Anthropic sued over Elvis catalog \u2014 and the 274-song copyright battle shows the AI industry's 'fair use' excuses are getting old",
-   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNa2Z3VjdTZ0RCOVBWZTJRRkduZU16TUYtaVdfR0lJS2hMbXFnZzdSMHBoZW5sV25CVndXUEtXeTVPMDVDTWhhTTZIajZhUEZOMzJOTWE3WWNlVDI1YlZzYV9BNVFZaU9QbjRUQi1JYXB3ak9QR2Q0dkNBZ0pZTmUyWmVUMnBmd3NYNHJKbi1sT2JYX3l4dG5LTzh0ZWxjc2dyaGUzazhwNXFQbzZuMEFtNFhsUEdBSExsaTdpR1dlVzhWZk1oYV9UbWlXdjBGa0RzTzhrVVdEbnBrMVY5TTZjUVQzckQ0ZnN5Ul94dkNXX3JPd3BQb0c0Q3FWYVZKLTEt?oc=5",
-   "source": "TechRadar",
-   "date": "2026-10-30",
-   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -192,6 +184,14 @@
    "date": "2026-10-30",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "Universal Music Group Posts $3.78 Billion in Revenue For Q3, Signals Fight Against AI Slop",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSkkwXy1lNWlOZ0JJTDVkYVFnZkwxN3Vzc25ucGFRamtnZjZ6SE1RTE1keWsxY29uTnNfZG9abEh5TzM3cGJKTksyalcyNDFNR2I0YnVvMVRaUUZHQ21xaFZkdFRXd3ZmVm9BT0x6UFI1dzJTVGZUdXktSUdYaXNWRk5QXzdMdkNzWThwSV9vNjQtb0dHNlgzOGhHZmJzSjd5ekRMcWkyb3o?oc=5",
+   "source": "The Hollywood Reporter",
+   "date": "2026-10-29",
+   "kind": "NEWS",
+   "release": true
   }
  ],
  "releases": [
@@ -266,7 +266,7 @@
   "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 520: <none>",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
-  "MusicTech musictech.com": 1,
+  "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 1,
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
@@ -279,9 +279,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 40,
-  "Google News Suno+OR+Udio": 27,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 19,
+  "Google News %22AI+music%22": 36,
+  "Google News Suno+OR+Udio": 28,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 4,

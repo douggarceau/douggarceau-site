@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T00:36Z",
+ "updated": "2026-11-04T12:09Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,18 @@
  "errors": {},
  "raw_count": 61,
  "items": [
+  {
+   "title": "Gretsch Drums Launches E-Drum Series Catalina EVO",
+   "link": "https://drummersreview.com/news/gretsch-drums-launches-e-drum-series-catalina-evo/",
+   "source": "Drummer's Review",
+   "date": "2026-11-04"
+  },
+  {
+   "title": "Troy Van Leeuwen and Jon Theodore on learning to love mistakes and the making of QOTSA\u2019s Perfecth album",
+   "link": "https://www.musicradar.com/artists/queens-of-the-stone-age-perfecth-",
+   "source": "MusicRadar",
+   "date": "2026-11-04"
+  },
   {
    "title": "HERCULES INTRODUCES MODULAR CLAMP-ON MIC ARM SYSTEM IN COLLABORATION WITH PROGRESSIVE DRUMMER CRAIG BLUNDELL",
    "link": "https://www.drummingnewsnetwork.com/hercules-introduces-modular-clamp-on-mic-arm-system-in-collaboration-with-progressive-drummer-craig-blundell/",
@@ -105,7 +117,7 @@
   },
   {
    "title": "SIMEN SANDNES: The Art of Drumming\u2026",
-   "link": "https://drummersreview.com/uncategorized/simen-sandnes-the-art-of-drumming/",
+   "link": "https://drummersreview.com/news/simen-sandnes-the-art-of-drumming/",
    "source": "Drummer's Review",
    "date": "2026-10-23"
   },
@@ -194,18 +206,6 @@
    "date": "2026-10-07"
   },
   {
-   "title": "CJ HOKDAL: From \u201cThat Swedish Drummer\u201d to The UK Drum Show",
-   "link": "https://drummersreview.com/news/cj-hokdal-from-that-swedish-drummer-to-the-uk-drum-show/",
-   "source": "Drummer's Review",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "Conn Selmer Europe Announces 2026 Scholarship Winner",
-   "link": "https://drummersreview.com/news/conn-selmer-europe-announces-2026-scholarship-winner/",
-   "source": "Drummer's Review",
-   "date": "2026-10-06"
-  },
-  {
    "title": "New Tama Starclassic Walnut/Birch Duracover finishes",
    "link": "https://en.beatit.tv/new-tama-starclassic-walnut-birch-duracover-finishes/",
    "source": "Beat It",
@@ -214,6 +214,12 @@
   {
    "title": "SWISS DRUM WORLD IS COMING TO THE UK DRUM SHOW 2026!",
    "link": "https://theukdrumshow.com/show-news/swiss-drum-world-is-coming-to-the-uk-drum-show-2026/",
+   "source": "The UK Drum Show",
+   "date": "2026-10-06"
+  },
+  {
+   "title": "CJ HOKDAL: From \u201cThat Swedish Drummer\u201d to The UK Drum Show",
+   "link": "https://theukdrumshow.com/show-news/cj-hokdal-from-that-swedish-drummer-to-the-uk-drum-show/",
    "source": "The UK Drum Show",
    "date": "2026-10-06"
   },
@@ -252,12 +258,6 @@
    "link": "https://thedrumninja.com/every-breath-you-take-drum-transcription/",
    "source": "The Drum Ninja",
    "date": "2026-10-01"
-  },
-  {
-   "title": "Abe Laboriel Jr. performs with Pearl Jam",
-   "link": "https://en.beatit.tv/abe-laboriel-jr-performs-with-pearl-jam/",
-   "source": "Beat It",
-   "date": "2026-09-30"
   }
  ]
 }
