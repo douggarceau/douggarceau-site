@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T19:45Z",
+ "updated": "2026-11-05T00:55Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -74,7 +74,7 @@
    "release": false
   },
   {
-   "title": "5 things to know about CISAC\u2019s global report, as songwriter royalty collections hit record $15.9B in 2025, with $900M+ from The MLC and AI in focus",
+   "title": "5 things to know about CISAC\u2019s global report, as songwriter royalty collections hit record $15.9B in 2025, with $900M+ from The MLC, and AI in focus",
    "link": "https://www.musicbusinessworldwide.com/5-things-to-know-about-cisacs-global-report-as-songwriter-royalty-collections-hit-record-15-9b-in-2025-with-900m-from-the-mlc-and-ai-in-focus/",
    "source": "Music Business Worldwide",
    "date": "2026-11-04",
@@ -95,14 +95,6 @@
    "source": "Music Ally",
    "date": "2026-11-04",
    "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "AI Detector False Positives Threaten Indie Musicians and the Music Industry",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5SSlpfZnR5YU83aDJpNElaR3BvajF6N2NVT3R1aGtfU0FkUzNqNkF4bURYR3E3bHo4T3dRUzdtUEpOSWZoeXdhRzJjRnpUVTloeFYtV2J0VkNWV2h5bXd2VGo2VWhfWS1fNHh5NWdSUWluQVgxQndKSlBZYXU?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-11-04",
-   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -178,6 +170,14 @@
    "release": true
   },
   {
+   "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNelFOZFdTZmw2a1FtcjAxZk5lYktWT09FRTRaT0g0MmFrRFpHX0dIbk1IeVJNYmxVVlhBZHRYWk1YZzFHRjh0N29jSEdWd2s3OEJrcFM4SW9Tb29tLTQ5VjJaQ3BFQThpRXNJUzVPbXcwOElvcVJUNl9aZE1SaWVZTTR1VTYtcHNGZVdjU2t4MVItd2ZKYlhZZGd3cw?oc=5",
+   "source": "The Guardian",
+   "date": "2026-10-26",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "Suno Files Subpoena Demands Against Apple As Major Label Legal War Intensifies",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTVsdXpfRlljbEl4SXdJOVVHMGF4b192TkRiMjBZOVpHaFZBNVN3MklvYUdtTDFGZTVsUmZEMlN2OWVpMkxRdHhpdU8zaTJvS2ZCVVFHVWdQcW9vWFNpckViYTNnQURXY29ud2JLLXJib0t5S3UzT3pXQW1SN3piUnJIYWM?oc=5",
    "source": "Digital Music News",
@@ -186,11 +186,11 @@
    "release": false
   },
   {
-   "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNelFOZFdTZmw2a1FtcjAxZk5lYktWT09FRTRaT0g0MmFrRFpHX0dIbk1IeVJNYmxVVlhBZHRYWk1YZzFHRjh0N29jSEdWd2s3OEJrcFM4SW9Tb29tLTQ5VjJaQ3BFQThpRXNJUzVPbXcwOElvcVJUNl9aZE1SaWVZTTR1VTYtcHNGZVdjU2t4MVItd2ZKYlhZZGd3cw?oc=5",
-   "source": "The Guardian",
-   "date": "2026-10-26",
-   "kind": "PROBLEM",
+   "title": "Chase & Status on the upside of AI for music",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeVRTdVNLdTZONl9PSVpiLVJXTjdHOXlpRG9KejZodFBHcmd4cnU0UUQ0QUl4Tmdva1BkTVNOajdsdUJDTlVxbVI2Q01mSEtYVllRVldkaG5UT0l1bW1GbXVfN25JaXFEUi1saXF3bzhXSkVXYUdmdmkxTzFkZU9PYlo5aG5pRWZnUFFrTWdFeVVNWmlB?oc=5",
+   "source": "Reuters",
+   "date": "2026-10-24",
+   "kind": "NEWS",
    "release": false
   }
  ],
@@ -250,14 +250,6 @@
    "date": "2026-10-14",
    "kind": "NEWS",
    "release": true
-  },
-  {
-   "title": "YouTube Music and Deezer add new AI music controls",
-   "link": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XaGl2SkVoTmpLWE8tVVBOb1RNX3hFT3JhcFlxcXc3b1BtRUVGYzhfOTF5dkdBZ2JMbGRiaVhPcXFKRXJnbWpkZEo5RjE4WV9tdDFvVXhlNjRhZWJPcXMyWXM1R1VUUVZ3RWZoTjVNRGNGVkJGUU9GNg?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-14",
-   "kind": "NEWS",
-   "release": true
   }
  ],
  "log": {
@@ -281,7 +273,7 @@
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 34,
   "Google News Suno+OR+Udio": 25,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 3,
