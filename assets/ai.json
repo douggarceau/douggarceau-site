@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T00:55Z",
+ "updated": "2026-11-05T12:22Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -16,6 +16,14 @@
    "date": "2026-10-20",
    "kind": "DRUMS",
    "release": true
+  },
+  {
+   "title": "Pro Tools now features AI stem separation",
+   "link": "https://musictech.com/news/pro-tools-now-features-ai-stem-separation/",
+   "source": "MusicTech",
+   "date": "2026-11-05",
+   "kind": "PRODUCT",
+   "release": false
   },
   {
    "title": "Spotify aims to launch AI music remix service early next year",
@@ -50,14 +58,6 @@
    "release": true
   },
   {
-   "title": "Apple debuts new musically-inclined AI assistant for creators",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-27",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
    "source": "Guitar World",
@@ -71,6 +71,30 @@
    "source": "Music Business Worldwide",
    "date": "2026-10-14",
    "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
+   "source": "EDM.com",
+   "date": "2026-10-14",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "\u2018A Vast Landgrab\u2019: ICMP Weighs-In on Big AI\u2019s Australian Copyright\u00a0Battleground",
+   "link": "https://www.billboard.com/pro/icmp-john-phelan-interview-big-ai-australian-copyright/",
+   "source": "Billboard",
+   "date": "2026-11-05",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "15-Minute Lesson Plan: A.I. Music",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPcktTcEcwZ3NDd3BZd1BRY3pnUjRzMmtLRDZsc1BsQjRhY1RXZThnMk5LakNLN3MwQ2hUWWE4NUhBVHp5UGpva2NLc2pwaWs5RElXajZfR1RnYUZ0NzNObDVGaERPMEZ3dlhNcXBHYWp5OTNvSUdSeExodnN4TGhOdzJZeDlvdw?oc=5",
+   "source": "The New York Times",
+   "date": "2026-11-05",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -93,6 +117,14 @@
    "title": "Shopify says sellers are seeing sales boosts from AI channels",
    "link": "https://musically.com/2026/11/04/shopify-says-sellers-are-seeing-sales-boosts-from-ai-channels/",
    "source": "Music Ally",
+   "date": "2026-11-04",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "More AI Detector False Positives Emerge In Rapid Succession: Do Indie Musicians Have a Serious Problem Here?",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5SSlpfZnR5YU83aDJpNElaR3BvajF6N2NVT3R1aGtfU0FkUzNqNkF4bURYR3E3bHo4T3dRUzdtUEpOSWZoeXdhRzJjRnpUVTloeFYtV2J0VkNWV2h5bXd2VGo2VWhfWS1fNHh5NWdSUWluQVgxQndKSlBZYXU?oc=5",
+   "source": "Digital Music News",
    "date": "2026-11-04",
    "kind": "NEWS",
    "release": false
@@ -146,14 +178,6 @@
    "release": false
   },
   {
-   "title": "From Universal Music\u2019s $3.90bn quarter to Spotify\u2019s AI remix gamble\u2026 it\u2019s MBW\u2019s Weekly Round-Up",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxORWxqSklzODhLR1ViWURTUlh4dTJaNnYzVTlXd0hGVDNickNNbk9qUDN4bUI5SXRSTW54OHpSb0sySWlQRjI0N0dnZW5aZDBMd2N0eF9hYk9iSzQtc05JeDREUDEybjRXaG84SUg3WGNVLTY0Yld2b3pFUFNmYkVvMUlwVmJVcXR4ZTA4U0ZRLUtBWjlid0QwOG80S0VyLTR2cTdHNTJHUGU5MWl6SmhLUDRxSGNuRTVhcWpLRWozOUQ4TzdpcFVkcQ?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-30",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "What does the music industry want from the future of AI \u2013 and how can the UK lead the way?",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSUViN0p3eWNlVlFoVzJmWWh2eTVrQUZmZ3M1UjNDWjZIYmYyT0E3dV91RElkdTVic3RSaEdJeE14X1ZtM2VNWnZfdC1VVDJZa1VKQ1FaSmlHZVRsUmZ5VUZ6S1FJWV9RbmpCMlJBNXNOc3R6QTNKa1FHTHM3M3pNSHlhTnpFYUxjQnlBUXJaaXdyWENxMVV1OElNVDAyTU5XVUVTWkMyb3J3bVJ0Z1FJd1JRNHlZckU?oc=5",
    "source": "NME",
@@ -162,34 +186,10 @@
    "release": false
   },
   {
-   "title": "Universal Music Group Posts $3.78 Billion in Revenue For Q3, Signals Fight Against AI Slop",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSkkwXy1lNWlOZ0JJTDVkYVFnZkwxN3Vzc25ucGFRamtnZjZ6SE1RTE1keWsxY29uTnNfZG9abEh5TzM3cGJKTksyalcyNDFNR2I0YnVvMVRaUUZHQ21xaFZkdFRXd3ZmVm9BT0x6UFI1dzJTVGZUdXktSUdYaXNWRk5QXzdMdkNzWThwSV9vNjQtb0dHNlgzOGhHZmJzSjd5ekRMcWkyb3o?oc=5",
-   "source": "The Hollywood Reporter",
-   "date": "2026-10-29",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
-   "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNelFOZFdTZmw2a1FtcjAxZk5lYktWT09FRTRaT0g0MmFrRFpHX0dIbk1IeVJNYmxVVlhBZHRYWk1YZzFHRjh0N29jSEdWd2s3OEJrcFM4SW9Tb29tLTQ5VjJaQ3BFQThpRXNJUzVPbXcwOElvcVJUNl9aZE1SaWVZTTR1VTYtcHNGZVdjU2t4MVItd2ZKYlhZZGd3cw?oc=5",
-   "source": "The Guardian",
-   "date": "2026-10-26",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "Suno Files Subpoena Demands Against Apple As Major Label Legal War Intensifies",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPLTVsdXpfRlljbEl4SXdJOVVHMGF4b192TkRiMjBZOVpHaFZBNVN3MklvYUdtTDFGZTVsUmZEMlN2OWVpMkxRdHhpdU8zaTJvS2ZCVVFHVWdQcW9vWFNpckViYTNnQURXY29ud2JLLXJib0t5S3UzT3pXQW1SN3piUnJIYWM?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-10-26",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Chase & Status on the upside of AI for music",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeVRTdVNLdTZONl9PSVpiLVJXTjdHOXlpRG9KejZodFBHcmd4cnU0UUQ0QUl4Tmdva1BkTVNOajdsdUJDTlVxbVI2Q01mSEtYVllRVldkaG5UT0l1bW1GbXVfN25JaXFEUi1saXF3bzhXSkVXYUdmdmkxTzFkZU9PYlo5aG5pRWZnUFFrTWdFeVVNWmlB?oc=5",
-   "source": "Reuters",
-   "date": "2026-10-24",
+   "title": "Here\u2019s Every Company Fighting Subpoenas in Suno\u2019s Legal Fight With Universal and Sony Music",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQS0pFQUtUbzhJUS14U3VuZ1MzWV9UN1lXS0VEd0dVWXJZVzNQa0E1RnNSbmY2WG9Qb3QwY2ZwVThBVXVIUUk5U3NvcDJlZ1ZYWmF3dktpc3lCSjRweEk5dkx0OERVNVBxOGlTWDZqbDR5QjQ2UXRKOV9SOVBkR1lfeUpsdHdlUWI0RkNkME9RRFg0Sms0?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-27",
    "kind": "NEWS",
    "release": false
   }
@@ -220,14 +220,6 @@
    "release": true
   },
   {
-   "title": "Universal Music Group Posts $3.78 Billion in Revenue For Q3, Signals Fight Against AI Slop",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQSkkwXy1lNWlOZ0JJTDVkYVFnZkwxN3Vzc25ucGFRamtnZjZ6SE1RTE1keWsxY29uTnNfZG9abEh5TzM3cGJKTksyalcyNDFNR2I0YnVvMVRaUUZHQ21xaFZkdFRXd3ZmVm9BT0x6UFI1dzJTVGZUdXktSUdYaXNWRk5QXzdMdkNzWThwSV9vNjQtb0dHNlgzOGhHZmJzSjd5ekRMcWkyb3o?oc=5",
-   "source": "The Hollywood Reporter",
-   "date": "2026-10-29",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Apple goes all in on AI with Logic Pro 13, introducing an intelligent assistant that can control your DAW",
    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0MwNmQ2V1VOekctdm5hclNxQ3Fwd2JrNzgtZkIzLTNTdC1wZWIxU3NLMVNlWXhiQ2pVcnhSNnRQTVlrLXU0UVZqeHBFZVg3NkduYUpQM0YzSXRfdERLbzRUY2NRQTBaV3BZMHBsd0NHRm9nZFF4NjlzRkdfbW1VbHlFN3FyVU1vZk9NSnBVVVdHZE93M0txMm1lZXpBVk5NZjJuX3pFemc5UlBCdHVQQ1FINGN6NWtTbHcyQmt0RGtPcWhnVExnbUZ3ZExNQ1J2ODk5SDdYSXV4QQ?oc=5",
    "source": "MusicRadar",
@@ -241,6 +233,14 @@
    "source": "Music Ally",
    "date": "2026-10-20",
    "kind": "DRUMS",
+   "release": true
+  },
+  {
+   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
+   "source": "EDM.com",
+   "date": "2026-10-14",
+   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -258,12 +258,12 @@
   "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 520: <none>",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
-  "MusicTech musictech.com": 0,
+  "MusicTech musictech.com": 1,
   "Rekkerd rekkerd.org": 1,
   "Music Ally musically.com": 1,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -271,13 +271,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 34,
-  "Google News Suno+OR+Udio": 25,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
+  "Google News %22AI+music%22": 31,
+  "Google News Suno+OR+Udio": 24,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
-  "Google News %22AI%22+stem+separation": 3,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 3,
+  "Google News %22AI%22+stem+separation": 2,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 2,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
