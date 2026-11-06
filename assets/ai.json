@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T21:59Z",
+ "updated": "2026-11-06T06:46Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -32,22 +32,6 @@
    "date": "2026-11-05",
    "kind": "PRODUCT",
    "release": false
-  },
-  {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Apple debuts new musically-inclined AI assistant for creators",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
-   "source": "Mashable",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": true
   },
   {
    "title": "Spotify aims to launch AI music remix service early next year",
@@ -98,10 +82,26 @@
    "release": true
   },
   {
-   "title": "Grimes to Star in the First-Ever AI-Generated Film Coming to Theaters: Watch a\u00a0Clip",
-   "link": "https://www.billboard.com/culture/tv-film/grimes-star-first-ai-movie-coming-theaters-video-clip-1236375024/",
-   "source": "Billboard",
-   "date": "2026-11-05",
+   "title": "Mashup Edu\u2019s AI-agent Nia is designed to \u201crun the business side\u201d of indie acts\u2019 careers",
+   "link": "https://musically.com/2026/11/06/mashup-edus-ai-agent-nia-is-designed-to-run-the-business-side-of-indie-acts-careers/",
+   "source": "Music Ally",
+   "date": "2026-11-06",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "One of Classical Music\u2019s Biggest Stars Says AI Is Degrading Our Taste",
+   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1mc1VZd1dkZkJjVG01bkw1RWY2WFRWMzJpUTJ6OUdoUXJVYkJqaUlrRTFzMkN5LUJPQjBUcjZnX2lScVJmQmgyTlQtNEtUZnpDcnFfSWotUTdobjA3elRsVkh1cVVRNkZ6dHcyUEsxTzVoWjZneG5VbkFB?oc=5",
+   "source": "Bloomberg.com",
+   "date": "2026-11-06",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Nile Rodgers Defends AI Use in Music Video: \u2018We Created Everything \u2026 The AI Did What We Told It to Do\u2019",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNUDNOb29oemY3UERzWG5TS2VhcHB5RW5UV3IzZ25HS1Y2QmFMTXZkTjF1MjBKSnkwTkpPSWU3ZlJwdkVFanZ1VGtXc2g0Q1lNNmk1NFlKSkpjTm82ei1sS2ZVN1k5TzQ0dUhwdHBZVFBBTFJqNnVLMjdhblB6UlVnTEE3V1Q3M0p0Z0FheEotcWNPUjBNT0tjLUJCazAwZ29IRTVuYUt6NVVxdw?oc=5",
+   "source": "Yahoo",
+   "date": "2026-11-06",
    "kind": "NEWS",
    "release": false
   },
@@ -109,14 +109,6 @@
    "title": "You can post AI music straight to SoundCloud from ElevenLabs",
    "link": "https://www.theverge.com/ai-artificial-intelligence/1027427/ai-music-soundcloud-elevenlabs",
    "source": "The Verge",
-   "date": "2026-11-05",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Nile Rodgers Defends New AI Music Video",
-   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pdHNfSjB3NmgtZkJjdHpnSzJXdzd2cUFVSFBQQjdOSHBIS1pwVm1NRVVMcmdubWxCZ0h1WVR4ME9pNDhKQ3ZwYVZjYUs5dVFvdTQ2bTFEc3JIblBocG1RbmJTZDYyTFF4VjJUSXRCMmw2YTFQY1lXMk92S3YwZm8?oc=5",
-   "source": "Stereogum",
    "date": "2026-11-05",
    "kind": "NEWS",
    "release": false
@@ -178,6 +170,14 @@
    "release": false
   },
   {
+   "title": "UMG talks AI music: \u2018The volume is growing faster than the safeguards\u2019",
+   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTEEzVmo1UHNmSDdVWjBsZld4NVJMZENKc1V2aWdoTXY0Y0w4eWRBNjRhNGdSNGdudzJVUWEySEc4Q0U2aFVvdFlSbWhDaXZYSXE1bXpVWjJhRU1PbmxzUkNmaU1UTERaN21BdXRhSk5pQmNNckxaQURPbkZFWkYzVWt3NVpxb1phWGEzUXE0TkhHRFB0QW1UZXdYOENGNWtIX1Fn?oc=5",
+   "source": "Music Ally",
+   "date": "2026-10-30",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Suno fights to make Apple testify on whether Apple Music could survive without UMG and Sony, claiming the majors use their catalogs \u2018as a cudgel\u2019 to win anti-AI concessio",
    "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQdTJvMmZPYk9JZzBaSGxnZUtNTWRPWEpveXEzRFlWeFN5X0o1clpXeXVCSHRQQzNoMl9KTWlKaEJ5RHZ3NEJnWjQ1V01tT0JrbTliTDJSYlQ5Zm9RM3NIZlp5eGN5bnFGeDhuc2owaDkzQ19PUU9TLTh2ZUVWeWZpSlNUX1pEUmtGMG83MDJoTW5fcUdNbk4zaU43c1duRjgzekhnemdpdG5yUEVnRzBpblNhM0lYUElTSXlPTk8tNG55VzBTa3dYQVFCVlVVeGdZNVNRRS1DdFFXRm00UFg5OThYZGtpT19zZVZ3eUJxbkRNYVplXzl1ejI3S3BQVERXMlVheUI0dTd4QWRya28zVnVpZ09jSFM1ZmV1SkZTbjQ3cE9qWkJnLUJHTlZSWWFESDg0?oc=5",
    "source": "Music Business Worldwide",
@@ -186,31 +186,15 @@
    "release": false
   },
   {
-   "title": "Here\u2019s Every Company Fighting Subpoenas in Suno\u2019s Legal Fight With Universal and Sony Music",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQS0pFQUtUbzhJUS14U3VuZ1MzWV9UN1lXS0VEd0dVWXJZVzNQa0E1RnNSbmY2WG9Qb3QwY2ZwVThBVXVIUUk5U3NvcDJlZ1ZYWmF3dktpc3lCSjRweEk5dkx0OERVNVBxOGlTWDZqbDR5QjQ2UXRKOV9SOVBkR1lfeUpsdHdlUWI0RkNkME9RRFg0Sms0?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-27",
+   "title": "What does the music industry want from the future of AI \u2013 and how can the UK lead the way?",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQSUViN0p3eWNlVlFoVzJmWWh2eTVrQUZmZ3M1UjNDWjZIYmYyT0E3dV91RElkdTVic3RSaEdJeE14X1ZtM2VNWnZfdC1VVDJZa1VKQ1FaSmlHZVRsUmZ5VUZ6S1FJWV9RbmpCMlJBNXNOc3R6QTNKa1FHTHM3M3pNSHlhTnpFYUxjQnlBUXJaaXdyWENxMVV1OElNVDAyTU5XVUVTWkMyb3J3bVJ0Z1FJd1JRNHlZckU?oc=5",
+   "source": "NME",
+   "date": "2026-10-30",
    "kind": "NEWS",
    "release": false
   }
  ],
  "releases": [
-  {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Apple debuts new musically-inclined AI assistant for creators",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
-   "source": "Mashable",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": true
-  },
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
    "link": "https://rekkerd.org/session-loops-releases-drumnet-2-ai-powered-drum-machine/",
@@ -258,6 +242,14 @@
    "date": "2026-10-14",
    "kind": "PRODUCT",
    "release": true
+  },
+  {
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-14",
+   "kind": "NEWS",
+   "release": true
   }
  ],
  "log": {
@@ -268,24 +260,24 @@
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
   "Rekkerd rekkerd.org": 1,
-  "Music Ally musically.com": 0,
+  "Music Ally musically.com": 1,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 1,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 4,
+  "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 29,
+  "Google News %22AI+music%22": 35,
   "Google News Suno+OR+Udio": 23,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 1,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 3,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
