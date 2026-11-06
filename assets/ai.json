@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T15:56Z",
+ "updated": "2026-11-06T21:30Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -8,14 +8,6 @@
    "date": "2026-11-03",
    "kind": "DRUMS",
    "release": true
-  },
-  {
-   "title": "Apple Logic Pro 13: Enhanced Drum Separation and a New AI Assistant",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81S1RtVTJCR2hxcl9QUDRnRldKMVZoeEFMNW8yQXJDMjltN09zck9iVFdRZHVDRkdJNjllSF9FakZCZmRzU2k2S2ZOZjgwZjBaNDdGZnBJN0VmTG9n?oc=5",
-   "source": "Gearnews.com",
-   "date": "2026-10-28",
-   "kind": "DRUMS",
-   "release": false
   },
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -34,8 +26,8 @@
    "release": true
   },
   {
-   "title": "Splice Reimagines the DAW With \u2018Create\u2019 \u2014 Its Agentic AI-Powered Platform for\u00a0Newcomers",
-   "link": "https://www.billboard.com/pro/splice-daw-create-agentic-ai-powered-platform/",
+   "title": "Splice Reimagines the DAW With \u2018Create\u2019 \u2014 Its Agentic AI-Powered Platform for Newcomers",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRzY3UU9xdFBZUW42cV83S3hpUWlVLVRJa0ZhTmRZWEgtSkYydTZ1Q0NCQWxjM2dYamEwMVR5MWJYRHNBMVhMUjBNc09fenh4eGhkOUdOdTV0R0NmbXVLekFiYTNUSjRRZlRIS0dhdUNjaTR5a0VUZ0xISkRnSHV1el93?oc=5",
    "source": "Billboard",
    "date": "2026-11-06",
    "kind": "PRODUCT",
@@ -50,12 +42,12 @@
    "release": false
   },
   {
-   "title": "Spotify aims to launch AI music remix service early next year",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
-   "source": "Financial Times",
-   "date": "2026-10-30",
+   "title": "'Who wants this?': Spotify's AI-powered remix and covers feature is tipped for a February launch, but it could cost you $5 extra \u2014 and users aren't happy",
+   "link": "https://news.google.com/rss/articles/CBMilAJBVV95cUxNLXZldHBqTFFDYXZCVE5uZzlIcnRKYnVScnJEVFBkemVFUTRBMGpra0wwXzFHV1NYckR5T0JyOWZObngtenRSSHI0N2VrWjhIY1JYYU5kOXFzQ1EyOGdKTEcxblNKV3N6elRiNXh1cWYzdm5wOFBvcWdoOVlpN1NNWk9pZVB2NGlLeGtJa3Y3cjlyWFV6eldoRHhGY19UTmo4MmlNamlvclMxMGVPMW02NmpDVDFDblFMcEJQeWR1SlF2OWVna2E4eUlnR0hFOTNfRndFcGpya08tX0duRzR6bDlNbm55anh4S3JQaDZhZS0taEdETmZobjY3VEFiOVV1YjdhcnhxSUZyVVdZWmRtR3dpZFM?oc=5",
+   "source": "TechRadar",
+   "date": "2026-11-02",
    "kind": "PRODUCT",
-   "release": true
+   "release": false
   },
   {
    "title": "Suno\u2019s new MCP tool lets users make songs inside ChatGPT, Claude, and Gemini \u2013 as its developer API gets a sign-in portal but remains in beta",
@@ -66,12 +58,12 @@
    "release": true
   },
   {
-   "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
-   "source": "Guitar World",
-   "date": "2026-10-16",
+   "title": "Apple goes all in on AI with Logic Pro 13, introducing an intelligent assistant that can control your DAW",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0MwNmQ2V1VOekctdm5hclNxQ3Fwd2JrNzgtZkIzLTNTdC1wZWIxU3NLMVNlWXhiQ2pVcnhSNnRQTVlrLXU0UVZqeHBFZVg3NkduYUpQM0YzSXRfdERLbzRUY2NRQTBaV3BZMHBsd0NHRm9nZFF4NjlzRkdfbW1VbHlFN3FyVU1vZk9NSnBVVVdHZE93M0txMm1lZXpBVk5NZjJuX3pFemc5UlBCdHVQQ1FINGN6NWtTbHcyQmt0RGtPcWhnVExnbUZ3ZExNQ1J2ODk5SDdYSXV4QQ?oc=5",
+   "source": "MusicRadar",
+   "date": "2026-10-28",
    "kind": "PRODUCT",
-   "release": false
+   "release": true
   },
   {
    "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
@@ -88,6 +80,14 @@
    "date": "2026-10-14",
    "kind": "PRODUCT",
    "release": true
+  },
+  {
+   "title": "The Edge asked AI to come up with a U2 song: \u201cThey couldn\u2019t\u201d says guitarist",
+   "link": "https://www.musicradar.com/artists/bands/its-possible-to-get-it-to-write-a-country-song-because-its-very-strictly-codified-the-edge-feels-u2-are-uncategorisable",
+   "source": "MusicRadar",
+   "date": "2026-11-06",
+   "kind": "NEWS",
+   "release": false
   },
   {
    "title": "\u201cDrop the slop dude! Not very chic!\u201d: Nile Rodgers\u2019 AI-generated video leads to heated online tech debate",
@@ -138,27 +138,11 @@
    "release": false
   },
   {
-   "title": "5 things to know about CISAC\u2019s global report, as songwriter royalty collections hit record $15.9B in 2025, with $900M+ from The MLC, and AI in focus",
-   "link": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPTmUxcldvLWFLcFVWV2xPZHotSzl1Sk5kNWtoOURxdV9PekhPZnFSSGJVMnYwR0hxQm9XYmUyNVVPaHMyUjJHZjBFblladWhnTFRIRG5EYk5abURHa1hTV3NLdUNCNzMxQWVzYnFQYnJWSFAxcnFQNFA4VkdCV1BLZWRpRkpjbVBKd2dPeUhPMU93eHdzdjhLVGN4eWJ5TkpMUEVzaDQyX1FoY3NHWUFCZXd4eklZYUhPU1d4czhUR1NFQ3p3YUFPYXhHVzNEcy1KYWoyS1NlUlFPSklkUXRYd1BLdk5YbUVDd2RubE9pR0dLNHI4dVMyS1dYMjBZc0Z3R2xReV9iVGZGVzk5REE?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-11-04",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
    "title": "Suno Seeks to Dismiss Jason Isbell Lawsuit, Argues There\u2019s \u2018Nothing Unlawful\u2019 About Invoking Artist Names to Describe Genres",
    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRTJhZHE2Z01zUXVZa09RUElnY3hzU2FpZGlaak54dklwNHZHZ0dCS1QzT2VVbGxNMUUxUXFtV2NZNFVyOEM1VXlwRk5DeVNiWDdxamJORWZaQWFaUzQySUt1QUtJcmlMTnVYVjBpNUNETlg3ZlZ2Wmt4dW1LNDhpdmJRamcxU2pEdXhSdzJrV0VPSEp6eWx4VExFWUZuS2M?oc=5",
    "source": "Variety",
    "date": "2026-11-04",
    "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "FT report suggests Spotify AI remixes could be on their way for 2027",
-   "link": "https://www.musicradar.com/music-industry/streaming-sharing/spotify-ai-remixes-could-be-on-their-way-for-2027",
-   "source": "MusicRadar",
-   "date": "2026-11-02",
-   "kind": "NEWS",
    "release": false
   },
   {
@@ -178,6 +162,14 @@
    "release": false
   },
   {
+   "title": "Spotify AI remixes could be on their way for 2027",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPN0JIQ09NNlpqNVpLN0NqTWtJNFJ6ektlVWJKRmlSeTdNd2Z1V1d2SFQyLUZUdnhFRExQMzRsVGU3OXZ3U3pqeTBvSGJiWG5tQnhHTE14S0FTWWhuMnV1SUJEYk9lYlhVRU56MkpUVkwyTTg2NmpMaXNqT3VVOWIzbjFDMC1ubnlFSGxsTm9ReHExNEZkb3FueDRQZGRWN1dhTE9sOW5qOTR3Zk9xVHc?oc=5",
+   "source": "MusicRadar",
+   "date": "2026-11-02",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Suno fights to make Apple testify on whether Apple Music could survive without UMG and Sony, claiming the majors use their catalogs \u2018as a cudgel\u2019 to win anti-AI concessio",
    "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQdTJvMmZPYk9JZzBaSGxnZUtNTWRPWEpveXEzRFlWeFN5X0o1clpXeXVCSHRQQzNoMl9KTWlKaEJ5RHZ3NEJnWjQ1V01tT0JrbTliTDJSYlQ5Zm9RM3NIZlp5eGN5bnFGeDhuc2owaDkzQ19PUU9TLTh2ZUVWeWZpSlNUX1pEUmtGMG83MDJoTW5fcUdNbk4zaU43c1duRjgzekhnemdpdG5yUEVnRzBpblNhM0lYUElTSXlPTk8tNG55VzBTa3dYQVFCVlVVeGdZNVNRRS1DdFFXRm00UFg5OThYZGtpT19zZVZ3eUJxbkRNYVplXzl1ejI3S3BQVERXMlVheUI0dTd4QWRya28zVnVpZ09jSFM1ZmV1SkZTbjQ3cE9qWkJnLUJHTlZSWWFESDg0?oc=5",
    "source": "Music Business Worldwide",
@@ -191,6 +183,14 @@
    "source": "Billboard",
    "date": "2026-10-27",
    "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Another blow for AI music? Anthropic hit with $41 million lawsuit by owners of Elvis Presley's catalogue",
+   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU1BKeEJWR3VwaDNiX1dIX0dnY1hRNkxEVVRxbkJKT25XRkpybkpycWZmWFdhRHJhTGlLV1RFcGQ4RmgwYVM4LW9rN0VQMlQ0V25SU2lWUmlqQnRNcjRleU91dzlJTXhaaks4Z2pJcVBHSmFpY0hBTmZYUWllblFDVEtRdnZlOU83eEJBSkUwYVZ6MnM1Qi1TYXRhanlDOGZmWDJHT3JVakZHM3pQckx0S0pkTE5KRFZISU5WU0RR?oc=5",
+   "source": "MusicTech",
+   "date": "2026-10-27",
+   "kind": "PROBLEM",
    "release": false
   }
  ],
@@ -212,18 +212,18 @@
    "release": true
   },
   {
-   "title": "Spotify aims to launch AI music remix service early next year",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
-   "source": "Financial Times",
+   "title": "Suno\u2019s new MCP tool lets users make songs inside ChatGPT, Claude, and Gemini \u2013 as its developer API gets a sign-in portal but remains in beta",
+   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPSUprUEU5bGhBaGJxaTVJcEVhMWppc3U1M1drNGVsMU1yZ0tjT2JLNXBva3BZYU5pN2lGTm1jWi1JUjdBYlE1UHBtYkx0N09iY1BObGVqYVNoVmFocnZXLXRQb193M3JRUnFsZnBEUnFzUmtaVzZLSTlWalNNcW1LNi1yWmZiNTk4VThjWTNWTUxqc0lkZUhLV2tmbkpmQXN3MnRZUWx1QWVCbEZ5N0ltX2VxVm5MUEdWdXVnakhCbV9pcm9ibkcwdW94allaQkRFX1BUa1FuU195N2hwYkFERDc5cGcwcmUyMDdGeTQweEhrdUNDOWZOYVh5UUo4cWQwei1iNDk2VQ?oc=5",
+   "source": "Music Business Worldwide",
    "date": "2026-10-30",
    "kind": "PRODUCT",
    "release": true
   },
   {
-   "title": "Suno\u2019s new MCP tool lets users make songs inside ChatGPT, Claude, and Gemini \u2013 as its developer API gets a sign-in portal but remains in beta",
-   "link": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPSUprUEU5bGhBaGJxaTVJcEVhMWppc3U1M1drNGVsMU1yZ0tjT2JLNXBva3BZYU5pN2lGTm1jWi1JUjdBYlE1UHBtYkx0N09iY1BObGVqYVNoVmFocnZXLXRQb193M3JRUnFsZnBEUnFzUmtaVzZLSTlWalNNcW1LNi1yWmZiNTk4VThjWTNWTUxqc0lkZUhLV2tmbkpmQXN3MnRZUWx1QWVCbEZ5N0ltX2VxVm5MUEdWdXVnakhCbV9pcm9ibkcwdW94allaQkRFX1BUa1FuU195N2hwYkFERDc5cGcwcmUyMDdGeTQweEhrdUNDOWZOYVh5UUo4cWQwei1iNDk2VQ?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-30",
+   "title": "Apple goes all in on AI with Logic Pro 13, introducing an intelligent assistant that can control your DAW",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0MwNmQ2V1VOekctdm5hclNxQ3Fwd2JrNzgtZkIzLTNTdC1wZWIxU3NLMVNlWXhiQ2pVcnhSNnRQTVlrLXU0UVZqeHBFZVg3NkduYUpQM0YzSXRfdERLbzRUY2NRQTBaV3BZMHBsd0NHRm9nZFF4NjlzRkdfbW1VbHlFN3FyVU1vZk9NSnBVVVdHZE93M0txMm1lZXpBVk5NZjJuX3pFemc5UlBCdHVQQ1FINGN6NWtTbHcyQmt0RGtPcWhnVExnbUZ3ZExNQ1J2ODk5SDdYSXV4QQ?oc=5",
+   "source": "MusicRadar",
+   "date": "2026-10-28",
    "kind": "PRODUCT",
    "release": true
   },
@@ -263,7 +263,7 @@
   "Music Ally musically.com": 2,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -276,7 +276,7 @@
   "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
   "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
-  "Google News %22AI%22+stem+separation": 2,
+  "Google News %22AI%22+stem+separation": 1,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
