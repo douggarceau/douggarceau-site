@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T06:46Z",
+ "updated": "2026-11-06T15:56Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 61,
  "items": [
+  {
+   "title": "Man\u00e1 Celebrates 40 Years with Global YouTube Premiere of \u201cVivir Sin Aire Tour: Live From Red Rocks\u201d",
+   "link": "https://www.moderndrummer.com/2026/11/mana-celebrates-40-years-with-global-youtube-premiere-of-vivir-sin-aire-tour-live-from-red-rocks/",
+   "source": "Modern Drummer",
+   "date": "2026-11-06"
+  },
   {
    "title": "Hudson Music Releases New Book by George Lawrence, The Missing Rudiments",
    "link": "https://www.drummingnewsnetwork.com/hudson-music-releases-new-book-by-george-lawrence-the-missing-rudiments/",
@@ -251,12 +257,6 @@
    "title": "LOUISE BARTLE | From Bedroom Drummer to Bloc Party",
    "link": "https://theukdrumshow.com/show-news/louise-bartle-from-bedroom-drummer-to-bloc-party/",
    "source": "The UK Drum Show",
-   "date": "2026-10-01"
-  },
-  {
-   "title": "Every Breath You Take Drum Transcription",
-   "link": "https://thedrumninja.com/every-breath-you-take-drum-transcription/",
-   "source": "The Drum Ninja",
    "date": "2026-10-01"
   }
  ]

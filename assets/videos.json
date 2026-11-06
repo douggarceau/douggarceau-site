@@ -1,6 +1,27 @@
 {
- "updated": "2026-11-05T21:59Z",
+ "updated": "2026-11-06T15:56Z",
  "items": [
+  {
+   "id": "hny0Z_F-WmY",
+   "title": "Meinl Cymbals - Isac Jamba  - \"Caricas Total\" - Meinl Drum Festival 2026",
+   "source": "Meinl",
+   "date": "2026-11-06",
+   "kind": "EVENT"
+  },
+  {
+   "id": "-G6KyWHNmCA",
+   "title": "Drum Talk TV News Desk Report - November 6, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-11-05",
+   "kind": "TALK"
+  },
+  {
+   "id": "G0YEZUzQPDA",
+   "title": "Asaf Sirkis Interview: Drummer with New Piano Album Letters",
+   "source": "Drumtalk TV",
+   "date": "2026-11-05",
+   "kind": "INTERVIEW"
+  },
   {
    "id": "_9WDbX7oVgI",
    "title": "Meinl Cymbals - Pure Alloy Custom - Jeeves \"BRKBEAT\" Demo",
@@ -23,13 +44,6 @@
    "kind": "TALK"
   },
   {
-   "id": "lj-jE1zQMDU",
-   "title": "Drum Talk TV News Desk Report - October 30, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-10-31",
-   "kind": "TALK"
-  },
-  {
    "id": "EAV7jBscmGM",
    "title": "Ludwig 5x14 Black Beauty Snare Drum Demo",
    "source": "Ludwig",
@@ -42,13 +56,6 @@
    "source": "Ludwig",
    "date": "2026-10-30",
    "kind": "DEMO"
-  },
-  {
-   "id": "PAx7XElKQwc",
-   "title": "1 Day Left for Drum Talk TV Brilliance Halloween Special!",
-   "source": "Drumtalk TV",
-   "date": "2026-10-30",
-   "kind": "TALK"
   },
   {
    "id": "rORrT3bj32A",
@@ -110,7 +117,7 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (3)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (1)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (2)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -128,7 +135,6 @@
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
   "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
-  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
