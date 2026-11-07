@@ -1,11 +1,12 @@
 {
- "updated": "2026-11-07T14:55Z",
+ "updated": "2026-11-07T20:14Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
   "Drummer's Review (8)",
   "Beat It (8)",
   "Drumeo (8)",
+  "Sick Drummer Magazine (8)",
   "The UK Drum Show (8)",
   "Drummerworld (8)",
   "Scott K Fish (5)",
@@ -15,10 +16,8 @@
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
- "errors": {
-  "Sick Drummer Magazine": "<urlopen error timed out>"
- },
- "raw_count": 57,
+ "errors": {},
+ "raw_count": 61,
  "items": [
   {
    "title": "Rogers Introduces the New Dayton Series: Vintage Heritage Meets Modern American Craftsmanship",
