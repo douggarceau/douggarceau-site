@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T20:15Z",
+ "updated": "2026-11-07T23:39Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -78,22 +78,6 @@
    "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0MwNmQ2V1VOekctdm5hclNxQ3Fwd2JrNzgtZkIzLTNTdC1wZWIxU3NLMVNlWXhiQ2pVcnhSNnRQTVlrLXU0UVZqeHBFZVg3NkduYUpQM0YzSXRfdERLbzRUY2NRQTBaV3BZMHBsd0NHRm9nZFF4NjlzRkdfbW1VbHlFN3FyVU1vZk9NSnBVVVdHZE93M0txMm1lZXpBVk5NZjJuX3pFemc5UlBCdHVQQ1FINGN6NWtTbHcyQmt0RGtPcWhnVExnbUZ3ZExNQ1J2ODk5SDdYSXV4QQ?oc=5",
    "source": "MusicRadar",
    "date": "2026-10-28",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Apple debuts new musically-inclined AI assistant for creators",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-27",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTi1KZWlGSVZxaDVoZU9sNHpSczlKdFJTLXNGd3AyaUFfcmFnbnpxVnVOMml2V1VzUS11cFRfMmxvWVVtMU11ZmNjYWhnU1pBMXNFZlZBRWdsSnh0bW5EWUJXdUVQX293Q2FUaEIzSWdkazFvWlBCUy1vNkV3MWVRZVgzQlZsNkNwcFdzUkZZQTdtTTZ2Umc1M0hJZGl1ZWlueEVjaXlVR0RKUXNLS2RxNElucjh4emhv?oc=5",
-   "source": "TechCrunch",
-   "date": "2026-10-14",
    "kind": "PRODUCT",
    "release": true
   },
@@ -192,6 +176,22 @@
    "date": "2026-10-24",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "UMG Licenses Gaming-Focused AI Music Platform Tyger",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5FWmxFNFNoY1pRSFhCRFFTZDNhaXU5ZXdBTjBZSElwWnFUeTVEQ1ZqRmFlejR5TWFGOGloRFEweG5mcG8wWHFSUVJTR3YwbWZnTkpGcWp1QXozaG9MWTgydDVqaG1kSTF3ZnhvY2t5amNlTXdaSHp3b25IVEI?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-10-23",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Would You Listen to A.I. Music? Maybe You Already Do.",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2hWWnhmcUFxYmRuLU9TMUFXaUZTOFJoQXo3VVVXRkNiSTJ3V3pTWUVCSXh1Vnd4SFVrbVp6dTlUSmFtMnVMWkNmdzBNMlk4WU1POHByWWRuUEY3N0cwWXRqdDJRcFVRU0x3Y1RoZWstckZmdlNRMHROWmVRcmlEMGpKd0p0WXFHRWduU3d2YUg5dW4wZXY0YjZwTllYdlUzZk5QWmdKV20?oc=5",
+   "source": "The New York Times",
+   "date": "2026-10-22",
+   "kind": "NEWS",
+   "release": false
   }
  ],
  "releases": [
@@ -252,9 +252,9 @@
    "release": true
   },
   {
-   "title": "YouTube Music launches new labels as AI-generated music floods streaming platforms",
-   "link": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTi1KZWlGSVZxaDVoZU9sNHpSczlKdFJTLXNGd3AyaUFfcmFnbnpxVnVOMml2V1VzUS11cFRfMmxvWVVtMU11ZmNjYWhnU1pBMXNFZlZBRWdsSnh0bW5EWUJXdUVQX293Q2FUaEIzSWdkazFvWlBCUy1vNkV3MWVRZVgzQlZsNkNwcFdzUkZZQTdtTTZ2Umc1M0hJZGl1ZWlueEVjaXlVR0RKUXNLS2RxNElucjh4emhv?oc=5",
-   "source": "TechCrunch",
+   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
+   "source": "EDM.com",
    "date": "2026-10-14",
    "kind": "PRODUCT",
    "release": true
@@ -279,13 +279,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 27,
+  "Google News %22AI+music%22": 24,
   "Google News Suno+OR+Udio": 23,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 14,
   "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
