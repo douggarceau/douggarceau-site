@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T15:13Z",
+ "updated": "2026-11-08T20:29Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -42,6 +42,14 @@
    "release": false
   },
   {
+   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
+   "source": "9to5Mac",
+   "date": "2026-11-05",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Spotify aims to launch AI music remix service early next year",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
    "source": "Financial Times",
@@ -82,18 +90,34 @@
    "release": true
   },
   {
-   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
-   "source": "The Guardian",
+   "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
+   "source": "Guitar World",
+   "date": "2026-10-16",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "AI Music Can Be Difficult To Detect, But There Are Some Telltale Signs",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMGl4U3RWdzVmNEExbGhtVWU3Umd3VHJBd3BMREsyaGVRMjJyLWdfUDcycGE3MmpmcVlhM2dkdXhyd0FjQ0RSYkZVS25DYmdQZkJ1cmROazdqbXp6Q0pUdThkZUNWTHpTc3ZvbUhxZmN5R2JiMUxDeEhFX19IZWNvVUVNRQ?oc=5",
+   "source": "Engadget",
+   "date": "2026-11-08",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Suno AI Music Generator Sued Again For Copyright Infringement",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd2RBdmNJNzV5YnFIM3JzclpLNDNuWXhtakVYcWVDUGt2blZOaUVya2U3cnk2QXNwbXZxcFM1QUVJSjIwOTJIZzFLWkpTQlhTYzdyS3gteG96TnY1c2stVFJIS0JxRGRrazNIR3RLT05QeWpPck5OQjdXNXEtX0QyRTd6NUY1UmV6QUdtZ3AtaWZhQ2lnTTd5UVlKTQ?oc=5",
+   "source": "Engadget",
    "date": "2026-11-08",
    "kind": "PROBLEM",
    "release": false
   },
   {
-   "title": "Elvis Presley Rights Owners Sue Suno Over AI Voice Cloning: \u2018Elvis\u2019 Identity Was\u00a0Stolen\u2019",
-   "link": "https://www.billboard.com/pro/elvis-presley-ai-voice-cloning-lawsuit-suno/",
-   "source": "Billboard",
-   "date": "2026-11-07",
+   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
+   "source": "The Guardian",
+   "date": "2026-11-08",
    "kind": "PROBLEM",
    "release": false
   },
@@ -168,30 +192,6 @@
    "date": "2026-10-27",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Chase & Status on the upside of AI for music",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQeVRTdVNLdTZONl9PSVpiLVJXTjdHOXlpRG9KejZodFBHcmd4cnU0UUQ0QUl4Tmdva1BkTVNOajdsdUJDTlVxbVI2Q01mSEtYVllRVldkaG5UT0l1bW1GbXVfN25JaXFEUi1saXF3bzhXSkVXYUdmdmkxTzFkZU9PYlo5aG5pRWZnUFFrTWdFeVVNWmlB?oc=5",
-   "source": "Reuters",
-   "date": "2026-10-24",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "UMG Licenses Gaming-Focused AI Music Platform Tyger",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5FWmxFNFNoY1pRSFhCRFFTZDNhaXU5ZXdBTjBZSElwWnFUeTVEQ1ZqRmFlejR5TWFGOGloRFEweG5mcG8wWHFSUVJTR3YwbWZnTkpGcWp1QXozaG9MWTgydDVqaG1kSTF3ZnhvY2t5amNlTXdaSHp3b25IVEI?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-10-23",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Would You Listen to A.I. Music? Maybe You Already Do.",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNb2hWWnhmcUFxYmRuLU9TMUFXaUZTOFJoQXo3VVVXRkNiSTJ3V3pTWUVCSXh1Vnd4SFVrbVp6dTlUSmFtMnVMWkNmdzBNMlk4WU1POHByWWRuUEY3N0cwWXRqdDJRcFVRU0x3Y1RoZWstckZmdlNRMHROWmVRcmlEMGpKd0p0WXFHRWduU3d2YUg5dW4wZXY0YjZwTllYdlUzZk5QWmdKV20?oc=5",
-   "source": "The New York Times",
-   "date": "2026-10-22",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
@@ -200,6 +200,14 @@
    "link": "https://www.musicbusinessworldwide.com/rotor-videos-opens-artist-unlimited-to-any-artist-from-9-99-a-month-with-unlimited-release-visuals-and-a-library-of-17m-non-ai-generated-clips/",
    "source": "Music Business Worldwide",
    "date": "2026-11-06",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
+   "source": "9to5Mac",
+   "date": "2026-11-05",
    "kind": "PRODUCT",
    "release": true
   },
@@ -263,20 +271,20 @@
   "Music Ally musically.com": 2,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 3,
+  "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 20,
+  "Google News %22AI+music%22": 21,
   "Google News Suno+OR+Udio": 19,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 12,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 13,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
-  "Google News %22AI%22+stem+separation": 1,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
+  "Google News %22AI%22+stem+separation": 2,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
