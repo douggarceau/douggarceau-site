@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T06:00Z",
+ "updated": "2026-11-08T15:13Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -42,14 +42,6 @@
    "release": false
   },
   {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Spotify aims to launch AI music remix service early next year",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
    "source": "Financial Times",
@@ -82,12 +74,20 @@
    "release": true
   },
   {
-   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
-   "source": "EDM.com",
-   "date": "2026-10-14",
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-27",
    "kind": "PRODUCT",
    "release": true
+  },
+  {
+   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
+   "source": "The Guardian",
+   "date": "2026-11-08",
+   "kind": "PROBLEM",
+   "release": false
   },
   {
    "title": "Elvis Presley Rights Owners Sue Suno Over AI Voice Cloning: \u2018Elvis\u2019 Identity Was\u00a0Stolen\u2019",
@@ -204,14 +204,6 @@
    "release": true
   },
   {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
    "link": "https://rekkerd.org/session-loops-releases-drumnet-2-ai-powered-drum-machine/",
    "source": "Rekkerd",
@@ -252,18 +244,18 @@
    "release": true
   },
   {
-   "title": "New Awards Ceremony Launched for AI Music Creators \"To Be Judged as Artists, Not Experiments\"",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HVHMtMklrdzZza0pVMVkwWGh3VXpwNnNJRFJUeHdSa2RwM19UQzF1S19iNl90WHdseWhtRDNTbW1INk5EM180T213c294OTd3bmtrMFUxS3p2Z1d5T09YTVY0SUY3YWZMT0FNUVFnMjQyZlFEZzc4N2ZOZTg?oc=5",
-   "source": "EDM.com",
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
    "date": "2026-10-14",
-   "kind": "PRODUCT",
+   "kind": "NEWS",
    "release": true
   }
  ],
  "log": {
   "MusicRadar www.musicradar.com": 0,
   "Music Business Worldwide www.musicbusinessworldwide.com": 1,
-  "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 520: <none>",
+  "Digital Music News www.digitalmusicnews.com/feed/": "error: not well-formed (invalid token): line 1, column 119",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
@@ -277,15 +269,15 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 4,
+  "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 20,
-  "Google News Suno+OR+Udio": 22,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 11,
+  "Google News Suno+OR+Udio": 19,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 12,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
   "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
