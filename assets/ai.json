@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T06:29Z",
+ "updated": "2026-11-09T18:49Z",
  "items": [
   {
    "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
@@ -18,6 +18,22 @@
    "release": true
   },
   {
+   "title": "Maono\u2019s creator-focused AI-powered microphone, the PD500W, is now available to purchase",
+   "link": "https://musictech.com/news/gear/maono-pd500w-available-now/",
+   "source": "MusicTech",
+   "date": "2026-11-09",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Katharsis X intelligent AI music repair plugin by CRLFF Digital",
+   "link": "https://rekkerd.org/katharsis-x-intelligent-ai-music-repair-plugin-by-crlff-digital/",
+   "source": "Rekkerd",
+   "date": "2026-11-09",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
    "title": "Rotor Videos opens Artist Unlimited to any artist from $9.99 a month, with unlimited release visuals and a library of 17M+, non-AI-generated clips",
    "link": "https://www.musicbusinessworldwide.com/rotor-videos-opens-artist-unlimited-to-any-artist-from-9-99-a-month-with-unlimited-release-visuals-and-a-library-of-17m-non-ai-generated-clips/",
    "source": "Music Business Worldwide",
@@ -32,22 +48,6 @@
    "date": "2026-11-06",
    "kind": "PRODUCT",
    "release": false
-  },
-  {
-   "title": "Pro Tools now features AI stem separation",
-   "link": "https://musictech.com/news/pro-tools-now-features-ai-stem-separation/",
-   "source": "MusicTech",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": false
-  },
-  {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": true
   },
   {
    "title": "Spotify aims to launch AI music remix service early next year",
@@ -79,6 +79,38 @@
    "source": "MusicRadar",
    "date": "2026-10-28",
    "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-27",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
+   "source": "Guitar World",
+   "date": "2026-10-16",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "Suno sued by Elvis Presley rights-owners and Eight Mile Style",
+   "link": "https://musically.com/2026/11/09/suno-sued-by-elvis-presley-rights-owners-and-eight-mile-style/",
+   "source": "Music Ally",
+   "date": "2026-11-09",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "MGK on Whether He Would Use AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE45b3lmTEI0ZlB3ajh1NU1iNHFCYUM4c1dhZnI0Vk8xSVV2djVrSW91d2lZVHVGRWJ1b0Rxa0kta2FEdDBDVGZVYVNybkE3SGpWZktNaUtaTU5SU0VyQ25MWXdmcmswc0M0N1VGUENDRQ?oc=5",
+   "source": "Complex",
+   "date": "2026-11-09",
+   "kind": "NEWS",
    "release": true
   },
   {
@@ -138,14 +170,6 @@
    "release": false
   },
   {
-   "title": "Mashup Edu\u2019s AI-agent Nia is designed to \u201crun the business side\u201d of indie acts\u2019 careers",
-   "link": "https://musically.com/2026/11/06/mashup-edus-ai-agent-nia-is-designed-to-run-the-business-side-of-indie-acts-careers/",
-   "source": "Music Ally",
-   "date": "2026-11-06",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "One of Classical Music\u2019s Biggest Stars Says AI Is Degrading Our Taste",
    "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1mc1VZd1dkZkJjVG01bkw1RWY2WFRWMzJpUTJ6OUdoUXJVYkJqaUlrRTFzMkN5LUJPQjBUcjZnX2lScVJmQmgyTlQtNEtUZnpDcnFfSWotUTdobjA3elRsVkh1cVVRNkZ6dHcyUEsxTzVoWjZneG5VbkFB?oc=5",
    "source": "Bloomberg.com",
@@ -168,46 +192,30 @@
    "date": "2026-11-02",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Suno fights to make Apple testify on whether Apple Music could survive without UMG and Sony, claiming the majors use their catalogs \u2018as a cudgel\u2019 to win anti-AI concessio",
-   "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQdTJvMmZPYk9JZzBaSGxnZUtNTWRPWEpveXEzRFlWeFN5X0o1clpXeXVCSHRQQzNoMl9KTWlKaEJ5RHZ3NEJnWjQ1V01tT0JrbTliTDJSYlQ5Zm9RM3NIZlp5eGN5bnFGeDhuc2owaDkzQ19PUU9TLTh2ZUVWeWZpSlNUX1pEUmtGMG83MDJoTW5fcUdNbk4zaU43c1duRjgzekhnemdpdG5yUEVnRzBpblNhM0lYUElTSXlPTk8tNG55VzBTa3dYQVFCVlVVeGdZNVNRRS1DdFFXRm00UFg5OThYZGtpT19zZVZ3eUJxbkRNYVplXzl1ejI3S3BQVERXMlVheUI0dTd4QWRya28zVnVpZ09jSFM1ZmV1SkZTbjQ3cE9qWkJnLUJHTlZSWWFESDg0?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-10-30",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Here\u2019s Every Company Fighting Subpoenas in Suno\u2019s Legal Fight With Universal and Sony Music",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQS0pFQUtUbzhJUS14U3VuZ1MzWV9UN1lXS0VEd0dVWXJZVzNQa0E1RnNSbmY2WG9Qb3QwY2ZwVThBVXVIUUk5U3NvcDJlZ1ZYWmF3dktpc3lCSjRweEk5dkx0OERVNVBxOGlTWDZqbDR5QjQ2UXRKOV9SOVBkR1lfeUpsdHdlUWI0RkNkME9RRFg0Sms0?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-27",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Another blow for AI music? Anthropic hit with $41 million lawsuit by owners of Elvis Presley's catalogue",
-   "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPU1BKeEJWR3VwaDNiX1dIX0dnY1hRNkxEVVRxbkJKT25XRkpybkpycWZmWFdhRHJhTGlLV1RFcGQ4RmgwYVM4LW9rN0VQMlQ0V25SU2lWUmlqQnRNcjRleU91dzlJTXhaaks4Z2pJcVBHSmFpY0hBTmZYUWllblFDVEtRdnZlOU83eEJBSkUwYVZ6MnM1Qi1TYXRhanlDOGZmWDJHT3JVakZHM3pQckx0S0pkTE5KRFZISU5WU0RR?oc=5",
-   "source": "MusicTech",
-   "date": "2026-10-27",
-   "kind": "PROBLEM",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Maono\u2019s creator-focused AI-powered microphone, the PD500W, is now available to purchase",
+   "link": "https://musictech.com/news/gear/maono-pd500w-available-now/",
+   "source": "MusicTech",
+   "date": "2026-11-09",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "MGK on Whether He Would Use AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE45b3lmTEI0ZlB3ajh1NU1iNHFCYUM4c1dhZnI0Vk8xSVV2djVrSW91d2lZVHVGRWJ1b0Rxa0kta2FEdDBDVGZVYVNybkE3SGpWZktNaUtaTU5SU0VyQ25MWXdmcmswc0M0N1VGUENDRQ?oc=5",
+   "source": "Complex",
+   "date": "2026-11-09",
+   "kind": "NEWS",
+   "release": true
+  },
   {
    "title": "Rotor Videos opens Artist Unlimited to any artist from $9.99 a month, with unlimited release visuals and a library of 17M+, non-AI-generated clips",
    "link": "https://www.musicbusinessworldwide.com/rotor-videos-opens-artist-unlimited-to-any-artist-from-9-99-a-month-with-unlimited-release-visuals-and-a-library-of-17m-non-ai-generated-clips/",
    "source": "Music Business Worldwide",
    "date": "2026-11-06",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-11-05",
    "kind": "PRODUCT",
    "release": true
   },
@@ -250,14 +258,6 @@
    "date": "2026-10-20",
    "kind": "DRUMS",
    "release": true
-  },
-  {
-   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-14",
-   "kind": "NEWS",
-   "release": true
   }
  ],
  "log": {
@@ -267,7 +267,7 @@
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
-  "Rekkerd rekkerd.org": 1,
+  "Rekkerd rekkerd.org": 2,
   "Music Ally musically.com": 2,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
@@ -277,15 +277,15 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 4,
+  "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 20,
+  "Google News %22AI+music%22": 23,
   "Google News Suno+OR+Udio": 18,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 10,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 11,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 0,
-  "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
+  "Google News %22AI%22+stem+separation": 2,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
