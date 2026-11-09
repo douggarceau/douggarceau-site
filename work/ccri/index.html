@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>CCRI Community Guide | Work-site prototype</title>
+<meta name="description" content="An independent prototype for a clear, campus-aware daily guide to the Community College of Rhode Island.">
+<style>
+:root{color-scheme:light;--navy:#10283d;--navy2:#173b56;--paper:#f4f6f7;--card:#fff;--ink:#182632;--muted:#61717e;--line:#dce3e8;--orange:#cf5b2a;--teal:#1d7880;--pale:#eaf3f3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid #e59a28;outline-offset:3px}.shell{width:min(1160px,calc(100% - 36px));margin:auto}
+.topbar{background:var(--navy);color:#fff}.topinner{min-height:54px;display:flex;align-items:center;justify-content:space-between;gap:14px}.identity{font-size:13px;font-weight:750;letter-spacing:.08em;text-transform:uppercase}.crumb{color:#d5e2ec;font-size:13px;text-decoration:none}.prototype{background:#fff2da;color:#71411c;border-bottom:1px solid #f0d7a8}.prototype div{padding:10px 0;font-size:13px}.prototype b{font-weight:750}.hero{background:linear-gradient(120deg,var(--navy) 0%,var(--navy2) 75%,#245c6a 100%);color:#fff;padding:58px 0 62px}.eyebrow{font:650 12px/1.4 ui-monospace,monospace;letter-spacing:.15em;text-transform:uppercase;color:#b8e0de}.hero h1{font-size:clamp(42px,7vw,76px);line-height:.98;letter-spacing:-.045em;max-width:840px;margin:15px 0 18px}.hero p{max-width:690px;color:#e0e9ef;font-size:18px;margin:0}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.btn{display:inline-flex;min-height:46px;align-items:center;justify-content:center;padding:0 18px;border-radius:4px;background:#f0a24a;color:#142638;font-size:14px;font-weight:750;text-decoration:none}.btn.alt{background:transparent;color:#fff;border:1px solid #a9c3d0}.btn:hover{filter:brightness(1.06)}
+.tabs{background:#fff;border-bottom:1px solid var(--line)}.tabrow{display:flex;gap:22px;overflow-x:auto;padding:0}.tabs a{flex:none;padding:15px 0;color:var(--navy);text-decoration:none;font-size:14px;font-weight:700}.tabs a:hover{color:var(--orange)}
+main{padding:34px 0 80px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:22px;align-items:start}.section{margin-bottom:22px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:14px;margin-bottom:13px}.section h2{font-size:23px;line-height:1.2;letter-spacing:-.02em;margin:0;color:var(--navy)}.section-head a,.textlink{color:var(--teal);font-size:14px;font-weight:700}.panel{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:21px;box-shadow:0 5px 20px rgba(16,40,61,.035)}.empty{color:var(--muted);margin:0}.empty strong{color:var(--ink)}.utility{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.utility a{display:block;background:#fff;border:1px solid var(--line);border-radius:8px;padding:17px;text-decoration:none;transition:transform .16s,border-color .16s}.utility a:hover{transform:translateY(-2px);border-color:#82a8b4}.utility b{display:block;color:var(--navy);font-size:15px}.utility span{display:block;color:var(--muted);font-size:13px;margin-top:5px}.campuses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.campus{background:#fff;border:1px solid var(--line);border-radius:8px;padding:15px}.campus b{display:block;color:var(--navy);font-size:15px}.campus span{color:var(--muted);font-size:13px}.side{position:sticky;top:18px}.search{display:flex;gap:8px;margin-top:14px}.search input{flex:1;min-width:0;border:1px solid var(--line);border-radius:4px;padding:11px 12px;font:inherit;background:#fff}.search button{border:0;border-radius:4px;background:var(--navy);color:#fff;padding:0 14px;font-weight:700;cursor:pointer}.help-list{list-style:none;padding:0;margin:13px 0 0}.help-list li{padding:12px 0;border-top:1px solid var(--line)}.help-list a{color:var(--teal);font-weight:700;text-decoration:none}.help-list small{display:block;color:var(--muted);margin-top:3px}.source-note{font-size:12px;color:var(--muted);margin:12px 0 0}.status{margin-top:12px;color:var(--teal);font-size:13px;min-height:20px}.bottom{margin-top:30px;background:var(--navy);color:#e1eaf0;border-radius:8px;padding:22px}.bottom a{color:#9fe0db;font-weight:700}.bottom p{margin:8px 0}.footer{padding:24px 0 34px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}.footer a{color:var(--teal)}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.side{position:static}.hero{padding:48px 0}.utility{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.shell{width:min(100% - 28px,1160px)}.topinner{min-height:48px}.identity{font-size:11px}.hero h1{font-size:43px}.hero p{font-size:16px}.actions .btn{flex:1}.utility,.campuses{grid-template-columns:1fr}.panel{padding:17px}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="shell topinner"><a class="identity" href="/work/">DougGarceau.com · Work Sites</a><a class="crumb" href="/work/">All concepts</a></div></header>
+<div class="prototype"><div class="shell"><b>Prototype page:</b> independent concept with no live CCRI event feed. Confirm current dates and services on the official CCRI site.</div></div>
+<section class="hero"><div class="shell">
+<div class="eyebrow">Concept 01 · Rhode Island</div>
+<h1>A clearer way to plan your day at CCRI.</h1>
+<p>An independent guide concept bringing campus life, important dates, useful services, and official links into one quick daily view.</p>
+<div class="actions"><a class="btn" href="https://www.ccri.edu/calendar/" target="_blank" rel="noopener">Open CCRI events ↗</a><a class="btn alt" href="https://www.ccri.edu/" target="_blank" rel="noopener">Visit official CCRI site ↗</a></div>
+</div></section>
+<nav class="tabs" aria-label="Prototype sections"><div class="shell tabrow"><a href="#today">Today</a><a href="#dates">Academic dates</a><a href="#campuses">Campuses</a><a href="#help">Student help</a><a href="#classes">Classes & training</a></div></nav>
+<main class="shell"><div class="layout"><div>
+<section class="section" id="today"><div class="section-head"><h2>Today at CCRI</h2><a href="https://www.ccri.edu/calendar/" target="_blank" rel="noopener">Official events ↗</a></div><div class="panel"><p class="empty"><strong>Daily events panel preview.</strong> A verified event feed has not been connected in this prototype. Use CCRI’s calendar for current events and times.</p><p class="source-note">Prototype content only · source: <a href="https://www.ccri.edu/calendar/" target="_blank" rel="noopener">CCRI Campus Calendar</a></p></div></section>
+<section class="section" id="dates"><div class="section-head"><h2>Academic dates</h2><a href="https://www.ccri.edu/calendar/academic/" target="_blank" rel="noopener">Official calendar ↗</a></div><div class="panel"><p class="empty"><strong>Dates and deadlines vary by term.</strong> This module is reserved for source-checked dates, with a direct link to the official calendar.</p><p class="source-note">No sample deadline is presented as a real CCRI deadline.</p></div></section>
+<section class="section" id="campuses"><div class="section-head"><h2>Choose a campus</h2><a href="https://ccri.edu/about/campuses/" target="_blank" rel="noopener">Campus details ↗</a></div><div class="campuses">
+<div class="campus"><b>Knight Campus</b><span>Warwick</span></div><div class="campus"><b>Flanagan Campus</b><span>Lincoln</span></div>
+<div class="campus"><b>Liston Campus</b><span>Providence</span></div><div class="campus"><b>Newport County Campus</b><span>Newport</span></div>
+<div class="campus"><b>Westerly Education Center</b><span>Westerly</span></div><div class="campus"><b>Woonsocket Education Center</b><span>Woonsocket</span></div>
+</div></section>
+<section class="section" id="classes"><div class="section-head"><h2>Classes & training</h2><a href="https://www.ccri.edu/availablecourses.html" target="_blank" rel="noopener">Search courses ↗</a></div><div class="panel"><p class="empty">A future version could make it faster to find official course search, online learning, workforce training, and program information.</p><form class="search" id="resource-search" role="search"><label class="sr-only" for="q" style="position:absolute;left:-9999px">Search this prototype</label><input id="q" type="search" placeholder="Try “course”, “calendar”, or “help”"><button type="submit">Find</button></form><p id="search-status" class="status" aria-live="polite"></p></div></section>
+</div>
+<aside class="side">
+<section class="section" id="help"><div class="section-head"><h2>Get help</h2><a href="https://www.ccri.edu/onestop/" target="_blank" rel="noopener">One Stop ↗</a></div><div class="panel">
+<p class="empty">Quick routes to the services students ask about most.</p><ul class="help-list">
+<li><a href="https://www.ccri.edu/onestop/" target="_blank" rel="noopener">One Stop Student Services ↗</a><small>Enrollment questions and student processes</small></li>
+<li><a href="https://www.ccri.edu/ose/" target="_blank" rel="noopener">Student Engagement ↗</a><small>Student groups and campus life</small></li>
+<li><a href="https://www.ccri.edu/onestop/fa/" target="_blank" rel="noopener">Financial aid ↗</a><small>Official financial aid information</small></li>
+<li><a href="https://ccri.edu/news/all-news.html" target="_blank" rel="noopener">CCRI news ↗</a><small>Official announcements and coverage</small></li>
+</ul></div></section>
+<div class="bottom"><strong>Prototype status</strong><p>This page shows the proposed structure. Live events, dates, search results, and student accounts are not connected.</p><p><a href="/work/">Back to all work-site concepts →</a></p></div>
+</aside></div>
+</main>
+<footer class="footer"><div class="shell">Independent concept on DougGarceau.com. Community College of Rhode Island is not the publisher of this prototype. <a href="https://www.ccri.edu/" target="_blank" rel="noopener">Check CCRI’s official site for current information.</a></div></footer>
+<script>
+(function(){
+ var form=document.getElementById('resource-search'),input=document.getElementById('q'),status=document.getElementById('search-status');
+ var terms={
+  course:'Course search: use CCRI’s official course availability page.',
+  calendar:'Calendar: use CCRI’s official campus and academic calendars.',
+  help:'Student help: start with CCRI One Stop Student Services.',
+  campus:'Campus details: use CCRI’s official campus directory.',
+  training:'Workforce training: visit CCRI’s official workforce programs.'
+ };
+ form.addEventListener('submit',function(e){
+  e.preventDefault();var q=input.value.trim().toLowerCase();
+  var hit=Object.keys(terms).find(function(k){return q.indexOf(k)>=0;});
+  status.textContent=hit?terms[hit]:'This prototype search is a demo. Use the official links on this page for current information.';
+ });
+})();
+</script>
+</body>
+</html>
