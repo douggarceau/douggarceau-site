@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-09T18:49Z",
+ "updated": "2026-11-10T12:40Z",
  "items": [
+  {
+   "id": "5ijgypw8dC8",
+   "title": "Meinl Cymbals - Classics Custom Dark - Ryan Seaman \"Iced Latte\" Demo",
+   "source": "Meinl",
+   "date": "2026-11-10",
+   "kind": "DEMO"
+  },
   {
    "id": "G0YEZUzQPDA",
    "title": "Asaf Sirkis Interview: Drummer with New Piano Album Letters",
@@ -105,19 +112,12 @@
    "source": "Ludwig",
    "date": "2026-08-27",
    "kind": "DEMO"
-  },
-  {
-   "id": "yWToFFWz_bk",
-   "title": "Blake Richardson (BETWEEN THE BURIED AND ME) Soundcheck @Shibuya CYCLONE",
-   "source": "Tama",
-   "date": "2026-08-11",
-   "kind": "DEMO"
   }
  ],
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (3)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (2)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -127,14 +127,15 @@
   "Sabian skip UCJbu6KNGcKK5KsVAxLoh2xA": "sabiancymbals",
   "Sabian skip UCNmSiKDIL1GKy71hbnSMUvQ": "SabianOfficial",
   "Sabian": "search UCjuev7t4qod8_9btvIxIOgw Sabian Cymbals (0)",
-  "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCtbT4AYY_b7tUt4Nu57E-bQ": "Sabian Cymbal Fan",
+  "Sabian skip UC7nv8pKAI5cANMCwF2XUWkA": "Sabian Cymbalholics",
   "Sabian skip UCSeH5bRKvywcbCiPVv3BjsQ": "Zildjian Sabian",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (4)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM": "search UCJlzj_TqtPuwvv8ljLMJzoQ namm (0)",
+  "NAMM skip UCxACdc7GLM33Fdxf0NruP7g": " @namm",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
