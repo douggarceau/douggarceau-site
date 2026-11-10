@@ -1,12 +1,11 @@
 {
- "updated": "2026-11-10T12:40Z",
+ "updated": "2026-11-10T21:48Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
   "Drummer's Review (8)",
   "Beat It (8)",
   "Drumeo (8)",
-  "Sick Drummer Magazine (8)",
   "The UK Drum Show (8)",
   "Drummerworld (8)",
   "Scott K Fish (5)",
@@ -16,8 +15,10 @@
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
- "errors": {},
- "raw_count": 61,
+ "errors": {
+  "Sick Drummer Magazine": "<urlopen error timed out>"
+ },
+ "raw_count": 57,
  "items": [
   {
    "title": "Modern Drummer Announces Dorothea Taylor Signed, Numbered Lithograph: Limited Edition Release November 10",
