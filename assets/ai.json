@@ -1,14 +1,6 @@
 {
- "updated": "2026-11-09T18:49Z",
+ "updated": "2026-11-10T02:45Z",
  "items": [
-  {
-   "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
-   "link": "https://rekkerd.org/session-loops-releases-drumnet-2-ai-powered-drum-machine/",
-   "source": "Rekkerd",
-   "date": "2026-11-03",
-   "kind": "DRUMS",
-   "release": true
-  },
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
@@ -106,6 +98,14 @@
    "release": false
   },
   {
+   "title": "Human Enough? How AI Detector Scores Put Indie Artists at Risk",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLVp0c3g5eVlUUVFLLUpnZEV5bVJEdzY4Q3EtZ19Jc29DTHllSEwycWxHdnhDNnRlc3RDYjM2bjhiT2VkYU42UFBuUVdEYXdHcUw3Qms5ZUZZaHBVTHRJcVVrZk41OEw3ZjZ3bmYwR2gyX0lwaW94T1dqQzNZWE04VDlB?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-11-09",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "MGK on Whether He Would Use AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
    "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE45b3lmTEI0ZlB3ajh1NU1iNHFCYUM4c1dhZnI0Vk8xSVV2djVrSW91d2lZVHVGRWJ1b0Rxa0kta2FEdDBDVGZVYVNybkE3SGpWZktNaUtaTU5SU0VyQ25MWXdmcmswc0M0N1VGUENDRQ?oc=5",
    "source": "Complex",
@@ -114,9 +114,9 @@
    "release": true
   },
   {
-   "title": "Human Enough? How AI Detector Scores Put Indie Artists at Risk",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLVp0c3g5eVlUUVFLLUpnZEV5bVJEdzY4Q3EtZ19Jc29DTHllSEwycWxHdnhDNnRlc3RDYjM2bjhiT2VkYU42UFBuUVdEYXdHcUw3Qms5ZUZZaHBVTHRJcVVrZk41OEw3ZjZ3bmYwR2gyX0lwaW94T1dqQzNZWE04VDlB?oc=5",
-   "source": "Digital Music News",
+   "title": "Apple Starts Offering $50 Extended Usage Packs For AI Features In Creator Studio",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWGYyVFhmSV9OSFNaaFBqdmNCcWZ6a2piU3E2UkJIaGhVUWVoYTRQdktEZmxQX2ZuZElaNGx0X0NwQXJDbGFFVENUajhmY001LWxpRGZKREFpSGhNT0xTRVI4TFkyTGhsR29wMWpOb1BHX191VFN1V084MVU3Rm5meGxKalU2Y2VETF90cFl5Z0JNV05uRTI5RlBTSHZ6dnQ2OWxsallpc3NtbHltS3pXMnRVR1V5ZTNTdURRNw?oc=5",
+   "source": "Engadget",
    "date": "2026-11-09",
    "kind": "NEWS",
    "release": false
@@ -220,14 +220,6 @@
    "release": true
   },
   {
-   "title": "Session Loops releases DrumNet 2 AI-powered drum machine",
-   "link": "https://rekkerd.org/session-loops-releases-drumnet-2-ai-powered-drum-machine/",
-   "source": "Rekkerd",
-   "date": "2026-11-03",
-   "kind": "DRUMS",
-   "release": true
-  },
-  {
    "title": "Spotify aims to launch AI music remix service early next year",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
    "source": "Financial Times",
@@ -258,6 +250,14 @@
    "date": "2026-10-20",
    "kind": "DRUMS",
    "release": true
+  },
+  {
+   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
+   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-14",
+   "kind": "NEWS",
+   "release": true
   }
  ],
  "log": {
@@ -267,7 +267,7 @@
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
-  "Rekkerd rekkerd.org": 2,
+  "Rekkerd rekkerd.org": 1,
   "Music Ally musically.com": 2,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
@@ -277,15 +277,15 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 3,
+  "Google News %22AI%22+drums": 4,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 23,
+  "Google News %22AI+music%22": 24,
   "Google News Suno+OR+Udio": 18,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 11,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 10,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 7,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
