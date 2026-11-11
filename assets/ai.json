@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T21:49Z",
+ "updated": "2026-11-11T00:39Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -114,6 +114,14 @@
    "release": false
   },
   {
+   "title": "Albanese\u2019s love affair with music is on the rocks over AI. Can he write a different tune? | Peter Lewis",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQemZHNDQzZkxVYXNzY2pkd0ZzUmJvYUJ2bEdWOWxnN2J3aFhISXdIRGJVbjhzMGs5eDdaQW95WEF6bFlfVmJKeVcyRHRpOTZVVDFaeXRnMm1zVjBFVkxZWWI0WlEtYlVNRlpSUU9jYnktaVFrSmpIcFMxYUZGanhzUTBKelh5RzdreVVxLXFIcGVWaUlpdjJuV19aSWhhT1FSWWVuX1JnaC1NRGo0OVZpNVVQV1JsUFdrLThlNmtmOGdZUGpqVENlZ3R2SVM0XzdXNlF5T2loRQ?oc=5",
+   "source": "The Guardian",
+   "date": "2026-11-10",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Human Enough? How AI Detector Scores Put Indie Artists at Risk",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLVp0c3g5eVlUUVFLLUpnZEV5bVJEdzY4Q3EtZ19Jc29DTHllSEwycWxHdnhDNnRlc3RDYjM2bjhiT2VkYU42UFBuUVdEYXdHcUw3Qms5ZUZZaHBVTHRJcVVrZk41OEw3ZjZ3bmYwR2gyX0lwaW94T1dqQzNZWE04VDlB?oc=5",
    "source": "Digital Music News",
@@ -181,14 +189,6 @@
    "title": "\u201cDrop the slop dude! Not very chic!\u201d: Nile Rodgers\u2019 AI-generated video leads to heated online tech debate",
    "link": "https://www.musicradar.com/artists/guitarists/drop-the-slop-dude-not-very-chic-nile-rodgers-ai-generated-video-leads-to-heated-tech-debate-and-textbook-what-aboutery",
    "source": "MusicRadar",
-   "date": "2026-11-06",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "One of Classical Music\u2019s Biggest Stars Says AI Is Degrading Our Taste",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1mc1VZd1dkZkJjVG01bkw1RWY2WFRWMzJpUTJ6OUdoUXJVYkJqaUlrRTFzMkN5LUJPQjBUcjZnX2lScVJmQmgyTlQtNEtUZnpDcnFfSWotUTdobjA3elRsVkh1cVVRNkZ6dHcyUEsxTzVoWjZneG5VbkFB?oc=5",
-   "source": "Bloomberg.com",
    "date": "2026-11-06",
    "kind": "NEWS",
    "release": false
@@ -279,9 +279,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 28,
-  "Google News Suno+OR+Udio": 20,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 14,
+  "Google News %22AI+music%22": 29,
+  "Google News Suno+OR+Udio": 19,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 2,
