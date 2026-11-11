@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T04:22Z",
+ "updated": "2026-11-11T08:24Z",
  "items": [
   {
    "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
@@ -74,6 +74,14 @@
    "release": false
   },
   {
+   "title": "Agents Look Ahead as AI Keeps Advancing: \u2018We Have the Privilege of Being in a Human\u00a0Industry\u2019",
+   "link": "https://www.billboard.com/business/touring/live-music-summit-2026-booking-agencies-panel-1236379247/",
+   "source": "Billboard",
+   "date": "2026-11-11",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "\u201cJust a whole new level of creativity\": Ex-bandmates Dr Dre and Ice Cube clash over the use of AI",
    "link": "https://www.musicradar.com/artists/producers-engineers/this-is-just-a-whole-new-level-of-creativity-that-we-have-to-get-used-to-you-have-to-get-used-to-it-or-youre-gonna-be-left-behind-ex-bandmates-dr-dre-and-ice-cube-clash-over-the-use-of-ai",
    "source": "MusicRadar",
@@ -109,6 +117,14 @@
    "title": "AI music help",
    "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1SdDA4ZHFfSnZhbzktVlZpbEZna1VleEVvRDRUSUliSlhhMlVVcWM5dUNFdl9WMkRNRHc5Q2ZlV3pNWklXTjQzRW1QQVBFVWlzSWp5aWNqTXF0WERpTVFLaWVsSTNqaEI4NXJIOU50NkZxU0xMc1E?oc=5",
    "source": "CDM Create Digital Music",
+   "date": "2026-11-10",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Albanese\u2019s love affair with music is on the rocks over AI. Can he write a different tune? | Peter Lewis",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQemZHNDQzZkxVYXNzY2pkd0ZzUmJvYUJ2bEdWOWxnN2J3aFhISXdIRGJVbjhzMGs5eDdaQW95WEF6bFlfVmJKeVcyRHRpOTZVVDFaeXRnMm1zVjBFVkxZWWI0WlEtYlVNRlpSUU9jYnktaVFrSmpIcFMxYUZGanhzUTBKelh5RzdreVVxLXFIcGVWaUlpdjJuV19aSWhhT1FSWWVuX1JnaC1NRGo0OVZpNVVQV1JsUFdrLThlNmtmOGdZUGpqVENlZ3R2SVM0XzdXNlF5T2loRQ?oc=5",
+   "source": "The Guardian",
    "date": "2026-11-10",
    "kind": "NEWS",
    "release": false
@@ -173,22 +189,6 @@
    "title": "The Edge asked AI to come up with a U2 song: \u201cThey couldn\u2019t\u201d says guitarist",
    "link": "https://www.musicradar.com/artists/bands/its-possible-to-get-it-to-write-a-country-song-because-its-very-strictly-codified-the-edge-feels-u2-are-uncategorisable",
    "source": "MusicRadar",
-   "date": "2026-11-06",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "\u201cDrop the slop dude! Not very chic!\u201d: Nile Rodgers\u2019 AI-generated video leads to heated online tech debate",
-   "link": "https://www.musicradar.com/artists/guitarists/drop-the-slop-dude-not-very-chic-nile-rodgers-ai-generated-video-leads-to-heated-tech-debate-and-textbook-what-aboutery",
-   "source": "MusicRadar",
-   "date": "2026-11-06",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "One of Classical Music\u2019s Biggest Stars Says AI Is Degrading Our Taste",
-   "link": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1mc1VZd1dkZkJjVG01bkw1RWY2WFRWMzJpUTJ6OUdoUXJVYkJqaUlrRTFzMkN5LUJPQjBUcjZnX2lScVJmQmgyTlQtNEtUZnpDcnFfSWotUTdobjA3elRsVkh1cVVRNkZ6dHcyUEsxTzVoWjZneG5VbkFB?oc=5",
-   "source": "Bloomberg.com",
    "date": "2026-11-06",
    "kind": "NEWS",
    "release": false
@@ -271,7 +271,7 @@
   "Music Ally musically.com": 2,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -280,11 +280,11 @@
   "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 28,
-  "Google News Suno+OR+Udio": 18,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
+  "Google News Suno+OR+Udio": 19,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
-  "Google News %22AI%22+stem+separation": 2,
+  "Google News %22AI%22+stem+separation": 3,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
