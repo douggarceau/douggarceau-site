@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-11T08:23Z",
+ "updated": "2026-11-11T12:26Z",
  "items": [
+  {
+   "id": "oiHPdZxw6aQ",
+   "title": "Meinl Cymbals - Helen \"Montra\" De La Rosa - \"Dark Trap\" - Meinl Drum Festival 2026",
+   "source": "Meinl",
+   "date": "2026-11-11",
+   "kind": "EVENT"
+  },
   {
    "id": "5ijgypw8dC8",
    "title": "Meinl Cymbals - Classics Custom Dark - Ryan Seaman \"Iced Latte\" Demo",
@@ -42,13 +49,6 @@
    "source": "Pearl",
    "date": "2026-11-06",
    "kind": "EVENT"
-  },
-  {
-   "id": "_9WDbX7oVgI",
-   "title": "Meinl Cymbals - Pure Alloy Custom - Jeeves \"BRKBEAT\" Demo",
-   "source": "Meinl",
-   "date": "2026-11-03",
-   "kind": "DEMO"
   },
   {
    "id": "_kk5TzXmbYg",
@@ -117,7 +117,7 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (3)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (3)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (4)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -134,7 +134,7 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (4)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
+  "NAMM": "search UCvp7nLHT_oIKUX5t9YSa2oA NAMM Foundation (0)",
   "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",

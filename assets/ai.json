@@ -1,13 +1,21 @@
 {
- "updated": "2026-11-11T08:24Z",
+ "updated": "2026-11-11T12:26Z",
  "items": [
   {
-   "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
-   "source": "Music Ally",
-   "date": "2026-10-20",
+   "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
+   "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
+   "source": "Resident Advisor",
+   "date": "2026-11-11",
    "kind": "DRUMS",
    "release": true
+  },
+  {
+   "title": "Nick Cave condemns AI music tool as a \u2018soul-destroying humiliation\u2019",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYXB2SVduOVhxbG00UnFIRWNyaUhEOTdhVUoydm43Vmg3djNOMGhMLTAwaFgzMlFmaHRTWUIzUXh0VXltRDlkS1BLSUNWRlRRMklTMjl6YTdxQ3RIZ29TUDl2eTRjUkpxSnpjRXVoaHdxZzFEdXZkRWtXVmxHcmE1N0ItNW9PLVoyUnJiVlNR?oc=5",
+   "source": "Yahoo",
+   "date": "2026-11-11",
+   "kind": "PRODUCT",
+   "release": false
   },
   {
    "title": "Maono\u2019s creator-focused AI-powered microphone, the PD500W, is now available to purchase",
@@ -82,6 +90,14 @@
    "release": false
   },
   {
+   "title": "Albanese\u2019s love affair with music is on the rocks over AI. Can he write a different tune? | Peter Lewis",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQemZHNDQzZkxVYXNzY2pkd0ZzUmJvYUJ2bEdWOWxnN2J3aFhISXdIRGJVbjhzMGs5eDdaQW95WEF6bFlfVmJKeVcyRHRpOTZVVDFaeXRnMm1zVjBFVkxZWWI0WlEtYlVNRlpSUU9jYnktaVFrSmpIcFMxYUZGanhzUTBKelh5RzdreVVxLXFIcGVWaUlpdjJuV19aSWhhT1FSWWVuX1JnaC1NRGo0OVZpNVVQV1JsUFdrLThlNmtmOGdZUGpqVENlZ3R2SVM0XzdXNlF5T2loRQ?oc=5",
+   "source": "The Guardian",
+   "date": "2026-11-11",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "\u201cJust a whole new level of creativity\": Ex-bandmates Dr Dre and Ice Cube clash over the use of AI",
    "link": "https://www.musicradar.com/artists/producers-engineers/this-is-just-a-whole-new-level-of-creativity-that-we-have-to-get-used-to-you-have-to-get-used-to-it-or-youre-gonna-be-left-behind-ex-bandmates-dr-dre-and-ice-cube-clash-over-the-use-of-ai",
    "source": "MusicRadar",
@@ -114,36 +130,12 @@
    "release": true
   },
   {
-   "title": "AI music help",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1SdDA4ZHFfSnZhbzktVlZpbEZna1VleEVvRDRUSUliSlhhMlVVcWM5dUNFdl9WMkRNRHc5Q2ZlV3pNWklXTjQzRW1QQVBFVWlzSWp5aWNqTXF0WERpTVFLaWVsSTNqaEI4NXJIOU50NkZxU0xMc1E?oc=5",
-   "source": "CDM Create Digital Music",
-   "date": "2026-11-10",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Albanese\u2019s love affair with music is on the rocks over AI. Can he write a different tune? | Peter Lewis",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQemZHNDQzZkxVYXNzY2pkd0ZzUmJvYUJ2bEdWOWxnN2J3aFhISXdIRGJVbjhzMGs5eDdaQW95WEF6bFlfVmJKeVcyRHRpOTZVVDFaeXRnMm1zVjBFVkxZWWI0WlEtYlVNRlpSUU9jYnktaVFrSmpIcFMxYUZGanhzUTBKelh5RzdreVVxLXFIcGVWaUlpdjJuV19aSWhhT1FSWWVuX1JnaC1NRGo0OVZpNVVQV1JsUFdrLThlNmtmOGdZUGpqVENlZ3R2SVM0XzdXNlF5T2loRQ?oc=5",
-   "source": "The Guardian",
-   "date": "2026-11-10",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "Human Enough? How AI Detector Scores Put Indie Artists at Risk",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLVp0c3g5eVlUUVFLLUpnZEV5bVJEdzY4Q3EtZ19Jc29DTHllSEwycWxHdnhDNnRlc3RDYjM2bjhiT2VkYU42UFBuUVdEYXdHcUw3Qms5ZUZZaHBVTHRJcVVrZk41OEw3ZjZ3bmYwR2gyX0lwaW94T1dqQzNZWE04VDlB?oc=5",
    "source": "Digital Music News",
    "date": "2026-11-09",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "MGK on Whether He Would Use AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE45b3lmTEI0ZlB3ajh1NU1iNHFCYUM4c1dhZnI0Vk8xSVV2djVrSW91d2lZVHVGRWJ1b0Rxa0kta2FEdDBDVGZVYVNybkE3SGpWZktNaUtaTU5SU0VyQ25MWXdmcmswc0M0N1VGUENDRQ?oc=5",
-   "source": "Complex",
-   "date": "2026-11-09",
-   "kind": "NEWS",
-   "release": true
   },
   {
    "title": "The Backlash Is Already Rumbling Against Spotify\u2019s Upcoming AI Remixing Tool",
@@ -192,9 +184,25 @@
    "date": "2026-11-06",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "\u201cDrop the slop dude! Not very chic!\u201d: Nile Rodgers\u2019 AI-generated video leads to heated online tech debate",
+   "link": "https://www.musicradar.com/artists/guitarists/drop-the-slop-dude-not-very-chic-nile-rodgers-ai-generated-video-leads-to-heated-tech-debate-and-textbook-what-aboutery",
+   "source": "MusicRadar",
+   "date": "2026-11-06",
+   "kind": "NEWS",
+   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
+   "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
+   "source": "Resident Advisor",
+   "date": "2026-11-11",
+   "kind": "DRUMS",
+   "release": true
+  },
   {
    "title": "Spotify\u2019s AI DJ gets new voices, personalities, and an option for less chatter",
    "link": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
@@ -209,14 +217,6 @@
    "source": "MusicTech",
    "date": "2026-11-09",
    "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "MGK on Whether He Would Use AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE45b3lmTEI0ZlB3ajh1NU1iNHFCYUM4c1dhZnI0Vk8xSVV2djVrSW91d2lZVHVGRWJ1b0Rxa0kta2FEdDBDVGZVYVNybkE3SGpWZktNaUtaTU5SU0VyQ25MWXdmcmswc0M0N1VGUENDRQ?oc=5",
-   "source": "Complex",
-   "date": "2026-11-09",
-   "kind": "NEWS",
    "release": true
   },
   {
@@ -241,14 +241,6 @@
    "source": "MusicRadar",
    "date": "2026-10-28",
    "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Just 4 Noise launches ethically-trained AI kick-drum generator",
-   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPTUI4ZzVuUi1QakY3alR6V3RNUF83VFdRclR0cE9TejN5alFSS3c0UVBPUmNVakdCeG5rZVUtN05EU0dzUF9admFlUlQ2azdVd1ZCck01REVMZXNSWGxjZEd6S0NaWkNFYmJ6N1EtUDdfVHc0VURtSVJBOG9xcmdxdWpDSEZ6ekxuMzE1blpNcXlNM3hzVmVXWFF1Y0k?oc=5",
-   "source": "Music Ally",
-   "date": "2026-10-20",
-   "kind": "DRUMS",
    "release": true
   },
   {
@@ -279,12 +271,12 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 28,
-  "Google News Suno+OR+Udio": 19,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
+  "Google News %22AI+music%22": 24,
+  "Google News Suno+OR+Udio": 20,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
-  "Google News %22AI%22+stem+separation": 3,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
+  "Google News %22AI%22+stem+separation": 2,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
