@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T00:41Z",
+ "updated": "2026-11-12T04:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -122,6 +122,14 @@
    "release": false
   },
   {
+   "title": "Austin artist\u2019s music removed from streaming platforms amid UMG, Distrokid \u2018AI slop\u2019 lawsuit",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQV2s3VW9rYVJMSmpJVEJWcTRTdDlGdTk4VTMxM3ozS3Z3dGZZb3JlNjl5dnpCc3dtWERlWl80OUxxLWRmd3h3R0RGQVVOb3p3cENlN29ENk8zV1M5NGlsUC1pemZwa0w4N2FUSlVZVkp3V1lRTEZlbXAxb3NydHpZNFpWZkpXeWozTmY2QUwzQQ?oc=5",
+   "source": "Yahoo",
+   "date": "2026-11-11",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
    "title": "\u201cJust a whole new level of creativity\": Ex-bandmates Dr Dre and Ice Cube clash over the use of AI",
    "link": "https://www.musicradar.com/artists/producers-engineers/this-is-just-a-whole-new-level-of-creativity-that-we-have-to-get-used-to-you-have-to-get-used-to-it-or-youre-gonna-be-left-behind-ex-bandmates-dr-dre-and-ice-cube-clash-over-the-use-of-ai",
    "source": "MusicRadar",
@@ -183,14 +191,6 @@
    "source": "The Guardian",
    "date": "2026-11-08",
    "kind": "PROBLEM",
-   "release": false
-  },
-  {
-   "title": "The Edge asked AI to come up with a U2 song: \u201cThey couldn\u2019t\u201d says guitarist",
-   "link": "https://www.musicradar.com/artists/bands/its-possible-to-get-it-to-write-a-country-song-because-its-very-strictly-codified-the-edge-feels-u2-are-uncategorisable",
-   "source": "MusicRadar",
-   "date": "2026-11-06",
-   "kind": "NEWS",
    "release": false
   }
  ],
@@ -263,12 +263,12 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 24,
+  "Google News %22AI+music%22": 23,
   "Google News Suno+OR+Udio": 20,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
-  "Google News %22AI%22+stem+separation": 3,
+  "Google News %22AI%22+stem+separation": 2,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
