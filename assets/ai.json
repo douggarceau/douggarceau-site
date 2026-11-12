@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T04:22Z",
+ "updated": "2026-11-12T08:24Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -79,6 +79,14 @@
    "source": "Guitar World",
    "date": "2026-10-16",
    "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "Stock tips with a beat: Samsung Securities' AI K-pop group racks up views",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUDQ3c0otcnRoeXI2Y1dUOWhpLV9HNFVRMkVBWmRGdF95b1NCek5yRy10aDRSS3VlNkNMcURnQ3RaWlA0Y1hiRmhpckZpX3NzdWlNLXJPZGtCRnFzQ2xFX0o1a0d2SDN6SmNHM3RJSEdST1IzdE9VcVhKUDc3NjFPbTlYa3o0UkhkeHYzLTFNX05QZDdMb0g4bWQ5aV83NGZvYVFDaDhEVG1aN1d0UC1GclBXQlRWT1VRdzJGMEl2QmJ4eEREWUNv?oc=5",
+   "source": "Reuters",
+   "date": "2026-11-12",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -184,14 +192,6 @@
    "date": "2026-11-08",
    "kind": "PROBLEM",
    "release": false
-  },
-  {
-   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
-   "source": "The Guardian",
-   "date": "2026-11-08",
-   "kind": "PROBLEM",
-   "release": false
   }
  ],
  "releases": [
@@ -261,10 +261,10 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 3,
+  "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 23,
-  "Google News Suno+OR+Udio": 20,
+  "Google News %22AI+music%22": 24,
+  "Google News Suno+OR+Udio": 19,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
