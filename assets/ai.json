@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T12:27Z",
+ "updated": "2026-11-12T16:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -7,14 +7,6 @@
    "source": "Resident Advisor",
    "date": "2026-11-11",
    "kind": "DRUMS",
-   "release": true
-  },
-  {
-   "title": "Maono\u2019s creator-focused AI-powered microphone, the PD500W, is now available to purchase",
-   "link": "https://musictech.com/news/gear/maono-pd500w-available-now/",
-   "source": "MusicTech",
-   "date": "2026-11-09",
-   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -27,7 +19,7 @@
   },
   {
    "title": "Splice\u2019s new AI DAW feels like a cheat code for music production \u2013 but it left us with one big question",
-   "link": "https://www.musicradar.com/music-tech/splices-new-ai-daw-feels-like-a-cheat-code-for-music-production-but-it-left-us-with-one-big-question",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNV0RVaTFBbG45c0ZkMnFfZy0zTkdVM2JnTkF4UEJXWHJPUi1LZUFoUGFRTUVwbFBMME5jYkhsdmp5N2hIWXRfY21Ga19QdWs0OUU4WjFFLVZLODdldnNPa1V2QkQ5NzBUZHNVWFVsS3V2R2xNV2JiemtZUDJUdmllblV2a21jNkV4dEFjVkI0d1BKNUJaZjVxY01hdUJZZVdlX1RlajlPNGpuSmRhclJUdUk1b01NRUZYMF8tWFBhM2NOV01HRnNDQk1aM01vcVA1bmpjYg?oc=5",
    "source": "MusicRadar",
    "date": "2026-11-05",
    "kind": "PRODUCT",
@@ -79,6 +71,30 @@
    "source": "Guitar World",
    "date": "2026-10-16",
    "kind": "PRODUCT",
+   "release": false
+  },
+  {
+   "title": "RadioMatic aims to make AI-music a soundtrack for businesses",
+   "link": "https://musically.com/2026/11/12/radiomatic-aims-to-make-ai-music-a-soundtrack-for-businesses/",
+   "source": "Music Ally",
+   "date": "2026-11-12",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Ringo\u2019s Charlie is a sync-licensing AI assistant within WhatsApp",
+   "link": "https://musically.com/2026/11/12/ringos-charlie-is-a-sync-licensing-ai-assistant-within-whatsapp/",
+   "source": "Music Ally",
+   "date": "2026-11-12",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
+   "title": "BeatBread Brings on Advisors From Meta,\u00a0Suno",
+   "link": "https://www.billboard.com/pro/beatbread-advisors-from-meta-suno/",
+   "source": "Billboard",
+   "date": "2026-11-12",
+   "kind": "NEWS",
    "release": false
   },
   {
@@ -146,27 +162,11 @@
    "release": false
   },
   {
-   "title": "AI-music labelling \u2018can\u2019t be just the platforms\u2019 says RIAA boss",
-   "link": "https://musically.com/2026/11/10/ai-music-labelling-cant-be-just-the-platforms-says-riaa-boss/",
-   "source": "Music Ally",
-   "date": "2026-11-10",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "Human Enough? How AI Detector Scores Put Indie Artists at Risk",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLVp0c3g5eVlUUVFLLUpnZEV5bVJEdzY4Q3EtZ19Jc29DTHllSEwycWxHdnhDNnRlc3RDYjM2bjhiT2VkYU42UFBuUVdEYXdHcUw3Qms5ZUZZaHBVTHRJcVVrZk41OEw3ZjZ3bmYwR2gyX0lwaW94T1dqQzNZWE04VDlB?oc=5",
    "source": "Digital Music News",
    "date": "2026-11-09",
    "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "The Backlash Is Already Rumbling Against Spotify\u2019s Upcoming AI Remixing Tool",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1aemdoZGdoVkJkZ3NPUUVEUDd2dEt2LWdocU9nRkhQQ20yYjF2Yl8xR0JVWmJiU2E1RlU3R3EzbDVVVjJSakhaOVU3ZmlEdnNEbGNDU093WmFJUUFPUVdOZDNpVnVPcXBYSmRxZEhERTA0QUhNQlJ1aUUxZE8?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-11-09",
-   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -196,19 +196,19 @@
  ],
  "releases": [
   {
+   "title": "Ringo\u2019s Charlie is a sync-licensing AI assistant within WhatsApp",
+   "link": "https://musically.com/2026/11/12/ringos-charlie-is-a-sync-licensing-ai-assistant-within-whatsapp/",
+   "source": "Music Ally",
+   "date": "2026-11-12",
+   "kind": "NEWS",
+   "release": true
+  },
+  {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
    "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
    "source": "Resident Advisor",
    "date": "2026-11-11",
    "kind": "DRUMS",
-   "release": true
-  },
-  {
-   "title": "Maono\u2019s creator-focused AI-powered microphone, the PD500W, is now available to purchase",
-   "link": "https://musictech.com/news/gear/maono-pd500w-available-now/",
-   "source": "MusicTech",
-   "date": "2026-11-09",
-   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -250,21 +250,21 @@
   "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 520: <none>",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
-  "MusicTech musictech.com": 1,
+  "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 1,
-  "Music Ally musically.com": 2,
+  "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
-  "Google News %22AI%22+drummer": 1,
-  "Google News %22AI+music%22": 24,
-  "Google News Suno+OR+Udio": 19,
+  "Google News %22AI%22+drummer": 0,
+  "Google News %22AI+music%22": 25,
+  "Google News Suno+OR+Udio": 20,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
