@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T12:25Z",
+ "updated": "2026-11-13T16:20Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -17,12 +17,24 @@
   "MusicRadar (8)"
  ],
  "errors": {},
- "raw_count": 61,
+ "raw_count": 65,
  "items": [
+  {
+   "title": "Original W.A.S.P. Drummer Tony Richards Dead at 69",
+   "link": "https://www.drummingnewsnetwork.com/original-w-a-s-p-drummer-tony-richards-dead-at-69/",
+   "source": "Drumming News Network",
+   "date": "2026-11-13"
+  },
   {
    "title": "Tamburo Launches the Dorothea Taylor Signature Snare",
    "link": "https://www.drummingnewsnetwork.com/tamburo-launches-the-dorothea-taylor-signature-snare/",
    "source": "Drumming News Network",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "RT Custom Drums: Looks To Kill. Sound To Match?",
+   "link": "https://drummersreview.com/news/rt-custom-drums-looks-to-kill-sound-to-match/",
+   "source": "Drummer's Review",
    "date": "2026-11-13"
   },
   {
@@ -38,6 +50,12 @@
    "date": "2026-11-12"
   },
   {
+   "title": "The 5 Best Cases and Bags for Electronic Drum Sample Pads (2026)",
+   "link": "https://www.electronicdrumadvisor.com/best-electronic-drum-sample-pad-cases-bags/",
+   "source": "Electronic Drum Advisor",
+   "date": "2026-11-12"
+  },
+  {
    "title": "Mapex Releases Two New Mars Black Series Drum Packages",
    "link": "https://www.drummingnewsnetwork.com/mapex-releases-two-new-mars-black-series-drum-packages/",
    "source": "Drumming News Network",
@@ -50,10 +68,28 @@
    "date": "2026-11-11"
   },
   {
+   "title": "The 3 Best Stands and Mounts for Electronic Drum Sample Pads (2026)",
+   "link": "https://www.electronicdrumadvisor.com/best-electronic-drum-sample-pad-stands-mounts/",
+   "source": "Electronic Drum Advisor",
+   "date": "2026-11-11"
+  },
+  {
    "title": "Modern Drummer Announces Dorothea Taylor Signed, Numbered Lithograph: Limited Edition Release November 10",
    "link": "https://www.drummingnewsnetwork.com/modern-drummer-announces-dorothea-taylor-signed-numbered-lithograph-limited-edition-release-november-10/",
    "source": "Drumming News Network",
    "date": "2026-11-10"
+  },
+  {
+   "title": "The 3 Best Rim Clamps and Mounts for Drum Microphones (2026)",
+   "link": "https://www.electronicdrumadvisor.com/best-drum-microphone-rim-clamps-mounts/",
+   "source": "Electronic Drum Advisor",
+   "date": "2026-11-10"
+  },
+  {
+   "title": "The 3 Best Drum Hardware Bags and Rolling Cases (2026)",
+   "link": "https://www.electronicdrumadvisor.com/best-drum-hardware-bags-rolling-cases/",
+   "source": "Electronic Drum Advisor",
+   "date": "2026-11-09"
   },
   {
    "title": "DW Introduces Limited-Edition Performance Series in Black Oyster Glass FinishPly",
@@ -78,12 +114,6 @@
    "link": "https://www.drummingnewsnetwork.com/hudson-music-releases-new-book-by-george-lawrence-the-missing-rudiments/",
    "source": "Drumming News Network",
    "date": "2026-11-06"
-  },
-  {
-   "title": "\u201cLa Chispa\u201d (The Spark), The Debut Album From Groundbreaking, US/Argentine Percussionist, Vocalist and Composer Pauline R\u00f3, Drops November 6",
-   "link": "https://www.drummingnewsnetwork.com/la-chispa-the-spark-the-debut-album-from-groundbreaking-us-argentine-percussionist-vocalist-and-composer-pauline-ro-drops-november-6/",
-   "source": "Drumming News Network",
-   "date": "2026-11-05"
   },
   {
    "title": "Gretsch Drums Launches E-Drum Series Catalina EVO",
@@ -194,12 +224,6 @@
    "date": "2026-10-14"
   },
   {
-   "title": "DW\u2019s Design Series Goes Exotic",
-   "link": "https://drummersreview.com/news/dws-design-series-goes-exotic/",
-   "source": "Drummer's Review",
-   "date": "2026-10-13"
-  },
-  {
    "title": "Medeli to make debut at The UK Drum Show",
    "link": "https://theukdrumshow.com/show-news/medeli-to-make-debut-at-the-uk-drum-show/",
    "source": "The UK Drum Show",
@@ -234,30 +258,6 @@
    "link": "https://en.beatit.tv/new-tama-starclassic-walnut-birch-duracover-finishes/",
    "source": "Beat It",
    "date": "2026-10-06"
-  },
-  {
-   "title": "SWISS DRUM WORLD IS COMING TO THE UK DRUM SHOW 2026!",
-   "link": "https://theukdrumshow.com/show-news/swiss-drum-world-is-coming-to-the-uk-drum-show-2026/",
-   "source": "The UK Drum Show",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "CJ HOKDAL: From \u201cThat Swedish Drummer\u201d to The UK Drum Show",
-   "link": "https://theukdrumshow.com/show-news/cj-hokdal-from-that-swedish-drummer-to-the-uk-drum-show/",
-   "source": "The UK Drum Show",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "EFNOTE 3X Review",
-   "link": "https://thedrumninja.com/efnote-3x-review/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "Sex on Fire Drum Transcription",
-   "link": "https://thedrumninja.com/sex-on-fire-drum-transcription/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-05"
   }
  ]
 }
