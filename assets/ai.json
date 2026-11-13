@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T00:40Z",
+ "updated": "2026-11-13T04:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -74,11 +74,11 @@
    "release": true
   },
   {
-   "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
-   "source": "Guitar World",
-   "date": "2026-10-16",
-   "kind": "PRODUCT",
+   "title": "50 Cent Trolls Former Nvidia CEO Jensen Huang\u2019s Affair With \u2018P.I.M.P.\u2019 Music Video AI Deepfake: \u2018Jensen Don\u2019t Sweat\u00a0It\u2019",
+   "link": "https://www.billboard.com/music/rb-hip-hop/50-cent-trolls-former-nvidia-ceo-jensen-huang-pimp-video-ai-1236381001/",
+   "source": "Billboard",
+   "date": "2026-11-13",
+   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -186,11 +186,11 @@
    "release": false
   },
   {
-   "title": "Human Enough? How AI Detector Scores Put Indie Artists at Risk",
-   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLVp0c3g5eVlUUVFLLUpnZEV5bVJEdzY4Q3EtZ19Jc29DTHllSEwycWxHdnhDNnRlc3RDYjM2bjhiT2VkYU42UFBuUVdEYXdHcUw3Qms5ZUZZaHBVTHRJcVVrZk41OEw3ZjZ3bmYwR2gyX0lwaW94T1dqQzNZWE04VDlB?oc=5",
+   "title": "The Backlash Is Already Rumbling Against Spotify\u2019s Upcoming AI Remixing Tool",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1aemdoZGdoVkJkZ3NPUUVEUDd2dEt2LWdocU9nRkhQQ20yYjF2Yl8xR0JVWmJiU2E1RlU3R3EzbDVVVjJSakhaOVU3ZmlEdnNEbGNDU093WmFJUUFPUVdOZDNpVnVPcXBYSmRxZEhERTA0QUhNQlJ1aUUxZE8?oc=5",
    "source": "Digital Music News",
    "date": "2026-11-09",
-   "kind": "NEWS",
+   "kind": "PROBLEM",
    "release": false
   }
  ],
@@ -263,7 +263,7 @@
   "Music Ally musically.com": 4,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -276,7 +276,7 @@
   "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
-  "Google News %22AI%22+stem+separation": 2,
+  "Google News %22AI%22+stem+separation": 1,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
