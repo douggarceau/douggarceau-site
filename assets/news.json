@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T08:23Z",
+ "updated": "2026-11-13T12:25Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -23,6 +23,12 @@
    "title": "Tamburo Launches the Dorothea Taylor Signature Snare",
    "link": "https://www.drummingnewsnetwork.com/tamburo-launches-the-dorothea-taylor-signature-snare/",
    "source": "Drumming News Network",
+   "date": "2026-11-13"
+  },
+  {
+   "title": "Richard Spaven: \u201cYou Can\u2019t Live It Through YouTube\u201d",
+   "link": "https://drummersreview.com/news/richard-spaven-you-cant-live-it-through-youtube/",
+   "source": "Drummer's Review",
    "date": "2026-11-13"
   },
   {
@@ -213,8 +219,8 @@
   },
   {
    "title": "150 Only: Drumeo \u00d7 SABIAN Bundle Lands at The UK Drum Show",
-   "link": "https://drummersreview.com/news/150-only-drumeo-x-sabian-bundle-lands-at-the-uk-drum-show/",
-   "source": "Drummer's Review",
+   "link": "https://theukdrumshow.com/show-news/150-only-drumeo-x-sabian-bundle-lands-at-the-uk-drum-show/",
+   "source": "The UK Drum Show",
    "date": "2026-10-07"
   },
   {
@@ -252,12 +258,6 @@
    "link": "https://thedrumninja.com/sex-on-fire-drum-transcription/",
    "source": "The Drum Ninja",
    "date": "2026-10-05"
-  },
-  {
-   "title": "Ohana Festival",
-   "link": "https://www.moderndrummer.com/2026/10/ohana-festival/",
-   "source": "Modern Drummer",
-   "date": "2026-10-02"
   }
  ]
 }

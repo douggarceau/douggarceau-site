@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T08:23Z",
+ "updated": "2026-11-13T12:25Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -10,20 +10,20 @@
    "release": true
   },
   {
+   "title": "2026-46 Round-Up: EQs, delays, saturators, sample managers, AI stem cleanup & more (incl. FREE)",
+   "link": "https://rekkerd.org/2026-46-round-up-eqs-delays-saturators-sample-managers-ai-stem-cleanup-more-incl-free/",
+   "source": "Rekkerd",
+   "date": "2026-11-13",
+   "kind": "PRODUCT",
+   "release": false
+  },
+  {
    "title": "Yamaha launches Vocaloid7 with second generation VOCALOID:AI",
    "link": "https://rekkerd.org/yamaha-launches-vocaloid7-with-second-generation-vocaloidai/",
    "source": "Rekkerd",
    "date": "2026-11-12",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "Katharsis X intelligent AI music repair plugin by CRLFF Digital",
-   "link": "https://rekkerd.org/katharsis-x-intelligent-ai-music-repair-plugin-by-crlff-digital/",
-   "source": "Rekkerd",
-   "date": "2026-11-09",
-   "kind": "PRODUCT",
-   "release": false
   },
   {
    "title": "Splice Reimagines the DAW With \u2018Create\u2019 \u2014 Its Agentic AI-Powered Platform for Newcomers",
@@ -139,7 +139,7 @@
   },
   {
    "title": "Idol\u2019s Labelcamp and startup MyPart explore AI connections",
-   "link": "https://musically.com/2026/11/11/idols-labelcamp-and-startup-mypart-explore-ai-connections/",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPYzd6akx1R2x3cF9DOGlFNjBnRkhkclIxRWVmLTJRWUpUMDZrTndPcmxtWFVPUXF1TV9pb2MxTEVRMTRBVVNTeVJMbVNBQ2pucWxVWUx1MXh4bmM0VThLQjc4Wk8zSjlKU1VEU045a0hEWm14NE5kOHZocE50SEtGbnBQdGRBazNSdVhhNjJHNk56U2dPUGc?oc=5",
    "source": "Music Ally",
    "date": "2026-11-11",
    "kind": "NEWS",
@@ -252,7 +252,7 @@
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 2,
-  "Music Ally musically.com": 4,
+  "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
@@ -264,7 +264,7 @@
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 21,
-  "Google News Suno+OR+Udio": 21,
+  "Google News Suno+OR+Udio": 20,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
