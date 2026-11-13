@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T04:22Z",
+ "updated": "2026-11-13T08:23Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -26,10 +26,10 @@
    "release": false
   },
   {
-   "title": "Splice\u2019s new AI DAW feels like a cheat code for music production \u2013 but it left us with one big question",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNV0RVaTFBbG45c0ZkMnFfZy0zTkdVM2JnTkF4UEJXWHJPUi1LZUFoUGFRTUVwbFBMME5jYkhsdmp5N2hIWXRfY21Ga19QdWs0OUU4WjFFLVZLODdldnNPa1V2QkQ5NzBUZHNVWFVsS3V2R2xNV2JiemtZUDJUdmllblV2a21jNkV4dEFjVkI0d1BKNUJaZjVxY01hdUJZZVdlX1RlajlPNGpuSmRhclJUdUk1b01NRUZYMF8tWFBhM2NOV01HRnNDQk1aM01vcVA1bmpjYg?oc=5",
-   "source": "MusicRadar",
-   "date": "2026-11-05",
+   "title": "Splice Reimagines the DAW With \u2018Create\u2019 \u2014 Its Agentic AI-Powered Platform for Newcomers",
+   "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQRzY3UU9xdFBZUW42cV83S3hpUWlVLVRJa0ZhTmRZWEgtSkYydTZ1Q0NCQWxjM2dYamEwMVR5MWJYRHNBMVhMUjBNc09fenh4eGhkOUdOdTV0R0NmbXVLekFiYTNUSjRRZlRIS0dhdUNjaTR5a0VUZ0xISkRnSHV1el93?oc=5",
+   "source": "Billboard",
+   "date": "2026-11-06",
    "kind": "PRODUCT",
    "release": false
   },
@@ -72,14 +72,6 @@
    "date": "2026-10-27",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "50 Cent Trolls Former Nvidia CEO Jensen Huang\u2019s Affair With \u2018P.I.M.P.\u2019 Music Video AI Deepfake: \u2018Jensen Don\u2019t Sweat\u00a0It\u2019",
-   "link": "https://www.billboard.com/music/rb-hip-hop/50-cent-trolls-former-nvidia-ceo-jensen-huang-pimp-video-ai-1236381001/",
-   "source": "Billboard",
-   "date": "2026-11-13",
-   "kind": "PROBLEM",
-   "release": false
   },
   {
    "title": "beatBread forms advisory board including executives from Meta and Suno",
@@ -162,14 +154,6 @@
    "release": false
   },
   {
-   "title": "Austin artist\u2019s music removed from streaming platforms amid UMG, Distrokid \u2018AI slop\u2019 lawsuit",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQV2s3VW9rYVJMSmpJVEJWcTRTdDlGdTk4VTMxM3ozS3Z3dGZZb3JlNjl5dnpCc3dtWERlWl80OUxxLWRmd3h3R0RGQVVOb3p3cENlN29ENk8zV1M5NGlsUC1pemZwa0w4N2FUSlVZVkp3V1lRTEZlbXAxb3NydHpZNFpWZkpXeWozTmY2QUwzQQ?oc=5",
-   "source": "Yahoo",
-   "date": "2026-11-11",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
    "title": "\u201cJust a whole new level of creativity\": Ex-bandmates Dr Dre and Ice Cube clash over the use of AI",
    "link": "https://www.musicradar.com/artists/producers-engineers/this-is-just-a-whole-new-level-of-creativity-that-we-have-to-get-used-to-you-have-to-get-used-to-it-or-youre-gonna-be-left-behind-ex-bandmates-dr-dre-and-ice-cube-clash-over-the-use-of-ai",
    "source": "MusicRadar",
@@ -186,11 +170,27 @@
    "release": false
   },
   {
-   "title": "The Backlash Is Already Rumbling Against Spotify\u2019s Upcoming AI Remixing Tool",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1aemdoZGdoVkJkZ3NPUUVEUDd2dEt2LWdocU9nRkhQQ20yYjF2Yl8xR0JVWmJiU2E1RlU3R3EzbDVVVjJSakhaOVU3ZmlEdnNEbGNDU093WmFJUUFPUVdOZDNpVnVPcXBYSmRxZEhERTA0QUhNQlJ1aUUxZE8?oc=5",
-   "source": "Digital Music News",
+   "title": "Apple Starts Offering $50 Extended Usage Packs For AI Features In Creator Studio",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWGYyVFhmSV9OSFNaaFBqdmNCcWZ6a2piU3E2UkJIaGhVUWVoYTRQdktEZmxQX2ZuZElaNGx0X0NwQXJDbGFFVENUajhmY001LWxpRGZKREFpSGhNT0xTRVI4TFkyTGhsR29wMWpOb1BHX191VFN1V084MVU3Rm5meGxKalU2Y2VETF90cFl5Z0JNV05uRTI5RlBTSHZ6dnQ2OWxsallpc3NtbHltS3pXMnRVR1V5ZTNTdURRNw?oc=5",
+   "source": "Engadget",
    "date": "2026-11-09",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Suno AI Music Generator Sued Again For Copyright Infringement",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd2RBdmNJNzV5YnFIM3JzclpLNDNuWXhtakVYcWVDUGt2blZOaUVya2U3cnk2QXNwbXZxcFM1QUVJSjIwOTJIZzFLWkpTQlhTYzdyS3gteG96TnY1c2stVFJIS0JxRGRrazNIR3RLT05QeWpPck5OQjdXNXEtX0QyRTd6NUY1UmV6QUdtZ3AtaWZhQ2lnTTd5UVlKTQ?oc=5",
+   "source": "Engadget",
+   "date": "2026-11-08",
    "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "AI Music Can Be Difficult To Detect, But There Are Some Telltale Signs",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMGl4U3RWdzVmNEExbGhtVWU3Umd3VHJBd3BMREsyaGVRMjJyLWdfUDcycGE3MmpmcVlhM2dkdXhyd0FjQ0RSYkZVS25DYmdQZkJ1cmROazdqbXp6Q0pUdThkZUNWTHpTc3ZvbUhxZmN5R2JiMUxDeEhFX19IZWNvVUVNRQ?oc=5",
+   "source": "Engadget",
+   "date": "2026-11-08",
+   "kind": "NEWS",
    "release": false
   }
  ],
@@ -242,14 +242,6 @@
    "date": "2026-10-28",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "YouTube Music Rolls Out Labels for AI-Generated Content",
-   "link": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZS0ZrTG5aWVNobFJyOUhVVnpaZjJBZ1BNOXVLTTdyMVpQY1JyTjE3NEN4cm5YUVpja2RlTHNuM01HTlVpZW5qSFJ5OXE1M0tVVlZqbHFDdngyenNUeHlTd2dkZDdGMEw4QmZFU0lIUzVnSk5PWXc?oc=5",
-   "source": "Billboard",
-   "date": "2026-10-14",
-   "kind": "NEWS",
-   "release": true
   }
  ],
  "log": {
@@ -263,7 +255,7 @@
   "Music Ally musically.com": 4,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 1,
+  "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -271,13 +263,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 25,
+  "Google News %22AI+music%22": 21,
   "Google News Suno+OR+Udio": 21,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 7,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }

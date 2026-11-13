@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T04:22Z",
+ "updated": "2026-11-13T08:23Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 61,
  "items": [
+  {
+   "title": "Tamburo Launches the Dorothea Taylor Signature Snare",
+   "link": "https://www.drummingnewsnetwork.com/tamburo-launches-the-dorothea-taylor-signature-snare/",
+   "source": "Drumming News Network",
+   "date": "2026-11-13"
+  },
   {
    "title": "Roger Taylor leaves Duran Duran",
    "link": "https://en.beatit.tv/roger-taylor-leaves-duran-duran/",
@@ -86,9 +92,9 @@
    "date": "2026-11-04"
   },
   {
-   "title": "HERCULES INTRODUCES MODULAR CLAMP-ON MIC ARM SYSTEM IN COLLABORATION WITH PROGRESSIVE DRUMMER CRAIG BLUNDELL",
-   "link": "https://www.drummingnewsnetwork.com/hercules-introduces-modular-clamp-on-mic-arm-system-in-collaboration-with-progressive-drummer-craig-blundell/",
-   "source": "Drumming News Network",
+   "title": "Hercules Introduces Modular Clamp-On Mic Arm System In Collaboration With Progressive Drummer Craig Blundell",
+   "link": "https://drummersreview.com/accessories/hercules-introduces-modular-clamp-on-mic-arm-system-in-collaboration-with-progressive-drummer-craig-blundell/",
+   "source": "Drummer's Review",
    "date": "2026-11-03"
   },
   {
@@ -252,12 +258,6 @@
    "link": "https://www.moderndrummer.com/2026/10/ohana-festival/",
    "source": "Modern Drummer",
    "date": "2026-10-02"
-  },
-  {
-   "title": "Aquiles Priester joins Czarcie Kopyto family",
-   "link": "https://en.beatit.tv/aquiles-priester-joins-czarcie-kopyto-family/",
-   "source": "Beat It",
-   "date": "2026-10-01"
   }
  ]
 }
