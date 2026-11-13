@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T20:20Z",
+ "updated": "2026-11-13T00:40Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -7,6 +7,14 @@
    "source": "Resident Advisor",
    "date": "2026-11-11",
    "kind": "DRUMS",
+   "release": true
+  },
+  {
+   "title": "Yamaha launches Vocaloid7 with second generation VOCALOID:AI",
+   "link": "https://rekkerd.org/yamaha-launches-vocaloid7-with-second-generation-vocaloidai/",
+   "source": "Rekkerd",
+   "date": "2026-11-12",
+   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -170,31 +178,31 @@
    "release": false
   },
   {
+   "title": "AI-music labelling \u2018can\u2019t be just the platforms\u2019 says RIAA boss",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTVRDcm1NMElIVUhyTjFVY3p5QWJZMjBFX1VOVFpkR2xIUGZ6bjg4TEJOVklPcWwxU2gzZGJBQWdRMHFhX3FyQkF4RWVtYW9vVmxDdEVtOExEYjIyejVFVXVuMFgyUXpPdUdhME9JOFlvdFV3cXBFNVkybEhEOGxLQ0h0bWF1M005VGNxLWlfREYtdWlGTkVidjhR?oc=5",
+   "source": "Music Ally",
+   "date": "2026-11-10",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Human Enough? How AI Detector Scores Put Indie Artists at Risk",
    "link": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLVp0c3g5eVlUUVFLLUpnZEV5bVJEdzY4Q3EtZ19Jc29DTHllSEwycWxHdnhDNnRlc3RDYjM2bjhiT2VkYU42UFBuUVdEYXdHcUw3Qms5ZUZZaHBVTHRJcVVrZk41OEw3ZjZ3bmYwR2gyX0lwaW94T1dqQzNZWE04VDlB?oc=5",
    "source": "Digital Music News",
    "date": "2026-11-09",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Apple Starts Offering $50 Extended Usage Packs For AI Features In Creator Studio",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWGYyVFhmSV9OSFNaaFBqdmNCcWZ6a2piU3E2UkJIaGhVUWVoYTRQdktEZmxQX2ZuZElaNGx0X0NwQXJDbGFFVENUajhmY001LWxpRGZKREFpSGhNT0xTRVI4TFkyTGhsR29wMWpOb1BHX191VFN1V084MVU3Rm5meGxKalU2Y2VETF90cFl5Z0JNV05uRTI5RlBTSHZ6dnQ2OWxsallpc3NtbHltS3pXMnRVR1V5ZTNTdURRNw?oc=5",
-   "source": "Engadget",
-   "date": "2026-11-09",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "AI Music Can Be Difficult To Detect, But There Are Some Telltale Signs",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMGl4U3RWdzVmNEExbGhtVWU3Umd3VHJBd3BMREsyaGVRMjJyLWdfUDcycGE3MmpmcVlhM2dkdXhyd0FjQ0RSYkZVS25DYmdQZkJ1cmROazdqbXp6Q0pUdThkZUNWTHpTc3ZvbUhxZmN5R2JiMUxDeEhFX19IZWNvVUVNRQ?oc=5",
-   "source": "Engadget",
-   "date": "2026-11-08",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Yamaha launches Vocaloid7 with second generation VOCALOID:AI",
+   "link": "https://rekkerd.org/yamaha-launches-vocaloid7-with-second-generation-vocaloidai/",
+   "source": "Rekkerd",
+   "date": "2026-11-12",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "Ringo\u2019s Charlie is a sync-licensing AI assistant within WhatsApp",
    "link": "https://musically.com/2026/11/12/ringos-charlie-is-a-sync-licensing-ai-assistant-within-whatsapp/",
@@ -251,7 +259,7 @@
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 0,
-  "Rekkerd rekkerd.org": 1,
+  "Rekkerd rekkerd.org": 2,
   "Music Ally musically.com": 4,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
@@ -263,11 +271,11 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 24,
+  "Google News %22AI+music%22": 25,
   "Google News Suno+OR+Udio": 21,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 2,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
