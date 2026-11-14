@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T00:38Z",
+ "updated": "2026-11-14T04:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -66,12 +66,12 @@
    "release": true
   },
   {
-   "title": "Apple debuts new musically-inclined AI assistant for creators",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
-   "source": "Mashable",
-   "date": "2026-10-27",
+   "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
+   "source": "Guitar World",
+   "date": "2026-10-16",
    "kind": "PRODUCT",
-   "release": true
+   "release": false
   },
   {
    "title": "Reservoir expands copyright lawsuits against Suno and Anthropic to more than 2,500 songs combined",
@@ -108,6 +108,14 @@
   {
    "title": "AI-powered label PaRa Music says it\u2019s identified the next big Indian regional music sub-genre",
    "link": "https://musically.com/2026/11/12/ai-powered-label-para-music-says-its-identified-the-next-big-indian-regional-music-sub-genre/",
+   "source": "Music Ally",
+   "date": "2026-11-12",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "RadioMatic aims to make AI-music a soundtrack for businesses",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUno3bEVKb21ReGt4WGtvLTBSQkt4bUdDeHB4WlVtNnhLOFBGall5NFVJNENHSGt3ZFA1ekFiRk9abVNTQ2Q5YjB1ZllpdjUtRnFFT2F6cy04cHVUVEd0NUNzQWU2bDZlYXJKMmkyYTRldnM2M3ZKVk9qUFEwa1p4c3NUQ1ZCMEJiOFF4elJYU2pHc2JZb01pdzB3?oc=5",
    "source": "Music Ally",
    "date": "2026-11-12",
    "kind": "NEWS",
@@ -184,14 +192,6 @@
    "date": "2026-11-08",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
-   "source": "The Guardian",
-   "date": "2026-11-08",
-   "kind": "PROBLEM",
-   "release": false
   }
  ],
  "releases": [
@@ -253,15 +253,15 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 2,
+  "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 21,
+  "Google News %22AI+music%22": 24,
   "Google News Suno+OR+Udio": 24,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
-  "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 7,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
+  "Google News %22AI%22+stem+separation": 2,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
