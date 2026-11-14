@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T12:23Z",
+ "updated": "2026-11-14T16:20Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -64,14 +64,6 @@
    "date": "2026-10-29",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "Neko Engineering unveils the NAM-compatible wireless studio tool that fits in your pocket \u2013 could this AI-equipped guitar workstation transform practice and recording?",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd1RVLV9RdUFvQm01eGNFcUVLaTA1NzE5WEVTVzRFdzcybEd3SXZlUExYUUlQSkV1aGVvQlVreGpzeGdoODhoV0JrQnZLVS1kaHVkdFlONHVDLXJjQmMtTU9EaTRzWEJ0ZmtteGlFUkJUbWFBWDVFQk9BSVRIMThZejZLTVdnLTY3S3ZBbnJMUHRFbjBmczZmOTEtQQ?oc=5",
-   "source": "Guitar World",
-   "date": "2026-10-16",
-   "kind": "PRODUCT",
-   "release": false
   },
   {
    "title": "New awards show celebrates AI music and its creators",
@@ -192,6 +184,14 @@
    "date": "2026-11-08",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
+   "source": "The Guardian",
+   "date": "2026-11-08",
+   "kind": "PROBLEM",
+   "release": false
   }
  ],
  "releases": [
@@ -249,10 +249,10 @@
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 19,
   "Google News Suno+OR+Udio": 23,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
-  "Google News %22AI%22+stem+separation": 2,
+  "Google News %22AI%22+stem+separation": 1,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
