@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T20:21Z",
+ "updated": "2026-11-14T00:38Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -114,14 +114,6 @@
    "release": false
   },
   {
-   "title": "RadioMatic aims to make AI-music a soundtrack for businesses",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQUno3bEVKb21ReGt4WGtvLTBSQkt4bUdDeHB4WlVtNnhLOFBGall5NFVJNENHSGt3ZFA1ekFiRk9abVNTQ2Q5YjB1ZllpdjUtRnFFT2F6cy04cHVUVEd0NUNzQWU2bDZlYXJKMmkyYTRldnM2M3ZKVk9qUFEwa1p4c3NUQ1ZCMEJiOFF4elJYU2pHc2JZb01pdzB3?oc=5",
-   "source": "Music Ally",
-   "date": "2026-11-12",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "Stock tips with a beat: Samsung Securities' AI K-pop group racks up views",
    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUDQ3c0otcnRoeXI2Y1dUOWhpLV9HNFVRMkVBWmRGdF95b1NCek5yRy10aDRSS3VlNkNMcURnQ3RaWlA0Y1hiRmhpckZpX3NzdWlNLXJPZGtCRnFzQ2xFX0o1a0d2SDN6SmNHM3RJSEdST1IzdE9VcVhKUDc3NjFPbTlYa3o0UkhkeHYzLTFNX05QZDdMb0g4bWQ5aV83NGZvYVFDaDhEVG1aN1d0UC1GclBXQlRWT1VRdzJGMEl2QmJ4eEREWUNv?oc=5",
    "source": "Reuters",
@@ -162,14 +154,6 @@
    "release": false
   },
   {
-   "title": "AI-music labelling \u2018can\u2019t be just the platforms\u2019 says RIAA boss",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPTVRDcm1NMElIVUhyTjFVY3p5QWJZMjBFX1VOVFpkR2xIUGZ6bjg4TEJOVklPcWwxU2gzZGJBQWdRMHFhX3FyQkF4RWVtYW9vVmxDdEVtOExEYjIyejVFVXVuMFgyUXpPdUdhME9JOFlvdFV3cXBFNVkybEhEOGxLQ0h0bWF1M005VGNxLWlfREYtdWlGTkVidjhR?oc=5",
-   "source": "Music Ally",
-   "date": "2026-11-10",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "Elvis Presley rightsholders sue Suno, alleging its AI imitates the King\u2019s voice. Eight Mile Style has filed a separate suit over 269 Eminem songs.",
    "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPNVFHM0Z0dkxCM0dsMW5OanZ4SnJ4Q19rQl90MmN3dnRWX210dmVUbHFJemhHTENDWjA2eHBwTjd6TlRKM01WTWhNN2RsU0VmWTF4NmFybmNYQk9wcmtXWXQzTURMa3d1N2stS3l5OVlSWEtPODcwcU9SNk9uYng5cFppcUpoR1c5S1d6WTc2X0JPV0dOUndVTW1IZGxkNmpRdHF5T2JBZnM1Z1ktdE9nZUZDOTE0Ul9SMF84RDJJeEhmQ0lKVzgxXzdVYjB1SHo3dE5yQ296N3FXX0xqeGI1NkczS1BzZ0s5RDhHTkUyd0k0T1NiNWhNQlBCcTB0dWxLQ1BhMHdkSWtJdlJmck1TZnhheVVKSEludzl4dG5ibEUxY0Z3R0ZWQ1libzM1VTdUdS1kblJOZ1EyVjNGVmc?oc=5",
    "source": "Music Business Worldwide",
@@ -189,6 +173,22 @@
    "title": "Suno AI Music Generator Sued Again For Copyright Infringement",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd2RBdmNJNzV5YnFIM3JzclpLNDNuWXhtakVYcWVDUGt2blZOaUVya2U3cnk2QXNwbXZxcFM1QUVJSjIwOTJIZzFLWkpTQlhTYzdyS3gteG96TnY1c2stVFJIS0JxRGRrazNIR3RLT05QeWpPck5OQjdXNXEtX0QyRTd6NUY1UmV6QUdtZ3AtaWZhQ2lnTTd5UVlKTQ?oc=5",
    "source": "Engadget",
+   "date": "2026-11-08",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "AI Music Can Be Difficult To Detect, But There Are Some Telltale Signs",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMGl4U3RWdzVmNEExbGhtVWU3Umd3VHJBd3BMREsyaGVRMjJyLWdfUDcycGE3MmpmcVlhM2dkdXhyd0FjQ0RSYkZVS25DYmdQZkJ1cmROazdqbXp6Q0pUdThkZUNWTHpTc3ZvbUhxZmN5R2JiMUxDeEhFX19IZWNvVUVNRQ?oc=5",
+   "source": "Engadget",
+   "date": "2026-11-08",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
+   "source": "The Guardian",
    "date": "2026-11-08",
    "kind": "PROBLEM",
    "release": false
@@ -255,9 +255,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 22,
+  "Google News %22AI+music%22": 21,
   "Google News Suno+OR+Udio": 24,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 1,
