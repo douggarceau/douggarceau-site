@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T00:42Z",
+ "updated": "2026-11-15T04:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -162,14 +162,6 @@
    "release": false
   },
   {
-   "title": "Albanese\u2019s love affair with music is on the rocks over AI. Can he write a different tune? | Peter Lewis",
-   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQemZHNDQzZkxVYXNzY2pkd0ZzUmJvYUJ2bEdWOWxnN2J3aFhISXdIRGJVbjhzMGs5eDdaQW95WEF6bFlfVmJKeVcyRHRpOTZVVDFaeXRnMm1zVjBFVkxZWWI0WlEtYlVNRlpSUU9jYnktaVFrSmpIcFMxYUZGanhzUTBKelh5RzdreVVxLXFIcGVWaUlpdjJuV19aSWhhT1FSWWVuX1JnaC1NRGo0OVZpNVVQV1JsUFdrLThlNmtmOGdZUGpqVENlZ3R2SVM0XzdXNlF5T2loRQ?oc=5",
-   "source": "The Guardian",
-   "date": "2026-11-11",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "\u201cJust a whole new level of creativity\": Ex-bandmates Dr Dre and Ice Cube clash over the use of AI",
    "link": "https://www.musicradar.com/artists/producers-engineers/this-is-just-a-whole-new-level-of-creativity-that-we-have-to-get-used-to-you-have-to-get-used-to-it-or-youre-gonna-be-left-behind-ex-bandmates-dr-dre-and-ice-cube-clash-over-the-use-of-ai",
    "source": "MusicRadar",
@@ -186,11 +178,19 @@
    "release": false
   },
   {
-   "title": "Suno AI Music Generator Sued Again For Copyright Infringement",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd2RBdmNJNzV5YnFIM3JzclpLNDNuWXhtakVYcWVDUGt2blZOaUVya2U3cnk2QXNwbXZxcFM1QUVJSjIwOTJIZzFLWkpTQlhTYzdyS3gteG96TnY1c2stVFJIS0JxRGRrazNIR3RLT05QeWpPck5OQjdXNXEtX0QyRTd6NUY1UmV6QUdtZ3AtaWZhQ2lnTTd5UVlKTQ?oc=5",
+   "title": "Albanese\u2019s love affair with music is on the rocks over AI. Can he write a different tune? | Peter Lewis",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQemZHNDQzZkxVYXNzY2pkd0ZzUmJvYUJ2bEdWOWxnN2J3aFhISXdIRGJVbjhzMGs5eDdaQW95WEF6bFlfVmJKeVcyRHRpOTZVVDFaeXRnMm1zVjBFVkxZWWI0WlEtYlVNRlpSUU9jYnktaVFrSmpIcFMxYUZGanhzUTBKelh5RzdreVVxLXFIcGVWaUlpdjJuV19aSWhhT1FSWWVuX1JnaC1NRGo0OVZpNVVQV1JsUFdrLThlNmtmOGdZUGpqVENlZ3R2SVM0XzdXNlF5T2loRQ?oc=5",
+   "source": "The Guardian",
+   "date": "2026-11-10",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Apple Starts Offering $50 Extended Usage Packs For AI Features In Creator Studio",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWGYyVFhmSV9OSFNaaFBqdmNCcWZ6a2piU3E2UkJIaGhVUWVoYTRQdktEZmxQX2ZuZElaNGx0X0NwQXJDbGFFVENUajhmY001LWxpRGZKREFpSGhNT0xTRVI4TFkyTGhsR29wMWpOb1BHX191VFN1V084MVU3Rm5meGxKalU2Y2VETF90cFl5Z0JNV05uRTI5RlBTSHZ6dnQ2OWxsallpc3NtbHltS3pXMnRVR1V5ZTNTdURRNw?oc=5",
    "source": "Engadget",
-   "date": "2026-11-08",
-   "kind": "PROBLEM",
+   "date": "2026-11-09",
+   "kind": "NEWS",
    "release": false
   }
  ],
@@ -263,13 +263,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 21,
+  "Google News %22AI+music%22": 22,
   "Google News Suno+OR+Udio": 25,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
