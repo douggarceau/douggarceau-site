@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T08:39Z",
+ "updated": "2026-11-16T12:34Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -75,9 +75,25 @@
   },
   {
    "title": "Criticism after AI music used in UK's oldest carnival",
-   "link": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE55RTBqV3ppWUZUUHA1dzlncUdYekNmRG5uQi1mU3dPSjZ0bW9admRkS3Z2UGp3Ynh2YlV2RFRUREhGa1JZOEU1WThERlVKNi1jWWxkZ0ZheWJJbHd3N2c?oc=5",
+   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92OWpDeDUyOWRBVTNDY0JpV080enZMR1BUUEtva19DWndfYl9wR0EwZ1VYemJXX1ZzSy1rRXhMbmJ5RWxBRDB1a24tZzJaUVEwVkFjeDBoYXNEQWM?oc=5",
    "source": "BBC",
    "date": "2026-11-16",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "AI Weekly: Jensen Huang makes an exit, AI makes music",
+   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QYUFGRmltWUhuaFNldDlVSi1LSFRsaHg5YzdVT3IzRzhSZHk2ZXhRV2xvU2NTZEJESkxLYkxMR2FXb2tld1hkcHJKR3hzalJtT1Jjby1TS1NVem1wMDM5NGhpU3I1RG8?oc=5",
+   "source": "Reuters",
+   "date": "2026-11-16",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Inside the First AI Music Awards, a Chaotic Evening Attempting to Normalize Tech-Assisted Tunes",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUlxT0puLTlsaHQ1UkdmXzlPd1dwNkhNbS15Y0hSVDJESlRQWFU3LTVTR0d3dmlpeXlJcjVhYTktblN5VE5Dd3hlVnRkU0NnQkg5WTEzUF8xelBlQXBUMkJwWlJqb0NtbTk4cVY4RDQ0VDlrVUFwU1RkaXRMbHNyeHI5SDBaTENtdmhoalA1TmRFT0hSYkFEUDB6N3QySVVXWjZPQS0yVThqSlE?oc=5",
+   "source": "Variety",
+   "date": "2026-11-14",
    "kind": "NEWS",
    "release": false
   },
@@ -90,12 +106,12 @@
    "release": false
   },
   {
-   "title": "Inside the First AI Music Awards, a Chaotic Evening Attempting to Normalize Tech-Assisted Tunes",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUlxT0puLTlsaHQ1UkdmXzlPd1dwNkhNbS15Y0hSVDJESlRQWFU3LTVTR0d3dmlpeXlJcjVhYTktblN5VE5Dd3hlVnRkU0NnQkg5WTEzUF8xelBlQXBUMkJwWlJqb0NtbTk4cVY4RDQ0VDlrVUFwU1RkaXRMbHNyeHI5SDBaTENtdmhoalA1TmRFT0hSYkFEUDB6N3QySVVXWjZPQS0yVThqSlE?oc=5",
-   "source": "Variety",
+   "title": "MGK on AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUml1emtQOUlpU3hkQ3lsSWlsemNnUjBvQTFuQjFadUYwek8zbDFoNGNzNUNkaGZmelZLVldseDV6aDVHOUhQcWdlOVgwV253TXVvYTJyeHVPQlFvTGtoTG9xN1o0eS1tTDcxbXpOOUh6dnc0TzNSQmF6M3djR3ctSndWSzBsU190RGRtdHMwUDNPbE5k?oc=5",
+   "source": "Yahoo",
    "date": "2026-11-14",
    "kind": "NEWS",
-   "release": false
+   "release": true
   },
   {
    "title": "Reservoir expands copyright lawsuits against Suno and Anthropic to more than 2,500 songs combined",
@@ -162,14 +178,6 @@
    "release": false
   },
   {
-   "title": "Apple Starts Offering $50 Extended Usage Packs For AI Features In Creator Studio",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWGYyVFhmSV9OSFNaaFBqdmNCcWZ6a2piU3E2UkJIaGhVUWVoYTRQdktEZmxQX2ZuZElaNGx0X0NwQXJDbGFFVENUajhmY001LWxpRGZKREFpSGhNT0xTRVI4TFkyTGhsR29wMWpOb1BHX191VFN1V084MVU3Rm5meGxKalU2Y2VETF90cFl5Z0JNV05uRTI5RlBTSHZ6dnQ2OWxsallpc3NtbHltS3pXMnRVR1V5ZTNTdURRNw?oc=5",
-   "source": "Engadget",
-   "date": "2026-11-09",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "Suno AI Music Generator Sued Again For Copyright Infringement",
    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd2RBdmNJNzV5YnFIM3JzclpLNDNuWXhtakVYcWVDUGt2blZOaUVya2U3cnk2QXNwbXZxcFM1QUVJSjIwOTJIZzFLWkpTQlhTYzdyS3gteG96TnY1c2stVFJIS0JxRGRrazNIR3RLT05QeWpPck5OQjdXNXEtX0QyRTd6NUY1UmV6QUdtZ3AtaWZhQ2lnTTd5UVlKTQ?oc=5",
    "source": "Engadget",
@@ -184,17 +192,17 @@
    "date": "2026-11-08",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
-   "source": "The Guardian",
-   "date": "2026-11-08",
-   "kind": "PROBLEM",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "MGK on AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUml1emtQOUlpU3hkQ3lsSWlsemNnUjBvQTFuQjFadUYwek8zbDFoNGNzNUNkaGZmelZLVldseDV6aDVHOUhQcWdlOVgwV253TXVvYTJyeHVPQlFvTGtoTG9xN1o0eS1tTDcxbXpOOUh6dnc0TzNSQmF6M3djR3ctSndWSzBsU190RGRtdHMwUDNPbE5k?oc=5",
+   "source": "Yahoo",
+   "date": "2026-11-14",
+   "kind": "NEWS",
+   "release": true
+  },
   {
    "title": "Yamaha launches Vocaloid7 with second generation VOCALOID:AI",
    "link": "https://rekkerd.org/yamaha-launches-vocaloid7-with-second-generation-vocaloidai/",
@@ -255,13 +263,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 20,
+  "Google News %22AI+music%22": 23,
   "Google News Suno+OR+Udio": 22,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
   "Google News %22AI%22+music+producer+plugin": 0,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
