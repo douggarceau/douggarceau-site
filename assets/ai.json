@@ -1,14 +1,6 @@
 {
- "updated": "2026-11-16T16:23Z",
+ "updated": "2026-11-16T20:21Z",
  "items": [
-  {
-   "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
-   "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
-   "source": "Resident Advisor",
-   "date": "2026-11-11",
-   "kind": "DRUMS",
-   "release": true
-  },
   {
    "title": "Apple Logic Pro 13: Enhanced Drum Separation and a New AI Assistant",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81S1RtVTJCR2hxcl9QUDRnRldKMVZoeEFMNW8yQXJDMjltN09zck9iVFdRZHVDRkdJNjllSF9FakZCZmRzU2k2S2ZOZjgwZjBaNDdGZnBJN0VmTG9n?oc=5",
@@ -114,6 +106,14 @@
    "release": false
   },
   {
+   "title": "Universal Music v. Suno II Intensifies Amid Discovery Sub-Dispute",
+   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZHdtRFdaU0hWY2ljYkRUMkIyUzdYN21iOURJTE04eEJyT3BhVUc5UTc0Z3RMLWItZkhDOUM2bTBSbVh4VUN3R1J4bVVsS0pNSmNqV3dKVmZDWHdRSjZlRHNFRTMtM1EteGdHb1RjNnBidzhHWExxZmFReWo3R2VINmZpSFRKeldzWDNqU2lhR0MtRnNZbXFIU0Nn?oc=5",
+   "source": "Digital Music News",
+   "date": "2026-11-16",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Inside the First AI Music Awards, a Chaotic Evening Attempting to Normalize Tech-Assisted Tunes",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUlxT0puLTlsaHQ1UkdmXzlPd1dwNkhNbS15Y0hSVDJESlRQWFU3LTVTR0d3dmlpeXlJcjVhYTktblN5VE5Dd3hlVnRkU0NnQkg5WTEzUF8xelBlQXBUMkJwWlJqb0NtbTk4cVY4RDQ0VDlrVUFwU1RkaXRMbHNyeHI5SDBaTENtdmhoalA1TmRFT0hSYkFEUDB6N3QySVVXWjZPQS0yVThqSlE?oc=5",
    "source": "Variety",
@@ -186,11 +186,11 @@
    "release": false
   },
   {
-   "title": "Suno AI Music Generator Sued Again For Copyright Infringement",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd2RBdmNJNzV5YnFIM3JzclpLNDNuWXhtakVYcWVDUGt2blZOaUVya2U3cnk2QXNwbXZxcFM1QUVJSjIwOTJIZzFLWkpTQlhTYzdyS3gteG96TnY1c2stVFJIS0JxRGRrazNIR3RLT05QeWpPck5OQjdXNXEtX0QyRTd6NUY1UmV6QUdtZ3AtaWZhQ2lnTTd5UVlKTQ?oc=5",
+   "title": "Apple Starts Offering $50 Extended Usage Packs For AI Features In Creator Studio",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPWGYyVFhmSV9OSFNaaFBqdmNCcWZ6a2piU3E2UkJIaGhVUWVoYTRQdktEZmxQX2ZuZElaNGx0X0NwQXJDbGFFVENUajhmY001LWxpRGZKREFpSGhNT0xTRVI4TFkyTGhsR29wMWpOb1BHX191VFN1V084MVU3Rm5meGxKalU2Y2VETF90cFl5Z0JNV05uRTI5RlBTSHZ6dnQ2OWxsallpc3NtbHltS3pXMnRVR1V5ZTNTdURRNw?oc=5",
    "source": "Engadget",
-   "date": "2026-11-08",
-   "kind": "PROBLEM",
+   "date": "2026-11-09",
+   "kind": "NEWS",
    "release": false
   }
  ],
@@ -225,14 +225,6 @@
    "source": "Rekkerd",
    "date": "2026-11-12",
    "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
-   "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
-   "source": "Resident Advisor",
-   "date": "2026-11-11",
-   "kind": "DRUMS",
    "release": true
   },
   {
@@ -278,14 +270,14 @@
   "TechCrunch techcrunch.com": 1,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
-  "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 25,
-  "Google News Suno+OR+Udio": 22,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
-  "Google News %22AI%22+music+producer+plugin": 0,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
+  "Google News news.google.com/rss/search?q=%22AI%22+drummer+when:3": "error: HTTP Error 429: Too Many Requests",
+  "Google News %22AI+music%22": 22,
+  "Google News Suno+OR+Udio": 24,
+  "Google News news.google.com/rss/search?q=%22AI%22+music+lawsuit+": "error: HTTP Error 429: Too Many Requests",
+  "Google News %22AI%22+music+producer+plugin": 2,
+  "Google News news.google.com/rss/search?q=%22AI%22+drum+plugin+OR": "error: HTTP Error 429: Too Many Requests",
   "Google News %22AI%22+stem+separation": 1,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 7,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
