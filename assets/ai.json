@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T00:41Z",
+ "updated": "2026-11-17T04:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -154,14 +154,6 @@
    "release": false
   },
   {
-   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
-   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
-   "source": "The Guardian",
-   "date": "2026-11-08",
-   "kind": "PROBLEM",
-   "release": false
-  },
-  {
    "title": "Nile Rodgers Defends New AI Music Video",
    "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pdHNfSjB3NmgtZkJjdHpnSzJXdzd2cUFVSFBQQjdOSHBIS1pwVm1NRVVMcmdubWxCZ0h1WVR4ME9pNDhKQ3ZwYVZjYUs5dVFvdTQ2bTFEc3JIblBocG1RbmJTZDYyTFF4VjJUSXRCMmw2YTFQY1lXMk92S3YwZm8?oc=5",
    "source": "Stereogum",
@@ -191,6 +183,14 @@
    "source": "Billboard",
    "date": "2026-10-27",
    "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Suno admits it has not deleted all the recordings used to train its AI, in answer to UMG and Sony\u2019s \u2018laundering\u2019 lawsuit",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNd2c3RWhiZDdPODBpQkotSXJIY3N6c2NhbmZGWVZhNm05QVk0UUFmUGotVC1Ed2tqM3Z1U3FxLU9NMDdXVXMwZ3VwTWhnNG9LSkw1c0xIZHViRkRkVUh1MlRSQmtfQU5kakJEeW5XVDdQNmk4S0QyMldyUUJPMFpfYVdjcG5GeC1YR0FETlJXNmJjSmtuRllnYUc5ZURpRXlJeWN2Qlh5ZzZQZVFHQ25ZanB0cGpMSHE0ZTJOUmptS2xPajV5NExMQlZCRkd2dHVnNEg1ZDgwN1RQUXRxZjZ1cDJIOFJVaXl2d254eA?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-22",
+   "kind": "PROBLEM",
    "release": false
   }
  ],
@@ -261,15 +261,15 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 1,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 3,
+  "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
   "Google News news.google.com/rss/search?q=%22AI+music%22+when:30d": "error: HTTP Error 429: Too Many Requests",
   "Google News Suno+OR+Udio": 25,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
-  "Google News news.google.com/rss/search?q=%22AI%22+music+producer": "error: HTTP Error 429: Too Many Requests",
+  "Google News news.google.com/rss/search?q=%22AI%22+music+lawsuit+": "error: HTTP Error 429: Too Many Requests",
+  "Google News %22AI%22+music+producer+plugin": 2,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 3,
-  "Google News news.google.com/rss/search?q=%22AI%22+stem+separatio": "error: HTTP Error 429: Too Many Requests",
+  "Google News %22AI%22+stem+separation": 1,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 7,
-  "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
+  "Google News news.google.com/rss/search?q=%22AI%22+MIDI+generator": "error: HTTP Error 429: Too Many Requests"
  }
 }
