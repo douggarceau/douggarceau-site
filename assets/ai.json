@@ -1,6 +1,14 @@
 {
- "updated": "2026-11-16T20:21Z",
+ "updated": "2026-11-17T00:41Z",
  "items": [
+  {
+   "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
+   "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
+   "source": "Resident Advisor",
+   "date": "2026-11-11",
+   "kind": "DRUMS",
+   "release": true
+  },
   {
    "title": "Apple Logic Pro 13: Enhanced Drum Separation and a New AI Assistant",
    "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81S1RtVTJCR2hxcl9QUDRnRldKMVZoeEFMNW8yQXJDMjltN09zck9iVFdRZHVDRkdJNjllSF9FakZCZmRzU2k2S2ZOZjgwZjBaNDdGZnBJN0VmTG9n?oc=5",
@@ -50,14 +58,6 @@
    "release": false
   },
   {
-   "title": "Spotify aims to launch AI music remix service early next year",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
-   "source": "Financial Times",
-   "date": "2026-10-30",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Suno launches MCP server to \u2018create music right from the chat\u2019",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNR25sNEJJMVZtb25HdG1iUWFNdnBjQVMxSHg5Z0V4RktMOVh4VFEwSHp4YWZ6Z3ppVEY2NW9wbzBJTjB3MEtVbFNoaXpGSGx6WmtWb0NNX1F2MUhrQkVSMVM5N3Nnb3dxSVd3MkZ2ZFhWcGE5RXdFaUk4bDk0bF9JQTUxZEIxQXRGMTJVekxTN180MUhfblhNMWFn?oc=5",
    "source": "Music Ally",
@@ -90,52 +90,12 @@
    "release": false
   },
   {
-   "title": "Criticism after AI music used in UK's oldest carnival",
-   "link": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE92OWpDeDUyOWRBVTNDY0JpV080enZMR1BUUEtva19DWndfYl9wR0EwZ1VYemJXX1ZzSy1rRXhMbmJ5RWxBRDB1a24tZzJaUVEwVkFjeDBoYXNEQWM?oc=5",
-   "source": "BBC",
-   "date": "2026-11-16",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "AI Weekly: Jensen Huang makes an exit, AI makes music",
-   "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QYUFGRmltWUhuaFNldDlVSi1LSFRsaHg5YzdVT3IzRzhSZHk2ZXhRV2xvU2NTZEJESkxLYkxMR2FXb2tld1hkcHJKR3hzalJtT1Jjby1TS1NVem1wMDM5NGhpU3I1RG8?oc=5",
-   "source": "Reuters",
-   "date": "2026-11-16",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "Universal Music v. Suno II Intensifies Amid Discovery Sub-Dispute",
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZHdtRFdaU0hWY2ljYkRUMkIyUzdYN21iOURJTE04eEJyT3BhVUc5UTc0Z3RMLWItZkhDOUM2bTBSbVh4VUN3R1J4bVVsS0pNSmNqV3dKVmZDWHdRSjZlRHNFRTMtM1EteGdHb1RjNnBidzhHWExxZmFReWo3R2VINmZpSFRKeldzWDNqU2lhR0MtRnNZbXFIU0Nn?oc=5",
    "source": "Digital Music News",
    "date": "2026-11-16",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Inside the First AI Music Awards, a Chaotic Evening Attempting to Normalize Tech-Assisted Tunes",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOSUlxT0puLTlsaHQ1UkdmXzlPd1dwNkhNbS15Y0hSVDJESlRQWFU3LTVTR0d3dmlpeXlJcjVhYTktblN5VE5Dd3hlVnRkU0NnQkg5WTEzUF8xelBlQXBUMkJwWlJqb0NtbTk4cVY4RDQ0VDlrVUFwU1RkaXRMbHNyeHI5SDBaTENtdmhoalA1TmRFT0hSYkFEUDB6N3QySVVXWjZPQS0yVThqSlE?oc=5",
-   "source": "Variety",
-   "date": "2026-11-14",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "New awards show celebrates AI music and its creators",
-   "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVGtiYXF6RWUzZFVXRm9lUTc0QlRNQ1pfLTZGZTZUeXlJdTFtZll2WUdrMmRGdy1oT3RzN3djckdpSHJ3OWRxZnJXSlByWnFNcXlJQ3VJOS1kblRmd1NCRFhYRThOWl9RRVhvUDJMZHpZQkU5RVRJcV9VTzJoUFF1aU1UTXBkQW8zOWR4S2h6RkYxTUxDVXpyLU5CQ1R5cU42RjFN?oc=5",
-   "source": "Reuters",
-   "date": "2026-11-14",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "MGK on AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUml1emtQOUlpU3hkQ3lsSWlsemNnUjBvQTFuQjFadUYwek8zbDFoNGNzNUNkaGZmelZLVldseDV6aDVHOUhQcWdlOVgwV253TXVvYTJyeHVPQlFvTGtoTG9xN1o0eS1tTDcxbXpOOUh6dnc0TzNSQmF6M3djR3ctSndWSzBsU190RGRtdHMwUDNPbE5k?oc=5",
-   "source": "Yahoo",
-   "date": "2026-11-14",
-   "kind": "NEWS",
-   "release": true
   },
   {
    "title": "BeatBread\u2019s new advisory board included execs from Meta and Suno",
@@ -162,14 +122,6 @@
    "release": false
   },
   {
-   "title": "Stock tips with a beat: Samsung Securities' AI K-pop group racks up views",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUDQ3c0otcnRoeXI2Y1dUOWhpLV9HNFVRMkVBWmRGdF95b1NCek5yRy10aDRSS3VlNkNMcURnQ3RaWlA0Y1hiRmhpckZpX3NzdWlNLXJPZGtCRnFzQ2xFX0o1a0d2SDN6SmNHM3RJSEdST1IzdE9VcVhKUDc3NjFPbTlYa3o0UkhkeHYzLTFNX05QZDdMb0g4bWQ5aV83NGZvYVFDaDhEVG1aN1d0UC1GclBXQlRWT1VRdzJGMEl2QmJ4eEREWUNv?oc=5",
-   "source": "Reuters",
-   "date": "2026-11-12",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "\u201cAn affront to any songwriter who has lived and struggled\u201d: Nick Cave on AI song-generating platforms",
    "link": "https://www.musicradar.com/artists/singers-songwriters/an-affront-to-any-songwriter-who-has-lived-and-struggled-in-this-world-and-earned-the-right-to-create-a-song-nick-cave-on-ai-song-generating-platforms",
    "source": "MusicRadar",
@@ -192,6 +144,54 @@
    "date": "2026-11-09",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "Suno AI Music Generator Sued Again For Copyright Infringement",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNd2RBdmNJNzV5YnFIM3JzclpLNDNuWXhtakVYcWVDUGt2blZOaUVya2U3cnk2QXNwbXZxcFM1QUVJSjIwOTJIZzFLWkpTQlhTYzdyS3gteG96TnY1c2stVFJIS0JxRGRrazNIR3RLT05QeWpPck5OQjdXNXEtX0QyRTd6NUY1UmV6QUdtZ3AtaWZhQ2lnTTd5UVlKTQ?oc=5",
+   "source": "Engadget",
+   "date": "2026-11-08",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "Weakening AI copyright law will spell \u2018disaster for creativity\u2019, global music body warns Albanese",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQaDlndU1UMXdLUldHa3o2VGVFY3lweExocnppTzgzaUt4WUVjNzZZcUNOVVlDZlFxTFllVTZId2Z1eG5vb012c1czQnY3V1Q4UC1sVUVCbWZvdWZjR3Bkc0hubkp3c3hTSTdfaVRuTlFWVzJCX2EzNXFxbnkzZnAzcVprVkFjMkhMVFYwZUVkQmRLbXlJMDBwYXByM0JTU2pma0Y0ZlNoRjhFNTJyOFIzQldMVlRoUUVlZ3Zqa3ctUQ?oc=5",
+   "source": "The Guardian",
+   "date": "2026-11-08",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "Nile Rodgers Defends New AI Music Video",
+   "link": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1pdHNfSjB3NmgtZkJjdHpnSzJXdzd2cUFVSFBQQjdOSHBIS1pwVm1NRVVMcmdubWxCZ0h1WVR4ME9pNDhKQ3ZwYVZjYUs5dVFvdTQ2bTFEc3JIblBocG1RbmJTZDYyTFF4VjJUSXRCMmw2YTFQY1lXMk92S3YwZm8?oc=5",
+   "source": "Stereogum",
+   "date": "2026-11-05",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Suno Seeks to Dismiss Jason Isbell Lawsuit, Argues There\u2019s \u2018Nothing Unlawful\u2019 About Invoking Artist Names to Describe Genres",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRTJhZHE2Z01zUXVZa09RUElnY3hzU2FpZGlaak54dklwNHZHZ0dCS1QzT2VVbGxNMUUxUXFtV2NZNFVyOEM1VXlwRk5DeVNiWDdxamJORWZaQWFaUzQySUt1QUtJcmlMTnVYVjBpNUNETlg3ZlZ2Wmt4dW1LNDhpdmJRamcxU2pEdXhSdzJrV0VPSEp6eWx4VExFWUZuS2M?oc=5",
+   "source": "Variety",
+   "date": "2026-11-04",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "Suno fights to make Apple testify on whether Apple Music could survive without UMG and Sony, claiming the majors use their catalogs \u2018as a cudgel\u2019 to win anti-AI concessio",
+   "link": "https://news.google.com/rss/articles/CBMiswJBVV95cUxQdTJvMmZPYk9JZzBaSGxnZUtNTWRPWEpveXEzRFlWeFN5X0o1clpXeXVCSHRQQzNoMl9KTWlKaEJ5RHZ3NEJnWjQ1V01tT0JrbTliTDJSYlQ5Zm9RM3NIZlp5eGN5bnFGeDhuc2owaDkzQ19PUU9TLTh2ZUVWeWZpSlNUX1pEUmtGMG83MDJoTW5fcUdNbk4zaU43c1duRjgzekhnemdpdG5yUEVnRzBpblNhM0lYUElTSXlPTk8tNG55VzBTa3dYQVFCVlVVeGdZNVNRRS1DdFFXRm00UFg5OThYZGtpT19zZVZ3eUJxbkRNYVplXzl1ejI3S3BQVERXMlVheUI0dTd4QWRya28zVnVpZ09jSFM1ZmV1SkZTbjQ3cE9qWkJnLUJHTlZSWWFESDg0?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-10-30",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Here\u2019s Every Company Fighting Subpoenas in Suno\u2019s Legal Fight With Universal and Sony Music",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQS0pFQUtUbzhJUS14U3VuZ1MzWV9UN1lXS0VEd0dVWXJZVzNQa0E1RnNSbmY2WG9Qb3QwY2ZwVThBVXVIUUk5U3NvcDJlZ1ZYWmF3dktpc3lCSjRweEk5dkx0OERVNVBxOGlTWDZqbDR5QjQ2UXRKOV9SOVBkR1lfeUpsdHdlUWI0RkNkME9RRFg0Sms0?oc=5",
+   "source": "Billboard",
+   "date": "2026-10-27",
+   "kind": "NEWS",
+   "release": false
   }
  ],
  "releases": [
@@ -212,14 +212,6 @@
    "release": true
   },
   {
-   "title": "MGK on AI in Music: 'Anyone Ever Brings That Sh*t Around Me, They're Fired'",
-   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPUml1emtQOUlpU3hkQ3lsSWlsemNnUjBvQTFuQjFadUYwek8zbDFoNGNzNUNkaGZmelZLVldseDV6aDVHOUhQcWdlOVgwV253TXVvYTJyeHVPQlFvTGtoTG9xN1o0eS1tTDcxbXpOOUh6dnc0TzNSQmF6M3djR3ctSndWSzBsU190RGRtdHMwUDNPbE5k?oc=5",
-   "source": "Yahoo",
-   "date": "2026-11-14",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Yamaha launches Vocaloid7 with second generation VOCALOID:AI",
    "link": "https://rekkerd.org/yamaha-launches-vocaloid7-with-second-generation-vocaloidai/",
    "source": "Rekkerd",
@@ -228,11 +220,11 @@
    "release": true
   },
   {
-   "title": "Spotify aims to launch AI music remix service early next year",
-   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
-   "source": "Financial Times",
-   "date": "2026-10-30",
-   "kind": "PRODUCT",
+   "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
+   "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
+   "source": "Resident Advisor",
+   "date": "2026-11-11",
+   "kind": "DRUMS",
    "release": true
   },
   {
@@ -269,14 +261,14 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 1,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 2,
-  "Google News news.google.com/rss/search?q=%22AI%22+drummer+when:3": "error: HTTP Error 429: Too Many Requests",
-  "Google News %22AI+music%22": 22,
-  "Google News Suno+OR+Udio": 24,
-  "Google News news.google.com/rss/search?q=%22AI%22+music+lawsuit+": "error: HTTP Error 429: Too Many Requests",
-  "Google News %22AI%22+music+producer+plugin": 2,
-  "Google News news.google.com/rss/search?q=%22AI%22+drum+plugin+OR": "error: HTTP Error 429: Too Many Requests",
-  "Google News %22AI%22+stem+separation": 1,
+  "Google News %22AI%22+drums": 3,
+  "Google News %22AI%22+drummer": 0,
+  "Google News news.google.com/rss/search?q=%22AI+music%22+when:30d": "error: HTTP Error 429: Too Many Requests",
+  "Google News Suno+OR+Udio": 25,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
+  "Google News news.google.com/rss/search?q=%22AI%22+music+producer": "error: HTTP Error 429: Too Many Requests",
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 3,
+  "Google News news.google.com/rss/search?q=%22AI%22+stem+separatio": "error: HTTP Error 429: Too Many Requests",
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 7,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
