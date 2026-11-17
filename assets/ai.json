@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T08:24Z",
+ "updated": "2026-11-17T12:27Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -15,6 +15,14 @@
    "source": "Gearnews.com",
    "date": "2026-10-28",
    "kind": "DRUMS",
+   "release": false
+  },
+  {
+   "title": "80% of people want AI music labeled, says Deezer/Ipsos survey \u2013 as 37% of Americans now see AI as a \u2018valuable tool\u2019 for musicians, down from 54% in 2025",
+   "link": "https://www.musicbusinessworldwide.com/80-of-people-want-ai-music-labeled-says-deezer-ipsos-survey-as-37-of-americans-now-see-ai-as-a-valuable-tool-for-musicians-down-from-54-in-2025/",
+   "source": "Music Business Worldwide",
+   "date": "2026-11-17",
+   "kind": "PRODUCT",
    "release": false
   },
   {
@@ -66,20 +74,28 @@
    "release": true
   },
   {
+   "title": "Elvis Presley rightsholders amend Suno lawsuit, adding more than 100 allegedly infringing AI tracks",
+   "link": "https://www.musicbusinessworldwide.com/elvis-presley-rightsholders-amend-suno-lawsuit-adding-more-than-100-allegedly-infringing-ai-tracks/",
+   "source": "Music Business Worldwide",
+   "date": "2026-11-17",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "Deezer report finds shrinking belief that fully-AI music will be popular",
+   "link": "https://musically.com/2026/11/17/deezer-report-ai-music-2026/",
+   "source": "Music Ally",
+   "date": "2026-11-17",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "TuneArt is an indie AI-music-video maker with a pay-as-you-go model",
    "link": "https://musically.com/2026/11/17/tuneart-ai-music-video-maker/",
    "source": "Music Ally",
    "date": "2026-11-17",
    "kind": "NEWS",
    "release": true
-  },
-  {
-   "title": "ByteDance sued by automotive photography firm EVOX, alleging TikTok parent copied 7,095 images to train its Seedream AI image generator",
-   "link": "https://www.musicbusinessworldwide.com/bytedance-sued-by-automotive-photography-firm-evox-alleging-tiktok-parent-copied-7095-images-to-train-its-seedream-ai-image-generator/",
-   "source": "Music Business Worldwide",
-   "date": "2026-11-16",
-   "kind": "PROBLEM",
-   "release": false
   },
   {
    "title": "Suno Bridge is a new way to sync up your AI creation with your production projects",
@@ -162,27 +178,11 @@
    "release": false
   },
   {
-   "title": "Stock tips with a beat: Samsung Securities' AI K-pop group racks up views",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPUDQ3c0otcnRoeXI2Y1dUOWhpLV9HNFVRMkVBWmRGdF95b1NCek5yRy10aDRSS3VlNkNMcURnQ3RaWlA0Y1hiRmhpckZpX3NzdWlNLXJPZGtCRnFzQ2xFX0o1a0d2SDN6SmNHM3RJSEdST1IzdE9VcVhKUDc3NjFPbTlYa3o0UkhkeHYzLTFNX05QZDdMb0g4bWQ5aV83NGZvYVFDaDhEVG1aN1d0UC1GclBXQlRWT1VRdzJGMEl2QmJ4eEREWUNv?oc=5",
-   "source": "Reuters",
-   "date": "2026-11-12",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "\u201cAn affront to any songwriter who has lived and struggled\u201d: Nick Cave on AI song-generating platforms",
    "link": "https://www.musicradar.com/artists/singers-songwriters/an-affront-to-any-songwriter-who-has-lived-and-struggled-in-this-world-and-earned-the-right-to-create-a-song-nick-cave-on-ai-song-generating-platforms",
    "source": "MusicRadar",
    "date": "2026-11-11",
    "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Elvis Presley rightsholders sue Suno, alleging its AI imitates the King\u2019s voice. Eight Mile Style has filed a separate suit over 269 Eminem songs.",
-   "link": "https://news.google.com/rss/articles/CBMivgJBVV95cUxPNVFHM0Z0dkxCM0dsMW5OanZ4SnJ4Q19rQl90MmN3dnRWX210dmVUbHFJemhHTENDWjA2eHBwTjd6TlRKM01WTWhNN2RsU0VmWTF4NmFybmNYQk9wcmtXWXQzTURMa3d1N2stS3l5OVlSWEtPODcwcU9SNk9uYng5cFppcUpoR1c5S1d6WTc2X0JPV0dOUndVTW1IZGxkNmpRdHF5T2JBZnM1Z1ktdE9nZUZDOTE0Ul9SMF84RDJJeEhmQ0lKVzgxXzdVYjB1SHo3dE5yQ296N3FXX0xqeGI1NkczS1BzZ0s5RDhHTkUyd0k0T1NiNWhNQlBCcTB0dWxLQ1BhMHdkSWtJdlJmck1TZnhheVVKSEludzl4dG5ibEUxY0Z3R0ZWQ1libzM1VTdUdS1kblJOZ1EyVjNGVmc?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-11-10",
-   "kind": "PROBLEM",
    "release": false
   },
   {
@@ -246,13 +246,13 @@
  ],
  "log": {
   "MusicRadar www.musicradar.com": 0,
-  "Music Business Worldwide www.musicbusinessworldwide.com": 2,
+  "Music Business Worldwide www.musicbusinessworldwide.com": 3,
   "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 520: <none>",
   "CDM cdm.link": 0,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
   "Rekkerd rekkerd.org": 2,
-  "Music Ally musically.com": 4,
+  "Music Ally musically.com": 5,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
@@ -264,7 +264,7 @@
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 21,
-  "Google News Suno+OR+Udio": 26,
+  "Google News Suno+OR+Udio": 25,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
   "Google News %22AI%22+music+producer+plugin": 2,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 3,
