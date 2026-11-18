@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T04:21Z",
+ "updated": "2026-11-18T08:24Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -10,14 +10,15 @@
   "The UK Drum Show (8)",
   "Drummerworld (8)",
   "Scott K Fish (5)",
-  "The Drum Ninja (8)",
   "Electronic Drum Advisor (8)",
   "drum-tec (8)",
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
- "errors": {},
- "raw_count": 65,
+ "errors": {
+  "The Drum Ninja": "mismatched tag: line 93, column 2"
+ },
+ "raw_count": 57,
  "items": [
   {
    "title": "Duran Duran Drummer Roger Taylor Retires Due to Worsening Health Issues",
@@ -140,27 +141,9 @@
    "date": "2026-11-02"
   },
   {
-   "title": "Roland TD-07KV2 Review",
-   "link": "https://thedrumninja.com/roland-td-07kv2-review/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-30"
-  },
-  {
-   "title": "EFNOTE PRO 501 Review",
-   "link": "https://thedrumninja.com/efnote-pro-501-review/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-30"
-  },
-  {
    "title": "Meinl HCS Dark Cymbals",
    "link": "https://en.beatit.tv/meinl-hcs-dark-cymbals/",
    "source": "Beat It",
-   "date": "2026-10-29"
-  },
-  {
-   "title": "By the Way Drum Transcription",
-   "link": "https://thedrumninja.com/by-the-way-drum-transcription/",
-   "source": "The Drum Ninja",
    "date": "2026-10-29"
   },
   {
@@ -230,12 +213,6 @@
    "date": "2026-10-13"
   },
   {
-   "title": "Don\u2019t Stop Me Now Drum Transcription",
-   "link": "https://thedrumninja.com/dont-stop-me-now-drum-transcription/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-13"
-  },
-  {
    "title": "Dominic Howard (Muse) joins Ludwig family",
    "link": "https://en.beatit.tv/dominic-howard-muse-joins-ludwig-family/",
    "source": "Beat It",
@@ -248,16 +225,40 @@
    "date": "2026-10-07"
   },
   {
-   "title": "Fluorescent Adolescent Drum Transcription",
-   "link": "https://thedrumninja.com/fluorescent-adolescent-drum-transcription/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-07"
-  },
-  {
    "title": "New Tama Starclassic Walnut/Birch Duracover finishes",
    "link": "https://en.beatit.tv/new-tama-starclassic-walnut-birch-duracover-finishes/",
    "source": "Beat It",
    "date": "2026-10-06"
+  },
+  {
+   "title": "SWISS DRUM WORLD IS COMING TO THE UK DRUM SHOW 2026!",
+   "link": "https://theukdrumshow.com/show-news/swiss-drum-world-is-coming-to-the-uk-drum-show-2026/",
+   "source": "The UK Drum Show",
+   "date": "2026-10-06"
+  },
+  {
+   "title": "CJ HOKDAL: From \u201cThat Swedish Drummer\u201d to The UK Drum Show",
+   "link": "https://theukdrumshow.com/show-news/cj-hokdal-from-that-swedish-drummer-to-the-uk-drum-show/",
+   "source": "The UK Drum Show",
+   "date": "2026-10-06"
+  },
+  {
+   "title": "Ohana Festival",
+   "link": "https://www.moderndrummer.com/2026/10/ohana-festival/",
+   "source": "Modern Drummer",
+   "date": "2026-10-02"
+  },
+  {
+   "title": "Aquiles Priester joins Czarcie Kopyto family",
+   "link": "https://en.beatit.tv/aquiles-priester-joins-czarcie-kopyto-family/",
+   "source": "Beat It",
+   "date": "2026-10-01"
+  },
+  {
+   "title": "LOUISE BARTLE | From Bedroom Drummer to Bloc Party",
+   "link": "https://theukdrumshow.com/show-news/louise-bartle-from-bedroom-drummer-to-bloc-party/",
+   "source": "The UK Drum Show",
+   "date": "2026-10-01"
   }
  ]
 }
