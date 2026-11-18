@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-18T08:24Z",
+ "updated": "2026-11-18T12:26Z",
  "items": [
+  {
+   "id": "kiLjGSbcccc",
+   "title": "Meinl Cymbals - Classics Custom Brilliant - Jeeves \"Deuce Deuce\" Demo",
+   "source": "Meinl",
+   "date": "2026-11-18",
+   "kind": "DEMO"
+  },
+  {
+   "id": "ySBvRyjUYvU",
+   "title": "Drama Era Rehearsal Footage, Rick Wakeman's Silent Night & More Yesshift News Desk Edition 11/17/26",
+   "source": "Drumtalk TV",
+   "date": "2026-11-18",
+   "kind": "TALK"
+  },
   {
    "id": "-0ZjtwxN0v0",
    "title": "Meinl Cymbals - Miguel Lamas Trio - \"Waiting For Pepe\" - Meinl Drum Festival 2026",
@@ -12,13 +26,6 @@
    "id": "yxpo1R2WI_4",
    "title": "The SABIAN Podcast | S1E6: Billy Cobham on His Legendary Career, Miles Davis & Spectrum",
    "source": "Sabian",
-   "date": "2026-11-17",
-   "kind": "TALK"
-  },
-  {
-   "id": "ySBvRyjUYvU",
-   "title": "Drama Era Rehearsal Footage, Rick Wakeman's Silent Night & More Yesshift News Desk Edition 11/17/26",
-   "source": "Drumtalk TV",
    "date": "2026-11-17",
    "kind": "TALK"
   },
@@ -42,13 +49,6 @@
    "source": "Drumtalk TV",
    "date": "2026-11-14",
    "kind": "TALK"
-  },
-  {
-   "id": "Qbhexw53FVY",
-   "title": "Meinl Cymbals - Xavier Ware - Solo #1 - Meinl Drum Festival 2026",
-   "source": "Meinl",
-   "date": "2026-11-13",
-   "kind": "EVENT"
   },
   {
    "id": "pom6mHZhSe4",
@@ -117,7 +117,7 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (3)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (5)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (6)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -131,8 +131,7 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (3)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
-  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
+  "NAMM": "@NAMMvideos UCbkzeiu-r47PhCTNaPsUu-A nammvideos (0)",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
