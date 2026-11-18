@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T00:41Z",
+ "updated": "2026-11-18T04:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -90,6 +90,22 @@
    "release": true
   },
   {
+   "title": "DistroKid Gives AI Upload Data to UMG and Sony for Suno Copyright Lawsuit After Initial\u00a0Refusal",
+   "link": "https://www.billboard.com/pro/distrokid-ai-data-umg-sony-lawsuit-suno/",
+   "source": "Billboard",
+   "date": "2026-11-18",
+   "kind": "PROBLEM",
+   "release": false
+  },
+  {
+   "title": "How Each Music Listening Platform Is Treating AI Music (Updating)",
+   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWXUxNTdjLXNjWkstaDZLVzBWQjhLYk9OYkxUS3F3NWRzbEZFWkRwbEY3WmJwS2xfeEtWS3VxbGlydzZCc1Z0UXdXX0xXd3R3YlFIVWp4VUE1WC1aYkp4X0tzb0thU0ZKdnVqc3k5aG0tbk55QnpBMW94bHF3V3hXVjctdW0zRldCdGc?oc=5",
+   "source": "Billboard",
+   "date": "2026-11-18",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "Suno launches AI music video tool built on model from MiniMax \u2013 the Chinese AI firm being sued by Disney and other Hollywood studios",
    "link": "https://www.musicbusinessworldwide.com/suno-launches-ai-music-video-tool-built-on-model-from-minimax-the-chinese-ai-firm-being-sued-by-disney-and-other-hollywood-studios/",
    "source": "Music Business Worldwide",
@@ -162,8 +178,8 @@
    "release": true
   },
   {
-   "title": "How Each Music Listening Platform Is Treating AI Music (Updating)",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWXUxNTdjLXNjWkstaDZLVzBWQjhLYk9OYkxUS3F3NWRzbEZFWkRwbEY3WmJwS2xfeEtWS3VxbGlydzZCc1Z0UXdXX0xXd3R3YlFIVWp4VUE1WC1aYkp4X0tzb0thU0ZKdnVqc3k5aG0tbk55QnpBMW94bHF3V3hXVjctdW0zRldCdGc?oc=5",
+   "title": "SoundCloud CEO Talks AI Policies: \u2018Wishing Away the Advent of AI Music Is Not a Strategy\u2019",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Tc253ckc0X0xRdXhuckFVVlVUUE5IblAyazAyZ1hjbXE1V2Y1Q3I5VWE4eklZd0dxSVJ1bmh6NFg5WWFabXZUd3pycGdSZWk4NkRYczFkZVZyWllMRkpxeG9ibVBNalNRVFM0WQ?oc=5",
    "source": "Billboard",
    "date": "2026-11-17",
    "kind": "NEWS",
@@ -173,22 +189,6 @@
    "title": "AI Music Generator Suno to Let Users Create Music Videos",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdnpHaGdtSS1QSnNMekFIc3daQzJ5UTljaWZiazhKS2h4WlRnXzM0ck5aM1hWUm9RZERtSlhIbENRV1hvS0Rub3ZMX3RoNXJwVDZ5cUpIS19jNG83T3ZyQWNobW5ELUpFcTNDMHJORjNUZVZfekx4dHAwWUN4WFhZQW12LTFpdGlsR2JsRE9UVGJieVlRVVFacWd6ZVhlcE5FbGJrUWJnOGVmZms?oc=5",
    "source": "Bloomberg.com",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "SoundCloud CEO Talks AI Policies: \u2018Wishing Away the Advent of AI Music Is Not a Strategy\u2019",
-   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Tc253ckc0X0xRdXhuckFVVlVUUE5IblAyazAyZ1hjbXE1V2Y1Q3I5VWE4eklZd0dxSVJ1bmh6NFg5WWFabXZUd3pycGdSZWk4NkRYczFkZVZyWllMRkpxeG9ibVBNalNRVFM0WQ?oc=5",
-   "source": "Billboard",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "AI Is Changing Music. Its Future Must Be Built Around Artists (Guest Column)",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBsSkR2MFk2ZWVKR3pFMFQwTXllWjRELVBCNlN2S3ZXdzA0NWFWUjF3VUdCcGwxU3V2Mm1vbE55VTRjMS1OOU4tQmJkaGNpX25tQWo2STZ4OU1ja0FSQ2JTSWtuaktnY3lmY3IzSVRWelJRcGp4WkVUUWh4UUY?oc=5",
-   "source": "Billboard",
    "date": "2026-11-17",
    "kind": "NEWS",
    "release": false
@@ -271,7 +271,7 @@
   "Music Ally musically.com": 5,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 1,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 0,
   "The Verge www.theverge.com": 0,
@@ -279,9 +279,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 28,
+  "Google News %22AI+music%22": 30,
   "Google News Suno+OR+Udio": 25,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 16,
   "Google News %22AI%22+music+producer+plugin": 2,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 3,
   "Google News %22AI%22+stem+separation": 2,
