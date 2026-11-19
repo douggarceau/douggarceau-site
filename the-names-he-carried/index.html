@@ -1,159 +1,19 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Names He Carried</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap">
+<meta name="robots" content="noindex">
 <style>
-:root{--bg:#EADDC2;--sheet:#E2D2B2;--ink:#2B2118;--soft:#5E4B36;--rule:#BFA97F;--red:#7A2E1C;--link:#7A3E1D;--serif:"Libre Caslon Text",Georgia,serif;--disp:"Libre Caslon Text",Georgia,serif;--sans:"Courier Prime","Courier New",monospace}
-*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--ink)}
-body{background:#EADDC2 radial-gradient(ellipse at center,#F1E6CF 0%,#EADDC2 55%,#DCC9A4 100%) fixed}
-body{font:20px/1.7 var(--serif);-webkit-font-smoothing:antialiased}
-a{color:var(--link)}
-.wrap{max-width:1040px;margin:0 auto;padding:28px 28px 80px}
-.top{position:sticky;top:0;z-index:5;background:#E2D2B2;border-bottom:1px solid var(--rule)}
-.top .wrap{padding:10px 20px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-.top b{font:700 15px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:var(--soft);flex:1;min-width:160px}
-.btn{all:unset;cursor:pointer;font:700 16px var(--sans);padding:10px 16px;border-radius:6px;border:2px solid var(--rule);color:var(--ink);text-align:center}
-.btn.main{color:#F3E9D2;background:var(--red);border-color:var(--red);font-size:20px;padding:16px 28px}
-.btn:focus-visible{outline:3px solid var(--ink)}
-select.jump{font:600 16px var(--sans);padding:9px 10px;border-radius:6px;background:var(--sheet);color:var(--ink);border:1px solid var(--rule);max-width:100%}
-.cover{text-align:center;padding:60px 0 30px}
-.cover .kick{font:700 14px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--soft)}
-.cover h1{font:700 clamp(40px,9vw,72px)/1.05 var(--disp);margin:18px 0 10px}
-.cover .sub{font:italic 400 clamp(22px,4vw,30px)/1.3 var(--disp);color:var(--soft);margin:0 0 26px}
-.cover .rule{width:120px;height:4px;background:var(--red);margin:26px auto}
-.cover .by{font-style:italic;color:var(--soft);margin:0 0 34px}
-.cover .facts{font:500 15px/1.6 var(--sans);color:var(--soft);margin-top:34px}
-h2.toc{font:700 28px var(--disp);margin:40px 0 6px}
-.part{font:700 14px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:26px 0 6px;padding-top:12px;border-top:1px solid var(--rule)}
-.toc-row{all:unset;cursor:pointer;display:flex;gap:14px;align-items:baseline;width:100%;padding:10px 4px;border-bottom:1px solid #22385A88}
-.toc-row:hover .t,.toc-row:focus-visible .t{color:var(--link);text-decoration:underline}
-.toc-row .n{font:700 16px var(--sans);color:var(--soft);min-width:2.2em}
-.toc-row .t{font-size:20px}.toc-row .e{margin-left:auto;font:500 14px var(--sans);color:var(--soft);white-space:nowrap}
-.chap .pt{font:700 14px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin-top:20px}
-.chap .no{font:700 16px var(--sans);color:var(--red);margin-top:18px;letter-spacing:.08em;text-transform:uppercase}
-.chap h2{font:700 clamp(32px,6vw,46px)/1.15 var(--disp);margin:6px 0 4px}
-.chap .era{font-style:italic;color:var(--soft);margin:0 0 26px}
-.chap p{margin:0 0 1.05em}
-.lst{margin:-.4em 0 1.2em 1em;padding-left:1em}.lst li{margin:.25em 0}
-.recs{margin-top:34px;padding:16px 18px;border-left:4px solid var(--red);background:var(--sheet);border-radius:4px}
-.recs h3{font:700 14px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--soft);margin:0 0 8px}
-.recs ul{margin:0;padding-left:1.1em;font:400 16px/1.55 var(--sans);color:var(--soft)}
-.pager{display:flex;justify-content:space-between;gap:12px;margin-top:34px;flex-wrap:wrap}
-.pager .btn{flex:1;min-width:140px}
-.note{font:400 15px/1.6 var(--sans);color:var(--soft);margin-top:40px;border-top:1px solid var(--rule);padding-top:14px}
-.rec{background:var(--sheet);border:1px solid var(--rule);border-left:4px solid #9CC6F2;border-radius:6px;padding:12px 14px;margin:10px 0;font:400 16px/1.55 var(--sans)}
-.rec p{margin:6px 0;font-family:var(--serif);font-size:18px}.rw{display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between}.rw span{color:var(--soft);font-size:14px}
-.rt{font-weight:700;margin-top:4px}.rp{color:var(--soft);margin-top:2px}.rl{color:var(--soft);font-style:italic}
-.cf{background:#B5123A22;border-left:3px solid var(--red);padding:6px 10px;margin:6px 0;border-radius:3px}.rs{font-size:14px;color:var(--soft);word-break:break-word}
-.stamp{display:inline-block;font:700 11px var(--sans);letter-spacing:.05em;border:1px solid currentColor;border-radius:3px;padding:0 5px;margin-left:6px;color:#9CC6F2;vertical-align:middle}
-.kv{margin:3px 0}.kv b{color:var(--soft);font-weight:700;margin-right:4px}
-details.all{margin-top:30px}details.all>summary{cursor:pointer;font:700 18px var(--sans);padding:12px 0;border-top:2px solid var(--red)}
-.study h3{font:700 28px var(--disp);margin:28px 0 8px}.study h4{font:700 20px var(--sans);margin:24px 0 6px;color:var(--soft)}
-.study table,.tw table{border-collapse:collapse;width:100%;font:400 15px/1.45 var(--sans);margin:12px 0;display:block;overflow-x:auto}
-.study td,.study th{border:1px solid var(--rule);padding:6px 8px;vertical-align:top;text-align:left}.study th{background:var(--sheet)}
-.study li{margin:.3em 0}.study blockquote{border-left:3px solid var(--rule);margin:1em 0;padding-left:14px;color:var(--soft)}
-figure{margin:24px 0}figure img{width:100%;height:auto;border-radius:4px;border:1px solid var(--rule);background:#fff}figure.plate img{max-width:560px;display:block;margin:0 auto;border:none;border-radius:0;box-shadow:0 2px 10px #0004}figcaption{font:400 15px/1.5 var(--sans);color:var(--soft);margin-top:6px}
-.apx h3{font:700 20px var(--sans);margin:22px 0 4px}.apx p{font-size:18px}table.ap{border-collapse:collapse;width:100%;font:400 17px/1.5 var(--sans)}table.ap td{border-bottom:1px solid var(--rule);padding:8px 6px;vertical-align:top}table.ap td:first-child{width:32%;font-weight:700;color:var(--soft);padding-right:14px}
-.cvr{display:block;width:100%;max-width:440px;margin:0 auto 30px;box-shadow:0 8px 30px #0008;border-radius:2px}
-.ded{font:italic 400 22px/1.5 var(--disp);color:var(--ink);margin:46px auto 0;max-width:520px}
-.stone{text-align:center;font:700 20px/1.6 var(--sans);letter-spacing:.12em;margin:1.4em 0}.notesall{font:400 16px/1.55 var(--sans);color:var(--soft)}.nch{font:700 17px var(--sans);margin:22px 0 6px}.nch a{color:var(--ink);text-decoration:none}.notes{margin:0;padding-left:1.4em}.notes li{margin:.35em 0;word-break:break-word}
-.place{border-top:1px solid var(--rule);padding-top:10px;margin-top:18px}.place h4{font:700 20px var(--sans);margin:0 0 6px}.place p{font-size:18px}
-@media(max-width:560px){body{font-size:19px}.toc-row .e{display:none}}
-
-body{background-color:#E9DCC0;background-image:radial-gradient(circle at 12% 18%,#c9a86a22 0 40px,transparent 70px),radial-gradient(circle at 85% 62%,#b8915522 0 30px,transparent 60px),radial-gradient(circle at 40% 90%,#a07a4a1a 0 50px,transparent 90px),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .12 0 0 0 .09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(ellipse at center,#F2E8D2 0%,#E9DCC0 60%,#D8C39A 100%);background-attachment:fixed}
-.chap .era{font:700 15px/1.5 "Courier Prime","Courier New",monospace!important;text-transform:uppercase;letter-spacing:.08em;color:var(--ink)!important;font-style:normal!important;border-top:4px double var(--ink);border-bottom:1px solid var(--ink);padding:8px 0;margin:14px 0 26px!important}
-.chap .era::after{content:" —"}
-.chap h2{font-family:"Libre Caslon Text",Georgia,serif!important}
-.headline{border-top:6px double var(--ink);border-bottom:3px solid var(--ink);text-align:center;padding:14px 4px 10px;margin:6px 0 26px}
-.headline .mast{font:700 13px "Courier Prime",monospace;letter-spacing:.2em;text-transform:uppercase}
-.headline .hd{font:900 30px/1.05 "Libre Caslon Text",Georgia,serif;text-transform:uppercase;margin:8px 0 4px}
-.headline .dl{font:italic 14px "Libre Caslon Text",Georgia,serif}
-
-/* VOICE: a family keepsake, quiet and exact
-   IDEA: the researcher's archive box beside the book
-   PICTURE: a stamped route line across the places he lived
-   COLOUR and TYPE: the book's own parchment, Caslon and typewriter
-   LAYOUT: one tab row; each section a plain list */
-.tabs{display:flex;gap:6px;flex-wrap:wrap;width:100%}
-.tabs .btn{font-size:15px;padding:9px 12px}
-.tabs .btn[aria-current=true]{background:var(--red);color:#F3E9D2;border-color:var(--red)}
-.route{margin:10px 0 34px;background:var(--sheet);border:1px solid var(--rule);border-radius:6px;padding:18px 12px}
-.route h3{font:700 14px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--soft);margin:0 0 10px;text-align:center}
-.stops{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));position:relative}
-.stops:before{content:"";position:absolute;left:5%;right:5%;top:15px;border-top:3px dashed var(--red)}
-.stop{text-align:center;position:relative}.stop i{display:block;width:16px;height:16px;border-radius:50%;background:var(--red);border:3px solid #F3E9D2;margin:8px auto 6px}
-.stop b{display:block;font:700 15px/1.2 var(--serif)}.stop span{font:400 13px/1.3 var(--sans);color:var(--soft)}
-@media(max-width:700px){.stops{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:16px}.stops:before{display:none}}
-.sec h2{font:700 clamp(30px,5vw,42px)/1.1 var(--disp);margin:24px 0 6px}.sec .lede{color:var(--soft);margin:0 0 22px}
-.recrow{display:grid;grid-template-columns:5em minmax(0,1fr);gap:14px;border-top:1px solid var(--rule);padding:16px 0}
-.recrow .y{font:700 22px var(--sans);color:var(--red)}
-.recrow h3{font:700 21px/1.3 var(--serif);margin:0 0 4px}.recrow p{margin:0 0 6px;font-size:18px}
-.recrow .ref{font:400 14px var(--sans);color:var(--soft)}
-.recrow img{width:100%;max-width:900px;border:1px solid var(--rule);border-radius:4px;background:#fff;cursor:zoom-in;margin-top:8px}
-.recrow img.big{max-width:none;cursor:zoom-out}
-.lnk{all:unset;cursor:pointer;color:var(--link);text-decoration:underline;font:400 15px var(--sans)}
-.tl{list-style:none;margin:0;padding:0}.tl li{display:grid;grid-template-columns:11em minmax(0,1fr);gap:14px;border-top:1px solid var(--rule);padding:10px 0;font-size:18px}
-.tl b{font:700 15px/1.5 var(--sans);color:var(--soft)}
-.ppl h3.g{font:700 14px var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--soft);margin:30px 0 4px;border-top:1px solid var(--rule);padding-top:12px}
-.person{padding:10px 0;border-bottom:1px solid #BFA97F66}.person b{font:700 21px var(--serif)}.person span{font:400 15px var(--sans);color:var(--soft);margin-left:8px}.person p{margin:4px 0 0;font-size:18px}
-.qs{padding-left:1.4em}.qs li{margin:.6em 0;font-size:19px}
-.crd{font:400 14px var(--sans);color:var(--soft);margin-top:26px}
-@media(max-width:560px){.tl li,.recrow{grid-template-columns:minmax(0,1fr);gap:2px}}
-</style></head><body>
-<div class="top"><div class="wrap"><b><a href="/" style="color:inherit;text-decoration:none">douggarceau.com</a> · The Names He Carried</b><select class="jump" id="jump" aria-label="Go to chapter"></select>
-<nav class="tabs" aria-label="Sections"><button class="btn" data-go="start">Home</button><button class="btn" data-go="contents">Read the book</button><button class="btn" data-go="records">Records</button><button class="btn" data-go="timeline">Timeline</button><button class="btn" data-go="places">Places</button><button class="btn" data-go="people">People</button><button class="btn" data-go="questions">Open questions</button></nav></div></div>
-<main class="wrap" id="view"><p style="text-align:center;margin-top:80px">Opening the book…</p></main>
-<script>
-{
-let CH=[],C=null,last=0;
-const $=s=>document.querySelector(s);
-const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const jump=$('#jump');
-try{last=+localStorage.getItem('nhc-last')||0}catch(e){}
-const lab=c=>/^Chapter/.test(c.label)?c.label.replace('Chapter ','')+'. ':'';
-function route(){return `<div class="route"><h3>The places he lived</h3><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></div>`}
-function home(){return `<section class="cover"><img class="cvr" src="img/cover-front.jpg" alt="The Names He Carried: The Laurence Brown Douglas Story, by Doug Garceau">
-<button class="btn main" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
-<p class="ded">Dedicated to my mother,<br>Constance Anderson Douglas</p></section>${route()}
-<div class="sec"><h2>Beside the book</h2><p class="lede">The records behind the story, in one place.</p>
-<ul class="qs"><li><button class="lnk" data-go="records">Records</button>: ${C.records.length} register and census entries</li><li><button class="lnk" data-go="timeline">Timeline</button>: his life, date by date</li><li><button class="lnk" data-go="places">Places</button>: every address on record</li><li><button class="lnk" data-go="people">People</button>: his family and the people of Quothquan</li><li><button class="lnk" data-go="questions">Open questions</button>: what the records have not yet answered</li></ul></div>`+contents()}
-function contents(){let h='<h2 class="toc" id="toc">Contents</h2>',p='';
- for(const c of CH){if(c.part!==p){p=c.part;h+=`<div class="part">${esc(p)}</div>`}
-  h+=`<button class="toc-row" data-go="chapter-${c.n}"><span class="n">${lab(c).replace('. ','')}</span><span class="t">${esc(c.title)}</span><span class="e">${esc(c.era)}</span></button>`}
- return h}
-function chapter(n){const c=CH[n-1];if(!c)return home();
- try{localStorage.setItem('nhc-last',n)}catch(e){} last=n;
- const pv=CH[n-2],nx=CH[n];
- return `<article class="chap"><div class="pt">${esc(c.part)}</div>${/^Chapter/.test(c.label)?`<div class="no">${esc(c.label)}</div>`:''}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}${c.html}
- <div class="pager">${pv?`<button class="btn" data-go="chapter-${pv.n}">← ${esc(pv.title)}</button>`:'<button class="btn" data-go="start">← Home</button>'}${nx?`<button class="btn" data-go="chapter-${nx.n}">${esc(nx.title)} →</button>`:'<button class="btn" data-go="contents">Contents</button>'}</div></article>`}
-function records(){return `<div class="sec"><h2>Records</h2><p class="lede">The register and census entries behind the story, oldest first.</p>
-${C.records.map(r=>`<div class="recrow"><div class="y">${r.year}</div><div><h3>${esc(r.title)}</h3><p>${esc(r.text)}</p><div class="ref">${esc(r.ref)}${r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</div>${r.img?`<img loading="lazy" src="${r.img}" alt="${esc(r.title)}">`:''}</div></div>`).join('')}
-<p class="crd">Scottish register and census entries are held by the National Records of Scotland.</p></div>`}
-function list(title,lede,rows,a,b){return `<div class="sec"><h2>${title}</h2><p class="lede">${lede}</p><ul class="tl">${rows.map(r=>`<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join('')}</ul></div>`}
-function people(){let h='<div class="sec ppl"><h2>People</h2><p class="lede">Drawn only from the records and the family\'s own memory.</p>',g='';
- for(const p of C.people){if(p.group!==g){g=p.group;h+=`<h3 class="g">${esc(g)}</h3>`}h+=`<div class="person"><b>${esc(p.name)}</b><span>${esc(p.dates)}</span><p>${esc(p.text)}</p></div>`}
- return h+'</div>'}
-function questions(){return `<div class="sec"><h2>Open questions</h2><p class="lede">What the records have not yet answered. If you know something, tell Doug.</p><ol class="qs">${C.questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ol></div>`}
-const tabs=['contents','records','timeline','places','people','questions'];
-function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
- if(m){html=chapter(+m[1]);jump.value=m[1]}
- else if(h==='records')html=records();
- else if(h==='timeline')html=list('Timeline','His life, date by date, from the records.',C.timeline);
- else if(h==='places')html=list('Places','Every address where the records place him.',C.places);
- else if(h==='people')html=people();
- else if(h==='questions')html=questions();
- else{html=h==='contents'?contents():home();jump.value=''}
- $('#view').innerHTML=html;
- document.querySelectorAll('.tabs .btn').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===(m?'contents':(h||'start')))));
- scrollTo(0,0)}
-document.addEventListener('click',e=>{const im=e.target.closest('.recrow img');if(im){im.classList.toggle('big');return}
- const b=e.target.closest('[data-go]');if(!b)return;const g=b.dataset.go;
- if(g==='start'){if(location.hash)location.hash='';else show();return}
- if(location.hash==='#'+g)show();else location.hash=g});
-jump.onchange=()=>{if(jump.value)location.hash='chapter-'+jump.value};
-addEventListener('hashchange',show);
-Promise.all([fetch('book.json').then(r=>r.json()),fetch('companion.json').then(r=>r.json())]).then(([d,c])=>{CH=d.chapters;C=c;
- jump.innerHTML='<option value="">Go to chapter…</option>'+CH.map(c=>`<option value="${c.n}">${lab(c)}${esc(c.title)}</option>`).join('');show()})
- .catch(()=>{$('#view').innerHTML='<p>The book could not be loaded. Reload the page.</p>'});
-}
-</script></body></html>
+body{margin:0;background:#000;color:#fff;font:18px/1.6 Georgia,"Times New Roman",serif}
+.w{max-width:980px;margin:0 auto;padding:clamp(24px,5vw,64px) max(5vw,16px);display:flex;gap:clamp(24px,5vw,56px);align-items:center}
+img{width:clamp(180px,30vw,340px);height:auto;flex:none;box-shadow:0 8px 30px #000}
+h1{font:700 clamp(34px,6vw,58px)/1.05 Georgia,serif;margin:0 0 8px}
+.s{font-size:clamp(20px,2.6vw,28px);margin:0 0 18px}.k{color:#ccc;margin:0 0 6px}
+p{max-width:60ch}.lock{display:inline-block;margin-top:14px;border:2px solid #fff;padding:14px 22px;font-weight:700}
+a{color:#fff}.home{display:block;margin-top:26px;color:#ccc}
+@media(max-width:620px){.w{flex-direction:column;text-align:center}p{margin-inline:auto}}
+</style></head><body><main class="w">
+<img src="img/cover-front.jpg" alt="Cover of The Names He Carried: The Laurence Brown Douglas Story">
+<div><p class="k">A new book by Doug Garceau</p><h1>The Names He Carried</h1><p class="s">The Laurence Brown Douglas Story</p>
+<p>Born Lawrence Brown in Edinburgh in 1907, raised under another family's name, he crossed the Atlantic in 1929 and spent his life dressing shop windows from Chicago to Pawtucket. His grandson traced him back through a century of records.</p>
+<span class="lock">The full book is for readers who purchase it. Coming soon.</span>
+<a class="home" href="/">&larr; Back to douggarceau.com</a></div></main></body></html>
