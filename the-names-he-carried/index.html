@@ -67,7 +67,7 @@ h2.big{font:900 clamp(38px,6vw,64px)/1.02 "Playfair Display",serif;margin:0 0 8p
 .toc{padding:46px 0 30px}
 .part{margin:40px 0 0;padding:14px 0 8px;border-top:3px solid #fff}
 .part .lab{color:#fff}
-.toc-row{all:unset;cursor:pointer;display:grid;grid-template-columns:3.2em minmax(0,1fr) auto;gap:14px;align-items:baseline;width:100%;padding:12px 2px;border-bottom:1px solid var(--rule)}
+.toc-row{all:unset;cursor:pointer;color:#fff;text-decoration:none;display:grid;grid-template-columns:3.2em minmax(0,1fr) auto;gap:14px;align-items:baseline;width:100%;padding:12px 2px;border-bottom:1px solid var(--rule)}
 .toc-row .n{font:900 22px/1 "Playfair Display",serif;color:var(--dim)}
 .toc-row .t{font:700 22px/1.3 "Playfair Display",serif}
 .toc-row .e{font:500 13px/1.3 Inter,system-ui,sans-serif;color:var(--soft);text-align:right;max-width:20em}
@@ -188,7 +188,7 @@ function home(){return `<section class="hero"><p class="lab">A book by Doug Garc
 <ul class="rows">${[['records','Records',C.records.length+' register and census entries'],['timeline','Timeline','His life, date by date'],['places','Places','Addresses where the records place him'],['people','People','His family and the people of Quothquan'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
 function contents(){let h='<section class="toc" id="toc"><h2 class="big">Contents</h2><p class="lede">'+CH.length+' parts of the book, in order.</p>',p=null;
  for(const c of CH){const pt=c.part||'';if(pt!==p){p=pt;h+=pt?`<div class="part"><span class="lab">${esc(pt)}</span></div>`:'<div class="part"></div>'}
-  h+=`<button class="toc-row" data-go="chapter-${c.n}"><span class="n">${num(c)}</span><span class="t">${esc(c.title)}</span><span class="e">${esc(c.era)}</span></button>`}
+  h+=`<a class="toc-row" href="#chapter-${c.n}" data-go="chapter-${c.n}"><span class="n">${num(c)}</span><span class="t">${esc(c.title)}</span><span class="e">${esc(c.era)}</span></a>`}
  return h+'</section>'}
 function clean(html){
  // No pictures on the pages: each figure becomes a plain link line, keeping its caption.
@@ -197,7 +197,7 @@ function clean(html){
   if(im){const a=document.createElement('a');a.href=im.getAttribute('src');a.target='_blank';a.rel='noopener';a.textContent=cap?cap.textContent:(im.alt||'Open the picture');p.append(a)}else if(cap)p.textContent=cap.textContent;f.replaceWith(p)});
  d.querySelectorAll('img').forEach(im=>{const a=document.createElement('a');a.href=im.getAttribute('src');a.target='_blank';a.rel='noopener';a.textContent=im.alt||'Open the picture';im.replaceWith(a)});
  return d}
-function chapter(n){const c=CH[n-1];if(!c)return home();
+function chapter(n){const c=CH[n-1];if(!c)return `<section class="sec"><h2 class="big">That chapter is not in this edition</h2><p><button class="lnk" data-go="contents">Go to the contents</button></p></section>`;
  try{localStorage.setItem('nhc-last',n)}catch(e){} last=n; CUR=n;
  const pv=CH[n-2],nx=CH[n],d=clean(c.html);
  if(c.title==='Notes'){d.querySelectorAll('.notes li').forEach((li,i)=>{const L=NOTE[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Source: '+L.map(linkFor).join('');li.append(s)}})}
@@ -229,7 +229,8 @@ function sources(){
 function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
  if(m){html=chapter(+m[1]);jump.value=m[1]}
  else{jump.value='';html=({records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places:()=>list('Places','Addresses where the records place him.',C.places)}[h]||home)()}
- CUR=m?+m[1]:0; $('#view').innerHTML=html;
+ CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html;
+ const hh=$('#view h2'); document.title=(CUR?CH[CUR-1].title+' · ':(hh&&h?hh.textContent+' · ':''))+'The Names He Carried';
  const cur=m?'contents':(h||'start');
  document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===cur)));
  let y=0; if(CUR){try{y=+localStorage.getItem('nhc-pos-'+CUR)||0}catch(e){}} scrollTo(0,y);
@@ -240,8 +241,8 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!
  if(location.hash==='#'+g)show();else location.hash=g});
 jump.onchange=()=>{if(jump.value)location.hash='chapter-'+jump.value};
 addEventListener('hashchange',show);addEventListener('popstate',show);
-Promise.all([fetch('book.json',{cache:'no-cache'}).then(r=>r.json()),fetch('companion.json',{cache:'no-cache'}).then(r=>r.json()),fetch('sources.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,s])=>{CH=d.chapters;C=c;if(s)S=s;index();
+Promise.all([fetch('book.json',{cache:'no-cache'}).then(r=>r.json()),fetch('companion.json',{cache:'no-cache'}).then(r=>r.json()),fetch('sources.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,s])=>{CH=d.chapters;C=c;if(s)S=s;index();if(!CH[last-1])last=0;
  jump.innerHTML='<option value="">Go to chapter…</option>'+CH.map(c=>`<option value="${c.n}">${isCh(c)?num(c)+'. ':''}${esc(c.title)}</option>`).join('');show()})
- .catch(()=>{$('#view').innerHTML='<p style="margin:80px 0">The book could not be loaded. Reload the page.</p>'});
+ .catch(()=>{$('#view').innerHTML='<p style="margin:80px 0">The book could not be loaded. <button class="lnk" onclick="location.reload()">Try again</button></p>'});
 }
 </script></body></html>
