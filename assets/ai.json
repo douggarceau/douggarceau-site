@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T04:23Z",
+ "updated": "2026-11-19T08:25Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -178,20 +178,20 @@
    "release": false
   },
   {
-   "title": "TuneArt is an indie AI-music-video maker with a pay-as-you-go model",
-   "link": "https://musically.com/2026/11/17/tuneart-ai-music-video-maker/",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "How Each Music Listening Platform Is Treating AI Music (Updating)",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWXUxNTdjLXNjWkstaDZLVzBWQjhLYk9OYkxUS3F3NWRzbEZFWkRwbEY3WmJwS2xfeEtWS3VxbGlydzZCc1Z0UXdXX0xXd3R3YlFIVWp4VUE1WC1aYkp4X0tzb0thU0ZKdnVqc3k5aG0tbk55QnpBMW94bHF3V3hXVjctdW0zRldCdGc?oc=5",
    "source": "Billboard",
    "date": "2026-11-17",
    "kind": "NEWS",
    "release": false
+  },
+  {
+   "title": "Suno launches AI music video tool built on model from MiniMax \u2013 the Chinese AI firm being sued by Disney and other Hollywood studios",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOUlZDVGtRcmIxb0c5b0llVEFVUFB2ajVnVmowTjNuMGF2WWlkUXdKdTA3TUlpNldvTzEtVUt3YUY3RUFLRDl2RHJmSk96V3hCZkRBX2QyR2dVcGlsT1UzTHRIX2E5RGJSdmh2b2EtYl9kdktqeDU2clluUFAxbzhZVFFqNWRnekY1ZUx2YXJiNklNWkctNVRsTHllMnNJdWUzbEZkSGRWNmg2d2FPNm5sN1JUbWZSNkJPaHV4WkhBQUgyVzdIRzhPNlZJeDlMbzc4RGN3aGd1VmJRXzNaTkRneGVRT1NWVWYzTzNsRlN3d29aRkJuQi1sMTFpT2NZMXM?oc=5",
+   "source": "Music Business Worldwide",
+   "date": "2026-11-17",
+   "kind": "PROBLEM",
+   "release": true
   }
  ],
  "releases": [
@@ -237,7 +237,7 @@
   },
   {
    "title": "TuneArt is an indie AI-music-video maker with a pay-as-you-go model",
-   "link": "https://musically.com/2026/11/17/tuneart-ai-music-video-maker/",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE14aldYS3MtNVhDWXFiQ2tiMmdVNFZLOFc1eExickZVRmtSRVFYSmNvZ3gwaDhRQTdtcFdTRGxKaUU3c01EdXppNmYtdkV2QlRwWjlTZU5jenE4cDdoOUF5U0dWbjg1RTNjRzFhUkxqTQ?oc=5",
    "source": "Music Ally",
    "date": "2026-11-17",
    "kind": "NEWS",
@@ -268,7 +268,7 @@
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
   "Rekkerd rekkerd.org": 1,
-  "Music Ally musically.com": 6,
+  "Music Ally musically.com": 5,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
@@ -281,7 +281,7 @@
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 33,
   "Google News Suno+OR+Udio": 23,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 2,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 2,
