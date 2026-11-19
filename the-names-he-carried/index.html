@@ -187,12 +187,24 @@ html.red .side h4{color:#ef5350}
 html.red .side a:hover{border-left:3px solid #c62828}
 html.red .nv a,html.red .nv button{background:#c62828;color:#fff}
 html.red .opener::after{content:"";display:block;width:60px;height:3px;background:#c62828;margin:22px auto 0}
+#tab-listen{margin-left:auto;color:#fff;font-weight:700}
+#tab-listen[hidden]{display:none}
+.alist{list-style:none;padding:0;margin:20px 0}
+.alist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;border-bottom:1px solid var(--rule);padding:14px 2px;font:500 17px/1.4 Inter,system-ui,sans-serif}
+.alist li.on{background:#140707}
+.abtn{all:unset;cursor:pointer;background:#c62828;color:#fff;font:700 15px/1 Inter,system-ui,sans-serif;padding:12px 16px;border-radius:4px;white-space:nowrap}
+.abtn[disabled]{background:#333;color:#999;cursor:default}
+.abig{font-size:19px;padding:18px 26px}
+.aplayer{position:sticky;top:0;background:#000;border:1px solid #c62828;padding:14px 16px;margin:18px 0;z-index:3}
+.aplayer b{display:block;font:700 13px Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#ef5350;margin-bottom:8px}
+.aplayer audio{width:100%}
+.alisten{display:inline-block;margin:0 0 26px}
 </style></head><body>
 <nav class="side" id="side" aria-label="People in the book"></nav><header class="top"><div class="wrap">
 <a class="brand" href="#" data-go="start">The Names He Carried</a>
 <select class="jump" id="jump" aria-label="Go to chapter"></select>
 <nav class="tabs" aria-label="Sections">
-<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="sources">Sources and documents</button>
+<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="sources">Sources and documents</button><button class="tab" id="tab-listen" data-go="listen" hidden>Listen to the audiobook</button>
 </nav></div></header>
 <nav class="nv" id="nv" hidden><button type="button" id="nvb">← Back</button><button type="button" data-go="start">Home</button></nav><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
 <footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
@@ -236,8 +248,9 @@ function chapter(n){const c=CH[n-1];if(!c)return `<section class="sec"><h2 class
  if(c.title==='Notes'){d.querySelectorAll('.notes li').forEach((li,i)=>{const L=NOTE[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Source: '+L.map(linkFor).join('');li.append(s)}})}
  if(c.title==='Bibliography'){d.querySelectorAll('.apx p').forEach((p,i)=>{const L=BIB[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Link: '+L.map(linkFor).join('');p.append(s)}})}
  const top=isCh(c)?`<p class="numw lab">${esc(c.part)}</p><p class="lab">${esc(c.label)}</p>`:`<p class="numw lab">${esc(c.part||c.label)}</p>${c.part&&c.part!==c.label?`<p class="lab">${esc(c.label)}</p>`:''}`;
+ const ac=AU.items.find(x=>x.n===n);const alink=ac?`<p><button class="abtn alisten" data-go="listen" onclick="setTimeout(()=>{const i=AU.items.findIndex(x=>x.n===${n});aplay(AU.items,i)},60)">Listen to this chapter</button></p>`:'';
  const raid=/^Zeppelins/.test(c.title)?`<div class="extlinks"><b>Read more about the raid</b><br><a href="https://www.bbc.com/news/uk-scotland-25978256" target="_blank" rel="noopener">BBC News: photographs of the 1916 Zeppelin raid on Edinburgh</a><br><a href="https://historynet.com/ww1-edinburgh-castle-zeppelin-attack/" target="_blank" rel="noopener">HistoryNet: When a WWI German Zeppelin Tried to Bomb Edinburgh Castle — and Missed</a></div>`:'';
- return `<article class="chap"><header class="opener">${top}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}</header><div class="body">${raid}${d.innerHTML}</div>
+ return `<article class="chap"><header class="opener">${top}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}</header><div class="body">${alink}${raid}${d.innerHTML}</div>
  <nav class="pager">${pv?`<button class="pg" data-go="chapter-${pv.n}"><small>Previous</small>${esc(pv.title)}</button>`:'<button class="pg" data-go="start"><small>Back</small>Home</button>'}${nx?`<button class="pg nx" data-go="chapter-${nx.n}"><small>Next</small>${esc(nx.title)}</button>`:'<button class="pg nx" data-go="sources"><small>Next</small>Sources and documents</button>'}</nav></article>`}
 function records(){return `<section class="sec"><h2 class="big">Records</h2><p class="lede">The register and census entries behind the story, oldest first. Where the document is on this site, the button opens it, with an explanation.</p>
 ${C.records.map((r,i)=>{const k=REC[i];return `<div class="recrow"><div class="y">${r.year}</div><div><h3>${esc(r.title)}</h3><p>${esc(r.text)}</p><div class="ref">${esc(r.ref)}${r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</div>${k?`<a class="scanbtn" href="${esc(k.page||k.file)}" target="_blank" rel="noopener">Open the document</a>`:''}</div></div>`}).join('')}
@@ -270,10 +283,26 @@ function sources(){
  <h3>The Zeppelin raid on Edinburgh, April 2–3, 1916</h3><p class="intro">Photographs of the damage, as published by <a href="https://www.bbc.com/news/uk-scotland-25978256" target="_blank" rel="noopener">BBC News</a>. For an account of the raid, see <a href="https://historynet.com/ww1-edinburgh-castle-zeppelin-attack/" target="_blank" rel="noopener">HistoryNet: When a WWI German Zeppelin Tried to Bomb Edinburgh Castle — and Missed</a> (Zita Ballinger Fletcher, September 16, 2022).</p><ul class="dl">${(S.raid||[]).map(([f,t])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>
  <h3>Records the book checked and ruled out</h3><p class="intro">Other people with the same names, checked and set aside.</p><ul class="dl">${(S.checked||[]).map(([f,t,n])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a><small>${esc(n)}</small></li>`).join('')}</ul>
  <h3>Other pictures kept with the book</h3><p class="intro">Photographs and art in the book's folder, as links only.</p><ul class="dl plain">${pics}</ul></section>`}
+
+let AU={full:null,items:[]},APREV=/[?&]audio=preview/.test(location.search);
+function listen(){const P=APREV?AP.items:AU.items, have=new Set(AU.items.map(x=>x.file));
+ const rows=P.map(x=>`<li data-f="${esc(x.file)}"><span>${esc(x.title)}</span>${have.has(x.file)?`<button class="abtn" data-play="${esc(x.file)}">Play</button>`:'<button class="abtn" disabled>Not recorded yet</button>'}</li>`).join('');
+ return `<section class="sec" style="max-width:820px;margin:0 auto"><h2 class="big">Listen to the audiobook</h2><p class="lede">Every chapter, read aloud. Play one chapter, or listen to the entire book from the beginning; it moves on to the next chapter by itself.</p>
+ <p><button class="abtn abig" data-playall="1"${AU.items.length?'':' disabled'}>Listen to the entire book</button>${AU.full?` <a class="lnk" style="margin-left:14px" href="${esc(AU.full)}" download>Download the whole book as one MP3</a>`:''}</p>
+ <div class="aplayer" id="aplayer" hidden><b id="anow">Now playing</b><audio id="aud" controls preload="none"></audio></div><ul class="alist">${rows}</ul></section>`}
+let AQ=[],AI=0;
+function aplay(list,i){const a=$('#aud');if(!a)return;AQ=list;AI=i;const x=list[i];$('#aplayer').hidden=false;$('#anow').textContent='Now playing: '+x.title;a.src=x.file;
+ try{const t=+localStorage.getItem('nhc-a-'+x.file)||0;if(t)a.currentTime=t}catch(e){}
+ a.play().catch(()=>{});document.querySelectorAll('.alist li').forEach(li=>li.classList.toggle('on',li.dataset.f===x.file))}
+document.addEventListener('click',e=>{const p=e.target.closest('[data-play]'),all=e.target.closest('[data-playall]');
+ if(p){const i=AU.items.findIndex(x=>x.file===p.dataset.play);aplay(AU.items,i)}else if(all&&AU.items.length){aplay(AU.items,0)}});
+document.addEventListener('timeupdate',e=>{if(e.target.id==='aud'&&AQ[AI]){try{localStorage.setItem('nhc-a-'+AQ[AI].file,Math.floor(e.target.currentTime))}catch(_){}}},true);
+document.addEventListener('ended',e=>{if(e.target.id==='aud'&&AQ[AI]){try{localStorage.removeItem('nhc-a-'+AQ[AI].file)}catch(_){}if(AI+1<AQ.length)aplay(AQ,AI+1)}},true);
+let AP={items:[]};
 function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
  const pm=h.match(/^person-(.+)$/);
  if(m){html=chapter(+m[1]);jump.value=m[1]}else if(pm){jump.value='';html=person(pm[1])}
- else{jump.value='';html=({records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places}[h]||home)()}
+ else{jump.value='';html=({listen,records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places}[h]||home)()}
  CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html; const sub=!!h&&h!=='start'; $('#nv').hidden=!sub; document.body.classList.toggle('sub',sub);
  $('#view').querySelectorAll('a[target="_blank"]').forEach(a=>{if(a.host===location.host){a.removeAttribute('target');a.removeAttribute('rel')}});
  const hh=$('#view h2'); document.title=(CUR?CH[CUR-1].title+' · ':(hh&&h?hh.textContent+' · ':''))+'The Names He Carried';
@@ -289,7 +318,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!
 $('#nvb').onclick=()=>{if(history.length>1)history.back();else{history.pushState('',document.title,location.pathname);show()}};
 jump.onchange=()=>{if(jump.value)location.hash='chapter-'+jump.value};
 addEventListener('hashchange',show);addEventListener('popstate',show);
-Promise.all([fetch('book.json',{cache:'no-cache'}).then(r=>r.json()),fetch('companion.json',{cache:'no-cache'}).then(r=>r.json()),fetch('sources.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null),fetch('people.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,c,s,pp])=>{CH=d.chapters;C=c;if(s)S=s;PP=pp;side();index();if(!CH[last-1])last=0;
+Promise.all([fetch('book.json',{cache:'no-cache'}).then(r=>r.json()),fetch('companion.json',{cache:'no-cache'}).then(r=>r.json()),fetch('sources.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null),fetch('people.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).catch(()=>[]),fetch('audio/manifest.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null),fetch('audio/plan.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,s,pp,am,ap])=>{CH=d.chapters;C=c;if(s)S=s;PP=pp;if(am)AU=am;if(ap)AP=ap;$('#tab-listen').hidden=!(AU.items.length||APREV);side();index();if(!CH[last-1])last=0;
  jump.innerHTML='<option value="">Go to chapter…</option>'+CH.map(c=>`<option value="${c.n}">${isCh(c)?num(c)+'. ':''}${esc(c.title)}</option>`).join('');show()})
  .catch(()=>{$('#view').innerHTML='<p style="margin:80px 0">The book could not be loaded. <button class="lnk" onclick="location.reload()">Try again</button></p>'});
 }
