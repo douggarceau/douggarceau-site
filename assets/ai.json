@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T08:25Z",
+ "updated": "2026-11-19T12:26Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -48,14 +48,6 @@
    "date": "2026-11-17",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "2026-46 Round-Up: EQs, delays, saturators, sample managers, AI stem cleanup & more (incl. FREE)",
-   "link": "https://rekkerd.org/2026-46-round-up-eqs-delays-saturators-sample-managers-ai-stem-cleanup-more-incl-free/",
-   "source": "Rekkerd",
-   "date": "2026-11-13",
-   "kind": "PRODUCT",
-   "release": false
   },
   {
    "title": "Splice\u2019s new AI DAW feels like a cheat code for music production \u2013 but it left us with one big question",
@@ -162,22 +154,6 @@
    "release": false
   },
   {
-   "title": "Australia\u2019s \u2018Not AI\u2019s to Take\u2019 campaign defends human creativity",
-   "link": "https://musically.com/2026/11/17/australias-not-ais-to-take-campaign-defends-human-creativity/",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Deezer report finds shrinking belief that fully-AI music will be popular",
-   "link": "https://musically.com/2026/11/17/deezer-report-ai-music-2026/",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "How Each Music Listening Platform Is Treating AI Music (Updating)",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWXUxNTdjLXNjWkstaDZLVzBWQjhLYk9OYkxUS3F3NWRzbEZFWkRwbEY3WmJwS2xfeEtWS3VxbGlydzZCc1Z0UXdXX0xXd3R3YlFIVWp4VUE1WC1aYkp4X0tzb0thU0ZKdnVqc3k5aG0tbk55QnpBMW94bHF3V3hXVjctdW0zRldCdGc?oc=5",
    "source": "Billboard",
@@ -192,6 +168,30 @@
    "date": "2026-11-17",
    "kind": "PROBLEM",
    "release": true
+  },
+  {
+   "title": "SoundCloud CEO Talks AI Policies: \u2018Wishing Away the Advent of AI Music Is Not a Strategy\u2019",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Tc253ckc0X0xRdXhuckFVVlVUUE5IblAyazAyZ1hjbXE1V2Y1Q3I5VWE4eklZd0dxSVJ1bmh6NFg5WWFabXZUd3pycGdSZWk4NkRYczFkZVZyWllMRkpxeG9ibVBNalNRVFM0WQ?oc=5",
+   "source": "Billboard",
+   "date": "2026-11-17",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "AI Music Generator Suno to Let Users Create Music Videos",
+   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdnpHaGdtSS1QSnNMekFIc3daQzJ5UTljaWZiazhKS2h4WlRnXzM0ck5aM1hWUm9RZERtSlhIbENRV1hvS0Rub3ZMX3RoNXJwVDZ5cUpIS19jNG83T3ZyQWNobW5ELUpFcTNDMHJORjNUZVZfekx4dHAwWUN4WFhZQW12LTFpdGlsR2JsRE9UVGJieVlRVVFacWd6ZVhlcE5FbGJrUWJnOGVmZms?oc=5",
+   "source": "Bloomberg",
+   "date": "2026-11-17",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Deezer report finds shrinking belief that fully-AI music will be popular",
+   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55NHcxM2wtcld1OXZiMEpHR1hMTmRiaGdlelZWVmNJeWwzbGxTRkdwMkFIN0xqQ3BGWTk4Mk5pQ1RjUzNxcFFMV3RWN053SnFOVTZuNjF1azV3c3pEcjNqMWJVSW1fRlRiVDE1TlZ3?oc=5",
+   "source": "Music Ally",
+   "date": "2026-11-17",
+   "kind": "NEWS",
+   "release": false
   }
  ],
  "releases": [
@@ -267,8 +267,8 @@
   "CDM cdm.link": 1,
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 1,
-  "Rekkerd rekkerd.org": 1,
-  "Music Ally musically.com": 5,
+  "Rekkerd rekkerd.org": 0,
+  "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
@@ -279,8 +279,8 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 33,
-  "Google News Suno+OR+Udio": 23,
+  "Google News %22AI+music%22": 34,
+  "Google News Suno+OR+Udio": 22,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 2,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
