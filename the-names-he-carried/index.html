@@ -218,9 +218,11 @@ function sources(){
  const src=S.sources.map(s=>{const n=(s.notes||[]).length,b=(s.bib||[]).length;const used=[n?n+(n>1?' notes':' note'):'',b?'the Bibliography':''].filter(Boolean).join(' and ');return `<li><a class="ext" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a><small>Cited in ${used}</small></li>`}).join('');
  const pics=(S.pictures||[]).map(([f,t])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('');
  return `<section class="sec sd"><h2 class="big">Sources and documents</h2><p class="lede">Every document scan and every source link for the book, in one place. Links open in a new tab; nothing is shown on this page.</p>
- <h3>Register scans</h3><p class="intro">Copies of the original register entries kept with the book.</p><ul class="dl">${scans}</ul>
+ <h3>Register scans</h3><p class="intro">Copies of the original register and census pages. The entry is boxed in red and the name is highlighted.</p><ul class="dl">${scans}</ul>
+ <h3>Census entries</h3><p class="intro">The census households from the row at Quothquan, written out.</p><ul class="dl">${(S.transcripts||[]).map(([f,t])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>
  <h3>All records</h3><p class="intro">Each entry from the Records section, with its scan where one is kept on this site.</p><ul class="dl">${recs}</ul>
  <h3>Source links</h3><p class="intro">Public pages for the sources named in the ${notesCh?`<button class="lnk" data-go="chapter-${notesCh.n}">Notes</button>`:'Notes'} and the ${bibCh?`<button class="lnk" data-go="chapter-${bibCh.n}">Bibliography</button>`:'Bibliography'}. Each link also appears beside the citations it supports.</p><ul class="dl">${src}</ul>
+ <h3>Records the book checked and ruled out</h3><p class="intro">Other people with the same names, checked and set aside.</p><ul class="dl">${(S.checked||[]).map(([f,t,n])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a><small>${esc(n)}</small></li>`).join('')}</ul>
  <h3>Other pictures kept with the book</h3><p class="intro">Photographs and art in the book's folder, as links only.</p><ul class="dl plain">${pics}</ul></section>`}
 function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
  if(m){html=chapter(+m[1]);jump.value=m[1]}

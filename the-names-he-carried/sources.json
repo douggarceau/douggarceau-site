@@ -529,5 +529,42 @@
    "img/p32.jpg",
    "Sisters at table in a convent dining room"
   ]
+ ],
+ "checked": [
+  [
+   "img/census-1911-donald-douglas-aberfeldy.jpg",
+   "1911 census, Aberfeldy: Donald Douglas, house joiner, born Blair Atholl (324/3 ED 15)",
+   "Checked and ruled out as the Shieldhill joiner (Chapter 12 notes)."
+  ],
+  [
+   "img/john-parker-death-register-1902.jpg",
+   "Death register, Dunfermline, 1902: indexed as James Parker, the entry is John Parker, coal miner (424/435)",
+   "Checked and ruled out as James Lawson Parker (Chapter 11 notes)."
+  ],
+  [
+   "img/census-1911-agnes-brown-dunfermline.jpg",
+   "1911 census, Dunfermline: Agnes Brown, wife of David D. Brown (424/30 p. 15)",
+   "Searched for Agnes in 1911; not her."
+  ],
+  [
+   "img/census-1911-agnes-o-brown-morningside.jpg",
+   "1911 census, Morningside, Edinburgh: Agnes O. Brown, sister of Alexander Brown (685/6 58 p. 2)",
+   "Searched for Agnes in 1911; not her."
+  ],
+  [
+   "img/census-1911-agnes-brown-gorgie.jpg",
+   "1911 census, Gorgie, Edinburgh: Agnes Brown, wife of Robert Brown (685/6 92 p. 7)",
+   "Searched for Agnes in 1911; not her."
+  ]
+ ],
+ "transcripts": [
+  [
+   "docs/census-1891-castle-row-libberton.html",
+   "1891 census, the \"Castle\" row, Quothquan: Jane Henderson's household with Agnes Brown, 5, and the Archibalds"
+  ],
+  [
+   "docs/census-1901-libberton-ed3.html",
+   "1901 census, Quothquan: Agnes Brown, 15, at Lime Tree Cottage; Mary Archibald at Gean Tree"
+  ]
  ]
 }
