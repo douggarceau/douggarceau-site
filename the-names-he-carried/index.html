@@ -179,10 +179,12 @@ html.red .tab[aria-current=true]{border-bottom-color:#c62828;border-bottom-width
 html.red .go,html.red .scanbtn{background:#c62828;border-color:#c62828;color:#fff}
 html.red .lnk{text-decoration-color:#ef5350}
 html.red .body a,html.red .pg-person .homes a,html.red .pg-person .inbook a,html.red .fam a,html.red .extlinks a,html.red .src a,html.red .imglink a{color:#fff;text-decoration-color:#ef5350}
-html.red .body>p:first-of-type::first-letter{color:#c62828}
+html.red .chap .body>p:first-of-type::first-letter{color:#c62828}
 html.red .pg-person h3,html.red .rule{border-top-color:#c62828!important}
 html.red .proof,html.red .extlinks{border-color:#c62828}
 html.red .side a[aria-current=true]{border-left:3px solid #c62828}
+html.red .side h4{color:#ef5350}
+html.red .side a:hover{border-left:3px solid #c62828}
 html.red .nv a,html.red .nv button{background:#c62828;color:#fff}
 html.red .opener::after{content:"";display:block;width:60px;height:3px;background:#c62828;margin:22px auto 0}
 </style></head><body>
@@ -194,7 +196,7 @@ html.red .opener::after{content:"";display:block;width:60px;height:3px;backgroun
 </nav></div></header>
 <nav class="nv" id="nv" hidden><button type="button" id="nvb">← Back</button><button type="button" data-go="start">Home</button></nav><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
 <footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
-<script>try{if(/[?&]accent=red/.test(location.search)||localStorage.getItem('nhc-accent')==='red')document.documentElement.classList.add('red')}catch(e){}
+<script>document.documentElement.classList.add('red');
 
 {
 let PP=[];let CUR=0,CH=[],C=null,S={sources:[],scans:{},pictures:[]},last=0,NOTE={},BIB={},REC={};
