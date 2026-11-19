@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T16:22Z",
+ "updated": "2026-11-19T20:21Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -8,14 +8,6 @@
    "date": "2026-11-11",
    "kind": "DRUMS",
    "release": true
-  },
-  {
-   "title": "Apple Logic Pro 13: Enhanced Drum Separation and a New AI Assistant",
-   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81S1RtVTJCR2hxcl9QUDRnRldKMVZoeEFMNW8yQXJDMjltN09zck9iVFdRZHVDRkdJNjllSF9FakZCZmRzU2k2S2ZOZjgwZjBaNDdGZnBJN0VmTG9n?oc=5",
-   "source": "Gearnews.com",
-   "date": "2026-10-28",
-   "kind": "DRUMS",
-   "release": false
   },
   {
    "title": "Georgia Tech Launches HearMe, A Free AI Music App",
@@ -82,12 +74,28 @@
    "release": true
   },
   {
+   "title": "Apple goes all in on AI with Logic Pro 13, introducing an intelligent assistant that can control your DAW",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0MwNmQ2V1VOekctdm5hclNxQ3Fwd2JrNzgtZkIzLTNTdC1wZWIxU3NLMVNlWXhiQ2pVcnhSNnRQTVlrLXU0UVZqeHBFZVg3NkduYUpQM0YzSXRfdERLbzRUY2NRQTBaV3BZMHBsd0NHRm9nZFF4NjlzRkdfbW1VbHlFN3FyVU1vZk9NSnBVVVdHZE93M0txMm1lZXpBVk5NZjJuX3pFemc5UlBCdHVQQ1FINGN6NWtTbHcyQmt0RGtPcWhnVExnbUZ3ZExNQ1J2ODk5SDdYSXV4QQ?oc=5",
+   "source": "MusicRadar",
+   "date": "2026-10-28",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Apple debuts new musically-inclined AI assistant for creators",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
    "source": "Mashable",
    "date": "2026-10-27",
    "kind": "PRODUCT",
    "release": true
+  },
+  {
+   "title": "Agentic AI in music marketing: \u2018superhumans\u2019, safeguards and 7am inbox briefs",
+   "link": "https://musically.com/2026/11/19/agentic-ai-music-marketing/",
+   "source": "Music Ally",
+   "date": "2026-11-19",
+   "kind": "NEWS",
+   "release": false
   },
   {
    "title": "Tim Minchin lights up ARIA awards with minute-long AI blast",
@@ -184,14 +192,6 @@
    "date": "2026-11-17",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Deezer report finds shrinking belief that fully-AI music will be popular",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55NHcxM2wtcld1OXZiMEpHR1hMTmRiaGdlelZWVmNJeWwzbGxTRkdwMkFIN0xqQ3BGWTk4Mk5pQ1RjUzNxcFFMV3RWN053SnFOVTZuNjF1azV3c3pEcjNqMWJVSW1fRlRiVDE1TlZ3?oc=5",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
@@ -268,7 +268,7 @@
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 0,
-  "Music Ally musically.com": 2,
+  "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
@@ -279,9 +279,9 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 34,
-  "Google News Suno+OR+Udio": 23,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
+  "Google News %22AI+music%22": 35,
+  "Google News Suno+OR+Udio": 24,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 2,
