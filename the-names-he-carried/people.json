@@ -942,6 +942,71 @@
   ]
  },
  {
+  "slug": "shieldhill",
+  "name": "Shieldhill (the estate and house)",
+  "dates": "the big house above Quothquan",
+  "group": "Quothquan and Shieldhill",
+  "story": [
+   "Shieldhill was the estate on the hill above the village of Quothquan, in the parish of Libberton in Upper Clydesdale, four miles from Biggar. Its house was a rambling mansion built around an old tower, with stonework of the sixteenth and seventeenth centuries and additions of about 1820. With the estate came the village and its cottages, among them the row the census of 1891 called Castle, where Agnes Brown grew up.",
+   "For generations the estate belonged to the Chancellor family, who buried their dead in the ruined old kirk at Quothquan, which they had taken as a family burial place around 1780. In 1898 they sold Shieldhill to Nathaniel Dunlop, a Glasgow shipowner of the Allan Line. Dunlop rebuilt Huntfield Place, turning six houses into four, enlarged the smith's house, and in 1903, with his daughter, Ellen, put up Shieldhill Hall in the village for evening services.",
+   "On census night in 1901 the house stood nearly empty. The laird was away at his house in Govan, and the household living in Shieldhill House was the gardener's: Alexander Archibald, thirty, his wife, Annie, and a dairymaid, Susan Cumisky. The estate was kept by its resident staff, servants, gardeners and keepers. A few doors down the hill, at Gean Tree, lived the gardener's sister, Mary Archibald, and at Lime Tree lived Agnes Brown, fifteen.",
+   "Shieldhill is the place at the center of Laurence's beginning. When Agnes registered her son in Edinburgh in July 1907, she gave her home as Gean Cottage, Shieldhill, Biggar. That same month the King knighted the estate's owner as Sir Nathaniel Dunlop of Shieldhill. In 1911 James Parker, the boy Agnes grew up beside, was the gamekeeper at Shieldhill Mains. Dunlop died at Shieldhill on November 15, 1919."
+  ],
+  "lineage": [
+   {
+    "rel": "Owners",
+    "who": "The Chancellor family, for generations until 1898",
+    "slug": null
+   },
+   {
+    "rel": "Owner 1898–1919",
+    "who": "Sir Nathaniel Dunlop",
+    "slug": "nathaniel-dunlop"
+   },
+   {
+    "rel": "Daughter of the house",
+    "who": "Ellen Dunlop",
+    "slug": "ellen-dunlop"
+   },
+   {
+    "rel": "Gardener in 1901",
+    "who": "Alexander Archibald",
+    "slug": "alexander-archibald"
+   },
+   {
+    "rel": "Gamekeeper at Shieldhill Mains in 1911",
+    "who": "James Lawson Parker",
+    "slug": "james-lawson-parker"
+   },
+   {
+    "rel": "Cottage on the estate",
+    "who": "Gean Cottage, home of Mary Archibald and, in 1907, Agnes Brown",
+    "slug": "mary-archibald"
+   }
+  ],
+  "ch": [
+   4,
+   5,
+   11,
+   12,
+   13
+  ],
+  "homes": [
+   {
+    "label": "Shieldhill House, from above",
+    "url": "https://earth.google.com/web/search/Shieldhill%20Castle%2C%20Quothquan%2C%20Biggar"
+   },
+   {
+    "label": "Gean Tree Cottage, on the estate",
+    "url": "https://earth.google.com/web/@55.63941,-3.59841,230a,350d,35y,0h,0t,0r"
+   },
+   {
+    "label": "Lime Tree Cottage, on the estate",
+    "url": "https://earth.google.com/web/@55.63888,-3.59864,230a,350d,35y,0h,0t,0r"
+   }
+  ]
+ },
+ {
   "slug": "robert-douglas",
   "name": "Robert Douglas",
   "dates": "1876–1919",
