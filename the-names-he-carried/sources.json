@@ -444,6 +444,35 @@
    "title": "Marriage register entry of George Lees Pirrie and Helen Ena Harrison, Ayr, 1950 (578/1 270)",
    "bib": [],
    "page": "docs/pirrie-harrison-marriage-1950.html"
+  },
+  "c1911": {
+   "file": "img/census-1911-lochrin-place-edinburgh.jpg",
+   "page": "docs/census-1911-lochrin-place.html",
+   "record": 6,
+   "title": "1911 census, 16 Lochrin Place, Edinburgh: Laurence B. Douglas, 3 (685/4 69/11)",
+   "notes": [
+    114
+   ],
+   "bib": []
+  },
+  "c1921": {
+   "file": "img/census-1921-foundry-street-dunfermline.jpg",
+   "page": "docs/census-1921-foundry-street.html",
+   "record": 10,
+   "title": "1921 census, 5 Foundry Street, Dunfermline: Lawrence Douglas, 14 (424/1 12)",
+   "notes": [
+    167
+   ],
+   "bib": []
+  },
+  "will": {
+   "file": "img/dunlop-will-1920-page-495.jpg",
+   "page": "docs/dunlop-will-1920.html",
+   "title": "Will of Sir Nathaniel Dunlop of Shieldhill, recorded 1920 (SC38/44/3)",
+   "notes": [
+    110
+   ],
+   "bib": []
   }
  },
  "pictures": [
@@ -545,6 +574,11 @@
    "docs/census-1911-donald-douglas-aberfeldy.html",
    "1911 census, Aberfeldy: Donald Douglas, house joiner, born Blair Atholl (324/3 ED 15)",
    "Checked and ruled out as the Shieldhill joiner (Chapter 12 notes)."
+  ],
+  [
+   "docs/census-1911-donald-douglas-bristo-street.html",
+   "1911 census, Bristo Street, Edinburgh: Donald Douglas, farm servant, born Contin (685/4 39/7)",
+   "Checked and ruled out as the Shieldhill joiner."
   ],
   [
    "docs/john-parker-death-1902.html",
