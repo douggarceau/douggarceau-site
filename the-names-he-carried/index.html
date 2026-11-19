@@ -155,6 +155,7 @@ table.ap td:first-child{width:32%;color:var(--soft);font:500 14px/1.5 Inter,syst
  .pager .pg.nx{text-align:left}
  .person span{display:block;margin:2px 0 0}
 }
+.hero{padding-top:clamp(20px,4vw,48px)}.hero .cover{margin:0 auto 28px;max-width:520px}.cover img{display:block;width:100%;height:auto}
 </style></head><body>
 <header class="top"><div class="wrap">
 <a class="brand" href="#" data-go="start">The Names He Carried</a>
@@ -181,7 +182,7 @@ function index(){
 const linkFor=([t,x])=>t==='scan'?`<a class="scan" href="${esc(x.page||x.file)}" target="_blank" rel="noopener">Open the document</a>`:ext(x.url,x.title);
 
 function route(){return `<section class="route"><p class="lab">Places in his life</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
-function home(){return `<section class="hero"><p class="lab">A book by Doug Garceau</p><h1>The Names He Carried</h1><div class="rule"></div><p class="sub">The Laurence Brown Douglas Story</p><p class="yrs">1907 · 1961</p>
+function home(){return `<section class="hero"><h1 class="cover"><img src="img/cover-zeppelin.jpg" width="1024" height="1536" alt="The Names He Carried: The Laurence Brown Douglas Story"></h1><p class="lab">A book by Doug Garceau</p>
 <button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
 <p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>${route()}
 <section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
