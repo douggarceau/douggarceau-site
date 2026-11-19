@@ -157,8 +157,26 @@ table.ap td:first-child{width:32%;color:var(--soft);font:500 14px/1.5 Inter,syst
 }
 .hero{padding-top:clamp(20px,4vw,48px)}.hero .cover{margin:0 auto 28px;max-width:520px}.cover img{display:block;width:100%;height:auto}
 .nv{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;gap:12px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#000;border-top:1px solid #fff}.nv a,.nv button{flex:1;max-width:220px;text-align:center;font:600 17px/1 system-ui,sans-serif;color:#000;background:#fff;border:0;border-radius:6px;padding:13px 10px;text-decoration:none;cursor:pointer}body.sub{padding-bottom:80px}.nv[hidden]{display:none}
+.side{display:none}
+@media(min-width:1200px){.side{display:block;position:fixed;top:0;left:0;bottom:0;width:236px;overflow-y:auto;border-right:1px solid var(--rule);background:#000;padding:18px 14px 90px;z-index:6;font:500 14px/1.35 Inter,system-ui,sans-serif}
+ body{padding-left:236px}.nv{left:236px}
+ .side h4{font:700 11px Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:16px 0 6px}
+ .side h4:first-child{margin-top:0}
+ .side a{display:block;color:#ddd;text-decoration:none;padding:5px 6px;border-bottom:1px solid #161616}
+ .side a:hover,.side a[aria-current=true]{color:#fff;background:#151515}}
+.pg-person .fam{margin:30px 0;border-top:3px solid #fff}
+.pg-person .fam div{display:grid;grid-template-columns:11em minmax(0,1fr);gap:14px;border-bottom:1px solid var(--rule);padding:11px 0;font:500 16px/1.5 Inter,system-ui,sans-serif}
+.pg-person .fam b{color:var(--soft);font-weight:600}
+.pg-person .homes a,.pg-person .inbook a{color:#fff}
+.pg-person h3{font:700 13px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;border-top:3px solid #fff;padding-top:12px;margin:34px 0 10px}
+.pg-person ul{padding-left:1.1em}.pg-person li{margin:.45em 0}
+.plist a{display:block;color:#fff;text-decoration:none;padding:12px 2px;border-bottom:1px solid var(--rule)}
+.plist a span{display:block;color:var(--soft);font:500 14px Inter,system-ui,sans-serif}
+.extlinks{border:1px solid #fff;padding:14px 18px;margin:0 0 30px;font:500 16px/1.6 Inter,system-ui,sans-serif}
+.extlinks a{color:#fff}
+@media(max-width:600px){.pg-person .fam div{grid-template-columns:1fr;gap:2px}}
 </style></head><body>
-<header class="top"><div class="wrap">
+<nav class="side" id="side" aria-label="People in the book"></nav><header class="top"><div class="wrap">
 <a class="brand" href="#" data-go="start">The Names He Carried</a>
 <select class="jump" id="jump" aria-label="Go to chapter"></select>
 <nav class="tabs" aria-label="Sections">
@@ -168,7 +186,7 @@ table.ap td:first-child{width:32%;color:var(--soft);font:500 14px/1.5 Inter,syst
 <footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
 <script>
 {
-let CUR=0,CH=[],C=null,S={sources:[],scans:{},pictures:[]},last=0,NOTE={},BIB={},REC={};
+let PP=[];let CUR=0,CH=[],C=null,S={sources:[],scans:{},pictures:[]},last=0,NOTE={},BIB={},REC={};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const jump=$('#jump');
@@ -205,15 +223,26 @@ function chapter(n){const c=CH[n-1];if(!c)return `<section class="sec"><h2 class
  if(c.title==='Notes'){d.querySelectorAll('.notes li').forEach((li,i)=>{const L=NOTE[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Source: '+L.map(linkFor).join('');li.append(s)}})}
  if(c.title==='Bibliography'){d.querySelectorAll('.apx p').forEach((p,i)=>{const L=BIB[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Link: '+L.map(linkFor).join('');p.append(s)}})}
  const top=isCh(c)?`<p class="numw lab">${esc(c.part)}</p><div class="num" aria-hidden="true">${num(c)}</div><p class="lab">${esc(c.label)}</p>`:`<p class="numw lab">${esc(c.part||c.label)}</p>${c.part&&c.part!==c.label?`<p class="lab">${esc(c.label)}</p>`:''}`;
- return `<article class="chap"><header class="opener">${top}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}</header><div class="body">${d.innerHTML}</div>
+ const raid=/^Zeppelins/.test(c.title)?`<div class="extlinks"><b>Read more about the raid</b><br><a href="https://www.bbc.com/news/uk-scotland-25978256" target="_blank" rel="noopener">BBC News: photographs of the 1916 Zeppelin raid on Edinburgh</a><br><a href="https://historynet.com/ww1-edinburgh-castle-zeppelin-attack/" target="_blank" rel="noopener">HistoryNet: When a WWI German Zeppelin Tried to Bomb Edinburgh Castle — and Missed</a></div>`:'';
+ return `<article class="chap"><header class="opener">${top}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}</header><div class="body">${raid}${d.innerHTML}</div>
  <nav class="pager">${pv?`<button class="pg" data-go="chapter-${pv.n}"><small>Previous</small>${esc(pv.title)}</button>`:'<button class="pg" data-go="start"><small>Back</small>Home</button>'}${nx?`<button class="pg nx" data-go="chapter-${nx.n}"><small>Next</small>${esc(nx.title)}</button>`:'<button class="pg nx" data-go="sources"><small>Next</small>Sources and documents</button>'}</nav></article>`}
 function records(){return `<section class="sec"><h2 class="big">Records</h2><p class="lede">The register and census entries behind the story, oldest first. Where the document is on this site, the button opens it, with an explanation.</p>
 ${C.records.map((r,i)=>{const k=REC[i];return `<div class="recrow"><div class="y">${r.year}</div><div><h3>${esc(r.title)}</h3><p>${esc(r.text)}</p><div class="ref">${esc(r.ref)}${r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</div>${k?`<a class="scanbtn" href="${esc(k.page||k.file)}" target="_blank" rel="noopener">Open the document</a>`:''}</div></div>`}).join('')}
 <p class="crd">Scottish register and census entries are held by the National Records of Scotland and can be searched on <a href="https://www.scotlandspeople.gov.uk/guides/statutory-registers" target="_blank" rel="noopener">ScotlandsPeople</a>. All register and census sources are listed under <button class="lnk" data-go="sources">Sources and documents</button>.</p></section>`}
 function list(title,lede,rows){return `<section class="sec"><h2 class="big">${title}</h2><p class="lede">${lede}</p><ul class="tl">${rows.map(r=>`<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join('')}</ul></section>`}
-function people(){let h='<section class="sec ppl"><h2 class="big">People</h2><p class="lede">Drawn only from the records and the family\'s own memory.</p>',g='';
- for(const p of C.people){if(p.group!==g){g=p.group;h+=`<h3 class="g">${esc(g)}</h3>`}h+=`<div class="person"><b>${esc(p.name)}</b><span>${esc(p.dates)}</span><p>${esc(p.text)}</p></div>`}
- return h+'</section>'}
+function people(){let h='<section class="sec"><h2 class="big">People</h2><p class="lede">Everyone in his story, with who they were, how they fit in, and their family line. Living family members are not included.</p>',g='';
+ for(const p of PP){if(p.group!==g){if(g)h+='</div>';g=p.group;h+=`<h3 class="g">${esc(g)}</h3><div class="plist">`}h+=`<a href="#person-${p.slug}" data-go="person-${p.slug}">${esc(p.name)}<span>${esc(p.dates)}</span></a>`}
+ return h+'</div></section>'}
+function person(slug){const p=PP.find(x=>x.slug===slug);if(!p)return people();
+ const fam=p.lineage.map(l=>`<div><b>${esc(l.rel)}</b><span>${l.slug?`<a href="#person-${l.slug}" data-go="person-${l.slug}" style="color:#fff">${esc(l.who)}</a>`:esc(l.who)}</span></div>`).join('');
+ const homes=p.homes.length?`<h3>Where they lived, from above</h3><ul class="homes">${p.homes.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a> <small style="color:var(--dim)">(Google Earth)</small></li>`).join('')}</ul>`:'';
+ const inb=p.ch.filter(n=>CH[n-1]).map(n=>`<li><a href="#chapter-${n}" data-go="chapter-${n}">${esc(isCh(CH[n-1])?num(CH[n-1])+'. '+CH[n-1].title:CH[n-1].title)}</a></li>`).join('');
+ return `<article class="sec pg-person" style="max-width:760px;margin:0 auto"><p class="lab">${esc(p.group)}</p><h2 class="big">${esc(p.name)}</h2>${p.dates?`<p class="lede">${esc(p.dates)}</p>`:''}
+ <div class="body">${p.story.map(x=>`<p>${esc(x)}</p>`).join('')}</div><h3>Family line</h3><div class="fam" style="border-top:0;margin-top:0">${fam}</div>${homes}${inb?`<h3>In the book</h3><ul class="inbook">${inb}</ul>`:''}
+ <p style="margin-top:30px"><button class="lnk" data-go="people">All the people in the book</button></p></article>`}
+function side(){let h='',g='';for(const p of PP){if(p.group!==g){g=p.group;h+=`<h4>${esc(g)}</h4>`}h+=`<a href="#person-${p.slug}" data-go="person-${p.slug}">${esc(p.name)}</a>`}$('#side').innerHTML='<h4>People in the book</h4>'+h}
+function places(){const q=a=>'https://earth.google.com/web/search/'+encodeURIComponent(a.replace(/ \(.*$/,'').replace(/^Royal Maternity Hospital, /,'').replace(/;.*$/,''));
+ return `<section class="sec"><h2 class="big">Places</h2><p class="lede">Addresses where the records place him. Each link opens the place from above in Google Earth.</p><ul class="tl">${C.places.map(r=>`<li><b>${esc(r[0])}</b><span><a href="${esc(q(r[1]))}" target="_blank" rel="noopener" style="color:#fff">${esc(r[1])}</a></span></li>`).join('')}</ul></section>`}
 function sources(){
  const notesCh=CH.find(c=>c.title==='Notes'),bibCh=CH.find(c=>c.title==='Bibliography');
  const scans=Object.values(S.scans).map(k=>{const r=C.records[k.record];return `<li><a href="${esc(k.page||k.file)}" target="_blank" rel="noopener">${esc(k.title)}</a><small>${r?esc(r.year+' · '+r.title+' · '+r.ref):''}${r&&r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</small></li>`}).join('');
@@ -225,16 +254,18 @@ function sources(){
  <h3>Census entries</h3><p class="intro">The census households from the row at Quothquan, written out.</p><ul class="dl">${(S.transcripts||[]).map(([f,t])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>
  <h3>All records</h3><p class="intro">Each entry from the Records section, with its scan where one is kept on this site.</p><ul class="dl">${recs}</ul>
  <h3>Source links</h3><p class="intro">Public pages for the sources named in the ${notesCh?`<button class="lnk" data-go="chapter-${notesCh.n}">Notes</button>`:'Notes'} and the ${bibCh?`<button class="lnk" data-go="chapter-${bibCh.n}">Bibliography</button>`:'Bibliography'}. Each link also appears beside the citations it supports.</p><ul class="dl">${src}</ul>
- <h3>The Zeppelin raid on Edinburgh, April 2–3, 1916</h3><p class="intro">Photographs of the damage, as published by <a href="https://www.bbc.com/news/uk-scotland-25978256" target="_blank" rel="noopener">BBC News</a>.</p><ul class="dl">${(S.raid||[]).map(([f,t])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>
+ <h3>The Zeppelin raid on Edinburgh, April 2–3, 1916</h3><p class="intro">Photographs of the damage, as published by <a href="https://www.bbc.com/news/uk-scotland-25978256" target="_blank" rel="noopener">BBC News</a>. For an account of the raid, see <a href="https://historynet.com/ww1-edinburgh-castle-zeppelin-attack/" target="_blank" rel="noopener">HistoryNet: When a WWI German Zeppelin Tried to Bomb Edinburgh Castle — and Missed</a> (Zita Ballinger Fletcher, September 16, 2022).</p><ul class="dl">${(S.raid||[]).map(([f,t])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('')}</ul>
  <h3>Records the book checked and ruled out</h3><p class="intro">Other people with the same names, checked and set aside.</p><ul class="dl">${(S.checked||[]).map(([f,t,n])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a><small>${esc(n)}</small></li>`).join('')}</ul>
  <h3>Other pictures kept with the book</h3><p class="intro">Photographs and art in the book's folder, as links only.</p><ul class="dl plain">${pics}</ul></section>`}
 function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
- if(m){html=chapter(+m[1]);jump.value=m[1]}
- else{jump.value='';html=({records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places:()=>list('Places','Addresses where the records place him.',C.places)}[h]||home)()}
+ const pm=h.match(/^person-(.+)$/);
+ if(m){html=chapter(+m[1]);jump.value=m[1]}else if(pm){jump.value='';html=person(pm[1])}
+ else{jump.value='';html=({records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places}[h]||home)()}
  CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html; const sub=!!h&&h!=='start'; $('#nv').hidden=!sub; document.body.classList.toggle('sub',sub);
  $('#view').querySelectorAll('a[target="_blank"]').forEach(a=>{if(a.host===location.host){a.removeAttribute('target');a.removeAttribute('rel')}});
  const hh=$('#view h2'); document.title=(CUR?CH[CUR-1].title+' · ':(hh&&h?hh.textContent+' · ':''))+'The Names He Carried';
- const cur=m?'contents':(h||'start');
+ const cur=m?'contents':(h.startsWith('person-')?'people':(h||'start'));
+ document.querySelectorAll('#side a').forEach(a=>a.setAttribute('aria-current',String(a.getAttribute('href')==='#'+h)));
  document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===cur)));
  let y=0; if(CUR){try{y=+localStorage.getItem('nhc-pos-'+CUR)||0}catch(e){}} scrollTo(0,y);
  const hd=document.querySelector('#view h2,#view h1'); if(hd){hd.setAttribute('tabindex','-1'); hd.focus({preventScroll:true})}}
@@ -245,7 +276,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!
 $('#nvb').onclick=()=>{if(history.length>1)history.back();else{history.pushState('',document.title,location.pathname);show()}};
 jump.onchange=()=>{if(jump.value)location.hash='chapter-'+jump.value};
 addEventListener('hashchange',show);addEventListener('popstate',show);
-Promise.all([fetch('book.json',{cache:'no-cache'}).then(r=>r.json()),fetch('companion.json',{cache:'no-cache'}).then(r=>r.json()),fetch('sources.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,s])=>{CH=d.chapters;C=c;if(s)S=s;index();if(!CH[last-1])last=0;
+Promise.all([fetch('book.json',{cache:'no-cache'}).then(r=>r.json()),fetch('companion.json',{cache:'no-cache'}).then(r=>r.json()),fetch('sources.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null),fetch('people.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).catch(()=>[])]).then(([d,c,s,pp])=>{CH=d.chapters;C=c;if(s)S=s;PP=pp;side();index();if(!CH[last-1])last=0;
  jump.innerHTML='<option value="">Go to chapter…</option>'+CH.map(c=>`<option value="${c.n}">${isCh(c)?num(c)+'. ':''}${esc(c.title)}</option>`).join('');show()})
  .catch(()=>{$('#view').innerHTML='<p style="margin:80px 0">The book could not be loaded. <button class="lnk" onclick="location.reload()">Try again</button></p>'});
 }
