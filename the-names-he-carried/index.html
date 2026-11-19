@@ -158,7 +158,7 @@ table.ap td:first-child{width:32%;color:var(--soft);font:500 14px/1.5 Inter,syst
 <a class="brand" href="#" data-go="start">The Names He Carried</a>
 <select class="jump" id="jump" aria-label="Go to chapter"></select>
 <nav class="tabs" aria-label="Sections">
-<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="questions">Open questions</button><button class="tab" data-go="sources">Sources and documents</button>
+<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="sources">Sources and documents</button>
 </nav></div></header>
 <main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
 <footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
@@ -183,7 +183,7 @@ function home(){return `<section class="hero"><p class="lab">A book by Doug Garc
 <button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
 <p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>${route()}
 <section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
-<ul class="rows">${[['records','Records',C.records.length+' register and census entries'],['timeline','Timeline','His life, date by date'],['places','Places','Every address on record'],['people','People','His family and the people of Quothquan'],['questions','Open questions','What the records have not yet answered'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
+<ul class="rows">${[['records','Records',C.records.length+' register and census entries'],['timeline','Timeline','His life, date by date'],['places','Places','Every address on record'],['people','People','His family and the people of Quothquan'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
 function contents(){let h='<section class="toc" id="toc"><h2 class="big">Contents</h2><p class="lede">'+CH.length+' parts of the book, in order.</p>',p=null;
  for(const c of CH){const pt=c.part||'';if(pt!==p){p=pt;h+=pt?`<div class="part"><span class="lab">${esc(pt)}</span></div>`:'<div class="part"></div>'}
   h+=`<button class="toc-row" data-go="chapter-${c.n}"><span class="n">${num(c)}</span><span class="t">${esc(c.title)}</span><span class="e">${esc(c.era)}</span></button>`}
@@ -210,7 +210,6 @@ function list(title,lede,rows){return `<section class="sec"><h2 class="big">${ti
 function people(){let h='<section class="sec ppl"><h2 class="big">People</h2><p class="lede">Drawn only from the records and the family\'s own memory.</p>',g='';
  for(const p of C.people){if(p.group!==g){g=p.group;h+=`<h3 class="g">${esc(g)}</h3>`}h+=`<div class="person"><b>${esc(p.name)}</b><span>${esc(p.dates)}</span><p>${esc(p.text)}</p></div>`}
  return h+'</section>'}
-function questions(){return `<section class="sec"><h2 class="big">Open questions</h2><p class="lede">What the records have not yet answered. If you know something, tell Doug.</p><ol class="qs">${C.questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ol></section>`}
 function sources(){
  const notesCh=CH.find(c=>c.title==='Notes'),bibCh=CH.find(c=>c.title==='Bibliography');
  const scans=Object.values(S.scans).map(k=>{const r=C.records[k.record];return `<li><a href="${esc(k.file)}" target="_blank" rel="noopener">${esc(k.title)}</a><small>${r?esc(r.year+' · '+r.title+' · '+r.ref):''}${r&&r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</small></li>`}).join('');
@@ -224,7 +223,7 @@ function sources(){
  <h3>Other pictures kept with the book</h3><p class="intro">Photographs and art in the book's folder, as links only.</p><ul class="dl plain">${pics}</ul></section>`}
 function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
  if(m){html=chapter(+m[1]);jump.value=m[1]}
- else{jump.value='';html=({records,people,questions,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places:()=>list('Places','Every address where the records place him.',C.places)}[h]||home)()}
+ else{jump.value='';html=({records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places:()=>list('Places','Every address where the records place him.',C.places)}[h]||home)()}
  $('#view').innerHTML=html;
  const cur=m?'contents':(h||'start');
  document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===cur)));
