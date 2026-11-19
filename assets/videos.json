@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-19T12:26Z",
+ "updated": "2026-11-19T16:22Z",
  "items": [
+  {
+   "id": "dkvLEmzvVY0",
+   "title": "GRETSCH CATALINA EVO - All Kits Sound Demo",
+   "source": "Gretsch",
+   "date": "2026-11-19",
+   "kind": "DEMO"
+  },
   {
    "id": "kiLjGSbcccc",
    "title": "Meinl Cymbals - Classics Custom Brilliant - Jeeves \"Deuce Deuce\" Demo",
@@ -86,13 +93,6 @@
    "kind": "INTERVIEW"
   },
   {
-   "id": "j7mqwWTq_dQ",
-   "title": "GRETSCH CATALINA EVO - All Kits Sound Demo",
-   "source": "Gretsch",
-   "date": "2026-10-22",
-   "kind": "DEMO"
-  },
-  {
    "id": "9wSS18huR7k",
    "title": "Sully Erna \"Live at Mohegan Sun\" and the History of \"Battle of the Drums\" - Modern Drummer Interview",
    "source": "Modern Drummer",
@@ -131,8 +131,10 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (3)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM skip UC05Om89MYM2dB5olPpuS_7A": "HENNATA",
-  "NAMM": "search UCYsJnWx75CYt8HACapN-hpA Namm (0)",
-  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
-  "Percussive Arts Society": "@PercussiveArtsSociety UCuYb7irDBJx-ep94c9b2qMw Percussive Arts Society (0)"
+  "NAMM": "search UCx-aX_SThYdePajxjTTpgKw NAMM - Topic (0)",
+  "NAMM skip UC9aMx0tacVOH6VrxyZrVzVQ": "Grupo Namm",
+  "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
+  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
+  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
  }
 }

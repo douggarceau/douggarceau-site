@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T12:26Z",
+ "updated": "2026-11-19T16:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -18,17 +18,17 @@
    "release": false
   },
   {
-   "title": "Suno adds \u2018Visuals\u2019 tool for making lyric videos and album art",
-   "link": "https://musically.com/2026/11/18/suno-adds-visuals-tool-for-making-lyric-videos-and-album-art/",
-   "source": "Music Ally",
+   "title": "Georgia Tech Launches HearMe, A Free AI Music App",
+   "link": "https://www.drummingnewsnetwork.com/georgia-tech-launches-hearme-a-free-ai-music-app/",
+   "source": "Drumming News Network",
    "date": "2026-11-18",
    "kind": "PRODUCT",
    "release": true
   },
   {
-   "title": "Georgia Tech Launches HearMe, A Free AI Music App",
-   "link": "https://www.drummingnewsnetwork.com/georgia-tech-launches-hearme-a-free-ai-music-app/",
-   "source": "Drumming News Network",
+   "title": "Suno Launches \u2018Visuals\u2019 for Music Video Creation, Potentially Drawing Major Hollywood Studio Litigation",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5qSFJFM3lrOUZxbm9sV0NBdUttNTRPRUQtQ2R4Nkk0NlZjSm1fdnlNQ3FHRXI4VFNQXy1nM09TSHdLeEwtb3JKU3FjMGV0aUVzSGFGRU9oSjFfSjk0cExjU1JtZWZQUzliYkFfNFdLdGJWQQ?oc=5",
+   "source": "Digital Music News",
    "date": "2026-11-18",
    "kind": "PRODUCT",
    "release": true
@@ -48,6 +48,14 @@
    "date": "2026-11-17",
    "kind": "PRODUCT",
    "release": true
+  },
+  {
+   "title": "Suno Bridge takes AI music to DAWs \u2013 starting with Ableton Live",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWS1rRkZxbWt0TjBzT3pKQkd3QV9ueUhiMFZ2WXZ5ZlN0RGxBejdlWmg1TWtMZWItWUFDZG1mVmd3Y25BcTdkeGdNYXNOYkJMTUJxby0xQ19nTmFsWDdZOEdPcDhVbnRIdmIyNGxOQlhtZXVvdGl4YTdHZE5EUl9nTF94VHQxdzEybUN2dnlhcU1naGF4OGI1cE5kWQ?oc=5",
+   "source": "Music Ally",
+   "date": "2026-11-16",
+   "kind": "PRODUCT",
+   "release": false
   },
   {
    "title": "Splice\u2019s new AI DAW feels like a cheat code for music production \u2013 but it left us with one big question",
@@ -82,6 +90,30 @@
    "release": true
   },
   {
+   "title": "Tim Minchin lights up ARIA awards with minute-long AI blast",
+   "link": "https://musically.com/2026/11/19/tim-minchin-lights-up-aria-awards-with-minute-long-ai-blast/",
+   "source": "Music Ally",
+   "date": "2026-11-19",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "UMG says 68% of listeners want a \u2018kill switch\u2019 for AI music",
+   "link": "https://musically.com/2026/11/19/umg-says-68-of-listeners-want-a-kill-switch-for-ai-music/",
+   "source": "Music Ally",
+   "date": "2026-11-19",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Australian music industry rejects \u2018divide and conquer\u2019 proposal to give musicians exemption from AI scraping",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQRDNMLUN5M3NYNnRvR0k0cVY2WGpVQWtuZm43NmlSU0tVYkxTLTU5QlVRSzJGYk1WWm1ZbHlvelh0UjZyZkZ2RUZTYkFaTFYyY0NrMmtYMnRiYjh4TlNKSV80Q3hhR2Q5LW5udkMyUDFfNHoxYzdTWlFnZFdiQTZ1eFhaYWVLU1ZFTkRfUWxDdTdGM3hySXhHUWZDNVVDdWZQRW1NMGJIa0Q3YURDU2JYWUVPaTk0NzNjdHhtZUx1ZTIxQlkzZXgyYWpUUFJ4OGEydUZr?oc=5",
+   "source": "The Guardian",
+   "date": "2026-11-19",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
    "title": "UMG and Sony withdraw DistroKid subpoena motion in Suno case after distributor produces AI-detection documents",
    "link": "https://www.musicbusinessworldwide.com/umg-and-sony-withdraw-distrokid-subpoena-motion-in-suno-case-after-distributor-produces-ai-detection-documents/",
    "source": "Music Business Worldwide",
@@ -98,16 +130,8 @@
    "release": false
   },
   {
-   "title": "SoundCloud cracks down on AI slop as Spotify expands Artist Profile Protection",
-   "link": "https://musically.com/2026/11/18/soundcloud-cracks-down-on-ai-slop-as-spotify-expands-artist-profile-protection/",
-   "source": "Music Ally",
-   "date": "2026-11-18",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "Suno now lets you make AI videos for your AI music",
-   "link": "https://www.theverge.com/ai-artificial-intelligence/1036415/suno-visuals-ai-generated-video-images-feature",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNRVh3djJ4NHdxd01DeUpybHdQejBaYUpoYzJ0UG5yOUVZbkVIdjk4N3oxNU84UUs4S2xyMURRamVYX2E4ek9NQXhSQU9nV1c4MmtSUTFkODRpVFU0RHZpWGlrZi1ZakY0R3dDYXA4aVRCN2VHQ2JPcnN1ZXNpTmN4QUVfNGJ6dzIyZGJzOTQzUlQxRi10ZWh3TVR0M0Z2dTJOLXNzWEp3M1lfUQ?oc=5",
    "source": "The Verge",
    "date": "2026-11-18",
    "kind": "NEWS",
@@ -138,36 +162,12 @@
    "release": false
   },
   {
-   "title": "Elton John backs Australian artists in fight against AI in surprise Aria awards appearance",
-   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQWEVuNDFLMlNUU1lfZk1lcUJOc3NFRklrdjhGdzNrYzA4c0FqNGNURkQ0aU10ZjhCRl9sY2JPQ2xtR09lalRXMUFnSW80VG1UenF2blBad090X3p1R3lfQzUwYUdkRHdaNzgyNVZjRTROa3hLUGttbF9LQUtHMDQ2SVNWMkd0eGhEN0F1ZUpQZXRibm5DRzJsVGpOdHBlbllRT2NrTDdyTXROSGFi?oc=5",
-   "source": "The Guardian",
-   "date": "2026-11-18",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "A.I.Radio includes \u2018a DJ you can talk to and request songs from\u2019",
-   "link": "https://musically.com/2026/11/17/a-i-radio-includes-a-dj-you-can-talk-to-and-request-songs-from/",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
    "title": "How Each Music Listening Platform Is Treating AI Music (Updating)",
    "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWXUxNTdjLXNjWkstaDZLVzBWQjhLYk9OYkxUS3F3NWRzbEZFWkRwbEY3WmJwS2xfeEtWS3VxbGlydzZCc1Z0UXdXX0xXd3R3YlFIVWp4VUE1WC1aYkp4X0tzb0thU0ZKdnVqc3k5aG0tbk55QnpBMW94bHF3V3hXVjctdW0zRldCdGc?oc=5",
    "source": "Billboard",
    "date": "2026-11-17",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Suno launches AI music video tool built on model from MiniMax \u2013 the Chinese AI firm being sued by Disney and other Hollywood studios",
-   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOUlZDVGtRcmIxb0c5b0llVEFVUFB2ajVnVmowTjNuMGF2WWlkUXdKdTA3TUlpNldvTzEtVUt3YUY3RUFLRDl2RHJmSk96V3hCZkRBX2QyR2dVcGlsT1UzTHRIX2E5RGJSdmh2b2EtYl9kdktqeDU2clluUFAxbzhZVFFqNWRnekY1ZUx2YXJiNklNWkctNVRsTHllMnNJdWUzbEZkSGRWNmg2d2FPNm5sN1JUbWZSNkJPaHV4WkhBQUgyVzdIRzhPNlZJeDlMbzc4RGN3aGd1VmJRXzNaTkRneGVRT1NWVWYzTzNsRlN3d29aRkJuQi1sMTFpT2NZMXM?oc=5",
-   "source": "Music Business Worldwide",
-   "date": "2026-11-17",
-   "kind": "PROBLEM",
-   "release": true
   },
   {
    "title": "SoundCloud CEO Talks AI Policies: \u2018Wishing Away the Advent of AI Music Is Not a Strategy\u2019",
@@ -180,7 +180,7 @@
   {
    "title": "AI Music Generator Suno to Let Users Create Music Videos",
    "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdnpHaGdtSS1QSnNMekFIc3daQzJ5UTljaWZiazhKS2h4WlRnXzM0ck5aM1hWUm9RZERtSlhIbENRV1hvS0Rub3ZMX3RoNXJwVDZ5cUpIS19jNG83T3ZyQWNobW5ELUpFcTNDMHJORjNUZVZfekx4dHAwWUN4WFhZQW12LTFpdGlsR2JsRE9UVGJieVlRVVFacWd6ZVhlcE5FbGJrUWJnOGVmZms?oc=5",
-   "source": "Bloomberg",
+   "source": "Bloomberg.com",
    "date": "2026-11-17",
    "kind": "NEWS",
    "release": false
@@ -196,17 +196,17 @@
  ],
  "releases": [
   {
-   "title": "Suno adds \u2018Visuals\u2019 tool for making lyric videos and album art",
-   "link": "https://musically.com/2026/11/18/suno-adds-visuals-tool-for-making-lyric-videos-and-album-art/",
-   "source": "Music Ally",
+   "title": "Georgia Tech Launches HearMe, A Free AI Music App",
+   "link": "https://www.drummingnewsnetwork.com/georgia-tech-launches-hearme-a-free-ai-music-app/",
+   "source": "Drumming News Network",
    "date": "2026-11-18",
    "kind": "PRODUCT",
    "release": true
   },
   {
-   "title": "Georgia Tech Launches HearMe, A Free AI Music App",
-   "link": "https://www.drummingnewsnetwork.com/georgia-tech-launches-hearme-a-free-ai-music-app/",
-   "source": "Drumming News Network",
+   "title": "Suno Launches \u2018Visuals\u2019 for Music Video Creation, Potentially Drawing Major Hollywood Studio Litigation",
+   "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5qSFJFM3lrOUZxbm9sV0NBdUttNTRPRUQtQ2R4Nkk0NlZjSm1fdnlNQ3FHRXI4VFNQXy1nM09TSHdLeEwtb3JKU3FjMGV0aUVzSGFGRU9oSjFfSjk0cExjU1JtZWZQUzliYkFfNFdLdGJWQQ?oc=5",
+   "source": "Digital Music News",
    "date": "2026-11-18",
    "kind": "PRODUCT",
    "release": true
@@ -266,23 +266,23 @@
   "Digital Music News www.digitalmusicnews.com/feed/": "error: HTTP Error 520: <none>",
   "CDM cdm.link": 1,
   "Gearnews www.gearnews.com": 0,
-  "MusicTech musictech.com": 1,
+  "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 0,
-  "Music Ally musically.com": 3,
+  "Music Ally musically.com": 2,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 1,
-  "The Verge www.theverge.com": 1,
+  "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 34,
-  "Google News Suno+OR+Udio": 22,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
-  "Google News %22AI%22+music+producer+plugin": 2,
+  "Google News Suno+OR+Udio": 23,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 18,
+  "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 2,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
