@@ -344,7 +344,8 @@
     0
    ],
    "record": 5,
-   "title": "Birth register entry of Lawrence Brown, St Giles, Edinburgh, 1907 (685/04 0839)"
+   "title": "Birth register entry of Lawrence Brown, St Giles, Edinburgh, 1907 (685/04 0839)",
+   "page": "docs/lawrence-brown-birth-1907.html"
   },
   "agnesb": {
    "file": "img/agnes-birth-register-1885.jpg",
@@ -355,7 +356,8 @@
     0
    ],
    "record": 2,
-   "title": "Birth register entry of Agnes McGarth Brown, Peebles, 1885 (768/00 0149)"
+   "title": "Birth register entry of Agnes McGarth Brown, Peebles, 1885 (768/00 0149)",
+   "page": "docs/agnes-brown-birth-1885.html"
   },
   "agnesm": {
    "file": "img/agnes-marriage-register-1911.jpg",
@@ -368,7 +370,8 @@
     0
    ],
    "record": 8,
-   "title": "Marriage register entry of Thomas McKay McKenzie and Agnes McGarth Brown, St Giles, Edinburgh, 1911 (685/04 0616)"
+   "title": "Marriage register entry of Thomas McKay McKenzie and Agnes McGarth Brown, St Giles, Edinburgh, 1911 (685/04 0616)",
+   "page": "docs/mckenzie-brown-marriage-1911.html"
   },
   "robertb": {
    "file": "img/robert-douglas-birth-register-1876.jpg",
@@ -377,7 +380,8 @@
    ],
    "record": 0,
    "title": "Birth register entry of Robert Douglas, St George, Edinburgh, 1876 (685/1 845)",
-   "bib": []
+   "bib": [],
+   "page": "docs/robert-douglas-birth-1876.html"
   },
   "donaldb": {
    "file": "img/donald-douglas-birth-register-1880.jpg",
@@ -386,7 +390,8 @@
    ],
    "record": 1,
    "title": "Birth register entry of Donald Douglas, Cargill, 1880 (338/18)",
-   "bib": []
+   "bib": [],
+   "page": "docs/donald-douglas-birth-1880.html"
   },
   "marr1899": {
    "file": "img/robert-douglas-elizabeth-mcdonald-marriage-register-1899.jpg",
@@ -395,7 +400,8 @@
    ],
    "record": 3,
    "title": "Marriage register entry of Robert Douglas and Elizabeth Millar McDonald, St Giles, Edinburgh, 1899 (685/4 213)",
-   "bib": []
+   "bib": [],
+   "page": "docs/douglas-mcdonald-marriage-1899.html"
   },
   "parkerm": {
    "file": "img/james-lawson-parker-marriage-register-1903.jpg",
@@ -404,7 +410,8 @@
    ],
    "record": 4,
    "title": "Marriage register entry of James Lawson Parker and Janet Crawford Stewart, Carluke, 1903 (629/54)",
-   "bib": []
+   "bib": [],
+   "page": "docs/parker-stewart-marriage-1903.html"
   },
   "parkerc": {
    "file": "img/census-1911-shieldhill-mains-libberton.jpg",
@@ -414,7 +421,8 @@
    ],
    "record": 7,
    "title": "1911 census page, Libberton, with James Parker at 3 Shieldhill Mains and Gean Tree Cottage (650/3 ED 3 p. 2)",
-   "bib": []
+   "bib": [],
+   "page": "docs/census-1911-shieldhill-mains.html"
   },
   "robertd": {
    "file": "img/robert-douglas-death-register-1919.jpg",
@@ -423,7 +431,8 @@
    ],
    "record": 9,
    "title": "Death register entry of Robert Douglas, Morningside, Edinburgh, 1919 (685/6 1161)",
-   "bib": []
+   "bib": [],
+   "page": "docs/robert-douglas-death-1919.html"
   },
   "helenm": {
    "file": "img/helen-harrison-george-pirrie-marriage-register-1950.jpg",
@@ -433,7 +442,8 @@
    ],
    "record": 11,
    "title": "Marriage register entry of George Lees Pirrie and Helen Ena Harrison, Ayr, 1950 (578/1 270)",
-   "bib": []
+   "bib": [],
+   "page": "docs/pirrie-harrison-marriage-1950.html"
   }
  },
  "pictures": [
@@ -532,27 +542,27 @@
  ],
  "checked": [
   [
-   "img/census-1911-donald-douglas-aberfeldy.jpg",
+   "docs/census-1911-donald-douglas-aberfeldy.html",
    "1911 census, Aberfeldy: Donald Douglas, house joiner, born Blair Atholl (324/3 ED 15)",
    "Checked and ruled out as the Shieldhill joiner (Chapter 12 notes)."
   ],
   [
-   "img/john-parker-death-register-1902.jpg",
+   "docs/john-parker-death-1902.html",
    "Death register, Dunfermline, 1902: indexed as James Parker, the entry is John Parker, coal miner (424/435)",
    "Checked and ruled out as James Lawson Parker (Chapter 11 notes)."
   ],
   [
-   "img/census-1911-agnes-brown-dunfermline.jpg",
+   "docs/census-1911-agnes-brown-dunfermline.html",
    "1911 census, Dunfermline: Agnes Brown, wife of David D. Brown (424/30 p. 15)",
    "Searched for Agnes in 1911; not her."
   ],
   [
-   "img/census-1911-agnes-o-brown-morningside.jpg",
+   "docs/census-1911-agnes-o-brown-morningside.html",
    "1911 census, Morningside, Edinburgh: Agnes O. Brown, sister of Alexander Brown (685/6 58 p. 2)",
    "Searched for Agnes in 1911; not her."
   ],
   [
-   "img/census-1911-agnes-brown-gorgie.jpg",
+   "docs/census-1911-agnes-brown-gorgie.html",
    "1911 census, Gorgie, Edinburgh: Agnes Brown, wife of Robert Brown (685/6 92 p. 7)",
    "Searched for Agnes in 1911; not her."
   ]
