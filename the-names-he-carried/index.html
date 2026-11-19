@@ -204,7 +204,7 @@ html.red .opener::after{content:"";display:block;width:60px;height:3px;backgroun
 <a class="brand" href="#" data-go="start">The Names He Carried</a>
 <select class="jump" id="jump" aria-label="Go to chapter"></select>
 <nav class="tabs" aria-label="Sections">
-<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="person-shieldhill">Shieldhill Estate</button><button class="tab" data-go="sources">Sources and documents</button><button class="tab" id="tab-listen" data-go="listen" hidden>Listen to the audiobook</button>
+<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="tree">Family tree</button><button class="tab" data-go="person-shieldhill">Shieldhill Estate</button><button class="tab" data-go="sources">Sources and documents</button><button class="tab" id="tab-listen" data-go="listen" hidden>Listen to the audiobook</button>
 </nav></div></header>
 <nav class="nv" id="nv" hidden><button type="button" id="nvb">← Back</button><button type="button" data-go="start">Home</button></nav><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
 <footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
@@ -299,10 +299,11 @@ document.addEventListener('click',e=>{const p=e.target.closest('[data-play]'),al
 document.addEventListener('timeupdate',e=>{if(e.target.id==='aud'&&AQ[AI]){try{localStorage.setItem('nhc-a-'+AQ[AI].file,Math.floor(e.target.currentTime))}catch(_){}}},true);
 document.addEventListener('ended',e=>{if(e.target.id==='aud'&&AQ[AI]){try{localStorage.removeItem('nhc-a-'+AQ[AI].file)}catch(_){}if(AI+1<AQ.length)aplay(AQ,AI+1)}},true);
 let AP={items:[]};
+function tree(){return `<section class="sec"><h2 class="big">Family tree</h2><p class="lede">Everyone in his story and how they connect. Tap a name to open that person's page. On a phone, scroll sideways, or open the tree full size.</p><p><a class="lnk" href="img/family-tree.svg" target="_blank" rel="noopener">Open the tree full size</a></p><div style="overflow-x:auto;border:1px solid #333"><object data="img/family-tree.svg" type="image/svg+xml" style="display:block;width:2417px;max-width:none;height:auto" aria-label="Family tree"></object></div></section>`}
 function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
  const pm=h.match(/^person-(.+)$/);
  if(m){html=chapter(+m[1]);jump.value=m[1]}else if(pm){jump.value='';html=person(pm[1])}
- else{jump.value='';html=({listen,records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places}[h]||home)()}
+ else{jump.value='';html=({tree,listen,records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places}[h]||home)()}
  CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html; const sub=!!h&&h!=='start'; $('#nv').hidden=!sub; document.body.classList.toggle('sub',sub);
  $('#view').querySelectorAll('a[target="_blank"]').forEach(a=>{if(a.host===location.host){a.removeAttribute('target');a.removeAttribute('rel')}});
  const hh=$('#view h2'); document.title=(CUR?CH[CUR-1].title+' · ':(hh&&h?hh.textContent+' · ':''))+'The Names He Carried';
