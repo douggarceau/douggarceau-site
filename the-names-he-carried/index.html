@@ -204,7 +204,7 @@ html.red .opener::after{content:"";display:block;width:60px;height:3px;backgroun
 <a class="brand" href="#" data-go="start">The Names He Carried</a>
 <select class="jump" id="jump" aria-label="Go to chapter"></select>
 <nav class="tabs" aria-label="Sections">
-<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="sources">Sources and documents</button><button class="tab" id="tab-listen" data-go="listen" hidden>Listen to the audiobook</button>
+<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="person-shieldhill">Shieldhill Estate</button><button class="tab" data-go="sources">Sources and documents</button><button class="tab" id="tab-listen" data-go="listen" hidden>Listen to the audiobook</button>
 </nav></div></header>
 <nav class="nv" id="nv" hidden><button type="button" id="nvb">← Back</button><button type="button" data-go="start">Home</button></nav><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
 <footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
@@ -266,7 +266,7 @@ function person(slug){const p=PP.find(x=>x.slug===slug);if(!p)return people();
  return `<article class="sec pg-person" style="max-width:760px;margin:0 auto"><p class="lab">${esc(p.group)}</p><h2 class="big">${esc(p.name)}</h2>${p.dates?`<p class="lede">${esc(p.dates)}</p>`:''}
  <div class="body">${p.story.map(x=>`<p>${esc(x)}</p>`).join('')}</div><h3>Family line</h3><div class="fam" style="border-top:0;margin-top:0">${fam}</div>${homes}${(p.links||[]).length?`<h3>Read more</h3><ul class="homes">${p.links.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a></li>`).join('')}</ul>`:''}${inb?`<h3>In the book</h3><ul class="inbook">${inb}</ul>`:''}
  <p style="margin-top:30px"><button class="lnk" data-go="people">All the people in the book</button></p></article>`}
-function side(){let h='',g='';for(const p of PP){if(p.group!==g){g=p.group;h+=`<h4>${esc(g)}</h4>`}h+=`<a href="#person-${p.slug}" data-go="person-${p.slug}">${esc(p.name)}</a>`}$('#side').innerHTML='<h4>People in the book</h4>'+h}
+function side(){let h='',g='';for(const p of PP){if(p.group!==g){g=p.group;h+=`<h4>${esc(g)}</h4>`}h+=`<a href="#person-${p.slug}" data-go="person-${p.slug}">${esc(p.name)}</a>`}$('#side').innerHTML='<h4>The estate</h4><a href="#person-shieldhill" data-go="person-shieldhill">Shieldhill Estate and House</a><h4>People in the book</h4>'+h.replace(/<a href="#person-shieldhill"[^>]*>[^<]*<\/a>/,'')}
 function places(){const q=a=>'https://earth.google.com/web/search/'+encodeURIComponent(a.replace(/ \(.*$/,'').replace(/^Royal Maternity Hospital, /,'').replace(/;.*$/,''));
  return `<section class="sec"><h2 class="big">Places</h2><p class="lede">Addresses where the records place him. Each link opens the place from above in Google Earth.</p><ul class="tl">${C.places.map(r=>`<li><b>${esc(r[0])}</b><span><a href="${esc(q(r[1]))}" target="_blank" rel="noopener" style="color:#fff">${esc(r[1])}</a></span></li>`).join('')}</ul></section>`}
 function sources(){
@@ -306,7 +306,7 @@ function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapte
  CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html; const sub=!!h&&h!=='start'; $('#nv').hidden=!sub; document.body.classList.toggle('sub',sub);
  $('#view').querySelectorAll('a[target="_blank"]').forEach(a=>{if(a.host===location.host){a.removeAttribute('target');a.removeAttribute('rel')}});
  const hh=$('#view h2'); document.title=(CUR?CH[CUR-1].title+' · ':(hh&&h?hh.textContent+' · ':''))+'The Names He Carried';
- const cur=m?'contents':(h.startsWith('person-')?'people':(h||'start'));
+ const cur=m?'contents':(h==='person-shieldhill'?'person-shieldhill':(h.startsWith('person-')?'people':(h||'start')));
  document.querySelectorAll('#side a').forEach(a=>a.setAttribute('aria-current',String(a.getAttribute('href')==='#'+h)));
  document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===cur)));
  let y=0; if(CUR){try{y=+localStorage.getItem('nhc-pos-'+CUR)||0}catch(e){}} scrollTo(0,y);
