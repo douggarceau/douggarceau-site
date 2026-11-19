@@ -15,16 +15,16 @@
    "url": "https://www.scotlandspeople.gov.uk/guides/record-guides/statutory-register-births",
    "notes": [
     6,
-    16,
+    15,
+    17,
     18,
-    19,
-    44,
-    71,
-    78,
-    83,
+    41,
+    67,
+    72,
+    77,
+    106,
     112,
-    119,
-    127
+    120
    ],
    "bib": []
   },
@@ -33,12 +33,12 @@
    "title": "ScotlandsPeople: Statutory register of marriages",
    "url": "https://www.scotlandspeople.gov.uk/help-and-support/guides/statutory-register-marriages",
    "notes": [
-    43,
-    45,
-    103,
-    126,
-    337,
-    340
+    40,
+    42,
+    97,
+    119,
+    307,
+    310
    ],
    "bib": []
   },
@@ -48,9 +48,9 @@
    "url": "https://www.scotlandspeople.gov.uk/help-and-support/guides/statutory-register-deaths",
    "notes": [
     8,
-    20,
-    147,
-    336
+    19,
+    137,
+    306
    ],
    "bib": []
   },
@@ -62,26 +62,26 @@
     9,
     10,
     11,
-    17,
-    24,
-    25,
-    33,
-    35,
-    41,
-    42,
+    16,
+    22,
+    23,
+    30,
+    32,
+    38,
+    39,
+    40,
     43,
-    46,
-    80,
-    84,
-    87,
-    96,
-    97,
-    98,
-    99,
-    102,
-    114,
-    119,
-    167
+    74,
+    78,
+    81,
+    89,
+    90,
+    91,
+    92,
+    95,
+    108,
+    112,
+    156
    ],
    "bib": [
     1
@@ -101,8 +101,8 @@
    "title": "National Records of Scotland: Zeppelin Air Raid on Edinburgh 1916",
    "url": "https://nrscotland.gov.uk/research/learning/first-world-war/zeppelin-air-raid-on-edinburgh-1916",
    "notes": [
-    153,
-    155
+    142,
+    144
    ],
    "bib": [
     30
@@ -113,11 +113,11 @@
    "title": "Ian Castle: 2/3 April 1916 (Zeppelins, Gothas & Giants)",
    "url": "https://iancastlezeppelin.co.uk/2-/-3-apr-1916",
    "notes": [
-    153,
-    154,
-    155,
-    156,
-    164
+    142,
+    143,
+    144,
+    145,
+    153
    ],
    "bib": []
   },
@@ -126,11 +126,11 @@
    "title": "The Edinburgh Reporter: The Zeppelin raid on Edinburgh in 1916 (October 9, 2022)",
    "url": "https://theedinburghreporter.co.uk/2022/10/the-zeppelin-raid-on-edinburgh-in-1916/",
    "notes": [
-    152,
-    153,
-    155,
-    156,
-    164
+    141,
+    142,
+    144,
+    145,
+    153
    ],
    "bib": []
   },
@@ -139,8 +139,8 @@
    "title": "WarHistory.org: The First German Raids on Britain, The Zeppelin Offensive, 1914–16 Part II",
    "url": "https://warhistory.org/article/the-first-german-raids-on-britain-the-zeppelin-offensive-1914-16-part-ii",
    "notes": [
-    153,
-    161
+    142,
+    150
    ],
    "bib": []
   },
@@ -150,9 +150,9 @@
    "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
    "notes": [
     0,
-    186,
-    210,
-    262
+    175,
+    198,
+    245
    ],
    "bib": [
     25
@@ -163,8 +163,8 @@
    "title": "National Weather Service, Boston: The Great New England Hurricane of 1938",
    "url": "https://www.weather.gov/box/1938hurricane",
    "notes": [
-    245,
-    247
+    232,
+    234
    ],
    "bib": [
     32
@@ -175,8 +175,8 @@
    "title": "PBS American Experience: The Hurricane of '38",
    "url": "https://www.pbs.org/wgbh/americanexperience/films/hurricane/",
    "notes": [
-    244,
-    246
+    231,
+    233
    ],
    "bib": [
     27
@@ -187,8 +187,8 @@
    "title": "American Heritage: Joe McCarthy, “The '38 Hurricane,” August 1969",
    "url": "https://www.americanheritage.com/38-hurricane",
    "notes": [
-    245,
-    254
+    232,
+    237
    ],
    "bib": [
     28
@@ -199,7 +199,7 @@
    "title": "HISTORY: The Great New England Hurricane, September 21, 1938",
    "url": "https://www.history.com/this-day-in-history/september-21/the-great-new-england-hurricane",
    "notes": [
-    245
+    232
    ],
    "bib": []
   },
@@ -208,9 +208,8 @@
    "title": "The London Gazette, July 26, 1907, issue 28044, p. 5118 (knighthoods, Buckingham Palace)",
    "url": "https://thegazette.co.uk/London/issue/28044/page/5118/data.pdf",
    "notes": [
-    91,
-    109,
-    113
+    103,
+    107
    ],
    "bib": []
   },
@@ -219,7 +218,7 @@
    "title": "The London Gazette, supplement of October 19, 1914, issue 28942 (p. 8354)",
    "url": "https://www.thegazette.co.uk/London/issue/28942/data.pdf",
    "notes": [
-    199
+    187
    ],
    "bib": [
     5
@@ -230,7 +229,7 @@
    "title": "Wikipedia: Nathaniel Dunlop",
    "url": "https://en.wikipedia.org/wiki/Nathaniel_Dunlop",
    "notes": [
-    109
+    103
    ],
    "bib": []
   },
@@ -239,7 +238,7 @@
    "title": "Historic Environment Scotland: listing LB44033, 79 Lauriston Place",
    "url": "https://portal.historicenvironment.scot/designation/LB44033",
    "notes": [
-    66
+    62
    ],
    "bib": []
   },
@@ -248,7 +247,7 @@
    "title": "Historic Environment Scotland: listing LB27718, Mackinnon House (formerly West House)",
    "url": "https://portal.historicenvironment.scot/designation/LB27718",
    "notes": [
-    121
+    114
    ],
    "bib": []
   },
@@ -257,7 +256,7 @@
    "title": "British Listed Buildings: Shieldhill (Historic Environment Scotland LB7377)",
    "url": "https://britishlistedbuildings.co.uk/200339237",
    "notes": [
-    29
+    26
    ],
    "bib": []
   },
@@ -266,7 +265,7 @@
    "title": "British Listed Buildings: Quothquhan, Shieldhill Hall (Historic Environment Scotland LB12995)",
    "url": "https://britishlistedbuildings.co.uk/200345967-shieldhill-hall-quothquhan-libberton",
    "notes": [
-    32
+    29
    ],
    "bib": []
   },
@@ -275,53 +274,20 @@
    "title": "Encyclopedia of Chicago: North Lawndale",
    "url": "https://encyclopedia.chicagohistory.org/pages/901.html",
    "notes": [
-    192,
-    218,
-    219
-   ],
-   "bib": [
-    36
-   ]
-  },
-  {
-   "id": "usccr",
-   "title": "U.S. Commission on Civil Rights: School Desegregation in Providence, Rhode Island (October 1977)",
-   "url": "https://www.usccr.gov/files/historical/1977/77-024-U.pdf",
-   "notes": [
-    331
-   ],
-   "bib": [
-    33
-   ]
-  },
-  {
-   "id": "rihs",
-   "title": "Rhode Island Historical Society, EnCompass: African American Civil Rights in Rhode Island",
-   "url": "https://encompass.rihs.org/african-american-civil-rights-in-rhode-island/african-american-civil-rights-in-rhode-island/",
-   "notes": [
-    330,
-    331
+    181,
+    206,
+    207
    ],
    "bib": [
     34
    ]
   },
   {
-   "id": "ssbh",
-   "title": "Small State Big History: George T. Downing, Rhode Island's Most Prominent African American Leader",
-   "url": "https://smallstatebighistory.com/george-t-downing-rhode-islands-most-prominent-african-american-leader/",
-   "notes": [
-    330
-   ],
-   "bib": []
-  },
-  {
    "id": "sfmuseum",
    "title": "Museum of the City of San Francisco: 1940–41 San Francisco War Chronology",
    "url": "https://sfmuseum.org/war/40-41.html",
    "notes": [
-    281,
-    283
+    263
    ],
    "bib": []
   }
@@ -331,14 +297,14 @@
    "file": "img/laurence-birth-register-1907.jpg",
    "notes": [
     6,
-    37,
+    34,
+    51,
     54,
-    57,
-    71,
-    78,
-    83,
-    111,
-    112
+    67,
+    72,
+    77,
+    105,
+    106
    ],
    "bib": [
     0
@@ -350,7 +316,7 @@
   "agnesb": {
    "file": "img/agnes-birth-register-1885.jpg",
    "notes": [
-    19
+    18
    ],
    "bib": [
     0
@@ -362,9 +328,9 @@
   "agnesm": {
    "file": "img/agnes-marriage-register-1911.jpg",
    "notes": [
-    124,
-    126,
-    340
+    117,
+    119,
+    310
    ],
    "bib": [
     0
@@ -376,7 +342,7 @@
   "robertb": {
    "file": "img/robert-douglas-birth-register-1876.jpg",
    "notes": [
-    44
+    41
    ],
    "record": 0,
    "title": "Birth register entry of Robert Douglas, St George, Edinburgh, 1876 (685/1 845)",
@@ -386,7 +352,7 @@
   "donaldb": {
    "file": "img/donald-douglas-birth-register-1880.jpg",
    "notes": [
-    119
+    112
    ],
    "record": 1,
    "title": "Birth register entry of Donald Douglas, Cargill, 1880 (338/18)",
@@ -396,7 +362,7 @@
   "marr1899": {
    "file": "img/robert-douglas-elizabeth-mcdonald-marriage-register-1899.jpg",
    "notes": [
-    43
+    40
    ],
    "record": 3,
    "title": "Marriage register entry of Robert Douglas and Elizabeth Millar McDonald, St Giles, Edinburgh, 1899 (685/4 213)",
@@ -406,7 +372,7 @@
   "parkerm": {
    "file": "img/james-lawson-parker-marriage-register-1903.jpg",
    "notes": [
-    103
+    97
    ],
    "record": 4,
    "title": "Marriage register entry of James Lawson Parker and Janet Crawford Stewart, Carluke, 1903 (629/54)",
@@ -416,8 +382,8 @@
   "parkerc": {
    "file": "img/census-1911-shieldhill-mains-libberton.jpg",
    "notes": [
-    36,
-    102
+    33,
+    95
    ],
    "record": 7,
    "title": "1911 census page, Libberton, with James Parker at 3 Shieldhill Mains and Gean Tree Cottage (650/3 ED 3 p. 2)",
@@ -427,7 +393,7 @@
   "robertd": {
    "file": "img/robert-douglas-death-register-1919.jpg",
    "notes": [
-    147
+    137
    ],
    "record": 9,
    "title": "Death register entry of Robert Douglas, Morningside, Edinburgh, 1919 (685/6 1161)",
@@ -437,8 +403,8 @@
   "helenm": {
    "file": "img/helen-harrison-george-pirrie-marriage-register-1950.jpg",
    "notes": [
-    267,
-    337
+    250,
+    307
    ],
    "record": 11,
    "title": "Marriage register entry of George Lees Pirrie and Helen Ena Harrison, Ayr, 1950 (578/1 270)",
@@ -451,7 +417,7 @@
    "record": 6,
    "title": "1911 census, 16 Lochrin Place, Edinburgh: Laurence B. Douglas, 3 (685/4 69/11)",
    "notes": [
-    114
+    108
    ],
    "bib": []
   },
@@ -461,7 +427,7 @@
    "record": 10,
    "title": "1921 census, 5 Foundry Street, Dunfermline: Lawrence Douglas, 14 (424/1 12)",
    "notes": [
-    167
+    156
    ],
    "bib": []
   },
@@ -470,7 +436,7 @@
    "page": "docs/dunlop-will-1920.html",
    "title": "Will of Sir Nathaniel Dunlop of Shieldhill, recorded 1920 (SC38/44/3)",
    "notes": [
-    110
+    104
    ],
    "bib": []
   }
