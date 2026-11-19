@@ -1,0 +1,504 @@
+{
+ "sources": [
+  {
+   "id": "sp-stat",
+   "title": "ScotlandsPeople: Statutory registers of births, marriages and deaths",
+   "url": "https://www.scotlandspeople.gov.uk/guides/statutory-registers",
+   "notes": [],
+   "bib": [
+    0
+   ]
+  },
+  {
+   "id": "sp-births",
+   "title": "ScotlandsPeople: Statutory register of births",
+   "url": "https://www.scotlandspeople.gov.uk/guides/record-guides/statutory-register-births",
+   "notes": [
+    6,
+    16,
+    18,
+    19,
+    44,
+    71,
+    78,
+    83,
+    112,
+    119,
+    127
+   ],
+   "bib": []
+  },
+  {
+   "id": "sp-marr",
+   "title": "ScotlandsPeople: Statutory register of marriages",
+   "url": "https://www.scotlandspeople.gov.uk/help-and-support/guides/statutory-register-marriages",
+   "notes": [
+    43,
+    45,
+    103,
+    126,
+    338,
+    341
+   ],
+   "bib": []
+  },
+  {
+   "id": "sp-deaths",
+   "title": "ScotlandsPeople: Statutory register of deaths",
+   "url": "https://www.scotlandspeople.gov.uk/help-and-support/guides/statutory-register-deaths",
+   "notes": [
+    8,
+    20,
+    147,
+    337
+   ],
+   "bib": []
+  },
+  {
+   "id": "sp-census",
+   "title": "ScotlandsPeople: Family history guide (census returns 1841–1921)",
+   "url": "https://www.scotlandspeople.gov.uk/guides/how-to-research/family-history",
+   "notes": [
+    9,
+    10,
+    11,
+    17,
+    24,
+    25,
+    33,
+    35,
+    41,
+    42,
+    43,
+    46,
+    80,
+    84,
+    87,
+    96,
+    97,
+    98,
+    99,
+    102,
+    114,
+    119,
+    167
+   ],
+   "bib": [
+    1
+   ]
+  },
+  {
+   "id": "nrs-stat",
+   "title": "National Records of Scotland: Statutory Registers of Births, Deaths and Marriages",
+   "url": "https://nrscotland.gov.uk/research/guides/birth-death-and-marriage-records/statutory-registers-of-births-deaths-and-marriages",
+   "notes": [],
+   "bib": [
+    0
+   ]
+  },
+  {
+   "id": "nrs-zep",
+   "title": "National Records of Scotland: Zeppelin Air Raid on Edinburgh 1916",
+   "url": "https://nrscotland.gov.uk/research/learning/first-world-war/zeppelin-air-raid-on-edinburgh-1916",
+   "notes": [
+    153,
+    155
+   ],
+   "bib": [
+    30
+   ]
+  },
+  {
+   "id": "castle",
+   "title": "Ian Castle: 2/3 April 1916 (Zeppelins, Gothas & Giants)",
+   "url": "https://iancastlezeppelin.co.uk/2-/-3-apr-1916",
+   "notes": [
+    153,
+    154,
+    155,
+    156,
+    164
+   ],
+   "bib": []
+  },
+  {
+   "id": "edrep",
+   "title": "The Edinburgh Reporter: The Zeppelin raid on Edinburgh in 1916 (October 9, 2022)",
+   "url": "https://theedinburghreporter.co.uk/2022/10/the-zeppelin-raid-on-edinburgh-in-1916/",
+   "notes": [
+    152,
+    153,
+    155,
+    156,
+    164
+   ],
+   "bib": []
+  },
+  {
+   "id": "warhist",
+   "title": "WarHistory.org: The First German Raids on Britain, The Zeppelin Offensive, 1914–16 Part II",
+   "url": "https://warhistory.org/article/the-first-german-raids-on-britain-the-zeppelin-offensive-1914-16-part-ii",
+   "notes": [
+    153,
+    161
+   ],
+   "bib": []
+  },
+  {
+   "id": "noaa",
+   "title": "NOAA NCEI: Global Historical Climatology Network – Daily (GHCN-Daily)",
+   "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
+   "notes": [
+    0,
+    186,
+    211,
+    263
+   ],
+   "bib": [
+    25
+   ]
+  },
+  {
+   "id": "nws",
+   "title": "National Weather Service, Boston: The Great New England Hurricane of 1938",
+   "url": "https://www.weather.gov/box/1938hurricane",
+   "notes": [
+    246,
+    248
+   ],
+   "bib": [
+    32
+   ]
+  },
+  {
+   "id": "pbs",
+   "title": "PBS American Experience: The Hurricane of '38",
+   "url": "https://www.pbs.org/wgbh/americanexperience/films/hurricane/",
+   "notes": [
+    245,
+    247
+   ],
+   "bib": [
+    27
+   ]
+  },
+  {
+   "id": "amher",
+   "title": "American Heritage: Joe McCarthy, “The '38 Hurricane,” August 1969",
+   "url": "https://www.americanheritage.com/38-hurricane",
+   "notes": [
+    246,
+    255
+   ],
+   "bib": [
+    28
+   ]
+  },
+  {
+   "id": "histcom",
+   "title": "HISTORY: The Great New England Hurricane, September 21, 1938",
+   "url": "https://www.history.com/this-day-in-history/september-21/the-great-new-england-hurricane",
+   "notes": [
+    246
+   ],
+   "bib": []
+  },
+  {
+   "id": "gaz1907",
+   "title": "The London Gazette, July 26, 1907, issue 28044, p. 5118 (knighthoods, Buckingham Palace)",
+   "url": "https://thegazette.co.uk/London/issue/28044/page/5118/data.pdf",
+   "notes": [
+    91,
+    109,
+    113
+   ],
+   "bib": []
+  },
+  {
+   "id": "gaz1914",
+   "title": "The London Gazette, supplement of October 19, 1914, issue 28942 (p. 8354)",
+   "url": "https://www.thegazette.co.uk/London/issue/28942/data.pdf",
+   "notes": [
+    200
+   ],
+   "bib": [
+    5
+   ]
+  },
+  {
+   "id": "wikidunlop",
+   "title": "Wikipedia: Nathaniel Dunlop",
+   "url": "https://en.wikipedia.org/wiki/Nathaniel_Dunlop",
+   "notes": [
+    109
+   ],
+   "bib": []
+  },
+  {
+   "id": "hes-rmh",
+   "title": "Historic Environment Scotland: listing LB44033, 79 Lauriston Place",
+   "url": "https://portal.historicenvironment.scot/designation/LB44033",
+   "notes": [
+    66
+   ],
+   "bib": []
+  },
+  {
+   "id": "hes-west",
+   "title": "Historic Environment Scotland: listing LB27718, Mackinnon House (formerly West House)",
+   "url": "https://portal.historicenvironment.scot/designation/LB27718",
+   "notes": [
+    121
+   ],
+   "bib": []
+  },
+  {
+   "id": "lb-shield",
+   "title": "British Listed Buildings: Shieldhill (Historic Environment Scotland LB7377)",
+   "url": "https://britishlistedbuildings.co.uk/200339237",
+   "notes": [
+    29
+   ],
+   "bib": []
+  },
+  {
+   "id": "lb-hall",
+   "title": "British Listed Buildings: Quothquhan, Shieldhill Hall (Historic Environment Scotland LB12995)",
+   "url": "https://britishlistedbuildings.co.uk/200345967-shieldhill-hall-quothquhan-libberton",
+   "notes": [
+    32
+   ],
+   "bib": []
+  },
+  {
+   "id": "chicago",
+   "title": "Encyclopedia of Chicago: North Lawndale",
+   "url": "https://encyclopedia.chicagohistory.org/pages/901.html",
+   "notes": [
+    193,
+    219,
+    220
+   ],
+   "bib": [
+    36
+   ]
+  },
+  {
+   "id": "usccr",
+   "title": "U.S. Commission on Civil Rights: School Desegregation in Providence, Rhode Island (October 1977)",
+   "url": "https://www.usccr.gov/files/historical/1977/77-024-U.pdf",
+   "notes": [
+    332
+   ],
+   "bib": [
+    33
+   ]
+  },
+  {
+   "id": "rihs",
+   "title": "Rhode Island Historical Society, EnCompass: African American Civil Rights in Rhode Island",
+   "url": "https://encompass.rihs.org/african-american-civil-rights-in-rhode-island/african-american-civil-rights-in-rhode-island/",
+   "notes": [
+    331,
+    332
+   ],
+   "bib": [
+    34
+   ]
+  },
+  {
+   "id": "ssbh",
+   "title": "Small State Big History: George T. Downing, Rhode Island's Most Prominent African American Leader",
+   "url": "https://smallstatebighistory.com/george-t-downing-rhode-islands-most-prominent-african-american-leader/",
+   "notes": [
+    331
+   ],
+   "bib": []
+  },
+  {
+   "id": "sfmuseum",
+   "title": "Museum of the City of San Francisco: 1940–41 San Francisco War Chronology",
+   "url": "https://sfmuseum.org/war/40-41.html",
+   "notes": [
+    282,
+    284
+   ],
+   "bib": []
+  }
+ ],
+ "scans": {
+  "laurence": {
+   "file": "img/laurence-birth-register-1907.jpg",
+   "notes": [
+    6,
+    37,
+    54,
+    57,
+    71,
+    78,
+    83,
+    111,
+    112
+   ],
+   "bib": [
+    0
+   ],
+   "record": 5,
+   "title": "Birth register entry of Lawrence Brown, St Giles, Edinburgh, 1907 (685/04 0839)"
+  },
+  "agnesb": {
+   "file": "img/agnes-birth-register-1885.jpg",
+   "notes": [
+    19
+   ],
+   "bib": [
+    0
+   ],
+   "record": 2,
+   "title": "Birth register entry of Agnes McGarth Brown, Peebles, 1885 (768/00 0149)"
+  },
+  "agnesm": {
+   "file": "img/agnes-marriage-register-1911.jpg",
+   "notes": [
+    124,
+    126,
+    341
+   ],
+   "bib": [
+    0
+   ],
+   "record": 8,
+   "title": "Marriage register entry of Thomas McKay McKenzie and Agnes McGarth Brown, St Giles, Edinburgh, 1911 (685/04 0616)"
+  }
+ },
+ "pictures": [
+  [
+   "img/cover-front.jpg",
+   "Book cover"
+  ],
+  [
+   "img/zeppelin-hero.jpg",
+   "Zeppelin over Leith, cover art"
+  ],
+  [
+   "img/zeppelin-attack.jpg",
+   "Zeppelin over Leith, April 2, 1916. Modern illustration."
+  ],
+  [
+   "img/agnes-portrait.jpg",
+   "Portrait of Agnes (Ancestry member gallery)"
+  ],
+  [
+   "img/ice-cream.jpg",
+   "Janet and Laurence with ice-cream cones"
+  ],
+  [
+   "img/royal-maternity-hospital-lauriston-place.jpg",
+   "Royal Maternity Hospital, Lauriston Place"
+  ],
+  [
+   "img/royal-edinburgh-asylum-west-house.jpg",
+   "Royal Edinburgh Asylum, West House"
+  ],
+  [
+   "img/shieldhill-castle.jpg",
+   "Shieldhill"
+  ],
+  [
+   "img/libberton-quothquan-parish-church.jpg",
+   "Libberton and Quothquan Parish Church"
+  ],
+  [
+   "img/quothquan-old-church.jpg",
+   "Old Quothquan church"
+  ],
+  [
+   "img/quothquan-hall.jpg",
+   "Quothquan hall"
+  ],
+  [
+   "img/p13.jpg",
+   "Sir Nathaniel Dunlop, chairman of the Allan Line"
+  ],
+  [
+   "img/p07.jpg",
+   "Photograph p07"
+  ],
+  [
+   "img/p08.jpg",
+   "Photograph p08"
+  ],
+  [
+   "img/p09.jpg",
+   "Photograph p09"
+  ],
+  [
+   "img/p14.jpg",
+   "Photograph p14"
+  ],
+  [
+   "img/p15.jpg",
+   "Photograph p15"
+  ],
+  [
+   "img/p16.jpg",
+   "Photograph p16"
+  ],
+  [
+   "img/p17.jpg",
+   "Photograph p17"
+  ],
+  [
+   "img/p18.jpg",
+   "Photograph p18"
+  ],
+  [
+   "img/p19.jpg",
+   "Photograph p19"
+  ],
+  [
+   "img/p20.jpg",
+   "Photograph p20"
+  ],
+  [
+   "img/p21.jpg",
+   "Photograph p21"
+  ],
+  [
+   "img/p22.jpg",
+   "Photograph p22"
+  ],
+  [
+   "img/p23.jpg",
+   "Photograph p23"
+  ],
+  [
+   "img/p24.jpg",
+   "Photograph p24"
+  ],
+  [
+   "img/p25.jpg",
+   "Photograph p25"
+  ],
+  [
+   "img/p26.jpg",
+   "Photograph p26"
+  ],
+  [
+   "img/p27.jpg",
+   "Photograph p27"
+  ],
+  [
+   "img/p28.jpg",
+   "Photograph p28"
+  ],
+  [
+   "img/p31.jpg",
+   "Photograph p31"
+  ],
+  [
+   "img/p32.jpg",
+   "Photograph p32"
+  ]
+ ]
+}

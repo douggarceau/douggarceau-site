@@ -2,129 +2,240 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Names He Carried</title>
 <meta name="description" content="The Names He Carried: The Laurence Brown Douglas Story, by Doug Garceau.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Courier+Prime:wght@400;700&display=swap">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@500;700&display=swap">
 <style>
-/* VOICE: a night-edition keepsake, quiet, grave, exact
-   IDEA: the book's own etched cover, opened up into a page
-   PICTURE: the ink zeppelin over Leith, full width, under the title
-   COLOUR and TYPE: ink black, cover cream, one ember accent; EB Garamond with Courier Prime labels
-   LAYOUT: one centred column for reading; plain list rows for the archive */
-:root{--bg:#0b0a09;--sheet:#15130f;--ink:#efe6d2;--soft:#b9ae97;--rule:#3a342a;--ember:#d9a35b}
-*{box-sizing:border-box;min-width:0}html{scroll-padding-top:90px}
-body{margin:0;background:var(--bg);color:var(--ink);font:19px/1.7 "EB Garamond",Georgia,serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
-a{color:var(--ember)}
-.wrap{max-width:1040px;margin:0 auto;padding:28px max(4vw,16px) 80px}
-.top{position:sticky;top:0;z-index:5;background:#0b0a09ee;backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
-.top .wrap{padding:10px max(4vw,16px);display:flex;gap:10px 16px;align-items:center;flex-wrap:wrap}
-.top b{font:600 20px/1.2 "EB Garamond",serif;flex:1;min-width:200px}.top b a{color:var(--ink)!important}
-.tabs{display:flex;gap:4px;flex-wrap:wrap;width:100%}
-.btn{all:unset;cursor:pointer;font:400 15px/1 "Courier Prime",monospace;padding:12px 12px;border-radius:3px;color:var(--soft);text-align:center;border:1px solid transparent}
-.btn:hover{color:var(--ink)}.btn:focus-visible{outline:2px solid var(--ember)}
-.tabs .btn[aria-current=true]{color:var(--ink);border-color:var(--rule);background:var(--sheet)}
-.btn.main{color:#0b0a09;background:var(--ink);font:700 18px/1 "Courier Prime",monospace;padding:18px 28px;border-radius:2px}
-.btn.main:hover{background:#fff}
-select.jump{font:400 16px "Courier Prime",monospace;padding:10px;border-radius:3px;background:var(--sheet);color:var(--ink);border:1px solid var(--rule);max-width:100%;min-height:44px}
-.hero{position:relative;margin:0 calc(50% - 50vw);text-align:center;padding:clamp(36px,6vw,70px) 16px 0;background:radial-gradient(ellipse at 50% 70%,#1b1812 0,#0b0a09 70%)}
-.hero .k{font:400 15px "Courier Prime",monospace;color:var(--soft);margin:0}
-.hero h1{font:500 clamp(44px,8vw,86px)/1.02 "EB Garamond",serif;margin:14px 0 6px;text-wrap:balance}
-.hero .sub{font:italic 400 clamp(22px,3vw,30px)/1.3 "EB Garamond",serif;color:var(--soft);margin:0 0 28px}
-.hero .art{display:block;width:min(760px,100%);margin:0 auto;aspect-ratio:745/1082;object-fit:cover;object-position:50% 30%;max-height:70vh;mask-image:linear-gradient(#000 70%,transparent);-webkit-mask-image:linear-gradient(#000 70%,transparent)}
-.hero .cta{position:relative;margin-top:-90px;padding-bottom:20px;display:flex;flex-direction:column;align-items:center;gap:22px}
-.ded{font:italic 400 22px/1.5 "EB Garamond",serif;color:var(--soft);margin:0}
-@media(prefers-reduced-motion:no-preference){.hero .art{animation:rise 1.6s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(14px)}}}
-.route{margin:40px 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:22px 0}
-.route h3,.sec .lede,.part,.pt,.no,.era{font-family:"Courier Prime",monospace}
-.route h3{font-size:14px;font-weight:400;color:var(--soft);margin:0 0 14px;text-align:center}
+/* Pure black, white and grey. No pictures on the pages. */
+:root{--bg:#000;--ink:#fff;--soft:#b8b8b8;--dim:#8a8a8a;--rule:#2e2e2e;--line:#fff;--panel:#0d0d0d}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:120px;background:#000}
+body{margin:0;background:#000;color:var(--ink);font:400 19px/1.75 "Source Serif 4",Georgia,serif;overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:#777;text-underline-offset:3px}
+a:hover{text-decoration-color:#fff}
+:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 max(4vw,18px)}
+.lab{font:700 13px/1.3 Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+
+/* Top bar */
+.top{position:sticky;top:0;z-index:5;background:#000;border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;padding-top:10px;padding-bottom:10px}
+.brand{flex:1;min-width:200px;font:900 20px/1.1 "Playfair Display",serif;letter-spacing:.02em;text-decoration:none;color:#fff}
+select.jump{font:500 16px Inter,system-ui,sans-serif;padding:10px 12px;min-height:44px;max-width:100%;background:#000;color:#fff;border:1px solid #555;border-radius:2px}
+.tabs{display:flex;gap:2px 4px;flex-wrap:wrap;width:100%;margin:0 -10px}
+.tab{all:unset;cursor:pointer;font:500 15px/1 Inter,system-ui,sans-serif;color:var(--soft);padding:12px 10px;border-bottom:2px solid transparent}
+.tab:hover{color:#fff}
+.tab[aria-current=true]{color:#fff;border-bottom-color:#fff}
+.tab:focus-visible{outline:2px solid #fff}
+
+/* Home */
+.hero{text-align:center;padding:clamp(56px,10vw,120px) 0 clamp(40px,6vw,70px);border-bottom:1px solid var(--rule)}
+.hero .lab{margin:0 0 26px}
+.hero h1{font:900 clamp(52px,11.5vw,138px)/.92 "Playfair Display",serif;margin:0;letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.hero .rule{width:min(520px,70%);height:0;border-top:1px solid #fff;margin:34px auto 22px}
+.hero .sub{font:italic 400 clamp(22px,3.4vw,34px)/1.25 "Playfair Display",serif;margin:0}
+.hero .yrs{font:700 15px Inter,system-ui,sans-serif;letter-spacing:.4em;color:var(--soft);margin:16px 0 40px;padding-left:.4em}
+.go{all:unset;cursor:pointer;display:inline-block;background:#fff;color:#000;font:700 18px/1 Inter,system-ui,sans-serif;letter-spacing:.04em;padding:20px 34px;border:2px solid #fff}
+.go:hover{background:#000;color:#fff}
+.go.ghost{background:#000;color:#fff}.go.ghost:hover{background:#fff;color:#000}
+.ded{font:italic 400 20px/1.5 "Source Serif 4",serif;color:var(--soft);margin:30px 0 0}
+.by{font:700 14px Inter,system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;margin:0 0 4px}
+
+.route{padding:40px 0;border-bottom:1px solid var(--rule)}
+.route .lab{text-align:center;margin:0 0 22px}
 .stops{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));position:relative}
-.stops:before{content:"";position:absolute;left:5%;right:5%;top:11px;border-top:1px dashed var(--ember)}
-.stop{text-align:center;position:relative}.stop i{display:block;width:10px;height:10px;border-radius:50%;background:var(--ember);margin:6px auto 8px;box-shadow:0 0 0 4px var(--bg)}
-.stop b{display:block;font:500 17px/1.2 "EB Garamond",serif}.stop span{font:400 13px/1.3 "Courier Prime",monospace;color:var(--soft)}
-@media(max-width:700px){.stops{grid-template-columns:repeat(3,minmax(0,1fr));row-gap:18px}.stops:before{display:none}}
-h2.toc,.sec h2,.chap h2{font:500 clamp(32px,5vw,48px)/1.08 "EB Garamond",serif;margin:30px 0 6px;text-wrap:balance}
-.sec .lede{color:var(--soft);font-size:15px;margin:0 0 22px}
-.part{font-size:14px;color:var(--ember);margin:30px 0 4px;padding-top:12px;border-top:1px solid var(--rule)}
-.toc-row{all:unset;cursor:pointer;display:flex;gap:14px;align-items:baseline;width:100%;padding:11px 2px;border-bottom:1px solid #2a251e}
-.toc-row:hover .t,.toc-row:focus-visible .t{color:var(--ember)}
-.toc-row .n{font:400 15px "Courier Prime",monospace;color:var(--soft);min-width:2.2em}.toc-row .t{font-size:21px}
-.toc-row .e{margin-left:auto;font:400 13px "Courier Prime",monospace;color:var(--soft);white-space:nowrap}
-.chap{max-width:700px;margin:0 auto}
-.chap .pt{font-size:14px;color:var(--soft);margin-top:24px}.chap .no{font-size:15px;color:var(--ember);margin-top:16px}
-.chap .era{font-size:14px;color:var(--soft);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:8px 0;margin:14px 0 28px}
-.chap p{margin:0 0 1.1em}.chap h3{font:500 24px "EB Garamond",serif;margin:28px 0 8px}
-.pager{display:flex;justify-content:space-between;gap:12px;margin-top:40px;flex-wrap:wrap}.pager .btn{flex:1;min-width:140px;border-color:var(--rule);padding:14px}
-figure{margin:28px 0}figure img{width:100%;height:auto;border-radius:2px}figcaption{font:400 14px/1.5 "Courier Prime",monospace;color:var(--soft);margin-top:8px}
-.headline{border-top:3px double var(--ink);border-bottom:1px solid var(--ink);text-align:center;padding:14px 4px;margin:6px 0 26px}
-.headline .mast{font:400 13px "Courier Prime",monospace;color:var(--soft)}.headline .hd{font:600 28px/1.1 "EB Garamond",serif;text-transform:uppercase;margin:8px 0 4px}.headline .dl{font:italic 15px "EB Garamond",serif;color:var(--soft)}
-.stone{text-align:center;font:500 20px/1.6 "EB Garamond",serif;letter-spacing:.12em;margin:1.4em 0;padding:18px;border:1px solid var(--rule)}
-table.ap{border-collapse:collapse;width:100%;font-size:17px}table.ap td{border-bottom:1px solid var(--rule);padding:9px 6px;vertical-align:top}table.ap td:first-child{width:32%;color:var(--soft);font-family:"Courier Prime",monospace;font-size:14px}
-.notesall{font-size:16px;color:var(--soft)}.nch{font:500 19px "EB Garamond",serif;color:var(--ink);margin:24px 0 6px}.notes{padding-left:1.4em}.notes li{margin:.35em 0;overflow-wrap:anywhere}
-.recrow{display:grid;grid-template-columns:5em minmax(0,1fr);gap:16px;border-top:1px solid var(--rule);padding:18px 0}
-.recrow .y{font:400 22px "Courier Prime",monospace;color:var(--ember)}.recrow h3{font:500 23px/1.3 "EB Garamond",serif;margin:0 0 4px}.recrow p{margin:0 0 6px}
-.recrow .ref{font:400 13px "Courier Prime",monospace;color:var(--soft)}
-.recrow img{width:100%;max-width:900px;border-radius:2px;margin-top:10px;cursor:zoom-in;filter:sepia(.15)}.recrow img.big{max-width:none;cursor:zoom-out}
-.lnk{all:unset;cursor:pointer;color:var(--ember);text-decoration:underline;text-underline-offset:3px}
-.tl{list-style:none;margin:0;padding:0}.tl li{display:grid;grid-template-columns:12em minmax(0,1fr);gap:16px;border-top:1px solid var(--rule);padding:11px 0}
-.tl b{font:400 14px/1.6 "Courier Prime",monospace;color:var(--ember)}
-.ppl h3.g{font:400 14px "Courier Prime",monospace;color:var(--ember);margin:32px 0 4px;border-top:1px solid var(--rule);padding-top:12px}
-.person{padding:12px 0;border-bottom:1px solid #2a251e}.person b{font:500 23px "EB Garamond",serif}.person span{font:400 14px "Courier Prime",monospace;color:var(--soft);margin-left:10px}.person p{margin:4px 0 0}
-.qs{padding-left:1.4em}.qs li{margin:.6em 0}.crd{font:400 13px "Courier Prime",monospace;color:var(--soft);margin-top:28px}
-.cover,.cvr,.facts,.kick,.rule,.by{all:unset}
-@media(max-width:560px){body{font-size:18px}.toc-row .e{display:none}.tl li,.recrow{grid-template-columns:minmax(0,1fr);gap:2px}}
+.stops:before{content:"";position:absolute;left:5.5%;right:5.5%;top:7px;border-top:1px solid #fff}
+.stop{text-align:center;position:relative}
+.stop i{display:block;width:14px;height:14px;border-radius:50%;background:#fff;margin:0 auto 12px;box-shadow:0 0 0 5px #000}
+.stop b{display:block;font:700 17px/1.2 "Playfair Display",serif}
+.stop span{display:block;font:500 13px/1.4 Inter,system-ui,sans-serif;color:var(--soft);margin-top:2px}
+@media(max-width:760px){.stops{grid-template-columns:minmax(0,1fr);gap:0}.stops:before{left:6px;right:auto;top:6px;bottom:6px;border-top:0;border-left:1px solid #fff}
+ .stop{display:grid;grid-template-columns:28px minmax(0,1fr);text-align:left;align-items:baseline;padding:6px 0}.stop i{margin:0;width:13px;height:13px}.stop b,.stop span{display:inline}.stop span{margin-left:8px}}
+
+.beside{padding:46px 0 10px}
+h2.big{font:900 clamp(38px,6vw,64px)/1.02 "Playfair Display",serif;margin:0 0 8px;text-wrap:balance}
+.lede{font:500 16px/1.5 Inter,system-ui,sans-serif;color:var(--soft);margin:0 0 26px}
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid #fff}
+.rows li{border-bottom:1px solid var(--rule)}
+.row{all:unset;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline;width:100%;padding:16px 2px}
+.row b{font:700 24px/1.25 "Playfair Display",serif}
+.row span{font:500 15px/1.4 Inter,system-ui,sans-serif;color:var(--soft)}
+.row:hover b,.row:focus-visible b{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+
+/* Contents */
+.toc{padding:46px 0 30px}
+.part{margin:40px 0 0;padding:14px 0 8px;border-top:3px solid #fff}
+.part .lab{color:#fff}
+.toc-row{all:unset;cursor:pointer;display:grid;grid-template-columns:3.2em minmax(0,1fr) auto;gap:14px;align-items:baseline;width:100%;padding:12px 2px;border-bottom:1px solid var(--rule)}
+.toc-row .n{font:900 22px/1 "Playfair Display",serif;color:var(--dim)}
+.toc-row .t{font:700 22px/1.3 "Playfair Display",serif}
+.toc-row .e{font:500 13px/1.3 Inter,system-ui,sans-serif;color:var(--soft);text-align:right;max-width:20em}
+.toc-row:hover .t,.toc-row:focus-visible .t{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.toc-row:hover .n{color:#fff}
+
+/* Chapter */
+.chap{max-width:700px;margin:0 auto;padding:clamp(40px,7vw,80px) 0 70px}
+.opener{text-align:center;padding-bottom:34px;margin-bottom:40px;border-bottom:1px solid #fff}
+.opener .num{font:900 clamp(80px,16vw,150px)/.9 "Playfair Display",serif;color:transparent;-webkit-text-stroke:1.5px #fff;margin:18px 0 6px}
+.opener .numw{font:700 15px Inter,system-ui,sans-serif;letter-spacing:.3em;text-transform:uppercase;margin:22px 0 10px}
+.opener h2{font:900 clamp(36px,6.4vw,60px)/1.05 "Playfair Display",serif;margin:8px 0 16px;text-wrap:balance}
+.opener .era{font:italic 400 19px/1.4 "Source Serif 4",serif;color:var(--soft);margin:0}
+.chap p{margin:0 0 1.15em}
+.chap .body>p:first-of-type::first-letter{float:left;font:900 4.6em/.82 "Playfair Display",serif;padding:.06em .1em 0 0}
+.chap h3{font:700 26px/1.25 "Playfair Display",serif;margin:36px 0 10px}
+.chap h4{font:700 20px/1.3 "Playfair Display",serif;margin:30px 0 8px}
+.chap blockquote{margin:1.4em 0;padding:0 0 0 20px;border-left:3px solid #fff;font-style:italic}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:56px;flex-wrap:wrap;border-top:1px solid #fff;padding-top:24px}
+.pager .pg{all:unset;cursor:pointer;flex:1;min-width:200px;padding:14px 16px;border:1px solid #555;font:500 16px/1.35 Inter,system-ui,sans-serif}
+.pager .pg small{display:block;font:700 12px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:4px}
+.pager .pg:hover{border-color:#fff;background:#111}
+.pager .pg.nx{text-align:right}
+.imglink{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin:28px 0;font:500 15px/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
+.headline{border-top:4px double #fff;border-bottom:1px solid #fff;text-align:center;padding:16px 4px;margin:6px 0 28px}
+.headline .mast{font:700 12px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.headline .hd{font:900 28px/1.1 "Playfair Display",serif;text-transform:uppercase;margin:8px 0 4px}
+.headline .dl{font:italic 16px "Source Serif 4",serif;color:var(--soft)}
+.stone{text-align:center;font:700 20px/1.6 "Playfair Display",serif;letter-spacing:.12em;margin:1.4em 0;padding:22px;border:1px solid #fff}
+table.ap{border-collapse:collapse;width:100%;font-size:17px}
+table.ap td{border-bottom:1px solid var(--rule);padding:10px 6px;vertical-align:top}
+table.ap td:first-child{width:32%;color:var(--soft);font:500 14px/1.5 Inter,system-ui,sans-serif}
+.apx h3{border-top:3px solid #fff;padding-top:14px}
+.notesall{font-size:17px;line-height:1.65}
+.nch{font:700 22px/1.3 "Playfair Display",serif;margin:40px 0 8px;padding-top:14px;border-top:3px solid #fff}
+.notes{padding-left:1.6em;margin:0}
+.notes li{margin:.7em 0;overflow-wrap:anywhere;color:#e6e6e6}
+.notes li::marker{font:700 14px Inter,system-ui,sans-serif;color:var(--soft)}
+.src{display:block;margin-top:4px;font:500 14px/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
+.src a{color:#fff;margin-right:12px;white-space:normal}
+.src a:after{content:" \2197";color:var(--dim)}
+.src a.scan:after{content:""}
+
+/* Sections */
+.sec{padding:clamp(40px,7vw,70px) 0 70px}
+.recrow{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:18px;border-top:1px solid var(--rule);padding:22px 0}
+.recrow:first-of-type{border-top:1px solid #fff}
+.recrow .y{font:900 30px/1 "Playfair Display",serif}
+.recrow h3{font:700 24px/1.3 "Playfair Display",serif;margin:0 0 6px}
+.recrow p{margin:0 0 8px}
+.recrow .ref{font:500 14px/1.6 Inter,system-ui,sans-serif;color:var(--soft)}
+.lnk{all:unset;cursor:pointer;color:#fff;text-decoration:underline;text-decoration-color:#777;text-underline-offset:3px}
+.lnk:hover{text-decoration-color:#fff}
+.scanbtn{display:inline-block;margin-top:10px;font:700 15px/1 Inter,system-ui,sans-serif;color:#000;background:#fff;text-decoration:none;padding:12px 16px;border:1px solid #fff}
+.scanbtn:hover{background:#000;color:#fff}
+.tl{list-style:none;margin:0;padding:0;border-top:1px solid #fff}
+.tl li{display:grid;grid-template-columns:13em minmax(0,1fr);gap:18px;border-bottom:1px solid var(--rule);padding:13px 0}
+.tl b{font:700 15px/1.6 Inter,system-ui,sans-serif}
+.ppl h3.g{font:700 13px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:40px 0 0;border-top:3px solid #fff;padding-top:14px}
+.person{padding:16px 0;border-bottom:1px solid var(--rule)}
+.person b{font:700 24px/1.3 "Playfair Display",serif}
+.person span{font:500 14px Inter,system-ui,sans-serif;color:var(--soft);margin-left:10px;white-space:nowrap}
+.person p{margin:6px 0 0}
+.qs{padding-left:1.6em}.qs li{margin:.8em 0}.qs li::marker{font:900 20px "Playfair Display",serif}
+.crd{font:500 14px/1.6 Inter,system-ui,sans-serif;color:var(--soft);margin-top:30px}
+.sd h3{font:700 13px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:46px 0 0;border-top:3px solid #fff;padding-top:14px}
+.sd .intro{font:500 15px/1.6 Inter,system-ui,sans-serif;color:var(--soft);margin:8px 0 6px}
+.dl{list-style:none;margin:0;padding:0}
+.dl li{border-bottom:1px solid var(--rule);padding:14px 0}
+.dl li a{font:700 20px/1.35 "Playfair Display",serif}
+.dl li a.ext:after{content:" \2197";font:500 15px Inter,sans-serif;color:var(--dim)}
+.dl li small{display:block;font:500 14px/1.55 Inter,system-ui,sans-serif;color:var(--soft);margin-top:4px}
+.dl.plain li{padding:10px 0}.dl.plain li a{font:500 16px/1.4 Inter,system-ui,sans-serif}
+.foot{border-top:1px solid var(--rule);padding:26px 0 50px;font:500 14px Inter,system-ui,sans-serif;color:var(--dim);text-align:center}
+.foot a{color:var(--soft)}
+@media(max-width:600px){
+ body{font-size:18px}
+ .toc-row{grid-template-columns:2.4em minmax(0,1fr)}.toc-row .e{grid-column:2;text-align:left}
+ .tl li,.recrow{grid-template-columns:minmax(0,1fr);gap:4px}
+ .row{grid-template-columns:minmax(0,1fr)}
+ .top{position:static}
+ html{scroll-padding-top:10px}
+ .tab{padding:11px 8px;font-size:14px}
+ .pager .pg.nx{text-align:left}
+ .person span{display:block;margin:2px 0 0}
+}
 </style></head><body>
-<div class="top"><div class="wrap"><b><a href="/" style="text-decoration:none">The Names He Carried</a></b><select class="jump" id="jump" aria-label="Go to chapter"></select>
-<nav class="tabs" aria-label="Sections"><button class="btn" data-go="start">Home</button><button class="btn" data-go="contents">Read the book</button><button class="btn" data-go="records">Records</button><button class="btn" data-go="timeline">Timeline</button><button class="btn" data-go="places">Places</button><button class="btn" data-go="people">People</button><button class="btn" data-go="questions">Open questions</button></nav></div></div>
-<main class="wrap" id="view"><p style="text-align:center;margin-top:80px">Opening the book…</p></main>
+<header class="top"><div class="wrap">
+<a class="brand" href="#" data-go="start">The Names He Carried</a>
+<select class="jump" id="jump" aria-label="Go to chapter"></select>
+<nav class="tabs" aria-label="Sections">
+<button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="questions">Open questions</button><button class="tab" data-go="sources">Sources and documents</button>
+</nav></div></header>
+<main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
+<footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
 <script>
 {
-let CH=[],C=null,last=0;
+let CH=[],C=null,S={sources:[],scans:{},pictures:[]},last=0,NOTE={},BIB={},REC={};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const jump=$('#jump');
 try{last=+localStorage.getItem('nhc-last')||0}catch(e){}
-const lab=c=>/^Chapter/.test(c.label)?c.label.replace('Chapter ','')+'. ':'';
-function route(){return `<div class="route"><h3>The places he lived</h3><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></div>`}
-function home(){return `<section class="hero"><p class="k">A book by Doug Garceau</p><h1>The Names He Carried</h1><p class="sub">The Laurence Brown Douglas Story, 1907 to 1961</p>
-<img class="art" src="img/zeppelin-hero.jpg" alt="Ink drawing of a Zeppelin over the rooftops and harbor of Leith at night">
-<div class="cta"><button class="btn main" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button><p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></div></section>${route()}
-<div class="sec"><h2>Beside the book</h2><p class="lede">The records behind the story, in one place.</p>
-<ul class="tl">${[['records','Records',C.records.length+' register and census entries'],['timeline','Timeline','His life, date by date'],['places','Places','Every address on record'],['people','People','His family and the people of Quothquan'],['questions','Open questions','What the records have not yet answered']].map(([g,t,d])=>`<li><b><button class="lnk" data-go="${g}">${t}</button></b><span>${d}</span></li>`).join('')}</ul></div>`+contents()}
-function contents(){let h='<h2 class="toc" id="toc">Contents</h2>',p='';
- for(const c of CH){if(c.part!==p){p=c.part;h+=`<div class="part">${esc(p)}</div>`}
-  h+=`<button class="toc-row" data-go="chapter-${c.n}"><span class="n">${lab(c).replace('. ','')}</span><span class="t">${esc(c.title)}</span><span class="e">${esc(c.era)}</span></button>`}
- return h}
+const isCh=c=>/^Chapter/.test(c.label);
+const num=c=>isCh(c)?c.label.replace('Chapter ',''):'';
+const ext=(u,t,cls='')=>`<a class="${cls}" href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`;
+function index(){
+ S.sources.forEach(s=>{(s.notes||[]).forEach(i=>(NOTE[i]=NOTE[i]||[]).push(['src',s]));(s.bib||[]).forEach(i=>(BIB[i]=BIB[i]||[]).push(['src',s]))});
+ Object.values(S.scans).forEach(k=>{(k.notes||[]).forEach(i=>(NOTE[i]=NOTE[i]||[]).unshift(['scan',k]));(k.bib||[]).forEach(i=>(BIB[i]=BIB[i]||[]).unshift(['scan',k]));if(k.record!=null)REC[k.record]=k});
+}
+const linkFor=([t,x])=>t==='scan'?`<a class="scan" href="${esc(x.file)}" target="_blank" rel="noopener">Open the register scan</a>`:ext(x.url,x.title);
+
+function route(){return `<section class="route"><p class="lab">The places he lived</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
+function home(){return `<section class="hero"><p class="lab">A book by Doug Garceau</p><h1>The Names He Carried</h1><div class="rule"></div><p class="sub">The Laurence Brown Douglas Story</p><p class="yrs">1907 · 1961</p>
+<button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
+<p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>${route()}
+<section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
+<ul class="rows">${[['records','Records',C.records.length+' register and census entries'],['timeline','Timeline','His life, date by date'],['places','Places','Every address on record'],['people','People','His family and the people of Quothquan'],['questions','Open questions','What the records have not yet answered'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
+function contents(){let h='<section class="toc" id="toc"><h2 class="big">Contents</h2><p class="lede">'+CH.length+' parts of the book, in order.</p>',p=null;
+ for(const c of CH){const pt=c.part||'';if(pt!==p){p=pt;h+=pt?`<div class="part"><span class="lab">${esc(pt)}</span></div>`:'<div class="part"></div>'}
+  h+=`<button class="toc-row" data-go="chapter-${c.n}"><span class="n">${num(c)}</span><span class="t">${esc(c.title)}</span><span class="e">${esc(c.era)}</span></button>`}
+ return h+'</section>'}
+function clean(html){
+ // No pictures on the pages: each figure becomes a plain link line, keeping its caption.
+ const d=document.createElement('div');d.innerHTML=html;
+ d.querySelectorAll('figure').forEach(f=>{const im=f.querySelector('img'),cap=f.querySelector('figcaption');const p=document.createElement('p');p.className='imglink';
+  if(im){const a=document.createElement('a');a.href=im.getAttribute('src');a.target='_blank';a.rel='noopener';a.textContent=cap?cap.textContent:(im.alt||'Open the picture');p.append(a)}else if(cap)p.textContent=cap.textContent;f.replaceWith(p)});
+ d.querySelectorAll('img').forEach(im=>{const a=document.createElement('a');a.href=im.getAttribute('src');a.target='_blank';a.rel='noopener';a.textContent=im.alt||'Open the picture';im.replaceWith(a)});
+ return d}
 function chapter(n){const c=CH[n-1];if(!c)return home();
  try{localStorage.setItem('nhc-last',n)}catch(e){} last=n;
- const pv=CH[n-2],nx=CH[n];
- return `<article class="chap"><div class="pt">${esc(c.part)}</div>${/^Chapter/.test(c.label)?`<div class="no">${esc(c.label)}</div>`:''}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}${c.html}
- <div class="pager">${pv?`<button class="btn" data-go="chapter-${pv.n}">← ${esc(pv.title)}</button>`:'<button class="btn" data-go="start">← Home</button>'}${nx?`<button class="btn" data-go="chapter-${nx.n}">${esc(nx.title)} →</button>`:'<button class="btn" data-go="contents">Contents</button>'}</div></article>`}
-function records(){return `<div class="sec"><h2>Records</h2><p class="lede">The register and census entries behind the story, oldest first.</p>
-${C.records.map(r=>`<div class="recrow"><div class="y">${r.year}</div><div><h3>${esc(r.title)}</h3><p>${esc(r.text)}</p><div class="ref">${esc(r.ref)}${r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</div>${r.img?`<img loading="lazy" src="${r.img}" alt="${esc(r.title)}">`:''}</div></div>`).join('')}
-<p class="crd">Scottish register and census entries are held by the National Records of Scotland.</p></div>`}
-function list(title,lede,rows,a,b){return `<div class="sec"><h2>${title}</h2><p class="lede">${lede}</p><ul class="tl">${rows.map(r=>`<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join('')}</ul></div>`}
-function people(){let h='<div class="sec ppl"><h2>People</h2><p class="lede">Drawn only from the records and the family\'s own memory.</p>',g='';
+ const pv=CH[n-2],nx=CH[n],d=clean(c.html);
+ if(c.title==='Notes'){d.querySelectorAll('.notes li').forEach((li,i)=>{const L=NOTE[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Source: '+L.map(linkFor).join('');li.append(s)}})}
+ if(c.title==='Bibliography'){d.querySelectorAll('.apx p').forEach((p,i)=>{const L=BIB[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Link: '+L.map(linkFor).join('');p.append(s)}})}
+ const top=isCh(c)?`<p class="numw lab">${esc(c.part)}</p><div class="num" aria-hidden="true">${num(c)}</div><p class="lab">${esc(c.label)}</p>`:`<p class="numw lab">${esc(c.part||c.label)}</p>${c.part&&c.part!==c.label?`<p class="lab">${esc(c.label)}</p>`:''}`;
+ return `<article class="chap"><header class="opener">${top}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}</header><div class="body">${d.innerHTML}</div>
+ <nav class="pager">${pv?`<button class="pg" data-go="chapter-${pv.n}"><small>Previous</small>${esc(pv.title)}</button>`:'<button class="pg" data-go="start"><small>Back</small>Home</button>'}${nx?`<button class="pg nx" data-go="chapter-${nx.n}"><small>Next</small>${esc(nx.title)}</button>`:'<button class="pg nx" data-go="sources"><small>Next</small>Sources and documents</button>'}</nav></article>`}
+function records(){return `<section class="sec"><h2 class="big">Records</h2><p class="lede">The register and census entries behind the story, oldest first. Where a scan of the register is kept on this site, the button opens it.</p>
+${C.records.map((r,i)=>{const k=REC[i];return `<div class="recrow"><div class="y">${r.year}</div><div><h3>${esc(r.title)}</h3><p>${esc(r.text)}</p><div class="ref">${esc(r.ref)}${r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</div>${k?`<a class="scanbtn" href="${esc(k.file)}" target="_blank" rel="noopener">Open the register scan</a>`:''}</div></div>`}).join('')}
+<p class="crd">Scottish register and census entries are held by the National Records of Scotland and can be searched on <a href="https://www.scotlandspeople.gov.uk/guides/statutory-registers" target="_blank" rel="noopener">ScotlandsPeople</a>. All register and census sources are listed under <button class="lnk" data-go="sources">Sources and documents</button>.</p></section>`}
+function list(title,lede,rows){return `<section class="sec"><h2 class="big">${title}</h2><p class="lede">${lede}</p><ul class="tl">${rows.map(r=>`<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join('')}</ul></section>`}
+function people(){let h='<section class="sec ppl"><h2 class="big">People</h2><p class="lede">Drawn only from the records and the family\'s own memory.</p>',g='';
  for(const p of C.people){if(p.group!==g){g=p.group;h+=`<h3 class="g">${esc(g)}</h3>`}h+=`<div class="person"><b>${esc(p.name)}</b><span>${esc(p.dates)}</span><p>${esc(p.text)}</p></div>`}
- return h+'</div>'}
-function questions(){return `<div class="sec"><h2>Open questions</h2><p class="lede">What the records have not yet answered. If you know something, tell Doug.</p><ol class="qs">${C.questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ol></div>`}
-const tabs=['contents','records','timeline','places','people','questions'];
+ return h+'</section>'}
+function questions(){return `<section class="sec"><h2 class="big">Open questions</h2><p class="lede">What the records have not yet answered. If you know something, tell Doug.</p><ol class="qs">${C.questions.map(q=>`<li>${esc(q)}</li>`).join('')}</ol></section>`}
+function sources(){
+ const notesCh=CH.find(c=>c.title==='Notes'),bibCh=CH.find(c=>c.title==='Bibliography');
+ const scans=Object.values(S.scans).map(k=>{const r=C.records[k.record];return `<li><a href="${esc(k.file)}" target="_blank" rel="noopener">${esc(k.title)}</a><small>${r?esc(r.year+' · '+r.title+' · '+r.ref):''}${r&&r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</small></li>`}).join('');
+ const recs=C.records.map((r,i)=>{const k=REC[i];return `<li>${k?`<a href="${esc(k.file)}" target="_blank" rel="noopener">${esc(r.year)} · ${esc(r.title)}</a>`:`<span style="font:700 20px/1.35 'Playfair Display',serif">${esc(r.year)} · ${esc(r.title)}</span>`}<small>${esc(r.ref)} · ${k?'Register scan on this site':'No scan kept on this site'}</small></li>`}).join('');
+ const src=S.sources.map(s=>{const n=(s.notes||[]).length,b=(s.bib||[]).length;const used=[n?n+(n>1?' notes':' note'):'',b?'the Bibliography':''].filter(Boolean).join(' and ');return `<li><a class="ext" href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a><small>Cited in ${used}</small></li>`}).join('');
+ const pics=(S.pictures||[]).map(([f,t])=>`<li><a href="${esc(f)}" target="_blank" rel="noopener">${esc(t)}</a></li>`).join('');
+ return `<section class="sec sd"><h2 class="big">Sources and documents</h2><p class="lede">Every document scan and every source link for the book, in one place. Links open in a new tab; nothing is shown on this page.</p>
+ <h3>Register scans</h3><p class="intro">Copies of the original register entries kept with the book.</p><ul class="dl">${scans}</ul>
+ <h3>All records</h3><p class="intro">Each entry from the Records section, with its scan where one is kept on this site.</p><ul class="dl">${recs}</ul>
+ <h3>Source links</h3><p class="intro">Public pages for the sources named in the ${notesCh?`<button class="lnk" data-go="chapter-${notesCh.n}">Notes</button>`:'Notes'} and the ${bibCh?`<button class="lnk" data-go="chapter-${bibCh.n}">Bibliography</button>`:'Bibliography'}. Each link also appears beside the citations it supports.</p><ul class="dl">${src}</ul>
+ <h3>Other pictures kept with the book</h3><p class="intro">Photographs and art in the book's folder, as links only.</p><ul class="dl plain">${pics}</ul></section>`}
 function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
  if(m){html=chapter(+m[1]);jump.value=m[1]}
- else if(h==='records')html=records();
- else if(h==='timeline')html=list('Timeline','His life, date by date, from the records.',C.timeline);
- else if(h==='places')html=list('Places','Every address where the records place him.',C.places);
- else if(h==='people')html=people();
- else if(h==='questions')html=questions();
- else{html=h==='contents'?contents():home();jump.value=''}
+ else{jump.value='';html=({records,people,questions,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places:()=>list('Places','Every address where the records place him.',C.places)}[h]||home)()}
  $('#view').innerHTML=html;
- document.querySelectorAll('.tabs .btn').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===(m?'contents':(h||'start')))));
+ const cur=m?'contents':(h||'start');
+ document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===cur)));
  scrollTo(0,0)}
-document.addEventListener('click',e=>{const im=e.target.closest('.recrow img');if(im){im.classList.toggle('big');return}
- const b=e.target.closest('[data-go]');if(!b)return;const g=b.dataset.go;
- if(g==='start'){if(location.hash)location.hash='';else show();return}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!b)return;e.preventDefault();const g=b.dataset.go;
+ if(g==='start'){if(location.hash)history.pushState('',document.title,location.pathname+location.search);show();return}
  if(location.hash==='#'+g)show();else location.hash=g});
 jump.onchange=()=>{if(jump.value)location.hash='chapter-'+jump.value};
-addEventListener('hashchange',show);
-Promise.all([fetch('book.json').then(r=>r.json()),fetch('companion.json').then(r=>r.json())]).then(([d,c])=>{CH=d.chapters;C=c;
- jump.innerHTML='<option value="">Go to chapter…</option>'+CH.map(c=>`<option value="${c.n}">${lab(c)}${esc(c.title)}</option>`).join('');show()})
- .catch(()=>{$('#view').innerHTML='<p>The book could not be loaded. Reload the page.</p>'});
+addEventListener('hashchange',show);addEventListener('popstate',show);
+Promise.all([fetch('book.json').then(r=>r.json()),fetch('companion.json').then(r=>r.json()),fetch('sources.json').then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,s])=>{CH=d.chapters;C=c;if(s)S=s;index();
+ jump.innerHTML='<option value="">Go to chapter…</option>'+CH.map(c=>`<option value="${c.n}">${isCh(c)?num(c)+'. ':''}${esc(c.title)}</option>`).join('');show()})
+ .catch(()=>{$('#view').innerHTML='<p style="margin:80px 0">The book could not be loaded. Reload the page.</p>'});
 }
 </script></body></html>
