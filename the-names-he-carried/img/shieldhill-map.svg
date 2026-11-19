@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" font-family="Inter,system-ui,sans-serif">
+<rect width="1000" height="660" fill="#000"/>
+<rect x="1" y="1" width="998" height="658" fill="none" stroke="#333"/>
+<line x1="247" y1="301" x2="491" y2="119" stroke="#c62828" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="409" y="240" fill="#ef5350" font-size="15" font-weight="700" text-anchor="middle">about 0.9 mile in a straight line</text>
+<line x1="247" y1="301" x2="110" y2="550" stroke="#c62828" stroke-width="2" stroke-dasharray="7 6"/>
+<text x="119" y="426" fill="#ef5350" font-size="15" font-weight="700" text-anchor="middle">about 0.8 mile</text>
+<circle cx="491" cy="119" r="9" fill="#c62828" stroke="#fff" stroke-width="2"/>
+<text x="507" y="105" fill="#fff" font-size="18" font-weight="700" text-anchor="start">Shieldhill House, with its stables and dovecot</text>
+<circle cx="260" cy="278" r="6" fill="#fff" stroke="#fff" stroke-width="2"/>
+<text x="246" y="272" fill="#fff" font-size="15" font-weight="500" text-anchor="end">Shieldhill Hall, 1903</text>
+<circle cx="247" cy="301" r="9" fill="#c62828" stroke="#fff" stroke-width="2"/>
+<text x="263" y="297" fill="#fff" font-size="18" font-weight="700" text-anchor="start">Gean Tree Cottage (Mary Archibald)</text>
+<circle cx="244" cy="314" r="9" fill="#c62828" stroke="#fff" stroke-width="2"/>
+<text x="260" y="332" fill="#fff" font-size="18" font-weight="700" text-anchor="start">Lime Tree Cottage (Agnes grew up here), about 200 feet away</text>
+<circle cx="201" cy="321" r="6" fill="#fff" stroke="#fff" stroke-width="2"/>
+<text x="187" y="343" fill="#fff" font-size="15" font-weight="500" text-anchor="end">Old Quothquan kirk</text>
+<circle cx="110" cy="550" r="6" fill="#fff" stroke="#fff" stroke-width="2"/>
+<text x="126" y="555" fill="#fff" font-size="15" font-weight="500" text-anchor="start">Quothquan Law (hill)</text>
+<g transform="translate(940,70)"><polygon points="0,-28 10,6 0,0 -10,6" fill="#fff"/><text x="0" y="28" fill="#fff" font-size="16" text-anchor="middle" font-weight="700">N</text></g>
+<g transform="translate(110,632)"><rect width="171" height="8" fill="#fff"/><rect width="86" height="8" fill="#c62828"/><text x="0" y="-8" fill="#fff" font-size="14">0</text><text x="86" y="-8" fill="#fff" font-size="14" text-anchor="middle">¼ mile</text><text x="171" y="-8" fill="#fff" font-size="14" text-anchor="middle">½ mile</text></g>
+<text x="980" y="640" fill="#8a8a8a" font-size="13" text-anchor="end">Toward Biggar, about 4 miles southeast  ·  Thankerton station, about 1½ miles by road</text>
+</svg>

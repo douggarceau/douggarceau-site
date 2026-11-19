@@ -1006,6 +1006,44 @@
     "url": "https://earth.google.com/web/@55.63888,-3.59864,230a,350d,35y,0h,0t,0r"
    }
   ],
+  "map": {
+   "img": "img/shieldhill-map.svg",
+   "note": "A rough map, north at the top. Positions come from listed-building records and today's maps; property lines have changed since 1901, and the dashed lines are straight-line distances, not roads.",
+   "dist": [
+    [
+     "Lime Tree Cottage to Gean Tree Cottage",
+     "about 200 feet"
+    ],
+    [
+     "Gean Tree Cottage to Shieldhill Hall",
+     "about 400 feet"
+    ],
+    [
+     "Gean Tree Cottage to the old Quothquan kirk",
+     "about 780 feet"
+    ],
+    [
+     "Gean Tree Cottage to Shieldhill House",
+     "about 0.9 mile"
+    ],
+    [
+     "Shieldhill House to the old Quothquan kirk",
+     "about 1 mile"
+    ],
+    [
+     "Gean Tree Cottage to Quothquan Law",
+     "about 0.8 mile"
+    ],
+    [
+     "Quothquan to Thankerton station",
+     "about 1½ miles by road"
+    ],
+    [
+     "Quothquan to Biggar",
+     "about 4 miles"
+    ]
+   ]
+  },
   "links": [
    {
     "label": "Scottish News: House of Gods founders buy historic castle near Biggar (September 14, 2026)",
