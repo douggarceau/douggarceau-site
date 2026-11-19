@@ -26,7 +26,8 @@ select.jump{font:500 16px Inter,system-ui,sans-serif;padding:10px 12px;min-heigh
 .tab{all:unset;cursor:pointer;font:500 15px/1 Inter,system-ui,sans-serif;color:var(--soft);padding:12px 10px;border-bottom:2px solid transparent}
 .tab:hover{color:#fff}
 .tab[aria-current=true]{color:#fff;border-bottom-color:#fff}
-.tab:focus-visible{outline:2px solid #fff}
+.tab:focus-visible,.row:focus-visible,.toc-row:focus-visible,.pg:focus-visible,.go:focus-visible,.lnk:focus-visible{outline:2px solid #fff;outline-offset:3px}
+#view h2:focus,#view h1:focus{outline:none}
 
 /* Home */
 .hero{text-align:center;padding:clamp(56px,10vw,120px) 0 clamp(40px,6vw,70px);border-bottom:1px solid var(--rule)}
@@ -165,7 +166,7 @@ table.ap td:first-child{width:32%;color:var(--soft);font:500 14px/1.5 Inter,syst
 <footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
 <script>
 {
-let CH=[],C=null,S={sources:[],scans:{},pictures:[]},last=0,NOTE={},BIB={},REC={};
+let CUR=0,CH=[],C=null,S={sources:[],scans:{},pictures:[]},last=0,NOTE={},BIB={},REC={};
 const $=s=>document.querySelector(s);
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const jump=$('#jump');
@@ -179,12 +180,12 @@ function index(){
 }
 const linkFor=([t,x])=>t==='scan'?`<a class="scan" href="${esc(x.page||x.file)}" target="_blank" rel="noopener">Open the document</a>`:ext(x.url,x.title);
 
-function route(){return `<section class="route"><p class="lab">The places he lived</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
+function route(){return `<section class="route"><p class="lab">Places in his life</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
 function home(){return `<section class="hero"><p class="lab">A book by Doug Garceau</p><h1>The Names He Carried</h1><div class="rule"></div><p class="sub">The Laurence Brown Douglas Story</p><p class="yrs">1907 · 1961</p>
 <button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
 <p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>${route()}
 <section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
-<ul class="rows">${[['records','Records',C.records.length+' register and census entries'],['timeline','Timeline','His life, date by date'],['places','Places','Every address on record'],['people','People','His family and the people of Quothquan'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
+<ul class="rows">${[['records','Records',C.records.length+' register and census entries'],['timeline','Timeline','His life, date by date'],['places','Places','Addresses where the records place him'],['people','People','His family and the people of Quothquan'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
 function contents(){let h='<section class="toc" id="toc"><h2 class="big">Contents</h2><p class="lede">'+CH.length+' parts of the book, in order.</p>',p=null;
  for(const c of CH){const pt=c.part||'';if(pt!==p){p=pt;h+=pt?`<div class="part"><span class="lab">${esc(pt)}</span></div>`:'<div class="part"></div>'}
   h+=`<button class="toc-row" data-go="chapter-${c.n}"><span class="n">${num(c)}</span><span class="t">${esc(c.title)}</span><span class="e">${esc(c.era)}</span></button>`}
@@ -197,7 +198,7 @@ function clean(html){
  d.querySelectorAll('img').forEach(im=>{const a=document.createElement('a');a.href=im.getAttribute('src');a.target='_blank';a.rel='noopener';a.textContent=im.alt||'Open the picture';im.replaceWith(a)});
  return d}
 function chapter(n){const c=CH[n-1];if(!c)return home();
- try{localStorage.setItem('nhc-last',n)}catch(e){} last=n;
+ try{localStorage.setItem('nhc-last',n)}catch(e){} last=n; CUR=n;
  const pv=CH[n-2],nx=CH[n],d=clean(c.html);
  if(c.title==='Notes'){d.querySelectorAll('.notes li').forEach((li,i)=>{const L=NOTE[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Source: '+L.map(linkFor).join('');li.append(s)}})}
  if(c.title==='Bibliography'){d.querySelectorAll('.apx p').forEach((p,i)=>{const L=BIB[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Link: '+L.map(linkFor).join('');p.append(s)}})}
@@ -227,11 +228,13 @@ function sources(){
  <h3>Other pictures kept with the book</h3><p class="intro">Photographs and art in the book's folder, as links only.</p><ul class="dl plain">${pics}</ul></section>`}
 function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
  if(m){html=chapter(+m[1]);jump.value=m[1]}
- else{jump.value='';html=({records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places:()=>list('Places','Every address where the records place him.',C.places)}[h]||home)()}
- $('#view').innerHTML=html;
+ else{jump.value='';html=({records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places:()=>list('Places','Addresses where the records place him.',C.places)}[h]||home)()}
+ CUR=m?+m[1]:0; $('#view').innerHTML=html;
  const cur=m?'contents':(h||'start');
  document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===cur)));
- scrollTo(0,0)}
+ let y=0; if(CUR){try{y=+localStorage.getItem('nhc-pos-'+CUR)||0}catch(e){}} scrollTo(0,y);
+ const hd=document.querySelector('#view h2,#view h1'); if(hd){hd.setAttribute('tabindex','-1'); hd.focus({preventScroll:true})}}
+let st=0;addEventListener('scroll',()=>{if(!CUR)return;clearTimeout(st);st=setTimeout(()=>{try{localStorage.setItem('nhc-pos-'+CUR,Math.round(scrollY))}catch(e){}},300)},{passive:true});
 document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!b)return;e.preventDefault();const g=b.dataset.go;
  if(g==='start'){if(location.hash)history.pushState('',document.title,location.pathname+location.search);show();return}
  if(location.hash==='#'+g)show();else location.hash=g});

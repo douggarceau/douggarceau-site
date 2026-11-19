@@ -37,8 +37,8 @@
     45,
     103,
     126,
-    338,
-    341
+    337,
+    340
    ],
    "bib": []
   },
@@ -50,7 +50,7 @@
     8,
     20,
     147,
-    337
+    336
    ],
    "bib": []
   },
@@ -151,8 +151,8 @@
    "notes": [
     0,
     186,
-    211,
-    263
+    210,
+    262
    ],
    "bib": [
     25
@@ -163,8 +163,8 @@
    "title": "National Weather Service, Boston: The Great New England Hurricane of 1938",
    "url": "https://www.weather.gov/box/1938hurricane",
    "notes": [
-    246,
-    248
+    245,
+    247
    ],
    "bib": [
     32
@@ -175,8 +175,8 @@
    "title": "PBS American Experience: The Hurricane of '38",
    "url": "https://www.pbs.org/wgbh/americanexperience/films/hurricane/",
    "notes": [
-    245,
-    247
+    244,
+    246
    ],
    "bib": [
     27
@@ -187,8 +187,8 @@
    "title": "American Heritage: Joe McCarthy, “The '38 Hurricane,” August 1969",
    "url": "https://www.americanheritage.com/38-hurricane",
    "notes": [
-    246,
-    255
+    245,
+    254
    ],
    "bib": [
     28
@@ -199,7 +199,7 @@
    "title": "HISTORY: The Great New England Hurricane, September 21, 1938",
    "url": "https://www.history.com/this-day-in-history/september-21/the-great-new-england-hurricane",
    "notes": [
-    246
+    245
    ],
    "bib": []
   },
@@ -219,7 +219,7 @@
    "title": "The London Gazette, supplement of October 19, 1914, issue 28942 (p. 8354)",
    "url": "https://www.thegazette.co.uk/London/issue/28942/data.pdf",
    "notes": [
-    200
+    199
    ],
    "bib": [
     5
@@ -275,9 +275,9 @@
    "title": "Encyclopedia of Chicago: North Lawndale",
    "url": "https://encyclopedia.chicagohistory.org/pages/901.html",
    "notes": [
-    193,
-    219,
-    220
+    192,
+    218,
+    219
    ],
    "bib": [
     36
@@ -288,7 +288,7 @@
    "title": "U.S. Commission on Civil Rights: School Desegregation in Providence, Rhode Island (October 1977)",
    "url": "https://www.usccr.gov/files/historical/1977/77-024-U.pdf",
    "notes": [
-    332
+    331
    ],
    "bib": [
     33
@@ -299,8 +299,8 @@
    "title": "Rhode Island Historical Society, EnCompass: African American Civil Rights in Rhode Island",
    "url": "https://encompass.rihs.org/african-american-civil-rights-in-rhode-island/african-american-civil-rights-in-rhode-island/",
    "notes": [
-    331,
-    332
+    330,
+    331
    ],
    "bib": [
     34
@@ -311,7 +311,7 @@
    "title": "Small State Big History: George T. Downing, Rhode Island's Most Prominent African American Leader",
    "url": "https://smallstatebighistory.com/george-t-downing-rhode-islands-most-prominent-african-american-leader/",
    "notes": [
-    331
+    330
    ],
    "bib": []
   },
@@ -320,8 +320,8 @@
    "title": "Museum of the City of San Francisco: 1940–41 San Francisco War Chronology",
    "url": "https://sfmuseum.org/war/40-41.html",
    "notes": [
-    282,
-    284
+    281,
+    283
    ],
    "bib": []
   }
@@ -364,7 +364,7 @@
    "notes": [
     124,
     126,
-    341
+    340
    ],
    "bib": [
     0
@@ -437,8 +437,8 @@
   "helenm": {
    "file": "img/helen-harrison-george-pirrie-marriage-register-1950.jpg",
    "notes": [
-    268,
-    338
+    267,
+    337
    ],
    "record": 11,
    "title": "Marriage register entry of George Lees Pirrie and Helen Ena Harrison, Ayr, 1950 (578/1 270)",
