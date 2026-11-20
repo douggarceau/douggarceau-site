@@ -1008,7 +1008,14 @@
     "url": "https://earth.google.com/web/search/Quothquan%20Hall%2C%20Quothquan%2C%20Biggar"
    }
   ],
-  "role": "Estate owner"
+  "role": "Estate owner",
+  "photos": [
+   {
+    "src": "img/nathaniel-dunlop-bust.jpg",
+    "alt": "Marble bust of Sir Nathaniel Dunlop",
+    "cap": "A marble bust of Sir Nathaniel Dunlop. Photograph shared on Ancestry by Richard Hinxman."
+   }
+  ]
  },
  {
   "slug": "ellen-dunlop",
