@@ -1091,7 +1091,12 @@
     "label": "Scottish News: House of Gods founders buy historic castle near Biggar (September 14, 2026)",
     "url": "https://www.scottishnews.com/articles/house-of-gods-founders-buy-historic-castle-near-biggar"
    }
-  ]
+  ],
+  "photo": {
+   "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Shieldhill_Castle_Hotel_-_geograph.org.uk_-_1481532.jpg?width=640",
+   "alt": "Shieldhill Castle",
+   "cap": "Shieldhill House, now Shieldhill Castle, in 2009. Photo: <a href=\"https://www.geograph.org.uk/photo/1481532\" target=\"_blank\" rel=\"noopener\">adam sommerville, geograph.org.uk</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\" target=\"_blank\" rel=\"noopener\">CC BY-SA 2.0</a>."
+  }
  },
  {
   "slug": "robert-douglas",
