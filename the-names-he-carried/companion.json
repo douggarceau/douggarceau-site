@@ -29,8 +29,8 @@
    "title": "Marriage of James Lawson Parker",
    "text": "August 28, 1903, Coldstream, Carluke. Gamekeeper of Shieldhill, Biggar; son of Benjamin Parker, mason, and Jane Lawson, lady's maid. Bride Janet Crawford Stewart.",
    "ref": "Marriages, Carluke, 629/54",
-   "ch": 13,
-   "chl": "Chapter 12"
+   "ch": 6,
+   "chl": "Chapter 5"
   },
   {
    "year": "1907",
@@ -45,56 +45,40 @@
    "title": "Census: Laurence B. Douglas, age 3",
    "text": "16 Lochrin Place, Edinburgh. Listed as son of Elizabeth Douglas, with his sister Janet, 10. The household entry continues across pages.",
    "ref": "Census 1911, 685/4 ED 69 p. 11",
-   "ch": 14,
-   "chl": "Chapter 13"
+   "ch": 13,
+   "chl": "Chapter 12"
   },
   {
    "year": "1911",
    "title": "Census: James Parker at Shieldhill Mains",
    "text": "3 Shieldhill Mains, Libberton. Gamekeeper, 38, born Biggar, with his wife Janet and children John, Euphemia and Robert. Gean Tree Cottage is on the same page.",
    "ref": "Census 1911, 650/3 ED 3 p. 2",
-   "ch": 13,
-   "chl": "Chapter 12"
+   "ch": 6,
+   "chl": "Chapter 5"
   },
   {
    "year": "1911",
    "title": "Marriage of Agnes McGarth Brown",
    "text": "August 28, 1911, Edinburgh, to Thomas McKay McKenzie, asylum attendant. She was an asylum nurse at West House.",
    "ref": "Marriages, St Giles, 685/4 616",
-   "ch": 15,
-   "chl": "Chapter 14"
+   "ch": 14,
+   "chl": "Chapter 13"
   },
   {
    "year": "1919",
    "title": "Death of Robert Douglas",
    "text": "September 9, 1919, Woodburn Sanatorium, Edinburgh, age 43. Pulmonary tuberculosis. Home 5 Foundry Street, Dunfermline.",
    "ref": "Deaths, Morningside, 685/6 1161",
-   "ch": 17,
-   "chl": "Chapter 16"
+   "ch": 16,
+   "chl": "Chapter 15"
   },
   {
    "year": "1921",
    "title": "Census: Lawrence Douglas, age 14",
    "text": "5 Foundry Street, Dunfermline. Message boy for a grocer. Elizabeth a widow and school cleaner; Janet a clerkess.",
    "ref": "Census 1921, 424/1 ED 12",
-   "ch": 19,
-   "chl": "Chapter 18"
-  },
-  {
-   "year": "1950",
-   "title": "Marriage of Helen Ena Harrison and George Lees Pirrie",
-   "text": "August 11, 1950, Ayr. Helen 'formerly married to Laurence Brown Douglas, against whom she obtained Decree of Divorce.'",
-   "ref": "Marriages, Ayr, 578/1 270",
-   "ch": 30,
-   "chl": "Chapter 29"
-  },
-  {
-   "year": "1973",
-   "title": "Death of Helen Ena Pirie",
-   "text": "March 16, 1973, 1a Inverkar Road, Ayr, age 65. Lists both husbands: Laurence Brown Douglas, grocer, and George Rees Pirie.",
-   "ref": "Deaths, Ayr, 680/196",
-   "ch": 37,
-   "chl": "Epilogue"
+   "ch": 18,
+   "chl": "Chapter 17"
   }
  ],
  "people": [
@@ -126,12 +110,6 @@
    "name": "Janet Page Douglas Crombie",
    "dates": "1900–1979",
    "text": "His sister in the Douglas household. Sailed with him to America in 1929; lived in Chicago.",
-   "group": "The family"
-  },
-  {
-   "name": "Helen Ena Harrison",
-   "dates": "1907–1973",
-   "text": "His first wife, a soldier's daughter born in India. Married him in Chicago in 1930; later divorced him, remarried in Ayr in 1950 and died there in 1973.",
    "group": "The family"
   },
   {
@@ -171,19 +149,7 @@
    "group": "Quothquan and Shieldhill"
   }
  ],
- "questions": [
-  "Who was Laurence's father? The birth entry leaves the column blank.",
-  "Where was he between July 1907 and April 1911? The Royal Maternity Hospital register (LHB3/14/6) gives each mother's next address.",
-  "When and in what court did Helen obtain her divorce, and was it before October 1939? The Court of Session records at the National Records of Scotland may hold it.",
-  "Where was Agnes on census night, April 2, 1911?",
-  "When and where did Agnes die?",
-  "Who lived at Gean Cottage in 1906 and 1907? The Libberton valuation rolls would say.",
-  "Does the 1872 birth entry of James Lawson at Biggar name a father?",
-  "Were Kenneth Douglas and Archibald Douglas related?",
-  "When and whom did Elizabeth marry, becoming Mrs. Anderson?",
-  "Did Robert and Lizzie have an infant daughter, Isabella? The 1911 census counts only two children born.",
-  "Was his daughter Constance born in 1941 or 1942?"
- ],
+ "questions": [],
  "timeline": [
   [
    "June 14, 1907",
@@ -242,10 +208,6 @@
    "Enters the United States at Detroit as Lawrence Brown, age 22."
   ],
   [
-   "September 22, 1930",
-   "Marries Helen Ena Harrison in Cook County, Illinois."
-  ],
-  [
    "1937–1938",
    "Providence directories list a Lawrence Douglas, display manager, 165 Weybosset Street."
   ],
@@ -274,10 +236,6 @@
    "Window dresser, 97 Magill Street, Pawtucket."
   ],
   [
-   "August 11, 1950",
-   "Helen, his first wife, marries George Lees Pirrie in Ayr; the register records that she had divorced Laurence."
-  ],
-  [
    "1950–1955",
    "Display worker, 148 General Street, Providence."
   ],
@@ -292,10 +250,6 @@
   [
    "March 13, 1961",
    "Funeral announced from the Ruth E. Urquhart funeral home, Warwick; burial at Saint Ann Cemetery, Cranston."
-  ],
-  [
-   "March 16, 1973",
-   "His first wife, Helen Ena Pirrie, registered at death as Pirie, formerly Douglas, dies of a stroke at 1a Inverkar Road, Ayr, aged 65."
   ]
  ],
  "places": [
@@ -337,7 +291,7 @@
   ],
   [
    "1938",
-   "458 Pine Street, Providence (directory); Helen's May 1938 manifest gives 351 Friendship Street"
+   "458 Pine Street, Providence (directory)"
   ],
   [
    "1940",

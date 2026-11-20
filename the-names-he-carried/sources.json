@@ -20,10 +20,9 @@
     18,
     41,
     67,
-    72,
-    77,
-    112,
-    124
+    71,
+    76,
+    106
    ],
    "bib": []
   },
@@ -34,10 +33,8 @@
    "notes": [
     40,
     42,
-    104,
-    123,
-    305,
-    308
+    105,
+    258
    ],
    "bib": []
   },
@@ -48,8 +45,7 @@
    "notes": [
     8,
     19,
-    141,
-    304
+    123
    ],
    "bib": []
   },
@@ -70,18 +66,13 @@
     39,
     40,
     43,
-    74,
-    78,
-    81,
-    88,
-    91,
+    73,
+    77,
+    80,
+    87,
+    90,
     96,
-    97,
-    98,
-    99,
-    102,
-    114,
-    160
+    142
    ],
    "bib": [
     1
@@ -101,8 +92,8 @@
    "title": "National Records of Scotland: Zeppelin Air Raid on Edinburgh 1916",
    "url": "https://nrscotland.gov.uk/research/learning/first-world-war/zeppelin-air-raid-on-edinburgh-1916",
    "notes": [
-    146,
-    148
+    128,
+    130
    ],
    "bib": [
     30
@@ -113,11 +104,11 @@
    "title": "Ian Castle: 2/3 April 1916 (Zeppelins, Gothas & Giants)",
    "url": "https://iancastlezeppelin.co.uk/2-/-3-apr-1916",
    "notes": [
-    146,
-    147,
-    148,
-    149,
-    157
+    128,
+    129,
+    130,
+    131,
+    139
    ],
    "bib": []
   },
@@ -126,11 +117,11 @@
    "title": "The Edinburgh Reporter: The Zeppelin raid on Edinburgh in 1916 (October 9, 2022)",
    "url": "https://theedinburghreporter.co.uk/2022/10/the-zeppelin-raid-on-edinburgh-in-1916/",
    "notes": [
-    145,
-    146,
-    148,
-    149,
-    157
+    127,
+    128,
+    130,
+    131,
+    139
    ],
    "bib": []
   },
@@ -139,8 +130,8 @@
    "title": "WarHistory.org: The First German Raids on Britain, The Zeppelin Offensive, 1914–16 Part II",
    "url": "https://warhistory.org/article/the-first-german-raids-on-britain-the-zeppelin-offensive-1914-16-part-ii",
    "notes": [
-    146,
-    154
+    128,
+    136
    ],
    "bib": []
   },
@@ -150,9 +141,8 @@
    "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
    "notes": [
     0,
-    179,
-    202,
-    248
+    161,
+    204
    ],
    "bib": [
     25
@@ -163,8 +153,8 @@
    "title": "National Weather Service, Boston: The Great New England Hurricane of 1938",
    "url": "https://www.weather.gov/box/1938hurricane",
    "notes": [
-    236,
-    238
+    192,
+    194
    ],
    "bib": [
     32
@@ -175,8 +165,8 @@
    "title": "PBS American Experience: The Hurricane of '38",
    "url": "https://www.pbs.org/wgbh/americanexperience/films/hurricane/",
    "notes": [
-    235,
-    237
+    191,
+    193
    ],
    "bib": [
     27
@@ -187,8 +177,8 @@
    "title": "American Heritage: Joe McCarthy, “The '38 Hurricane,” August 1969",
    "url": "https://www.americanheritage.com/38-hurricane",
    "notes": [
-    236,
-    241
+    192,
+    197
    ],
    "bib": [
     28
@@ -199,7 +189,7 @@
    "title": "HISTORY: The Great New England Hurricane, September 21, 1938",
    "url": "https://www.history.com/this-day-in-history/september-21/the-great-new-england-hurricane",
    "notes": [
-    236
+    192
    ],
    "bib": []
   },
@@ -208,8 +198,7 @@
    "title": "The London Gazette, July 26, 1907, issue 28044, p. 5118 (knighthoods, Buckingham Palace)",
    "url": "https://thegazette.co.uk/London/issue/28044/page/5118/data.pdf",
    "notes": [
-    109,
-    113
+    95
    ],
    "bib": []
   },
@@ -217,9 +206,7 @@
    "id": "gaz1914",
    "title": "The London Gazette, supplement of October 19, 1914, issue 28942 (p. 8354)",
    "url": "https://www.thegazette.co.uk/London/issue/28942/data.pdf",
-   "notes": [
-    191
-   ],
+   "notes": [],
    "bib": [
     5
    ]
@@ -228,9 +215,7 @@
    "id": "wikidunlop",
    "title": "Wikipedia: Nathaniel Dunlop",
    "url": "https://en.wikipedia.org/wiki/Nathaniel_Dunlop",
-   "notes": [
-    109
-   ],
+   "notes": [],
    "bib": []
   },
   {
@@ -247,7 +232,7 @@
    "title": "Historic Environment Scotland: listing LB27718, Mackinnon House (formerly West House)",
    "url": "https://portal.historicenvironment.scot/designation/LB27718",
    "notes": [
-    118
+    100
    ],
    "bib": []
   },
@@ -274,9 +259,9 @@
    "title": "Encyclopedia of Chicago: North Lawndale",
    "url": "https://encyclopedia.chicagohistory.org/pages/901.html",
    "notes": [
-    185,
-    210,
-    211
+    167,
+    171,
+    172
    ],
    "bib": [
     34
@@ -287,7 +272,7 @@
    "title": "Museum of the City of San Francisco: 1940–41 San Francisco War Chronology",
    "url": "https://sfmuseum.org/war/40-41.html",
    "notes": [
-    265
+    220
    ],
    "bib": []
   }
@@ -301,11 +286,9 @@
     51,
     54,
     67,
-    72,
-    77,
-    93,
-    111,
-    112
+    71,
+    76,
+    92
    ],
    "bib": [
     0
@@ -329,9 +312,9 @@
   "agnesm": {
    "file": "img/agnes-marriage-register-1911.jpg",
    "notes": [
-    121,
-    123,
-    308
+    103,
+    105,
+    258
    ],
    "bib": [
     0
@@ -352,9 +335,7 @@
   },
   "parkerm": {
    "file": "img/james-lawson-parker-marriage-register-1903.jpg",
-   "notes": [
-    104
-   ],
+   "notes": [],
    "record": 3,
    "title": "Marriage register entry of James Lawson Parker and Janet Crawford Stewart, Carluke, 1903 (629/54)",
    "bib": [],
@@ -363,8 +344,7 @@
   "parkerc": {
    "file": "img/census-1911-shieldhill-mains-libberton.jpg",
    "notes": [
-    33,
-    102
+    33
    ],
    "record": 6,
    "title": "1911 census page, Libberton, with James Parker at 3 Shieldhill Mains and Gean Tree Cottage (650/3 ED 3 p. 2)",
@@ -374,23 +354,12 @@
   "robertd": {
    "file": "img/robert-douglas-death-register-1919.jpg",
    "notes": [
-    141
+    123
    ],
    "record": 8,
    "title": "Death register entry of Robert Douglas, Morningside, Edinburgh, 1919 (685/6 1161)",
    "bib": [],
    "page": "docs/robert-douglas-death-1919.html"
-  },
-  "helenm": {
-   "file": "img/helen-harrison-george-pirrie-marriage-register-1950.jpg",
-   "notes": [
-    253,
-    305
-   ],
-   "record": 10,
-   "title": "Marriage register entry of George Lees Pirrie and Helen Ena Harrison, Ayr, 1950 (578/1 270)",
-   "bib": [],
-   "page": "docs/pirrie-harrison-marriage-1950.html"
   },
   "c1911": {
    "file": "img/census-1911-lochrin-place-edinburgh.jpg",
@@ -398,7 +367,7 @@
    "record": 5,
    "title": "1911 census, 16 Lochrin Place, Edinburgh: Laurence B. Douglas, 3 (685/4 69/11)",
    "notes": [
-    114
+    96
    ],
    "bib": []
   },
@@ -408,7 +377,7 @@
    "record": 9,
    "title": "1921 census, 5 Foundry Street, Dunfermline: Lawrence Douglas, 14 (424/1 12)",
    "notes": [
-    160
+    142
    ],
    "bib": []
   },
@@ -416,9 +385,7 @@
    "file": "img/dunlop-will-1920-page-495.jpg",
    "page": "docs/dunlop-will-1920.html",
    "title": "Will of Sir Nathaniel Dunlop of Shieldhill, recorded 1920 (SC38/44/3)",
-   "notes": [
-    110
-   ],
+   "notes": [],
    "bib": []
   },
   "marr1899": {
@@ -526,28 +493,7 @@
    "Sisters at table in a convent dining room"
   ]
  ],
- "checked": [
-  [
-   "docs/john-parker-death-1902.html",
-   "Death register, Dunfermline, 1902: indexed as James Parker, the entry is John Parker, coal miner (424/435)",
-   "Checked and ruled out as James Lawson Parker (Chapter 11 notes)."
-  ],
-  [
-   "docs/census-1911-agnes-brown-dunfermline.html",
-   "1911 census, Dunfermline: Agnes Brown, wife of David D. Brown (424/30 p. 15)",
-   "Searched for Agnes in 1911; not her."
-  ],
-  [
-   "docs/census-1911-agnes-o-brown-morningside.html",
-   "1911 census, Morningside, Edinburgh: Agnes O. Brown, sister of Alexander Brown (685/6 58 p. 2)",
-   "Searched for Agnes in 1911; not her."
-  ],
-  [
-   "docs/census-1911-agnes-brown-gorgie.html",
-   "1911 census, Gorgie, Edinburgh: Agnes Brown, wife of Robert Brown (685/6 92 p. 7)",
-   "Searched for Agnes in 1911; not her."
-  ]
- ],
+ "checked": [],
  "transcripts": [
   [
    "docs/census-1891-castle-row-libberton.html",
