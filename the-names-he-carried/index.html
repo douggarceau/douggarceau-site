@@ -45,6 +45,9 @@ select.jump{font:500 16px Inter,system-ui,sans-serif;padding:10px 12px;min-heigh
 
 /* Home */
 .hero{text-align:center;padding:clamp(56px,10vw,120px) 0 clamp(40px,6vw,70px);border-bottom:1px solid var(--rule)}
+.film{padding:clamp(36px,6vw,64px) 0;border-bottom:1px solid var(--rule);text-align:center}
+.film video{display:block;width:100%;height:auto;background:#000}
+.film .fl{font:italic 400 clamp(18px,2.4vw,24px)/1.3 "Playfair Display",serif;color:var(--soft);margin:18px 0 0}
 .hero .lab{margin:0 0 26px}
 .hero h1{font:900 clamp(52px,11.5vw,138px)/.92 "Playfair Display",serif;margin:0;letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
 .hero .rule{width:min(520px,70%);height:0;border-top:1px solid #fff;margin:34px auto 22px}
@@ -245,7 +248,10 @@ const linkFor=([t,x])=>t==='scan'?`<a class="scan" href="${esc(x.page||x.file)}"
 function route(){return `<section class="route"><p class="lab">Places in his life</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
 function home(){return `<section class="hero"><h1 class="cover"><img src="img/cover-zeppelin.jpg" width="1024" height="1536" alt="The Names He Carried: The Laurence Brown Douglas Story"></h1><p class="lab">A book by Doug Garceau</p>
 <button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
-<p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>${route()}
+<p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>
+<section class="film"><h2 class="big">The film</h2><p class="lede">His life in four minutes, told with the real records.</p>
+<video controls autoplay muted playsinline preload="metadata" poster="video/film-poster.jpg" width="1920" height="1080"><source src="video/the-names-he-carried-film.mp4" type="video/mp4"></video>
+<p class="fl">The film starts silent. Press the speaker button for the music.</p></section>${route()}
 <section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
 <ul class="rows">${[['records','Records',C.records.length+' historical records'],['timeline','Timeline','His life, date by date'],['places','Places','Addresses where the records place him'],['people','People','His family and the people of Quothquan'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
 function contents(){let h='<section class="toc" id="toc"><h2 class="big">Contents</h2><p class="lede">'+CH.length+' parts of the book, in order.</p>',p=null;
