@@ -6,8 +6,8 @@
   "group": "Laurence",
   "story": [
    "Laurence Brown Douglas is the man at the center of this book. He was born at nine o'clock on the evening of June 14, 1907, at the Royal Maternity Hospital in Lauriston Place, Edinburgh. Twenty days later his mother, Agnes Brown, registered him as Lawrence Brown. For her home she gave Gean Cottage, Shieldhill, Biggar.",
-   "By the spring of 1911 he was living at 16 Lochrin Place in Edinburgh as Laurence B. Douglas, the son of the house of Robert and Elizabeth Douglas. In 1912 the family moved to Dunfermline, where a school clerk wrote one word beside his name: Adopted. He grew up there with the Douglases' daughter, Janet. Robert Douglas died of tuberculosis in 1919, and in October 1920, at thirteen, Laurence left school with an exemption and went to work as a message boy for a grocer.",
-   "In September 1929 he sailed from Greenock with Janet on the Duchess of Bedford and crossed into the United States at Detroit as Lawrence Brown, twenty-two, grocer, six feet tall, fair hair, blue eyes, fifty dollars. In Chicago he lodged with Janet and her husband. By 1937 he was in Providence as a display man, dressing store windows on Weybosset Street, the trade he would follow for the rest of his life.",
+   "By the spring of 1911 he was living at 16 Lochrin Place in Edinburgh as Laurence B. Douglas, the son of the house of Robert and Elizabeth Douglas. In 1912 the family moved to Dunfermline. He grew up there with the Douglases' daughter, Janet. Robert Douglas died of tuberculosis in 1919, and in October 1920, at thirteen, Laurence left school with an exemption and went to work as a message boy for a grocer.",
+   "In September 1929 he sailed from Greenock with Janet on the Duchess of Bedford and crossed into the United States at Detroit as Lawrence Brown, twenty-two, grocer, six feet tall, fair hair, blue eyes, fifty dollars. In Chicago he lived with Janet and her husband. By 1937 he was in Providence as a display man, dressing store windows on Weybosset Street, the trade he would follow for the rest of his life.",
    "In October 1939 he married Constance Eugenie Darcy in Birmingham, Alabama. They lived in San Francisco, where he dressed the windows of Bond Stores, and in 1943, in a federal court in Pittsburgh, he became an American citizen as Laurence Brown Douglas: both names at once. After the war the family settled in Pawtucket and then Providence, at 644 River Avenue. He died at St. Joseph's Hospital in Providence on March 9, 1961, at fifty-three, and was buried at Saint Ann Cemetery in Cranston. His grandson, Doug Garceau, wrote this book."
   ],
   "lineage": [
@@ -420,7 +420,7 @@
   "story": [
    "Lawrence Tweedie Brown was the elder brother of George Brown and the uncle of Agnes McGarth Brown. He was born on September 14, 1860, at Peebles, a son of William Brown and Agnes McGarth. In 1871 the census found him at ten in the same household as his brother George.",
    "He married Isabella Graham of Cambusnethan, raised a family at Traquair and Sanquhar, and eventually settled in Quebec, where he died in 1943.",
-   "His place in this story is his name. When Agnes registered her son in 1907, she gave him the first name Lawrence, the name of her father's elder brother. In the family it was understood that the boy was named for him."
+   "His place in this story is his name. When Agnes registered her son in 1907, she gave him the first name Lawrence, the name of her father's elder brother. "
   ],
   "lineage": [
    {
@@ -508,7 +508,7 @@
   "group": "His mother's family",
   "story": [
    "Jane Henderson, born Jane Robb, was Agnes's grandmother, and Laurence's great-grandmother. She was a crofter born at Carnwath, the wife of Alexander Henderson, and she raised her family at Libberton: Christina, Jane, Janet, David and, about 1876, a late son, Andrew.",
-   "Hers was a house that took children in. In 1881 she was raising a boy of eight, James Parker, entered in the census as her Adopted Son. In February 1891 her daughter Christina died, and Jane took in Christina's two girls, Mary and Agnes Brown. On census night that April she was fifty-six, at the fifth cottage of the row called Castle, with her daughter Jane, her son Andrew, James Parker and her two granddaughters.",
+   "Hers was a house that took children in. In 1881 she was raising a boy of eight, James Parker, as her own. In February 1891 her daughter Christina died, and Jane took in Christina's two girls, Mary and Agnes Brown. On census night that April she was fifty-six, at the fifth cottage of the row called Castle, with her daughter Jane, her son Andrew, James Parker and her two granddaughters.",
    "She died on June 8, 1891, four months after her daughter. Her cottage, later called Lime Tree, remained Agnes's home until Agnes moved a few doors along to Gean Cottage."
   ],
   "lineage": [
@@ -524,7 +524,7 @@
    },
    {
     "rel": "Raised",
-    "who": "James Parker, her adopted son",
+    "who": "James Parker, raised as her own",
     "slug": "james-lawson-parker"
    },
    {
@@ -688,9 +688,9 @@
   "group": "Quothquan and Shieldhill",
   "story": [
    "Alexander Archibald was the gardener at Shieldhill. When Agnes Brown was pregnant, he helped arrange for her to stay with his sister Mary. He was the son of a widow, Ann Archibald, born Ann Purves, and the brother of Mary and John. In April 1891, at twenty, he lived in the row of cottages called Castle at Quothquan and broke stones for the county roads. That spring Agnes, five, came to live in her grandmother's cottage a few doors along.",
-   "That June his brother John died at eighteen, twelve days after Agnes's grandmother. In December 1897 his mother died, and at about the same time his sister Mary had a daughter of her own, with no marriage the records show.",
+   "That June his brother John died at eighteen, twelve days after Agnes's grandmother. In December 1897 his mother died.",
    "In 1898 Nathaniel Dunlop bought Shieldhill. By census night in 1901 the stonebreaker had become the domestic gardener at the big house. The laird was away, and the household living in Shieldhill House was the gardener's: Alexander, thirty, his wife, Annie, twenty-six, born at Carnwath, and a dairymaid.",
-   "When Agnes was carrying a child in the autumn of 1906, Alexander took her to his sister's house, Gean Cottage. There Mary Archibald kept her through the pregnancy, and Agnes still gave Gean Cottage as her home when she registered her son's birth."
+   "When Agnes was carrying a child in the autumn of 1906, Alexander helped arrange for her to stay at his sister's house, Gean Cottage. There Mary Archibald kept her through the pregnancy, and Agnes still gave Gean Cottage as her home when she registered her son's birth."
   ],
   "lineage": [
    {
@@ -758,7 +758,7 @@
   "group": "Quothquan and Shieldhill",
   "story": [
    "Mary Archibald was the woman who took Agnes Brown into her home. She was born on October 23, 1864, at Libberton, the daughter of George Archibald and Ann Purves, and grew up in the row of cottages at Quothquan. When Agnes, five, came to her grandmother's cottage in 1891, Mary was a grown woman a few doors along, one of the first Agnes knew outside her own family.",
-   "In 1891 her brother John died, and in December 1897 her mother. At about the same time Mary had a daughter of her own, Annie P. R., who lived until 1992. In 1901 she was a sewing mistress living alone at Gean Tree; her daughter, about three, was not with her. Her brother Alexander was the gardener at Shieldhill House.",
+   "In 1891 her brother John died, and in December 1897 her mother. At about the same time Mary had a daughter, Annie P. R., who lived until 1992. In 1901 she was a sewing mistress living alone at Gean Tree; her daughter, about three, was not with her. Her brother Alexander was the gardener at Shieldhill House.",
    "When Agnes was pregnant in the autumn of 1906, she left her uncle's house of men at Lime Tree and moved in with Mary at Gean Cottage. Mary kept her through the winter and spring, a roof, a fire and food on the table when Agnes could no longer earn them, and it was her house Agnes named as home when she registered her son. By 1911 Mary was gone from Gean Tree. She later married John Cuthbertson, who is named on her gravestone at Biggar."
   ],
   "lineage": [
@@ -850,9 +850,9 @@
   "dates": "born about 1872",
   "group": "Quothquan and Shieldhill",
   "story": [
-   "James Parker was the boy Jane Henderson raised as her own. He was born at Biggar about 1872, and in 1881, at eight, the census entered him in her cottage as \"Adopted Son.\" In 1891 he was still there, eighteen, an agricultural laborer, when Agnes, five, came to the house. He was thirteen years older than she was, something between an uncle and an older brother.",
-   "In 1901 he was twenty-eight, a gamekeeper, boarding at Lime Tree Cottage with Andrew Henderson and his two nieces. On August 28, 1903, at Coldstream, in the parish of Carluke, he married Janet Crawford Stewart, a shepherd's daughter, and signed his full name: James Lawson Parker. He named his parents as Benjamin Parker, a mason, and Jane Lawson, a lady's maid, both dead. A boy called James Lawson was registered at Biggar in 1872, which suggests he began life under his mother's name.",
-   "He brought his wife home to Shieldhill. In 1911 he was thirty-eight, a gamekeeper at 3 Shieldhill Mains, with Janet and three children, John, Euphemia and Robert."
+   "James Parker was the boy Jane Henderson raised as her own. He was born at Biggar about 1872, and in 1881, at eight, the census found him in her cottage. In 1891 he was still there, eighteen, an agricultural laborer, when Agnes, five, came to the house. He was thirteen years older than she was, something between an uncle and an older brother.",
+   "In 1901 he was twenty-eight, a gamekeeper, boarding at Lime Tree Cottage with Andrew Henderson and his two nieces. On August 28, 1903, at Coldstream, in the parish of Carluke, he married Janet Crawford Stewart, a shepherd's daughter, and signed his full name: James Lawson Parker. He named his parents as Benjamin Parker, a mason, and Jane Lawson, a lady's maid, both dead.",
+   "He brought his wife home to Shieldhill. In 1911 he was thirty-eight, living at 3 Shieldhill Mains with Janet and three children, John, Euphemia and Robert."
   ],
   "lineage": [
    {
@@ -895,7 +895,7 @@
     "url": "https://earth.google.com/web/search/Shieldhill%20Mains%2C%20Quothquan%2C%20Biggar"
    }
   ],
-  "role": "Gamekeeper"
+  "role": "Grew up beside Agnes"
  },
  {
   "slug": "nathaniel-dunlop",
@@ -942,7 +942,7 @@
   "group": "Quothquan and Shieldhill",
   "story": [
    "Ellen Dunlop was the only daughter of Nathaniel Dunlop, the owner of Shieldhill. In 1903 she and her father put up Shieldhill Hall in the village of Quothquan, a hall of corrugated iron with timber gables, for evening services. It still stands.",
-   "She took a close interest in the running of the Shieldhill estate, where her father was often away in Glasgow. Alexander Archibald was the domestic gardener at the house in 1901. Her father's will of 1919 left gifts to the household servants as she might direct."
+   "Her father's will of 1919 left gifts to the household servants as she might direct."
   ],
   "lineage": [
    {
@@ -972,8 +972,8 @@
    "Shieldhill was the estate on the hill above the village of Quothquan, in the parish of Libberton in Upper Clydesdale, four miles from Biggar. Its house was a rambling mansion built around an old tower, with stonework of the sixteenth and seventeenth centuries and additions of about 1820. With the estate came the village and its cottages, among them the row the census of 1891 called Castle, where Agnes Brown grew up.",
    "The Chancellor family held the lands of Shieldhill from 1434, when George Chancellor was granted them with part of Quothquan. Shieldhill became the family's main home after their house at Quothquan was destroyed, following William Chancellor's support for Mary Queen of Scots at the Battle of Langside. The family buried their dead in the ruined old kirk at Quothquan, which they had taken as a family burial place around 1780. In 1898 they sold Shieldhill to Nathaniel Dunlop, a Glasgow shipowner of the Allan Line. Dunlop rebuilt Huntfield Place, turning six houses into four, enlarged the smith's house, and in 1903, with his daughter, Ellen, put up Shieldhill Hall in the village for evening services.",
    "On census night in 1901 the house stood nearly empty. The laird was away at his house in Govan, and the household living in Shieldhill House was the gardener's: Alexander Archibald, thirty, his wife, Annie, and a dairymaid, Susan Cumisky. The estate was kept by its resident staff, servants, gardeners and keepers. A few doors down the hill, at Gean Tree, lived the gardener's sister, Mary Archibald, and at Lime Tree lived Agnes Brown, fifteen.",
-   "Shieldhill is the place at the center of Laurence's beginning. When Agnes registered her son in Edinburgh in July 1907, she gave her home as Gean Cottage, Shieldhill, Biggar. That same month the King knighted the estate's owner as Sir Nathaniel Dunlop of Shieldhill. In 1911 James Parker, the boy Agnes grew up beside, was the gamekeeper at Shieldhill Mains. Dunlop died at Shieldhill on November 15, 1919.",
-   "The house is still there, a category B listed building whose oldest surviving part is a sixteenth-century square keep. It became a country house hotel in 1959 and reopened in August 2020 after a long refurbishment. In 1997 Nelson Mandela stayed there during the Commonwealth summit in Edinburgh and planted an oak tree in the grounds. In 2026 Shieldhill was bought by Mike and Ross Baxter, the Edinburgh brothers who founded the House of Gods hotels."
+   "Shieldhill is the place at the center of Laurence's beginning. When Agnes registered her son in Edinburgh in July 1907, she gave her home as Gean Cottage, Shieldhill, Biggar.",
+   "The house is still there, a category B listed building whose oldest surviving part is a sixteenth-century square keep. It became a country house hotel in 1959 and reopened in August 2020 after a long refurbishment. In 1997 Nelson Mandela stayed there during the Commonwealth summit in Edinburgh and planted an oak tree in the grounds."
   ],
   "lineage": [
    {
@@ -997,7 +997,7 @@
     "slug": "alexander-archibald"
    },
    {
-    "rel": "Gamekeeper at Shieldhill Mains in 1911",
+    "rel": "Lived at Shieldhill Mains in 1911",
     "who": "James Lawson Parker",
     "slug": "james-lawson-parker"
    },
@@ -1155,7 +1155,7 @@
     "url": "https://earth.google.com/web/search/Foundry%20Street%2C%20Dunfermline"
    }
   ],
-  "role": "Adoptive father"
+  "role": "The man who raised him"
  },
  {
   "slug": "elizabeth-millar-mcdonald",
@@ -1163,7 +1163,7 @@
   "dates": "born 1874",
   "group": "The family that raised him",
   "story": [
-   "Elizabeth Millar McDonald, known as Lizzie, was the woman who raised Laurence, and the mother he named in every record that asked. She was born at Liberton, on the southern edge of Edinburgh, on May 31, 1874. Her mother, Ann McDonald, was about twenty. In 1878 Ann married and sailed for New Zealand, leaving Lizzie, four, with her grandparents, John and Janet McDonald, at Gilmerton.",
+   "Elizabeth Millar McDonald, known as Lizzie, was the woman who raised Laurence, and the mother he named when he sailed for America. She was born at Liberton, on the southern edge of Edinburgh, on May 31, 1874. Her mother, Ann McDonald, was about twenty. In 1878 Ann married and sailed for New Zealand, leaving Lizzie, four, with her grandparents, John and Janet McDonald, at Gilmerton.",
    "She went into service at sixteen. On June 9, 1899, she married Robert Douglas, a saw miller, and for her own parents she gave the names of the grandparents who had raised her. Their daughter Janet was born in 1900. By 1911 she was raising the boy born Lawrence Brown as her son, Laurence B. Douglas, at 16 Lochrin Place. A woman who had been taken in took in a child.",
    "Widowed in 1919, she worked as a school cleaner in Dunfermline. By 1929 she was using the surname Anderson, Mrs. Elizabeth Anderson of 39 Grieve Street, and both Janet and Laurence named her as their mother when they sailed for America. When and whom she remarried has not been found in the records."
   ],
@@ -1227,7 +1227,7 @@
     "url": "https://earth.google.com/web/search/39%20Grieve%20Street%2C%20Dunfermline"
    }
   ],
-  "role": "Adoptive mother"
+  "role": "The woman who raised him"
  },
  {
   "slug": "ann-mcdonald-hope",
@@ -1273,7 +1273,7 @@
   "group": "The family that raised him",
   "story": [
    "Robert Alexander Hope married Ann McDonald, the mother of Lizzie Douglas, in Glasgow on July 28, 1876. He was born at Rigg, near Gretna, on July 14, 1852, the son of Gavin Hope and Elizabeth Millar.",
-   "In 1878 he and Ann emigrated to New Zealand, where their son John Rakaia Hope was born at sea. They settled at Cross Creek in the Wairarapa. Robert died at Pukekohe on December 3, 1930. Lizzie, Ann's daughter born before the marriage, was not taken with them."
+   "In 1878 he and Ann emigrated to New Zealand, where their son John Rakaia Hope was born at sea. They settled at Cross Creek in the Wairarapa. Robert died at Pukekohe on December 3, 1930. Lizzie stayed behind in Scotland with her grandparents."
   ],
   "lineage": [
    {
@@ -1381,7 +1381,7 @@
   "story": [
    "Janet Page Douglas was the daughter of Robert and Lizzie Douglas, and the sister Laurence grew up with. She was born in Edinburgh on April 29, 1900, seven years before him. In 1911 they were in the same house at Lochrin Place, and in August 1912 the Queen Anne School in Dunfermline admitted them two days apart from the same address.",
    "She left school at fourteen in August 1914, and in 1921 she was a clerkess with the Dunfermline Co-operative Society. On July 16, 1926, she married Thomas Crombie, and that September they crossed into the United States at Detroit and settled on South Kostner Avenue in Chicago.",
-   "In May 1929 she came home to Dunfermline, and in September she sailed back with Laurence on the Duchess of Bedford. He lived as a lodger in her household in 1930. In 1936 Janet had twin daughters, Betty and Jessie. She became an American citizen in 1948 and died in December 1979, her last home Maywood, Illinois."
+   "In May 1929 she came home to Dunfermline, and in September she sailed back with Laurence on the Duchess of Bedford. The 1930 census found him in her household. In 1936 Janet had twin daughters, Betty and Jessie. She became an American citizen in 1948 and died in December 1979, her last home Maywood, Illinois."
   ],
   "lineage": [
    {
@@ -1447,7 +1447,7 @@
   "group": "The family that raised him",
   "story": [
    "Thomas Crombie was the husband of Janet Douglas, Laurence's sister. He was a man from Kinross, thirty-two when they married in Dunfermline on July 16, 1926. That September they crossed into the United States at Detroit and settled on the West Side of Chicago.",
-   "When Laurence arrived in 1929, he named Thomas, his brother-in-law, at 1534 South Kostner Avenue, as the person he was going to. On the 1930 census Thomas was the head of the house, a furniture salesman, with Laurence as his lodger. He became an American citizen on September 9, 1947."
+   "When Laurence arrived in 1929, he named Thomas, his brother-in-law, at 1534 South Kostner Avenue, as the person he was going to. On the 1930 census Thomas was the head of the house, a furniture salesman, with Laurence entered as his brother-in-law. He became an American citizen on September 9, 1947."
   ],
   "lineage": [
    {
@@ -1521,7 +1521,7 @@
   "story": [
    "Constance Eugenie Darcy was Laurence's wife for twenty-one years. She was born on Saturday, October 12, 1912, at 410 Smith Street, Providence, the first child of Albert Blake Darcy, a printer, and Eugenie Emma Delaire. Her parents later divorced, and she grew up between their households. She trained as a hairdresser, and in 1937 and 1938 she worked on Westminster Street, a block from Laurence's work on Weybosset Street.",
    "On October 9, 1939, she and Laurence were married in Birmingham, Alabama. They lived in San Francisco, where he dressed windows for Bond Stores, then in the Pittsburgh district, and after the war in Pawtucket and Providence. She trained at the Rhode Island School of Practical Nursing, and by 1961 she was a nurse at Roger Williams General Hospital.",
-   "Laurence died in 1961, when she was forty-eight. She kept nursing, worked eight years at Cranston General Hospital, and retired in 1974. In her last years she lived in East Greenwich. The family remembers her pleasant, congenial nature; her grandchildren called her Nan. She died on April 12, 1994, and was buried with Laurence at Saint Ann Cemetery, Cranston."
+   "Laurence died in 1961, when she was forty-eight. She kept nursing, worked eight years at Cranston General Hospital, and retired in 1974. In her last years she lived in East Greenwich. The family remembers her pleasant, congenial nature. She died on April 12, 1994, and was buried with Laurence at Saint Ann Cemetery, Cranston."
   ],
   "lineage": [
    {
