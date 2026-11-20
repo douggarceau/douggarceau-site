@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T16:20Z",
+ "updated": "2026-11-20T20:21Z",
  "items": [
   {
    "id": "RHfStVMSMLc",
@@ -7,6 +7,20 @@
    "source": "Meinl",
    "date": "2026-11-20",
    "kind": "EVENT"
+  },
+  {
+   "id": "Bv8H7EEAMHQ",
+   "title": "The Strange Story Behind U2\u2019s Most Iconic Drum Beat",
+   "source": "Drumeo",
+   "date": "2026-11-20",
+   "kind": "INTERVIEW"
+  },
+  {
+   "id": "RcR5pooWDjM",
+   "title": "Drum Talk TV News Desk Report - November 20, 2026",
+   "source": "Drumtalk TV",
+   "date": "2026-11-20",
+   "kind": "TALK"
   },
   {
    "id": "dkvLEmzvVY0",
@@ -46,13 +60,6 @@
   {
    "id": "c_k_jffTYPI",
    "title": "Drumming Injury Talk - November 13, 2026",
-   "source": "Drumtalk TV",
-   "date": "2026-11-14",
-   "kind": "TALK"
-  },
-  {
-   "id": "Zz_8AT2_3_U",
-   "title": "Drum Talk TV News Desk Report - November 13, 2026",
    "source": "Drumtalk TV",
    "date": "2026-11-14",
    "kind": "TALK"
@@ -105,13 +112,6 @@
    "source": "Tama",
    "date": "2026-10-02",
    "kind": "DEMO"
-  },
-  {
-   "id": "yPzYWqf0_bQ",
-   "title": "Neil Peart: No One's Disciple - Director Sam Dunn Interview",
-   "source": "Modern Drummer",
-   "date": "2026-10-02",
-   "kind": "INTERVIEW"
   }
  ],
  "log": {
@@ -120,7 +120,7 @@
   "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (6)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
-  "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
+  "Drumeo": "UCBiJBaDaM3K6vPVggLhTyWA UCBiJBaDaM3K6vPVggLhTyWA Drumeo (1)",
   "Tama": "UCTSkpJG7QWeungk9q6Je2_g UCTSkpJG7QWeungk9q6Je2_g TAMA Drums Official (4)",
   "Pearl": "UCmGi7DMBXl7aTOG1HDbRWoQ UCmGi7DMBXl7aTOG1HDbRWoQ Pearl Drums (1)",
   "Gretsch": "UCCi7ihBj53YSjNI9lY7nXtA UCCi7ihBj53YSjNI9lY7nXtA gretschdrumsusa (1)",
@@ -131,9 +131,9 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (3)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM @NAMM": "error: HTTP Error 404: Not Found",
-  "NAMM": "search UCAZbQF3vH1ZLnTaUMMc8vVA Namm lama (0)",
+  "NAMM": "search UCdhX2Bbys9jRP8TdoKl4QLQ NAMM (0)",
   "Percussive Arts Society": "search UCmix41mimQccSEZPSPVuJrg Percussive Arts Web Contest (0)",
-  "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
-  "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer"
+  "Percussive Arts Society skip UCiN_jn-y1jym-ecJt93PjyQ": "SuddenImpact",
+  "Percussive Arts Society skip UCpWm6FbUQUxS5QiQg77sDtg": "Brian Zator"
  }
 }
