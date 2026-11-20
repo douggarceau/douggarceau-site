@@ -427,7 +427,7 @@
   "dir37": {
    "file": "img/lawrence-douglas-1937-providence-directory.jpg",
    "page": "docs/providence-directory-1937.html",
-   "record": 15,
+   "record": 16,
    "title": "1937 Providence directory: Lawrence Douglas, display manager",
    "notes": [
     160
@@ -437,7 +437,7 @@
   "pet43": {
    "file": "img/laurence-brown-douglas-1943-petition.png",
    "page": "docs/naturalization-petition-1943.html",
-   "record": 21,
+   "record": 22,
    "title": "1943 naturalization petition: Laurence Brown Douglas",
    "notes": [
     212,
@@ -449,7 +449,7 @@
   "dir50": {
    "file": "img/lawrence-b-douglas-1950-providence-directory.png",
    "page": "docs/providence-directory-1950.html",
-   "record": 24,
+   "record": 25,
    "title": "1950 Providence directory: 148 General Street",
    "notes": [
     227
@@ -459,7 +459,7 @@
   "obit61": {
    "file": "img/laurence-b-douglas-1961-obituary.png",
    "page": "docs/obituary-1961.html",
-   "record": 26,
+   "record": 27,
    "title": "1961 obituary: Laurence B. Douglas",
    "notes": [
     1,
@@ -483,7 +483,7 @@
   "dir38": {
    "file": "img/lawrence-douglas-1938-providence-directory.png",
    "page": "docs/providence-directory-1938.html",
-   "record": 16,
+   "record": 17,
    "title": "1938 Providence directory: Lawrence Douglas, display manager",
    "notes": [
     183
@@ -493,7 +493,7 @@
   "mar39": {
    "file": "img/laurence-douglas-constance-darcy-1939-marriage.png",
    "page": "docs/marriage-1939.html",
-   "record": 17,
+   "record": 18,
    "title": "1939 marriage license: Lawrence Douglas and Constance Darcy",
    "notes": [
     130,
@@ -504,7 +504,7 @@
   "cen40": {
    "file": "img/laurence-douglas-1940-census.png",
    "page": "docs/census-1940-san-francisco.html",
-   "record": 18,
+   "record": 19,
    "title": "1940 census: the Douglases in San Francisco",
    "notes": [
     159,
@@ -515,7 +515,7 @@
   "dra40": {
    "file": "img/laurence-brown-douglas-1940-draft-card.png",
    "page": "docs/draft-card-1940.html",
-   "record": 19,
+   "record": 20,
    "title": "1940 draft registration card: Laurence Brown Douglas",
    "notes": [
     205,
@@ -526,7 +526,7 @@
   "bla41": {
    "file": "img/lawrence-brown-douglas-1941-blaine-border-card.png",
    "page": "docs/blaine-border-card-1941.html",
-   "record": 20,
+   "record": 21,
    "title": "1941 border card: back across the border at Blaine",
    "notes": [
     209
@@ -536,7 +536,7 @@
   "oat43": {
    "file": "img/laurence-brown-douglas-1943-oath.png",
    "page": "docs/oath-of-allegiance-1943.html",
-   "record": 22,
+   "record": 23,
    "title": "1943 oath of allegiance: Laurence Brown Douglas becomes a citizen",
    "notes": [
     221
@@ -546,7 +546,7 @@
   "paw47": {
    "file": "img/laurence-b-douglas-1947-pawtucket-directory.png",
    "page": "docs/pawtucket-directory-1947.html",
-   "record": 23,
+   "record": 24,
    "title": "1947 Pawtucket directory: 97 Magill Street",
    "notes": [
     226
@@ -556,7 +556,7 @@
   "dir60": {
    "file": "img/laurence-b-douglas-1960-providence-directory.png",
    "page": "docs/providence-directory-1960.html",
-   "record": 25,
+   "record": 26,
    "title": "1960 Providence directory: Carter's Men Store",
    "notes": [
     235
@@ -566,11 +566,19 @@
   "dir61": {
    "file": "img/laurence-b-douglas-1961-providence-directory.png",
    "page": "docs/providence-directory-1961.html",
-   "record": 27,
+   "record": 28,
    "title": "1961 Providence directory: window displays",
    "notes": [
     236
    ],
+   "bib": []
+  },
+  "eliz34": {
+   "file": "img/elizabeth-anderson-1934-port-huron-card.png",
+   "page": "docs/elizabeth-anderson-border-card-1934.html",
+   "record": 15,
+   "title": "1934 border card: Elizabeth Anderson comes to America",
+   "notes": [],
    "bib": []
   }
  },
