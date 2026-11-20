@@ -1,7 +1,8 @@
 {
- "updated": "2026-11-20T08:24Z",
+ "updated": "2026-11-20T12:26Z",
  "sources": [
   "Modern Drummer (8)",
+  "Drumming News Network (8)",
   "Drummer's Review (8)",
   "Beat It (8)",
   "Drumeo (8)",
@@ -15,11 +16,21 @@
   "The Drummer's Journal (8)",
   "MusicRadar (8)"
  ],
- "errors": {
-  "Drumming News Network": "The read operation timed out"
- },
- "raw_count": 57,
+ "errors": {},
+ "raw_count": 65,
  "items": [
+  {
+   "title": "Deen Castronovo Breaks His Silence After Leaving Journey: \u201cI\u2019ll Come Back Swingin\u2019!\u201d",
+   "link": "https://www.drummingnewsnetwork.com/deen-castronovo-breaks-his-silence-after-leaving-journey-ill-come-back-swingin/",
+   "source": "Drumming News Network",
+   "date": "2026-11-19"
+  },
+  {
+   "title": "BBC Visits The Japan\u2019s Ancient Art of Taiko Drumming",
+   "link": "https://www.drummingnewsnetwork.com/bbc-visits-the-japans-ancient-art-of-taiko-drumming/",
+   "source": "Drumming News Network",
+   "date": "2026-11-19"
+  },
   {
    "title": "Tamburo Launches the Dorothea Taylor Signature Snare",
    "link": "https://drummersreview.com/news/tamburo-launches-the-dorothea-taylor-signature-snare/",
@@ -31,6 +42,30 @@
    "link": "https://en.beatit.tv/john-tempesta-has-left-the-cult/",
    "source": "Beat It",
    "date": "2026-11-19"
+  },
+  {
+   "title": "Georgia Tech Launches HearMe, A Free AI Music App",
+   "link": "https://www.drummingnewsnetwork.com/georgia-tech-launches-hearme-a-free-ai-music-app/",
+   "source": "Drumming News Network",
+   "date": "2026-11-18"
+  },
+  {
+   "title": "Duran Duran Drummer Roger Taylor Retires Due to Worsening Health Issues",
+   "link": "https://www.drummingnewsnetwork.com/duran-duran-drummer-roger-taylor-retires-due-to-worsening-health-issues/",
+   "source": "Drumming News Network",
+   "date": "2026-11-16"
+  },
+  {
+   "title": "Deen Castronovo Leaves Journey to Focus on Health",
+   "link": "https://www.drummingnewsnetwork.com/deen-castronovo-leaves-journey-to-focus-on-health/",
+   "source": "Drumming News Network",
+   "date": "2026-11-14"
+  },
+  {
+   "title": "Original W.A.S.P. Drummer Tony Richards Dead at 69",
+   "link": "https://www.drummingnewsnetwork.com/original-w-a-s-p-drummer-tony-richards-dead-at-69/",
+   "source": "Drumming News Network",
+   "date": "2026-11-13"
   },
   {
    "title": "RT Custom Drums: Looks To Kill. Sound To Match?",
@@ -55,6 +90,12 @@
    "link": "https://www.electronicdrumadvisor.com/best-electronic-drum-sample-pad-cases-bags/",
    "source": "Electronic Drum Advisor",
    "date": "2026-11-12"
+  },
+  {
+   "title": "Mapex Releases Two New Mars Black Series Drum Packages",
+   "link": "https://www.drummingnewsnetwork.com/mapex-releases-two-new-mars-black-series-drum-packages/",
+   "source": "Drumming News Network",
+   "date": "2026-11-11"
   },
   {
    "title": "The 3 Best Stands and Mounts for Electronic Drum Sample Pads (2026)",
@@ -217,48 +258,6 @@
    "link": "https://en.beatit.tv/new-tama-starclassic-walnut-birch-duracover-finishes/",
    "source": "Beat It",
    "date": "2026-10-06"
-  },
-  {
-   "title": "SWISS DRUM WORLD IS COMING TO THE UK DRUM SHOW 2026!",
-   "link": "https://theukdrumshow.com/show-news/swiss-drum-world-is-coming-to-the-uk-drum-show-2026/",
-   "source": "The UK Drum Show",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "CJ HOKDAL: From \u201cThat Swedish Drummer\u201d to The UK Drum Show",
-   "link": "https://theukdrumshow.com/show-news/cj-hokdal-from-that-swedish-drummer-to-the-uk-drum-show/",
-   "source": "The UK Drum Show",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "EFNOTE 3X Review",
-   "link": "https://thedrumninja.com/efnote-3x-review/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-06"
-  },
-  {
-   "title": "Sex on Fire Drum Transcription",
-   "link": "https://thedrumninja.com/sex-on-fire-drum-transcription/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-05"
-  },
-  {
-   "title": "Ohana Festival",
-   "link": "https://www.moderndrummer.com/2026/10/ohana-festival/",
-   "source": "Modern Drummer",
-   "date": "2026-10-02"
-  },
-  {
-   "title": "LOUISE BARTLE | From Bedroom Drummer to Bloc Party",
-   "link": "https://theukdrumshow.com/show-news/louise-bartle-from-bedroom-drummer-to-bloc-party/",
-   "source": "The UK Drum Show",
-   "date": "2026-10-01"
-  },
-  {
-   "title": "Every Breath You Take Drum Transcription",
-   "link": "https://thedrumninja.com/every-breath-you-take-drum-transcription/",
-   "source": "The Drum Ninja",
-   "date": "2026-10-01"
   }
  ]
 }

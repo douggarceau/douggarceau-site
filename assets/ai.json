@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T08:25Z",
+ "updated": "2026-11-20T12:26Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -7,6 +7,22 @@
    "source": "Resident Advisor",
    "date": "2026-11-11",
    "kind": "DRUMS",
+   "release": true
+  },
+  {
+   "title": "Instagram launches content protection tool for unauthorised reposts and AI-modification",
+   "link": "https://musically.com/2026/11/20/instagram-launches-content-protection-tool-for-unauthorised-reposts-and-ai-modification/",
+   "source": "Music Ally",
+   "date": "2026-11-20",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Georgia Tech Launches HearMe, A Free AI Music App",
+   "link": "https://www.drummingnewsnetwork.com/georgia-tech-launches-hearme-a-free-ai-music-app/",
+   "source": "Drumming News Network",
+   "date": "2026-11-18",
+   "kind": "PRODUCT",
    "release": true
   },
   {
@@ -30,14 +46,6 @@
    "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxONF9BbXdjeVBoS2ZpcWVCYXNkV1UxeDFOdGhYeE9uZ3AwMWRkZmlsa3g3TEMxTmFxTlM1X0U2UkZuU0FuNXFpZFJoMjBmZU1aSkdrZl90cmlkUmdyelNmTE9qQXBwOUdmU2hXaFVJMExDZlhjQlJwY05jWG1EWm03UzM0MXhiOWE2VkVPX1Rhdld4NzEtc3ZTRmkybFktb0lIZkE?oc=5",
    "source": "DJ Mag",
    "date": "2026-11-17",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-11-05",
    "kind": "PRODUCT",
    "release": true
   },
@@ -184,17 +192,25 @@
    "date": "2026-11-17",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "Deezer report finds shrinking belief that fully-AI music will be popular",
-   "link": "https://news.google.com/rss/articles/CBMibkFVX3lxTE55NHcxM2wtcld1OXZiMEpHR1hMTmRiaGdlelZWVmNJeWwzbGxTRkdwMkFIN0xqQ3BGWTk4Mk5pQ1RjUzNxcFFMV3RWN053SnFOVTZuNjF1azV3c3pEcjNqMWJVSW1fRlRiVDE1TlZ3?oc=5",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
+  {
+   "title": "Instagram launches content protection tool for unauthorised reposts and AI-modification",
+   "link": "https://musically.com/2026/11/20/instagram-launches-content-protection-tool-for-unauthorised-reposts-and-ai-modification/",
+   "source": "Music Ally",
+   "date": "2026-11-20",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Georgia Tech Launches HearMe, A Free AI Music App",
+   "link": "https://www.drummingnewsnetwork.com/georgia-tech-launches-hearme-a-free-ai-music-app/",
+   "source": "Drumming News Network",
+   "date": "2026-11-18",
+   "kind": "PRODUCT",
+   "release": true
+  },
   {
    "title": "Suno Launches \u2018Visuals\u2019 for Music Video Creation, Potentially Drawing Major Hollywood Studio Litigation",
    "link": "https://news.google.com/rss/articles/CBMickFVX3lxTE5qSFJFM3lrOUZxbm9sV0NBdUttNTRPRUQtQ2R4Nkk0NlZjSm1fdnlNQ3FHRXI4VFNQXy1nM09TSHdLeEwtb3JKU3FjMGV0aUVzSGFGRU9oSjFfSjk0cExjU1JtZWZQUzliYkFfNFdLdGJWQQ?oc=5",
@@ -236,26 +252,10 @@
    "release": true
   },
   {
-   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
-   "source": "9to5Mac",
-   "date": "2026-11-05",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
    "title": "Spotify aims to launch AI music remix service early next year",
    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
    "source": "Financial Times",
    "date": "2026-10-30",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Suno launches MCP server to \u2018create music right from the chat\u2019",
-   "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNR25sNEJJMVZtb25HdG1iUWFNdnBjQVMxSHg5Z0V4RktMOVh4VFEwSHp4YWZ6Z3ppVEY2NW9wbzBJTjB3MEtVbFNoaXpGSGx6WmtWb0NNX1F2MUhrQkVSMVM5N3Nnb3dxSVd3MkZ2ZFhWcGE5RXdFaUk4bDk0bF9JQTUxZEIxQXRGMTJVekxTN180MUhfblhNMWFn?oc=5",
-   "source": "Music Ally",
-   "date": "2026-10-29",
    "kind": "PRODUCT",
    "release": true
   }
@@ -268,18 +268,18 @@
   "Gearnews www.gearnews.com": 0,
   "MusicTech musictech.com": 0,
   "Rekkerd rekkerd.org": 0,
-  "Music Ally musically.com": 3,
+  "Music Ally musically.com": 4,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
   "Billboard www.billboard.com": 0,
   "Modern Drummer www.moderndrummer.com": 0,
-  "Drumming News Network drummingnewsnetwork.com/feed/": "error: The read operation timed out",
+  "Drumming News Network drummingnewsnetwork.com": 1,
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 3,
-  "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 35,
+  "Google News %22AI%22+drums": 2,
+  "Google News news.google.com/rss/search?q=%22AI%22+drummer+when:3": "error: HTTP Error 429: Too Many Requests",
+  "Google News %22AI+music%22": 34,
   "Google News Suno+OR+Udio": 21,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 15,
   "Google News %22AI%22+music+producer+plugin": 1,
