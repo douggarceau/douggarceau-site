@@ -410,7 +410,18 @@
    3
   ],
   "homes": [],
-  "role": "Great-grandmother"
+  "role": "Great-grandmother",
+  "photo": {
+   "src": "img/agnes-mcgarth-about-1922.jpg",
+   "alt": "Agnes McGarth, about 1922",
+   "cap": "Agnes McGarth in her later years, about 1922. Family photograph shared on Ancestry by PamelaWills909, December 15, 2018."
+  },
+  "links": [
+   {
+    "label": "Her gravestone, with William Brown: Find a Grave memorial 143578503 (photographs by Finches)",
+    "url": "https://www.findagrave.com/memorial/143578503/agnes-mcgarth"
+   }
+  ]
  },
  {
   "slug": "lawrence-tweedie-brown",
