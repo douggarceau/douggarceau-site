@@ -19,10 +19,9 @@
     17,
     18,
     41,
-    67,
-    71,
-    76,
-    106
+    61,
+    65,
+    90
    ],
    "bib": []
   },
@@ -33,8 +32,8 @@
    "notes": [
     40,
     42,
-    105,
-    258
+    89,
+    256
    ],
    "bib": []
   },
@@ -45,7 +44,7 @@
    "notes": [
     8,
     19,
-    123
+    124
    ],
    "bib": []
   },
@@ -66,13 +65,10 @@
     39,
     40,
     43,
-    73,
-    77,
-    80,
-    87,
-    90,
-    96,
-    142
+    66,
+    71,
+    79,
+    128
    ],
    "bib": [
     1
@@ -92,8 +88,8 @@
    "title": "National Records of Scotland: Zeppelin Air Raid on Edinburgh 1916",
    "url": "https://nrscotland.gov.uk/research/learning/first-world-war/zeppelin-air-raid-on-edinburgh-1916",
    "notes": [
-    128,
-    130
+    109,
+    111
    ],
    "bib": [
     30
@@ -104,11 +100,11 @@
    "title": "Ian Castle: 2/3 April 1916 (Zeppelins, Gothas & Giants)",
    "url": "https://iancastlezeppelin.co.uk/2-/-3-apr-1916",
    "notes": [
-    128,
-    129,
-    130,
-    131,
-    139
+    109,
+    110,
+    111,
+    112,
+    120
    ],
    "bib": []
   },
@@ -117,11 +113,11 @@
    "title": "The Edinburgh Reporter: The Zeppelin raid on Edinburgh in 1916 (October 9, 2022)",
    "url": "https://theedinburghreporter.co.uk/2022/10/the-zeppelin-raid-on-edinburgh-in-1916/",
    "notes": [
-    127,
-    128,
-    130,
-    131,
-    139
+    108,
+    109,
+    111,
+    112,
+    120
    ],
    "bib": []
   },
@@ -130,8 +126,8 @@
    "title": "WarHistory.org: The First German Raids on Britain, The Zeppelin Offensive, 1914–16 Part II",
    "url": "https://warhistory.org/article/the-first-german-raids-on-britain-the-zeppelin-offensive-1914-16-part-ii",
    "notes": [
-    128,
-    136
+    109,
+    117
    ],
    "bib": []
   },
@@ -141,8 +137,8 @@
    "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
    "notes": [
     0,
-    161,
-    204
+    151,
+    198
    ],
    "bib": [
     25
@@ -153,8 +149,8 @@
    "title": "National Weather Service, Boston: The Great New England Hurricane of 1938",
    "url": "https://www.weather.gov/box/1938hurricane",
    "notes": [
-    192,
-    194
+    185,
+    187
    ],
    "bib": [
     32
@@ -165,8 +161,8 @@
    "title": "PBS American Experience: The Hurricane of '38",
    "url": "https://www.pbs.org/wgbh/americanexperience/films/hurricane/",
    "notes": [
-    191,
-    193
+    184,
+    186
    ],
    "bib": [
     27
@@ -177,8 +173,8 @@
    "title": "American Heritage: Joe McCarthy, “The '38 Hurricane,” August 1969",
    "url": "https://www.americanheritage.com/38-hurricane",
    "notes": [
-    192,
-    197
+    185,
+    190
    ],
    "bib": [
     28
@@ -189,7 +185,7 @@
    "title": "HISTORY: The Great New England Hurricane, September 21, 1938",
    "url": "https://www.history.com/this-day-in-history/september-21/the-great-new-england-hurricane",
    "notes": [
-    192
+    185
    ],
    "bib": []
   },
@@ -197,9 +193,7 @@
    "id": "gaz1907",
    "title": "The London Gazette, July 26, 1907, issue 28044, p. 5118 (knighthoods, Buckingham Palace)",
    "url": "https://thegazette.co.uk/London/issue/28044/page/5118/data.pdf",
-   "notes": [
-    95
-   ],
+   "notes": [],
    "bib": []
   },
   {
@@ -223,7 +217,7 @@
    "title": "Historic Environment Scotland: listing LB44033, 79 Lauriston Place",
    "url": "https://portal.historicenvironment.scot/designation/LB44033",
    "notes": [
-    62
+    56
    ],
    "bib": []
   },
@@ -232,7 +226,7 @@
    "title": "Historic Environment Scotland: listing LB27718, Mackinnon House (formerly West House)",
    "url": "https://portal.historicenvironment.scot/designation/LB27718",
    "notes": [
-    100
+    84
    ],
    "bib": []
   },
@@ -259,9 +253,9 @@
    "title": "Encyclopedia of Chicago: North Lawndale",
    "url": "https://encyclopedia.chicagohistory.org/pages/901.html",
    "notes": [
-    167,
-    171,
-    172
+    158,
+    162,
+    163
    ],
    "bib": [
     34
@@ -272,7 +266,7 @@
    "title": "Museum of the City of San Francisco: 1940–41 San Francisco War Chronology",
    "url": "https://sfmuseum.org/war/40-41.html",
    "notes": [
-    220
+    215
    ],
    "bib": []
   }
@@ -283,12 +277,11 @@
    "notes": [
     6,
     34,
-    51,
-    54,
-    67,
-    71,
-    76,
-    92
+    48,
+    49,
+    61,
+    65,
+    70
    ],
    "bib": [
     0
@@ -312,9 +305,9 @@
   "agnesm": {
    "file": "img/agnes-marriage-register-1911.jpg",
    "notes": [
-    103,
-    105,
-    258
+    87,
+    89,
+    256
    ],
    "bib": [
     0
@@ -354,7 +347,7 @@
   "robertd": {
    "file": "img/robert-douglas-death-register-1919.jpg",
    "notes": [
-    123
+    124
    ],
    "record": 8,
    "title": "Death register entry of Robert Douglas, Morningside, Edinburgh, 1919 (685/6 1161)",
@@ -367,7 +360,7 @@
    "record": 5,
    "title": "1911 census, 16 Lochrin Place, Edinburgh: Laurence B. Douglas, 3 (685/4 69/11)",
    "notes": [
-    96
+    79
    ],
    "bib": []
   },
@@ -377,7 +370,7 @@
    "record": 9,
    "title": "1921 census, 5 Foundry Street, Dunfermline: Lawrence Douglas, 14 (424/1 12)",
    "notes": [
-    142
+    128
    ],
    "bib": []
   },
