@@ -12,16 +12,16 @@
   {
    "id": "sp-births",
    "title": "ScotlandsPeople: Statutory register of births",
-   "url": "https://www.scotlandspeople.gov.uk/guides/record-guides/statutory-register-births",
+   "url": "https://www.scotlandspeople.gov.uk/help-and-support/guides/statutory-register-births",
    "notes": [
-    6,
+    4,
+    13,
     15,
-    17,
-    18,
-    41,
-    61,
-    65,
-    90
+    16,
+    39,
+    60,
+    64,
+    89
    ],
    "bib": []
   },
@@ -30,10 +30,10 @@
    "title": "ScotlandsPeople: Statutory register of marriages",
    "url": "https://www.scotlandspeople.gov.uk/help-and-support/guides/statutory-register-marriages",
    "notes": [
+    38,
     40,
-    42,
-    89,
-    256
+    88,
+    254
    ],
    "bib": []
   },
@@ -42,33 +42,33 @@
    "title": "ScotlandsPeople: Statutory register of deaths",
    "url": "https://www.scotlandspeople.gov.uk/help-and-support/guides/statutory-register-deaths",
    "notes": [
-    8,
-    19,
-    124
+    6,
+    17,
+    123
    ],
    "bib": []
   },
   {
    "id": "sp-census",
    "title": "ScotlandsPeople: Family history guide (census returns 1841–1921)",
-   "url": "https://www.scotlandspeople.gov.uk/guides/how-to-research/family-history",
+   "url": "https://www.scotlandspeople.gov.uk/guides/statutory-registers",
    "notes": [
+    7,
+    8,
     9,
-    10,
-    11,
-    16,
-    22,
-    23,
+    14,
+    20,
+    21,
+    28,
     30,
-    32,
+    36,
+    37,
     38,
-    39,
-    40,
-    43,
-    66,
-    71,
-    79,
-    128
+    41,
+    65,
+    70,
+    78,
+    127
    ],
    "bib": [
     1
@@ -77,7 +77,7 @@
   {
    "id": "nrs-stat",
    "title": "National Records of Scotland: Statutory Registers of Births, Deaths and Marriages",
-   "url": "https://nrscotland.gov.uk/research/guides/birth-death-and-marriage-records/statutory-registers-of-births-deaths-and-marriages",
+   "url": "https://www.scotlandspeople.gov.uk/guides/statutory-registers",
    "notes": [],
    "bib": [
     0
@@ -86,10 +86,10 @@
   {
    "id": "nrs-zep",
    "title": "National Records of Scotland: Zeppelin Air Raid on Edinburgh 1916",
-   "url": "https://nrscotland.gov.uk/research/learning/first-world-war/zeppelin-air-raid-on-edinburgh-1916",
+   "url": "https://iancastlezeppelin.co.uk/2-/-3-apr-1916",
    "notes": [
-    109,
-    111
+    108,
+    110
    ],
    "bib": [
     30
@@ -100,11 +100,11 @@
    "title": "Ian Castle: 2/3 April 1916 (Zeppelins, Gothas & Giants)",
    "url": "https://iancastlezeppelin.co.uk/2-/-3-apr-1916",
    "notes": [
+    108,
     109,
     110,
     111,
-    112,
-    120
+    119
    ],
    "bib": []
   },
@@ -113,11 +113,11 @@
    "title": "The Edinburgh Reporter: The Zeppelin raid on Edinburgh in 1916 (October 9, 2022)",
    "url": "https://theedinburghreporter.co.uk/2022/10/the-zeppelin-raid-on-edinburgh-in-1916/",
    "notes": [
+    107,
     108,
-    109,
+    110,
     111,
-    112,
-    120
+    119
    ],
    "bib": []
   },
@@ -126,8 +126,8 @@
    "title": "WarHistory.org: The First German Raids on Britain, The Zeppelin Offensive, 1914–16 Part II",
    "url": "https://warhistory.org/article/the-first-german-raids-on-britain-the-zeppelin-offensive-1914-16-part-ii",
    "notes": [
-    109,
-    117
+    108,
+    116
    ],
    "bib": []
   },
@@ -137,8 +137,8 @@
    "url": "https://www.ncei.noaa.gov/metadata/geoportal/rest/metadata/item/gov.noaa.ncdc:C00861/html",
    "notes": [
     0,
-    151,
-    198
+    150,
+    196
    ],
    "bib": [
     25
@@ -149,8 +149,8 @@
    "title": "National Weather Service, Boston: The Great New England Hurricane of 1938",
    "url": "https://www.weather.gov/box/1938hurricane",
    "notes": [
-    185,
-    187
+    184,
+    186
    ],
    "bib": [
     32
@@ -161,8 +161,8 @@
    "title": "PBS American Experience: The Hurricane of '38",
    "url": "https://www.pbs.org/wgbh/americanexperience/films/hurricane/",
    "notes": [
-    184,
-    186
+    183,
+    185
    ],
    "bib": [
     27
@@ -173,8 +173,8 @@
    "title": "American Heritage: Joe McCarthy, “The '38 Hurricane,” August 1969",
    "url": "https://www.americanheritage.com/38-hurricane",
    "notes": [
-    185,
-    190
+    184,
+    189
    ],
    "bib": [
     28
@@ -185,7 +185,7 @@
    "title": "HISTORY: The Great New England Hurricane, September 21, 1938",
    "url": "https://www.history.com/this-day-in-history/september-21/the-great-new-england-hurricane",
    "notes": [
-    185
+    184
    ],
    "bib": []
   },
@@ -217,7 +217,7 @@
    "title": "Historic Environment Scotland: listing LB44033, 79 Lauriston Place",
    "url": "https://portal.historicenvironment.scot/designation/LB44033",
    "notes": [
-    56
+    55
    ],
    "bib": []
   },
@@ -226,7 +226,7 @@
    "title": "Historic Environment Scotland: listing LB27718, Mackinnon House (formerly West House)",
    "url": "https://portal.historicenvironment.scot/designation/LB27718",
    "notes": [
-    84
+    83
    ],
    "bib": []
   },
@@ -235,7 +235,7 @@
    "title": "British Listed Buildings: Shieldhill (Historic Environment Scotland LB7377)",
    "url": "https://britishlistedbuildings.co.uk/200339237",
    "notes": [
-    26
+    24
    ],
    "bib": []
   },
@@ -244,7 +244,7 @@
    "title": "British Listed Buildings: Quothquhan, Shieldhill Hall (Historic Environment Scotland LB12995)",
    "url": "https://britishlistedbuildings.co.uk/200345967-shieldhill-hall-quothquhan-libberton",
    "notes": [
-    29
+    27
    ],
    "bib": []
   },
@@ -253,9 +253,9 @@
    "title": "Encyclopedia of Chicago: North Lawndale",
    "url": "https://encyclopedia.chicagohistory.org/pages/901.html",
    "notes": [
-    158,
-    162,
-    163
+    157,
+    161,
+    162
    ],
    "bib": [
     34
@@ -266,7 +266,7 @@
    "title": "Museum of the City of San Francisco: 1940–41 San Francisco War Chronology",
    "url": "https://sfmuseum.org/war/40-41.html",
    "notes": [
-    215
+    213
    ],
    "bib": []
   }
@@ -275,13 +275,13 @@
   "laurence": {
    "file": "img/laurence-birth-register-1907.jpg",
    "notes": [
-    6,
-    34,
+    4,
+    32,
+    47,
     48,
-    49,
-    61,
-    65,
-    70
+    60,
+    64,
+    69
    ],
    "bib": [
     0
@@ -293,7 +293,7 @@
   "agnesb": {
    "file": "img/agnes-birth-register-1885.jpg",
    "notes": [
-    18
+    16
    ],
    "bib": [
     0
@@ -305,9 +305,9 @@
   "agnesm": {
    "file": "img/agnes-marriage-register-1911.jpg",
    "notes": [
-    87,
-    89,
-    256
+    86,
+    88,
+    254
    ],
    "bib": [
     0
@@ -319,7 +319,7 @@
   "robertb": {
    "file": "img/robert-douglas-birth-register-1876.jpg",
    "notes": [
-    41
+    39
    ],
    "record": 0,
    "title": "Birth register entry of Robert Douglas, St George, Edinburgh, 1876 (685/1 845)",
@@ -337,7 +337,7 @@
   "parkerc": {
    "file": "img/census-1911-shieldhill-mains-libberton.jpg",
    "notes": [
-    33
+    31
    ],
    "record": 6,
    "title": "1911 census page, Libberton, with James Parker at 3 Shieldhill Mains and Gean Tree Cottage (650/3 ED 3 p. 2)",
@@ -347,7 +347,7 @@
   "robertd": {
    "file": "img/robert-douglas-death-register-1919.jpg",
    "notes": [
-    124
+    123
    ],
    "record": 8,
    "title": "Death register entry of Robert Douglas, Morningside, Edinburgh, 1919 (685/6 1161)",
@@ -360,7 +360,7 @@
    "record": 5,
    "title": "1911 census, 16 Lochrin Place, Edinburgh: Laurence B. Douglas, 3 (685/4 69/11)",
    "notes": [
-    79
+    78
    ],
    "bib": []
   },
@@ -370,7 +370,7 @@
    "record": 9,
    "title": "1921 census, 5 Foundry Street, Dunfermline: Lawrence Douglas, 14 (424/1 12)",
    "notes": [
-    128
+    127
    ],
    "bib": []
   },
@@ -384,7 +384,7 @@
   "marr1899": {
    "file": "img/robert-douglas-elizabeth-mcdonald-marriage-register-1899.jpg",
    "notes": [
-    40
+    38
    ],
    "record": 2,
    "title": "Marriage register entry of Robert Douglas and Elizabeth Millar McDonald, St Giles, Edinburgh, 1899 (685/4 213)",
