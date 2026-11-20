@@ -390,6 +390,70 @@
    "title": "Marriage register entry of Robert Douglas and Elizabeth Millar McDonald, St Giles, Edinburgh, 1899 (685/4 213)",
    "bib": [],
    "page": "docs/douglas-mcdonald-marriage-1899.html"
+  },
+  "pass29": {
+   "file": "img/lawrence-brown-1929-passenger-manifest.png",
+   "page": "docs/passenger-manifest-1929.html",
+   "record": 10,
+   "title": "1929 passenger list: the Duchess of Bedford",
+   "notes": [],
+   "bib": []
+  },
+  "arr29": {
+   "file": "img/lawrence-brown-1929-arrival-manifest.png",
+   "page": "docs/arrival-manifest-1929.html",
+   "record": 11,
+   "title": "1929 arrival record: Lawrence Brown reaches Canada",
+   "notes": [],
+   "bib": []
+  },
+  "card29": {
+   "file": "img/lawrence-brown-1929-detroit-border-card.png",
+   "page": "docs/detroit-border-card-1929.html",
+   "record": 12,
+   "title": "1929 border card: Lawrence Brown enters the United States at Detroit",
+   "notes": [],
+   "bib": []
+  },
+  "chi30": {
+   "file": "img/lawrence-brown-1930-chicago-census.png",
+   "page": "docs/chicago-census-1930.html",
+   "record": 13,
+   "title": "1930 census: Lawrence Brown in Chicago",
+   "notes": [],
+   "bib": []
+  },
+  "dir37": {
+   "file": "img/lawrence-douglas-1937-providence-directory.jpg",
+   "page": "docs/providence-directory-1937.html",
+   "record": 14,
+   "title": "1937 Providence directory: Lawrence Douglas, display manager",
+   "notes": [],
+   "bib": []
+  },
+  "pet43": {
+   "file": "img/laurence-brown-douglas-1943-petition.png",
+   "page": "docs/naturalization-petition-1943.html",
+   "record": 15,
+   "title": "1943 naturalization petition: Laurence Brown Douglas",
+   "notes": [],
+   "bib": []
+  },
+  "dir50": {
+   "file": "img/lawrence-b-douglas-1950-providence-directory.png",
+   "page": "docs/providence-directory-1950.html",
+   "record": 16,
+   "title": "1950 Providence directory: 148 General Street",
+   "notes": [],
+   "bib": []
+  },
+  "obit61": {
+   "file": "img/laurence-b-douglas-1961-obituary.png",
+   "page": "docs/obituary-1961.html",
+   "record": 17,
+   "title": "1961 obituary: Laurence B. Douglas",
+   "notes": [],
+   "bib": []
   }
  },
  "pictures": [
