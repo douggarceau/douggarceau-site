@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T20:21Z",
+ "updated": "2026-11-20T00:38Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -40,14 +40,6 @@
    "date": "2026-11-17",
    "kind": "PRODUCT",
    "release": true
-  },
-  {
-   "title": "Suno Bridge takes AI music to DAWs \u2013 starting with Ableton Live",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWS1rRkZxbWt0TjBzT3pKQkd3QV9ueUhiMFZ2WXZ5ZlN0RGxBejdlWmg1TWtMZWItWUFDZG1mVmd3Y25BcTdkeGdNYXNOYkJMTUJxby0xQ19nTmFsWDdZOEdPcDhVbnRIdmIyNGxOQlhtZXVvdGl4YTdHZE5EUl9nTF94VHQxdzEybUN2dnlhcU1naGF4OGI1cE5kWQ?oc=5",
-   "source": "Music Ally",
-   "date": "2026-11-16",
-   "kind": "PRODUCT",
-   "release": false
   },
   {
    "title": "Splice\u2019s new AI DAW feels like a cheat code for music production \u2013 but it left us with one big question",
@@ -109,6 +101,22 @@
    "title": "UMG says 68% of listeners want a \u2018kill switch\u2019 for AI music",
    "link": "https://musically.com/2026/11/19/umg-says-68-of-listeners-want-a-kill-switch-for-ai-music/",
    "source": "Music Ally",
+   "date": "2026-11-19",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Robert Glasper Breaks Down What Makes Kendrick Lamar\u2019s \u2018To Pimp a Butterfly\u2019 Special & Speaks Up Against AI | Billboard News\u00a0Interview",
+   "link": "https://www.billboard.com/video/robert-glasper-billboard-news-interview/",
+   "source": "Billboard",
+   "date": "2026-11-19",
+   "kind": "NEWS",
+   "release": false
+  },
+  {
+   "title": "Grimes & Elon Musk Feud Over AI \u2018Sex Slave,\u2019 Singer Urges Ex to \u2018Step Up\u2019 and Be \u2018the King He Used to\u00a0Be\u2019",
+   "link": "https://www.billboard.com/music/music-news/elon-musk-grimes-feud-ai-sex-slave-he-should-be-king-1236384843/",
+   "source": "Billboard",
    "date": "2026-11-19",
    "kind": "NEWS",
    "release": false
@@ -181,14 +189,6 @@
    "title": "SoundCloud CEO Talks AI Policies: \u2018Wishing Away the Advent of AI Music Is Not a Strategy\u2019",
    "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1Tc253ckc0X0xRdXhuckFVVlVUUE5IblAyazAyZ1hjbXE1V2Y1Q3I5VWE4eklZd0dxSVJ1bmh6NFg5WWFabXZUd3pycGdSZWk4NkRYczFkZVZyWllMRkpxeG9ibVBNalNRVFM0WQ?oc=5",
    "source": "Billboard",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "AI Music Generator Suno to Let Users Create Music Videos",
-   "link": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdnpHaGdtSS1QSnNMekFIc3daQzJ5UTljaWZiazhKS2h4WlRnXzM0ck5aM1hWUm9RZERtSlhIbENRV1hvS0Rub3ZMX3RoNXJwVDZ5cUpIS19jNG83T3ZyQWNobW5ELUpFcTNDMHJORjNUZVZfekx4dHAwWUN4WFhZQW12LTFpdGlsR2JsRE9UVGJieVlRVVFacWd6ZVhlcE5FbGJrUWJnOGVmZms?oc=5",
-   "source": "Bloomberg.com",
    "date": "2026-11-17",
    "kind": "NEWS",
    "release": false
@@ -271,7 +271,7 @@
   "Music Ally musically.com": 3,
   "Hypebot www.hypebot.com/feed/": "error: HTTP Error 404: Not Found",
   "Attack Magazine www.attackmagazine.com": 0,
-  "Billboard www.billboard.com": 0,
+  "Billboard www.billboard.com": 2,
   "Modern Drummer www.moderndrummer.com": 0,
   "Drumming News Network drummingnewsnetwork.com": 1,
   "The Verge www.theverge.com": 0,
@@ -280,12 +280,12 @@
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 35,
-  "Google News Suno+OR+Udio": 24,
+  "Google News Suno+OR+Udio": 23,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
   "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 6,
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 0
  }
 }
