@@ -454,7 +454,12 @@
    10
   ],
   "homes": [],
-  "role": "Great-uncle"
+  "role": "Great-uncle",
+  "photo": {
+   "src": "img/lawrence-tweedie-brown-isabella-1932.jpg",
+   "alt": "Laurence Tweedie Brown and Isabella Brown, July 1932",
+   "cap": "Laurence Tweedie Brown and his wife, Isabella, on their fiftieth wedding anniversary, July 1932. Family photograph shared on Ancestry by rwana55, August 1, 2010."
+  }
  },
  {
   "slug": "mary-henderson-brown",
