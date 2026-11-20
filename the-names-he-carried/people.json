@@ -148,7 +148,19 @@
    "src": "img/ice-cream.jpg",
    "alt": "Janet and Laurence Douglas with ice-cream cones",
    "cap": "Janet and Laurence, undated, about the 1920s. Family photograph shared on Ancestry by drewgirl (2016) and IZABELLA4213 (2020)."
-  }
+  },
+  "photos": [
+   {
+    "src": "img/laurence-brown-douglas-portrait.jpg",
+    "alt": "Laurence Brown Douglas, portrait",
+    "cap": "Laurence as a young man. Family photograph shared on Ancestry by Louanne Mackenzie."
+   },
+   {
+    "src": "img/douglas-darcy-family-gravestone.jpg",
+    "alt": "Douglas and Darcy family gravestone",
+    "cap": "The family stone: Julia M. Delaire, A. Norman Darcy, Laurence B. Douglas (1907–1961), Constance Darcy Douglas (1912–1994), Eugenie E. Darcy and Claire M. Darcy."
+   }
+  ]
  },
  {
   "slug": "agnes-mcgarth-brown",
@@ -290,7 +302,13 @@
     "url": "https://earth.google.com/web/search/Quothquan%2C%20Biggar%2C%20Scotland"
    }
   ],
-  "role": "Grandfather"
+  "role": "Grandfather",
+  "links": [
+   {
+    "label": "Document: 1886 death: George Brown, Laurence’s grandfather",
+    "url": "docs/george-brown-death-1886.html"
+   }
+  ]
  },
  {
   "slug": "christina-henderson-brown",
@@ -377,7 +395,13 @@
    3
   ],
   "homes": [],
-  "role": "Great-grandfather"
+  "role": "Great-grandfather",
+  "links": [
+   {
+    "label": "Document: 1895 death: William Brown, Laurence’s great-grandfather",
+    "url": "docs/william-brown-death-1895.html"
+   }
+  ]
  },
  {
   "slug": "agnes-mcgarth",
@@ -475,7 +499,24 @@
    "src": "img/lawrence-tweedie-brown-isabella-1932.jpg",
    "alt": "Laurence Tweedie Brown and Isabella Brown, July 1932",
    "cap": "Laurence Tweedie Brown and his wife, Isabella, on their fiftieth wedding anniversary, July 1932. Family photograph shared on Ancestry by rwana55, August 1, 2010."
-  }
+  },
+  "photos": [
+   {
+    "src": "img/lawrence-tweedie-brown-isabella-1942.jpg",
+    "alt": "Laurence Tweedie Brown and Isabella, July 1942",
+    "cap": "Laurence Tweedie Brown and Isabella on their sixtieth wedding anniversary, July 1942. Shared on Ancestry by PamelaWills909."
+   },
+   {
+    "src": "img/lawrence-tweedie-brown-horse.jpg",
+    "alt": "Laurence Tweedie Brown with a horse",
+    "cap": "Laurence Tweedie Brown with a horse, undated. Shared on Ancestry by PamelaWills909."
+   },
+   {
+    "src": "img/lawrence-tweedie-brown-headstone.jpg",
+    "alt": "Headstone of Lawrence T. Brown and Isabella Graham",
+    "cap": "His headstone: Lawrence T. Brown, 1860–1943, and his wife, Isabella Graham, 1862–1961. Photograph shared on Ancestry by rwana55."
+   }
+  ]
  },
  {
   "slug": "mary-henderson-brown",
@@ -1630,7 +1671,14 @@
     "url": "https://earth.google.com/web/search/Saint%20Ann%20Cemetery%2C%20Cranston%2C%20RI"
    }
   ],
-  "role": "Wife"
+  "role": "Wife",
+  "photos": [
+   {
+    "src": "img/douglas-darcy-family-gravestone.jpg",
+    "alt": "Douglas and Darcy family gravestone",
+    "cap": "The family stone: Julia M. Delaire, A. Norman Darcy, Laurence B. Douglas (1907–1961), Constance Darcy Douglas (1912–1994), Eugenie E. Darcy and Claire M. Darcy."
+   }
+  ]
  },
  {
   "slug": "albert-blake-darcy",
