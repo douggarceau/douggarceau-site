@@ -154,11 +154,6 @@
     "src": "img/laurence-brown-douglas-portrait.jpg",
     "alt": "Laurence Brown Douglas, portrait",
     "cap": "Laurence as a young man. Family photograph shared on Ancestry by Louanne Mackenzie."
-   },
-   {
-    "src": "img/douglas-darcy-family-gravestone.jpg",
-    "alt": "Douglas and Darcy family gravestone",
-    "cap": "The family stone: Julia M. Delaire, A. Norman Darcy, Laurence B. Douglas (1907–1961), Constance Darcy Douglas (1912–1994), Eugenie E. Darcy and Claire M. Darcy."
    }
   ]
  },
@@ -1671,14 +1666,7 @@
     "url": "https://earth.google.com/web/search/Saint%20Ann%20Cemetery%2C%20Cranston%2C%20RI"
    }
   ],
-  "role": "Wife",
-  "photos": [
-   {
-    "src": "img/douglas-darcy-family-gravestone.jpg",
-    "alt": "Douglas and Darcy family gravestone",
-    "cap": "The family stone: Julia M. Delaire, A. Norman Darcy, Laurence B. Douglas (1907–1961), Constance Darcy Douglas (1912–1994), Eugenie E. Darcy and Claire M. Darcy."
-   }
-  ]
+  "role": "Wife"
  },
  {
   "slug": "albert-blake-darcy",
