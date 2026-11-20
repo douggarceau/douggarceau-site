@@ -657,7 +657,13 @@
     "url": "https://earth.google.com/web/search/62%20Balcarres%20Street%2C%20Edinburgh"
    }
   ],
-  "role": "Mother's husband"
+  "role": "Mother's husband",
+  "links": [
+   {
+    "label": "Document: First World War enlistment: Thomas McKenzie, Agnes Brown’s husband",
+    "url": "docs/thomas-mckenzie-ww1-enlistment.html"
+   }
+  ]
  },
  {
   "slug": "mckenzie-daughters",
@@ -700,7 +706,17 @@
     "url": "https://earth.google.com/web/search/62%20Balcarres%20Street%2C%20Edinburgh"
    }
   ],
-  "role": "Half-sisters"
+  "role": "Half-sisters",
+  "links": [
+   {
+    "label": "Document: 1912 birth: Mary Christina McKenzie, Laurence’s half-sister",
+    "url": "docs/mary-christina-mckenzie-birth-1912.html"
+   },
+   {
+    "label": "Document: First World War enlistment of their father, naming both girls",
+    "url": "docs/thomas-mckenzie-ww1-enlistment.html"
+   }
+  ]
  },
  {
   "slug": "alexander-archibald",
@@ -1673,7 +1689,13 @@
    "src": "img/albert-b-darcy-gravestone.jpg",
    "alt": "Gravestone of Albert B. Darcy, 1888–1957, and his wife Theresa B. Sullivan",
    "cap": "Albert B. Darcy, 1888–1957, and his wife, Theresa B. Sullivan. Mount Saint Mary Cemetery, Pawtucket."
-  }
+  },
+  "links": [
+   {
+    "label": "Document: 1942 draft card: Albert Blake Darcy, Constance’s father",
+    "url": "docs/albert-darcy-draft-card-1942.html"
+   }
+  ]
  },
  {
   "slug": "eugenie-emma-delaire",

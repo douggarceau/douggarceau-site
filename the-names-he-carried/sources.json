@@ -335,7 +335,7 @@
    "notes": [
     123
    ],
-   "record": 8,
+   "record": 10,
    "title": "Death register entry of Robert Douglas, Morningside, Edinburgh, 1919 (685/6 1161)",
    "bib": [],
    "page": "docs/robert-douglas-death-1919.html"
@@ -353,7 +353,7 @@
   "c1921": {
    "file": "img/census-1921-foundry-street-dunfermline.jpg",
    "page": "docs/census-1921-foundry-street.html",
-   "record": 9,
+   "record": 11,
    "title": "1921 census, 5 Foundry Street, Dunfermline: Lawrence Douglas, 14 (424/1 12)",
    "notes": [
     127
@@ -380,7 +380,7 @@
   "pass29": {
    "file": "img/lawrence-brown-1929-passenger-manifest.png",
    "page": "docs/passenger-manifest-1929.html",
-   "record": 10,
+   "record": 12,
    "title": "1929 passenger list: the Duchess of Bedford",
    "notes": [
     136,
@@ -394,7 +394,7 @@
   "arr29": {
    "file": "img/lawrence-brown-1929-arrival-manifest.png",
    "page": "docs/arrival-manifest-1929.html",
-   "record": 11,
+   "record": 13,
    "title": "1929 arrival record: Lawrence Brown reaches Canada",
    "notes": [
     125,
@@ -405,7 +405,7 @@
   "card29": {
    "file": "img/lawrence-brown-1929-detroit-border-card.png",
    "page": "docs/detroit-border-card-1929.html",
-   "record": 12,
+   "record": 14,
    "title": "1929 border card: Lawrence Brown enters the United States at Detroit",
    "notes": [
     142,
@@ -417,7 +417,7 @@
   "chi30": {
    "file": "img/lawrence-brown-1930-chicago-census.png",
    "page": "docs/chicago-census-1930.html",
-   "record": 14,
+   "record": 16,
    "title": "1930 census: Lawrence Brown in Chicago",
    "notes": [
     156
@@ -427,7 +427,7 @@
   "dir37": {
    "file": "img/lawrence-douglas-1937-providence-directory.jpg",
    "page": "docs/providence-directory-1937.html",
-   "record": 16,
+   "record": 18,
    "title": "1937 Providence directory: Lawrence Douglas, display manager",
    "notes": [
     160
@@ -437,7 +437,7 @@
   "pet43": {
    "file": "img/laurence-brown-douglas-1943-petition.png",
    "page": "docs/naturalization-petition-1943.html",
-   "record": 22,
+   "record": 25,
    "title": "1943 naturalization petition: Laurence Brown Douglas",
    "notes": [
     212,
@@ -449,7 +449,7 @@
   "dir50": {
    "file": "img/lawrence-b-douglas-1950-providence-directory.png",
    "page": "docs/providence-directory-1950.html",
-   "record": 25,
+   "record": 28,
    "title": "1950 Providence directory: 148 General Street",
    "notes": [
     227
@@ -459,7 +459,7 @@
   "obit61": {
    "file": "img/laurence-b-douglas-1961-obituary.png",
    "page": "docs/obituary-1961.html",
-   "record": 27,
+   "record": 30,
    "title": "1961 obituary: Laurence B. Douglas",
    "notes": [
     1,
@@ -472,7 +472,7 @@
   "out29": {
    "file": "img/laurence-brown-1929-outward-passenger-list.png",
    "page": "docs/outward-passenger-list-1929.html",
-   "record": 13,
+   "record": 15,
    "title": "1929 outward passenger list: leaving Greenock",
    "notes": [
     146,
@@ -483,7 +483,7 @@
   "dir38": {
    "file": "img/lawrence-douglas-1938-providence-directory.png",
    "page": "docs/providence-directory-1938.html",
-   "record": 17,
+   "record": 19,
    "title": "1938 Providence directory: Lawrence Douglas, display manager",
    "notes": [
     183
@@ -493,7 +493,7 @@
   "mar39": {
    "file": "img/laurence-douglas-constance-darcy-1939-marriage.png",
    "page": "docs/marriage-1939.html",
-   "record": 18,
+   "record": 20,
    "title": "1939 marriage license: Lawrence Douglas and Constance Darcy",
    "notes": [
     130,
@@ -504,7 +504,7 @@
   "cen40": {
    "file": "img/laurence-douglas-1940-census.png",
    "page": "docs/census-1940-san-francisco.html",
-   "record": 19,
+   "record": 21,
    "title": "1940 census: the Douglases in San Francisco",
    "notes": [
     159,
@@ -515,7 +515,7 @@
   "dra40": {
    "file": "img/laurence-brown-douglas-1940-draft-card.png",
    "page": "docs/draft-card-1940.html",
-   "record": 20,
+   "record": 22,
    "title": "1940 draft registration card: Laurence Brown Douglas",
    "notes": [
     205,
@@ -526,7 +526,7 @@
   "bla41": {
    "file": "img/lawrence-brown-douglas-1941-blaine-border-card.png",
    "page": "docs/blaine-border-card-1941.html",
-   "record": 21,
+   "record": 23,
    "title": "1941 border card: back across the border at Blaine",
    "notes": [
     209
@@ -536,7 +536,7 @@
   "oat43": {
    "file": "img/laurence-brown-douglas-1943-oath.png",
    "page": "docs/oath-of-allegiance-1943.html",
-   "record": 23,
+   "record": 26,
    "title": "1943 oath of allegiance: Laurence Brown Douglas becomes a citizen",
    "notes": [
     221
@@ -546,7 +546,7 @@
   "paw47": {
    "file": "img/laurence-b-douglas-1947-pawtucket-directory.png",
    "page": "docs/pawtucket-directory-1947.html",
-   "record": 24,
+   "record": 27,
    "title": "1947 Pawtucket directory: 97 Magill Street",
    "notes": [
     226
@@ -556,7 +556,7 @@
   "dir60": {
    "file": "img/laurence-b-douglas-1960-providence-directory.png",
    "page": "docs/providence-directory-1960.html",
-   "record": 26,
+   "record": 29,
    "title": "1960 Providence directory: Carter's Men Store",
    "notes": [
     235
@@ -566,7 +566,7 @@
   "dir61": {
    "file": "img/laurence-b-douglas-1961-providence-directory.png",
    "page": "docs/providence-directory-1961.html",
-   "record": 28,
+   "record": 31,
    "title": "1961 Providence directory: window displays",
    "notes": [
     236
@@ -576,8 +576,32 @@
   "eliz34": {
    "file": "img/elizabeth-anderson-1934-port-huron-card.png",
    "page": "docs/elizabeth-anderson-border-card-1934.html",
-   "record": 15,
+   "record": 17,
    "title": "1934 border card: Elizabeth Anderson comes to America",
+   "notes": [],
+   "bib": []
+  },
+  "tmck": {
+   "file": "img/thomas-mckenzie-ww1-enlistment.png",
+   "page": "docs/thomas-mckenzie-ww1-enlistment.html",
+   "record": 9,
+   "title": "First World War enlistment: Thomas McKenzie, Agnes Brown’s husband",
+   "notes": [],
+   "bib": []
+  },
+  "mmck": {
+   "file": "img/mary-christina-mckenzie-birth-1912.png",
+   "page": "docs/mary-christina-mckenzie-birth-1912.html",
+   "record": 8,
+   "title": "1912 birth: Mary Christina McKenzie, Laurence’s half-sister",
+   "notes": [],
+   "bib": []
+  },
+  "adraft": {
+   "file": "img/albert-blake-darcy-1942-draft-card.png",
+   "page": "docs/albert-darcy-draft-card-1942.html",
+   "record": 24,
+   "title": "1942 draft card: Albert Blake Darcy, Constance’s father",
    "notes": [],
    "bib": []
   }
