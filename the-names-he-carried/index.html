@@ -199,6 +199,7 @@ html.red .opener::after{content:"";display:block;width:60px;height:3px;backgroun
 .aplayer b{display:block;font:700 13px Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#ef5350;margin-bottom:8px}
 .aplayer audio{width:100%}
 .alisten{display:inline-block;margin:0 0 26px}
+.film{max-width:900px;margin:0 auto;padding:40px 0;border-bottom:1px solid var(--rule)}.film video{display:block;width:100%;height:auto;background:#000;margin:18px 0}.film .credit{font-size:13px;color:var(--soft);margin:6px 0 0}
 </style></head><body>
 <nav class="side" id="side" aria-label="People in the book"></nav><header class="top"><div class="wrap">
 <a class="brand" href="#" data-go="start">The Names He Carried</a>
@@ -228,7 +229,11 @@ const linkFor=([t,x])=>t==='scan'?`<a class="scan" href="${esc(x.page||x.file)}"
 function route(){return `<section class="route"><p class="lab">Places in his life</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
 function home(){return `<section class="hero"><h1 class="cover"><img src="img/cover-zeppelin.jpg" width="1024" height="1536" alt="The Names He Carried: The Laurence Brown Douglas Story"></h1><p class="lab">A book by Doug Garceau</p>
 <button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
-<p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>${route()}
+<p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>
+<section class="film"><h2 class="big">Where his story began</h2>
+<video controls playsinline preload="metadata" poster="video/gean-tree-poster.jpg" width="1280" height="720"><source src="video/gean-tree.mp4" type="video/mp4"></video>
+<p class="lede">Gean Tree Cottage, Quothquan, from the air. Agnes Brown grew up at Lime Tree Cottage, about 200 feet along the same road. When she was pregnant in 1906, she moved in here with <a href="#person-mary-archibald" data-go="person-mary-archibald">Mary Archibald</a>, the gardener's sister, and this was her home when Laurence was born in 1907.</p>
+<p class="credit">Aerial footage: Galbraith.</p></section>${route()}
 <section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
 <ul class="rows">${[['records','Records',C.records.length+' register and census entries'],['timeline','Timeline','His life, date by date'],['places','Places','Addresses where the records place him'],['people','People','His family and the people of Quothquan'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
 function contents(){let h='<section class="toc" id="toc"><h2 class="big">Contents</h2><p class="lede">'+CH.length+' parts of the book, in order.</p>',p=null;
