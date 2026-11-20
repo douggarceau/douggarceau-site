@@ -156,7 +156,7 @@ table.ap td:first-child{width:32%;color:var(--soft);font:500 14px/1.5 Inter,syst
  .person span{display:block;margin:2px 0 0}
 }
 .hero{padding-top:clamp(20px,4vw,48px)}.hero .cover{margin:0 auto 28px;max-width:520px}.cover img{display:block;width:100%;height:auto}
-.nv{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;gap:12px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#000;border-top:1px solid #fff}.nv a,.nv button{flex:1;max-width:220px;text-align:center;font:600 17px/1 system-ui,sans-serif;color:#000;background:#fff;border:0;border-radius:6px;padding:13px 10px;text-decoration:none;cursor:pointer}body.sub{padding-bottom:80px}.nv[hidden]{display:none}
+.nv{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;gap:12px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#000;border-top:1px solid #fff}.nv a,.nv button{flex:1;max-width:220px;text-align:center;font:600 17px/1 system-ui,sans-serif;color:#000;background:#fff;border:0;border-radius:6px;padding:13px 10px;text-decoration:none;cursor:pointer}body{padding-bottom:80px}.nv [hidden]{display:none}
 .side{display:none}
 @media(min-width:1200px){.side{display:block;position:fixed;top:0;left:0;bottom:0;width:236px;overflow-y:auto;border-right:1px solid var(--rule);background:#000;padding:18px 14px 90px;z-index:6;font:500 14px/1.35 Inter,system-ui,sans-serif}
  body{padding-left:236px}.nv{left:236px}
@@ -208,7 +208,7 @@ html.red .opener::after{content:"";display:block;width:60px;height:3px;backgroun
 <nav class="tabs" aria-label="Sections">
 <button class="tab" data-go="start">Home</button><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="tree">Family tree</button><button class="tab" data-go="person-shieldhill">Shieldhill Estate</button><button class="tab" data-go="sources">Sources and documents</button><button class="tab" id="tab-listen" data-go="listen" hidden>Listen to the audiobook</button>
 </nav></div></header>
-<nav class="nv" id="nv" hidden><button type="button" id="nvb">← Back</button><button type="button" data-go="start">Home</button></nav><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
+<nav class="nv" id="nv"><button type="button" id="nvb">← Back</button><button type="button" id="nvh" data-go="start">Home</button><button type="button" id="nvs">Share</button></nav><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
 <footer class="foot"><div class="wrap">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></div></footer>
 <script>document.documentElement.classList.add('red');
 
@@ -310,7 +310,7 @@ function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapte
  const pm=h.match(/^person-(.+)$/);
  if(m){html=chapter(+m[1]);jump.value=m[1]}else if(pm){jump.value='';html=person(pm[1])}
  else{jump.value='';html=({tree,listen,records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places}[h]||home)()}
- CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html; const sub=!!h&&h!=='start'; $('#nv').hidden=!sub; document.body.classList.toggle('sub',sub);
+ CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html; const sub=!!h&&h!=='start'; $('#nvb').hidden=!sub;$('#nvh').hidden=!sub; document.body.classList.toggle('sub',sub);
  $('#view').querySelectorAll('a[target="_blank"]').forEach(a=>{if(a.host===location.host){a.removeAttribute('target');a.removeAttribute('rel')}});
  const hh=$('#view h2'); document.title=(CUR?CH[CUR-1].title+' · ':(hh&&h?hh.textContent+' · ':''))+'The Names He Carried';
  const cur=m?'contents':(h==='person-shieldhill'?'person-shieldhill':(h.startsWith('person-')?'people':(h||'start')));
@@ -322,6 +322,7 @@ let st=0;addEventListener('scroll',()=>{if(!CUR)return;clearTimeout(st);st=setTi
 document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!b)return;e.preventDefault();const g=b.dataset.go;
  if(g==='start'){if(location.hash)history.pushState('',document.title,location.pathname+location.search);show();return}
  if(location.hash==='#'+g)show();else location.hash=g});
+$('#nvs').onclick=async()=>{const u=location.href,t=document.title;try{if(navigator.share){await navigator.share({title:t,url:u});return}}catch(e){if(e&&e.name==='AbortError')return}try{await navigator.clipboard.writeText(u)}catch(e){const x=document.createElement('textarea');x.value=u;document.body.append(x);x.select();document.execCommand('copy');x.remove()}const b=$('#nvs');b.textContent='Link copied';setTimeout(()=>b.textContent='Share',2000)};
 $('#nvb').onclick=()=>{if(history.length>1)history.back();else{history.pushState('',document.title,location.pathname);show()}};
 jump.onchange=()=>{if(jump.value)location.hash='chapter-'+jump.value};
 addEventListener('hashchange',show);addEventListener('popstate',show);
