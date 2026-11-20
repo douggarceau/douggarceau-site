@@ -1668,7 +1668,12 @@
     "url": "https://earth.google.com/web/search/60%20Blake%20St%2C%20Warwick%2C%20RI"
    }
   ],
-  "role": "Father-in-law"
+  "role": "Father-in-law",
+  "photo": {
+   "src": "img/albert-b-darcy-gravestone.jpg",
+   "alt": "Gravestone of Albert B. Darcy, 1888–1957, and his wife Theresa B. Sullivan",
+   "cap": "Albert B. Darcy, 1888–1957, and his wife, Theresa B. Sullivan. Mount Saint Mary Cemetery, Pawtucket."
+  }
  },
  {
   "slug": "eugenie-emma-delaire",
