@@ -19,7 +19,7 @@
   {
    "year": "1899",
    "title": "Marriage of Robert Douglas and Elizabeth Millar McDonald",
-   "text": "June 9, 1899, 34 St Patrick Square, Edinburgh. He was a saw miller of 23; she a domestic servant of 24.",
+   "text": "June 9, 1899, 34 St Patrick Square, Edinburgh. He was a saw miller of 23; she a domestic servant, recorded as 24 (her birth date of May 31, 1874, would make her 25).",
    "ref": "Marriages, St Giles, 685/4 213",
    "ch": 6,
    "chl": "Chapter 5"
@@ -27,7 +27,7 @@
   {
    "year": "1903",
    "title": "Marriage of James Lawson Parker",
-   "text": "August 28, 1903, Coldstream, Carluke. Gamekeeper of Shieldhill, Biggar; son of Benjamin Parker, mason, and Jane Lawson, lady's maid. Bride Janet Crawford Stewart.",
+   "text": "August 28, 1903, Coldstream, Carluke, Lanarkshire. Gamekeeper of Shieldhill, Biggar; son of Benjamin Parker, mason, and Jane Lawson, lady's maid. Bride Janet Crawford Stewart.",
    "ref": "Marriages, Carluke, 629/54",
    "ch": 5,
    "chl": "Chapter 4"
@@ -43,7 +43,7 @@
   {
    "year": "1911",
    "title": "Census: Laurence B. Douglas, age 3",
-   "text": "16 Lochrin Place, Edinburgh. Listed as son of Elizabeth Douglas, with his sister Janet, 10. The household entry continues across pages.",
+   "text": "16 Lochrin Place, Edinburgh. Recorded as Laurence B., son, 3, in the household with Elizabeth Douglas, wife, and Janet, daughter, 10. The household entry continues across pages.",
    "ref": "Census 1911, 685/4 ED 69 p. 11",
    "ch": 12,
    "chl": "Chapter 11"
@@ -317,15 +317,15 @@
   ],
   [
    "August 19, 1912",
-   "Admitted to Queen Anne Infant School, Dunfermline, Fife; the register calls him \"Adopted.\""
+   "Admitted to Queen Anne Infant School, Dunfermline, Fife, as Lawrence Douglas; the register calls him \"Adopted\" and names his guardian."
   ],
   [
-   "January 1916",
-   "School register gives his home as 5 Foundry Street, Dunfermline."
+   "January 11, 1916",
+   "Transfers to Queen Anne Primary, entry 1191; the register gives his guardian, Robert Douglas, at 5 Foundry Street, Dunfermline."
   ],
   [
    "April 2–3, 1916",
-   "Zeppelin raid on Leith and Edinburgh; a bomb falls on Lauriston Place, where he was born."
+   "Zeppelin raid on Leith and Edinburgh; a bomb falls on Lauriston Place, the same street as his birthplace."
   ],
   [
    "September 9, 1919",
@@ -346,6 +346,10 @@
   [
    "September 7, 1929",
    "Sails from Greenock on the Duchess of Bedford with Janet."
+  ],
+  [
+   "September 13, 1929",
+   "Arrives at Quebec on the Duchess of Bedford."
   ],
   [
    "September 15, 1929",
@@ -407,11 +411,11 @@
   ],
   [
    "1912",
-   "36 Victoria Terrace, Dunfermline"
+   "36 Victoria Terrace, Dunfermline (1912 school admission)"
   ],
   [
    "1916",
-   "5 Foundry Street, Dunfermline"
+   "5 Foundry Street, Dunfermline (1916 school transfer)"
   ],
   [
    "1921",
@@ -419,11 +423,11 @@
   ],
   [
    "1929",
-   "39 Grieve Street, Dunfermline"
+   "39 Grieve Street, Dunfermline (his mother's address on the 1929 passenger lists)"
   ],
   [
    "1929–1930",
-   "1534 South Kostner Avenue, Chicago"
+   "1534 South Kostner Avenue, Chicago (1929 manifest and border card; the 1930 census reads 1532)"
   ],
   [
    "1934",
@@ -431,15 +435,15 @@
   ],
   [
    "1937",
-   "35 Elmwood Avenue, Providence (directory listing, probably his)"
+   "35 Elmwood Avenue, Providence (directory)"
   ],
   [
    "1938",
-   "458 Pine Street, Providence (directory)"
+   "459 Pine Street, Providence (directory)"
   ],
   [
    "1940",
-   "Valencia Street, San Francisco"
+   "Valencia Street, San Francisco (1940 census; no house number given)"
   ],
   [
    "1940–1941",
@@ -480,7 +484,7 @@
   [
    "Chicago",
    1929,
-   "Emigrated"
+   "Settled in Chicago"
   ],
   [
    "Providence",
@@ -505,7 +509,7 @@
   [
    "Pawtucket",
    1947,
-   "Windows"
+   "Window dresser"
   ],
   [
    "Providence",

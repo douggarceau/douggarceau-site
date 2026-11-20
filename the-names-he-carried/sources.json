@@ -32,8 +32,7 @@
    "notes": [
     38,
     40,
-    88,
-    254
+    88
    ],
    "bib": []
   },
@@ -51,7 +50,7 @@
   {
    "id": "sp-census",
    "title": "ScotlandsPeople: Family history guide (census returns 1841–1921)",
-   "url": "https://www.scotlandspeople.gov.uk/guides/statutory-registers",
+   "url": "https://www.scotlandspeople.gov.uk/guides/census-returns",
    "notes": [
     7,
     8,
@@ -84,18 +83,6 @@
    ]
   },
   {
-   "id": "nrs-zep",
-   "title": "National Records of Scotland: Zeppelin Air Raid on Edinburgh 1916",
-   "url": "https://iancastlezeppelin.co.uk/2-/-3-apr-1916",
-   "notes": [
-    108,
-    110
-   ],
-   "bib": [
-    30
-   ]
-  },
-  {
    "id": "castle",
    "title": "Ian Castle: 2/3 April 1916 (Zeppelins, Gothas & Giants)",
    "url": "https://iancastlezeppelin.co.uk/2-/-3-apr-1916",
@@ -106,7 +93,9 @@
     111,
     119
    ],
-   "bib": []
+   "bib": [
+    30
+   ]
   },
   {
    "id": "edrep",
@@ -161,7 +150,6 @@
    "title": "PBS American Experience: The Hurricane of '38",
    "url": "https://www.pbs.org/wgbh/americanexperience/films/hurricane/",
    "notes": [
-    183,
     185
    ],
    "bib": [
@@ -254,7 +242,6 @@
    "url": "https://encyclopedia.chicagohistory.org/pages/901.html",
    "notes": [
     157,
-    161,
     162
    ],
    "bib": [
@@ -306,8 +293,7 @@
    "file": "img/agnes-marriage-register-1911.jpg",
    "notes": [
     86,
-    88,
-    254
+    88
    ],
    "bib": [
     0
@@ -396,7 +382,13 @@
    "page": "docs/passenger-manifest-1929.html",
    "record": 10,
    "title": "1929 passenger list: the Duchess of Bedford",
-   "notes": [],
+   "notes": [
+    136,
+    143,
+    146,
+    147,
+    253
+   ],
    "bib": []
   },
   "arr29": {
@@ -404,7 +396,10 @@
    "page": "docs/arrival-manifest-1929.html",
    "record": 11,
    "title": "1929 arrival record: Lawrence Brown reaches Canada",
-   "notes": [],
+   "notes": [
+    125,
+    141
+   ],
    "bib": []
   },
   "card29": {
@@ -412,7 +407,11 @@
    "page": "docs/detroit-border-card-1929.html",
    "record": 12,
    "title": "1929 border card: Lawrence Brown enters the United States at Detroit",
-   "notes": [],
+   "notes": [
+    142,
+    152,
+    155
+   ],
    "bib": []
   },
   "chi30": {
@@ -420,7 +419,9 @@
    "page": "docs/chicago-census-1930.html",
    "record": 14,
    "title": "1930 census: Lawrence Brown in Chicago",
-   "notes": [],
+   "notes": [
+    156
+   ],
    "bib": []
   },
   "dir37": {
@@ -428,7 +429,9 @@
    "page": "docs/providence-directory-1937.html",
    "record": 15,
    "title": "1937 Providence directory: Lawrence Douglas, display manager",
-   "notes": [],
+   "notes": [
+    160
+   ],
    "bib": []
   },
   "pet43": {
@@ -436,7 +439,11 @@
    "page": "docs/naturalization-petition-1943.html",
    "record": 21,
    "title": "1943 naturalization petition: Laurence Brown Douglas",
-   "notes": [],
+   "notes": [
+    212,
+    217,
+    218
+   ],
    "bib": []
   },
   "dir50": {
@@ -444,7 +451,9 @@
    "page": "docs/providence-directory-1950.html",
    "record": 24,
    "title": "1950 Providence directory: 148 General Street",
-   "notes": [],
+   "notes": [
+    227
+   ],
    "bib": []
   },
   "obit61": {
@@ -452,7 +461,12 @@
    "page": "docs/obituary-1961.html",
    "record": 26,
    "title": "1961 obituary: Laurence B. Douglas",
-   "notes": [],
+   "notes": [
+    1,
+    225,
+    241,
+    246
+   ],
    "bib": []
   },
   "out29": {
@@ -460,7 +474,10 @@
    "page": "docs/outward-passenger-list-1929.html",
    "record": 13,
    "title": "1929 outward passenger list: leaving Greenock",
-   "notes": [],
+   "notes": [
+    146,
+    147
+   ],
    "bib": []
   },
   "dir38": {
@@ -468,7 +485,9 @@
    "page": "docs/providence-directory-1938.html",
    "record": 16,
    "title": "1938 Providence directory: Lawrence Douglas, display manager",
-   "notes": [],
+   "notes": [
+    183
+   ],
    "bib": []
   },
   "mar39": {
@@ -476,7 +495,10 @@
    "page": "docs/marriage-1939.html",
    "record": 17,
    "title": "1939 marriage license: Lawrence Douglas and Constance Darcy",
-   "notes": [],
+   "notes": [
+    130,
+    199
+   ],
    "bib": []
   },
   "cen40": {
@@ -484,7 +506,10 @@
    "page": "docs/census-1940-san-francisco.html",
    "record": 18,
    "title": "1940 census: the Douglases in San Francisco",
-   "notes": [],
+   "notes": [
+    159,
+    204
+   ],
    "bib": []
   },
   "dra40": {
@@ -492,7 +517,10 @@
    "page": "docs/draft-card-1940.html",
    "record": 19,
    "title": "1940 draft registration card: Laurence Brown Douglas",
-   "notes": [],
+   "notes": [
+    205,
+    207
+   ],
    "bib": []
   },
   "bla41": {
@@ -500,7 +528,9 @@
    "page": "docs/blaine-border-card-1941.html",
    "record": 20,
    "title": "1941 border card: back across the border at Blaine",
-   "notes": [],
+   "notes": [
+    209
+   ],
    "bib": []
   },
   "oat43": {
@@ -508,7 +538,9 @@
    "page": "docs/oath-of-allegiance-1943.html",
    "record": 22,
    "title": "1943 oath of allegiance: Laurence Brown Douglas becomes a citizen",
-   "notes": [],
+   "notes": [
+    221
+   ],
    "bib": []
   },
   "paw47": {
@@ -516,7 +548,9 @@
    "page": "docs/pawtucket-directory-1947.html",
    "record": 23,
    "title": "1947 Pawtucket directory: 97 Magill Street",
-   "notes": [],
+   "notes": [
+    226
+   ],
    "bib": []
   },
   "dir60": {
@@ -524,7 +558,9 @@
    "page": "docs/providence-directory-1960.html",
    "record": 25,
    "title": "1960 Providence directory: Carter's Men Store",
-   "notes": [],
+   "notes": [
+    235
+   ],
    "bib": []
   },
   "dir61": {
@@ -532,7 +568,9 @@
    "page": "docs/providence-directory-1961.html",
    "record": 27,
    "title": "1961 Providence directory: window displays",
-   "notes": [],
+   "notes": [
+    236
+   ],
    "bib": []
   }
  },
