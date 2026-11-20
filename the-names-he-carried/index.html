@@ -247,8 +247,7 @@ const linkFor=([t,x])=>t==='scan'?`<a class="scan" href="${esc(x.page||x.file)}"
 
 function route(){return `<section class="route"><p class="lab">Places in his life</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
 function home(){return `<section class="hero"><h1 class="cover"><img src="img/cover-zeppelin.jpg" width="1024" height="1536" alt="The Names He Carried: The Laurence Brown Douglas Story"></h1><p class="lab">A book by Doug Garceau</p>
-<button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
-<p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>
+<button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button></section>
 <section class="film"><h2 class="big">The film</h2><p class="lede">His life in four minutes, told with the real records.</p>
 <video controls autoplay muted playsinline preload="metadata" poster="video/film-poster.jpg" width="1920" height="1080"><source src="video/the-names-he-carried-film.mp4" type="video/mp4"></video></section>${route()}
 <section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
