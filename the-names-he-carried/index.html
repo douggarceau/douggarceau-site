@@ -250,8 +250,7 @@ function home(){return `<section class="hero"><h1 class="cover"><img src="img/co
 <button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button>
 <p class="ded">Dedicated to my mother, Constance Anderson Douglas</p></section>
 <section class="film"><h2 class="big">The film</h2><p class="lede">His life in four minutes, told with the real records.</p>
-<video controls autoplay muted playsinline preload="metadata" poster="video/film-poster.jpg" width="1920" height="1080"><source src="video/the-names-he-carried-film.mp4" type="video/mp4"></video>
-<p class="fl">The film starts silent. Press the speaker button for the music.</p></section>${route()}
+<video controls autoplay muted playsinline preload="metadata" poster="video/film-poster.jpg" width="1920" height="1080"><source src="video/the-names-he-carried-film.mp4" type="video/mp4"></video></section>${route()}
 <section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
 <ul class="rows">${[['records','Records',C.records.length+' historical records'],['timeline','Timeline','His life, date by date'],['places','Places','Addresses where the records place him'],['people','People','His family and the people of Quothquan'],['sources','Sources and documents','Register scans and links to the sources']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section>`+contents()}
 function contents(){let h='<section class="toc" id="toc"><h2 class="big">Contents</h2><p class="lede">'+CH.length+' parts of the book, in order.</p>',p=null;
