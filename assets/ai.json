@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T00:39Z",
+ "updated": "2026-11-21T04:22Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -56,6 +56,14 @@
    "date": "2026-11-16",
    "kind": "PRODUCT",
    "release": false
+  },
+  {
+   "title": "Apple Creator Studio gets powerful new AI features using OpenAI models [U: Now available]",
+   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQczlQRFVwLWZlSGl6VzR2VW56b1VTbE1jNmxWTTVaLWs1eVlXWF90LU40UnNDNWpSSV9RU3F4UWhXT0xqZndQVy1PX244RndkcUVVZVBhSTFheWpuRC0zNFFGbEtsS3RMenFvdVI0MWN6SjNjZ1Q3b0J2ekI3cVFnOGMwdWRQakp6c1VQdW91OHA4YmpERHRVSWZkaGUzTkFmY0p0TQ?oc=5",
+   "source": "9to5Mac",
+   "date": "2026-11-05",
+   "kind": "PRODUCT",
+   "release": true
   },
   {
    "title": "Splice\u2019s new AI DAW feels like a cheat code for music production \u2013 but it left us with one big question",
@@ -184,14 +192,6 @@
    "date": "2026-11-18",
    "kind": "NEWS",
    "release": false
-  },
-  {
-   "title": "How Each Music Listening Platform Is Treating AI Music (Updating)",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQWXUxNTdjLXNjWkstaDZLVzBWQjhLYk9OYkxUS3F3NWRzbEZFWkRwbEY3WmJwS2xfeEtWS3VxbGlydzZCc1Z0UXdXX0xXd3R3YlFIVWp4VUE1WC1aYkp4X0tzb0thU0ZKdnVqc3k5aG0tbk55QnpBMW94bHF3V3hXVjctdW0zRldCdGc?oc=5",
-   "source": "Billboard",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": false
   }
  ],
  "releases": [
@@ -277,7 +277,7 @@
   "The Verge www.theverge.com": 0,
   "TechCrunch techcrunch.com": 0,
   "Ars Technica feeds.arstechnica.com": 0,
-  "Google News %22AI%22+drums": 2,
+  "Google News %22AI%22+drums": 3,
   "Google News %22AI%22+drummer": 0,
   "Google News %22AI+music%22": 37,
   "Google News Suno+OR+Udio": 21,
