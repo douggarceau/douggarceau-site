@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T08:22Z",
+ "updated": "2026-11-21T12:24Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -244,19 +244,19 @@
    "release": true
   },
   {
-   "title": "TuneArt is an indie AI-music-video maker with a pay-as-you-go model",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE14aldYS3MtNVhDWXFiQ2tiMmdVNFZLOFc1eExickZVRmtSRVFYSmNvZ3gwaDhRQTdtcFdTRGxKaUU3c01EdXppNmYtdkV2QlRwWjlTZU5jenE4cDdoOUF5U0dWbjg1RTNjRzFhUkxqTQ?oc=5",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
    "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
    "source": "Resident Advisor",
    "date": "2026-11-11",
    "kind": "DRUMS",
+   "release": true
+  },
+  {
+   "title": "Spotify aims to launch AI music remix service early next year",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
+   "source": "Financial Times",
+   "date": "2026-10-30",
+   "kind": "PRODUCT",
    "release": true
   }
  ],
@@ -282,8 +282,8 @@
   "Google News %22AI+music%22": 36,
   "Google News Suno+OR+Udio": 18,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 14,
-  "Google News %22AI%22+music+producer+plugin": 2,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
+  "Google News %22AI%22+music+producer+plugin": 1,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
   "Google News %22AI%22+stem+separation": 2,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 3
