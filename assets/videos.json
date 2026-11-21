@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T12:24Z",
+ "updated": "2026-11-21T16:20Z",
  "items": [
   {
    "id": "RcR5pooWDjM",
@@ -107,11 +107,11 @@
    "kind": "DEMO"
   },
   {
-   "id": "yPzYWqf0_bQ",
-   "title": "Neil Peart: No One's Disciple - Director Sam Dunn Interview",
-   "source": "Modern Drummer",
-   "date": "2026-10-02",
-   "kind": "INTERVIEW"
+   "id": "OfX-I8nj23E",
+   "title": "Classic Oak 6.5x14 Snare | Tuning and Head Comparison",
+   "source": "Ludwig",
+   "date": "2026-08-27",
+   "kind": "DEMO"
   }
  ],
  "log": {
@@ -128,10 +128,11 @@
   "Sabian skip UCNmSiKDIL1GKy71hbnSMUvQ": "SabianOfficial",
   "Sabian": "search UCYMHPzMObdBSSjkhyk_P_nQ SABIAN Cymbals (1)",
   "Paiste": "UC1F5S6gl2-dTch-TZ2q4b9Q UC1F5S6gl2-dTch-TZ2q4b9Q Paiste Cymbals (1)",
-  "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (3)",
+  "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM @NAMM": "error: HTTP Error 404: Not Found",
   "NAMM": "search UCx-aX_SThYdePajxjTTpgKw NAMM - Topic (0)",
+  "NAMM skip UCbU_XU_xwnoXc58AtwlMyCg": "\u300c\ud835\udde1\ud835\uddd4\ud835\udde0\ud835\udde0\u300d\u300c+6\ud835\uddf8\u300d",
   "Percussive Arts Society": "search UCNdbAtTAk6G5YrFuTFnCcAg Percussive Arts Society Philippines (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer",
