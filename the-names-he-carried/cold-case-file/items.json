@@ -991,6 +991,11 @@
         "path": "files/st-giles-registrar-1907-directory-transcription.txt",
         "label": "Transcription and source links",
         "type": "text/plain"
+      },
+      {
+        "path": "files/edinburgh-1907/st-giles-registrar-1907-directory.pdf",
+        "label": "Two original source pages",
+        "type": "application/pdf"
       }
     ],
     "transcription_extent": "Selected directory entries. The two lines printed under number 24 follow the street heading on page 532.",
@@ -1024,6 +1029,11 @@
         "path": "files/leith-weather-june-14-1907-transcription.txt",
         "label": "Transcription and source links",
         "type": "text/plain"
+      },
+      {
+        "path": "files/edinburgh-1907/leith-weather-june-14-1907.pdf",
+        "label": "Two original source pages",
+        "type": "application/pdf"
       }
     ],
     "transcription_extent": "Selected fields from the Leith row in each report. The printed weather key defines c as “sky three parts clouded” and o as “overcast”.",
@@ -1047,6 +1057,11 @@
         "path": "files/leith-weather-july-4-1907-transcription.txt",
         "label": "Transcription and source links",
         "type": "text/plain"
+      },
+      {
+        "path": "files/edinburgh-1907/leith-weather-july-4-1907.pdf",
+        "label": "Two original source pages",
+        "type": "application/pdf"
       }
     ],
     "transcription_extent": "Selected fields from the Leith row in each report. The printed weather key defines o as “overcast” and r as “rain”.",
