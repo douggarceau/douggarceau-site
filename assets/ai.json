@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T12:24Z",
+ "updated": "2026-11-22T16:20Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -82,6 +82,14 @@
    "release": true
   },
   {
+   "title": "Apple debuts new musically-inclined AI assistant for creators",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYUNPTndtNHExby1NMGpGNUlhQlpmOGF2cFJxSlVrbHY3MTQyNThZMDIzVjd1OW41bExsYXVIaFNtXzhSaXNlUGJ5OGpIYlJxX25kZHh5ZU5rWTZuSzJRUFhqZktRN2I2LTZOdXlhd2RhTXFhQzlrVXVialJWY2NIaUY3bE4?oc=5",
+   "source": "Mashable",
+   "date": "2026-10-27",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
    "title": "Peter Gabriel makes his stance on AI clear",
    "link": "https://www.musicradar.com/artists/singers-songwriters/if-you-cant-defeat-it-you-have-to-join-it-peter-gabriel-makes-his-stance-on-ai-clear",
    "source": "MusicRadar",
@@ -108,14 +116,6 @@
   {
    "title": "More Than 80% of Americans Want an AI Music \u2018Kill Switch,\u2019 UMG Research Finds",
    "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9RY25UYlpNa1IydW9vcWhyUnV3OWhRZDR2NkY0R2ZhYy1Fdmd3UjlTS0phd1hETjNjYkpScVZ6OHk3Y052ZXItU003SmtGMVpoSkc5YXotaEJ3TDhPck1zQWc0NnJRbXB6SUVqWHQxeEpUTzN4MHhUSmt0S18?oc=5",
-   "source": "Digital Music News",
-   "date": "2026-11-20",
-   "kind": "NEWS",
-   "release": false
-  },
-  {
-   "title": "Universal Music Group Defends Its 'Walled Garden' AI Strategy",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBaeE5BdnQ3WE1mREdYMFFWaWk0dmFsZl9PeXpEMklqNDlZa0w4S3BDRmQ4OTlZNlUwSU1McERrM2VWbm1ySjU1bmJUd0d4b2JQeTVsamUzUVRnNXZpdzRLRGZDaDZHNEJVQS1DSFZ6blNJTmlsQVJhQVJKLS0?oc=5",
    "source": "Digital Music News",
    "date": "2026-11-20",
    "kind": "NEWS",
@@ -244,19 +244,19 @@
    "release": true
   },
   {
-   "title": "TuneArt is an indie AI-music-video maker with a pay-as-you-go model",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE14aldYS3MtNVhDWXFiQ2tiMmdVNFZLOFc1eExickZVRmtSRVFYSmNvZ3gwaDhRQTdtcFdTRGxKaUU3c01EdXppNmYtdkV2QlRwWjlTZU5jenE4cDdoOUF5U0dWbjg1RTNjRzFhUkxqTQ?oc=5",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
    "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
    "source": "Resident Advisor",
    "date": "2026-11-11",
    "kind": "DRUMS",
+   "release": true
+  },
+  {
+   "title": "Spotify aims to launch AI music remix service early next year",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
+   "source": "Financial Times",
+   "date": "2026-10-30",
+   "kind": "PRODUCT",
    "release": true
   }
  ],
@@ -279,13 +279,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 31,
+  "Google News %22AI+music%22": 29,
   "Google News Suno+OR+Udio": 17,
   "Google News %22AI%22+music+lawsuit+OR+copyright": 13,
   "Google News %22AI%22+music+producer+plugin": 1,
   "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 3,
   "Google News %22AI%22+stem+separation": 2,
-  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
-  "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 1
+  "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
+  "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 2
  }
 }
