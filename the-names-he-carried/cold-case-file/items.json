@@ -877,6 +877,28 @@
     "item": 67
   },
   {
+    "item": 95,
+    "slug": "robert-douglas-lochrin-place-electoral-roll-1906",
+    "date": "1906–07",
+    "sort_date": "1906",
+    "title": "Robert Douglas at 18 Lochrin Place in the 1906–07 electoral roll",
+    "source": "Municipal Register of Voters, Burgh of Edinburgh, 1906–1907, No. XIV, George Square Ward, City Parish of Edinburgh, printed page 1504. Edinburgh City Archives, reference Sl56/52 as indexed by Ancestry. Viewer image 1513 of 1748.",
+    "source_url": "https://www.ancestry.com/imageviewer/collections/61486/images/43258_302022005616_2871-01512?pid=6195718",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/61486/records/6195718"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/robert-douglas-lochrin-place-electoral-roll-1906-transcription.txt",
+        "label": "Transcription and source reference",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Transcription of one entry from the printed register.",
+    "html_path": "the-names-he-carried/cold-case-file/robert-douglas-lochrin-place-electoral-roll-1906.html"
+  },
+  {
     "slug": "binnie-dunlop-medical-register-1907",
     "date": "1907",
     "sort_date": "1907",
@@ -930,6 +952,28 @@
     "item": 75
   },
   {
+    "item": 96,
+    "slug": "robert-douglas-lochrin-place-electoral-roll-1907",
+    "date": "1907–08",
+    "sort_date": "1907",
+    "title": "Robert Douglas at 18 Lochrin Place in the 1907–08 electoral roll",
+    "source": "Municipal Register of Voters, Burgh of Edinburgh, 1907–1908, No. XIV, George Square Ward, City Parish of Edinburgh, printed page 1529. Edinburgh City Archives, reference Sl56/53 as indexed by Ancestry. Viewer image 1536 of 1776.",
+    "source_url": "https://www.ancestry.com/imageviewer/collections/61486/images/43258_302022005616_2870-01535?pid=6129739",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/61486/records/6129739"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/robert-douglas-lochrin-place-electoral-roll-1907-transcription.txt",
+        "label": "Transcription and source reference",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Transcription of one entry from the printed register.",
+    "html_path": "the-names-he-carried/cold-case-file/robert-douglas-lochrin-place-electoral-roll-1907.html"
+  },
+  {
     "item": 14,
     "slug": "lawrence-brown-birth-1907",
     "date": "June 14, 1907",
@@ -949,6 +993,29 @@
       "nathaniel-dunlop-directory-part2.jpg"
     ],
     "source": "Baronetage, Knightage, &c., page 363. U.S., Family History Books, via Ancestry."
+  },
+  {
+    "item": 97,
+    "slug": "robert-douglas-lochrin-place-electoral-roll-1910",
+    "date": "1910–11",
+    "sort_date": "1910",
+    "title": "Robert Douglas at 16 Lochrin Place in the 1910–11 electoral roll",
+    "source": "Municipal Register of Voters, Burgh of Edinburgh, 1910–1911, No. XIV, George Square Ward, City Parish of Edinburgh, printed page 1715. Edinburgh City Archives, reference Sl56/56 as indexed by Ancestry. Viewer image 1724 of 1986.",
+    "source_url": "https://www.ancestry.com/imageviewer/collections/61486/images/43258_302022005616_2886-01723?pid=274561",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/61486/records/274554",
+      "https://www.ancestry.com/search/collections/61486/records/274561"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/robert-douglas-lochrin-place-electoral-roll-1910-transcription.txt",
+        "label": "Transcription and source reference",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Transcription of the two entries for Robert Douglas on this printed page.",
+    "html_path": "the-names-he-carried/cold-case-file/robert-douglas-lochrin-place-electoral-roll-1910.html"
   },
   {
     "slug": "binnie-dunlop-england-census-index-1911",
