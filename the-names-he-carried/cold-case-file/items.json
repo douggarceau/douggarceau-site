@@ -974,6 +974,29 @@
     "html_path": "the-names-he-carried/cold-case-file/robert-douglas-lochrin-place-electoral-roll-1907.html"
   },
   {
+    "item": 98,
+    "slug": "st-giles-registrar-1907-directory",
+    "date": "1907–08",
+    "sort_date": "1907",
+    "title": "St Giles registrar’s office at 24 Forrest Road",
+    "source": "Post Office Edinburgh and Leith Directory, 1907–1908. National Library of Scotland copy, printed pages 328 and 532.",
+    "source_url": "https://archive.org/details/postofficeedinbu19071908edin2/page/328/mode/1up",
+    "canonical_record_urls": [
+      "https://archive.org/details/postofficeedinbu19071908edin2/page/328/mode/1up",
+      "https://archive.org/details/postofficeedinbu19071908edin2/page/532/mode/1up"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/st-giles-registrar-1907-directory-transcription.txt",
+        "label": "Transcription and source links",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Selected directory entries. The two lines printed under number 24 follow the street heading on page 532.",
+    "html_path": "the-names-he-carried/cold-case-file/st-giles-registrar-1907-directory.html"
+  },
+  {
     "item": 14,
     "slug": "lawrence-brown-birth-1907",
     "date": "June 14, 1907",
@@ -982,6 +1005,52 @@
       "laurence-birth-register-1907.jpg"
     ],
     "source": "Statutory registers, Births, St Giles, Edinburgh, 685/04 0839. National Records of Scotland."
+  },
+  {
+    "item": 99,
+    "slug": "leith-weather-june-14-1907",
+    "date": "June 14, 1907",
+    "sort_date": "1907-06-14",
+    "title": "Weather observations at Leith on June 14, 1907",
+    "source": "Meteorological Office, Daily Weather Report, June 14 and 15, 1907. June volume, PDF pages 53 and 57. Contains public sector information licensed under the Open Government Licence v3.0.",
+    "source_url": "https://digital.nmla.metoffice.gov.uk/download/file/IO_5f2685ad-c803-43b2-bfe6-800095e5ace7#page=53",
+    "canonical_record_urls": [
+      "https://digital.nmla.metoffice.gov.uk/download/file/IO_5f2685ad-c803-43b2-bfe6-800095e5ace7#page=53",
+      "https://digital.nmla.metoffice.gov.uk/download/file/IO_5f2685ad-c803-43b2-bfe6-800095e5ace7#page=57"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/leith-weather-june-14-1907-transcription.txt",
+        "label": "Transcription and source links",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Selected fields from the Leith row in each report. The printed weather key defines c as “sky three parts clouded” and o as “overcast”.",
+    "html_path": "the-names-he-carried/cold-case-file/leith-weather-june-14-1907.html"
+  },
+  {
+    "item": 100,
+    "slug": "leith-weather-july-4-1907",
+    "date": "July 4, 1907",
+    "sort_date": "1907-07-04",
+    "title": "Weather observations at Leith on July 4, 1907",
+    "source": "Meteorological Office, Daily Weather Report, July 4 and 5, 1907. July volume, PDF pages 17 and 21. Contains public sector information licensed under the Open Government Licence v3.0.",
+    "source_url": "https://digital.nmla.metoffice.gov.uk/download/file/IO_02664f0c-c47e-44c6-aceb-3c507bbb0a8b#page=17",
+    "canonical_record_urls": [
+      "https://digital.nmla.metoffice.gov.uk/download/file/IO_02664f0c-c47e-44c6-aceb-3c507bbb0a8b#page=17",
+      "https://digital.nmla.metoffice.gov.uk/download/file/IO_02664f0c-c47e-44c6-aceb-3c507bbb0a8b#page=21"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/leith-weather-july-4-1907-transcription.txt",
+        "label": "Transcription and source links",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Selected fields from the Leith row in each report. The printed weather key defines o as “overcast” and r as “rain”.",
+    "html_path": "the-names-he-carried/cold-case-file/leith-weather-july-4-1907.html"
   },
   {
     "item": 16,

@@ -1,0 +1,27 @@
+Weather observations at Leith on June 14, 1907
+
+Meteorological Office, Daily Weather Report, June 14 and 15, 1907. June volume, PDF pages 53 and 57. Contains public sector information licensed under the Open Government Licence v3.0.
+
+Selected fields from the Leith row in each report. The printed weather key defines c as “sky three parts clouded” and o as “overcast”.
+
+8 a.m. · June 14 report, “This morning”
+Station: Leith
+Dry bulb (°F): 52
+Wind force: 0
+Weather: c
+
+6 p.m. · June 15 report, “Yesterday evening”
+Station: Leith
+Dry bulb (°F): 59
+Wind direction: W
+Wind force: 1
+Weather: o
+
+Rainfall for the 24 hours ending at 8 a.m. June 15
+Leith: 0.04 inches
+
+June 14 report · PDF page 53
+https://digital.nmla.metoffice.gov.uk/download/file/IO_5f2685ad-c803-43b2-bfe6-800095e5ace7#page=53
+
+June 15 report · PDF page 57
+https://digital.nmla.metoffice.gov.uk/download/file/IO_5f2685ad-c803-43b2-bfe6-800095e5ace7#page=57

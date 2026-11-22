@@ -1,0 +1,28 @@
+Weather observations at Leith on July 4, 1907
+
+Meteorological Office, Daily Weather Report, July 4 and 5, 1907. July volume, PDF pages 17 and 21. Contains public sector information licensed under the Open Government Licence v3.0.
+
+Selected fields from the Leith row in each report. The printed weather key defines o as “overcast” and r as “rain”.
+
+8 a.m. · July 4 report, “This morning”
+Station: Leith
+Dry bulb (°F): 50
+Wind direction: ENE
+Wind force: 3
+Weather: o
+
+6 p.m. · July 5 report, “Yesterday evening”
+Station: Leith
+Dry bulb (°F): 49
+Wind direction: ENE
+Wind force: 3
+Weather: r
+
+Rainfall for the 24 hours ending at 8 a.m. July 5
+Leith: 0.59 inches
+
+July 4 report · PDF page 17
+https://digital.nmla.metoffice.gov.uk/download/file/IO_02664f0c-c47e-44c6-aceb-3c507bbb0a8b#page=17
+
+July 5 report · PDF page 21
+https://digital.nmla.metoffice.gov.uk/download/file/IO_02664f0c-c47e-44c6-aceb-3c507bbb0a8b#page=21
