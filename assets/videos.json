@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-22T08:22Z",
+ "updated": "2026-11-22T12:24Z",
  "items": [
+  {
+   "id": "JjaeGolWhT8",
+   "title": "Meinl Cymbals - Byzance Dark & Extra Dry Crashes Comparison",
+   "source": "Meinl",
+   "date": "2026-11-22",
+   "kind": "DEMO"
+  },
   {
    "id": "RcR5pooWDjM",
    "title": "Drum Talk TV News Desk Report - November 20, 2026",
@@ -35,13 +42,6 @@
    "source": "Drumtalk TV",
    "date": "2026-11-18",
    "kind": "TALK"
-  },
-  {
-   "id": "-0ZjtwxN0v0",
-   "title": "Meinl Cymbals - Miguel Lamas Trio - \"Waiting For Pepe\" - Meinl Drum Festival 2026",
-   "source": "Meinl",
-   "date": "2026-11-17",
-   "kind": "EVENT"
   },
   {
    "id": "yxpo1R2WI_4",
@@ -117,7 +117,7 @@
  "log": {
   "DW Drums": "@DWDrums UC2OQnpI3N1yWsgFMSN_sekA dw drums (0)",
   "Ludwig": "UCxdiLfkkokXj09724KntoOw UCxdiLfkkokXj09724KntoOw Ludwig Drums (3)",
-  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (5)",
+  "Meinl": "UCZjkQtRELyrearglF3lYa8Q UCZjkQtRELyrearglF3lYa8Q MEINL Cymbals (6)",
   "Meinl Drum Festival": "UCfWNjFlMw-OGiLttkFGfHCA UCfWNjFlMw-OGiLttkFGfHCA meinldrumfestival (0)",
   "Roland": "UC4vbiZMU_yrheYVZH393-Zw UC4vbiZMU_yrheYVZH393-Zw RolandChannel (0)",
   "Drumeo": "@drumeoofficial UCBiJBaDaM3K6vPVggLhTyWA Drumeo (0)",
@@ -131,7 +131,7 @@
   "Modern Drummer": "UChdBw0Hg_27aS88DiG4p5qw UChdBw0Hg_27aS88DiG4p5qw Modern Drummer Official (2)",
   "Drumtalk TV": "UCXtZ8sYopX36If_QH6b4IJQ UCXtZ8sYopX36If_QH6b4IJQ DrumTalkTV (6)",
   "NAMM @NAMM": "error: HTTP Error 404: Not Found",
-  "NAMM": "search UCKDTw8myziWbkT3R2dh9vKQ Namm (0)",
+  "NAMM": "search UCHruT6ypiqqK7QiYo_48vZQ NamM (0)",
   "Percussive Arts Society": "search UCNdbAtTAk6G5YrFuTFnCcAg Percussive Arts Society Philippines (0)",
   "Percussive Arts Society skip UC02Dbuv0mWAnAlh4DTmJSXQ": "Michael C. Garcia",
   "Percussive Arts Society skip UCiGMMHogGoEoz37aUt3YImw": "Drummer Photographer",
