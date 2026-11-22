@@ -1,0 +1,58 @@
+1851 census at 6 Semple Street, Weavers Close
+March 30, 1851
+
+John Mc Donald
+1851 Scotland Census
+https://www.ancestry.com/search/collections/1076/records/2902142
+
+Name
+John Mc Donald
+Age
+23
+Estimated Birth Year
+abt 1828
+[abt 1828]
+Relationship
+Head
+Spouse
+Janet Mc Donald
+Gender
+Male
+Where born
+Edinr, Midlothian
+Parish Number
+685/2
+Civil parish
+Edinburgh St Cuthberts
+County
+Midlothian
+Address
+6 Semple Street Weavers Close
+Occupation
+Coal Carter
+ED
+42A
+Page
+15
+Household schedule number
+69
+Line
+8
+Roll
+CSSCT1851_183
+
+Household Members (Name)  |  Age  |  Relationship
+John Mc Donald  |  23  |  Head
+Janet Mc Donald  |  22  |  Wife
+Ellen Mc Donald  |  2  |  Daughter
+Ellen Page  |  14  |  Sister Of Wife
+
+Citation
+
+Parish: Edinburgh St Cuthberts; ED: 42A; Page: 15; Line: 8; Roll: CSSCT1851_183; Year: 1851
+
+Information
+
+Ancestry.com. 1851 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2006.
+
+Original data: Scotland. 1851 Scotland Census. Reels 1-217. General Register Office for Scotland, Edinburgh, Scotland.

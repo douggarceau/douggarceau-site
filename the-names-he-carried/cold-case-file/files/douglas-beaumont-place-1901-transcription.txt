@@ -1,0 +1,118 @@
+1901 census of Robert and Lizzie Douglas at 5 Beaumont Pl
+March 31, 1901
+
+Robert Douglas
+1901 Scotland Census
+https://www.ancestry.com/search/collections/1101/records/4385520
+
+Name
+Robert Douglas
+Age
+24
+Estimated Birth Year
+abt 1877
+[abt 1877]
+Relationship
+Head
+Spouse's Name
+Lizzie Douglas
+Gender
+Male
+Where born
+Edinburgh
+Registration Number
+685/5
+Registration District
+Newington
+Civil parish
+Edinburgh St Leonards
+Town
+Edinburgh
+County
+Midlothian
+Address
+5 Beaumont Pl
+Occupation
+Stone Machineman
+ED
+4
+Household schedule number
+24
+Line
+23
+Roll
+CSSCT1901_385
+
+Household Members (Name)  |  Age  |  Relationship
+Robert Douglas  |  24  |  Head
+Lizzie Douglas  |  26  |  Wife
+Janet Douglas  |  11 Mo  |  Daug (Daughter)
+
+Citation
+
+Parish: Edinburgh St Leonards; ED: 4; Page: 5; Line: 23; Roll: CSSCT1901_385
+
+Information
+
+Ancestry.com. 1901 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1901 Scotland Census. Reels 1-446. General Register Office for Scotland, Edinburgh, Scotland.
+
+────────────────────────
+
+Lizzie Douglas
+1901 Scotland Census
+https://www.ancestry.com/search/collections/1101/records/4385521
+
+Name
+Lizzie Douglas
+[Elizabeth Miller Macdonald]
+[Elizabeth Miller Macdonald]
+Age
+26
+Estimated Birth Year
+abt 1875
+[abt 1875]
+Relationship
+Wife
+Spouse's Name
+Robert Douglas
+Gender
+Female
+Where born
+Midlothian, Gilmerton
+Registration Number
+685/5
+Registration District
+Newington
+Civil parish
+Edinburgh St Leonards
+Town
+Edinburgh
+County
+Midlothian
+Address
+5 Beaumont Pl
+ED
+4
+Household schedule number
+24
+Line
+24
+Roll
+CSSCT1901_385
+
+Household Members (Name)  |  Age  |  Relationship
+Robert Douglas  |  24  |  Head
+Lizzie Douglas  |  26  |  Wife
+Janet Douglas  |  11 Mo  |  Daug (Daughter)
+
+Citation
+
+Parish: Edinburgh St Leonards; ED: 4; Page: 5; Line: 24; Roll: CSSCT1901_385
+
+Information
+
+Ancestry.com. 1901 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1901 Scotland Census. Reels 1-446. General Register Office for Scotland, Edinburgh, Scotland.

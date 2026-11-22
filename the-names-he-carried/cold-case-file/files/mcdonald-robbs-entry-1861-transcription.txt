@@ -1,0 +1,60 @@
+1861 census at 3 Robb’s Entry
+April 7, 1861
+
+Janet Mcdonald
+1861 Scotland Census
+https://www.ancestry.com/search/collections/1080/records/1262017
+
+Name
+Janet Mcdonald
+Age
+31
+Estimated Birth Year
+abt 1830
+[abt 1830]
+Relationship
+Wife
+Spouse's Name
+John Mcdonald
+Gender
+Female
+Where born
+Beith, Fife
+Registration Number
+685/3
+Registration District
+Canongate
+Civil parish
+Edinburgh St Cuthberts
+County
+Midlothian
+Address
+3 Robb's Entry
+ED
+64
+Household schedule number
+66
+Line
+22
+Roll
+CSSCT1861_127
+
+Household Members (Name)  |  Age  |  Relationship
+John Mcdonald  |  32  |  Head
+Janet Mcdonald  |  31  |  Wife
+Helen Mcdonald  |  12  |  Daughter
+Angus Mcdonald  |  10  |  Son
+Annie Mcdonald  |  7  |  Daughter
+George Mcdonald  |  5  |  Son
+James Mcdonald  |  3  |  Son
+John Mcdonald  |  1 Mo  |  Son
+
+Citation
+
+Parish: Edinburgh St Cuthberts; ED: 64; Page: 11; Line: 22; Roll: CSSCT1861_127
+
+Information
+
+Ancestry.com. 1861 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2006.
+
+Original data: Scotland. 1861 Scotland Census. Reels 1-150. General Register Office for Scotland, Edinburgh, Scotland.

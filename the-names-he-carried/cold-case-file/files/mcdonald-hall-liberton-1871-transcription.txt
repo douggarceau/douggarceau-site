@@ -1,0 +1,62 @@
+1871 census at Hall, Liberton
+April 2, 1871
+
+John McDonald
+1871 Scotland Census
+https://www.ancestry.com/search/collections/1104/records/3327903
+
+Name
+John McDonald
+Age
+42
+Estimated Birth Year
+abt 1829
+[abt 1829]
+Relationship
+Head
+Spouse's Name
+Janet McDonald
+Gender
+Male
+Where born
+St Cuthberts, edinbr
+Registration Number
+693
+Registration District
+Liberton
+Civil parish
+Liberton
+County
+Midlothian
+Address
+Hall
+Occupation
+Labourer
+ED
+6
+Household schedule number
+20
+Line
+4
+Roll
+CSSCT1871_170
+
+Household Members (Name)  |  Age  |  Relationship
+John McDonald  |  42  |  Head
+Janet McDonald  |  42  |  Wife
+Angus McDonald  |  19  |  Son
+Helen McDonald  |  21  |  Daughter
+John McDonald  |  9  |  Son
+Janet McDonald  |  7  |  Daughter
+Alexander McDonald  |  2  |  Son
+Robert McDonald  |  1  |  Son
+
+Citation
+
+Parish: Liberton; ED: 6; Page: 5; Line: 4; Roll: CSSCT1871_170
+
+Information
+
+Ancestry.com. 1871 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1871 Scotland Census. Reels 1-191. General Register Office for Scotland, Edinburgh, Scotland.

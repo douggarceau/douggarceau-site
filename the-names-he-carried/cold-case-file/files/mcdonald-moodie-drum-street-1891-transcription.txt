@@ -1,0 +1,112 @@
+1891 census of John McDonald and Janet Moodie at N Drum Street
+April 5, 1891
+
+John McDonald
+1891 Scotland Census
+https://www.ancestry.com/search/collections/1108/records/2739886
+
+Name
+John McDonald
+Age
+63
+Estimated Birth Year
+abt 1828
+[abt 1828]
+Relationship
+Head
+Spouse's Name
+Janet Page W McDonald
+Gender
+Male
+Where born
+St Cuthberts, Edinr
+Registration Number
+693
+Registration District
+Liberton
+Civil parish
+Liberton
+County
+Midlothian
+Address
+N Drum Street
+Occupation
+General Labourer
+ED
+7
+Household schedule number
+96
+Line
+12
+Roll
+CSSCT1891_368
+
+Household Members (Name)  |  Age  |  Relationship
+John McDonald  |  63  |  Head
+Janet Page W McDonald  |  63  |  Wife
+Janet Moodie  |  11  |  Grand-Daughter (Granddaughter)
+
+Citation
+
+Parish: Liberton; ED: 7; Page: 22; Line: 12; Roll: CSSCT1891_368
+
+Information
+
+Ancestry.com. 1891 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1891 Scotland Census. Reels 1-409. General Register Office for Scotland, Edinburgh, Scotland.
+
+────────────────────────
+
+Janet Moodie
+1891 Scotland Census
+https://www.ancestry.com/search/collections/1108/records/2739888
+
+Name
+Janet Moodie
+Age
+11
+Estimated Birth Year
+abt 1880
+[abt 1880]
+Relationship
+Grand-Daughter (Granddaughter)
+Gender
+Female
+Where born
+Gilmerton, Edinr
+Registration Number
+693
+Registration District
+Liberton
+Civil parish
+Liberton
+County
+Midlothian
+Address
+N Drum Street
+Occupation
+Scholar
+ED
+7
+Household schedule number
+96
+Line
+14
+Roll
+CSSCT1891_368
+
+Household Members (Name)  |  Age  |  Relationship
+John McDonald  |  63  |  Head
+Janet Page W McDonald  |  63  |  Wife
+Janet Moodie  |  11  |  Grand-Daughter (Granddaughter)
+
+Citation
+
+Parish: Liberton; ED: 7; Page: 22; Line: 14; Roll: CSSCT1891_368
+
+Information
+
+Ancestry.com. 1891 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1891 Scotland Census. Reels 1-409. General Register Office for Scotland, Edinburgh, Scotland.

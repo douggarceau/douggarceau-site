@@ -1,0 +1,56 @@
+1901 census of Janet Doig at Cameron’s Bdgs
+March 31, 1901
+
+Janet Doig
+1901 Scotland Census
+https://www.ancestry.com/search/collections/1101/records/4766757
+
+Name
+Janet Doig
+Age
+20
+Estimated Birth Year
+abt 1881
+[abt 1881]
+Relationship
+Wife
+Spouse's Name
+William Doig
+Gender
+Female
+Where born
+Liberton, edin
+Registration Number
+693
+Registration District
+Liberton
+Civil parish
+Liberton
+County
+Midlothian
+Address
+Cameron's Bdgs
+Occupation
+Gardener
+ED
+6
+Household schedule number
+43
+Line
+2
+Roll
+CSSCT1901_403
+
+Household Members (Name)  |  Age  |  Relationship
+William Doig  |  26  |  Head
+Janet Doig  |  20  |  Wife
+
+Citation
+
+Parish: Liberton; ED: 6; Page: 9; Line: 2; Roll: CSSCT1901_403
+
+Information
+
+Ancestry.com. 1901 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1901 Scotland Census. Reels 1-446. General Register Office for Scotland, Edinburgh, Scotland.

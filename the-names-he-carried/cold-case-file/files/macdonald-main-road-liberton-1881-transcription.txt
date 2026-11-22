@@ -1,0 +1,116 @@
+1881 census of John and Elizabeth MacDonald, schedule 141
+April 3, 1881
+
+John MacDonald
+1881 Scotland Census
+https://www.ancestry.com/search/collections/1119/records/2158695
+
+Name
+John MacDonald
+Age
+52
+Estimated Birth Year
+abt 1829
+[abt 1829]
+Relationship
+Head
+Spouse's Name
+Janet MacDonald
+Gender
+Male
+Where born
+Edinbro, Midlothian
+Registration Number
+693
+Registration District
+Liberton
+Civil parish
+Liberton
+County
+Midlothian
+Occupation
+Pitheadman
+ED
+7
+Household schedule number
+141
+Line
+22
+Roll
+cssct1881_300
+
+Household Members (Name)  |  Age  |  Relationship
+John MacDonald  |  52  |  Head
+Janet MacDonald  |  52  |  Wife
+Geo MacDonald  |  25  |  Son
+Alexr MacDonald  |  12  |  Son
+Janet MacDonald  |  15  |  Daughter
+Elizabeth MacDonald  |  6  |  Grandchild
+
+Citation
+
+Parish: Liberton; ED: 7; Page: 27; Line: 22; Roll: cssct1881_300
+
+Information
+
+Ancestry.com. 1881 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1881 Scotland Census. Reels 1-338. General Register Office for Scotland, Edinburgh, Scotland.
+
+────────────────────────
+
+Elizabeth MacDonald
+1881 Scotland Census
+https://www.ancestry.com/search/collections/1119/records/2158700
+
+Name
+Elizabeth MacDonald
+Age
+6
+Estimated Birth Year
+abt 1875
+[abt 1875]
+Relationship
+Grandchild
+Gender
+Female
+Where born
+Gilmerton, Midlothian
+Registration Number
+693
+Registration District
+Liberton
+Civil parish
+Liberton
+County
+Midlothian
+Address
+Main Road
+Occupation
+Scholar
+ED
+7
+Household schedule number
+141
+Line
+3
+Roll
+cssct1881_300
+
+Household Members (Name)  |  Age  |  Relationship
+John MacDonald  |  52  |  Head
+Janet MacDonald  |  52  |  Wife
+Geo MacDonald  |  25  |  Son
+Alexr MacDonald  |  12  |  Son
+Janet MacDonald  |  15  |  Daughter
+Elizabeth MacDonald  |  6  |  Grandchild
+
+Citation
+
+Parish: Liberton; ED: 7; Page: 28; Line: 3; Roll: cssct1881_300
+
+Information
+
+Ancestry.com. 1881 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1881 Scotland Census. Reels 1-338. General Register Office for Scotland, Edinburgh, Scotland.

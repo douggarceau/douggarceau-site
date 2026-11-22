@@ -1,0 +1,58 @@
+1881 census of Jannet Mudie, schedule 133
+April 3, 1881
+
+Jannet Mudie
+1881 Scotland Census
+https://www.ancestry.com/search/collections/1119/records/2158658
+
+Name
+Jannet Mudie
+[Jannet Moodie]
+[Janet Page Moodie]
+[Moodie]
+[Janet Page Moodie]
+[Moodie]
+Age
+Under 1 Year
+Relationship
+Daughter
+Father's Name
+Peter Mudie
+Mother's Name
+Ellen Mudie
+Gender
+Female
+Where born
+Gilmerton, Midlothian
+Registration Number
+693
+Registration District
+Liberton
+Civil parish
+Liberton
+County
+Midlothian
+ED
+7
+Household schedule number
+133
+Line
+10
+Roll
+cssct1881_300
+
+Household Members (Name)  |  Age  |  Relationship
+Peter Mudie  |  46  |  Head
+Ellen Mudie  |  31  |  Wife
+Mc Donald Mudie Jr.  |  3  |  Son
+Jannet Mudie  |  Under 1 Year  |  Daughter
+
+Citation
+
+Parish: Liberton; ED: 7; Page: 26; Line: 10; Roll: cssct1881_300
+
+Information
+
+Ancestry.com. 1881 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1881 Scotland Census. Reels 1-338. General Register Office for Scotland, Edinburgh, Scotland.

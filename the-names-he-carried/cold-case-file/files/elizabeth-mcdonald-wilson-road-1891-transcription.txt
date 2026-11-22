@@ -1,0 +1,61 @@
+1891 census of Elizabeth McDonald at 14 Wilson Rd
+April 5, 1891
+
+Elizabeth McDonald
+1891 Scotland Census
+https://www.ancestry.com/search/collections/1108/records/2264419
+
+Name
+Elizabeth McDonald
+Age
+16
+Estimated Birth Year
+abt 1875
+[abt 1875]
+Relationship
+Serv (Servant)
+Gender
+Female
+Where born
+Gilmerton, Midlothian
+Registration Number
+685/5
+Registration District
+Newington
+Civil parish
+Edinburgh Liberton
+County
+Midlothian
+Address
+14 Wilson Rd
+Occupation
+Dom Serv Genl
+ED
+91
+Household schedule number
+49
+Line
+8
+Roll
+CSSCT1891_356
+
+Household Members (Name)  |  Age  |  Relationship
+Robert Dryder  |  30  |  Head
+Mary Dryder  |  33  |  Wife
+Adam Dryder  |  5  |  Son
+James Dryder  |  4  |  Son
+Thomas Dryder  |  2  |  Son
+Alexander Dryder  |  8mos  |  Son
+Elizabeth McDonald  |  16  |  Serv (Servant)
+Catherine Davidson  |  28  |  Serv (Servant)
+Jane Huschen  |  30  |  Visitor
+
+Citation
+
+Parish: Edinburgh Liberton; ED: 91; Page: 11; Line: 8; Roll: CSSCT1891_356
+
+Information
+
+Ancestry.com. 1891 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1891 Scotland Census. Reels 1-409. General Register Office for Scotland, Edinburgh, Scotland.

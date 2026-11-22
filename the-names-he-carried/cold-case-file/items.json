@@ -1,11 +1,99 @@
 [
   {
+    "item": 77,
+    "slug": "macdonald-page-marriage-1848",
+    "title": "Marriage index of John Macdonald and Janet Page",
+    "date": "November 20, 1848",
+    "sort_date": "1848-11-20",
+    "source": "Scotland, Select Marriages, 1561-1910",
+    "source_url": "https://www.ancestry.com/search/collections/60144/records/974864",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/60144/records/974864"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/macdonald-page-marriage-1848-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/macdonald-page-marriage-1848.html"
+  },
+  {
+    "item": 78,
+    "slug": "mcdonald-semple-street-1851",
+    "title": "1851 census at 6 Semple Street, Weavers Close",
+    "date": "March 30, 1851",
+    "sort_date": "1851-03-30",
+    "source": "1851 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1076/records/2902142",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1076/records/2902142"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/mcdonald-semple-street-1851-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/mcdonald-semple-street-1851.html"
+  },
+  {
+    "item": 79,
+    "slug": "ann-alison-macdonald-birth-1853",
+    "title": "Birth index of Ann Alison Macdonald",
+    "date": "August 7, 1853",
+    "sort_date": "1853-08-07",
+    "source": "Scotland, Select Births and Baptisms, 1564-1950",
+    "source_url": "https://www.ancestry.com/search/collections/60143/records/3213062",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/60143/records/3213062"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/ann-alison-macdonald-birth-1853-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/ann-alison-macdonald-birth-1853.html"
+  },
+  {
     "item": 1,
     "slug": "dunlop-census-1861-abbotsford-place",
     "date": "April 7, 1861",
     "title": "1861 census: 50 Abbotsford Place, Glasgow",
     "images": [],
     "source": "1861 Scotland Census, Glasgow Govan, ED 32, page 19. Ancestry index (General Register Office for Scotland)."
+  },
+  {
+    "item": 80,
+    "slug": "mcdonald-robbs-entry-1861",
+    "title": "1861 census at 3 Robb’s Entry",
+    "date": "April 7, 1861",
+    "sort_date": "1861-04-07",
+    "source": "1861 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1080/records/1262017",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1080/records/1262017"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/mcdonald-robbs-entry-1861-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/mcdonald-robbs-entry-1861.html"
   },
   {
     "slug": "archibald-douglas-isabella-gray-marriage-index-1863",
@@ -114,6 +202,72 @@
     "item": 59
   },
   {
+    "item": 81,
+    "slug": "mcdonald-hall-liberton-1871",
+    "title": "1871 census at Hall, Liberton",
+    "date": "April 2, 1871",
+    "sort_date": "1871-04-02",
+    "source": "1871 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1104/records/3327903",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1104/records/3327903"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/mcdonald-hall-liberton-1871-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/mcdonald-hall-liberton-1871.html"
+  },
+  {
+    "item": 82,
+    "slug": "elizabeth-miller-mcdonald-birth-1874",
+    "title": "Birth index of Elizabeth Miller Mc Donald",
+    "date": "May 31, 1874",
+    "sort_date": "1874-05-31",
+    "source": "Scotland, Select Births and Baptisms, 1564-1950",
+    "source_url": "https://www.ancestry.com/search/collections/60143/records/7248918",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/60143/records/7248918"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/elizabeth-miller-mcdonald-birth-1874-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/elizabeth-miller-mcdonald-birth-1874.html"
+  },
+  {
+    "item": 94,
+    "slug": "elizabeth-miller-mcdonald-statutory-birth-1874",
+    "title": "Birth registration of Elizabeth Miller McDonald, Liberton, entry 70",
+    "date": "May 31, 1874",
+    "sort_date": "1874-05-31",
+    "source": "National Records of Scotland, statutory register of births, Liberton, 1874, 693/70, p. 24",
+    "source_url": "https://www.scotlandspeople.gov.uk/search-records/statutory-records/stat-births",
+    "canonical_record_urls": [
+      "https://www.scotlandspeople.gov.uk/search-records/statutory-records/stat-births"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/elizabeth-miller-mcdonald-statutory-birth-1874-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Transcription of entry 70 from the original register.",
+    "html_path": "the-names-he-carried/cold-case-file/elizabeth-miller-mcdonald-statutory-birth-1874.html"
+  },
+  {
     "item": 2,
     "slug": "binnie-dunlop-birth-1874",
     "date": "August 3, 1874",
@@ -164,6 +318,51 @@
     "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
     "html_path": "the-names-he-carried/cold-case-file/archibald-douglas-scotland-census-index-1881.html",
     "item": 60
+  },
+  {
+    "item": 83,
+    "slug": "macdonald-main-road-liberton-1881",
+    "title": "1881 census of John and Elizabeth MacDonald, schedule 141",
+    "date": "April 3, 1881",
+    "sort_date": "1881-04-03",
+    "source": "1881 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1119/records/2158695",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1119/records/2158695",
+      "https://www.ancestry.com/search/collections/1119/records/2158700"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/macdonald-main-road-liberton-1881-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/macdonald-main-road-liberton-1881.html"
+  },
+  {
+    "item": 84,
+    "slug": "mudie-liberton-1881",
+    "title": "1881 census of Jannet Mudie, schedule 133",
+    "date": "April 3, 1881",
+    "sort_date": "1881-04-03",
+    "source": "1881 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1119/records/2158658",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1119/records/2158658"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/mudie-liberton-1881-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/mudie-liberton-1881.html"
   },
   {
     "item": 5,
@@ -272,6 +471,51 @@
     "item": 63
   },
   {
+    "item": 85,
+    "slug": "mcdonald-moodie-drum-street-1891",
+    "title": "1891 census of John McDonald and Janet Moodie at N Drum Street",
+    "date": "April 5, 1891",
+    "sort_date": "1891-04-05",
+    "source": "1891 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1108/records/2739886",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1108/records/2739886",
+      "https://www.ancestry.com/search/collections/1108/records/2739888"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/mcdonald-moodie-drum-street-1891-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/mcdonald-moodie-drum-street-1891.html"
+  },
+  {
+    "item": 86,
+    "slug": "elizabeth-mcdonald-wilson-road-1891",
+    "title": "1891 census of Elizabeth McDonald at 14 Wilson Rd",
+    "date": "April 5, 1891",
+    "sort_date": "1891-04-05",
+    "source": "1891 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1108/records/2264419",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1108/records/2264419"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/elizabeth-mcdonald-wilson-road-1891-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/elizabeth-mcdonald-wilson-road-1891.html"
+  },
+  {
     "item": 8,
     "slug": "william-brown-death-1895",
     "date": "January 13, 1895",
@@ -280,6 +524,29 @@
       "william-brown-death-1895.jpg"
     ],
     "source": "Statutory registers, Deaths, Stobo, 1895, 770/1. National Records of Scotland."
+  },
+  {
+    "item": 87,
+    "slug": "watson-hatton-place-directories",
+    "title": "Edinburgh and Leith directory entries for 4 Hatton Place",
+    "date": "1898–1899 and 1899–1900",
+    "sort_date": "1898-01-01",
+    "source": "Post Office Edinburgh and Leith directory",
+    "source_url": "https://archive.org/stream/postofficeedinbu189899edin/postofficeedinbu189899edin_djvu.txt",
+    "canonical_record_urls": [
+      "https://archive.org/stream/postofficeedinbu189899edin/postofficeedinbu189899edin_djvu.txt",
+      "https://archive.org/stream/postofficeedinbu18991900edin/postofficeedinbu18991900edin_djvu.txt"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/watson-hatton-place-directories-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Directory entries from the digitised volumes’ searchable text.",
+    "html_path": "the-names-he-carried/cold-case-file/watson-hatton-place-directories.html"
   },
   {
     "item": 10,
@@ -301,6 +568,71 @@
     "source": "UK and Ireland, Medical Registers, 1859-1943. Ancestry index (The Medical Register)."
   },
   {
+    "item": 92,
+    "slug": "binnie-dunlop-medical-register-collection",
+    "title": "Binnie Dunlop in the UK and Ireland medical-register index",
+    "date": "1899–1943",
+    "sort_date": "1899-01-01",
+    "source": "UK and Ireland, Medical Registers, 1859-1943",
+    "source_url": "https://www.ancestry.com/search/collections/62268/records/939811",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/62268/records/939811",
+      "https://www.ancestry.com/search/collections/62268/records/975120",
+      "https://www.ancestry.com/search/collections/62268/records/1011092",
+      "https://www.ancestry.com/search/collections/62268/records/1047632",
+      "https://www.ancestry.com/search/collections/62268/records/1084588",
+      "https://www.ancestry.com/search/collections/62268/records/1121923",
+      "https://www.ancestry.com/search/collections/62268/records/1159992",
+      "https://www.ancestry.com/search/collections/62268/records/1198737",
+      "https://www.ancestry.com/search/collections/62268/records/1237739",
+      "https://www.ancestry.com/search/collections/62268/records/1277332",
+      "https://www.ancestry.com/search/collections/62268/records/1317211",
+      "https://www.ancestry.com/search/collections/62268/records/1317260",
+      "https://www.ancestry.com/search/collections/62268/records/1357409",
+      "https://www.ancestry.com/search/collections/62268/records/1397370",
+      "https://www.ancestry.com/search/collections/62268/records/1437956",
+      "https://www.ancestry.com/search/collections/62268/records/1478958",
+      "https://www.ancestry.com/search/collections/62268/records/1520550",
+      "https://www.ancestry.com/search/collections/62268/records/1562610",
+      "https://www.ancestry.com/search/collections/62268/records/1605901",
+      "https://www.ancestry.com/search/collections/62268/records/1649445",
+      "https://www.ancestry.com/search/collections/62268/records/1693202",
+      "https://www.ancestry.com/search/collections/62268/records/1737088",
+      "https://www.ancestry.com/search/collections/62268/records/1781569",
+      "https://www.ancestry.com/search/collections/62268/records/1826530",
+      "https://www.ancestry.com/search/collections/62268/records/1872013",
+      "https://www.ancestry.com/search/collections/62268/records/1918909",
+      "https://www.ancestry.com/search/collections/62268/records/1967357",
+      "https://www.ancestry.com/search/collections/62268/records/2017643",
+      "https://www.ancestry.com/search/collections/62268/records/2069527",
+      "https://www.ancestry.com/search/collections/62268/records/2122229",
+      "https://www.ancestry.com/search/collections/62268/records/2175975",
+      "https://www.ancestry.com/search/collections/62268/records/2230269",
+      "https://www.ancestry.com/search/collections/62268/records/2285019",
+      "https://www.ancestry.com/search/collections/62268/records/2340277",
+      "https://www.ancestry.com/search/collections/62268/records/2395857",
+      "https://www.ancestry.com/search/collections/62268/records/2451847",
+      "https://www.ancestry.com/search/collections/62268/records/2508462",
+      "https://www.ancestry.com/search/collections/62268/records/2565977",
+      "https://www.ancestry.com/search/collections/62268/records/2624135",
+      "https://www.ancestry.com/search/collections/62268/records/2683289",
+      "https://www.ancestry.com/search/collections/62268/records/2743710",
+      "https://www.ancestry.com/search/collections/62268/records/2805613",
+      "https://www.ancestry.com/search/collections/62268/records/2870413",
+      "https://www.ancestry.com/search/collections/62268/records/2937810"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/binnie-dunlop-medical-register-collection-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "44 Ancestry index entries. Each entry links to its individual record.",
+    "html_path": "the-names-he-carried/cold-case-file/binnie-dunlop-medical-register-collection.html"
+  },
+  {
     "item": 9,
     "slug": "douglas-mcdonald-marriage-1899",
     "date": "June 9, 1899",
@@ -309,6 +641,29 @@
       "robert-douglas-elizabeth-mcdonald-marriage-register-1899.jpg"
     ],
     "source": "Statutory registers, Marriages, St Giles, Edinburgh, 685/4 213. National Records of Scotland."
+  },
+  {
+    "item": 88,
+    "slug": "moodie-doig-marriage-index-1900",
+    "title": "Marriage index entry for William Doig and Janet Page Moodie",
+    "date": "1900",
+    "sort_date": "1900-01-01",
+    "source": "National Records of Scotland, statutory marriages, Liberton (Midlothian), 1900, 693/16 · Scotland Marriage Index for Doig",
+    "source_url": "https://www.scotlandspeople.gov.uk/search-records/statutory-records/stat_marriages",
+    "canonical_record_urls": [
+      "https://www.scotlandspeople.gov.uk/search-records/statutory-records/stat_marriages",
+      "https://www.doig.net/ScotMarriages.html"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/moodie-doig-marriage-index-1900-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Statutory marriage index and surname index.",
+    "html_path": "the-names-he-carried/cold-case-file/moodie-doig-marriage-index-1900.html"
   },
   {
     "slug": "binnie-dunlop-glasgow-electoral-index-1901",
@@ -395,6 +750,95 @@
     "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
     "html_path": "the-names-he-carried/cold-case-file/mary-archibald-scotland-census-index-1901.html",
     "item": 66
+  },
+  {
+    "item": 89,
+    "slug": "douglas-beaumont-place-1901",
+    "title": "1901 census of Robert and Lizzie Douglas at 5 Beaumont Pl",
+    "date": "March 31, 1901",
+    "sort_date": "1901-03-31",
+    "source": "1901 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1101/records/4385520",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1101/records/4385520",
+      "https://www.ancestry.com/search/collections/1101/records/4385521"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/douglas-beaumont-place-1901-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/douglas-beaumont-place-1901.html"
+  },
+  {
+    "item": 90,
+    "slug": "janet-mcdonald-gilmerton-1901",
+    "title": "1901 census of Janet Mcdonald, Gilmerton",
+    "date": "March 31, 1901",
+    "sort_date": "1901-03-31",
+    "source": "1901 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1101/records/4766269",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1101/records/4766269"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/janet-mcdonald-gilmerton-1901-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/janet-mcdonald-gilmerton-1901.html"
+  },
+  {
+    "item": 91,
+    "slug": "janet-doig-liberton-1901",
+    "title": "1901 census of Janet Doig at Cameron’s Bdgs",
+    "date": "March 31, 1901",
+    "sort_date": "1901-03-31",
+    "source": "1901 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1101/records/4766757",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1101/records/4766757"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/janet-doig-liberton-1901-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/janet-doig-liberton-1901.html"
+  },
+  {
+    "item": 93,
+    "slug": "william-watson-hatton-place-1901",
+    "title": "1901 census of William Ruth Watson at 4 Hatton Place",
+    "date": "March 31, 1901",
+    "sort_date": "1901-03-31",
+    "source": "1901 Scotland Census",
+    "source_url": "https://www.ancestry.com/search/collections/1101/records/4403182",
+    "canonical_record_urls": [
+      "https://www.ancestry.com/search/collections/1101/records/4403182"
+    ],
+    "images": [],
+    "files": [
+      {
+        "path": "files/william-watson-hatton-place-1901-transcription.txt",
+        "label": "Transcription",
+        "type": "text/plain"
+      }
+    ],
+    "transcription_extent": "Ancestry index transcription.",
+    "html_path": "the-names-he-carried/cold-case-file/william-watson-hatton-place-1901.html"
   },
   {
     "item": 12,

@@ -1,0 +1,59 @@
+1901 census of William Ruth Watson at 4 Hatton Place
+March 31, 1901
+
+William Ruth Watson
+1901 Scotland Census
+https://www.ancestry.com/search/collections/1101/records/4403182
+
+Name
+William Ruth Watson
+Age
+66
+Estimated Birth Year
+abt 1835
+[abt 1835]
+Relationship
+Head
+Spouse's Name
+Margaret B Watson
+Gender
+Male
+Where born
+Glenbervie, Kincardineshire
+Registration Number
+685/5
+Registration District
+Newington
+Civil parish
+Edinburgh Robertson Memorial
+County
+Midlothian
+Address
+4, Hatton Place
+Occupation
+Retired Clerk, Register House
+ED
+92
+Household schedule number
+81
+Line
+11
+Roll
+CSSCT1901_389
+
+Household Members (Name)  |  Age  |  Relationship
+William Ruth Watson  |  66  |  Head
+Margaret B Watson  |  37  |  Wife
+Margaret B Watson  |  16  |  Daur (Daughter)
+Grace Isabella Watson  |  14  |  Daur (Daughter)
+Ruth Glen Watson  |  6  |  Daur (Daughter)
+
+Citation
+
+Parish: Edinburgh Robertson Memorial; ED: 92; Page: 23; Line: 11; Roll: CSSCT1901_389
+
+Information
+
+Ancestry.com. 1901 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1901 Scotland Census. Reels 1-446. General Register Office for Scotland, Edinburgh, Scotland.
