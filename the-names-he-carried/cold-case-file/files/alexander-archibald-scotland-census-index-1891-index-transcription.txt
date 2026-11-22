@@ -1,0 +1,46 @@
+1891 Scotland census index: Alexander Archibald
+April 5, 1891
+
+Ancestry index transcription; original record image not reproduced here.
+
+Collection: 1891 Scotland Census
+
+RECORD DETAILS — Alexander Archibald
+https://www.ancestry.com/search/collections/1108/records/4367384
+
+Name: Alexander Archibald
+Age: 20
+Estimated Birth Year: abt 1871
+[abt 1871]
+Relationship: Son
+Mother's Name: Ann Archibald
+Gender: Male
+Where born: Libberton, Lanarkshire
+Registration Number: 650
+Registration District: Libberton
+Civil parish: Libberton
+County: Lanarkshire
+Address: Castle
+Occupation: Stonebreaker
+ED: 3
+Household schedule number: 5
+Line: 20
+Roll: CSSCT1891_312
+
+HOUSEHOLD MEMBERS
+Household Members (Name)	Age	Relationship
+Ann Archibald	54	Head
+Mary Archibald	27	Daur (Daughter)
+Alexander Archibald	20	Son
+John Archibald	17	Son
+Isabella Purves	50	Visitor
+
+SOURCE
+
+Citation
+Parish: Libberton; ED: 3; Page: 1; Line: 20; Roll: CSSCT1891_312
+
+Information
+Ancestry.com. 1891 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1891 Scotland Census. Reels 1-409. General Register Office for Scotland, Edinburgh, Scotland.

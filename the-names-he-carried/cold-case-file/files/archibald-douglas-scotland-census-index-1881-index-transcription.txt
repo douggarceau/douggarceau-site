@@ -1,0 +1,49 @@
+1881 Scotland census index: Archibald Douglas
+April 3, 1881
+
+Ancestry index transcription; original record image not reproduced here.
+
+Collection: 1881 Scotland Census
+
+RECORD DETAILS — Archibald Douglas
+https://www.ancestry.com/search/collections/1119/records/2142574
+
+Name: Archibald Douglas
+Age: 39
+Estimated Birth Year: abt 1842
+[abt 1842]
+Relationship: Head
+Spouse's Name: Isabella Douglas
+Gender: Male
+Where born: Ormiston, Haddington
+Registration Number: 690
+Registration District: Kirknewton and East Calder
+Civil parish: Kirknewton and East Calder
+County: Midlothian
+Address: Sunny Side
+Occupation: Saw Miller
+ED: 2
+Household schedule number: 26
+Line: 24
+Roll: cssct1881_296
+
+HOUSEHOLD MEMBERS
+Household Members (Name)	Age	Relationship
+Archibald Douglas	39	Head
+Isabella Douglas	40	Wife
+Jemima Douglas	14	Daughter
+Janet Douglas	13	Daughter
+Hellen Douglas	10	Daughter
+Margaret Douglas	8	Daughter
+Robert Douglas	4	Son
+Thomas Douglas	1	Son
+
+SOURCE
+
+Citation
+Parish: Kirknewton and East Calder; ED: 2; Page: 5; Line: 24; Roll: cssct1881_296
+
+Information
+Ancestry.com. 1881 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1881 Scotland Census. Reels 1-338. General Register Office for Scotland, Edinburgh, Scotland.

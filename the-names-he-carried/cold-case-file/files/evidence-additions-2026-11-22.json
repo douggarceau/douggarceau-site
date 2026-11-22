@@ -1,0 +1,677 @@
+{
+  "case": "LBD-001",
+  "date": "2026-11-22",
+  "added_exhibit_count": 19,
+  "exhibits": [
+    {
+      "slug": "archibald-douglas-isabella-gray-marriage-index-1863",
+      "title": "Marriage index: Archibald Douglas and Isabella Gray",
+      "date": "January 2, 1863",
+      "sort_date": "1863-01-02",
+      "date_basis": "Marriage Date field in the captured index.",
+      "source": "Scotland, Select Marriages, 1561-1910 — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/60144/records/3429699",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/60144/records/3429699"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/archibald-douglas-isabella-gray-marriage-index-1863-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 56
+    },
+    {
+      "slug": "mary-archibald-birth-index-1864",
+      "title": "Birth index: Mary Archibald",
+      "date": "October 23, 1864",
+      "sort_date": "1864-10-23",
+      "date_basis": "Birth Date field in the captured index.",
+      "source": "Scotland, Select Births and Baptisms, 1564-1950 — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/60143/records/13491487",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/60143/records/13491487"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/mary-archibald-birth-index-1864-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 57
+    },
+    {
+      "slug": "alexander-archibald-birth-index-1870",
+      "title": "Birth index: Alexander Archibald",
+      "date": "December 6, 1870",
+      "sort_date": "1870-12-06",
+      "date_basis": "Birth Date field in the captured index.",
+      "source": "Scotland, Select Births and Baptisms, 1564-1950 — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/60143/records/18557306",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/60143/records/18557306"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/alexander-archibald-birth-index-1870-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 58
+    },
+    {
+      "slug": "mary-alexander-archibald-scotland-census-index-1871",
+      "title": "1871 Scotland census indices: Mary and Alexander Archibald",
+      "date": "April 2, 1871",
+      "sort_date": "1871-04-02",
+      "date_basis": "Census date stated in the captured Ancestry collection description; the first date of a stated census night is used for sorting.",
+      "source": "1871 Scotland Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/1104/records/2455764",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/1104/records/2455764",
+        "https://www.ancestry.com/search/collections/1104/records/2455766"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/mary-alexander-archibald-scotland-census-index-1871-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 59
+    },
+    {
+      "slug": "archibald-douglas-scotland-census-index-1881",
+      "title": "1881 Scotland census index: Archibald Douglas",
+      "date": "April 3, 1881",
+      "sort_date": "1881-04-03",
+      "date_basis": "Census date stated in the captured Ancestry collection description; the first date of a stated census night is used for sorting.",
+      "source": "1881 Scotland Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/1119/records/2142574",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/1119/records/2142574"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/archibald-douglas-scotland-census-index-1881-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 60
+    },
+    {
+      "slug": "alexander-archibald-scotland-census-index-1891",
+      "title": "1891 Scotland census index: Alexander Archibald",
+      "date": "April 5, 1891",
+      "sort_date": "1891-04-05",
+      "date_basis": "Census date stated in the captured Ancestry collection description; the first date of a stated census night is used for sorting.",
+      "source": "1891 Scotland Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/1108/records/4367384",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/1108/records/4367384"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/alexander-archibald-scotland-census-index-1891-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 61
+    },
+    {
+      "slug": "archibald-douglas-scotland-census-index-1891",
+      "title": "1891 Scotland census index: Archibald Douglas",
+      "date": "April 5, 1891",
+      "sort_date": "1891-04-05",
+      "date_basis": "Census date stated in the captured Ancestry collection description; the first date of a stated census night is used for sorting.",
+      "source": "1891 Scotland Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/1108/records/2242919",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/1108/records/2242919"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/archibald-douglas-scotland-census-index-1891-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 62
+    },
+    {
+      "slug": "mary-archibald-scotland-census-index-1891",
+      "title": "1891 Scotland census index: Mary Archibald",
+      "date": "April 5, 1891",
+      "sort_date": "1891-04-05",
+      "date_basis": "Census date stated in the captured Ancestry collection description; the first date of a stated census night is used for sorting.",
+      "source": "1891 Scotland Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/1108/records/4367383",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/1108/records/4367383"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/mary-archibald-scotland-census-index-1891-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 63
+    },
+    {
+      "slug": "binnie-dunlop-glasgow-electoral-index-1901",
+      "title": "1901 Glasgow electoral index: Binnie Dunlop",
+      "date": "1901",
+      "sort_date": "1901",
+      "date_basis": "Indexed record year; exact day not stated in this captured record.",
+      "source": "Glasgow, Lanarkshire, Scotland, Electoral Registers, 1857-1962 — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/61020/records/3965482",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/61020/records/3965482"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/binnie-dunlop-glasgow-electoral-index-1901-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 64
+    },
+    {
+      "slug": "alexander-archibald-scotland-census-index-1901",
+      "title": "1901 Scotland census index: Alexander Archibald",
+      "date": "March 31, 1901",
+      "sort_date": "1901-03-31",
+      "date_basis": "Census date stated in the captured Ancestry collection description; the first date of a stated census night is used for sorting.",
+      "source": "1901 Scotland Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/1101/records/2271638",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/1101/records/2271638"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/alexander-archibald-scotland-census-index-1901-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 65
+    },
+    {
+      "slug": "mary-archibald-scotland-census-index-1901",
+      "title": "1901 Scotland census index: Mary Archibald",
+      "date": "March 31, 1901",
+      "sort_date": "1901-03-31",
+      "date_basis": "Census date stated in the captured Ancestry collection description; the first date of a stated census night is used for sorting.",
+      "source": "1901 Scotland Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/1101/records/2271685",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/1101/records/2271685"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/mary-archibald-scotland-census-index-1901-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 66
+    },
+    {
+      "slug": "binnie-dunlop-college-register-1905",
+      "date": "1905",
+      "sort_date": "1905",
+      "title": "College register: Binnie Dunlop",
+      "source": "King William’s College Register, 1833–1904, compiled by H. S. Christopher. Glasgow: James Maclehose & Sons, 1905, p. 248; title page and preface p. vi.",
+      "source_url": "https://archive.org/details/kingwilliamscol00mangoog",
+      "images": [
+        "img/binnie-dunlop-college-register-1905-p248.png",
+        "img/binnie-dunlop-college-register-1905-title-page.png",
+        "img/binnie-dunlop-college-register-1905-preface-pvi.png"
+      ],
+      "item": 67
+    },
+    {
+      "slug": "binnie-dunlop-england-census-index-1911",
+      "title": "1911 England census index: Binnie Dunlop",
+      "date": "1911",
+      "sort_date": "1911",
+      "date_basis": "Indexed record year; exact day not stated in this captured record.",
+      "source": "1911 England Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/2352/records/50473558",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/2352/records/50473558"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/binnie-dunlop-england-census-index-1911-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 68
+    },
+    {
+      "slug": "binnie-dunlop-pamphlet-1912",
+      "date": "January 1912",
+      "sort_date": "1912-01",
+      "title": "Pamphlet title page: Binnie Dunlop",
+      "source": "Binnie Dunlop, National Happiness Under Individualism, January 1912, title page (PDF p. 3 of 24). Cornell University Library copy.",
+      "source_url": "https://archive.org/details/cu31924031293693",
+      "images": [
+        "img/binnie-dunlop-national-happiness-1912-title-page.png"
+      ],
+      "item": 69
+    },
+    {
+      "slug": "binnie-dunlop-england-census-index-1921",
+      "title": "1921 England census index: Binnie Dunlop",
+      "date": "June 19, 1921",
+      "sort_date": "1921-06-19",
+      "date_basis": "Census date stated in the captured Ancestry collection description; the first date of a stated census night is used for sorting.",
+      "source": "1921 England Census — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/63150/records/7526979",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/63150/records/7526979"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/binnie-dunlop-england-census-index-1921-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 70
+    },
+    {
+      "slug": "binnie-dunlop-register-index-1939",
+      "title": "1939 register index: Bennie Dunlow [Binnie Dunlop]",
+      "date": "1939",
+      "sort_date": "1939",
+      "date_basis": "Indexed record year; exact day not stated in this captured record.",
+      "source": "1939 England and Wales Register — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/61596/records/9296508",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/61596/records/9296508"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/binnie-dunlop-register-index-1939-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 71
+    },
+    {
+      "slug": "binnie-dunlop-bmj-obituary-1946",
+      "date": "July 27, 1946",
+      "sort_date": "1946-07-27",
+      "title": "Obituary notice: Binnie Dunlop, British Medical Journal",
+      "source": "British Medical Journal, July 27, 1946, vol. 2, no. 4464, obituary section pp. 141–143. Binnie Dunlop notice: pp. 142–143. PMCID: PMC2053886.",
+      "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2053886/",
+      "location": "The Binnie Dunlop notice starts at the bottom of the right-hand column on page 142 and continues at the top of the left-hand column on page 143.",
+      "external_links": [
+        {
+          "label": "Open the original page 142",
+          "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9aec/2053886/45e4aab76db7/brmedj03791-0034.png",
+          "type": "source page image"
+        },
+        {
+          "label": "Open the original page 143",
+          "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9aec/2053886/cea3931cf754/brmedj03791-0035.png",
+          "type": "source page image"
+        },
+        {
+          "label": "Open the journal record at PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2053886/",
+          "type": "repository record"
+        },
+        {
+          "label": "Open the full obituary section PDF at PubMed Central",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/2053886/pdf/brmedj03791-0033c.pdf",
+          "type": "repository PDF"
+        }
+      ],
+      "excerpt": "He was the last\nsurviving son of James Dunlop, M.D., of Glasgow, where he\nwas born in 1874.",
+      "transcription_extent": "One complete sentence from the Binnie Dunlop notice on page 142. Line breaks follow the source. The remaining text is available in the original pages linked above.",
+      "images": [],
+      "files": [
+        {
+          "path": "files/binnie-dunlop-bmj-obituary-1946-source-record.txt",
+          "label": "Source reference and original-document links",
+          "type": "text/plain"
+        }
+      ],
+      "external_source_images": [
+        "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9aec/2053886/45e4aab76db7/brmedj03791-0034.png",
+        "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/9aec/2053886/cea3931cf754/brmedj03791-0035.png"
+      ],
+      "excerpt_word_count": 18,
+      "item": 72
+    },
+    {
+      "slug": "binnie-dunlop-barrovian-obituary-1946",
+      "date": "October 1946",
+      "sort_date": "1946-10",
+      "title": "Obituary notice: Binnie Dunlop, The Barrovian",
+      "source": "The Barrovian, no. 199, October 1946, printed p. 213 (PDF page 12 of 54), King William’s College. Heading: BINNIE DUNLOP (1888-’91).",
+      "source_url": "https://kwc.im/wp-content/uploads/2021/03/The-Barrovian-199.pdf",
+      "location": "The Binnie Dunlop notice appears in the middle of printed page 213, PDF page 12. The issue title and publication date appear on PDF page 2.",
+      "external_links": [
+        {
+          "label": "Open the original obituary page (PDF page 12)",
+          "url": "https://kwc.im/wp-content/uploads/2021/03/The-Barrovian-199.pdf#page=12",
+          "type": "publisher PDF"
+        },
+        {
+          "label": "Open the issue title and date (PDF page 2)",
+          "url": "https://kwc.im/wp-content/uploads/2021/03/The-Barrovian-199.pdf#page=2",
+          "type": "publisher PDF"
+        },
+        {
+          "label": "Open the complete original issue",
+          "url": "https://kwc.im/wp-content/uploads/2021/03/The-Barrovian-199.pdf",
+          "type": "publisher PDF"
+        }
+      ],
+      "excerpt": "He graduated\nM.B., Ch.B. in 1898 and became house-physician and house-surgeon\nat the Victoria Infirmary.",
+      "transcription_extent": "One complete sentence from the Binnie Dunlop notice on printed page 213. Line breaks follow the source. The complete notice is available in the original issue linked above.",
+      "images": [],
+      "files": [
+        {
+          "path": "files/binnie-dunlop-barrovian-obituary-1946-source-record.txt",
+          "label": "Source reference and original-document links",
+          "type": "text/plain"
+        }
+      ],
+      "external_source_images": [],
+      "excerpt_word_count": 15,
+      "item": 73
+    },
+    {
+      "slug": "binnie-dunlop-bgmi-index",
+      "title": "Biography & Genealogy Master Index: Binnie Dunlop",
+      "date": "1949 reference volume",
+      "sort_date": "1949",
+      "date_basis": "1949 is the publication year of the cited Biography Index volume, not a life-event date. The Gale and Ancestry database metadata are dated 2008 and 2009.",
+      "source": "Biography & Genealogy Master Index (BGMI) — Ancestry index transcription.",
+      "source_url": "https://www.ancestry.com/search/collections/4394/records/5941649",
+      "canonical_record_urls": [
+        "https://www.ancestry.com/search/collections/4394/records/5941649"
+      ],
+      "images": [],
+      "files": [
+        {
+          "path": "files/binnie-dunlop-bgmi-index-index-transcription.txt",
+          "label": "Index transcription",
+          "type": "text/plain"
+        }
+      ],
+      "transcription_extent": "Record detail fields, household table where present, citation where present, and source information from the captured Ancestry index. Original record image not reproduced here.",
+      "item": 74
+    }
+  ],
+  "files": [
+    {
+      "path": "alexander-archibald-birth-index-1870.html",
+      "bytes": 4109,
+      "sha256": "e3768a83217389fc6e5b3269db622bff50301edb4173ba40314d2d2e5cb63d8e"
+    },
+    {
+      "path": "alexander-archibald-scotland-census-index-1891.html",
+      "bytes": 5370,
+      "sha256": "222b94c9e3ed5219bc6b877a61d24ba6234d58a53bdfde6ac7d53e5ee87cb9c6"
+    },
+    {
+      "path": "alexander-archibald-scotland-census-index-1901.html",
+      "bytes": 5254,
+      "sha256": "8e7a250a29079cd3912a98f5b64b2bfb4762136b584ffcdfb92dab08d8db9c9e"
+    },
+    {
+      "path": "archibald-douglas-isabella-gray-marriage-index-1863.html",
+      "bytes": 4152,
+      "sha256": "2b332d980ddcd23941166a7960f7028fe8967829284123ea891a13c3a4ba5ba8"
+    },
+    {
+      "path": "archibald-douglas-scotland-census-index-1881.html",
+      "bytes": 5586,
+      "sha256": "52c4ed92a4eba1683d8e758440d1d4685d7b528e82e3a0d965f22fb6a570ac8d"
+    },
+    {
+      "path": "archibald-douglas-scotland-census-index-1891.html",
+      "bytes": 5420,
+      "sha256": "466bac3841e0b491faf700f8a3b2132fb5c512cc997eef2b2bd68791994aa798"
+    },
+    {
+      "path": "binnie-dunlop-barrovian-obituary-1946.html",
+      "bytes": 4120,
+      "sha256": "567d50055e107edf5b7cd81d1712ed049a0492435ae66684189fc42c14d8811a"
+    },
+    {
+      "path": "binnie-dunlop-bgmi-index.html",
+      "bytes": 4441,
+      "sha256": "7c0107c8d261d047f9dd748c5cd5410db072355aadc0b565e850456b9ecd203a"
+    },
+    {
+      "path": "binnie-dunlop-bmj-obituary-1946.html",
+      "bytes": 4309,
+      "sha256": "0b538fc24b92a0372c8847ffa2e599aa3f81e92ef3a2a60908c238730916063a"
+    },
+    {
+      "path": "binnie-dunlop-college-register-1905.html",
+      "bytes": 5318,
+      "sha256": "6aa8788703ba3d0ccb734c0fd5d79d0966fde1c1af7f40ff304b9565ea0e15b0"
+    },
+    {
+      "path": "binnie-dunlop-england-census-index-1911.html",
+      "bytes": 5821,
+      "sha256": "d435a08a3350838b4f884d952b805a76b2965db03a580881afa37dfc4d6efff2"
+    },
+    {
+      "path": "binnie-dunlop-england-census-index-1921.html",
+      "bytes": 6347,
+      "sha256": "dfcb4fe27ec306e53427b6996afa60e822637aafbc5772aa3666e1b0545f6ac3"
+    },
+    {
+      "path": "binnie-dunlop-glasgow-electoral-index-1901.html",
+      "bytes": 4333,
+      "sha256": "b2084476f7e371fb4e0a5b8f1f74f52e20ef0c944fd4e0c88956c3eb976d9273"
+    },
+    {
+      "path": "binnie-dunlop-pamphlet-1912.html",
+      "bytes": 4318,
+      "sha256": "cc4b1938dd66e152f3a069f52bfda28e257400ad8c5a0868654d7b2431106c89"
+    },
+    {
+      "path": "binnie-dunlop-register-index-1939.html",
+      "bytes": 5750,
+      "sha256": "4b9bc690222b7d62c1bc67a6b9dbb463df84af4183f9a820918788ffb52323ee"
+    },
+    {
+      "path": "files/Binnie_Dunlop_College_Register_1905_Original_Pages.pdf",
+      "bytes": 130933,
+      "sha256": "16c845ac7a3fc747272d03a2a3f969842f64e43ff085ec28b6ee61daccd06d83"
+    },
+    {
+      "path": "files/Binnie_Dunlop_National_Happiness_1912_Original.pdf",
+      "bytes": 679842,
+      "sha256": "03228a11635fabb958852d64d4705ae3bf51185c84d3abb8de943f70d1c8e00c"
+    },
+    {
+      "path": "files/alexander-archibald-birth-index-1870-index-transcription.txt",
+      "bytes": 694,
+      "sha256": "e5c18c0b06908dadb0794be1f03758d29bc815f2268191263570e66078e65d56"
+    },
+    {
+      "path": "files/alexander-archibald-scotland-census-index-1891-index-transcription.txt",
+      "bytes": 1169,
+      "sha256": "a8d00d951e947215450c54c5ea8ead5d5de8d700104f3b1684e39c7df5e7edf4"
+    },
+    {
+      "path": "files/alexander-archibald-scotland-census-index-1901-index-transcription.txt",
+      "bytes": 1121,
+      "sha256": "b8c291047a72e3c9687948ef703821a90584c7710bb8a9d61d4fc9961f3bc39c"
+    },
+    {
+      "path": "files/archibald-douglas-isabella-gray-marriage-index-1863-index-transcription.txt",
+      "bytes": 687,
+      "sha256": "a1efc34653558966e8bad1748323a0b6ff1da2f644e6c9effa25b512f3462d2a"
+    },
+    {
+      "path": "files/archibald-douglas-scotland-census-index-1881-index-transcription.txt",
+      "bytes": 1287,
+      "sha256": "ede1175cdbd1074234d5428623cd69ff791081b32bcd9a2f886aafd3254ccc8e"
+    },
+    {
+      "path": "files/archibald-douglas-scotland-census-index-1891-index-transcription.txt",
+      "bytes": 1218,
+      "sha256": "eed445e2477a069ec4be3231190a75c88f4b39ac723e6b18ca6c47941ae6a93b"
+    },
+    {
+      "path": "files/binnie-dunlop-barrovian-obituary-1946-source-record.txt",
+      "bytes": 903,
+      "sha256": "1f6e85add109073c9b4eeef705b25c85f847b4a6eb77e554f7ba02b06db0e276"
+    },
+    {
+      "path": "files/binnie-dunlop-bgmi-index-index-transcription.txt",
+      "bytes": 998,
+      "sha256": "5caaa0a0bbd5c1f41ff3fe278eaf5556dcc859f91844a5d89b94f3a33568c10a"
+    },
+    {
+      "path": "files/binnie-dunlop-bmj-obituary-1946-source-record.txt",
+      "bytes": 1042,
+      "sha256": "87db6cf1fc76573f1f53b5fa221bab1bfe602699c472a62d28472ffcc642565d"
+    },
+    {
+      "path": "files/binnie-dunlop-england-census-index-1911-index-transcription.txt",
+      "bytes": 1642,
+      "sha256": "d388972c2e36407edbaff5b7c5518d795402f844007c433da4a0966111ad09e9"
+    },
+    {
+      "path": "files/binnie-dunlop-england-census-index-1921-index-transcription.txt",
+      "bytes": 1977,
+      "sha256": "c4700eb9248e898c9e7d042d2c8388c92592282d2d953acd9d4ceb7c93cb92ae"
+    },
+    {
+      "path": "files/binnie-dunlop-glasgow-electoral-index-1901-index-transcription.txt",
+      "bytes": 857,
+      "sha256": "cef56f3329422588758fbc6f58e8dcabb6f9933e0bb1ab48b0dd3a483aae0a1c"
+    },
+    {
+      "path": "files/binnie-dunlop-register-index-1939-index-transcription.txt",
+      "bytes": 1713,
+      "sha256": "f6bfbbfdb09bd503dc92d80f508a263937d20997e4a4e9f642251cfca9e0f3bd"
+    },
+    {
+      "path": "files/evidence-inventory-2026-11-22-baseline.json",
+      "bytes": 25445,
+      "sha256": "e66775721f879953f62abed3101cc747742808362fcc3288a3f367f2a07f9ecb"
+    },
+    {
+      "path": "files/mary-alexander-archibald-scotland-census-index-1871-index-transcription.txt",
+      "bytes": 1905,
+      "sha256": "79a60e537f2b8d822c032137634e81194633be0dad06d1ae55e33a1126df1b79"
+    },
+    {
+      "path": "files/mary-archibald-birth-index-1864-index-transcription.txt",
+      "bytes": 681,
+      "sha256": "67e60c54957b58a2cf7a3d85ec5ef71dcdb1bca827d769329f819f6164941235"
+    },
+    {
+      "path": "files/mary-archibald-scotland-census-index-1891-index-transcription.txt",
+      "bytes": 1170,
+      "sha256": "667831903123a185b687608cc5d2bfbbe8ae8f86f957da4d0d2ee00d2f6f7602"
+    },
+    {
+      "path": "files/mary-archibald-scotland-census-index-1901-index-transcription.txt",
+      "bytes": 1031,
+      "sha256": "8e362f44046430e04f964f41754cfd1f3fec283f7f559c5a1aeff325d6ce40e4"
+    },
+    {
+      "path": "img/binnie-dunlop-college-register-1905-p248.png",
+      "bytes": 767915,
+      "sha256": "262d324cbed88834833ce4fd7ecc5cabe9d67d07ae67d74220f9c6410514adaf"
+    },
+    {
+      "path": "img/binnie-dunlop-college-register-1905-preface-pvi.png",
+      "bytes": 136840,
+      "sha256": "746b15ccd7969e5a3c8108da812dcfd9feb6baf6d9109a35ea3b167eed59103f"
+    },
+    {
+      "path": "img/binnie-dunlop-college-register-1905-title-page.png",
+      "bytes": 114206,
+      "sha256": "70d428026bfed65d385c30778eac0aae37bde7bc23cbf9559368c4bede58abcd"
+    },
+    {
+      "path": "img/binnie-dunlop-national-happiness-1912-title-page.png",
+      "bytes": 45118,
+      "sha256": "872ae6f5a0a4b4f57805ea386257860a5889b0ff8f2962a1583b9eac0ce76c31"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18386,
+      "sha256": "24800f990054bda0858b0ff422b114784c282d12a7ece806a43145c085495eed"
+    },
+    {
+      "path": "items.json",
+      "bytes": 43961,
+      "sha256": "c554e860bfddde55dc69799d19817f37240a9c598354e5c99930a8729519ac0b"
+    },
+    {
+      "path": "mary-alexander-archibald-scotland-census-index-1871.html",
+      "bytes": 7191,
+      "sha256": "2194544db881e2bcf14c88384f0c8e96ce30e3bead480c5de38fb4bf192574fe"
+    },
+    {
+      "path": "mary-archibald-birth-index-1864.html",
+      "bytes": 4086,
+      "sha256": "19d9676f3948a64c243f2bb3dafb4d5f03d83982a51977fe58f4aaf0c62a49fd"
+    },
+    {
+      "path": "mary-archibald-scotland-census-index-1891.html",
+      "bytes": 5366,
+      "sha256": "e2dc65a48140b247040cc08498d0284e4cc8a55bc14b363cdd7fd953cf094dc3"
+    },
+    {
+      "path": "mary-archibald-scotland-census-index-1901.html",
+      "bytes": 5044,
+      "sha256": "665e2bfbfed3eed09b4ca63aafae1b64859add6f08a598c11b13766058ca5804"
+    }
+  ]
+}

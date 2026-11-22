@@ -1,0 +1,46 @@
+1891 Scotland census index: Archibald Douglas
+April 5, 1891
+
+Ancestry index transcription; original record image not reproduced here.
+
+Collection: 1891 Scotland Census
+
+RECORD DETAILS — Archibald Douglas
+https://www.ancestry.com/search/collections/1108/records/2242919
+
+Name: Archibald Douglas
+Age: 49
+Estimated Birth Year: abt 1842
+[abt 1842]
+Relationship: Head
+Spouse's Name: Isabella Douglas
+Gender: Male
+Where born: Ormiston, Haddingtonshr
+Registration Number: 685/5
+Registration District: Newington
+Civil parish: Edinburgh St Cuthberts
+County: Midlothian
+Address: 11 Cowan's Close
+Occupation: Wood-Sawer
+ED: 37
+Household schedule number: 13
+Line: 21
+Roll: CSSCT1891_354
+
+HOUSEHOLD MEMBERS
+Household Members (Name)	Age	Relationship
+Archibald Douglas	49	Head
+Isabella Douglas	49	Wife
+Margaret Douglas	17	Daur (Daughter)
+Robert Douglas	14	Son
+Isabella Douglas	9	Daur (Daughter)
+
+SOURCE
+
+Citation
+Parish: Edinburgh St Cuthberts; ED: 37; Page: 2; Line: 21; Roll: CSSCT1891_354
+
+Information
+Ancestry.com. 1891 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1891 Scotland Census. Reels 1-409. General Register Office for Scotland, Edinburgh, Scotland.

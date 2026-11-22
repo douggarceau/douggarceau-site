@@ -1,0 +1,75 @@
+1871 Scotland census indices: Mary and Alexander Archibald
+April 2, 1871
+
+Ancestry index transcription; original record image not reproduced here.
+
+Collection: 1871 Scotland Census
+
+RECORD DETAILS — Mary Archibald
+https://www.ancestry.com/search/collections/1104/records/2455764
+
+Name: Mary Archibald
+Age: 6
+Estimated Birth Year: abt 1865
+[abt 1865]
+Relationship: Daughter
+Father's Name: George Archibald
+Mother's Name: Anne Archibald
+Gender: Female
+Where born: Libberton, Lanarkshire
+Registration Number: 650
+Registration District: Libberton
+Civil parish: Libberton
+County: Lanarkshire
+Address: Quothquan
+Occupation: Scholar
+ED: 3
+Household schedule number: 40
+Line: 6
+Roll: CSSCT1871_146
+
+RECORD DETAILS — Alexander Archibald
+https://www.ancestry.com/search/collections/1104/records/2455766
+
+Name: Alexander Archibald
+Age: 3 Mo
+Estimated Birth Year: abt 1871
+[abt 1871]
+Relationship: Son
+Father's Name: George Archibald
+Mother's Name: Anne Archibald
+Gender: Male
+Where born: Libberton, Lanarkshire
+Registration Number: 650
+Registration District: Libberton
+Civil parish: Libberton
+County: Lanarkshire
+Address: Quothquan
+ED: 3
+Household schedule number: 40
+Line: 8
+Roll: CSSCT1871_146
+
+HOUSEHOLD MEMBERS
+Household Members (Name)	Age	Relationship
+George Archibald	63	Head
+Anne Archibald	36	Wife
+Thomas Archibald	16	Son
+Elizabeth Archibald	12	Daughter
+Margaret Archibald	9	Daughter
+Mary Archibald	6	Daughter
+Anne Archibald	2	Daughter
+Alexander Archibald	3 Mo	Son
+
+SOURCE
+
+Citation — Mary Archibald
+Parish: Libberton; ED: 3; Page: 10; Line: 6; Roll: CSSCT1871_146
+
+Citation — Alexander Archibald
+Parish: Libberton; ED: 3; Page: 10; Line: 8; Roll: CSSCT1871_146
+
+Information
+Ancestry.com. 1871 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1871 Scotland Census. Reels 1-191. General Register Office for Scotland, Edinburgh, Scotland.

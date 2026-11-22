@@ -1,0 +1,44 @@
+1901 Scotland census index: Alexander Archibald
+March 31, 1901
+
+Ancestry index transcription; original record image not reproduced here.
+
+Collection: 1901 Scotland Census
+
+RECORD DETAILS — Alexander Archibald
+https://www.ancestry.com/search/collections/1101/records/2271638
+
+Name: Alexander Archibald
+Age: 30
+Estimated Birth Year: abt 1871
+[abt 1871]
+Relationship: Head
+Spouse's Name: Annie Archibald
+Gender: Male
+Where born: Libberton, Lanark
+Registration Number: 650
+Registration District: Libberton
+Civil parish: Libberton
+County: Lanarkshire
+Address: Shieldhill
+Occupation: Gardner Domestic
+ED: 3
+Household schedule number: 3
+Line: 10
+Roll: CSSCT1901_341
+
+HOUSEHOLD MEMBERS
+Household Members (Name)	Age	Relationship
+Alexander Archibald	30	Head
+Annie Archibald	26	Wife
+Susan Cumisky	26	Servant
+
+SOURCE
+
+Citation
+Parish: Libberton; ED: 3; Page: 1; Line: 10; Roll: CSSCT1901_341
+
+Information
+Ancestry.com. 1901 Scotland Census [database on-line]. Provo, UT, USA: Ancestry.com Operations Inc, 2007.
+
+Original data: Scotland. 1901 Scotland Census. Reels 1-446. General Register Office for Scotland, Edinburgh, Scotland.

@@ -1,0 +1,665 @@
+{
+  "case": "LBD-001",
+  "captured_date": "2026-11-22",
+  "repository": "douggarceau/douggarceau-site",
+  "branch": "main",
+  "baseline_commit": "06429cb7f18153c3bae819242a7178375a40a0ee",
+  "scope": "the-names-he-carried/cold-case-file/",
+  "files": [
+    {
+      "path": "the-names-he-carried/cold-case-file/agnes-brown-birth-1885.html",
+      "git_blob_sha": "21d149f80f08927411de32f185fb186558b15b52",
+      "size": 4846
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/albert-darcy-draft-card-1942.html",
+      "git_blob_sha": "ae9043eef98b27ee0e25c14742f58874fa04ec19",
+      "size": 4853
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/arrival-manifest-1929.html",
+      "git_blob_sha": "e20e6d72f8ef53ebe1a7999aa5e69015b5d03456",
+      "size": 7509
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/binnie-dunlop-birth-1874.html",
+      "git_blob_sha": "e9ac968a9132f5b20f30ad8b6d72e749f17e4b63",
+      "size": 3613
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/binnie-dunlop-medical-register.html",
+      "git_blob_sha": "81c5c36a83652483ac456c90e658f17a6e67ca5a",
+      "size": 4505
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/blaine-border-card-1941.html",
+      "git_blob_sha": "9b9a7cd55306c32376cae5b6a2035c1de7bc9206",
+      "size": 5331
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1891-castle-row-libberton.html",
+      "git_blob_sha": "4ec1f9efb08f3e19c2a47740ce5728059fec03c0",
+      "size": 4080
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1901-libberton-ed3.html",
+      "git_blob_sha": "e6bdb88d0e2199bc849d153f3cc4edd0988cb6e0",
+      "size": 3879
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1911-agnes-brown-dunfermline.html",
+      "git_blob_sha": "034c9443265521c2ad6b9830aad939f752ed948d",
+      "size": 6924
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1911-agnes-brown-gorgie.html",
+      "git_blob_sha": "19f55ae0401be014a602221ee79c8562fc717955",
+      "size": 7705
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1911-agnes-o-brown-morningside.html",
+      "git_blob_sha": "45450831494cb50af674a84c660ef8c3c8cdd403",
+      "size": 8093
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1911-lochrin-place.html",
+      "git_blob_sha": "257299660d2e264be73e58480e46824065a597f7",
+      "size": 8000
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1911-shieldhill-mains.html",
+      "git_blob_sha": "0002c9126ea191e506b7b500323c4a11893bfc51",
+      "size": 8822
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1921-foundry-street.html",
+      "git_blob_sha": "93904abfbda8fb8ac83d7b2b8b4df7ac31d6a820",
+      "size": 8316
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/census-1940-san-francisco.html",
+      "git_blob_sha": "29ced97344aa44ceb93b28de2e7a04e279281576",
+      "size": 5461
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/chicago-census-1930.html",
+      "git_blob_sha": "5e235a5f170dd1c698684d26e9ce66fadd5aa262",
+      "size": 5445
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/cp-atlantic-track-chart-1931.html",
+      "git_blob_sha": "abdefc672ade253974ca0dcddd7f3ccefdaccbe6",
+      "size": 4420
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/detroit-border-card-1929.html",
+      "git_blob_sha": "0bdc8acb15094bb091a47224ab1e2a28109d2f86",
+      "size": 6856
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/douglas-mcdonald-marriage-1899.html",
+      "git_blob_sha": "a823cfe98ffb10b85c14660cc47e71fec6ac07e2",
+      "size": 5841
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/draft-card-1940.html",
+      "git_blob_sha": "8fd8297bbe76d3a924574f913289e6fe770dca41",
+      "size": 5890
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/duchess-1928-advertisement.html",
+      "git_blob_sha": "d7670fecc956bf6a0fdba8a102b83c3163081fb5",
+      "size": 5287
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/duchess-1928-cabin-103.html",
+      "git_blob_sha": "041c20dcaabbee001e71e9a5e04a22b6a6d29568",
+      "size": 3759
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/duchess-1928-dining-saloon.html",
+      "git_blob_sha": "82b4b27b118c06cc7daa74a2611ad397d88bc23f",
+      "size": 3691
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/duchess-1928-observation-room.html",
+      "git_blob_sha": "69a78d947496c4170db0ed634d21a085f1c099fc",
+      "size": 3749
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/duchess-of-bedford-1929.html",
+      "git_blob_sha": "643ca472ef705626e36b91b410d18980f81359e4",
+      "size": 87197
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/duchess-of-bedford-photo.html",
+      "git_blob_sha": "ad75ad78c8fe6f488bca2e92894f2074946d065f",
+      "size": 3695
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/duchesses-booklet-cover-1931.html",
+      "git_blob_sha": "4b8dd7fc99918261e26af298d4464d5cf0bcf42c",
+      "size": 3794
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/dunlop-census-1861-abbotsford-place.html",
+      "git_blob_sha": "bd275ba398c7058c514c65538ca234e80cc95548",
+      "size": 3984
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/dunlop-census-1881-carlton-place.html",
+      "git_blob_sha": "353cd01df0622101087442fdcf07a87d698e3cd5",
+      "size": 3949
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/dunlop-will-1920.html",
+      "git_blob_sha": "802c963e35a16b53326cc63dbe66a027c727f00c",
+      "size": 7914
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/elizabeth-anderson-border-card-1934.html",
+      "git_blob_sha": "0d5871f9bbea73b242686be69d3ea20365c645d4",
+      "size": 6283
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/files/Cold_Case_File_1929_Duchess_of_Bedford_Dossier.docx",
+      "git_blob_sha": "f72b362ed4c32859a971eade1a763d9f31b72339",
+      "size": 1584230
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/files/Cold_Case_File_1929_Duchess_of_Bedford_Dossier.pdf",
+      "git_blob_sha": "3f12ca50f7256534f92e51245d2f63def3bd1dc6",
+      "size": 1838835
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/files/Duchess_of_Bedford_1928_Advertisement_Enlarged.pdf",
+      "git_blob_sha": "f66bd9ce87406d9b7dd2436ac3ddd810cc2d5fc8",
+      "size": 1424791
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/files/Duchess_of_Bedford_1928_Three_Photos.zip",
+      "git_blob_sha": "a6594d78a8ba3f4307b5029ab121f1db088c9ae3",
+      "size": 154195
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/files/Duchess_of_Bedford_1931_Booklet_Cover_and_Chart_Enlarged.pdf",
+      "git_blob_sha": "1829a5c36661a13a14643d37ca9b569d6be49db3",
+      "size": 151377
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/files/Duchess_of_Bedford_Advertisement_and_Booklet_Enlarged.pdf",
+      "git_blob_sha": "4bfd05cb3e04a5e2535c4c2e93c4966dfd9e7f1a",
+      "size": 1537407
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/files/Duchess_of_Bedford_Enlarged_Advertisement_and_Booklet.zip",
+      "git_blob_sha": "f990374b3101deefd4446c307c88f606c2f95816",
+      "size": 6841830
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/files/Duchess_of_Bedford_Three_Original_Pages_No_Captions.pdf",
+      "git_blob_sha": "9355b12e7dec3efa85d8ed3392bb24a1017993cc",
+      "size": 1495776
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/george-brown-death-1886.html",
+      "git_blob_sha": "f774d4bde6c8735e85acddfb90ed76e3bc3565b8",
+      "size": 5376
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/Duchess_of_Bedford_1928_Advertisement_Enlarged.png",
+      "git_blob_sha": "0ab640268178133f4a491bf5cb7f479583c4b947",
+      "size": 1597422
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/Duchess_of_Bedford_1928_Cabin_103.jpg",
+      "git_blob_sha": "ec25ad68bef50237089aefdd6e1d5d003f65ec72",
+      "size": 44026
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/Duchess_of_Bedford_1928_Dining_Saloon.jpg",
+      "git_blob_sha": "fe71bc6d734a0cb0f83c3b9e0e37542f4e07172a",
+      "size": 61581
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/Duchess_of_Bedford_1928_Observation_Room.jpg",
+      "git_blob_sha": "ee1f5f70ae0fbcca6d2d46ebbb21f961a6d4ea7e",
+      "size": 48002
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/Duchess_of_Bedford_1931_Atlantic_Track_Chart_Enlarged.png",
+      "git_blob_sha": "a3b9d0f8bdd57406ffc11ee998dcc2ec05ff6bf0",
+      "size": 606446
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/Duchess_of_Bedford_1931_Booklet_Cover_Enlarged.png",
+      "git_blob_sha": "56134026b42ba54f6a5d61e1d55ecef203ea402d",
+      "size": 1111319
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/agnes-birth-register-1885.jpg",
+      "git_blob_sha": "fc25fdedd458379396b70108051ffb9112fecb8e",
+      "size": 677134
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/agnes-marriage-register-1911.jpg",
+      "git_blob_sha": "daac78110a6394fedc951abdbda1b40c8cf4725a",
+      "size": 226623
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/albert-blake-darcy-1942-draft-card.jpg",
+      "git_blob_sha": "dbe9aa365a63764d3a3ce9809768f5c9c757f8e4",
+      "size": 307138
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/canadian-pacific-atlantic-track-chart-1931.png",
+      "git_blob_sha": "7c200f049e5170d6ad6bc01274acc7f05d1e0bc2",
+      "size": 197291
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/census-1911-agnes-brown-dunfermline.jpg",
+      "git_blob_sha": "a48d005eeef9d6350f4bf1024ac9e31b7f554934",
+      "size": 796927
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/census-1911-agnes-brown-gorgie.jpg",
+      "git_blob_sha": "dcf6a93162522d4defcdb5cb91eb54abdc90487d",
+      "size": 703232
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/census-1911-agnes-o-brown-morningside.jpg",
+      "git_blob_sha": "ebae24f62477a9d677169c1984e058177cf05d41",
+      "size": 735550
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/census-1911-lochrin-place-edinburgh.jpg",
+      "git_blob_sha": "935ad15be06d3b0563e43a70a19356d558ac0130",
+      "size": 786686
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/census-1911-shieldhill-mains-libberton.jpg",
+      "git_blob_sha": "ad9754f3c00f7377a01ff892bc49a9d580b5c2d2",
+      "size": 873687
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/census-1921-foundry-street-dunfermline.jpg",
+      "git_blob_sha": "40043e663b0fddf7f150c0e8bb8367800548900c",
+      "size": 781332
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/duchess-of-bedford-1928-advertisement-mitre.png",
+      "git_blob_sha": "b4f53ddb319855282404bf7f879c1e4558aa478c",
+      "size": 963411
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/duchess-of-bedford.jpg",
+      "git_blob_sha": "e4ad58f387ef7479f408ded6eeb039f37baf6ab0",
+      "size": 43536
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/duchesses-booklet-cover-1931.png",
+      "git_blob_sha": "c07a909ef725290ed1f5e07c89ef4ec3adebb5ba",
+      "size": 546715
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/dunlop-will-1920-page-495.jpg",
+      "git_blob_sha": "762ed9cf48f7851866b431e64da44eaba68c1a31",
+      "size": 817073
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/elizabeth-anderson-1934-port-huron-card-part2.jpg",
+      "git_blob_sha": "ba1e9731f8f6b3130a88c4747bc56fc6447c538f",
+      "size": 149528
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/elizabeth-anderson-1934-port-huron-card.jpg",
+      "git_blob_sha": "c8ad6be9535bc2a4f012378ee7f2350f6f3edd64",
+      "size": 340806
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/george-brown-death-1886.jpg",
+      "git_blob_sha": "c7553bcd2d59de2f67f20119a6f010ce52e70dff",
+      "size": 402053
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/james-dunlop-obituary-1901-page-280.jpg",
+      "git_blob_sha": "d87eed06d4d7cdcd222c269ffdcf2270297b2609",
+      "size": 736892
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/james-dunlop-obituary-1901-page-281.jpg",
+      "git_blob_sha": "fab927e55ef858f5708b58c3354870d12d43d481",
+      "size": 893266
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/james-dunlop-obituary-1901-page-282.jpg",
+      "git_blob_sha": "17935eacaabf1160426c25aae56317dd40d2495b",
+      "size": 801430
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/james-lawson-parker-marriage-register-1903.jpg",
+      "git_blob_sha": "219ac8a541508bfb7315f0c6f88ade6e1d513ea6",
+      "size": 966127
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-b-douglas-1947-pawtucket-directory-part2.jpg",
+      "git_blob_sha": "321a01e206c797673221d442bce3596227978f83",
+      "size": 230650
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-b-douglas-1947-pawtucket-directory.jpg",
+      "git_blob_sha": "006ad670dc28fdc35d8da59def8db4b5dc8a0668",
+      "size": 283267
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-b-douglas-1960-providence-directory-part2.jpg",
+      "git_blob_sha": "3a03ae5f30d3363ae63d390d66dd26768d84ce22",
+      "size": 185669
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-b-douglas-1960-providence-directory.jpg",
+      "git_blob_sha": "762544d86edc8f1f0c6e23d6668669f865a04f84",
+      "size": 217197
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-b-douglas-1961-obituary.jpg",
+      "git_blob_sha": "170fa008f33a915eafa14b73d13e7a113b851d97",
+      "size": 376154
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-b-douglas-1961-providence-directory-part2.jpg",
+      "git_blob_sha": "353e94d5d66bdc4a522e7f13c47d6db5c0ff7ffe",
+      "size": 191937
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-b-douglas-1961-providence-directory.jpg",
+      "git_blob_sha": "5b105f695b9654707577f19aecd2c94ccae7ab08",
+      "size": 241785
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-birth-register-1907.jpg",
+      "git_blob_sha": "a2b7f8f5a83c8f36ac940a15d9a325df5db1676b",
+      "size": 229494
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-brown-1929-outward-passenger-list.jpg",
+      "git_blob_sha": "f5096079ac188eab3e211fe5769bd3ae5abd20a3",
+      "size": 282216
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-brown-douglas-1940-draft-card-part2.jpg",
+      "git_blob_sha": "ff7dd67f6086040a19a749a84250d1b70878f20d",
+      "size": 92415
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-brown-douglas-1940-draft-card.jpg",
+      "git_blob_sha": "2113fe84e4a9cc104c7fb92040ba5be1680559ff",
+      "size": 331638
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-brown-douglas-1943-oath.jpg",
+      "git_blob_sha": "1600d5f2f8a44bb02f34576ec839f7cda89c2504",
+      "size": 370486
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-brown-douglas-1943-petition.jpg",
+      "git_blob_sha": "cee5f41736129c8d081e1f26ac2d2eb8ff0853b3",
+      "size": 375207
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-douglas-1940-census.jpg",
+      "git_blob_sha": "103f5045dc1fa6f158e5dd6ff3a858679787f0d5",
+      "size": 580635
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/laurence-douglas-constance-darcy-1939-marriage.jpg",
+      "git_blob_sha": "79a559a85ef3829800767be669b88e2e11ec9ccd",
+      "size": 198117
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-b-douglas-1950-providence-directory.jpg",
+      "git_blob_sha": "b099b3e991c42fe0343bda38a1a67dded6371baf",
+      "size": 394519
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-brown-1929-arrival-manifest.jpg",
+      "git_blob_sha": "08d253fb188312d484eb733cf06ac09186547ace",
+      "size": 357985
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-brown-1929-detroit-border-card-reverse.jpg",
+      "git_blob_sha": "c19e1b5a7f96552c3933950523e4111d5a19df57",
+      "size": 918956
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-brown-1929-detroit-border-card.jpg",
+      "git_blob_sha": "f70470c48f24af248714922577e57495116fd0f8",
+      "size": 283803
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-brown-1929-passenger-manifest.jpg",
+      "git_blob_sha": "61623768a401dbdc4238c4b0e2238ec607faccca",
+      "size": 452220
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-brown-1930-chicago-census.jpg",
+      "git_blob_sha": "34291e87d215b48249461e85d4221a66d93bb8df",
+      "size": 590615
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-brown-douglas-1941-blaine-border-card.jpg",
+      "git_blob_sha": "6e0efe504b770a268e4d782ac4e852c603bcd8ae",
+      "size": 296093
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-douglas-1912-school-register.jpg",
+      "git_blob_sha": "f4ecfb6e212f2baa9aa81dfdde636ed6233ba3d2",
+      "size": 591772
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-douglas-1937-providence-directory.jpg",
+      "git_blob_sha": "1bbfce2298a559897f72c4a04f4330874b52f75d",
+      "size": 523159
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-douglas-1938-providence-directory-part2.jpg",
+      "git_blob_sha": "bf9a83c06a62d636a9338acf273850a35898033b",
+      "size": 236578
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/lawrence-douglas-1938-providence-directory.jpg",
+      "git_blob_sha": "0f0efca7c032c133b5c1395652d88d57f167e3b6",
+      "size": 150141
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/mary-christina-mckenzie-birth-1912.jpg",
+      "git_blob_sha": "388c921d568b2e3a913083593f0a66b91d823d6e",
+      "size": 374546
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/nathaniel-dunlop-directory-part2.jpg",
+      "git_blob_sha": "8adc21ebad7215b6e032e3cc4db65b9f0ee4c681",
+      "size": 113530
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/nathaniel-dunlop-directory.jpg",
+      "git_blob_sha": "49421b1aec60f45ecfe7d27a100ba0a3a6cf9bcd",
+      "size": 323941
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/physicians-directory-1899-page-10.jpg",
+      "git_blob_sha": "ab4115c976e84751a2371215f9936fdc3e809f3c",
+      "size": 477142
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/physicians-directory-1899-page-9.jpg",
+      "git_blob_sha": "ebc6c528d245b00eca303388024eafce0a98ec28",
+      "size": 535472
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/robert-douglas-birth-register-1876.jpg",
+      "git_blob_sha": "942811700658fdd81bb3e5ccf4d386066555817c",
+      "size": 815518
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/robert-douglas-death-register-1919.jpg",
+      "git_blob_sha": "11b24a1e28eb2414ae6c5a97ed0d8096429102b5",
+      "size": 825697
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/robert-douglas-elizabeth-mcdonald-marriage-register-1899.jpg",
+      "git_blob_sha": "107062c3880c948c59068736ba6eea0d2eb7a680",
+      "size": 831145
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/thomas-mckenzie-ww1-enlistment.jpg",
+      "git_blob_sha": "0a9392db6d98d25e90aa4f3916b45b7f75f37edb",
+      "size": 324983
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/img/william-brown-death-1895.jpg",
+      "git_blob_sha": "74c1d9d7aab8430fc8f1e51bdee7250d62832028",
+      "size": 370894
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/index.html",
+      "git_blob_sha": "d8967334435567ac3ebcd441bf076df277f867aa",
+      "size": 14084
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/items.json",
+      "git_blob_sha": "69fdbb5cb47d295f58b52116529ab516ae995956",
+      "size": 18396
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/james-dunlop-obituary-1901.html",
+      "git_blob_sha": "3d41d563e168740036c0e39c160df81c981ffd2b",
+      "size": 11545
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/lawrence-brown-birth-1907.html",
+      "git_blob_sha": "2213c2ddea78139b599e51dfe8398e2dc753a24d",
+      "size": 5052
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/marriage-1939.html",
+      "git_blob_sha": "17b6ad36f5dc3027fd82015e4a2af73a61346d83",
+      "size": 7991
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/mary-christina-mckenzie-birth-1912.html",
+      "git_blob_sha": "b76aaa286a3f99d6351140932faac5ed00064c5d",
+      "size": 4910
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/mckenzie-brown-marriage-1911.html",
+      "git_blob_sha": "bcb55d66d3a6ec9c0851b3548030f5709f62d575",
+      "size": 5716
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/nathaniel-dunlop-knightage.html",
+      "git_blob_sha": "124870fdfd99d1231058f995a8d4dffe9a2f5800",
+      "size": 4388
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/naturalization-petition-1943.html",
+      "git_blob_sha": "de839f98e4e4ec8d51f72a3ba42dceaa0091659c",
+      "size": 9885
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/oath-of-allegiance-1943.html",
+      "git_blob_sha": "4a6f5d06cc05ee574d8fe71b606cadc7591bc406",
+      "size": 7770
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/obituary-1961.html",
+      "git_blob_sha": "7fd04b0e4480eac12c2e6c6cbbff3be691b304a3",
+      "size": 4297
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/outward-passenger-list-1929.html",
+      "git_blob_sha": "2a76e4a573d7904cafb88dc8384e29ff9ae99aab",
+      "size": 8984
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/parker-stewart-marriage-1903.html",
+      "git_blob_sha": "b07b834dcaade84e50d5b64fae48ad6a6da83e98",
+      "size": 5713
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/passenger-manifest-1929.html",
+      "git_blob_sha": "46ec0cc888a6496f6acc40fe9fe877dd57a30a71",
+      "size": 7340
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/pawtucket-directory-1947.html",
+      "git_blob_sha": "0e4655a42c2bfef35c1c6979e073296cac4e2a7e",
+      "size": 5336
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/physicians-directory-1899.html",
+      "git_blob_sha": "d3ede6d6dfa7d8bc7f8eacaaacce88d6b04cd97d",
+      "size": 7340
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/providence-directory-1937.html",
+      "git_blob_sha": "d2efca1625b29e97792f8e824ed281af6d703533",
+      "size": 4153
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/providence-directory-1938.html",
+      "git_blob_sha": "8b2a6d05f8dff41f6b0b4aa52863db6a9c2113b2",
+      "size": 5335
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/providence-directory-1950.html",
+      "git_blob_sha": "dfd9b228fc1548f55f416dca4b760cb067dc1a9b",
+      "size": 5149
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/providence-directory-1960.html",
+      "git_blob_sha": "0ea1de170606cc308cecaf015dbf1433e97d252a",
+      "size": 5233
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/providence-directory-1961.html",
+      "git_blob_sha": "709b5128027b4cf980080eb52bc7a8e9dca52806",
+      "size": 5349
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/robert-douglas-birth-1876.html",
+      "git_blob_sha": "3b4b4f45768149584dac37bac3d86001bb3d5daf",
+      "size": 5058
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/robert-douglas-death-1919.html",
+      "git_blob_sha": "5b4c0d09024e5519c963d8e693cfff814ad7f3e8",
+      "size": 5705
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/school-register-1912.html",
+      "git_blob_sha": "5494e893d507773169ebdc41a54287c4be901e98",
+      "size": 8335
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/ship-advertisement-and-booklet.html",
+      "git_blob_sha": "17f4528972edbe1ebb54af06624967779f3c2133",
+      "size": 10076
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/ship-photos-1928.html",
+      "git_blob_sha": "3cb73abb2056bbb6e96b28b6af3e22928814837b",
+      "size": 8334
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/thomas-mckenzie-ww1-enlistment.html",
+      "git_blob_sha": "baf79abd3b9109862bfb6e62fcd70b69adb1b18e",
+      "size": 5102
+    },
+    {
+      "path": "the-names-he-carried/cold-case-file/william-brown-death-1895.html",
+      "git_blob_sha": "6a8bf29dec5359939b3091d3676fab4be39d0d7e",
+      "size": 4981
+    }
+  ]
+}
