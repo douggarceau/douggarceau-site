@@ -1,6 +1,22 @@
 [
  {
   "item": 1,
+  "slug": "dunlop-census-1861-abbotsford-place",
+  "date": "April 7, 1861",
+  "title": "1861 census: 50 Abbotsford Place, Glasgow",
+  "images": [],
+  "source": "1861 Scotland Census, Glasgow Govan, ED 32, page 19. Ancestry index (General Register Office for Scotland)."
+ },
+ {
+  "item": 2,
+  "slug": "binnie-dunlop-birth-1874",
+  "date": "August 3, 1874",
+  "title": "Birth index entry: Binnie Dunlop",
+  "images": [],
+  "source": "Scotland, Select Births and Baptisms, 1564-1950. Ancestry index (FamilySearch)."
+ },
+ {
+  "item": 3,
   "slug": "robert-douglas-birth-1876",
   "date": "May 8, 1876",
   "title": "Birth registration: Robert Douglas",
@@ -10,7 +26,15 @@
   "source": "Statutory registers, Births, St George, Edinburgh, 685/1 845. National Records of Scotland."
  },
  {
-  "item": 2,
+  "item": 4,
+  "slug": "dunlop-census-1881-carlton-place",
+  "date": "April 3, 1881",
+  "title": "1881 census: 18 Carlton Place, Glasgow",
+  "images": [],
+  "source": "1881 Scotland Census, Glasgow Gorbals, ED 3, page 1. Ancestry index (General Register Office for Scotland)."
+ },
+ {
+  "item": 5,
   "slug": "agnes-brown-birth-1885",
   "date": "December 18, 1885",
   "title": "Birth registration: Agnes McGarth Brown",
@@ -20,7 +44,7 @@
   "source": "Statutory registers, Births, Peebles, 768/00 0149. National Records of Scotland."
  },
  {
-  "item": 3,
+  "item": 6,
   "slug": "george-brown-death-1886",
   "date": "April 5, 1886",
   "title": "Death registration: George Brown",
@@ -30,7 +54,7 @@
   "source": "Statutory registers, Deaths, Peebles, 1886, 768/00 0014. National Records of Scotland."
  },
  {
-  "item": 4,
+  "item": 7,
   "slug": "census-1891-castle-row-libberton",
   "date": "April 5, 1891",
   "title": "1891 census: Castle row, Quothquan, Libberton",
@@ -38,7 +62,7 @@
   "source": "1891 Scotland Census, Libberton, Lanarkshire, ED 3, pages 1\u20132. Ancestry index (General Register Office for Scotland)."
  },
  {
-  "item": 5,
+  "item": 8,
   "slug": "william-brown-death-1895",
   "date": "January 13, 1895",
   "title": "Death registration: William Brown",
@@ -48,7 +72,7 @@
   "source": "Statutory registers, Deaths, Stobo, 1895, 770/1. National Records of Scotland."
  },
  {
-  "item": 6,
+  "item": 9,
   "slug": "douglas-mcdonald-marriage-1899",
   "date": "June 9, 1899",
   "title": "Marriage registration: Robert Douglas and Elizabeth Miller McDonald",
@@ -58,7 +82,7 @@
   "source": "Statutory registers, Marriages, St Giles, Edinburgh, 685/4 213. National Records of Scotland."
  },
  {
-  "item": 7,
+  "item": 10,
   "slug": "physicians-directory-1899",
   "date": "1899 (as catalogued)",
   "title": "Directory of physicians and surgeons, pages 9\u201310",
@@ -69,7 +93,7 @@
   "source": "Printed directory of physicians and surgeons, Glasgow and district, pages 9\u201310. Catalogued as 1899 by the Trades House of Glasgow Library (physicians_and_surgeons ~ 1899)."
  },
  {
-  "item": 8,
+  "item": 11,
   "slug": "census-1901-libberton-ed3",
   "date": "March 31, 1901",
   "title": "1901 census: Gean Tree and Lime Tree Cottages, Quothquan, Libberton",
@@ -77,7 +101,7 @@
   "source": "1901 Scotland Census, Libberton, Lanarkshire, ED 3, page 3, roll CSSCT1901_341. Ancestry index (General Register Office for Scotland)."
  },
  {
-  "item": 9,
+  "item": 12,
   "slug": "james-dunlop-obituary-1901",
   "date": "April 1901",
   "title": "Obituary: James Dunlop, M.D.",
@@ -89,7 +113,7 @@
   "source": "Glasgow Medical Journal, vol. 55, April 1901, pages 280\u2013282. Via PubMed Central (PMC5949701)."
  },
  {
-  "item": 10,
+  "item": 13,
   "slug": "parker-stewart-marriage-1903",
   "date": "August 28, 1903",
   "title": "Marriage registration: James Lawson Parker and Janet Crawford Stewart",
@@ -99,7 +123,7 @@
   "source": "Statutory registers, Marriages, Carluke, 629/ 54. National Records of Scotland."
  },
  {
-  "item": 11,
+  "item": 14,
   "slug": "lawrence-brown-birth-1907",
   "date": "June 14, 1907",
   "title": "Birth registration: Lawrence Brown",
@@ -109,7 +133,15 @@
   "source": "Statutory registers, Births, St Giles, Edinburgh, 685/04 0839. National Records of Scotland."
  },
  {
-  "item": 12,
+  "item": 15,
+  "slug": "binnie-dunlop-medical-register",
+  "date": "1899\u20131921",
+  "title": "Medical Register entries: Binnie Dunlop",
+  "images": [],
+  "source": "UK and Ireland, Medical Registers, 1859-1943. Ancestry index (The Medical Register)."
+ },
+ {
+  "item": 16,
   "slug": "nathaniel-dunlop-knightage",
   "date": "After 1907",
   "title": "Reference book entry: Sir Nathaniel Dunlop",
@@ -120,7 +152,7 @@
   "source": "Baronetage, Knightage, &c., page 363. U.S., Family History Books, via Ancestry."
  },
  {
-  "item": 13,
+  "item": 17,
   "slug": "census-1911-lochrin-place",
   "date": "April 2, 1911",
   "title": "1911 census: 16 Lochrin Place, Edinburgh",
@@ -130,7 +162,7 @@
   "source": "1911 Census, 685/4 69/ 11, page 11. National Records of Scotland."
  },
  {
-  "item": 14,
+  "item": 18,
   "slug": "census-1911-shieldhill-mains",
   "date": "April 2, 1911",
   "title": "1911 census: Shieldhill Mains and Gean Tree Cottage, Libberton",
@@ -140,7 +172,7 @@
   "source": "1911 Census, Libberton, 650/ 3/ 2, page 2. National Records of Scotland."
  },
  {
-  "item": 15,
+  "item": 19,
   "slug": "census-1911-agnes-o-brown-morningside",
   "date": "April 2, 1911",
   "title": "1911 census: 16 Springvalley Gardens, Morningside, Edinburgh",
@@ -150,7 +182,7 @@
   "source": "1911 Census, 685/6 58/ 2, page 2. National Records of Scotland."
  },
  {
-  "item": 16,
+  "item": 20,
   "slug": "census-1911-agnes-brown-gorgie",
   "date": "April 2, 1911",
   "title": "1911 census: 172 Gorgie Road, Edinburgh",
@@ -160,7 +192,7 @@
   "source": "1911 Census, 685/6 92/ 7, page 7. National Records of Scotland."
  },
  {
-  "item": 17,
+  "item": 21,
   "slug": "census-1911-agnes-brown-dunfermline",
   "date": "April 2, 1911",
   "title": "1911 census: Rumblingwell, Dunfermline",
@@ -170,7 +202,7 @@
   "source": "1911 Census, 424/ 30/ 15, page 15. National Records of Scotland."
  },
  {
-  "item": 18,
+  "item": 22,
   "slug": "mckenzie-brown-marriage-1911",
   "date": "August 28, 1911",
   "title": "Marriage registration: Thomas McKay McKenzie and Agnes McGarth Brown",
@@ -180,7 +212,7 @@
   "source": "Statutory registers, Marriages, St Giles, Edinburgh, 685/04 0616. National Records of Scotland."
  },
  {
-  "item": 19,
+  "item": 23,
   "slug": "mary-christina-mckenzie-birth-1912",
   "date": "May 6, 1912",
   "title": "Birth registration: Mary Christina McKenzie",
@@ -190,7 +222,7 @@
   "source": "Statutory registers, Births, Morningside, Edinburgh, 685/6 456. National Records of Scotland."
  },
  {
-  "item": 20,
+  "item": 24,
   "slug": "school-register-1912",
   "date": "August 19, 1912",
   "title": "School admission register: Queen Anne Infant School, Dunfermline, page 5",
@@ -200,7 +232,7 @@
   "source": "Queen Anne Infant School admission register, page 5, entry 120, Dunfermline, Fife."
  },
  {
-  "item": 21,
+  "item": 25,
   "slug": "thomas-mckenzie-ww1-enlistment",
   "date": "Undated",
   "title": "Army enlistment report: Thomas McKenzie",
@@ -210,7 +242,7 @@
   "source": "British Army service record, descriptive report on enlistment. UK, British Army World War I Service Records, 1914\u20131920. The National Archives, via Ancestry."
  },
  {
-  "item": 22,
+  "item": 26,
   "slug": "robert-douglas-death-1919",
   "date": "September 9, 1919",
   "title": "Death registration: Robert Douglas",
@@ -220,7 +252,7 @@
   "source": "Statutory registers, Deaths, Morningside, Edinburgh, 685/6 1161. National Records of Scotland."
  },
  {
-  "item": 23,
+  "item": 27,
   "slug": "dunlop-will-1920",
   "date": "February 19, 1920",
   "title": "Will of Sir Nathaniel Dunlop, pages 494\u2013495",
@@ -230,7 +262,7 @@
   "source": "Wills and testaments, SC38/44/3, Lanark Sheriff Court Wills, image 495. National Records of Scotland."
  },
  {
-  "item": 24,
+  "item": 28,
   "slug": "census-1921-foundry-street",
   "date": "June 19, 1921",
   "title": "1921 census: 5 Foundry Street, Dunfermline",
@@ -240,7 +272,7 @@
   "source": "1921 Census, 424/ 1/ 12, page 12. National Records of Scotland."
  },
  {
-  "item": 25,
+  "item": 29,
   "slug": "duchess-1928-dining-saloon",
   "date": "1928",
   "title": "Photograph: Duchess of Bedford, dining saloon, A Deck, 1928",
@@ -250,7 +282,7 @@
   "source": "National Records of Scotland, UCS1/116/31/16, IMGAAA00564. scotlandspeople.gov.uk/image-library/7322. \u00a9 Crown copyright."
  },
  {
-  "item": 26,
+  "item": 30,
   "slug": "duchess-1928-observation-room",
   "date": "1928",
   "title": "Photograph: Duchess of Bedford, Drawing and Observation Room, Promenade Deck, 1928",
@@ -260,7 +292,7 @@
   "source": "National Records of Scotland, UCS1/116/31/3, IMGAAA00561. scotlandspeople.gov.uk/image-library/7319. \u00a9 Crown copyright."
  },
  {
-  "item": 27,
+  "item": 31,
   "slug": "duchess-1928-cabin-103",
   "date": "1928",
   "title": "Photograph: Duchess of Bedford, Cabin No. 103, three berths, A Deck, 1928",
@@ -270,7 +302,7 @@
   "source": "National Records of Scotland, UCS1/116/31/22, IMGAAA00565. scotlandspeople.gov.uk/image-library/7323. \u00a9 Crown copyright. Not known to be Laurence's or Janet's cabin."
  },
  {
-  "item": 28,
+  "item": 32,
   "slug": "duchess-1928-advertisement",
   "date": "November 1928",
   "title": "Advertisement: Canadian Pacific, Duchess Cruises to the West Indies (The Mitre, p. 14)",
@@ -280,7 +312,7 @@
   "source": "The Mitre (Bishop's University), November 1928, vol. XXXVI, no. 2, page 14. Magazine scan: Bishop's University, ubishops.ca/wp-content/uploads/1928-1929-Issue2.pdf. Image received from Doug Garceau in a PDF packet, November 22, 2026."
  },
  {
-  "item": 29,
+  "item": 33,
   "slug": "duchess-of-bedford-photo",
   "date": "September 7\u201313, 1929",
   "title": "TSS Duchess of Bedford \u00b7 Canadian Pacific Steamships \u00b7 Laurence Brown and Janet Crombie",
@@ -290,7 +322,7 @@
   "source": "Photograph supplied by Doug Garceau, November 22, 2026. Original source and date not recorded."
  },
  {
-  "item": 30,
+  "item": 34,
   "slug": "outward-passenger-list-1929",
   "date": "September 7, 1929",
   "title": "Outward passenger list: Duchess of Bedford, Greenock",
@@ -300,7 +332,7 @@
   "source": "UK and Ireland, Outward Passenger Lists, 1890\u20131960. The National Archives, via Ancestry."
  },
  {
-  "item": 31,
+  "item": 35,
   "slug": "passenger-manifest-1929",
   "date": "September 7, 1929",
   "title": "U.S. alien passenger manifest, List D, left half: Duchess of Bedford",
@@ -310,7 +342,7 @@
   "source": "U.S. Bureau of Immigration, S.S. Duchess of Bedford, passenger manifest, list D."
  },
  {
-  "item": 32,
+  "item": 36,
   "slug": "arrival-manifest-1929",
   "date": "September 13, 1929",
   "title": "U.S. alien passenger manifest, List D, right half: arriving Quebec and Montreal",
@@ -320,7 +352,7 @@
   "source": "U.S. National Archives, Record Group 85, M1464, roll 558, image 167."
  },
  {
-  "item": 33,
+  "item": 37,
   "slug": "detroit-border-card-1929",
   "date": "September 15, 1929",
   "title": "Border crossing card: Lawrence Brown, Detroit",
@@ -331,7 +363,7 @@
   "source": "U.S. Immigration Service, Form 548, Detroit. U.S. National Archives, M1478, roll 8, image 3914."
  },
  {
-  "item": 34,
+  "item": 38,
   "slug": "chicago-census-1930",
   "date": "April 14, 1930",
   "title": "1930 U.S. census: 1534 South Kostner Avenue, Chicago, sheet 3B",
@@ -341,7 +373,7 @@
   "source": "1930 U.S. census, Cook County, Illinois, Ward 23, ED 16-834. NARA T626, roll 452."
  },
  {
-  "item": 35,
+  "item": 39,
   "slug": "duchesses-booklet-cover-1931",
   "date": "September 1931",
   "title": "Booklet cover: Canadian Pacific, \"The Duchesses\"",
@@ -351,7 +383,7 @@
   "source": "Reproduced by GG Archives with its Duchess of Bedford cabin passenger list of 4 September 1931 (ggarchives.com/OT/PLs/CPL/DuchessOfBedford-PassengerList-1931-09-04.html). Later comparison document, not from the 1929 sailing."
  },
  {
-  "item": 36,
+  "item": 40,
   "slug": "cp-atlantic-track-chart-1931",
   "date": "September 1931",
   "title": "Chart: Canadian Pacific Atlantic Track Chart",
@@ -361,7 +393,7 @@
   "source": "GG Archives, with the Duchess of Bedford material of 4 September 1931. Later comparison document, not from the 1929 sailing."
  },
  {
-  "item": 37,
+  "item": 41,
   "slug": "elizabeth-anderson-border-card-1934",
   "date": "October 2, 1934",
   "title": "Border crossing card: Elizabeth Anderson, Port Huron",
@@ -372,7 +404,7 @@
   "source": "U.S. Immigration and Naturalization Service, Forms I-448 and 548, Port Huron, Michigan. M1478, via Ancestry."
  },
  {
-  "item": 38,
+  "item": 42,
   "slug": "providence-directory-1937",
   "date": "1937",
   "title": "Providence city directory, 1937, page 561",
@@ -382,7 +414,7 @@
   "source": "Providence Directory, 1937, page 561. Providence City Archives."
  },
  {
-  "item": 39,
+  "item": 43,
   "slug": "providence-directory-1938",
   "date": "1938",
   "title": "Providence city directory, 1938, page 563",
@@ -393,7 +425,7 @@
   "source": "The Providence Directory, 1938, page 563. Internet Archive."
  },
  {
-  "item": 40,
+  "item": 44,
   "slug": "marriage-1939",
   "date": "October 9, 1939",
   "title": "Marriage license record: Lawrence Douglas and Constance Darcy",
@@ -403,7 +435,7 @@
   "source": "Jefferson County, Alabama, Marriage License Record, book 154, page 409. Via Ancestry."
  },
  {
-  "item": 41,
+  "item": 45,
   "slug": "census-1940-san-francisco",
   "date": "April 11, 1940",
   "title": "1940 U.S. census: San Francisco, sheet 62A",
@@ -413,7 +445,7 @@
   "source": "1940 U.S. census, San Francisco, ED 38-259, sheet 62A. NARA T627, roll 307."
  },
  {
-  "item": 42,
+  "item": 46,
   "slug": "draft-card-1940",
   "date": "October 16, 1940",
   "title": "Draft registration card: Laurence Brown Douglas",
@@ -424,7 +456,7 @@
   "source": "World War II draft registration, serial 3426, order 1704, Local Board 94, San Francisco. Via Ancestry."
  },
  {
-  "item": 43,
+  "item": 47,
   "slug": "blaine-border-card-1941",
   "date": "June 21, 1941",
   "title": "Border crossing card: Lawrence Brown Douglas, Blaine",
@@ -434,7 +466,7 @@
   "source": "U.S. Immigration and Naturalization Service, Form 548, Blaine, Washington. Via Ancestry."
  },
  {
-  "item": 44,
+  "item": 48,
   "slug": "albert-darcy-draft-card-1942",
   "date": "1942",
   "title": "Draft registration card: Albert Blake Darcy",
@@ -444,7 +476,7 @@
   "source": "World War II draft registration, 1942, Rhode Island, serial U-40. National Archives, via Ancestry."
  },
  {
-  "item": 45,
+  "item": 49,
   "slug": "naturalization-petition-1943",
   "date": "February 11, 1943",
   "title": "Petition for naturalization: Laurence Brown Douglas",
@@ -454,7 +486,7 @@
   "source": "U.S. District Court, Western District of Pennsylvania, petition no. 139903. NARA Record Group 21, via Ancestry."
  },
  {
-  "item": 46,
+  "item": 50,
   "slug": "oath-of-allegiance-1943",
   "date": "May 6, 1943",
   "title": "Affidavit of witnesses and oath of allegiance: Laurence Brown Douglas",
@@ -464,7 +496,7 @@
   "source": "Petition for naturalization 139903, U.S. District Court, Western District of Pennsylvania. Via Ancestry."
  },
  {
-  "item": 47,
+  "item": 51,
   "slug": "pawtucket-directory-1947",
   "date": "1947",
   "title": "Pawtucket city directory, 1947, page 154",
@@ -475,7 +507,7 @@
   "source": "Pawtucket city directory, 1947, page 154. U.S., City Directories, via Ancestry."
  },
  {
-  "item": 48,
+  "item": 52,
   "slug": "providence-directory-1950",
   "date": "1950",
   "title": "Providence city directory, 1950, page 214",
@@ -485,7 +517,7 @@
   "source": "Polk's Providence City Directory, 1950, page 214. Internet Archive."
  },
  {
-  "item": 49,
+  "item": 53,
   "slug": "providence-directory-1960",
   "date": "1960",
   "title": "Providence city directory, 1960, page 287",
@@ -496,7 +528,7 @@
   "source": "Polk's Providence City Directory, 1960, page 287. Internet Archive."
  },
  {
-  "item": 50,
+  "item": 54,
   "slug": "providence-directory-1961",
   "date": "1961",
   "title": "Providence city directory, 1961, page 259",
@@ -507,7 +539,7 @@
   "source": "Polk's Providence City Directory, 1961, page 259. Internet Archive."
  },
  {
-  "item": 51,
+  "item": 55,
   "slug": "obituary-1961",
   "date": "March 11, 1961",
   "title": "Obituary: Laurence B. Douglas, Pawtucket Times",
