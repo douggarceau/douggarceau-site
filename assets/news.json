@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T00:42Z",
+ "updated": "2026-11-22T04:22Z",
  "sources": [
   "Modern Drummer (8)",
   "Drumming News Network (8)",
@@ -19,6 +19,12 @@
  "errors": {},
  "raw_count": 65,
  "items": [
+  {
+   "title": "Five Hit Songs You May Not Know Phil Collins Played Drums On",
+   "link": "https://www.drummingnewsnetwork.com/five-hit-songs-you-may-not-know-phil-collins-played-drums-on/",
+   "source": "Drumming News Network",
+   "date": "2026-11-22"
+  },
   {
    "title": "Blue Man Group Brings a New Holiday Surprise to Broadway and Beyond",
    "link": "https://www.drummingnewsnetwork.com/blue-man-group-brings-a-new-holiday-surprise-to-broadway-and-beyond/",
@@ -252,12 +258,6 @@
    "link": "https://thedrumninja.com/fluorescent-adolescent-drum-transcription/",
    "source": "The Drum Ninja",
    "date": "2026-10-07"
-  },
-  {
-   "title": "New Tama Starclassic Walnut/Birch Duracover finishes",
-   "link": "https://en.beatit.tv/new-tama-starclassic-walnut-birch-duracover-finishes/",
-   "source": "Beat It",
-   "date": "2026-10-06"
   }
  ]
 }
