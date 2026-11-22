@@ -1,0 +1,425 @@
+[
+ {
+  "item": 1,
+  "slug": "robert-douglas-birth-1876",
+  "date": "May 8, 1876",
+  "title": "Birth registration: Robert Douglas",
+  "images": [
+   "robert-douglas-birth-register-1876.jpg"
+  ],
+  "source": "Statutory registers, Births, St George, Edinburgh, 685/1 845. National Records of Scotland."
+ },
+ {
+  "item": 2,
+  "slug": "agnes-brown-birth-1885",
+  "date": "December 18, 1885",
+  "title": "Birth registration: Agnes McGarth Brown",
+  "images": [
+   "agnes-birth-register-1885.jpg"
+  ],
+  "source": "Statutory registers, Births, Peebles, 768/00 0149. National Records of Scotland."
+ },
+ {
+  "item": 3,
+  "slug": "george-brown-death-1886",
+  "date": "April 5, 1886",
+  "title": "Death registration: George Brown",
+  "images": [
+   "george-brown-death-1886.jpg"
+  ],
+  "source": "Statutory registers, Deaths, Peebles, 1886, 768/00 0014. National Records of Scotland."
+ },
+ {
+  "item": 4,
+  "slug": "census-1891-castle-row-libberton",
+  "date": "April 5, 1891",
+  "title": "1891 census: Castle row, Quothquan, Libberton",
+  "images": [],
+  "source": "1891 Scotland Census, Libberton, Lanarkshire, ED 3, pages 1\u20132. Ancestry index (General Register Office for Scotland)."
+ },
+ {
+  "item": 5,
+  "slug": "william-brown-death-1895",
+  "date": "January 13, 1895",
+  "title": "Death registration: William Brown",
+  "images": [
+   "william-brown-death-1895.jpg"
+  ],
+  "source": "Statutory registers, Deaths, Stobo, 1895, 770/1. National Records of Scotland."
+ },
+ {
+  "item": 6,
+  "slug": "douglas-mcdonald-marriage-1899",
+  "date": "June 9, 1899",
+  "title": "Marriage registration: Robert Douglas and Elizabeth Miller McDonald",
+  "images": [
+   "robert-douglas-elizabeth-mcdonald-marriage-register-1899.jpg"
+  ],
+  "source": "Statutory registers, Marriages, St Giles, Edinburgh, 685/4 213. National Records of Scotland."
+ },
+ {
+  "item": 7,
+  "slug": "census-1901-libberton-ed3",
+  "date": "March 31, 1901",
+  "title": "1901 census: Gean Tree and Lime Tree Cottages, Quothquan, Libberton",
+  "images": [],
+  "source": "1901 Scotland Census, Libberton, Lanarkshire, ED 3, page 3, roll CSSCT1901_341. Ancestry index (General Register Office for Scotland)."
+ },
+ {
+  "item": 8,
+  "slug": "parker-stewart-marriage-1903",
+  "date": "August 28, 1903",
+  "title": "Marriage registration: James Lawson Parker and Janet Crawford Stewart",
+  "images": [
+   "james-lawson-parker-marriage-register-1903.jpg"
+  ],
+  "source": "Statutory registers, Marriages, Carluke, 629/ 54. National Records of Scotland."
+ },
+ {
+  "item": 9,
+  "slug": "lawrence-brown-birth-1907",
+  "date": "June 14, 1907",
+  "title": "Birth registration: Lawrence Brown",
+  "images": [
+   "laurence-birth-register-1907.jpg"
+  ],
+  "source": "Statutory registers, Births, St Giles, Edinburgh, 685/04 0839. National Records of Scotland."
+ },
+ {
+  "item": 10,
+  "slug": "nathaniel-dunlop-knightage",
+  "date": "After 1907",
+  "title": "Reference book entry: Sir Nathaniel Dunlop",
+  "images": [
+   "nathaniel-dunlop-directory.jpg",
+   "nathaniel-dunlop-directory-part2.jpg"
+  ],
+  "source": "Baronetage, Knightage, &c., page 363. U.S., Family History Books, via Ancestry."
+ },
+ {
+  "item": 11,
+  "slug": "census-1911-lochrin-place",
+  "date": "April 2, 1911",
+  "title": "1911 census: 16 Lochrin Place, Edinburgh",
+  "images": [
+   "census-1911-lochrin-place-edinburgh.jpg"
+  ],
+  "source": "1911 Census, 685/4 69/ 11, page 11. National Records of Scotland."
+ },
+ {
+  "item": 12,
+  "slug": "census-1911-shieldhill-mains",
+  "date": "April 2, 1911",
+  "title": "1911 census: Shieldhill Mains and Gean Tree Cottage, Libberton",
+  "images": [
+   "census-1911-shieldhill-mains-libberton.jpg"
+  ],
+  "source": "1911 Census, Libberton, 650/ 3/ 2, page 2. National Records of Scotland."
+ },
+ {
+  "item": 13,
+  "slug": "census-1911-agnes-o-brown-morningside",
+  "date": "April 2, 1911",
+  "title": "1911 census: 16 Springvalley Gardens, Morningside, Edinburgh",
+  "images": [
+   "census-1911-agnes-o-brown-morningside.jpg"
+  ],
+  "source": "1911 Census, 685/6 58/ 2, page 2. National Records of Scotland."
+ },
+ {
+  "item": 14,
+  "slug": "census-1911-agnes-brown-gorgie",
+  "date": "April 2, 1911",
+  "title": "1911 census: 172 Gorgie Road, Edinburgh",
+  "images": [
+   "census-1911-agnes-brown-gorgie.jpg"
+  ],
+  "source": "1911 Census, 685/6 92/ 7, page 7. National Records of Scotland."
+ },
+ {
+  "item": 15,
+  "slug": "census-1911-agnes-brown-dunfermline",
+  "date": "April 2, 1911",
+  "title": "1911 census: Rumblingwell, Dunfermline",
+  "images": [
+   "census-1911-agnes-brown-dunfermline.jpg"
+  ],
+  "source": "1911 Census, 424/ 30/ 15, page 15. National Records of Scotland."
+ },
+ {
+  "item": 16,
+  "slug": "mckenzie-brown-marriage-1911",
+  "date": "August 28, 1911",
+  "title": "Marriage registration: Thomas McKay McKenzie and Agnes McGarth Brown",
+  "images": [
+   "agnes-marriage-register-1911.jpg"
+  ],
+  "source": "Statutory registers, Marriages, St Giles, Edinburgh, 685/04 0616. National Records of Scotland."
+ },
+ {
+  "item": 17,
+  "slug": "mary-christina-mckenzie-birth-1912",
+  "date": "May 6, 1912",
+  "title": "Birth registration: Mary Christina McKenzie",
+  "images": [
+   "mary-christina-mckenzie-birth-1912.jpg"
+  ],
+  "source": "Statutory registers, Births, Morningside, Edinburgh, 685/6 456. National Records of Scotland."
+ },
+ {
+  "item": 18,
+  "slug": "school-register-1912",
+  "date": "August 19, 1912",
+  "title": "School admission register: Queen Anne Infant School, Dunfermline, page 5",
+  "images": [
+   "lawrence-douglas-1912-school-register.jpg"
+  ],
+  "source": "Queen Anne Infant School admission register, page 5, entry 120, Dunfermline, Fife."
+ },
+ {
+  "item": 19,
+  "slug": "thomas-mckenzie-ww1-enlistment",
+  "date": "Undated",
+  "title": "Army enlistment report: Thomas McKenzie",
+  "images": [
+   "thomas-mckenzie-ww1-enlistment.jpg"
+  ],
+  "source": "British Army service record, descriptive report on enlistment. UK, British Army World War I Service Records, 1914\u20131920. The National Archives, via Ancestry."
+ },
+ {
+  "item": 20,
+  "slug": "robert-douglas-death-1919",
+  "date": "September 9, 1919",
+  "title": "Death registration: Robert Douglas",
+  "images": [
+   "robert-douglas-death-register-1919.jpg"
+  ],
+  "source": "Statutory registers, Deaths, Morningside, Edinburgh, 685/6 1161. National Records of Scotland."
+ },
+ {
+  "item": 21,
+  "slug": "dunlop-will-1920",
+  "date": "February 19, 1920",
+  "title": "Will of Sir Nathaniel Dunlop, pages 494\u2013495",
+  "images": [
+   "dunlop-will-1920-page-495.jpg"
+  ],
+  "source": "Wills and testaments, SC38/44/3, Lanark Sheriff Court Wills, image 495. National Records of Scotland."
+ },
+ {
+  "item": 22,
+  "slug": "census-1921-foundry-street",
+  "date": "June 19, 1921",
+  "title": "1921 census: 5 Foundry Street, Dunfermline",
+  "images": [
+   "census-1921-foundry-street-dunfermline.jpg"
+  ],
+  "source": "1921 Census, 424/ 1/ 12, page 12. National Records of Scotland."
+ },
+ {
+  "item": 23,
+  "slug": "outward-passenger-list-1929",
+  "date": "September 7, 1929",
+  "title": "Outward passenger list: Duchess of Bedford, Greenock",
+  "images": [
+   "laurence-brown-1929-outward-passenger-list.jpg"
+  ],
+  "source": "UK and Ireland, Outward Passenger Lists, 1890\u20131960. The National Archives, via Ancestry."
+ },
+ {
+  "item": 24,
+  "slug": "passenger-manifest-1929",
+  "date": "September 7, 1929",
+  "title": "U.S. alien passenger manifest, List D, left half: Duchess of Bedford",
+  "images": [
+   "lawrence-brown-1929-passenger-manifest.jpg"
+  ],
+  "source": "U.S. Bureau of Immigration, S.S. Duchess of Bedford, passenger manifest, list D."
+ },
+ {
+  "item": 25,
+  "slug": "arrival-manifest-1929",
+  "date": "September 13, 1929",
+  "title": "U.S. alien passenger manifest, List D, right half: arriving Quebec and Montreal",
+  "images": [
+   "lawrence-brown-1929-arrival-manifest.jpg"
+  ],
+  "source": "U.S. National Archives, Record Group 85, M1464, roll 558, image 167."
+ },
+ {
+  "item": 26,
+  "slug": "detroit-border-card-1929",
+  "date": "September 15, 1929",
+  "title": "Border crossing card: Lawrence Brown, Detroit",
+  "images": [
+   "lawrence-brown-1929-detroit-border-card.jpg"
+  ],
+  "source": "U.S. Immigration Service, Form 548, Detroit. U.S. National Archives, M1478, roll 8, image 3914."
+ },
+ {
+  "item": 27,
+  "slug": "chicago-census-1930",
+  "date": "April 14, 1930",
+  "title": "1930 U.S. census: 1534 South Kostner Avenue, Chicago, sheet 3B",
+  "images": [
+   "lawrence-brown-1930-chicago-census.jpg"
+  ],
+  "source": "1930 U.S. census, Cook County, Illinois, Ward 23, ED 16-834. NARA T626, roll 452."
+ },
+ {
+  "item": 28,
+  "slug": "elizabeth-anderson-border-card-1934",
+  "date": "October 2, 1934",
+  "title": "Border crossing card: Elizabeth Anderson, Port Huron",
+  "images": [
+   "elizabeth-anderson-1934-port-huron-card.jpg",
+   "elizabeth-anderson-1934-port-huron-card-part2.jpg"
+  ],
+  "source": "U.S. Immigration and Naturalization Service, Forms I-448 and 548, Port Huron, Michigan. M1478, via Ancestry."
+ },
+ {
+  "item": 29,
+  "slug": "providence-directory-1937",
+  "date": "1937",
+  "title": "Providence city directory, 1937, page 561",
+  "images": [
+   "lawrence-douglas-1937-providence-directory.jpg"
+  ],
+  "source": "Providence Directory, 1937, page 561. Providence City Archives."
+ },
+ {
+  "item": 30,
+  "slug": "providence-directory-1938",
+  "date": "1938",
+  "title": "Providence city directory, 1938, page 563",
+  "images": [
+   "lawrence-douglas-1938-providence-directory.jpg",
+   "lawrence-douglas-1938-providence-directory-part2.jpg"
+  ],
+  "source": "The Providence Directory, 1938, page 563. Internet Archive."
+ },
+ {
+  "item": 31,
+  "slug": "marriage-1939",
+  "date": "October 9, 1939",
+  "title": "Marriage license record: Lawrence Douglas and Constance Darcy",
+  "images": [
+   "laurence-douglas-constance-darcy-1939-marriage.jpg"
+  ],
+  "source": "Jefferson County, Alabama, Marriage License Record, book 154, page 409. Via Ancestry."
+ },
+ {
+  "item": 32,
+  "slug": "census-1940-san-francisco",
+  "date": "April 11, 1940",
+  "title": "1940 U.S. census: San Francisco, sheet 62A",
+  "images": [
+   "laurence-douglas-1940-census.jpg"
+  ],
+  "source": "1940 U.S. census, San Francisco, ED 38-259, sheet 62A. NARA T627, roll 307."
+ },
+ {
+  "item": 33,
+  "slug": "draft-card-1940",
+  "date": "October 16, 1940",
+  "title": "Draft registration card: Laurence Brown Douglas",
+  "images": [
+   "laurence-brown-douglas-1940-draft-card.jpg",
+   "laurence-brown-douglas-1940-draft-card-part2.jpg"
+  ],
+  "source": "World War II draft registration, serial 3426, order 1704, Local Board 94, San Francisco. Via Ancestry."
+ },
+ {
+  "item": 34,
+  "slug": "blaine-border-card-1941",
+  "date": "June 21, 1941",
+  "title": "Border crossing card: Lawrence Brown Douglas, Blaine",
+  "images": [
+   "lawrence-brown-douglas-1941-blaine-border-card.jpg"
+  ],
+  "source": "U.S. Immigration and Naturalization Service, Form 548, Blaine, Washington. Via Ancestry."
+ },
+ {
+  "item": 35,
+  "slug": "albert-darcy-draft-card-1942",
+  "date": "1942",
+  "title": "Draft registration card: Albert Blake Darcy",
+  "images": [
+   "albert-blake-darcy-1942-draft-card.jpg"
+  ],
+  "source": "World War II draft registration, 1942, Rhode Island, serial U-40. National Archives, via Ancestry."
+ },
+ {
+  "item": 36,
+  "slug": "naturalization-petition-1943",
+  "date": "February 11, 1943",
+  "title": "Petition for naturalization: Laurence Brown Douglas",
+  "images": [
+   "laurence-brown-douglas-1943-petition.jpg"
+  ],
+  "source": "U.S. District Court, Western District of Pennsylvania, petition no. 139903. NARA Record Group 21, via Ancestry."
+ },
+ {
+  "item": 37,
+  "slug": "oath-of-allegiance-1943",
+  "date": "May 6, 1943",
+  "title": "Affidavit of witnesses and oath of allegiance: Laurence Brown Douglas",
+  "images": [
+   "laurence-brown-douglas-1943-oath.jpg"
+  ],
+  "source": "Petition for naturalization 139903, U.S. District Court, Western District of Pennsylvania. Via Ancestry."
+ },
+ {
+  "item": 38,
+  "slug": "pawtucket-directory-1947",
+  "date": "1947",
+  "title": "Pawtucket city directory, 1947, page 154",
+  "images": [
+   "laurence-b-douglas-1947-pawtucket-directory.jpg",
+   "laurence-b-douglas-1947-pawtucket-directory-part2.jpg"
+  ],
+  "source": "Pawtucket city directory, 1947, page 154. U.S., City Directories, via Ancestry."
+ },
+ {
+  "item": 39,
+  "slug": "providence-directory-1950",
+  "date": "1950",
+  "title": "Providence city directory, 1950, page 214",
+  "images": [
+   "lawrence-b-douglas-1950-providence-directory.jpg"
+  ],
+  "source": "Polk's Providence City Directory, 1950, page 214. Internet Archive."
+ },
+ {
+  "item": 40,
+  "slug": "providence-directory-1960",
+  "date": "1960",
+  "title": "Providence city directory, 1960, page 287",
+  "images": [
+   "laurence-b-douglas-1960-providence-directory.jpg",
+   "laurence-b-douglas-1960-providence-directory-part2.jpg"
+  ],
+  "source": "Polk's Providence City Directory, 1960, page 287. Internet Archive."
+ },
+ {
+  "item": 41,
+  "slug": "providence-directory-1961",
+  "date": "1961",
+  "title": "Providence city directory, 1961, page 259",
+  "images": [
+   "laurence-b-douglas-1961-providence-directory.jpg",
+   "laurence-b-douglas-1961-providence-directory-part2.jpg"
+  ],
+  "source": "Polk's Providence City Directory, 1961, page 259. Internet Archive."
+ },
+ {
+  "item": 42,
+  "slug": "obituary-1961",
+  "date": "March 11, 1961",
+  "title": "Obituary: Laurence B. Douglas, Pawtucket Times",
+  "images": [
+   "laurence-b-douglas-1961-obituary.jpg"
+  ],
+  "source": "Pawtucket Times, March 11, 1961, page 3."
+ }
+]
