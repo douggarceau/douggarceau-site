@@ -1,0 +1,137 @@
+{
+  "case": "LBD-001",
+  "date": "2026-11-22",
+  "exhibits": [
+    {
+      "slug": "binnie-dunlop-medical-register-1907",
+      "date": "1907",
+      "sort_date": "1907",
+      "title": "Medical Register entry: Binnie Dunlop",
+      "source": "The Medical Register for 1907, printed p. 529 (spread pp. 528–529). Royal College of Physicians of Ireland, Heritage Centre; reference TMR/1907. Ancestry source-image viewer, image 267 of 915.",
+      "source_url": "https://www.ancestry.com/imageviewer/collections/62268/images/62268_302022005602_0064-00267?pid=1237739&usePUB=true&usePUBJs=true",
+      "record_url": "https://www.ancestry.com/search/collections/62268/records/1237739",
+      "citation": "Royal College of Physicians of Ireland; Dublin, Ireland; The Medical Register; Reference Number: TMR/1907",
+      "information": "Ancestry.com. UK and Ireland, Medical Registers, 1859-1943 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2023.\n\nOriginal data: The Medical Register. Dublin, Ireland: Royal College of Physicians of Ireland.",
+      "image_status": "Browser captures of Ancestry’s source-image viewer; these files are captures of the viewer, not downloaded original scans.",
+      "images": [
+        {
+          "path": "img/medical-register-1907-viewer-full.jpg",
+          "label": "Full-spread viewer capture",
+          "caption": "Browser capture of Ancestry’s source-image viewer showing the complete spread, printed pages 528–529. Binnie Dunlop’s entry is on the right-hand page, 529. Viewer image 267 of 915."
+        },
+        {
+          "path": "img/medical-register-1907-viewer-detail.jpg",
+          "label": "Enlarged viewer detail",
+          "caption": "Browser capture of an enlarged detail in Ancestry’s source-image viewer, including Binnie Dunlop’s row on printed page 529."
+        }
+      ],
+      "transcription_extent": "Binnie Dunlop’s row on printed page 529, with the four printed column headings. Line breaks within the fields follow the entry. [dotted leader] describes the printed leader following the name.",
+      "fields": [
+        [
+          "Name.",
+          "DUNLOP, Binnie [dotted leader]"
+        ],
+        [
+          "Address.",
+          "16, Carlton place,\nGlasgow."
+        ],
+        [
+          "Date and Place\nof\nRegistration.",
+          "1898, Nov. 4\nS."
+        ],
+        [
+          "Qualifications.",
+          "M.B., Bac. Surg. 1898, Univ.\nGlasg."
+        ]
+      ],
+      "html_path": "the-names-he-carried/cold-case-file/binnie-dunlop-medical-register-1907.html",
+      "files": [
+        {
+          "path": "files/binnie-dunlop-medical-register-1907-transcription.txt",
+          "label": "Transcription and source reference",
+          "type": "text/plain"
+        }
+      ],
+      "capture_type": "Ancestry source-image viewer browser capture",
+      "item": 75
+    },
+    {
+      "slug": "binnie-dunlop-probate-calendar-1947",
+      "date": "April 19, 1947",
+      "sort_date": "1947-04-19",
+      "title": "Probate calendar entry: Binnie Dunlop",
+      "source": "England & Wales, National Probate Calendar, 1947, printed p. 872, Caan–Guyler section. Ancestry source-image viewer, image 443 of 463.",
+      "source_url": "https://www.ancestry.com/imageviewer/collections/1904/images/32858_605905_2364-00442?pid=18660335&usePUB=true&usePUBJs=true",
+      "record_url": "https://www.ancestry.com/search/collections/1904/records/18660335",
+      "citation": "Principal Probate Registry; London, England; Calendar of the Grants of Probate and Letters of Administration made in the Probate Registries of the High Court of Justice in England",
+      "information": "Ancestry.com. England & Wales, National Probate Calendar (Index of Wills and Administrations), 1858-1995 [database on-line]. Lehi, UT, USA: Ancestry.com Operations, Inc., 2010.\n\nOriginal data: Principal Probate Registry. Calendar of the Grants of Probate and Letters of Administration made in the Probate Registries of the High Court of Justice in England. London, England © Crown copyright.",
+      "image_status": "Detail-only browser capture of Ancestry’s source-image viewer; this file is a capture of the viewer, not a downloaded original scan.",
+      "images": [
+        {
+          "path": "img/binnie-dunlop-probate-1947-viewer-detail.jpg",
+          "label": "Probate entry viewer detail",
+          "caption": "Detail-only browser capture of Ancestry’s source-image viewer, showing the complete Binnie Dunlop entry and surrounding entries. Printed page 872; viewer image 443 of 463."
+        }
+      ],
+      "transcription_extent": "The complete Binnie Dunlop entry on printed page 872. Printed wording, punctuation and line breaks are retained.",
+      "transcription": "DUNLOP Binnie of Popeswood Lodge Binfield Berkshire and of\ncare of Messrs. Coutts and Company 440 Strand London\nW.C.2 died 15 July 1946 at Popeswood Lodge Binfield\nProbate London 19 April to Nora Beatrice Dunlop widow and\nJean Beatrix Faulks (wife of Deryck King de Greville Faulks).\nEffects £30513 2s.",
+      "html_path": "the-names-he-carried/cold-case-file/binnie-dunlop-probate-calendar-1947.html",
+      "files": [
+        {
+          "path": "files/binnie-dunlop-probate-calendar-1947-transcription.txt",
+          "label": "Transcription and source reference",
+          "type": "text/plain"
+        }
+      ],
+      "capture_type": "Ancestry source-image viewer browser capture",
+      "item": 76
+    }
+  ],
+  "files": [
+    {
+      "path": "binnie-dunlop-medical-register-1907.html",
+      "bytes": 6435,
+      "sha256": "717105c91d72b693b0c9ae62933b72d89e05351f0831d9a0a793c227db7f1bbd"
+    },
+    {
+      "path": "binnie-dunlop-probate-calendar-1947.html",
+      "bytes": 6018,
+      "sha256": "610b0d932fa9203156fd7c8436347ab75bfbf34786f9715482314efa78177a4c"
+    },
+    {
+      "path": "files/binnie-dunlop-medical-register-1907-transcription.txt",
+      "bytes": 1367,
+      "sha256": "27ef48fc16937e98350b67c4e8f8b615597f448a57f11312c461e6ae90a6c026"
+    },
+    {
+      "path": "files/binnie-dunlop-probate-calendar-1947-transcription.txt",
+      "bytes": 1609,
+      "sha256": "939dab8ea88fac6f7e82c50f6135eecac5e98bda8b1bb96844311c5503318d8a"
+    },
+    {
+      "path": "img/medical-register-1907-viewer-full.jpg",
+      "bytes": 222896,
+      "sha256": "18154d8d4b48518a38d19f2de36677b38b59c6c30edc240c5632323390a2fe09"
+    },
+    {
+      "path": "img/medical-register-1907-viewer-detail.jpg",
+      "bytes": 349030,
+      "sha256": "c46099d464d12ba51bd221900dde48fd4b94abe061259a60f9249a837ed1bc36"
+    },
+    {
+      "path": "img/binnie-dunlop-probate-1947-viewer-detail.jpg",
+      "bytes": 299754,
+      "sha256": "87af2dc01d8dc481ed9f8ac6acbdca7e2b36b1bd80656c505b287547482ad79b"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18871,
+      "sha256": "4917d79774a2945c42fdf28fc0dea3d3641c42bf24aedade243d00dcd1240401"
+    },
+    {
+      "path": "items.json",
+      "bytes": 49223,
+      "sha256": "b20ef670c04e092c66ca7d1c406b5e7b864c893df9381b0486a023fd6c6aed4d"
+    }
+  ]
+}
