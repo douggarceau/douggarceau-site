@@ -218,6 +218,36 @@
  },
  {
   "item": 23,
+  "slug": "duchess-1928-dining-saloon",
+  "date": "1928",
+  "title": "Photograph: Duchess of Bedford, dining saloon, A Deck, 1928",
+  "images": [
+   "Duchess_of_Bedford_1928_Dining_Saloon.jpg"
+  ],
+  "source": "National Records of Scotland, UCS1/116/31/16, IMGAAA00564. scotlandspeople.gov.uk/image-library/7322. \u00a9 Crown copyright."
+ },
+ {
+  "item": 24,
+  "slug": "duchess-1928-observation-room",
+  "date": "1928",
+  "title": "Photograph: Duchess of Bedford, Drawing and Observation Room, Promenade Deck, 1928",
+  "images": [
+   "Duchess_of_Bedford_1928_Observation_Room.jpg"
+  ],
+  "source": "National Records of Scotland, UCS1/116/31/3, IMGAAA00561. scotlandspeople.gov.uk/image-library/7319. \u00a9 Crown copyright."
+ },
+ {
+  "item": 25,
+  "slug": "duchess-1928-cabin-103",
+  "date": "1928",
+  "title": "Photograph: Duchess of Bedford, Cabin No. 103, three berths, A Deck, 1928",
+  "images": [
+   "Duchess_of_Bedford_1928_Cabin_103.jpg"
+  ],
+  "source": "National Records of Scotland, UCS1/116/31/22, IMGAAA00565. scotlandspeople.gov.uk/image-library/7323. \u00a9 Crown copyright. Not known to be Laurence's or Janet's cabin."
+ },
+ {
+  "item": 26,
   "slug": "duchess-of-bedford-photo",
   "date": "September 7\u201313, 1929",
   "title": "TSS Duchess of Bedford \u00b7 Canadian Pacific Steamships \u00b7 Laurence Brown and Janet Crombie",
@@ -227,7 +257,7 @@
   "source": "Photograph supplied by Doug Garceau, November 22, 2026. Original source and date not recorded."
  },
  {
-  "item": 24,
+  "item": 27,
   "slug": "outward-passenger-list-1929",
   "date": "September 7, 1929",
   "title": "Outward passenger list: Duchess of Bedford, Greenock",
@@ -237,7 +267,7 @@
   "source": "UK and Ireland, Outward Passenger Lists, 1890\u20131960. The National Archives, via Ancestry."
  },
  {
-  "item": 25,
+  "item": 28,
   "slug": "passenger-manifest-1929",
   "date": "September 7, 1929",
   "title": "U.S. alien passenger manifest, List D, left half: Duchess of Bedford",
@@ -247,7 +277,7 @@
   "source": "U.S. Bureau of Immigration, S.S. Duchess of Bedford, passenger manifest, list D."
  },
  {
-  "item": 26,
+  "item": 29,
   "slug": "arrival-manifest-1929",
   "date": "September 13, 1929",
   "title": "U.S. alien passenger manifest, List D, right half: arriving Quebec and Montreal",
@@ -257,7 +287,7 @@
   "source": "U.S. National Archives, Record Group 85, M1464, roll 558, image 167."
  },
  {
-  "item": 27,
+  "item": 30,
   "slug": "detroit-border-card-1929",
   "date": "September 15, 1929",
   "title": "Border crossing card: Lawrence Brown, Detroit",
@@ -267,7 +297,7 @@
   "source": "U.S. Immigration Service, Form 548, Detroit. U.S. National Archives, M1478, roll 8, image 3914."
  },
  {
-  "item": 28,
+  "item": 31,
   "slug": "chicago-census-1930",
   "date": "April 14, 1930",
   "title": "1930 U.S. census: 1534 South Kostner Avenue, Chicago, sheet 3B",
@@ -277,7 +307,7 @@
   "source": "1930 U.S. census, Cook County, Illinois, Ward 23, ED 16-834. NARA T626, roll 452."
  },
  {
-  "item": 29,
+  "item": 32,
   "slug": "elizabeth-anderson-border-card-1934",
   "date": "October 2, 1934",
   "title": "Border crossing card: Elizabeth Anderson, Port Huron",
@@ -288,7 +318,7 @@
   "source": "U.S. Immigration and Naturalization Service, Forms I-448 and 548, Port Huron, Michigan. M1478, via Ancestry."
  },
  {
-  "item": 30,
+  "item": 33,
   "slug": "providence-directory-1937",
   "date": "1937",
   "title": "Providence city directory, 1937, page 561",
@@ -298,7 +328,7 @@
   "source": "Providence Directory, 1937, page 561. Providence City Archives."
  },
  {
-  "item": 31,
+  "item": 34,
   "slug": "providence-directory-1938",
   "date": "1938",
   "title": "Providence city directory, 1938, page 563",
@@ -309,7 +339,7 @@
   "source": "The Providence Directory, 1938, page 563. Internet Archive."
  },
  {
-  "item": 32,
+  "item": 35,
   "slug": "marriage-1939",
   "date": "October 9, 1939",
   "title": "Marriage license record: Lawrence Douglas and Constance Darcy",
@@ -319,7 +349,7 @@
   "source": "Jefferson County, Alabama, Marriage License Record, book 154, page 409. Via Ancestry."
  },
  {
-  "item": 33,
+  "item": 36,
   "slug": "census-1940-san-francisco",
   "date": "April 11, 1940",
   "title": "1940 U.S. census: San Francisco, sheet 62A",
@@ -329,7 +359,7 @@
   "source": "1940 U.S. census, San Francisco, ED 38-259, sheet 62A. NARA T627, roll 307."
  },
  {
-  "item": 34,
+  "item": 37,
   "slug": "draft-card-1940",
   "date": "October 16, 1940",
   "title": "Draft registration card: Laurence Brown Douglas",
@@ -340,7 +370,7 @@
   "source": "World War II draft registration, serial 3426, order 1704, Local Board 94, San Francisco. Via Ancestry."
  },
  {
-  "item": 35,
+  "item": 38,
   "slug": "blaine-border-card-1941",
   "date": "June 21, 1941",
   "title": "Border crossing card: Lawrence Brown Douglas, Blaine",
@@ -350,7 +380,7 @@
   "source": "U.S. Immigration and Naturalization Service, Form 548, Blaine, Washington. Via Ancestry."
  },
  {
-  "item": 36,
+  "item": 39,
   "slug": "albert-darcy-draft-card-1942",
   "date": "1942",
   "title": "Draft registration card: Albert Blake Darcy",
@@ -360,7 +390,7 @@
   "source": "World War II draft registration, 1942, Rhode Island, serial U-40. National Archives, via Ancestry."
  },
  {
-  "item": 37,
+  "item": 40,
   "slug": "naturalization-petition-1943",
   "date": "February 11, 1943",
   "title": "Petition for naturalization: Laurence Brown Douglas",
@@ -370,7 +400,7 @@
   "source": "U.S. District Court, Western District of Pennsylvania, petition no. 139903. NARA Record Group 21, via Ancestry."
  },
  {
-  "item": 38,
+  "item": 41,
   "slug": "oath-of-allegiance-1943",
   "date": "May 6, 1943",
   "title": "Affidavit of witnesses and oath of allegiance: Laurence Brown Douglas",
@@ -380,7 +410,7 @@
   "source": "Petition for naturalization 139903, U.S. District Court, Western District of Pennsylvania. Via Ancestry."
  },
  {
-  "item": 39,
+  "item": 42,
   "slug": "pawtucket-directory-1947",
   "date": "1947",
   "title": "Pawtucket city directory, 1947, page 154",
@@ -391,7 +421,7 @@
   "source": "Pawtucket city directory, 1947, page 154. U.S., City Directories, via Ancestry."
  },
  {
-  "item": 40,
+  "item": 43,
   "slug": "providence-directory-1950",
   "date": "1950",
   "title": "Providence city directory, 1950, page 214",
@@ -401,7 +431,7 @@
   "source": "Polk's Providence City Directory, 1950, page 214. Internet Archive."
  },
  {
-  "item": 41,
+  "item": 44,
   "slug": "providence-directory-1960",
   "date": "1960",
   "title": "Providence city directory, 1960, page 287",
@@ -412,7 +442,7 @@
   "source": "Polk's Providence City Directory, 1960, page 287. Internet Archive."
  },
  {
-  "item": 42,
+  "item": 45,
   "slug": "providence-directory-1961",
   "date": "1961",
   "title": "Providence city directory, 1961, page 259",
@@ -423,7 +453,7 @@
   "source": "Polk's Providence City Directory, 1961, page 259. Internet Archive."
  },
  {
-  "item": 43,
+  "item": 46,
   "slug": "obituary-1961",
   "date": "March 11, 1961",
   "title": "Obituary: Laurence B. Douglas, Pawtucket Times",
