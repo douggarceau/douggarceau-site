@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T04:22Z",
+ "updated": "2026-11-22T08:23Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -8,6 +8,14 @@
    "date": "2026-11-11",
    "kind": "DRUMS",
    "release": true
+  },
+  {
+   "title": "Apple Logic Pro 13: Enhanced Drum Separation and a New AI Assistant",
+   "link": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE81S1RtVTJCR2hxcl9QUDRnRldKMVZoeEFMNW8yQXJDMjltN09zck9iVFdRZHVDRkdJNjllSF9FakZCZmRzU2k2S2ZOZjgwZjBaNDdGZnBJN0VmTG9n?oc=5",
+   "source": "Gearnews.com",
+   "date": "2026-10-28",
+   "kind": "DRUMS",
+   "release": false
   },
   {
    "title": "Instagram launches content protection tool for unauthorised reposts and AI-modification",
@@ -70,14 +78,6 @@
    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNR25sNEJJMVZtb25HdG1iUWFNdnBjQVMxSHg5Z0V4RktMOVh4VFEwSHp4YWZ6Z3ppVEY2NW9wbzBJTjB3MEtVbFNoaXpGSGx6WmtWb0NNX1F2MUhrQkVSMVM5N3Nnb3dxSVd3MkZ2ZFhWcGE5RXdFaUk4bDk0bF9JQTUxZEIxQXRGMTJVekxTN180MUhfblhNMWFn?oc=5",
    "source": "Music Ally",
    "date": "2026-10-29",
-   "kind": "PRODUCT",
-   "release": true
-  },
-  {
-   "title": "Apple goes all in on AI with Logic Pro 13, introducing an intelligent assistant that can control your DAW",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0MwNmQ2V1VOekctdm5hclNxQ3Fwd2JrNzgtZkIzLTNTdC1wZWIxU3NLMVNlWXhiQ2pVcnhSNnRQTVlrLXU0UVZqeHBFZVg3NkduYUpQM0YzSXRfdERLbzRUY2NRQTBaV3BZMHBsd0NHRm9nZFF4NjlzRkdfbW1VbHlFN3FyVU1vZk9NSnBVVVdHZE93M0txMm1lZXpBVk5NZjJuX3pFemc5UlBCdHVQQ1FINGN6NWtTbHcyQmt0RGtPcWhnVExnbUZ3ZExNQ1J2ODk5SDdYSXV4QQ?oc=5",
-   "source": "MusicRadar",
-   "date": "2026-10-28",
    "kind": "PRODUCT",
    "release": true
   },
@@ -279,13 +279,13 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 31,
-  "Google News Suno+OR+Udio": 18,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 17,
-  "Google News %22AI%22+music+producer+plugin": 2,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 1,
+  "Google News %22AI+music%22": 30,
+  "Google News Suno+OR+Udio": 17,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 14,
+  "Google News %22AI%22+music+producer+plugin": 1,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 3,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 4,
-  "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 2
+  "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 1
  }
 }
