@@ -1,0 +1,33 @@
+name: Verify the book's reading pages
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'the-names-he-carried/**/*.html'
+      - 'the-names-he-carried/index.html'
+      - 'the-names-he-carried/design/**'
+      - 'the-names-he-carried/img/*.svg'
+      - 'the-names-he-carried/book.json'
+      - 'the-names-he-carried/people.json'
+      - '.github/check-reading-paper.cjs'
+      - '.github/workflows/reading-paper.yml'
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            .github
+            the-names-he-carried
+      - name: Verify the light surfaces in Chromium
+        run: |
+          npm install --prefix "$RUNNER_TEMP/book-browser" --no-audit --no-fund playwright-core@1.55.0
+          export NODE_PATH="$RUNNER_TEMP/book-browser/node_modules"
+          python3 -m http.server 8787 --bind 127.0.0.1 > "$RUNNER_TEMP/book-http.log" 2>&1 &
+          for try in {1..20}; do curl -fsS -o /dev/null http://127.0.0.1:8787/ && break || sleep 0.5; done
+          node .github/check-reading-paper.cjs

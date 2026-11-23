@@ -120,7 +120,7 @@
     grid-template-columns:minmax(0,1.28fr) minmax(0,.72fr);align-content:center;align-items:end;
     column-gap:30px;row-gap:14px;margin-top:0;
     padding:clamp(44px,5vw,78px) clamp(24px,5vw,78px) 20px;
-    background:#102b2c;border-block-end:4px solid #ad9769;
+    background:#fff7e6;border-block-end:4px solid #ad9769;
   }
   .book-room .estate-cover::before {
     background:linear-gradient(90deg,#092421f7 0%,#0d2d28eb 24%,#12362c96 48%,#0d28261a 78%),
@@ -329,4 +329,24 @@
     }
     .book-room .estate-place {background:#fff7ead9;width:fit-content;padding:3px 5px}
   }
+}
+
+@media screen {
+  html:has(> body.scotland) {color-scheme:light;background:#fff9ec}
+  .scotland.book-room main,.scotland.archive-room main {color:#233b37}
+  .scotland.book-room .foot,.scotland.archive-room footer {
+    color:#3d5348;background:#e6ece1;border-top-color:#94ab9b;
+  }
+  .scotland.book-room .foot :is(a,p),.scotland.archive-room footer a {color:#244e59}
+  .scotland.book-room .foot p:first-child {color:#325443!important}
+  .archive-room main .family-read :is(figcaption,.family-source),
+  .archive-room main :is(.entry,.ref,.refline,.footnote,.date,.badge,.source-scope) {color:#4b6155}
+  .archive-room main :is(.tl a:hover,.family-jumps a,.family-print,.badge) {background:#e7eedf;color:#214f54}
+  .vault-room .vault-scene {
+    background:radial-gradient(ellipse at 50% 45%,#f5e6c4,#d5e1cf 55%,#94ada8);box-shadow:inset 0 0 0 6px #e3d8bc;
+  }
+  .vault-room .vault-scene::before {border-color:#aa9573}
+  .vault-room .shell .tile {background:linear-gradient(135deg,#fcf3da,#dae6d5);color:#264b40}
+  .vault-room .shell .tile :is(h3,p,.go) {color:#234a45}
+  .vault-room .shell .tile .plaque {color:#352c1e}
 }
