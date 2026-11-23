@@ -1023,6 +1023,40 @@
     "label": "Document: Sir Nathaniel Dunlop in the Baronetage and Knightage",
     "url": "docs/nathaniel-dunlop-knightage.html"
    }
+  ],
+  "papers": [
+   {
+    "label": "Hamilton Advertiser, Dec 30, 1905: Mr and Miss Dunlop's lecture and Christmas treat in Shieldhill Hall",
+    "url": "https://www.britishnewspaperarchive.com/image-viewer?issue=BL%2F0000471%2F19051230&page=6&article=141"
+   },
+   {
+    "label": "Motherwell Times, May 4, 1906: water supply for his houses at Quothquan",
+    "url": "https://www.britishnewspaperarchive.com/search-newspapers/results?startdate=1906-05-04&enddate=1906-05-04&keywords=Nathaniel+Dunlop+Shieldhill+water"
+   },
+   {
+    "label": "Hamilton Advertiser, Apr 6, 1907: the laird of Shieldhill chairs the Quothquan concert",
+    "url": "https://www.britishnewspaperarchive.com/image-viewer?issue=BL%2F0000471%2F19070406&page=6&article=113"
+   },
+   {
+    "label": "Naval & Military Record, Jun 6, 1907: \"Dr. Nathaniel Dunlop\" at the King's turbine yacht",
+    "url": "https://www.britishnewspaperarchive.com/search-newspapers/results?startdate=1907-06-06&enddate=1907-06-06&keywords=%22Nathaniel+Dunlop%22"
+   },
+   {
+    "label": "The Scotsman, Jun 6, 1907: Shieldhill Estate leases",
+    "url": "https://www.britishnewspaperarchive.com/search-newspapers/results?startdate=1907-06-06&enddate=1907-06-06&keywords=Shieldhill+Estate"
+   },
+   {
+    "label": "Daily Record, Jun 22, 1907: \"Dr Nathaniel Dunlop\" speaks aboard the Marmion",
+    "url": "https://www.britishnewspaperarchive.com/search-newspapers/results?startdate=1907-06-22&enddate=1907-06-22&keywords=%22Nathaniel+Dunlop%22"
+   },
+   {
+    "label": "Morning Post, Jun 28, 1907: the new knights",
+    "url": "https://www.britishnewspaperarchive.com/search-newspapers/results?startdate=1907-06-28&enddate=1907-06-28&keywords=Nathaniel+Dunlop+Shieldhill"
+   },
+   {
+    "label": "Liverpool Journal of Commerce, Oct 24, 1907: \"Dr. Nathaniel Dunlop,\" chairman of the Clyde Trust",
+    "url": "https://www.britishnewspaperarchive.com/search-newspapers/results?startdate=1907-10-24&enddate=1907-10-24&keywords=%22Nathaniel+Dunlop%22"
+   }
   ]
  },
  {
@@ -1054,7 +1088,29 @@
     "url": "https://earth.google.com/web/search/Shieldhill%20Castle%2C%20Quothquan%2C%20Biggar"
    }
   ],
-  "role": "Owner's daughter"
+  "role": "Owner's daughter",
+  "papers": [
+   {
+    "label": "Hamilton Advertiser, Dec 29, 1900: Miss Dunlop's gift for the Quothquan Christmas party",
+    "url": "https://www.britishnewspaperarchive.com/search-newspapers/results?startdate=1900-12-29&enddate=1900-12-29&keywords=Quothquan+Dunlop"
+   },
+   {
+    "label": "Hamilton Advertiser, Dec 30, 1905: Mr and Miss Dunlop's Christmas treat in Shieldhill Hall",
+    "url": "https://www.britishnewspaperarchive.com/image-viewer?issue=BL%2F0000471%2F19051230&page=6&article=141"
+   },
+   {
+    "label": "Hamilton Advertiser, Apr 6, 1907: the winter classes; Miss Dunlop at the piano",
+    "url": "https://www.britishnewspaperarchive.com/image-viewer?issue=BL%2F0000471%2F19070406&page=6&article=113"
+   },
+   {
+    "label": "Hamilton Advertiser, Apr 13, 1912: concert in Shieldhill Hall",
+    "url": "https://www.britishnewspaperarchive.com/image-viewer?issue=BL%2F0000471%2F19120413&page=6&article=006"
+   },
+   {
+    "label": "Hamilton Advertiser, Nov 16, 1918: Women's Rural Institute formed in Shieldhill Hall",
+    "url": "https://www.britishnewspaperarchive.com/image-viewer?issue=BL%2F0000471%2F19181116&page=5&article=198"
+   }
+  ]
  },
  {
   "slug": "shieldhill",
