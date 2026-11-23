@@ -32,6 +32,15 @@ const base = '/the-names-he-carried/';
       await panel.getByRole('button',{name:'Copy link'}).click();
       assert.equal(await page.evaluate(()=>navigator.clipboard.readText()),expected);
       assert.equal(await panel.getByRole('status').textContent(),'Link copied.');
+      await panel.getByRole('button',{name:'Copy image',exact:true}).click();
+      await page.waitForFunction(()=>document.querySelector('.book-share-panel [role=status]').textContent.startsWith('Image copied.'));
+      const copiedSize = await page.evaluate(async()=>{
+        const items = await navigator.clipboard.read();
+        const png = await items[0].getType('image/png');
+        const bitmap = await createImageBitmap(png);
+        return [bitmap.width,bitmap.height];
+      });
+      assert.deepEqual(copiedSize,[1200,630]);
       await panel.getByRole('button',{name:'Share link…'}).click();
       assert.equal(await page.evaluate(()=>window.testShare.url),expected);
       await share.click();

@@ -9,6 +9,7 @@
     <div class="share-interior"><h2 id="book-share-title">Share this page</h2>
     <input class="share-link" aria-label="Link to this page" readonly spellcheck="false">
     <div class="share-choices"><button type="button" data-copy>Copy link</button>
+    <button type="button" data-copy-image hidden>Copy image</button>
     <button type="button" data-send hidden>Share link…</button>
     <button type="button" data-photo hidden>Share image…</button>
     <a href="${image}" download="The-Names-He-Carried.jpg">Save image</a></div>
@@ -60,6 +61,29 @@
       let copied = false;
       try { copied = document.execCommand('copy'); } catch {}
       status.textContent = copied ? 'Link copied.' : 'The link is selected. Use Copy on your device.';
+    }
+  });
+
+  async function clipboardImage() {
+    const artwork = panel.querySelector('img');
+    await artwork.decode();
+    const canvas = document.createElement('canvas');
+    canvas.width = artwork.naturalWidth;
+    canvas.height = artwork.naturalHeight;
+    canvas.getContext('2d').drawImage(artwork,0,0);
+    return new Promise((resolve,reject) =>
+      canvas.toBlob(blob => blob ? resolve(blob) : reject(new Error('Image unavailable')), 'image/png'));
+  }
+
+  const copyImage = panel.querySelector('[data-copy-image]');
+  copyImage.hidden = !(typeof ClipboardItem === 'function' && navigator.clipboard?.write);
+  copyImage.addEventListener('click', async () => {
+    try {
+      // Start the clipboard write during the tap, while the PNG is prepared.
+      await navigator.clipboard.write([new ClipboardItem({'image/png':clipboardImage()})]);
+      status.textContent = 'Image copied. Paste it into your conversation.';
+    } catch {
+      status.textContent = 'Use Save image to attach the artwork, or Copy link to send the page.';
     }
   });
 
