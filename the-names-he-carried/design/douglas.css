@@ -229,3 +229,104 @@
   .vault-room .shell header :is(.eyebrow,.source-scope) {color:#decae3}
   .vault-room .shell .rule {border-bottom-color:#b18bb7}
 }
+
+/* Reading paper and inks. The deep colours belong on cloth, flags and bindings. */
+@media screen {
+  body.scotland {
+    color-scheme:light;
+    --paper:#fff9ec;--ink:#233b37;--soft:#495d59;--dim:#58665a;--muted:#4e6159;
+    --rule:#c4cdbd;--line:#abb9ac;--accent:#20597a;--panel:#eef2e6;--text:var(--ink);
+    color:var(--ink);background:linear-gradient(135deg,#e9f1e5,#f6f1dd 58%,#ede6ec);
+  }
+  .scotland :focus-visible {outline-color:#a34a65}
+  .book-room #view {background:var(--paper)}
+  .book-room .side {background:linear-gradient(152deg,#edf4e8,#e2ecdf 48%,#e4e9ef);border-color:#91aca1}
+  html.red .book-room #side h4 {color:#385e4b}
+  html.red .book-room #side h4:nth-of-type(3n+2) {color:#734d78}
+  .book-room #side a,.book-room #side .role {color:#314741;border-color:#bbcabe}
+  .book-room #side .role {color:#56665f}
+  .book-room #side a:hover,.book-room #side a[aria-current=true] {background:#ccdfd2;color:#183e32}
+  .book-room .top {background:#fcf8ea;border-bottom:2px solid #a8bdad}
+  .book-room .top .brand {color:#18493c}
+  .book-room .top .tab {color:#314c52}
+  .book-room .top .tab:hover,.book-room .top .tab[aria-current=true] {color:#15442f;background:#dfeee1;border-color:#4e7f6b}
+  .book-room .top select,.book-room .quick :is(a,button) {color:#1c4964;background:#edf2f1;border-color:#91adaf}
+  .book-room .nv {background:#e6ece3;border-color:#a6b5a9}
+  html .book-room .nv :is(a,button) {background:#225d50;color:white}
+  .book-room .estate-cover::before {
+    background:linear-gradient(90deg,#fff7e6 0%,#fff7e5f7 18%,#fff1d9d6 36%,#f8edd156 57%,transparent 77%),
+               url("../img/shieldhill-castle.jpg") center 49% / cover no-repeat;
+  }
+  .book-room .estate-cover::after {content:none}
+  .book-room .hero .estate-title {font:500 clamp(56px,5.4vw,85px)/.98 Georgia,serif;letter-spacing:-.058em;text-transform:none;text-wrap:initial;color:#164c3e;text-shadow:none}
+  .book-room .estate-title em {color:#774d77}
+  .book-room .estate-place,.book-room .estate-copy .lab {color:#385c4b}
+  .book-room .estate-place::before {background:#8e5e84}
+  .book-room .estate-subtitle {color:#253e4d}
+  html .book-room .estate-actions .go {background:#1b5948;color:#fff9e9;border-color:#1b5948}
+  html .book-room .estate-actions .go:hover {background:#28745d;color:#fff}
+  .book-room .estate-actions .family-link {color:white}
+  .book-room .estate-actions .family-link:last-child {color:#244e64}
+  .book-room .estate-caption {color:#fff;background:#183b35ed}
+  .book-room .research-counts {background:#f1e6cc}
+  .book-room #view > :not(.hero,.research-counts) {color:#253d39}
+  .book-room #view :is(.big,.row b,.toc-row,.toc-row .t,.recrow .y,.person b,.pg-person h3,.sec h3,.stop b) {color:#214c59}
+  .book-room #view :is(.part .lab,.toc-row .n,.headline .mast,.recrow .y,.pg-person h3,.crd,.lab:not(.estate-copy .lab)) {color:#764f76}
+  .book-room #view :is(.intro,.lede,.cap,.note,.note2,.imglink,.src,.ref,.dl small,.row span,.toc-row .e,.fam b,.plist a span) {color:#4c605a}
+  .book-room #view :is(.film,.route,.toc,.sec,.beside,.chap) a:not(.scanbtn,.abtn),
+  .book-room #view .lnk {color:#185877;text-decoration-color:#6e8f98}
+  .book-room #view .opener {
+    --soft:#465d63;color:#20483b;background:linear-gradient(112deg,#e0ebdb,#edf2e6 42%,#e2eaf3);
+    padding:clamp(24px,4vw,48px) 16px;border-block:1px solid #9ab2a2;border-inline-start-color:#9a7399;
+  }
+  .book-room .opener .num {-webkit-text-stroke-color:#448175}
+  html .book-room .chap .body>p:first-of-type::first-letter {color:#8c557f}
+  .book-room #view :is(.sbox,.extlinks,.proof,.aplayer,.alist li.on,.pager .pg:hover) {color:#28463d;background:#e8efe3;border-color:#9db1a0}
+  .book-room #view .rec {color:#594978!important}
+  .book-room .stops::before,.book-room #view :is(.rows,.tl,.part,.pager,.headline,.sec h3,.chap blockquote) {border-color:#a3b5a5}
+  .book-room .stop i {background:#39755d;box-shadow:0 0 0 4px var(--paper)}
+  .book-room .foot,.book-room .foot a {color:#e3eee0}
+  body.archive-room:not(.vault-room) {--gold:#764e75;--brass:#455d42}
+  .archive-room:not(.vault-room) > main,.archive-room:not(.light-room):not(.vault-room) > main {
+    background:var(--paper);color:#233c36;
+    border-inline-start-color:#6d98b3;border-inline-end-color:#c3aec3;
+  }
+  .archive-room:not(.vault-room) main :is(h1,h4),.archive-room:not(.vault-room) header h1 {color:#1c4c53}
+  .archive-room:not(.vault-room) main :is(h2,h3),.archive-room:not(.light-room,.vault-room) main section h3 {color:#754e73;border-color:#9cb1a4}
+  .archive-room:not(.vault-room) main :is(.lab,.tag,.k,.eyebrow,.event h3,.d) {color:#6e4d70}
+  .archive-room:not(.vault-room) main :is(.meta,.cap,.note,.note2,.src,.small,.n,.count,.source-scope,.source-scope b,.eyebrow,small) {color:#4a6056}
+  .archive-room:not(.vault-room) main a,.archive-room:not(.vault-room) nav.top a,.archive-room:not(.vault-room) nav.small a {color:#215775}
+  .archive-room:not(.vault-room) main a:hover {color:#724972}
+  .archive-room:not(.vault-room) main :is(.sbs,.box,.standard,.family-read,pre,.sbs th) {color:#243d35;background:#edf2e7;border-color:#aac0af}
+  .archive-room:not(.vault-room) main :is(thead,th) {color:#29493c;background:#dce9dc}
+  .archive-room:not(.vault-room) main tbody tr:nth-child(even) {background:#edf1e6}
+  .archive-room:not(.vault-room) main tbody tr:nth-child(odd) {background:#fbf7eb}
+  .archive-room:not(.vault-room) main :is(input,select,button),.archive-room:not(.vault-room) main .actions a {background:#edf2eb;color:#1c4f59;border-color:#799e90}
+  .archive-room:not(.vault-room) main :is(.tl a:hover,.pager a:hover) {color:#164442;background:#deebdf}
+  .archive-room:not(.vault-room) main source-counts b {color:#774e75}
+  .archive-room nav.nv {background:#deeadf;border-color:#92ac9a}
+  .archive-room nav.nv :is(a,button) {color:#fff;background:#22594d}
+  .case-room > header {color:#263f36;background:linear-gradient(90deg,#fff9eaf9 25%,#f7f0dfed 69%,#eef2e3b3),url("../img/shieldhill-castle.jpg") center 52%/cover}
+  .case-room > header .k {color:#704966}
+  body.vault-room {background:linear-gradient(135deg,#e2ecdf,#e2eaf0 55%,#eee5ed)}
+  .vault-room .shell {background:#faf4e6;border-inline:1px solid #bac7bb}
+  .vault-room .shell header h1,.vault-room .shell :is(.intro h2,.standard h2) {color:#235246}
+  .vault-room .shell header :is(.eyebrow,.source-scope),.vault-room .shell source-counts b {color:#744c73}
+  .vault-room .shell :is(.top a,source-counts a,.foot a) {color:#205778}
+  .vault-room .shell :is(.intro p,.standard p,.tally-note,.foot,.actions p) {color:#485e54}
+  .vault-room .shell .standard,.vault-room .shell .tally div {background:#e7efe3;color:#284a3c}
+  .vault-room .shell .tally :is(b,span) {color:#3e5a62}
+  .vault-room .shell .tile,.vault-room .shell .tile h3 {color:#f3e9d4}
+  .vault-room .tile .go {color:#d7e6cf}
+  body.fallback-room {color:#24493d}
+  .fallback-room a {color:#235c71}
+  @media(max-width:750px){.book-room .hero .estate-title {font-size:clamp(48px,8.1vw,65px)}}
+  @media(max-width:520px){
+    .book-room .hero .estate-title {font-size:clamp(45px,11.8vw,62px)}
+    .book-room .estate-cover::before {
+      background:linear-gradient(0deg,#fff6e4 0%,#fff6e4f7 28%,#fff6e4be 52%,#fff4de10 87%),
+                 url("../img/shieldhill-castle.jpg") 54% 40% / cover no-repeat;
+    }
+    .book-room .estate-place {background:#fff7ead9;width:fit-content;padding:3px 5px}
+  }
+}
