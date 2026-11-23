@@ -38,6 +38,10 @@ def verify(path):
         plates = 1  # Cover
         for chapter in source_json("book.json")["chapters"]:
             body = html.fragment_fromstring(chapter["html"], create_parent="div")
+            if evidence := chapter.get("evidenceNote"):
+                key = f"{chapter['label']} · {chapter['title']}"
+                if normalized(evidence["text"]) not in section_text[key]:
+                    raise ValueError(f"Missing evidence note in {key}")
             if chapter["label"] in ("Appendix", "Back Matter"):
                 rows = body.xpath("./*/p|.//ol/li|.//td|./*/h3")
                 for row in rows:

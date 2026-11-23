@@ -232,6 +232,12 @@ def build(output):
                 story.append(Paragraph(escape(para), SMALL))
                 continue
             story.append(Paragraph(escape(para).replace("\n","<br/>"), BODY))
+        evidence = narrative[label].get("evidenceNote")
+        if evidence:
+            story.append(Paragraph("What the records establish", SUB))
+            story.append(Paragraph(escape(evidence["text"]), NOTE))
+            for href, caption in evidence["links"]:
+                story.append(Paragraph(link(href if href.startswith("https://") else URL + href, caption), SMALL))
         for figure in html.fragment_fromstring(narrative[label]["html"],create_parent="div").xpath(".//figure"):
             plate(story,figure)
     section(story,"research","The case for Sir Nathaniel Dunlop","Research afterword")

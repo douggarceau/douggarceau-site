@@ -350,3 +350,18 @@
   .vault-room .shell .tile :is(h3,p,.go) {color:#234a45}
   .vault-room .shell .tile .plaque {color:#352c1e}
 }
+
+@media screen {
+  .book-room .evidence-note {margin:2em 0;padding:1em 1.25em;border-left:3px solid #845d80;background:#f1ecdf;color:#293e37}
+  .book-room .evidence-note h3 {margin:0 0 .4em;font-size:1.1em}
+  .book-room .evidence-note a {font-size:.9em}
+  .book-room #view :is(.proof li,.notes li,.source-scope),.book-room .sd source-counts b {color:#354f48}
+  html .book-room #view .scanbtn {background:#245948;color:#fff;border-color:#245948}
+  .book-room #side .role {color:#3b5a50}
+  .archive-room main :is(.muted,p.s,td),.vault-room .shell .intro strong {color:#344e43}
+  .archive-room main tr.k td {background:#d9e8d9;color:#1e4035}
+  .archive-room main .meta {overflow-wrap:anywhere;white-space:normal}
+  @media (max-width:550px) {
+    .archive-room main table {overflow-wrap:anywhere}
+  }
+}

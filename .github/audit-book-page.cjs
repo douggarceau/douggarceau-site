@@ -31,7 +31,7 @@ module.exports = function inspectPage() {
   }
   const issues=[];
   for(const img of document.images) if(!img.hasAttribute('alt'))issues.push('Missing alt: '+img.getAttribute('src'));
-  for(const e of document.querySelectorAll('button,a[href],select,input:not([type=hidden])')) if(visible(e)&&!text(e)&&!e.getAttribute('aria-label')&&!e.getAttribute('aria-labelledby')&&!e.getAttribute('title')&&!e.querySelector('img[alt]'))issues.push('Unnamed control: '+e.outerHTML.slice(0,130));
+  for(const e of document.querySelectorAll('button,a[href],select,input:not([type=hidden])')) if(visible(e)&&!text(e)&&!e.labels?.length&&!e.getAttribute('aria-label')&&!e.getAttribute('aria-labelledby')&&!e.getAttribute('title')&&!e.querySelector('img[alt]'))issues.push('Unnamed control: '+e.outerHTML.slice(0,130));
   const ids=[...document.querySelectorAll('[id]')].map(e=>e.id);
   for(const id of new Set(ids.filter((x,i)=>ids.indexOf(x)!==i)))issues.push('Duplicate id: '+id);
   const width=document.documentElement.clientWidth;
