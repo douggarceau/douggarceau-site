@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Web of Names · The Names He Carried</title>
+<meta name="description" content="An interactive map of every person in The Names He Carried and how they were connected: family, the households that raised Laurence, the Shieldhill estate, and the two Dunlop candidates.">
+<meta name="theme-color" content="#06120c">
+<style>
+:root{--ink:#f1ede4;--soft:#b9c4bb;--green:#2e6b3e;--lg:#8cc29a;--navy:#14284b}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:radial-gradient(ellipse at 50% 30%,#0f2418 0%,#06101b 55%,#020509 100%);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;overflow:hidden}
+.band{height:18px;background-color:#14284b;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 1px,transparent 1px 27px),repeating-linear-gradient(0deg,rgba(255,255,255,.4) 0 1px,transparent 1px 27px),repeating-linear-gradient(90deg,rgba(31,77,43,.92) 0 13px,transparent 13px 27px),repeating-linear-gradient(0deg,rgba(31,77,43,.7) 0 13px,transparent 13px 27px)}
+header{position:absolute;top:18px;left:0;right:0;padding:14px 20px;display:flex;gap:16px;align-items:flex-start;justify-content:space-between;pointer-events:none;z-index:3}
+header>*{pointer-events:auto}
+h1{font:700 28px/1.1 Georgia,serif;margin:0 0 4px}.sub{color:var(--soft);font-size:13px;max-width:520px;margin:0}
+nav a{color:var(--lg);font-weight:600;font-size:13px;margin-left:14px;text-decoration:none}
+#graph{position:absolute;left:0;right:0;bottom:0;top:18px;width:100%;height:calc(100% - 18px)}
+.ctrl{position:absolute;left:20px;right:20px;bottom:16px;z-index:3;display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#07130ecc;border:1px solid #234433;padding:10px 14px;border-radius:10px;backdrop-filter:blur(4px)}
+.ctrl label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
+#year{flex:1;min-width:180px;accent-color:#8cc29a}#yr{font:700 22px Georgia,serif;color:#fff;min-width:64px}
+button{background:#1f4d2b;color:#fff;border:1px solid #8cc29a;border-radius:6px;padding:7px 12px;font:600 13px Inter,system-ui,sans-serif;cursor:pointer}
+input[type=search]{background:#0b1a12;border:1px solid #2f4a38;color:#fff;border-radius:6px;padding:7px 10px;font:14px Inter,system-ui,sans-serif;width:200px}
+.legend{position:absolute;top:150px;left:20px;z-index:3;font-size:12px;color:var(--soft);background:#07130eb3;border:1px solid #234433;border-radius:10px;padding:10px 12px}
+.legend div{display:flex;align-items:center;gap:8px;margin:3px 0}.sw{width:12px;height:12px;border-radius:50%}.ln{width:26px;height:0;border-top:2px solid}
+#panel{position:absolute;top:110px;right:20px;width:330px;max-height:calc(100% - 210px);overflow:auto;z-index:4;background:#07130ef2;border:1px solid #2f5a40;border-radius:12px;padding:16px 18px;display:none;box-shadow:0 10px 40px #000a}
+#panel h2{font:700 22px/1.2 Georgia,serif;margin:0 0 2px}#panel .d{color:var(--lg);font-size:13px;margin-bottom:8px}#panel p{font-size:14px;color:#dfe6e0}
+#panel ul{padding-left:18px;margin:6px 0 10px}#panel li{font-size:13px;margin:2px 0}#panel li a{color:#fff;cursor:pointer;text-decoration:underline;text-decoration-color:#5f8f6c}
+#panel .go a{display:inline-block;margin:6px 8px 0 0;color:var(--lg);font-weight:600;font-size:13px}
+#panel .x{float:right;background:none;border:0;color:#9ab;font-size:20px;padding:0 4px}
+.node text{fill:#f3f0e8;font:600 11px Inter,system-ui,sans-serif;paint-order:stroke;stroke:#03080d;stroke-width:3px;pointer-events:none}
+@media(max-width:700px){.ctrl{gap:8px;padding:8px 10px;bottom:8px;left:8px;right:8px}.ctrl label,#all{display:none}input[type=search]{width:100%}.sub{font-size:12px}.legend{display:none}#panel{left:10px;right:10px;width:auto;top:auto;bottom:118px;max-height:45%}header{flex-direction:column}h1{font-size:22px}}
+</style></head><body>
+<div class="band" aria-hidden="true"></div>
+<header><div><h1>The Web of Names</h1><p class="sub">Every person in the story and how they were joined: blood, marriage, the households that raised Laurence, the Shieldhill estate, and the two Dunlop candidates. Drag, zoom, click anyone. Slide through the years to see who was alive.</p></div>
+<nav><a href="../">The book</a><a href="../sir-nathaniel/">The case</a><a href="../cold-case-file/how-do-we-know.html">Sources</a><a href="../families/">Are you family?</a></nav></header>
+<div class="legend" id="legend"></div>
+<svg id="graph" width="100%" height="100%" role="img" aria-label="Interactive network of the people in The Names He Carried"></svg>
+<aside id="panel" aria-live="polite"></aside>
+<div class="ctrl"><button id="play" type="button">Play the years</button><label for="year">Year</label><input id="year" type="range" min="1830" max="1961" step="1" value="1907"><span id="yr">1907</span><button id="all" type="button">Show everyone</button><input id="q" type="search" placeholder="Find a name…" aria-label="Find a name"></div>
+<script src="d3.min.js"></script>
+<script>
+const GROUPS={"Laurence":["#f1ede4","Laurence"],"His mother's family":["#8cc29a","His mother's family"],"Quothquan and Shieldhill":["#d8b77b","Quothquan and Shieldhill"],"The family that raised him":["#6fa8dc","The family that raised him"],"His wife's family":["#c58fd6","His wife's family"]};
+const ETYPE={family:["#6f8f7a","Family",""],marriage:["#c9a0dc","Marriage",""],raised:["#6fa8dc","Raised / took in",""],estate:["#d8b77b","Estate and village",""],candidate:["#e06666","Candidate father (unproven)","6,5"]};
+function yrs(s){s=String(s||'');const m=s.match(/\d{4}/g)||[];let b=m[0]?+m[0]:null,d=null;if(/–|-/.test(s)&&m[1]&&!/and/.test(s))d=+m[1];if(/^married/.test(s)){b=null}return[b,d]}
+function etype(r){r=r.toLowerCase();if(/wife|husband/.test(r))return'marriage';if(/raise|took/.test(r))return'raised';if(/owner|gardener|estate|cottage|mains|house/.test(r))return'estate';return'family'}
+fetch('../people.json').then(r=>r.json()).then(d=>{
+ const P=(Array.isArray(d)?d:d.people).slice();
+ P.push({slug:'binnie-dunlop',name:'Dr Binnie Dunlop',dates:'1874–1946',group:'Quothquan and Shieldhill',role:"Sir Nathaniel's nephew, a Glasgow doctor",story:["Binnie Dunlop, son of Sir Nathaniel's brother Dr James Dunlop, was a medical doctor in Glasgow, single, and in the autumn of 1906 the only \"Dr Dunlop\" in the family. No record yet places him at Shieldhill. He moved to England by 1908 and died in 1946."],lineage:[{rel:'Uncle',who:'Sir Nathaniel Dunlop',slug:'nathaniel-dunlop'}],external:true});
+ const by=Object.fromEntries(P.map(p=>[p.slug,p]));const E=new Map();const LB={};const lab=(a,b,r)=>{(LB[a]=LB[a]||{})[b]=r};
+ const add=(a,b,t,label)=>{if(!by[a]||!by[b]||a===b)return;const k=[a,b].sort().join('|');if(!E.has(k))E.set(k,{source:a,target:b,type:t,label:label||''})};
+ for(const p of P)for(const l of p.lineage||[])if(l.slug&&by[l.slug]){add(p.slug,l.slug,etype(l.rel),l.rel);lab(p.slug,l.slug,l.rel)}
+ add('agnes-mcgarth-brown','mary-archibald','raised','Took Agnes in, 1906–07');
+ add('agnes-mcgarth-brown','alexander-archibald','estate','Neighbors from 1891');
+ add('agnes-mcgarth-brown','shieldhill','estate','Gean Cottage, Shieldhill: her home in 1907');
+ add('binnie-dunlop','nathaniel-dunlop','family','Nephew');
+ E.set('cand1',{source:'laurence-brown-douglas',target:'nathaniel-dunlop',type:'candidate',label:'Candidate father'});
+ E.set('cand2',{source:'laurence-brown-douglas',target:'binnie-dunlop',type:'candidate',label:'Candidate father'});
+ const links=[...E.values()];const deg={};links.forEach(l=>{deg[l.source]=(deg[l.source]||0)+1;deg[l.target]=(deg[l.target]||0)+1});
+ const nodes=P.map(p=>{const[b,dd]=yrs(p.dates);return{id:p.slug,p,b,d:dd,r:7+Math.sqrt(deg[p.slug]||1)*3.2+(p.slug==='laurence-brown-douglas'?8:0)}});
+ document.getElementById('legend').innerHTML='<b style="color:#fff">People</b>'+Object.values(GROUPS).map(g=>`<div><span class="sw" style="background:${g[0]}"></span>${g[1]}</div>`).join('')+'<b style="color:#fff;display:block;margin-top:6px">Connections</b>'+Object.values(ETYPE).map(e=>`<div><span class="ln" style="border-color:${e[0]};${e[2]?'border-top-style:dashed':''}"></span>${e[1]}</div>`).join('');
+ const svg=d3.select('#graph');const W=()=>innerWidth,H=()=>innerHeight-18;const g=svg.append('g');
+ svg.call(d3.zoom().scaleExtent([.3,4]).on('zoom',e=>g.attr('transform',e.transform)));
+ const defs=svg.append('defs');const gl=defs.append('filter').attr('id','glow');gl.append('feGaussianBlur').attr('stdDeviation',4).attr('result','b');const mg=gl.append('feMerge');mg.append('feMergeNode').attr('in','b');mg.append('feMergeNode').attr('in','SourceGraphic');
+ const link=g.append('g').selectAll('line').data(links).join('line').attr('stroke',l=>ETYPE[l.type][0]).attr('stroke-width',l=>l.type==='candidate'?2.4:1.6).attr('stroke-dasharray',l=>ETYPE[l.type][2]||null).attr('stroke-opacity',.75);
+ const node=g.append('g').selectAll('g').data(nodes).join('g').attr('class','node').style('cursor','pointer');
+ node.append('circle').attr('r',n=>n.r).attr('fill',n=>(GROUPS[n.p.group]||['#999'])[0]).attr('stroke',n=>n.id==='laurence-brown-douglas'?'#fff':'#06101b').attr('stroke-width',n=>n.id==='laurence-brown-douglas'?3:1.5).attr('filter',n=>n.id==='laurence-brown-douglas'?'url(#glow)':null);
+ node.append('text').attr('dy',n=>n.r+13).attr('text-anchor','middle').text(n=>n.p.name.replace(/ \(.*\)/,''));
+ const sim=d3.forceSimulation(nodes).force('link',d3.forceLink(links).id(n=>n.id).distance(l=>l.type==='estate'?110:l.type==='candidate'?170:80).strength(.5)).force('charge',d3.forceManyBody().strength(-420)).force('center',d3.forceCenter(W()/2,H()/2)).force('collide',d3.forceCollide(n=>n.r+16))
+  .force('gx',d3.forceX(n=>{const G=n.p.group;const k=Math.min(1,W()/1200);return W()/2+k*({'His mother\'s family':-260,'Quothquan and Shieldhill':-60,'The family that raised him':240,"His wife's family":260,'Laurence':0}[G]||0)}).strength(.06)).force('gy',d3.forceY(n=>{const G=n.p.group;return H()/2+({"His wife's family":200,'Quothquan and Shieldhill':-170}[G]||0)}).strength(.05));
+ sim.on('tick',()=>{link.attr('x1',l=>l.source.x).attr('y1',l=>l.source.y).attr('x2',l=>l.target.x).attr('y2',l=>l.target.y);node.attr('transform',n=>`translate(${n.x},${n.y})`)});
+ node.call(d3.drag().on('start',(e,n)=>{if(!e.active)sim.alphaTarget(.3).restart();n.fx=n.x;n.fy=n.y}).on('drag',(e,n)=>{n.fx=e.x;n.fy=e.y}).on('end',(e,n)=>{if(!e.active)sim.alphaTarget(0);n.fx=null;n.fy=null}));
+ const nb=id=>new Set(links.filter(l=>l.source.id===id||l.target.id===id).flatMap(l=>[l.source.id,l.target.id]));
+ let year=1907,all=false,focus=null;
+ const alive=n=>all||n.id==='shieldhill'||n.b==null||(n.b<=year&&(n.d==null?year<=n.b+90:year<=n.d));
+ function paint(){const f=focus?nb(focus):null;node.attr('opacity',n=>(f&&!f.has(n.id))?.12:alive(n)?1:.14);link.attr('stroke-opacity',l=>{const on=alive(l.source)&&alive(l.target);if(f)return(l.source.id===focus||l.target.id===focus)?.95:.05;return on?.75:.08})}
+ function show(id){const n=nodes.find(x=>x.id===id);if(!n)return;focus=id;const p=n.p;const rel=links.filter(l=>l.source.id===id||l.target.id===id).map(l=>{const o=l.source.id===id?l.target:l.source;const t=(LB[id]&&LB[id][o.id])||(l.type==='candidate'||!LB[o.id]?l.label:ETYPE[l.type][1]);return`<li><a data-id="${o.id}">${o.p.name}</a> — ${t}</li>`}).join('');
+  const anc=(p.links||[]).filter(x=>/ancestry\.com\/family-tree/.test(x.url)).map(x=>`<a href="${x.url}" target="_blank" rel="noopener">Ancestry tree ↗</a>`).join('');
+  document.getElementById('panel').innerHTML=`<button class="x" aria-label="Close">×</button><h2>${p.name}</h2><div class="d">${p.dates||''}${p.role?' · '+p.role:''}</div><p>${((p.story||[])[0]||'').slice(0,420)}${((p.story||[])[0]||'').length>420?'…':''}</p><b>Connections</b><ul>${rel}</ul><div class="go">${p.external?'<a href="../sir-nathaniel/">Read the case →</a>':`<a href="../#person-${p.slug}">Full page →</a>`}${anc}</div>`;
+  const pn=document.getElementById('panel');pn.style.display='block';pn.querySelector('.x').onclick=()=>{pn.style.display='none';focus=null;paint()};pn.querySelectorAll('a[data-id]').forEach(a=>a.onclick=()=>show(a.dataset.id));paint()}
+ node.on('click',(e,n)=>{e.stopPropagation();show(n.id)}).on('mouseenter',(e,n)=>{if(!focus){const f=nb(n.id);node.attr('opacity',m=>f.has(m.id)?1:.25);link.attr('stroke-opacity',l=>(l.source.id===n.id||l.target.id===n.id)?.95:.06)}}).on('mouseleave',()=>{if(!focus)paint()});
+ svg.on('click',()=>{if(focus){document.getElementById('panel').style.display='none';focus=null;paint()}});
+ const ys=document.getElementById('year'),yo=document.getElementById('yr');ys.oninput=()=>{all=false;year=+ys.value;yo.textContent=year;paint()};
+ document.getElementById('all').onclick=()=>{all=true;yo.textContent='All';paint()};
+ let timer=null;document.getElementById('play').onclick=e=>{if(timer){clearInterval(timer);timer=null;e.target.textContent='Play the years';return}all=false;year=1830;e.target.textContent='Pause';timer=setInterval(()=>{year+=1;ys.value=year;yo.textContent=year;paint();if(year>=1961){clearInterval(timer);timer=null;e.target.textContent='Play the years'}},90)};
+ document.getElementById('q').oninput=e=>{const q=e.target.value.toLowerCase().trim();if(!q){paint();return}const hit=nodes.find(n=>n.p.name.toLowerCase().includes(q));if(hit)show(hit.id)};
+ addEventListener('resize',()=>{sim.force('center',d3.forceCenter(W()/2,H()/2));sim.alpha(.3).restart()});
+ paint();if(innerWidth>700)setTimeout(()=>show('laurence-brown-douglas'),1200);
+});
+</script></body></html>
