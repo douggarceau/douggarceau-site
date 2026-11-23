@@ -221,13 +221,27 @@ html.red .opener::after{content:"";display:block;width:60px;height:3px;backgroun
 .film{max-width:900px;margin:0 auto;padding:40px 0;border-bottom:1px solid var(--rule)}.film video{display:block;width:100%;height:auto;background:#000;margin:18px 0}.film .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:22px 0 10px}.film .gal figure{margin:0}.film .gal img{display:block;width:100%;height:auto}.film .gal figcaption{font-size:13px;color:var(--soft);margin-top:6px}.film .credit{font-size:13px;color:var(--soft);margin:6px 0 0}
 .rec{font:600 11px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#ef5350!important;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px;white-space:nowrap;margin-left:2px;vertical-align:1px}.rec:hover{opacity:.75}
 #side .role{color:#9a9a9a;font-weight:400}
+
+/* Home: the author's cover against the Shieldhill estate photograph. */
+.hero.estate-cover{isolation:isolate;position:relative;overflow:hidden;max-width:none;margin-inline:calc(-1 * max(4vw,18px));padding:clamp(32px,5vw,72px) clamp(20px,5vw,72px) 18px;text-align:left;background:#101411;color:#fff7e7}
+.estate-cover::before{content:"";position:absolute;z-index:-2;inset:0;background:linear-gradient(90deg,#101410 1%,rgba(16,20,16,.92) 21%,rgba(16,20,16,.48) 48%,rgba(16,20,16,.02) 78%),linear-gradient(0deg,#111510 0%,transparent 28%),url("img/shieldhill-castle.jpg") right 51% / 76% auto no-repeat}
+.estate-cover .cover-block{max-width:370px}
+.estate-cover .cover{max-width:clamp(180px,19vw,262px);margin:0 0 23px;box-shadow:2px 5px 22px #0009;outline:1px solid #a990644f}
+.estate-cover .lab{margin:0 0 5px;color:#eee1c7;letter-spacing:.12em}
+.estate-cover .covcred{margin:0;color:#e5dbc9;opacity:1}
+.estate-actions{display:flex;align-items:flex-start;flex-wrap:wrap;gap:10px 17px;margin:20px 0 0}
+.estate-actions .go{font-size:16px;padding:14px 18px}
+.estate-actions .family-link{display:block;width:fit-content;background:#151912e8;color:#fff4dd;border:1px solid #a99c79;text-decoration:none;padding:10px 12px;font:600 15px/1.4 Inter,system-ui,sans-serif}
+.estate-caption{text-align:right;margin:20px 0 0;font:500 13px/1.5 Inter,system-ui,sans-serif;color:#e3d7bc}.estate-caption a{color:inherit}
+@media(max-width:640px){.hero.estate-cover{padding:clamp(100px,32vw,160px) 20px 16px}.estate-cover::before{background:linear-gradient(0deg,#101410 3%,rgba(16,20,16,.92) 25%,rgba(16,20,16,.24) 66%,rgba(16,20,16,.05)),url("img/shieldhill-castle.jpg") center 47% / cover no-repeat}.estate-cover .cover{max-width:clamp(145px,42vw,220px);margin-bottom:16px}.estate-caption{text-align:left;margin-top:24px}}
+
 </style></head><body>
 <nav class="side" id="side" aria-label="People in the book"></nav><header class="top"><div class="wrap">
 <a class="brand" href="#" data-go="start">The Names He Carried: The Laurence Brown Douglas Story</a>
 <select class="jump" id="jump" aria-label="Go to chapter"></select>
 <nav class="tabs" aria-label="Sections">
 <button class="tab" data-go="start">Home</button><a class="tab" href="grand-jury/#for-our-family">For our family</a><button class="tab" data-go="contents">Read the book</button><button class="tab" data-go="records">Records</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><button class="tab" data-go="people">People</button><button class="tab" data-go="tree">Family tree</button><button class="tab" data-go="person-shieldhill">Shieldhill Estate</button><button class="tab" data-go="sources">Sources and documents</button><a class="tab" href="ship-and-journey/">Laurence's Ship, 1929</a><a class="tab" href="janet-ships/">Janet's Ships</a><a class="tab" href="anderson-ship/">Mrs. Anderson's Ship, 1934</a><a class="tab" href="cold-case-file/">Cold Case File</a><a class="tab" href="grand-jury/">Was Laurence the Son of a Knight?</a>
-<a class="tab" href="sir-nathaniel/">The Case for Sir Nathaniel</a>
+<a class="tab" href="sir-nathaniel/">The Case for Sir Nathaniel Dunlop</a>
 <a class="tab" href="cold-case-file/evidence-vault.html">The Evidence Vault</a>
 <a class="tab" href="cold-case-file/how-do-we-know.html">How Do We Know All This?</a><button class="tab" id="tab-listen" data-go="listen" hidden>Listen to the audiobook</button>
 </nav></div></header>
@@ -251,8 +265,7 @@ function index(){
 const linkFor=([t,x])=>t==='scan'?`<a class="scan" href="${esc(x.page||x.file)}" target="_blank" rel="noopener">Open the document</a>`:ext(x.url,x.title);
 
 function route(){return `<section class="route"><p class="lab">Places in his life</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
-function home(){return `<section class="hero"><p style="margin:0 auto 1.2em;font-size:1.2rem"><a class="go" href="grand-jury/#for-our-family">Read the family story and see the maps</a></p><h1 class="cover"><img src="img/cover-portrait.jpg" width="1024" height="1536" alt="The Names He Carried: The Laurence Brown Douglas Story"></h1><p class="lab">A book by Doug Garceau</p><p class="covcred">Cover design and image by Doug Garceau</p>
-<button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button></section>
+function home(){return `<section class="hero estate-cover"><div class="cover-block"><h1 class="cover"><img src="img/cover-portrait.jpg" width="1024" height="1536" fetchpriority="high" alt="The Names He Carried: The Laurence Brown Douglas Story"></h1><p class="lab">A book by Doug Garceau</p><p class="covcred">Cover design and image by Doug Garceau</p><div class="estate-actions"><button class="go" data-go="chapter-${last||1}">${last>1?'Keep reading where you left off':'Read the book'}</button><a class="family-link" href="grand-jury/#for-our-family">Read the family story and see the maps</a></div></div><p class="estate-caption">Shieldhill, 2009 · <a href="https://www.geograph.org.uk/photo/1481532">Adam Sommerville</a> · <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC BY-SA 2.0</a></p></section>
 <section class="film"><h2 class="big">The film</h2><p class="lede">His life in four minutes, told with the real records.</p>
 <video controls autoplay muted playsinline preload="metadata" poster="video/film-poster.jpg" width="1920" height="1080"><source src="video/the-names-he-carried-film.mp4" type="video/mp4"></video></section>${route()}
 <section class="beside"><h2 class="big">Beside the book</h2><p class="lede">The records and sources behind the story, in one place.</p>
