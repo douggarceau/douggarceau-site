@@ -109,7 +109,7 @@
   .book-room .side a:hover,.book-room .side a[aria-current=true] {background:#234a40}
   .book-room .opener {background:linear-gradient(130deg,#1a4638,#142e3a);border-color:#718877;padding-inline:clamp(14px,3vw,36px)}
   html .book-room .opener::after {width:96px;height:8px;background:var(--weave) center/96px;border-block:1px solid #ad986f}
-  html .book-room .chap .body>p:first-of-type::first-letter {color:#e5c087}
+  html .book-room .chap .opening-line::first-letter {color:#e5c087}
   .book-room :is(.part,.big,.toc-row .n,.pg-person h3) {color:#ebcc99}
   .book-room .foot {background:#0e2726;border-top:1px solid #6f816e}
   .book-room :is(.sbox,.extlinks,.proof,.aplayer) {background:#122f2c;border-color:#688c76}
@@ -280,7 +280,7 @@
     padding:clamp(24px,4vw,48px) 16px;border-block:1px solid #9ab2a2;border-inline-start-color:#9a7399;
   }
   .book-room .opener .num {-webkit-text-stroke-color:#448175}
-  html .book-room .chap .body>p:first-of-type::first-letter {color:#8c557f}
+  html .book-room .chap .opening-line::first-letter {color:#8c557f}
   .book-room #view :is(.sbox,.extlinks,.proof,.aplayer,.alist li.on,.pager .pg:hover) {color:#28463d;background:#e8efe3;border-color:#9db1a0}
   .book-room #view .rec {color:#594978!important}
   .book-room .stops::before,.book-room #view :is(.rows,.tl,.part,.pager,.headline,.sec h3,.chap blockquote) {border-color:#a3b5a5}

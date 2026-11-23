@@ -31,11 +31,21 @@ async function check() {
       });
       const page = await context.newPage();
       const failures = [];
+      const audit = {};
+      const inspect = require("./audit-book-page.cjs");
       const targets = [...files, ...routes.map(r => folder + '/#' + r)];
       for (const target of targets) {
         await page.goto(server + target, { waitUntil: 'load' });
         if (target.includes('#') || target === folder + '/index.html')
           await page.waitForSelector('#view > section, #view > article', { state: 'attached' });
+        const observed = await page.evaluate(inspect);
+        audit[target] = observed;
+        if (width === 1440) { delete observed.links; delete observed.blocks; delete observed.ids; }
+        if (target.endsWith('#chapter-1')) {
+          assert.match(observed.opening[0], /pocket watch/i);
+          assert.equal(observed.records.length, 1, 'Prologue birth-register link');
+          assert.equal(await page.locator('.body .alisten').count(), 0);
+        }
         const dark = await page.evaluate(() => {
           const main = document.querySelector('main');
           if (!main || !document.querySelector('.cloth-band')) return ['missing page or tartan'];
@@ -54,6 +64,8 @@ async function check() {
         });
         if (dark.length) failures.push([target, dark]);
       }
+      fs.mkdirSync('book-audit-results', {recursive:true});
+      fs.writeFileSync('book-audit-results/'+width+'.json', JSON.stringify(audit));
       for (const asset of assets) {
         await page.goto(server + folder + '/' + asset);
         assert.equal(await page.locator('svg > rect').first().getAttribute('fill'), '#fff9ec', asset);

@@ -11,6 +11,7 @@ on:
       - 'the-names-he-carried/book.json'
       - 'the-names-he-carried/people.json'
       - '.github/check-reading-paper.cjs'
+      - '.github/audit-book-page.cjs'
       - '.github/check-book-sharing.cjs'
       - '.github/workflows/reading-paper.yml'
 permissions:
@@ -33,3 +34,10 @@ jobs:
           for try in {1..20}; do curl -fsS -o /dev/null http://127.0.0.1:8787/ && break || sleep 0.5; done
           node .github/check-book-sharing.cjs
           node .github/check-reading-paper.cjs
+      - name: Retain the page-by-page audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: book-page-audit
+          path: book-audit-results
+          retention-days: 7
