@@ -1,35 +1,3 @@
 {
- "full": null,
- "items": [
-  {
-   "i": 1,
-   "n": 1,
-   "title": "Prologue: The Watch",
-   "file": "audio/01-prologue-the-watch.mp3"
-  },
-  {
-   "i": 2,
-   "n": 2,
-   "title": "Chapter 1: The Ploughmen",
-   "file": "audio/02-chapter-1-the-ploughmen.mp3"
-  },
-  {
-   "i": 3,
-   "n": 3,
-   "title": "Chapter 2: Agnes",
-   "file": "audio/03-chapter-2-agnes.mp3"
-  },
-  {
-   "i": 5,
-   "n": 5,
-   "title": "Chapter 4: The Knight of Shieldhill",
-   "file": "audio/05-chapter-4-the-knight-of-shieldhill.mp3"
-  },
-  {
-   "i": 13,
-   "n": 13,
-   "title": "Chapter 12: The Douglases",
-   "file": "audio/13-chapter-12-the-douglases.mp3"
-  }
- ]
+ "items": []
 }
