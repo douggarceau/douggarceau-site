@@ -1,38 +1,57 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>The Web of Names · The Names He Carried</title>
+<meta property="og:title" content="The Web of Names">
+<meta property="og:description" content="An interactive map of every person in The Names He Carried and how they were connected: family, the households that raised Laurence, the Shieldhill estate, and the two Dunlop candidates.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="The Names He Carried">
+<meta property="og:url" content="https://douggarceau.com/the-names-he-carried/web/">
+<meta property="og:image" content="https://douggarceau.com/the-names-he-carried/design/shieldhill-book-card.jpg">
+<meta property="og:image:secure_url" content="https://douggarceau.com/the-names-he-carried/design/shieldhill-book-card.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Names He Carried in green and heather lettering, with Douglas tartan, Shieldhill House, and Laurence’s portrait on the book cover.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Web of Names">
+<meta name="twitter:description" content="An interactive map of every person in The Names He Carried and how they were connected: family, the households that raised Laurence, the Shieldhill estate, and the two Dunlop candidates.">
+<meta name="twitter:image" content="https://douggarceau.com/the-names-he-carried/design/shieldhill-book-card.jpg">
+<meta name="twitter:image:alt" content="The Names He Carried in green and heather lettering, with Douglas tartan, Shieldhill House, and Laurence’s portrait on the book cover.">
+<link rel="apple-touch-icon" sizes="180x180" href="https://douggarceau.com/the-names-he-carried/design/douglas-book-icon.png">
+<link rel="canonical" href="https://douggarceau.com/the-names-he-carried/web/">
+
 <meta name="description" content="An interactive map of every person in The Names He Carried and how they were connected: family, the households that raised Laurence, the Shieldhill estate, and the two Dunlop candidates.">
-<meta name="theme-color" content="#06120c">
+<meta name="theme-color" content="#fff9ec">
 <style>
-:root{--ink:#f1ede4;--soft:#b9c4bb;--green:#2e6b3e;--lg:#8cc29a;--navy:#14284b}
+:root{--ink:#233b37;--soft:#4c6057;--green:#2e6b3e;--lg:#365f50;--navy:#14284b}
 *{box-sizing:border-box}html,body{margin:0;height:100%}
-body{background:radial-gradient(ellipse at 50% 30%,#0f2418 0%,#06101b 55%,#020509 100%);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;overflow:hidden}
+body{background:radial-gradient(ellipse at 50% 30%,#fff9ec 0%,#edf2e5 55%,#e5ebf1 100%);color:var(--ink);font:15px/1.5 Inter,system-ui,sans-serif;overflow:hidden}
 .band{height:18px;background-color:#14284b;background-image:repeating-linear-gradient(90deg,rgba(255,255,255,.55) 0 1px,transparent 1px 27px),repeating-linear-gradient(0deg,rgba(255,255,255,.4) 0 1px,transparent 1px 27px),repeating-linear-gradient(90deg,rgba(31,77,43,.92) 0 13px,transparent 13px 27px),repeating-linear-gradient(0deg,rgba(31,77,43,.7) 0 13px,transparent 13px 27px)}
 header{position:absolute;top:18px;left:0;right:0;padding:14px 20px;display:flex;gap:16px;align-items:flex-start;justify-content:space-between;pointer-events:none;z-index:3}
 header>*{pointer-events:auto}
 h1{font:700 28px/1.1 Georgia,serif;margin:0 0 4px}.sub{color:var(--soft);font-size:13px;max-width:520px;margin:0}
 nav a{color:var(--lg);font-weight:600;font-size:13px;margin-left:14px;text-decoration:none}
 #graph{position:absolute;left:0;right:0;bottom:0;top:18px;width:100%;height:calc(100% - 18px)}
-.ctrl{position:absolute;left:20px;right:20px;bottom:16px;z-index:3;display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#07130ecc;border:1px solid #234433;padding:10px 14px;border-radius:10px;backdrop-filter:blur(4px)}
+.ctrl{position:absolute;left:20px;right:20px;bottom:16px;z-index:3;display:flex;gap:14px;align-items:center;flex-wrap:wrap;background:#fff9ecef;border:1px solid #234433;padding:10px 14px;border-radius:10px;backdrop-filter:blur(4px)}
 .ctrl label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}
-#year{flex:1;min-width:180px;accent-color:#8cc29a}#yr{font:700 22px Georgia,serif;color:#fff;min-width:64px}
+#year{flex:1;min-width:180px;accent-color:#8cc29a}#yr{font:700 22px Georgia,serif;color:#285340;min-width:64px}
 button{background:#1f4d2b;color:#fff;border:1px solid #8cc29a;border-radius:6px;padding:7px 12px;font:600 13px Inter,system-ui,sans-serif;cursor:pointer}
 input[type=search]{background:#0b1a12;border:1px solid #2f4a38;color:#fff;border-radius:6px;padding:7px 10px;font:14px Inter,system-ui,sans-serif;width:200px}
-.legend{position:absolute;top:150px;left:20px;z-index:3;font-size:12px;color:var(--soft);background:#07130eb3;border:1px solid #234433;border-radius:10px;padding:10px 12px}
+.legend{position:absolute;top:150px;left:20px;z-index:3;font-size:12px;color:var(--soft);background:#fff9ece6;border:1px solid #234433;border-radius:10px;padding:10px 12px}
 .legend div{display:flex;align-items:center;gap:8px;margin:3px 0}.sw{width:12px;height:12px;border-radius:50%}.ln{width:26px;height:0;border-top:2px solid}
-#panel{position:absolute;top:110px;right:20px;width:330px;max-height:calc(100% - 210px);overflow:auto;z-index:4;background:#07130ef2;border:1px solid #2f5a40;border-radius:12px;padding:16px 18px;display:none;box-shadow:0 10px 40px #000a}
-#panel h2{font:700 22px/1.2 Georgia,serif;margin:0 0 2px}#panel .d{color:var(--lg);font-size:13px;margin-bottom:8px}#panel p{font-size:14px;color:#dfe6e0}
-#panel ul{padding-left:18px;margin:6px 0 10px}#panel li{font-size:13px;margin:2px 0}#panel li a{color:#fff;cursor:pointer;text-decoration:underline;text-decoration-color:#5f8f6c}
+#panel{position:absolute;top:110px;right:20px;width:330px;max-height:calc(100% - 210px);overflow:auto;z-index:4;background:#fff9ecf7;border:1px solid #2f5a40;border-radius:12px;padding:16px 18px;display:none;box-shadow:0 10px 40px #000a}
+#panel h2{font:700 22px/1.2 Georgia,serif;margin:0 0 2px}#panel .d{color:var(--lg);font-size:13px;margin-bottom:8px}#panel p{font-size:14px;color:#354d42}
+#panel ul{padding-left:18px;margin:6px 0 10px}#panel li{font-size:13px;margin:2px 0}#panel li a{color:#245c70;cursor:pointer;text-decoration:underline;text-decoration-color:#5f8f6c}
 #panel .go a{display:inline-block;margin:6px 8px 0 0;color:var(--lg);font-weight:600;font-size:13px}
 #panel .x{float:right;background:none;border:0;color:#9ab;font-size:20px;padding:0 4px}
-.node text{fill:#f3f0e8;font:600 11px Inter,system-ui,sans-serif;paint-order:stroke;stroke:#03080d;stroke-width:3px;pointer-events:none}
+.node text{fill:#263f36;font:600 11px Inter,system-ui,sans-serif;paint-order:stroke;stroke:#fff9ec;stroke-width:3px;pointer-events:none}
 @media(max-width:700px){.ctrl{gap:8px;padding:8px 10px;bottom:8px;left:8px;right:8px}.ctrl label,#all{display:none}input[type=search]{width:100%}.sub{font-size:12px}.legend{display:none}#panel{left:10px;right:10px;width:auto;top:auto;bottom:118px;max-height:45%}header{flex-direction:column}h1{font-size:22px}}
-</style></head><body>
-<div class="band" aria-hidden="true"></div>
+</style><link rel="stylesheet" href="/the-names-he-carried/design/share.css"><script defer src="/the-names-he-carried/design/share.js"></script></head><body>
+<div class="band cloth-band" aria-hidden="true"></div>
 <header><div><h1>The Web of Names</h1><p class="sub">Every person in the story and how they were joined: blood, marriage, the households that raised Laurence, the Shieldhill estate, and the two Dunlop candidates. Drag, zoom, click anyone. Slide through the years to see who was alive.</p></div>
-<nav><a href="../">The book</a><a href="../sir-nathaniel/">The case</a><a href="../cold-case-file/how-do-we-know.html">Sources</a><a href="../families/">Are you family?</a></nav></header>
+<nav><button type="button" class="book-share-trigger" data-book-share aria-haspopup="dialog" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3m-4 4 4-4 4 4M6 11H4v10h16V11h-2"/></svg>Share</button> <a href="../">The book</a><a href="../sir-nathaniel/">The case</a><a href="../cold-case-file/how-do-we-know.html">Sources</a><a href="../families/">Are you family?</a></nav></header>
 <div class="legend" id="legend"></div>
-<svg id="graph" width="100%" height="100%" role="img" aria-label="Interactive network of the people in The Names He Carried"></svg>
+<main aria-label="Family connections"><svg id="graph" width="100%" height="100%" role="img" aria-label="Interactive network of the people in The Names He Carried"></svg></main>
 <aside id="panel" aria-live="polite"></aside>
 <div class="ctrl"><button id="play" type="button">Play the years</button><label for="year">Year</label><input id="year" type="range" min="1830" max="1961" step="1" value="1907"><span id="yr">1907</span><button id="all" type="button">Show everyone</button><input id="q" type="search" placeholder="Find a name…" aria-label="Find a name"></div>
 <script src="d3.min.js"></script>
