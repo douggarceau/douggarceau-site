@@ -41,6 +41,8 @@ async function check() {
         const observed = await page.evaluate(inspect);
         audit[target] = observed;
         if (width === 1440) { delete observed.links; delete observed.blocks; delete observed.ids; }
+        if(observed.low.length || observed.issues.length || observed.overflow>1)
+          failures.push([target, {contrast:observed.low,controls:observed.issues,overflow:observed.overflow}]);
         if (target.endsWith('#chapter-1')) {
           assert.match(observed.opening[0], /pocket watch/i);
           assert.equal(observed.records.length, 1, 'Prologue birth-register link');
@@ -66,6 +68,13 @@ async function check() {
       }
       fs.mkdirSync('book-audit-results', {recursive:true});
       fs.writeFileSync('book-audit-results/'+width+'.json', JSON.stringify(audit));
+      const restored = Object.values(audit).reduce((total, route) => total + route.records.length, 0);
+      assert.equal(restored, 12, 'Manuscript to original-record links');
+      await page.goto(server + folder + '/#chapter-2');
+      await page.getByRole('button',{name:'Listen to this chapter'}).click();
+      await page.waitForFunction(()=>document.querySelector('#aud')?.getAttribute('src')?.includes('02-chapter-1'));
+      await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+      assert.equal(await page.locator('#aplayer').isVisible(), true, 'Retain the selected audio after fragment navigation');
       for (const asset of assets) {
         await page.goto(server + folder + '/' + asset);
         assert.equal(await page.locator('svg > rect').first().getAttribute('fill'), '#fff9ec', asset);
@@ -78,7 +87,7 @@ async function check() {
         assert.equal(await page.locator('main').evaluate(e=>getComputedStyle(e).backgroundColor), 'rgb(255, 249, 236)', target);
       }
       console.log(width + 'px: ' + files.length + ' HTML pages, ' + routes.length + ' reader views, 2 standalone diagrams, 4 fallback checks');
-      assert.deepEqual(failures, [], 'Dark reading surfaces: ' + JSON.stringify(failures));
+      assert.deepEqual(failures, [], 'Page checks: ' + JSON.stringify(failures));
       await context.close();
     }
   } finally { await browser.close(); }
