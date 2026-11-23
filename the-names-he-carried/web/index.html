@@ -56,7 +56,7 @@ input[type=search]{background:#0b1a12;border:1px solid #2f4a38;color:#fff;border
 <div class="ctrl"><button id="play" type="button">Play the years</button><label for="year">Year</label><input id="year" type="range" min="1830" max="1961" step="1" value="1907"><span id="yr">1907</span><button id="all" type="button">Show everyone</button><input id="q" type="search" placeholder="Find a name…" aria-label="Find a name"></div>
 <script src="d3.min.js"></script>
 <script>
-const GROUPS={"Laurence":["#f1ede4","Laurence"],"His mother's family":["#8cc29a","His mother's family"],"Quothquan and Shieldhill":["#d8b77b","Quothquan and Shieldhill"],"The family that raised him":["#6fa8dc","The family that raised him"],"His wife's family":["#c58fd6","His wife's family"]};
+const GROUPS={"Laurence":["#14284b","Laurence"],"His mother's family":["#8cc29a","His mother's family"],"Quothquan and Shieldhill":["#d8b77b","Quothquan and Shieldhill"],"The family that raised him":["#6fa8dc","The family that raised him"],"His wife's family":["#c58fd6","His wife's family"]};
 const ETYPE={family:["#6f8f7a","Family",""],marriage:["#c9a0dc","Marriage",""],raised:["#6fa8dc","Raised / took in",""],estate:["#d8b77b","Estate and village",""],candidate:["#e06666","Candidate father (unproven)","6,5"]};
 function yrs(s){s=String(s||'');const m=s.match(/\d{4}/g)||[];let b=m[0]?+m[0]:null,d=null;if(/–|-/.test(s)&&m[1]&&!/and/.test(s))d=+m[1];if(/^married/.test(s)){b=null}return[b,d]}
 function etype(r){r=r.toLowerCase();if(/wife|husband/.test(r))return'marriage';if(/raise|took/.test(r))return'raised';if(/owner|gardener|estate|cottage|mains|house/.test(r))return'estate';return'family'}
@@ -74,7 +74,7 @@ fetch('../people.json').then(r=>r.json()).then(d=>{
  E.set('cand2',{source:'laurence-brown-douglas',target:'binnie-dunlop',type:'candidate',label:'Candidate father'});
  const links=[...E.values()];const deg={};links.forEach(l=>{deg[l.source]=(deg[l.source]||0)+1;deg[l.target]=(deg[l.target]||0)+1});
  const nodes=P.map(p=>{const[b,dd]=yrs(p.dates);return{id:p.slug,p,b,d:dd,r:7+Math.sqrt(deg[p.slug]||1)*3.2+(p.slug==='laurence-brown-douglas'?8:0)}});
- document.getElementById('legend').innerHTML='<b style="color:#fff">People</b>'+Object.values(GROUPS).map(g=>`<div><span class="sw" style="background:${g[0]}"></span>${g[1]}</div>`).join('')+'<b style="color:#fff;display:block;margin-top:6px">Connections</b>'+Object.values(ETYPE).map(e=>`<div><span class="ln" style="border-color:${e[0]};${e[2]?'border-top-style:dashed':''}"></span>${e[1]}</div>`).join('');
+ document.getElementById('legend').innerHTML='<b>People</b>'+Object.values(GROUPS).map(g=>`<div><span class="sw" style="background:${g[0]}"></span>${g[1]}</div>`).join('')+'<b style="display:block;margin-top:6px">Connections</b>'+Object.values(ETYPE).map(e=>`<div><span class="ln" style="border-color:${e[0]};${e[2]?'border-top-style:dashed':''}"></span>${e[1]}</div>`).join('');
  const svg=d3.select('#graph');const W=()=>innerWidth,H=()=>innerHeight-18;const g=svg.append('g');
  svg.call(d3.zoom().scaleExtent([.3,4]).on('zoom',e=>g.attr('transform',e.transform)));
  const defs=svg.append('defs');const gl=defs.append('filter').attr('id','glow');gl.append('feGaussianBlur').attr('stdDeviation',4).attr('result','b');const mg=gl.append('feMerge');mg.append('feMergeNode').attr('in','b');mg.append('feMergeNode').attr('in','SourceGraphic');
@@ -103,4 +103,4 @@ fetch('../people.json').then(r=>r.json()).then(d=>{
  addEventListener('resize',()=>{sim.force('center',d3.forceCenter(W()/2,H()/2));sim.alpha(.3).restart()});
  paint();if(innerWidth>700)setTimeout(()=>show('laurence-brown-douglas'),1200);
 });
-</script></body></html>
+</script><script src="../backnav.js" defer></script></body></html>

@@ -75,4 +75,4 @@ document.getElementById('topic').innerHTML+=tops.map(t=>'<option>'+esc(t)+'</opt
 document.getElementById('testimony').innerHTML=items.filter(x=>x.kind==='Family testimony').map(card).join('');
 render()}).catch(()=>document.getElementById('count').textContent='The source list could not be loaded.');
 document.getElementById('search').addEventListener('input',render);document.getElementById('topic').addEventListener('change',render);
-</script></body></html>
+</script><script src="../backnav.js" defer></script></body></html>
