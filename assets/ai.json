@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T20:20Z",
+ "updated": "2026-11-23T00:44Z",
  "items": [
   {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
@@ -29,6 +29,14 @@
    "title": "Berlin\u2019s largest electronic music venue, now a stage for debuting military AI",
    "link": "https://cdm.link/berlin-clarity-launch-at-kraftwerk/",
    "source": "CDM",
+   "date": "2026-11-17",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Deezer to launch AI music filter as survey finds user demand for transparency",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdkRweXczQ0kxZkJMSEZPSGE1cElXRTdyZENySGxja2RkWG5oRWFiNGRjaG5EUHZNYlNJNEhLVFV3T1FEbEw4OVlhT3R0RGNqZDJRb0tsWUtERmlRMXItTjZrNVFyWXBkeFh2b2lTUDdoN3kyUEVqeVh3M2tDQ2FUaG1TaVVRdWVwNC1VeEhaNDRGSS1VQ3VjMUU0YU1KRXN5YUEtcHdOVWtOX3pScWdKeVlwYlI1MkpBa0lvM2RrQ3Znd1pM?oc=5",
+   "source": "Reuters",
    "date": "2026-11-17",
    "kind": "PRODUCT",
    "release": true
@@ -170,14 +178,6 @@
    "release": false
   },
   {
-   "title": "Deezer/Ipsos survey reveals 1 in 2 users now have AI music in their playlists",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRUF6dE42NjR4RlRiaEtyd0hZZ2Q2THlTQ0VsLW0xcWVlQS1xUkk2UmVPSENoUHFqRmczWE1oamsxbGV1QjNrM0VwVUtxRXFJcXVKU2JXR0lYYnJyWklFU0lHWEJGYy1waFg4N01INGZ0NkRVNlN1bzcwa3hVZ09oemVIYk94VURscXNUTld6OGJ2MmhFUGVNZTZpNENiLW1OXzVKX0hzd1VwRk9kWGRHTjF2eFAwdG1fYVZybWxXWl8?oc=5",
-   "source": "Music Week",
-   "date": "2026-11-18",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Musician Caught in Copyright Claim Loop from AI Company",
    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQa2VxMUFOWUR3N2dJT0Z4RTFKTUppaUp2QWNnSFM3eERYVmR4MUxwSkMzSWFwUkVBSFlGMUpZc1NYU2tZQk1zdlA1ZVNUNld0dkVkZ0JZaGVYaU0wTFdHOVh2bkI3S2lxUDdaQTdwU2ZGN2l0Njl4aHJrMkhYZHVxX2kzcmpNQ3Y5cEt5dlRB?oc=5",
    "source": "Digital Music News",
@@ -212,17 +212,17 @@
    "release": true
   },
   {
-   "title": "Deezer/Ipsos survey reveals 1 in 2 users now have AI music in their playlists",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQRUF6dE42NjR4RlRiaEtyd0hZZ2Q2THlTQ0VsLW0xcWVlQS1xUkk2UmVPSENoUHFqRmczWE1oamsxbGV1QjNrM0VwVUtxRXFJcXVKU2JXR0lYYnJyWklFU0lHWEJGYy1waFg4N01INGZ0NkRVNlN1bzcwa3hVZ09oemVIYk94VURscXNUTld6OGJ2MmhFUGVNZTZpNENiLW1OXzVKX0hzd1VwRk9kWGRHTjF2eFAwdG1fYVZybWxXWl8?oc=5",
-   "source": "Music Week",
-   "date": "2026-11-18",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Berlin\u2019s largest electronic music venue, now a stage for debuting military AI",
    "link": "https://cdm.link/berlin-clarity-launch-at-kraftwerk/",
    "source": "CDM",
+   "date": "2026-11-17",
+   "kind": "PRODUCT",
+   "release": true
+  },
+  {
+   "title": "Deezer to launch AI music filter as survey finds user demand for transparency",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNdkRweXczQ0kxZkJMSEZPSGE1cElXRTdyZENySGxja2RkWG5oRWFiNGRjaG5EUHZNYlNJNEhLVFV3T1FEbEw4OVlhT3R0RGNqZDJRb0tsWUtERmlRMXItTjZrNVFyWXBkeFh2b2lTUDdoN3kyUEVqeVh3M2tDQ2FUaG1TaVVRdWVwNC1VeEhaNDRGSS1VQ3VjMUU0YU1KRXN5YUEtcHdOVWtOX3pScWdKeVlwYlI1MkpBa0lvM2RrQ3Znd1pM?oc=5",
+   "source": "Reuters",
    "date": "2026-11-17",
    "kind": "PRODUCT",
    "release": true
@@ -244,19 +244,19 @@
    "release": true
   },
   {
-   "title": "TuneArt is an indie AI-music-video maker with a pay-as-you-go model",
-   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE14aldYS3MtNVhDWXFiQ2tiMmdVNFZLOFc1eExickZVRmtSRVFYSmNvZ3gwaDhRQTdtcFdTRGxKaUU3c01EdXppNmYtdkV2QlRwWjlTZU5jenE4cDdoOUF5U0dWbjg1RTNjRzFhUkxqTQ?oc=5",
-   "source": "Music Ally",
-   "date": "2026-11-17",
-   "kind": "NEWS",
-   "release": true
-  },
-  {
    "title": "Berlin company launches AI kick drum generator trained on its own audio dataset \u00b7 News \u27cb RA",
    "link": "https://news.google.com/rss/articles/CBMiPEFVX3lxTE5UUGNhQ21LUUN5N3J4d0NPU0FZREJudGlLWmUwRTc3T1FYS090UDY3LV82SUFqU0JBUWdsRw?oc=5",
    "source": "Resident Advisor",
    "date": "2026-11-11",
    "kind": "DRUMS",
+   "release": true
+  },
+  {
+   "title": "Spotify aims to launch AI music remix service early next year",
+   "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOWGpPeGh3OTBZNWVib0M5MDdfRmg1eE9ndzJkVlhyendQN0hMREt6OUs1SXFrNUZfNEtsMVlxcndrS3BFdG1neUhPdi1Fd3hseDlJN0R4S0xPbmVyakVJZ0pHQXRDX2lEejBPUW9kblBjNzQ2NTNkTGlYSngxcUpDQllYRkc?oc=5",
+   "source": "Financial Times",
+   "date": "2026-10-30",
+   "kind": "PRODUCT",
    "release": true
   }
  ],
@@ -279,11 +279,11 @@
   "Ars Technica feeds.arstechnica.com": 0,
   "Google News %22AI%22+drums": 2,
   "Google News %22AI%22+drummer": 0,
-  "Google News %22AI+music%22": 33,
+  "Google News %22AI+music%22": 30,
   "Google News Suno+OR+Udio": 16,
-  "Google News %22AI%22+music+lawsuit+OR+copyright": 14,
+  "Google News %22AI%22+music+lawsuit+OR+copyright": 13,
   "Google News %22AI%22+music+producer+plugin": 1,
-  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 3,
+  "Google News %22AI%22+drum+plugin+OR+%22drum+machine%22": 2,
   "Google News %22AI%22+stem+separation": 2,
   "Google News %22AI%22+DAW+OR+%22Logic+Pro%22+OR+Ableton+OR+%22FL+Studio%22": 5,
   "Google News %22AI%22+MIDI+generator+OR+%22session+drummer%22": 1
