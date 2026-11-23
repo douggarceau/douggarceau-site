@@ -263,6 +263,14 @@ html .top .tab.cta:hover{background:#fff;color:#1f4a35!important}.tab.cta[aria-c
 .audnote{color:#233b37!important;font:italic 500 16px/1.4 Inter,system-ui,sans-serif;margin:10px 0 0;text-shadow:0 0 8px #fff9ec}
 body:not(.sub) .nv{display:none!important}
 #nvs{display:none!important}
+.nv #nv-next{flex:1.5;min-height:44px;box-sizing:border-box;align-content:center}
+.book-room .pager a.pg{box-sizing:border-box;text-decoration:none}
+html .book-room .pager a.pg.nx{background:#225d50;color:#fff;border:1px solid #225d50;border-radius:6px}
+html .book-room .pager a.pg.nx small{color:inherit}
+html .book-room .pager a.pg.nx:hover{background:#164638;color:white}
+.book-room .pager a.pg:focus-visible,.book-room .nv a:focus-visible{outline:3px solid #985506;outline-offset:3px}
+@media(max-width:600px){.nv #nv-next{padding-inline:6px}.book-room .pager .pg{flex:1 1 100%;min-width:0}}
+@media print{.pager,#nv{display:none!important}}
 .tabmenu .mhead{margin:10px 16px 2px;font:700 11px/1.2 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#4c6057}
 .tabmenu .mhead:first-child{margin-top:4px}
 .explore .tabmenu{max-height:75vh;overflow:auto}
@@ -334,7 +342,7 @@ body.scotland main{background:#fff9ec;color:#233b37}
 <nav class="tabs" id="section-tabs" aria-label="Sections">
 <button class="tab cta" data-go="start">Home</button><a class="tab cta" href="#chapter-1" data-go="chapter-1">Read the book</a><button class="tab cta" data-go="contents">Contents</button><details class="tabgrp explore"><summary class="tab cta">Explore</summary><div class="tabmenu"><p class="mhead">People and Places</p><button class="tab" data-go="people">People</button><button class="tab" data-go="tree">Family tree</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><a class="tab" href="web/">The Web of Names</a><button class="tab" data-go="person-shieldhill">Shieldhill Estate</button><p class="mhead">The Records</p><button class="tab" data-go="records">Records</button><button class="tab" data-go="sources">Sources and documents</button><a class="tab" href="cold-case-file/how-do-we-know.html">How Do We Know All This?</a><a class="tab" href="cold-case-file/evidence-vault.html">The Evidence Vault</a><a class="tab" href="cold-case-file/">Cold Case File</a><p class="mhead">The Case</p><a class="tab" href="grand-jury/">Was Laurence the Son of a Knight?</a><a class="tab" href="sir-nathaniel/">The Case for Sir Nathaniel Dunlop</a><a class="tab" href="grand-jury/#for-our-family">The Doctor and the Gardener</a></div></details>
 </nav></div></div></header>
-<nav class="nv" id="nv"><button type="button" id="nvb">← Back</button><button type="button" id="nvh" data-go="start">Home</button><button type="button" id="nvs" data-book-share aria-haspopup="dialog">Share</button></nav><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
+<nav class="nv" id="nv" aria-label="Reader controls"><button type="button" id="nvb">← Back</button><button type="button" id="nvh" data-go="start">Home</button><button type="button" id="nvs" data-book-share aria-haspopup="dialog">Share</button><a id="nv-next" rel="next" hidden></a></nav><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
 <footer class="foot"><div class="wrap"><p style="margin:0">The Names He Carried: The Laurence Brown Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></p></div></footer>
 <script>document.documentElement.classList.add('red');
 {
@@ -397,7 +405,7 @@ function chapter(n){const c=CH[n-1];if(c&&!c.html)return `<section class="sec"><
  const wey=!chapterSourceNotes&&c.title==='Weybosset Street'?`<figure style="margin:0 0 26px"><img src="img/weybosset-1933.jpg" alt="Weybosset Street at night, 1933" width="1080" height="1224" style="display:block;width:100%;height:auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px">Weybosset Street at night, 1933, four years before Laurence went to work there. The Loew's State Theatre sign is at the right. Photograph by Harry Scheer.</figcaption></figure><figure style="margin:0 0 26px"><img src="img/outlet-company.jpg" alt="The Outlet Company sign on Weybosset Street" width="900" height="1306" loading="lazy" style="display:block;width:100%;max-width:560px;height:auto;margin:0 auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px">The Outlet Company, 176 Weybosset Street, across the street from Laurence\'s workplace at number 165. This photograph was taken some years after he worked there. Source: Providence Journal.</figcaption></figure><figure style="margin:0 0 26px"><img src="img/weybosset-postcard.jpg" alt="Weybosset Street from Dorrance Street, early postcard" width="1400" height="898" loading="lazy" style="display:block;width:100%;height:auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px">Weybosset Street from Dorrance Street, on a postcard from the early 1900s, a generation before Laurence came. The Outlet\'s sign hangs at the left.</figcaption></figure><div class="extlinks"><b>See more of the street</b><br><a href="https://www.consumergrouch.com/?p=9097" target="_blank" rel="noopener">Consumer Grouch: Vintage Providence, a photographic journey on Weybosset Street</a></div>`:'';
  const bond=!chapterSourceNotes&&c.title==='San Francisco'?`<figure style="margin:0 0 26px"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bond_Waterfall_sign_day.jpg?width=1200" alt="Bond Clothes waterfall sign in Times Square" width="1280" height="816" loading="lazy" style="display:block;width:100%;height:auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px">Bond Clothes, Laurence\'s employer in San Francisco and Pittsburgh, at its Times Square store in New York. This postcard is from 1948, a few years after he left the company. The Tichnor Brothers Collection, Boston Public Library.</figcaption></figure>`:'';
  return `<article class="chap"><header class="opener">${top}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}</header>${alink}${raid}${wey}${bond}<div class="body">${d.innerHTML}</div>${c.evidenceNote?`<aside class="evidence-note"><h3>What the records establish</h3><p>${esc(c.evidenceNote.text)}</p>${c.evidenceNote.links.map(([href,label])=>ext(href,label)).join(" · ")}</aside>`:""}
- <nav class="pager">${pv?`<button class="pg" data-go="chapter-${pv.n}"><small>Previous</small>${esc(pv.title)}</button>`:'<button class="pg" data-go="start"><small>Back</small>Home</button>'}${nx?`<button class="pg nx" data-go="chapter-${nx.n}"><small>Next</small>${esc(nx.title)}</button>`:'<button class="pg nx" data-go="sources"><small>Next</small>Sources and documents</button>'}</nav></article>`}
+ <nav class="pager" aria-label="Reading order">${pv?`<button class="pg" data-go="chapter-${pv.n}"><small>Previous</small>${esc(pv.title)}</button>`:'<button class="pg" data-go="start"><small>Back</small>Home</button>'}${nx?`<a class="pg nx" rel="next" href="#chapter-${nx.n}"><small>${isCh(nx)?'Next chapter':nx.label==='Epilogue'?'Epilogue':'Next section'}</small> ${esc(nx.title)} <span aria-hidden="true">→</span></a>`:'<button class="pg nx" data-go="sources"><small>Next</small>Sources and documents</button>'}</nav></article>`}
 function records(){return `<section class="sec"><h2 class="big">Records</h2><p class="lede">The records behind the story, oldest first. Where the document is on this site, the button opens it, with an explanation.</p>
 ${C.records.map((r,i)=>{const k=REC[i];return `<div class="recrow"><div class="y">${r.year}</div><div><h3>${esc(r.title)}</h3><p>${esc(r.text)}</p><div class="ref">${esc(r.ref)}${r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</div>${k?`<a class="scanbtn" href="${esc(k.page||k.file)}" target="_blank" rel="noopener">Open the document</a>`:''}</div></div>`}).join('')}
 <p class="crd">Scottish register and census entries are held by the National Records of Scotland and can be searched on <a href="https://www.scotlandspeople.gov.uk/guides/statutory-registers" target="_blank" rel="noopener">ScotlandsPeople</a>. All register and census sources are listed under <button class="lnk" data-go="sources">Sources and documents</button>.</p></section>`}
@@ -451,6 +459,16 @@ function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapte
  if(m){html=chapter(+m[1]);jump.value=m[1]}else if(pm){jump.value='';html=person(pm[1])}
  else{jump.value='';html=({tree,listen,records,people,sources,contents,timeline:()=>list('Timeline','His life, date by date, from the records.',C.timeline),places}[h]||home)()}
  CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html; const sub=!!h&&h!=='start'; $('#nvb').hidden=!sub;$('#nvh').hidden=!sub; document.body.classList.toggle('sub',sub);
+ const nextLink=$('#view .pager a[rel="next"]'),bottomNext=$('#nv-next');
+ bottomNext.hidden=!nextLink;
+ if(nextLink){
+   bottomNext.href=nextLink.hash;
+   bottomNext.textContent=nextLink.querySelector('small').textContent+' →';
+   bottomNext.setAttribute('aria-label',nextLink.textContent.replace('→','').trim());
+ }else{
+   bottomNext.removeAttribute('href');
+   bottomNext.removeAttribute('aria-label');
+ }
  if(h==='listen'&&pendingChapter!==null){const i=AU.items.findIndex(x=>x.n===pendingChapter);pendingChapter=null;if(i>=0)aplay(AU.items,i)}
  $('#view').querySelectorAll('a[target="_blank"]').forEach(a=>{if(a.host===location.host){a.removeAttribute('target');a.removeAttribute('rel')}});
  const hh=$('#view h2'); document.title=(CUR?CH[CUR-1].title+' · ':(hh&&h?hh.textContent+' · ':''))+'The Names He Carried';
