@@ -155,6 +155,12 @@
     "alt": "Laurence Brown Douglas, portrait",
     "cap": "Laurence as a young man. Family photograph shared on Ancestry by Louanne Mackenzie."
    }
+  ],
+  "links": [
+   {
+    "label": "Ancestry: Laurence Brown Douglas in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212815873903/facts"
+   }
   ]
  },
  {
@@ -242,6 +248,10 @@
    {
     "label": "Gean Tree Cottage, Shieldhill Road, Quothquan: rear extension approved November 9, 2026, with drawings (City Scope)",
     "url": "https://city-scope.co.uk/planning-updates/slk/P/26/1249"
+   },
+   {
+    "label": "Ancestry: Agnes McGarth Brown in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816596079/facts"
    }
   ],
   "role": "Mother"
@@ -302,6 +312,10 @@
    {
     "label": "Document: 1886 death: George Brown, Laurence’s grandfather",
     "url": "docs/george-brown-death-1886.html"
+   },
+   {
+    "label": "Ancestry: George Brown in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816704983/facts"
    }
   ]
  },
@@ -356,7 +370,13 @@
     "url": "https://earth.google.com/web/@55.63888,-3.59864,230a,350d,35y,0h,0t,0r"
    }
   ],
-  "role": "Grandmother"
+  "role": "Grandmother",
+  "links": [
+   {
+    "label": "Ancestry: Christina Wilson Henderson in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816704984/facts"
+   }
+  ]
  },
  {
   "slug": "william-brown",
@@ -395,6 +415,10 @@
    {
     "label": "Document: 1895 death: William Brown, Laurence’s great-grandfather",
     "url": "docs/william-brown-death-1895.html"
+   },
+   {
+    "label": "Ancestry: William Brown in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816705666/facts"
    }
   ]
  },
@@ -444,6 +468,10 @@
    {
     "label": "Her gravestone, with William Brown: Find a Grave memorial 143578503 (photographs by Finches)",
     "url": "https://www.findagrave.com/memorial/143578503/agnes-mcgarth"
+   },
+   {
+    "label": "Ancestry: Agnes McGarth in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816705667/facts"
    }
   ]
  },
@@ -511,6 +539,12 @@
     "alt": "Headstone of Lawrence T. Brown and Isabella Graham",
     "cap": "His headstone: Lawrence T. Brown, 1860–1943, and his wife, Isabella Graham, 1862–1961. Photograph shared on Ancestry by rwana55."
    }
+  ],
+  "links": [
+   {
+    "label": "Ancestry: Lawrence Tweedie Brown in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816705660/facts"
+   }
   ]
  },
  {
@@ -556,7 +590,13 @@
     "url": "https://earth.google.com/web/@55.63888,-3.59864,230a,350d,35y,0h,0t,0r"
    }
   ],
-  "role": "Aunt"
+  "role": "Aunt",
+  "links": [
+   {
+    "label": "Ancestry: Mary Henderson Brown in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816877885/facts"
+   }
+  ]
  },
  {
   "slug": "jane-henderson",
@@ -601,7 +641,13 @@
     "url": "https://earth.google.com/web/@55.63888,-3.59864,230a,350d,35y,0h,0t,0r"
    }
   ],
-  "role": "Great-grandmother"
+  "role": "Great-grandmother",
+  "links": [
+   {
+    "label": "Ancestry: Jane Robb Henderson in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816706318/facts"
+   }
+  ]
  },
  {
   "slug": "andrew-henderson",
@@ -698,6 +744,10 @@
    {
     "label": "Document: First World War enlistment: Thomas McKenzie, Agnes Brown’s husband",
     "url": "docs/thomas-mckenzie-ww1-enlistment.html"
+   },
+   {
+    "label": "Ancestry: Thomas McKay McKenzie in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816704982/facts"
    }
   ]
  },
@@ -751,6 +801,14 @@
    {
     "label": "Document: First World War enlistment of their father, naming both girls",
     "url": "docs/thomas-mckenzie-ww1-enlistment.html"
+   },
+   {
+    "label": "Ancestry: Mary Christina McKenzie in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816705259/facts"
+   },
+   {
+    "label": "Ancestry: Jean McKenzie in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816705260/facts"
    }
   ]
  },
@@ -1328,7 +1386,13 @@
     "url": "https://earth.google.com/web/search/Foundry%20Street%2C%20Dunfermline"
    }
   ],
-  "role": "The man who raised him"
+  "role": "The man who raised him",
+  "links": [
+   {
+    "label": "Ancestry: Robert Douglas in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816583356/facts"
+   }
+  ]
  },
  {
   "slug": "elizabeth-millar-mcdonald",
@@ -1405,7 +1469,13 @@
     "url": "https://earth.google.com/web/search/1518%20S%20Kostner%20Ave%2C%20Chicago%2C%20IL"
    }
   ],
-  "role": "The woman who raised him"
+  "role": "The woman who raised him",
+  "links": [
+   {
+    "label": "Ancestry: Elizabeth Miller McDonald in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816596653/facts"
+   }
+  ]
  },
  {
   "slug": "ann-mcdonald-hope",
@@ -1442,7 +1512,13 @@
     "url": "https://earth.google.com/web/search/Cross%20Creek%2C%20Wairarapa%2C%20New%20Zealand"
    }
   ],
-  "role": "Lizzie's mother"
+  "role": "Lizzie's mother",
+  "links": [
+   {
+    "label": "Ancestry: Ann McDonald in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212817037289/facts"
+   }
+  ]
  },
  {
   "slug": "robert-alexander-hope",
@@ -1621,7 +1697,13 @@
    "src": "img/ice-cream.jpg",
    "alt": "Janet and Laurence Douglas with ice-cream cones",
    "cap": "Janet and Laurence, undated, about the 1920s. Family photograph shared on Ancestry by drewgirl (2016) and IZABELLA4213 (2020)."
-  }
+  },
+  "links": [
+   {
+    "label": "Ancestry: Janet Page Douglas in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816893667/facts"
+   }
+  ]
  },
  {
   "slug": "thomas-crombie",
@@ -1660,7 +1742,13 @@
     "url": "https://earth.google.com/web/search/1860%20S%20Hamlin%20Ave%2C%20Chicago%2C%20IL"
    }
   ],
-  "role": "Brother-in-law"
+  "role": "Brother-in-law",
+  "links": [
+   {
+    "label": "Ancestry: Thomas Crombie in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816893692/facts"
+   }
+  ]
  },
  {
   "slug": "crombie-twins",
@@ -1694,7 +1782,17 @@
    32
   ],
   "homes": [],
-  "role": "Nieces"
+  "role": "Nieces",
+  "links": [
+   {
+    "label": "Ancestry: Elizabeth (Betty) Crombie in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816957443/facts"
+   },
+   {
+    "label": "Ancestry: Jessie Crombie in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816957444/facts"
+   }
+  ]
  },
  {
   "slug": "constance-eugenie-darcy",
@@ -1764,7 +1862,13 @@
     "url": "https://earth.google.com/web/search/Saint%20Ann%20Cemetery%2C%20Cranston%2C%20RI"
    }
   ],
-  "role": "Wife"
+  "role": "Wife",
+  "links": [
+   {
+    "label": "Ancestry: Constance Eugenie Darcy in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212815874554/facts"
+   }
+  ]
  },
  {
   "slug": "albert-blake-darcy",
@@ -1828,6 +1932,10 @@
    {
     "label": "Document: 1942 draft card: Albert Blake Darcy, Constance’s father",
     "url": "docs/albert-darcy-draft-card-1942.html"
+   },
+   {
+    "label": "Ancestry: Albert B. Darcy in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212815874578/facts"
    }
   ]
  },
@@ -1922,6 +2030,12 @@
     "url": "https://earth.google.com/web/search/Saint%20Ann%20Cemetery%2C%20Cranston%2C%20RI"
    }
   ],
-  "role": "Brother-in-law"
+  "role": "Brother-in-law",
+  "links": [
+   {
+    "label": "Ancestry: Albert N. Darcy in The Laurence Brown Douglas Family Tree",
+    "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816707525/facts"
+   }
+  ]
  }
 ]
