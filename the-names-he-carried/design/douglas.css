@@ -1,0 +1,231 @@
+/* Cloth based on the Douglas sett K/4 LB4 G16 DB16 W/2.
+   https://tartan.docs.bytestone.uk/tartans/d/do/douglas/ */
+@media screen {
+  .scotland {
+    --pine: #123f36;
+    --loch: #152e48;
+    --linen: #f6eedc;
+    --gilt: #eaca8d;
+    --silver: #b1d2c5;
+    --stitch: #847959;
+    --rule: #435950;
+    --soft: #c8d3ca;
+    --dim: #adbeae;
+    --weave: url("douglas-weave.png");
+    background: radial-gradient(ellipse at 7% 0%, #194a3b 0, transparent 34rem),
+                linear-gradient(125deg, #112c29, #101f29 60%, #111c23) fixed;
+    color: var(--linen);
+  }
+  .cloth-band {
+    position:relative;
+    display:flex;
+    align-items:center;
+    min-height:52px;
+    padding:7px clamp(16px,4vw,64px);
+    box-sizing:border-box;
+    background:linear-gradient(90deg,#071b2c44,transparent 65%),var(--weave) center / 148px 148px,#123f36;
+    border-block:1px solid #a8915f;
+    box-shadow:inset 0 3px #0b161d99,inset 0 -3px #0b161d99;
+  }
+  .cloth-band::after {
+    content:"";position:absolute;inset:4px 0;pointer-events:none;
+    border-block:1px dashed #f0d7a17a;
+  }
+  .cloth-signature {
+    display:inline-flex;align-items:center;gap:11px;position:relative;z-index:1;
+    min-height:30px;padding:3px 13px 3px 8px;box-sizing:border-box;
+    color:#fff2d9;background:#102a2b;border:1px solid #b3a477;
+    font:650 12px/1.25 Georgia,serif;letter-spacing:.17em;text-transform:uppercase;
+  }
+  .saltire {
+    display:inline-block;width:30px;height:18px;flex:none;
+    background:linear-gradient(31deg,transparent 44%,#f9f6e9 45% 55%,transparent 56%),
+               linear-gradient(-31deg,transparent 44%,#f9f6e9 45% 55%,transparent 56%),#1769ab;
+    box-shadow:0 0 0 1px #c4d6cf5c;
+  }
+  .scotland :focus-visible {outline:3px solid #f7d68a;outline-offset:3px}
+  .scotland a {text-decoration-color:#84af9f;text-underline-offset:.2em}
+  .scotland a:hover {text-decoration-color:currentColor}
+
+  /* The binding and the edge of the paper run through every reading room. */
+  .archive-room {--line:#486157;--gold:#efd196;--brass:#c1dec6}
+  .archive-room > main {border-inline:1px solid #63827540}
+  .archive-room:not(.light-room):not(.vault-room) > main {
+    background:linear-gradient(140deg,#143932 0,#122b2b 250px,#121f28 690px);
+  }
+  .archive-room main > h1,.archive-room header h1 {color:var(--linen);font-family:Georgia,serif;letter-spacing:-.033em}
+  .archive-room main > h2,.archive-room main > section > h2 {color:#f2d5a2;border-top-color:#628779}
+  .archive-room :is(.lab,.tag,.eyebrow,.k,.event h3) {color:var(--gilt)}
+  .archive-room :is(.meta,.src,.cap,.note,.note2,.small) {color:#cad6cd}
+  .archive-room :is(.top,.pager,nav.small) a,.archive-room .b {color:#d9e9dc}
+  .archive-room nav.nv {background:#102d2a;border-color:#67897a}
+  .archive-room :is(.sbs,.box,.standard) {border-color:#608477;background-color:#12342f}
+  .archive-room main > pre {background:#112626;color:var(--linen);border-color:#547b6d}
+  .archive-room .pager {border-color:#63877a}
+  .archive-room nav.top + .lab,.archive-room main > .lab {letter-spacing:.16em}
+  .archive-room :is(main > h1, .opener h2)::after {
+    content:"";display:block;width:75px;height:6px;margin-top:.38em;
+    background:var(--weave) center / 83px;border-block:1px solid #c5aa70;
+  }
+  .case-room > header {
+    background:linear-gradient(90deg,#102d28f5 3%,#15352eeb 42%,#102429c9 85%),
+               url("../img/shieldhill-castle.jpg") center 55% / cover;
+    border-block-color:#8c835f;
+  }
+  .case-room header > div {border-inline-start:3px solid #bda579}
+  .vault-room {
+    background:linear-gradient(180deg,#0a2926c9 0,#112d31ee 34rem,#101e29 70rem),
+               url("../img/shieldhill-castle.jpg") center top / 100% auto no-repeat,#112830;
+  }
+  .vault-room header h1 {color:#f7e5bd}
+  .vault-room .rule {height:7px;background:var(--weave) center / 100px;border-block:1px solid #a28d68}
+  .vault-room .vault-scene {border:2px solid #ad986f;box-shadow:0 10px 32px #06121280,0 0 0 5px #193c35}
+  .vault-room .standard,.vault-room .tally {border-color:#658276}
+  .vault-room .tally div,.vault-room .card {background:linear-gradient(145deg,#1b3932,#172933);border-color:#547268}
+  .light-room {background:#e9e6d8;color:#203930}
+  .light-room main {background:#fbf7ec}
+  .light-room main :is(h1,h2,h3),.light-room main a:not(.btn):not(.button) {color:#194c40}
+  .light-room main :is(.meta,.eyebrow,.src,.small,.cap) {color:#485c51}
+
+  .book-room {--ink:var(--linen);--line:#acc4af;--panel:#172b2b}
+  .book-room .top {background:#102b2e;border-color:#789281}
+  .book-room .top .wrap {padding-top:9px;padding-bottom:7px}
+  .book-room .top .brand {color:#fff0ce}
+  .book-room .top select {background:#132d36;border-color:#708e7e;color:#f9f1df}
+  .book-room .top .tab {color:#d2ded4}
+  .book-room .top .tab[aria-current=true],.book-room .top .tab:hover {
+    color:#fff3d9;background:#224a40;border-bottom-color:#e4c18b;
+  }
+  .book-room .quick :is(a,button) {background:#183c35;border-color:#739482;color:#fff1d6}
+  .book-room .nv {background:#102c2b;border-color:#9d8d67}
+  html .book-room .nv :is(a,button) {background:#264c41;color:#fff4dc;border:1px solid #79917e}
+  .book-room .side {
+    background:linear-gradient(155deg,#143c32,#112b31 46%,#101f2c);
+    border-color:#7b8468;scrollbar-color:#647a6c #10252b;
+  }
+  .book-room .side h4 {color:#e4c591}
+  .book-room .side a {border-bottom-color:#47615588;color:#f0efdf}
+  .book-room #side .role {color:#b6c9be}
+  .book-room .side a:hover,.book-room .side a[aria-current=true] {background:#234a40}
+  .book-room .opener {background:linear-gradient(130deg,#1a4638,#142e3a);border-color:#718877;padding-inline:clamp(14px,3vw,36px)}
+  html .book-room .opener::after {width:96px;height:8px;background:var(--weave) center/96px;border-block:1px solid #ad986f}
+  html .book-room .chap .body>p:first-of-type::first-letter {color:#e5c087}
+  .book-room :is(.part,.big,.toc-row .n,.pg-person h3) {color:#ebcc99}
+  .book-room .foot {background:#0e2726;border-top:1px solid #6f816e}
+  .book-room :is(.sbox,.extlinks,.proof,.aplayer) {background:#122f2c;border-color:#688c76}
+  .book-room .alist li.on {background:#1d4138}
+
+  .book-room .hero.estate-cover {
+    min-height:clamp(470px,39vw,620px);display:grid;
+    grid-template-columns:minmax(0,1.28fr) minmax(0,.72fr);align-content:center;align-items:end;
+    column-gap:30px;row-gap:14px;margin-top:0;
+    padding:clamp(44px,5vw,78px) clamp(24px,5vw,78px) 20px;
+    background:#102b2c;border-block-end:4px solid #ad9769;
+  }
+  .book-room .estate-cover::before {
+    background:linear-gradient(90deg,#092421f7 0%,#0d2d28eb 24%,#12362c96 48%,#0d28261a 78%),
+               linear-gradient(0deg,#081b1be8 0%,transparent 37%),
+               url("../img/shieldhill-castle.jpg") center 47% / cover no-repeat;
+  }
+  .book-room .estate-cover::after {
+    content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;
+    background:linear-gradient(90deg,#eee4bd 0,transparent 40%);
+    mask-image:var(--weave);opacity:.035;
+  }
+  .estate-copy {max-width:650px;align-self:center}
+  .estate-place {display:flex;align-items:center;gap:10px;margin:0 0 16px;color:#f4d49a;font:700 11px/1.4 system-ui,sans-serif;letter-spacing:.21em;text-transform:uppercase}
+  .estate-place::before {content:"";display:inline-block;width:34px;height:1px;background:#d4b476}
+  .estate-title {margin:0;font:500 clamp(58px,6.3vw,101px)/.95 Georgia,serif;letter-spacing:-.058em;color:#fff6dd;text-shadow:0 2px 12px #08211a66}
+  .estate-title span,.estate-title em {display:block}
+  .estate-title em {font-weight:400;color:#f3d39b}
+  .estate-subtitle {margin:18px 0 5px;color:#f7f3df;font:400 clamp(19px,1.9vw,28px)/1.25 Georgia,serif}
+  .book-room .estate-copy .lab {color:#d0e2d2;font:600 12px/1.6 system-ui,sans-serif;letter-spacing:.1em}
+  .book-room .estate-actions {max-width:540px;gap:10px;align-items:center;margin-top:23px}
+  .book-room .estate-actions .go,.book-room .estate-actions .family-link {
+    display:inline-flex;align-items:center;box-sizing:border-box;min-height:44px;margin:0;
+    padding:9px 15px;font:650 14px/1.3 system-ui,sans-serif;letter-spacing:0;border:1px solid #b3b491;
+  }
+  html .book-room .estate-actions .go {background:#eed09b;color:#202d26;border-color:#eed09b}
+  html .book-room .estate-actions .go:hover {background:#fff1c9;color:#12251d}
+  .book-room .estate-actions .family-link {background:#11362fe6;color:#fff5db}
+  .book-room .estate-actions .family-link:hover {background:#285446}
+  .book-room .estate-actions .family-link:last-child {flex-basis:100%;width:fit-content;min-height:38px;justify-self:start;background:none;border:0;padding:5px 0;text-decoration:underline;text-underline-offset:4px}
+  .estate-jacket {justify-self:end;align-self:end;width:clamp(108px,12vw,178px);margin:0;transform:rotate(3deg)}
+  .estate-jacket img {display:block;width:100%;height:auto;border:1px solid #b7a77d;box-shadow:4px 4px 0 #c7bfa7,9px 13px 22px #071815ba}
+  .estate-jacket figcaption {font:500 10px/1.3 system-ui,sans-serif;color:#fff3d9;margin-top:10px;text-shadow:0 1px 4px #000;background:#102525cf;padding:3px 5px}
+  .book-room .estate-caption {grid-column:1/-1;justify-self:end;margin:0;color:#ece9d7;background:#0a231fed;padding:3px 8px;font:500 11px/1.4 system-ui,sans-serif}
+  .book-room .estate-caption a {color:inherit}
+  .book-room .research-counts {
+    display:grid;grid-template-columns:minmax(0,1fr) minmax(100px,20%);align-items:stretch;text-align:left;
+    background:#ede4ca;color:#28392c;margin:0 calc(-1 * max(4vw,18px));padding:0;
+    border-block-end:1px solid #a68e61;
+  }
+  .research-ledger {align-self:center;padding:22px clamp(20px,5vw,72px)}
+  .research-ledger h2 {margin:0 0 10px;font:500 clamp(26px,3vw,37px)/1.1 Georgia,serif;letter-spacing:-.035em;color:#233e32}
+  .book-room .research-counts source-counts {justify-content:flex-start}
+  .book-room .research-counts source-counts a {color:#164d3d;text-decoration-color:#648570}
+  .book-room .research-counts .source-scope {color:#4b5648;margin:5px 0 0;text-align:left}
+  .thistle-plate {display:grid;position:relative;overflow:hidden;min-height:118px;background:#e9e2c8;border-inline-start:1px solid #ac9f7b}
+  .thistle-plate img {position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 10%;mix-blend-mode:multiply}
+  .thistle-plate span {align-self:end;z-index:1;justify-self:end;background:#17372df0;color:#fff3d6;font:600 10px/1.4 system-ui,sans-serif;padding:3px 6px;letter-spacing:.05em}
+  .fallback-room {display:flex;flex-direction:column;justify-content:flex-start;align-items:stretch;padding:0}
+  .fallback-room :is(main,p) {margin:auto;text-align:center}
+  @media(max-width:750px){
+    .book-room .hero.estate-cover {min-height:450px;padding:50px 22px 14px;column-gap:16px;grid-template-columns:minmax(0,1fr) 95px}
+    .book-room .estate-actions {gap:6px}
+    .estate-jacket {width:100%}
+    .estate-place {font-size:10px;letter-spacing:.13em}
+    .estate-title {font-size:clamp(45px,8.5vw,66px)}
+    .book-room .research-counts {grid-template-columns:minmax(0,1fr) 88px}
+    .research-ledger {padding:16px}
+    .cloth-band {min-height:44px;background-size:auto,118px 118px}
+  }
+  @media(max-width:520px){
+    .book-room .hero.estate-cover {grid-template-columns:minmax(0,1fr) 80px;align-content:end;min-height:440px;row-gap:10px;padding:100px 16px 12px}
+    .book-room .estate-cover::before {background:linear-gradient(0deg,#092a26 0%,#0c2c26eb 27%,#09292364 65%,#09292316 100%),url("../img/shieldhill-castle.jpg") 57% 38% / cover no-repeat}
+    .estate-copy {display:contents}
+    .estate-place,.estate-title,.estate-subtitle,.book-room .estate-copy .lab {grid-column:1}
+    .estate-place,.estate-subtitle,.book-room .estate-copy .lab {margin:0}
+    .estate-title {font-size:clamp(49px,12.5vw,65px);grid-row:2}
+    .estate-subtitle {grid-row:3;font-size:18px}
+    .book-room .estate-copy .lab {grid-row:4}
+    .book-room .estate-actions {grid-column:1/-1;grid-row:5;margin-top:4px;align-items:stretch}
+    .book-room .estate-actions .family-link,.book-room .estate-actions .go {padding:8px 10px;font-size:13px}
+    .book-room .estate-actions .family-link:last-child {padding-left:0}
+    .estate-jacket {grid-column:2;grid-row:2/5;align-self:center}
+    .estate-jacket figcaption {font-size:9px}
+    .book-room .estate-caption {justify-self:start}
+    .book-room .research-counts source-counts a {font-size:14px}
+  }
+}
+@media print { .cloth-band, .thistle-plate {display:none} }
+@media screen {
+  .book-room .research-counts source-counts b {color:#254d39}
+  .book-room .tartan-strip {height:12px;background:var(--weave) center / 112px;border-block:1px solid #a58f69}
+  .book-room .foot {background:linear-gradient(100deg,#102f2b,#152e3d)}
+}
+@media screen {
+  .scotland {--heather:#cfb5d6;--flagblue:#245f99}
+  .cloth-band {
+    background:linear-gradient(105deg,transparent 0 76%,#19446b80 90%,#24568bbd 100%),
+               var(--weave) center / 148px 148px,#143c42;
+    border-bottom:3px solid #8d6c97;
+  }
+  .cloth-signature {background:#123653}
+  .archive-room:not(.light-room) > main {
+    border-inline-start:clamp(3px,.6vw,8px) solid #355e83;
+    border-inline-end:1px solid #69546d;
+  }
+  .archive-room:not(.light-room) main > :is(h2,h3),.archive-room:not(.light-room) main section h3 {color:#dbc3e1}
+  .archive-room:not(.light-room) main nav a:hover {color:#c9ddf9}
+  .light-room main {border-inline-start:6px solid #396d9b;border-inline-end:1px solid #866390}
+  .light-room main h2 {color:#674669}
+  .book-room .top {background:linear-gradient(107deg,#132e49 0%,#173647 56%,#153c35 100%)}
+  .book-room .side h4:nth-of-type(3n+2),.book-room .part .lab {color:#d7bddd}
+  .book-room .side a[aria-current=true] {box-shadow:inset 3px 0 #91bee8}
+  .book-room .opener {background:linear-gradient(112deg,#153f36,#1a384d 67%,#353347);border-inline-start:3px solid #a687b3}
+  .book-room .estate-place {color:#f2d9b6}
+  .book-room .estate-actions .family-link:not(:last-child) {background:#153e60;border-color:#8caac1}
+  .vault-room .shell header :is(.eyebrow,.source-scope) {color:#decae3}
+  .vault-room .shell .rule {border-bottom-color:#b18bb7}
+}
