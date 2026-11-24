@@ -34,19 +34,21 @@
    if(words.length>1&&(e.lt.indexOf(phrase)>-1||e.lx.indexOf(phrase)>-1))sc+=40;
    if(e.s==='The book')sc+=60;else if(e.s==='People')sc+=30;r.push([sc,e])});
   r.sort(function(a,b){return b[0]-a[0]});return r.slice(0,40).map(function(x){return x[1]})}
+ var TOP=/\/archive\//.test(location.pathname);
  function build(){
+ if(TOP)css+='#tnhc-search.top{position:sticky;top:0;left:0;right:0;bottom:auto;z-index:10000;background:#f4f6f3;border-bottom:2px solid #1f4a35;padding:10px 14px;box-shadow:0 2px 8px #0002}#tnhc-search.top form{max-width:900px;width:100%;box-sizing:border-box;margin:0 auto;box-shadow:none}#tnhc-search.top{box-sizing:border-box}#tnhc-search.top input{flex:1;width:auto;min-width:0}#tnhc-res.top{top:78px;bottom:auto!important;left:50%;right:auto;transform:translateX(-50%);width:min(900px,calc(100vw - 28px))}@media(max-width:760px){#tnhc-search.top{left:0;right:0;bottom:auto}#tnhc-res.top{bottom:auto!important}}';
   var st=document.createElement('style');st.textContent=css;document.head.appendChild(st);
   var box=document.createElement('div');box.id='tnhc-search';box.setAttribute('role','search');
   box.innerHTML='<form><label for="tnhc-q" style="position:absolute;left:-9999px">Search the site</label><input id="tnhc-q" type="search" placeholder="Search the site" autocomplete="off"><button class="go" type="submit">Search</button></form>';
   var res=document.createElement('div');res.id='tnhc-res';res.hidden=true;res.setAttribute('aria-live','polite');
-  document.body.appendChild(res);document.body.appendChild(box);
+  if(TOP){box.className='top';res.className='top';document.body.insertBefore(box,document.body.firstChild);document.body.appendChild(res)}else{document.body.appendChild(res);document.body.appendChild(box)}
   var bn=document.getElementById('tnhc-backnav');
   var inp=box.querySelector('input'),t=null;
   function show(){var q=inp.value.trim();if(q.length<2){res.hidden=true;return}
    load().then(function(){var L=find(q),words=q.toLowerCase().split(/\s+/).filter(Boolean);
     var h='<div class="hd"><span>'+(L.length?L.length+(L.length===40?'+':'')+' results for “'+esc(q)+'”':'Search')+'</span><button class="x" type="button">Close</button></div>';
     h+=L.length?L.map(function(e){return '<a href="'+esc(base+e.u)+'" data-q="'+esc(q)+'"><i class="sec">'+esc(e.s)+'</i><b class="t">'+esc(e.t)+'</b><span class="sn">'+snip(e.x,words)+'</span></a>'}).join(''):'<div class="none">Nothing found for “'+esc(q)+'”. Try a name, a place or a year.</div>';
-    res.innerHTML=h;res.hidden=false;res.querySelector('.x').onclick=function(){res.hidden=true;inp.focus()}})
+    res.innerHTML=h;if(TOP)res.style.top=(Math.max(0,box.getBoundingClientRect().bottom)+8)+'px';res.hidden=false;res.querySelector('.x').onclick=function(){res.hidden=true;inp.focus()}})
    .catch(function(){res.innerHTML='<div class="none">Search is not available right now.</div>';res.hidden=false})}
   inp.addEventListener('focus',load);
   inp.addEventListener('input',function(){clearTimeout(t);t=setTimeout(show,180)});
@@ -63,7 +65,7 @@
    box.style.visibility='';res.style.visibility='';
    var basebot=innerWidth<=760?72:14;if(innerWidth<=760&&!document.getElementById('tnhc-backnav'))basebot=14;
    var bb=off?Math.max(basebot,off+10):basebot;box.style.bottom=bb+'px';res.style.bottom=(bb+70)+'px'}
-  lift();setTimeout(lift,800);setTimeout(lift,2000);addEventListener('resize',lift);addEventListener('hashchange',function(){setTimeout(lift,400)});
+  if(!TOP){lift();setTimeout(lift,800);setTimeout(lift,2000);addEventListener('resize',lift);addEventListener('hashchange',function(){setTimeout(lift,400)});}
   setTimeout(hit,1200);
  }
  function hit(){var q;try{q=sessionStorage.getItem('tnhc-q');sessionStorage.removeItem('tnhc-q')}catch(_){}if(!q)return;
