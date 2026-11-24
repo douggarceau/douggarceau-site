@@ -1,3 +1,23 @@
 {
- "items": []
+ "full": null,
+ "items": [
+  {
+   "i": 1,
+   "n": 1,
+   "title": "Prologue: The Watch",
+   "file": "audio/01-prologue-the-watch.mp3"
+  },
+  {
+   "i": 2,
+   "n": 2,
+   "title": "Chapter 1: The Ploughmen",
+   "file": "audio/02-chapter-1-the-ploughmen.mp3"
+  },
+  {
+   "i": 3,
+   "n": 3,
+   "title": "Chapter 2: Agnes",
+   "file": "audio/03-chapter-2-agnes.mp3"
+  }
+ ]
 }
