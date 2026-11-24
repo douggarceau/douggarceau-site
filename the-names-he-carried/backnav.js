@@ -11,3 +11,4 @@
  var go=function(){document.body.appendChild(d);if(document.querySelector('.ctrl'))d.style.bottom='96px';};
  if(document.body)go();else document.addEventListener('DOMContentLoaded',go);
 })();
+(function(){if(window.__tnhcSearch||document.querySelector('script[src*="search/search.js"]'))return;var s=document.createElement('script');s.src=((document.currentScript&&document.currentScript.src)||'').replace(/backnav\.js.*$/,'')+'search/search.js';document.head.appendChild(s)})();
