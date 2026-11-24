@@ -1,0 +1,137 @@
+0 HEAD
+1 SOUR NamesHeCarried
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+1 NOTE Living persons omitted.
+0 @I1@ INDI
+1 NAME Laurence Brown /Douglas/
+1 SEX M
+1 BIRT
+2 DATE 14 JUN 1907
+2 PLAC Royal Maternity Hospital, Edinburgh, Scotland
+1 DEAT
+2 DATE 9 MAR 1961
+2 PLAC Providence, Rhode Island, USA
+1 NOTE Born Lawrence Brown; father not recorded; raised by Robert Douglas and Elizabeth Millar McDonald.
+0 @I2@ INDI
+1 NAME Agnes /Brown/
+1 SEX F
+1 BIRT
+2 DATE 18 DEC 1885
+2 PLAC Edston, Lyne, Peeblesshire, Scotland
+0 @I3@ INDI
+1 NAME George /Brown/
+1 SEX M
+1 BIRT
+2 DATE 1862
+1 DEAT
+2 DATE 1886
+2 PLAC Peeblesshire, Scotland
+0 @I4@ INDI
+1 NAME Christina /Henderson/
+1 SEX F
+0 @I5@ INDI
+1 NAME William /Brown/
+1 SEX M
+1 BIRT
+2 DATE ABT 1836
+1 DEAT
+2 DATE 13 JAN 1895
+2 PLAC The Harrow, Stobo, Peeblesshire, Scotland
+0 @I6@ INDI
+1 NAME Agnes /McGarth/
+1 SEX F
+1 BIRT
+2 DATE ABT 1840
+2 PLAC Tweedsmuir, Peeblesshire, Scotland
+0 @I7@ INDI
+1 NAME Constance Eugenie /Darcy/
+1 SEX F
+1 BIRT
+2 DATE 12 OCT 1912
+2 PLAC Providence, Rhode Island, USA
+0 @I8@ INDI
+1 NAME Albert Blake /Darcy/
+1 SEX M
+1 BIRT
+2 DATE 20 NOV 1888
+2 PLAC Rumford, East Providence, Rhode Island, USA
+1 DEAT
+2 DATE 4 NOV 1957
+0 @I9@ INDI
+1 NAME Eugenie Emma /Delaire/
+1 SEX F
+1 BIRT
+2 PLAC Sutton, Quebec, Canada
+0 @I10@ INDI
+1 NAME Thomas McKay /McKenzie/
+1 SEX M
+0 @I11@ INDI
+1 NAME Robert /Douglas/
+1 SEX M
+1 BIRT
+2 DATE 8 MAY 1876
+2 PLAC 9 Canon Street, Edinburgh, Scotland
+1 DEAT
+2 DATE 1919
+2 PLAC Morningside, Edinburgh, Scotland
+0 @I12@ INDI
+1 NAME Elizabeth Millar /McDonald/
+1 SEX F
+1 BIRT
+2 DATE 31 MAY 1874
+2 PLAC Liberton, Midlothian, Scotland
+0 @I13@ INDI
+1 NAME Archibald /Douglas/
+1 SEX M
+1 BIRT
+2 DATE ABT 1842
+2 PLAC Ormiston, Haddingtonshire, Scotland
+0 @I14@ INDI
+1 NAME Isabella /Gray/
+1 SEX F
+0 @F1@ FAM
+1 HUSB @I5@
+1 WIFE @I6@
+1 CHIL @I3@
+0 @F2@ FAM
+1 HUSB @I3@
+1 WIFE @I4@
+1 CHIL @I2@
+0 @F3@ FAM
+1 WIFE @I2@
+1 CHIL @I1@
+0 @F4@ FAM
+1 HUSB @I1@
+1 WIFE @I7@
+1 MARR
+2 DATE 9 OCT 1939
+2 PLAC Birmingham, Alabama, USA
+0 @F5@ FAM
+1 HUSB @I8@
+1 WIFE @I9@
+1 CHIL @I7@
+1 MARR
+2 DATE 16 JAN 1912
+0 @F6@ FAM
+1 HUSB @I10@
+1 WIFE @I2@
+1 MARR
+2 DATE 28 AUG 1911
+2 PLAC Edinburgh, Scotland
+0 @F7@ FAM
+1 HUSB @I11@
+1 WIFE @I12@
+1 MARR
+2 DATE 9 JUN 1899
+2 PLAC 34 St Patrick Square, Edinburgh, Scotland
+0 @F8@ FAM
+1 HUSB @I13@
+1 WIFE @I14@
+1 CHIL @I11@
+1 MARR
+2 DATE 2 JAN 1863
+2 PLAC Newton, Midlothian, Scotland
+0 TRLR
