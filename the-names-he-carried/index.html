@@ -287,7 +287,7 @@ html .book-room .pager a.pg.nx:hover{background:#164638;color:white}
 .toc .part h3{margin:0}
 .toc-row .e{font-size:21px!important;line-height:1.35!important;color:#1d2f2a!important}
 .toc-row .n.lbl{font:700 12px/1.2 Inter,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase}
-@media(max-width:760px){.estate-cover{align-items:flex-start!important;display:flex!important;flex-direction:column;padding:28px 18px 16px!important}.estate-copy{width:100%!important;max-width:none!important;order:1}.estate-jacket{order:2;width:150px!important;margin:20px 0 0!important;position:static!important;transform:none!important}.estate-caption{order:3}.estate-title{font-size:44px!important}.hook{max-width:none!important;width:100%}.estate-copy,.estate-copy *{text-align:left!important}.estate-place,.estate-actions{justify-content:flex-start!important;margin-left:0!important}.estate-jacket{width:120px!important}.estate-copy>*{text-shadow:0 0 10px #fff9ec,0 0 3px #fff9ec}}
+@media(max-width:760px){.estate-cover{align-items:flex-start!important;display:flex!important;flex-direction:column;padding:28px 18px 16px!important}.estate-copy{width:100%!important;max-width:none!important;order:1}.estate-jacket{order:2;width:150px!important;margin:20px 0 0!important;position:static!important;transform:none!important}.estate-caption{order:3}.estate-title{font-size:44px!important}.hook{max-width:none!important;width:100%}.estate-copy,.estate-copy *{text-align:left!important}.estate-place,.estate-actions{justify-content:flex-start!important;margin-left:0!important}.estate-jacket{width:120px!important}.estate-copy>*{text-shadow:0 0 10px #fff9ec,0 0 3px #fff9ec}.estate-actions .go,.estate-actions .go *{text-shadow:none!important}}
 .wx{box-sizing:border-box;max-width:100%;margin:28px 0!important;border:1px solid var(--rule);padding:14px;background:#fffdf7}.wx img{display:block;width:100%!important;max-width:100%!important;height:auto}.wx figcaption{font:500 15px/1.5 Inter,system-ui,sans-serif;margin-top:10px}.wx h4{margin:0 0 10px}
 html .top summary.tab.cta{display:block}
 .tabgrp.explore{align-self:center}
@@ -494,4 +494,4 @@ Promise.all([window.researchInventory?.book() || fetch('book.json',{cache:'no-ca
  .catch(()=>{$('#view').innerHTML='<p style="margin:80px 0">The book could not be loaded. <button class="lnk" onclick="location.reload()">Try again</button></p>'});
 }
 </script><script>document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('details.tabgrp[open]').forEach(d=>{d.open=false;d.querySelector('summary').focus()})});document.addEventListener('click',e=>{document.querySelectorAll('details.tabgrp[open]').forEach(d=>{if(!d.contains(e.target)||e.target.closest('.tabmenu .tab'))d.open=false})});</script>
-<script src="search/search.js" defer></script></body></html>
+<script src="search/search.js?v=m1" defer></script></body></html>

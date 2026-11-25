@@ -42,6 +42,9 @@
   box.innerHTML='<form><label for="tnhc-q" style="position:absolute;left:-9999px">Search the site</label><input id="tnhc-q" type="search" placeholder="Search the site" autocomplete="off"><button class="go" type="submit">Search</button></form>';
   var res=document.createElement('div');res.id='tnhc-res';res.hidden=true;res.setAttribute('aria-live','polite');
   if(TOP){box.className='top';res.className='top';document.body.insertBefore(box,document.body.firstChild);document.body.appendChild(res)}else{document.body.appendChild(res);document.body.appendChild(box)}
+  if(!TOP){var mcss=document.createElement('style');mcss.textContent='@media(max-width:760px){#tnhc-search:not(.open){left:auto;right:12px;width:auto}#tnhc-search:not(.open) input{display:none}#tnhc-search:not(.open) form{box-shadow:0 2px 10px #0005}#tnhc-search:not(.open) button{border-radius:999px}}';document.head.appendChild(mcss);
+   box.querySelector('button').addEventListener('click',function(ev){if(innerWidth<=760&&!box.classList.contains('open')){ev.preventDefault();box.classList.add('open');box.querySelector('input').focus()}});
+   document.addEventListener('click',function(ev){if(box.classList.contains('open')&&!box.contains(ev.target)&&!res.contains(ev.target)&&!box.querySelector('input').value.trim()){box.classList.remove('open')}})}
   var bn=document.getElementById('tnhc-backnav');
   var inp=box.querySelector('input'),t=null;
   function show(){var q=inp.value.trim();if(q.length<2){res.hidden=true;return}
