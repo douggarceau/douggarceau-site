@@ -35,7 +35,7 @@ for f in sorted(R.rglob('*.html')):
     t = re.sub(r'\s*[|·–—-]\s*The Names He Carried.*$', '', t) or rel
     body = re.search(r'(?is)<body\b.*', s)
     x = text(body.group(0) if body else s)
-    x = re.sub(r'^(Douglas Tartan\s*)?(Share\s*)?(The Names He Carried · Academic Edition\s*)?', '', x)
+    x = re.sub(r'^(Douglas Tartan\s*)?(Share\s*)?(The Names He Carried · The Research\s*)?', '', x)
     if x.startswith(t): x = x[len(t):].lstrip()
     if len(x) < 40: continue
     sec = rel.split('/')[0]
