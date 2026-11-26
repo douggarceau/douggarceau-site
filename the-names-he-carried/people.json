@@ -681,10 +681,15 @@
     "group": "His mother's family",
     "role": "Fourth great-grandparents",
     "story": [
-      "James Goldie and Ann Wilson were Laurence's fourth great-grandparents, the parents of Alexander Goldie, and the earliest generation found so far on this side of the family. They lived at Kirkmichael in Dumfriesshire, where Alexander was baptised in June 1762.",
+      "James Goldie and Ann Wilson were Laurence's fourth great-grandparents, the parents of Alexander Goldie. The family tree on Ancestry gives James's birth as November 13, 1737, at Kirkmichael, Dumfriesshire, a son of John Goldie and Jean Corrie, and Ann's as 1740. Alexander was baptised at Kirkmichael in June 1762.",
       "A family tree on Ancestry gives James's dates as 1737–1763, with burial in St Michael's Churchyard, Dumfries, and Ann's birth as 1740. That tree also lists more children of the family born at Kirkmichael after 1763: James (1764), Elizabeth (1767), Richard (1769–1772) and a second Richard (1772). Those births cannot all belong to a father who died in 1763, so either the death date or the parentage of the younger children is wrong. Nothing here should be relied on until the Kirkmichael registers are checked."
     ],
     "lineage": [
+      {
+        "rel": "James's parents",
+        "who": "John Goldie and Jean Corrie",
+        "slug": "john-goldie"
+      },
       {
         "rel": "Son",
         "who": "Alexander Goldie",
@@ -696,6 +701,66 @@
       {
         "label": "Kirkmichael, Dumfriesshire",
         "url": "https://earth.google.com/web/search/Kirkmichael%2C%20Dumfriesshire"
+      }
+    ],
+    "links": []
+  },
+  {
+    "slug": "john-goldie",
+    "name": "John Goldie and Jean Corrie",
+    "dates": "John 1708–1776 · Jean 1712–1783",
+    "group": "His mother's family",
+    "role": "Fifth great-grandparents",
+    "story": [
+      "John Goldie and Jean Corrie were Laurence's fifth great-grandparents, the parents of James Goldie. John was born at Dumfries on January 16, 1708, a son of Edward Goldie and Mary Gordon; his father died when he was three and his mother when he was fifteen. He married Jean Corrie (1712–1783) at Dumfries in August 1735, and their children included James (born November 13, 1737, at Kirkmichael) and Mary (1739).",
+      "John died at Craigmuie in 1776 and was buried at Dumfries on October 16, 1776, as the Old Parish Records note. These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the Dumfries and Kirkmichael parish registers."
+    ],
+    "lineage": [
+      {
+        "rel": "John's parents",
+        "who": "Edward Goldie and Mary Gordon",
+        "slug": "edward-goldie"
+      },
+      {
+        "rel": "Son",
+        "who": "James Goldie",
+        "slug": "james-goldie"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Born and married: Dumfries",
+        "url": "https://earth.google.com/web/search/Dumfries%2C%20Scotland"
+      },
+      {
+        "label": "Died: Craigmuie, Dumfriesshire",
+        "url": "https://earth.google.com/web/search/Craigmuie%2C%20Dumfries%20and%20Galloway"
+      }
+    ],
+    "links": []
+  },
+  {
+    "slug": "edward-goldie",
+    "name": "Edward Goldie and Mary Gordon",
+    "dates": "Edward 1675–1711 · Mary 1681–1723",
+    "group": "His mother's family",
+    "role": "Sixth great-grandparents",
+    "story": [
+      "Edward Goldie (1675–1711) and Mary Gordon (1681–1723) were Laurence's sixth great-grandparents, the parents of John Goldie, born at Dumfries in 1708. They are the earliest generation found so far on any line of Laurence's family, reaching back to the 1670s. These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the Dumfries and Kirkmichael parish registers."
+    ],
+    "lineage": [
+      {
+        "rel": "Son",
+        "who": "John Goldie",
+        "slug": "john-goldie"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Dumfries",
+        "url": "https://earth.google.com/web/search/Dumfries%2C%20Scotland"
       }
     ],
     "links": []
