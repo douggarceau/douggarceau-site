@@ -1095,7 +1095,7 @@
       {
         "rel": "Janet's father",
         "who": "Sir Thomas Hamilton of Preston",
-        "slug": ""
+        "slug": "thomas-hamilton-preston"
       },
       {
         "rel": "Daughter",
@@ -1153,7 +1153,7 @@
       {
         "rel": "Mary's parents",
         "who": "Sir John Hope of Craighall and Margaret Murray",
-        "slug": ""
+        "slug": "john-hope-craighall"
       },
       {
         "rel": "Son",
@@ -1184,6 +1184,112 @@
       {
         "label": "Gordon of Earlston pedigree (Access Genealogy)",
         "url": "https://accessgenealogy.com/?p=5762"
+      }
+    ]
+  },
+  {
+    "slug": "thomas-hamilton-preston",
+    "name": "Sir Thomas Hamilton of Preston",
+    "dates": "born 1618 · died 1672",
+    "group": "His mother's family",
+    "role": "Eighth great-grandfather",
+    "brief": "Laird of Preston and Prestonpans; father of Janet Hamilton",
+    "story": [
+      "Sir Thomas Hamilton of Fingalton and Preston was Laurence's eighth great-grandfather, the father of Janet Hamilton, who married Sir Alexander Gordon of Earlstoun in 1676. The Dictionary of National Biography names Janet as \"daughter of Sir Thomas Hamilton of Preston.\"",
+      "He was born in 1618, a son of the Hamiltons of Preston in East Lothian, and in 1647 he was served heir to the baronies of Preston and Prestonpans. He married three times: Margaret Murray; Anne Hamilton, a daughter of Sir James Hamilton of Fingalton and Preston; and Rachel Burnet, a daughter of Robert Burnet, Lord Crimond. He died in 1672. Which wife was Janet's mother hasn't been confirmed, but her brother Robert was a son of Anne Hamilton.",
+      "Janet's brother, Sir Robert Hamilton of Preston (1650–1701), was one of the leaders of the Scottish Covenanters. Another brother, Sir William, became the first baronet of Preston. So both of Mary Gordon's grandfathers' families, the Gordons of Earlstoun and the Hamiltons of Preston, were deep in the Covenanting cause."
+    ],
+    "lineage": [
+      {
+        "rel": "Daughter",
+        "who": "Janet Hamilton, wife of Sir Alexander Gordon of Earlstoun",
+        "slug": "alexander-gordon-earlstoun"
+      },
+      {
+        "rel": "Son",
+        "who": "Sir Robert Hamilton of Preston (1650–1701), Covenanter leader",
+        "slug": ""
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Preston, East Lothian",
+        "url": "https://earth.google.com/web/search/Preston+Tower,+Prestonpans,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Sir Thomas Hamilton of Fingalton and Preston, The Peerage",
+        "url": "https://thepeerage.com/p58417.htm"
+      },
+      {
+        "label": "Barony of Preston and Prestonpans, Wikipedia",
+        "url": "https://wikipedia.com/wiki/Barony_of_Preston_and_Prestonpans"
+      },
+      {
+        "label": "Robert Hamilton of Preston, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Robert_Hamilton_of_Preston"
+      },
+      {
+        "label": "Gordon, Sir Alexander (1650–1726), Dictionary of National Biography",
+        "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Gordon,_Alexander_(1650-1726)"
+      }
+    ]
+  },
+  {
+    "slug": "john-hope-craighall",
+    "name": "Sir John Hope, Lord Craighall, and Margaret Murray",
+    "dates": "John about 1605–1654 · Margaret died 1641",
+    "group": "His mother's family",
+    "role": "Ninth great-grandparents",
+    "brief": "Judge of Scotland's highest court; son of the Lord Advocate under Charles I",
+    "story": [
+      "Sir John Hope, Lord Craighall, and Margaret Murray were Laurence's ninth great-grandparents, the parents of Mary Hope (1631–1696), who married William Gordon of Earlstoun in 1648.",
+      "John was born about 1605, the eldest son of Sir Thomas Hope of Craighall, 1st Baronet (1573–1646), who was Lord Advocate of Scotland under Charles I. He trained as an advocate, was knighted in 1632, and became a judge of the Court of Session with the title Lord Craighall. He died at Edinburgh on April 28, 1654.",
+      "Margaret Murray was a daughter of Sir Archibald Murray of Blackbarony. She died in childbirth on October 3, 1641. They had two sons and six daughters, among them Margaret (1630), Mary (1631), Sir Thomas Hope, 3rd baronet (1633), Anna (1634) and Sir Archibald Hope, Lord Rankeillor (1639–1706), also a judge.",
+      "Through John, Laurence's tenth great-grandparents on this branch are Sir Thomas Hope of Craighall, the Lord Advocate, and Elizabeth Bennet of Wallyford. Sir James Hope of Hopetoun, ancestor of the Earls of Hopetoun, was John's younger brother."
+    ],
+    "lineage": [
+      {
+        "rel": "John's parents",
+        "who": "Sir Thomas Hope of Craighall, Lord Advocate, and Elizabeth Bennet",
+        "slug": ""
+      },
+      {
+        "rel": "Margaret's father",
+        "who": "Sir Archibald Murray of Blackbarony",
+        "slug": ""
+      },
+      {
+        "rel": "Daughter",
+        "who": "Mary Hope, wife of William Gordon of Earlstoun",
+        "slug": "william-gordon-earlstoun"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Craighall, Fife",
+        "url": "https://earth.google.com/web/search/Craighall,+Ceres,+Fife,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "John Hope, Lord Craighall, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/John_Hope,_Lord_Craighall"
+      },
+      {
+        "label": "Sir Thomas Hope, 1st Baronet, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sir_Thomas_Hope,_1st_Baronet"
+      },
+      {
+        "label": "Sir John Hope of Craighall and Margaret Murray, The Peerage",
+        "url": "https://mail.thepeerage.com/p13761.htm"
+      },
+      {
+        "label": "Hope of Craighall pedigree (Stirnet)",
+        "url": "https://stirnet.com/genie/data/british/hh4bz/hope01.php"
       }
     ]
   },
