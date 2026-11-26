@@ -1932,5 +1932,103 @@
     ],
     "html_path": "the-names-he-carried/cold-case-file/lawrence-brown-kelty-1927.html",
     "source_url": "https://www.britishnewspaperarchive.co.uk/viewer/bl/0000563/19270905/115/0005"
+  },
+  {
+    "item": 115,
+    "slug": "nathaniel-dunlop-portrait-northwestern-miller-1903",
+    "date": "April 1, 1903",
+    "sort_date": "1903-04-01",
+    "title": "Portrait and interview: “Mr. Nathaniel Dunlop, Head of the Allan Line”",
+    "source": "The Northwestern Miller (Minneapolis), April 1, 1903, vol. 55, no. 13, page 660: “The Allan Line,” by Kingsland Smith. Internet Archive, sim_northwestern-miller_1903-04-01_55_13.",
+    "images": [],
+    "html_path": "the-names-he-carried/cold-case-file/nathaniel-dunlop-portrait-northwestern-miller-1903.html",
+    "source_url": "https://archive.org/details/sim_northwestern-miller_1903-04-01_55_13/page/n20/mode/1up",
+    "image_urls": [
+      "https://archive.org/download/sim_northwestern-miller_1903-04-01_55_13/page/n20_w1400.jpg"
+    ]
+  },
+  {
+    "item": 116,
+    "slug": "nathaniel-dunlop-portrait-warneuke-1909",
+    "date": "1909",
+    "sort_date": "1909-01-01",
+    "title": "Portrait: “Sir Nathaniel Dunlop, Chairman of the Allan Line” (photo by Warneuke)",
+    "source": "Printed portrait captioned “Sir Nathaniel Dunlop, Chairman of the Allan Line. (Photo by Warneuke.)” Image supplied by Doug Garceau, November 25, 2026, as a portrait published in 1909. Publication not yet confirmed; George Eyre-Todd’s Who’s Who in Glasgow in 1909 has an entry on him.",
+    "images": [
+      "img/nathaniel-dunlop-portrait-warneuke-1909.jpg"
+    ],
+    "html_path": "the-names-he-carried/cold-case-file/nathaniel-dunlop-portrait-warneuke-1909.html"
+  },
+  {
+    "item": 117,
+    "slug": "nathaniel-dunlop-letter-shieldhill-1909",
+    "date": "May 20, 1909",
+    "sort_date": "1909-05-20",
+    "title": "Letter from Nathaniel Dunlop, written at Shieldhill",
+    "source": "John Rankin, A History of Our Firm: being some account of the firm of Pollok, Gilmour and Co., second edition (Liverpool, 1921), Introduction, pages 9–11. Internet Archive, historyofourfirm00rankuoft.",
+    "images": [],
+    "html_path": "the-names-he-carried/cold-case-file/nathaniel-dunlop-letter-shieldhill-1909.html",
+    "source_url": "https://archive.org/details/historyofourfirm00rankuoft/page/n22/mode/1up",
+    "image_urls": [
+      "https://archive.org/download/historyofourfirm00rankuoft/page/n22_w1400.jpg",
+      "https://archive.org/download/historyofourfirm00rankuoft/page/n23_w1400.jpg",
+      "https://archive.org/download/historyofourfirm00rankuoft/page/n24_w1400.jpg"
+    ]
+  },
+  {
+    "item": 118,
+    "slug": "unemployment-reply-to-nathaniel-dunlop-1909",
+    "date": "July 1909",
+    "sort_date": "1909-07-01",
+    "title": "“Unemployment: Some Remedies”, a reply to Sir Nathaniel Dunlop",
+    "source": "The Westminster Review, July 1909, vol. 172, no. 1, beginning page 14. Internet Archive, sim_westminster-review_1909-07_172_1.",
+    "images": [],
+    "html_path": "the-names-he-carried/cold-case-file/unemployment-reply-to-nathaniel-dunlop-1909.html",
+    "source_url": "https://archive.org/details/sim_westminster-review_1909-07_172_1/page/n15/mode/1up",
+    "image_urls": [
+      "https://archive.org/download/sim_westminster-review_1909-07_172_1/page/n15_w1400.jpg"
+    ]
+  },
+  {
+    "item": 119,
+    "slug": "gairdner-life-james-dunlop-brother-1912",
+    "date": "1912",
+    "sort_date": "1912-01-01",
+    "title": "Book: “the late Professor James Dunlop, brother of Sir Nathaniel”",
+    "source": "George Alexander Gibson, Life of Sir William Tennant Gairdner (Glasgow: James MacLehose and Sons, 1912), Biographical Sketch, pages 93–94. Internet Archive, b21296832 (Wellcome Collection copy).",
+    "images": [],
+    "html_path": "the-names-he-carried/cold-case-file/gairdner-life-james-dunlop-brother-1912.html",
+    "source_url": "https://archive.org/details/b21296832/page/n111/mode/1up",
+    "image_urls": [
+      "https://archive.org/download/b21296832/page/n111_w1400.jpg"
+    ]
+  },
+  {
+    "item": 120,
+    "slug": "nathaniel-dunlop-bust-frampton-1914",
+    "date": "1914",
+    "sort_date": "1914-05-01",
+    "title": "Photograph: marble bust of Sir Nathaniel Dunlop by Sir George Frampton, R.A.",
+    "source": "Royal Academy Pictures and Sculpture, 1914, page 95. Internet Archive, royalacademypict0000vari_j4r3.",
+    "images": [],
+    "html_path": "the-names-he-carried/cold-case-file/nathaniel-dunlop-bust-frampton-1914.html",
+    "source_url": "https://archive.org/details/royalacademypict0000vari_j4r3/page/n100/mode/1up",
+    "image_urls": [
+      "https://archive.org/download/royalacademypict0000vari_j4r3/page/n100_w1400.jpg"
+    ]
+  },
+  {
+    "item": 121,
+    "slug": "nathaniel-dunlop-obituary-chicago-tribune-1919",
+    "date": "November 17, 1919",
+    "sort_date": "1919-11-17",
+    "title": "Obituary: “Sir Nathaniel Dunlop, Steamboat Man, Is Dead”",
+    "source": "Chicago Daily Tribune, Monday, November 17, 1919, Obituary column (London cable of November 16). Internet Archive, per_chicago-daily-tribune_1919-11-17_78_275.",
+    "images": [],
+    "html_path": "the-names-he-carried/cold-case-file/nathaniel-dunlop-obituary-chicago-tribune-1919.html",
+    "source_url": "https://archive.org/details/per_chicago-daily-tribune_1919-11-17_78_275/page/n20/mode/1up",
+    "image_urls": [
+      "https://archive.org/download/per_chicago-daily-tribune_1919-11-17_78_275/page/n20_w1400.jpg"
+    ]
   }
 ]
