@@ -1076,15 +1076,26 @@
   {
     "slug": "alexander-gordon-earlstoun",
     "name": "Sir Alexander Gordon of Earlstoun and Janet Hamilton",
-    "dates": "married 1676",
+    "dates": "Alexander 1650–1726 · Janet 1653–1697",
     "group": "His mother's family",
     "role": "Seventh great-grandparents",
-    "brief": "Laird of Earlstoun, Dalry, Kirkcudbrightshire; father of Mary Gordon",
+    "brief": "Covenanter laird of Earlstoun; fought at Bothwell Bridge, imprisoned on the Bass Rock",
     "story": [
-      "Sir Alexander Gordon of Earlstoun was Laurence's seventh great-grandfather, the father of Mary (May) Gordon, who married Edward Goldie of Craigmuie at Dalry in 1701. Mary's gravestone at Balmaghie names her as his daughter. Earlstoun is in Dalry parish, Kirkcudbrightshire. His life, papers and the rest of his family are the next things to research.",
-      "Records of the Corrie Family (1899) names Mary's mother as Janet Hamilton. Sir Alexander married her in 1676, and Mary was their second daughter."
+      "Sir Alexander Gordon of Earlstoun (1650–1726) and Janet Hamilton were Laurence's seventh great-grandparents. Their second daughter, Mary (1681–1723), married Edward Goldie of Craigmuie. Mary's gravestone at Balmaghie names her as Sir Alexander's daughter.",
+      "Alexander was the eldest son of William Gordon of Earlstoun and Mary Hope, a daughter of Sir John Hope of Craighall. Earlstoun is in Dalry parish, Kirkcudbrightshire. Like his father he was a committed Covenanter, one of the Presbyterians who resisted the Crown's control of the Church. He fought at the Battle of Bothwell Bridge in 1679 and escaped, while his father was shot by dragoons on the way there. He fled to Holland and was sentenced to death. Captured in 1683, he was spared, and held for about six years in Edinburgh Castle, on the Bass Rock and in Blackness Castle until the Revolution freed him in January 1689. In 1706 his brother William was made a baronet, and Alexander later succeeded him as the 2nd Baronet of Earlston and Afton. He died on November 10, 1726. His name is on the Dalry Covenanter sculpture.",
+      "He married Janet Hamilton, a daughter of Sir Thomas Hamilton of Preston, on November 16, 1676, at Prestonpans. A family tree on FamilySearch lists eleven children, among them Anne, William, Jane, Alexander, Hope, Mary (1681–1723), Thomas (the 3rd baronet), Margaret, Robert, Archibald and Elizabeth. The same tree places his birth at \"Earlston, Berwickshire\" and his death at Oban; both look like errors, since the family's Earlstoun is in Galloway."
     ],
     "lineage": [
+      {
+        "rel": "Parents",
+        "who": "William Gordon of Earlstoun and Mary Hope",
+        "slug": "william-gordon-earlstoun"
+      },
+      {
+        "rel": "Janet's father",
+        "who": "Sir Thomas Hamilton of Preston",
+        "slug": ""
+      },
       {
         "rel": "Daughter",
         "who": "Mary Gordon, wife of Edward Goldie",
@@ -1106,6 +1117,111 @@
       {
         "label": "Records of the Corrie Family, A.D. 802–1899, by Jessie Elizabeth Corrie (Internet Archive)",
         "url": "https://archive.org/details/recordsofcorrief01corr"
+      },
+      {
+        "label": "Sir Alexander Gordon, 2nd Baronet of Earlston, on FamilySearch (LH2Q-2M9)",
+        "url": "https://ancestors.familysearch.org/en/LH2Q-2M9/sir-alexander-gordon-2nd-baronet-of-earlston-1650-1726"
+      },
+      {
+        "label": "Alexander Gordon of Earlston, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Alexander_Gordon_of_Earlston"
+      },
+      {
+        "label": "Gordon, Sir Alexander (1650–1726), Dictionary of National Biography (Wikisource)",
+        "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Gordon,_Alexander_(1650-1726)"
+      }
+    ]
+  },
+  {
+    "slug": "william-gordon-earlstoun",
+    "name": "William Gordon of Earlstoun and Mary Hope",
+    "dates": "William 1614–1679 · Mary born 1631",
+    "group": "His mother's family",
+    "role": "Eighth great-grandparents",
+    "brief": "Covenanter laird shot on his way to Bothwell Bridge, 1679",
+    "story": [
+      "William Gordon of Earlstoun (1614–1679) and Mary Hope were Laurence's eighth great-grandparents, the parents of Sir Alexander Gordon of Earlstoun. They married on November 26, 1648. Mary was the second daughter of Sir John Hope of Craighall, a judge of the Court of Session, and Margaret Murray.",
+      "William was a Covenanter and a correspondent of the minister Samuel Rutherford. He was born at Dalry and succeeded his father as laird of Earlstoun. In June 1679 he was riding to join the Covenanter army at Bothwell Bridge, arrived after the fighting was over, and was shot by English dragoons. He is buried at Glassford, where his headstone stands. His widow, Mary Hope, managed with great difficulty to keep her life-rent in the estates. They had thirteen children, including Alexander and Sir William Gordon of Afton, the first baronet."
+    ],
+    "lineage": [
+      {
+        "rel": "Parents",
+        "who": "Alexander Gordon of Earlstoun and Elizabeth Gordon",
+        "slug": "alexander-gordon-1587"
+      },
+      {
+        "rel": "Mary's parents",
+        "who": "Sir John Hope of Craighall and Margaret Murray",
+        "slug": ""
+      },
+      {
+        "rel": "Son",
+        "who": "Sir Alexander Gordon of Earlstoun",
+        "slug": "alexander-gordon-earlstoun"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Earlstoun, Dalry",
+        "url": "https://earth.google.com/web/search/Earlstoun+Castle,+Dalry,+Scotland"
+      },
+      {
+        "label": "Glassford kirkyard",
+        "url": "https://earth.google.com/web/search/Glassford,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "William Gordon of Earlston, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/William_Gordon_of_Earlston"
+      },
+      {
+        "label": "William Gordon of Earlston and Mary Hope, The Peerage",
+        "url": "https://mail.thepeerage.com/p42349.htm"
+      },
+      {
+        "label": "Gordon of Earlston pedigree (Access Genealogy)",
+        "url": "https://accessgenealogy.com/?p=5762"
+      }
+    ]
+  },
+  {
+    "slug": "alexander-gordon-1587",
+    "name": "Alexander Gordon of Earlstoun and Elizabeth Gordon",
+    "dates": "Alexander 1587–1654",
+    "group": "His mother's family",
+    "role": "Ninth great-grandparents",
+    "brief": "Laird of Earlstoun; refused a baronetcy",
+    "story": [
+      "Alexander Gordon of Earlstoun (1587–1654) and Elizabeth Gordon were Laurence's ninth great-grandparents, the parents of William Gordon of Earlstoun. Alexander was the second Gordon laird of Earlstoun, a branch of the Gordons of Lochinvar. He is said to have been offered a baronetcy and turned it down. Their children included John (born 1613, died before his father, without children), William (1614–1679), Robert and Margaret. These details come from published pedigrees and still need checking against original records."
+    ],
+    "lineage": [
+      {
+        "rel": "Son",
+        "who": "William Gordon of Earlstoun",
+        "slug": "william-gordon-earlstoun"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Earlstoun, Dalry",
+        "url": "https://earth.google.com/web/search/Earlstoun+Castle,+Dalry,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Gordon of Earlston pedigree (Access Genealogy)",
+        "url": "https://accessgenealogy.com/?p=5762"
+      },
+      {
+        "label": "William Gordon of Earlston and Mary Hope, The Peerage",
+        "url": "https://mail.thepeerage.com/p42349.htm"
+      },
+      {
+        "label": "Gordon, Alexander (1587–1654), Dictionary of National Biography",
+        "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Gordon,_Alexander_(1587-1654)"
       }
     ]
   },
