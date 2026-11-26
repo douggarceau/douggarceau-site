@@ -433,17 +433,18 @@
     "group": "His mother's family",
     "story": [
       "Agnes McGarth was Laurence's great-grandmother, the wife of William Brown. She was born about 1840 at Tweedsmuir, where the Tweed rises in the hills of Peeblesshire. In 1851 the census found her in her parents' crowded house: her father, Tweedie McGarth; her mother, Jane, a woman from Wamphray in Dumfriesshire; and her brothers and sisters Jane, James Tweedie, Sarah, Ann and Janet.",
-      "She married William Brown, a ploughman, and raised at least ten children. Her son George named his second daughter for her, Agnes McGarth Brown, and so her name came down to Laurence's mother. More than a century later an indexer misread it as McGrath, but the handwriting in the register says McGarth."
+      "She married William Brown, a ploughman, and raised at least ten children. Her son George named his second daughter for her, Agnes McGarth Brown, and so her name came down to Laurence's mother. More than a century later an indexer misread it as McGrath, but the handwriting in the register says McGarth.",
+      "Her parents' gravestone stands at Tweedsmuir Kirk. Tweedie McGarth was born at Tweedsmuir on October 26, 1811, a son of Michael McGarth and Margaret Larkin, and died on September 28, 1876, aged 64, \"late in Bield.\" Her mother, Jean (Jane) Goldie, was born on December 5, 1808, at Newtoun, Langside, in Wamphray parish, Dumfriesshire, a daughter of William Goldie and Agnes Mundell, and died at Tweedsmuir on December 24, 1891. The stone also remembers children who died young: an elder Agnes (1836–1838), Mary (1846) and Anne (1846–1848). Agnes was most likely named for that lost sister and, through her, for her grandmother Agnes Mundell."
     ],
     "lineage": [
       {
         "rel": "Father",
-        "who": "Tweedie McGarth",
+        "who": "Tweedie McGarth (1811–1876), son of Michael McGarth and Margaret Larkin",
         "slug": null
       },
       {
         "rel": "Mother",
-        "who": "Jane, of Wamphray, Dumfriesshire",
+        "who": "Jean (Jane) Goldie (1808–1891), of Wamphray, Dumfriesshire, daughter of William Goldie and Agnes Mundell",
         "slug": null
       },
       {
@@ -476,6 +477,14 @@
       {
         "label": "Ancestry: Agnes McGarth in The Laurence Brown Douglas Family Tree",
         "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816705667/facts"
+      },
+      {
+        "label": "Her father's gravestone: Find a Grave memorial 245857566, Tweedie McGarth, Tweedsmuir Kirk (photograph by MichelleS, 2023)",
+        "url": "https://www.findagrave.com/memorial/245857566/tweedie-mcgarth"
+      },
+      {
+        "label": "Her mother: Find a Grave memorial 245857632, Jean Goldie McGarth",
+        "url": "https://www.findagrave.com/memorial/245857632/jean-mcgarth"
       }
     ]
   },
