@@ -441,12 +441,12 @@
       {
         "rel": "Father",
         "who": "Tweedie McGarth (1811–1876), son of Michael McGarth and Margaret Larkin",
-        "slug": null
+        "slug": "tweedie-mcgarth"
       },
       {
         "rel": "Mother",
         "who": "Jean (Jane) Goldie (1808–1891), of Wamphray, Dumfriesshire, daughter of Alexander Goldie and Agnes Mundell",
-        "slug": null
+        "slug": "jean-goldie"
       },
       {
         "rel": "Husband",
@@ -488,6 +488,185 @@
         "url": "https://www.findagrave.com/memorial/245857632/jean-mcgarth"
       }
     ]
+  },
+  {
+    "slug": "tweedie-mcgarth",
+    "name": "Tweedie McGarth",
+    "dates": "1811–1876",
+    "group": "His mother's family",
+    "role": "Great-great-grandfather",
+    "story": [
+      "Tweedie McGarth was Laurence's great-great-grandfather: the father of Agnes McGarth, whose granddaughter was Laurence's mother. He was born at Tweedsmuir, high in the hills where the Tweed rises, on October 26, 1811, a son of Michael McGrath and Margaret Larkin, and spent his whole life there.",
+      "With his wife, Jean Goldie, he kept the Beild, a former coaching inn on the Edinburgh and Dumfries road below Oliver Dod. The 1841 census found the family at the Bield Inn. From 1847 he was the Post Office's rural messenger, carrying the mail between Broughton and Tweedsmuir from the office at Rachan Mill. His wife's obituary remembered him as the hearty, kindly postman with a home-made mail cart he called his Chariot, drawn by a donkey named Omar Pasha, and a horn he sometimes blew.",
+      "He and Jean married about 1830; a family tree on Ancestry gives Wamphray, 1830. The baptism registers and that tree give their children as Margaret (about 1829–1904), Lawrence (born at the Beild, November 3, 1831–1896), Alexander (1833–1914), Agnes (1836–1838), Jean (1838–1909), Agnes (1840–1924, Laurence's great-grandmother), James Tweedie (1841–1880), Sarah (1844–1900), Mary (1846), Ann (1846–1848), Mary Ann (1848–1932) and Janet (1851–1933). He retired from the Post Office in April 1876 and died at the Beild on September 28, 1876. He is buried at Tweedsmuir Kirk, where his stone names him “late in Bield.”"
+    ],
+    "lineage": [
+      {
+        "rel": "Father",
+        "who": "Michael McGrath",
+        "slug": "michael-mcgrath"
+      },
+      {
+        "rel": "Mother",
+        "who": "Margaret Larkin",
+        "slug": "michael-mcgrath"
+      },
+      {
+        "rel": "Wife",
+        "who": "Jean Goldie",
+        "slug": "jean-goldie"
+      },
+      {
+        "rel": "Daughter",
+        "who": "Agnes McGarth, Laurence's great-grandmother",
+        "slug": "agnes-mcgarth"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Born and lived: The Beild, Tweedsmuir, Peeblesshire",
+        "url": "https://earth.google.com/web/search/The%20Bield%2C%20Tweedsmuir%2C%20Scotland"
+      },
+      {
+        "label": "Buried: Tweedsmuir Kirk",
+        "url": "https://earth.google.com/web/search/Tweedsmuir%20Kirk%2C%20Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Find a Grave memorial 245857566",
+        "url": "https://www.findagrave.com/memorial/245857566/tweedie-mcgarth"
+      },
+      {
+        "label": "Research File: the McGarth and Goldie records",
+        "url": "research/#log"
+      }
+    ]
+  },
+  {
+    "slug": "jean-goldie",
+    "name": "Jean (Jane) Goldie McGarth",
+    "dates": "1808–1891",
+    "group": "His mother's family",
+    "role": "Great-great-grandmother",
+    "story": [
+      "Jean Goldie was Laurence's great-great-grandmother, the wife of Tweedie McGarth and mother of Agnes McGarth. She was born on November 21, 1808, and baptised at Wamphray in Dumfriesshire on December 5, a daughter of Alexander Goldie and Agnes Mundell. Her mother's name, Agnes, came down through four generations to Laurence's mother.",
+      "She ran the Beild at Tweedsmuir for more than half a century: postmistress, merchant, crofter and landlady. She died there on December 24, 1891, and was buried beside Tweedie at Tweedsmuir Kirk.",
+      "Her obituary, as copied by hand in the family (clipping dated January 1, 1892; transcription, uncertain readings marked [?]):",
+      "“Mrs McGarth of ‘The Beild,’ Tweedsmuir. Many will learn with sincere regret of the death of Mrs McGarth of the ‘Beild’ which occurred on 24th instant at the ripe age of eighty two. Those who know the upper gathering ground of the Tweed (and of course delight in it) will recall the cozy nook, nestling at the base of Oliver Dod, forming three sides of a square, the fourth being the Edinburgh & Dumfries Road. In front flows the ‘Tweed’ and the sound of many waters, from the full torrent of Carlows Linn at the Brig to the swish of the Beild burn at the ‘back o’ the steadin’,’ pervades the air. Still further in front, the Covenant-memoried Talla brattles from its dark morasses down its brawling linns, foregathering with the Cargill-trodden Gameshope, and an amphitheatre of hills from the Garelet Dod to the sonsie Broad Law sentinels the neat church and clachan of Tweedsmuir.",
+      "“‘The Beild’ was formerly an Inn for entertaining man and beast, either before the dreary, steep [?] Erickstane brae was faced or after it had been crossed. Mr Tweedie McGarth, her late husband, was well known as the hearty, kindly postman between Broughton and Tweedsmuir, with his primitive home-made mailbox, or let us call it, as he did, Chariot, drawn by a handsome donkey called ‘Omar Pasha.’ Sometimes Tweedie blew his horn, but Omar had many high musical talents and filled the glen with louder sounds than the invariable cuckoo whose notes rung out from the hills around.",
+      "“Mrs McGarth was in a sense the ‘Tibby Shiels’ of this happy valley: postmistress, merchant, crofter and landlady. The house has had no license for many years past. ‘We’re better without it’ was her sensible remark, but it was a land of Goshen for fishers and sportsmen, clean and caller in every corner. The table was provided with a simple, clean, good and sufficient ware: porridge and either cream, or milk that to townsfolk passed as such, ham and egg à la Tweedside, chops, pancakes, cakes, scones, curds etc., such as only a well-trained kindly Scots housewife could cook. Early were the ways of the croft and house. The primitive wooden pump in front of the house, like [two words unclear], had a pitiful time o’t, and its noisy action was the time gun of the place.",
+      "“Mrs McGarth’s cows and hens, ducks and fowls showed that her very foot had music in’t. She was also a ‘skeelie’ body, and helpful to many. A little above the average height, with a pleasant, kindly face, she was an eident, useful woman, the thirty-first chapter of Proverbs reproduced in her quiet, industrious, Christian life. Not only will the fishers and sportsmen who frequented the dear old place recall her genuine excellence, but the neighbours and the poor will miss the warm fireside and warmer heart of Mrs McGarth. She is survived by a daughter and son-in-law, who worthily keep up the traditions of the place as a cosy ‘Beild,’ and by other children resident in various parts.”",
+      "The copy belonged to her great-grandson William Gordon and was shared on Ancestry by PamelaWills909 on December 15, 2018. The newspaper it was cut from is not named."
+    ],
+    "lineage": [
+      {
+        "rel": "Father",
+        "who": "Alexander Goldie",
+        "slug": "alexander-goldie"
+      },
+      {
+        "rel": "Mother",
+        "who": "Agnes Mundell",
+        "slug": "alexander-goldie"
+      },
+      {
+        "rel": "Husband",
+        "who": "Tweedie McGarth",
+        "slug": "tweedie-mcgarth"
+      },
+      {
+        "rel": "Daughter",
+        "who": "Agnes McGarth, Laurence's great-grandmother",
+        "slug": "agnes-mcgarth"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Born: Wamphray, Dumfriesshire",
+        "url": "https://earth.google.com/web/search/Wamphray%2C%20Dumfriesshire%2C%20Scotland"
+      },
+      {
+        "label": "The Beild, Tweedsmuir",
+        "url": "https://earth.google.com/web/search/The%20Bield%2C%20Tweedsmuir%2C%20Scotland"
+      },
+      {
+        "label": "Buried: Tweedsmuir Kirk",
+        "url": "https://earth.google.com/web/search/Tweedsmuir%20Kirk%2C%20Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Find a Grave memorial 245857632",
+        "url": "https://www.findagrave.com/memorial/245857632/jean-mcgarth"
+      },
+      {
+        "label": "Her obituary, handwritten family copy, on Ancestry (shared by PamelaWills909)",
+        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932868/media/3db41cd1-b8c0-4dc1-b2d1-cff68ef98359"
+      }
+    ]
+  },
+  {
+    "slug": "michael-mcgrath",
+    "name": "Michael McGrath and Margaret Larkin",
+    "dates": "Tweedsmuir, 1811",
+    "group": "His mother's family",
+    "role": "Third great-grandparents",
+    "story": [
+      "Michael McGrath and Margaret Larkin were Laurence's third great-grandparents, the parents of Tweedie McGarth. Their names come from Tweedie's baptism at Tweedsmuir in October 1811, which spells the family name McGrath; later records settle on McGarth.",
+      "Nothing more is known of them yet. Their marriage and any other children are still to be found in the parish registers."
+    ],
+    "lineage": [
+      {
+        "rel": "Son",
+        "who": "Tweedie McGarth",
+        "slug": "tweedie-mcgarth"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Tweedsmuir, Peeblesshire",
+        "url": "https://earth.google.com/web/search/Tweedsmuir%2C%20Scotland"
+      }
+    ],
+    "links": []
+  },
+  {
+    "slug": "alexander-goldie",
+    "name": "Alexander Goldie and Agnes Mundell",
+    "dates": "Alexander 1762–1822 · Agnes 1768–1849",
+    "group": "His mother's family",
+    "role": "Third great-grandparents",
+    "story": [
+      "Alexander Goldie and Agnes Mundell were Laurence's third great-grandparents, the parents of Jean Goldie. The baptism registers follow them across Dumfriesshire: James (1790) and John (1792) at Kirkmichael, Alexander (1801) and Joseph (1803) at Tinwald, then Jean (1808), Robert (1811) and Edward (1813) at Wamphray.",
+      "A memorial page on Find a Grave calls Jean's father William, but her baptism names him Alexander. A family tree on Ancestry (PamelaWills909's Cairns Family Tree) gives Alexander's dates as 1762 to November 11, 1822, when he died at Wamphray, and Agnes's as 1768 to 1849, and places Jean's birth at Newtoun, Langside, in Wamphray parish. Jean was not yet fourteen when her father died. These dates are from the member tree and still need checking against the registers; their marriage is still to be found."
+    ],
+    "lineage": [
+      {
+        "rel": "Daughter",
+        "who": "Jean Goldie",
+        "slug": "jean-goldie"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Kirkmichael, Dumfriesshire",
+        "url": "https://earth.google.com/web/search/Kirkmichael%2C%20Dumfriesshire"
+      },
+      {
+        "label": "Tinwald, Dumfriesshire",
+        "url": "https://earth.google.com/web/search/Tinwald%2C%20Dumfriesshire"
+      },
+      {
+        "label": "Wamphray, Dumfriesshire",
+        "url": "https://earth.google.com/web/search/Wamphray%2C%20Dumfriesshire"
+      }
+    ],
+    "links": []
   },
   {
     "slug": "lawrence-tweedie-brown",
