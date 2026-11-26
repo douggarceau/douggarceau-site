@@ -487,7 +487,8 @@
     "story": [
       "Lawrence Tweedie Brown was the elder brother of George Brown and the uncle of Agnes McGarth Brown. He was born on September 14, 1860, at Peebles, a son of William Brown and Agnes McGarth. In 1871 the census found him at ten in the same household as his brother George.",
       "He married Isabella Graham of Cambusnethan, raised a family at Traquair and Sanquhar, and eventually settled in Quebec, where he died in 1943.",
-      "His place in this story is his name. When Agnes registered her son in 1907, she gave him the first name Lawrence, the name of her father's elder brother. "
+      "His place in this story is his name. When Agnes registered her son in 1907, she gave him the first name Lawrence, the name of her father's elder brother. ",
+      "He and Isabella had at least eight children, among them Isabella Crawford Brown (1883–1953), Agnes McGarth Brown (1886–1979), Janet Graham Brown (1888–1983), William, Elizabeth, Lawrence Tweedie and Hugh Graham Brown. Their daughter Agnes, a year younger than Laurence's mother, carried the same name, Agnes McGarth Brown, after the grandmother both girls shared. The two Agneses were first cousins and are different women."
     ],
     "lineage": [
       {
@@ -514,6 +515,11 @@
         "rel": "Niece",
         "who": "Agnes McGarth Brown",
         "slug": "agnes-mcgarth-brown"
+      },
+      {
+        "rel": "Daughters",
+        "who": "Isabella Crawford, Agnes McGarth and Janet Graham Brown, cousins of Agnes",
+        "slug": null
       }
     ],
     "ch": [
@@ -542,6 +548,11 @@
         "src": "img/lawrence-tweedie-brown-headstone.jpg",
         "alt": "Headstone of Lawrence T. Brown and Isabella Graham",
         "cap": "His headstone: Lawrence T. Brown, 1860–1943, and his wife, Isabella Graham, 1862–1961. Photograph shared on Ancestry by rwana55."
+      },
+      {
+        "src": "img/brown-sisters-nettie-agnes-isabella.jpg",
+        "alt": "Three of his daughters, Nettie, Agnes and Isabella Brown, on a bridge in winter",
+        "cap": "Three of his daughters: Janet (Nettie) Graham Brown, Agnes McGarth Brown (1886–1979) and Isabella Crawford Brown, undated, probably in Canada. This Agnes is Laurence's mother's first cousin, not his mother. Shared on Ancestry by edrogers37, August 16, 2010; the photograph does not say which woman is which."
       }
     ],
     "links": [
