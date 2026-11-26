@@ -1254,12 +1254,12 @@
       {
         "rel": "John's parents",
         "who": "Sir Thomas Hope of Craighall, Lord Advocate, and Elizabeth Bennet",
-        "slug": ""
+        "slug": "thomas-hope-lord-advocate"
       },
       {
         "rel": "Margaret's father",
         "who": "Sir Archibald Murray of Blackbarony",
-        "slug": ""
+        "slug": "archibald-murray-blackbarony"
       },
       {
         "rel": "Daughter",
@@ -1361,7 +1361,7 @@
     "story": [
       "These are Laurence's tenth great-grandparents, the parents of Alexander Gordon of Earlstoun and of his wife, Elizabeth Gordon. They are the earliest ancestors found so far on any line.",
       "John Gordon of Muirfad, afterwards of Penninghame in Wigtownshire, was Elizabeth's father. A family tree on FamilySearch gives him as born about 1548 at Penninghame and died in 1603, with children William (1570), William (1575–1660), a daughter (1581), Jean (1582) and Elizabeth (1588–1665). That tree has no sources attached, and its dates still need checking. Penninghame had earlier been home to Alexander Gordon, bishop of Galloway, who died there in 1575, but no record found so far connects John to the bishop.",
-      "John Gordon of Airds and Earlstoun, who died in 1628, was Alexander's father. In 1585 he married Mary Chalmers, a daughter of James Chalmers of Gadgirth in Ayrshire. Their sons included Alexander, William Gordon of Carleton, Robert, Colonel James Gordon and David Gordon of Gordonstown. The family descended from Alexander, a second son of William Gordon, sixth lord of Lochinvar."
+      "John Gordon of Airds and Earlstoun, who died in 1628, was Alexander's father. In 1585 he married Mary Chalmers, a daughter of James Chalmers of Gadgirth in Ayrshire. Their sons included Alexander, William Gordon of Carleton, Robert, Colonel James Gordon and David Gordon of Gordonstown. The family descended from Alexander, a second son of William Gordon, sixth lord of Lochinvar. Mary Chalmers's father was James Chalmers of Gadgirth, of a family that led the Reformation in Ayrshire. John's line goes back to Alexander Gordon of Airds (1479–1580), the early reformer, who was his grandfather or great-grandfather; the generations in between aren't yet named."
     ],
     "lineage": [
       {
@@ -1397,6 +1397,177 @@
       {
         "label": "Gordon of Earlston pedigree (Access Genealogy)",
         "url": "https://accessgenealogy.com/?p=5762"
+      }
+    ]
+  },
+  {
+    "slug": "thomas-hope-lord-advocate",
+    "name": "Sir Thomas Hope of Craighall, Lord Advocate, and Elizabeth Bennet",
+    "dates": "Thomas 1573–1646",
+    "group": "His mother's family",
+    "role": "Tenth great-grandparents",
+    "brief": "Lord Advocate under Charles I; legal mind behind the National Covenant of 1638",
+    "story": [
+      "Sir Thomas Hope of Craighall (1573–1646) and Elizabeth Bennet (or Binning), a daughter of John Bennet of Wallyford in Haddingtonshire, were Laurence's tenth great-grandparents. Their eldest son was Sir John Hope, Lord Craighall, whose daughter Mary married William Gordon of Earlstoun.",
+      "Thomas was one of the most famous lawyers in Scottish history. He was Lord Advocate under Charles I, and he is credited as the legal mind behind the National Covenant of 1638, making sure its wording was not treasonous. That puts him at the birth of the Covenanting movement that his Gordon descendants later fought and died for. He was made a baronet in 1628. Two of his sons became judges, and another, Sir James Hope of Hopetoun, was the ancestor of the Earls of Hopetoun. A collection of his letters and his diary of public business, 1633–1645, have been published.",
+      "His parents, Laurence's eleventh great-grandparents, were Henry Hope, an Edinburgh merchant who traded with France and Holland and died before 1591, and Jacqueline de Tott, a Frenchwoman. Henry was buried in Greyfriars in Edinburgh. Family tradition says the Hopes came to Scotland from France in 1537, with Madeleine de Valois, the first queen of James V. Later research points instead to John Hope, a merchant and burgess of Edinburgh, as the family's founder there. The early generations are still debated."
+    ],
+    "lineage": [
+      {
+        "rel": "Parents",
+        "who": "Henry Hope, merchant of Edinburgh, and Jacqueline de Tott",
+        "slug": ""
+      },
+      {
+        "rel": "Son",
+        "who": "Sir John Hope, Lord Craighall",
+        "slug": "john-hope-craighall"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Craighall, Fife",
+        "url": "https://earth.google.com/web/search/Craighall,+Ceres,+Fife,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Sir Thomas Hope, 1st Baronet, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Sir_Thomas_Hope,_1st_Baronet"
+      },
+      {
+        "label": "Origins of the Hope surname: the Edinburgh Hopes",
+        "url": "https://ajbhope.net/3-edinburgh-hopes"
+      },
+      {
+        "label": "Twenty-Four Letters of Sir Thomas Hope (Electric Scotland, PDF)",
+        "url": "https://electricscotland.com/HISTORY/other/lettersofsircharleshope.pdf"
+      },
+      {
+        "label": "Hope pedigree (Stirnet)",
+        "url": "https://stirnet.com/genie/data/british/hh4bz/hope01.php"
+      }
+    ]
+  },
+  {
+    "slug": "archibald-murray-blackbarony",
+    "name": "Sir Archibald Murray of Blackbarony and Margaret Maule",
+    "dates": "Archibald died by 1634",
+    "group": "His mother's family",
+    "role": "Tenth great-grandparents",
+    "brief": "First baronet of Blackbarony, Peeblesshire; Margaret was of the Maules of Panmure",
+    "story": [
+      "Sir Archibald Murray of Blackbarony and Margaret Maule were Laurence's tenth great-grandparents, the parents of Margaret Murray, who married Sir John Hope, Lord Craighall. Blackbarony is in Eddleston parish, Peeblesshire. That is Laurence's own home county: his Brown and McGarth ancestors worked farms in Peeblesshire two centuries later.",
+      "Archibald was created a baronet of Nova Scotia on May 15, 1628, and died before March 1634. He married Margaret Maule, of the house of Panmure, before 1617. His parents, Laurence's eleventh great-grandparents, were Sir John Murray of Blackbarony and Margaret Hamilton, a daughter of Sir Alexander Hamilton of Innerwick."
+    ],
+    "lineage": [
+      {
+        "rel": "Parents",
+        "who": "Sir John Murray of Blackbarony and Margaret Hamilton",
+        "slug": ""
+      },
+      {
+        "rel": "Daughter",
+        "who": "Margaret Murray, wife of Sir John Hope, Lord Craighall",
+        "slug": "john-hope-craighall"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Blackbarony (Barony Castle), Eddleston",
+        "url": "https://earth.google.com/web/search/Barony+Castle,+Eddleston,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Murray of Blackbarony pedigree (Stirnet)",
+        "url": "https://stirnet.com/genie/data/british/mm4fz/murray09.php"
+      },
+      {
+        "label": "Sir Archibald Murray of Blackbarony and Margaret Maule, The Peerage",
+        "url": "https://peerage.org.uk/codex/peerage-record-51853"
+      }
+    ]
+  },
+  {
+    "slug": "james-chalmers-gadgirth",
+    "name": "James Chalmers of Gadgirth",
+    "dates": "living 1585",
+    "group": "His mother's family",
+    "role": "Eleventh great-grandfather",
+    "brief": "Ayrshire laird; the Chalmers of Gadgirth were leaders of the Reformation",
+    "story": [
+      "James Chalmers (or Chalmer) of Gadgirth, in Ayrshire, was Laurence's eleventh great-grandfather, the father of Mary Chalmers, who married John Gordon of Airds and Earlstoun in 1585.",
+      "The lairds of Gadgirth were famous in the Scottish Reformation. A James Chalmer of Gadgirth was described by John Knox and Archbishop Spottiswood as one of the boldest leaders of the movement, and Knox preached at Gadgirth. The Chalmers pedigree has two Jameses of Gadgirth in the 1500s, a father who was living in 1550 and a son who was still alive after 1588. It isn't yet settled which one was Mary's father, or which one was the reformer."
+    ],
+    "lineage": [
+      {
+        "rel": "Daughter",
+        "who": "Mary Chalmers, wife of John Gordon of Airds and Earlstoun",
+        "slug": "john-gordon-penninghame"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Gadgirth, Ayrshire",
+        "url": "https://earth.google.com/web/search/Gadgirth,+Annbank,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Castle and Barony of Gadgirth, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Castle_and_Barony_of_Gadgirth"
+      },
+      {
+        "label": "Chalmers of Gadgirth pedigree (Stirnet)",
+        "url": "https://stirnet.com/genie/data/british/cc4aq/chalmers01.php"
+      },
+      {
+        "label": "Chalmer, The Scottish Nation (Electric Scotland)",
+        "url": "https://electricscotland.com/HISTORY/nation/chalmer.htm"
+      }
+    ]
+  },
+  {
+    "slug": "alexander-gordon-airds",
+    "name": "Alexander Gordon of Airds",
+    "dates": "1479–1580",
+    "group": "His mother's family",
+    "role": "Twelfth great-grandfather",
+    "brief": "Early reformer who read Wycliffe's New Testament to his tenants in the wood of Airds",
+    "story": [
+      "Alexander Gordon of Airds (1479–1580) was Laurence's twelfth great-grandfather, born more than four hundred years before Laurence. The Dictionary of National Biography names him as the great-grandfather of Alexander Gordon of Earlstoun (1587–1654). That makes him great-great-grandfather to Sir Alexander Gordon, the Bothwell Bridge Covenanter, and twelve generations above Laurence. The two generations between him and John Gordon of Airds and Earlstoun (who died in 1628) are not yet named.",
+      "He was one of the first people to bring the ideas of the Reformation into Galloway, decades before Scotland broke with Rome in 1560. He read Wycliffe's English New Testament aloud to his tenants and neighbors in the wood of Airds. That was a dangerous thing to do in the early 1500s. He is said to have had eleven sons and nine daughters and to have lived to about 101. The Gordons of Earlston and Airds were a branch of the Gordons of Lochinvar, descended from a younger son of the sixth lord of Lochinvar."
+    ],
+    "lineage": [
+      {
+        "rel": "Great-grandson",
+        "who": "Alexander Gordon of Earlstoun (1587–1654)",
+        "slug": "alexander-gordon-1587"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Airds, near Parton, Kirkcudbrightshire",
+        "url": "https://earth.google.com/web/search/Airds,+Parton,+Castle+Douglas,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Gordon, Alexander (1587–1654), Dictionary of National Biography",
+        "url": "https://kwx.liehendr.com/content/wikisource_en_all_maxi_2022-09/A/Gordon%2C_Alexander_(1587-1654)_(DNB00)"
+      },
+      {
+        "label": "Gordons of Earlston (Electric Scotland)",
+        "url": "https://electricscotland.com/WEBCLANS/families/gordons_earlston.htm"
+      },
+      {
+        "label": "The House of Gordon, vol. 1 (Internet Archive)",
+        "url": "https://archive.org/details/houseofgordon01bulluoft"
       }
     ]
   },
