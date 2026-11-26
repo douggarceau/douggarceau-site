@@ -1194,9 +1194,20 @@
     "role": "Ninth great-grandparents",
     "brief": "Laird of Earlstoun; refused a baronetcy",
     "story": [
-      "Alexander Gordon of Earlstoun (1587–1654) and Elizabeth Gordon were Laurence's ninth great-grandparents, the parents of William Gordon of Earlstoun. Alexander was the second Gordon laird of Earlstoun, a branch of the Gordons of Lochinvar. He is said to have been offered a baronetcy and turned it down. Their children included John (born 1613, died before his father, without children), William (1614–1679), Robert and Margaret. These details come from published pedigrees and still need checking against original records."
+      "Alexander Gordon of Earlstoun (1587–1654) and Elizabeth Gordon were Laurence's ninth great-grandparents, the parents of William Gordon of Earlstoun. Alexander was the eldest son of John Gordon of Airds and Earlstoun and Mary Chalmers, a daughter of James Chalmers of Gadgirth in Ayrshire. He was the second Gordon laird of Earlstoun, a branch of the Gordons of Lochinvar, and is said to have turned down an offer of a baronetcy. He was a Covenanter too. He sat for the presbytery of Kirkcudbright as an elder at the Glasgow General Assembly of 1638, and he, his wife and their eldest son all wrote to the minister Samuel Rutherford during Rutherford's confinement at Aberdeen in 1636. A man who knew him called him \"a man of great spirit.\"",
+      "On January 4, 1612, he married Elizabeth Gordon, a daughter of John Gordon of Muirfad, afterwards of Penninghame, in Wigtownshire. Their children included John (born 1613, died before his father, without children), William (1614–1679), Robert and Margaret, who married Thomas Hay of Arieland in 1638. He died in 1653 or 1654."
     ],
     "lineage": [
+      {
+        "rel": "Alexander's parents",
+        "who": "John Gordon of Airds and Earlstoun and Mary Chalmers",
+        "slug": "john-gordon-penninghame"
+      },
+      {
+        "rel": "Elizabeth's father",
+        "who": "John Gordon of Muirfad and Penninghame",
+        "slug": "john-gordon-penninghame"
+      },
       {
         "rel": "Son",
         "who": "William Gordon of Earlstoun",
@@ -1212,6 +1223,14 @@
     ],
     "links": [
       {
+        "label": "Gordon, Alexander (1587–1654), Dictionary of National Biography",
+        "url": "https://kwx.liehendr.com/content/wikisource_en_all_maxi_2022-09/A/Gordon%2C_Alexander_(1587-1654)_(DNB00)"
+      },
+      {
+        "label": "Gordon of Earlston pedigree (Stirnet, from Burke's Peerage 1934)",
+        "url": "https://www.stirnet.com/genie/data/british/gg/gordon13.php"
+      },
+      {
         "label": "Gordon of Earlston pedigree (Access Genealogy)",
         "url": "https://accessgenealogy.com/?p=5762"
       },
@@ -1222,6 +1241,55 @@
       {
         "label": "Gordon, Alexander (1587–1654), Dictionary of National Biography",
         "url": "https://en.wikisource.org/wiki/Dictionary_of_National_Biography,_1885-1900/Gordon,_Alexander_(1587-1654)"
+      }
+    ]
+  },
+  {
+    "slug": "john-gordon-penninghame",
+    "name": "John Gordon of Penninghame; John Gordon of Airds and Earlstoun and Mary Chalmers",
+    "dates": "John of Penninghame about 1548–1603 · John of Earlstoun died 1628",
+    "group": "His mother's family",
+    "role": "Tenth great-grandparents",
+    "brief": "Earliest ancestors found so far; Galloway lairds born in the mid-1500s",
+    "story": [
+      "These are Laurence's tenth great-grandparents, the parents of Alexander Gordon of Earlstoun and of his wife, Elizabeth Gordon. They are the earliest ancestors found so far on any line.",
+      "John Gordon of Muirfad, afterwards of Penninghame in Wigtownshire, was Elizabeth's father. A family tree on FamilySearch gives him as born about 1548 at Penninghame and died in 1603, with children William (1570), William (1575–1660), a daughter (1581), Jean (1582) and Elizabeth (1588–1665). That tree has no sources attached, and its dates still need checking. Penninghame had earlier been home to Alexander Gordon, bishop of Galloway, who died there in 1575, but no record found so far connects John to the bishop.",
+      "John Gordon of Airds and Earlstoun, who died in 1628, was Alexander's father. In 1585 he married Mary Chalmers, a daughter of James Chalmers of Gadgirth in Ayrshire. Their sons included Alexander, William Gordon of Carleton, Robert, Colonel James Gordon and David Gordon of Gordonstown. The family descended from Alexander, a second son of William Gordon, sixth lord of Lochinvar."
+    ],
+    "lineage": [
+      {
+        "rel": "Children",
+        "who": "Alexander Gordon of Earlstoun (son of John of Airds) and Elizabeth Gordon (daughter of John of Penninghame), married 1612",
+        "slug": "alexander-gordon-1587"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Penninghame, Wigtownshire",
+        "url": "https://earth.google.com/web/search/Penninghame,+Newton+Stewart,+Scotland"
+      },
+      {
+        "label": "Earlstoun, Dalry",
+        "url": "https://earth.google.com/web/search/Earlstoun+Castle,+Dalry,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "John Gordon, about 1548–1603, on FamilySearch (L7JB-8QN)",
+        "url": "https://ancestors.familysearch.org/en/L7JB-8QN/john-gordon-1548-1603"
+      },
+      {
+        "label": "Gordon, Alexander (1587–1654), Dictionary of National Biography",
+        "url": "https://kwx.liehendr.com/content/wikisource_en_all_maxi_2022-09/A/Gordon%2C_Alexander_(1587-1654)_(DNB00)"
+      },
+      {
+        "label": "Gordon of Earlston pedigree (Stirnet, from Burke's Peerage 1934)",
+        "url": "https://www.stirnet.com/genie/data/british/gg/gordon13.php"
+      },
+      {
+        "label": "Gordon of Earlston pedigree (Access Genealogy)",
+        "url": "https://accessgenealogy.com/?p=5762"
       }
     ]
   },
