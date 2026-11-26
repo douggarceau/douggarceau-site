@@ -747,7 +747,8 @@
     "group": "His mother's family",
     "role": "Sixth great-grandparents",
     "story": [
-      "Edward Goldie (1675–1711) and Mary Gordon (1681–1723) were Laurence's sixth great-grandparents, the parents of John Goldie, born at Dumfries in 1708. They are the earliest generation found so far on any line of Laurence's family, reaching back to the 1670s. These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the Dumfries and Kirkmichael parish registers."
+      "Edward Goldie (1675–1711) and Mary Gordon (1681–1723) were Laurence's sixth great-grandparents, the parents of John Goldie, born at Dumfries in 1708. They married at Dalry on January 12, 1701, according to the Old Parish Records cited in a family tree on Ancestry. Edward died in 1711, when John was three; Mary lived until 1723.",
+      "They are the earliest generation found so far on any line of Laurence's family, reaching back to the 1670s. Edward's own parents are not known. These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the Dalry and Dumfries parish registers."
     ],
     "lineage": [
       {
@@ -758,6 +759,10 @@
     ],
     "ch": [],
     "homes": [
+      {
+        "label": "Married: Dalry",
+        "url": "https://earth.google.com/web/search/Dalry%2C%20Kirkcudbrightshire%2C%20Scotland"
+      },
       {
         "label": "Dumfries",
         "url": "https://earth.google.com/web/search/Dumfries%2C%20Scotland"
