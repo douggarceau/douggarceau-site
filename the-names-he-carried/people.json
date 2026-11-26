@@ -1459,13 +1459,14 @@
     "brief": "First baronet of Blackbarony, Peeblesshire; Margaret was of the Maules of Panmure",
     "story": [
       "Sir Archibald Murray of Blackbarony and Margaret Maule were Laurence's tenth great-grandparents, the parents of Margaret Murray, who married Sir John Hope, Lord Craighall. Blackbarony is in Eddleston parish, Peeblesshire. That is Laurence's own home county: his Brown and McGarth ancestors worked farms in Peeblesshire two centuries later.",
-      "Archibald was created a baronet of Nova Scotia on May 15, 1628, and died before March 1634. He married Margaret Maule, of the house of Panmure, before 1617. His parents, Laurence's eleventh great-grandparents, were Sir John Murray of Blackbarony and Margaret Hamilton, a daughter of Sir Alexander Hamilton of Innerwick."
+      "Archibald was created a baronet of Nova Scotia on May 15, 1628, and died before March 1634. He married Margaret Maule, of the house of Panmure, before 1617. His parents, Laurence's eleventh great-grandparents, were Sir John Murray of Blackbarony and Margaret Hamilton, a daughter of Sir Alexander Hamilton of Innerwick.",
+      "Margaret Maule is described as a daughter of William Maule, of the house of Panmure, one of the oldest families in Scotland. Some online trees name her parents as William Maule of Glaster and Bethia Guthrie, but that hasn't been confirmed from a reliable source, so her line stops here for now."
     ],
     "lineage": [
       {
         "rel": "Parents",
         "who": "Sir John Murray of Blackbarony and Margaret Hamilton",
-        "slug": ""
+        "slug": "john-murray-blackbarony"
       },
       {
         "rel": "Daughter",
@@ -1493,16 +1494,27 @@
   },
   {
     "slug": "james-chalmers-gadgirth",
-    "name": "James Chalmers of Gadgirth",
-    "dates": "living 1585",
+    "name": "James Chalmers of Gadgirth and Marion Fullerton",
+    "dates": "James died after 1588",
     "group": "His mother's family",
     "role": "Eleventh great-grandfather",
-    "brief": "Ayrshire laird; the Chalmers of Gadgirth were leaders of the Reformation",
+    "brief": "Ayrshire laird; father of Mary Chalmers; the family led the Reformation in Ayrshire",
     "story": [
-      "James Chalmers (or Chalmer) of Gadgirth, in Ayrshire, was Laurence's eleventh great-grandfather, the father of Mary Chalmers, who married John Gordon of Airds and Earlstoun in 1585.",
-      "The lairds of Gadgirth were famous in the Scottish Reformation. A James Chalmer of Gadgirth was described by John Knox and Archbishop Spottiswood as one of the boldest leaders of the movement, and Knox preached at Gadgirth. The Chalmers pedigree has two Jameses of Gadgirth in the 1500s, a father who was living in 1550 and a son who was still alive after 1588. It isn't yet settled which one was Mary's father, or which one was the reformer."
+      "James Chalmers (or Chalmer) of Gadgirth, in Ayrshire, and Marion Fullerton were Laurence's eleventh great-grandparents. Their daughter Mary married John Gordon of Airds and Earlstoun in 1585. Marion was a daughter of John Fullerton of Dreghorn and Janet Mure. James was still living after 1588.",
+      "Their other children included James (who married Isabella Houstoun, a daughter of Sir Patrick Houstoun), Andrew Chalmers of Corraith, Annabella (who married Walter Dunbar of Enterkine), Isabel (who married George Corrie of Kelwood) and Agnes (who married William Stuart of Halrig). James's sister Margaret married James Boyd of Trochrig, Archbishop of Glasgow, who died in 1581.",
+      "The pedigree comes from Burke's Landed Gentry (1886) and James Paterson's History of the County of Ayr (1847), as gathered on Stirnet. The editor notes that this generation is supplied by later research, not by Burke."
     ],
     "lineage": [
+      {
+        "rel": "James's parents",
+        "who": "James Chalmers of Gadgirth and Annabella Cunningham",
+        "slug": "james-chalmers-1550"
+      },
+      {
+        "rel": "Marion's parents",
+        "who": "John Fullerton of Dreghorn and Janet Mure",
+        "slug": ""
+      },
       {
         "rel": "Daughter",
         "who": "Mary Chalmers, wife of John Gordon of Airds and Earlstoun",
@@ -1518,12 +1530,12 @@
     ],
     "links": [
       {
-        "label": "Castle and Barony of Gadgirth, Wikipedia",
-        "url": "https://en.wikipedia.org/wiki/Castle_and_Barony_of_Gadgirth"
-      },
-      {
         "label": "Chalmers of Gadgirth pedigree (Stirnet)",
         "url": "https://stirnet.com/genie/data/british/cc4aq/chalmers01.php"
+      },
+      {
+        "label": "Castle and Barony of Gadgirth, Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Castle_and_Barony_of_Gadgirth"
       },
       {
         "label": "Chalmer, The Scottish Nation (Electric Scotland)",
@@ -1568,6 +1580,218 @@
       {
         "label": "The House of Gordon, vol. 1 (Internet Archive)",
         "url": "https://archive.org/details/houseofgordon01bulluoft"
+      }
+    ]
+  },
+  {
+    "slug": "john-murray-blackbarony",
+    "name": "Sir John Murray of Blackbarony and Margaret Hamilton",
+    "dates": "John died 1609",
+    "group": "His mother's family",
+    "role": "Eleventh great-grandparents",
+    "brief": "Member of Parliament for Peeblesshire; Margaret was of the Hamiltons of Innerwick",
+    "story": [
+      "Sir John Murray of Blackbarony and Margaret Hamilton were Laurence's eleventh great-grandparents, the parents of Sir Archibald Murray, the first baronet. John sat in Parliament for Peeblesshire and died on July 3, 1609. Margaret was a daughter of Sir Alexander Hamilton of Innerwick in East Lothian.",
+      "John's brother was Sir Gideon Murray of Elibank (born 1559), a judge and politician and the ancestor of the Lords Elibank. Their children included Andrew (who died young), Archibald, and daughters who married into the Riddells, the Douglases of Cashogle and the Veitches of Dawick."
+    ],
+    "lineage": [
+      {
+        "rel": "John's parents",
+        "who": "Sir Andrew Murray of Blackbarony and Grizel Bethune",
+        "slug": "andrew-murray-blackbarony"
+      },
+      {
+        "rel": "Margaret's father",
+        "who": "Sir Alexander Hamilton of Innerwick",
+        "slug": ""
+      },
+      {
+        "rel": "Son",
+        "who": "Sir Archibald Murray of Blackbarony",
+        "slug": "archibald-murray-blackbarony"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Blackbarony (Barony Castle), Eddleston",
+        "url": "https://earth.google.com/web/search/Barony+Castle,+Eddleston,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Murray of Blackbarony pedigree (Stirnet)",
+        "url": "https://stirnet.com/genie/data/british/mm4fz/murray09.php"
+      },
+      {
+        "label": "Margaret Hamilton and Sir John Murray of Blackbarony, The Peerage",
+        "url": "https://mail.thepeerage.com/p51852.htm"
+      },
+      {
+        "label": "Murray of Blackbarony family (Who Begat Whom)",
+        "url": "https://whobegatwhom.co.uk/ind418.html"
+      }
+    ]
+  },
+  {
+    "slug": "james-chalmers-1550",
+    "name": "James Chalmers of Gadgirth and Annabella Cunningham",
+    "dates": "James living 1550",
+    "group": "His mother's family",
+    "role": "Twelfth great-grandparents",
+    "brief": "Probably the reformer John Knox called one of the boldest leaders of the Reformation",
+    "story": [
+      "James Chalmers of Gadgirth, who was living in 1550, and Annabella Cunningham, a daughter of John Cunningham of Caprington, were Laurence's twelfth great-grandparents, the parents of James Chalmers (died after 1588).",
+      "The Scottish Nation says the James Chalmers of Gadgirth who was a son of the laird who married a Campbell of Loudoun was \"a zealous reformer.\" It says John Knox and Archbishop Spottiswood counted him among the boldest leaders of the Reformation, and that Knox preached at Gadgirth. In the Stirnet pedigree that fits this James best, though it isn't certain. Their daughters married into the Crawfurds of Auchinames, the Boyds of Trochrig (Margaret married James Boyd, Archbishop of Glasgow), the Kennedys of Ardmillan and the Fullertons of Dreghorn."
+    ],
+    "lineage": [
+      {
+        "rel": "James's parents",
+        "who": "James or Robert Chalmers of Gadgirth and a daughter of Sir Hugh Campbell of Loudoun",
+        "slug": "chalmers-gadgirth-early"
+      },
+      {
+        "rel": "Son",
+        "who": "James Chalmers of Gadgirth (died after 1588)",
+        "slug": "james-chalmers-gadgirth"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Gadgirth, Ayrshire",
+        "url": "https://earth.google.com/web/search/Gadgirth,+Annbank,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Chalmers of Gadgirth pedigree (Stirnet)",
+        "url": "https://stirnet.com/genie/data/british/cc4aq/chalmers01.php"
+      },
+      {
+        "label": "Chalmer, The Scottish Nation (Electric Scotland)",
+        "url": "https://electricscotland.com/HISTORY/nation/chalmer.htm"
+      }
+    ]
+  },
+  {
+    "slug": "andrew-murray-blackbarony",
+    "name": "Sir Andrew Murray of Blackbarony and Grizel Bethune",
+    "dates": "Andrew died 1572 · Grizel about 1520–1579",
+    "group": "His mother's family",
+    "role": "Twelfth great-grandparents",
+    "brief": "Peeblesshire laird; Grizel was a Bethune of Creich and the mother of the 4th laird of Buccleuch",
+    "story": [
+      "Sir Andrew Murray of Blackbarony and Grizel Bethune were Laurence's twelfth great-grandparents, the parents of Sir John Murray of Blackbarony. They married on February 8, 1552. Andrew died on September 1, 1572, and Grizel at Edinburgh on August 18, 1579.",
+      "Grizel, born about 1520, was a daughter of Sir John Bethune, 2nd of Creich, in Fife, and Janet Hay. Her first husband was Sir William Scott, younger of Buccleuch. Her son by that marriage was Sir Walter Scott, 4th of Buccleuch, an ancestor of the Dukes of Buccleuch, which makes him a half-brother of Laurence's ancestor. With Andrew she had John, Andrew, Sir Gideon Murray of Elibank, William, Agnes and others.",
+      "Andrew had married first Elizabeth Lockhart. His parents were John Murray, who died on September 9, 1513, the day of the Battle of Flodden, and Isobel Hoppar."
+    ],
+    "lineage": [
+      {
+        "rel": "Andrew's parents",
+        "who": "John Murray (died 1513) and Isobel Hoppar",
+        "slug": "murray-falahill"
+      },
+      {
+        "rel": "Grizel's parents",
+        "who": "Sir John Bethune, 2nd of Creich, and Janet Hay",
+        "slug": ""
+      },
+      {
+        "rel": "Son",
+        "who": "Sir John Murray of Blackbarony",
+        "slug": "john-murray-blackbarony"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Blackbarony (Barony Castle), Eddleston",
+        "url": "https://earth.google.com/web/search/Barony+Castle,+Eddleston,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Grizel Bethune and Sir Andrew Murray of Blackbarony, The Peerage",
+        "url": "https://thepeerage.com/p13758.htm"
+      },
+      {
+        "label": "Murray of Blackbarony family (Who Begat Whom)",
+        "url": "https://whobegatwhom.co.uk/ind418.html"
+      }
+    ]
+  },
+  {
+    "slug": "murray-falahill",
+    "name": "John Murray and Isobel Hoppar; the Murrays of Falahill",
+    "dates": "John died 1513",
+    "group": "His mother's family",
+    "role": "Thirteenth great-grandparents",
+    "brief": "The Murray line back through Falahill into the 1300s",
+    "story": [
+      "John Murray, who died on September 9, 1513, and Isobel Hoppar were Laurence's thirteenth great-grandparents, the parents of Sir Andrew Murray of Blackbarony. September 9, 1513 was the day of the Battle of Flodden, where James IV and much of the Scottish nobility were killed. Whether John died there is not yet confirmed.",
+      "The genealogy site Who Begat Whom carries the line further back. John was a son of Andrew Murray of Falahill, who died on December 31, 1485 (fourteenth great-grandfather). Andrew was a son of John Murray of Falahill, who died on February 20, 1477, and Margaret Hepburn (fifteenth great-grandparents). That John was a son of Patrick Murray, who died in 1413 (sixteenth great-grandfather). The family is said to descend from Roger de Morref, a son of Erchebaud, from whom the great Murray families of southern Scotland claim descent. These generations come from secondary genealogies and still need checking."
+    ],
+    "lineage": [
+      {
+        "rel": "Son",
+        "who": "Sir Andrew Murray of Blackbarony",
+        "slug": "andrew-murray-blackbarony"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Falahill, Heriot",
+        "url": "https://earth.google.com/web/search/Falahill,+Heriot,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Murrays of Falahill (Who Begat Whom)",
+        "url": "https://whobegatwhom.co.uk/ind2062.html"
+      },
+      {
+        "label": "Murray of Blackbarony family (Who Begat Whom)",
+        "url": "https://whobegatwhom.co.uk/ind418.html"
+      }
+    ]
+  },
+  {
+    "slug": "chalmers-gadgirth-early",
+    "name": "The early Chalmers of Gadgirth",
+    "dates": "1100s–1500s",
+    "group": "His mother's family",
+    "role": "Earlier ancestors, thirteen or more generations back",
+    "brief": "Ayrshire line said to go back to a royal chamberlain of King David I",
+    "story": [
+      "The published pedigree of the Chalmers of Gadgirth goes far beyond the reformers. These are ancestors of Laurence's through Mary Chalmers, but the exact number of generations is disputed.",
+      "Working back from James Chalmers (living 1550): his parents were James or Robert Chalmers of Gadgirth and a daughter of Sir Hugh Campbell of Loudoun. Earlier came a James Chalmers who married Margaret Stewart, a daughter of Alexander Stewart of Galston, about 1501. Before him came John Chalmers of Gadgirth, who married Marion Hay, a daughter of Peter Hay of Menzean, in 1491. His father was Sir John Chalmers of Gadgirth, who married Elizabeth Hamilton about 1440. She was a daughter of Sir James Hamilton, 5th of Cadzow, and a sister of the first Lord Hamilton, which links this line to the main House of Hamilton.",
+      "Further back are John Chalmers of Gadgirth, killed at the Battle of the Herrings in 1429; Sir John de Camera of Gadgirth (living 1399); and Reginald and William de Camera in the 1300s. The pedigree begins with Reginald de Camera of Gadgirth under William the Lion (1165–1214) and Herbert de Camera, chamberlain to King David I (1124–1153). The surname comes from \"de Camera,\" of the chamber.",
+      "The sources disagree about several generations: whether a laird was James or Robert, and how many generations fit between the 1200s and 1320. Treat this as the family's published tradition, not proven descent."
+    ],
+    "lineage": [
+      {
+        "rel": "Descendant",
+        "who": "James Chalmers of Gadgirth (living 1550)",
+        "slug": "james-chalmers-1550"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Gadgirth, Ayrshire",
+        "url": "https://earth.google.com/web/search/Gadgirth,+Annbank,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Chalmers of Gadgirth pedigree (Stirnet)",
+        "url": "https://stirnet.com/genie/data/british/cc4aq/chalmers01.php"
+      },
+      {
+        "label": "Chalmer, The Scottish Nation (Electric Scotland)",
+        "url": "https://electricscotland.com/HISTORY/nation/chalmer.htm"
       }
     ]
   },
