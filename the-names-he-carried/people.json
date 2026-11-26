@@ -161,7 +161,8 @@
         "label": "Ancestry: Laurence Brown Douglas in The Laurence Brown Douglas Family Tree",
         "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212815873903/facts"
       }
-    ]
+    ],
+    "brief": "Born Edinburgh 1907 as Lawrence Brown; died Providence 1961"
   },
   {
     "slug": "agnes-mcgarth-brown",
@@ -258,7 +259,8 @@
         "url": "research/shieldhill-quothquan.html#archives"
       }
     ],
-    "role": "Mother"
+    "role": "Mother",
+    "brief": "Born Edston, Peeblesshire, 1885; grew up at Quothquan"
   },
   {
     "slug": "george-brown",
@@ -321,7 +323,8 @@
         "label": "Ancestry: George Brown in The Laurence Brown Douglas Family Tree",
         "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816704983/facts"
       }
-    ]
+    ],
+    "brief": "Ploughman; born Peebles 1862; died Edston 1886"
   },
   {
     "slug": "christina-henderson-brown",
@@ -380,7 +383,8 @@
         "label": "Ancestry: Christina Wilson Henderson in The Laurence Brown Douglas Family Tree",
         "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816704984/facts"
       }
-    ]
+    ],
+    "brief": "Born 1860; married George at Quothquan 1883; died 1891"
   },
   {
     "slug": "william-brown",
@@ -424,18 +428,20 @@
         "label": "Ancestry: William Brown in The Laurence Brown Douglas Family Tree",
         "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816705666/facts"
       }
-    ]
+    ],
+    "brief": "Ploughman in Peeblesshire; died Stobo 1895"
   },
   {
     "slug": "agnes-mcgarth",
     "name": "Agnes McGarth",
-    "dates": "born about 1840",
+    "dates": "1840–1924",
     "group": "His mother's family",
     "story": [
       "Agnes McGarth was Laurence's great-grandmother, the wife of William Brown. She was born about 1840 at Tweedsmuir, where the Tweed rises in the hills of Peeblesshire. In 1851 the census found her in her parents' crowded house: her father, Tweedie McGarth; her mother, Jane, a woman from Wamphray in Dumfriesshire; and her brothers and sisters Jane, James Tweedie, Sarah, Ann and Janet.",
       "She married William Brown, a ploughman, and raised at least ten children. Her son George named his second daughter for her, Agnes McGarth Brown, and so her name came down to Laurence's mother. More than a century later an indexer misread it as McGrath, but the handwriting in the register says McGarth.",
       "Her parents' gravestone stands at Tweedsmuir Kirk. Tweedie McGarth was born at Tweedsmuir on October 26, 1811, a son of Michael McGarth and Margaret Larkin, and died on September 28, 1876, aged 64, \"late in Bield.\" Her mother, Jean (Jane) Goldie, was born on November 21, 1808, and baptised on December 5, at Newtoun, Langside, in Wamphray parish, Dumfriesshire, a daughter of Alexander Goldie and Agnes Mundell (the Wamphray baptism register names her father Alexander; the Find a Grave page says William), and died at Tweedsmuir on December 24, 1891. The stone also remembers children who died young: an elder Agnes (1836–1838), Mary (1846) and Anne (1846–1848). Agnes was most likely named for that lost sister and, through her, for her grandmother Agnes Mundell.",
-      "The parish registers fill in the rest. Agnes herself was born on January 20, 1840, and baptised at Tweedsmuir on February 11, 1840, daughter of Tweedie McGarth and Jean Goldie; she married William Brown in June 1858 and died in 1924. Her father was baptised at Tweedsmuir in 1811, son of Michael McGrath and Margaret Larkin, and was the Post Office's rural messenger from Rachan Mill near Biggar from 1847 until 1876, living at Bield, where the 1841 census found the family at the Bield Inn. Her mother's parents, Alexander Goldie and Agnes Mundell, had children baptised at Kirkmichael (1790, 1792), Tinwald (1801, 1803) and Wamphray (1808, 1811, 1813). Agnes's own brothers and sisters included Margaret, Lawrence, Alexander, Jean, James Tweedie, Sarah, Mary, Ann, Janet and Mary Ann."
+      "The parish registers fill in the rest. Agnes herself was born on January 20, 1840, and baptised at Tweedsmuir on February 11, 1840, daughter of Tweedie McGarth and Jean Goldie; she married William Brown in June 1858 and died in 1924. Her father was baptised at Tweedsmuir in 1811, son of Michael McGrath and Margaret Larkin, and was the Post Office's rural messenger from Rachan Mill near Biggar from 1847 until 1876, living at Bield, where the 1841 census found the family at the Bield Inn. Her mother's parents, Alexander Goldie and Agnes Mundell, had children baptised at Kirkmichael (1790, 1792), Tinwald (1801, 1803) and Wamphray (1808, 1811, 1813). Agnes's own brothers and sisters included Margaret, Lawrence, Alexander, Jean, James Tweedie, Sarah, Mary, Ann, Janet and Mary Ann.",
+      "The same family tree adds the details of her life: she married William Brown at the Beild on June 11, 1858, before witnesses Jane McGarth, James Swan, George Brown and Jean Brown, and was then a housemaid at Cardrona Mains. Their children were William (1858), Lawrence Tweedie (1860, at Eshiels), George (1862, Peebles), Alexander (1864), Jane Goldie (1867), John (1869, Upper Kidstone), James Tweedie (1872, Eddleston), Agnes (1875, the Harrow, Stobo), Thomas (1877) and Tweedie McGarth (1880). William died at the Harrow, Stobo, in January 1895. Agnes died on March 22, 1924, at 5 Peebles Road, Innerleithen, the home of her daughter Jean Goldie Allan, and was buried at Stobo."
     ],
     "lineage": [
       {
@@ -486,8 +492,13 @@
       {
         "label": "Her mother: Find a Grave memorial 245857632, Jean Goldie McGarth",
         "url": "https://www.findagrave.com/memorial/245857632/jean-mcgarth"
+      },
+      {
+        "label": "Her record and gallery in PamelaWills909's Cairns Family Tree on Ancestry (including William Brown's 1895 death notice)",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060930708/gallery"
       }
-    ]
+    ],
+    "brief": "Born the Beild, Tweedsmuir, 1840; died Innerleithen 1924"
   },
   {
     "slug": "tweedie-mcgarth",
@@ -498,17 +509,18 @@
     "story": [
       "Tweedie McGarth was Laurence's great-great-grandfather: the father of Agnes McGarth, whose granddaughter was Laurence's mother. He was born at Tweedsmuir, high in the hills where the Tweed rises, on October 26, 1811, a son of Michael McGrath and Margaret Larkin, and spent his whole life there.",
       "With his wife, Jean Goldie, he kept the Beild, a former coaching inn on the Edinburgh and Dumfries road below Oliver Dod. The 1841 census found the family at the Bield Inn. From 1847 he was the Post Office's rural messenger, carrying the mail between Broughton and Tweedsmuir from the office at Rachan Mill. His wife's obituary remembered him as the hearty, kindly postman with a home-made mail cart he called his Chariot, drawn by a donkey named Omar Pasha, and a horn he sometimes blew.",
+      "The censuses trace his work: innkeeper at the Bield Inn in 1841; grocer, merchant and shopkeeper in 1851; postmaster in 1861; and in 1871 farmer of nine acres and sub-postmaster of Crook. His death certificate gives the cause as cancer of the liver, with jaundice. He was born at Oliver, a farm in Tweedsmuir parish.",
       "He and Jean married about 1830; a family tree on Ancestry gives Wamphray, 1830. The baptism registers and that tree give their children as Margaret (about 1829–1904), Lawrence (born at the Beild, November 3, 1831–1896), Alexander (1833–1914), Agnes (1836–1838), Jean (1838–1909), Agnes (1840–1924, Laurence's great-grandmother), James Tweedie (1841–1880), Sarah (1844–1900), Mary (1846), Ann (1846–1848), Mary Ann (1848–1932) and Janet (1851–1933). He retired from the Post Office in April 1876 and died at the Beild on September 28, 1876. He is buried at Tweedsmuir Kirk, where his stone names him “late in Bield.”"
     ],
     "lineage": [
       {
         "rel": "Father",
-        "who": "Michael McGrath",
+        "who": "Michael McGarth (born about 1775)",
         "slug": "michael-mcgrath"
       },
       {
         "rel": "Mother",
-        "who": "Margaret Larkin",
+        "who": "Margaret Larkin (born about 1778)",
         "slug": "michael-mcgrath"
       },
       {
@@ -541,8 +553,21 @@
       {
         "label": "Research File: the McGarth and Goldie records",
         "url": "research/#log"
+      },
+      {
+        "label": "Photograph: “The Beild, Tweedsmuir, family home of the McGarths” (on Ancestry)",
+        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060929345/media/8196374e-5830-48c8-b6ce-f885be5c3ac1"
+      },
+      {
+        "label": "McGarth headstone, Tweedsmuir (photo on Ancestry)",
+        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060929345/media/fa9a2133-c662-49b3-9612-6ae6233453fa"
+      },
+      {
+        "label": "His record in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060929345/facts"
       }
-    ]
+    ],
+    "brief": "Innkeeper, shopkeeper and postman at the Beild, Tweedsmuir"
   },
   {
     "slug": "jean-goldie",
@@ -553,6 +578,7 @@
     "story": [
       "Jean Goldie was Laurence's great-great-grandmother, the wife of Tweedie McGarth and mother of Agnes McGarth. She was born on November 21, 1808, and baptised at Wamphray in Dumfriesshire on December 5, a daughter of Alexander Goldie and Agnes Mundell. Her mother's name, Agnes, came down through four generations to Laurence's mother.",
       "She ran the Beild at Tweedsmuir for more than half a century: postmistress, merchant, crofter and landlady. She died there on December 24, 1891, and was buried beside Tweedie at Tweedsmuir Kirk.",
+      "In 1881 she was listed as the farmer at Beild House. Her sister and brothers scattered across Dumfriesshire, and one brother, Edward, died in New Brunswick, Canada, in 1885. Her death register gives the cause as influenza, of a month's duration.",
       "Her obituary, as copied by hand in the family (clipping dated January 1, 1892; transcription, uncertain readings marked [?]):",
       "“Mrs McGarth of ‘The Beild,’ Tweedsmuir. Many will learn with sincere regret of the death of Mrs McGarth of the ‘Beild’ which occurred on 24th instant at the ripe age of eighty two. Those who know the upper gathering ground of the Tweed (and of course delight in it) will recall the cozy nook, nestling at the base of Oliver Dod, forming three sides of a square, the fourth being the Edinburgh & Dumfries Road. In front flows the ‘Tweed’ and the sound of many waters, from the full torrent of Carlows Linn at the Brig to the swish of the Beild burn at the ‘back o’ the steadin’,’ pervades the air. Still further in front, the Covenant-memoried Talla brattles from its dark morasses down its brawling linns, foregathering with the Cargill-trodden Gameshope, and an amphitheatre of hills from the Garelet Dod to the sonsie Broad Law sentinels the neat church and clachan of Tweedsmuir.",
       "“‘The Beild’ was formerly an Inn for entertaining man and beast, either before the dreary, steep [?] Erickstane brae was faced or after it had been crossed. Mr Tweedie McGarth, her late husband, was well known as the hearty, kindly postman between Broughton and Tweedsmuir, with his primitive home-made mailbox, or let us call it, as he did, Chariot, drawn by a handsome donkey called ‘Omar Pasha.’ Sometimes Tweedie blew his horn, but Omar had many high musical talents and filled the glen with louder sounds than the invariable cuckoo whose notes rung out from the hills around.",
@@ -605,17 +631,30 @@
       {
         "label": "Her obituary, handwritten family copy, on Ancestry (shared by PamelaWills909)",
         "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932868/media/3db41cd1-b8c0-4dc1-b2d1-cff68ef98359"
+      },
+      {
+        "label": "Obituary, page 2 (on Ancestry)",
+        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932868/media/e9f952e0-de6c-47c9-8ff1-9058615350fb"
+      },
+      {
+        "label": "Obituary, page 3 (on Ancestry)",
+        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932868/media/703d586f-8938-4559-9de1-4059d79f4269"
+      },
+      {
+        "label": "Her record in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932868/facts"
       }
-    ]
+    ],
+    "brief": "Born Wamphray 1808; ran the Beild at Tweedsmuir; died 1891"
   },
   {
     "slug": "michael-mcgrath",
     "name": "Michael McGrath and Margaret Larkin",
-    "dates": "Tweedsmuir, 1811",
+    "dates": "Michael born about 1775 · Margaret about 1778",
     "group": "His mother's family",
     "role": "Third great-grandparents",
     "story": [
-      "Michael McGrath and Margaret Larkin were Laurence's third great-grandparents, the parents of Tweedie McGarth. Their names come from Tweedie's baptism at Tweedsmuir in October 1811, which spells the family name McGrath; later records settle on McGarth.",
+      "Michael McGarth (or McGrath) and Margaret Larkin (or Larkins) were Laurence's third great-grandparents, the parents of Tweedie McGarth. Their names come from Tweedie's baptism at Tweedsmuir in October 1811. A family tree on Ancestry gives Michael's birth as about 1775 and Margaret's as about 1778.",
       "Nothing more is known of them yet. Their marriage and any other children are still to be found in the parish registers."
     ],
     "lineage": [
@@ -632,7 +671,8 @@
         "url": "https://earth.google.com/web/search/Tweedsmuir%2C%20Scotland"
       }
     ],
-    "links": []
+    "links": [],
+    "brief": "Tweedsmuir; Michael born about 1775, Margaret about 1778"
   },
   {
     "slug": "alexander-goldie",
@@ -642,6 +682,7 @@
     "role": "Third great-grandparents",
     "story": [
       "Alexander Goldie and Agnes Mundell were Laurence's third great-grandparents, the parents of Jean Goldie. Alexander was baptised at Kirkmichael, Dumfriesshire, on June 6, 1762; the parish register names the witnesses as James Buchanan and George Liddell. He married Agnes Mundell (or Mundal), born about 1768, at Kirkmichael about 1790.",
+      "Agnes Mundell was born on July 5, 1768, at Mouswald, Dumfriesshire, the daughter of John Mundell and Mary Anderson, and grew up at Cleughbrae, Mouswald, the eldest of at least eight. Alexander farmed in several parishes: Upper Mains, Kirkmichael (1792); Dalruscan, Tinwald (1801–03); Langside and Newtown, Wamphray (1806–1813). He died on November 11, 1822, and was buried in Wamphray churchyard on November 14. Agnes lived on at Newtown, Wamphray, with her sons Joseph and Robert, and died there on July 23, 1849, aged 81.",
       "The baptism registers follow the family across Dumfriesshire: James (1790) and John (1792) at Kirkmichael, Alexander (1801) and Joseph (1803) at Tinwald, then Jean (1808), Robert (1811) and Edward (1813) at Wamphray. A family tree on Ancestry (PamelaWills909's Cairns Family Tree) adds an unnamed child (1795), Sarah (1799–1887) and Agnes (1806–1861), and gives their dates as Alexander 1762 to November 11, 1822, when he died at Wamphray, and Agnes 1768 to 1849. Jean was thirteen when her father died.",
       "A memorial page on Find a Grave calls Jean's father William, but her baptism names him Alexander. The death and marriage dates come from the member tree and still need checking against the registers."
     ],
@@ -652,6 +693,11 @@
         "slug": "james-goldie"
       },
       {
+        "rel": "Agnes's parents",
+        "who": "John Mundell and Mary Anderson",
+        "slug": "john-mundell"
+      },
+      {
         "rel": "Daughter",
         "who": "Jean Goldie",
         "slug": "jean-goldie"
@@ -659,6 +705,10 @@
     ],
     "ch": [],
     "homes": [
+      {
+        "label": "Agnes born: Cleughbrae, Mouswald",
+        "url": "https://earth.google.com/web/search/Mouswald%2C%20Dumfriesshire"
+      },
       {
         "label": "Kirkmichael, Dumfriesshire",
         "url": "https://earth.google.com/web/search/Kirkmichael%2C%20Dumfriesshire"
@@ -672,7 +722,17 @@
         "url": "https://earth.google.com/web/search/Wamphray%2C%20Dumfriesshire"
       }
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Alexander in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932038/facts"
+      },
+      {
+        "label": "Agnes Mundal in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060931695/facts"
+      }
+    ],
+    "brief": "Kirkmichael, Tinwald and Wamphray, Dumfriesshire"
   },
   {
     "slug": "james-goldie",
@@ -703,6 +763,38 @@
         "url": "https://earth.google.com/web/search/Kirkmichael%2C%20Dumfriesshire"
       }
     ],
+    "links": [
+      {
+        "label": "James in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060933109/facts"
+      }
+    ],
+    "brief": "Kirkmichael, Dumfriesshire, 1760s"
+  },
+  {
+    "slug": "john-mundell",
+    "name": "John Mundell and Mary Anderson",
+    "dates": "both born about 1740",
+    "group": "His mother's family",
+    "role": "Fourth great-grandparents",
+    "brief": "Cleughbrae, Mouswald, Dumfriesshire",
+    "story": [
+      "John Mundell and Mary Anderson were Laurence's fourth great-grandparents, the parents of Agnes Mundell. They lived at Cleughbrae in Mouswald parish, Dumfriesshire, where their children were born: Agnes (1768), John (1771), Mary (1773), Jean (1775), Margaret (1778), Isobel (1781), James (1784) and Joseph (1785–1865). These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the parish registers."
+    ],
+    "lineage": [
+      {
+        "rel": "Daughter",
+        "who": "Agnes Mundell",
+        "slug": "alexander-goldie"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Cleughbrae, Mouswald",
+        "url": "https://earth.google.com/web/search/Mouswald%2C%20Dumfriesshire"
+      }
+    ],
     "links": []
   },
   {
@@ -713,13 +805,18 @@
     "role": "Fifth great-grandparents",
     "story": [
       "John Goldie and Jean Corrie were Laurence's fifth great-grandparents, the parents of James Goldie. John was born at Dumfries on January 16, 1708, a son of Edward Goldie and Mary Gordon; his father died when he was three and his mother when he was fifteen. He married Jean Corrie (1712–1783) at Dumfries in August 1735, and their children included James (born November 13, 1737, at Kirkmichael) and Mary (1739).",
-      "John died at Craigmuie in 1776 and was buried at Dumfries on October 16, 1776, as the Old Parish Records note. These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the Dumfries and Kirkmichael parish registers."
+      "John died at Craigmuie in 1776 and was buried at Dumfries on October 16, 1776. Jean Corrie was born in 1712, a daughter of James Corrie and Agnes McKitrick; her mother died when she was nine. Jean died at Dumfries and was buried on March 3, 1783. These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the parish registers."
     ],
     "lineage": [
       {
         "rel": "John's parents",
         "who": "Edward Goldie and Mary Gordon",
         "slug": "edward-goldie"
+      },
+      {
+        "rel": "Jean's parents",
+        "who": "James Corrie and Agnes McKitrick",
+        "slug": "james-corrie"
       },
       {
         "rel": "Son",
@@ -738,7 +835,29 @@
         "url": "https://earth.google.com/web/search/Craigmuie%2C%20Dumfries%20and%20Galloway"
       }
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Goldie gravestone (photo on Ancestry)",
+        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932869/media/bfb97269-fb4e-4be7-8375-df2be1e5aea1"
+      },
+      {
+        "label": "Goldie gravestone, base (photo on Ancestry)",
+        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932869/media/fa2e6afd-6614-479a-bdef-b2e68f65348d"
+      },
+      {
+        "label": "Parish register page, OPR 821/000 0040 0201 (on Ancestry)",
+        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932869/media/6938c1bc-40cf-4305-ba98-6ea94cff04d9"
+      },
+      {
+        "label": "John in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932869/facts"
+      },
+      {
+        "label": "Jean Corrie in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932878/facts"
+      }
+    ],
+    "brief": "Dumfries; married 1735; John died at Craigmuie 1776"
   },
   {
     "slug": "edward-goldie",
@@ -768,7 +887,124 @@
         "url": "https://earth.google.com/web/search/Dumfries%2C%20Scotland"
       }
     ],
-    "links": []
+    "links": [
+      {
+        "label": "Edward in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932870/facts"
+      },
+      {
+        "label": "Mary Gordon in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932871/facts"
+      }
+    ],
+    "brief": "Married at Dalry, January 12, 1701"
+  },
+  {
+    "slug": "james-corrie",
+    "name": "James Corrie and Agnes McKitrick",
+    "dates": "James born 1684 · Agnes 1690–1721",
+    "group": "His mother's family",
+    "role": "Sixth great-grandparents",
+    "brief": "Married at Dumfries, April 11, 1710",
+    "story": [
+      "James Corrie (born 1684, a son of William Corrie and Jean Paterson) and Agnes McKitrick (1690–1721) were Laurence's sixth great-grandparents, the parents of Jean Corrie, who married John Goldie. Agnes was born at Dumfries in 1690, a daughter of James McKitrick, Laurence's seventh great-grandfather. She married James Corrie at Dumfries on April 11, 1710, and died on December 20, 1721, when Jean was nine. These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the parish registers."
+    ],
+    "lineage": [
+      {
+        "rel": "James's parents",
+        "who": "William Corrie and Jean Paterson",
+        "slug": "william-corrie"
+      },
+      {
+        "rel": "Agnes's father",
+        "who": "James McKitrick",
+        "slug": "james-mckitrick"
+      },
+      {
+        "rel": "Agnes's father",
+        "who": "James McKitrick",
+        "slug": null
+      },
+      {
+        "rel": "Daughter",
+        "who": "Jean Corrie",
+        "slug": "john-goldie"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Dumfries",
+        "url": "https://earth.google.com/web/search/Dumfries%2C%20Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "Agnes McKitrick in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060933119/facts"
+      },
+      {
+        "label": "James Corrie in PamelaWills909's Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060933114/story"
+      }
+    ]
+  },
+  {
+    "slug": "william-corrie",
+    "name": "William Corrie and Jean Paterson",
+    "dates": "William born about 1665 · Jean about 1660",
+    "group": "His mother's family",
+    "role": "Seventh great-grandparents",
+    "brief": "Parents of James Corrie, born 1684",
+    "story": [
+      "William Corrie and Jean Paterson were Laurence's seventh great-grandparents, the parents of James Corrie, born in 1684. A family tree on Ancestry (PamelaWills909's Cairns Family Tree) says William was 19 and Jean 24 when James was born, which places their births about 1665 and 1660. They are, with James McKitrick, the earliest people found so far on any of Laurence's lines. These details still need checking against the Dumfries parish registers."
+    ],
+    "lineage": [
+      {
+        "rel": "Son",
+        "who": "James Corrie",
+        "slug": "james-corrie"
+      }
+    ],
+    "ch": [],
+    "homes": [],
+    "links": [
+      {
+        "label": "James Corrie's LifeStory in the Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060933114/story"
+      }
+    ]
+  },
+  {
+    "slug": "james-mckitrick",
+    "name": "James McKitrick",
+    "dates": "father of Agnes, born 1690",
+    "group": "His mother's family",
+    "role": "Seventh great-grandfather",
+    "brief": "Merchant in Dumfries; father of Agnes McKitrick",
+    "story": [
+      "James McKitrick was Laurence's seventh great-grandfather, the father of Agnes McKitrick (1690–1721), who married James Corrie. Agnes was born in 1690 in Dumfries. When she married in 1710, her marriage record gave James's occupation as merchant. His own parents are not known. These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the Dumfries parish registers."
+    ],
+    "lineage": [
+      {
+        "rel": "Daughter",
+        "who": "Agnes McKitrick, wife of James Corrie",
+        "slug": "james-corrie"
+      }
+    ],
+    "ch": [],
+    "homes": [
+      {
+        "label": "Dumfries",
+        "url": "https://earth.google.com/web/search/Dumfries,+Scotland"
+      }
+    ],
+    "links": [
+      {
+        "label": "James McKitrick's LifeStory in the Cairns Family Tree on Ancestry",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060933126/story"
+      }
+    ]
   },
   {
     "slug": "lawrence-tweedie-brown",
@@ -953,7 +1189,8 @@
         "label": "Ancestry: Jane Robb Henderson in The Laurence Brown Douglas Family Tree",
         "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816706318/facts"
       }
-    ]
+    ],
+    "brief": "Crofter at Quothquan; raised Agnes; died 1891"
   },
   {
     "slug": "andrew-henderson",
