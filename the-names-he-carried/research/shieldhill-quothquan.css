@@ -1,0 +1,82 @@
+/* Companion research page. Existing Douglas colours remain the shared identity. */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:24px}
+body.shieldhill-research{margin:0;font:400 18px/1.7 Georgia,"Times New Roman",serif;color:#233b37;background:#e9eee5}
+.shieldhill-research main{width:min(1160px,100%);margin:auto;padding:0 clamp(18px,4vw,58px) 32px;background:#fffaf0!important;border-inline:1px solid #b9c9b9!important}
+.shieldhill-research a{color:#1e5b71;text-decoration-thickness:1px;text-underline-offset:4px;overflow-wrap:anywhere}
+.shieldhill-research a:hover{color:#6b426e}
+.shieldhill-research .top{display:flex;flex-wrap:wrap;gap:8px 22px;padding:22px 0;border-bottom:1px solid #b6c6b6;font:600 15px/1.5 system-ui,sans-serif}
+.shieldhill-research .top a{color:#315c4b}
+.shieldhill-research .opener{padding:38px 0 24px}
+.shieldhill-research .lab{font:700 13px/1.5 system-ui,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:#6c4c73;margin:0 0 10px}
+.shieldhill-research h1{font:500 clamp(38px,5.5vw,66px)/1.05 Georgia,serif;letter-spacing:-.045em;color:#174b40!important;margin:0 0 20px}
+.shieldhill-research h1::after{display:none!important}
+.shieldhill-research .lede{font-size:clamp(20px,2.2vw,26px);line-height:1.45;max-width:800px;margin:0 0 15px}
+.shieldhill-research .meta,.shieldhill-research .note{font:400 16px/1.6 system-ui,sans-serif;color:#4d6158}
+.shieldhill-research .jump{display:flex;flex-wrap:wrap;gap:9px;border-block:1px solid #b2c6b7;padding:17px 0}
+.shieldhill-research .jump a{font:650 15px/1.4 system-ui,sans-serif;padding:9px 12px;border:1px solid #b3c7bd;border-radius:4px;background:#edf3e9;color:#225744;text-decoration:none;min-height:42px}
+.shieldhill-research .jump a:hover{background:#dae8dc}
+.shieldhill-research section{padding:34px 0;border-bottom:1px solid #bcc9b9;scroll-margin-top:22px}
+.shieldhill-research h2{font:500 clamp(27px,3vw,37px)/1.2 Georgia,serif;letter-spacing:-.025em;color:#294f44!important;margin:0 0 19px}
+.shieldhill-research h3{font:600 22px/1.35 Georgia,serif;color:#6d486c!important;margin:0 0 15px}
+.shieldhill-research p{margin:0 0 16px}
+.shieldhill-research .context{max-width:900px}
+.shieldhill-research .comparison,.shieldhill-research .cards,.shieldhill-research .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.shieldhill-research .comparison article,.shieldhill-research .cards article{padding:22px;background:#f1f4e9;border:1px solid #b9c9b5;border-radius:6px;min-width:0}
+.shieldhill-research .cards article p:last-child{margin-bottom:0}
+.shieldhill-research figure{margin:0 0 20px;min-width:0;background:#e3e9df;border:1px solid #b3c4b5;border-radius:4px;overflow:hidden}
+.shieldhill-research figure>a{display:block}
+.shieldhill-research figure img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#e3e9df}
+.shieldhill-research figcaption{padding:14px 16px;font:400 14px/1.6 system-ui,sans-serif;color:#40594d;background:#fafcf5}
+.shieldhill-research figcaption strong{display:block;font-size:16px;color:#254f40;margin-bottom:5px}
+.shieldhill-research figcaption span{display:block}
+.shieldhill-research .gallery{margin:25px 0}
+.shieldhill-research .gallery figure{margin:0}
+.shieldhill-research .table-wrap{overflow-x:auto;border:1px solid #bdcbbb;border-radius:5px;margin:20px 0 22px}
+.shieldhill-research table{width:100%;border-collapse:collapse;font:400 16px/1.55 system-ui,sans-serif}
+.shieldhill-research caption{text-align:left;padding:13px 16px;color:#284f40;font-weight:700;background:#e3eddf}
+.shieldhill-research th,.shieldhill-research td{padding:14px 16px;border-bottom:1px solid #c8d3c2;text-align:left;vertical-align:top}
+.shieldhill-research thead th{background:#214f43;color:white;font-weight:650}
+.shieldhill-research tbody th{width:140px;font-weight:650;color:#2a5042}
+.shieldhill-research tbody tr:nth-child(even){background:#eff4e8}
+.shieldhill-research tbody tr:last-child>*{border-bottom:0}
+.shieldhill-research .image-links{list-style:none;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.shieldhill-research .image-links li{border:1px solid #c1ccbc;border-left:4px solid #80618a;padding:15px 17px;background:#f5f2f4}
+.shieldhill-research .image-links strong{font:650 17px/1.5 system-ui,sans-serif;display:block}
+.shieldhill-research .image-links span{display:block;font:400 14px/1.5 system-ui,sans-serif;margin-top:5px;color:#4b5e52}
+.shieldhill-research .record-links li{margin:10px 0}
+.shieldhill-research .primary-record{padding:22px;margin:24px 0;background:#edf2e8;border:1px solid #a6bba8;border-left:5px solid #315d79;border-radius:5px}
+.shieldhill-research summary{cursor:pointer;font:650 16px/1.5 system-ui,sans-serif;color:#20586b;padding:10px 0}
+.shieldhill-research .clipping{max-width:600px;margin-top:16px}
+.shieldhill-research .clipping img{aspect-ratio:auto}
+.shieldhill-research .source-list{columns:2;column-gap:38px;font:400 16px/1.6 system-ui,sans-serif;padding-left:20px}
+.shieldhill-research .source-list li{break-inside:avoid;margin:0 0 10px}
+.shieldhill-research footer{padding:25px 0 0;font:400 15px/1.6 system-ui,sans-serif;color:#52655a}
+.shieldhill-research .skip{position:absolute;left:12px;top:-100px;background:#fff;padding:12px;z-index:10}
+.shieldhill-research .skip:focus{top:10px}
+@media(max-width:720px){
+ .shieldhill-research .comparison,.shieldhill-research .cards,.shieldhill-research .gallery,.shieldhill-research .image-links{grid-template-columns:1fr}
+ .shieldhill-research .opener{padding-top:28px}
+ .shieldhill-research .comparison article,.shieldhill-research .cards article{padding:17px}
+ .shieldhill-research .source-list{columns:1}
+ .shieldhill-research th,.shieldhill-research td{padding:11px 12px}
+ .shieldhill-research .top{font-size:14px;gap:8px 15px}
+ .shieldhill-research section{padding:27px 0}
+}
+@media(max-width:500px){
+ .shieldhill-research table{font-size:16px}
+ .shieldhill-research thead{display:none}
+ .shieldhill-research tr{display:block;padding:12px 0;border-bottom:1px solid #c8d3c2}
+ .shieldhill-research th,.shieldhill-research td{display:block;width:auto!important;border:0;padding:3px 13px}
+ .shieldhill-research tbody th,.shieldhill-research td:first-child{font-weight:650}
+ .shieldhill-research tbody tr:last-child{border:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media print{
+ .shieldhill-research .top,.shieldhill-research .jump,.shieldhill-research .skip{display:none}
+ body.shieldhill-research,.shieldhill-research main{background:white!important;color:#111!important;border:0!important}
+ .shieldhill-research main{padding:0;width:100%}
+ .shieldhill-research figure,.shieldhill-research article,.shieldhill-research tr{break-inside:avoid}
+ .shieldhill-research section{padding:18px 0}
+ .shieldhill-research a{color:#111}
+}

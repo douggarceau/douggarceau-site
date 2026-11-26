@@ -252,6 +252,10 @@
    {
     "label": "Ancestry: Agnes McGarth Brown in The Laurence Brown Douglas Family Tree",
     "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816596079/facts"
+   },
+   {
+    "label": "Church and care records: verified research routes",
+    "url": "research/shieldhill-quothquan.html#archives"
    }
   ],
   "role": "Mother"
@@ -656,7 +660,7 @@
   "group": "His mother's family",
   "story": [
    "Andrew Henderson was Agnes's uncle, her mother's younger brother. He was the late son of Alexander Henderson and Jane Robb, a boy of five in his mother's cottage in 1881 and a schoolboy of fourteen in 1891, when his orphaned nieces came to the house.",
-   "By March 1901 he was twenty-five, a groom who worked with horses, and the head of the household at Lime Tree Cottage. With him were his nieces, Mary and Agnes Brown, and a boarder, James Parker. Agnes depended on him for the roof over her head. Long after he was gone the village remembered \"Andrew Henderson, late of Lime Tree\" as a poet and a keeper of bees. His whereabouts after 1901 have not been traced."
+   "By March 1901 he was twenty-five, a groom who worked with horses, and the head of the household at Lime Tree Cottage. With him were his nieces, Mary and Agnes Brown, and a boarder, James Parker. Agnes depended on him for the roof over her head. A later local history describes Andrew Henderson of Lime Tree as a poet and beekeeper. The matching name and address are a research lead; the identification with Agnes’s uncle still needs independent corroboration. His whereabouts after 1901 have not been traced."
   ],
   "lineage": [
    {
@@ -692,7 +696,13 @@
     "url": "https://earth.google.com/web/@55.63888,-3.59864,230a,350d,35y,0h,0t,0r"
    }
   ],
-  "role": "Great-uncle"
+  "role": "Great-uncle",
+  "links": [
+   {
+    "label": "Andrew Henderson of Lime Tree: local-history lead and source",
+    "url": "research/shieldhill-quothquan.html#andrew-lead"
+   }
+  ]
  },
  {
   "slug": "thomas-mckay-mckenzie",
@@ -940,6 +950,10 @@
    {
     "label": "Gean Tree Cottage, Shieldhill Road, Quothquan: rear extension approved November 9, 2026, with drawings (City Scope)",
     "url": "https://city-scope.co.uk/planning-updates/slk/P/26/1249"
+   },
+   {
+    "label": "Gean Tree and Lime Tree: the building-history question",
+    "url": "research/shieldhill-quothquan.html#cottage-history"
    }
   ],
   "role": "Sewing mistress at Gean Tree"
@@ -1080,6 +1094,10 @@
    {
     "label": "Document: Sir Nathaniel Dunlop in the Baronetage and Knightage",
     "url": "docs/nathaniel-dunlop-knightage.html"
+   },
+   {
+    "label": "The two Quothquan halls and their separate histories",
+    "url": "research/shieldhill-quothquan.html#two-halls"
    }
   ],
   "papers": [
@@ -1191,6 +1209,12 @@
    {
     "label": "Hamilton Advertiser, Apr 2, 1910: annual entertainment of the winter evening classes in the Quothquan Hall, Sir Nathaniel presiding",
     "url": "https://www.britishnewspaperarchive.com/image-viewer?issue=BL%2F0000471%2F19100402&page=6&article=006"
+   }
+  ],
+  "links": [
+   {
+    "label": "Source comparison: the hall legacy and conflicting published dates",
+    "url": "research/shieldhill-quothquan.html#legacy-dates"
    }
   ]
  },
@@ -1311,6 +1335,10 @@
    {
     "label": "Scottish News: House of Gods founders buy historic castle near Biggar (September 14, 2026)",
     "url": "https://www.scottishnews.com/articles/house-of-gods-founders-buy-historic-castle-near-biggar"
+   },
+   {
+    "label": "Shieldhill and Quothquan: church, halls, photographs and source comparisons",
+    "url": "research/shieldhill-quothquan.html"
    }
   ],
   "photo": {
@@ -1318,7 +1346,30 @@
    "alt": "Shieldhill Castle",
    "cap": "Shieldhill House, now Shieldhill Castle, in 2009. Photo: <a href=\"https://www.geograph.org.uk/photo/1481532\" target=\"_blank\" rel=\"noopener\">adam sommerville, geograph.org.uk</a>, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\" target=\"_blank\" rel=\"noopener\">CC BY-SA 2.0</a>."
   },
-  "role": "The estate"
+  "role": "The estate",
+  "research": {
+   "title": "Churches, halls and village photographs",
+   "text": "Explore the two halls, local ministers, historical images and the archive records to examine.",
+   "url": "research/shieldhill-quothquan.html",
+   "links": [
+    {
+     "label": "The two halls",
+     "url": "research/shieldhill-quothquan.html#two-halls"
+    },
+    {
+     "label": "Ministers and dates",
+     "url": "research/shieldhill-quothquan.html#ministers"
+    },
+    {
+     "label": "Photographs",
+     "url": "research/shieldhill-quothquan.html#photographs"
+    },
+    {
+     "label": "Records to examine",
+     "url": "research/shieldhill-quothquan.html#archives"
+    }
+   ]
+  }
  },
  {
   "slug": "robert-douglas",
@@ -2035,6 +2086,107 @@
    {
     "label": "Ancestry: Albert N. Darcy in The Laurence Brown Douglas Family Tree",
     "url": "https://www.ancestry.com/family-tree/person/tree/213388465/person/212816707525/facts"
+   }
+  ]
+ },
+ {
+  "slug": "john-picken",
+  "name": "Rev. John Picken",
+  "dates": "Libberton ministry: 1890–1934",
+  "group": "Churches and ministers",
+  "story": [
+   "The parish minister list places John Picken at Libberton and Quothquan from 1890 to 1934. This includes the years relevant to Agnes Brown’s life at Quothquan.",
+   "The linked research page compares the parish histories, contemporary references and available archive routes. No church entry naming Laurence has been identified in this review."
+  ],
+  "connections_title": "Ministry and research connection",
+  "lineage": [
+   {
+    "rel": "Congregation",
+    "who": "Libberton and Quothquan",
+    "slug": null
+   }
+  ],
+  "ch": [],
+  "homes": [],
+  "role": "Libberton minister",
+  "links": [
+   {
+    "label": "Official parish minister list",
+    "url": "https://www.libbertonquothquan.org.uk/our-history/our-ministers"
+   },
+   {
+    "label": "Ministry chronology and source comparison",
+    "url": "research/shieldhill-quothquan.html#picken"
+   },
+   {
+    "label": "NRS: Libberton and Quothquan Kirk Session, CH2/1622",
+    "url": "https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/browseDetails.aspx?reference=CH2%2F1622"
+   }
+  ]
+ },
+ {
+  "slug": "c-ross-lowden",
+  "name": "C. Ross Lowden",
+  "dates": "Moat Park appointment: 1900",
+  "group": "Churches and ministers",
+  "story": [
+   "Biggar Kirk’s list gives C. Ross Lowden’s Moat Park appointment in 1900 and William Rutherford’s in 1909. Lowden is therefore the relevant Moat Park minister to investigate for 1906–07.",
+   "The minister list does not establish the family’s church membership or the arrangements for regular Shieldhill services. See the linked contemporary event reference and source comparison."
+  ],
+  "connections_title": "Ministry and research connection",
+  "lineage": [
+   {
+    "rel": "Congregation",
+    "who": "Moat Park, Biggar",
+    "slug": null
+   }
+  ],
+  "ch": [],
+  "homes": [],
+  "role": "Moat Park minister",
+  "links": [
+   {
+    "label": "Official Biggar Kirk history and minister list",
+    "url": "https://www.biggarkirk.com/our-history"
+   },
+   {
+    "label": "Moat Park chronology and contemporary event reference",
+    "url": "research/shieldhill-quothquan.html#lowden"
+   },
+   {
+    "label": "NRS: Biggar Moat Park records, CH3/1248",
+    "url": "https://catalogue.nrscotland.gov.uk/nrsonlinecatalogue/browseDetails.aspx?reference=CH3%2F1248"
+   }
+  ]
+ },
+ {
+  "slug": "c-w-inglis-wardrop",
+  "name": "C. W. Inglis Wardrop",
+  "dates": "Moat Park appointment: 1916",
+  "group": "Churches and ministers",
+  "story": [
+   "Biggar Kirk dates C. W. Inglis Wardrop’s Moat Park appointment to 1916. His mention in the parish’s recollection of alternating services belongs to later history and does not establish his involvement in 1906–07.",
+   "The parish account uses the spelling Wardrope. Both spellings are retained in the research guide."
+  ],
+  "connections_title": "Ministry and research connection",
+  "lineage": [
+   {
+    "rel": "Congregation",
+    "who": "Moat Park, Biggar",
+    "slug": null
+   }
+  ],
+  "ch": [],
+  "homes": [],
+  "role": "Later Moat Park minister",
+  "links": [
+   {
+    "label": "Official Biggar Kirk history and minister list",
+    "url": "https://www.biggarkirk.com/our-history"
+   },
+   {
+    "label": "Why the minister’s appointment date matters",
+    "url": "research/shieldhill-quothquan.html#wardrop"
    }
   ]
  }

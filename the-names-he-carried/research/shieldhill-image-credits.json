@@ -1,0 +1,178 @@
+{
+  "reviewed": "2026-11-25",
+  "photographs": [
+    {
+      "id": 7115498,
+      "title": "Shieldhill Hall after restoration",
+      "date_taken": "2022-03-07",
+      "credit": "M J Richardson",
+      "source": "https://www.geograph.org.uk/photo/7115498",
+      "image_url": "https://s0.geograph.org.uk/geophotos/07/11/54/7115498_8c8c68b4.jpg",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "site_path": "img/geograph-7115498.jpg",
+      "width": 640,
+      "height": 480,
+      "changes": "None",
+      "sha256": "db85e555c677f16604b2d8c7df3563c78406367e0df11b6be24f5affcb95f362"
+    },
+    {
+      "id": 807754,
+      "title": "Shieldhill Hall before restoration",
+      "date_taken": "2008-05-19",
+      "credit": "James Denham",
+      "source": "https://www.geograph.org.uk/photo/807754",
+      "image_url": "https://s0.geograph.org.uk/photos/80/77/807754_950c2c30.jpg",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "site_path": "img/geograph-807754.jpg",
+      "width": 640,
+      "height": 480,
+      "changes": "None",
+      "sha256": "c734e6bd00028ea42de125ddb2a5267b7138869554a5eb2a9b55a16867987b17"
+    },
+    {
+      "id": 1484091,
+      "title": "Shieldhill Hall during restoration",
+      "date_taken": "2009-08-16",
+      "credit": "Angus McCulloch",
+      "source": "https://www.geograph.org.uk/photo/1484091",
+      "image_url": "https://s0.geograph.org.uk/geophotos/01/48/40/1484091_670ee2d7.jpg",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "site_path": "img/geograph-1484091.jpg",
+      "width": 640,
+      "height": 432,
+      "changes": "None",
+      "sha256": "32249674493f4f5b8d64e965cd9ab87ff249b12c9166cf1b6911a822a4ad410c"
+    },
+    {
+      "id": 6005376,
+      "title": "Quothquan Village Hall beside the old kirk",
+      "date_taken": "2018-12-19",
+      "credit": "Jim Barton",
+      "source": "https://www.geograph.org.uk/photo/6005376",
+      "image_url": "https://s0.geograph.org.uk/geophotos/06/00/53/6005376_1adc5b2a.jpg",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "site_path": "img/geograph-6005376.jpg",
+      "width": 640,
+      "height": 424,
+      "changes": "None",
+      "sha256": "da03e143ee1898171b9a41fffeaec2f15d73e1a438f2fdeb68d797f029c1d014"
+    },
+    {
+      "id": 626413,
+      "title": "Quothquan Village Hall beside the old kirk",
+      "date_taken": "2007-12-01",
+      "credit": "Richard Webb",
+      "source": "https://www.geograph.org.uk/photo/626413",
+      "image_url": "https://s0.geograph.org.uk/photos/62/64/626413_b7b46a7e.jpg",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "site_path": "../img/quothquan-hall.jpg",
+      "width": 640,
+      "height": 480,
+      "changes": "None",
+      "sha256": "bb8ce61b42fbfb80193cc8bcb85c6fd34d2aa1e024994a42706736fc89f582ec"
+    },
+    {
+      "id": 151480,
+      "title": "Old Quothquan kirk and churchyard",
+      "date_taken": "2006-04-13",
+      "credit": "Colin Inverarity",
+      "source": "https://www.geograph.org.uk/photo/151480",
+      "image_url": "https://s0.geograph.org.uk/photos/15/14/151480_230a9bc5.jpg",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "site_path": "img/geograph-151480.jpg",
+      "width": 640,
+      "height": 480,
+      "changes": "None",
+      "sha256": "76213de9cb953ae13bf6c0e94a3dce919206095d6c9a65b8c5bab9e36d942fa1"
+    }
+  ],
+  "historical_collection": {
+    "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+    "display": "Stable source-page links; images identified by title and collection order",
+    "images": [
+      {
+        "title": "Smithy: Arthur, Peter and Charles Lyon",
+        "date_label": "Undated",
+        "credit": "John Lyon",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 1
+      },
+      {
+        "title": "Thankerton from the Law",
+        "date_label": "Postmark: 23 May 1932",
+        "credit": "Jim Hope Collection",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 2
+      },
+      {
+        "title": "Arthurshields sheep clipping",
+        "date_label": "1945",
+        "credit": "John Lyon",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 3
+      },
+      {
+        "title": "Quothquan Mill farmhouse",
+        "date_label": "Before 1936",
+        "credit": "John Lyon",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 4
+      },
+      {
+        "title": "Cormiston Towers",
+        "date_label": "Undated",
+        "credit": "Charlie Todd Collection",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 5
+      },
+      {
+        "title": "Sir Nathaniel Dunlop",
+        "date_label": "Undated",
+        "credit": "Charlie Todd Collection",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 6
+      },
+      {
+        "title": "Ellen Smith Dunlop",
+        "date_label": "Undated",
+        "credit": "Charlie Todd Collection",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 7
+      },
+      {
+        "title": "Huntfield Place, numbers 2–4",
+        "date_label": "Undated",
+        "credit": "Charlie Todd Collection",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 8
+      },
+      {
+        "title": "Old Quothquan kirk",
+        "date_label": "Undated",
+        "credit": "Charlie Todd Collection",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 9
+      },
+      {
+        "title": "Huntfield House, first view",
+        "date_label": "Undated",
+        "credit": "Charlie Todd Collection",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 10
+      },
+      {
+        "title": "Huntfield House, second view",
+        "date_label": "Undated",
+        "credit": "Charlie Todd Collection",
+        "source_url": "https://sites.google.com/view/qandtcc/historical-photographs/quothquan",
+        "collection_order": 11
+      }
+    ]
+  }
+}
