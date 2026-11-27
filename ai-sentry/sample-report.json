@@ -1,0 +1,112 @@
+{
+  "tool": "AI Sentry",
+  "version": "0.1.0",
+  "meta": {
+    "score": 72,
+    "level": "HIGH",
+    "red": 3,
+    "yellow": 2,
+    "date": "2026-11-27 18:46",
+    "host": "vm",
+    "os": "Linux-6.18.44-fc-v880-x86_64-with-glibc2.39"
+  },
+  "stats": {
+    "files": 6,
+    "rules": 107,
+    "collectors": 6
+  },
+  "findings": [
+    {
+      "id": "AIS-AGT-001",
+      "severity": "red",
+      "category": "AI agents",
+      "title": "Claude Desktop can run commands on your computer through 'desktop-commander'",
+      "detail": "The AI in Claude Desktop is connected to a tool that lets it run commands on your computer. If it reads a booby-trapped document or web page, an attacker could steer it to use that power.",
+      "evidence": "~/.config/Claude/claude_desktop_config.json",
+      "fix": "Keep 'ask before running tools' turned on in Claude Desktop, and remove this tool connection if you don't use it.",
+      "atlas": "AML.T0051",
+      "owasp": "LLM06 Excessive Agency",
+      "nist_csf": "PR.AA"
+    },
+    {
+      "id": "AIS-AGT-002",
+      "severity": "red",
+      "category": "AI agents",
+      "title": "Claude Desktop can read and send email through 'gmail'",
+      "detail": "The AI in Claude Desktop is connected to a tool that lets it read and send email. If it reads a booby-trapped document or web page, an attacker could steer it to use that power.",
+      "evidence": "~/.config/Claude/claude_desktop_config.json",
+      "fix": "Keep 'ask before running tools' turned on in Claude Desktop, and remove this tool connection if you don't use it.",
+      "atlas": "AML.T0051",
+      "owasp": "LLM06 Excessive Agency",
+      "nist_csf": "PR.AA"
+    },
+    {
+      "id": "AIS-AGT-003",
+      "severity": "yellow",
+      "category": "AI agents",
+      "title": "Claude Desktop can read and write your files through 'filesystem'",
+      "detail": "The AI in Claude Desktop is connected to a tool that lets it read and write your files. If it reads a booby-trapped document or web page, an attacker could steer it to use that power.",
+      "evidence": "~/.config/Claude/claude_desktop_config.json",
+      "fix": "Keep 'ask before running tools' turned on in Claude Desktop, and remove this tool connection if you don't use it.",
+      "atlas": "AML.T0051",
+      "owasp": "LLM06 Excessive Agency",
+      "nist_csf": "PR.AA"
+    },
+    {
+      "id": "AIS-AGT-004",
+      "severity": "yellow",
+      "category": "AI agents",
+      "title": "Cursor can change code repositories through 'github'",
+      "detail": "The AI in Cursor is connected to a tool that lets it change code repositories. If it reads a booby-trapped document or web page, an attacker could steer it to use that power.",
+      "evidence": "~/.cursor/mcp.json",
+      "fix": "Keep 'ask before running tools' turned on in Cursor, and remove this tool connection if you don't use it.",
+      "atlas": "AML.T0051",
+      "owasp": "LLM06 Excessive Agency",
+      "nist_csf": "PR.AA"
+    },
+    {
+      "id": "AIS-INJ-005",
+      "severity": "red",
+      "category": "Prompt injection",
+      "title": "Possible AI trap in invoice.html",
+      "detail": "This file contains text written to give orders to an AI (\"Ignore all previous instructions\"); hidden formatting (white or invisible text). If you ask an AI assistant to read or summarize it, the AI may follow these hidden orders instead of yours.",
+      "evidence": "~/Downloads/invoice.html",
+      "fix": "Don't give this file to an AI assistant or agent. Delete it if you don't know where it came from.",
+      "atlas": "AML.T0051",
+      "owasp": "LLM01 Prompt Injection",
+      "nist_csf": "DE.CM"
+    }
+  ],
+  "inventory": [
+    {
+      "kind": "agent",
+      "name": "Claude Desktop",
+      "where": "~/.config/Claude/claude_desktop_config.json"
+    },
+    {
+      "kind": "tool server",
+      "name": "Claude Desktop -> desktop-commander",
+      "where": "~/.config/Claude/claude_desktop_config.json"
+    },
+    {
+      "kind": "tool server",
+      "name": "Claude Desktop -> gmail",
+      "where": "~/.config/Claude/claude_desktop_config.json"
+    },
+    {
+      "kind": "tool server",
+      "name": "Claude Desktop -> filesystem",
+      "where": "~/.config/Claude/claude_desktop_config.json"
+    },
+    {
+      "kind": "agent",
+      "name": "Cursor",
+      "where": "~/.cursor/mcp.json"
+    },
+    {
+      "kind": "tool server",
+      "name": "Cursor -> github",
+      "where": "~/.cursor/mcp.json"
+    }
+  ]
+}
