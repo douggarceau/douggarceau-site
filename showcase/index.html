@@ -52,11 +52,14 @@ a.card:hover:before{opacity:1}
 .chrome em{margin-left:10px;font:500 10.5px "JetBrains Mono",monospace;color:#6f7b87;font-style:normal;letter-spacing:.04em}
 .shot img{position:absolute;top:26px;left:0;width:100%;height:calc(100% - 26px);object-fit:cover;object-position:top;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
 a.card:hover .shot img{transform:scale(1.04)}
-.mark{position:absolute;inset:0;display:grid;place-items:center;background:
- radial-gradient(400px 220px at 50% 110%,color-mix(in srgb,var(--c) 35%,transparent),transparent 70%),
- linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px) 0 0/28px 28px,
- linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px) 0 0/28px 28px,#090d13}
-.mark b{font:700 64px "Space Grotesk";letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.2px color-mix(in srgb,var(--c) 80%,#fff);opacity:.9}
+.mark{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden;background:
+ linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px) 0 0/28px 28px,
+ linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px) 0 0/28px 28px,#070a0f}
+.mark:before{content:"";position:absolute;width:78%;height:70%;border-radius:50%;background:radial-gradient(closest-side,color-mix(in srgb,var(--c) 55%,transparent),transparent);filter:blur(18px);animation:breathe 4.5s ease-in-out infinite}
+.mark:after{content:"";position:absolute;left:10%;right:10%;bottom:18%;height:1px;background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--c) 80%,#fff),transparent);opacity:.5}
+@keyframes breathe{0%,100%{opacity:.55;transform:scale(.92)}50%{opacity:1;transform:scale(1.06)}}
+.plate{position:relative;z-index:1;padding:16px 30px;border-radius:14px;font:600 24px "Space Grotesk";letter-spacing:-.01em;color:#fff;background:linear-gradient(180deg,rgba(255,255,255,.12),rgba(255,255,255,.03));border:1px solid color-mix(in srgb,var(--c) 70%,#fff);box-shadow:0 0 0 1px rgba(255,255,255,.04) inset,0 0 18px color-mix(in srgb,var(--c) 55%,transparent),0 0 46px color-mix(in srgb,var(--c) 35%,transparent);text-shadow:0 0 14px color-mix(in srgb,var(--c) 70%,transparent);backdrop-filter:blur(4px);white-space:nowrap;transition:box-shadow .35s,transform .35s}
+.card:hover .plate{transform:translateY(-2px);box-shadow:0 0 0 1px rgba(255,255,255,.06) inset,0 0 26px color-mix(in srgb,var(--c) 75%,transparent),0 0 70px color-mix(in srgb,var(--c) 45%,transparent)}
 .body{padding:22px 24px 22px;display:flex;flex-direction:column;flex:1}
 .type{font:500 11px "JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--c)}
 .card h3{font:600 25px/1.15 "Space Grotesk";letter-spacing:-.02em;margin:10px 0 8px}
@@ -113,27 +116,27 @@ footer a{color:#c9d6e2}
 <div class="body"><div class="type">Game</div><h3>Defender</h3><p>A playable recreation of the 1981 arcade classic, built to run with original-style arcade controls.</p>
 <div class="foot"><span class="go">Play</span><span class="live">Live</span></div></div></a>
 <div class="card reveal" style="--c:#6fc3cf">
-<div class="shot"><div class="mark"><b>AI</b></div></div>
+<div class="shot"><div class="mark"><span class="plate">AI Sentry</span></div></div>
 <div class="body"><div class="type">Security software</div><h3>AI Sentry</h3><p>Scans a computer for AI apps, agents and AI-attack risks, with a command-center dashboard of what it finds.</p>
 <div class="foot"><span class="status">In development</span></div></div></div>
 <div class="card reveal" style="--c:#b0a8e6">
-<div class="shot"><div class="mark"><b>En</b></div></div>
+<div class="shot"><div class="mark"><span class="plate">Enclave</span></div></div>
 <div class="body"><div class="type">Private network</div><h3>Enclave</h3><p>A closed, secure communication platform for companies, research groups and schools, with a round-the-clock news feed and working-group spaces.</p>
 <div class="foot"><span class="status">Demo on request</span></div></div></div>
 <div class="card reveal" style="--c:#d9b77a">
-<div class="shot"><div class="mark"><b>Ns</b></div></div>
+<div class="shot"><div class="mark"><span class="plate">Newspace</span></div></div>
 <div class="body"><div class="type">Social platform</div><h3>Newspace</h3><p>A full social network: profiles, feeds, posts and messaging, built from the ground up.</p>
 <div class="foot"><span class="status">Demo on request</span></div></div></div>
 <div class="card reveal" style="--c:#9cc7e8">
-<div class="shot"><div class="mark"><b>PM</b></div></div>
+<div class="shot"><div class="mark"><span class="plate">AI Power Map</span></div></div>
 <div class="body"><div class="type">Data visualization</div><h3>AI Power Map</h3><p>An interactive map of the AI industry: the companies, the money and the connections between them.</p>
 <div class="foot"><span class="status">Demo on request</span></div></div></div>
 <div class="card reveal" style="--c:#a6cf9a">
-<div class="shot"><div class="mark"><b>GM</b></div></div>
+<div class="shot"><div class="mark"><span class="plate">Genealogy Matrix</span></div></div>
 <div class="body"><div class="type">Data visualization</div><h3>Genealogy Matrix</h3><p>An interactive map of family connections, built only from original records.</p>
 <div class="foot"><span class="status">Demo on request</span></div></div></div>
 <div class="card reveal" style="--c:#8fb4d6">
-<div class="shot"><div class="mark"><b>Gh</b></div></div>
+<div class="shot"><div class="mark"><span class="plate">Ghost Wealth Terminal</span></div></div>
 <div class="body"><div class="type">Finance app</div><h3>Ghost Wealth Terminal</h3><p>A personal investing terminal: market dashboard, news and live tracking of your own holdings across stocks and crypto.</p>
 <div class="foot"><span class="status">Demo on request</span></div></div></div>
 </div>
@@ -161,7 +164,7 @@ footer a{color:#c9d6e2}
 <div class="body"><div class="type">City news</div><h3>The Boston Rambler</h3><p>Boston news, music, clubs and events.</p>
 <div class="foot"><span class="go">Open</span><span class="live">Live</span></div></div></a>
 <a class="card reveal" style="--c:#8fb0d6" href="https://seattlesinner.com" rel="noreferrer nofollow">
-<div class="shot"><div class="mark"><b>SNS</b></div></div>
+<div class="shot"><div class="mark"><span class="plate">Seattle Night Stalker</span></div></div>
 <div class="body"><div class="type">City news</div><h3>Seattle Night Stalker</h3><p>Seattle news, rock and punk shows, clubs and events.</p>
 <div class="foot"><span class="go">Open</span></div></div></a>
 </div>
