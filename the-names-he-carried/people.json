@@ -682,7 +682,7 @@
     "role": "Third great-grandparents",
     "story": [
       "Alexander Goldie and Agnes Mundell were Laurence's third great-grandparents, the parents of Jean Goldie. Alexander was baptised at Kirkmichael, Dumfriesshire, on June 6, 1762; the parish register names the witnesses as James Buchanan and George Liddell. He married Agnes Mundell (or Mundal), born about 1768, at Kirkmichael about 1790.",
-      "Agnes Mundell was born on July 5, 1768, at Mouswald, Dumfriesshire, the daughter of John Mundell and Mary Anderson, and grew up at Cleughbrae, Mouswald, the eldest of at least eight. Alexander farmed in several parishes: Upper Mains, Kirkmichael (1792); Dalruscan, Tinwald (1801–03); Langside and Newtown, Wamphray (1806–1813). He died on November 11, 1822, and was buried in Wamphray churchyard on November 14. Agnes lived on at Newtown, Wamphray, with her sons Joseph and Robert, and died there on July 23, 1849, aged 81.",
+      "Agnes Mundell's parents are not yet proven. Alexander farmed in several parishes: Upper Mains, Kirkmichael (1792); Dalruscan, Tinwald (1801–03); Langside and Newtown, Wamphray (1806–1813). He died on November 11, 1822, and was buried in Wamphray churchyard on November 14. Agnes lived on at Newtown, Wamphray, with her sons Joseph and Robert, and died there on July 23, 1849, aged 81.",
       "The baptism registers follow the family across Dumfriesshire: James (1790) and John (1792) at Kirkmichael, Alexander (1801) and Joseph (1803) at Tinwald, then Jean (1808), Robert (1811) and Edward (1813) at Wamphray. A family tree on Ancestry (PamelaWills909's Cairns Family Tree) adds an unnamed child (1795), Sarah (1799–1887) and Agnes (1806–1861), and gives their dates as Alexander 1762 to November 11, 1822, when he died at Wamphray, and Agnes 1768 to 1849. Jean was thirteen when her father died.",
       "A memorial page on Find a Grave calls Jean's father William, but her baptism names him Alexander. The death and marriage dates come from the member tree and still need checking against the registers."
     ],
@@ -691,11 +691,6 @@
         "rel": "Alexander's parents",
         "who": "James Goldie and Ann Wilson",
         "slug": "james-goldie"
-      },
-      {
-        "rel": "Agnes's parents",
-        "who": "John Mundell and Mary Anderson",
-        "slug": "john-mundell"
       },
       {
         "rel": "Daughter",
@@ -769,32 +764,6 @@
       }
     ],
     "brief": "Kirkmichael, Dumfriesshire; parents of Alexander Goldie"
-  },
-  {
-    "slug": "john-mundell",
-    "name": "John Mundell and Mary Anderson",
-    "dates": "both born about 1740",
-    "group": "His mother's family",
-    "role": "Fourth great-grandparents",
-    "brief": "Cleughbrae, Mouswald, Dumfriesshire",
-    "story": [
-      "John Mundell and Mary Anderson were Laurence's fourth great-grandparents, the parents of Agnes Mundell. They lived at Cleughbrae in Mouswald parish, Dumfriesshire, where their children were born: Agnes (1768), John (1771), Mary (1773), Jean (1775), Margaret (1778), Isobel (1781), James (1784) and Joseph (1785–1865). These details come from a family tree on Ancestry (PamelaWills909's Cairns Family Tree) and still need checking against the parish registers."
-    ],
-    "lineage": [
-      {
-        "rel": "Daughter",
-        "who": "Agnes Mundell",
-        "slug": "alexander-goldie"
-      }
-    ],
-    "ch": [],
-    "homes": [
-      {
-        "label": "Cleughbrae, Mouswald",
-        "url": "https://earth.google.com/web/search/Mouswald%2C%20Dumfriesshire"
-      }
-    ],
-    "links": []
   },
   {
     "slug": "lawrence-tweedie-brown",
