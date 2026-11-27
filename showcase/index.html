@@ -90,6 +90,8 @@ h1.big{font:800 clamp(46px,9vw,128px)/1 "Unbounded";letter-spacing:-.04em;margin
 .how li{position:relative;padding-left:16px;margin:0 0 8px;color:#b7c2cd;font-size:14.5px;line-height:1.5}
 .how li:before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:2px;background:var(--c);opacity:.8}
 .card .shot{display:block}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin:-6px 0 16px}
+.stack span{font:500 11px "JetBrains Mono",monospace;letter-spacing:.04em;color:#d7e1ea;padding:4px 9px;border-radius:6px;background:color-mix(in srgb,var(--c) 14%,transparent);border:1px solid color-mix(in srgb,var(--c) 35%,transparent)}
 </style></head>
 <body>
 <div class="sky"></div><div class="orb o1"></div><div class="orb o2"></div>
@@ -103,11 +105,13 @@ h1.big{font:800 clamp(46px,9vw,128px)/1 "Unbounded";letter-spacing:-.04em;margin
 <a class="shot" href="/the-names-he-carried/"><div class="chrome"><i></i><i></i><i></i><em>douggarceau.com/the-names-he-carried</em></div><img src="img/book.webp" alt="The Names He Carried home page"></a>
 <div class="body"><div class="type">Book · Research archive</div><h3><a href="/the-names-he-carried/">The Names He Carried</a></h3>
 <p>The life of Laurence Brown Douglas, from Edinburgh in 1907 to Rhode Island. A narrative biography with its full record archive, case files, a short documentary film and an audiobook.</p>
+<div class="stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python</span><span>JSON</span><span>GitHub Pages</span></div>
 <details class="how"><summary>How it's built</summary><ul><li>Static website hosted on GitHub Pages; no server, nothing to break.</li><li>Every chapter stored as structured data (JSON) and laid out in the browser.</li><li>A 40-person index drives the people list down the side of every page.</li><li>Full-text search: a Python script builds a search index that runs right in the browser.</li><li>Audiobook chapters voiced in ElevenLabs and served as MP3s.</li><li>A short documentary film cut from the original records and photos.</li><li>Record archive and Cold Case File with word-for-word transcriptions of every document.</li></ul></details>
 <div class="foot"><a class="go" href="/the-names-he-carried/">Open the book site</a><span class="live">Live</span></div></div></div><div class="card reveal" style="--c:#a9bde0">
 <a class="shot" href="http://amadeusschoolofdrums.com"><div class="chrome"><i></i><i></i><i></i><em>amadeusschoolofdrums.com</em></div><img src="img/drums.webp" alt="Amadeus School of Drums home page"></a>
 <div class="body"><div class="type">Interactive learning</div><h3><a href="http://amadeusschoolofdrums.com">Amadeus School of Drums</a></h3>
 <p>A complete drum school: three lesson levels, the 40 rudiments, a playable vintage drum set and a 59-instrument percussion room, all with real recorded sound.</p>
+<div class="stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Web Audio API</span><span>Web MIDI API</span><span>Service Worker</span><span>Python</span><span>GitHub Actions</span><span>Supabase</span></div>
 <details class="how"><summary>How it's built</summary><ul><li>Static HTML, CSS and JavaScript on GitHub Pages under its own domain.</li><li>Custom audio engine on the Web Audio API playing 600+ real recorded drum and percussion samples.</li><li>Velocity layers and slight timing variation so grooves sound played, not programmed.</li><li>Web MIDI support: plug in an electronic drum set and play the site.</li><li>Notation that lights up in time with the playback.</li><li>Installable as an app (service worker, works offline).</li><li>Drum news refreshed every 4 hours by GitHub Actions running Python fetchers.</li><li>Supabase back end for the drum chat; FormSubmit contact form; Buttondown newsletter.</li></ul></details>
 <div class="foot"><a class="go" href="http://amadeusschoolofdrums.com">Open</a><span class="live">Live</span></div></div></div></div>
 
@@ -116,20 +120,24 @@ h1.big{font:800 clamp(46px,9vw,128px)/1 "Unbounded";letter-spacing:-.04em;margin
 <div class="card reveal" style="--c:#e0926a">
 <a class="shot" href="/defender/"><div class="chrome"><i></i><i></i><i></i><em>douggarceau.com/defender</em></div><img src="img/defender.webp" alt="Defender hall of fame screen"></a>
 <div class="body"><div class="type">Game</div><h3><a href="/defender/">Defender</a></h3><p>A playable recreation of the 1981 arcade classic, built to run with original-style arcade controls.</p>
+<div class="stack"><span>HTML5</span><span>JavaScript</span><span>Canvas 2D</span><span>Web Audio API</span><span>Gamepad API</span></div>
 <details class="how"><summary>How it's built</summary><ul><li>One self-contained HTML5 file, about 66 KB, no game engine or libraries.</li><li>Canvas 2D graphics drawn at 60 frames per second (requestAnimationFrame).</li><li>Sound effects generated with the Web Audio API.</li><li>Gamepad API support, so an original-style arcade joystick and buttons work.</li><li>High-score table saved in the browser.</li></ul></details>
 <div class="foot"><a class="go" href="/defender/">Play</a><span class="live">Live</span></div></div></div><div class="card reveal" style="--c:#6fc3cf">
 <div class="shot"><div class="mark"><span class="plate">AI Sentry</span></div></div>
 <div class="body"><div class="type">Security software</div><h3>AI Sentry</h3><p>Scans a computer for AI apps, agents and AI-attack risks, with a command-center dashboard of what it finds.</p>
+<div class="stack"><span>Python 3</span><span>macOS</span><span>HTML report</span><span>JSON</span><span>MITRE ATLAS</span><span>OWASP LLM Top 10</span><span>NIST CSF 2.0</span></div>
 <details class="how"><summary>How it's built</summary><ul><li>Python 3 scanner, a single file of about 800 lines with nothing to install.</li><li>Runs from one Terminal command on macOS; read-only, sends nothing over the internet.</li><li>Finds AI apps and the privacy permissions they hold.</li><li>Checks AI browser extensions in Chrome, Brave, Edge, Arc, Vivaldi and Firefox.</li><li>Inspects AI agent tool servers (MCP) for Claude, Cursor, Windsurf, VS Code, Zed, Gemini CLI, Codex and Cline.</li><li>Hunts for exposed AI keys (OpenAI, Anthropic, Google, Hugging Face and more) in files and shell history.</li><li>Detects hidden prompt-injection text in documents, and local AI servers such as Ollama and LM Studio.</li><li>Red, yellow and green report in HTML and JSON, mapped to MITRE ATLAS, OWASP Top 10 for LLM Applications and NIST CSF 2.0.</li></ul></details>
 <div class="foot"><span class="status">In development</span></div></div></div>
 <div class="card reveal" style="--c:#b0a8e6">
 <div class="shot"><div class="mark"><span class="plate">Enclave</span></div></div>
 <div class="body"><div class="type">Private network</div><h3>Enclave</h3><p>A closed, secure communication platform for companies, research groups and schools, with a round-the-clock news feed and working-group spaces.</p>
+<div class="stack"><span>HTML5</span><span>JavaScript</span><span>Python</span><span>GitHub Actions</span><span>Supabase</span><span>REST APIs</span></div>
 <details class="how"><summary>How it's built</summary><ul><li>Built on a working research-network site that is live today.</li><li>Daily GitHub Actions pipeline in Python pulling PubMed, ClinicalTrials.gov, Europe PMC preprints and NIH RePORTER grants.</li><li>Member features (sign-in, profiles, discussions, meetings, messages) on Supabase.</li></ul></details>
 <div class="foot"><span class="status">Demo on request</span></div></div></div>
 <div class="card reveal" style="--c:#d9b77a">
 <div class="shot"><div class="mark"><span class="plate">Newspace</span></div></div>
 <div class="body"><div class="type">Social platform</div><h3>Newspace</h3><p>A full social network: profiles, feeds, posts and messaging, built from the ground up.</p>
+<div class="stack"><span>Python</span><span>Django</span><span>HTML5</span><span>CSS3</span></div>
 <details class="how"><summary>How it's built</summary><ul><li>Python web application built on Django.</li><li>Profiles, feeds, posts and messaging.</li></ul></details>
 <div class="foot"><span class="status">Demo on request</span></div></div></div>
 <div class="card reveal" style="--c:#9cc7e8">
@@ -152,6 +160,7 @@ h1.big{font:800 clamp(46px,9vw,128px)/1 "Unbounded";letter-spacing:-.04em;margin
 <div class="card reveal" style="--c:#c9a86a">
 <a class="shot" href="https://islandnewsmedia.com"><div class="chrome"><i></i><i></i><i></i><em>islandnewsmedia.com</em></div><img src="img/inm.webp" alt="Island News Media Productions home page"></a>
 <div class="body"><div class="type">Publisher</div><h3><a href="https://islandnewsmedia.com">Island News Media Productions</a></h3><p>The company behind the publications: arts, entertainment and community news for Rhode Island, Boston and New York City.</p>
+<div class="stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Python 3.12</span><span>GitHub Actions</span><span>JSON</span><span>RSS</span><span>Pillow</span><span>PWA</span></div>
 <details class="how"><summary>How it's built</summary><ul><li>Four publications running on one shared template, each with its own domain and accent color.</li><li>Static HTML and JavaScript on GitHub Pages, with all content in JSON data files.</li><li>GitHub Actions run Python jobs on a schedule, no staff needed for the routine work:</li><li>Hourly marine conditions from NOAA buoys, National Weather Service marine forecasts and Coast Guard notices.</li><li>Daily job boards pulling USAJobs, state and school job systems, and company hiring boards (Greenhouse, Lever, Ashby, Workable).</li><li>Daily checks that drop closed or expired event listings, plus calendar cleanup.</li><li>Automatically generated share cards for every story (Pillow) and a banned-words check before anything publishes.</li><li>RSS feed and installable app on every edition.</li></ul></details>
 <div class="foot"><a class="go" href="https://islandnewsmedia.com">Open</a><span class="live">Live</span></div></div></div><div class="card reveal" style="--c:#8fb0d6">
 <a class="shot" href="https://jamestownislandnews.com"><div class="chrome"><i></i><i></i><i></i><em>jamestownislandnews.com</em></div><img src="img/jamestown.webp" alt="Jamestown Island News home page"></a>
