@@ -157,6 +157,24 @@ header{background:rgba(5,6,8,.75)}
 @media(max-width:1100px){.lights{display:none}}
 @media(max-width:760px){.term,.gauges,.chud{display:none}.plist{grid-template-columns:1fr}}
 .pl.full{grid-column:1/-1}.pl.full b{white-space:normal}
+
+/* console becomes a fixed full-page backdrop */
+.con{position:fixed;inset:0;min-height:0;margin:0;padding:0;z-index:-1;pointer-events:none;border:0;
+ background:linear-gradient(rgba(200,40,40,.06) 1px,transparent 1px) 0 0/56px 56px,linear-gradient(90deg,rgba(200,40,40,.06) 1px,transparent 1px) 0 0/56px 56px,radial-gradient(900px 700px at 50% 55%,#10151c,#050608 75%)}
+.bgx{display:none}
+.cmid{position:absolute;left:0;right:0;top:6vh;padding:0}
+.seal{width:min(118px,14vh);height:min(118px,14vh)}
+.ctitle{margin:2.4vh 0 1.8vh}
+.csub{margin:2vh 0 0}
+.cdial{position:fixed;left:50%;bottom:64px;transform:translateX(-50%);width:min(250px,28vh);height:min(250px,28vh);margin:0}
+.lead{padding-top:calc(6vh + min(118px,14vh) + 2.4vh + 64px + 1.8vh + 3px + 2vh + 40px);display:flex;justify-content:center}
+main.wrap{width:min(1000px,calc(100% - 32px))}
+.grid.feature{grid-template-columns:1fr 1fr}
+.card{background:rgba(8,11,15,.62);backdrop-filter:blur(3px)}
+.sec h2{text-shadow:0 2px 12px #000}
+footer{background:rgba(5,6,8,.7)}
+main{padding-bottom:120px}
+@media(max-width:760px){.cdial{display:none}}
 </style></head>
 <body>
 <div class="bgx" aria-hidden="true">
@@ -178,7 +196,7 @@ header{background:rgba(5,6,8,.75)}
 <path d="M58 100q42-34 84 0q-42 34-84 0z" fill="none" stroke="#e8edf2" stroke-width="2.2"/><circle cx="100" cy="100" r="13" fill="#e3170a"/><circle cx="100" cy="100" r="5" fill="#05070a"/><path class="swp" d="M100 100L140 72" stroke="#e3170a" stroke-width="1.5" opacity=".9"/></svg>
 <h1 class="ctitle">DOUG GARCEAU</h1><div class="cline"></div>
 <div class="csub">AI LABS</div>
-<div class="panel"><div class="ph">PROJECTS · SELECT A SYSTEM</div><div class="plist"><a class="pl full" href="/the-names-he-carried/"><i>01</i><b>The Names He Carried: The Laurence Brown Douglas Story</b><em>BOOK</em></a><a class="pl" href="http://amadeusschoolofdrums.com"><i>02</i><b>Amadeus School of Drums</b><em>LEARN</em></a><a class="pl" href="/power-map/"><i>03</i><b>Tech &amp; AI Power Map</b><em>DATA</em></a><a class="pl" href="/defender/"><i>04</i><b>Defender</b><em>GAME</em></a><a class="pl" href="#software"><i>05</i><b>AI Sentry</b><em>SEC</em></a><a class="pl" href="#software"><i>06</i><b>Enclave</b><em>NET</em></a><a class="pl" href="#software"><i>07</i><b>Newspace</b><em>SOC</em></a><a class="pl" href="#software"><i>08</i><b>Genealogy Matrix</b><em>DATA</em></a><a class="pl" href="#software"><i>09</i><b>Ghost Wealth Terminal</b><em>FIN</em></a><a class="pl" href="https://islandnewsmedia.com"><i>10</i><b>Island News Media</b><em>PUB</em></a><a class="pl" href="https://jamestownislandnews.com"><i>11</i><b>Jamestown Island News</b><em>NEWS</em></a><a class="pl" href="https://rhodeislandhurricane.com"><i>12</i><b>Rhode Island Hurricane</b><em>NEWS</em></a><a class="pl" href="https://newyorkcityscream.com"><i>13</i><b>New York City Scream</b><em>NEWS</em></a><a class="pl" href="https://thebostonrambler.com"><i>14</i><b>The Boston Rambler</b><em>NEWS</em></a><a class="pl" href="https://seattlesinner.com" rel="noreferrer nofollow"><i>15</i><b>Seattle Night Stalker</b><em>NEWS</em></a></div></div>
+
 <svg class="cdial" viewBox="0 0 600 600" aria-hidden="true">
  <defs><radialGradient id="core2" cx="50%" cy="42%"><stop offset="0" stop-color="#bcd8ec"/><stop offset=".45" stop-color="#3d6f8f"/><stop offset="1" stop-color="#0b1620"/></radialGradient></defs>
  <g class="r1"><circle cx="300" cy="300" r="250" fill="none" stroke="#6fa6d6" stroke-width="6" stroke-dasharray="120 18 40 18"/></g>
@@ -188,13 +206,13 @@ header{background:rgba(5,6,8,.75)}
  <circle class="coreg" cx="300" cy="300" r="160" fill="url(#core2)"/><circle cx="300" cy="300" r="160" fill="none" stroke="#9ec3e0" stroke-opacity=".4" stroke-width="3"/>
  <path d="M300 244 v46 M268 264 a50 50 0 1 0 64 0" fill="none" stroke="#e8f3fb" stroke-width="8" stroke-linecap="round" opacity=".9"/>
 </svg>
-<div class="cbtm">SCROLL FOR TECHNICAL BREAKDOWNS ↓</div>
 </div>
 <div class="term" id="term"></div>
 <div class="gauges" id="gg"></div>
 <div class="tick"><div class="tk" id="tk"></div></div>
 <div class="cbar bot"><span>■ INDEX</span><span>DOUGGARCEAU.COM // PUBLIC-RECORD BUILDS ONLY</span><span id="tm">TERMINAL 0X000000</span></div>
 </section>
+<div class="lead"><div class="panel"><div class="ph">PROJECTS · SELECT A SYSTEM</div><div class="plist"><a class="pl full" href="/the-names-he-carried/"><i>01</i><b>The Names He Carried: The Laurence Brown Douglas Story</b><em>BOOK</em></a><a class="pl" href="http://amadeusschoolofdrums.com"><i>02</i><b>Amadeus School of Drums</b><em>LEARN</em></a><a class="pl" href="/power-map/"><i>03</i><b>Tech &amp; AI Power Map</b><em>DATA</em></a><a class="pl" href="/defender/"><i>04</i><b>Defender</b><em>GAME</em></a><a class="pl" href="#software"><i>05</i><b>AI Sentry</b><em>SEC</em></a><a class="pl" href="#software"><i>06</i><b>Enclave</b><em>NET</em></a><a class="pl" href="#software"><i>07</i><b>Newspace</b><em>SOC</em></a><a class="pl" href="#software"><i>08</i><b>Genealogy Matrix</b><em>DATA</em></a><a class="pl" href="#software"><i>09</i><b>Ghost Wealth Terminal</b><em>FIN</em></a><a class="pl" href="https://islandnewsmedia.com"><i>10</i><b>Island News Media</b><em>PUB</em></a><a class="pl" href="https://jamestownislandnews.com"><i>11</i><b>Jamestown Island News</b><em>NEWS</em></a><a class="pl" href="https://rhodeislandhurricane.com"><i>12</i><b>Rhode Island Hurricane</b><em>NEWS</em></a><a class="pl" href="https://newyorkcityscream.com"><i>13</i><b>New York City Scream</b><em>NEWS</em></a><a class="pl" href="https://thebostonrambler.com"><i>14</i><b>The Boston Rambler</b><em>NEWS</em></a><a class="pl" href="https://seattlesinner.com" rel="noreferrer nofollow"><i>15</i><b>Seattle Night Stalker</b><em>NEWS</em></a></div></div></div>
 
 <div class="sec" id="featured"><h2>Featured</h2><small>Flagship projects</small></div>
 <div class="grid feature">
