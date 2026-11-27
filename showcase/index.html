@@ -175,6 +175,9 @@ main.wrap{width:min(1000px,calc(100% - 32px))}
 footer{background:rgba(5,6,8,.7)}
 main{padding-bottom:120px}
 @media(max-width:760px){.cdial{display:none}}
+.hudfront .cbar,.hudfront .tick{position:fixed;z-index:20}
+.hudfront .cbar.top{top:0}.hudfront .cbar.bot{bottom:0}.hudfront .tick{bottom:22px}
+main{padding-top:22px}
 </style></head>
 <body>
 <div class="bgx" aria-hidden="true">
@@ -184,7 +187,6 @@ main{padding-bottom:120px}
 <header style="display:none"><div class="wrap bar"><div class="name"></div><nav><a href="#featured">Featured</a><a href="#software">Software</a><a href="#news">Publications</a><a href="#contact">Contact</a></nav></div></header>
 <main class="wrap">
 <section class="con" aria-label="Doug Garceau">
-<div class="cbar top"><span>■ DOUG GARCEAU</span><span>AI LABS // BUILD SYSTEMS // AUTHORIZED ACCESS</span><span class="rec">● SESSION MONITORED</span></div>
 <div class="chud tl"><i class="ok"></i>LINK ESTABLISHED<br><span id="clk">--:--:-- ET</span><br><span>FEED · PUBLIC RECORD</span></div>
 <div class="chud tr">SIGNAL <b class="sig">▮▮▮▯</b><br><span>NODES <b id="cn">0</b></span><br><span>LINKS <b id="cl">0</b></span></div>
 <div class="lights l" id="lgl"></div><div class="lights r" id="lgr"></div>
@@ -209,9 +211,11 @@ main{padding-bottom:120px}
 </div>
 <div class="term" id="term"></div>
 <div class="gauges" id="gg"></div>
+</section>
+<div class="hudfront" aria-hidden="false"><div class="cbar top"><span>■ DOUG GARCEAU</span><span>AI LABS // BUILD SYSTEMS // AUTHORIZED ACCESS</span><span class="rec">● SESSION MONITORED</span></div>
 <div class="tick"><div class="tk" id="tk"></div></div>
 <div class="cbar bot"><span>■ INDEX</span><span>DOUGGARCEAU.COM // PUBLIC-RECORD BUILDS ONLY</span><span id="tm">TERMINAL 0X000000</span></div>
-</section>
+</div>
 <div class="lead"><div class="panel"><div class="ph">PROJECTS · SELECT A SYSTEM</div><div class="plist"><a class="pl full" href="/the-names-he-carried/"><i>01</i><b>The Names He Carried: The Laurence Brown Douglas Story</b><em>BOOK</em></a><a class="pl" href="http://amadeusschoolofdrums.com"><i>02</i><b>Amadeus School of Drums</b><em>LEARN</em></a><a class="pl" href="/power-map/"><i>03</i><b>Tech &amp; AI Power Map</b><em>DATA</em></a><a class="pl" href="/defender/"><i>04</i><b>Defender</b><em>GAME</em></a><a class="pl" href="#software"><i>05</i><b>AI Sentry</b><em>SEC</em></a><a class="pl" href="#software"><i>06</i><b>Enclave</b><em>NET</em></a><a class="pl" href="#software"><i>07</i><b>Newspace</b><em>SOC</em></a><a class="pl" href="#software"><i>08</i><b>Genealogy Matrix</b><em>DATA</em></a><a class="pl" href="#software"><i>09</i><b>Ghost Wealth Terminal</b><em>FIN</em></a><a class="pl" href="https://islandnewsmedia.com"><i>10</i><b>Island News Media</b><em>PUB</em></a><a class="pl" href="https://jamestownislandnews.com"><i>11</i><b>Jamestown Island News</b><em>NEWS</em></a><a class="pl" href="https://rhodeislandhurricane.com"><i>12</i><b>Rhode Island Hurricane</b><em>NEWS</em></a><a class="pl" href="https://newyorkcityscream.com"><i>13</i><b>New York City Scream</b><em>NEWS</em></a><a class="pl" href="https://thebostonrambler.com"><i>14</i><b>The Boston Rambler</b><em>NEWS</em></a><a class="pl" href="https://seattlesinner.com" rel="noreferrer nofollow"><i>15</i><b>Seattle Night Stalker</b><em>NEWS</em></a></div></div></div>
 
 <div class="sec" id="featured"><h2>Featured</h2><small>Flagship projects</small></div>
