@@ -178,6 +178,18 @@ main{padding-bottom:120px}
 .hudfront .cbar,.hudfront .tick{position:fixed;z-index:20}
 .hudfront .cbar.top{top:0}.hudfront .cbar.bot{bottom:0}.hudfront .tick{bottom:22px}
 main{padding-top:22px}
+
+.hero2{position:relative;min-height:100vh;padding:58px 0 230px;display:flex;justify-content:center}
+.hero2 .chud{top:34px}
+.hmid{display:flex;flex-direction:column;align-items:center;text-align:center;width:100%}
+.hmid .csub{margin:2vh 0 3vh}
+.hero2 .term{bottom:40px}.hero2 .gauges{bottom:40px}
+.lead{display:none}
+.con .cmid{display:none}
+.cdial{opacity:.45}
+.card{background:#0a0d12;backdrop-filter:none}
+.sec{position:relative}
+.sec h2,.sec small{background:#06080b;padding:2px 10px 2px 0}
 </style></head>
 <body>
 <div class="bgx" aria-hidden="true">
@@ -187,17 +199,8 @@ main{padding-top:22px}
 <header style="display:none"><div class="wrap bar"><div class="name"></div><nav><a href="#featured">Featured</a><a href="#software">Software</a><a href="#news">Publications</a><a href="#contact">Contact</a></nav></div></header>
 <main class="wrap">
 <section class="con" aria-label="Doug Garceau">
-<div class="chud tl"><i class="ok"></i>LINK ESTABLISHED<br><span id="clk">--:--:-- ET</span><br><span>FEED · PUBLIC RECORD</span></div>
-<div class="chud tr">SIGNAL <b class="sig">▮▮▮▯</b><br><span>NODES <b id="cn">0</b></span><br><span>LINKS <b id="cl">0</b></span></div>
 <div class="lights l" id="lgl"></div><div class="lights r" id="lgr"></div>
 <div class="cmid">
-<svg class="seal" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="sc" d="M100 100 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0"/></defs>
-<circle cx="100" cy="100" r="96" fill="#07090c" stroke="#d6dde4" stroke-width="2"/><circle cx="100" cy="100" r="62" fill="none" stroke="#d6dde4" stroke-width="1.2" opacity=".6"/>
-<text font-family="JetBrains Mono,monospace" font-size="11.5" letter-spacing="3" fill="#d6dde4"><textPath href="#sc">DOUG GARCEAU · AI LABS · BUILD SYSTEMS ·</textPath></text>
-<g stroke="#d6dde4" fill="none"><circle cx="100" cy="100" r="40" opacity=".5"/><circle cx="100" cy="100" r="22" opacity=".5"/><path d="M100 44v112M44 100h112" opacity=".35"/></g>
-<path d="M58 100q42-34 84 0q-42 34-84 0z" fill="none" stroke="#e8edf2" stroke-width="2.2"/><circle cx="100" cy="100" r="13" fill="#e3170a"/><circle cx="100" cy="100" r="5" fill="#05070a"/><path class="swp" d="M100 100L140 72" stroke="#e3170a" stroke-width="1.5" opacity=".9"/></svg>
-<h1 class="ctitle">DOUG GARCEAU</h1><div class="cline"></div>
-<div class="csub">AI LABS</div>
 
 <svg class="cdial" viewBox="0 0 600 600" aria-hidden="true">
  <defs><radialGradient id="core2" cx="50%" cy="42%"><stop offset="0" stop-color="#bcd8ec"/><stop offset=".45" stop-color="#3d6f8f"/><stop offset="1" stop-color="#0b1620"/></radialGradient></defs>
@@ -209,6 +212,20 @@ main{padding-top:22px}
  <path d="M300 244 v46 M268 264 a50 50 0 1 0 64 0" fill="none" stroke="#e8f3fb" stroke-width="8" stroke-linecap="round" opacity=".9"/>
 </svg>
 </div>
+</section>
+<section class="hero2">
+<div class="chud tl"><i class="ok"></i>LINK ESTABLISHED<br><span id="clk">--:--:-- ET</span><br><span>FEED · PUBLIC RECORD</span></div>
+<div class="chud tr">SIGNAL <b class="sig">▮▮▮▯</b><br><span>NODES <b id="cn">0</b></span><br><span>LINKS <b id="cl">0</b></span></div>
+<div class="hmid">
+<svg class="seal" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="sc" d="M100 100 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0"/></defs>
+<circle cx="100" cy="100" r="96" fill="#07090c" stroke="#d6dde4" stroke-width="2"/><circle cx="100" cy="100" r="62" fill="none" stroke="#d6dde4" stroke-width="1.2" opacity=".6"/>
+<text font-family="JetBrains Mono,monospace" font-size="11.5" letter-spacing="3" fill="#d6dde4"><textPath href="#sc">DOUG GARCEAU · AI LABS · BUILD SYSTEMS ·</textPath></text>
+<g stroke="#d6dde4" fill="none"><circle cx="100" cy="100" r="40" opacity=".5"/><circle cx="100" cy="100" r="22" opacity=".5"/><path d="M100 44v112M44 100h112" opacity=".35"/></g>
+<path d="M58 100q42-34 84 0q-42 34-84 0z" fill="none" stroke="#e8edf2" stroke-width="2.2"/><circle cx="100" cy="100" r="13" fill="#e3170a"/><circle cx="100" cy="100" r="5" fill="#05070a"/><path class="swp" d="M100 100L140 72" stroke="#e3170a" stroke-width="1.5" opacity=".9"/></svg>
+<h1 class="ctitle">DOUG GARCEAU</h1><div class="cline"></div>
+<div class="csub">AI LABS</div>
+<div class="panel"><div class="ph">PROJECTS · SELECT A SYSTEM</div><div class="plist"><a class="pl full" href="/the-names-he-carried/"><i>01</i><b>The Names He Carried: The Laurence Brown Douglas Story</b><em>BOOK</em></a><a class="pl" href="http://amadeusschoolofdrums.com"><i>02</i><b>Amadeus School of Drums</b><em>LEARN</em></a><a class="pl" href="/power-map/"><i>03</i><b>Tech &amp; AI Power Map</b><em>DATA</em></a><a class="pl" href="/defender/"><i>04</i><b>Defender</b><em>GAME</em></a><a class="pl" href="#software"><i>05</i><b>AI Sentry</b><em>SEC</em></a><a class="pl" href="#software"><i>06</i><b>Enclave</b><em>NET</em></a><a class="pl" href="#software"><i>07</i><b>Newspace</b><em>SOC</em></a><a class="pl" href="#software"><i>08</i><b>Genealogy Matrix</b><em>DATA</em></a><a class="pl" href="#software"><i>09</i><b>Ghost Wealth Terminal</b><em>FIN</em></a><a class="pl" href="https://islandnewsmedia.com"><i>10</i><b>Island News Media</b><em>PUB</em></a><a class="pl" href="https://jamestownislandnews.com"><i>11</i><b>Jamestown Island News</b><em>NEWS</em></a><a class="pl" href="https://rhodeislandhurricane.com"><i>12</i><b>Rhode Island Hurricane</b><em>NEWS</em></a><a class="pl" href="https://newyorkcityscream.com"><i>13</i><b>New York City Scream</b><em>NEWS</em></a><a class="pl" href="https://thebostonrambler.com"><i>14</i><b>The Boston Rambler</b><em>NEWS</em></a><a class="pl" href="https://seattlesinner.com" rel="noreferrer nofollow"><i>15</i><b>Seattle Night Stalker</b><em>NEWS</em></a></div></div>
+</div>
 <div class="term" id="term"></div>
 <div class="gauges" id="gg"></div>
 </section>
@@ -216,7 +233,6 @@ main{padding-top:22px}
 <div class="tick"><div class="tk" id="tk"></div></div>
 <div class="cbar bot"><span>■ INDEX</span><span>DOUGGARCEAU.COM // PUBLIC-RECORD BUILDS ONLY</span><span id="tm">TERMINAL 0X000000</span></div>
 </div>
-<div class="lead"><div class="panel"><div class="ph">PROJECTS · SELECT A SYSTEM</div><div class="plist"><a class="pl full" href="/the-names-he-carried/"><i>01</i><b>The Names He Carried: The Laurence Brown Douglas Story</b><em>BOOK</em></a><a class="pl" href="http://amadeusschoolofdrums.com"><i>02</i><b>Amadeus School of Drums</b><em>LEARN</em></a><a class="pl" href="/power-map/"><i>03</i><b>Tech &amp; AI Power Map</b><em>DATA</em></a><a class="pl" href="/defender/"><i>04</i><b>Defender</b><em>GAME</em></a><a class="pl" href="#software"><i>05</i><b>AI Sentry</b><em>SEC</em></a><a class="pl" href="#software"><i>06</i><b>Enclave</b><em>NET</em></a><a class="pl" href="#software"><i>07</i><b>Newspace</b><em>SOC</em></a><a class="pl" href="#software"><i>08</i><b>Genealogy Matrix</b><em>DATA</em></a><a class="pl" href="#software"><i>09</i><b>Ghost Wealth Terminal</b><em>FIN</em></a><a class="pl" href="https://islandnewsmedia.com"><i>10</i><b>Island News Media</b><em>PUB</em></a><a class="pl" href="https://jamestownislandnews.com"><i>11</i><b>Jamestown Island News</b><em>NEWS</em></a><a class="pl" href="https://rhodeislandhurricane.com"><i>12</i><b>Rhode Island Hurricane</b><em>NEWS</em></a><a class="pl" href="https://newyorkcityscream.com"><i>13</i><b>New York City Scream</b><em>NEWS</em></a><a class="pl" href="https://thebostonrambler.com"><i>14</i><b>The Boston Rambler</b><em>NEWS</em></a><a class="pl" href="https://seattlesinner.com" rel="noreferrer nofollow"><i>15</i><b>Seattle Night Stalker</b><em>NEWS</em></a></div></div></div>
 
 <div class="sec" id="featured"><h2>Featured</h2><small>Flagship projects</small></div>
 <div class="grid feature">
