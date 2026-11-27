@@ -316,6 +316,10 @@
     "role": "Grandfather",
     "links": [
       {
+        "label": "Ancestry family tree that matches the records: George Brown in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060929194/facts"
+      },
+      {
         "label": "Document: 1886 death: George Brown, Laurence’s grandfather",
         "url": "docs/george-brown-death-1886.html"
       },
@@ -421,6 +425,10 @@
     "role": "Great-grandfather",
     "links": [
       {
+        "label": "Ancestry family tree that matches the records: William Brown in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932408/facts"
+      },
+      {
         "label": "Document: 1895 death: William Brown, Laurence’s great-grandfather",
         "url": "docs/william-brown-death-1895.html"
       },
@@ -478,6 +486,10 @@
     },
     "links": [
       {
+        "label": "Ancestry family tree that matches the records: Agnes McGarth in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060930708/facts"
+      },
+      {
         "label": "Her gravestone, with William Brown: Find a Grave memorial 143578503 (photographs by Finches)",
         "url": "https://www.findagrave.com/memorial/143578503/agnes-mcgarth"
       },
@@ -492,10 +504,6 @@
       {
         "label": "Her mother: Find a Grave memorial 245857632, Jean Goldie McGarth",
         "url": "https://www.findagrave.com/memorial/245857632/jean-mcgarth"
-      },
-      {
-        "label": "Her record and gallery in PamelaWills909's Cairns Family Tree on Ancestry (including William Brown's 1895 death notice)",
-        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060930708/gallery"
       }
     ],
     "brief": "Born the Beild, Tweedsmuir, 1840; died Innerleithen 1924"
@@ -547,24 +555,16 @@
     ],
     "links": [
       {
+        "label": "Ancestry family tree that matches the records: Tweedie McGarth in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060929345/facts"
+      },
+      {
         "label": "Find a Grave memorial 245857566",
         "url": "https://www.findagrave.com/memorial/245857566/tweedie-mcgarth"
       },
       {
         "label": "Research File: the McGarth and Goldie records",
         "url": "research/#log"
-      },
-      {
-        "label": "Photograph: “The Beild, Tweedsmuir, family home of the McGarths” (on Ancestry)",
-        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060929345/media/8196374e-5830-48c8-b6ce-f885be5c3ac1"
-      },
-      {
-        "label": "McGarth headstone, Tweedsmuir (photo on Ancestry)",
-        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060929345/media/fa9a2133-c662-49b3-9612-6ae6233453fa"
-      },
-      {
-        "label": "His record in PamelaWills909's Cairns Family Tree on Ancestry",
-        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060929345/facts"
       }
     ],
     "brief": "Innkeeper, shopkeeper and postman at the Beild, Tweedsmuir"
@@ -625,24 +625,12 @@
     ],
     "links": [
       {
+        "label": "Ancestry family tree that matches the records: Jean (Jane) Goldie McGarth in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932868/facts"
+      },
+      {
         "label": "Find a Grave memorial 245857632",
         "url": "https://www.findagrave.com/memorial/245857632/jean-mcgarth"
-      },
-      {
-        "label": "Her obituary, handwritten family copy, on Ancestry (shared by PamelaWills909)",
-        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932868/media/3db41cd1-b8c0-4dc1-b2d1-cff68ef98359"
-      },
-      {
-        "label": "Obituary, page 2 (on Ancestry)",
-        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932868/media/e9f952e0-de6c-47c9-8ff1-9058615350fb"
-      },
-      {
-        "label": "Obituary, page 3 (on Ancestry)",
-        "url": "https://www.ancestry.com/mediaui-viewer/tree/156484027/person/232060932868/media/703d586f-8938-4559-9de1-4059d79f4269"
-      },
-      {
-        "label": "Her record in PamelaWills909's Cairns Family Tree on Ancestry",
-        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932868/facts"
       }
     ],
     "brief": "Born Wamphray 1808; ran the Beild at Tweedsmuir; died 1891"
@@ -671,7 +659,16 @@
         "url": "https://earth.google.com/web/search/Tweedsmuir%2C%20Scotland"
       }
     ],
-    "links": [],
+    "links": [
+      {
+        "label": "Ancestry family tree that matches the records: Margaret Larkin in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060929288/facts"
+      },
+      {
+        "label": "Ancestry family tree that matches the records: Michael McGarth in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060928383/facts"
+      }
+    ],
     "brief": "Tweedsmuir; Michael born about 1775, Margaret about 1778"
   },
   {
@@ -719,12 +716,12 @@
     ],
     "links": [
       {
-        "label": "Alexander in PamelaWills909's Cairns Family Tree on Ancestry",
-        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932038/facts"
+        "label": "Ancestry family tree that matches the records: Agnes Mundell in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060931695/facts"
       },
       {
-        "label": "Agnes Mundal in PamelaWills909's Cairns Family Tree on Ancestry",
-        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060931695/facts"
+        "label": "Ancestry family tree that matches the records: Alexander Goldie in PamelaWills909's Cairns Family Tree",
+        "url": "https://www.ancestry.com/family-tree/person/tree/156484027/person/232060932038/facts"
       }
     ],
     "brief": "Kirkmichael, Tinwald and Wamphray, Dumfriesshire"
