@@ -117,34 +117,83 @@ header{background:rgba(5,6,8,.75)}
 .card{background:linear-gradient(180deg,rgba(14,18,24,.88),rgba(10,13,18,.9))}
 @media(max-width:640px){.hud{display:none}.redbar span:nth-child(2){display:none}}
 @media(prefers-reduced-motion:reduce){.dial g,.coreg,.bgx .scan{animation:none}}
+
+.con{position:relative;min-height:100vh;margin:0 calc(50% - 50vw);padding:60px 0 70px;overflow:hidden;background:radial-gradient(900px 700px at 50% 55%,rgba(20,26,34,.6),transparent 70%);border-bottom:1px solid #2a0c0e}
+.cbar{position:absolute;left:0;right:0;height:22px;display:flex;justify-content:space-between;align-items:center;padding:0 14px;background:linear-gradient(90deg,#3a0b0d,#5a1215 50%,#3a0b0d);font:600 10.5px "JetBrains Mono",monospace;letter-spacing:.18em;color:rgba(240,215,215,.85);z-index:2}
+.cbar.top{top:0;border-bottom:1px solid #8e1b20}.cbar.bot{bottom:0;border-top:1px solid #8e1b20}
+.cbar .rec{color:#ff8a8a}
+.chud{position:absolute;top:32px;font:500 11px/1.6 "JetBrains Mono",monospace;letter-spacing:.14em;color:rgba(190,198,206,.65);z-index:2}
+.chud span{color:rgba(150,160,170,.55)}.chud.tl{left:18px}.chud.tr{right:18px;text-align:right}
+.chud i{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:8px}.chud .ok{background:#7fd08a;box-shadow:0 0 8px #7fd08a;animation:blink 2.4s infinite}
+.sig{color:#7fd08a}
+.lights{position:absolute;top:31%;display:grid;grid-template-columns:repeat(6,22px);gap:9px}
+.lights.l{left:4%}.lights.r{right:4%}
+.lights b{width:22px;height:22px;border-radius:4px;background:#141a21;border:1px solid #1d252e;transition:background .35s,box-shadow .35s}
+.cmid{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding-top:40px}
+.seal{width:118px;height:118px}.seal .swp{transform-origin:100px 100px;animation:spin 6s linear infinite}
+.ctitle{font:600 clamp(36px,6vw,64px)/1 "JetBrains Mono",monospace;letter-spacing:.14em;margin:26px 0 18px;color:#f3f5f7;text-shadow:0 0 20px rgba(255,255,255,.15)}
+.cline{width:min(560px,70%);height:3px;background:#e3170a;box-shadow:0 0 14px rgba(227,23,10,.7)}
+.csub{margin:22px 0 26px;font:500 12px "JetBrains Mono",monospace;letter-spacing:.3em;color:#c9d3dc}
+.panel{width:min(640px,92%);border:2px solid #c9a35a;border-radius:10px;padding:14px 14px 10px;background:rgba(8,10,14,.82);box-shadow:0 0 24px rgba(201,163,90,.25)}
+.ph{font:600 12px "JetBrains Mono",monospace;letter-spacing:.24em;color:#e0b866;margin-bottom:10px}
+.plist{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.pl{display:flex;align-items:center;gap:9px;padding:6px 10px;border:1px solid #2b3a4c;border-radius:6px;background:linear-gradient(180deg,#121a24,#0c1219);font:600 12px "JetBrains Mono",monospace;letter-spacing:.06em;color:#e8edf2;text-align:left;transition:border-color .2s,background .2s,box-shadow .2s}
+.pl i{font-style:normal;width:22px;height:22px;flex:none;display:grid;place-items:center;border-radius:50%;border:1px solid #6f8aa8;font-size:10px;color:#cfe0f0}
+.pl b{font-weight:600;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-transform:uppercase}
+.pl em{font-style:normal;font-size:10px;color:#e0b866;letter-spacing:.12em}
+.pl:hover{border-color:#e0b866;background:#16202c;box-shadow:0 0 12px rgba(224,184,102,.3)}
+.cdial{width:250px;height:250px;margin-top:26px;filter:drop-shadow(0 0 16px rgba(111,166,214,.45))}
+.cdial g{transform-origin:300px 300px}
+.cbtm{margin-top:18px;font:500 11px "JetBrains Mono",monospace;letter-spacing:.24em;color:#c9a35a}
+.term{position:absolute;left:18px;bottom:64px;width:min(380px,30vw);height:150px;overflow:hidden;font:500 11px/1.55 "JetBrains Mono",monospace;color:#9fb3c6;mask-image:linear-gradient(180deg,transparent,#000 35%)}
+.term .w{color:#e0b866}
+.gauges{position:absolute;right:18px;bottom:64px;width:min(300px,26vw);font:500 10px "JetBrains Mono",monospace;letter-spacing:.14em;color:#c9d3dc}
+.gauges div{margin-bottom:9px}.gauges p{display:flex;justify-content:space-between;margin:0 0 4px}.gauges p span{color:#7fd08a}
+.gauges s{display:block;height:3px;background:#1a222c;text-decoration:none}.gauges s u{display:block;height:3px;background:linear-gradient(90deg,#3f7fb0,#7fd08a);transition:width .8s}
+.tick{position:absolute;left:0;right:0;bottom:22px;height:30px;overflow:hidden;border-top:1px solid #1d252e;background:rgba(5,7,10,.85)}
+.tk{display:inline-flex;gap:46px;white-space:nowrap;padding-top:6px;font:600 13px "JetBrains Mono",monospace;color:#dfe6ec;animation:tick 60s linear infinite}
+.tk b{color:#8fb4d6;margin-right:8px}.tk span em{font-style:normal;color:#e0b866;margin-left:8px}
+@keyframes tick{to{transform:translateX(-50%)}}
+@media(max-width:1100px){.lights{display:none}}
+@media(max-width:760px){.term,.gauges,.chud{display:none}.plist{grid-template-columns:1fr}}
 </style></head>
 <body>
 <div class="bgx" aria-hidden="true">
 <div class="grid"></div>
 <div class="scan"></div>
-<svg class="dial" viewBox="0 0 600 600">
- <defs><radialGradient id="core" cx="50%" cy="42%"><stop offset="0" stop-color="#bcd8ec"/><stop offset=".45" stop-color="#3d6f8f"/><stop offset="1" stop-color="#0b1620"/></radialGradient>
- <radialGradient id="halo"><stop offset="0" stop-color="#6fa6d6" stop-opacity=".35"/><stop offset="1" stop-color="#6fa6d6" stop-opacity="0"/></radialGradient></defs>
- <circle cx="300" cy="300" r="290" fill="url(#halo)"/>
- <g class="r1"><circle cx="300" cy="300" r="250" fill="none" stroke="#6fa6d6" stroke-width="5" stroke-dasharray="120 18 40 18" opacity=".75"/></g>
- <g class="r2"><circle cx="300" cy="300" r="222" fill="none" stroke="#c9a35a" stroke-width="5" stroke-dasharray="2 22" stroke-linecap="round" opacity=".9"/></g>
- <g class="r3"><path d="M300 30 A270 270 0 0 1 520 140" fill="none" stroke="#7fd08a" stroke-width="6" stroke-linecap="round" opacity=".8"/></g>
- <g class="r4"><circle cx="300" cy="300" r="196" fill="none" stroke="#6fa6d6" stroke-width="2" stroke-dasharray="60 10 6 10" opacity=".5"/></g>
- <g class="r5"><circle cx="300" cy="300" r="282" fill="none" stroke="#9ec3e0" stroke-width="1.2" stroke-dasharray="1 7" opacity=".55"/></g>
- <circle class="coreg" cx="300" cy="300" r="150" fill="url(#core)"/>
- <circle cx="300" cy="300" r="150" fill="none" stroke="#9ec3e0" stroke-opacity=".35" stroke-width="2"/>
- <path class="pwr" d="M300 248 v42 M270 266 a46 46 0 1 0 60 0" fill="none" stroke="#e8f3fb" stroke-width="7" stroke-linecap="round" opacity=".85"/>
-</svg>
-<div class="hud tl"><i class="ok"></i>LINK ESTABLISHED<br><span>FEED · PUBLIC RECORD</span></div>
-<div class="hud tr">SIGNAL <b class="blk">▮▮▮▯</b><br><span>NODES <b id="nodes">0</b></span></div>
-<div class="hud bl"><i class="amb"></i>DECRYPTING<br><span id="hex">0X0000</span></div>
-<div class="hud br">SECTORS<br><span>15 ONLINE</span></div>
-<div class="redbar top"><span>■ DOUG GARCEAU</span><span>PROJECTS // BUILD SYSTEMS // PUBLIC RECORD</span><span class="rec">● SESSION LIVE</span></div>
-<div class="redbar bot"><span>■ INDEX</span><span>DOUGGARCEAU.COM // TERMINAL</span><span id="term">TERMINAL 0X0000</span></div>
 </div>
-<header><div class="wrap bar"><div class="name"></div><nav><a href="#featured">Featured</a><a href="#software">Software</a><a href="#news">Publications</a><a href="#contact">Contact</a></nav></div></header>
+<header style="display:none"><div class="wrap bar"><div class="name"></div><nav><a href="#featured">Featured</a><a href="#software">Software</a><a href="#news">Publications</a><a href="#contact">Contact</a></nav></div></header>
 <main class="wrap">
-<section class="hero"><h1 class="big"><span>Doug Garceau</span></h1></section>
+<section class="con" aria-label="Doug Garceau">
+<div class="cbar top"><span>■ DOUG GARCEAU</span><span>AI LABS // BUILD SYSTEMS // AUTHORIZED ACCESS</span><span class="rec">● SESSION MONITORED</span></div>
+<div class="chud tl"><i class="ok"></i>LINK ESTABLISHED<br><span id="clk">--:--:-- ET</span><br><span>FEED · PUBLIC RECORD</span></div>
+<div class="chud tr">SIGNAL <b class="sig">▮▮▮▯</b><br><span>NODES <b id="cn">0</b></span><br><span>LINKS <b id="cl">0</b></span></div>
+<div class="lights l" id="lgl"></div><div class="lights r" id="lgr"></div>
+<div class="cmid">
+<svg class="seal" viewBox="0 0 200 200" aria-hidden="true"><defs><path id="sc" d="M100 100 m-78 0 a78 78 0 1 1 156 0 a78 78 0 1 1 -156 0"/></defs>
+<circle cx="100" cy="100" r="96" fill="#07090c" stroke="#d6dde4" stroke-width="2"/><circle cx="100" cy="100" r="62" fill="none" stroke="#d6dde4" stroke-width="1.2" opacity=".6"/>
+<text font-family="JetBrains Mono,monospace" font-size="11.5" letter-spacing="3" fill="#d6dde4"><textPath href="#sc">DOUG GARCEAU · AI LABS · BUILD SYSTEMS ·</textPath></text>
+<g stroke="#d6dde4" fill="none"><circle cx="100" cy="100" r="40" opacity=".5"/><circle cx="100" cy="100" r="22" opacity=".5"/><path d="M100 44v112M44 100h112" opacity=".35"/></g>
+<path d="M58 100q42-34 84 0q-42 34-84 0z" fill="none" stroke="#e8edf2" stroke-width="2.2"/><circle cx="100" cy="100" r="13" fill="#e3170a"/><circle cx="100" cy="100" r="5" fill="#05070a"/><path class="swp" d="M100 100L140 72" stroke="#e3170a" stroke-width="1.5" opacity=".9"/></svg>
+<h1 class="ctitle">DOUG GARCEAU</h1><div class="cline"></div>
+<div class="csub">AI LABS</div>
+<div class="panel"><div class="ph">PROJECTS · SELECT A SYSTEM</div><div class="plist"><a class="pl" href="/the-names-he-carried/"><i>01</i><b>The Names He Carried</b><em>BOOK</em></a><a class="pl" href="http://amadeusschoolofdrums.com"><i>02</i><b>Amadeus School of Drums</b><em>LEARN</em></a><a class="pl" href="/power-map/"><i>03</i><b>Tech &amp; AI Power Map</b><em>DATA</em></a><a class="pl" href="/defender/"><i>04</i><b>Defender</b><em>GAME</em></a><a class="pl" href="#software"><i>05</i><b>AI Sentry</b><em>SEC</em></a><a class="pl" href="#software"><i>06</i><b>Enclave</b><em>NET</em></a><a class="pl" href="#software"><i>07</i><b>Newspace</b><em>SOC</em></a><a class="pl" href="#software"><i>08</i><b>Genealogy Matrix</b><em>DATA</em></a><a class="pl" href="#software"><i>09</i><b>Ghost Wealth Terminal</b><em>FIN</em></a><a class="pl" href="https://islandnewsmedia.com"><i>10</i><b>Island News Media</b><em>PUB</em></a><a class="pl" href="https://jamestownislandnews.com"><i>11</i><b>Jamestown Island News</b><em>NEWS</em></a><a class="pl" href="https://rhodeislandhurricane.com"><i>12</i><b>Rhode Island Hurricane</b><em>NEWS</em></a><a class="pl" href="https://newyorkcityscream.com"><i>13</i><b>New York City Scream</b><em>NEWS</em></a><a class="pl" href="https://thebostonrambler.com"><i>14</i><b>The Boston Rambler</b><em>NEWS</em></a><a class="pl" href="https://seattlesinner.com" rel="noreferrer nofollow"><i>15</i><b>Seattle Night Stalker</b><em>NEWS</em></a></div></div>
+<svg class="cdial" viewBox="0 0 600 600" aria-hidden="true">
+ <defs><radialGradient id="core2" cx="50%" cy="42%"><stop offset="0" stop-color="#bcd8ec"/><stop offset=".45" stop-color="#3d6f8f"/><stop offset="1" stop-color="#0b1620"/></radialGradient></defs>
+ <g class="r1"><circle cx="300" cy="300" r="250" fill="none" stroke="#6fa6d6" stroke-width="6" stroke-dasharray="120 18 40 18"/></g>
+ <g class="r2"><circle cx="300" cy="300" r="222" fill="none" stroke="#c9a35a" stroke-width="6" stroke-dasharray="2 22" stroke-linecap="round"/></g>
+ <g class="r3"><path d="M300 30 A270 270 0 0 1 520 140" fill="none" stroke="#7fd08a" stroke-width="7" stroke-linecap="round"/></g>
+ <g class="r4"><circle cx="300" cy="300" r="196" fill="none" stroke="#6fa6d6" stroke-width="2.5" stroke-dasharray="60 10 6 10" opacity=".7"/></g>
+ <circle class="coreg" cx="300" cy="300" r="160" fill="url(#core2)"/><circle cx="300" cy="300" r="160" fill="none" stroke="#9ec3e0" stroke-opacity=".4" stroke-width="3"/>
+ <path d="M300 244 v46 M268 264 a50 50 0 1 0 64 0" fill="none" stroke="#e8f3fb" stroke-width="8" stroke-linecap="round" opacity=".9"/>
+</svg>
+<div class="cbtm">SCROLL FOR TECHNICAL BREAKDOWNS ↓</div>
+</div>
+<div class="term" id="term"></div>
+<div class="gauges" id="gg"></div>
+<div class="tick"><div class="tk" id="tk"></div></div>
+<div class="cbar bot"><span>■ INDEX</span><span>DOUGGARCEAU.COM // PUBLIC-RECORD BUILDS ONLY</span><span id="tm">TERMINAL 0X000000</span></div>
+</section>
 
 <div class="sec" id="featured"><h2>Featured</h2><small>Flagship projects</small></div>
 <div class="grid feature">
@@ -232,8 +281,35 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
 </script>
 
+
+
 <script>
-(function(){let n=0,t=0;const nodes=document.getElementById('nodes'),hex=document.getElementById('hex'),term=document.getElementById('term');
-setInterval(()=>{n=(n+Math.floor(Math.random()*7))%9999;nodes.textContent=n;const h=Math.floor(Math.random()*65535).toString(16).toUpperCase().padStart(4,'0');hex.textContent='0X'+h;t=(t+1)%65536;term.textContent='TERMINAL 0X'+t.toString(16).toUpperCase().padStart(4,'0')},420)})();
+(function(){
+const pad=(n,l)=>String(n).padStart(l,'0');
+// lights
+const cols=['#6fa6d6','#6fa6d6','#c9a35a','#7fd08a','#e3170a','#9ec3e0'];
+['lgl','lgr'].forEach(id=>{const g=document.getElementById(id);for(let i=0;i<60;i++)g.appendChild(document.createElement('b'))});
+const cells=[...document.querySelectorAll('.lights b')];
+setInterval(()=>{for(let k=0;k<6;k++){const c=cells[Math.floor(Math.random()*cells.length)];const col=Math.random()<.55?cols[Math.floor(Math.random()*cols.length)]:'';c.style.background=col||'#141a21';c.style.boxShadow=col?'0 0 10px '+col:'none'}},180);
+// clock + counters
+let n=0,l=0,t=0;
+setInterval(()=>{const d=new Date();document.getElementById('clk').textContent=d.toLocaleTimeString('en-US',{hour12:false,timeZone:'America/New_York'})+' ET';
+n=Math.min(140,n+3);l=Math.min(420,l+9);document.getElementById('cn').textContent=n;document.getElementById('cl').textContent=l;
+t=(t+Math.floor(Math.random()*4096))%16777215;document.getElementById('tm').textContent='TERMINAL 0X'+t.toString(16).toUpperCase().padStart(6,'0')},250);
+// terminal log
+const L=['> git push origin main :: the-names-he-carried :: deployed','> gh-pages build :: amadeusschoolofdrums.com :: 200 OK','> decodeAudioData :: 621 samples :: buffered',
+'> web midi :: note-on 38 :: snare-ff','> cron 0 */4 :: fetch_news.py :: 48 items','> python3 -I check_listings.py :: 3 expired :: pruned','> noaa ndbc :: buoy 44017 :: wave 2.6 ft',
+'> ai_sentry.py :: mcp config parsed :: 7 servers','[!] exposed key pattern flagged :: sk-***','> requestAnimationFrame :: 60 fps :: defender','> pillow :: og-card rendered :: 1200x630',
+'> supabase auth :: session ok','> search-index.json :: 1,284 terms','> power map :: 140 nodes :: 420 links','> rss 2.0 :: feed.xml :: valid','[!] calendar dup removed :: tue dec 1'];
+const term=document.getElementById('term');let li=0;
+setInterval(()=>{const d=document.createElement('div');const x=L[li++%L.length];d.textContent=x;if(x.startsWith('[!]'))d.className='w';term.appendChild(d);while(term.children.length>10)term.firstChild.remove()},900);
+// gauges
+const G=[['BUILD PIPELINE',98],['AUDIO ENGINE',94],['DATA INGEST',88],['DEPLOYMENT',96],['NLP PARSER',79]];const gg=document.getElementById('gg');
+G.forEach(([k,v])=>{const d=document.createElement('div');d.innerHTML='<p>'+k+'<span></span></p><s><u></u></s>';gg.appendChild(d)});
+function upd(){[...gg.children].forEach((d,i)=>{const v=Math.max(60,Math.min(99.9,G[i][1]+(Math.random()*6-3)));d.querySelector('span').textContent=v.toFixed(1)+'%';d.querySelector('u').style.width=v+'%'})}upd();setInterval(upd,1600);
+// ticker
+const T=[['BOOK','The Names He Carried','LIVE'],['EDU','Amadeus School of Drums','LIVE'],['DATA','Tech & AI Power Map','LIVE'],['GAME','Defender','LIVE'],['SEC','AI Sentry','DEV'],['NET','Enclave','DEMO'],['SOC','Newspace','DEMO'],['FIN','Ghost Wealth Terminal','DEMO'],['PUB','Island News Media','LIVE'],['NEWS','Jamestown Island News','LIVE'],['NEWS','Rhode Island Hurricane','LIVE'],['NEWS','New York City Scream','LIVE'],['NEWS','The Boston Rambler','LIVE']];
+const tk=document.getElementById('tk');const h=T.map(x=>'<span><b>'+x[0]+'</b>'+x[1]+'<em>'+x[2]+'</em></span>').join('');tk.innerHTML=h+h;
+})();
 </script>
 </body></html>
