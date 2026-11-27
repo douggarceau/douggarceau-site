@@ -326,6 +326,7 @@ const HOF=(()=>{const KA='defender.hof.all.v2',KT='defender.hof.today.v2',day=ne
       sb('defender_scores',{method:'POST',body:JSON.stringify({initials:ini,score:s-(s%50),wave:w})}).then(()=>{lastFetch=0;this.refresh();}).catch(()=>{});}};})();
 
 // ---------------------------------------------------------------- game state
+const PREVIEW=/[?&]preview\b/.test(location.search);
 let state='attract',stateT=0,frameN=0,paused=false,page=0,pageT=0;
 let score=0,lives=3,bombs=3,wave=1,nextBonus=10000,scored=false;
 const ship={sx:64,y:128,V:0,vy:0,dir:1,alive:true,thrust:false,hyperT:0};
@@ -835,7 +836,19 @@ function drawInitials(){
 }
 
 // ---------------------------------------------------------------- main update / render
+function autopilot(){
+  if(!PREVIEW)return;
+  ['ShiftLeft','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].forEach(k=>keys.delete(k));
+  if(state==='attract'){if(frameN%90===0)jp.add('Enter');return;}
+  if(state!=='play')return;
+  keys.add('ShiftLeft');
+  const ph=Math.sin(frameN/38)+Math.sin(frameN/91)*.6;
+  if(ph>.35)keys.add('ArrowUp');else if(ph<-.35)keys.add('ArrowDown');
+  if(frameN%420===0)keys.add(ship.dir>0?'ArrowLeft':'ArrowRight');
+  if(frameN%7===0)jp.add('Space');
+}
 function update(){
+  autopilot();
   pollPad();frameN++;
   if(JP('KeyM'))toggleMute();
   if(JP('KeyF')&&state!=='play'&&state!=='initials')fullscreen();
@@ -848,7 +861,7 @@ function update(){
     case 'play':play();break;
     case 'dying':dying();break;
     case 'bonus':bonus();break;
-    case 'gameover':if(++stateT>60){board('BGEND');if(HOF.qualifies(score)){state='initials';stateT=0;initials=['A','@','@'];initIdx=0;col1Fixed=0x85;}else attractInit();}break;
+    case 'gameover':if(++stateT>60){board('BGEND');if(!PREVIEW&&HOF.qualifies(score)){state='initials';stateT=0;initials=['A','@','@'];initIdx=0;col1Fixed=0x85;}else attractInit();}break;
     case 'initials':initialsUpd();break;
   }
   if(state==='play'||state==='dying'){for(const e of exps)e.size+=e.grow;exps=exps.filter(e=>e.size<=48);
