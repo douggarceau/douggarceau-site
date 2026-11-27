@@ -78,6 +78,9 @@ body{font-size:16px;-webkit-font-smoothing:antialiased}
 .soon .st{font:600 11px "JetBrains Mono",monospace;letter-spacing:.22em;color:#03050a;background:#7cc4ff;padding:4px 10px;border-radius:4px}
 .soon .sn{font:800 22px Unbounded;letter-spacing:.01em;text-transform:uppercase}
 .soon .sd{font:500 13px "JetBrains Mono",monospace;color:#b9c8dc}.soon .sd b{color:#fff}
+.lshot.live{position:relative;aspect-ratio:16/9;background:#000}
+.lshot.live iframe{position:absolute;top:0;left:0;width:200%;height:200%;border:0;transform:scale(.5);transform-origin:0 0;pointer-events:none}
+.lshot.live:after{content:"";position:absolute;inset:0}
 </style></head><body>
 <div class="bk" aria-hidden="true"><svg viewBox="0 0 600 600"><g class="r1"><circle cx="300" cy="300" r="250" fill="none" stroke="#6fa6d6" stroke-width="5" stroke-dasharray="120 18 40 18"/></g><g class="r2"><circle cx="300" cy="300" r="222" fill="none" stroke="#c9a35a" stroke-width="5" stroke-dasharray="2 22" stroke-linecap="round"/></g><g class="r3"><path d="M300 30 A270 270 0 0 1 520 140" fill="none" stroke="#7fd08a" stroke-width="6" stroke-linecap="round"/></g><circle cx="300" cy="300" r="160" fill="#0b1620" stroke="#9ec3e0" stroke-opacity=".4" stroke-width="2"/></svg></div>
 <div class="strip"><span id="now">--:--</span><span class="live">LIVE · AI LABS</span></div>
@@ -110,7 +113,7 @@ body{font-size:16px;-webkit-font-smoothing:antialiased}
 <h2><a href="/power-map/">Tech &amp; AI Power Map</a></h2>
 <div class="by">Built by <b>Doug Garceau</b></div>
 <p class="dek">An interactive intelligence map of who controls AI and Big Tech: about 140 companies, funds and governments, the money and the connections between them.</p>
-<a class="lshot" href="/power-map/"><img src="img/powermap.webp" alt=""></a>
+<a class="lshot live" href="/power-map/" aria-label="Open the Tech and AI Power Map"><iframe src="/power-map/" loading="lazy" tabindex="-1" title="Tech and AI Power Map live preview"></iframe></a>
 <div class="stack"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>SVG</span><span>Web Audio API</span><span>JSON</span></div>
 <div class="lacts"><a class="btn" href="/power-map/">Open it →</a></div>
 <details class="how"><summary>Technical breakdown</summary><ul><li>Single-file client application (~2 MB) with the full dataset embedded: no backend, loads instantly from the CDN.</li><li>Graph model of about 140 entities (companies, funds, governments) and 420 ownership, funding and partnership edges.</li><li>Interactive node-link visualization with filtering, power rankings and per-entity dossiers.</li><li>Gated entry screen with Web Audio sound design, animated HUD and live ticker.</li><li>Every edge sourced to public records: filings, press releases and investor relations pages.</li></ul></details>
