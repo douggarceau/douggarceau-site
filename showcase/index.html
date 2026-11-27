@@ -4,132 +4,167 @@
 <title>Doug Garceau · Projects</title>
 <meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:dark;--bg:#07090c;--panel:#0f141a;--panel2:#131a22;--ink:#f2f4f6;--muted:#9aa6b2;--line:#222b35;--accent:#7fb2d8;--accent2:#c9d6e2}
+:root{color-scheme:dark;--bg:#05070b;--ink:#eef2f6;--muted:#8d99a6;--line:rgba(255,255,255,.08);--glass:rgba(255,255,255,.035);--ice:#9cc7e8;--brass:#d9b77a}
 *{box-sizing:border-box}
-html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
-.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
-header{border-bottom:1px solid var(--line);background:rgba(7,9,12,.85);backdrop-filter:blur(10px);position:sticky;top:0;z-index:5}
-.bar{display:flex;justify-content:space-between;align-items:center;height:64px}
-.name{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:14px}
-.bar nav a{color:var(--muted);font-size:14px;margin-left:22px}.bar nav a:hover{color:var(--ink)}
-.hero{padding:88px 0 56px}
-.mono{font:600 12px/1.4 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
-h1{font-size:clamp(44px,7.5vw,92px);line-height:.96;letter-spacing:-.045em;margin:14px 0 22px;font-weight:800}
-.lede{max-width:720px;color:var(--muted);font-size:19px;margin:0}
-.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
-.skills span{border:1px solid var(--line);background:var(--panel);color:var(--accent2);padding:7px 13px;font-size:14px;border-radius:999px}
-h2.sec{font-size:13px;font-family:"JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:40px 0 18px;font-weight:600;display:flex;align-items:center;gap:14px}
-h2.sec:after{content:"";flex:1;height:1px;background:var(--line)}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-.card{position:relative;display:flex;flex-direction:column;min-height:250px;padding:26px 26px 22px;border:1px solid var(--line);background:linear-gradient(160deg,var(--panel2),var(--panel));border-radius:14px;transition:border-color .2s,transform .2s,background .2s;overflow:hidden}
-.card:before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--c,#7fb2d8);opacity:.9}
-a.card:hover{border-color:#3a4a5a;transform:translateY(-3px)}
-.type{font:600 11px/1.4 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--c,#7fb2d8)}
-.card h3{font-size:26px;line-height:1.1;margin:12px 0 10px;letter-spacing:-.02em}
-.card p{color:var(--muted);margin:0 0 20px;font-size:15.5px}
-.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font:600 12px/1.4 "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
-.go{color:var(--ink)}.status{color:var(--muted)}
-.card.feature{grid-column:span 2}
-.card.feature h3{font-size:34px}
-footer{border-top:1px solid var(--line);margin-top:80px;padding:28px 0 40px;color:#7d8894;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
-@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.card.feature{grid-column:span 2}}
-@media(max-width:620px){.grid{grid-template-columns:1fr}.card.feature{grid-column:auto}.bar nav{display:none}.hero{padding:56px 0 36px}}
+a:focus-visible{outline:2px solid var(--ice);outline-offset:4px;border-radius:16px}
+.wrap{width:min(1240px,calc(100% - 32px));margin:auto}
+/* atmosphere */
+.sky{position:fixed;inset:0;z-index:-1;pointer-events:none;background:
+ radial-gradient(900px 600px at 12% -10%,rgba(80,130,190,.20),transparent 60%),
+ radial-gradient(800px 600px at 95% 10%,rgba(200,160,100,.10),transparent 60%),
+ radial-gradient(1000px 700px at 50% 120%,rgba(60,110,160,.14),transparent 60%),var(--bg)}
+.sky:after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 50% 0%,#000 30%,transparent 75%)}
+.orb{position:fixed;width:520px;height:520px;border-radius:50%;filter:blur(90px);opacity:.22;z-index:-1;pointer-events:none;animation:drift 26s ease-in-out infinite alternate}
+.o1{background:#3c6e9c;top:-160px;left:-120px}.o2{background:#8a6a3c;top:30%;right:-200px;animation-delay:-9s}
+@keyframes drift{to{transform:translate(120px,80px) scale(1.15)}}
+header{position:sticky;top:0;z-index:10;backdrop-filter:blur(14px) saturate(140%);background:rgba(5,7,11,.6);border-bottom:1px solid var(--line)}
+.bar{display:flex;justify-content:space-between;align-items:center;height:66px}
+.name{font:700 15px "Space Grotesk";letter-spacing:.22em;text-transform:uppercase}
+.name i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--ice);margin-right:10px;box-shadow:0 0 12px var(--ice);vertical-align:middle;font-style:normal}
+nav a{color:var(--muted);font-size:14px;margin-left:26px;transition:color .2s}nav a:hover{color:var(--ink)}
+.hero{padding:110px 0 70px;position:relative}
+.eyebrow{font:500 12px "JetBrains Mono",monospace;letter-spacing:.22em;text-transform:uppercase;color:var(--ice)}
+h1{font:700 clamp(52px,9vw,124px)/.92 "Space Grotesk";letter-spacing:-.045em;margin:18px 0 28px;max-width:1050px}
+h1 span{background:linear-gradient(100deg,#fff 10%,#9cc7e8 55%,#d9b77a 95%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{max-width:700px;color:var(--muted);font-size:20px;margin:0}
+.stats{display:flex;gap:46px;margin-top:46px;flex-wrap:wrap}
+.stat b{display:block;font:600 40px/1 "Space Grotesk";letter-spacing:-.03em}
+.stat span{font:500 11px "JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:40px}
+.skills span{border:1px solid var(--line);background:var(--glass);color:#c9d6e2;padding:8px 15px;font-size:14px;border-radius:999px;backdrop-filter:blur(6px)}
+.sec{display:flex;align-items:baseline;gap:18px;margin:84px 0 26px}
+.sec h2{font:600 32px "Space Grotesk";letter-spacing:-.02em;margin:0}
+.sec small{font:500 12px "JetBrains Mono",monospace;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.sec:after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.card{--c:#9cc7e8;position:relative;display:flex;flex-direction:column;border-radius:20px;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.015));border:1px solid var(--line);overflow:hidden;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s,box-shadow .35s}
+.card:before{content:"";position:absolute;inset:0;border-radius:20px;padding:1px;background:linear-gradient(140deg,color-mix(in srgb,var(--c) 70%,transparent),transparent 40%);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;opacity:.55;pointer-events:none;transition:opacity .35s}
+a.card:hover{transform:translateY(-6px);box-shadow:0 30px 60px -30px color-mix(in srgb,var(--c) 45%,transparent),0 0 0 1px rgba(255,255,255,.06)}
+a.card:hover:before{opacity:1}
+.shot{position:relative;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line);background:#0b0f15}
+.shot .chrome{position:absolute;top:0;left:0;right:0;height:26px;background:rgba(10,13,18,.9);display:flex;align-items:center;gap:6px;padding:0 12px;z-index:2;border-bottom:1px solid var(--line)}
+.chrome i{width:8px;height:8px;border-radius:50%;background:#2a333d}
+.chrome em{margin-left:10px;font:500 10.5px "JetBrains Mono",monospace;color:#6f7b87;font-style:normal;letter-spacing:.04em}
+.shot img{position:absolute;top:26px;left:0;width:100%;height:calc(100% - 26px);object-fit:cover;object-position:top;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+a.card:hover .shot img{transform:scale(1.04)}
+.mark{position:absolute;inset:0;display:grid;place-items:center;background:
+ radial-gradient(400px 220px at 50% 110%,color-mix(in srgb,var(--c) 35%,transparent),transparent 70%),
+ linear-gradient(rgba(255,255,255,.04) 1px,transparent 1px) 0 0/28px 28px,
+ linear-gradient(90deg,rgba(255,255,255,.04) 1px,transparent 1px) 0 0/28px 28px,#090d13}
+.mark b{font:700 64px "Space Grotesk";letter-spacing:-.04em;color:transparent;-webkit-text-stroke:1.2px color-mix(in srgb,var(--c) 80%,#fff);opacity:.9}
+.body{padding:22px 24px 22px;display:flex;flex-direction:column;flex:1}
+.type{font:500 11px "JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--c)}
+.card h3{font:600 25px/1.15 "Space Grotesk";letter-spacing:-.02em;margin:10px 0 8px}
+.card p{color:var(--muted);margin:0 0 20px;font-size:15.5px;line-height:1.55}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font:500 12px "JetBrains Mono",monospace;letter-spacing:.12em;text-transform:uppercase}
+.go{color:var(--ink)}.go:after{content:" →";transition:margin .25s}a.card:hover .go:after{margin-left:6px}
+.status{color:var(--muted);display:flex;align-items:center;gap:8px}.status:before{content:"";width:6px;height:6px;border-radius:50%;background:var(--c);box-shadow:0 0 8px var(--c)}
+.live{display:flex;align-items:center;gap:7px;color:#8fd1a8}.live:before{content:"";width:6px;height:6px;border-radius:50%;background:#8fd1a8;box-shadow:0 0 8px #8fd1a8}
+.feature{grid-template-columns:1.25fr 1fr}
+.feature .card h3{font-size:32px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+footer{border-top:1px solid var(--line);margin-top:110px;padding:30px 0 46px;color:#76828e;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+footer a{color:#c9d6e2}
+@media(max-width:980px){.grid{grid-template-columns:1fr 1fr}.feature{grid-template-columns:1fr}}
+@media(max-width:640px){.grid{grid-template-columns:1fr}nav{display:none}.hero{padding:64px 0 40px}.stats{gap:28px}.sec{margin-top:60px}}
+@media(prefers-reduced-motion:reduce){.orb{animation:none}.reveal{opacity:1;transform:none;transition:none}}
 </style></head>
 <body>
-<header><div class="wrap bar"><div class="name">Doug Garceau</div><nav><a href="#work">Projects</a><a href="#contact">Contact</a></nav></div></header>
+<div class="sky"></div><div class="orb o1"></div><div class="orb o2"></div>
+<header><div class="wrap bar"><div class="name"><i></i>Doug Garceau</div><nav><a href="#featured">Featured</a><a href="#software">Software</a><a href="#news">Publications</a><a href="#contact">Contact</a></nav></div></header>
 <main class="wrap">
 <section class="hero">
-<div class="mono">Builder · Writer · Musician</div>
-<h1>Websites, apps, games and books, built end to end.</h1>
-<p class="lede">A working collection of my projects: interactive learning platforms, private networks, security software, a network of news publications, and a biography with its research archive. Click any project to open it.</p>
+<div class="eyebrow">Builder · Writer · Musician</div>
+<h1>I build <span>websites, apps, games and books</span>, end to end.</h1>
+<p class="lede">Interactive learning platforms, private networks, security software, a network of news publications, and a biography with its full research archive. Every project below is live or ready to demo.</p>
+<div class="stats">
+<div class="stat"><b>14</b><span>Projects</span></div>
+<div class="stat"><b>4</b><span>Live publications</span></div>
+<div class="stat"><b>1</b><span>Book</span></div>
+</div>
 <div class="skills"><span>Web and app development</span><span>AI research and consulting</span><span>Interactive audio</span><span>Game development</span><span>Video and multimedia</span><span>Writing and editing</span></div>
 </section>
 
-<h2 class="sec" id="work">Featured</h2>
-<div class="grid">
-<a class="card feature" style="--c:#7fb08f" href="/the-names-he-carried/">
-<div class="type">Book · Research archive</div>
-<h3>The Names He Carried</h3>
+<div class="sec" id="featured"><h2>Featured</h2><small>Flagship projects</small></div>
+<div class="grid feature">
+<a class="card reveal" style="--c:#8fc3a0" href="/the-names-he-carried/">
+<div class="shot"><div class="chrome"><i></i><i></i><i></i><em>douggarceau.com/the-names-he-carried</em></div><img src="img/book.webp" alt="The Names He Carried home page"></div>
+<div class="body"><div class="type">Book · Research archive</div><h3>The Names He Carried</h3>
 <p>The life of Laurence Brown Douglas, from Edinburgh in 1907 to Rhode Island. A narrative biography with its full record archive, case files, a short documentary film and an audiobook.</p>
-<div class="foot"><span class="go">Open the book site →</span></div></a>
-<a class="card" style="--c:#8fa8d6" href="https://amadeusschoolofdrums.com">
-<div class="type">Interactive learning</div>
-<h3>Amadeus School of Drums</h3>
+<div class="foot"><span class="go">Open the book site</span><span class="live">Live</span></div></div></a>
+<a class="card reveal" style="--c:#a9bde0" href="http://amadeusschoolofdrums.com">
+<div class="shot"><div class="chrome"><i></i><i></i><i></i><em>amadeusschoolofdrums.com</em></div><img src="img/drums.webp" alt="Amadeus School of Drums home page"></div>
+<div class="body"><div class="type">Interactive learning</div><h3>Amadeus School of Drums</h3>
 <p>A complete drum school: three lesson levels, the 40 rudiments, a playable vintage drum set and a 59-instrument percussion room, all with real recorded sound.</p>
-<div class="foot"><span class="go">Open →</span></div></a>
+<div class="foot"><span class="go">Open</span><span class="live">Live</span></div></div></a>
 </div>
 
-<h2 class="sec">Software and apps</h2>
+<div class="sec" id="software"><h2>Software and apps</h2><small>Products and prototypes</small></div>
 <div class="grid">
-<a class="card" style="--c:#d38b6a" href="/defender/">
-<div class="type">Game</div>
-<h3>Defender</h3>
-<p>A playable recreation of the 1981 arcade classic, built to run with original-style arcade controls.</p>
-<div class="foot"><span class="go">Play →</span></div></a>
-<div class="card" style="--c:#6fb7c4">
-<div class="type">Security software</div>
-<h3>AI Sentry</h3>
-<p>Scans a computer for AI apps, agents and AI-attack risks, with a command-center dashboard of what it finds.</p>
-<div class="foot"><span class="status">In development</span></div></div>
-<div class="card" style="--c:#a7a0d8">
-<div class="type">Private network</div>
-<h3>Enclave</h3>
-<p>A closed, secure communication platform for companies, research groups and schools, with a round-the-clock news feed and working-group spaces.</p>
-<div class="foot"><span class="status">Demo on request</span></div></div>
-<div class="card" style="--c:#c9a86a">
-<div class="type">Social platform</div>
-<h3>Newspace</h3>
-<p>A full social network: profiles, feeds, posts and messaging, built from the ground up.</p>
-<div class="foot"><span class="status">Demo on request</span></div></div>
-<div class="card" style="--c:#7fb2d8">
-<div class="type">Data visualization</div>
-<h3>AI Power Map</h3>
-<p>An interactive map of the AI industry: the companies, the money and the connections between them.</p>
-<div class="foot"><span class="status">Demo on request</span></div></div>
-<div class="card" style="--c:#9cc39a">
-<div class="type">Data visualization</div>
-<h3>Genealogy Matrix</h3>
-<p>An interactive map of family connections, built only from original records.</p>
-<div class="foot"><span class="status">Demo on request</span></div></div>
-<div class="card" style="--c:#8fb0c9">
-<div class="type">Finance app</div>
-<h3>Ghost Wealth Terminal</h3>
-<p>A personal investing terminal: market dashboard, news and live tracking of your own holdings across stocks and crypto.</p>
-<div class="foot"><span class="status">Demo on request</span></div></div>
+<a class="card reveal" style="--c:#e0926a" href="/defender/">
+<div class="shot"><div class="chrome"><i></i><i></i><i></i><em>douggarceau.com/defender</em></div><img src="img/defender.webp" alt="Defender hall of fame screen"></div>
+<div class="body"><div class="type">Game</div><h3>Defender</h3><p>A playable recreation of the 1981 arcade classic, built to run with original-style arcade controls.</p>
+<div class="foot"><span class="go">Play</span><span class="live">Live</span></div></div></a>
+<div class="card reveal" style="--c:#6fc3cf">
+<div class="shot"><div class="mark"><b>AI</b></div></div>
+<div class="body"><div class="type">Security software</div><h3>AI Sentry</h3><p>Scans a computer for AI apps, agents and AI-attack risks, with a command-center dashboard of what it finds.</p>
+<div class="foot"><span class="status">In development</span></div></div></div>
+<div class="card reveal" style="--c:#b0a8e6">
+<div class="shot"><div class="mark"><b>En</b></div></div>
+<div class="body"><div class="type">Private network</div><h3>Enclave</h3><p>A closed, secure communication platform for companies, research groups and schools, with a round-the-clock news feed and working-group spaces.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div></div>
+<div class="card reveal" style="--c:#d9b77a">
+<div class="shot"><div class="mark"><b>Ns</b></div></div>
+<div class="body"><div class="type">Social platform</div><h3>Newspace</h3><p>A full social network: profiles, feeds, posts and messaging, built from the ground up.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div></div>
+<div class="card reveal" style="--c:#9cc7e8">
+<div class="shot"><div class="mark"><b>PM</b></div></div>
+<div class="body"><div class="type">Data visualization</div><h3>AI Power Map</h3><p>An interactive map of the AI industry: the companies, the money and the connections between them.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div></div>
+<div class="card reveal" style="--c:#a6cf9a">
+<div class="shot"><div class="mark"><b>GM</b></div></div>
+<div class="body"><div class="type">Data visualization</div><h3>Genealogy Matrix</h3><p>An interactive map of family connections, built only from original records.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div></div>
+<div class="card reveal" style="--c:#8fb4d6">
+<div class="shot"><div class="mark"><b>Gh</b></div></div>
+<div class="body"><div class="type">Finance app</div><h3>Ghost Wealth Terminal</h3><p>A personal investing terminal: market dashboard, news and live tracking of your own holdings across stocks and crypto.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div></div>
 </div>
 
-<h2 class="sec">News publications · Island News Media</h2>
+<div class="sec" id="news"><h2>Publications</h2><small>Island News Media Productions</small></div>
 <div class="grid">
-<a class="card" style="--c:#8fb0c9" href="https://jamestownislandnews.com">
-<div class="type">Town news</div>
-<h3>Jamestown Island News</h3>
-<p>Daily news and a full events calendar for Jamestown, Rhode Island, updated every day.</p>
-<div class="foot"><span class="go">Open →</span></div></a>
-<a class="card" style="--c:#8fb0c9" href="https://rhodeislandhurricane.com">
-<div class="type">State news</div>
-<h3>Rhode Island Hurricane</h3>
-<p>Statewide news, music, events and nightlife across Rhode Island.</p>
-<div class="foot"><span class="go">Open →</span></div></a>
-<a class="card" style="--c:#8fb0c9" href="https://newyorkcityscream.com">
-<div class="type">City news</div>
-<h3>New York City Scream</h3>
-<p>New York City news, music, clubs and events.</p>
-<div class="foot"><span class="go">Open →</span></div></a>
-<a class="card" style="--c:#8fb0c9" href="https://thebostonrambler.com">
-<div class="type">City news</div>
-<h3>The Boston Rambler</h3>
-<p>Boston news, music, clubs and events.</p>
-<div class="foot"><span class="go">Open →</span></div></a>
-<a class="card" style="--c:#8fb0c9" href="https://islandnewsmedia.com">
-<div class="type">Publisher</div>
-<h3>Island News Media Productions</h3>
-<p>The parent company of the news publications.</p>
-<div class="foot"><span class="go">Open →</span></div></a>
+<a class="card reveal" style="--c:#c9a86a" href="https://islandnewsmedia.com">
+<div class="shot"><div class="chrome"><i></i><i></i><i></i><em>islandnewsmedia.com</em></div><img src="img/inm.webp" alt="Island News Media Productions home page"></div>
+<div class="body"><div class="type">Publisher</div><h3>Island News Media Productions</h3><p>The company behind the publications: arts, entertainment and community news for Rhode Island, Boston and New York City.</p>
+<div class="foot"><span class="go">Open</span><span class="live">Live</span></div></div></a>
+<a class="card reveal" style="--c:#8fb0d6" href="https://jamestownislandnews.com">
+<div class="shot"><div class="chrome"><i></i><i></i><i></i><em>jamestownislandnews.com</em></div><img src="img/jamestown.webp" alt="Jamestown Island News home page"></div>
+<div class="body"><div class="type">Town news</div><h3>Jamestown Island News</h3><p>Daily news and a full events calendar for Jamestown, Rhode Island.</p>
+<div class="foot"><span class="go">Open</span><span class="live">Live</span></div></div></a>
+<a class="card reveal" style="--c:#8fb0d6" href="https://rhodeislandhurricane.com">
+<div class="shot"><div class="chrome"><i></i><i></i><i></i><em>rhodeislandhurricane.com</em></div><img src="img/hurricane.webp" alt="Rhode Island Hurricane home page"></div>
+<div class="body"><div class="type">State news</div><h3>Rhode Island Hurricane</h3><p>Live music, the arts and events across all 39 Rhode Island cities and towns.</p>
+<div class="foot"><span class="go">Open</span><span class="live">Live</span></div></div></a>
+<a class="card reveal" style="--c:#8fb0d6" href="https://newyorkcityscream.com">
+<div class="shot"><div class="chrome"><i></i><i></i><i></i><em>newyorkcityscream.com</em></div><img src="img/scream.webp" alt="New York City Scream home page"></div>
+<div class="body"><div class="type">City news</div><h3>New York City Scream</h3><p>New York City news, music, clubs and events.</p>
+<div class="foot"><span class="go">Open</span><span class="live">Live</span></div></div></a>
+<a class="card reveal" style="--c:#8fb0d6" href="https://thebostonrambler.com">
+<div class="shot"><div class="chrome"><i></i><i></i><i></i><em>thebostonrambler.com</em></div><img src="img/rambler.webp" alt="The Boston Rambler home page"></div>
+<div class="body"><div class="type">City news</div><h3>The Boston Rambler</h3><p>Boston news, music, clubs and events.</p>
+<div class="foot"><span class="go">Open</span><span class="live">Live</span></div></div></a>
 </div>
 </main>
-<footer class="wrap" id="contact"><span>© 2026 Doug Garceau</span><a href="mailto:doug@islandnewsmedia.com">doug@islandnewsmedia.com</a></footer>
+<footer id="contact"><div class="wrap"><span>© 2026 Doug Garceau</span><a href="mailto:doug@islandnewsmedia.com">doug@islandnewsmedia.com</a></div></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+</script>
 </body></html>
