@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doug Garceau · Projects</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:dark;--bg:#07090c;--panel:#0f141a;--panel2:#131a22;--ink:#f2f4f6;--muted:#9aa6b2;--line:#222b35;--accent:#7fb2d8;--accent2:#c9d6e2}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit;text-decoration:none}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+header{border-bottom:1px solid var(--line);background:rgba(7,9,12,.85);backdrop-filter:blur(10px);position:sticky;top:0;z-index:5}
+.bar{display:flex;justify-content:space-between;align-items:center;height:64px}
+.name{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:14px}
+.bar nav a{color:var(--muted);font-size:14px;margin-left:22px}.bar nav a:hover{color:var(--ink)}
+.hero{padding:88px 0 56px}
+.mono{font:600 12px/1.4 "JetBrains Mono",ui-monospace,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+h1{font-size:clamp(44px,7.5vw,92px);line-height:.96;letter-spacing:-.045em;margin:14px 0 22px;font-weight:800}
+.lede{max-width:720px;color:var(--muted);font-size:19px;margin:0}
+.skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.skills span{border:1px solid var(--line);background:var(--panel);color:var(--accent2);padding:7px 13px;font-size:14px;border-radius:999px}
+h2.sec{font-size:13px;font-family:"JetBrains Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:40px 0 18px;font-weight:600;display:flex;align-items:center;gap:14px}
+h2.sec:after{content:"";flex:1;height:1px;background:var(--line)}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{position:relative;display:flex;flex-direction:column;min-height:250px;padding:26px 26px 22px;border:1px solid var(--line);background:linear-gradient(160deg,var(--panel2),var(--panel));border-radius:14px;transition:border-color .2s,transform .2s,background .2s;overflow:hidden}
+.card:before{content:"";position:absolute;left:0;top:0;right:0;height:3px;background:var(--c,#7fb2d8);opacity:.9}
+a.card:hover{border-color:#3a4a5a;transform:translateY(-3px)}
+.type{font:600 11px/1.4 "JetBrains Mono",monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--c,#7fb2d8)}
+.card h3{font-size:26px;line-height:1.1;margin:12px 0 10px;letter-spacing:-.02em}
+.card p{color:var(--muted);margin:0 0 20px;font-size:15.5px}
+.foot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;font:600 12px/1.4 "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase}
+.go{color:var(--ink)}.status{color:var(--muted)}
+.card.feature{grid-column:span 2}
+.card.feature h3{font-size:34px}
+footer{border-top:1px solid var(--line);margin-top:80px;padding:28px 0 40px;color:#7d8894;font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.card.feature{grid-column:span 2}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}.card.feature{grid-column:auto}.bar nav{display:none}.hero{padding:56px 0 36px}}
+</style></head>
+<body>
+<header><div class="wrap bar"><div class="name">Doug Garceau</div><nav><a href="#work">Projects</a><a href="#contact">Contact</a></nav></div></header>
+<main class="wrap">
+<section class="hero">
+<div class="mono">Builder · Writer · Musician</div>
+<h1>Websites, apps, games and books, built end to end.</h1>
+<p class="lede">A working collection of my projects: interactive learning platforms, private networks, security software, a published biography and its research archive. Click any project to open it.</p>
+<div class="skills"><span>Web and app development</span><span>AI research and consulting</span><span>Interactive audio</span><span>Game development</span><span>Video and multimedia</span><span>Writing and editing</span></div>
+</section>
+
+<h2 class="sec" id="work">Featured</h2>
+<div class="grid">
+<a class="card feature" style="--c:#7fb08f" href="/the-names-he-carried/">
+<div class="type">Book · Research archive</div>
+<h3>The Names He Carried</h3>
+<p>The life of Laurence Brown Douglas, from Edinburgh in 1907 to Rhode Island. A narrative biography with its full record archive, case files, a short documentary film and an audiobook.</p>
+<div class="foot"><span class="go">Open the book site →</span></div></a>
+<a class="card" style="--c:#8fa8d6" href="https://amadeusschoolofdrums.com">
+<div class="type">Interactive learning</div>
+<h3>Amadeus School of Drums</h3>
+<p>A complete drum school: three lesson levels, the 40 rudiments, a playable vintage drum set and a 59-instrument percussion room, all with real recorded sound.</p>
+<div class="foot"><span class="go">Open →</span></div></a>
+</div>
+
+<h2 class="sec">Software and apps</h2>
+<div class="grid">
+<a class="card" style="--c:#d38b6a" href="/defender/">
+<div class="type">Game</div>
+<h3>Defender</h3>
+<p>A playable recreation of the 1981 arcade classic, built to run with original-style arcade controls.</p>
+<div class="foot"><span class="go">Play →</span></div></a>
+<div class="card" style="--c:#6fb7c4">
+<div class="type">Security software</div>
+<h3>AI Sentry</h3>
+<p>Scans a computer for AI apps, agents and AI-attack risks, with a command-center dashboard of what it finds.</p>
+<div class="foot"><span class="status">In development</span></div></div>
+<div class="card" style="--c:#a7a0d8">
+<div class="type">Private network</div>
+<h3>Enclave</h3>
+<p>A closed, secure communication platform for companies, research groups and schools, with a round-the-clock news feed and working-group spaces.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div>
+<div class="card" style="--c:#c9a86a">
+<div class="type">Social platform</div>
+<h3>Newspace</h3>
+<p>A full social network: profiles, feeds, posts and messaging, built from the ground up.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div>
+<div class="card" style="--c:#7fb2d8">
+<div class="type">Data visualization</div>
+<h3>AI Power Map</h3>
+<p>An interactive map of the AI industry: the companies, the money and the connections between them.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div>
+<div class="card" style="--c:#9cc39a">
+<div class="type">Data visualization</div>
+<h3>Genealogy Matrix</h3>
+<p>An interactive map of family connections, built only from original records.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div>
+<div class="card" style="--c:#8fb0c9">
+<div class="type">Finance app</div>
+<h3>Ghost Wealth Terminal</h3>
+<p>A personal investing terminal: market dashboard, news and live tracking of your own holdings across stocks and crypto.</p>
+<div class="foot"><span class="status">Demo on request</span></div></div>
+</div>
+</main>
+<footer class="wrap" id="contact"><span>© 2026 Doug Garceau</span><a href="mailto:doug@islandnewsmedia.com">doug@islandnewsmedia.com</a></footer>
+</body></html>
