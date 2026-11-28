@@ -145,10 +145,18 @@
    "notes": [],
    "bib": []
   },
+  "darcy-children-births": {
+   "file": "docs/darcy-children-births.html",
+   "page": "docs/darcy-children-births.html",
+   "record": 18,
+   "title": "East Providence birth registers: the children of John F. and Margaret Darcy, 1888–1901",
+   "notes": [],
+   "bib": []
+  },
   "census-1891-brome": {
    "file": "docs/census-1891-brome.html",
    "page": "docs/census-1891-brome.html",
-   "record": 18,
+   "record": 19,
    "title": "1891 Census of Canada: Edward Deslieres household, Brome",
    "notes": [],
    "bib": []
@@ -156,7 +164,7 @@
   "deslieres-marriage-1892": {
    "file": "docs/deslieres-marriage-1892.html",
    "page": "docs/deslieres-marriage-1892.html",
-   "record": 19,
+   "record": 20,
    "title": "Marriage of Timothée Deslières and Julie Deslières, Sutton, Quebec",
    "notes": [],
    "bib": []
@@ -164,7 +172,7 @@
   "census-1900-jewett-street": {
    "file": "docs/census-1900-jewett-street.html",
    "page": "docs/census-1900-jewett-street.html",
-   "record": 20,
+   "record": 21,
    "title": "1900 U.S. census: 53 Jewett Street, Providence",
    "notes": [],
    "bib": []
@@ -172,7 +180,7 @@
   "census-1900-orchard-street": {
    "file": "docs/census-1900-orchard-street.html",
    "page": "docs/census-1900-orchard-street.html",
-   "record": 21,
+   "record": 22,
    "title": "1900 U.S. census: the Darcy family, 62 Orchard Street, East Providence",
    "notes": [],
    "bib": []
@@ -180,7 +188,7 @@
   "julia-marriage-1902": {
    "file": "docs/julia-marriage-1902.html",
    "page": "docs/julia-marriage-1902.html",
-   "record": 22,
+   "record": 23,
    "title": "Julia Delaire marries again: Delphis Noreu, Providence, 1902",
    "notes": [],
    "bib": []
@@ -188,7 +196,7 @@
   "census-1910-darcy-stewart": {
    "file": "docs/census-1910-darcy-stewart.html",
    "page": "docs/census-1910-darcy-stewart.html",
-   "record": 23,
+   "record": 24,
    "title": "1910 U.S. census: the Darcys of East Providence, with Margaret’s mother, the widow Mary E. Stewart",
    "notes": [],
    "bib": []
@@ -196,7 +204,7 @@
   "census-1910-zone-street": {
    "file": "docs/census-1910-zone-street.html",
    "page": "docs/census-1910-zone-street.html",
-   "record": 24,
+   "record": 25,
    "title": "1910 U.S. census: Julia Delaire and daughter, Providence",
    "notes": [],
    "bib": []
@@ -204,7 +212,7 @@
   "darcy-delaire-marriage-1912": {
    "file": "docs/darcy-delaire-marriage-1912.html",
    "page": "docs/darcy-delaire-marriage-1912.html",
-   "record": 25,
+   "record": 26,
    "title": "Marriage of Albert Blake Darcy and Eugenie Emma Delaire, Providence",
    "notes": [],
    "bib": []
@@ -212,7 +220,7 @@
   "birth-1912": {
    "file": "docs/birth-1912.html",
    "page": "docs/birth-1912.html",
-   "record": 26,
+   "record": 27,
    "title": "Birth of Constance Eugenie Darcy, Providence",
    "notes": [],
    "bib": []
@@ -220,7 +228,7 @@
   "dir-1913-smith-street": {
    "file": "docs/dir-1913-smith-street.html",
    "page": "docs/dir-1913-smith-street.html",
-   "record": 27,
+   "record": 28,
    "title": "Providence directory, 1913: three generations at 410 Smith Street",
    "notes": [],
    "bib": []
@@ -228,7 +236,7 @@
   "lillian-darcy-marriage-1914": {
    "file": "docs/lillian-darcy-marriage-1914.html",
    "page": "docs/lillian-darcy-marriage-1914.html",
-   "record": 28,
+   "record": 29,
    "title": "Albert’s sister Lillian Angelus Darcy marries Peter John Barry",
    "notes": [],
    "bib": []
@@ -236,7 +244,7 @@
   "census-1915-darcy-stewart": {
    "file": "docs/census-1915-darcy-stewart.html",
    "page": "docs/census-1915-darcy-stewart.html",
-   "record": 29,
+   "record": 30,
    "title": "1915 Rhode Island census: Mary Stewart, 71, still living with the Darcys",
    "notes": [],
    "bib": []
@@ -244,7 +252,7 @@
   "dir-1915-taunton": {
    "file": "docs/dir-1915-taunton.html",
    "page": "docs/dir-1915-taunton.html",
-   "record": 30,
+   "record": 31,
    "title": "Taunton directory, 1915: Eugenie and Albert Darcy, 112 School Street",
    "notes": [],
    "bib": []
@@ -252,7 +260,7 @@
   "birth-albert-norman-1915": {
    "file": "docs/birth-albert-norman-1915.html",
    "page": "docs/birth-albert-norman-1915.html",
-   "record": 31,
+   "record": 32,
    "title": "Birth of Albert Norman Darcy, Taunton, Massachusetts",
    "notes": [],
    "bib": []
@@ -260,7 +268,7 @@
   "dir-1916-taunton": {
    "file": "docs/dir-1916-taunton.html",
    "page": "docs/dir-1916-taunton.html",
-   "record": 32,
+   "record": 33,
    "title": "Taunton directory, 1916: 721 Bay Street",
    "notes": [],
    "bib": []
@@ -268,7 +276,7 @@
   "dir-1917-taunton": {
    "file": "docs/dir-1917-taunton.html",
    "page": "docs/dir-1917-taunton.html",
-   "record": 33,
+   "record": 34,
    "title": "Taunton directory, 1917: 721 Bay Street",
    "notes": [],
    "bib": []
@@ -276,7 +284,7 @@
   "albert-draft-1917": {
    "file": "docs/albert-draft-1917.html",
    "page": "docs/albert-draft-1917.html",
-   "record": 34,
+   "record": 35,
    "title": "Albert B. Darcy’s 1917 draft card",
    "notes": [],
    "bib": []
@@ -284,7 +292,7 @@
   "dir-1918-albert": {
    "file": "docs/dir-1918-albert.html",
    "page": "docs/dir-1918-albert.html",
-   "record": 35,
+   "record": 36,
    "title": "Pawtucket directory, 1918: Albert, linotyper, Evening Times",
    "notes": [],
    "bib": []
@@ -292,7 +300,7 @@
   "dir-1919-alma": {
    "file": "docs/dir-1919-alma.html",
    "page": "docs/dir-1919-alma.html",
-   "record": 36,
+   "record": 37,
    "title": "Providence directory, 1919: Albert, printer, 19 Alma Street",
    "notes": [],
    "bib": []
@@ -300,7 +308,7 @@
   "census-1920-esten-street": {
    "file": "docs/census-1920-esten-street.html",
    "page": "docs/census-1920-esten-street.html",
-   "record": 37,
+   "record": 38,
    "title": "1920 U.S. census: Julia Delaire, Esten Street, Providence",
    "notes": [],
    "bib": []
@@ -308,7 +316,7 @@
   "census-1920-alms-street": {
    "file": "docs/census-1920-alms-street.html",
    "page": "docs/census-1920-alms-street.html",
-   "record": 38,
+   "record": 39,
    "title": "1920 U.S. census: the Darcy family, 19 Alma Street, Providence",
    "notes": [],
    "bib": []
@@ -316,7 +324,7 @@
   "dir-1922-eugenie": {
    "file": "docs/dir-1922-eugenie.html",
    "page": "docs/dir-1922-eugenie.html",
-   "record": 39,
+   "record": 40,
    "title": "Providence directory, 1922: Eugenie, upholsterer, 291 Westminster",
    "notes": [],
    "bib": []
@@ -324,7 +332,7 @@
   "dir-1923-albert": {
    "file": "docs/dir-1923-albert.html",
    "page": "docs/dir-1923-albert.html",
-   "record": 40,
+   "record": 41,
    "title": "Providence directory, 1923: Albert, 19 Alma Street",
    "notes": [],
    "bib": []
@@ -332,7 +340,7 @@
   "julia-delaire-declaration-1924": {
    "file": "docs/julia-delaire-declaration-1924.html",
    "page": "docs/julia-delaire-declaration-1924.html",
-   "record": 41,
+   "record": 42,
    "title": "Julia Delaire declares her intention to become a citizen",
    "notes": [],
    "bib": []
@@ -340,7 +348,7 @@
   "census-1925-burgess-avenue": {
    "file": "docs/census-1925-burgess-avenue.html",
    "page": "docs/census-1925-burgess-avenue.html",
-   "record": 42,
+   "record": 43,
    "title": "1925 Rhode Island census: the Darcys at 29 Burgess Avenue, East Providence",
    "notes": [],
    "bib": []
@@ -348,7 +356,7 @@
   "dir-1927-eugenie": {
    "file": "docs/dir-1927-eugenie.html",
    "page": "docs/dir-1927-eugenie.html",
-   "record": 43,
+   "record": 44,
    "title": "Providence directory, 1927: Mrs. Eugenie E. Darcy, Evergreen Street",
    "notes": [],
    "bib": []
@@ -356,7 +364,7 @@
   "dir-1929-eugenie": {
    "file": "docs/dir-1929-eugenie.html",
    "page": "docs/dir-1929-eugenie.html",
-   "record": 44,
+   "record": 45,
    "title": "Providence directory, 1929: Mrs. Eugenia Darcy, 19 State Street",
    "notes": [],
    "bib": []
@@ -364,7 +372,7 @@
   "albert-license-1929": {
    "file": "docs/albert-license-1929.html",
    "page": "docs/albert-license-1929.html",
-   "record": 45,
+   "record": 46,
    "title": "Albert B. Darcy takes out a marriage license to marry Theresa B. Sullivan",
    "notes": [],
    "bib": []
@@ -372,7 +380,7 @@
   "dir-1930-eugenie": {
    "file": "docs/dir-1930-eugenie.html",
    "page": "docs/dir-1930-eugenie.html",
-   "record": 46,
+   "record": 47,
    "title": "Providence directory, 1930: Mrs. Eugenie E. Darcy, estimator, 716 North Main",
    "notes": [],
    "bib": []
@@ -380,7 +388,7 @@
   "ethel-darcy-death-1930": {
    "file": "docs/ethel-darcy-death-1930.html",
    "page": "docs/ethel-darcy-death-1930.html",
-   "record": 47,
+   "record": 48,
    "title": "Death of Albert’s sister Ethel Marguerite (Darcy) McCaffrey: her mother named as Margaret J. Stewart",
    "notes": [],
    "bib": []
@@ -388,7 +396,7 @@
   "census-1930-john-f-darcy": {
    "file": "docs/census-1930-john-f-darcy.html",
    "page": "docs/census-1930-john-f-darcy.html",
-   "record": 48,
+   "record": 49,
    "title": "1930 U.S. census: John F. Darcy, 70, 7 Leonard Avenue, East Providence",
    "notes": [],
    "bib": []
@@ -396,7 +404,7 @@
   "census-1930-wayne-street": {
    "file": "docs/census-1930-wayne-street.html",
    "page": "docs/census-1930-wayne-street.html",
-   "record": 49,
+   "record": 50,
    "title": "1930 U.S. census: Julia M. Delaire, 31 Wayne Street, Providence",
    "notes": [],
    "bib": []
@@ -404,7 +412,7 @@
   "census-1930-pratt-street": {
    "file": "docs/census-1930-pratt-street.html",
    "page": "docs/census-1930-pratt-street.html",
-   "record": 50,
+   "record": 51,
    "title": "1930 U.S. census: Eugenie Darcy and her children, 111 Pratt Street, Providence",
    "notes": [],
    "bib": []
@@ -412,7 +420,7 @@
   "dir-1931-albert": {
    "file": "docs/dir-1931-albert.html",
    "page": "docs/dir-1931-albert.html",
-   "record": 51,
+   "record": 52,
    "title": "Providence directory, 1931: Albert, compositor, Journal, Edgewood",
    "notes": [],
    "bib": []
@@ -420,7 +428,7 @@
   "julia-delaire-death-1931": {
    "file": "docs/julia-delaire-death-1931.html",
    "page": "docs/julia-delaire-death-1931.html",
-   "record": 52,
+   "record": 53,
    "title": "Death of Julia Delaire, Providence",
    "notes": [],
    "bib": []
@@ -428,7 +436,7 @@
   "burial-julia-delaire-1931": {
    "file": "docs/burial-julia-delaire-1931.html",
    "page": "docs/burial-julia-delaire-1931.html",
-   "record": 53,
+   "record": 54,
    "title": "Catholic burial index: Julia Delaire, Saint Ann, section 5, lot 84",
    "notes": [],
    "bib": []
@@ -436,7 +444,7 @@
   "dir-1932-eugenie": {
    "file": "docs/dir-1932-eugenie.html",
    "page": "docs/dir-1932-eugenie.html",
-   "record": 54,
+   "record": 55,
    "title": "Providence directory, 1932: Mrs. Eugenie E. Darcy, estimator, 64 Bridgham",
    "notes": [],
    "bib": []
@@ -444,7 +452,7 @@
   "dir-1934": {
    "file": "docs/dir-1934.html",
    "page": "docs/dir-1934.html",
-   "record": 55,
+   "record": 56,
    "title": "Providence directory, 1934: student at 7 Beacon Avenue",
    "notes": [],
    "bib": []
@@ -452,7 +460,7 @@
   "dir-1934-eugenie": {
    "file": "docs/dir-1934-eugenie.html",
    "page": "docs/dir-1934-eugenie.html",
-   "record": 56,
+   "record": 57,
    "title": "Providence directory, 1934: Mrs. Eugenie E. Darcy and Constance, 7 Beacon Avenue",
    "notes": [],
    "bib": []
@@ -460,7 +468,7 @@
   "dir-1935-eugenie": {
    "file": "docs/dir-1935-eugenie.html",
    "page": "docs/dir-1935-eugenie.html",
-   "record": 57,
+   "record": 58,
    "title": "Providence directory, 1935: Mrs. Eugenie E. Darcy, 35 Dartmouth Avenue",
    "notes": [],
    "bib": []
@@ -468,7 +476,7 @@
   "john-f-darcy-1935-card": {
    "file": "docs/john-f-darcy-1935-card.html",
    "page": "docs/john-f-darcy-1935-card.html",
-   "record": 58,
+   "record": 59,
    "title": "Rhode Island census card: John F. Darcy, born December 8, 1859",
    "notes": [],
    "bib": []
@@ -476,7 +484,7 @@
   "census-card-1936": {
    "file": "docs/census-card-1936.html",
    "page": "docs/census-card-1936.html",
-   "record": 59,
+   "record": 60,
    "title": "Rhode Island census card: Constance Darcy, hairdresser",
    "notes": [],
    "bib": []
@@ -484,7 +492,7 @@
   "dir-1937": {
    "file": "docs/dir-1937.html",
    "page": "docs/dir-1937.html",
-   "record": 60,
+   "record": 61,
    "title": "Providence directory, 1937: hairdresser",
    "notes": [],
    "bib": []
@@ -492,7 +500,7 @@
   "dir-1937-albert": {
    "file": "docs/dir-1937-albert.html",
    "page": "docs/dir-1937-albert.html",
-   "record": 61,
+   "record": 62,
    "title": "Providence directory, 1937: Albert and Theresa, Shawomet",
    "notes": [],
    "bib": []
@@ -500,7 +508,7 @@
   "dir-1937-hanley-room-506": {
    "file": "docs/dir-1937-hanley-room-506.html",
    "page": "docs/dir-1937-hanley-room-506.html",
-   "record": 62,
+   "record": 63,
    "title": "Providence directories, 1937–1938: Catherine V. Hanley, hairdresser in the same room as Constance",
    "notes": [],
    "bib": []
@@ -508,7 +516,7 @@
   "lapham-building-290-westminster": {
    "file": "docs/lapham-building-290-westminster.html",
    "page": "docs/lapham-building-290-westminster.html",
-   "record": 63,
+   "record": 64,
    "title": "290 Westminster Street was the Lapham Building, home to several beauty shops",
    "notes": [],
    "bib": []
@@ -516,7 +524,7 @@
   "john-f-darcy-death-1937": {
    "file": "docs/john-f-darcy-death-1937.html",
    "page": "docs/john-f-darcy-death-1937.html",
-   "record": 64,
+   "record": 65,
    "title": "Death of John Francis Darcy, Warwick",
    "notes": [],
    "bib": []
@@ -524,7 +532,7 @@
   "dir-1938": {
    "file": "docs/dir-1938.html",
    "page": "docs/dir-1938.html",
-   "record": 65,
+   "record": 66,
    "title": "Providence directory, 1938: hairdresser",
    "notes": [],
    "bib": []
@@ -532,7 +540,7 @@
   "dir-1938-eugenie": {
    "file": "docs/dir-1938-eugenie.html",
    "page": "docs/dir-1938-eugenie.html",
-   "record": 66,
+   "record": 67,
    "title": "Providence directory, 1938: Mrs. Eugenie E. Darcy, head, 56 Dartmouth Avenue",
    "notes": [],
    "bib": []
@@ -540,7 +548,7 @@
   "norman-marriage-1938": {
    "file": "docs/norman-marriage-1938.html",
    "page": "docs/norman-marriage-1938.html",
-   "record": 67,
+   "record": 68,
    "title": "Massachusetts marriage index: Albert Norman Darcy, Framingham, 1938",
    "notes": [],
    "bib": []
@@ -548,7 +556,7 @@
   "dir-1939": {
    "file": "docs/dir-1939.html",
    "page": "docs/dir-1939.html",
-   "record": 68,
+   "record": 69,
    "title": "Providence directory, 1939: 56 Dartmouth Avenue",
    "notes": [],
    "bib": []
@@ -556,7 +564,7 @@
   "alabama-marriage-1939": {
    "file": "docs/alabama-marriage-1939.html",
    "page": "docs/alabama-marriage-1939.html",
-   "record": 69,
+   "record": 70,
    "title": "Marriage of Lawrence Douglas and Constance Darcy, Birmingham, Alabama",
    "notes": [],
    "bib": []
@@ -564,7 +572,7 @@
   "dir-1940-eugenie": {
    "file": "docs/dir-1940-eugenie.html",
    "page": "docs/dir-1940-eugenie.html",
-   "record": 70,
+   "record": 71,
    "title": "Pawtucket directory, 1940: Mrs. Eugenie E. Darcy, 325 Sayles Avenue",
    "notes": [],
    "bib": []
@@ -572,7 +580,7 @@
   "census-1940-norman": {
    "file": "docs/census-1940-norman.html",
    "page": "docs/census-1940-norman.html",
-   "record": 71,
+   "record": 72,
    "title": "1940 U.S. census: her brother Norman and his family, 110 Beach Avenue, Warwick",
    "notes": [],
    "bib": []
@@ -580,7 +588,7 @@
   "census-1940-valencia-street": {
    "file": "docs/census-1940-valencia-street.html",
    "page": "docs/census-1940-valencia-street.html",
-   "record": 72,
+   "record": 73,
    "title": "1940 U.S. census: Laurence, Constance and Eugenie Douglas, Valencia Street, San Francisco",
    "notes": [],
    "bib": []
@@ -588,7 +596,7 @@
   "draft-card-1940": {
    "file": "docs/draft-card-1940.html",
    "page": "docs/draft-card-1940.html",
-   "record": 73,
+   "record": 74,
    "title": "Laurence’s 1940 draft card names Constance",
    "notes": [],
    "bib": []
@@ -596,7 +604,7 @@
   "norman-draft-1940": {
    "file": "docs/norman-draft-1940.html",
    "page": "docs/norman-draft-1940.html",
-   "record": 74,
+   "record": 75,
    "title": "Her brother A. Norman Darcy registers for the draft, Warwick",
    "notes": [],
    "bib": []
@@ -604,7 +612,7 @@
   "blaine-1941": {
    "file": "docs/blaine-1941.html",
    "page": "docs/blaine-1941.html",
-   "record": 75,
+   "record": 76,
    "title": "Back across the border at Blaine, Washington, with Laurence",
    "notes": [],
    "bib": []
@@ -612,7 +620,7 @@
   "albert-draft-1942": {
    "file": "docs/albert-draft-1942.html",
    "page": "docs/albert-draft-1942.html",
-   "record": 76,
+   "record": 77,
    "title": "Albert Blake Darcy’s 1942 draft card",
    "notes": [],
    "bib": []
@@ -620,7 +628,7 @@
   "dir-1942-albert": {
    "file": "docs/dir-1942-albert.html",
    "page": "docs/dir-1942-albert.html",
-   "record": 77,
+   "record": 78,
    "title": "Warwick directory, 1942: Albert and Theresa, 60 Blake Street, Shawomet",
    "notes": [],
    "bib": []
@@ -628,7 +636,7 @@
   "margaret-darcy-death-1942": {
    "file": "docs/margaret-darcy-death-1942.html",
    "page": "docs/margaret-darcy-death-1942.html",
-   "record": 78,
+   "record": 79,
    "title": "Death certificate of Margaret Jane (Nodder) Darcy, Constance’s grandmother",
    "notes": [],
    "bib": []
@@ -636,7 +644,7 @@
   "burial-margaret-darcy-1942": {
    "file": "docs/burial-margaret-darcy-1942.html",
    "page": "docs/burial-margaret-darcy-1942.html",
-   "record": 79,
+   "record": 80,
    "title": "Catholic burial index: Margaret J. Darcy, Mount St. Mary Cemetery, Pawtucket",
    "notes": [],
    "bib": []
@@ -644,7 +652,7 @@
   "celina-dufresne-life": {
    "file": "docs/celina-dufresne-life.html",
    "page": "docs/celina-dufresne-life.html",
-   "record": 80,
+   "record": 81,
    "title": "Célina (Dufresne) Delaire: birth, census years and death",
    "notes": [],
    "bib": []
@@ -652,7 +660,7 @@
   "naturalization-1943": {
    "file": "docs/naturalization-1943.html",
    "page": "docs/naturalization-1943.html",
-   "record": 81,
+   "record": 82,
    "title": "Laurence’s naturalization petition names Constance and their daughters",
    "notes": [],
    "bib": []
@@ -660,7 +668,7 @@
   "dir-1945": {
    "file": "docs/dir-1945.html",
    "page": "docs/dir-1945.html",
-   "record": 82,
+   "record": 83,
    "title": "Pawtucket directory, 1945: 97 Magill Street",
    "notes": [],
    "bib": []
@@ -668,7 +676,7 @@
   "dir-1946": {
    "file": "docs/dir-1946.html",
    "page": "docs/dir-1946.html",
-   "record": 83,
+   "record": 84,
    "title": "Pawtucket directory, 1946: 97 Magill Street",
    "notes": [],
    "bib": []
@@ -676,7 +684,7 @@
   "dir-1947": {
    "file": "docs/dir-1947.html",
    "page": "docs/dir-1947.html",
-   "record": 84,
+   "record": 85,
    "title": "Pawtucket directory, 1947: 97 Magill Street",
    "notes": [],
    "bib": []
@@ -684,7 +692,7 @@
   "dir-1948": {
    "file": "docs/dir-1948.html",
    "page": "docs/dir-1948.html",
-   "record": 85,
+   "record": 86,
    "title": "Pawtucket directory, 1948: 97 Magill Street",
    "notes": [],
    "bib": []
@@ -692,7 +700,7 @@
   "dir-1949": {
    "file": "docs/dir-1949.html",
    "page": "docs/dir-1949.html",
-   "record": 86,
+   "record": 87,
    "title": "Pawtucket directory, 1949: 97 Magill Street",
    "notes": [],
    "bib": []
@@ -700,7 +708,7 @@
   "census-1950-albert": {
    "file": "docs/census-1950-albert.html",
    "page": "docs/census-1950-albert.html",
-   "record": 87,
+   "record": 88,
    "title": "1950 U.S. census: Albert Darcy, 60 West Shore Road, Warwick",
    "notes": [],
    "bib": []
@@ -708,7 +716,7 @@
   "dir-1950": {
    "file": "docs/dir-1950.html",
    "page": "docs/dir-1950.html",
-   "record": 88,
+   "record": 89,
    "title": "Providence directory, 1950: 148 General Street",
    "notes": [],
    "bib": []
@@ -716,7 +724,7 @@
   "dir-1952": {
    "file": "docs/dir-1952.html",
    "page": "docs/dir-1952.html",
-   "record": 89,
+   "record": 90,
    "title": "Providence directory, 1952: 148 General Street",
    "notes": [],
    "bib": []
@@ -724,7 +732,7 @@
   "norman-obituary-index": {
    "file": "docs/norman-obituary-index.html",
    "page": "docs/norman-obituary-index.html",
-   "record": 90,
+   "record": 91,
    "title": "Obituary index: A. Norman Darcy",
    "notes": [],
    "bib": []
@@ -732,7 +740,7 @@
   "burial-norman-1954": {
    "file": "docs/burial-norman-1954.html",
    "page": "docs/burial-norman-1954.html",
-   "record": 91,
+   "record": 92,
    "title": "Catholic burial index: A. Norman Darcy, Saint Ann, lot 84",
    "notes": [],
    "bib": []
@@ -740,7 +748,7 @@
   "dir-1956": {
    "file": "docs/dir-1956.html",
    "page": "docs/dir-1956.html",
-   "record": 92,
+   "record": 93,
    "title": "Providence directory, 1956: 644 River Avenue",
    "notes": [],
    "bib": []
@@ -748,7 +756,7 @@
   "dir-1957": {
    "file": "docs/dir-1957.html",
    "page": "docs/dir-1957.html",
-   "record": 93,
+   "record": 94,
    "title": "Providence directory, 1957: 644 River Avenue",
    "notes": [],
    "bib": []
@@ -756,7 +764,7 @@
   "albert-death-1957": {
    "file": "docs/albert-death-1957.html",
    "page": "docs/albert-death-1957.html",
-   "record": 94,
+   "record": 95,
    "title": "Death of Albert Blake Darcy, Constance’s father",
    "notes": [],
    "bib": []
@@ -764,7 +772,7 @@
   "dir-1958": {
    "file": "docs/dir-1958.html",
    "page": "docs/dir-1958.html",
-   "record": 95,
+   "record": 96,
    "title": "Providence directory, 1958: 644 River Avenue",
    "notes": [],
    "bib": []
@@ -772,7 +780,7 @@
   "dir-1959": {
    "file": "docs/dir-1959.html",
    "page": "docs/dir-1959.html",
-   "record": 96,
+   "record": 97,
    "title": "Providence directory, 1959: 644 River Avenue",
    "notes": [],
    "bib": []
@@ -780,7 +788,7 @@
   "dir-1960": {
    "file": "docs/dir-1960.html",
    "page": "docs/dir-1960.html",
-   "record": 97,
+   "record": 98,
    "title": "Providence directory, 1960: 644 River Avenue",
    "notes": [],
    "bib": []
@@ -788,7 +796,7 @@
   "dir-1961": {
    "file": "docs/dir-1961.html",
    "page": "docs/dir-1961.html",
-   "record": 98,
+   "record": 99,
    "title": "Providence directory, 1961: Constance a nurse at Roger Williams; her mother at the same address",
    "notes": [],
    "bib": []
@@ -796,7 +804,7 @@
   "obituary-laurence-1961": {
    "file": "docs/obituary-laurence-1961.html",
    "page": "docs/obituary-laurence-1961.html",
-   "record": 99,
+   "record": 100,
    "title": "Laurence’s obituary names Constance",
    "notes": [],
    "bib": []
@@ -804,7 +812,7 @@
   "dir-1962-erickson": {
    "file": "docs/dir-1962-erickson.html",
    "page": "docs/dir-1962-erickson.html",
-   "record": 100,
+   "record": 101,
    "title": "Providence directory, 1962: Mrs. Eugenie Erickson, 107 Rugby Street",
    "notes": [],
    "bib": []
@@ -812,7 +820,7 @@
   "dir-1963-warwick": {
    "file": "docs/dir-1963-warwick.html",
    "page": "docs/dir-1963-warwick.html",
-   "record": 101,
+   "record": 102,
    "title": "Warwick directory, 1963: widow, nurse at Briarcliff, 119 Phillips Avenue",
    "notes": [],
    "bib": []
@@ -820,7 +828,7 @@
   "dir-1964-warwick": {
    "file": "docs/dir-1964-warwick.html",
    "page": "docs/dir-1964-warwick.html",
-   "record": 102,
+   "record": 103,
    "title": "Warwick directory, 1964: nurse, Briarcliff Convalescent Home",
    "notes": [],
    "bib": []
@@ -828,7 +836,7 @@
   "dir-1965-warwick": {
    "file": "docs/dir-1965-warwick.html",
    "page": "docs/dir-1965-warwick.html",
-   "record": 103,
+   "record": 104,
    "title": "Warwick directory, 1965: nurse, Briarcliffe Health Center, Johnston",
    "notes": [],
    "bib": []
@@ -836,7 +844,7 @@
   "ssdi-eugenie-erickson": {
    "file": "docs/ssdi-eugenie-erickson.html",
    "page": "docs/ssdi-eugenie-erickson.html",
-   "record": 104,
+   "record": 105,
    "title": "Social Security Death Index: Eugenie Erickson (Constance’s mother)",
    "notes": [],
    "bib": []
@@ -844,7 +852,7 @@
   "burial-eugenie-1966": {
    "file": "docs/burial-eugenie-1966.html",
    "page": "docs/burial-eugenie-1966.html",
-   "record": 105,
+   "record": 106,
    "title": "Catholic burial index: Eugenie Erickson (Darcy Erickson), Saint Ann, lot 84",
    "notes": [],
    "bib": []
@@ -852,7 +860,7 @@
   "obituary-constance-1994": {
    "file": "docs/obituary-constance-1994.html",
    "page": "docs/obituary-constance-1994.html",
-   "record": 106,
+   "record": 107,
    "title": "Constance’s obituary (reproduction)",
    "notes": [],
    "bib": []
@@ -860,7 +868,7 @@
   "ssaci-constance": {
    "file": "docs/ssaci-constance.html",
    "page": "docs/ssaci-constance.html",
-   "record": 107,
+   "record": 108,
    "title": "Social Security application and claims index: Constance Eugenie Darcy",
    "notes": [],
    "bib": []
@@ -868,7 +876,7 @@
   "ssdi-constance": {
    "file": "docs/ssdi-constance.html",
    "page": "docs/ssdi-constance.html",
-   "record": 108,
+   "record": 109,
    "title": "Social Security Death Index: Constance E. Douglas",
    "notes": [],
    "bib": []
@@ -876,7 +884,7 @@
   "burial-constance-1994": {
    "file": "docs/burial-constance-1994.html",
    "page": "docs/burial-constance-1994.html",
-   "record": 109,
+   "record": 110,
    "title": "Catholic burial index: Constance Douglas, Saint Ann, section 5, lot 84",
    "notes": [],
    "bib": []
@@ -884,7 +892,7 @@
   "fag-index-constance": {
    "file": "docs/fag-index-constance.html",
    "page": "docs/fag-index-constance.html",
-   "record": 110,
+   "record": 111,
    "title": "Find a Grave index: Constance E. Douglas",
    "notes": [],
    "bib": []
@@ -892,7 +900,7 @@
   "burial-claire-2000": {
    "file": "docs/burial-claire-2000.html",
    "page": "docs/burial-claire-2000.html",
-   "record": 111,
+   "record": 112,
    "title": "Catholic burial index: Claire M. Darcy, Saint Ann, lot 84",
    "notes": [],
    "bib": []
