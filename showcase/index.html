@@ -3,12 +3,12 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Doug Garceau AI Labs · AI security, private networks and intelligence systems</title>
 <meta name="description" content="Doug Garceau AI Labs builds AI security tools, private collaboration platforms and interactive intelligence systems.">
-<meta name="robots" content="noindex,nofollow">
+<meta name="robots" content="noindex">
 <link rel="canonical" href="https://douggarceau.com/showcase/">
 <meta property="og:type" content="website"><meta property="og:site_name" content="Doug Garceau AI Labs">
 <meta property="og:title" content="Doug Garceau AI Labs">
 <meta property="og:description" content="AI security, private collaboration and interactive intelligence systems.">
-<meta property="og:image" content="https://douggarceau.com/showcase/img/sentry-report.webp">
+<meta property="og:url" content="https://douggarceau.com/showcase/"><meta property="og:image" content="https://douggarceau.com/showcase/img/share-card.jpg"><meta property="og:image:secure_url" content="https://douggarceau.com/showcase/img/share-card.jpg"><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Doug Garceau AI Labs: AI security, private networks and intelligence systems"><meta name="twitter:image" content="https://douggarceau.com/showcase/img/share-card.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
@@ -92,11 +92,16 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media(max-width:900px){.hero,.prod{grid-template-columns:1fr}.prod:nth-of-type(even) .shot{order:0}nav{display:none}.case{grid-template-columns:1fr}}
 @media(max-width:640px){.cards{grid-template-columns:1fr}.row{grid-template-columns:1fr}.brand{font-size:18px}body{font-size:17px}.wrap{width:calc(100% - 32px)}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+.share{display:flex;gap:8px;flex:none}
+.sbtn{font:600 12px "JetBrains Mono",monospace;padding:7px 11px;border-radius:8px;border:1px solid var(--line);background:var(--s1);color:var(--ink);cursor:pointer;text-decoration:none;white-space:nowrap}
+.sbtn:hover{border-color:var(--g)}.sbtn.fb{background:#1877F2;border-color:#1877F2;color:#fff}
+.sbtn.ok{border-color:var(--g);color:var(--g)}
+@media(max-width:640px){.sbtn{padding:6px 8px;font-size:11px}.sbtn.fb{font-size:0}.sbtn.fb:after{content:"Facebook";font-size:11px}}
 </style></head>
 <body>
 <div class="grid-bg" aria-hidden="true"></div>
 <header><div class="wrap hbar"><a class="brand" href="#top">Doug Garceau <span>AI Labs</span></a>
-<nav aria-label="Sections"><a href="#products">Products</a><a href="#software">Software</a><a href="#case-studies">Case studies</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav></div></header>
+<nav aria-label="Sections"><a href="#products">Products</a><a href="#software">Software</a><a href="#case-studies">Case studies</a><a href="#publications">Publications</a><a href="#contact">Contact</a></nav><div class="share"><button type="button" class="sbtn" id="copyLink" aria-label="Copy link to this page">Copy link</button><a class="sbtn fb" href="https://www.facebook.com/sharer/sharer.php?u=https://douggarceau.com/showcase/" target="_blank" rel="noopener" aria-label="Share on Facebook">Share on Facebook</a></div></div></header>
 <main id="top">
 <div class="wrap">
 <section class="hero" aria-labelledby="h1">
@@ -198,6 +203,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 <footer id="contact"><div class="wrap"><span>© 2026 Doug Garceau AI Labs</span><a href="mailto:doug@islandnewsmedia.com">doug@islandnewsmedia.com</a></div></footer>
 <script>
 (function(){
+const cb=document.getElementById('copyLink');cb.addEventListener('click',async()=>{const u=location.origin+location.pathname;try{await navigator.clipboard.writeText(u)}catch(e){const t=document.createElement('textarea');t.value=u;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove()}cb.textContent='Copied ✓';cb.classList.add('ok');setTimeout(()=>{cb.textContent='Copy link';cb.classList.remove('ok')},1800)});
 const tabs=[...document.querySelectorAll('[role=tab]')];
 tabs.forEach(t=>t.addEventListener('click',()=>{tabs.forEach(x=>{x.setAttribute('aria-selected',x===t);document.getElementById(x.getAttribute('aria-controls')).classList.toggle('on',x===t)})}));
 const links=[...document.querySelectorAll('nav a')];const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
