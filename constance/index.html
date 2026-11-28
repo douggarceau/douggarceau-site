@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nan: The Constance Darcy Douglas Story</title>
+<meta name="description" content="The life of Constance Eugenie Darcy Douglas, 1912–1994, told from the original records: a hairdresser and nurse from Providence, Rhode Island.">
+<meta name="robots" content="noindex">
+
+<meta name="theme-color" content="#fff9ec">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@500;700&display=swap">
+<style>
+/* Pure black, white and grey. No pictures on the pages. */
+:root{--bg:#000;--ink:#fff;--soft:#b8b8b8;--dim:#8a8a8a;--rule:#2e2e2e;--line:#fff;--panel:#0d0d0d}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:120px;background:#fff9ec}
+body{margin:0;background:#fff9ec;color:var(--ink);font:400 19px/1.75 "Source Serif 4",Georgia,serif;overflow-x:clip;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:var(--ink);text-decoration:underline;text-decoration-color:#777;text-underline-offset:3px}
+a:hover{text-decoration-color:#fff}
+:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 max(4vw,18px)}
+.lab{font:700 13px/1.3 Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+
+/* Top bar */
+.top{position:sticky;top:0;z-index:5;background:#000;border-bottom:1px solid var(--rule)}
+.top .wrap{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;padding-top:10px;padding-bottom:10px}
+.brand{flex:1;min-width:200px;font:900 20px/1.1 "Playfair Display",serif;letter-spacing:.02em;text-decoration:none;color:#fff}
+select.jump{font:500 16px Inter,system-ui,sans-serif;padding:10px 12px;min-height:44px;max-width:100%;background:#000;color:#fff;border:1px solid #555;border-radius:2px}
+.tabs{display:flex;gap:2px 4px;flex-wrap:wrap;width:100%;margin:0 -10px}
+.tab{all:unset;cursor:pointer;font:500 15px/1 Inter,system-ui,sans-serif;color:var(--soft);padding:12px 10px;border-bottom:2px solid transparent}
+.tab:hover{color:#fff}
+.tab[aria-current=true]{color:#fff;border-bottom-color:#fff}
+.tab:focus-visible,.row:focus-visible,.toc-row:focus-visible,.pg:focus-visible,.go:focus-visible,.lnk:focus-visible{outline:2px solid #fff;outline-offset:3px}
+#view h2:focus,#view h1:focus{outline:none}
+
+/* Home */
+.hero{text-align:center;padding:clamp(56px,10vw,120px) 0 clamp(40px,6vw,70px);border-bottom:1px solid var(--rule)}
+.film{padding:clamp(36px,6vw,64px) 0;border-bottom:1px solid var(--rule);text-align:center}
+.film video{display:block;width:100%;height:auto;background:#000}
+.film .fl{font:italic 400 clamp(18px,2.4vw,24px)/1.3 "Playfair Display",serif;color:var(--soft);margin:18px 0 0}
+.hero .lab{margin:0 0 26px}
+.hero h1{font:900 clamp(52px,11.5vw,138px)/.92 "Playfair Display",serif;margin:0;letter-spacing:-.01em;text-transform:uppercase;text-wrap:balance}
+.hero .rule{width:min(520px,70%);height:0;border-top:1px solid #fff;margin:34px auto 22px}
+.hero .sub{font:italic 400 clamp(22px,3.4vw,34px)/1.25 "Playfair Display",serif;margin:0}
+.hero .yrs{font:700 15px Inter,system-ui,sans-serif;letter-spacing:.4em;color:var(--soft);margin:16px 0 40px;padding-left:.4em}
+.go{all:unset;cursor:pointer;display:inline-block;background:#fff;color:#000;font:700 18px/1 Inter,system-ui,sans-serif;letter-spacing:.04em;padding:20px 34px;border:2px solid #fff}
+.go:hover{background:#000;color:#fff}
+.go.ghost{background:#000;color:#fff}.go.ghost:hover{background:#fff;color:#000}
+.ded{font:italic 400 20px/1.5 "Source Serif 4",serif;color:var(--soft);margin:30px 0 0}
+.covcred{font:400 13px/1.4 Inter,system-ui,sans-serif;letter-spacing:.04em;color:var(--soft);opacity:.75;margin:-14px 0 26px}
+.by{font:700 14px Inter,system-ui,sans-serif;letter-spacing:.2em;text-transform:uppercase;margin:0 0 4px}
+
+.route{padding:40px 0;border-bottom:1px solid var(--rule)}
+.route .lab{text-align:center;margin:0 0 22px}
+.stops{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));position:relative}
+.stops:before{content:"";position:absolute;left:5.5%;right:5.5%;top:7px;border-top:1px solid #fff}
+.stop{text-align:center;position:relative}
+.stop i{display:block;width:14px;height:14px;border-radius:50%;background:#fff;margin:0 auto 12px;box-shadow:0 0 0 5px #000}
+.stop b{display:block;font:700 17px/1.2 "Playfair Display",serif}
+.stop span{display:block;font:500 13px/1.4 Inter,system-ui,sans-serif;color:var(--soft);margin-top:2px}
+@media(max-width:760px){.stops{grid-template-columns:minmax(0,1fr);gap:0}.stops:before{left:6px;right:auto;top:6px;bottom:6px;border-top:0;border-left:1px solid #fff}
+ .stop{display:grid;grid-template-columns:28px minmax(0,1fr);text-align:left;align-items:baseline;padding:6px 0}.stop i{margin:0;width:13px;height:13px}.stop b,.stop span{display:inline}.stop span{margin-left:8px}}
+
+.beside{padding:46px 0 10px}
+h2.big{font:900 clamp(38px,6vw,64px)/1.02 "Playfair Display",serif;margin:0 0 8px;text-wrap:balance}
+.lede{font:500 16px/1.5 Inter,system-ui,sans-serif;color:var(--soft);margin:0 0 26px}
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid #fff}
+.rows li{border-bottom:1px solid var(--rule)}
+.row{all:unset;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:4px 16px;align-items:baseline;width:100%;padding:16px 2px}
+.row b{font:700 24px/1.25 "Playfair Display",serif}
+.row span{font:500 15px/1.4 Inter,system-ui,sans-serif;color:var(--soft)}
+.row:hover b,.row:focus-visible b{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+
+/* Contents */
+.toc{padding:46px 0 30px}
+.part{margin:40px 0 0;padding:14px 0 8px;border-top:3px solid #fff}
+.part .lab{color:#fff}
+.toc-row{all:unset;cursor:pointer;color:#fff;text-decoration:none;display:grid;grid-template-columns:3.2em minmax(0,1fr) auto;gap:14px;align-items:baseline;width:100%;padding:12px 2px;border-bottom:1px solid var(--rule)}
+.toc-row .n{font:900 22px/1 "Playfair Display",serif;color:var(--dim)}
+.toc-row .t{font:700 22px/1.3 "Playfair Display",serif}
+.toc-row .e{font:500 13px/1.3 Inter,system-ui,sans-serif;color:var(--soft);text-align:right;max-width:20em}
+.toc-row:hover .t,.toc-row:focus-visible .t{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:1px}
+.toc-row:hover .n{color:#fff}
+
+/* Chapter */
+.chap{max-width:700px;margin:0 auto;padding:clamp(40px,7vw,80px) 0 70px}
+.opener{text-align:center;padding-bottom:34px;margin-bottom:40px;border-bottom:1px solid #fff}
+.opener .num{font:900 clamp(80px,16vw,150px)/.9 "Playfair Display",serif;color:transparent;-webkit-text-stroke:1.5px #fff;margin:18px 0 6px}
+.opener .numw{font:700 15px Inter,system-ui,sans-serif;letter-spacing:.3em;text-transform:uppercase;margin:22px 0 10px}
+.opener h2{font:900 clamp(36px,6.4vw,60px)/1.05 "Playfair Display",serif;margin:8px 0 16px;text-wrap:balance}
+.opener .era{font:italic 400 19px/1.4 "Source Serif 4",serif;color:var(--soft);margin:0}
+.chap p{margin:0 0 1.15em}
+.chap .opening-line::first-letter{float:left;font:700 3.25em/.92 "Playfair Display",serif;padding:.06em .1em 0 0}
+.chap h3{font:700 26px/1.25 "Playfair Display",serif;margin:36px 0 10px}
+.chap h4{font:700 20px/1.3 "Playfair Display",serif;margin:30px 0 8px}
+.chap blockquote{margin:1.4em 0;padding:0 0 0 20px;border-left:3px solid #fff;font-style:italic}
+.pager{display:flex;justify-content:space-between;gap:12px;margin-top:56px;flex-wrap:wrap;border-top:1px solid #fff;padding-top:24px}
+.pager .pg{all:unset;cursor:pointer;flex:1;min-width:200px;padding:14px 16px;border:1px solid #555;font:500 16px/1.35 Inter,system-ui,sans-serif}
+.pager .pg small{display:block;font:700 12px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--soft);margin-bottom:4px}
+.pager .pg:hover{border-color:#fff;background:#111}
+.pager .pg.nx{text-align:right}
+.imglink{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin:28px 0;font:500 15px/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
+.headline{border-top:4px double #fff;border-bottom:1px solid #fff;text-align:center;padding:16px 4px;margin:6px 0 28px}
+.headline .mast{font:700 12px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;color:var(--soft)}
+.headline .hd{font:900 28px/1.1 "Playfair Display",serif;text-transform:uppercase;margin:8px 0 4px}
+.headline .dl{font:italic 16px "Source Serif 4",serif;color:var(--soft)}
+.stone{text-align:center;font:700 20px/1.6 "Playfair Display",serif;letter-spacing:.12em;margin:1.4em 0;padding:22px;border:1px solid #fff}
+table.ap{border-collapse:collapse;width:100%;font-size:17px}
+table.ap td{border-bottom:1px solid var(--rule);padding:10px 6px;vertical-align:top}
+table.ap td:first-child{width:32%;color:var(--soft);font:500 14px/1.5 Inter,system-ui,sans-serif}
+.apx h3{border-top:3px solid #fff;padding-top:14px}
+.proof{border:1px solid #fff;padding:18px 20px;margin:28px 0;font:500 16px/1.6 Inter,system-ui,sans-serif}.proof .proofh{font:700 13px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0 0 8px}.proof ul{margin:0;padding-left:1.2em}.proof li{margin:.55em 0;color:#e6e6e6}.proof a{color:#fff;overflow-wrap:anywhere}
+.notesall{font-size:17px;line-height:1.65}
+.nch{font:700 22px/1.3 "Playfair Display",serif;margin:40px 0 8px;padding-top:14px;border-top:3px solid #fff}
+.notes{padding-left:1.6em;margin:0}
+.notes li{margin:.7em 0;overflow-wrap:anywhere;color:#e6e6e6}
+.notes li::marker{font:700 14px Inter,system-ui,sans-serif;color:var(--soft)}
+.src{display:block;margin-top:4px;font:500 14px/1.5 Inter,system-ui,sans-serif;color:var(--soft)}
+.src a{color:#fff;margin-right:12px;white-space:normal}
+.src a:after{content:" \2197";color:var(--dim)}
+.src a.scan:after{content:""}
+
+/* Sections */
+.sec{padding:clamp(40px,7vw,70px) 0 70px}
+.recrow{display:grid;grid-template-columns:5.5em minmax(0,1fr);gap:18px;border-top:1px solid var(--rule);padding:22px 0}
+.recrow:first-of-type{border-top:1px solid #fff}
+.recrow .y{font:900 30px/1 "Playfair Display",serif}
+.recrow h3{font:700 24px/1.3 "Playfair Display",serif;margin:0 0 6px}
+.recrow p{margin:0 0 8px}
+.recrow .ref{font:500 14px/1.6 Inter,system-ui,sans-serif;color:var(--soft)}
+.lnk{all:unset;cursor:pointer;color:#fff;text-decoration:underline;text-decoration-color:#777;text-underline-offset:3px}
+.lnk:hover{text-decoration-color:#fff}
+.scanbtn{display:inline-block;margin-top:10px;font:700 15px/1 Inter,system-ui,sans-serif;color:#000;background:#fff;text-decoration:none;padding:12px 16px;border:1px solid #fff}
+.scanbtn:hover{background:#000;color:#fff}
+.tl{list-style:none;margin:0;padding:0;border-top:1px solid #fff}
+.tl li{display:grid;grid-template-columns:13em minmax(0,1fr);gap:18px;border-bottom:1px solid var(--rule);padding:13px 0}
+.tl b{font:700 15px/1.6 Inter,system-ui,sans-serif}
+.ppl h3.g{font:700 13px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:40px 0 0;border-top:3px solid #fff;padding-top:14px}
+.person{padding:16px 0;border-bottom:1px solid var(--rule)}
+.person b{font:700 24px/1.3 "Playfair Display",serif}
+.person span{font:500 14px Inter,system-ui,sans-serif;color:var(--soft);margin-left:10px;white-space:nowrap}
+.person p{margin:6px 0 0}
+.qs{padding-left:1.6em}.qs li{margin:.8em 0}.qs li::marker{font:900 20px "Playfair Display",serif}
+.crd{font:500 14px/1.6 Inter,system-ui,sans-serif;color:var(--soft);margin-top:30px}
+.sd h3{font:700 13px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:46px 0 0;border-top:3px solid #fff;padding-top:14px}
+.sd .intro{font:500 15px/1.6 Inter,system-ui,sans-serif;color:var(--soft);margin:8px 0 6px}
+.dl{list-style:none;margin:0;padding:0}
+.dl li{border-bottom:1px solid var(--rule);padding:14px 0}
+.dl li a{font:700 20px/1.35 "Playfair Display",serif}
+.dl li a.ext:after{content:" \2197";font:500 15px Inter,sans-serif;color:var(--dim)}
+.dl li small{display:block;font:500 14px/1.55 Inter,system-ui,sans-serif;color:var(--soft);margin-top:4px}
+.dl.plain li{padding:10px 0}.dl.plain li a{font:500 16px/1.4 Inter,system-ui,sans-serif}
+.foot{border-top:1px solid var(--rule);padding:26px 0 50px;font:500 14px Inter,system-ui,sans-serif;color:var(--dim);text-align:center}
+.foot a{color:var(--soft)}
+@media(max-width:600px){
+ body{font-size:18px}
+ .toc-row{grid-template-columns:2.4em minmax(0,1fr)}.toc-row .e{grid-column:2;text-align:left}
+ .tl li,.recrow{grid-template-columns:minmax(0,1fr);gap:4px}
+ .row{grid-template-columns:minmax(0,1fr)}
+ .top{position:static}
+ html{scroll-padding-top:10px}
+ .tab{padding:11px 8px;font-size:14px}
+ .pager .pg.nx{text-align:left}
+ .person span{display:block;margin:2px 0 0}
+}
+.hero{padding-top:clamp(20px,4vw,48px)}.hero .cover{margin:0 auto 28px;max-width:520px}.cover img{display:block;width:100%;height:auto}
+.nv{position:fixed;left:0;right:0;bottom:0;z-index:50;display:flex;justify-content:center;gap:12px;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:#000;border-top:1px solid #fff}.nv a,.nv button{flex:1;max-width:220px;text-align:center;font:600 17px/1 system-ui,sans-serif;color:#000;background:#fff;border:0;border-radius:6px;padding:13px 10px;text-decoration:none;cursor:pointer}body{padding-bottom:80px}.nv [hidden]{display:none}
+.side{display:none}
+@media(min-width:1200px){.side{display:block;position:fixed;top:0;left:0;bottom:0;width:380px;overflow-y:auto;border-right:1px solid var(--rule);background:#000;padding:18px 14px 90px;z-index:6;font:500 14px/1.35 Inter,system-ui,sans-serif}
+ body{padding-left:380px}.nv{left:380px}
+ .side h4{font:700 11px Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin:16px 0 6px}
+ .side h4:first-child{margin-top:0}
+ .side a{display:block;color:#ddd;text-decoration:none;padding:5px 6px;border-bottom:1px solid #161616}
+ .side a:hover,.side a[aria-current=true]{color:#fff;background:#151515}}
+.pg-person .fam{margin:30px 0;border-top:3px solid #fff}
+.pg-person .fam div{display:grid;grid-template-columns:11em minmax(0,1fr);gap:14px;border-bottom:1px solid var(--rule);padding:11px 0;font:500 16px/1.5 Inter,system-ui,sans-serif}
+.pg-person .fam b{color:var(--soft);font-weight:600}
+.pg-person .homes a,.pg-person .inbook a{color:#fff}
+.pg-person h3{font:700 13px Inter,system-ui,sans-serif;letter-spacing:.16em;text-transform:uppercase;border-top:3px solid #fff;padding-top:12px;margin:34px 0 10px}
+.pg-person ul{padding-left:1.1em}.pg-person li{margin:.45em 0}
+.plist a{display:block;color:#fff;text-decoration:none;padding:12px 2px;border-bottom:1px solid var(--rule)}
+.plist a span{display:block;color:var(--soft);font:500 14px Inter,system-ui,sans-serif}
+.sbox{border:1px solid var(--rule);border-left:3px solid #fff;padding:16px 20px;margin:8px 0 30px;font:400 16px/1.6 Inter,system-ui,sans-serif}.sbox h4{margin:0 0 8px;font:700 13px/1.3 Inter,system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase}.sbox p{margin:0 0 10px}.sbox .src{font-size:13px;color:var(--soft);margin:0}html.red .sbox{border-left-color:#2e6b3e}
+.extlinks{border:1px solid #fff;padding:14px 18px;margin:0 0 30px;font:500 16px/1.6 Inter,system-ui,sans-serif}
+.extlinks a{color:#fff}
+@media(max-width:600px){.pg-person .fam div{grid-template-columns:1fr;gap:2px}}
+html.red .tab[aria-current=true]{border-bottom-color:#2e6b3e;border-bottom-width:3px}
+html.red .go,html.red .scanbtn{background:#2e6b3e;border-color:#2e6b3e;color:#fff}
+html.red .lnk{text-decoration-color:#8cc29a}
+html.red .body a,html.red .pg-person .homes a,html.red .pg-person .inbook a,html.red .fam a,html.red .extlinks a,html.red .src a,html.red .imglink a{color:#fff;text-decoration-color:#8cc29a}
+html.red .chap .opening-line::first-letter{color:#2e6b3e}
+html.red .pg-person h3,html.red .rule{border-top-color:#2e6b3e!important}
+html.red .proof,html.red .extlinks{border-color:#2e6b3e}
+html.red .side a[aria-current=true]{border-left:3px solid #2e6b3e}
+html.red .side h4{color:#8cc29a}
+html.red .side a:hover{border-left:3px solid #2e6b3e}
+html.red .nv a,html.red .nv button{background:#2e6b3e;color:#fff}
+html.red .opener::after{content:"";display:block;width:60px;height:3px;background:#2e6b3e;margin:22px auto 0}
+#tab-listen{margin-left:auto;font-weight:700}
+#tab-listen[hidden]{display:none}
+.alist{list-style:none;padding:0;margin:20px 0}
+.alist li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;align-items:center;border-bottom:1px solid var(--rule);padding:14px 2px;font:500 17px/1.4 Inter,system-ui,sans-serif}
+.alist li.on{background:#140707}
+.abtn{all:unset;cursor:pointer;background:#2e6b3e;color:#fff;font:700 15px/1 Inter,system-ui,sans-serif;padding:12px 16px;border-radius:4px;white-space:nowrap}
+.abtn[disabled]{background:#333;color:#999;cursor:default}
+.abig{font-size:19px;padding:18px 26px}
+.aplayer{position:sticky;top:0;background:#000;border:1px solid #2e6b3e;padding:14px 16px;margin:18px 0;z-index:3}
+.aplayer b{display:block;font:700 13px Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#8cc29a;margin-bottom:8px}
+.aplayer audio{width:100%}
+.alisten{display:inline-block;margin:0 0 26px}
+.film{max-width:900px;margin:0 auto;padding:40px 0;border-bottom:1px solid var(--rule)}.film video{display:block;width:100%;height:auto;background:#000;margin:18px 0}.film .gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px;margin:22px 0 10px}.film .gal figure{margin:0}.film .gal img{display:block;width:100%;height:auto}.film .gal figcaption{font-size:13px;color:var(--soft);margin-top:6px}.film .credit{font-size:13px;color:var(--soft);margin:6px 0 0}
+.rec{font:600 11px/1 Inter,system-ui,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#8cc29a!important;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px;white-space:nowrap;margin-left:2px;vertical-align:1px}.rec:hover{opacity:.75}
+#side .role{color:#9a9a9a;font-weight:400}#side a.dl{display:block;padding:12px 10px!important;border-left:4px solid #1f4d3c}#side a.dl .rel{display:block;font:700 12px/1.3 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#7a2e3b}#side a.dl b{display:block;font-size:17px;margin:2px 0}#side a.dl .dt{display:block;font-size:14px;color:#4c6057}#side a.dl .br{display:block;font-size:13px;line-height:1.35;color:#4c6057;margin-top:3px}
+
+/* Home: the author's cover against the Shieldhill estate photograph. */
+.hero.estate-cover{isolation:isolate;position:relative;overflow:hidden;max-width:none;margin-inline:calc(-1 * max(4vw,18px));padding:clamp(32px,5vw,72px) clamp(20px,5vw,72px) 18px;text-align:left;background:#101411;color:#fff7e7}
+.estate-cover::before{content:"";position:absolute;z-index:-2;inset:0;background:linear-gradient(90deg,#101410 1%,rgba(16,20,16,.92) 21%,rgba(16,20,16,.48) 48%,rgba(16,20,16,.02) 78%),linear-gradient(0deg,#111510 0%,transparent 28%),url("img/shieldhill-castle.jpg") right 51% / 76% auto no-repeat}
+.estate-cover .cover-block{max-width:370px}
+.estate-cover .cover{max-width:clamp(180px,19vw,262px);margin:0 0 23px;box-shadow:2px 5px 22px #0009;outline:1px solid #a990644f}
+.estate-cover .lab{margin:0 0 5px;color:#eee1c7;letter-spacing:.12em}
+.estate-cover .covcred{margin:0;color:#e5dbc9;opacity:1}
+.estate-actions{display:flex;align-items:flex-start;flex-wrap:wrap;gap:10px 17px;margin:20px 0 0}
+.estate-actions .go{font-size:16px;padding:14px 18px}
+.estate-actions .family-link{display:block;width:fit-content;background:#151912e8;color:#fff4dd;border:1px solid #a99c79;text-decoration:none;padding:10px 12px;font:600 15px/1.4 Inter,system-ui,sans-serif}
+.estate-caption{text-align:right;margin:20px 0 0;font:500 13px/1.5 Inter,system-ui,sans-serif;color:#e3d7bc}.estate-caption a{color:inherit}
+@media(max-width:640px){.hero.estate-cover{padding:clamp(100px,32vw,160px) 20px 16px}.estate-cover::before{background:linear-gradient(0deg,#101410 3%,rgba(16,20,16,.92) 25%,rgba(16,20,16,.24) 66%,rgba(16,20,16,.05)),url("img/shieldhill-castle.jpg") center 47% / cover no-repeat}.estate-cover .cover{max-width:clamp(145px,42vw,220px);margin-bottom:16px}.estate-caption{text-align:left;margin-top:24px}}
+
+.section-bar{width:100%}.quick{display:none}
+@media(max-width:640px){.top .wrap{gap:8px}.top .brand{font-size:19px}.top .jump{font-size:14px;min-height:38px;padding:6px 8px}.quick{display:flex;align-items:center;gap:4px;flex-wrap:wrap}.quick a,.quick button{color:#f3e6c9;background:transparent;border:1px solid #554d3f;font:600 13px/1.25 Inter,system-ui,sans-serif;text-decoration:none;padding:10px 8px}.quick button{cursor:pointer}.quick button:after{content:" ▾"}.quick button[aria-expanded=true]:after{content:" ▴"}.section-bar.enhanced .tabs{display:none}.section-bar.enhanced.open .tabs{display:flex;margin:6px 0 0}.section-bar .quick a:focus-visible,.quick button:focus-visible{outline:2px solid #fff;outline-offset:2px}}
+
+source-counts{display:flex;flex-wrap:wrap;justify-content:center;gap:.45em 1.2em;margin:1em 0 .4em}
+source-counts a{color:inherit;font:500 clamp(15px,1.5vw,18px)/1.45 system-ui,sans-serif;text-decoration:underline;text-underline-offset:.22em;text-decoration-color:#99886b}
+source-counts b{color:#eed09c;font:700 1.23em Georgia,serif}
+.source-scope{font:400 15px/1.55 system-ui,sans-serif;color:#d4cfc4;margin:.55em auto 1.5em;max-width:65ch}
+@media(max-width:580px){source-counts{gap:.4em .9em}source-counts a{font-size:15px}}
+.research-counts{text-align:center;padding:8px 0;border-bottom:1px solid var(--rule)}.sd source-counts{justify-content:flex-start}.sd .source-scope{margin-left:0}
+.tabgrp{position:relative}.tabgrp>summary{list-style:none;display:block}.tabgrp>summary::-webkit-details-marker{display:none}
+.tabgrp>summary::after{content:" ▾";font-size:.8em}
+.tabmenu{position:absolute;left:0;top:100%;z-index:20;min-width:270px;background:var(--bg,#000);border:1px solid var(--rule);box-shadow:0 10px 30px #0004;padding:6px 0;display:flex;flex-direction:column}
+.tabmenu .tab{display:block;padding:12px 16px;border-bottom:0;white-space:nowrap}
+@media(max-width:760px){.tabmenu{position:static;box-shadow:none;border:0;padding-left:14px;min-width:0}}
+.launch{color:#1f4a35!important;background:#fffcf3e6;display:inline-block;margin:14px 0 0;font:700 13px/1 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;border:2px solid currentColor;padding:10px 14px}
+.hook{color:#233b37!important;text-shadow:0 0 12px #fff9ec,0 0 4px #fff9ec;font:italic 400 clamp(19px,2.3vw,24px)/1.4 "Playfair Display",Georgia,serif;max-width:560px;margin:14px 0 18px}
+.about{max-width:760px;margin:0 auto;padding:44px 0;border-bottom:1px solid var(--rule)}.about p{font:400 19px/1.65 Georgia,serif;margin:0 0 16px}
+html .top .tab.cta{color:#fff!important;font:700 clamp(17px,1.9vw,21px)/1 Inter,system-ui,sans-serif;background:#1f4a35;color:#fff;padding:16px 26px;border:2px solid #1f4a35;border-radius:6px;margin:4px 6px}
+html .top .tab.cta:hover{background:#fff;color:#1f4a35!important}.tab.cta[aria-current=true]{border-bottom-color:#1f4a35;outline:3px solid #9fc3a8}
+#tab-listen.cta{margin-left:6px}
+.audnote{color:#233b37!important;font:italic 500 16px/1.4 Inter,system-ui,sans-serif;margin:10px 0 0;text-shadow:0 0 8px #fff9ec}
+body:not(.sub) .nv{display:none!important}
+#nvs{display:none!important}
+.nv #nv-next{flex:1.5;min-height:44px;box-sizing:border-box;align-content:center}
+.book-room .pager a.pg{box-sizing:border-box;text-decoration:none}
+html .book-room .pager a.pg.nx{background:#225d50;color:#fff;border:1px solid #225d50;border-radius:6px}
+html .book-room .pager a.pg.nx small{color:inherit}
+html .book-room .pager a.pg.nx:hover{background:#164638;color:white}
+.book-room .pager a.pg:focus-visible,.book-room .nv a:focus-visible{outline:3px solid #985506;outline-offset:3px}
+@media(max-width:600px){.nv #nv-next{padding-inline:6px}.book-room .pager .pg{flex:1 1 100%;min-width:0}}
+@media print{.pager,#nv{display:none!important}}
+.tabmenu .mhead{margin:10px 16px 2px;font:700 11px/1.2 Inter,system-ui,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#4c6057}
+.tabmenu .mhead:first-child{margin-top:4px}
+.explore .tabmenu{max-height:75vh;overflow:auto}
+@media(min-width:761px){.explore .tabmenu{left:auto;right:0}}
+.tabmenu{max-width:calc(100vw - 24px)}
+.homemore{max-width:900px;margin:0 auto;padding:8px 0 40px}
+.homemore details{border-top:1px solid var(--rule)}
+.homemore details:last-child{border-bottom:1px solid var(--rule)}
+.homemore summary{cursor:pointer;list-style:none;font:700 clamp(22px,3vw,28px)/1.2 "Playfair Display",Georgia,serif;padding:18px 4px}
+.homemore summary::-webkit-details-marker{display:none}
+.homemore summary::after{content:" ▾";font-size:.7em}
+.homemore details[open] summary::after{content:" ▴"}
+.homemore .film,.homemore .about,.homemore .research-counts,.homemore .beside{border:0;padding-top:0}
+.toc .part h3{margin:0}
+.toc-row .e{font-size:21px!important;line-height:1.35!important;color:#1d2f2a!important}
+.toc-row .n.lbl{font:700 12px/1.2 Inter,system-ui,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+@media(max-width:760px){.estate-cover{align-items:flex-start!important;display:flex!important;flex-direction:column;padding:28px 18px 16px!important}.estate-copy{width:100%!important;max-width:none!important;order:1}.estate-jacket{order:2;width:150px!important;margin:20px 0 0!important;position:static!important;transform:none!important}.estate-caption{order:3}.estate-title{font-size:44px!important}.hook{max-width:none!important;width:100%}.estate-copy,.estate-copy *{text-align:left!important}.estate-place,.estate-actions{justify-content:flex-start!important;margin-left:0!important}.estate-jacket{width:120px!important}.estate-copy>*{text-shadow:0 0 10px #fff9ec,0 0 3px #fff9ec}.estate-actions .go,.estate-actions .go *{text-shadow:none!important}}
+.wx{box-sizing:border-box;max-width:100%;margin:28px 0!important;border:1px solid var(--rule);padding:14px;background:#fffdf7}.wx img{display:block;width:100%!important;max-width:100%!important;height:auto}.wx figcaption{font:500 15px/1.5 Inter,system-ui,sans-serif;margin-top:10px}.wx h4{margin:0 0 10px}
+html .top summary.tab.cta{display:block}
+.tabgrp.explore{align-self:center}
+@media(min-width:761px){html #section-tabs{display:grid!important;grid-template-columns:repeat(2,1fr);gap:8px;margin:6px 0 0!important;width:100%}
+html #section-tabs>.tab.cta,html #section-tabs summary.tab.cta{width:100%;height:100%;margin:0!important;display:flex;align-items:center;justify-content:center;text-align:center;font-size:18px!important;line-height:1.2!important;padding:14px 8px!important;box-sizing:border-box;min-height:58px}
+html #section-tabs .tabgrp{width:100%;align-self:stretch!important}html #section-tabs .tabgrp>summary.tab.cta{min-height:75px}html #section-tabs>.tab.cta{min-height:75px}html #section-tabs .tab.cta[aria-current=true]{background:#1f4a35!important;color:#fff!important;outline:3px solid #9fc3a8;outline-offset:2px;border-color:#1f4a35!important}}
+@media(min-width:1200px){html .side{font:500 22px/1.35 Inter,system-ui,sans-serif!important;padding:22px 18px 110px!important;color:#1d2f2a}
+html .side h4{font:700 14px/1.3 Inter,system-ui,sans-serif!important;letter-spacing:.1em!important;margin:22px 0 8px!important}
+html .side a{padding:14px 10px!important;color:#14352b!important}
+html #side .role{color:#4c6057!important;display:block;font-size:16px}}
+@media(min-width:761px){.mobonly{display:none!important}}
+.byline{font:500 20px/1.3 Georgia,serif;color:#233b37!important;margin:6px 0 4px}
+.toc-row .n,.toc-row .n.lbl{color:#1f4a35!important}
+html article.chap .body p,html article.chap .body li{font-size:26px!important;line-height:1.7!important;color:#14261f!important}
+@media(max-width:760px){html article.chap .body p,html article.chap .body li{font-size:22px!important}}
+html article.chap .body .sbox,html article.chap .body .sbox li{font-size:19px!important}
+html article.chap .opener h2,html article.chap .opener h1{font-size:clamp(34px,5vw,48px)!important}
+html article.chap .numw{font-size:18px!important;color:#1f4a35!important}
+html .alist li{padding:18px 4px!important;gap:16px}
+html .alist li span{font:500 24px/1.35 Inter,system-ui,sans-serif!important;color:#14261f!important}
+html .alist .abtn{font-size:22px!important;padding:14px 30px!important;min-width:110px}
+html .abtn.abig{font-size:24px!important;padding:18px 28px!important}
+html #listen-lede,html .sec .lede{font-size:20px!important}
+html #anow{font-size:22px}html #aud{width:100%;height:56px}
+html .toc-row .t{font-size:26px!important}
+html .toc-row .n{font-size:24px!important}
+@media(max-width:1100px){html .toc-row{flex-wrap:wrap}html .toc-row .e{flex-basis:100%;text-align:left!important;padding-left:var(--tocpad,0)}}
+@media(min-width:761px){html .estate-jacket{width:clamp(240px,24vw,340px)!important;max-width:none!important}html .estate-jacket img{width:100%!important;height:auto!important}}
+html .estate-jacket,html .estate-jacket *{transform:none!important;rotate:none!important}
+
+</style><style media="screen" id="reading-paper">
+html{color-scheme:light;background:#fff9ec}
+body.scotland{--ink:#233b37;--soft:#4c6057;--dim:#58665c;--muted:#4d6058;--rule:#becbbc;--bg:#fff9ec;--paper:#fff9ec;--panel:#edf2e7;--text:#233b37;color:#233b37;background:#f3f1e4}
+body.scotland main{background:#fff9ec;color:#233b37}
+.scotland main :is(h1,h2,h3,h4){color:#234d50}
+.scotland main :is(a,.b,.lnk){color:#205875}
+.scotland main :is(.lab,.tag,.eyebrow,.part .lab){color:#754d73}
+.scotland main :is(.small,.src,.meta,.cap,.note,.note2,small,figcaption){color:#495e56}
+.scotland main :is(pre,blockquote,th){color:#263f37;background:#edf2e6}
+.scotland .side,.scotland .top,.scotland .nv{background:#edf2e6;color:#233b37}
+.scotland .side a,.scotland .top a{color:#215544}
+.scotland :focus-visible{outline:3px solid #855573;outline-offset:3px}
+</style><link rel="stylesheet" href="/the-names-he-carried/design/douglas.css?v=chapter-type-4" media="screen, print"><link rel="stylesheet" href="/the-names-he-carried/design/share.css"><script defer src="/the-names-he-carried/design/share.js?v=message-image"></script><style>
+.chap .body details{margin:1rem 0}.chap .body summary{cursor:pointer;font-weight:600}
+.chap .body .plate img{display:block;max-width:100%;height:auto;margin:1rem auto}
+.chap .body .plate figure{margin:1rem 0}.chap .body details li{margin:.5rem 0}
+.book-index dt{font-weight:700;margin:1em 0 .15em}.book-index dd{margin:0 0 .6em}
+@media(min-width:1200px){body{padding-right:380px}.nv{right:380px}}.hero.cbook{padding:clamp(28px,5vw,64px) 0 10px;text-align:left}.hero.cbook .ctitle{font:900 clamp(56px,11vw,120px)/.95 "Playfair Display",Georgia,serif;margin:6px 0 10px;color:#1b3550}.hero.cbook .hook{font-size:clamp(20px,2.4vw,24px);max-width:760px}.hero.cbook .byline{font:italic 400 22px "Playfair Display",Georgia,serif;margin:0 0 18px}.srcnotes{margin-top:34px;border-top:2px solid #becbbc;padding-top:10px}.srcnotes li{margin:.5em 0}.srcnotes small{display:block;opacity:.85}</style><style>details.ddwork{margin:8px 0 14px}details.ddwork>summary{cursor:pointer;font-weight:700;padding:10px 14px;border:1px solid currentColor;border-radius:6px;display:inline-block}details.ddwork[open]>summary{margin-bottom:6px}</style><style id="shieldhill-research-links">.profile-research{padding:20px 22px;border:1px solid #98b39d;border-left:5px solid #6c5078;border-radius:5px;background:#edf3e8;margin:24px 0;color:#284b3c}.profile-research h3{margin:0 0 10px!important;font-size:24px}.profile-research p{font:400 17px/1.55 system-ui,sans-serif}.profile-research .lab{font-size:13px;margin:0 0 8px;color:#67476d}.profile-research a{color:#205772}.profile-research nav{display:flex;gap:10px 18px;flex-wrap:wrap;font:650 15px/1.5 system-ui,sans-serif}.profile-research nav a{padding:5px 0}</style><style id="mirror-right">
+#rside .role{color:#9a9a9a;font-weight:400}#rside a.dl{display:block;padding:12px 10px!important;border-left:4px solid #1f4d3c}#rside a.dl .rel{display:block;font:700 12px/1.3 Inter,system-ui,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#7a2e3b}#rside a.dl b{display:block;font-size:17px;margin:2px 0}#rside a.dl .dt{display:block;font-size:14px;color:#4c6057}#rside a.dl .br{display:block;font-size:13px;line-height:1.35;color:#4c6057;margin-top:3px}
+html #rside .role{color:#4c6057!important;display:block;font-size:16px}#rside h4{color:rgb(56,94,75)!important}#rside a.dl{border-left:4px solid rgb(187,202,190)!important;border-bottom:1px solid rgb(187,202,190)!important}#rside a.dl:hover,#rside a.dl[aria-current=true]{border-left-color:#1f4d3c!important}@media(min-width:1200px){#rside{left:auto!important;right:0!important;border-right:0!important;border-left:1px solid var(--rule)}}</style></head><body class="scotland book-room">
+<nav class="side" id="side" aria-label="His side of the family"></nav><nav class="side" id="rside" aria-label="Her side of the family"></nav><header class="top"><div class="wrap">
+<a class="brand" href="#" data-go="start">Nan: The Constance Darcy Douglas Story</a>
+<select class="jump" id="jump" aria-label="Go to chapter"></select>
+<div class="section-bar"><div class="quick"><button type="button" id="sections-toggle" aria-controls="section-tabs" aria-expanded="false">All sections</button></div>
+<nav class="tabs" id="section-tabs" aria-label="Sections"><details class="tabgrp explore"><summary class="tab cta">The Book</summary><div class="tabmenu"><button class="tab" data-go="start">Home</button><a class="tab" href="#chapter-1" data-go="chapter-1">Read the book</a><button class="tab" data-go="contents">Contents</button><p class="mhead">People and Places</p><button class="tab" data-go="people">People</button><button class="tab" data-go="tree">Family tree</button><button class="tab" data-go="timeline">Timeline</button><button class="tab" data-go="places">Places</button><p class="mhead">Related</p><a class="tab" href="/the-names-he-carried/">The Names He Carried (Laurence)</a></div></details><a class="tab cta" href="archive/">The Research</a></nav></div></div></header>
+<nav class="nv" id="nv" aria-label="Reader controls"><button type="button" id="nvb">← Back</button><button type="button" id="nvh" data-go="start">Home</button><button type="button" id="nvs" data-book-share aria-haspopup="dialog">Share</button><a id="nv-next" rel="next" hidden></a></nav><style>#publisher{max-width:760px;margin:10px auto 0;padding:0 16px;font-size:18px;line-height:1.55}#publisher>summary{cursor:pointer;font-weight:800;font-size:21px;padding:18px 18px;background:#fff;color:#1f3d2e;border:3px solid #1f3d2e;border-radius:10px;list-style:none;text-align:center;letter-spacing:.02em;box-shadow:0 0 0 4px #fff,0 0 18px 8px rgba(31,61,46,.35);animation:pubglow 20s ease-in-out infinite}#publisher>summary::-webkit-details-marker{display:none}#publisher>summary:hover{background:#f4fff8;box-shadow:0 0 0 4px #fff,0 0 30px 14px rgba(31,61,46,.6)}@keyframes pubglow{0%,90%,100%{box-shadow:0 0 0 4px #fff,0 0 14px 6px rgba(31,61,46,.30);filter:none}94%{box-shadow:0 0 0 4px #fff,0 0 34px 16px rgba(255,255,255,.95),0 0 60px 26px rgba(31,61,46,.45);filter:brightness(1.08)}}@media (prefers-reduced-motion:reduce){#publisher>summary,#publisher .pay{animation:none}}@media(max-width:760px){#publisher{margin:8px auto 0}#publisher>summary{display:inline-block;font-size:16px;padding:8px 14px;border-width:2px;border-radius:8px;letter-spacing:0;box-shadow:none}#publisher>summary:hover{box-shadow:none}#publisher[open]>summary{margin-bottom:6px}}#publisher h2{font-size:23px;margin:24px 0 8px}#publisher .cards{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 6px}#publisher .cards span{font:700 13px/1 system-ui,sans-serif;padding:6px 9px;border:1px solid #9aa7a0;border-radius:4px;background:#fff;color:#1f3d2e;letter-spacing:.03em}#authorinfo{max-width:760px;margin:30px auto 10px;padding:0 16px;font-size:18px;line-height:1.55;border-top:1px solid var(--line,#ccc)}#authorinfo h2{font-size:23px;margin:24px 0 8px}#authorinfo details.ddsec,.authorwork details.ddsec{border-top:1px solid var(--line,#ccc);padding:14px 0}#authorinfo details.ddsec>summary,.authorwork details.ddsec>summary{cursor:pointer;font-weight:700;font-size:22px;list-style:none}#authorinfo details.ddsec>summary::-webkit-details-marker,.authorwork details.ddsec>summary::-webkit-details-marker{display:none}#publisher h2#support{display:none}@keyframes donglow{0%,90%,100%{filter:none;box-shadow:none}94%{filter:brightness(1.35);box-shadow:0 0 14px 4px rgba(255,80,80,.75),0 0 30px 10px rgba(255,80,80,.35)}}#publisher .pay,.authorwork .pay{animation:donglow 20s ease-in-out infinite;display:inline-block;background:#E10600;color:#fff;text-decoration:none;font-weight:700;padding:12px 22px;border-radius:6px;margin:4px 8px 4px 0}#publisher .small{font-size:15px;opacity:.8}#publisher li{margin:4px 0}</style><main class="wrap" id="view"><p style="text-align:center;margin:90px 0">Opening the book…</p></main>
+<section id="authorinfo" class="wrap"><p>Contact: <a href="mailto:publisher@islandnewsmedia.com">publisher@islandnewsmedia.com</a></p></section>
+<footer class="foot"><div class="wrap"><p style="margin:0">Nan: The Constance Darcy Douglas Story · by Doug Garceau · <a href="/">douggarceau.com</a></p></div></footer>
+<script>document.documentElement.classList.add('red');
+{
+ const bar=document.querySelector('.section-bar');
+ const toggle=document.getElementById('sections-toggle');
+ const setOpen=open=>{bar.classList.toggle('open',open);toggle.setAttribute('aria-expanded',String(open))};
+ bar.classList.add('enhanced');
+ toggle.addEventListener('click',()=>setOpen(toggle.getAttribute('aria-expanded')!=='true'));
+ bar.addEventListener('click',e=>{if(e.target.closest('.tab'))setOpen(false)});
+ bar.addEventListener('keydown',e=>{if(e.key==='Escape' && bar.classList.contains('open')){setOpen(false);toggle.focus()}});
+}
+
+
+{
+let chapterSourceNotes=false;let PP=[];let CUR=0,CH=[],C=null,S={sources:[],scans:{},pictures:[]},last=0,NOTE={},BIB={},REC={};
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const jump=$('#jump');
+try{last=+localStorage.getItem('cds-last')||0}catch(e){}
+const isCh=c=>/^Chapter/.test(c.label);
+const num=c=>isCh(c)?c.label.replace('Chapter ',''):'';
+const ext=(u,t,cls='')=>`<a class="${cls}" href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`;
+function index(){
+ S.sources.forEach(s=>{(s.notes||[]).forEach(i=>(NOTE[i]=NOTE[i]||[]).push(['src',s]));(s.bib||[]).forEach(i=>(BIB[i]=BIB[i]||[]).push(['src',s]))});
+ Object.values(S.scans).forEach(k=>{(k.notes||[]).forEach(i=>(NOTE[i]=NOTE[i]||[]).unshift(['scan',k]));(k.bib||[]).forEach(i=>(BIB[i]=BIB[i]||[]).unshift(['scan',k]));if(k.record!=null)REC[k.record]=k});
+}
+const linkFor=([t,x])=>t==='scan'?`<a class="scan" href="${esc(x.page||x.file)}" target="_blank" rel="noopener">Open the document</a>`:ext(x.url,x.title);
+
+function route(){return `<section class="route"><p class="lab">Places in her life</p><div class="stops">${C.journey.map(([p,y,w])=>`<div class="stop"><i></i><b>${esc(p)}</b><span>${y} · ${esc(w)}</span></div>`).join('')}</div></section>`}
+function home(){return `<section class="hero cbook"><p class="lab">The Constance Darcy Douglas Story</p><h1 class="ctitle">Nan</h1><p class="byline">By her grandson</p><p class="hook">A printer’s daughter from Providence, a hairdresser on Westminster Street, a nurse for the rest of her working life. Her grandmother came down from Quebec in 1899; she was buried beside her in 1994.</p><div class="estate-actions"><a class="go" href="#chapter-1" data-go="chapter-1">Read the book</a><a class="go" href="archive/">The Research</a></div></section>`+contents()+`<div class="homemore"><details><summary>About the book</summary><section class="about"><p>Constance Eugenie Darcy was born in Providence in 1912. Her father set type for the newspapers; her mother came from Sutton, Quebec; her grandmother was a nurse. She married Laurence Brown Douglas in 1939 and followed him to San Francisco and Pittsburgh before they came home to Rhode Island.</p><p>Every line of this book comes from a record: birth and marriage registers, census pages, city directories, court papers and cemetery books. The records are all under The Research, each with its own page.</p></section></details><details><summary>Beside the book</summary><section class="beside"><ul class="rows">${[['timeline','Timeline','Her life, date by date'],['places','Places','Every address the records give her'],['people','People','Her family'],['tree','Family tree','Four generations']].map(([g,t,d])=>`<li><button class="row" data-go="${g}"><b>${t}</b><span>${d}</span></button></li>`).join('')}</ul></section></details></div>${route()}`}
+function contents(){let h='<section class="toc" id="toc"><h2 class="big">Contents</h2><p class="lede">Every chapter, in order. Click any title to open it.</p>',p=null;
+ for(const c of CH){const pt=c.part||'';if(pt!==p){p=pt;h+=''}
+  h+=`<a class="toc-row" href="#chapter-${c.n}" data-go="chapter-${c.n}"><span class="n">${num(c)}</span><span class="t">${esc(c.title)}</span><span class="e">${esc(c.era)}</span></a>`}
+ return h+'</section>'}
+function clean(html){
+ // No pictures on the pages: each figure becomes a plain link line, keeping its caption.
+ const d=document.createElement('div');d.innerHTML=html;
+ d.querySelectorAll('figure:not(.keep)').forEach(f=>{const im=f.querySelector('img'),cap=f.querySelector('figcaption');const p=document.createElement('p');p.className='imglink';
+  if(im){const a=document.createElement('a');a.href=im.getAttribute('src');a.target='_blank';a.rel='noopener';a.textContent=cap?cap.textContent:(im.alt||'Open the picture');p.append(a)}else if(cap)p.textContent=cap.textContent;f.replaceWith(p)});
+ d.querySelectorAll('img:not(.keep)').forEach(im=>{const a=document.createElement('a');a.href=im.getAttribute('src');a.target='_blank';a.rel='noopener';a.textContent=im.alt||'Open the picture';im.replaceWith(a)});
+ return d}
+const RECL=[];
+function chapter(n){const c=CH[n-1];if(c&&!c.html)return `<section class="sec"><h2 class="big">${esc(c.title)}</h2><p class="lede">This chapter is not available to read yet. The book is coming soon to Kindle and Amazon.</p><p><button class="lnk" data-go="contents">Go to the contents</button></p></section>`;if(!c)return `<section class="sec"><h2 class="big">That chapter is not in this edition</h2><p><button class="lnk" data-go="contents">Go to the contents</button></p></section>`;
+ try{localStorage.setItem('cds-last',n)}catch(e){} last=n; CUR=n;
+ const pv=CH[n-2],nx=CH[n],d=clean(c.html);
+ if(!chapterSourceNotes&&c.title==='Notes'){d.querySelectorAll('.notes li').forEach((li,i)=>{const L=NOTE[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Source: '+L.map(linkFor).join('');li.append(s)}})}
+ if(!chapterSourceNotes&&c.title==='Bibliography'){d.querySelectorAll('.apx > p:not(.lede)').forEach((p,i)=>{const L=BIB[i];if(L){const s=document.createElement('span');s.className='src';s.innerHTML='Link: '+L.map(linkFor).join('');p.append(s)}})}
+ for(const [title,t,href] of (chapterSourceNotes?[]:RECL)){if(title!==c.title)continue;const w=document.createTreeWalker(d,NodeFilter.SHOW_TEXT);let nd;while(nd=w.nextNode()){const i=nd.data.indexOf(t);if(i>-1){const af=nd.splitText(i+t.length);const a=document.createElement('a');a.className='rec';a.href=href;a.textContent='see the record';a.title='Open the original record';af.before(document.createTextNode(' '),a);break}}}
+ const firstLine=d.querySelector(':scope > p:not(.imglink)');
+ if(firstLine)firstLine.classList.add('opening-line');
+ const top=isCh(c)?`<p class="numw lab">${esc(c.part)}</p><p class="lab">${esc(c.label)}</p>`:`<p class="numw lab">${esc(c.part||c.label)}</p>${c.part&&c.part!==c.label?`<p class="lab">${esc(c.label)}</p>`:''}`;
+ const ac=AU.items.find(x=>x.n===n);const alink='';
+ const raid=!chapterSourceNotes&&/Fire Over Edinburgh/.test(c.title)?`<div class="extlinks"><b>Read more about the raid</b><br><a href="https://www.bbc.com/news/uk-scotland-25978256" target="_blank" rel="noopener">BBC News: photographs of the 1916 Zeppelin raid on Edinburgh</a><br><a href="https://historynet.com/ww1-edinburgh-castle-zeppelin-attack/" target="_blank" rel="noopener">HistoryNet: When a WWI German Zeppelin Tried to Bomb Edinburgh Castle — and Missed</a></div>`:'';
+ const wey=!chapterSourceNotes&&c.title==='Weybosset Street'?`<figure style="margin:0 0 26px"><img src="img/weybosset-1933.jpg" alt="Weybosset Street at night, 1933" width="1080" height="1224" style="display:block;width:100%;height:auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px">Weybosset Street at night, 1933, four years before Laurence went to work there. The Loew's State Theatre sign is at the right. Photograph by Harry Scheer.</figcaption></figure><figure style="margin:0 0 26px"><img src="img/outlet-company.jpg" alt="The Outlet Company sign on Weybosset Street" width="900" height="1306" loading="lazy" style="display:block;width:100%;max-width:560px;height:auto;margin:0 auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px">The Outlet Company, 176 Weybosset Street, across the street from Laurence\'s workplace at number 165. This photograph was taken some years after he worked there. Source: Providence Journal.</figcaption></figure><figure style="margin:0 0 26px"><img src="img/weybosset-postcard.jpg" alt="Weybosset Street from Dorrance Street, early postcard" width="1400" height="898" loading="lazy" style="display:block;width:100%;height:auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px">Weybosset Street from Dorrance Street, on a postcard from the early 1900s, a generation before Laurence came. The Outlet\'s sign hangs at the left.</figcaption></figure><div class="extlinks"><b>See more of the street</b><br><a href="https://www.consumergrouch.com/?p=9097" target="_blank" rel="noopener">Consumer Grouch: Vintage Providence, a photographic journey on Weybosset Street</a></div>`:'';
+ const bond=!chapterSourceNotes&&c.title==='San Francisco'?`<figure style="margin:0 0 26px"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bond_Waterfall_sign_day.jpg?width=1200" alt="Bond Clothes waterfall sign in Times Square" width="1280" height="816" loading="lazy" style="display:block;width:100%;height:auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px">Bond Clothes, Laurence\'s employer in San Francisco and Pittsburgh, at its Times Square store in New York. This postcard is from 1948, a few years after he left the company. The Tichnor Brothers Collection, Boston Public Library.</figcaption></figure>`:'';
+ return `<article class="chap"><header class="opener">${top}<h2>${esc(c.title)}</h2>${c.era?`<p class="era">${esc(c.era)}</p>`:''}</header>${alink}${raid}${wey}${bond}<div class="body">${d.innerHTML}</div>${c.evidenceNote?`<aside class="evidence-note"><h3>What the records establish</h3><p>${esc(c.evidenceNote.text)}</p>${c.evidenceNote.links.map(([href,label])=>ext(href,label)).join(" · ")}</aside>`:""}
+ <nav class="pager" aria-label="Reading order">${pv?`<button class="pg" data-go="chapter-${pv.n}"><small>Previous</small>${esc(pv.title)}</button>`:'<button class="pg" data-go="start"><small>Back</small>Home</button>'}${nx?`<a class="pg nx" rel="next" href="#chapter-${nx.n}"><small>${isCh(nx)?'Next chapter':nx.label==='Epilogue'?'Epilogue':'Next section'}</small> ${esc(nx.title)} <span aria-hidden="true">→</span></a>`:'<button class="pg nx" data-go="sources"><small>Next</small>Sources and documents</button>'}</nav></article>`}
+function records(){return `<section class="sec"><h2 class="big">The Records</h2><p class="lede">Every record behind the story, oldest first. Each button opens the record on its own page: the original where a picture is kept, what it says, and where it fits in the book.</p>
+${C.records.map((r,i)=>{const k=REC[i];return `<div class="recrow"><div class="y">${r.year}</div><div><h3>${esc(r.title)}</h3><p>${esc(r.text)}</p><div class="ref">${esc(r.ref)}${r.ch?` · <button class="lnk" data-go="chapter-${r.ch}">Read it in ${esc(r.chl)}</button>`:''}</div>${k?`<a class="scanbtn" href="${esc(k.page||k.file)}" target="_blank" rel="noopener">Open the document</a>`:''}</div></div>`}).join('')}
+<p class="crd">Each record has its own page with a picture of the original where one is kept, and what it says.</p></section>`}
+function list(title,lede,rows){return `<section class="sec"><h2 class="big">${title}</h2><p class="lede">${lede}</p><ul class="tl">${rows.map(r=>`<li><b>${esc(r[0])}</b><span>${esc(r[1])}</span></li>`).join('')}</ul></section>`}
+function people(){let h='<section class="sec"><h2 class="big">People</h2><p class="lede">Everyone in her story, with who they were, how they fit in, and their family line. Living family members are not included.</p>',g='';
+ for(const p of PP){if(p.slug==='shieldhill')continue;if(p.group!==g){if(g)h+='</div>';g=p.group;h+=`<h3 class="g">${esc(g)}</h3><div class="plist">`}h+=`<a href="#person-${p.slug}" data-go="person-${p.slug}">${esc(p.name)}<span>${esc(p.dates)}</span></a>`}
+ return h+'</div></section>'}
+function person(slug){const p=PP.find(x=>x.slug===slug);if(!p)return people();
+ const fam=p.lineage.map(l=>`<div><b>${esc(l.rel)}</b><span>${l.slug?`<a href="#person-${l.slug}" data-go="person-${l.slug}">${esc(l.who)}</a>`:esc(l.who)}</span></div>`).join('');
+ const homes=(p.homes.length?`<h3>Where they lived, from above</h3><ul class="homes">${p.homes.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a> <small style="color:var(--dim)">(Google Earth)</small></li>`).join('')}</ul>`:'')+(p.papers&&p.papers.length?`<h3>In the newspapers</h3><ul class="homes">${p.papers.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a> <small style="color:var(--dim)">(British Newspaper Archive)</small></li>`).join('')}</ul>`:'');
+ const inb=p.ch.filter(n=>CH[n-1]).map(n=>`<li><a href="#chapter-${n}" data-go="chapter-${n}">${esc(isCh(CH[n-1])?num(CH[n-1])+'. '+CH[n-1].title:CH[n-1].title)}</a></li>`).join('');
+ return `<article class="sec pg-person" style="max-width:760px;margin:0 auto"><p class="lab">${esc(p.group)}</p><h2 class="big">${esc(p.name)}</h2>${p.dates?`<p class="lede">${esc(p.dates)}</p>`:''}${(p.photo?`<figure style="margin:22px 0"><img src="${esc(p.photo.src)}" alt="${esc(p.photo.alt)}" style="display:block;max-width:100%;max-height:560px;margin:0 auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px;text-align:center">${p.photo.cap}</figcaption></figure>`:'')+(p.photos||[]).map(q=>`<figure style="margin:22px 0"><img src="${esc(q.src)}" alt="${esc(q.alt)}" style="display:block;max-width:100%;max-height:560px;margin:0 auto"><figcaption style="font-size:13px;color:var(--soft);margin-top:8px;text-align:center">${q.cap}</figcaption></figure>`).join('')}
+ ${p.research?`<aside class="profile-research" aria-label="Related Shieldhill research"><p class="lab">Explore the research</p><h3><a href="${esc(p.research.url)}">${esc(p.research.title)}</a></h3><p>${esc(p.research.text)}</p><nav aria-label="Shieldhill research sections">${p.research.links.map(x=>`<a href="${esc(x.url)}">${esc(x.label)}</a>`).join('')}</nav></aside>`:''}<div class="body">${p.story.map(x=>`<p>${esc(x)}</p>`).join('')}</div><h3>${esc(p.connections_title||(p.slug==='shieldhill'?'People and places on the estate':'Family line'))}</h3><div class="fam" style="border-top:0;margin-top:0">${fam}</div>${p.map?`<h3>Map of the estate</h3><a href="${esc(p.map.img)}" target="_blank" rel="noopener"><img src="${esc(p.map.img)}" alt="Rough map of Shieldhill and the cottages at Quothquan" style="width:100%;height:auto;border:1px solid #333"></a><p style="color:var(--soft);font:500 14px/1.5 Inter,system-ui,sans-serif">${esc(p.map.note)}</p><div class="fam" style="border-top:0">${p.map.dist.map(d=>`<div><b>${esc(d[0])}</b><span>${esc(d[1])}</span></div>`).join('')}</div>`:''}${homes}${(p.links||[]).length?`<h3>Read more</h3><ul class="homes">${p.links.map(x=>`<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.label)}</a></li>`).join('')}</ul>`:''}${inb?`<h3>In the book</h3><ul class="inbook">${inb}</ul>`:''}
+ <p style="margin-top:14px"><button class="lnk" data-go="people">All the people in the book</button></p></article>`}
+function side(){const O=[["Laurence","laurence-brown-douglas"],["His mother","agnes-mcgarth-brown"],["His grandfather","george-brown"],["His grandmother","christina-henderson-brown"],["His great-grandfather","william-brown"],["His great-grandmother","agnes-mcgarth"],["His great-grandmother","jane-henderson"],["His great-great-grandfather","tweedie-mcgarth"],["His great-great-grandmother","jean-goldie"]];const by={};(window.LP||[]).forEach(p=>by[p.slug]=p);$('#side').innerHTML='<h4>His side of the family</h4>'+O.map(([lab,slug])=>{const p=by[slug];if(!p)return '';return `<a class="dl" href="/the-names-he-carried/#person-${slug}"><span class="rel">${esc(lab)}</span><b>${esc(p.name)}</b><span class="dt">${esc(p.dates||'')}</span>${p.brief?`<span class="br">${esc(p.brief)}</span>`:''}</a>`}).join('')}
+function rside(){const O=[["Constance","constance-eugenie-darcy"],["Her father","albert-blake-darcy"],["Her mother","eugenie-emma-delaire"],["Her brother","albert-norman-darcy"],["Her grandfather","john-francis-darcy"],["Her grandmother","margaret-jane-nodder"],["Her grandmother","julia-delaire"],["Her grandfather","thimothee-deslieres"],["Her great-grandparents","edouard-deslieres"]];const by={};PP.forEach(p=>by[p.slug]=p);$('#rside').innerHTML='<h4>Her side of the family</h4>'+O.map(([lab,slug])=>{const p=by[slug];if(!p)return '';return `<a class="dl" href="#person-${slug}" data-go="person-${slug}"><span class="rel">${esc(lab)}</span><b>${esc(p.name)}</b><span class="dt">${esc(p.dates||'')}</span>${p.brief?`<span class="br">${esc(p.brief)}</span>`:''}</a>`}).join('')}
+function places(){const q=a=>'https://earth.google.com/web/search/'+encodeURIComponent(a.replace(/ \(.*$/,'').replace(/^Royal Maternity Hospital, /,'').replace(/;.*$/,''));
+ return `<section class="sec"><h2 class="big">Places</h2><p class="lede">Addresses where the records place her. Each link opens the place from above in Google Earth.</p><ul class="tl">${C.places.map(r=>`<li><b>${esc(r[0])}</b><span><a href="${esc(q(r[1]))}" target="_blank" rel="noopener">${esc(r[1])}</a></span></li>`).join('')}</ul></section>`}
+function sources(){return records()}
+
+let AU={full:null,items:[]},APREV=/[?&]audio=preview/.test(location.search);
+function listen(){const P=APREV?AP.items:AU.items, have=new Set(AU.items.map(x=>x.file));
+ const rows=P.map(x=>`<li data-f="${esc(x.file)}"><span>${esc(x.title)}</span>${have.has(x.file)?`<button class="abtn" data-play="${esc(x.file)}">Play</button>`:'<button class="abtn" disabled>Not recorded yet</button>'}</li>`).join('');
+ return `<section class="sec" style="max-width:820px;margin:0 auto"><h2 class="big">Listen to the audiobook</h2><p class="lede">There are ${AU.items.length} recordings available. Choose a recording, or play the available recordings in order.</p>
+ <p><button class="abtn abig" data-playall="1"${AU.items.length?'':' disabled'}>Play all available recordings</button>${AU.full?` <a class="lnk" style="margin-left:14px" href="${esc(AU.full)}" download>Download the whole book as one MP3</a>`:''}</p>
+ <div class="aplayer" id="aplayer" hidden><b id="anow">Now playing</b><audio id="aud" controls preload="none"></audio></div><ul class="alist">${rows}</ul></section>`}
+let AQ=[],AI=0,pendingChapter=null;
+function aplay(list,i){const a=$('#aud');if(!a)return;AQ=list;AI=i;const x=list[i];$('#aplayer').hidden=false;$('#anow').textContent='Now playing: '+x.title;a.src=x.file;
+ try{const t=+localStorage.getItem('cds-a-'+x.file)||0;if(t)a.currentTime=t}catch(e){}
+ a.play().catch(()=>{});document.querySelectorAll('.alist li').forEach(li=>li.classList.toggle('on',li.dataset.f===x.file))}
+document.addEventListener('click',e=>{const p=e.target.closest('[data-play]'),all=e.target.closest('[data-playall]');
+ if(p){const i=AU.items.findIndex(x=>x.file===p.dataset.play);aplay(AU.items,i)}else if(all&&AU.items.length){aplay(AU.items,0)}});
+document.addEventListener('timeupdate',e=>{if(e.target.id==='aud'&&AQ[AI]){try{localStorage.setItem('cds-a-'+AQ[AI].file,Math.floor(e.target.currentTime))}catch(_){}}},true);
+document.addEventListener('ended',e=>{if(e.target.id==='aud'&&AQ[AI]){try{localStorage.removeItem('cds-a-'+AQ[AI].file)}catch(_){}if(AI+1<AQ.length)aplay(AQ,AI+1)}},true);
+let AP={items:[]};
+function tree(){return `<section class="sec"><h2 class="big">Family tree</h2><p class="lede">Four generations, from the records: Constance, her parents, her grandparents and her great-grandparents, with Laurence and their daughters. On a phone, swipe sideways to see the whole tree. Everyone else is on the <a class="lnk" href="#people" data-go="people">People</a> page.</p><p><a class="lnk" href="img/family-tree.svg" target="_blank" rel="noopener">Open the tree full size</a></p><div style="overflow-x:auto;border:1px solid #c9c2ae;background:#fff"><img src="img/family-tree.svg" alt="Family tree of Constance Eugenie Darcy Douglas" style="display:block;width:100%;min-width:900px;height:auto"></div></section>`}
+function show(){const h=location.hash.slice(1);let html;const m=h.match(/^chapter-(\d+)$/);
+ const pm=h.match(/^person-(.+)$/);
+ if(m){html=chapter(+m[1]);jump.value=m[1]}else if(pm){jump.value='';html=person(pm[1])}
+ else{jump.value='';html=({tree,listen,records,people,sources,contents,researcher:()=>`<section class="sec">${(()=>{const p=document.getElementById('publisher');if(!p)return '';const c=p.cloneNode(true);const ai=document.getElementById('authorinfo');if(ai)c.insertAdjacentHTML('beforeend',ai.innerHTML);const m=c.querySelector('summary');if(m)m.remove();c.querySelectorAll('[id]').forEach(e=>e.removeAttribute('id'));return '<div class="authorwork">'+c.innerHTML+'</div>'})()}</section>`,timeline:()=>list('Timeline','Her life, date by date, from the records.',C.timeline),places}[h]||home)()}
+ CUR=m&&CH[+m[1]-1]?+m[1]:0; $('#view').innerHTML=html; const sub=!!h&&h!=='start'; $('#nvb').hidden=!sub;$('#nvh').hidden=!sub; document.body.classList.toggle('sub',sub);
+ const nextLink=$('#view .pager a[rel="next"]'),bottomNext=$('#nv-next');
+ bottomNext.hidden=!nextLink;
+ if(nextLink){
+   bottomNext.href=nextLink.hash;
+   bottomNext.textContent=nextLink.querySelector('small').textContent+' →';
+   bottomNext.setAttribute('aria-label',nextLink.textContent.replace('→','').trim());
+ }else{
+   bottomNext.removeAttribute('href');
+   bottomNext.removeAttribute('aria-label');
+ }
+ if(h==='listen'&&pendingChapter!==null){const i=AU.items.findIndex(x=>x.n===pendingChapter);pendingChapter=null;if(i>=0)aplay(AU.items,i)}
+ $('#view').querySelectorAll('a[target="_blank"]').forEach(a=>{if(a.host===location.host){a.removeAttribute('target');a.removeAttribute('rel')}});
+ const hh=$('#view h2'); document.title=(CUR?CH[CUR-1].title+' · ':(hh&&h?hh.textContent+' · ':''))+'Nan';
+ const cur=m?'contents':(h==='person-shieldhill'?'person-shieldhill':(h.startsWith('person-')?'people':(h||'start')));
+ document.querySelectorAll('#side a,#rside a').forEach(a=>a.setAttribute('aria-current',String(a.getAttribute('href')==='#'+h)));
+ document.querySelectorAll('.tab').forEach(b=>b.setAttribute('aria-current',String(b.dataset.go===cur)));
+ let y=0; if(CUR){try{y=+localStorage.getItem('cds-pos-'+CUR)||0}catch(e){}} scrollTo(0,y);
+ const hd=document.querySelector('#view h2,#view h1'); if(hd){hd.setAttribute('tabindex','-1'); hd.focus({preventScroll:true})}}
+let st=0;addEventListener('scroll',()=>{if(!CUR)return;clearTimeout(st);st=setTimeout(()=>{try{localStorage.setItem('cds-pos-'+CUR,Math.round(scrollY))}catch(e){}},300)},{passive:true});
+document.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(!b)return;e.preventDefault();const g=b.dataset.go;
+ if(b.hasAttribute('data-listen-chapter'))pendingChapter=Number(b.dataset.listenChapter);
+ if(g==='start'){if(location.hash)history.pushState('',document.title,location.pathname+location.search);show();return}
+ if(location.hash==='#'+g)show();else location.hash=g});
+$('#nvb').onclick=()=>{if(history.length>1)history.back();else{history.pushState('',document.title,location.pathname);show()}};
+jump.onchange=()=>{if(jump.value)location.hash='chapter-'+jump.value};
+// A fragment history traversal fires both popstate and hashchange. Render once so audio survives.
+addEventListener('hashchange',show);
+Promise.all([window.researchInventory?.book() || fetch('book.json',{cache:'no-cache'}).then(r=>r.json()),fetch('companion.json',{cache:'no-cache'}).then(r=>r.json()),fetch('sources.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null),fetch('people.json',{cache:'no-cache'}).then(r=>r.ok?r.json():[]).catch(()=>[]),fetch('audio/manifest.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null),fetch('audio/plan.json',{cache:'no-cache'}).then(r=>r.ok?r.json():null).catch(()=>null)]).then(([d,c,s,pp,am,ap])=>{CH=d.chapters;chapterSourceNotes=d.chapterSourceNotes===true;C=c;if(s)S=s;PP=pp;if(am)AU=am;if(ap)AP=ap;fetch('../the-names-he-carried/people.json').then(r=>r.json()).then(j=>{window.LP=j;side()}).catch(()=>{});rside();index();if(!CH[last-1])last=0;
+ jump.innerHTML='<option value="">Go to chapter…</option>'+CH.map(c=>`<option value="${c.n}">${isCh(c)?num(c)+'. ':''}${esc(c.title)}</option>`).join('');show()})
+ .catch(()=>{$('#view').innerHTML='<p style="margin:80px 0">The book could not be loaded. <button class="lnk" onclick="location.reload()">Try again</button></p>'});
+}
+</script><script>document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('details.tabgrp[open]').forEach(d=>{d.open=false;d.querySelector('summary').focus()})});document.addEventListener('click',e=>{document.querySelectorAll('details.tabgrp[open]').forEach(d=>{if(!d.contains(e.target)||e.target.closest('.tabmenu .tab'))d.open=false})});</script>
+</body></html>

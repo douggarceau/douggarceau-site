@@ -1,0 +1,572 @@
+[
+ {
+  "slug": "constance-eugenie-darcy",
+  "name": "Constance Eugenie Darcy Douglas",
+  "dates": "1912–1994",
+  "group": "Constance",
+  "role": "",
+  "brief": "Hairdresser, then nurse. Wife of Laurence Brown Douglas.",
+  "story": [
+   "Constance Eugenie Darcy was born on October 12, 1912, at 410 Smith Street in Providence, the first child of Albert Blake Darcy, a printer, and Eugenie Emma Delaire. She grew up in Providence and East Providence, finished the fourth year of high school, and by 1936 was working as a hairdresser.",
+   "She married Laurence Brown Douglas in Birmingham, Alabama, on October 9, 1939. They lived in San Francisco and the Pittsburgh district, then in Pawtucket and Providence, and had three daughters. She trained as a practical nurse and was nursing at Roger Williams General Hospital by 1961, the year Laurence died. She later spent eight years at Cranston General Hospital and retired in 1974.",
+   "She lived her last years on Sixth Street in East Greenwich, died on April 12, 1994, and is buried at Saint Ann Cemetery in Cranston, section 5, lot 84."
+  ],
+  "lineage": [
+   {
+    "rel": "Father",
+    "who": "Albert Blake Darcy",
+    "slug": "albert-blake-darcy"
+   },
+   {
+    "rel": "Mother",
+    "who": "Eugenie Emma Delaire",
+    "slug": "eugenie-emma-delaire"
+   },
+   {
+    "rel": "Brother",
+    "who": "Albert Norman Darcy",
+    "slug": "albert-norman-darcy"
+   },
+   {
+    "rel": "Husband",
+    "who": "Laurence Brown Douglas, married 1939",
+    "slug": "laurence-brown-douglas"
+   },
+   {
+    "rel": "Children",
+    "who": "Three daughters: Eugenie, Constance and Norma",
+    "slug": null
+   },
+   {
+    "rel": "Grandmother",
+    "who": "Julia M. Delaire (Julie Deslières)",
+    "slug": "julia-delaire"
+   }
+  ],
+  "ch": [
+   3,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "homes": [
+   {
+    "label": "410 Smith Street, Providence",
+    "url": "https://earth.google.com/web/search/410%20Smith%20Street%2C%20Providence"
+   },
+   {
+    "label": "19 Alma Street, Providence",
+    "url": "https://earth.google.com/web/search/19%20Alma%20Street%2C%20Providence"
+   },
+   {
+    "label": "29 Burgess Avenue, East Providence",
+    "url": "https://earth.google.com/web/search/29%20Burgess%20Avenue%2C%20East%20Providence"
+   },
+   {
+    "label": "111 Pratt Street, Providence",
+    "url": "https://earth.google.com/web/search/111%20Pratt%20Street%2C%20Providence"
+   },
+   {
+    "label": "56 Dartmouth Avenue, Providence",
+    "url": "https://earth.google.com/web/search/56%20Dartmouth%20Avenue%2C%20Providence"
+   },
+   {
+    "label": "Valencia Street, San Francisco",
+    "url": "https://earth.google.com/web/search/Valencia%20Street%2C%20San%20Francisco"
+   },
+   {
+    "label": "97 Magill Street, Pawtucket",
+    "url": "https://earth.google.com/web/search/97%20Magill%20Street%2C%20Pawtucket"
+   },
+   {
+    "label": "148 General Street, Providence",
+    "url": "https://earth.google.com/web/search/148%20General%20Street%2C%20Providence"
+   },
+   {
+    "label": "644 River Avenue, Providence",
+    "url": "https://earth.google.com/web/search/644%20River%20Avenue%2C%20Providence"
+   },
+   {
+    "label": "119 Phillips Avenue, Warwick",
+    "url": "https://earth.google.com/web/search/119%20Phillips%20Avenue%2C%20Warwick"
+   },
+   {
+    "label": "Sixth Street, East Greenwich",
+    "url": "https://earth.google.com/web/search/Sixth%20Street%2C%20East%20Greenwich"
+   },
+   {
+    "label": "Saint Ann Cemetery, Cranston",
+    "url": "https://earth.google.com/web/search/Saint%20Ann%20Cemetery%2C%20Cranston"
+   }
+  ],
+  "links": []
+ },
+ {
+  "slug": "laurence-brown-douglas",
+  "name": "Laurence Brown Douglas",
+  "dates": "1907–1961",
+  "group": "Constance",
+  "role": "Husband",
+  "brief": "Window display man, born in Edinburgh.",
+  "story": [
+   "Laurence Brown Douglas was born in Edinburgh on June 14, 1907, came to the United States in 1929, and dressed store windows for the rest of his life. He married Constance in Birmingham, Alabama, on October 9, 1939, became an American citizen in 1943, and died in Providence on March 9, 1961. He is buried in lot 84 at Saint Ann Cemetery. His full story is told in The Names He Carried."
+  ],
+  "lineage": [
+   {
+    "rel": "Wife",
+    "who": "Constance Eugenie Darcy",
+    "slug": "constance-eugenie-darcy"
+   },
+   {
+    "rel": "Children",
+    "who": "Three daughters: Eugenie, Constance and Norma",
+    "slug": null
+   }
+  ],
+  "ch": [
+   10,
+   11,
+   12,
+   13,
+   14
+  ],
+  "homes": [],
+  "links": [
+   {
+    "label": "The Names He Carried: The Laurence Brown Douglas Story",
+    "url": "https://douggarceau.com/the-names-he-carried/#person-laurence-brown-douglas"
+   }
+  ]
+ },
+ {
+  "slug": "albert-blake-darcy",
+  "name": "Albert Blake Darcy",
+  "dates": "1888–1957",
+  "group": "Her father’s family",
+  "role": "Father",
+  "brief": "Printer and linotype operator.",
+  "story": [
+   "Albert Blake Darcy was born on November 20, 1888, at Rumford, in East Providence, the son of John Francis Darcy and Margaret Jane Nodder. He spent his working life in newspaper composing rooms: printer, compositor and linotype operator for the Pawtucket Times and later the Providence Journal.",
+   "He married Eugenie Emma Delaire in Providence on January 16, 1912. Their children were Constance (1912) and Albert Norman (1915). The marriage ended in divorce; in August 1929 he took out a license in Brooklyn to marry Theresa B. Sullivan, and they settled at Shawomet in Warwick. He died on November 4, 1957, and is buried at Mount Saint Mary Cemetery in Pawtucket."
+  ],
+  "lineage": [
+   {
+    "rel": "Father",
+    "who": "John Francis Darcy",
+    "slug": "john-francis-darcy"
+   },
+   {
+    "rel": "Mother",
+    "who": "Margaret Jane Nodder",
+    "slug": "margaret-jane-nodder"
+   },
+   {
+    "rel": "First wife",
+    "who": "Eugenie Emma Delaire, married 1912",
+    "slug": "eugenie-emma-delaire"
+   },
+   {
+    "rel": "Second wife",
+    "who": "Theresa B. Sullivan, license 1929",
+    "slug": null
+   },
+   {
+    "rel": "Children",
+    "who": "Constance Eugenie, 1912; Albert Norman, 1915",
+    "slug": "constance-eugenie-darcy"
+   }
+  ],
+  "ch": [
+   5,
+   6,
+   7,
+   8,
+   10,
+   11,
+   12
+  ],
+  "homes": [
+   {
+    "label": "410 Smith Street, Providence",
+    "url": "https://earth.google.com/web/search/410%20Smith%20Street%2C%20Providence"
+   },
+   {
+    "label": "29 Burgess Avenue, East Providence",
+    "url": "https://earth.google.com/web/search/29%20Burgess%20Avenue%2C%20East%20Providence"
+   },
+   {
+    "label": "60 Blake Street, Warwick",
+    "url": "https://earth.google.com/web/search/60%20Blake%20Street%2C%20Warwick"
+   },
+   {
+    "label": "60 West Shore Road, Warwick",
+    "url": "https://earth.google.com/web/search/60%20West%20Shore%20Road%2C%20Warwick"
+   }
+  ],
+  "links": []
+ },
+ {
+  "slug": "eugenie-emma-delaire",
+  "name": "Eugenie Emma Delaire Darcy (Erickson)",
+  "dates": "1894–1966",
+  "group": "Her mother’s family",
+  "role": "Mother",
+  "brief": "Born in Sutton, Quebec; interior decorator.",
+  "story": [
+   "Eugenie Emma Delaire was born on June 6, 1894, at Sutton, Quebec, the only child of Thimothée Deslières and Julie Deslières. By 1900 her father had died and she was living with her widowed mother on Jewett Street in Providence.",
+   "She married Albert Blake Darcy in Providence on January 16, 1912, at seventeen. Their daughter Constance was born that October and their son Albert Norman in 1915. By 1930 she was divorced and the head of her own household at 111 Pratt Street, working as an interior decorator for a rug maker.",
+   "The cemetery index records her later married name as Erickson. She died in May 1966 and is buried at Saint Ann Cemetery in Cranston, in lot 84, with her mother and her son."
+  ],
+  "lineage": [
+   {
+    "rel": "Father",
+    "who": "Thimothée Deslières",
+    "slug": "thimothee-deslieres"
+   },
+   {
+    "rel": "Mother",
+    "who": "Julie Deslières (Julia M. Delaire)",
+    "slug": "julia-delaire"
+   },
+   {
+    "rel": "Husband",
+    "who": "Albert Blake Darcy, married 1912",
+    "slug": "albert-blake-darcy"
+   },
+   {
+    "rel": "Children",
+    "who": "Constance Eugenie, 1912; Albert Norman, 1915",
+    "slug": "constance-eugenie-darcy"
+   }
+  ],
+  "ch": [
+   1,
+   2,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   13
+  ],
+  "homes": [
+   {
+    "label": "53 Jewett Street, Providence",
+    "url": "https://earth.google.com/web/search/53%20Jewett%20Street%2C%20Providence"
+   },
+   {
+    "label": "410 Smith Street, Providence",
+    "url": "https://earth.google.com/web/search/410%20Smith%20Street%2C%20Providence"
+   },
+   {
+    "label": "111 Pratt Street, Providence",
+    "url": "https://earth.google.com/web/search/111%20Pratt%20Street%2C%20Providence"
+   },
+   {
+    "label": "56 Dartmouth Avenue, Providence",
+    "url": "https://earth.google.com/web/search/56%20Dartmouth%20Avenue%2C%20Providence"
+   }
+  ],
+  "links": []
+ },
+ {
+  "slug": "albert-norman-darcy",
+  "name": "A. Norman Darcy",
+  "dates": "1915–1954",
+  "group": "Her mother’s family",
+  "role": "Brother",
+  "brief": "Constance’s younger brother.",
+  "story": [
+   "Albert Norman Darcy was born on December 7, 1915, in Taunton, Massachusetts, the second child of Albert and Eugenie Darcy. He died on October 1, 1954, at thirty-eight, and is buried at Saint Ann Cemetery in Cranston, section 5, lot 84. His wife, Claire M. Darcy, who died in 2000, is buried with him."
+  ],
+  "lineage": [
+   {
+    "rel": "Father",
+    "who": "Albert Blake Darcy",
+    "slug": "albert-blake-darcy"
+   },
+   {
+    "rel": "Mother",
+    "who": "Eugenie Emma Delaire",
+    "slug": "eugenie-emma-delaire"
+   },
+   {
+    "rel": "Sister",
+    "who": "Constance Eugenie Darcy",
+    "slug": "constance-eugenie-darcy"
+   },
+   {
+    "rel": "Wife",
+    "who": "Claire M. Darcy (1916–2000)",
+    "slug": null
+   }
+  ],
+  "ch": [
+   12
+  ],
+  "homes": [
+   {
+    "label": "Saint Ann Cemetery, Cranston",
+    "url": "https://earth.google.com/web/search/Saint%20Ann%20Cemetery%2C%20Cranston"
+   }
+  ],
+  "links": []
+ },
+ {
+  "slug": "julia-delaire",
+  "name": "Julia M. Delaire (Julie Deslières)",
+  "dates": "1868–1931",
+  "group": "Her mother’s family",
+  "role": "Grandmother",
+  "brief": "Nurse. Came from Sutton, Quebec, in 1899.",
+  "story": [
+   "Julie Deslières was born in November 1868 at Sutton, Quebec, the eldest child of Édouard Deslières and Célina Dufresne. On January 9, 1892, at St-André in Sutton, she married Thimothée Deslières, a day laborer.",
+   "Widowed, she came to the United States by the Canadian Pacific Railway, entering at Newport, Vermont, on or about October 30, 1899. In 1900 she was working as a cook in Providence; from 1910 on, every record calls her a nurse. In 1924 she declared her intention to become a citizen: five feet tall, 165 pounds, brown hair and eyes, living at 46½ Park Street.",
+   "She died in Providence on June 15, 1931, and was the first of the family buried in lot 84 at Saint Ann Cemetery in Cranston."
+  ],
+  "lineage": [
+   {
+    "rel": "Father",
+    "who": "Édouard Deslières",
+    "slug": "edouard-deslieres"
+   },
+   {
+    "rel": "Mother",
+    "who": "Célina Dufresne",
+    "slug": "edouard-deslieres"
+   },
+   {
+    "rel": "Husband",
+    "who": "Thimothée Deslières, married 1892",
+    "slug": "thimothee-deslieres"
+   },
+   {
+    "rel": "Daughter",
+    "who": "Eugenie Emma, 1894",
+    "slug": "eugenie-emma-delaire"
+   },
+   {
+    "rel": "Granddaughter",
+    "who": "Constance Eugenie Darcy",
+    "slug": "constance-eugenie-darcy"
+   }
+  ],
+  "ch": [
+   2,
+   5,
+   6,
+   7,
+   8,
+   11,
+   12,
+   13,
+   14
+  ],
+  "homes": [
+   {
+    "label": "Sutton, Quebec",
+    "url": "https://earth.google.com/web/search/Sutton%2C%20Quebec"
+   },
+   {
+    "label": "53 Jewett Street, Providence",
+    "url": "https://earth.google.com/web/search/53%20Jewett%20Street%2C%20Providence"
+   },
+   {
+    "label": "410 Smith Street, Providence",
+    "url": "https://earth.google.com/web/search/410%20Smith%20Street%2C%20Providence"
+   },
+   {
+    "label": "46½ Park Street, Providence",
+    "url": "https://earth.google.com/web/search/46½%20Park%20Street%2C%20Providence"
+   },
+   {
+    "label": "31 Wayne Street, Providence",
+    "url": "https://earth.google.com/web/search/31%20Wayne%20Street%2C%20Providence"
+   }
+  ],
+  "links": []
+ },
+ {
+  "slug": "thimothee-deslieres",
+  "name": "Thimothée Deslières",
+  "dates": "died before 1900",
+  "group": "Her mother’s family",
+  "role": "Grandfather",
+  "brief": "Day laborer of Sutton, Quebec.",
+  "story": [
+   "Thimothée Deslières was a day laborer of St-André parish, Sutton, Quebec, the son of the late Eugène Deslières and Anastasie Bédard. He married Julie Deslières there on January 9, 1892, with his brother François as a witness. Their daughter Eugenie was born in 1894. He had died by June 1900, when the census recorded Julie as a widow in Providence."
+  ],
+  "lineage": [
+   {
+    "rel": "Father",
+    "who": "Eugène Deslières (died before 1892)",
+    "slug": null
+   },
+   {
+    "rel": "Mother",
+    "who": "Anastasie Bédard",
+    "slug": null
+   },
+   {
+    "rel": "Brother",
+    "who": "François Deslières",
+    "slug": null
+   },
+   {
+    "rel": "Wife",
+    "who": "Julie Deslières",
+    "slug": "julia-delaire"
+   },
+   {
+    "rel": "Daughter",
+    "who": "Eugenie Emma",
+    "slug": "eugenie-emma-delaire"
+   }
+  ],
+  "ch": [
+   1
+  ],
+  "homes": [
+   {
+    "label": "Sutton, Quebec",
+    "url": "https://earth.google.com/web/search/Sutton%2C%20Quebec"
+   }
+  ],
+  "links": []
+ },
+ {
+  "slug": "edouard-deslieres",
+  "name": "Édouard Deslières and Célina Dufresne",
+  "dates": "",
+  "group": "Her mother’s family",
+  "role": "Great-grandparents",
+  "brief": "Julia’s parents, of Brome County, Quebec.",
+  "story": [
+   "Édouard (Edward) Deslières and Célina Dufresne were the parents of Julie. In 1871 the census found them at Bolton, Brome County, with Julie, two, and a baby, Celina. In 1891 they were at Brome with nine children at home. Édouard was born in Quebec; Célina was born in the United States."
+  ],
+  "lineage": [
+   {
+    "rel": "Daughter",
+    "who": "Julie Deslières",
+    "slug": "julia-delaire"
+   }
+  ],
+  "ch": [
+   1
+  ],
+  "homes": [
+   {
+    "label": "Bolton, Quebec",
+    "url": "https://earth.google.com/web/search/Bolton%2C%20Quebec"
+   },
+   {
+    "label": "Brome, Quebec",
+    "url": "https://earth.google.com/web/search/Brome%2C%20Quebec"
+   }
+  ],
+  "links": []
+ },
+ {
+  "slug": "john-francis-darcy",
+  "name": "John Francis Darcy",
+  "dates": "1859–1937",
+  "group": "Her father’s family",
+  "role": "Grandfather",
+  "brief": "",
+  "story": [
+   "John Francis Darcy was the son of John Darcy, a blacksmith, and Catherine Fanning. He was a jeweler as a young man. His first wife, Ellen Elizabeth Winter, died in 1885. He married Margaret Jane Nodder in Providence on January 13, 1888. Their first child was Albert Blake Darcy. He died in Warwick on December 23, 1937, at seventy-eight."
+  ],
+  "lineage": [
+   {
+    "rel": "Father",
+    "who": "John Darcy",
+    "slug": null
+   },
+   {
+    "rel": "Mother",
+    "who": "Catherine Fanning",
+    "slug": null
+   },
+   {
+    "rel": "Wife",
+    "who": "Margaret Jane Nodder",
+    "slug": "margaret-jane-nodder"
+   },
+   {
+    "rel": "Son",
+    "who": "Albert Blake Darcy",
+    "slug": "albert-blake-darcy"
+   }
+  ],
+  "ch": [
+   3,
+   4,
+   5,
+   7,
+   13
+  ],
+  "homes": [
+   {
+    "label": "Warwick, Rhode Island",
+    "url": "https://earth.google.com/web/search/Warwick%2C%20Rhode%20Island"
+   }
+  ],
+  "links": []
+ },
+ {
+  "slug": "margaret-jane-nodder",
+  "name": "Margaret Jane Nodder Darcy",
+  "dates": "1869–1942",
+  "group": "Her father’s family",
+  "role": "Grandmother",
+  "brief": "Born in Lowell, Massachusetts.",
+  "story": [
+   "Margaret Jane Nodder was born on February 22, 1869, in Lowell, Massachusetts, the daughter of William Nodder, born in England, and Mary E. Regan. She married John Francis Darcy in 1888. She died, a widow of seventy-three, at her son Albert’s house in Warwick on September 10, 1942, and was buried in Pawtucket."
+  ],
+  "lineage": [
+   {
+    "rel": "Father",
+    "who": "William Nodder, born England",
+    "slug": null
+   },
+   {
+    "rel": "Mother",
+    "who": "Mary E. Regan",
+    "slug": null
+   },
+   {
+    "rel": "Husband",
+    "who": "John Francis Darcy",
+    "slug": "john-francis-darcy"
+   },
+   {
+    "rel": "Son",
+    "who": "Albert Blake Darcy",
+    "slug": "albert-blake-darcy"
+   }
+  ],
+  "ch": [
+   3,
+   4,
+   5,
+   7,
+   11
+  ],
+  "homes": [
+   {
+    "label": "Warwick, Rhode Island",
+    "url": "https://earth.google.com/web/search/Warwick%2C%20Rhode%20Island"
+   }
+  ],
+  "links": []
+ }
+]
